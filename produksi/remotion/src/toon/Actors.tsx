@@ -24,13 +24,18 @@ const Legs: React.FC<{ color?: string; shoe?: string; y?: number }> = ({ color =
   <g>{[124, 176].map((x) => <g key={x}><rect x={x - 12} y={y} width={24} height={62 - (y - 300)} rx={10} fill={color} stroke={INK} strokeWidth={sw} /><ellipse cx={x + (x < 150 ? -6 : 6)} cy={364} rx={22} ry={10} fill={shoe} stroke={INK} strokeWidth={4} /></g>)}</g>
 );
 
-export type PersonCfg = { skin: string; outfit: string; pants?: string; hair: "short" | "cap" | "bun" | "bald" | "hat"; hairColor: string; apron?: string; tie?: boolean };
+export type PersonCfg = { skin: string; outfit: string; pants?: string; hair: "short" | "cap" | "bun" | "bald" | "hat" | "hardhat" | "hijab"; hairColor: string; apron?: string; tie?: boolean; glasses?: boolean; backpack?: string; vest?: string };
 export const PEOPLE: Record<string, PersonCfg> = {
   you: { skin: "#f2c6a0", outfit: "#e4572e", hair: "short", hairColor: "#2b1d14" },
   owner: { skin: "#c68a5b", outfit: "#2a9d8f", hair: "cap", hairColor: "#f4f1ea", apron: "#f4f1ea" },
   clerk: { skin: "#e9b98f", outfit: "#2f4a7a", hair: "hat", hairColor: "#1f2f4f", tie: true },
   pilot: { skin: "#f2c6a0", outfit: "#33415c", hair: "hat", hairColor: "#222c40", tie: true },
   friend: { skin: "#8d5a3b", outfit: "#7b5ea7", hair: "bun", hairColor: "#1b1209" },
+  // pemeran T02 (Asia Tenggara): warga sehari-hari dan pemandu, bukan kostum etnis
+  guide: { skin: "#c98f62", outfit: "#2f7d6d", hair: "short", hairColor: "#1b1209", glasses: true },
+  commuter: { skin: "#d9a678", outfit: "#e0903a", hair: "short", hairColor: "#241710", backpack: "#3b4a5a" },
+  hijab: { skin: "#d9a678", outfit: "#8a5fb0", hair: "hijab", hairColor: "#f1e7d6", backpack: "#4b3a63" },
+  engineer: { skin: "#b97b50", outfit: "#f08a24", hair: "hardhat", hairColor: "#f5c400", vest: "#f08a24", pants: "#33415c" },
 };
 
 export const Person: React.FC<{ kind: string; emo: Emo; pose: Pose; blink: number }> = ({ kind, emo, pose, blink }) => {
@@ -40,16 +45,23 @@ export const Person: React.FC<{ kind: string; emo: Emo; pose: Pose; blink: numbe
       <Shadow />
       <Legs color={c.pants ?? "#2f3b52"} />
       <Arms pose={pose} sy={222} color={c.outfit} hand={c.skin} />
+      {c.backpack && <g><rect x={78} y={196} width={34} height={92} rx={14} fill={c.backpack} stroke={INK} strokeWidth={5} /><rect x={188} y={196} width={34} height={92} rx={14} fill={c.backpack} stroke={INK} strokeWidth={5} /></g>}
       <rect x={92} y={185} width={116} height={128} rx={42} fill={c.outfit} stroke={INK} strokeWidth={sw} />
+      {c.backpack && <g><rect x={112} y={188} width={14} height={100} rx={5} fill={c.backpack} stroke={INK} strokeWidth={3} /><rect x={174} y={188} width={14} height={100} rx={5} fill={c.backpack} stroke={INK} strokeWidth={3} /></g>}
+      {c.vest && <g><path d="M104,192 h30 v118 h-30z M166,192 h30 v118 h-30z" fill={c.vest} stroke={INK} strokeWidth={4} /><rect x={104} y={236} width={30} height={12} fill="#f4f1ea" /><rect x={166} y={236} width={30} height={12} fill="#f4f1ea" /></g>}
       {c.apron && <path d="M112,215 h76 v90 a12,12 0 0 1 -12,12 h-52 a12,12 0 0 1 -12,-12z" fill={c.apron} stroke={INK} strokeWidth={4} />}
       {c.tie && <path d="M150,190 l-12,18 l12,60 l12,-60z" fill="#d9362b" stroke={INK} strokeWidth={4} />}
       <circle cx={68} cy={112} r={14} fill={c.skin} stroke={INK} strokeWidth={sw} /><circle cx={232} cy={112} r={14} fill={c.skin} stroke={INK} strokeWidth={sw} />
+      {c.hair === "hijab" && <ellipse cx={150} cy={200} rx={78} ry={44} fill={c.hairColor} stroke={INK} strokeWidth={sw} />}
       <circle cx={150} cy={108} r={84} fill={c.skin} stroke={INK} strokeWidth={sw} />
       {c.hair === "short" && <path d="M68,100 Q70,30 150,26 Q230,30 232,100 Q200,60 150,66 Q100,60 68,100z" fill={c.hairColor} stroke={INK} strokeWidth={sw} strokeLinejoin="round" />}
       {c.hair === "cap" && <g><path d="M66,96 Q70,24 150,22 Q230,24 234,96z" fill="#2a9d8f" stroke={INK} strokeWidth={sw} /><path d="M200,86 Q262,86 268,104 Q240,112 196,104z" fill="#23867a" stroke={INK} strokeWidth={sw} /></g>}
       {c.hair === "bun" && <g><circle cx={150} cy={22} r={26} fill={c.hairColor} stroke={INK} strokeWidth={sw} /><path d="M68,100 Q70,30 150,26 Q230,30 232,100 Q200,62 150,68 Q100,62 68,100z" fill={c.hairColor} stroke={INK} strokeWidth={sw} /></g>}
       {c.hair === "hat" && <g><path d="M70,92 Q72,26 150,24 Q228,26 230,92z" fill={c.hairColor} stroke={INK} strokeWidth={sw} /><rect x={58} y={84} width={184} height={16} rx={8} fill={c.hairColor} stroke={INK} strokeWidth={sw} /><circle cx={150} cy={58} r={10} fill="#f5b700" stroke={INK} strokeWidth={3} /></g>}
+      {c.hair === "hardhat" && <g><path d="M64,88 Q70,18 150,16 Q230,18 236,88z" fill={c.hairColor} stroke={INK} strokeWidth={sw} /><rect x={54} y={80} width={192} height={16} rx={8} fill={c.hairColor} stroke={INK} strokeWidth={sw} /><rect x={138} y={16} width={24} height={64} fill="#e0aa00" stroke={INK} strokeWidth={4} /></g>}
+      {c.hair === "hijab" && <g><path fillRule="evenodd" d="M150,8 a100,100 0 1 0 0.01,0z M150,56 a62,66 0 1 0 0.01,0z" fill={c.hairColor} stroke={INK} strokeWidth={sw} /></g>}
       <Face cx={150} cy={118} s={84} emo={emo} blink={blink} />
+      {c.glasses && <g fill="none" stroke={INK} strokeWidth={5}><circle cx={118} cy={110} r={24} /><circle cx={182} cy={110} r={24} /><line x1={142} y1={108} x2={158} y2={108} /></g>}
     </svg>
   );
 };
@@ -139,6 +151,59 @@ export const Gadget: React.FC<{ kind: string; emo: Emo; pose: Pose; blink: numbe
         <ellipse cx={150} cy={210} rx={146} ry={62} fill="#f4f6fa" stroke={INK} strokeWidth={sw} />
         <path d="M150,170 L70,80 L108,80 L190,170z" fill="#d84a3a" stroke={INK} strokeWidth={sw} /><path d="M40,190 L8,140 L40,144 L70,190z" fill="#d84a3a" stroke={INK} strokeWidth={sw} />
         <Face cx={196} cy={206} s={46} emo={emo} blink={blink} /><circle cx={104} cy={206} r={9} fill="#9fd3ff" stroke={INK} strokeWidth={3} /><circle cx={134} cy={206} r={9} fill="#9fd3ff" stroke={INK} strokeWidth={3} /></g>);
+      break;
+    }
+    case "train": {
+      const c = col ?? "#dfe3ea";
+      body = (<g>
+        <Legs color="#555b66" y={322} /><Arms pose={pose} sy={235} color={c} hand="#f1f3f7" half={118} />
+        <rect x={44} y={56} width={212} height={264} rx={34} fill={c} stroke={INK} strokeWidth={sw} />
+        <rect x={44} y={226} width={212} height={26} fill="#d9362b" stroke={INK} strokeWidth={4} />
+        <rect x={66} y={84} width={168} height={124} rx={22} fill="#bfe3f7" stroke={INK} strokeWidth={5} />
+        <Face cx={150} cy={148} s={52} emo={emo} blink={blink} />
+        <circle cx={84} cy={284} r={14} fill="#fff4b8" stroke={INK} strokeWidth={4} /><circle cx={216} cy={284} r={14} fill="#fff4b8" stroke={INK} strokeWidth={4} />
+        <rect x={120} y={266} width={60} height={16} rx={6} fill="#8a909c" stroke={INK} strokeWidth={4} /></g>);
+      break;
+    }
+    case "island": {
+      const c = col ?? "#8fd18a";
+      body = (<g>
+        <path d="M30,300 Q20,230 70,214 Q92,150 160,170 Q232,160 258,226 Q290,262 250,306 Q150,336 30,300z" fill={c} stroke={INK} strokeWidth={sw} strokeLinejoin="round" />
+        <path d="M70,318 q20,-14 40,0 t40,0 t40,0 t40,0" fill="none" stroke="#2c7fb8" strokeWidth={6} strokeLinecap="round" />
+        <g stroke={INK} strokeWidth={5} strokeLinecap="round"><path d="M214,200 q-6,-40 8,-70" fill="none" /><path d="M222,130 q-26,-14 -44,6 M222,130 q24,-16 44,4 M222,130 q-6,-26 8,-38" fill="none" /></g>
+        <Face cx={140} cy={248} s={54} emo={emo} blink={blink} /></g>);
+      break;
+    }
+    case "volcano": {
+      const c = col ?? "#8a7a6a";
+      body = (<g>
+        <Legs color="#5b4f44" y={330} /><Arms pose={pose} sy={260} color={c} hand="#cdbfae" half={96} />
+        <path d="M44,334 L128,104 L172,104 L256,334z" fill={c} stroke={INK} strokeWidth={sw} strokeLinejoin="round" />
+        <path d="M128,104 Q150,128 172,104 Q150,90 128,104z" fill="#ff7a2f" stroke={INK} strokeWidth={5} />
+        <path d="M150,118 q-14,40 4,60 q10,18 -2,40" fill="none" stroke="#ff7a2f" strokeWidth={9} strokeLinecap="round" />
+        <g fill="#d7d7dc" stroke={INK} strokeWidth={4}><circle cx={140} cy={78} r={20} /><circle cx={166} cy={62} r={24} /><circle cx={150} cy={36} r={18} /></g>
+        <Face cx={150} cy={266} s={50} emo={emo} blink={blink} /></g>);
+      break;
+    }
+    case "city": {
+      const c = col ?? "#9db4cf";
+      body = (<g>
+        <Legs color="#47586f" y={328} />
+        {[[40, 150, 70], [210, 170, 56]].map(([x, y, w], i) => <g key={i}><rect x={x} y={y} width={w} height={334 - y} fill="#b9c8dc" stroke={INK} strokeWidth={sw} />{[0, 1, 2, 3, 4].map((r) => <rect key={r} x={x + 12} y={y + 14 + r * 30} width={w - 24} height={14} fill="#fff4c9" stroke={INK} strokeWidth={3} />)}</g>)}
+        <rect x={96} y={60} width={110} height={274} rx={8} fill={c} stroke={INK} strokeWidth={sw} />
+        <line x1={150} y1={60} x2={150} y2={26} stroke={INK} strokeWidth={6} /><circle cx={150} cy={22} r={7} fill="#d9362b" stroke={INK} strokeWidth={3} />
+        <Face cx={150} cy={140} s={46} emo={emo} blink={blink} />
+        {[0, 1, 2, 3].map((r) => <g key={r}>{[0, 1, 2].map((q) => <rect key={q} x={108 + q * 32} y={196 + r * 32} width={20} height={16} fill="#fff4c9" stroke={INK} strokeWidth={3} />)}</g>)}</g>);
+      break;
+    }
+    case "ship": {
+      const c = col ?? "#35557a";
+      body = (<g>
+        <path d="M14,250 L286,250 L252,320 L48,320z" fill={c} stroke={INK} strokeWidth={sw} strokeLinejoin="round" />
+        {[[30, "#d9362b"], [86, "#f0a830"], [142, "#2a9d8f"]].map(([x, f], i) => <rect key={i} x={+x} y={196} width={50} height={54} fill={String(f)} stroke={INK} strokeWidth={4} />)}
+        <rect x={204} y={150} width={66} height={100} rx={8} fill="#f4f1ea" stroke={INK} strokeWidth={sw} />
+        <Face cx={237} cy={196} s={30} emo={emo} blink={blink} />
+        <path d="M4,336 q22,-16 44,0 t44,0 t44,0 t44,0 t44,0 t44,0" fill="none" stroke="#2c7fb8" strokeWidth={7} strokeLinecap="round" /></g>);
       break;
     }
     default:

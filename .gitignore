@@ -11,3 +11,5 @@ CLAUDE.local.md
 .gemini/skills/
 produksi/render/.props-*.json
 produksi/preview/*.candidates.json
+produksi/footage-own/
+produksi/render/_preview/

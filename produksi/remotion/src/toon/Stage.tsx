@@ -5,6 +5,7 @@ import { Bubble } from "./Bubble";
 import { Gadget, Person, Pose, isPerson } from "./Actors";
 import type { Emo } from "./Face";
 import { Ctx, INK, makeCtx } from "./ctx";
+import { DEFAULT_VIEW, PLACES, project } from "./geo";
 import { Fit } from "../lib/Fit";
 import { clamp, ease } from "../lib/ui";
 
@@ -31,6 +32,8 @@ export const Stage: React.FC<{ spec: any; frame: number; dur: number; vertical: 
     if (f.type === "stamp") { sfx.push({ at: fAt(f.at ?? 0.3), name: "thud", v: 0.6 }); sfx.push({ at: fAt(f.at ?? 0.3) + 3, name: f.tone === "bad" ? "buzz" : "ding", v: 0.5 }); }
     if (f.type === "pow") sfx.push({ at: fAt(f.at ?? 0.3), name: "thud", v: 0.5 });
     if (f.type === "coins") sfx.push({ at: fAt(f.at ?? 0.3), name: "coin", v: 0.4 });
+    if (f.type === "pin") sfx.push({ at: fAt(f.at ?? 0.3), name: "pop", v: 0.3 });
+    if (f.type === "route") sfx.push({ at: fAt(f.at ?? 0.3), name: "whoosh", v: 0.3 });
   });
   const actors: any[] = spec.actors ?? [];
   const pos: Record<string, { x: number; y: number; size: number }> = {};
@@ -106,6 +109,27 @@ export const Stage: React.FC<{ spec: any; frame: number; dur: number; vertical: 
         <svg width={R * 2} height={R * 2}><polygon points={pts} fill={f.color ?? "#f5b700"} stroke={INK} strokeWidth={7} strokeLinejoin="round" /></svg>
         <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: FONT, fontWeight: 900, fontSize: R * 0.5, color: INK, textAlign: "center", lineHeight: 1 }}>{f.text}</div></div>);
     }
+    if (f.type === "pin" || f.type === "route") {
+      const view = spec.view ?? DEFAULT_VIEW;
+      const P = (r: any): [number, number] => project((typeof r === "string" ? PLACES[r] : r) as [number, number], w, h, view);
+      if (f.type === "pin") {
+        const [x, y] = P(f.place), sp2 = spring({ frame: frame - fAt(at), fps, config: { damping: 8, stiffness: 190, mass: 0.6 } }), r = u * 0.11;
+        return (<div key={i} style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-100%) translateY(${(1 - Math.min(1, sp2)) * -120}px) scale(${Math.max(0.01, Math.min(1.15, sp2))})`, transformOrigin: "50% 100%", zIndex: 22, textAlign: "center", fontFamily: FONT }}>
+          {f.label && <div style={{ background: "#fff", border: `5px solid ${INK}`, borderRadius: 12, padding: "0 14px", fontWeight: 900, fontSize: vertical ? 34 : 32, color: INK, boxShadow: `4px 5px 0 ${INK}`, whiteSpace: "nowrap", marginBottom: 6 }}>{f.label}</div>}
+          <svg width={r} height={r * 1.4} viewBox="0 0 50 70" style={{ overflow: "visible" }}><path d="M25,66 C6,40 4,30 4,22 a21,21 0 0 1 42,0 c0,8 -2,18 -21,44z" fill="#e0443e" stroke={INK} strokeWidth={5} strokeLinejoin="round" /><circle cx={25} cy={22} r={8} fill="#fff" stroke={INK} strokeWidth={4} /></svg></div>);
+      }
+      const [x1, y1] = P(f.from), [x2, y2] = P(f.to), t = ease(a), mx = (x1 + x2) / 2 - (y2 - y1) * 0.18, my = (y1 + y2) / 2 + (x2 - x1) * 0.18;
+      const len = Math.hypot(x2 - x1, y2 - y1) * 1.15, col = tone(f.tone ?? "bad"), ang = Math.atan2(y2 - my, x2 - mx) * (180 / Math.PI);
+      const qx = (1 - t) * (1 - t) * x1 + 2 * (1 - t) * t * mx + t * t * x2, qy = (1 - t) * (1 - t) * y1 + 2 * (1 - t) * t * my + t * t * y2;
+      return (<div key={i} style={{ position: "absolute", inset: 0, zIndex: 21, pointerEvents: "none" }}>
+        <svg width={w} height={h} style={{ position: "absolute", inset: 0 }}>
+          <path d={`M${x1},${y1} Q${mx},${my} ${x2},${y2}`} fill="none" stroke={INK} strokeWidth={u * 0.05 + 8} strokeLinecap="round" strokeDasharray={`${len} ${len}`} strokeDashoffset={len * (1 - t)} />
+          <path d={`M${x1},${y1} Q${mx},${my} ${x2},${y2}`} fill="none" stroke={col} strokeWidth={u * 0.05} strokeLinecap="round" strokeDasharray={`${len} ${len}`} strokeDashoffset={len * (1 - t)} />
+          {t > 0.96 && <polygon points="0,-22 38,0 0,22" fill={col} stroke={INK} strokeWidth={6} strokeLinejoin="round" transform={`translate(${x2},${y2}) rotate(${ang})`} />}
+        </svg>
+        {f.label && t > 0.5 && <div style={{ position: "absolute", left: (1 - 0.5) * (1 - 0.5) * x1 + 2 * 0.5 * 0.5 * mx + 0.25 * x2, top: (1 - 0.5) * (1 - 0.5) * y1 + 2 * 0.5 * 0.5 * my + 0.25 * y2, transform: "translate(-50%,-130%)", background: "#fff", border: `5px solid ${INK}`, borderRadius: 12, padding: "0 14px", fontWeight: 900, fontSize: vertical ? 34 : 32, color: INK, boxShadow: `4px 5px 0 ${INK}`, whiteSpace: "nowrap", fontFamily: FONT }}>{f.label}</div>}
+      </div>);
+    }
     if (f.type === "coins") {
       return (<>{Array.from({ length: f.n ?? 10 }).map((_, k) => { const t0 = ((frame - fAt(at)) / 40 + k * 0.37) % 1.2, x = ((k * 241 + 120) % 1000) / 1000 * w; return (<div key={`${i}-${k}`} style={{ position: "absolute", left: x, top: -80 + t0 * (h + 160), width: u * 0.2, height: u * 0.2, borderRadius: "50%", background: "#f5b700", border: `5px solid ${INK}`, transform: `rotate(${t0 * 360 * (k % 2 ? 1 : -1)}deg)`, zIndex: 3, textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: u * 0.12, lineHeight: `${u * 0.2 - 10}px`, color: INK }}>$</div>); })}</>);
     }
@@ -136,7 +160,7 @@ export const Stage: React.FC<{ spec: any; frame: number; dur: number; vertical: 
     <Ctx.Provider value={ctx}>
       <AbsoluteFill style={{ overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, transform: `translateX(${-pan}px) scale(${zoom})`, transformOrigin: "50% 60%" }}>
-          {spec.bg !== "none" && <Backdrop kind={spec.bg ?? "paper"} frame={frame} />}
+          {spec.bg !== "none" && <Backdrop kind={spec.bg ?? "paper"} frame={frame} view={spec.view} />}
           {actorEls}
           {fxEls}
         </div>

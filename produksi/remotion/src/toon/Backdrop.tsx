@@ -1,5 +1,6 @@
 import React from "react";
 import { INK, useStage } from "./ctx";
+import { DEFAULT_VIEW, MapView, SEA, project } from "./geo";
 
 const Floor: React.FC<{ y: number; w: number; h: number; a: string; b: string; planks?: boolean }> = ({ y, w, h, a, b, planks }) => (
   <g><rect x={0} y={y} width={w} height={h - y} fill={`url(#fl)`} />
@@ -12,7 +13,7 @@ const Cloud: React.FC<{ x: number; y: number; s: number; o?: number }> = ({ x, y
 );
 
 /** Latar bergaya lukisan datar: gradasi + bentuk sederhana + grain + vignette. */
-export const Backdrop: React.FC<{ kind: string; frame: number }> = ({ kind, frame }) => {
+export const Backdrop: React.FC<{ kind: string; frame: number; view?: MapView }> = ({ kind, frame, view }) => {
   const { w, h, groundY } = useStage();
   const gy = groundY - 6;
   let scene: React.ReactNode;
@@ -63,6 +64,56 @@ export const Backdrop: React.FC<{ kind: string; frame: number }> = ({ kind, fram
         <rect width={w} height={gy} fill="url(#vt)" />
         {Array.from({ length: 12 }).map((_, i) => <g key={i}><circle cx={(i + 0.5) * (w / 12)} cy={h * 0.08} r={8} fill="#8a92a0" stroke={INK} strokeWidth={3} /><circle cx={(i + 0.5) * (w / 12)} cy={gy - 24} r={8} fill="#8a92a0" stroke={INK} strokeWidth={3} /></g>)}
         <Floor y={gy} w={w} h={h} a="#454b58" b="#2b2f39" /></g>);
+      break;
+    case "map": {
+      const v = view ?? DEFAULT_VIEW;
+      scene = (<g>
+        <defs><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#7cc6ea" /><stop offset="1" stopColor="#4aa3d1" /></linearGradient></defs>
+        <rect width={w} height={h} fill="url(#sea)" />
+        {Array.from({ length: 13 }).map((_, i) => <line key={`gx${i}`} x1={(i * w) / 12} y1={0} x2={(i * w) / 12} y2={h} stroke="#ffffff" strokeWidth={2} opacity={0.22} />)}
+        {Array.from({ length: 8 }).map((_, i) => <line key={`gy${i}`} x1={0} y1={(i * h) / 7} x2={w} y2={(i * h) / 7} stroke="#ffffff" strokeWidth={2} opacity={0.22} />)}
+        {SEA.map((land) => (<polygon key={land.id} points={land.pts.map((p) => project(p, w, h, v).join(",")).join(" ")} fill="#e7d9a8" stroke={INK} strokeWidth={5} strokeLinejoin="round" />))}
+        <g transform={`translate(${w - 130},${h - 130})`} opacity={0.85}><circle r={46} fill="#fff6df" stroke={INK} strokeWidth={5} /><path d="M0,-38 L10,0 L0,38 L-10,0z" fill="#d9362b" stroke={INK} strokeWidth={3} /><text y={-52} textAnchor="middle" fontSize={26} fontWeight={900} fill={INK} fontFamily="'Chalkboard SE',sans-serif">N</text></g></g>);
+      break;
+    }
+    case "station":
+      scene = (<g>
+        <defs><linearGradient id="stn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#b9dff2" /><stop offset="1" stopColor="#f2f0e6" /></linearGradient></defs>
+        <rect width={w} height={gy} fill="url(#stn)" />
+        <rect x={0} y={h * 0.06} width={w} height={h * 0.08} fill="#8e99a8" stroke={INK} strokeWidth={6} />
+        {[0.08, 0.3, 0.52, 0.74, 0.94].map((x, i) => <g key={i}><rect x={w * x - 10} y={h * 0.14} width={20} height={gy - h * 0.14} fill="#aab3bf" stroke={INK} strokeWidth={5} /></g>)}
+        <rect x={0} y={gy - 10} width={w} height={12} fill="#f5c400" stroke={INK} strokeWidth={4} />
+        <rect x={0} y={gy + 2} width={w} height={h - gy} fill="#6e6a62" />
+        {[0.3, 0.55, 0.8].map((k, i) => <g key={i}><line x1={0} y1={gy + (h - gy) * k} x2={w} y2={gy + (h - gy) * k} stroke="#c9ced6" strokeWidth={8} /></g>)}
+        {Array.from({ length: 24 }).map((_, i) => <line key={i} x1={(i * w) / 23} y1={gy + 6} x2={(i * w) / 23} y2={h} stroke="#3d3a35" strokeWidth={6} opacity={0.5} />)}</g>);
+      break;
+    case "city":
+      scene = (<g>
+        <defs><linearGradient id="ct" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#f7d9a8" /><stop offset="1" stopColor="#f3efe6" /></linearGradient></defs>
+        <rect width={w} height={gy} fill="url(#ct)" />
+        {[[0.0, 0.34], [0.1, 0.46], [0.22, 0.3], [0.32, 0.56], [0.44, 0.38], [0.55, 0.62], [0.66, 0.34], [0.76, 0.5], [0.88, 0.4]].map(([x, ht], i) => <g key={i}><rect x={w * +x} y={gy - h * +ht} width={w * 0.1} height={h * +ht} fill={["#9db4cf", "#b7a7c9", "#c9b08a", "#a7c4b5"][i % 4]} stroke={INK} strokeWidth={5} />{[0, 1, 2, 3, 4].map((r) => <rect key={r} x={w * +x + w * 0.02} y={gy - h * +ht + h * (0.04 + r * 0.06)} width={w * 0.06} height={h * 0.028} fill="#fff4c9" stroke={INK} strokeWidth={3} />)}</g>)}
+        <Floor y={gy} w={w} h={h} a="#8d9099" b="#666a73" /></g>);
+      break;
+    case "sea":
+      scene = (<g>
+        <defs><linearGradient id="se" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#ffd9a0" /><stop offset="0.5" stopColor="#bfe3f2" /><stop offset="1" stopColor="#3f9bcd" /></linearGradient></defs>
+        <rect width={w} height={h} fill="url(#se)" />
+        <circle cx={w * 0.78} cy={h * 0.3} r={h * 0.09} fill="#fff1b8" stroke={INK} strokeWidth={5} />
+        <polygon points={`${w * 0.05},${h * 0.52} ${w * 0.16},${h * 0.4} ${w * 0.3},${h * 0.52}`} fill="#5b8f6a" stroke={INK} strokeWidth={5} />
+        <rect x={0} y={h * 0.52} width={w} height={gy - h * 0.52} fill="#3f9bcd" />
+        {Array.from({ length: 14 }).map((_, i) => <path key={i} d={`M${(i * w) / 13},${h * 0.58 + (i % 3) * 40} q26,-14 52,0 t52,0`} fill="none" stroke="#ffffff" strokeWidth={5} strokeLinecap="round" opacity={0.7} transform={`translate(${Math.sin((frame + i * 9) / 18) * 12},0)`} />)}
+        <Floor y={gy} w={w} h={h} a="#b98050" b="#8c5b34" planks /></g>);
+      break;
+    case "highland":
+      scene = (<g>
+        <defs><linearGradient id="hl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#8fd0f5" /><stop offset="1" stopColor="#eaf6ff" /></linearGradient></defs>
+        <rect width={w} height={gy} fill="url(#hl)" /><Cloud x={w * 0.1} y={h * 0.1} s={1.5} /><Cloud x={w * 0.7} y={h * 0.18} s={1.1} />
+        <polygon points={`${w * 0.5},${h * 0.2} ${w * 0.78},${gy} ${w * 0.22},${gy}`} fill="#7d6f63" stroke={INK} strokeWidth={6} strokeLinejoin="round" />
+        <polygon points={`${w * 0.47},${h * 0.2} ${w * 0.53},${h * 0.2} ${w * 0.5},${h * 0.26}`} fill="#ff7a2f" stroke={INK} strokeWidth={4} />
+        {[0, 1, 2].map((i) => <circle key={i} cx={w * (0.5 + i * 0.03) + Math.sin((frame + i * 20) / 20) * 8} cy={h * (0.14 - i * 0.045)} r={h * (0.04 + i * 0.012)} fill="#e5e5ea" stroke={INK} strokeWidth={4} opacity={0.9} />)}
+        <path d={`M0,${gy} Q${w * 0.2},${gy - h * 0.16} ${w * 0.4},${gy} Q${w * 0.6},${gy - h * 0.1} ${w},${gy}z`} fill="#7ec27a" stroke={INK} strokeWidth={6} />
+        {[0.12, 0.2, 0.28].map((k, i) => <path key={i} d={`M${w * 0.0},${gy - h * k * 0.5} Q${w * 0.2},${gy - h * (k * 0.5 + 0.1)} ${w * 0.4},${gy - h * k * 0.5}`} fill="none" stroke="#4f9a54" strokeWidth={5} opacity={0.7} />)}
+        <Floor y={gy} w={w} h={h} a="#6fb36a" b="#4f8f4c" /></g>);
       break;
     case "paper":
     default:

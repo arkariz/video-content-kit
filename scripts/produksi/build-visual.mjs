@@ -13,7 +13,9 @@ for (const s of script.scenes) {
   inList(id, "bg", st.bg ?? "paper", V.bg); const labels = new Set();
   const actorIds = new Set((st.actors ?? []).map((a) => a.id));
   for (const a of st.actors ?? []) { inList(id, "aktor.kind", a.kind, V.actors); inList(id, "emo", a.emo, V.emo); inList(id, "pose", a.pose, V.pose); inList(id, "from", a.from, V.from); inList(id, "acc", a.acc, V.acc); if (a.x === undefined || a.x < 0 || a.x > 1) e(id, `aktor ${a.id}: x harus 0..1`); if (a.say) { if (!a.say.text) e(id, `aktor ${a.id}: say tanpa text`); else if (a.say.text.length > 44) warn.push(`${id}: bubble ${a.id} ${a.say.text.length} huruf (>44, mudah menutup isi)`); inList(id, "say.tone", a.say.tone, V.tone); } for (const [, em] of a.emoAt ?? []) inList(id, "emoAt", em, V.emo); }
-  for (const f of st.fx ?? []) { inList(id, "fx.type", f.type, V.fx); if (f.type === "packet") { inList(id, "packet.kind", f.kind ?? "msg", V.packetKind); for (const r of [f.from, f.to]) if (typeof r === "string" && !actorIds.has(r)) e(id, `packet merujuk aktor "${r}" yang tidak ada`); } }
+  if (st.view && !(Array.isArray(st.view.lon) && Array.isArray(st.view.lat))) e(id, "stage.view harus {lon:[a,b], lat:[c,d]}");
+  const place = (r, what) => { if (typeof r === "string") inList(id, what, r, V.places); else if (!Array.isArray(r) || r.length !== 2) e(id, `${what} harus nama tempat atau [lon,lat]`); };
+  for (const f of st.fx ?? []) { inList(id, "fx.type", f.type, V.fx); if (f.type === "pin") place(f.place, "pin.place"); if (f.type === "route") { place(f.from, "route.from"); place(f.to, "route.to"); } if (f.type === "packet") { inList(id, "packet.kind", f.kind ?? "msg", V.packetKind); for (const r of [f.from, f.to]) if (typeof r === "string" && !actorIds.has(r)) e(id, `packet merujuk aktor "${r}" yang tidak ada`); } }
   if (s.broll && !s.broll.keywords?.length && !s.broll.keep) e(id, "broll tanpa keywords/keep");
   stage[id] = st; if (s.broll) broll[id] = s.broll;
 }

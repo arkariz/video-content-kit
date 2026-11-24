@@ -19,6 +19,7 @@ if (cmd === "plan") {
   for (const [sceneId, pl] of Object.entries(plan)) {
     if (sceneId.startsWith("_")) continue;
     const sc = script.scenes.find((s) => s.id === sceneId); const need = ((sc?.duration_ms?.en || 6000) / 1000) + 1;
+    if (pl.own) { picks[sceneId] = `own:${pl.own}`; continue; }
     if (pl.keep) { picks[sceneId] = pl.keep; continue; }
     const words = new Set(pl.keywords.flatMap((k) => k.toLowerCase().split(/\s+/))); const avoid = new Set([...(pl.avoid || []).flatMap((k) => k.toLowerCase().split(/\s+/)), "ai", "generated", "cartoon", "animation", "animated", "illustration", "vector", "3d", "loop", "motion", "graphics"]);
     const all = []; for (const q of pl.keywords) all.push(...(await fetchHits(q)));
@@ -57,6 +58,12 @@ if (cmd === "search") {
   const cand = readJson(path.join(ROOT, "produksi/preview", `${o.track}-${o.siklus}.candidates.json`));
   const assets = readJson(assetsPath, { cycle: script.cycle, footage: [], renders: [] });
   for (const [sceneId, ref] of Object.entries(picks)) {
+    if (ref.startsWith("own:")) { // footage milik kreator: produksi/footage-own/<track>/<file>
+      const src = path.join(ROOT, "produksi/footage-own", o.track, ref.slice(4)); if (!fs.existsSync(src)) { console.warn(`footage milik kreator tidak ada: ${path.relative(ROOT, src)}`); continue; }
+      const rel = `footage/${o.track}/${o.siklus}/${sceneId}.mp4`, dest = path.join(ROOT, "produksi", rel); fs.mkdirSync(path.dirname(dest), { recursive: true }); fs.copyFileSync(src, dest);
+      catalog.clips[ref] = { source: "rekaman kreator", license: "milik kreator", downloaded: new Date().toISOString().slice(0, 10), used_in: [...new Set([...(catalog.clips[ref]?.used_in || []), `${o.track}/${o.siklus}/${sceneId}`])] };
+      assets.footage = [...assets.footage.filter((f) => f.scene_id !== sceneId), { scene_id: sceneId, catalog_key: ref, file: rel }]; continue;
+    }
     let c = (cand[sceneId] || []).find((x) => `${x.provider}:${x.id}` === ref);
     if (!c && ref.startsWith("pixabay:")) { const v = ((await (await fetch(`https://pixabay.com/api/videos/?key=${need("PIXABAY_API_KEY")}&id=${ref.slice(8)}`)).json()).hits || [])[0]; if (v) c = { provider: "pixabay", id: String(v.id), page: v.pageURL, file: (v.videos.medium || v.videos.small).url, license: "Pixabay Content License" }; }
     if (!c) { console.warn("tidak ketemu", sceneId, ref); continue; }

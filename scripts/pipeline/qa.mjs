@@ -54,8 +54,10 @@ else for (const p of script.pronunciations || []) { if (!/^[a-z]+$/i.test(p.term
 if (!assets.voice?.type) add("Audio", "sedang", "A3", "jenis/lisensi suara belum dicatat (assets.voice.type)", "catat: clone milik kreator atau voice berlisensi komersial, paket berbayar");
 // thumbnail
 if (!fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Thumbnail-A.png"))) add("Visual", "sedang", "V7", "thumbnail belum dibuat", "render Thumbnail varian A dan B");
-// bukti kreator
-if (!exceptions.includes("bukti-kreator")) add("Visual/Channel", "kritis", "K1", "tidak ada bukti nyata kreator di layar", "rekam bukti, atau catat pengecualian di TRACK.md (pengecualian_qa)");
+// bukti kreator: footage milik kreator di 30% awal memenuhi syarat
+const ownEarly = assets.footage.filter((f) => f.catalog_key?.startsWith("own:") && start[f.scene_id] !== undefined && start[f.scene_id] <= 0.3 * total);
+if (ownEarly.length) add("Visual/Channel", "kecil", "K1", `bukti kreator: footage milik kreator di ${ownEarly.map((f) => f.scene_id).join(", ")} (sebelum 30% durasi)`, "tidak ada, periksa manual bahwa isinya menjelaskan topik");
+else if (!exceptions.includes("bukti-kreator")) add("Visual/Channel", "kritis", "K1", "tidak ada bukti nyata kreator di layar", "rekam bukti, atau catat pengecualian di TRACK.md (pengecualian_qa)");
 else add("Visual/Channel", "sedang", "K1", "bukti nyata kreator tidak ada; DIPERBOLEHKAN oleh pengecualian kreator (pengecualian_qa)", "tetap tercatat di laporan; kreator memikul risiko kebijakan konten AI");
 // manual
 const manual = ["Dengarkan audio: nada, artefak TTS, pengucapan istilah (kemunculan pertama)", "Tonton master dan Shorts: irama, kecepatan animasi, bubble tidak menutup isi", "Periksa fakta tiap klaim terhadap sumber", "Setujui thumbnail dan judul"];

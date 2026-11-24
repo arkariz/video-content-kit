@@ -45,6 +45,19 @@ Referensi pengamatan: channel OverSimplified (kartun 2D, kepala bulat besar, kos
 - `insert` merender spec data dari `04-visual-spec.json` (Diagram/Code/Data) dalam papan bergaya kartun.
 - Efek suara dibuat otomatis dari spec (`pop`, `whoosh`, `ding`, `buzz`, `thud`, `coin`). Aset disintesis orisinal oleh `scripts/produksi/sfx.mjs` ke `produksi/sfx/`.
 
+## Pemeran dan latar per track
+
+| Track | Pemeran | Latar | Efek khusus |
+| --- | --- | --- | --- |
+| T01 (uang) | you, owner, clerk, pilot, friend; terminal, bank, bank-big, network, phone, card, vault, plane | cafe, street, bank, sky, night, vault, paper | packet, stamp, pow, coins |
+| T02 (Asia Tenggara) | guide (pemandu tetap), commuter, hijab, engineer; train, island, volcano, city, ship | map, station, city, sea, highland | pin, route (lon/lat atau nama tempat) |
+
+Peta T02 (`bg: "map"`): garis pantai kasar Asia Tenggara dan **tanpa batas negara**, sengaja, supaya tidak menyentuh isu batas dan konflik yang di luar sudut track. Bukan untuk mengukur jarak. Atur zoom dengan `"view": {"lon": [100, 125], "lat": [-12, 8]}`. Tempat acuan ada di `toon/geo.ts` (`PLACES`) dan `vocab.mjs` (`places`); tempat lain boleh ditulis `[lon, lat]`. Pemeran T02 adalah warga sehari-hari, bukan kostum etnis; jaga agar tidak menjadi stereotip.
+
+Footage milik kreator (rekaman KRL, MRT, dan lain-lain) ditaruh di `produksi/footage-own/<ID>/` dan dipanggil dari `broll` dengan `{"own": "nama-file.mp4"}`. QA menghitungnya sebagai bukti kreator bila muncul sebelum 30% durasi.
+
+Pratinjau tokoh atau latar tanpa siklus: `node scripts/produksi/preview-stage.mjs --track T02 --stage produksi/remotion/demo/T02-cast.json` (contoh di `produksi/remotion/demo/`).
+
 ## Track baru
 1. Pilih pemeran di `Actors.tsx` (atau tambah), tulis `themes/<ID>.ts` bila perlu.
 2. Tulis `04-visual-spec.json` (data) lalu `04-stage.json` (adegan). Lihat `siklus/001-approved-not-paid/` sebagai contoh.

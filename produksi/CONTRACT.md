@@ -26,6 +26,8 @@ Naskah (instruksi 04) menulis juga visualnya, sehingga tahap 05 sampai 07 berjal
 ```
 - `visual.spec` hanya bila scene punya diagram, kode, atau angka. `stage.insert` wajib bila ada `spec`, dan tidak boleh ada tanpa `spec`.
 - `broll` hanya untuk scene dunia nyata yang bisa dicari (orang membayar, gas pump, pesawat, uang tunai). Jangan untuk konsep abstrak.
+- `broll` boleh `{ "own": "krl-01.mp4" }` untuk footage milik kreator (di `produksi/footage-own/<ID>/`). QA menganggapnya bukti kreator bila muncul sebelum 30% durasi.
+- `stage.view` ({lon, lat}) mengatur zoom peta, dan fx `pin` dan `route` memakai nama tempat atau `[lon, lat]` (khusus `bg: "map"`).
 - `sources` untuk setiap scene yang memuat klaim fakta (angka, aturan, tanggal). Klaim tanpa sumber dilunakkan atau dibuang.
 - Opsi lengkap per bidang: `produksi/STYLE.md` (adegan) dan `produksi/README.md` (spec data). Daftar nilai yang valid: `scripts/produksi/vocab.mjs`.
 

@@ -1,14 +1,15 @@
 // Kosakata yang dikenali mesin visual (sumber tunggal untuk validasi). Tambah di sini DAN di komponen saat menambah item baru.
 export const VOCAB = {
-  actors: ["you", "owner", "clerk", "pilot", "friend", "terminal", "bank", "bank-big", "network", "phone", "card", "vault", "plane"],
-  bg: ["cafe", "street", "bank", "sky", "night", "vault", "paper", "none"],
+  actors: ["you", "owner", "clerk", "pilot", "friend", "terminal", "bank", "bank-big", "network", "phone", "card", "vault", "plane", "guide", "commuter", "hijab", "engineer", "train", "island", "volcano", "city", "ship"],
+  bg: ["cafe", "street", "bank", "sky", "night", "vault", "paper", "map", "station", "city", "sea", "highland", "none"],
   emo: ["neutral", "happy", "shock", "angry", "smug", "sad", "think", "worry", "dead"],
   pose: ["down", "up", "point", "shrug", "hold"],
   from: ["pop", "left", "right", "drop"],
   acc: ["glasses", "tie", "shades", "crown", "none"],
-  fx: ["packet", "stamp", "pow", "coins"],
+  fx: ["packet", "stamp", "pow", "coins", "pin", "route"],
   packetKind: ["msg", "coin", "card"],
   insertPos: ["top", "left", "right", "full"],
+  places: ["jakarta", "surabaya", "bandung", "nusantara", "singapore", "kuala-lumpur", "bangkok", "hanoi", "manila", "bali", "medan", "makassar"],
   tone: ["good", "bad", "hot", "say", "shout", "think"],
   spec: { // kind -> bidang wajib
     flow: ["nodes"], lanes: ["lanes"], timeline: ["blocks"], rows: ["rows"], checks: ["items"], gauge: ["zones"], stamp: ["stamp"], hub: ["items", "hub"],
