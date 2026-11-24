@@ -17,4 +17,25 @@ node scripts/produksi/render.mjs --track T01 --siklus 001 --comp Master16x9 --la
 node scripts/produksi/render.mjs --track T01 --siklus 001 --comp Short9x16 --cut A1-zero-dollars-moved
 ```
 
-Catatan: caption dibuat per scene (waktu relatif scene), bukan dari audio gabungan. Komponen visual per tipe (`remotion-diagram/code/data`) masih placeholder teks; dibangun per track saat produksi.
+Catatan: caption dibuat per scene (waktu relatif scene), bukan dari audio gabungan. Preview satu scene: `--still s10,s19` (PNG di `render/<ID>/<siklus>/stills/`).
+
+## Visual berbasis spec
+
+Isi tiap scene non-b-roll dibaca dari `hasil/tracks/<ID>/siklus/<NNN>/04-visual-spec.json` (kunci = id scene). Komponen dipilih dari `kind`, bukan dari tipe di `03-script.json`, dan dipakai ulang lintas track (gaya per track di `src/themes/`). Isi diukur lalu diskalakan otomatis agar pas layar 16:9 maupun 9:16.
+
+| Komponen | `kind` | Bentuk spec |
+| --- | --- | --- |
+| Diagram | `flow` (default) | `nodes:[{label,sub,tone}]`, `edges:[string \| {label,broken,back}]`, `note` |
+| | `lanes` | `lanes:[{title,nodes,edges}]` |
+| | `timeline` | `blocks:[{title,sub,tone:"lit\|dim\|hot"}]` |
+| | `rows` | `rows:[{label,amount,state \| from,to,toAmount,switchAt,appearAt}]`, `header`, `note` |
+| | `checks` | `items:[text \| {text,mark:"ok\|odd"}]`, `header` |
+| | `gauge` | `zones:[..]`, `target`, `label` |
+| | `stamp` | `lines`, `chips`, `stamp`, `tone`, `side:{label,value}` |
+| | `hub` | `items:[..]`, `hub:{label,sub}` |
+| Code | `code` | `title`, `lines:[{k,v,note}]`, `focus:[idx..]`, `note` |
+| Data | `stats` | `items:[{label,value,tone,sub}]`, `between`, `note` |
+| | `counter` / `bars` / `netting` / `collapse` / `bignum` / `breakdown` | lihat `src/components/DataPanel.tsx` |
+| Teks | (ada `headline`) | `headline`, `sub` |
+
+`tone`: `default`, `good`, `bad`, `hot`, `muted`. Scene tanpa spec jatuh ke teks `on_screen_text`.

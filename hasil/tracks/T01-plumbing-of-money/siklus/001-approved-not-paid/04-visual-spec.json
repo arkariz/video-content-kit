@@ -1,0 +1,1006 @@
+{
+  "s01": {
+    "kind": "stamp",
+    "lines": [
+      "TAP  $5.00",
+      "Coffee Shop"
+    ],
+    "stamp": "APPROVED",
+    "tone": "good",
+    "side": {
+      "label": "Shop account",
+      "value": "$0.00"
+    }
+  },
+  "s02": {
+    "kind": "timeline",
+    "blocks": [
+      {
+        "title": "Authorization",
+        "sub": "now",
+        "tone": "lit"
+      },
+      {
+        "title": "Clearing",
+        "sub": "tonight",
+        "tone": "dim"
+      },
+      {
+        "title": "Settlement",
+        "sub": "1–3 business days",
+        "tone": "dim"
+      }
+    ]
+  },
+  "s03": {
+    "kind": "rows",
+    "rows": [
+      {
+        "label": "Coffee Shop",
+        "amount": "−$5.00",
+        "state": "pending"
+      },
+      {
+        "label": "Book Store",
+        "amount": "−$12.40",
+        "state": "posted"
+      },
+      {
+        "label": "Taxi Ride",
+        "amount": "−$8.00",
+        "state": "gone"
+      }
+    ]
+  },
+  "s04": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Card or phone"
+      },
+      {
+        "label": "Terminal"
+      }
+    ],
+    "edges": [
+      "card number + one-time code"
+    ]
+  },
+  "s05": {
+    "kind": "stamp",
+    "chips": [
+      "cryptogram 8F3A…91"
+    ],
+    "lines": [
+      "replayed tomorrow"
+    ],
+    "stamp": "REJECTED",
+    "tone": "bad"
+  },
+  "s06": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Secret key",
+        "sub": "stays in the chip"
+      },
+      {
+        "label": "+ amount + counter"
+      },
+      {
+        "label": "Cryptogram",
+        "tone": "hot"
+      },
+      {
+        "label": "Bank checks",
+        "sub": "with its matching key",
+        "tone": "good"
+      }
+    ],
+    "edges": [
+      "",
+      "computes",
+      "sent to"
+    ]
+  },
+  "s07": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Card number",
+        "sub": "4111 11•• •••• 1111",
+        "tone": "muted",
+        "mono": true
+      },
+      {
+        "label": "Token",
+        "sub": "tok_7Q2…c9",
+        "tone": "hot",
+        "mono": true
+      },
+      {
+        "label": "Terminal",
+        "sub": "sees only the token"
+      }
+    ],
+    "edges": [
+      "replaced by",
+      "sent to"
+    ]
+  },
+  "s08": {
+    "kind": "stamp",
+    "chips": [
+      "stolen token"
+    ],
+    "lines": [
+      "tried at another shop"
+    ],
+    "stamp": "REJECTED",
+    "tone": "bad"
+  },
+  "s09": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Terminal"
+      },
+      {
+        "label": "Acquirer",
+        "sub": "the shop's bank",
+        "tone": "hot"
+      }
+    ],
+    "edges": [
+      "asks"
+    ]
+  },
+  "s10": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Acquirer"
+      },
+      {
+        "label": "Card network",
+        "sub": "reads the BIN: first 6–8 digits",
+        "tone": "hot"
+      },
+      {
+        "label": "Issuer",
+        "sub": "your bank"
+      }
+    ],
+    "edges": [
+      "message",
+      "routes by BIN"
+    ]
+  },
+  "s11": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Acquirer"
+      },
+      {
+        "label": "Network",
+        "sub": "carries messages, holds no money",
+        "tone": "hot"
+      },
+      {
+        "label": "Issuer"
+      }
+    ],
+    "edges": [
+      "message + small fee",
+      "message + small fee"
+    ]
+  },
+  "s12": {
+    "kind": "code",
+    "title": "ISO 8583 message (example data)",
+    "lines": [
+      {
+        "k": "MTI",
+        "v": "0100",
+        "note": "authorization request"
+      },
+      {
+        "k": "DE2",
+        "v": "4111 11•• •••• 1111",
+        "note": "card number"
+      },
+      {
+        "k": "DE4",
+        "v": "000000000500",
+        "note": "amount"
+      },
+      {
+        "k": "DE49",
+        "v": "840",
+        "note": "currency"
+      }
+    ]
+  },
+  "s13": {
+    "kind": "code",
+    "title": "ISO 8583 message (example data)",
+    "lines": [
+      {
+        "k": "MTI",
+        "v": "0100",
+        "note": "authorization request"
+      },
+      {
+        "k": "DE2",
+        "v": "4111 11•• •••• 1111",
+        "note": "card number"
+      },
+      {
+        "k": "DE4",
+        "v": "000000000500",
+        "note": "amount"
+      },
+      {
+        "k": "DE49",
+        "v": "840",
+        "note": "currency"
+      }
+    ],
+    "focus": [
+      0
+    ]
+  },
+  "s14": {
+    "kind": "code",
+    "title": "ISO 8583 message (example data)",
+    "lines": [
+      {
+        "k": "MTI",
+        "v": "0100",
+        "note": "authorization request"
+      },
+      {
+        "k": "DE2",
+        "v": "4111 11•• •••• 1111",
+        "note": "card number"
+      },
+      {
+        "k": "DE4",
+        "v": "000000000500",
+        "note": "amount"
+      },
+      {
+        "k": "DE49",
+        "v": "840",
+        "note": "currency"
+      }
+    ],
+    "focus": [
+      1,
+      2,
+      3
+    ]
+  },
+  "s15": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Network"
+      },
+      {
+        "label": "Issuer",
+        "sub": "decides in under 1 second",
+        "tone": "hot"
+      }
+    ],
+    "edges": [
+      "asks"
+    ]
+  },
+  "s16": {
+    "kind": "checks",
+    "items": [
+      "Card is real",
+      "One-time code matches",
+      "Doesn't look like fraud",
+      "Funds or credit available"
+    ]
+  },
+  "s17": {
+    "kind": "checks",
+    "header": "Compared with your history",
+    "items": [
+      {
+        "text": "Usual place?",
+        "mark": "ok"
+      },
+      {
+        "text": "Usual time?",
+        "mark": "ok"
+      },
+      {
+        "text": "Usual amount?",
+        "mark": "ok"
+      }
+    ]
+  },
+  "s18": {
+    "kind": "gauge",
+    "zones": [
+      "Approve",
+      "Ask owner",
+      "Decline"
+    ],
+    "target": 1,
+    "label": "Purchase in another country"
+  },
+  "s19": {
+    "kind": "code",
+    "title": "Reply (example data)",
+    "lines": [
+      {
+        "k": "MTI",
+        "v": "0110",
+        "note": "authorization response"
+      },
+      {
+        "k": "DE39",
+        "v": "00",
+        "note": "approved"
+      }
+    ],
+    "focus": [
+      1
+    ]
+  },
+  "s20": {
+    "kind": "code",
+    "title": "Reply (example data)",
+    "lines": [
+      {
+        "k": "MTI",
+        "v": "0110",
+        "note": "response"
+      },
+      {
+        "k": "DE39",
+        "v": "00",
+        "note": "approved"
+      },
+      {
+        "k": "DE38",
+        "v": "A1B2C3",
+        "note": "approval code (6 chars)"
+      }
+    ],
+    "focus": [
+      2
+    ]
+  },
+  "s21": {
+    "kind": "code",
+    "title": "Reply, when the answer is no",
+    "lines": [
+      {
+        "k": "DE39",
+        "v": "51",
+        "note": "insufficient funds"
+      },
+      {
+        "k": "DE39",
+        "v": "05",
+        "note": "do not honor"
+      }
+    ],
+    "focus": [
+      0,
+      1
+    ]
+  },
+  "s22": {
+    "kind": "stamp",
+    "chips": [
+      "51",
+      "05"
+    ],
+    "lines": [
+      "two reasons, one screen"
+    ],
+    "stamp": "DECLINED",
+    "tone": "bad"
+  },
+  "s23": {
+    "kind": "counter",
+    "label": "Money moved between banks",
+    "values": [
+      "$0.00"
+    ],
+    "tone": "bad"
+  },
+  "s24": {
+    "kind": "stats",
+    "items": [
+      {
+        "label": "Balance",
+        "value": "$100"
+      },
+      {
+        "label": "Available",
+        "value": "$95",
+        "tone": "hot"
+      }
+    ],
+    "between": "hold −$5"
+  },
+  "s27": {
+    "kind": "counter",
+    "label": "Hotel hold",
+    "values": [
+      "$150",
+      "$220",
+      "$310"
+    ],
+    "tone": "hot"
+  },
+  "s28": {
+    "kind": "rows",
+    "rows": [
+      {
+        "label": "Coffee Shop",
+        "amount": "−$5.00",
+        "from": "pending",
+        "to": "gone",
+        "switchAt": 0.6
+      }
+    ],
+    "note": "a few days later"
+  },
+  "s29": {
+    "kind": "rows",
+    "rows": [
+      {
+        "label": "Coffee Shop",
+        "amount": "−$5.00",
+        "state": "pending"
+      },
+      {
+        "label": "Coffee Shop",
+        "amount": "−$5.00",
+        "state": "pending"
+      }
+    ],
+    "note": "one coffee, two holds"
+  },
+  "s30": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Terminal"
+      },
+      {
+        "label": "Network"
+      },
+      {
+        "label": "Issuer"
+      }
+    ],
+    "edges": [
+      "0100 request",
+      {
+        "label": "0110 reply lost",
+        "broken": true
+      }
+    ],
+    "note": "no answer → the terminal asks again"
+  },
+  "s31": {
+    "kind": "stats",
+    "items": [
+      {
+        "label": "Balance",
+        "value": "$100"
+      },
+      {
+        "label": "Available",
+        "value": "$90",
+        "tone": "hot"
+      }
+    ],
+    "between": "2 holds × $5"
+  },
+  "s32": {
+    "kind": "code",
+    "title": "Reversal (example data)",
+    "lines": [
+      {
+        "k": "MTI",
+        "v": "0400",
+        "note": "reversal"
+      },
+      {
+        "k": "DE38",
+        "v": "A1B2C3",
+        "note": "drop this hold"
+      }
+    ],
+    "focus": [
+      0,
+      1
+    ],
+    "note": "the first pending hold disappears"
+  },
+  "s34": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Card"
+      },
+      {
+        "label": "Terminal",
+        "sub": "offline limit written on the chip"
+      },
+      {
+        "label": "Bank",
+        "tone": "muted"
+      }
+    ],
+    "edges": [
+      {
+        "label": "approves alone"
+      },
+      {
+        "label": "no connection",
+        "broken": true
+      }
+    ]
+  },
+  "s35": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Plane lands"
+      },
+      {
+        "label": "Airline uploads sales"
+      },
+      {
+        "label": "Bank",
+        "sub": "one card is no good",
+        "tone": "bad"
+      }
+    ],
+    "edges": [
+      "",
+      "after landing"
+    ],
+    "note": "the airline usually takes the loss"
+  },
+  "s36": {
+    "kind": "bars",
+    "bars": [
+      {
+        "label": "Low spending cap",
+        "v": 30,
+        "tone": "good"
+      },
+      {
+        "label": "High spending cap",
+        "v": 100,
+        "tone": "bad"
+      }
+    ],
+    "unit": "bigger cap = bigger possible loss"
+  },
+  "s37": {
+    "kind": "hub",
+    "items": [
+      "Sale 1",
+      "Sale 2",
+      "Sale 3",
+      "Sale 4"
+    ],
+    "hub": {
+      "label": "Batch",
+      "sub": "sent to the acquirer"
+    }
+  },
+  "s38": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Clearing record",
+        "sub": "A1B2C3",
+        "tone": "hot",
+        "mono": true
+      },
+      {
+        "label": "Morning approval",
+        "sub": "A1B2C3",
+        "tone": "hot",
+        "mono": true
+      }
+    ],
+    "edges": [
+      {
+        "label": "match ✓"
+      }
+    ]
+  },
+  "s39": {
+    "kind": "stats",
+    "items": [
+      {
+        "label": "Approved",
+        "value": "$40.00"
+      },
+      {
+        "label": "Cleared",
+        "value": "$46.00",
+        "tone": "hot"
+      }
+    ],
+    "between": "+ $6 tip"
+  },
+  "s40": {
+    "kind": "stats",
+    "items": [
+      {
+        "label": "Terminal showed",
+        "value": "€10.00"
+      },
+      {
+        "label": "Posted",
+        "value": "$10.85",
+        "tone": "hot"
+      }
+    ],
+    "between": "converted at clearing",
+    "note": "example rate"
+  },
+  "s41": {
+    "kind": "rows",
+    "rows": [
+      {
+        "label": "Coffee Shop",
+        "amount": "−$5.00",
+        "from": "pending",
+        "to": "posted"
+      }
+    ]
+  },
+  "s42": {
+    "kind": "lanes",
+    "lanes": [
+      {
+        "title": "Dual-message",
+        "nodes": [
+          {
+            "label": "Approve"
+          },
+          {
+            "label": "Clear"
+          },
+          {
+            "label": "Settle"
+          }
+        ],
+        "edges": [
+          "",
+          ""
+        ]
+      },
+      {
+        "title": "Single-message",
+        "nodes": [
+          {
+            "label": "Approve + charge"
+          },
+          {
+            "label": "Settle"
+          }
+        ],
+        "edges": [
+          ""
+        ]
+      }
+    ]
+  },
+  "s43": {
+    "kind": "code",
+    "title": "Single message (example data)",
+    "lines": [
+      {
+        "k": "MTI",
+        "v": "0200",
+        "note": "financial request: approve + charge"
+      },
+      {
+        "k": "DE4",
+        "v": "000000000500",
+        "note": "amount"
+      }
+    ],
+    "focus": [
+      0
+    ]
+  },
+  "s44": {
+    "kind": "lanes",
+    "lanes": [
+      {
+        "title": "Dual-message",
+        "nodes": [
+          {
+            "label": "Approve"
+          },
+          {
+            "label": "Clear",
+            "sub": "charge posts"
+          },
+          {
+            "label": "Settle",
+            "sub": "shop paid",
+            "tone": "hot"
+          }
+        ],
+        "edges": [
+          "",
+          ""
+        ]
+      },
+      {
+        "title": "Single-message",
+        "nodes": [
+          {
+            "label": "Approve + post",
+            "sub": "charge posts sooner"
+          },
+          {
+            "label": "Settle",
+            "sub": "shop paid",
+            "tone": "hot"
+          }
+        ],
+        "edges": [
+          ""
+        ]
+      }
+    ]
+  },
+  "s45": {
+    "kind": "stats",
+    "items": [
+      {
+        "label": "Your account",
+        "value": "−$5.00"
+      },
+      {
+        "label": "Shop received",
+        "value": "$0.00",
+        "tone": "bad"
+      }
+    ],
+    "between": "for now"
+  },
+  "s46": {
+    "kind": "netting",
+    "banks": [
+      "Bank A",
+      "Bank B",
+      "Bank C"
+    ],
+    "gross": [
+      [
+        "—",
+        "$4.1M",
+        "$2.0M"
+      ],
+      [
+        "$3.2M",
+        "—",
+        "$1.5M"
+      ],
+      [
+        "$0.9M",
+        "$0.7M",
+        "—"
+      ]
+    ],
+    "net": [
+      "−$2.0M",
+      "+$0.1M",
+      "+$1.9M"
+    ]
+  },
+  "s47": {
+    "kind": "collapse",
+    "from": "millions of tiny payments",
+    "to": "a few net transfers"
+  },
+  "s48": {
+    "kind": "bignum",
+    "total": "$4,812,300,000",
+    "label": "one bank's daily total (example)",
+    "mark": "your $5"
+  },
+  "s49": {
+    "kind": "hub",
+    "items": [
+      "Bank A",
+      "Bank B",
+      "Bank C",
+      "Bank D"
+    ],
+    "hub": {
+      "label": "Central bank accounts",
+      "sub": "one net amount per bank"
+    }
+  },
+  "s50": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Acquirer"
+      },
+      {
+        "label": "Shop account",
+        "sub": "1–3 business days after the sale",
+        "tone": "hot"
+      }
+    ],
+    "edges": [
+      "pays"
+    ]
+  },
+  "s51": {
+    "kind": "timeline",
+    "blocks": [
+      {
+        "title": "Fri",
+        "sub": "tap",
+        "tone": "lit"
+      },
+      {
+        "title": "Sat",
+        "sub": "no settlement",
+        "tone": "dim"
+      },
+      {
+        "title": "Sun",
+        "sub": "no settlement",
+        "tone": "dim"
+      },
+      {
+        "title": "Mon",
+        "sub": "paid?",
+        "tone": "hot"
+      },
+      {
+        "title": "Tue",
+        "sub": "or here",
+        "tone": "hot"
+      }
+    ]
+  },
+  "s52": {
+    "kind": "stats",
+    "items": [
+      {
+        "label": "You paid",
+        "value": "$5.00"
+      },
+      {
+        "label": "Shop gets",
+        "value": "$4.??",
+        "tone": "hot"
+      }
+    ],
+    "between": "− fees"
+  },
+  "s53": {
+    "kind": "breakdown",
+    "total": "one percentage",
+    "parts": [
+      {
+        "label": "fee",
+        "value": "?"
+      },
+      {
+        "label": "fee",
+        "value": "?"
+      },
+      {
+        "label": "fee",
+        "value": "?"
+      }
+    ]
+  },
+  "s54": {
+    "kind": "flow",
+    "nodes": [
+      {
+        "label": "Shop"
+      },
+      {
+        "label": "Acquirer"
+      },
+      {
+        "label": "Network"
+      },
+      {
+        "label": "Issuer"
+      },
+      {
+        "label": "You",
+        "tone": "good"
+      }
+    ],
+    "edges": [
+      "chargeback",
+      "",
+      "",
+      "money back"
+    ]
+  },
+  "s55": {
+    "kind": "code",
+    "title": "Dispute file (example data)",
+    "lines": [
+      {
+        "k": "Case",
+        "v": "CB-0001",
+        "note": "dispute file (example)"
+      },
+      {
+        "k": "DE38",
+        "v": "A1B2C3",
+        "note": "approval code from the start"
+      }
+    ],
+    "focus": [
+      1
+    ]
+  },
+  "s56": {
+    "kind": "rows",
+    "rows": [
+      {
+        "label": "Coffee Shop",
+        "amount": "−$5.00",
+        "state": "posted"
+      },
+      {
+        "label": "Coffee Shop refund",
+        "amount": "+$5.00",
+        "state": "credit",
+        "appearAt": 0.6
+      }
+    ],
+    "note": "the credit takes its own days"
+  },
+  "s57": {
+    "kind": "timeline",
+    "blocks": [
+      {
+        "title": "Authorization",
+        "sub": "the promise",
+        "tone": "lit"
+      },
+      {
+        "title": "Clearing",
+        "sub": "the bill",
+        "tone": "lit"
+      },
+      {
+        "title": "Settlement",
+        "sub": "the money",
+        "tone": "lit"
+      }
+    ]
+  },
+  "s58": {
+    "headline": "Next: You Pay $100. Who Takes a Cut?",
+    "sub": "The plumbing of money"
+  }
+}
