@@ -1,4 +1,4 @@
-# Riset viral: siklus 001 (riset sprint V2, T02)
+# Riset viral: siklus 001 (riset sprint V2, T02) · Sudut dipilih: A (2026-11-24)
 
 Tanggal: 2026-11-24 · Niche: Indonesia dan Asia Tenggara dijelaskan dari dalam · Learnings yang dibaca: ya (`learnings.md` T02 dan `learnings-global.md` masih kosong)
 

@@ -7,9 +7,9 @@ tahap: validasi
 channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
-siklus_aktif: "001-riset"
-langkah_berikutnya: "siklus 001 (uji-V2, variasi A): kreator memilih sudut, lalu ganti nama folder siklus dan lanjut brief + naskah (instruksi/04-naskah.md). Rekam footage KRL 2026-11-28/29"
-menunggu_keputusan: "Pilih sudut siklus 001 (siklus/001-riset/01-riset-viral.md): A Jakarta Just Refused Tokyo's Old Trains (rekomendasi), B Why Jakarta's Commuter Trains Are Second-Hand From Tokyo, C Why Tokyo's Retired Trains Work Harder in Jakarta"
+siklus_aktif: "001-jakarta-refused-tokyo-trains"
+langkah_berikutnya: "siklus 001 (uji-V2, variasi A): brief + naskah long-form \"Jakarta Just Refused Tokyo's Old Trains. Here's Why\" plus 2 Shorts A (instruksi/04-naskah.md). Rekam footage KRL 2026-11-28/29"
+menunggu_keputusan: null
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
@@ -50,7 +50,7 @@ Skor niche 79. "why indonesia" punya 11 video di atas 10 ribu view dalam 90 hari
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001 | Kereta KRL bekas Jepang (variasi A) | riset | target 2026-12-07 | uji-V2, variasi A |
+| 001 | Jakarta Just Refused Tokyo's Old Trains. Here's Why | brief | target 2026-12-07 | uji-V2, variasi A |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -61,6 +61,7 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-24 | Dipilih untuk validasi | Skor niche 81/79 di analisa non-tech; kreator memilih U2-A + U1-A | analisa-niche-nontech.md |
 | 2026-11-24 | V1 LULUS (5/5) | 10 video relevan >10K dalam 90 hari; 4 channel <10K subs dengan outlier (The Odd Decision 945 subs: 507K; Rules of the Land 519 subs: 194K); 15 ide dengan bukti milik kreator; ~6,2 jam/minggu | validasi/rencana.md |
 | 2026-11-24 | Rencana V2 disetujui dan dikunci | Kreator memilih opsi 1: paket dan periode sama dengan T01 supaya perbandingan adil | validasi/rencana.md |
+| 2026-11-24 | Sudut siklus 001: A (Jakarta Just Refused Tokyo's Old Trains) | Behind Asia sudah membuat sudut B (302K); A memakai babak pembatalan impor 5 Nov 2026 yang belum ada versi Inggrisnya | siklus/001-jakarta-refused-tokyo-trains/01-riset-viral.md |
 
 ## Log
 
@@ -74,3 +75,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Profil publish T02 diubah ke "default": menurut kreator "equatorlogic" hanya nama tampilan, API memakai "default".
 - 2026-11-25: Gaya wajib untuk semua siklus: diorama 2.5D. Pemeran T02 bisa dipakai sebagai actor:<nama>; peta Asia Tenggara dan aset khusus T02 belum ada di mesin diorama.
 - 2026-11-24: Siklus 001 riset viral selesai untuk seluruh sprint V2 (9 outlier, 3 pola). Temuan: Behind Asia sudah membuat topik kereta bekas (302K, 10 bulan); pembeda = pembatalan impor KRL bekas 5 Nov 2026 + sumber ID + footage sendiri. 4 ide baru di backlog. Menunggu pilihan sudut.
+- 2026-11-24: Kreator memilih sudut A untuk siklus 001. Folder diganti ke 001-jakarta-refused-tokyo-trains. Status brief.
