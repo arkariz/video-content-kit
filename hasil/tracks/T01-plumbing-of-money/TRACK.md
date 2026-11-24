@@ -8,8 +8,8 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "produksi 001: footage (search lalu kreator pilih), TTS EN sampel 2 scene, lalu penuh; target render master 8:15 sampai 8:45, wajib ≥ 8:00"
-menunggu_keputusan: null
+langkah_berikutnya: "perbaiki temuan QA 001 (05-qa.md T1 sampai T11), lalu QA ulang; master wajib tetap ≥ 8:00"
+menunggu_keputusan: "QA 001 GAGAL (T1 bukti kreator di layar): 1) rekam bukti sendiri 15-30 detik sebelum 2:29 (rekomendasi), 2) suara kreator sendiri + artefak disamarkan, 3) pengecualian tertulis untuk 001 dengan syarat 002/003 memuat kehadiran nyata"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -50,7 +50,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | produksi | 2026-12-07 | uji-V2; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | qa (GAGAL) | 2026-12-07 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
@@ -83,4 +83,5 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Render master uji (Master16x9-en.mp4, 3,5 menit render): durasi 8:17, memenuhi syarat ≥ 8:00. Visual masih kartu teks placeholder; suara dan caption uji (free).
 - 2026-11-24: Visual Remotion dibangun: komponen Diagram, Code, Data berbasis spec (produksi/remotion/src/components, spec 55 scene di siklus/001-approved-not-paid/04-visual-spec.json). Render ulang master 8:17 dan 2 Shorts EN (A1 36 detik, A2 35 detik). Belum ada: klip footage tambahan di scene diagram, versi audio ID, thumbnail, voice berbayar, QA anti-slop.
 - 2026-11-24: Revisi gaya visual ke kartun penjelasan (referensi: OverSimplified, ditiru bahasa visualnya saja): tokoh berwajah (Terminal, Acquirer, Network, Issuer, Bank Sentral, You, Shop Owner), latar ilustrasi, bubble dialog, paket pesan terbang, stempel, kamera bergerak, efek suara sintesis orisinal, subtitle berkontur. Diagram/Code/Data jadi papan sisipan. Spec adegan 58 scene di siklus/001-approved-not-paid/04-stage.json; panduan lintas track di produksi/STYLE.md. Master 8:17 dan 2 Shorts dirender ulang. Bubble baru perlu lolos anti-slop.
+- 2026-11-24: QA anti-slop 001: GAGAL. Teks EN 37/50, ID 36/50 (lulus). Kritis: tidak ada bukti nyata kreator di layar (T1) dan dugaan salah ucap "acquirer" (T2). Sedang: sumber klaim, re-hook pertama terlambat (3:12), jeda seragam, bubble yang mengulang narasi, thumbnail. Laporan di siklus/001-approved-not-paid/05-qa.md.
 
