@@ -11,6 +11,8 @@ siklus_aktif: "001-jakarta-refused-tokyo-trains"
 langkah_berikutnya: "siklus 001 (uji-V2, variasi A): brief + naskah long-form \"Jakarta Just Refused Tokyo's Old Trains. Here's Why\" plus 2 Shorts A (instruksi/04-naskah.md). Rekam footage KRL 2026-11-28/29"
 menunggu_keputusan: null
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
+langkah_berikutnya: "siklus 001: kreator menyetujui naskah (03-naskah.md), lalu rekam footage KRL 2026-11-28/29 (daftar di 02-brief.md) dan jalankan pipeline produksi (scripts/pipeline/run.mjs --track T02 --siklus 001)"
+menunggu_keputusan: "Setujui naskah siklus 001 (siklus/001-jakarta-refused-tokyo-trains/03-naskah.md): 58 scene, perkiraan 8:24, anti-slop EN 39/ID 38, 3 judul, 2 Shorts. Koreksi fakta atau insight dari kreator boleh ditambahkan"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -50,7 +52,7 @@ Skor niche 79. "why indonesia" punya 11 video di atas 10 ribu view dalam 90 hari
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001 | Jakarta Just Refused Tokyo's Old Trains. Here's Why | brief | target 2026-12-07 | uji-V2, variasi A |
+| 001 | Jakarta Just Refused Tokyo's Old Trains. Here's Why | naskah | target 2026-12-07 | uji-V2, variasi A |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -76,3 +78,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Gaya wajib untuk semua siklus: diorama 2.5D. Pemeran T02 bisa dipakai sebagai actor:<nama>; peta Asia Tenggara dan aset khusus T02 belum ada di mesin diorama.
 - 2026-11-24: Siklus 001 riset viral selesai untuk seluruh sprint V2 (9 outlier, 3 pola). Temuan: Behind Asia sudah membuat topik kereta bekas (302K, 10 bulan); pembeda = pembatalan impor KRL bekas 5 Nov 2026 + sumber ID + footage sendiri. 4 ide baru di backlog. Menunggu pilihan sudut.
 - 2026-11-24: Kreator memilih sudut A untuk siklus 001. Folder diganti ke 001-jakarta-refused-tokyo-trains. Status brief.
+- 2026-11-24: Siklus 001 brief + naskah selesai (58 scene, 1.384 kata EN, perkiraan 8:24, 66 sumber, anti-slop EN 39/ID 38). Kontrak visual valid (build-visual --check). Butuh 7 file footage milik kreator (02-brief.md). Menunggu persetujuan naskah.
