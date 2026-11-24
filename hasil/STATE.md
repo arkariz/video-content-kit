@@ -43,4 +43,5 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-24: Kontrak visual di 03-script.json (produksi/CONTRACT.md) dan scripts/produksi/build-visual.mjs: chat Project cukup menulis naskah beserta visual; langkah 05 sampai 07 berjalan tanpa LLM dan bisa dipakai track/agent mana pun. AGENTS.md dan CLAUDE.md diperbarui. Siklus 001 T01 dimigrasi dan hasilnya identik.
 - 2026-11-24: Pemeran dan latar T02 dibangun (STYLE.md). Footage milik kreator didukung pipeline dan dihitung QA sebagai bukti kreator. Pratinjau adegan: scripts/produksi/preview-stage.mjs.
 - 2026-11-24: Alat publish dipilih: Upload-Post. Adaptor scripts/pipeline/publish.mjs (plan, send, status) dengan penolakan tanpa persetujuan, jadwal dari TRACK.md, label AI, chapter. Belum teruji ke API sungguhan; kreator perlu membuat akun, profil, dan API key (UPLOADPOST_API_KEY, UPLOADPOST_PROFILE di .env).
+- 2026-11-24: Uji kirim Upload-Post berhasil: Short A1 T01-001 ke YouTube sebagai privat (kreator memeriksa di Studio, hasil oke). Instagram dan Facebook belum terhubung di Upload-Post, jadi belum teruji. Video uji perlu dihapus kreator di Studio.
 
