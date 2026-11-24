@@ -4,7 +4,7 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "T01: brief dan naskah long-form A (siklus 001). T02: riset viral sprint V2 (\"lanjut T02\")"
+langkah_berikutnya: "T01: produksi siklus 001 di Claude Code (ElevenLabs, Pexels/Pixabay, Remotion). T02: riset viral sprint V2 (\"lanjut T02\")"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-24
@@ -18,7 +18,7 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Naskah long-form A | 5,5 | 2026-11-24: sudut sprint V2 dipilih (opsi 1) |
+| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Produksi siklus 001 | 5,5 | 2026-11-24: naskah 001 disetujui |
 | T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | Riset viral sprint V2 | 6 | 2026-11-24: rencana V2 dikunci |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
@@ -37,3 +37,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-24: Rencana V2 T02 disetujui dan dikunci (paket 6 Shorts + 2 long-form, tayang 2026-12-07 s.d. 2026-12-27).
 - 2026-11-24: Rencana V2 T01 disetujui dan dikunci (LULUS = min. 4/6 metrik, tanpa zona gagal). Beban validasi: T01 5,5 + T02 6 = 11,5 dari 12 jam/minggu.
 - 2026-11-24: T01 riset viral sprint V2 selesai; kreator memilih semua usulan sudut (opsi 1). Siklus uji: 001 (A), 002 (B), 003 (C).
+- 2026-11-24: T01 naskah siklus 001 disetujui (master ≥ 8:00 untuk mid-roll YouTube). Berikutnya produksi di repo.

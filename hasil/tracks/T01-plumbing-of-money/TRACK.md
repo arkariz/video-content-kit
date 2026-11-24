@@ -8,7 +8,7 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "validasi V2: brief dan naskah long-form A (siklus/001-approved-not-paid, instruksi/04-naskah.md)"
+langkah_berikutnya: "validasi V2: produksi siklus 001 di repo (instruksi/05-produksi.md); target render master 8:15 sampai 8:45, wajib ≥ 8:00"
 menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
@@ -50,7 +50,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | brief | 2026-12-07 | uji-V2; file riset viral sprint ada di sini |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | produksi | 2026-12-07 | uji-V2; file riset viral sprint ada di sini |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
@@ -63,6 +63,7 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-24 | Dipilih untuk validasi | Skor niche 81/79 di analisa non-tech; kreator memilih U2-A + U1-A | analisa-niche-nontech.md |
 | 2026-11-24 | Rencana V2 disetujui dan dikunci | V1 LULUS 5/5; definisi LULUS diperjelas jadi minimal 4 dari 6 metrik tanpa zona gagal | validasi/rencana.md |
 | 2026-11-24 | Sudut sprint V2: ketiga usulan riset viral (opsi 1) | Celah authorization vs settlement (A), fee split tanpa nasihat (B), mitos asal-usul Diners Club terbukti PR (C) | siklus/001-approved-not-paid/01-riset-viral.md |
+| 2026-11-24 | Naskah 001 disetujui | Footage s23 dari Pexels/Pixabay (bukan rekaman kreator); master ≥ 8:00 untuk mid-roll YouTube; tanpa klaim kredensial di narasi | siklus/001-approved-not-paid/03-naskah.md |
 
 ## Log
 
@@ -70,3 +71,5 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Kreator menerima kapasitas di atas 10 jam/minggu. Rencana V2 diperbarui: T01 dan T02 berjalan bersamaan.
 - 2026-11-24: Kreator menyetujui rencana V2 (opsi 1), dikunci 2026-11-24. Perubahan sebelum kunci: LULUS = minimal 4 dari 6 metrik lulus tanpa metrik di zona gagal; jam_per_minggu diseragamkan ke 5,5. Tayang 2026-12-07 s.d. 2026-12-27, penilaian 2027-01-03.
 - 2026-11-24: Riset viral sprint V2 selesai (siklus/001-approved-not-paid/01-riset-viral.md). Kreator memilih opsi 1: semua usulan sudut. Judul kerja berubah, sub-sudut dan hook sesuai rencana terkunci. View count pembanding belum terverifikasi.
+- 2026-11-24: Brief dan naskah 001 (EN + ID) ditulis. Anti-slop teks EN 41/50, ID 39/50 (LULUS). Durasi ±5,5 sampai 6 menit. Menunggu persetujuan kreator.
+- 2026-11-24: Naskah 001 diperpanjang ke 53 scene (1.153 kata EN, target 8:15 sampai 8:45) dan disetujui kreator. Catatan: video ini tanpa kehadiran nyata kreator; jadwalkan di siklus 002 atau 003.
