@@ -79,3 +79,5 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Audio uji 6,40 menit < 8:00. Atas permintaan kreator: jeda 0,9 detik antar scene di render dan 5 scene isi baru (cryptogram, skor risiko, konversi mata uang, settlement bank sentral, refund). Scene dinomori ulang (58). Audio EN 7,40 menit; estimasi render ±8:17. Anti-slop scene baru belum dinilai ulang, naskah menunggu persetujuan ulang.
 - 2026-11-24: Kreator menyetujui naskah 58 scene. Scene b-roll sekarang s25, s26, s33 (kandidat footage dicari ulang).
 - 2026-11-24: Footage b-roll dipilih Claude atas permintaan kreator (Pixabay 1110, 175, 162756; tanpa wajah, lisensi di 04-assets.json dan produksi/footage-cache). Hasil pencarian kata kunci awal kurang relevan, jadi s26 dan s33 dipilih lewat pencarian ulang dengan kata kunci lebih sederhana. Kreator bisa mengganti lewat picks.json.
+- 2026-11-24: Caption EN dibuat (STT free, uji). 9 scene dikoreksi ke ejaan naskah (acquirer, angka, kode ISO); waktu kata di scene itu proporsional, bukan dari STT. Catatan: STT menangkap "acquirer" sebagai "uh kw wire", tanda pengucapan TTS untuk istilah itu perlu didengar.
+
