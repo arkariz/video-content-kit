@@ -80,4 +80,5 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Kreator menyetujui naskah 58 scene. Scene b-roll sekarang s25, s26, s33 (kandidat footage dicari ulang).
 - 2026-11-24: Footage b-roll dipilih Claude atas permintaan kreator (Pixabay 1110, 175, 162756; tanpa wajah, lisensi di 04-assets.json dan produksi/footage-cache). Hasil pencarian kata kunci awal kurang relevan, jadi s26 dan s33 dipilih lewat pencarian ulang dengan kata kunci lebih sederhana. Kreator bisa mengganti lewat picks.json.
 - 2026-11-24: Caption EN dibuat (STT free, uji). 9 scene dikoreksi ke ejaan naskah (acquirer, angka, kode ISO); waktu kata di scene itu proporsional, bukan dari STT. Catatan: STT menangkap "acquirer" sebagai "uh kw wire", tanda pengucapan TTS untuk istilah itu perlu didengar.
+- 2026-11-24: Render master uji (Master16x9-en.mp4, 3,5 menit render): durasi 8:17, memenuhi syarat ≥ 8:00. Visual masih kartu teks placeholder; suara dan caption uji (free).
 
