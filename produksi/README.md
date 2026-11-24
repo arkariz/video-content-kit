@@ -19,6 +19,10 @@ node scripts/produksi/render.mjs --track T01 --siklus 001 --comp Short9x16 --cut
 
 Catatan: caption dibuat per scene (waktu relatif scene), bukan dari audio gabungan. Preview satu scene: `--still s10,s19` (PNG di `render/<ID>/<siklus>/stills/`).
 
+## Gaya visual
+
+Gaya kartun penjelasan berlaku untuk semua track: lihat `produksi/STYLE.md` (pemeran, latar, spec adegan `04-stage.json`). Spec data di bawah menjadi papan sisipan di dalam adegan.
+
 ## Visual berbasis spec
 
 Isi tiap scene non-b-roll dibaca dari `hasil/tracks/<ID>/siklus/<NNN>/04-visual-spec.json` (kunci = id scene). Komponen dipilih dari `kind`, bukan dari tipe di `03-script.json`, dan dipakai ulang lintas track (gaya per track di `src/themes/`). Isi diukur lalu diskalakan otomatis agar pas layar 16:9 maupun 9:16.

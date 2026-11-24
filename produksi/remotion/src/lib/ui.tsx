@@ -14,7 +14,7 @@ export const toneColor = (tone: Tone | undefined, t: Theme) => ({ default: t.fg,
 export const useSize = () => { const { width, height } = useVideoConfig(); return { width, height }; };
 
 export const Box: React.FC<{ t: Theme; tone?: Tone; a?: number; w?: number | string; pad?: number; dashed?: boolean; style?: React.CSSProperties; children: React.ReactNode }> = ({ t, tone, a = 1, w, pad = 28, dashed, style, children }) => (
-  <div style={{ width: w, boxSizing: "border-box", padding: pad, borderRadius: 22, background: t.panel, border: `4px ${dashed ? "dashed" : "solid"} ${toneColor(tone, t)}`, opacity: a, transform: `translateY(${(1 - a) * 24}px)`, color: t.fg, textAlign: "center", ...style }}>{children}</div>
+  <div style={{ width: w, boxSizing: "border-box", padding: pad, borderRadius: 22, background: t.panel, border: `6px ${dashed ? "dashed" : "solid"} ${tone && tone !== "default" ? toneColor(tone, t) : "#1b1b1b"}`, boxShadow: "5px 6px 0 #1b1b1b", opacity: a, transform: `translateY(${(1 - a) * 24}px)`, color: t.fg, textAlign: "center", ...style }}>{children}</div>
 );
 
 export const Arrow: React.FC<{ t: Theme; label?: string; a?: number; vertical?: boolean; broken?: boolean; back?: boolean; len?: number; fs?: number }> = ({ t, label, a = 1, vertical, broken, back, len = 130, fs = 30 }) => {

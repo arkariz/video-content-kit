@@ -5,7 +5,8 @@ export type SceneProps = {
   type: string;            // remotion-diagram | remotion-code | remotion-data | remotion-text | broll
   text: string;            // on_screen_text
   description: string;
-  spec?: any;              // data visual per scene (lihat produksi/README.md)
+  spec?: any;
+  stage?: any;             // adegan kartun per scene (04-stage.json)              // data visual per scene (lihat produksi/README.md)
   audio?: string;          // path relatif ke public-dir (produksi/)
   audioFrames: number;     // panjang suara; animasi selesai di sini
   durationFrames: number;  // audioFrames + jeda

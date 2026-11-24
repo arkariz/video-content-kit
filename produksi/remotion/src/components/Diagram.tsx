@@ -51,7 +51,7 @@ export const Timeline: React.FC<VProps> = ({ spec, p, vertical, t }) => {
         const a = appear(p, i, b.length), lit = x.tone === "lit" || x.tone === "hot";
         return (
           <Box key={i} t={t} tone={x.tone === "hot" ? "hot" : lit ? "good" : "muted"} a={a * (lit ? 1 : 0.45)} w={vertical ? 800 : undefined} style={{ flex: 1, minWidth: 190, display: "flex", flexDirection: "column", justifyContent: "center", gap: 10, minHeight: 150, boxShadow: lit ? `0 0 40px ${x.tone === "hot" ? t.accent : t.good}55` : undefined }}>
-            <div style={{ fontSize: 42, fontWeight: 800 }}>{x.title}</div>
+            <div style={{ fontSize: 36, fontWeight: 800 }}>{x.title}</div>
             {x.sub && <div style={{ fontSize: 30, color: lit ? t.fg : t.muted }}>{x.sub}</div>}
           </Box>
         );
@@ -132,9 +132,9 @@ export const Stamp: React.FC<VProps> = ({ spec, p, vertical, t }) => {
   const sa = ease((p - 0.4) / 0.12), pop = 1.35 - 0.35 * sa;
   return (
     <div style={{ display: "flex", flexDirection: vertical ? "column" : "row", gap: 48, justifyContent: "center", alignItems: "center" }}>
-      <Box t={t} tone="muted" w={vertical ? 860 : 900} pad={36} style={{ background: "#0a121f", minHeight: 330, display: "flex", flexDirection: "column", justifyContent: "center", gap: 18 }}>
+      <Box t={t} tone="muted" w={vertical ? 860 : 900} pad={36} style={{ background: t.screenBg, minHeight: 330, display: "flex", flexDirection: "column", justifyContent: "center", gap: 18 }}>
         {(spec.chips ?? []).length > 0 && <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>{spec.chips.map((c: string, i: number) => <Pill key={i} t={t} mono tone="muted" a={appear(p, i, 4)}>{c}</Pill>)}</div>}
-        {(spec.lines ?? []).map((l: string, i: number) => <div key={i} style={{ fontFamily: t.mono, fontSize: 36, color: t.muted, opacity: appear(p, i, 4) }}>{l}</div>)}
+        {(spec.lines ?? []).map((l: string, i: number) => <div key={i} style={{ fontFamily: t.mono, fontSize: 36, color: t.screenMuted, opacity: appear(p, i, 4) }}>{l}</div>)}
         <div style={{ opacity: sa, transform: `scale(${pop}) rotate(${-3 * sa}deg)`, fontSize: 96, fontWeight: 900, letterSpacing: 4, color: toneColor(spec.tone ?? "good", t), border: `8px solid ${toneColor(spec.tone ?? "good", t)}`, borderRadius: 16, padding: "6px 28px", alignSelf: "center" }}>{spec.stamp}</div>
       </Box>
       {spec.side && (
