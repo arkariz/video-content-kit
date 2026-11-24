@@ -1,6 +1,6 @@
 # Naskah: siklus 001-approved-not-paid (T01, uji-V2 variasi A)
 
-Tanggal: 2026-11-24 · Status: diperpanjang 2026-11-24 (5 scene baru: s06, s18, s40, s49, s56), menunggu persetujuan ulang · Kata EN: 1334 · Kata ID: 1114
+Tanggal: 2026-11-24 · Status: disetujui kreator 2026-11-24 (versi 58 scene) · Kata EN: 1334 · Kata ID: 1114
 
 **Janji:** After watching, you can tell which system created each line in your bank app (pending, posted, or the one that disappears) and why the shop gets paid days after you tap.
 

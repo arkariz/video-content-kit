@@ -50,7 +50,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | naskah | 2026-12-07 | uji-V2; naskah diperpanjang ke 58 scene, menunggu persetujuan ulang |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | produksi | 2026-12-07 | uji-V2; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage belum dipilih |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
@@ -64,6 +64,7 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-24 | Rencana V2 disetujui dan dikunci | V1 LULUS 5/5; definisi LULUS diperjelas jadi minimal 4 dari 6 metrik tanpa zona gagal | validasi/rencana.md |
 | 2026-11-24 | Sudut sprint V2: ketiga usulan riset viral (opsi 1) | Celah authorization vs settlement (A), fee split tanpa nasihat (B), mitos asal-usul Diners Club terbukti PR (C) | siklus/001-approved-not-paid/01-riset-viral.md |
 | 2026-11-24 | Naskah 001 disetujui | Footage s23 dari Pexels/Pixabay (bukan rekaman kreator); master ≥ 8:00 untuk mid-roll YouTube; tanpa klaim kredensial di narasi | siklus/001-approved-not-paid/03-naskah.md |
+| 2026-11-24 | Naskah 001 versi 58 scene disetujui | Audio uji 6,40 menit < 8:00; ditambah 5 scene isi dan jeda 0,9 detik (estimasi render ±8:17) | siklus/001-approved-not-paid/03-naskah.md |
 
 ## Log
 
@@ -76,3 +77,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Kerangka produksi bersama dibangun (produksi/remotion, scripts/produksi/*, katalog footage). Render uji OK. Belum ada audio/footage siklus 001.
 - 2026-11-24: Produksi 001: kandidat footage dicari (3 scene b-roll, Pixabay), TTS EN penuh dibuat dengan akun free (uji, bukan final; ulang dengan paket berbayar). Total audio EN 6,40 menit, di bawah target master ≥ 8:00. Menunggu pilihan footage dan keputusan durasi.
 - 2026-11-24: Audio uji 6,40 menit < 8:00. Atas permintaan kreator: jeda 0,9 detik antar scene di render dan 5 scene isi baru (cryptogram, skor risiko, konversi mata uang, settlement bank sentral, refund). Scene dinomori ulang (58). Audio EN 7,40 menit; estimasi render ±8:17. Anti-slop scene baru belum dinilai ulang, naskah menunggu persetujuan ulang.
+- 2026-11-24: Kreator menyetujui naskah 58 scene. Scene b-roll sekarang s25, s26, s33 (kandidat footage dicari ulang).
