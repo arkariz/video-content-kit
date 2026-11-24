@@ -8,8 +8,8 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "perbaiki temuan QA 001 (05-qa.md T1 sampai T11), lalu QA ulang; master wajib tetap ≥ 8:00"
-menunggu_keputusan: "QA 001 GAGAL (T1 bukti kreator di layar): 1) rekam bukti sendiri 15-30 detik sebelum 2:29 (rekomendasi), 2) suara kreator sendiri + artefak disamarkan, 3) pengecualian tertulis untuk 001 dengan syarat 002/003 memuat kehadiran nyata"
+langkah_berikutnya: "perbaiki temuan QA 001 selain T1 (T2 sampai T11 di 05-qa.md), lalu QA ulang; T1 (bukti kreator) ditunda kreator, publish tetap tertahan sampai T1 diputuskan; master wajib tetap ≥ 8:00"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -84,4 +84,5 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Visual Remotion dibangun: komponen Diagram, Code, Data berbasis spec (produksi/remotion/src/components, spec 55 scene di siklus/001-approved-not-paid/04-visual-spec.json). Render ulang master 8:17 dan 2 Shorts EN (A1 36 detik, A2 35 detik). Belum ada: klip footage tambahan di scene diagram, versi audio ID, thumbnail, voice berbayar, QA anti-slop.
 - 2026-11-24: Revisi gaya visual ke kartun penjelasan (referensi: OverSimplified, ditiru bahasa visualnya saja): tokoh berwajah (Terminal, Acquirer, Network, Issuer, Bank Sentral, You, Shop Owner), latar ilustrasi, bubble dialog, paket pesan terbang, stempel, kamera bergerak, efek suara sintesis orisinal, subtitle berkontur. Diagram/Code/Data jadi papan sisipan. Spec adegan 58 scene di siklus/001-approved-not-paid/04-stage.json; panduan lintas track di produksi/STYLE.md. Master 8:17 dan 2 Shorts dirender ulang. Bubble baru perlu lolos anti-slop.
 - 2026-11-24: QA anti-slop 001: GAGAL. Teks EN 37/50, ID 36/50 (lulus). Kritis: tidak ada bukti nyata kreator di layar (T1) dan dugaan salah ucap "acquirer" (T2). Sedang: sumber klaim, re-hook pertama terlambat (3:12), jeda seragam, bubble yang mengulang narasi, thumbnail. Laporan di siklus/001-approved-not-paid/05-qa.md.
+- 2026-11-24: Kreator menunda keputusan T1 (bukti nyata kreator di layar). QA 001 tetap GAGAL dan publish tertahan. Pekerjaan lain (T2 sampai T11) jalan dulu.
 
