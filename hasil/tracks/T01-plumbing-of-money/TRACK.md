@@ -6,10 +6,10 @@ sudut: "The plumbing of money: apa yang terjadi di balik kartu, transfer, QR, da
 tahap: validasi
 channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
-jam_per_minggu: 5
+jam_per_minggu: 5.5
 siklus_aktif: null
-langkah_berikutnya: "validasi V2: kreator menyetujui rencana V2 dan ambangnya (validasi/rencana.md), lalu riset konten viral sekali untuk sprint"
-menunggu_keputusan: "Setujui rencana V2 (validasi/rencana.md): paket 6 Shorts + 2 long-form, variasi A/B/C, ambang default, tayang 2026-12-07 s.d. 2026-12-27, berjalan bersamaan dengan V2 T02"
+langkah_berikutnya: "validasi V2: riset konten viral sekali untuk seluruh sprint (instruksi/03-riset-konten-viral.md), lalu brief dan naskah long-form A"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -58,8 +58,10 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | Tanggal | Keputusan | Alasan (data) | Sumber |
 | --- | --- | --- | --- |
 | 2026-11-24 | Dipilih untuk validasi | Skor niche 81/79 di analisa non-tech; kreator memilih U2-A + U1-A | analisa-niche-nontech.md |
+| 2026-11-24 | Rencana V2 disetujui dan dikunci | V1 LULUS 5/5; definisi LULUS diperjelas jadi minimal 4 dari 6 metrik tanpa zona gagal | validasi/rencana.md |
 
 ## Log
 
 - 2026-11-24: Track dibuat dari usulan U2-A (analisa-niche-nontech.md). Tahap validasi. V1 dinilai: LULUS (lihat validasi/rencana.md). Rencana V2 disusun, menunggu persetujuan kreator.
 - 2026-11-24: Kreator menerima kapasitas di atas 10 jam/minggu. Rencana V2 diperbarui: T01 dan T02 berjalan bersamaan.
+- 2026-11-24: Kreator menyetujui rencana V2 (opsi 1), dikunci 2026-11-24. Perubahan sebelum kunci: LULUS = minimal 4 dari 6 metrik lulus tanpa metrik di zona gagal; jam_per_minggu diseragamkan ke 5,5. Tayang 2026-12-07 s.d. 2026-12-27, penilaian 2027-01-03.

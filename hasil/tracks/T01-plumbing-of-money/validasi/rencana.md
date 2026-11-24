@@ -1,5 +1,7 @@
 # Rencana validasi: T01
 
+**Dikunci: 2026-11-24 (disetujui kreator). Paket, variasi, tanggal, ambang, dan aturan keputusan di file ini tidak boleh diubah lagi.**
+
 Ditulis: 2026-11-24 · Status: **DRAF, belum dikunci.** Dikunci setelah kreator menyetujui V2. Setelah dikunci, kriteria tidak diubah lagi, apa pun datanya.
 
 ## Hipotesis yang diuji
@@ -52,11 +54,11 @@ Variasi pemenang ditentukan dari median viewed vs swiped (Shorts) dan average pe
 
 ## Aturan keputusan
 
-- **Lulus** (mayoritas metrik lulus dan tidak ada metrik di zona gagal): track masuk tahap `aktif`.
+- **Lulus** (minimal 4 dari 6 metrik lulus dan tidak ada metrik di zona gagal): track masuk tahap `aktif`.
 - **Gagal** (2 metrik atau lebih di zona gagal): `drop`, atau ajukan pivot sudut sebagai track baru.
 - **Di tengah**: perpanjang 1 sprint dengan perubahan yang spesifik, atau pivot sudut.
 
-Angka ambang ini titik awal untuk channel baru. Sesuaikan setelah ada data dari 2 track atau lebih, lalu catat perubahannya di `learnings-global.md`.
+Angka ambang ini titik awal untuk channel baru. Penyesuaian hanya berlaku untuk rencana validasi track berikutnya (bukan sprint ini), setelah ada data dari 2 track atau lebih, dan dicatat di `learnings-global.md`.
 
 ## Kapasitas
 
