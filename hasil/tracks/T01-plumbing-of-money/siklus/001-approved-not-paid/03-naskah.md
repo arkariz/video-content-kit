@@ -1,6 +1,6 @@
 # Naskah: siklus 001-approved-not-paid (T01, uji-V2 variasi A)
 
-Tanggal: 2026-11-24 · Status: menunggu persetujuan kreator · Kata EN: 1153 (±7.7 menit pada 150 wpm) · Kata ID: 965
+Tanggal: 2026-11-24 · Status: diperpanjang 2026-11-24 (5 scene baru: s06, s18, s40, s49, s56), menunggu persetujuan ulang · Kata EN: 1334 · Kata ID: 1114
 
 **Janji:** After watching, you can tell which system created each line in your bank app (pending, posted, or the one that disappears) and why the shop gets paid days after you tap.
 
@@ -55,13 +55,21 @@ Visual: Cryptogram disalin, dikirim ulang, dicap REJECTED
 
 ### s06 · body · remotion-diagram
 
+EN: That code is called a cryptogram. The chip, or your phone, computes it from a secret key that never leaves the device, plus the amount and a running counter. Your bank holds the matching key, so it can check the math.
+
+ID: Kode itu disebut cryptogram. Chip, atau ponselmu, menghitungnya dari kunci rahasia yang tidak pernah keluar dari perangkat, ditambah jumlah transaksi dan sebuah penghitung. Bank-mu menyimpan kunci pasangannya, jadi bisa memeriksa hitungannya.
+
+Visual: Kunci di dalam chip + jumlah + penghitung masuk ke satu kotak, keluar kode; bank di sisi lain memegang kunci pasangan dan mencocokkan hasilnya
+
+### s07 · body · remotion-diagram
+
 EN: Pay with your phone, and the terminal never sees your real card number. It gets a token, a stand-in number that only works from that device.
 
 ID: Kalau bayar pakai HP, terminal bahkan tidak pernah melihat nomor kartu aslimu. Yang dikirim token, nomor pengganti yang cuma berlaku dari HP itu.
 
 Visual: Nomor kartu asli disamarkan; token berbeda dikirim dari HP · Teks layar: "token ≠ card number"
 
-### s07 · body · remotion-diagram
+### s08 · body · remotion-diagram
 
 EN: If a shop's system gets hacked, a stolen token is useless anywhere else.
 
@@ -69,7 +77,7 @@ ID: Kalau sistem toko dibobol, token yang dicuri tidak bisa dipakai di tempat la
 
 Visual: Token curian dicoba di toko lain lalu ditolak
 
-### s08 · body · remotion-diagram
+### s09 · body · remotion-diagram
 
 EN: The terminal passes everything to the shop's bank, called the acquirer. The acquirer doesn't know you. It only knows where to send the question.
 
@@ -77,7 +85,7 @@ ID: Terminal meneruskan semuanya ke bank milik toko, namanya acquirer. Acquirer 
 
 Visual: Terminal → Acquirer · Teks layar: "ACQUIRER = the shop's bank"
 
-### s09 · body · remotion-diagram
+### s10 · body · remotion-diagram
 
 EN: It sends it to the card network, Visa or Mastercard. The network reads the first six to eight digits of the card number, finds the bank that issued it, and forwards the message.
 
@@ -85,7 +93,7 @@ ID: Acquirer mengirimnya ke jaringan kartu, Visa atau Mastercard. Jaringan memba
 
 Visual: Acquirer → Network; 6 sampai 8 digit pertama disorot (BIN) → Issuer · Teks layar: "BIN = first 6–8 digits"
 
-### s10 · body · remotion-diagram
+### s11 · body · remotion-diagram
 
 EN: The network holds none of your money and lends you nothing. It carries messages, and charges a small fee on each one.
 
@@ -93,7 +101,7 @@ ID: Jaringan kartu tidak menyimpan uangmu dan tidak meminjamkan apa pun. Ia meng
 
 Visual: Network digambar sebagai jalur pesan, ikon biaya kecil per pesan · Teks layar: "network = messages, not money"
 
-### s11 · body · remotion-code
+### s12 · body · remotion-code
 
 EN: Banks have passed these messages in the same format since 1987. It's called ISO 8583.
 
@@ -101,7 +109,7 @@ ID: Bank memakai format pesan yang sama sejak 1987. Namanya ISO 8583.
 
 Visual: Pesan ISO 8583 contoh (data fiktif), field ditampilkan satu per satu · Teks layar: "ISO 8583 (1987)"
 
-### s12 · body · remotion-code
+### s13 · body · remotion-code
 
 EN: The first four digits say what kind of message it is. Zero one zero zero means: may I charge this card?
 
@@ -109,7 +117,7 @@ ID: Empat digit pertama menyatakan jenis pesan. Nol satu nol nol artinya: boleh 
 
 Visual: MTI 0100 disorot · Teks layar: "MTI 0100 = authorization request"
 
-### s13 · body · remotion-code
+### s14 · body · remotion-code
 
 EN: Then come numbered fields. Field 2 is the card number. Field 4 is the amount. Field 49 is the currency.
 
@@ -117,7 +125,7 @@ ID: Setelah itu field bernomor. Field 2 nomor kartu. Field 4 jumlahnya. Field 49
 
 Visual: Field 2, 4, 49 disorot berurutan (nomor kartu fiktif) · Teks layar: "DE2 · DE4 · DE49"
 
-### s14 · body · remotion-diagram
+### s15 · body · remotion-diagram
 
 EN: Your bank, the issuer, now has well under a second to decide.
 
@@ -125,7 +133,7 @@ ID: Bank kamu, si issuer, sekarang punya waktu kurang dari satu detik untuk memu
 
 Visual: Issuer disorot; penghitung waktu berjalan
 
-### s15 · body · remotion-diagram
+### s16 · body · remotion-diagram
 
 EN: It checks that the card is real, that the one-time code matches, that the purchase doesn't look like fraud, and that you have the money or the credit.
 
@@ -133,7 +141,7 @@ ID: Issuer mengecek kartunya asli, kode sekali pakainya cocok, transaksinya tida
 
 Visual: Empat centang muncul satu per satu
 
-### s16 · body · remotion-diagram
+### s17 · body · remotion-diagram
 
 EN: The fraud check compares this purchase with your history: where you usually shop, at what time, and for how much.
 
@@ -141,7 +149,15 @@ ID: Cek fraud membandingkan transaksi ini dengan riwayatmu: biasanya belanja di 
 
 Visual: Titik transaksi baru dibandingkan pola riwayat
 
-### s17 · body · remotion-code
+### s18 · body · remotion-diagram
+
+EN: Many banks turn all of that into a risk score. A low score is approved at once. A middle score might send you a text asking if it was you. A high score is declined. That's why a trip abroad can suddenly stop your card.
+
+ID: Banyak bank mengubah semua pemeriksaan itu jadi skor risiko. Skor rendah langsung disetujui. Skor menengah bisa memicu SMS yang menanyakan apakah itu kamu. Skor tinggi ditolak. Makanya kartu bisa mendadak mati saat kamu bepergian ke luar negeri.
+
+Visual: Bar skor risiko tiga zona: approve, tanya pemilik, tolak; pembelian di negara lain mendorong jarum ke zona tengah
+
+### s19 · body · remotion-code
 
 EN: If everything passes, it replies with message zero one one zero, and field 39 set to two zeros. Two zeros means approved.
 
@@ -149,7 +165,7 @@ ID: Kalau semua lolos, issuer membalas dengan pesan nol satu satu nol, dan field
 
 Visual: MTI 0110, DE39 = 00 · Teks layar: "DE39 = 00 → approved"
 
-### s18 · body · remotion-code
+### s20 · body · remotion-code
 
 EN: Field 38 carries a six-character approval code. The shop keeps it. For now, it's the only thing the shop has.
 
@@ -157,7 +173,7 @@ ID: Field 38 membawa kode approval enam karakter. Toko menyimpannya. Untuk sekar
 
 Visual: DE38 kode fiktif A1B2C3 · Teks layar: "DE38 = approval code"
 
-### s19 · body · remotion-code
+### s21 · body · remotion-code
 
 EN: When the answer is no, field 39 carries a different code. Fifty-one means insufficient funds. Zero five means do not honor: the bank says no without saying why.
 
@@ -165,7 +181,7 @@ ID: Kalau jawabannya tidak, field 39 berisi kode lain. Lima puluh satu artinya s
 
 Visual: DE39 = 51 lalu DE39 = 05 · Teks layar: "51 insufficient funds · 05 do not honor"
 
-### s20 · body · remotion-diagram
+### s22 · body · remotion-diagram
 
 EN: The terminal usually shows one word for both: declined. The real reason stays inside the message, which is why the cashier can't tell you what went wrong.
 
@@ -173,7 +189,7 @@ ID: Terminal biasanya menampilkan satu kata untuk keduanya: declined. Alasan seb
 
 Visual: Dua kode berbeda menghasilkan layar terminal yang sama: DECLINED
 
-### s21 · rehook · remotion-data
+### s23 · rehook · remotion-data
 
 EN: On a yes, that reply is the beep you hear. Now count the money that moved between banks. Zero.
 
@@ -181,7 +197,7 @@ ID: Kalau disetujui, balasan itulah bunyi bip yang kamu dengar. Sekarang hitung 
 
 Visual: Penghitung transfer antar bank: $0.00 · Teks layar: "money moved: $0.00"
 
-### s22 · body · remotion-data
+### s24 · body · remotion-data
 
 EN: Instead, your bank put a hold on five dollars. Your available balance went down by five. Your actual balance stayed the same.
 
@@ -189,7 +205,7 @@ ID: Yang dilakukan bank kamu adalah menahan lima dolar. Saldo tersedia turun lim
 
 Visual: Dua angka: Available $95, Balance $100 · Teks layar: "available ≠ balance"
 
-### s23 · body · broll
+### s25 · body · broll
 
 EN: That hold is the pending line in your app. In most banking apps, pending and posted come from two different records, which is why the name or the amount can change between them.
 
@@ -197,7 +213,7 @@ ID: Hold itu yang muncul sebagai baris pending di aplikasimu. Di kebanyakan apli
 
 Visual: B-roll berlisensi Pexels/Pixabay: tangan menggulir aplikasi bank (UI fiktif, tanpa logo bank nyata), ditimpa overlay Remotion: baris pending berubah jadi posted dengan nama merchant berubah · Teks layar: "pending = authorization record"
 
-### s24 · body · broll
+### s26 · body · broll
 
 EN: Gas pumps and hotels often hold more than you'll spend, because they don't know the final amount yet.
 
@@ -205,7 +221,7 @@ ID: Pom bensin dan hotel sering menahan lebih dari yang akan kamu belanjakan, ka
 
 Visual: Pom bensin, meja resepsionis hotel · Teks layar: "hold > final amount"
 
-### s25 · body · remotion-diagram
+### s27 · body · remotion-diagram
 
 EN: A hotel can also raise the hold during your stay, and the final charge can clear for more than was approved. Card rules allow that for hotels, car rentals, and restaurants, not for an ordinary shop.
 
@@ -213,7 +229,7 @@ ID: Hotel juga bisa menaikkan hold selama kamu menginap, dan tagihan akhirnya bo
 
 Visual: Hold hotel naik bertahap; label kategori hospitality
 
-### s26 · body · remotion-diagram
+### s28 · body · remotion-diagram
 
 EN: If the shop never follows up, the hold expires, usually within a few days to a week for a purchase like this. That's the pending charge that disappears.
 
@@ -221,7 +237,7 @@ ID: Kalau toko tidak pernah menindaklanjuti, hold-nya kedaluwarsa, biasanya bebe
 
 Visual: Baris pending memudar dan hilang setelah penghitung hari
 
-### s27 · rehook · remotion-diagram
+### s29 · rehook · remotion-diagram
 
 EN: Then there's the charge that shows up twice.
 
@@ -229,7 +245,7 @@ ID: Lalu ada transaksi yang muncul dua kali.
 
 Visual: Dua baris pending identik
 
-### s28 · body · remotion-diagram
+### s30 · body · remotion-diagram
 
 EN: Sometimes the request reaches your bank, but the reply gets lost on the way back. The terminal can't tell whether you were approved, so it asks again.
 
@@ -237,7 +253,7 @@ ID: Kadang permintaan sampai ke bank, tapi balasannya hilang di jalan. Terminal 
 
 Visual: Pesan 0110 hilang di tengah jalan; terminal mengirim 0100 kedua
 
-### s29 · body · remotion-data
+### s31 · body · remotion-data
 
 EN: Your bank said yes both times. Two holds, one coffee.
 
@@ -245,7 +261,7 @@ ID: Bank kamu menjawab ya dua kali. Dua hold, satu kopi.
 
 Visual: Available $90 setelah dua hold $5
 
-### s30 · body · remotion-code
+### s32 · body · remotion-code
 
 EN: To clean it up, the terminal sends a reversal, a message in the zero four hundred family that tells your bank to drop the first hold. Until it arrives, you see the same charge twice.
 
@@ -253,7 +269,7 @@ ID: Untuk membereskannya, terminal mengirim reversal, pesan keluarga nol empat r
 
 Visual: MTI 0400/0420 reversal; satu baris pending dicoret · Teks layar: "reversal: MTI 04xx"
 
-### s31 · rehook · broll
+### s33 · rehook · broll
 
 EN: Sometimes the bank doesn't see the purchase at all until hours later.
 
@@ -261,7 +277,7 @@ ID: Kadang bank baru tahu ada transaksi itu beberapa jam kemudian.
 
 Visual: Troli penjualan di kabin pesawat
 
-### s32 · body · remotion-diagram
+### s34 · body · remotion-diagram
 
 EN: On a flight with no connection, the card and the terminal approve the purchase offline, using a spending limit the bank wrote onto the chip.
 
@@ -269,7 +285,7 @@ ID: Di penerbangan tanpa koneksi, kartu dan terminal menyetujui transaksi secara
 
 Visual: Kartu ↔ terminal saja; jalur ke bank terputus; label offline limit · Teks layar: "offline approval"
 
-### s33 · body · remotion-diagram
+### s35 · body · remotion-diagram
 
 EN: The bank finds out after landing, when the airline uploads the sales. If the card is no good by then, the airline usually takes the loss.
 
@@ -277,7 +293,7 @@ ID: Bank baru tahu setelah mendarat, saat maskapai mengunggah data penjualan. Ka
 
 Visual: Pesawat mendarat; batch transaksi terkirim; satu ditolak
 
-### s34 · body · remotion-data
+### s36 · body · remotion-data
 
 EN: That's also why some airlines cap what you can buy on board. A higher limit means a bigger possible loss.
 
@@ -285,7 +301,7 @@ ID: Itu juga alasan sebagian maskapai membatasi nilai belanja di pesawat. Batas 
 
 Visual: Batas belanja di kabin vs potensi kerugian
 
-### s35 · body · remotion-diagram
+### s37 · body · remotion-diagram
 
 EN: Back on the ground, the coffee shop gets paid through clearing. At the end of the day, its terminal sends every sale in one batch.
 
@@ -293,7 +309,7 @@ ID: Kembali ke darat, kedai kopi dibayar lewat clearing. Di akhir hari, terminal
 
 Visual: Banyak transaksi masuk ke satu amplop batch → acquirer · Teks layar: "end-of-day batch"
 
-### s36 · body · remotion-diagram
+### s38 · body · remotion-diagram
 
 EN: Each record carries its approval code, so the network can match it to the approval from this morning.
 
@@ -301,7 +317,7 @@ ID: Setiap record membawa kode approval-nya, jadi jaringan bisa mencocokkannya d
 
 Visual: Record clearing dicocokkan dengan DE38 A1B2C3
 
-### s37 · body · remotion-data
+### s39 · body · remotion-data
 
 EN: The amount doesn't have to match. At a restaurant, the card is approved for the bill, and the tip gets added before the batch goes out.
 
@@ -309,7 +325,15 @@ ID: Jumlahnya tidak harus sama. Di restoran, kartu di-approve sebesar tagihan, l
 
 Visual: Approved $40.00 → cleared $46.00 (+tip) · Teks layar: "approved $40 · cleared $46"
 
-### s38 · body · remotion-diagram
+### s40 · body · remotion-data
+
+EN: Pay in another currency and the amount changes again. The conversion usually happens when the purchase clears, so the posted amount can differ from what the terminal showed.
+
+ID: Bayar dalam mata uang lain dan jumlahnya berubah lagi. Konversinya biasanya terjadi saat transaksi di-clearing, jadi jumlah yang posted bisa beda dari yang tampil di terminal.
+
+Visual: Dua angka bersebelahan: jumlah di terminal (mata uang asing) dan jumlah posted (mata uang rekening), dengan panah konversi bertanda 'saat clearing'
+
+### s41 · body · remotion-diagram
 
 EN: When the cleared record reaches your bank, the hold turns into a real charge. Pending becomes posted, sometimes with a different amount.
 
@@ -317,7 +341,7 @@ ID: Begitu record clearing sampai ke bank kamu, hold berubah jadi tagihan sunggu
 
 Visual: Baris pending berubah jadi posted · Teks layar: "pending → posted"
 
-### s39 · body · remotion-diagram
+### s42 · body · remotion-diagram
 
 EN: Everything so far is the dual-message path: one message to approve, a second record to charge. Most credit card purchases go this way.
 
@@ -325,7 +349,7 @@ ID: Semua tadi adalah jalur dual-message: satu pesan untuk approve, satu record 
 
 Visual: Dua jalur: dual-message (approve + clear) dan single-message · Teks layar: "dual-message"
 
-### s40 · body · remotion-code
+### s43 · body · remotion-code
 
 EN: Some debit payments use a single message. In the US, when you type your PIN at checkout, message zero two zero zero approves and charges in one go.
 
@@ -333,7 +357,7 @@ ID: Sebagian pembayaran debit memakai satu pesan saja. Di Amerika, saat kamu men
 
 Visual: MTI 0200 financial request · Teks layar: "single-message: MTI 0200"
 
-### s41 · body · remotion-diagram
+### s44 · body · remotion-diagram
 
 EN: There's no separate clearing record to wait for, so the charge posts sooner. The shop still waits for settlement like everyone else.
 
@@ -341,7 +365,7 @@ ID: Tidak ada record clearing terpisah yang perlu ditunggu, jadi tagihannya lebi
 
 Visual: Jalur single-message langsung posted; jalur settlement tetap
 
-### s42 · rehook · remotion-data
+### s45 · rehook · remotion-data
 
 EN: You've now been charged. The coffee shop still has no money. That's the third system's job.
 
@@ -349,7 +373,7 @@ ID: Kamu sekarang sudah ditagih. Kedai kopinya tetap belum pegang uang. Itu tuga
 
 Visual: Your account −$5 · shop received $0.00
 
-### s43 · body · remotion-diagram
+### s46 · body · remotion-diagram
 
 EN: The network adds up every cleared purchase between every pair of banks, then nets them out.
 
@@ -357,7 +381,7 @@ ID: Jaringan menjumlahkan semua transaksi yang sudah clearing antara setiap pasa
 
 Visual: Matriks bank × bank dengan angka, dipadatkan jadi satu angka bersih per bank · Teks layar: "netting"
 
-### s44 · body · remotion-data
+### s47 · body · remotion-data
 
 EN: Without netting, every purchase would be its own transfer between banks: hundreds of millions of tiny payments a day.
 
@@ -365,7 +389,7 @@ ID: Tanpa netting, setiap transaksi jadi transfer sendiri antar bank: ratusan ju
 
 Visual: Ribuan panah kecil antar bank, dipadatkan jadi beberapa panah besar
 
-### s45 · body · remotion-data
+### s48 · body · remotion-data
 
 EN: Your bank sends one total for millions of purchases, minus what other banks owe it. Your five dollars is a tiny part of that number.
 
@@ -373,7 +397,15 @@ ID: Bank kamu mengirim satu total untuk jutaan transaksi, dikurangi yang harus d
 
 Visual: Satu angka besar; $5 disorot sebagai titik kecil
 
-### s46 · body · remotion-diagram
+### s49 · body · remotion-diagram
+
+EN: Those totals are settled between banks in one shared place, often accounts at the central bank. Money moves between those accounts once or a few times a day, not once per purchase.
+
+ID: Total itu diselesaikan antarbank di satu tempat bersama, sering berupa rekening di bank sentral. Uang berpindah antar rekening itu sekali atau beberapa kali sehari, bukan sekali per pembelian.
+
+Visual: Banyak bank menunjuk ke satu kotak rekening bank sentral; satu panah total per bank per siklus, bukan jutaan panah kecil
+
+### s50 · body · remotion-diagram
 
 EN: Then the acquirer pays the coffee shop, usually one to three business days after the sale.
 
@@ -381,7 +413,7 @@ ID: Lalu acquirer membayar kedai kopi, biasanya satu sampai tiga hari kerja sete
 
 Visual: Acquirer → rekening toko; kalender maju 1 sampai 3 hari kerja · Teks layar: "T+1 to T+3"
 
-### s47 · body · remotion-diagram
+### s51 · body · remotion-diagram
 
 EN: Settlement runs on business days. A purchase on Friday night often reaches the shop's account on Monday or Tuesday.
 
@@ -389,7 +421,7 @@ ID: Settlement berjalan di hari kerja. Belanja Jumat malam sering baru masuk ke 
 
 Visual: Kalender: Jumat ke Senin/Selasa, akhir pekan dilewati
 
-### s48 · body · remotion-data
+### s52 · body · remotion-data
 
 EN: Fees come out before that money lands, so the shop gets less than five dollars.
 
@@ -397,7 +429,7 @@ ID: Biaya dipotong sebelum uangnya masuk, jadi toko menerima kurang dari lima do
 
 Visual: $5.00 → $4.xx; selisih diberi tanda tanya · Teks layar: "shop gets < $5.00"
 
-### s49 · body · remotion-data
+### s53 · body · remotion-data
 
 EN: The shop usually sees them as one percentage on a monthly statement from its acquirer, with several smaller fees folded inside.
 
@@ -405,7 +437,7 @@ ID: Toko biasanya melihatnya sebagai satu persentase di laporan bulanan dari acq
 
 Visual: Satu angka persen dibuka jadi beberapa potongan bertanda tanya
 
-### s50 · rehook · remotion-diagram
+### s54 · rehook · remotion-diagram
 
 EN: Even then, approved isn't final. If you dispute the charge, the money can travel back weeks later through the same networks. That's a chargeback.
 
@@ -413,7 +445,7 @@ ID: Bahkan setelah itu, approved belum final. Kalau kamu menyanggah tagihan, uan
 
 Visual: Panah balik dari toko ke kamu, lewat acquirer, network, issuer · Teks layar: "chargeback"
 
-### s51 · body · remotion-code
+### s55 · body · remotion-code
 
 EN: The shop gets a window to fight it, with a receipt and the six-character approval code from the start. The same code, doing its last job.
 
@@ -421,7 +453,15 @@ ID: Toko diberi waktu untuk membantah, pakai struk dan kode approval enam karakt
 
 Visual: DE38 A1B2C3 muncul lagi di berkas sengketa
 
-### s52 · payoff · remotion-diagram
+### s56 · body · remotion-diagram
+
+EN: A refund is a separate thing. The shop sends a new credit back through the same path, in the other direction, so it takes its own days to arrive. The original charge doesn't get erased.
+
+ID: Refund itu hal yang terpisah. Toko mengirim kredit baru lewat jalur yang sama, dengan arah sebaliknya, jadi butuh beberapa hari sendiri untuk sampai. Transaksi aslinya tidak dihapus.
+
+Visual: Dua baris di aplikasi bank: charge asli tetap ada, lalu baris credit baru muncul beberapa hari kemudian; panah jalur terbalik di atasnya
+
+### s57 · payoff · remotion-diagram
 
 EN: So: approved is your bank's promise to pay. Clearing is the bill. Settlement is the money, arriving a day or more after you finished the coffee.
 
@@ -429,7 +469,7 @@ ID: Jadi: approved itu janji bank untuk membayar. Clearing itu tagihannya. Settl
 
 Visual: Garis waktu tiga blok dari s02, kini semuanya menyala dengan jam/hari · Teks layar: "promise · bill · money"
 
-### s53 · cta · remotion-text
+### s58 · cta · remotion-text
 
 EN: Those fees decide how much of your five dollars the shop keeps. Next video: on a hundred-dollar purchase, who takes a cut, and how much.
 
@@ -439,8 +479,8 @@ Visual: Judul video B + end screen · Teks layar: "Next: You Pay $100. Who Takes
 
 ## Potongan Shorts
 
-- **A1-zero-dollars-moved**: s04, s09, s17, s21. Hook: "Your card said approved. Zero dollars moved."
-- **A2-pending-to-posted**: s22, s35, s37, s38. Hook: "Why your restaurant charge changes the next day."
+- **A1-zero-dollars-moved**: s04, s10, s19, s23. Hook: "Your card said approved. Zero dollars moved."
+- **A2-pending-to-posted**: s24, s37, s39, s41. Hook: "Why your restaurant charge changes the next day."
 
 ## QA anti-slop teks (skill video-anti-slop, lapisan Teks)
 
@@ -461,9 +501,9 @@ Judul: janji "shop hasn't been paid" terbayar di dua scene pertama (sebelum deti
 
 ## Catatan untuk kreator
 
-1. **s23 (keputusan kreator: footage dari internet):** hanya dari Pexels/Pixabay (lisensi komersial, tanpa atribusi wajib), dicari Claude Code lewat API. Footage dari Adobe Stock, Getty, iStock, Storyblocks berbayar; rekaman aplikasi bank nyata dari internet tidak dipakai (hak cipta dan merek). UI di layar harus fiktif. Konsekuensi: video ini tidak punya kehadiran nyata kreator; lapisan Channel mensyaratkan minimal satu dalam 4 video, jadi jadwalkan di siklus 002 atau 003.
+1. **s25 (keputusan kreator: footage dari internet):** hanya dari Pexels/Pixabay (lisensi komersial, tanpa atribusi wajib), dicari Claude Code lewat API. Footage dari Adobe Stock, Getty, iStock, Storyblocks berbayar; rekaman aplikasi bank nyata dari internet tidak dipakai (hak cipta dan merek). UI di layar harus fiktif. Konsekuensi: video ini tidak punya kehadiran nyata kreator; lapisan Channel mensyaratkan minimal satu dalam 4 video, jadi jadwalkan di siklus 002 atau 003.
 2. **Tanpa klaim kredensial** di narasi, sesuai "Tidak akan dibahas" di TRACK. Pengalamanmu bisa disebut di deskripsi, dan deskripsi juga perlu mengungkap bahwa narasinya memakai suara AI.
-3. **Durasi (keputusan kreator: penuhi batas monetisasi, fokus YouTube):** target master **8:15 sampai 8:45** supaya mid-roll YouTube aktif (minimal 8:00 durasi akhir, end screen ikut dihitung). Tambahan isi: kode decline, transaksi ganda dan reversal, debit single-message, hold hotel, settlement hari kerja, callback chargeback. **QA wajib cek durasi render ≥ 8:00.** Kalau kurang, jangan memperlambat suara atau menambah jeda kosong: tambah satu scene isi (kandidat: perbandingan dengan QRIS/pembayaran real-time Asia, perlu riset dulu). Titik mid-roll: setelah s21 dan setelah s42 (jeda alami di re-hook). Shorts: 35 sampai 45 detik, satu file untuk YouTube Shorts, TikTok, dan Reels; TikTok Creator Rewards (syarat ≥1 menit) belum tersedia untuk akun Indonesia dan monetisasi Facebook lewat undangan, jadi tidak ada alasan memanjangkan Shorts sekarang.
+3. **Durasi (keputusan kreator: penuhi batas monetisasi, fokus YouTube):** target master **8:15 sampai 8:45** supaya mid-roll YouTube aktif (minimal 8:00 durasi akhir, end screen ikut dihitung). Tambahan isi: kode decline, transaksi ganda dan reversal, debit single-message, hold hotel, settlement hari kerja, callback chargeback. **QA wajib cek durasi render ≥ 8:00.** Kalau kurang, jangan memperlambat suara: tambah scene isi (kandidat: perbandingan dengan QRIS/pembayaran real-time Asia, perlu riset dulu). Titik mid-roll: setelah s23 dan setelah s45 (jeda alami di re-hook). Shorts: 35 sampai 45 detik, satu file untuk YouTube Shorts, TikTok, dan Reels; TikTok Creator Rewards (syarat ≥1 menit) belum tersedia untuk akun Indonesia dan monetisasi Facebook lewat undangan, jadi tidak ada alasan memanjangkan Shorts sekarang.
 4. Koreksi akurasi teknis apa pun dari pengalamanmu dipersilakan sebelum disetujui.
 
 ## Sumber fakta
@@ -476,3 +516,7 @@ Judul: janji "shop hasn't been paid" terbayar di dua scene pertama (sebelum deti
 - Batch akhir hari dan waktu dana ke merchant: https://www.business.com/articles/ccp-settlement-times/
 - Mid-roll YouTube minimal 8 menit: https://support.google.com/youtube/answer/6175006
 - MTI 0200 financial request, 0420 reversal: https://nibss-plc.com.ng/wp-content/uploads/2025/08/NUS-SPECIFICATION-1.pdf
+
+## Revisi 2026-11-24 (perpanjangan durasi)
+
+TTS uji menunjukkan audio EN hanya 6,40 menit. Kreator meminta dua hal: (1) jeda 0,9 detik antar scene di render, (2) 5 scene isi baru: s06 cryptogram, s18 skor risiko fraud, s40 konversi mata uang saat clearing, s49 settlement antarbank lewat bank sentral, s56 refund. ID scene dinomori ulang; nomor di Shorts dan creator_evidence ikut diubah. Revisi ini perlu persetujuan ulang kreator.

@@ -50,7 +50,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | produksi | 2026-12-07 | uji-V2; file riset viral sprint ada di sini |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | naskah | 2026-12-07 | uji-V2; naskah diperpanjang ke 58 scene, menunggu persetujuan ulang |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
@@ -75,3 +75,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Naskah 001 diperpanjang ke 53 scene (1.153 kata EN, target 8:15 sampai 8:45) dan disetujui kreator. Catatan: video ini tanpa kehadiran nyata kreator; jadwalkan di siklus 002 atau 003.
 - 2026-11-24: Kerangka produksi bersama dibangun (produksi/remotion, scripts/produksi/*, katalog footage). Render uji OK. Belum ada audio/footage siklus 001.
 - 2026-11-24: Produksi 001: kandidat footage dicari (3 scene b-roll, Pixabay), TTS EN penuh dibuat dengan akun free (uji, bukan final; ulang dengan paket berbayar). Total audio EN 6,40 menit, di bawah target master ≥ 8:00. Menunggu pilihan footage dan keputusan durasi.
+- 2026-11-24: Audio uji 6,40 menit < 8:00. Atas permintaan kreator: jeda 0,9 detik antar scene di render dan 5 scene isi baru (cryptogram, skor risiko, konversi mata uang, settlement bank sentral, refund). Scene dinomori ulang (58). Audio EN 7,40 menit; estimasi render ±8:17. Anti-slop scene baru belum dinilai ulang, naskah menunggu persetujuan ulang.

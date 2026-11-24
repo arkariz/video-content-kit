@@ -13,15 +13,15 @@
   "creator_evidence": [
     {
       "what": "Penjelasan dari sisi engineer aplikasi keuangan: pending dan posted berasal dari dua record berbeda (authorization vs clearing)",
-      "scene_id": "s23"
+      "scene_id": "s25"
     },
     {
       "what": "Penjelasan reversal dan duplikat pending dari sisi sistem (MTI 04xx)",
-      "scene_id": "s30"
+      "scene_id": "s32"
     },
     {
       "what": "Pesan ISO 8583 dibedah per field (MTI, DE2, DE4, DE38, DE39, DE49), data fiktif",
-      "scene_id": "s11"
+      "scene_id": "s12"
     }
   ],
   "pronunciations": [
@@ -140,6 +140,22 @@
       "id": "s06",
       "role": "body",
       "narration": {
+        "en": "That code is called a cryptogram. The chip, or your phone, computes it from a secret key that never leaves the device, plus the amount and a running counter. Your bank holds the matching key, so it can check the math.",
+        "id": "Kode itu disebut cryptogram. Chip, atau ponselmu, menghitungnya dari kunci rahasia yang tidak pernah keluar dari perangkat, ditambah jumlah transaksi dan sebuah penghitung. Bank-mu menyimpan kunci pasangannya, jadi bisa memeriksa hitungannya."
+      },
+      "visual": {
+        "type": "remotion-diagram",
+        "description": "Kunci di dalam chip + jumlah + penghitung masuk ke satu kotak, keluar kode; bank di sisi lain memegang kunci pasangan dan mencocokkan hasilnya"
+      },
+      "broll_keywords": [],
+      "duration_ms": {
+        "en": 14303
+      }
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": {
         "en": "Pay with your phone, and the terminal never sees your real card number. It gets a token, a stand-in number that only works from that device.",
         "id": "Kalau bayar pakai HP, terminal bahkan tidak pernah melihat nomor kartu aslimu. Yang dikirim token, nomor pengganti yang cuma berlaku dari HP itu."
       },
@@ -153,7 +169,7 @@
       }
     },
     {
-      "id": "s07",
+      "id": "s08",
       "role": "body",
       "narration": {
         "en": "If a shop's system gets hacked, a stolen token is useless anywhere else.",
@@ -168,7 +184,7 @@
       }
     },
     {
-      "id": "s08",
+      "id": "s09",
       "role": "body",
       "narration": {
         "en": "The terminal passes everything to the shop's bank, called the acquirer. The acquirer doesn't know you. It only knows where to send the question.",
@@ -184,7 +200,7 @@
       }
     },
     {
-      "id": "s09",
+      "id": "s10",
       "role": "body",
       "narration": {
         "en": "It sends it to the card network, Visa or Mastercard. The network reads the first six to eight digits of the card number, finds the bank that issued it, and forwards the message.",
@@ -200,7 +216,7 @@
       }
     },
     {
-      "id": "s10",
+      "id": "s11",
       "role": "body",
       "narration": {
         "en": "The network holds none of your money and lends you nothing. It carries messages, and charges a small fee on each one.",
@@ -216,7 +232,7 @@
       }
     },
     {
-      "id": "s11",
+      "id": "s12",
       "role": "body",
       "narration": {
         "en": "Banks have passed these messages in the same format since 1987. It's called ISO 8583.",
@@ -232,7 +248,7 @@
       }
     },
     {
-      "id": "s12",
+      "id": "s13",
       "role": "body",
       "narration": {
         "en": "The first four digits say what kind of message it is. Zero one zero zero means: may I charge this card?",
@@ -248,7 +264,7 @@
       }
     },
     {
-      "id": "s13",
+      "id": "s14",
       "role": "body",
       "narration": {
         "en": "Then come numbered fields. Field 2 is the card number. Field 4 is the amount. Field 49 is the currency.",
@@ -264,7 +280,7 @@
       }
     },
     {
-      "id": "s14",
+      "id": "s15",
       "role": "body",
       "narration": {
         "en": "Your bank, the issuer, now has well under a second to decide.",
@@ -279,7 +295,7 @@
       }
     },
     {
-      "id": "s15",
+      "id": "s16",
       "role": "body",
       "narration": {
         "en": "It checks that the card is real, that the one-time code matches, that the purchase doesn't look like fraud, and that you have the money or the credit.",
@@ -294,7 +310,7 @@
       }
     },
     {
-      "id": "s16",
+      "id": "s17",
       "role": "body",
       "narration": {
         "en": "The fraud check compares this purchase with your history: where you usually shop, at what time, and for how much.",
@@ -309,7 +325,23 @@
       }
     },
     {
-      "id": "s17",
+      "id": "s18",
+      "role": "body",
+      "narration": {
+        "en": "Many banks turn all of that into a risk score. A low score is approved at once. A middle score might send you a text asking if it was you. A high score is declined. That's why a trip abroad can suddenly stop your card.",
+        "id": "Banyak bank mengubah semua pemeriksaan itu jadi skor risiko. Skor rendah langsung disetujui. Skor menengah bisa memicu SMS yang menanyakan apakah itu kamu. Skor tinggi ditolak. Makanya kartu bisa mendadak mati saat kamu bepergian ke luar negeri."
+      },
+      "visual": {
+        "type": "remotion-diagram",
+        "description": "Bar skor risiko tiga zona: approve, tanya pemilik, tolak; pembelian di negara lain mendorong jarum ke zona tengah"
+      },
+      "broll_keywords": [],
+      "duration_ms": {
+        "en": 13468
+      }
+    },
+    {
+      "id": "s19",
       "role": "body",
       "narration": {
         "en": "If everything passes, it replies with message zero one one zero, and field 39 set to two zeros. Two zeros means approved.",
@@ -325,7 +357,7 @@
       }
     },
     {
-      "id": "s18",
+      "id": "s20",
       "role": "body",
       "narration": {
         "en": "Field 38 carries a six-character approval code. The shop keeps it. For now, it's the only thing the shop has.",
@@ -341,7 +373,7 @@
       }
     },
     {
-      "id": "s19",
+      "id": "s21",
       "role": "body",
       "narration": {
         "en": "When the answer is no, field 39 carries a different code. Fifty-one means insufficient funds. Zero five means do not honor: the bank says no without saying why.",
@@ -357,7 +389,7 @@
       }
     },
     {
-      "id": "s20",
+      "id": "s22",
       "role": "body",
       "narration": {
         "en": "The terminal usually shows one word for both: declined. The real reason stays inside the message, which is why the cashier can't tell you what went wrong.",
@@ -372,7 +404,7 @@
       }
     },
     {
-      "id": "s21",
+      "id": "s23",
       "role": "rehook",
       "narration": {
         "en": "On a yes, that reply is the beep you hear. Now count the money that moved between banks. Zero.",
@@ -388,7 +420,7 @@
       }
     },
     {
-      "id": "s22",
+      "id": "s24",
       "role": "body",
       "narration": {
         "en": "Instead, your bank put a hold on five dollars. Your available balance went down by five. Your actual balance stayed the same.",
@@ -404,7 +436,7 @@
       }
     },
     {
-      "id": "s23",
+      "id": "s25",
       "role": "body",
       "narration": {
         "en": "That hold is the pending line in your app. In most banking apps, pending and posted come from two different records, which is why the name or the amount can change between them.",
@@ -424,7 +456,7 @@
       }
     },
     {
-      "id": "s24",
+      "id": "s26",
       "role": "body",
       "narration": {
         "en": "Gas pumps and hotels often hold more than you'll spend, because they don't know the final amount yet.",
@@ -444,7 +476,7 @@
       }
     },
     {
-      "id": "s25",
+      "id": "s27",
       "role": "body",
       "narration": {
         "en": "A hotel can also raise the hold during your stay, and the final charge can clear for more than was approved. Card rules allow that for hotels, car rentals, and restaurants, not for an ordinary shop.",
@@ -459,7 +491,7 @@
       }
     },
     {
-      "id": "s26",
+      "id": "s28",
       "role": "body",
       "narration": {
         "en": "If the shop never follows up, the hold expires, usually within a few days to a week for a purchase like this. That's the pending charge that disappears.",
@@ -474,7 +506,7 @@
       }
     },
     {
-      "id": "s27",
+      "id": "s29",
       "role": "rehook",
       "narration": {
         "en": "Then there's the charge that shows up twice.",
@@ -489,7 +521,7 @@
       }
     },
     {
-      "id": "s28",
+      "id": "s30",
       "role": "body",
       "narration": {
         "en": "Sometimes the request reaches your bank, but the reply gets lost on the way back. The terminal can't tell whether you were approved, so it asks again.",
@@ -504,7 +536,7 @@
       }
     },
     {
-      "id": "s29",
+      "id": "s31",
       "role": "body",
       "narration": {
         "en": "Your bank said yes both times. Two holds, one coffee.",
@@ -519,7 +551,7 @@
       }
     },
     {
-      "id": "s30",
+      "id": "s32",
       "role": "body",
       "narration": {
         "en": "To clean it up, the terminal sends a reversal, a message in the zero four hundred family that tells your bank to drop the first hold. Until it arrives, you see the same charge twice.",
@@ -535,7 +567,7 @@
       }
     },
     {
-      "id": "s31",
+      "id": "s33",
       "role": "rehook",
       "narration": {
         "en": "Sometimes the bank doesn't see the purchase at all until hours later.",
@@ -553,7 +585,7 @@
       }
     },
     {
-      "id": "s32",
+      "id": "s34",
       "role": "body",
       "narration": {
         "en": "On a flight with no connection, the card and the terminal approve the purchase offline, using a spending limit the bank wrote onto the chip.",
@@ -569,7 +601,7 @@
       }
     },
     {
-      "id": "s33",
+      "id": "s35",
       "role": "body",
       "narration": {
         "en": "The bank finds out after landing, when the airline uploads the sales. If the card is no good by then, the airline usually takes the loss.",
@@ -584,7 +616,7 @@
       }
     },
     {
-      "id": "s34",
+      "id": "s36",
       "role": "body",
       "narration": {
         "en": "That's also why some airlines cap what you can buy on board. A higher limit means a bigger possible loss.",
@@ -599,7 +631,7 @@
       }
     },
     {
-      "id": "s35",
+      "id": "s37",
       "role": "body",
       "narration": {
         "en": "Back on the ground, the coffee shop gets paid through clearing. At the end of the day, its terminal sends every sale in one batch.",
@@ -615,7 +647,7 @@
       }
     },
     {
-      "id": "s36",
+      "id": "s38",
       "role": "body",
       "narration": {
         "en": "Each record carries its approval code, so the network can match it to the approval from this morning.",
@@ -630,7 +662,7 @@
       }
     },
     {
-      "id": "s37",
+      "id": "s39",
       "role": "body",
       "narration": {
         "en": "The amount doesn't have to match. At a restaurant, the card is approved for the bill, and the tip gets added before the batch goes out.",
@@ -649,7 +681,23 @@
       }
     },
     {
-      "id": "s38",
+      "id": "s40",
+      "role": "body",
+      "narration": {
+        "en": "Pay in another currency and the amount changes again. The conversion usually happens when the purchase clears, so the posted amount can differ from what the terminal showed.",
+        "id": "Bayar dalam mata uang lain dan jumlahnya berubah lagi. Konversinya biasanya terjadi saat transaksi di-clearing, jadi jumlah yang posted bisa beda dari yang tampil di terminal."
+      },
+      "visual": {
+        "type": "remotion-data",
+        "description": "Dua angka bersebelahan: jumlah di terminal (mata uang asing) dan jumlah posted (mata uang rekening), dengan panah konversi bertanda 'saat clearing'"
+      },
+      "broll_keywords": [],
+      "duration_ms": {
+        "en": 9752
+      }
+    },
+    {
+      "id": "s41",
       "role": "body",
       "narration": {
         "en": "When the cleared record reaches your bank, the hold turns into a real charge. Pending becomes posted, sometimes with a different amount.",
@@ -665,7 +713,7 @@
       }
     },
     {
-      "id": "s39",
+      "id": "s42",
       "role": "body",
       "narration": {
         "en": "Everything so far is the dual-message path: one message to approve, a second record to charge. Most credit card purchases go this way.",
@@ -681,7 +729,7 @@
       }
     },
     {
-      "id": "s40",
+      "id": "s43",
       "role": "body",
       "narration": {
         "en": "Some debit payments use a single message. In the US, when you type your PIN at checkout, message zero two zero zero approves and charges in one go.",
@@ -697,7 +745,7 @@
       }
     },
     {
-      "id": "s41",
+      "id": "s44",
       "role": "body",
       "narration": {
         "en": "There's no separate clearing record to wait for, so the charge posts sooner. The shop still waits for settlement like everyone else.",
@@ -712,7 +760,7 @@
       }
     },
     {
-      "id": "s42",
+      "id": "s45",
       "role": "rehook",
       "narration": {
         "en": "You've now been charged. The coffee shop still has no money. That's the third system's job.",
@@ -727,7 +775,7 @@
       }
     },
     {
-      "id": "s43",
+      "id": "s46",
       "role": "body",
       "narration": {
         "en": "The network adds up every cleared purchase between every pair of banks, then nets them out.",
@@ -743,7 +791,7 @@
       }
     },
     {
-      "id": "s44",
+      "id": "s47",
       "role": "body",
       "narration": {
         "en": "Without netting, every purchase would be its own transfer between banks: hundreds of millions of tiny payments a day.",
@@ -758,7 +806,7 @@
       }
     },
     {
-      "id": "s45",
+      "id": "s48",
       "role": "body",
       "narration": {
         "en": "Your bank sends one total for millions of purchases, minus what other banks owe it. Your five dollars is a tiny part of that number.",
@@ -773,7 +821,23 @@
       }
     },
     {
-      "id": "s46",
+      "id": "s49",
+      "role": "body",
+      "narration": {
+        "en": "Those totals are settled between banks in one shared place, often accounts at the central bank. Money moves between those accounts once or a few times a day, not once per purchase.",
+        "id": "Total itu diselesaikan antarbank di satu tempat bersama, sering berupa rekening di bank sentral. Uang berpindah antar rekening itu sekali atau beberapa kali sehari, bukan sekali per pembelian."
+      },
+      "visual": {
+        "type": "remotion-diagram",
+        "description": "Banyak bank menunjuk ke satu kotak rekening bank sentral; satu panah total per bank per siklus, bukan jutaan panah kecil"
+      },
+      "broll_keywords": [],
+      "duration_ms": {
+        "en": 11192
+      }
+    },
+    {
+      "id": "s50",
       "role": "body",
       "narration": {
         "en": "Then the acquirer pays the coffee shop, usually one to three business days after the sale.",
@@ -789,7 +853,7 @@
       }
     },
     {
-      "id": "s47",
+      "id": "s51",
       "role": "body",
       "narration": {
         "en": "Settlement runs on business days. A purchase on Friday night often reaches the shop's account on Monday or Tuesday.",
@@ -804,7 +868,7 @@
       }
     },
     {
-      "id": "s48",
+      "id": "s52",
       "role": "body",
       "narration": {
         "en": "Fees come out before that money lands, so the shop gets less than five dollars.",
@@ -820,7 +884,7 @@
       }
     },
     {
-      "id": "s49",
+      "id": "s53",
       "role": "body",
       "narration": {
         "en": "The shop usually sees them as one percentage on a monthly statement from its acquirer, with several smaller fees folded inside.",
@@ -835,7 +899,7 @@
       }
     },
     {
-      "id": "s50",
+      "id": "s54",
       "role": "rehook",
       "narration": {
         "en": "Even then, approved isn't final. If you dispute the charge, the money can travel back weeks later through the same networks. That's a chargeback.",
@@ -851,7 +915,7 @@
       }
     },
     {
-      "id": "s51",
+      "id": "s55",
       "role": "body",
       "narration": {
         "en": "The shop gets a window to fight it, with a receipt and the six-character approval code from the start. The same code, doing its last job.",
@@ -866,7 +930,23 @@
       }
     },
     {
-      "id": "s52",
+      "id": "s56",
+      "role": "body",
+      "narration": {
+        "en": "A refund is a separate thing. The shop sends a new credit back through the same path, in the other direction, so it takes its own days to arrive. The original charge doesn't get erased.",
+        "id": "Refund itu hal yang terpisah. Toko mengirim kredit baru lewat jalur yang sama, dengan arah sebaliknya, jadi butuh beberapa hari sendiri untuk sampai. Transaksi aslinya tidak dihapus."
+      },
+      "visual": {
+        "type": "remotion-diagram",
+        "description": "Dua baris di aplikasi bank: charge asli tetap ada, lalu baris credit baru muncul beberapa hari kemudian; panah jalur terbalik di atasnya"
+      },
+      "broll_keywords": [],
+      "duration_ms": {
+        "en": 11656
+      }
+    },
+    {
+      "id": "s57",
       "role": "payoff",
       "narration": {
         "en": "So: approved is your bank's promise to pay. Clearing is the bill. Settlement is the money, arriving a day or more after you finished the coffee.",
@@ -882,7 +962,7 @@
       }
     },
     {
-      "id": "s53",
+      "id": "s58",
       "role": "cta",
       "narration": {
         "en": "Those fees decide how much of your five dollars the shop keeps. Next video: on a hundred-dollar purchase, who takes a cut, and how much.",
@@ -903,19 +983,19 @@
       "name": "A1-zero-dollars-moved",
       "scene_ids": [
         "s04",
-        "s09",
-        "s17",
-        "s21"
+        "s10",
+        "s19",
+        "s23"
       ],
       "hook_override": "Your card said approved. Zero dollars moved."
     },
     {
       "name": "A2-pending-to-posted",
       "scene_ids": [
-        "s22",
-        "s35",
+        "s24",
         "s37",
-        "s38"
+        "s39",
+        "s41"
       ],
       "hook_override": "Why your restaurant charge changes the next day."
     }
