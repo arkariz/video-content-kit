@@ -1,15 +1,15 @@
 ---
 name: video-niche-research
-description: Research, score, and shortlist niches for a monetizable video channel using web research - demand, outlier channels, audience RPM tier, sponsor pool, AI-slop saturation, policy risk, and the creator's unfair advantage. Use when the user wants to choose or re-evaluate a YouTube/TikTok/Reels niche, says "riset niche", "tentukan niche", "ganti niche", or the video kit STATE is at phase 0-niche.
+description: Research, score, and turn niches into proposed tracks (niche + angle) for a monetizable video portfolio using web research - demand, outlier channels, audience RPM tier, sponsor pool, AI-slop saturation, policy risk, and the creator's unfair advantage. Use when the user wants to choose or re-evaluate a YouTube/TikTok/Reels niche, says "riset niche", "tentukan niche", "cari niche baru", or the video kit has no tracks yet. Validation of proposed tracks is handled by the video-portfolio skill.
 ---
 
 # Video Niche Research
 
-Memilih niche yang membayar tinggi, masih punya ruang untuk pendatang baru, dan memberi kreator keunggulan yang tidak bisa ditiru channel AI generik.
+Menemukan niche yang membayar tinggi, masih punya ruang untuk pendatang baru, dan memberi kreator keunggulan yang tidak bisa ditiru channel AI generik. Hasilnya beberapa **usulan track** (niche + sudut) yang lalu divalidasi dengan data, bukan satu niche final yang dipilih berdasarkan riset saja.
 
 ## Mode kerja
 
-- **Di dalam Video Content Kit** (ada `AGENTS.md` dan `hasil/STATE.md`): ikuti `instruksi/01-penentuan-niche.md` langkah demi langkah, pakai template di `instruksi/templates/`, tulis output ke `hasil/00-niche/`, dan perbarui STATE.
+- **Di dalam Video Content Kit** (ada `AGENTS.md` dan `hasil/STATE.md`): ikuti `instruksi/01-riset-niche.md` langkah demi langkah, pakai template di `instruksi/templates/`, tulis output ke `hasil/00-riset-niche/`, dan perbarui STATE.
 - **Tanpa kit:** jalankan langkah yang sama, lalu tulis hasilnya sebagai file `analisa-niche.md` di folder kerja (atau di balasan bila tidak ada akses file).
 
 ## Langkah ringkas
@@ -18,9 +18,9 @@ Memilih niche yang membayar tinggi, masih punya ruang untuk pendatang baru, dan 
 2. **10 sampai 15 kandidat spesifik**, minimal 3 di luar keahlian utama sebagai pembanding.
 3. **Riset web per kandidat:** video 90 hari terakhir di atas 10 ribu view, 5 channel teratas, outlier dari channel di bawah 10 ribu subscriber, tingkat konten AI massal di hasil pencarian, tier RPM dan negara penonton, sponsor aktif, risiko kebijakan, kecocokan visual (diagram, kode, data), dan evergreen. Setiap angka diberi tautan. Kalau tidak bisa dicek, tulis `belum terverifikasi`.
 4. **Skor dengan bobot:** keunggulan kreator 25%, nilai penonton 20%, ruang pendatang 20%, permintaan 15%, kecocokan produksi 10%, evergreen 5%, risiko kebijakan (dibalik) 5%. Skor 1 sampai 5 per kriteria, total diskalakan ke 0 sampai 100.
-5. **Shortlist 3:** alasan, pilar konten, 3 channel pembanding, outlier yang ditemukan, 10 contoh judul yang memakai bukti milik kreator, serta risiko dan mitigasinya.
-6. **Berhenti untuk keputusan kreator.** Sajikan 3 opsi + rekomendasi. Opsi tambahan: sprint validasi 2 minggu (2 Shorts per niche untuk 2 niche teratas, lalu pilih dari data retensi).
-7. **Setelah dipilih:** tulis keputusan (niche, pilar, penonton, bahasa, KPI 90 hari, topik yang dihindari) dan backlog minimal 20 ide berskor.
+5. **Pecah 3 sampai 4 niche teratas menjadi 1 sampai 3 sudut** yang berbeda nyata (penonton, janji, atau format). Setiap niche + sudut adalah satu usulan track dengan hipotesis satu kalimat, alasan, pilar, 3 channel pembanding, outlier, 10 contoh judul dengan bukti milik kreator, estimasi jam per minggu, usulan channel, serta risiko dan mitigasi.
+6. **Berhenti untuk keputusan kreator:** track mana yang masuk validasi (boleh lebih dari satu, sesuai kapasitas). Tampilkan rekomendasimu.
+7. **Buat track** untuk semua usulan: yang dipilih menjadi `validasi`, sisanya `usulan` (cadangan). Isi TRACK.md, backlog minimal 20 ide berskor untuk track yang dipilih, dan tabel di STATE. Lanjutkan dengan skill `video-portfolio` untuk validasi V1.
 
 ## Aturan penilaian
 

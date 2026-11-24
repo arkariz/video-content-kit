@@ -1,31 +1,32 @@
 ---
 name: video-content-cycle
-description: Run the repeatable weekly video production loop for a locked niche - viral outlier research, brief, script.json, ElevenLabs voice and captions, B-roll plus Remotion visuals, anti-slop QA, multi-platform publish prep, and analytics that feed learnings into the next cycle. Use when the user says "mulai", "lanjut", "siklus baru", "rekap", or wants the next video made for their channel; reads and updates hasil/STATE.md.
+description: Run the repeatable weekly video production loop for one track (niche + angle) in a multi-track portfolio - viral outlier research, brief, script.json, ElevenLabs voice and captions, B-roll plus Remotion visuals, anti-slop QA, multi-platform publish prep, and analytics that feed learnings into the next cycle. Use when the user says "mulai", "lanjut T01", "siklus baru", "rekap", or wants the next video made; reads hasil/STATE.md and updates hasil/tracks/<ID>/TRACK.md.
 ---
 
 # Video Content Cycle
 
-Orkestrator untuk satu siklus konten: satu video master, potongan Shorts, dan versi Bahasa Indonesia. Siklus berulang setiap minggu dengan niche yang sama, dan setiap siklus membaca pelajaran dari siklus sebelumnya.
+Orkestrator untuk satu siklus konten di **satu track**: satu video master, potongan Shorts, dan versi Bahasa Indonesia. Siklus berulang setiap minggu di track itu, dan setiap siklus membaca pelajaran dari siklus sebelumnya di track yang sama. Satu sesi = satu track.
 
 ## Boot
 
-1. Cari `hasil/STATE.md`. Kalau tidak ada, cek apakah folder ini Video Content Kit (ada `AGENTS.md` dan `instruksi/`). Kalau bukan, tawarkan untuk membuat struktur minimal: `hasil/STATE.md`, `hasil/learnings.md`, `hasil/backlog.md`, `hasil/siklus/`.
-2. Kalau `niche` kosong, jalankan skill `video-niche-research` dulu.
-3. Kalau `menunggu_keputusan` terisi, tanyakan itu dulu ke kreator.
-4. Jalankan langkah dari `langkah_berikutnya`.
+1. Cari `hasil/STATE.md`. Kalau tidak ada, cek apakah folder ini Video Content Kit (ada `AGENTS.md` dan `instruksi/`). Kalau bukan, tawarkan untuk membuat struktur minimal lewat skill `video-portfolio`.
+2. Kalau belum ada track, jalankan skill `video-niche-research` dulu.
+3. Tentukan track: yang disebut kreator, lalu `track_fokus`, lalu track `aktif`/`validasi` yang paling lama tertunda. Track `usulan`, `jeda`, dan `drop` tidak dijalankan siklusnya.
+4. Baca `hasil/tracks/<ID>/TRACK.md`. Kalau `menunggu_keputusan` (di STATE atau TRACK) terisi, tanyakan itu dulu.
+5. Jalankan `langkah_berikutnya` track itu. Kalau track sedang `validasi`, ikuti paket uji di `validasi/rencana.md` (lihat skill `video-portfolio`).
 
 ## Langkah siklus
 
 | # | Langkah | Instruksi rinci | Output | Gate |
 | --- | --- | --- | --- | --- |
-| 1 | Riset viral | `instruksi/02-riset-konten-viral.md` | `01-riset-viral.md` | Pilih 1 dari 3 sudut |
-| 2 | Brief + naskah | `instruksi/03-naskah.md` | `02-brief.md`, `03-script.json`, `03-naskah.md` | Setujui naskah |
-| 3 | Produksi | `instruksi/04-produksi.md` | audio, caption, `04-assets.json`, render | Setujui klip footage |
-| 4 | QA | `instruksi/05-qa-anti-slop.md` + skill `video-anti-slop` | `05-qa.md` | Harus LULUS |
-| 5 | Publish | `instruksi/06-publish.md` | `06-publish.md` | Selalu minta persetujuan |
-| 6 | Analitik | `instruksi/07-analitik-dan-loop.md` | `hasil/analitik/*.md`, `learnings.md`, `backlog.md` | Pivot butuh persetujuan |
+| 1 | Riset viral | `instruksi/03-riset-konten-viral.md` | `01-riset-viral.md` | Pilih 1 dari 3 sudut |
+| 2 | Brief + naskah | `instruksi/04-naskah.md` | `02-brief.md`, `03-script.json`, `03-naskah.md` | Setujui naskah |
+| 3 | Produksi | `instruksi/05-produksi.md` | audio, caption, `04-assets.json`, render | Setujui klip footage |
+| 4 | QA | `instruksi/06-qa-anti-slop.md` + skill `video-anti-slop` | `05-qa.md` | Harus LULUS |
+| 5 | Publish | `instruksi/07-publish.md` | `06-publish.md` | Selalu minta persetujuan |
+| 6 | Analitik | `instruksi/08-analitik-dan-loop.md` | `hasil/tracks/<ID>/analitik/*.md`, `learnings.md`, `backlog.md` | Keputusan besar lewat review portfolio |
 
-Semua output siklus ada di `hasil/siklus/NNN-slug/`. Kalau file instruksi rinci tidak tersedia (skill dipakai di luar kit), ikuti ringkasan di bawah.
+Semua output siklus ada di `hasil/tracks/<ID>/siklus/NNN-slug/`. Kalau file instruksi rinci tidak tersedia (skill dipakai di luar kit), ikuti ringkasan di bawah.
 
 ## Ringkasan per langkah (dipakai bila instruksi rinci tidak ada)
 
@@ -38,8 +39,8 @@ Semua output siklus ada di `hasil/siklus/NNN-slug/`. Kalau file instruksi rinci 
 
 ## Aturan loop
 
-- Setiap siklus baru membaca `learnings.md` dan menyebut pelajaran mana yang diterapkan di brief.
+- Setiap siklus baru membaca `learnings.md` track itu dan `hasil/learnings-global.md`, lalu menyebut pelajaran mana yang diterapkan di brief.
 - Satu pelajaran baru dianggap pasti setelah didukung 2 siklus.
-- Pivot niche hanya diajukan setelah 3 siklus berturut-turut di bawah target CTR **dan** retensi, setelah hook dan judul divariasikan.
-- Setiap langkah selesai: perbarui frontmatter STATE, status siklus, dan satu baris log.
-- Laporkan ke kreator dalam 2 sampai 4 kalimat: apa yang selesai, file yang ditulis, dan langkah berikutnya.
+- Scale, pivot, jeda, dan drop tidak diputuskan di siklus. Kalau 3 siklus berturut-turut di bawah target CTR **dan** retensi setelah hook dan judul divariasikan, tandai track untuk review portfolio.
+- Setiap langkah selesai: perbarui frontmatter TRACK.md, tabel siklus, dan satu baris log. Perbarui STATE hanya bila tahap track berubah.
+- Laporkan ke kreator dalam 2 sampai 4 kalimat, diawali ID track: apa yang selesai, file yang ditulis, dan langkah berikutnya.

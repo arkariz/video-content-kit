@@ -1,12 +1,12 @@
-# Langkah 6: Analitik dan loop
+# Langkah track: Analitik dan loop
 
-Tujuan: mengubah data setiap video menjadi aturan yang dipakai siklus berikutnya. Langkah ini yang membuat sistem makin baik setiap minggu.
+Tujuan: mengubah data setiap video di satu track menjadi aturan yang dipakai siklus berikutnya di track itu. Analitik selalu per track, meskipun beberapa track berbagi channel.
 
 ## Kapan dijalankan
 
 - **48 jam** setelah tayang: cek awal (hook dan CTR).
 - **7 hari** setelah tayang: analisa lengkap.
-- **Mingguan**: rekap semua video yang tayang, di `hasil/analitik/YYYY-MM-DD-mingguan.md` (template `analitik-mingguan.md`).
+- **Mingguan**: rekap semua video yang tayang, di `hasil/tracks/<ID>/analitik/YYYY-MM-DD.md` (template `analitik-mingguan.md`).
 
 ## Ambil data
 
@@ -27,15 +27,16 @@ Urutan prioritas: YouTube Analytics API kalau tersedia, lalu export CSV dari You
 
 1. Bandingkan dengan target dan dengan 3 video sebelumnya.
 2. Hubungkan angka ke keputusan di naskah: hook yang dipakai, struktur, durasi, judul.
-3. Tambahkan ke `hasil/learnings.md` dalam bentuk aturan yang bisa diuji, dengan bukti. Contoh: "Hook 'hasil dulu' menahan 78% di 3 detik pertama vs 61% untuk hook pertanyaan (siklus 003 vs 004)."
+3. Tambahkan ke `hasil/tracks/<ID>/learnings.md` dalam bentuk aturan yang bisa diuji, dengan bukti. Contoh: "Hook 'hasil dulu' menahan 78% di 3 detik pertama vs 61% untuk hook pertanyaan (siklus 003 vs 004)."
 4. Satu pelajaran butuh minimal 2 siklus pendukung sebelum dianggap pasti. Sampai itu terjadi, simpan di bagian "Aturan yang sedang diuji".
-5. Perbarui skor di `hasil/backlog.md` (naikkan topik yang terbukti diminati, turunkan yang tidak).
+5. Perbarui skor di `hasil/tracks/<ID>/backlog.md` (naikkan topik yang terbukti diminati, turunkan yang tidak).
 
 ## Putuskan siklus berikutnya
 
-- **Lanjut** (default): STATE `status: dianalisis`, `langkah_berikutnya: "siklus baru: riset viral"`.
-- **Sesuaikan**: ubah pilar, format, atau durasi. Catat alasannya di `keputusan-niche.md` bagian "Perubahan".
-- **Ajukan pivot niche**: hanya jika 3 siklus berturut-turut berada di bawah target CTR **dan** retensi, setelah hook dan judul sudah divariasikan. Isi `menunggu_keputusan` dengan data dan 2 opsi niche dari `analisa-niche.md`. Gate ini selalu berhenti.
+- **Lanjut** (default): status siklus di `TRACK.md` menjadi `dianalisis`, `langkah_berikutnya: "siklus baru: riset viral"`.
+- **Sesuaikan**: ubah pilar, format, atau durasi di dalam track. Catat alasannya di tabel Keputusan `TRACK.md`.
+- **Tandai untuk review**: kalau 3 siklus berturut-turut berada di bawah target CTR **dan** retensi setelah hook dan judul divariasikan, atau satu sub-sudut jauh mengungguli yang lain, isi `menunggu_keputusan` di STATE dengan "review portfolio: <ID>". Keputusan scale, pivot, jeda, dan drop hanya diambil lewat `instruksi/09-review-portfolio.md`.
+- Pelajaran yang juga muncul di track lain dicatat sebagai kandidat untuk `hasil/learnings-global.md`. Review portfolio yang memindahkannya.
 
 ## Verifikasi berkala
 

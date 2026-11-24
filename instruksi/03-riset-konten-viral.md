@@ -1,12 +1,12 @@
-# Langkah 1: Riset konten viral (setiap siklus)
+# Langkah track: Riset konten viral (setiap siklus)
 
 Tujuan: menemukan pola yang sedang bekerja di niche, lalu memilih satu topik dan sudut untuk siklus ini. Yang ditiru adalah pola, bukan isi.
 
 ## Persiapan
 
-1. Baca `hasil/00-niche/keputusan-niche.md`, `hasil/learnings.md`, dan `hasil/backlog.md`.
-2. Buat folder `hasil/siklus/NNN-slug/` (NNN = nomor siklus terakhir + 1). Slug sementara boleh `NNN-riset`, lalu diganti setelah topik dipilih.
-3. Tambah baris siklus di tabel STATE dengan status `riset`.
+1. Baca `hasil/tracks/<ID>/TRACK.md`, `hasil/tracks/<ID>/learnings.md`, `hasil/tracks/<ID>/backlog.md`, dan `hasil/learnings-global.md`.
+2. Buat folder `hasil/tracks/<ID>/siklus/NNN-slug/` (NNN = nomor siklus terakhir + 1). Slug sementara boleh `NNN-riset`, lalu diganti setelah topik dipilih.
+3. Tambah baris siklus di tabel Siklus pada `TRACK.md` dengan status `riset`.
 
 ## Cari outlier
 
@@ -39,11 +39,11 @@ Tulis `01-riset-viral.md` (template `riset-viral.md`) yang berisi:
 2. Tiga pola yang berulang, masing-masing dengan bukti.
 3. **Celah**: apa yang belum dijawab outlier dan bisa dijawab dengan bukti milik kreator.
 4. **Tiga usulan sudut** untuk siklus ini. Setiap sudut berisi judul kerja, hook draf, bukti milik kreator yang dipakai, alasan kenapa sekarang, dan risiko slop.
-5. Perbarui `hasil/backlog.md` dengan ide baru dari riset.
+5. Perbarui `hasil/tracks/<ID>/backlog.md` dengan ide baru dari riset.
 
 ## Gate: pilih sudut
 
-Isi `menunggu_keputusan` dengan tiga sudut + rekomendasimu. Setelah dipilih, ganti nama folder siklus ke slug final, perbarui STATE (`status: brief`), lalu lanjut ke `03-naskah.md`.
+Isi `menunggu_keputusan` dengan tiga sudut + rekomendasimu. Setelah dipilih, ganti nama folder siklus ke slug final, perbarui `TRACK.md` (`status: brief`), lalu lanjut ke `instruksi/04-naskah.md`.
 
 ## Larangan
 

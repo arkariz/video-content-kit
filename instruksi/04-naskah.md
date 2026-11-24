@@ -1,4 +1,4 @@
-# Langkah 2: Brief dan naskah
+# Langkah track: Brief dan naskah
 
 Tujuan: satu naskah yang ditulis untuk didengar, dengan satu ide per scene dan bukti milik kreator, lulus gate anti-slop sebelum diproduksi.
 
@@ -11,7 +11,7 @@ Tulis `02-brief.md` (template `brief.md`):
 - **Bukti milik kreator**: minimal satu (demo kode nyata, angka dari proyek yang boleh dibagi, pengalaman spesifik, screen recording).
 - **Format**: durasi master, jumlah Shorts yang akan dipotong, versi Indonesia.
 - **3 varian judul** dan **2 varian teks thumbnail** (maksimal 4 kata).
-- **Learnings yang diterapkan** dari `hasil/learnings.md`.
+- **Learnings yang diterapkan** dari `hasil/tracks/<ID>/learnings.md`.
 
 ## 2b. Naskah
 
@@ -41,4 +41,4 @@ Jalankan skill `video-anti-slop` lapisan **Teks** pada narasi Inggris dan Indone
 
 ## Gate: kreator menyetujui naskah
 
-Sajikan ringkasan: janji, hook, struktur scene, bukti milik kreator, skor anti-slop, dan 3 judul. Kreator bisa menambah insight atau mengoreksi akurasi teknis. Setelah disetujui, STATE `status: produksi`.
+Sajikan ringkasan: janji, hook, struktur scene, bukti milik kreator, skor anti-slop, dan 3 judul. Kreator bisa menambah insight atau mengoreksi akurasi teknis. Setelah disetujui, ubah status siklus di `TRACK.md` menjadi `produksi`.

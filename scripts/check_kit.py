@@ -2,8 +2,8 @@
 """Validasi ringan Video Content Kit, tanpa dependensi.
 
 Pemakaian:
-    python3 scripts/check_kit.py                  # cek struktur kit + STATE
-    python3 scripts/check_kit.py hasil/siklus/001-x/03-script.json   # cek satu script.json
+    python3 scripts/check_kit.py                  # cek struktur kit, STATE portfolio, semua TRACK.md
+    python3 scripts/check_kit.py hasil/tracks/<ID>/siklus/001-x/03-script.json   # cek satu script.json
 """
 import json
 import re
@@ -20,8 +20,9 @@ def err(msg: str) -> None:
 
 def check_structure() -> None:
     required = [
-        "AGENTS.md", "hasil/STATE.md", "hasil/learnings.md", "hasil/backlog.md",
+        "AGENTS.md", "hasil/STATE.md", "hasil/learnings-global.md",
         "instruksi/referensi/aturan-platform.md", "instruksi/templates/script.schema.json",
+        "instruksi/templates/track.md", "instruksi/templates/validasi-rencana.md",
     ]
     for rel in required:
         if not (ROOT / rel).exists():
@@ -42,26 +43,91 @@ def check_structure() -> None:
             err(f"{skill.relative_to(ROOT)}: field 'description' tidak ada")
 
 
+TAHAP = {"usulan", "validasi", "aktif", "jeda", "drop"}
+
+
+def frontmatter(path: Path) -> str | None:
+    text = path.read_text(encoding="utf-8")
+    m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+    if not m:
+        err(f"{path.relative_to(ROOT)}: frontmatter tidak ada")
+        return None
+    return m.group(1)
+
+
+def value(fm: str, key: str) -> str | None:
+    m = re.search(rf"^{key}:\s*(.*?)(\s+#.*)?$", fm, re.M)
+    if not m:
+        return None
+    return m.group(1).strip().strip('"')
+
+
+def as_int(v: str | None) -> int | None:
+    try:
+        return int(v) if v not in (None, "", "null") else None
+    except ValueError:
+        return None
+
+
 def check_state() -> None:
     path = ROOT / "hasil/STATE.md"
     if not path.exists():
         return
-    text = path.read_text(encoding="utf-8")
-    m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
-    if not m:
-        err("hasil/STATE.md: frontmatter tidak ada")
+    fm = frontmatter(path)
+    if fm is None:
         return
-    fm = m.group(1)
-    for key in ["fase", "niche", "mode_gate", "siklus_aktif", "langkah_berikutnya", "menunggu_keputusan"]:
-        if not re.search(rf"^{key}:", fm, re.M):
+    for key in ["mode_gate", "kapasitas_jam_per_minggu", "batas_track_aktif", "batas_track_validasi",
+                "track_fokus", "langkah_berikutnya", "menunggu_keputusan"]:
+        if value(fm, key) is None:
             err(f"hasil/STATE.md: key '{key}' tidak ada")
-    fase = re.search(r"^fase:\s*(\S+)", fm, re.M)
-    niche = re.search(r"^niche:\s*(.+?)(\s+#.*)?$", fm, re.M)
-    if fase and fase.group(1) == "siklus" and niche and niche.group(1).strip() in ("null", "", '""'):
-        err("hasil/STATE.md: fase 'siklus' tapi niche masih kosong")
-    siklus = re.search(r"^siklus_aktif:\s*(\S+)", fm, re.M)
-    if siklus and siklus.group(1) not in ("null",) and not (ROOT / "hasil/siklus" / siklus.group(1)).is_dir():
-        err(f"hasil/STATE.md: folder siklus '{siklus.group(1)}' tidak ditemukan")
+    state_text = path.read_text(encoding="utf-8")
+
+    tracks = sorted((ROOT / "hasil/tracks").glob("*/TRACK.md"))
+    ids, count, jam = set(), {"aktif": 0, "validasi": 0}, 0
+    for tp in tracks:
+        rel = tp.relative_to(ROOT)
+        tfm = frontmatter(tp)
+        if tfm is None:
+            continue
+        tid = value(tfm, "id") or ""
+        if not re.fullmatch(r"T\d{2}", tid):
+            err(f"{rel}: id '{tid}' tidak valid (format T01)")
+        if not tp.parent.name.startswith(tid + "-"):
+            err(f"{rel}: nama folder harus diawali '{tid}-'")
+        if tid in ids:
+            err(f"{rel}: id {tid} dipakai lebih dari sekali")
+        ids.add(tid)
+        tahap = value(tfm, "tahap")
+        if tahap not in TAHAP:
+            err(f"{rel}: tahap '{tahap}' tidak dikenal")
+        for key in ["niche", "sudut", "channel", "langkah_berikutnya", "menunggu_keputusan", "siklus_aktif"]:
+            if value(tfm, key) is None:
+                err(f"{rel}: key '{key}' tidak ada")
+        if f"| {tid} " not in state_text:
+            err(f"{rel}: {tid} belum tercatat di tabel Track pada STATE.md")
+        siklus = value(tfm, "siklus_aktif")
+        if siklus not in (None, "null", "") and not (tp.parent / "siklus" / siklus).is_dir():
+            err(f"{rel}: folder siklus '{siklus}' tidak ditemukan")
+        if tahap in ("validasi", "aktif"):
+            count[tahap] += 1
+            jam += as_int(value(tfm, "jam_per_minggu")) or 0
+            for f in ["backlog.md", "learnings.md"]:
+                if not (tp.parent / f).exists():
+                    err(f"{rel}: {f} belum dibuat untuk track {tahap}")
+        if tahap == "aktif" and not (tp.parent / "validasi" / "hasil.md").exists() \
+                and "validasi-dilewati" not in tp.read_text(encoding="utf-8"):
+            err(f"{rel}: tahap aktif tanpa validasi/hasil.md (tulis 'validasi-dilewati' + alasan di Keputusan bila sengaja)")
+
+    fokus = value(fm, "track_fokus")
+    if fokus not in (None, "null", "") and fokus not in ids:
+        err(f"hasil/STATE.md: track_fokus '{fokus}' tidak ada di hasil/tracks/")
+    for tahap, key in (("aktif", "batas_track_aktif"), ("validasi", "batas_track_validasi")):
+        batas = as_int(value(fm, key))
+        if batas is not None and count[tahap] > batas:
+            err(f"hasil/STATE.md: {count[tahap]} track {tahap}, melebihi {key}={batas}")
+    kapasitas = as_int(value(fm, "kapasitas_jam_per_minggu"))
+    if kapasitas is not None and jam > kapasitas:
+        err(f"hasil/STATE.md: total jam track aktif+validasi {jam}, melebihi kapasitas {kapasitas}")
 
 
 def check_script(path: Path) -> None:

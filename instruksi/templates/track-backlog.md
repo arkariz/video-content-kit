@@ -1,6 +1,6 @@
-# Backlog ide
+# Backlog ide: T0X
 
-Diisi saat penentuan niche (minimal 20 ide), lalu diperbarui setiap siklus dari riset viral dan analitik. Urutkan berdasarkan skor.
+Diisi saat track dibuat (minimal 20 ide), lalu diperbarui setiap siklus dari riset viral dan analitik. Urutkan berdasarkan skor.
 
 | Skor | Ide (judul kerja) | Pilar | Bukti permintaan | Bukti milik kreator | Sumber | Status |
 | --- | --- | --- | --- | --- | --- | --- |

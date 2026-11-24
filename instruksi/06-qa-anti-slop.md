@@ -1,4 +1,4 @@
-# Langkah 4: QA anti-slop
+# Langkah track: QA anti-slop
 
 Tujuan: memastikan video tidak terasa seperti konten AI massal. Ini penting untuk penonton, dan juga syarat monetisasi, karena YouTube tidak memonetisasi "inauthentic content" (generik, repetitif, atau berbasis template).
 
@@ -15,7 +15,7 @@ Jalankan skill `video-anti-slop` pada keempat lapisan, lalu tulis `05-qa.md` den
 
 ## Keputusan
 
-- **LULUS**: semua lapisan lulus. STATE `status: siap-publish`.
+- **LULUS**: semua lapisan lulus. Status siklus di `TRACK.md` menjadi `siap-publish`.
 - **GAGAL**: tulis perbaikan spesifik per temuan, kembali ke langkah yang relevan (naskah atau produksi), lalu jalankan QA ulang. Mode `otomatis` tetap berhenti di sini dan melapor ke kreator.
 
 ## Uji orisinalitas (wajib dijawab di laporan)

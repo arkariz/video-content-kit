@@ -1,25 +1,26 @@
 ---
-fase: 0-niche              # 0-niche | siklus
-niche: null                # diisi setelah kreator memilih (hasil/00-niche/keputusan-niche.md)
-bahasa_konten: "master-en + audio-id"   # master-en + audio-id | id-saja | en-saja
-mode_gate: tanya           # tanya | otomatis (lihat AGENTS.md)
-siklus_aktif: null         # contoh: 001-flutter-rebuilds
-langkah_berikutnya: "niche: isi profil kreator lalu riset kandidat (instruksi/01-penentuan-niche.md)"
+mode_gate: tanya                 # tanya | otomatis (lihat AGENTS.md)
+kapasitas_jam_per_minggu: null   # diisi kreator, dipakai untuk membatasi track paralel
+batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
+batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
+track_fokus: null                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
+langkah_berikutnya: "riset niche: isi profil kreator lalu riset kandidat (instruksi/01-riset-niche.md)"
 menunggu_keputusan: null
+review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-24
 ---
 
-# STATE
+# STATE portfolio
 
-File ini adalah memori kerja bersama untuk semua agent dan sesi. Perbarui frontmatter dan tambah satu baris log setiap kali langkah selesai.
+File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/tracks/<ID>/TRACK.md`. Perbarui tabel dan log ini setiap kali status track berubah.
 
-## Siklus
+## Track
 
-| Siklus | Topik | Status | Tanggal tayang | Catatan |
-| --- | --- | --- | --- | --- |
+| ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
-Status yang dipakai: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
+Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruksi/02-validasi-niche.md` dan `instruksi/09-review-portfolio.md`.
 
 ## Log
 
-- 2026-11-24: Kit dibuat. Rekomendasi awal dari dokumen strategi: master Inggris, niche edukasi mobile/Flutter atau AI tools untuk developer. Belum diputuskan kreator.
+- 2026-11-24: Kit diubah ke model portfolio multi-track. Belum ada track. Rekomendasi awal dari dokumen strategi (master Inggris, niche edukasi mobile/Flutter atau AI tools untuk developer) menjadi bahan riset niche, belum diputuskan kreator.

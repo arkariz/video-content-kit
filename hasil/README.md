@@ -1,29 +1,33 @@
 # hasil/: semua hasil kerja agent
 
-Folder ini berisi output, bukan instruksi. Agent boleh membuat dan mengubah file di sini. Instruksi ada di `instruksi/` dan `skills/`.
+Folder ini berisi output, bukan instruksi. Satu repo menampung beberapa **track**. Satu track = satu niche + satu sudut, dengan progres, siklus, dan pelajarannya sendiri.
 
 ```
 hasil/
-├── STATE.md                 # posisi kerja saat ini (baca pertama kali)
-├── learnings.md             # pelajaran kumulatif dari analitik, dipakai setiap siklus
-├── backlog.md               # daftar ide topik yang sudah diprioritaskan
-├── catatan-verifikasi.md    # hasil verifikasi ulang fakta platform (dibuat bila perlu)
-├── 00-niche/
-│   ├── profil-kreator.md    # keahlian, waktu, batasan kreator
-│   ├── kandidat-niche.md    # 10-15 kandidat + data mentah
-│   ├── analisa-niche.md     # skor, shortlist 3, kompetitor, contoh ide
-│   └── keputusan-niche.md   # niche terpilih + alasan + KPI
-├── siklus/
-│   └── NNN-slug-topik/
-│       ├── 01-riset-viral.md
-│       ├── 02-brief.md
-│       ├── 03-script.json   # sumber tunggal untuk suara, caption, visual, render
-│       ├── 03-naskah.md     # versi baca manusia + versi Indonesia
-│       ├── 04-assets.json   # footage, lisensi, file audio
-│       ├── 05-qa.md         # laporan anti-slop (LULUS / GAGAL)
-│       └── 06-publish.md    # metadata per platform + URL tayang
-└── analitik/
-    └── YYYY-MM-DD-mingguan.md
+├── STATE.md                    # portfolio: daftar track, kapasitas, langkah berikutnya (baca pertama)
+├── learnings-global.md         # pelajaran yang terbukti berlaku lintas track
+├── catatan-verifikasi.md       # verifikasi ulang fakta platform (dibuat bila perlu)
+├── 00-riset-niche/
+│   ├── profil-kreator.md
+│   ├── kandidat-niche.md       # 10-15 kandidat + data mentah
+│   └── analisa-niche.md        # skor + usulan track
+├── review/
+│   └── YYYY-MM-DD-review-portfolio.md   # keputusan lanjut / scale / pivot / jeda / drop
+└── tracks/
+    └── T01-slug/
+        ├── TRACK.md            # status track (frontmatter) + hipotesis + siklus + keputusan + log
+        ├── backlog.md
+        ├── learnings.md
+        ├── validasi/
+        │   ├── rencana.md      # kriteria lulus/gagal ditulis SEBELUM data masuk
+        │   └── hasil.md
+        ├── siklus/
+        │   └── NNN-slug/       # 01-riset-viral.md, 02-brief.md, 03-script.json, 03-naskah.md,
+        │                       # 04-assets.json, 05-qa.md, 06-publish.md
+        └── analitik/
+            └── YYYY-MM-DD.md
 ```
+
+ID track: `T` + dua digit, berurutan dan tidak pernah dipakai ulang, meskipun track lama sudah di-drop. Track yang di-drop tidak dihapus. Statusnya diganti `drop` dan alasannya dicatat, supaya pelajarannya tetap bisa dipakai.
 
 Template untuk setiap file ada di `instruksi/templates/`.

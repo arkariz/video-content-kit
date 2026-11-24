@@ -24,14 +24,14 @@ Prinsipnya: **repo adalah satu-satunya sumber kebenaran.** Chat dipakai untuk be
 | Produksi, render, publish | Claude Code | Butuh terminal, API key, dan file lokal |
 | Analitik | Claude Code (CSV di repo) atau chat (angka ditempel) | Hasil akhirnya tetap harus masuk ke `hasil/` |
 
-**Chat ke Claude Code:** chat mengakhiri hasilnya dengan satu blok `HANDOFF → Claude Code`. Salin blok itu, tempel ke Claude Code, dan Claude Code menulis file, memperbarui STATE, commit, lalu lanjut.
+**Chat ke Claude Code:** chat mengakhiri hasilnya dengan satu blok `HANDOFF → Claude Code`. Salin blok itu, tempel ke Claude Code, dan Claude Code menulis file, memperbarui TRACK.md (dan STATE bila tahap track berubah), commit, lalu lanjut. Setiap blok menyebut satu track, atau `portfolio` untuk riset niche dan review.
 
 **Claude Code ke chat:** Claude Code commit dan push, lalu kamu klik **Sync now** di Project sebelum memulai chat baru. Sinkronisasi GitHub di Project tidak otomatis.
 
 ## Supaya Claude Code efektif dan hemat
 
-1. **Satu langkah per sesi, lalu `/clear`.** STATE.md menyimpan posisi kerja, jadi riwayat chat panjang tidak diperlukan. Konteks kecil berarti lebih cepat, lebih murah, dan lebih fokus.
-2. **Prompt pembuka cukup `mulai`.** CLAUDE.md mengimpor AGENTS.md, dan AGENTS.md menyuruh agent membaca STATE. Tidak perlu menjelaskan ulang konteks.
+1. **Satu track dan satu langkah per sesi, lalu `/clear`.** STATE.md dan TRACK.md menyimpan posisi kerja, jadi riwayat chat panjang tidak diperlukan. Konteks kecil berarti lebih cepat, lebih murah, dan lebih fokus.
+2. **Prompt pembuka cukup `mulai` atau `lanjut T02`.** CLAUDE.md mengimpor AGENTS.md, dan AGENTS.md menyuruh agent membaca STATE. Tidak perlu menjelaskan ulang konteks.
 3. **Pilih model di awal sesi, jangan ganti di tengah.** Mengganti model di tengah sesi membuat seluruh percakapan dibaca ulang tanpa cache. Model yang lebih kuat untuk riset dan naskah, model yang lebih cepat untuk produksi dan langkah mekanis.
 4. **Izin sudah disiapkan di `.claude/settings.json`:** perintah validasi, render Remotion, dan git lokal tidak perlu persetujuan berulang. `git push` tetap ditanyakan. `.env` diblokir dari pembacaan, jadi API key tidak pernah masuk ke konteks.
 5. **Skill dimuat sesuai kebutuhan.** Hanya deskripsi skill yang selalu ada di konteks. Isi lengkapnya dimuat saat dipakai, jadi lima skill tidak membebani setiap sesi.

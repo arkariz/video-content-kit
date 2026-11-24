@@ -1,4 +1,4 @@
-# Langkah 5: Publish
+# Langkah track: Publish
 
 Tujuan: satu video master dan potongannya tayang di 4 platform dengan metadata yang sesuai masing-masing. **Selalu minta persetujuan eksplisit kreator sebelum mengirim apa pun ke platform**, di mode gate apa pun.
 
@@ -25,7 +25,7 @@ Tentukan per platform dan tulis alasannya di `06-publish.md`:
 - **Lewat API cross-post** (misalnya Upload-Post atau Ayrshare, key di `.env`): kirim setelah kreator menyetujui ringkasan final (file, judul, jadwal, label).
 - **Manual**: siapkan semua file dan teks yang tinggal disalin, kreator yang mengunggah.
 
-Catat URL tayang dan waktu publish di `06-publish.md`. Perbarui STATE `status: tayang` dan isi tanggal tayang.
+Catat URL tayang dan waktu publish di `06-publish.md`. Ubah status siklus di `TRACK.md` menjadi `tayang` dan isi tanggal tayang.
 
 ## Jadwal default
 

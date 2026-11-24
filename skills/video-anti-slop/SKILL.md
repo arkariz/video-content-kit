@@ -44,7 +44,7 @@ Periksa render atau frame per scene dengan `references/video-slop-checklist.md` 
 
 ## Lapisan 4: Channel
 
-Bandingkan dengan 3 video terakhir:
+Bandingkan dengan 3 video terakhir di channel yang sama (bisa berasal dari track lain yang berbagi channel):
 
 - **Uji prompt yang sama:** kalau channel lain memberi prompt yang sama ke AI, apakah hasilnya hampir sama? Kalau ya, GAGAL.
 - **Variasi template:** struktur, layout pembuka, dan transisi tidak identik 3 kali berturut-turut.
