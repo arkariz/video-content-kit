@@ -4497,5 +4497,63 @@
   "anti_slop": {
     "text_score_en": 41,
     "text_score_id": 39
-  }
+  },
+  "chapters": [
+    {
+      "scene": "s01",
+      "title": "Approved is only a message"
+    },
+    {
+      "scene": "s04",
+      "title": "The tap"
+    },
+    {
+      "scene": "s09",
+      "title": "Acquirer, network, issuer"
+    },
+    {
+      "scene": "s12",
+      "title": "The message itself"
+    },
+    {
+      "scene": "s15",
+      "title": "The bank decides"
+    },
+    {
+      "scene": "s23",
+      "title": "Money moved: zero"
+    },
+    {
+      "scene": "s25",
+      "title": "Holds and pending"
+    },
+    {
+      "scene": "s30",
+      "title": "The charge that shows up twice"
+    },
+    {
+      "scene": "s34",
+      "title": "Offline approval"
+    },
+    {
+      "scene": "s37",
+      "title": "Clearing"
+    },
+    {
+      "scene": "s46",
+      "title": "Netting"
+    },
+    {
+      "scene": "s50",
+      "title": "Settlement and fees"
+    },
+    {
+      "scene": "s54",
+      "title": "Chargebacks"
+    },
+    {
+      "scene": "s57",
+      "title": "The recap"
+    }
+  ]
 }

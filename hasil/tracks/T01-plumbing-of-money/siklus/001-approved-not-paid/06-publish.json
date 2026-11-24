@@ -1,0 +1,92 @@
+{
+  "track": "T01",
+  "siklus": "001-approved-not-paid",
+  "dibuat": "2026-11-24T09:55:13.935Z",
+  "catatan": "Edit sebelum approve. platformAktif: ubah true/false. Jadwal default: master di tanggal tayang TRACK.md 19:00 WIB, Shorts +1 dan +2 hari (rencana.md terkunci: minggu yang sama).",
+  "platformAktif": {
+    "youtube": true,
+    "tiktok": false,
+    "instagram": false,
+    "facebook": false
+  },
+  "label_ai": {
+    "berlaku": true,
+    "alasan": "suara sintetis (TTS) dan adegan kartun; konservatif, tidak mengurangi jangkauan menurut YouTube",
+    "youtube": "containsSyntheticMedia",
+    "tiktok": "is_aigc",
+    "instagram": "is_ai_generated",
+    "facebook": "facebook_is_ai_generated"
+  },
+  "youtube": {
+    "categoryId": "27",
+    "privacyStatus": "public",
+    "selfDeclaredMadeForKids": false,
+    "defaultAudioLanguage": "en"
+  },
+  "items": [
+    {
+      "nama": "master",
+      "file": "produksi/render/T01/001/Master16x9-en.mp4",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Your Card Said \"Approved.\" The Shop Hasn't Been Paid.",
+      "description": "After watching, you can tell which system created each line in your bank app (pending, posted, or the one that disappears) and why the shop gets paid days after you tap.\n\n0:00 Approved is only a message\n0:18 The tap\n1:01 Acquirer, network, issuer\n1:28 The message itself\n1:52 The bank decides\n3:07 Money moved: zero\n3:22 Holds and pending\n4:05 The charge that shows up twice\n4:34 Offline approval\n4:58 Clearing\n6:14 Netting\n6:48 Settlement and fees\n7:14 Chargebacks\n7:46 The recap\n\nSumber: (belum diisi, lihat QA T-src)\n\nNarasi memakai suara sintetis dan animasi kartun. Footage nyata berlisensi komersial (Pexels/Pixabay).",
+      "tags": [
+        "how payments work",
+        "credit card",
+        "authorization",
+        "clearing",
+        "settlement",
+        "ISO 8583",
+        "fintech explained"
+      ],
+      "scheduled_date": "2026-12-07T12:00:00Z",
+      "timezone": "Asia/Jakarta",
+      "lokal": "2026-12-07 19:00:00"
+    },
+    {
+      "nama": "A1-zero-dollars-moved",
+      "file": "produksi/render/T01/001/Short9x16-A1-zero-dollars-moved-en.mp4",
+      "platforms": [
+        "youtube",
+        "tiktok",
+        "instagram",
+        "facebook"
+      ],
+      "title": "Your card said approved. Zero dollars moved.",
+      "description": "Your card said approved. Zero dollars moved.\n\nFull video on the channel.",
+      "tags": [
+        "how payments work",
+        "credit card",
+        "authorization",
+        "shorts"
+      ],
+      "scheduled_date": "2026-12-08T12:00:00Z",
+      "timezone": "Asia/Jakarta",
+      "lokal": "2026-12-08 19:00:00"
+    },
+    {
+      "nama": "A2-pending-to-posted",
+      "file": "produksi/render/T01/001/Short9x16-A2-pending-to-posted-en.mp4",
+      "platforms": [
+        "youtube",
+        "tiktok",
+        "instagram",
+        "facebook"
+      ],
+      "title": "Why your restaurant charge changes the next day.",
+      "description": "Why your restaurant charge changes the next day.\n\nFull video on the channel.",
+      "tags": [
+        "how payments work",
+        "credit card",
+        "authorization",
+        "shorts"
+      ],
+      "scheduled_date": "2026-12-09T12:00:00Z",
+      "timezone": "Asia/Jakarta",
+      "lokal": "2026-12-09 19:00:00"
+    }
+  ],
+  "hasil": []
+}

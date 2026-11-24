@@ -26,10 +26,22 @@ node scripts/pipeline/approve.mjs --track T01 --siklus 001 --revisi "catatan" # 
 
 Tahap LLM berjalan lewat `claude -p` bila CLI `claude` ada di PATH. Kalau tidak, penggerak mencetak prompt (`scripts/pipeline/prompts/`) dan keluar dengan kode 3. Di sesi Claude Code, "lanjut T01" menjalankan tahap itu. Bagian `claude -p` belum teruji di mesin ini karena CLI belum terpasang.
 
+## Publish (Upload-Post)
+
+Adaptor: `scripts/pipeline/publish.mjs`. Alur: `plan` menulis `06-publish.json` dan `06-publish.md` (judul, deskripsi dengan chapter dari `script.chapters`, tag, jadwal, label AI per platform; edit sebelum approve) → kreator menonton dan mengetik SETUJU di `approve.mjs` → `send` mengunggah terjadwal lewat `POST /api/upload` dengan `Idempotency-Key` sehingga tidak ganda. `status` mengambil status dan URL tayang.
+
+```
+node scripts/pipeline/publish.mjs plan   --track T01 --siklus 001
+node --env-file=.env scripts/pipeline/publish.mjs send --track T01 --siklus 001 --dry   # tampilkan payload, tidak mengirim
+node --env-file=.env scripts/pipeline/publish.mjs status --track T01 --siklus 001
+```
+
+Isi `.env` (nama variabel saja): `UPLOADPOST_API_KEY`, `UPLOADPOST_PROFILE`. Akun, profil, dan koneksi channel dibuat kreator sendiri di Upload-Post. Default hanya YouTube aktif (`platformAktif`); TikTok butuh paket berbayar. `send` menolak jalan bila siklus belum disetujui. Label AI default konservatif (suara sintetis): `containsSyntheticMedia`, `is_aigc`, `is_ai_generated`. Belum teruji ke API sungguhan (hanya `--dry` dan penolakan tanpa persetujuan). Yang tidak terdokumentasi di Upload-Post dan perlu dicek saat uji pertama: penanda Shorts di YouTube (setahu dokumennya tidak ada; Shorts dikenali dari rasio dan durasi), apakah `tags[]` atau `tags` yang diterima, dan nama bidang respons sukses. Track audio Indonesia tetap manual di YouTube Studio.
+
 ## Gate yang tidak bisa dilewati otomatis
 - Rencana validasi terkunci, jadwal tayang, dan batas kapasitas dibaca dari file, tidak diubah.
 - QA kritis menghentikan pipeline (kode 2). QA otomatis tidak pernah menyatakan LULUS final; ada pemeriksaan manual (dengar audio, tonton, cek fakta, thumbnail).
-- Publish hanya setelah kreator mengetik `SETUJU` untuk siklus itu. Alat publish belum dipilih (`scripts/pipeline/publish.mjs` belum ada), jadi persetujuan hanya dicatat.
+- Publish hanya setelah kreator mengetik `SETUJU` untuk siklus itu. Alat publish: Upload-Post (lihat bagian Publish).
 - Pengecualian QA dari kreator dicatat di TRACK.md (`pengecualian_qa`) dan tetap tampil sebagai temuan.
 
 ## Yang dicek QA otomatis

@@ -11,6 +11,6 @@ rl.question(`Anda sudah menonton, mendengarkan audio, dan memeriksa fakta untuk 
   rl.close(); if (a.trim() !== "SETUJU") { console.log("Dibatalkan."); process.exit(1); }
   state.log.push({ tahap: "disetujui", waktu: new Date().toISOString() }); writeJson(path.join(dir, ".pipeline.json"), state);
   const adapter = path.join(ROOT, "scripts/pipeline/publish.mjs");
-  if (!fs.existsSync(adapter)) { console.log("Disetujui dan dicatat. Adaptor publish belum ada (alat belum dipilih), jadi belum ada yang terkirim."); process.exit(0); }
-  import(adapter).then((m) => m.publish({ track: o.track, siklus: o.siklus, dir }));
+  if (!fs.existsSync(adapter)) { console.log("Disetujui dan dicatat, tetapi adaptor publish tidak ada."); process.exit(0); }
+  import(adapter).then((m) => m.publish({ track: o.track, siklus: o.siklus, dir })).catch((e) => { console.error("PUBLISH GAGAL:", e.message); process.exit(1); });
 });
