@@ -7,8 +7,8 @@ tahap: validasi
 channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
-siklus_aktif: null
-langkah_berikutnya: "validasi V2: riset konten viral sekali untuk seluruh sprint (instruksi/03-riset-konten-viral.md), lalu brief dan naskah long-form A"
+siklus_aktif: 001-approved-not-paid
+langkah_berikutnya: "validasi V2: brief dan naskah long-form A (siklus/001-approved-not-paid, instruksi/04-naskah.md)"
 menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
@@ -50,6 +50,9 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | brief | 2026-12-07 | uji-V2; file riset viral sprint ada di sini |
+| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
+| 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -59,9 +62,11 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | --- | --- | --- | --- |
 | 2026-11-24 | Dipilih untuk validasi | Skor niche 81/79 di analisa non-tech; kreator memilih U2-A + U1-A | analisa-niche-nontech.md |
 | 2026-11-24 | Rencana V2 disetujui dan dikunci | V1 LULUS 5/5; definisi LULUS diperjelas jadi minimal 4 dari 6 metrik tanpa zona gagal | validasi/rencana.md |
+| 2026-11-24 | Sudut sprint V2: ketiga usulan riset viral (opsi 1) | Celah authorization vs settlement (A), fee split tanpa nasihat (B), mitos asal-usul Diners Club terbukti PR (C) | siklus/001-approved-not-paid/01-riset-viral.md |
 
 ## Log
 
 - 2026-11-24: Track dibuat dari usulan U2-A (analisa-niche-nontech.md). Tahap validasi. V1 dinilai: LULUS (lihat validasi/rencana.md). Rencana V2 disusun, menunggu persetujuan kreator.
 - 2026-11-24: Kreator menerima kapasitas di atas 10 jam/minggu. Rencana V2 diperbarui: T01 dan T02 berjalan bersamaan.
 - 2026-11-24: Kreator menyetujui rencana V2 (opsi 1), dikunci 2026-11-24. Perubahan sebelum kunci: LULUS = minimal 4 dari 6 metrik lulus tanpa metrik di zona gagal; jam_per_minggu diseragamkan ke 5,5. Tayang 2026-12-07 s.d. 2026-12-27, penilaian 2027-01-03.
+- 2026-11-24: Riset viral sprint V2 selesai (siklus/001-approved-not-paid/01-riset-viral.md). Kreator memilih opsi 1: semua usulan sudut. Judul kerja berubah, sub-sudut dan hook sesuai rencana terkunci. View count pembanding belum terverifikasi.
