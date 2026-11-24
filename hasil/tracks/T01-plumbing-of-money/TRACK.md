@@ -50,7 +50,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | produksi | 2026-12-07 | uji-V2; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage belum dipilih |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | produksi | 2026-12-07 | uji-V2; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
@@ -78,3 +78,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Produksi 001: kandidat footage dicari (3 scene b-roll, Pixabay), TTS EN penuh dibuat dengan akun free (uji, bukan final; ulang dengan paket berbayar). Total audio EN 6,40 menit, di bawah target master ≥ 8:00. Menunggu pilihan footage dan keputusan durasi.
 - 2026-11-24: Audio uji 6,40 menit < 8:00. Atas permintaan kreator: jeda 0,9 detik antar scene di render dan 5 scene isi baru (cryptogram, skor risiko, konversi mata uang, settlement bank sentral, refund). Scene dinomori ulang (58). Audio EN 7,40 menit; estimasi render ±8:17. Anti-slop scene baru belum dinilai ulang, naskah menunggu persetujuan ulang.
 - 2026-11-24: Kreator menyetujui naskah 58 scene. Scene b-roll sekarang s25, s26, s33 (kandidat footage dicari ulang).
+- 2026-11-24: Footage b-roll dipilih Claude atas permintaan kreator (Pixabay 1110, 175, 162756; tanpa wajah, lisensi di 04-assets.json dan produksi/footage-cache). Hasil pencarian kata kunci awal kurang relevan, jadi s26 dan s33 dipilih lewat pencarian ulang dengan kata kunci lebih sederhana. Kreator bisa mengganti lewat picks.json.

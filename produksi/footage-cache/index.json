@@ -1,1 +1,28 @@
-{ "clips": {} }
+{
+  "clips": {
+    "pixabay:1110": {
+      "source": "https://pixabay.com/videos/id-1110/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-24",
+      "used_in": [
+        "T01/001/s25"
+      ]
+    },
+    "pixabay:175": {
+      "source": "https://pixabay.com/videos/id-175/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-24",
+      "used_in": [
+        "T01/001/s26"
+      ]
+    },
+    "pixabay:162756": {
+      "source": "https://pixabay.com/videos/id-162756/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-24",
+      "used_in": [
+        "T01/001/s33"
+      ]
+    }
+  }
+}

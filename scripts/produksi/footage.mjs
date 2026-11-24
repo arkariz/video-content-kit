@@ -16,7 +16,7 @@ if (cmd === "search") {
       }
       if (process.env.PIXABAY_API_KEY) {
         const r = await fetch(`https://pixabay.com/api/videos/?key=${process.env.PIXABAY_API_KEY}&per_page=3&q=${encodeURIComponent(q)}`);
-        for (const v of (await r.json()).hits || []) cand[s.id].push({ provider: "pixabay", id: String(v.id), page: v.pageURL, thumb: `https://i.vimeocdn.com/video/${v.picture_id}_640x360.jpg`, file: (v.videos.medium || v.videos.small).url, license: "Pixabay Content License", query: q });
+        for (const v of (await r.json()).hits || []) cand[s.id].push({ provider: "pixabay", id: String(v.id), page: v.pageURL, thumb: (v.videos.medium || v.videos.small || v.videos.tiny).thumbnail, file: (v.videos.medium || v.videos.small).url, license: "Pixabay Content License", query: q });
       }
     }
   }
@@ -29,7 +29,9 @@ if (cmd === "search") {
   const cand = readJson(path.join(ROOT, "produksi/preview", `${o.track}-${o.siklus}.candidates.json`));
   const assets = readJson(assetsPath, { cycle: script.cycle, footage: [], renders: [] });
   for (const [sceneId, ref] of Object.entries(picks)) {
-    const c = (cand[sceneId] || []).find((x) => `${x.provider}:${x.id}` === ref); if (!c) { console.warn("tidak ketemu", sceneId, ref); continue; }
+    let c = (cand[sceneId] || []).find((x) => `${x.provider}:${x.id}` === ref);
+    if (!c && ref.startsWith("pixabay:")) { const v = ((await (await fetch(`https://pixabay.com/api/videos/?key=${need("PIXABAY_API_KEY")}&id=${ref.slice(8)}`)).json()).hits || [])[0]; if (v) c = { provider: "pixabay", id: String(v.id), page: v.pageURL, file: (v.videos.medium || v.videos.small).url, license: "Pixabay Content License" }; }
+    if (!c) { console.warn("tidak ketemu", sceneId, ref); continue; }
     const rel = `footage/${o.track}/${o.siklus}/${sceneId}.mp4`, dest = path.join(ROOT, "produksi", rel); fs.mkdirSync(path.dirname(dest), { recursive: true });
     const key = `${c.provider}:${c.id}`; const used = catalog.clips[key]?.used_in || [];
     if (used.some((u) => !u.startsWith(`${o.track}/${o.siklus}`))) console.warn(`PERINGATAN: ${key} sudah dipakai di`, used);

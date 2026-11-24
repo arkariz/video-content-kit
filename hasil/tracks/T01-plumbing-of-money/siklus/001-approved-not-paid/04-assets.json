@@ -1,0 +1,21 @@
+{
+  "cycle": "001-approved-not-paid",
+  "footage": [
+    {
+      "scene_id": "s25",
+      "catalog_key": "pixabay:1110",
+      "file": "footage/T01/001/s25.mp4"
+    },
+    {
+      "scene_id": "s26",
+      "catalog_key": "pixabay:175",
+      "file": "footage/T01/001/s26.mp4"
+    },
+    {
+      "scene_id": "s33",
+      "catalog_key": "pixabay:162756",
+      "file": "footage/T01/001/s33.mp4"
+    }
+  ],
+  "renders": []
+}
