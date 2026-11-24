@@ -9,3 +9,5 @@ CLAUDE.local.md
 .agents/skills/
 .github/skills/
 .gemini/skills/
+produksi/render/.props-*.json
+produksi/preview/*.candidates.json

@@ -8,7 +8,7 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "validasi V2: produksi siklus 001 di repo (instruksi/05-produksi.md); target render master 8:15 sampai 8:45, wajib ≥ 8:00"
+langkah_berikutnya: "produksi 001: footage (search lalu kreator pilih), TTS EN sampel 2 scene, lalu penuh; target render master 8:15 sampai 8:45, wajib ≥ 8:00"
 menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
@@ -73,3 +73,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Riset viral sprint V2 selesai (siklus/001-approved-not-paid/01-riset-viral.md). Kreator memilih opsi 1: semua usulan sudut. Judul kerja berubah, sub-sudut dan hook sesuai rencana terkunci. View count pembanding belum terverifikasi.
 - 2026-11-24: Brief dan naskah 001 (EN + ID) ditulis. Anti-slop teks EN 41/50, ID 39/50 (LULUS). Durasi ±5,5 sampai 6 menit. Menunggu persetujuan kreator.
 - 2026-11-24: Naskah 001 diperpanjang ke 53 scene (1.153 kata EN, target 8:15 sampai 8:45) dan disetujui kreator. Catatan: video ini tanpa kehadiran nyata kreator; jadwalkan di siklus 002 atau 003.
+- 2026-11-24: Kerangka produksi bersama dibangun (produksi/remotion, scripts/produksi/*, katalog footage). Render uji OK. Belum ada audio/footage siklus 001.
