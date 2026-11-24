@@ -5,6 +5,8 @@
 import fs from "node:fs"; import path from "node:path"; import { fileURLToPath } from "node:url";
 import { ROOT, args, resolveCycle, readJson, writeJson, pauseSec } from "../produksi/lib.mjs";
 const BASE = "https://api.upload-post.com";
+// Terima dua ejaan nama variabel (UPLOADPOST_* dan UPLOAD_POST_*).
+const ENV = (k) => process.env[`UPLOADPOST_${k}`] ?? process.env[`UPLOAD_POST_${k}`];
 const fmtT = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
 
 export function plan({ track, siklus }) {
@@ -28,10 +30,10 @@ export function plan({ track, siklus }) {
   fs.writeFileSync(path.join(dir, "06-publish.md"), md); return { dir, out };
 }
 
-const headers = () => { if (!process.env.UPLOADPOST_API_KEY) throw new Error("UPLOADPOST_API_KEY kosong (jalankan dengan --env-file=.env)"); return { Authorization: `Apikey ${process.env.UPLOADPOST_API_KEY}` }; };
-export function payload(out, item, test) {
-  const act = item.platforms.filter((p) => out.platformAktif[p] && (!test || ["youtube", "facebook"].includes(p))); const L = out.label_ai.berlaku; const f = []; const add = (k, v) => v !== undefined && f.push([k, String(v)]);
-  add("user", process.env.UPLOADPOST_PROFILE); for (const p of act) add("platform[]", p); add("title", item.title); add("description", item.description); if (!test) { add("scheduled_date", item.scheduled_date); add("timezone", item.timezone); } add("async_upload", true); add("external_id", `${out.track}-${out.siklus}-${item.nama}${test ? "-uji" : ""}`);
+const headers = () => { if (!ENV("API_KEY")) throw new Error("UPLOADPOST_API_KEY / UPLOAD_POST_API_KEY kosong (jalankan dengan --env-file=.env)"); return { Authorization: `Apikey ${ENV("API_KEY")}` }; };
+export function payload(out, item, test, connected) {
+  const act = item.platforms.filter((p) => out.platformAktif[p] && (!test || ["youtube", "facebook"].includes(p)) && (!connected || connected.has(p))); const L = out.label_ai.berlaku; const f = []; const add = (k, v) => v !== undefined && f.push([k, String(v)]);
+  add("user", ENV("PROFILE")); for (const p of act) add("platform[]", p); add("title", item.title); add("description", item.description); if (!test) { add("scheduled_date", item.scheduled_date); add("timezone", item.timezone); } add("async_upload", true); add("external_id", `${out.track}-${out.siklus}-${item.nama}${test ? "-uji" : ""}`);
   if (act.includes("youtube")) { add("youtube_title", item.title); add("youtube_description", item.description); for (const t of item.tags) add("tags[]", t); add("categoryId", out.youtube.categoryId); add("privacyStatus", test ? "private" : out.youtube.privacyStatus); add("selfDeclaredMadeForKids", out.youtube.selfDeclaredMadeForKids); add("containsSyntheticMedia", L); add("defaultAudioLanguage", out.youtube.defaultAudioLanguage); }
   if (act.includes("tiktok")) { add("tiktok_title", `${item.title} ${item.tags.slice(0, 3).map((t) => "#" + t.replace(/\s+/g, "")).join(" ")}`.slice(0, 2200)); add("is_aigc", L); }
   if (act.includes("instagram")) { add("instagram_title", item.title); add("media_type", "REELS"); add("share_to_feed", true); add("is_ai_generated", L); }
@@ -42,11 +44,12 @@ export async function send({ track, siklus, dry, test }) {
   const { dir } = resolveCycle(track, siklus); const pubP = path.join(dir, "06-publish.json"); if (!fs.existsSync(pubP)) plan({ track, siklus }); const out = readJson(pubP);
   const log = readJson(path.join(dir, ".pipeline.json"), { log: [] }).log; const lastOk = log.map((l) => l.tahap).lastIndexOf("disetujui"), lastRev = log.map((l) => l.tahap).lastIndexOf("revisi");
   if (!dry && !test && (lastOk < 0 || lastRev > lastOk)) throw new Error("siklus belum disetujui kreator (jalankan approve.mjs dan ketik SETUJU)");
-  if (!process.env.UPLOADPOST_PROFILE && !dry) throw new Error("UPLOADPOST_PROFILE kosong");
+  if (!ENV("PROFILE") && !dry) throw new Error("UPLOADPOST_PROFILE / UPLOAD_POST_PROFILE kosong");
   // Mode uji: hanya Short pertama, YouTube privat dan Facebook draf, tanpa jadwal, tanpa Instagram/TikTok. Tidak ada yang tampil publik.
+  let connected = null; if (!dry) { const j = await accounts(); const pr = (j.profiles || []).find((p) => p.username === ENV("PROFILE")); connected = new Set(Object.entries(pr?.social_accounts || {}).filter(([, v]) => v && typeof v === "object" && !v.reauth_required).map(([k]) => k)); const miss = Object.keys(out.platformAktif).filter((k) => out.platformAktif[k] && !connected.has(k)); if (miss.length) console.log(`Dilewati (belum terhubung di Upload-Post): ${miss.join(", ")}`); }
   const items = test ? out.items.filter((i) => i.nama !== "master").slice(0, 1) : out.items;
   for (const item of items) {
-    const { act, fields } = payload(out, item, test); if (!act.length) { console.log(`- ${item.nama}: tidak ada platform aktif, dilewati`); continue; }
+    const { act, fields } = payload(out, item, test, connected); if (!act.length) { console.log(`- ${item.nama}: tidak ada platform aktif, dilewati`); continue; }
     const abs = path.join(ROOT, item.file); if (!fs.existsSync(abs)) throw new Error(`file tidak ada: ${item.file}`);
     if (dry) { console.log(`\n[DRY] ${item.nama} -> ${act.join(", ")} @ ${item.lokal} WIB (${(fs.statSync(abs).size / 1e6).toFixed(1)} MB)`); for (const [k, v] of fields) console.log(`  ${k} = ${v.length > 90 ? v.slice(0, 90) + "…" : v}`); continue; }
     if (!test && out.hasil.some((h) => h.nama === item.nama && h.request_id)) { console.log(`- ${item.nama}: sudah dikirim, dilewati`); continue; }
@@ -64,5 +67,10 @@ export async function status({ track, siklus, uji }) {
   for (const h of list) { const q = h.job_id ? `job_id=${h.job_id}` : `request_id=${h.request_id}`; const r = await (await fetch(`${BASE}/api/uploadposts/status?${q}`, { headers: headers() })).json(); h.status = r.status; h.detail = r.results; console.log(h.nama, r.status, JSON.stringify(r.results ?? "").slice(0, 200)); }
   const hist = await (await fetch(`${BASE}/api/uploadposts/history?limit=50`, { headers: headers() })).json().catch(() => ({})); for (const h of list) h.urls = (hist.history || []).filter((x) => x.external_id === `${out.track}-${out.siklus}-${h.nama}`).map((x) => ({ platform: x.platform, url: x.post_url })); writeJson(pubP, out);
 }
+export async function accounts() {
+  const r = await fetch(`${BASE}/api/uploadposts/users`, { headers: headers() }); const j = await r.json().catch(() => ({})); if (!r.ok) throw new Error(`HTTP ${r.status} ${JSON.stringify(j).slice(0, 200)}`);
+  console.log("paket:", j.plan, "| batas profil:", j.limit); for (const p of j.profiles || []) console.log(`profil "${p.username}":`, Object.entries(p.social_accounts || {}).filter(([, v]) => v && typeof v === "object").map(([k, v]) => k + (v.reauth_required ? " (hubungkan ulang)" : "")).join(", ") || "belum ada akun terhubung");
+  const want = ENV("PROFILE"); if (want && !(j.profiles || []).some((p) => p.username === want)) console.log(`PERINGATAN: profil "${want}" tidak ditemukan`); return j;
+}
 export const publish = (o) => send({ track: o.track, siklus: o.siklus });
-if (process.argv[1] === fileURLToPath(import.meta.url)) { const o = args(); const cmd = o._[0] || "plan"; (cmd === "plan" ? Promise.resolve(plan(o)).then((r) => console.log(`06-publish.json dan 06-publish.md ditulis (${r.out.items.length} item)`)) : cmd === "status" ? status({ ...o, uji: !!o.uji }) : send({ ...o, dry: !!o.dry, test: !!o.test })).catch((e) => { console.error("GAGAL:", e.message); process.exit(1); }); }
+if (process.argv[1] === fileURLToPath(import.meta.url)) { const o = args(); const cmd = o._[0] || "plan"; (cmd === "akun" ? accounts() : cmd === "plan" ? Promise.resolve(plan(o)).then((r) => console.log(`06-publish.json dan 06-publish.md ditulis (${r.out.items.length} item)`)) : cmd === "status" ? status({ ...o, uji: !!o.uji }) : send({ ...o, dry: !!o.dry, test: !!o.test })).catch((e) => { console.error("GAGAL:", e.message); process.exit(1); }); }

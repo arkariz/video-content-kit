@@ -88,5 +88,67 @@
       "lokal": "2026-12-09 19:00:00"
     }
   ],
-  "hasil": []
+  "hasil": [],
+  "uji": [
+    {
+      "nama": "A1-zero-dollars-moved-uji",
+      "platforms": [
+        "youtube"
+      ],
+      "request_id": "bc8e6b8370724a4b9085d09951384a3d",
+      "job_id": "580f629a9bc04756ba9bc515b774f8ee",
+      "scheduled_date": "2026-12-08T12:00:00Z",
+      "dikirim": "2026-11-24T10:03:50.321Z",
+      "status": "completed",
+      "detail": [
+        {
+          "user_email": "nationpotato94@gmail.com",
+          "profile_username": "default",
+          "platform": "youtube",
+          "media_type": "video",
+          "upload_timestamp": {
+            "$date": "2026-11-24T10:03:54.752Z"
+          },
+          "success": true,
+          "platform_post_id": "qe8x9BpY8JE",
+          "post_url": "Post uploaded as Private. No public URL available.",
+          "error_message": null,
+          "error_signature": null,
+          "error_code": null,
+          "failure_stage": null,
+          "media_size_bytes": 23703845,
+          "post_title": "Your card said approved. Zero dollars moved.",
+          "post_caption": "Your card said approved. Zero dollars moved.\r\n\r\nFull video on the channel.",
+          "is_async": true,
+          "dashboard": false,
+          "source": "api",
+          "client": "node_generic",
+          "client_version": null,
+          "video_was_transcoded": false,
+          "changes": [],
+          "prevalidation_metadata": {
+            "width": 1080,
+            "height": 1920,
+            "fps": 30,
+            "duration": 36.139,
+            "container": "mov,mp4,m4a,3gp,3g2,mj2",
+            "video_codec": "h264",
+            "audio_codec": "aac"
+          },
+          "target_linkedin_page_id": null,
+          "request_id": "bc8e6b8370724a4b9085d09951384a3d",
+          "external_id": "T01-001-approved-not-paid-A1-zero-dollars-moved-uji",
+          "request_id_logs": "bc8e6b8370724a4b9085d09951384a3d",
+          "job_id": "580f629a9bc04756ba9bc515b774f8ee",
+          "request_total_platforms": 1
+        }
+      ],
+      "urls": [
+        {
+          "platform": "youtube",
+          "url": "Post uploaded as Private. No public URL available."
+        }
+      ]
+    }
+  ]
 }
