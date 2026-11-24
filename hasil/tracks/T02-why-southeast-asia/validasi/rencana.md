@@ -1,6 +1,6 @@
 # Rencana validasi: T02
 
-Ditulis: 2026-11-24 · Status: **DRAF, belum dikunci.** Dikunci setelah kreator menyetujui V2. Setelah dikunci, kriteria tidak diubah lagi, apa pun datanya.
+Ditulis: 2026-11-24 · **Dikunci: 2026-11-24** (kreator menyetujui rencana V2 apa adanya). Kriteria tidak diubah lagi, apa pun datanya.
 
 ## Hipotesis yang diuji
 

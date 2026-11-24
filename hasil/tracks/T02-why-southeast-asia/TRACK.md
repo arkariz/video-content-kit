@@ -8,8 +8,8 @@ channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: null
-langkah_berikutnya: "validasi V2: kreator menyetujui rencana V2 dan ambangnya (validasi/rencana.md), lalu riset konten viral sekali untuk sprint dan rekam footage KRL"
-menunggu_keputusan: "Setujui rencana V2 (validasi/rencana.md): paket 6 Shorts + 2 long-form, variasi A (infrastruktur + footage sendiri) / B (perbandingan data) / C (warisan sejarah), ambang default, tayang 2026-12-07 s.d. 2026-12-27 bersamaan dengan V2 T01"
+langkah_berikutnya: "validasi V2: riset konten viral sekali untuk sprint (instruksi/03-riset-konten-viral.md), mulai dari variasi A; rekam footage KRL 2026-11-28/29"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -58,9 +58,11 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | --- | --- | --- | --- |
 | 2026-11-24 | Dipilih untuk validasi | Skor niche 81/79 di analisa non-tech; kreator memilih U2-A + U1-A | analisa-niche-nontech.md |
 | 2026-11-24 | V1 LULUS (5/5) | 10 video relevan >10K dalam 90 hari; 4 channel <10K subs dengan outlier (The Odd Decision 945 subs: 507K; Rules of the Land 519 subs: 194K); 15 ide dengan bukti milik kreator; ~6,2 jam/minggu | validasi/rencana.md |
+| 2026-11-24 | Rencana V2 disetujui dan dikunci | Kreator memilih opsi 1: paket dan periode sama dengan T01 supaya perbandingan adil | validasi/rencana.md |
 
 ## Log
 
 - 2026-11-24: Track dibuat dari usulan U1-A (analisa-niche-nontech.md). Tahap validasi, mulai dari V1.
 - 2026-11-24: Kapasitas dinaikkan ke 12 jam/minggu. Target V2 memakai paket dan periode tayang yang sama dengan T01 (2026-12-07 s.d. 2026-12-27), bila V1 lulus.
 - 2026-11-24: V1 dinilai dari 11 kata kunci YouTube: LULUS 5/5. Catatan: permintaan "Indonesia" terbesar saat ini politik/krisis (di luar sudut); pilar 4 (perbandingan antarnegara) terbukti kuat. Rencana V2 disusun (variasi A/B/C), jam_per_minggu 5 → 6. Menunggu persetujuan kreator.
+- 2026-11-24: Kreator menyetujui rencana V2 apa adanya (opsi 1). Rencana dikunci. Berikutnya riset konten viral sprint V2.
