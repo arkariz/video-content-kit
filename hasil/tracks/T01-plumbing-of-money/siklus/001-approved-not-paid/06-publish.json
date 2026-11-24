@@ -6,8 +6,8 @@
   "platformAktif": {
     "youtube": true,
     "tiktok": false,
-    "instagram": false,
-    "facebook": false
+    "instagram": true,
+    "facebook": true
   },
   "label_ai": {
     "berlaku": true,
