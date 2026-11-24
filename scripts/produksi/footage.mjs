@@ -5,6 +5,34 @@ const o = args(); const cmd = o._[0] || "search"; const { scriptPath, assetsPath
 const script = readJson(scriptPath); const catPath = path.join(ROOT, "produksi/footage-cache/index.json");
 const catalog = readJson(catPath, { clips: {} });
 const broll = script.scenes.filter((s) => s.visual.type === "broll");
+
+if (cmd === "plan") {
+  // Pilih klip otomatis per scene dari 04-broll-plan.json: skor tag + durasi, hindari duplikat di katalog global.
+  const planPath = path.join(path.dirname(scriptPath), "04-broll-plan.json"); const plan = readJson(planPath, {});
+  const fps = 1; const picks = {}; const cands = {};
+  const fetchHits = async (q) => {
+    const out = [];
+    if (process.env.PEXELS_API_KEY) { const r = await fetch(`https://api.pexels.com/videos/search?per_page=15&orientation=landscape&query=${encodeURIComponent(q)}`, { headers: { Authorization: process.env.PEXELS_API_KEY } }); for (const v of (await r.json()).videos || []) out.push({ provider: "pexels", id: String(v.id), page: v.url, tags: (v.url || "").split("/").pop().replace(/-\d+\/?$/, "").split("-"), dur: v.duration, thumb: v.image, file: (v.video_files.filter((f) => f.width >= 1280 && f.width <= 2000).sort((a, b) => a.width - b.width)[0] || v.video_files[0]).link, license: "Pexels License" }); }
+    if (process.env.PIXABAY_API_KEY) { const r = await fetch(`https://pixabay.com/api/videos/?key=${process.env.PIXABAY_API_KEY}&per_page=20&q=${encodeURIComponent(q)}`); for (const v of (await r.json()).hits || []) out.push({ provider: "pixabay", id: String(v.id), page: v.pageURL, tags: v.tags.split(",").map((s) => s.trim().toLowerCase()), dur: v.duration, thumb: (v.videos.medium || v.videos.small || v.videos.tiny).thumbnail, file: (v.videos.medium || v.videos.small).url, license: "Pixabay Content License" }); }
+    return out;
+  };
+  for (const [sceneId, pl] of Object.entries(plan)) {
+    if (sceneId.startsWith("_")) continue;
+    const sc = script.scenes.find((s) => s.id === sceneId); const need = ((sc?.duration_ms?.en || 6000) / 1000) + 1;
+    if (pl.keep) { picks[sceneId] = pl.keep; continue; }
+    const words = new Set(pl.keywords.flatMap((k) => k.toLowerCase().split(/\s+/))); const avoid = new Set([...(pl.avoid || []).flatMap((k) => k.toLowerCase().split(/\s+/)), "ai", "generated", "cartoon", "animation", "animated", "illustration", "vector", "3d", "loop", "motion", "graphics"]);
+    const all = []; for (const q of pl.keywords) all.push(...(await fetchHits(q)));
+    const seen = new Set(); const scored = all.filter((h) => !seen.has(h.provider + h.id) && seen.add(h.provider + h.id)).map((h) => {
+      const tg = new Set(h.tags.map((x) => x.toLowerCase())); let s = 0; for (const w of words) if (tg.has(w) || [...tg].some((x) => x.includes(w))) s += 2; const tw = new Set([...tg].flatMap((x) => x.split(/\s+/))); for (const a of avoid) if (tw.has(a)) s -= 3;
+      if (h.dur < need) s -= 4; if ((catalog.clips[`${h.provider}:${h.id}`]?.used_in || []).some((u) => !u.startsWith(`${o.track}/${o.siklus}`))) s -= 6; return { ...h, score: s };
+    }).sort((a, b) => b.score - a.score);
+    const used = new Set(Object.values(picks)); const best = scored.find((h) => !used.has(`${h.provider}:${h.id}`));
+    cands[sceneId] = scored.slice(0, 6); if (best && best.score >= (plan._minScore ?? 6)) picks[sceneId] = `${best.provider}:${best.id}`; else { console.log(sceneId, "-> tidak ada klip cukup relevan (skor tertinggi", best?.score, "), tetap adegan kartun"); continue; }
+    console.log(sceneId, "->", picks[sceneId], `skor ${best.score}, ${best.dur}s, tags: ${best.tags.slice(0, 6).join(",")}`);
+  }
+  writeJson(path.join(ROOT, "produksi/preview", `${o.track}-${o.siklus}.candidates.json`), cands); writeJson(path.join(ROOT, "produksi/preview", `${o.track}-${o.siklus}.picks.json`), picks);
+  console.log("picks.json ditulis; jalankan: footage.mjs download"); process.exit(0);
+}
 if (cmd === "search") {
   const cand = {};
   for (const s of broll) {

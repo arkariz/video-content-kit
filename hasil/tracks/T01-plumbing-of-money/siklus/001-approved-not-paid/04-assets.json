@@ -2,6 +2,16 @@
   "cycle": "001-approved-not-paid",
   "footage": [
     {
+      "scene_id": "s01",
+      "catalog_key": "pixabay:32246",
+      "file": "footage/T01/001/s01.mp4"
+    },
+    {
+      "scene_id": "s07",
+      "catalog_key": "pixabay:130652",
+      "file": "footage/T01/001/s07.mp4"
+    },
+    {
       "scene_id": "s25",
       "catalog_key": "pixabay:1110",
       "file": "footage/T01/001/s25.mp4"
@@ -15,6 +25,21 @@
       "scene_id": "s33",
       "catalog_key": "pixabay:162756",
       "file": "footage/T01/001/s33.mp4"
+    },
+    {
+      "scene_id": "s37",
+      "catalog_key": "pixabay:9908",
+      "file": "footage/T01/001/s37.mp4"
+    },
+    {
+      "scene_id": "s40",
+      "catalog_key": "pixabay:86911",
+      "file": "footage/T01/001/s40.mp4"
+    },
+    {
+      "scene_id": "s50",
+      "catalog_key": "pixabay:33703",
+      "file": "footage/T01/001/s50.mp4"
     }
   ],
   "renders": [

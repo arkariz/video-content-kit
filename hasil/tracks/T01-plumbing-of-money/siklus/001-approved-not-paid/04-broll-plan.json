@@ -1,0 +1,81 @@
+{
+  "_catatan": "Footage nyata berlisensi (Pexels/Pixabay) untuk adegan dunia nyata. Sekitar 20-30% durasi, tersebar, maks. 2 berurutan. Kunci = id scene.",
+  "s01": {
+    "keywords": [
+      "contactless payment coffee shop",
+      "paying with card cafe"
+    ],
+    "avoid": [
+      "man face",
+      "woman face"
+    ]
+  },
+  "s07": {
+    "keywords": [
+      "mobile payment smartphone nfc",
+      "pay with phone store"
+    ]
+  },
+  "s22": {
+    "keywords": [
+      "card declined payment terminal",
+      "cashier payment terminal"
+    ]
+  },
+  "s25": {
+    "keywords": [
+      "hands scrolling banking app phone",
+      "mobile banking app transactions"
+    ],
+    "keep": "pixabay:1110"
+  },
+  "s26": {
+    "keywords": [
+      "gas station",
+      "fuel pump"
+    ],
+    "keep": "pixabay:175"
+  },
+  "s33": {
+    "keywords": [
+      "airplane window clouds"
+    ],
+    "keep": "pixabay:162756"
+  },
+  "s34": {
+    "keywords": [
+      "airplane cabin passengers",
+      "airplane interior seats"
+    ]
+  },
+  "s37": {
+    "keywords": [
+      "cafe closing counter",
+      "cash register shop"
+    ]
+  },
+  "s40": {
+    "keywords": [
+      "euro dollar banknotes",
+      "foreign currency money"
+    ]
+  },
+  "s43": {
+    "keywords": [
+      "entering pin keypad",
+      "atm keypad"
+    ]
+  },
+  "s50": {
+    "keywords": [
+      "barista coffee shop busy",
+      "coffee shop counter"
+    ]
+  },
+  "s55": {
+    "keywords": [
+      "receipt printing",
+      "paper receipt"
+    ]
+  }
+}

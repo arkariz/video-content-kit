@@ -11,6 +11,7 @@ export type SceneProps = {
   audioFrames: number;     // panjang suara; animasi selesai di sini
   durationFrames: number;  // audioFrames + jeda
   clip?: string;
+  clipFrames?: number;     // panjang klip (untuk loop bila lebih pendek dari scene)
   captions: CaptionWord[];
 };
 export type VideoProps = { trackId: string; lang: Lang; scenes: SceneProps[]; hookOverride?: string };

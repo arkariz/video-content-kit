@@ -1,0 +1,2418 @@
+{
+  "s01": {
+    "bg": "cafe",
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.2,
+        "label": "YOU",
+        "emo": "happy",
+        "say": {
+          "text": "Approved!",
+          "at": 0.1
+        },
+        "scale": 1
+      },
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.5,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "scale": 1
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.8,
+        "label": "SHOP OWNER",
+        "emo": "neutral",
+        "emoAt": [
+          [
+            0.5,
+            "worry"
+          ]
+        ],
+        "say": {
+          "text": "…and my money?",
+          "at": 0.5
+        },
+        "scale": 1
+      }
+    ],
+    "fx": [
+      {
+        "type": "stamp",
+        "text": "APPROVED",
+        "tone": "good",
+        "at": 0.3,
+        "x": 0.5,
+        "y": 0.2
+      },
+      {
+        "type": "pow",
+        "text": "$0.00",
+        "at": 0.62,
+        "x": 0.86,
+        "y": 0.2,
+        "color": "#ff9b8f"
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s02": {
+    "bg": "paper",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.22,
+        "label": "YOU",
+        "emo": "shock",
+        "say": {
+          "text": "There's MORE?",
+          "at": 0.45
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.78,
+        "label": "SHOP OWNER",
+        "emo": "smug",
+        "say": {
+          "text": "Two more systems.",
+          "at": 0.6
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s03": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.3,
+        "label": "YOU",
+        "emo": "think",
+        "say": {
+          "text": "Pending? Posted? Gone?",
+          "at": 0.35
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "phone",
+        "kind": "phone",
+        "x": 0.72,
+        "label": "PHONE",
+        "emo": "neutral",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s04": {
+    "bg": "cafe",
+    "actors": [
+      {
+        "id": "card",
+        "kind": "card",
+        "x": 0.2,
+        "label": "CARD",
+        "emo": "happy",
+        "pose": "point",
+        "scale": 1
+      },
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.55,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "say": {
+          "text": "Got both. Thanks.",
+          "at": 0.6
+        },
+        "scale": 1
+      },
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.86,
+        "label": "YOU",
+        "emo": "neutral",
+        "scale": 0.9
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "card",
+        "to": "term",
+        "label": "4111…",
+        "at": 0.12,
+        "dur": 0.14
+      },
+      {
+        "type": "packet",
+        "from": "card",
+        "to": "term",
+        "label": "8F3A…",
+        "at": 0.3,
+        "dur": 0.14,
+        "y": 0.4
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s05": {
+    "bg": "bank",
+    "actors": [
+      {
+        "id": "card",
+        "kind": "card",
+        "x": 0.22,
+        "label": "CARD",
+        "emo": "smug",
+        "say": {
+          "text": "Replay it tomorrow!",
+          "at": 0.1
+        },
+        "scale": 1
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.78,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "neutral",
+        "emoAt": [
+          [
+            0.45,
+            "angry"
+          ]
+        ],
+        "scale": 1
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "card",
+        "to": "iss",
+        "label": "8F3A…",
+        "at": 0.3,
+        "dur": 0.16
+      },
+      {
+        "type": "stamp",
+        "text": "REJECTED",
+        "tone": "bad",
+        "at": 0.55,
+        "x": 0.75,
+        "y": 0.3
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s06": {
+    "bg": "paper",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "card",
+        "kind": "card",
+        "x": 0.22,
+        "label": "CARD",
+        "emo": "smug",
+        "say": {
+          "text": "Secret key stays inside.",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.78,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "happy",
+        "say": {
+          "text": "I hold the twin key.",
+          "at": 0.62
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s07": {
+    "bg": "cafe",
+    "actors": [
+      {
+        "id": "phone",
+        "kind": "phone",
+        "x": 0.28,
+        "label": "PHONE",
+        "emo": "smug",
+        "say": {
+          "text": "Token, not my card number.",
+          "at": 0.12
+        },
+        "scale": 1
+      },
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.72,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "scale": 1
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "phone",
+        "to": "term",
+        "label": "tok_7Q2",
+        "at": 0.4,
+        "dur": 0.14
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s08": {
+    "bg": "street",
+    "actors": [
+      {
+        "id": "thief",
+        "kind": "friend",
+        "x": 0.28,
+        "label": "THIEF",
+        "emo": "smug",
+        "say": {
+          "text": "Stolen token!",
+          "at": 0.1
+        },
+        "scale": 1
+      },
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.72,
+        "label": "TERMINAL",
+        "emo": "neutral",
+        "emoAt": [
+          [
+            0.55,
+            "angry"
+          ]
+        ],
+        "scale": 1
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "thief",
+        "to": "term",
+        "label": "tok_7Q2",
+        "at": 0.3,
+        "dur": 0.14
+      },
+      {
+        "type": "stamp",
+        "text": "REJECTED",
+        "tone": "bad",
+        "at": 0.58,
+        "x": 0.72,
+        "y": 0.28
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s09": {
+    "bg": "cafe",
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.22,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "say": {
+          "text": "Hey bank, may I charge this?",
+          "at": 0.1
+        },
+        "scale": 1
+      },
+      {
+        "id": "acq",
+        "kind": "bank",
+        "x": 0.76,
+        "label": "ACQUIRER",
+        "acc": "glasses",
+        "color": "#cfe3f7",
+        "emo": "neutral",
+        "say": {
+          "text": "I just forward things.",
+          "at": 0.55
+        },
+        "scale": 1
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "term",
+        "to": "acq",
+        "label": "0100",
+        "at": 0.3,
+        "dur": 0.14
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s10": {
+    "bg": "bank",
+    "actors": [
+      {
+        "id": "acq",
+        "kind": "bank",
+        "x": 0.15,
+        "label": "ACQUIRER",
+        "acc": "glasses",
+        "color": "#cfe3f7",
+        "scale": 0.9
+      },
+      {
+        "id": "net",
+        "kind": "network",
+        "x": 0.5,
+        "label": "NETWORK",
+        "acc": "shades",
+        "emo": "smug",
+        "say": {
+          "text": "BIN 4111 11… → that bank!",
+          "at": 0.45
+        },
+        "scale": 1
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.85,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "neutral",
+        "scale": 0.9
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "acq",
+        "to": "net",
+        "label": "0100",
+        "at": 0.1,
+        "dur": 0.14
+      },
+      {
+        "type": "packet",
+        "from": "net",
+        "to": "iss",
+        "label": "0100",
+        "at": 0.62,
+        "dur": 0.14
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s11": {
+    "bg": "sky",
+    "actors": [
+      {
+        "id": "acq",
+        "kind": "bank",
+        "x": 0.15,
+        "label": "ACQUIRER",
+        "acc": "glasses",
+        "color": "#cfe3f7",
+        "scale": 0.9
+      },
+      {
+        "id": "net",
+        "kind": "network",
+        "x": 0.5,
+        "label": "NETWORK",
+        "acc": "shades",
+        "emo": "smug",
+        "say": {
+          "text": "I carry messages. Never money.",
+          "at": 0.1
+        },
+        "scale": 1
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.85,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "scale": 0.9
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "acq",
+        "to": "net",
+        "label": "msg",
+        "at": 0.4,
+        "dur": 0.14
+      },
+      {
+        "type": "packet",
+        "kind": "coin",
+        "from": "acq",
+        "to": "net",
+        "label": "fee",
+        "at": 0.55,
+        "dur": 0.14
+      },
+      {
+        "type": "packet",
+        "from": "net",
+        "to": "iss",
+        "label": "msg",
+        "at": 0.75,
+        "dur": 0.14
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s12": {
+    "bg": "paper",
+    "insert": {
+      "pos": "right"
+    },
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.2,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "say": {
+          "text": "ISO 8583. Since 1987.",
+          "at": 0.1
+        },
+        "scale": 1
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s13": {
+    "bg": "paper",
+    "insert": {
+      "pos": "right"
+    },
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.2,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "pose": "point",
+        "say": {
+          "text": "0100 = may I charge this card?",
+          "at": 0.2
+        },
+        "scale": 1
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s14": {
+    "bg": "paper",
+    "insert": {
+      "pos": "right"
+    },
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.2,
+        "label": "TERMINAL",
+        "emo": "think",
+        "say": {
+          "text": "Card, amount, currency.",
+          "at": 0.2
+        },
+        "scale": 1
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s15": {
+    "bg": "bank",
+    "actors": [
+      {
+        "id": "net",
+        "kind": "network",
+        "x": 0.25,
+        "label": "NETWORK",
+        "acc": "shades",
+        "emo": "neutral",
+        "scale": 1
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.72,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "shock",
+        "say": {
+          "text": "Under one second?!",
+          "at": 0.2
+        },
+        "scale": 1
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "net",
+        "to": "iss",
+        "label": "0100",
+        "at": 0.08,
+        "dur": 0.14
+      },
+      {
+        "type": "pow",
+        "text": "< 1s",
+        "at": 0.45,
+        "x": 0.5,
+        "y": 0.3
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s16": {
+    "bg": "bank",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.5,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "happy",
+        "say": {
+          "text": "Real card? Right code? ✓",
+          "at": 0.15,
+          "by": 0.02
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s17": {
+    "bg": "bank",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.3,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "think",
+        "say": {
+          "text": "Hmm. Usual shop? Usual hour?",
+          "at": 0.2
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.74,
+        "label": "YOU",
+        "emo": "neutral",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s18": {
+    "bg": "bank",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.3,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "worry",
+        "say": {
+          "text": "Abroad? Hmm…",
+          "at": 0.4
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.74,
+        "label": "YOU",
+        "emo": "happy",
+        "say": {
+          "text": "Holiday!",
+          "at": 0.2
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s19": {
+    "bg": "paper",
+    "insert": {
+      "pos": "right"
+    },
+    "actors": [
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.2,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "happy",
+        "scale": 0.95
+      }
+    ],
+    "fx": [
+      {
+        "type": "stamp",
+        "text": "APPROVED",
+        "tone": "good",
+        "at": 0.5,
+        "x": 0.25,
+        "y": 0.28
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s20": {
+    "bg": "paper",
+    "insert": {
+      "pos": "right"
+    },
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.2,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "say": {
+          "text": "Approval code. Keep it!",
+          "at": 0.3
+        },
+        "scale": 1
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s21": {
+    "bg": "paper",
+    "insert": {
+      "pos": "right"
+    },
+    "actors": [
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.2,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "angry",
+        "scale": 0.95,
+        "say": {
+          "text": "51 or 05. No.",
+          "at": 0.3
+        }
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s22": {
+    "bg": "cafe",
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.2,
+        "label": "YOU",
+        "emo": "shock",
+        "say": {
+          "text": "Why?!",
+          "at": 0.3
+        },
+        "scale": 1
+      },
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.5,
+        "label": "TERMINAL",
+        "emo": "sad",
+        "scale": 1
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.8,
+        "label": "SHOP OWNER",
+        "emo": "worry",
+        "pose": "shrug",
+        "say": {
+          "text": "No idea.",
+          "at": 0.55
+        },
+        "scale": 1
+      }
+    ],
+    "fx": [
+      {
+        "type": "stamp",
+        "text": "DECLINED",
+        "tone": "bad",
+        "at": 0.2,
+        "x": 0.5,
+        "y": 0.26
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s23": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.25,
+        "label": "YOU",
+        "emo": "happy",
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.75,
+        "label": "SHOP OWNER",
+        "emo": "worry",
+        "say": {
+          "text": "Zero. Between banks.",
+          "at": 0.4
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s24": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.3,
+        "label": "YOU",
+        "emo": "think",
+        "say": {
+          "text": "I see $95?",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "phone",
+        "kind": "phone",
+        "x": 0.74,
+        "label": "PHONE",
+        "emo": "smug",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s25": {
+    "bg": "none",
+    "actors": [
+      {
+        "id": "phone",
+        "kind": "phone",
+        "x": 0.84,
+        "label": "PHONE",
+        "emo": "smug",
+        "scale": 0.9,
+        "say": {
+          "text": "Pending and posted are two records.",
+          "at": 0.2
+        }
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s26": {
+    "bg": "none",
+    "actors": [
+      {
+        "id": "clerk",
+        "kind": "clerk",
+        "x": 0.84,
+        "label": "HOTEL",
+        "emo": "smug",
+        "scale": 0.9,
+        "say": {
+          "text": "We hold a bit extra. Don't mind us.",
+          "at": 0.2
+        }
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s27": {
+    "bg": "bank",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "clerk",
+        "kind": "clerk",
+        "x": 0.25,
+        "label": "HOTEL",
+        "emo": "smug",
+        "say": {
+          "text": "Just a little hold…",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.75,
+        "label": "YOU",
+        "emo": "shock",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s28": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.3,
+        "label": "YOU",
+        "emo": "happy",
+        "say": {
+          "text": "Gone! Good.",
+          "at": 0.65
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "phone",
+        "kind": "phone",
+        "x": 0.74,
+        "label": "PHONE",
+        "emo": "neutral",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s29": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.3,
+        "label": "YOU",
+        "emo": "shock",
+        "say": {
+          "text": "I bought ONE coffee!",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.75,
+        "label": "SHOP OWNER",
+        "emo": "smug",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s30": {
+    "bg": "bank",
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.15,
+        "label": "TERMINAL",
+        "emo": "worry",
+        "say": {
+          "text": "Hello?? Hello??",
+          "at": 0.6
+        },
+        "scale": 1
+      },
+      {
+        "id": "net",
+        "kind": "network",
+        "x": 0.5,
+        "label": "NETWORK",
+        "acc": "shades",
+        "emo": "neutral",
+        "scale": 1
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.85,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "happy",
+        "scale": 0.9
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "term",
+        "to": "iss",
+        "label": "0100",
+        "at": 0.08,
+        "dur": 0.2
+      },
+      {
+        "type": "packet",
+        "from": "iss",
+        "to": 0.45,
+        "label": "0110",
+        "at": 0.32,
+        "dur": 0.12,
+        "hold": 0.02
+      },
+      {
+        "type": "pow",
+        "text": "LOST",
+        "at": 0.45,
+        "x": 0.45,
+        "y": 0.3
+      },
+      {
+        "type": "packet",
+        "from": "term",
+        "to": "iss",
+        "label": "0100",
+        "at": 0.72,
+        "dur": 0.16
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s31": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.3,
+        "label": "YOU",
+        "emo": "shock",
+        "say": {
+          "text": "Two holds!",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.74,
+        "label": "TERMINAL",
+        "emo": "sad",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s32": {
+    "bg": "paper",
+    "insert": {
+      "pos": "right"
+    },
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.2,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "say": {
+          "text": "Reversal sent. Sorry!",
+          "at": 0.4
+        },
+        "scale": 1
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s33": {
+    "bg": "none",
+    "actors": [
+      {
+        "id": "pilot",
+        "kind": "pilot",
+        "x": 0.84,
+        "label": "AIRLINE",
+        "emo": "smug",
+        "scale": 0.9,
+        "say": {
+          "text": "No signal. The card decides.",
+          "at": 0.2
+        }
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s34": {
+    "bg": "sky",
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.28,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "say": {
+          "text": "Approved. Offline!",
+          "at": 0.2
+        },
+        "scale": 1
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.78,
+        "label": "BANK (no signal)",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "shock",
+        "scale": 0.9,
+        "say": {
+          "text": "Hello? Anyone?",
+          "at": 0.55
+        }
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s35": {
+    "bg": "sky",
+    "actors": [
+      {
+        "id": "plane",
+        "kind": "plane",
+        "x": 0.28,
+        "label": "AIRLINE",
+        "emo": "happy",
+        "scale": 1.1,
+        "say": {
+          "text": "Landed! Uploading sales.",
+          "at": 0.1
+        }
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.78,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "angry",
+        "scale": 0.9,
+        "say": {
+          "text": "This card is no good!",
+          "at": 0.6
+        }
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "plane",
+        "to": "iss",
+        "label": "sales",
+        "at": 0.35,
+        "dur": 0.18
+      },
+      {
+        "type": "pow",
+        "text": "1 BAD CARD",
+        "at": 0.6,
+        "x": 0.55,
+        "y": 0.28,
+        "color": "#ff9b8f"
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s36": {
+    "bg": "sky",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "pilot",
+        "kind": "pilot",
+        "x": 0.3,
+        "label": "AIRLINE",
+        "emo": "think",
+        "say": {
+          "text": "Cap the cabin spend.",
+          "at": 0.4
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.74,
+        "label": "YOU",
+        "emo": "happy",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s37": {
+    "bg": "cafe",
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.2,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "say": {
+          "text": "End of day: one big batch.",
+          "at": 0.15
+        },
+        "scale": 1
+      },
+      {
+        "id": "acq",
+        "kind": "bank",
+        "x": 0.78,
+        "label": "ACQUIRER",
+        "acc": "glasses",
+        "color": "#cfe3f7",
+        "emo": "happy",
+        "scale": 1
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "term",
+        "to": "acq",
+        "label": "sale 1",
+        "at": 0.3,
+        "dur": 0.14
+      },
+      {
+        "type": "packet",
+        "from": "term",
+        "to": "acq",
+        "label": "sale 2",
+        "at": 0.42,
+        "dur": 0.14
+      },
+      {
+        "type": "packet",
+        "from": "term",
+        "to": "acq",
+        "label": "sale 3",
+        "at": 0.54,
+        "dur": 0.14
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s38": {
+    "bg": "bank",
+    "actors": [
+      {
+        "id": "acq",
+        "kind": "bank",
+        "x": 0.2,
+        "label": "ACQUIRER",
+        "acc": "glasses",
+        "color": "#cfe3f7",
+        "emo": "happy",
+        "say": {
+          "text": "Code A1B2C3. Match!",
+          "at": 0.25
+        },
+        "scale": 1
+      },
+      {
+        "id": "net",
+        "kind": "network",
+        "x": 0.5,
+        "label": "NETWORK",
+        "acc": "shades",
+        "scale": 0.9
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.8,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "happy",
+        "scale": 0.9
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "acq",
+        "to": "iss",
+        "label": "A1B2C3",
+        "at": 0.1,
+        "dur": 0.2
+      },
+      {
+        "type": "stamp",
+        "text": "MATCH",
+        "tone": "good",
+        "at": 0.6,
+        "x": 0.5,
+        "y": 0.26
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s39": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.25,
+        "label": "YOU",
+        "emo": "happy",
+        "say": {
+          "text": "Generous tip!",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.75,
+        "label": "SHOP OWNER",
+        "emo": "happy",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s40": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.25,
+        "label": "YOU",
+        "emo": "shock",
+        "say": {
+          "text": "It says $10.85?!",
+          "at": 0.4
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "phone",
+        "kind": "phone",
+        "x": 0.75,
+        "label": "PHONE",
+        "emo": "smug",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s41": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.25,
+        "label": "YOU",
+        "emo": "neutral",
+        "scale": 0.7
+      },
+      {
+        "id": "phone",
+        "kind": "phone",
+        "x": 0.75,
+        "label": "PHONE",
+        "emo": "happy",
+        "say": {
+          "text": "Pending → posted.",
+          "at": 0.5
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s42": {
+    "bg": "paper",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.28,
+        "label": "TERMINAL",
+        "emo": "think",
+        "say": {
+          "text": "Two ways to do it.",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.74,
+        "label": "SHOP OWNER",
+        "emo": "think",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s43": {
+    "bg": "paper",
+    "insert": {
+      "pos": "right"
+    },
+    "actors": [
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.2,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "say": {
+          "text": "One message: approve + charge.",
+          "at": 0.3
+        },
+        "scale": 1
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s44": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.28,
+        "label": "YOU",
+        "emo": "happy",
+        "say": {
+          "text": "Posts sooner!",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.75,
+        "label": "SHOP OWNER",
+        "emo": "sad",
+        "say": {
+          "text": "Still waiting on my money.",
+          "at": 0.6
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s45": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.25,
+        "label": "YOU",
+        "emo": "neutral",
+        "say": {
+          "text": "−$5 for me.",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.75,
+        "label": "SHOP OWNER",
+        "emo": "sad",
+        "say": {
+          "text": "$0.00 for me.",
+          "at": 0.5
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s46": {
+    "bg": "sky",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "net",
+        "kind": "network",
+        "x": 0.5,
+        "label": "NETWORK",
+        "acc": "shades",
+        "emo": "smug",
+        "say": {
+          "text": "I net it all out.",
+          "at": 0.5
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s47": {
+    "bg": "sky",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "net",
+        "kind": "network",
+        "x": 0.5,
+        "label": "NETWORK",
+        "acc": "shades",
+        "emo": "happy",
+        "say": {
+          "text": "Millions in. A few out.",
+          "at": 0.4
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s48": {
+    "bg": "bank",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.28,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "emo": "shock",
+        "say": {
+          "text": "Today's total!",
+          "at": 0.3
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.74,
+        "label": "YOU",
+        "emo": "smug",
+        "say": {
+          "text": "My $5 is in there. Somewhere.",
+          "at": 0.6
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s49": {
+    "bg": "vault",
+    "actors": [
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.12,
+        "label": "BANK A",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "scale": 0.7
+      },
+      {
+        "id": "acq",
+        "kind": "bank",
+        "x": 0.3,
+        "label": "BANK B",
+        "acc": "none",
+        "color": "#cfe3f7",
+        "scale": 0.7
+      },
+      {
+        "id": "vault",
+        "kind": "vault",
+        "x": 0.7,
+        "label": "CENTRAL BANK",
+        "acc": "crown",
+        "emo": "smug",
+        "scale": 1.05,
+        "say": {
+          "text": "One net amount per bank.",
+          "at": 0.5
+        }
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "from": "iss",
+        "to": "vault",
+        "label": "net",
+        "at": 0.2,
+        "dur": 0.2
+      },
+      {
+        "type": "packet",
+        "from": "acq",
+        "to": "vault",
+        "label": "net",
+        "at": 0.3,
+        "dur": 0.2
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s50": {
+    "bg": "cafe",
+    "actors": [
+      {
+        "id": "acq",
+        "kind": "bank",
+        "x": 0.25,
+        "label": "ACQUIRER",
+        "acc": "glasses",
+        "color": "#cfe3f7",
+        "emo": "happy",
+        "scale": 1
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.75,
+        "label": "SHOP OWNER",
+        "emo": "happy",
+        "scale": 1
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "kind": "coin",
+        "from": "acq",
+        "to": "owner",
+        "label": "paid",
+        "at": 0.45,
+        "dur": 0.18
+      },
+      {
+        "type": "pow",
+        "text": "1–3 DAYS",
+        "at": 0.15,
+        "x": 0.5,
+        "y": 0.3
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s51": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.25,
+        "label": "YOU",
+        "emo": "think",
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.75,
+        "label": "SHOP OWNER",
+        "emo": "sad",
+        "say": {
+          "text": "Friday sale. Tuesday money.",
+          "at": 0.5
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s52": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.5,
+        "label": "SHOP OWNER",
+        "emo": "shock",
+        "say": {
+          "text": "Where did the rest go?",
+          "at": 0.5
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s53": {
+    "bg": "bank",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.28,
+        "label": "SHOP OWNER",
+        "emo": "think",
+        "scale": 0.7
+      },
+      {
+        "id": "acq",
+        "kind": "bank",
+        "x": 0.76,
+        "label": "ACQUIRER",
+        "acc": "glasses",
+        "color": "#cfe3f7",
+        "emo": "smug",
+        "say": {
+          "text": "Some fees. Details later.",
+          "at": 0.55
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s54": {
+    "bg": "bank",
+    "actors": [
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.1,
+        "label": "SHOP OWNER",
+        "scale": 0.8,
+        "emo": "worry"
+      },
+      {
+        "id": "acq",
+        "kind": "bank",
+        "x": 0.3,
+        "label": "ACQUIRER",
+        "acc": "glasses",
+        "color": "#cfe3f7",
+        "scale": 0.8
+      },
+      {
+        "id": "net",
+        "kind": "network",
+        "x": 0.5,
+        "label": "NETWORK",
+        "acc": "shades",
+        "scale": 0.8
+      },
+      {
+        "id": "iss",
+        "kind": "bank-big",
+        "x": 0.7,
+        "label": "ISSUER",
+        "acc": "tie",
+        "color": "#e6d3a8",
+        "scale": 0.8
+      },
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.9,
+        "label": "YOU",
+        "scale": 0.8,
+        "emo": "happy",
+        "say": {
+          "text": "I dispute that charge!",
+          "at": 0.1
+        }
+      }
+    ],
+    "fx": [
+      {
+        "type": "packet",
+        "kind": "coin",
+        "from": "owner",
+        "to": "acq",
+        "label": "back",
+        "at": 0.3,
+        "dur": 0.1
+      },
+      {
+        "type": "packet",
+        "kind": "coin",
+        "from": "acq",
+        "to": "net",
+        "at": 0.45,
+        "dur": 0.1
+      },
+      {
+        "type": "packet",
+        "kind": "coin",
+        "from": "net",
+        "to": "iss",
+        "at": 0.58,
+        "dur": 0.1
+      },
+      {
+        "type": "packet",
+        "kind": "coin",
+        "from": "iss",
+        "to": "you",
+        "at": 0.7,
+        "dur": 0.1
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s55": {
+    "bg": "paper",
+    "insert": {
+      "pos": "right"
+    },
+    "actors": [
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.2,
+        "label": "SHOP OWNER",
+        "emo": "worry",
+        "say": {
+          "text": "I have the approval code!",
+          "at": 0.4
+        },
+        "scale": 1
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  },
+  "s56": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.28,
+        "label": "YOU",
+        "emo": "happy",
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.75,
+        "label": "SHOP OWNER",
+        "emo": "neutral",
+        "say": {
+          "text": "Refund sent. Give it days.",
+          "at": 0.5
+        },
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.08,
+        1
+      ]
+    }
+  },
+  "s57": {
+    "bg": "cafe",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.2,
+        "label": "YOU",
+        "emo": "happy",
+        "say": {
+          "text": "Promise. Bill. Money.",
+          "at": 0.4
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "term",
+        "kind": "terminal",
+        "x": 0.5,
+        "label": "TERMINAL",
+        "emo": "happy",
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.8,
+        "label": "SHOP OWNER",
+        "emo": "happy",
+        "scale": 0.7
+      }
+    ],
+    "cam": {
+      "z": [
+        1.02,
+        1.02
+      ],
+      "x": [
+        -0.012,
+        0.012
+      ]
+    }
+  },
+  "s58": {
+    "bg": "night",
+    "insert": {
+      "pos": "top"
+    },
+    "actors": [
+      {
+        "id": "you",
+        "kind": "you",
+        "x": 0.3,
+        "label": "YOU",
+        "emo": "happy",
+        "say": {
+          "text": "Who takes a cut?",
+          "at": 0.4
+        },
+        "scale": 0.7
+      },
+      {
+        "id": "owner",
+        "kind": "owner",
+        "x": 0.7,
+        "label": "SHOP OWNER",
+        "emo": "smug",
+        "say": {
+          "text": "I wonder…",
+          "at": 0.6
+        },
+        "scale": 0.7
+      }
+    ],
+    "fx": [
+      {
+        "type": "coins",
+        "at": 0.1,
+        "n": 12
+      }
+    ],
+    "cam": {
+      "z": [
+        1,
+        1.08
+      ]
+    }
+  }
+}

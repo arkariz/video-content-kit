@@ -1,6 +1,6 @@
 // Gabungkan script.json + durasi + captions + assets -> props, lalu render komposisi. Satu render per waktu.
-import path from "node:path"; import fs from "node:fs"; import { execFileSync } from "node:child_process";
-import { ROOT, args, resolveCycle, readJson, writeJson } from "./lib.mjs";
+import path from "node:path"; import { execFileSync as ef } from "node:child_process"; import fs from "node:fs"; import { execFileSync } from "node:child_process";
+import { ROOT, args, resolveCycle, readJson, writeJson, pauseSec } from "./lib.mjs";
 const o = args(); const lang = o.lang || "en"; const comp = o.comp || "Master16x9"; const cut = o.cut; // --cut A1-zero-dollars-moved
 const { scriptPath, assetsPath } = resolveCycle(o.track, o.siklus); const script = readJson(scriptPath);
 const specs = readJson(path.join(path.dirname(scriptPath), "04-visual-spec.json"), {});
@@ -9,9 +9,9 @@ const caps = readJson(path.join(ROOT, "produksi/captions", o.track, o.siklus, `$
 const FPS = 30; const PAUSE = Math.round(parseFloat(o.pause ?? "0.9") * FPS); // jeda akhir scene (detik)
 const cutDef = cut && script.shorts_cuts.find((c) => c.name === cut);
 const ids = o.still ? o.still.split(",") : cutDef ? cutDef.scene_ids : script.scenes.map((s) => s.id);
-const scenes = ids.map((id) => { const s = script.scenes.find((x) => x.id === id); const ms = s.duration_ms?.[lang]; if (!ms) throw new Error(`${id}: belum ada duration_ms (${lang}); jalankan tts.mjs`);
+const scenes = ids.map((id, idx) => { const s = script.scenes.find((x) => x.id === id); const ms = s.duration_ms?.[lang]; if (!ms) throw new Error(`${id}: belum ada duration_ms (${lang}); jalankan tts.mjs`);
   const f = assets.footage.find((x) => x.scene_id === id);
-  return { id, type: s.visual.type, text: s.visual.on_screen_text || "", description: s.visual.description, audio: `audio/${o.track}/${o.siklus}/${lang}/${id}.mp3`, spec: specs[id], stage: stages[id], audioFrames: Math.ceil((ms / 1000) * FPS), durationFrames: Math.ceil((ms / 1000) * FPS) + PAUSE, clip: f?.file, captions: caps[id] || [] }; });
+  return { id, type: s.visual.type, text: s.visual.on_screen_text || "", description: s.visual.description, audio: `audio/${o.track}/${o.siklus}/${lang}/${id}.mp3`, spec: specs[id], stage: stages[id], audioFrames: Math.ceil((ms / 1000) * FPS), durationFrames: Math.ceil((ms / 1000) * FPS) + Math.round((o.pause !== undefined ? parseFloat(o.pause) : pauseSec(script.scenes.find((x) => x.id === ids[idx + 1]))) * FPS), clip: f?.file, clipFrames: f ? Math.floor(parseFloat(ef("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path.join(ROOT, "produksi", f.file)]).toString()) * FPS) : undefined, captions: caps[id] || [] }; });
 const props = { trackId: o.track, lang, scenes, vertical: comp !== "Master16x9" };
 const tmp = path.join(ROOT, "produksi/render", `.props-${o.track}-${o.siklus}.json`); writeJson(tmp, props);
 const outRel = `render/${o.track}/${o.siklus}/${comp}${cut ? "-" + cut : ""}-${lang}.mp4`; fs.mkdirSync(path.dirname(path.join(ROOT, "produksi", outRel)), { recursive: true });

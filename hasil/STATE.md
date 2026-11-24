@@ -1,5 +1,5 @@
 ---
-mode_gate: tanya                 # tanya | otomatis (lihat AGENTS.md)
+mode_gate: otomatis              # tanya | otomatis (lihat AGENTS.md). Otomatis sejak 2026-11-24: pipeline produksi penuh, kreator hanya review video jadi
 kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-11-24)
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
@@ -39,3 +39,5 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-24: T01 riset viral sprint V2 selesai; kreator memilih semua usulan sudut (opsi 1). Siklus uji: 001 (A), 002 (B), 003 (C).
 - 2026-11-24: T01 naskah siklus 001 disetujui (master ≥ 8:00 untuk mid-roll YouTube). Berikutnya produksi di repo.
 - 2026-11-24: Kerangka produksi multi-track dibangun (engine Remotion bersama + skrip tts/captions/footage/render + katalog footage). T01 siklus 001 jadi uji pertama.
+- 2026-11-24: Mode gate diubah ke otomatis atas permintaan kreator. Pipeline produksi penuh dibangun (scripts/pipeline, produksi/PIPELINE.md): riset sampai paket review tanpa tangan, berhenti di QA kritis, kreator review lalu SETUJU untuk publish (alat publish belum dipilih). Kreator memilih footage nyata berlisensi sebagai pengganti bukti kreator; dicatat sebagai pengecualian QA di T01.
+

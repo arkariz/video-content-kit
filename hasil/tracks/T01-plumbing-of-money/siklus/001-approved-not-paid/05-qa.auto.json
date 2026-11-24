@@ -1,0 +1,65 @@
+{
+  "track": "T01",
+  "siklus": "001",
+  "tanggal": "2026-11-24",
+  "durasi": "8:05",
+  "footage_pct": 11.2,
+  "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
+  "temuan": [
+    {
+      "layer": "Struktur",
+      "level": "sedang",
+      "id": "S2",
+      "msg": "jarak re-hook terpanjang 187 dtk mulai 0:00 (target 60-90)",
+      "fix": "ubah satu scene di rentang itu jadi re-hook"
+    },
+    {
+      "layer": "Teks (bubble)",
+      "level": "sedang",
+      "id": "B1",
+      "msg": "21 bubble mengulang narasi: s02, s03, s05, s07, s12, s13, s14, s15…",
+      "fix": "ganti jadi candaan/reaksi atau hapus"
+    },
+    {
+      "layer": "Teks (bubble)",
+      "level": "kecil",
+      "id": "B2",
+      "msg": "45 tanda seru/tanya di bubble",
+      "fix": "kurangi"
+    },
+    {
+      "layer": "Teks",
+      "level": "sedang",
+      "id": "T-src",
+      "msg": "sumber di 03-script.json 0, perlu minimal 6 (satu klaim fakta = satu tautan)",
+      "fix": "tambah `sources:[{scene,url,claim}]`"
+    },
+    {
+      "layer": "Audio",
+      "level": "sedang",
+      "id": "A3",
+      "msg": "jenis/lisensi suara belum dicatat (assets.voice.type)",
+      "fix": "catat: clone milik kreator atau voice berlisensi komersial, paket berbayar"
+    },
+    {
+      "layer": "Visual",
+      "level": "sedang",
+      "id": "V7",
+      "msg": "thumbnail belum dibuat",
+      "fix": "render Thumbnail varian A dan B"
+    },
+    {
+      "layer": "Visual/Channel",
+      "level": "sedang",
+      "id": "K1",
+      "msg": "bukti nyata kreator tidak ada; DIPERBOLEHKAN oleh pengecualian kreator (pengecualian_qa)",
+      "fix": "tetap tercatat di laporan; kreator memikul risiko kebijakan konten AI"
+    }
+  ],
+  "manual": [
+    "Dengarkan audio: nada, artefak TTS, pengucapan istilah (kemunculan pertama)",
+    "Tonton master dan Shorts: irama, kecepatan animasi, bubble tidak menutup isi",
+    "Periksa fakta tiap klaim terhadap sumber",
+    "Setujui thumbnail dan judul"
+  ]
+}

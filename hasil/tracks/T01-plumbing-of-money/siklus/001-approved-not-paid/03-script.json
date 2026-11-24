@@ -30,10 +30,6 @@
       "say_as": "I-S-O eighty-five eighty-three"
     },
     {
-      "term": "acquirer",
-      "say_as": "uh-KWY-er"
-    },
-    {
       "term": "0100",
       "say_as": "zero one zero zero"
     },
@@ -196,7 +192,7 @@
         "on_screen_text": "ACQUIRER = the shop's bank"
       },
       "duration_ms": {
-        "en": 8638
+        "en": 8313
       }
     },
     {
@@ -849,7 +845,7 @@
         "on_screen_text": "T+1 to T+3"
       },
       "duration_ms": {
-        "en": 5666
+        "en": 5341
       }
     },
     {
@@ -895,7 +891,7 @@
         "description": "Satu angka persen dibuka jadi beberapa potongan bertanda tanya"
       },
       "duration_ms": {
-        "en": 7988
+        "en": 6966
       }
     },
     {

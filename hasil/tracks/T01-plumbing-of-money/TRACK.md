@@ -9,6 +9,7 @@ bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "perbaiki temuan QA 001 selain T1 (T2 sampai T11 di 05-qa.md), lalu QA ulang; T1 (bukti kreator) ditunda kreator, publish tetap tertahan sampai T1 diputuskan; master wajib tetap ≥ 8:00"
+pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
 menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
@@ -85,4 +86,5 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Revisi gaya visual ke kartun penjelasan (referensi: OverSimplified, ditiru bahasa visualnya saja): tokoh berwajah (Terminal, Acquirer, Network, Issuer, Bank Sentral, You, Shop Owner), latar ilustrasi, bubble dialog, paket pesan terbang, stempel, kamera bergerak, efek suara sintesis orisinal, subtitle berkontur. Diagram/Code/Data jadi papan sisipan. Spec adegan 58 scene di siklus/001-approved-not-paid/04-stage.json; panduan lintas track di produksi/STYLE.md. Master 8:17 dan 2 Shorts dirender ulang. Bubble baru perlu lolos anti-slop.
 - 2026-11-24: QA anti-slop 001: GAGAL. Teks EN 37/50, ID 36/50 (lulus). Kritis: tidak ada bukti nyata kreator di layar (T1) dan dugaan salah ucap "acquirer" (T2). Sedang: sumber klaim, re-hook pertama terlambat (3:12), jeda seragam, bubble yang mengulang narasi, thumbnail. Laporan di siklus/001-approved-not-paid/05-qa.md.
 - 2026-11-24: Kreator menunda keputusan T1 (bukti nyata kreator di layar). QA 001 tetap GAGAL dan publish tertahan. Pekerjaan lain (T2 sampai T11) jalan dulu.
+- 2026-11-24: Pipeline otomatis dibangun dan diuji pada 001. Footage nyata berlisensi di 8 scene (11% durasi, pilih otomatis), jeda variabel, caption disamakan otomatis dengan naskah. QA otomatis menemukan dugaan salah ucap "acquirer", autofix membuang say_as dan audio tiga scene dibuat ulang, dan transkrip balik kini cocok. Sisa temuan: re-hook pertama 3:07, bubble pengulang narasi (21), sumber belum ada, thumbnail, catatan suara.
 

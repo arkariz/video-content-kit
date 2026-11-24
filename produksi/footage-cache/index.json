@@ -23,6 +23,54 @@
       "used_in": [
         "T01/001/s33"
       ]
+    },
+    "pixabay:32246": {
+      "source": "https://pixabay.com/videos/id-32246/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-24",
+      "used_in": [
+        "T01/001/s01"
+      ]
+    },
+    "pixabay:49049": {
+      "source": "https://pixabay.com/videos/id-49049/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-24",
+      "used_in": [
+        "T01/001/s04"
+      ]
+    },
+    "pixabay:130652": {
+      "source": "https://pixabay.com/videos/id-130652/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-24",
+      "used_in": [
+        "T01/001/s07"
+      ]
+    },
+    "pixabay:9908": {
+      "source": "https://pixabay.com/videos/id-9908/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-24",
+      "used_in": [
+        "T01/001/s37"
+      ]
+    },
+    "pixabay:86911": {
+      "source": "https://pixabay.com/videos/id-86911/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-24",
+      "used_in": [
+        "T01/001/s40"
+      ]
+    },
+    "pixabay:33703": {
+      "source": "https://pixabay.com/videos/id-33703/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-24",
+      "used_in": [
+        "T01/001/s50"
+      ]
     }
   }
 }

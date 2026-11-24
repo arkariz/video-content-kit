@@ -1,0 +1,41 @@
+{
+  "log": [
+    {
+      "tahap": "qa",
+      "kode": 2,
+      "detik": 0,
+      "waktu": "2026-11-24T09:18:07.986Z"
+    },
+    {
+      "tahap": "render",
+      "kode": 0,
+      "detik": 569,
+      "waktu": "2026-11-24T09:27:46.490Z"
+    },
+    {
+      "tahap": "qa",
+      "kode": 2,
+      "detik": 0,
+      "waktu": "2026-11-24T09:27:58.562Z"
+    },
+    {
+      "tahap": "autofix-A2",
+      "istilah": [
+        "acquirer"
+      ],
+      "scene": [
+        "s09",
+        "s50",
+        "s53"
+      ],
+      "kode": 0,
+      "waktu": "2026-11-24T09:29:14.740Z"
+    },
+    {
+      "tahap": "render",
+      "kode": 0,
+      "detik": 367,
+      "waktu": "2026-11-24T09:35:40.367Z"
+    }
+  ]
+}

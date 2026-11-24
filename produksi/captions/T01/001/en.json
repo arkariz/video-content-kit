@@ -206,7 +206,7 @@
     },
     {
       "text": "line",
-      "startMs": 1900,
+      "startMs": 1920,
       "endMs": 2080
     },
     {
@@ -235,9 +235,9 @@
       "endMs": 2960
     },
     {
-      "text": "from:",
+      "text": "from,",
       "startMs": 3000,
-      "endMs": 3220
+      "endMs": 3200
     },
     {
       "text": "pending,",
@@ -874,122 +874,122 @@
     {
       "text": "The",
       "startMs": 100,
-      "endMs": 326
+      "endMs": 180
     },
     {
       "text": "terminal",
-      "startMs": 326,
-      "endMs": 835
+      "startMs": 220,
+      "endMs": 540
     },
     {
       "text": "passes",
-      "startMs": 835,
-      "endMs": 1231
+      "startMs": 640,
+      "endMs": 960
     },
     {
       "text": "everything",
-      "startMs": 1231,
-      "endMs": 1853
+      "startMs": 1100,
+      "endMs": 1480
     },
     {
       "text": "to",
-      "startMs": 1853,
-      "endMs": 2023
+      "startMs": 1520,
+      "endMs": 1560
     },
     {
       "text": "the",
-      "startMs": 2023,
-      "endMs": 2249
+      "startMs": 1620,
+      "endMs": 1680
     },
     {
       "text": "shop's",
-      "startMs": 2249,
-      "endMs": 2645
+      "startMs": 1740,
+      "endMs": 2020
     },
     {
       "text": "bank,",
-      "startMs": 2645,
-      "endMs": 2984
+      "startMs": 2100,
+      "endMs": 2340
     },
     {
       "text": "called",
-      "startMs": 2984,
-      "endMs": 3380
+      "startMs": 2660,
+      "endMs": 2860
     },
     {
       "text": "the",
-      "startMs": 3380,
-      "endMs": 3606
+      "startMs": 2900,
+      "endMs": 2980
     },
     {
       "text": "acquirer.",
-      "startMs": 3606,
-      "endMs": 4172
+      "startMs": 3020,
+      "endMs": 3520
     },
     {
       "text": "The",
-      "startMs": 4172,
-      "endMs": 4398
+      "startMs": 4420,
+      "endMs": 4500
     },
     {
       "text": "acquirer",
-      "startMs": 4398,
-      "endMs": 4907
+      "startMs": 4540,
+      "endMs": 5040
     },
     {
       "text": "doesn't",
-      "startMs": 4907,
-      "endMs": 5359
+      "startMs": 5160,
+      "endMs": 5440
     },
     {
       "text": "know",
-      "startMs": 5359,
-      "endMs": 5642
+      "startMs": 5500,
+      "endMs": 5660
     },
     {
       "text": "you.",
-      "startMs": 5642,
-      "endMs": 5925
+      "startMs": 5740,
+      "endMs": 5880
     },
     {
       "text": "It",
-      "startMs": 5925,
-      "endMs": 6095
+      "startMs": 6380,
+      "endMs": 6460
     },
     {
       "text": "only",
-      "startMs": 6095,
-      "endMs": 6378
+      "startMs": 6520,
+      "endMs": 6720
     },
     {
       "text": "knows",
-      "startMs": 6378,
-      "endMs": 6717
+      "startMs": 6760,
+      "endMs": 7000
     },
     {
       "text": "where",
-      "startMs": 6717,
-      "endMs": 7056
+      "startMs": 7020,
+      "endMs": 7140
     },
     {
       "text": "to",
-      "startMs": 7056,
-      "endMs": 7226
+      "startMs": 7160,
+      "endMs": 7240
     },
     {
       "text": "send",
-      "startMs": 7226,
-      "endMs": 7509
+      "startMs": 7280,
+      "endMs": 7440
     },
     {
       "text": "the",
-      "startMs": 7509,
-      "endMs": 7735
+      "startMs": 7480,
+      "endMs": 7540
     },
     {
-      "text": "question.",
-      "startMs": 7735,
-      "endMs": 8300
+      "text": "question",
+      "startMs": 7600,
+      "endMs": 8000
     }
   ],
   "s10": [
@@ -5741,82 +5741,82 @@
     {
       "text": "Then",
       "startMs": 120,
-      "endMs": 406
+      "endMs": 340
     },
     {
       "text": "the",
-      "startMs": 406,
-      "endMs": 635
+      "startMs": 600,
+      "endMs": 700
     },
     {
       "text": "acquirer",
-      "startMs": 635,
-      "endMs": 1149
+      "startMs": 740,
+      "endMs": 1160
     },
     {
       "text": "pays",
-      "startMs": 1149,
-      "endMs": 1435
+      "startMs": 1240,
+      "endMs": 1440
     },
     {
       "text": "the",
-      "startMs": 1435,
-      "endMs": 1664
+      "startMs": 1480,
+      "endMs": 1560
     },
     {
       "text": "coffee",
-      "startMs": 1664,
-      "endMs": 2064
+      "startMs": 1600,
+      "endMs": 1880
     },
     {
       "text": "shop,",
-      "startMs": 2064,
-      "endMs": 2407
+      "startMs": 1940,
+      "endMs": 2200
     },
     {
       "text": "usually",
-      "startMs": 2407,
-      "endMs": 2864
+      "startMs": 2600,
+      "endMs": 2940
     },
     {
       "text": "one",
-      "startMs": 2864,
-      "endMs": 3093
+      "startMs": 3040,
+      "endMs": 3160
     },
     {
       "text": "to",
-      "startMs": 3093,
-      "endMs": 3264
+      "startMs": 3200,
+      "endMs": 3300
     },
     {
       "text": "three",
-      "startMs": 3264,
-      "endMs": 3607
+      "startMs": 3340,
+      "endMs": 3540
     },
     {
       "text": "business",
-      "startMs": 3607,
-      "endMs": 4121
+      "startMs": 3640,
+      "endMs": 3920
     },
     {
       "text": "days",
-      "startMs": 4121,
-      "endMs": 4407
+      "startMs": 4000,
+      "endMs": 4260
     },
     {
       "text": "after",
-      "startMs": 4407,
-      "endMs": 4750
+      "startMs": 4360,
+      "endMs": 4520
     },
     {
       "text": "the",
-      "startMs": 4750,
-      "endMs": 4979
+      "startMs": 4580,
+      "endMs": 4640
     },
     {
-      "text": "sale.",
-      "startMs": 4979,
-      "endMs": 5320
+      "text": "sale",
+      "startMs": 4720,
+      "endMs": 4980
     }
   ],
   "s51": [
@@ -5997,107 +5997,107 @@
     {
       "text": "The",
       "startMs": 100,
-      "endMs": 336
+      "endMs": 180
     },
     {
       "text": "shop",
-      "startMs": 336,
-      "endMs": 631
+      "startMs": 220,
+      "endMs": 480
     },
     {
       "text": "usually",
-      "startMs": 631,
-      "endMs": 1102
+      "startMs": 600,
+      "endMs": 900
     },
     {
       "text": "sees",
-      "startMs": 1102,
-      "endMs": 1397
+      "startMs": 1000,
+      "endMs": 1180
     },
     {
       "text": "them",
-      "startMs": 1397,
-      "endMs": 1692
+      "startMs": 1220,
+      "endMs": 1340
     },
     {
       "text": "as",
-      "startMs": 1692,
-      "endMs": 1869
+      "startMs": 1420,
+      "endMs": 1600
     },
     {
       "text": "one",
-      "startMs": 1869,
-      "endMs": 2105
+      "startMs": 1680,
+      "endMs": 1820
     },
     {
       "text": "percentage",
-      "startMs": 2105,
-      "endMs": 2753
+      "startMs": 1900,
+      "endMs": 2320
     },
     {
       "text": "on",
-      "startMs": 2753,
-      "endMs": 2930
+      "startMs": 2360,
+      "endMs": 2420
     },
     {
       "text": "a",
-      "startMs": 2930,
-      "endMs": 3048
+      "startMs": 2460,
+      "endMs": 2540
     },
     {
       "text": "monthly",
-      "startMs": 3048,
-      "endMs": 3519
+      "startMs": 2600,
+      "endMs": 2920
     },
     {
       "text": "statement",
-      "startMs": 3519,
-      "endMs": 4108
+      "startMs": 3000,
+      "endMs": 3340
     },
     {
       "text": "from",
-      "startMs": 4108,
-      "endMs": 4403
+      "startMs": 3380,
+      "endMs": 3480
     },
     {
       "text": "its",
-      "startMs": 4403,
-      "endMs": 4639
+      "startMs": 3520,
+      "endMs": 3620
     },
     {
       "text": "acquirer,",
-      "startMs": 4639,
-      "endMs": 5228
+      "startMs": 3660,
+      "endMs": 4160
     },
     {
       "text": "with",
-      "startMs": 5228,
-      "endMs": 5523
+      "startMs": 4640,
+      "endMs": 4760
     },
     {
       "text": "several",
-      "startMs": 5523,
-      "endMs": 5994
+      "startMs": 4820,
+      "endMs": 5140
     },
     {
       "text": "smaller",
-      "startMs": 5994,
-      "endMs": 6465
+      "startMs": 5240,
+      "endMs": 5560
     },
     {
       "text": "fees",
-      "startMs": 6465,
-      "endMs": 6760
+      "startMs": 5620,
+      "endMs": 5840
     },
     {
       "text": "folded",
-      "startMs": 6760,
-      "endMs": 7172
+      "startMs": 5900,
+      "endMs": 6140
     },
     {
-      "text": "inside.",
-      "startMs": 7172,
-      "endMs": 7640
+      "text": "inside",
+      "startMs": 6180,
+      "endMs": 6660
     }
   ],
   "s54": [
@@ -6721,43 +6721,38 @@
     },
     {
       "text": "keeps.",
-      "startMs": 2720,
+      "startMs": 2740,
       "endMs": 3060
     },
     {
       "text": "Next",
       "startMs": 3960,
-      "endMs": 4140
+      "endMs": 4180
     },
     {
-      "text": "video",
-      "startMs": 4240,
+      "text": "video.",
+      "startMs": 4220,
       "endMs": 4520
     },
     {
-      "text": "on",
+      "text": "On",
       "startMs": 5340,
       "endMs": 5420
     },
     {
       "text": "a",
-      "startMs": 5480,
+      "startMs": 5460,
       "endMs": 5520
     },
     {
-      "text": "hundred",
+      "text": "hundred-dollar",
       "startMs": 5580,
-      "endMs": 5780
-    },
-    {
-      "text": "dollar",
-      "startMs": 5840,
       "endMs": 6060
     },
     {
       "text": "purchase,",
       "startMs": 6160,
-      "endMs": 6540
+      "endMs": 6520
     },
     {
       "text": "who",

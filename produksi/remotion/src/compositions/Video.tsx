@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Loop, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { themeFor } from "../themes";
 import type { SceneProps, VideoProps } from "../lib/types";
 import { Diagram } from "../components/Diagram";
@@ -40,7 +40,13 @@ const Scene: React.FC<{ s: SceneProps; trackId: string; vertical: boolean }> = (
   const stage = s.stage;
   return (
     <AbsoluteFill style={{ background: t.bg, color: t.fg, fontFamily: t.font }}>
-      {s.clip && <OffthreadVideo src={staticFile(s.clip)} muted style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />}
+      {s.clip && (
+        <AbsoluteFill style={{ transform: `scale(${1 + 0.06 * p})` }}>
+          <Loop durationInFrames={Math.max(1, s.clipFrames ?? s.durationFrames)} layout="none">
+            <OffthreadVideo src={staticFile(s.clip)} muted style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
+          </Loop>
+        </AbsoluteFill>
+      )}
       {stage ? (
         <Stage spec={stage} frame={frame} dur={s.audioFrames} vertical={vertical} title={s.type === "remotion-text" ? undefined : s.text} board={stage.insert ? body : null} />
       ) : (
