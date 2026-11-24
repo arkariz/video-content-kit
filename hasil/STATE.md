@@ -40,4 +40,5 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-24: T01 naskah siklus 001 disetujui (master ≥ 8:00 untuk mid-roll YouTube). Berikutnya produksi di repo.
 - 2026-11-24: Kerangka produksi multi-track dibangun (engine Remotion bersama + skrip tts/captions/footage/render + katalog footage). T01 siklus 001 jadi uji pertama.
 - 2026-11-24: Mode gate diubah ke otomatis atas permintaan kreator. Pipeline produksi penuh dibangun (scripts/pipeline, produksi/PIPELINE.md): riset sampai paket review tanpa tangan, berhenti di QA kritis, kreator review lalu SETUJU untuk publish (alat publish belum dipilih). Kreator memilih footage nyata berlisensi sebagai pengganti bukti kreator; dicatat sebagai pengecualian QA di T01.
+- 2026-11-24: Kontrak visual di 03-script.json (produksi/CONTRACT.md) dan scripts/produksi/build-visual.mjs: chat Project cukup menulis naskah beserta visual; langkah 05 sampai 07 berjalan tanpa LLM dan bisa dipakai track/agent mana pun. AGENTS.md dan CLAUDE.md diperbarui. Siklus 001 T01 dimigrasi dan hasilnya identik.
 

@@ -9,7 +9,8 @@ const allDur = () => script().scenes.length > 0 && script().scenes.every((s) => 
 const stages = [
   { id: "riset-brief", llm: "riset-brief", done: () => E("01-riset-viral.md") && E("02-brief.md") },
   { id: "naskah", llm: "naskah", done: () => E("03-script.json") && E("03-naskah.md") },
-  { id: "visual", llm: "visual", done: () => E("04-visual-spec.json") && E("04-stage.base.json") && E("04-broll-plan.json") },
+  { id: "visual", llm: "visual", build: () => script().scenes.length > 0 && script().scenes.every((s) => s.stage), done: () => E("04-visual-spec.json") && E("04-stage.base.json") && E("04-broll-plan.json") && fs.statSync(path.join(dir, "04-visual-spec.json")).mtimeMs >= fs.statSync(path.join(dir, "03-script.json")).mtimeMs },
+  { id: "kontrak", done: () => false, run: () => node("produksi/build-visual.mjs", ["--check"]) },
   { id: "tts-en", done: allDur, run: () => node("produksi/tts.mjs", ["--lang", "en"]) },
   { id: "caption-en", done: () => fs.existsSync(path.join(ROOT, "produksi/captions", o.track, o.siklus, "en.json")), run: () => node("produksi/captions.mjs", ["--lang", "en"]) },
   { id: "footage", done: () => readJson(path.join(dir, "04-assets.json"), { footage: [] }).footage.length > 0, run: () => node("produksi/footage.mjs", ["plan"]) || node("produksi/footage.mjs", ["download"]) },
@@ -26,7 +27,7 @@ for (const s of stages) {
   if (o.only && s.id !== o.only) continue; if (!started) { if (s.id === o.from) started = true; else continue; }
   if (s.done() && s.id !== o.only && !["qa", "paket-review"].includes(s.id)) { console.log(`✓ ${s.id}`); continue; }
   console.log(`▶ ${s.id}`); const t0 = Date.now();
-  const code = s.llm ? runPrompt(s.llm, { track: o.track, siklus: o.siklus, trackdir }) : s.run();
+  const code = s.build?.() ? node("produksi/build-visual.mjs") : s.llm ? runPrompt(s.llm, { track: o.track, siklus: o.siklus, trackdir }) : s.run();
   state.log.push({ tahap: s.id, kode: code, detik: Math.round((Date.now() - t0) / 1000), waktu: new Date().toISOString() }); writeJson(path.join(dir, ".pipeline.json"), state);
   if (s.id === "qa" && code === 2) { console.log("■ QA GAGAL: berhenti (gate wajib). Lihat 05-qa.auto.md."); process.exit(2); }
   if (code === 3) { console.log(`■ ${s.id} butuh agen LLM. Jalankan "lanjut ${o.track}" di sesi Claude Code, lalu ulangi.`); process.exit(3); }

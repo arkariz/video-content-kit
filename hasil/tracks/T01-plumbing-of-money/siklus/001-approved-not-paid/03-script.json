@@ -61,13 +61,103 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Terminal menampilkan APPROVED; di sebelahnya saldo rekening kedai kopi tetap $0.00",
-        "on_screen_text": "APPROVED · shop received: $0.00"
+        "on_screen_text": "APPROVED · shop received: $0.00",
+        "spec": {
+          "kind": "stamp",
+          "lines": [
+            "TAP  $5.00",
+            "Coffee Shop"
+          ],
+          "stamp": "APPROVED",
+          "tone": "good",
+          "side": {
+            "label": "Shop account",
+            "value": "$0.00"
+          }
+        }
       },
       "broll_keywords": [
         "contactless card tap coffee shop"
       ],
       "duration_ms": {
         "en": 4458
+      },
+      "stage": {
+        "bg": "cafe",
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.2,
+            "label": "YOU",
+            "emo": "happy",
+            "say": {
+              "text": "Approved!",
+              "at": 0.1
+            },
+            "scale": 1
+          },
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.5,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "scale": 1
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.8,
+            "label": "SHOP OWNER",
+            "emo": "neutral",
+            "emoAt": [
+              [
+                0.5,
+                "worry"
+              ]
+            ],
+            "say": {
+              "text": "…and my money?",
+              "at": 0.5
+            },
+            "scale": 1
+          }
+        ],
+        "fx": [
+          {
+            "type": "stamp",
+            "text": "APPROVED",
+            "tone": "good",
+            "at": 0.3,
+            "x": 0.5,
+            "y": 0.2
+          },
+          {
+            "type": "pow",
+            "text": "$0.00",
+            "at": 0.62,
+            "x": 0.86,
+            "y": 0.2,
+            "color": "#ff9b8f"
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "contactless payment coffee shop",
+          "paying with card cafe"
+        ],
+        "avoid": [
+          "man face",
+          "woman face"
+        ]
       }
     },
     {
@@ -79,10 +169,68 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Garis waktu tiga blok: Authorization (sekarang), Clearing (malam ini), Settlement (1 sampai 3 hari kerja). Hanya blok pertama menyala"
+        "description": "Garis waktu tiga blok: Authorization (sekarang), Clearing (malam ini), Settlement (1 sampai 3 hari kerja). Hanya blok pertama menyala",
+        "spec": {
+          "kind": "timeline",
+          "blocks": [
+            {
+              "title": "Authorization",
+              "sub": "now",
+              "tone": "lit"
+            },
+            {
+              "title": "Clearing",
+              "sub": "tonight",
+              "tone": "dim"
+            },
+            {
+              "title": "Settlement",
+              "sub": "1–3 business days",
+              "tone": "dim"
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 5712
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.22,
+            "label": "YOU",
+            "emo": "shock",
+            "say": {
+              "text": "There's MORE?",
+              "at": 0.45
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.78,
+            "label": "SHOP OWNER",
+            "emo": "smug",
+            "say": {
+              "text": "Two more systems.",
+              "at": 0.6
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -95,10 +243,68 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Mockup daftar transaksi generik (bukan aplikasi bank tertentu): satu baris Pending, satu Posted, satu dicoret",
-        "on_screen_text": "pending · posted · gone"
+        "on_screen_text": "pending · posted · gone",
+        "spec": {
+          "kind": "rows",
+          "rows": [
+            {
+              "label": "Coffee Shop",
+              "amount": "−$5.00",
+              "state": "pending"
+            },
+            {
+              "label": "Book Store",
+              "amount": "−$12.40",
+              "state": "posted"
+            },
+            {
+              "label": "Taxi Ride",
+              "amount": "−$8.00",
+              "state": "gone"
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 6594
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.3,
+            "label": "YOU",
+            "emo": "think",
+            "say": {
+              "text": "Pending? Posted? Gone?",
+              "at": 0.35
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "phone",
+            "kind": "phone",
+            "x": 0.72,
+            "label": "PHONE",
+            "emo": "neutral",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -111,10 +317,83 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Kartu → terminal, dua paket data: nomor kartu, cryptogram",
-        "on_screen_text": "card number + one-time cryptogram"
+        "on_screen_text": "card number + one-time cryptogram",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Card or phone"
+            },
+            {
+              "label": "Terminal"
+            }
+          ],
+          "edges": [
+            "card number + one-time code"
+          ]
+        }
       },
       "duration_ms": {
         "en": 6641
+      },
+      "stage": {
+        "bg": "cafe",
+        "actors": [
+          {
+            "id": "card",
+            "kind": "card",
+            "x": 0.2,
+            "label": "CARD",
+            "emo": "happy",
+            "pose": "point",
+            "scale": 1
+          },
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.55,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "say": {
+              "text": "Got both. Thanks.",
+              "at": 0.6
+            },
+            "scale": 1
+          },
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.86,
+            "label": "YOU",
+            "emo": "neutral",
+            "scale": 0.9
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "card",
+            "to": "term",
+            "label": "4111…",
+            "at": 0.12,
+            "dur": 0.14
+          },
+          {
+            "type": "packet",
+            "from": "card",
+            "to": "term",
+            "label": "8F3A…",
+            "at": 0.3,
+            "dur": 0.14,
+            "y": 0.4
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -126,10 +405,78 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Cryptogram disalin, dikirim ulang, dicap REJECTED"
+        "description": "Cryptogram disalin, dikirim ulang, dicap REJECTED",
+        "spec": {
+          "kind": "stamp",
+          "chips": [
+            "cryptogram 8F3A…91"
+          ],
+          "lines": [
+            "replayed tomorrow"
+          ],
+          "stamp": "REJECTED",
+          "tone": "bad"
+        }
       },
       "duration_ms": {
         "en": 5898
+      },
+      "stage": {
+        "bg": "bank",
+        "actors": [
+          {
+            "id": "card",
+            "kind": "card",
+            "x": 0.22,
+            "label": "CARD",
+            "emo": "smug",
+            "say": {
+              "text": "Replay it tomorrow!",
+              "at": 0.1
+            },
+            "scale": 1
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.78,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "neutral",
+            "emoAt": [
+              [
+                0.45,
+                "angry"
+              ]
+            ],
+            "scale": 1
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "card",
+            "to": "iss",
+            "label": "8F3A…",
+            "at": 0.3,
+            "dur": 0.16
+          },
+          {
+            "type": "stamp",
+            "text": "REJECTED",
+            "tone": "bad",
+            "at": 0.55,
+            "x": 0.75,
+            "y": 0.3
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -141,11 +488,81 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Kunci di dalam chip + jumlah + penghitung masuk ke satu kotak, keluar kode; bank di sisi lain memegang kunci pasangan dan mencocokkan hasilnya"
+        "description": "Kunci di dalam chip + jumlah + penghitung masuk ke satu kotak, keluar kode; bank di sisi lain memegang kunci pasangan dan mencocokkan hasilnya",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Secret key",
+              "sub": "stays in the chip"
+            },
+            {
+              "label": "+ amount + counter"
+            },
+            {
+              "label": "Cryptogram",
+              "tone": "hot"
+            },
+            {
+              "label": "Bank checks",
+              "sub": "with its matching key",
+              "tone": "good"
+            }
+          ],
+          "edges": [
+            "",
+            "computes",
+            "sent to"
+          ]
+        }
       },
       "broll_keywords": [],
       "duration_ms": {
         "en": 14303
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "card",
+            "kind": "card",
+            "x": 0.22,
+            "label": "CARD",
+            "emo": "smug",
+            "say": {
+              "text": "Secret key stays inside.",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.78,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "happy",
+            "say": {
+              "text": "I hold the twin key.",
+              "at": 0.62
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -158,10 +575,82 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Nomor kartu asli disamarkan; token berbeda dikirim dari HP",
-        "on_screen_text": "token ≠ card number"
+        "on_screen_text": "token ≠ card number",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Card number",
+              "sub": "4111 11•• •••• 1111",
+              "tone": "muted",
+              "mono": true
+            },
+            {
+              "label": "Token",
+              "sub": "tok_7Q2…c9",
+              "tone": "hot",
+              "mono": true
+            },
+            {
+              "label": "Terminal",
+              "sub": "sees only the token"
+            }
+          ],
+          "edges": [
+            "replaced by",
+            "sent to"
+          ]
+        }
       },
       "duration_ms": {
         "en": 7709
+      },
+      "stage": {
+        "bg": "cafe",
+        "actors": [
+          {
+            "id": "phone",
+            "kind": "phone",
+            "x": 0.28,
+            "label": "PHONE",
+            "emo": "smug",
+            "say": {
+              "text": "Token, not my card number.",
+              "at": 0.12
+            },
+            "scale": 1
+          },
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.72,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "scale": 1
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "phone",
+            "to": "term",
+            "label": "tok_7Q2",
+            "at": 0.4,
+            "dur": 0.14
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "mobile payment smartphone nfc",
+          "pay with phone store"
+        ]
       }
     },
     {
@@ -173,10 +662,76 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Token curian dicoba di toko lain lalu ditolak"
+        "description": "Token curian dicoba di toko lain lalu ditolak",
+        "spec": {
+          "kind": "stamp",
+          "chips": [
+            "stolen token"
+          ],
+          "lines": [
+            "tried at another shop"
+          ],
+          "stamp": "REJECTED",
+          "tone": "bad"
+        }
       },
       "duration_ms": {
         "en": 4598
+      },
+      "stage": {
+        "bg": "street",
+        "actors": [
+          {
+            "id": "thief",
+            "kind": "friend",
+            "x": 0.28,
+            "label": "THIEF",
+            "emo": "smug",
+            "say": {
+              "text": "Stolen token!",
+              "at": 0.1
+            },
+            "scale": 1
+          },
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.72,
+            "label": "TERMINAL",
+            "emo": "neutral",
+            "emoAt": [
+              [
+                0.55,
+                "angry"
+              ]
+            ],
+            "scale": 1
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "thief",
+            "to": "term",
+            "label": "tok_7Q2",
+            "at": 0.3,
+            "dur": 0.14
+          },
+          {
+            "type": "stamp",
+            "text": "REJECTED",
+            "tone": "bad",
+            "at": 0.58,
+            "x": 0.72,
+            "y": 0.28
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -189,10 +744,77 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Terminal → Acquirer",
-        "on_screen_text": "ACQUIRER = the shop's bank"
+        "on_screen_text": "ACQUIRER = the shop's bank",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Terminal"
+            },
+            {
+              "label": "Acquirer",
+              "sub": "the shop's bank",
+              "tone": "hot"
+            }
+          ],
+          "edges": [
+            "asks"
+          ]
+        }
       },
       "duration_ms": {
         "en": 8313
+      },
+      "stage": {
+        "bg": "cafe",
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.22,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "say": {
+              "text": "Hey bank, may I charge this?",
+              "at": 0.1
+            },
+            "scale": 1
+          },
+          {
+            "id": "acq",
+            "kind": "bank",
+            "x": 0.76,
+            "label": "ACQUIRER",
+            "acc": "glasses",
+            "color": "#cfe3f7",
+            "emo": "neutral",
+            "say": {
+              "text": "I just forward things.",
+              "at": 0.55
+            },
+            "scale": 1
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "term",
+            "to": "acq",
+            "label": "0100",
+            "at": 0.3,
+            "dur": 0.14
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -205,10 +827,92 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Acquirer → Network; 6 sampai 8 digit pertama disorot (BIN) → Issuer",
-        "on_screen_text": "BIN = first 6–8 digits"
+        "on_screen_text": "BIN = first 6–8 digits",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Acquirer"
+            },
+            {
+              "label": "Card network",
+              "sub": "reads the BIN: first 6–8 digits",
+              "tone": "hot"
+            },
+            {
+              "label": "Issuer",
+              "sub": "your bank"
+            }
+          ],
+          "edges": [
+            "message",
+            "routes by BIN"
+          ]
+        }
       },
       "duration_ms": {
         "en": 10310
+      },
+      "stage": {
+        "bg": "bank",
+        "actors": [
+          {
+            "id": "acq",
+            "kind": "bank",
+            "x": 0.15,
+            "label": "ACQUIRER",
+            "acc": "glasses",
+            "color": "#cfe3f7",
+            "scale": 0.9
+          },
+          {
+            "id": "net",
+            "kind": "network",
+            "x": 0.5,
+            "label": "NETWORK",
+            "acc": "shades",
+            "emo": "smug",
+            "say": {
+              "text": "BIN 4111 11… → that bank!",
+              "at": 0.45
+            },
+            "scale": 1
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.85,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "neutral",
+            "scale": 0.9
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "acq",
+            "to": "net",
+            "label": "0100",
+            "at": 0.1,
+            "dur": 0.14
+          },
+          {
+            "type": "packet",
+            "from": "net",
+            "to": "iss",
+            "label": "0100",
+            "at": 0.62,
+            "dur": 0.14
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -221,10 +925,99 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Network digambar sebagai jalur pesan, ikon biaya kecil per pesan",
-        "on_screen_text": "network = messages, not money"
+        "on_screen_text": "network = messages, not money",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Acquirer"
+            },
+            {
+              "label": "Network",
+              "sub": "carries messages, holds no money",
+              "tone": "hot"
+            },
+            {
+              "label": "Issuer"
+            }
+          ],
+          "edges": [
+            "message + small fee",
+            "message + small fee"
+          ]
+        }
       },
       "duration_ms": {
         "en": 6780
+      },
+      "stage": {
+        "bg": "sky",
+        "actors": [
+          {
+            "id": "acq",
+            "kind": "bank",
+            "x": 0.15,
+            "label": "ACQUIRER",
+            "acc": "glasses",
+            "color": "#cfe3f7",
+            "scale": 0.9
+          },
+          {
+            "id": "net",
+            "kind": "network",
+            "x": 0.5,
+            "label": "NETWORK",
+            "acc": "shades",
+            "emo": "smug",
+            "say": {
+              "text": "I carry messages. Never money.",
+              "at": 0.1
+            },
+            "scale": 1
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.85,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "scale": 0.9
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "acq",
+            "to": "net",
+            "label": "msg",
+            "at": 0.4,
+            "dur": 0.14
+          },
+          {
+            "type": "packet",
+            "kind": "coin",
+            "from": "acq",
+            "to": "net",
+            "label": "fee",
+            "at": 0.55,
+            "dur": 0.14
+          },
+          {
+            "type": "packet",
+            "from": "net",
+            "to": "iss",
+            "label": "msg",
+            "at": 0.75,
+            "dur": 0.14
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -237,10 +1030,66 @@
       "visual": {
         "type": "remotion-code",
         "description": "Pesan ISO 8583 contoh (data fiktif), field ditampilkan satu per satu",
-        "on_screen_text": "ISO 8583 (1987)"
+        "on_screen_text": "ISO 8583 (1987)",
+        "spec": {
+          "kind": "code",
+          "title": "ISO 8583 message (example data)",
+          "lines": [
+            {
+              "k": "MTI",
+              "v": "0100",
+              "note": "authorization request"
+            },
+            {
+              "k": "DE2",
+              "v": "4111 11•• •••• 1111",
+              "note": "card number"
+            },
+            {
+              "k": "DE4",
+              "v": "000000000500",
+              "note": "amount"
+            },
+            {
+              "k": "DE49",
+              "v": "840",
+              "note": "currency"
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 7152
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "right"
+        },
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.2,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "say": {
+              "text": "ISO 8583. Since 1987.",
+              "at": 0.1
+            },
+            "scale": 1
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -253,10 +1102,66 @@
       "visual": {
         "type": "remotion-code",
         "description": "MTI 0100 disorot",
-        "on_screen_text": "MTI 0100 = authorization request"
+        "on_screen_text": "MTI 0100 = authorization request",
+        "spec": {
+          "kind": "code",
+          "title": "ISO 8583 message (example data)",
+          "lines": [
+            {
+              "k": "MTI",
+              "v": "0100",
+              "note": "authorization request"
+            },
+            {
+              "k": "DE2",
+              "v": "4111 11•• •••• 1111",
+              "note": "card number"
+            },
+            {
+              "k": "DE4",
+              "v": "000000000500",
+              "note": "amount"
+            },
+            {
+              "k": "DE49",
+              "v": "840",
+              "note": "currency"
+            }
+          ],
+          "focus": [
+            0
+          ]
+        }
       },
       "duration_ms": {
         "en": 7198
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "right"
+        },
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.2,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "pose": "point",
+            "say": {
+              "text": "0100 = may I charge this card?",
+              "at": 0.2
+            },
+            "scale": 1
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -269,10 +1174,67 @@
       "visual": {
         "type": "remotion-code",
         "description": "Field 2, 4, 49 disorot berurutan (nomor kartu fiktif)",
-        "on_screen_text": "DE2 · DE4 · DE49"
+        "on_screen_text": "DE2 · DE4 · DE49",
+        "spec": {
+          "kind": "code",
+          "title": "ISO 8583 message (example data)",
+          "lines": [
+            {
+              "k": "MTI",
+              "v": "0100",
+              "note": "authorization request"
+            },
+            {
+              "k": "DE2",
+              "v": "4111 11•• •••• 1111",
+              "note": "card number"
+            },
+            {
+              "k": "DE4",
+              "v": "000000000500",
+              "note": "amount"
+            },
+            {
+              "k": "DE49",
+              "v": "840",
+              "note": "currency"
+            }
+          ],
+          "focus": [
+            1,
+            2,
+            3
+          ]
+        }
       },
       "duration_ms": {
         "en": 8173
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "right"
+        },
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.2,
+            "label": "TERMINAL",
+            "emo": "think",
+            "say": {
+              "text": "Card, amount, currency.",
+              "at": 0.2
+            },
+            "scale": 1
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -284,10 +1246,81 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Issuer disorot; penghitung waktu berjalan"
+        "description": "Issuer disorot; penghitung waktu berjalan",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Network"
+            },
+            {
+              "label": "Issuer",
+              "sub": "decides in under 1 second",
+              "tone": "hot"
+            }
+          ],
+          "edges": [
+            "asks"
+          ]
+        }
       },
       "duration_ms": {
         "en": 4087
+      },
+      "stage": {
+        "bg": "bank",
+        "actors": [
+          {
+            "id": "net",
+            "kind": "network",
+            "x": 0.25,
+            "label": "NETWORK",
+            "acc": "shades",
+            "emo": "neutral",
+            "scale": 1
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.72,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "shock",
+            "say": {
+              "text": "Under one second?!",
+              "at": 0.2
+            },
+            "scale": 1
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "net",
+            "to": "iss",
+            "label": "0100",
+            "at": 0.08,
+            "dur": 0.14
+          },
+          {
+            "type": "pow",
+            "text": "< 1s",
+            "at": 0.45,
+            "x": 0.5,
+            "y": 0.3
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -299,10 +1332,48 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Empat centang muncul satu per satu"
+        "description": "Empat centang muncul satu per satu",
+        "spec": {
+          "kind": "checks",
+          "items": [
+            "Card is real",
+            "One-time code matches",
+            "Doesn't look like fraud",
+            "Funds or credit available"
+          ]
+        }
       },
       "duration_ms": {
         "en": 7663
+      },
+      "stage": {
+        "bg": "bank",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.5,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "happy",
+            "say": {
+              "text": "Real card? Right code? ✓",
+              "at": 0.15,
+              "by": 0.02
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -314,10 +1385,64 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Titik transaksi baru dibandingkan pola riwayat"
+        "description": "Titik transaksi baru dibandingkan pola riwayat",
+        "spec": {
+          "kind": "checks",
+          "header": "Compared with your history",
+          "items": [
+            {
+              "text": "Usual place?",
+              "mark": "ok"
+            },
+            {
+              "text": "Usual time?",
+              "mark": "ok"
+            },
+            {
+              "text": "Usual amount?",
+              "mark": "ok"
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 7105
+      },
+      "stage": {
+        "bg": "bank",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.3,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "think",
+            "say": {
+              "text": "Hmm. Usual shop? Usual hour?",
+              "at": 0.2
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.74,
+            "label": "YOU",
+            "emo": "neutral",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -329,11 +1454,65 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Bar skor risiko tiga zona: approve, tanya pemilik, tolak; pembelian di negara lain mendorong jarum ke zona tengah"
+        "description": "Bar skor risiko tiga zona: approve, tanya pemilik, tolak; pembelian di negara lain mendorong jarum ke zona tengah",
+        "spec": {
+          "kind": "gauge",
+          "zones": [
+            "Approve",
+            "Ask owner",
+            "Decline"
+          ],
+          "target": 1,
+          "label": "Purchase in another country"
+        }
       },
       "broll_keywords": [],
       "duration_ms": {
         "en": 13468
+      },
+      "stage": {
+        "bg": "bank",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.3,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "worry",
+            "say": {
+              "text": "Abroad? Hmm…",
+              "at": 0.4
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.74,
+            "label": "YOU",
+            "emo": "happy",
+            "say": {
+              "text": "Holiday!",
+              "at": 0.2
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -346,10 +1525,63 @@
       "visual": {
         "type": "remotion-code",
         "description": "MTI 0110, DE39 = 00",
-        "on_screen_text": "DE39 = 00 → approved"
+        "on_screen_text": "DE39 = 00 → approved",
+        "spec": {
+          "kind": "code",
+          "title": "Reply (example data)",
+          "lines": [
+            {
+              "k": "MTI",
+              "v": "0110",
+              "note": "authorization response"
+            },
+            {
+              "k": "DE39",
+              "v": "00",
+              "note": "approved"
+            }
+          ],
+          "focus": [
+            1
+          ]
+        }
       },
       "duration_ms": {
         "en": 8916
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "right"
+        },
+        "actors": [
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.2,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "happy",
+            "scale": 0.95
+          }
+        ],
+        "fx": [
+          {
+            "type": "stamp",
+            "text": "APPROVED",
+            "tone": "good",
+            "at": 0.5,
+            "x": 0.25,
+            "y": 0.28
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -362,10 +1594,60 @@
       "visual": {
         "type": "remotion-code",
         "description": "DE38 kode fiktif A1B2C3",
-        "on_screen_text": "DE38 = approval code"
+        "on_screen_text": "DE38 = approval code",
+        "spec": {
+          "kind": "code",
+          "title": "Reply (example data)",
+          "lines": [
+            {
+              "k": "MTI",
+              "v": "0110",
+              "note": "response"
+            },
+            {
+              "k": "DE39",
+              "v": "00",
+              "note": "approved"
+            },
+            {
+              "k": "DE38",
+              "v": "A1B2C3",
+              "note": "approval code (6 chars)"
+            }
+          ],
+          "focus": [
+            2
+          ]
+        }
       },
       "duration_ms": {
         "en": 6734
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "right"
+        },
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.2,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "say": {
+              "text": "Approval code. Keep it!",
+              "at": 0.3
+            },
+            "scale": 1
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -378,10 +1660,62 @@
       "visual": {
         "type": "remotion-code",
         "description": "DE39 = 51 lalu DE39 = 05",
-        "on_screen_text": "51 insufficient funds · 05 do not honor"
+        "on_screen_text": "51 insufficient funds · 05 do not honor",
+        "spec": {
+          "kind": "code",
+          "title": "Reply, when the answer is no",
+          "lines": [
+            {
+              "k": "DE39",
+              "v": "51",
+              "note": "insufficient funds"
+            },
+            {
+              "k": "DE39",
+              "v": "05",
+              "note": "do not honor"
+            }
+          ],
+          "focus": [
+            0,
+            1
+          ]
+        }
       },
       "duration_ms": {
         "en": 11424
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "right"
+        },
+        "actors": [
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.2,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "angry",
+            "scale": 0.95,
+            "say": {
+              "text": "51 or 05. No.",
+              "at": 0.3
+            }
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -393,10 +1727,82 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Dua kode berbeda menghasilkan layar terminal yang sama: DECLINED"
+        "description": "Dua kode berbeda menghasilkan layar terminal yang sama: DECLINED",
+        "spec": {
+          "kind": "stamp",
+          "chips": [
+            "51",
+            "05"
+          ],
+          "lines": [
+            "two reasons, one screen"
+          ],
+          "stamp": "DECLINED",
+          "tone": "bad"
+        }
       },
       "duration_ms": {
         "en": 9195
+      },
+      "stage": {
+        "bg": "cafe",
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.2,
+            "label": "YOU",
+            "emo": "shock",
+            "say": {
+              "text": "Why?!",
+              "at": 0.3
+            },
+            "scale": 1
+          },
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.5,
+            "label": "TERMINAL",
+            "emo": "sad",
+            "scale": 1
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.8,
+            "label": "SHOP OWNER",
+            "emo": "worry",
+            "pose": "shrug",
+            "say": {
+              "text": "No idea.",
+              "at": 0.55
+            },
+            "scale": 1
+          }
+        ],
+        "fx": [
+          {
+            "type": "stamp",
+            "text": "DECLINED",
+            "tone": "bad",
+            "at": 0.2,
+            "x": 0.5,
+            "y": 0.26
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "card declined payment terminal",
+          "cashier payment terminal"
+        ]
       }
     },
     {
@@ -409,10 +1815,52 @@
       "visual": {
         "type": "remotion-data",
         "description": "Penghitung transfer antar bank: $0.00",
-        "on_screen_text": "money moved: $0.00"
+        "on_screen_text": "money moved: $0.00",
+        "spec": {
+          "kind": "counter",
+          "label": "Money moved between banks",
+          "values": [
+            "$0.00"
+          ],
+          "tone": "bad"
+        }
       },
       "duration_ms": {
         "en": 6780
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.25,
+            "label": "YOU",
+            "emo": "happy",
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.75,
+            "label": "SHOP OWNER",
+            "emo": "worry",
+            "say": {
+              "text": "Zero. Between banks.",
+              "at": 0.4
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -425,10 +1873,63 @@
       "visual": {
         "type": "remotion-data",
         "description": "Dua angka: Available $95, Balance $100",
-        "on_screen_text": "available ≠ balance"
+        "on_screen_text": "available ≠ balance",
+        "spec": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "Balance",
+              "value": "$100"
+            },
+            {
+              "label": "Available",
+              "value": "$95",
+              "tone": "hot"
+            }
+          ],
+          "between": "hold −$5"
+        }
       },
       "duration_ms": {
         "en": 6780
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.3,
+            "label": "YOU",
+            "emo": "think",
+            "say": {
+              "text": "I see $95?",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "phone",
+            "kind": "phone",
+            "x": 0.74,
+            "label": "PHONE",
+            "emo": "smug",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -449,6 +1950,36 @@
       ],
       "duration_ms": {
         "en": 10031
+      },
+      "stage": {
+        "bg": "none",
+        "actors": [
+          {
+            "id": "phone",
+            "kind": "phone",
+            "x": 0.84,
+            "label": "PHONE",
+            "emo": "smug",
+            "scale": 0.9,
+            "say": {
+              "text": "Pending and posted are two records.",
+              "at": 0.2
+            }
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "hands scrolling banking app phone",
+          "mobile banking app transactions"
+        ],
+        "keep": "pixabay:1110"
       }
     },
     {
@@ -469,6 +2000,36 @@
       ],
       "duration_ms": {
         "en": 5712
+      },
+      "stage": {
+        "bg": "none",
+        "actors": [
+          {
+            "id": "clerk",
+            "kind": "clerk",
+            "x": 0.84,
+            "label": "HOTEL",
+            "emo": "smug",
+            "scale": 0.9,
+            "say": {
+              "text": "We hold a bit extra. Don't mind us.",
+              "at": 0.2
+            }
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "gas station",
+          "fuel pump"
+        ],
+        "keep": "pixabay:175"
       }
     },
     {
@@ -480,10 +2041,58 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Hold hotel naik bertahap; label kategori hospitality"
+        "description": "Hold hotel naik bertahap; label kategori hospitality",
+        "spec": {
+          "kind": "counter",
+          "label": "Hotel hold",
+          "values": [
+            "$150",
+            "$220",
+            "$310"
+          ],
+          "tone": "hot"
+        }
       },
       "duration_ms": {
         "en": 12214
+      },
+      "stage": {
+        "bg": "bank",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "clerk",
+            "kind": "clerk",
+            "x": 0.25,
+            "label": "HOTEL",
+            "emo": "smug",
+            "say": {
+              "text": "Just a little hold…",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.75,
+            "label": "YOU",
+            "emo": "shock",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -495,10 +2104,57 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Baris pending memudar dan hilang setelah penghitung hari"
+        "description": "Baris pending memudar dan hilang setelah penghitung hari",
+        "spec": {
+          "kind": "rows",
+          "rows": [
+            {
+              "label": "Coffee Shop",
+              "amount": "−$5.00",
+              "from": "pending",
+              "to": "gone",
+              "switchAt": 0.6
+            }
+          ],
+          "note": "a few days later"
+        }
       },
       "duration_ms": {
         "en": 8731
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.3,
+            "label": "YOU",
+            "emo": "happy",
+            "say": {
+              "text": "Gone! Good.",
+              "at": 0.65
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "phone",
+            "kind": "phone",
+            "x": 0.74,
+            "label": "PHONE",
+            "emo": "neutral",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -510,10 +2166,60 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Dua baris pending identik"
+        "description": "Dua baris pending identik",
+        "spec": {
+          "kind": "rows",
+          "rows": [
+            {
+              "label": "Coffee Shop",
+              "amount": "−$5.00",
+              "state": "pending"
+            },
+            {
+              "label": "Coffee Shop",
+              "amount": "−$5.00",
+              "state": "pending"
+            }
+          ],
+          "note": "one coffee, two holds"
+        }
       },
       "duration_ms": {
         "en": 2229
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.3,
+            "label": "YOU",
+            "emo": "shock",
+            "say": {
+              "text": "I bought ONE coffee!",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.75,
+            "label": "SHOP OWNER",
+            "emo": "smug",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -525,10 +2231,112 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Pesan 0110 hilang di tengah jalan; terminal mengirim 0100 kedua"
+        "description": "Pesan 0110 hilang di tengah jalan; terminal mengirim 0100 kedua",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Terminal"
+            },
+            {
+              "label": "Network"
+            },
+            {
+              "label": "Issuer"
+            }
+          ],
+          "edges": [
+            "0100 request",
+            {
+              "label": "0110 reply lost",
+              "broken": true
+            }
+          ],
+          "note": "no answer → the terminal asks again"
+        }
       },
       "duration_ms": {
         "en": 8220
+      },
+      "stage": {
+        "bg": "bank",
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.15,
+            "label": "TERMINAL",
+            "emo": "worry",
+            "say": {
+              "text": "Hello?? Hello??",
+              "at": 0.6
+            },
+            "scale": 1
+          },
+          {
+            "id": "net",
+            "kind": "network",
+            "x": 0.5,
+            "label": "NETWORK",
+            "acc": "shades",
+            "emo": "neutral",
+            "scale": 1
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.85,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "happy",
+            "scale": 0.9
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "term",
+            "to": "iss",
+            "label": "0100",
+            "at": 0.08,
+            "dur": 0.2
+          },
+          {
+            "type": "packet",
+            "from": "iss",
+            "to": 0.45,
+            "label": "0110",
+            "at": 0.32,
+            "dur": 0.12,
+            "hold": 0.02
+          },
+          {
+            "type": "pow",
+            "text": "LOST",
+            "at": 0.45,
+            "x": 0.45,
+            "y": 0.3
+          },
+          {
+            "type": "packet",
+            "from": "term",
+            "to": "iss",
+            "label": "0100",
+            "at": 0.72,
+            "dur": 0.16
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -540,10 +2348,59 @@
       },
       "visual": {
         "type": "remotion-data",
-        "description": "Available $90 setelah dua hold $5"
+        "description": "Available $90 setelah dua hold $5",
+        "spec": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "Balance",
+              "value": "$100"
+            },
+            {
+              "label": "Available",
+              "value": "$90",
+              "tone": "hot"
+            }
+          ],
+          "between": "2 holds × $5"
+        }
       },
       "duration_ms": {
         "en": 3808
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.3,
+            "label": "YOU",
+            "emo": "shock",
+            "say": {
+              "text": "Two holds!",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.74,
+            "label": "TERMINAL",
+            "emo": "sad",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -556,10 +2413,57 @@
       "visual": {
         "type": "remotion-code",
         "description": "MTI 0400/0420 reversal; satu baris pending dicoret",
-        "on_screen_text": "reversal: MTI 04xx"
+        "on_screen_text": "reversal: MTI 04xx",
+        "spec": {
+          "kind": "code",
+          "title": "Reversal (example data)",
+          "lines": [
+            {
+              "k": "MTI",
+              "v": "0400",
+              "note": "reversal"
+            },
+            {
+              "k": "DE38",
+              "v": "A1B2C3",
+              "note": "drop this hold"
+            }
+          ],
+          "focus": [
+            0,
+            1
+          ],
+          "note": "the first pending hold disappears"
+        }
       },
       "duration_ms": {
         "en": 10588
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "right"
+        },
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.2,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "say": {
+              "text": "Reversal sent. Sorry!",
+              "at": 0.4
+            },
+            "scale": 1
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -578,6 +2482,39 @@
       ],
       "duration_ms": {
         "en": 3297
+      },
+      "stage": {
+        "bg": "none",
+        "actors": [
+          {
+            "id": "pilot",
+            "kind": "pilot",
+            "x": 0.84,
+            "label": "AIRLINE",
+            "emo": "smug",
+            "scale": 0.9,
+            "say": {
+              "text": "No signal. The card decides.",
+              "at": 0.2
+            }
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "airplane window clouds"
+        ],
+        "keep": "pixabay:162756"
       }
     },
     {
@@ -590,10 +2527,78 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Kartu ↔ terminal saja; jalur ke bank terputus; label offline limit",
-        "on_screen_text": "offline approval"
+        "on_screen_text": "offline approval",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Card"
+            },
+            {
+              "label": "Terminal",
+              "sub": "offline limit written on the chip"
+            },
+            {
+              "label": "Bank",
+              "tone": "muted"
+            }
+          ],
+          "edges": [
+            {
+              "label": "approves alone"
+            },
+            {
+              "label": "no connection",
+              "broken": true
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 7384
+      },
+      "stage": {
+        "bg": "sky",
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.28,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "say": {
+              "text": "Approved. Offline!",
+              "at": 0.2
+            },
+            "scale": 1
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.78,
+            "label": "BANK (no signal)",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "shock",
+            "scale": 0.9,
+            "say": {
+              "text": "Hello? Anyone?",
+              "at": 0.55
+            }
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "airplane cabin passengers",
+          "airplane interior seats"
+        ]
       }
     },
     {
@@ -605,10 +2610,86 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Pesawat mendarat; batch transaksi terkirim; satu ditolak"
+        "description": "Pesawat mendarat; batch transaksi terkirim; satu ditolak",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Plane lands"
+            },
+            {
+              "label": "Airline uploads sales"
+            },
+            {
+              "label": "Bank",
+              "sub": "one card is no good",
+              "tone": "bad"
+            }
+          ],
+          "edges": [
+            "",
+            "after landing"
+          ],
+          "note": "the airline usually takes the loss"
+        }
       },
       "duration_ms": {
         "en": 8081
+      },
+      "stage": {
+        "bg": "sky",
+        "actors": [
+          {
+            "id": "plane",
+            "kind": "plane",
+            "x": 0.28,
+            "label": "AIRLINE",
+            "emo": "happy",
+            "scale": 1.1,
+            "say": {
+              "text": "Landed! Uploading sales.",
+              "at": 0.1
+            }
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.78,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "angry",
+            "scale": 0.9,
+            "say": {
+              "text": "This card is no good!",
+              "at": 0.6
+            }
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "plane",
+            "to": "iss",
+            "label": "sales",
+            "at": 0.35,
+            "dur": 0.18
+          },
+          {
+            "type": "pow",
+            "text": "1 BAD CARD",
+            "at": 0.6,
+            "x": 0.55,
+            "y": 0.28,
+            "color": "#ff9b8f"
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -620,10 +2701,64 @@
       },
       "visual": {
         "type": "remotion-data",
-        "description": "Batas belanja di kabin vs potensi kerugian"
+        "description": "Batas belanja di kabin vs potensi kerugian",
+        "spec": {
+          "kind": "bars",
+          "bars": [
+            {
+              "label": "Low spending cap",
+              "v": 30,
+              "tone": "good"
+            },
+            {
+              "label": "High spending cap",
+              "v": 100,
+              "tone": "bad"
+            }
+          ],
+          "unit": "bigger cap = bigger possible loss"
+        }
       },
       "duration_ms": {
         "en": 6455
+      },
+      "stage": {
+        "bg": "sky",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "pilot",
+            "kind": "pilot",
+            "x": 0.3,
+            "label": "AIRLINE",
+            "emo": "think",
+            "say": {
+              "text": "Cap the cabin spend.",
+              "at": 0.4
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.74,
+            "label": "YOU",
+            "emo": "happy",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -636,10 +2771,88 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Banyak transaksi masuk ke satu amplop batch → acquirer",
-        "on_screen_text": "end-of-day batch"
+        "on_screen_text": "end-of-day batch",
+        "spec": {
+          "kind": "hub",
+          "items": [
+            "Sale 1",
+            "Sale 2",
+            "Sale 3",
+            "Sale 4"
+          ],
+          "hub": {
+            "label": "Batch",
+            "sub": "sent to the acquirer"
+          }
+        }
       },
       "duration_ms": {
         "en": 8081
+      },
+      "stage": {
+        "bg": "cafe",
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.2,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "say": {
+              "text": "End of day: one big batch.",
+              "at": 0.15
+            },
+            "scale": 1
+          },
+          {
+            "id": "acq",
+            "kind": "bank",
+            "x": 0.78,
+            "label": "ACQUIRER",
+            "acc": "glasses",
+            "color": "#cfe3f7",
+            "emo": "happy",
+            "scale": 1
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "term",
+            "to": "acq",
+            "label": "sale 1",
+            "at": 0.3,
+            "dur": 0.14
+          },
+          {
+            "type": "packet",
+            "from": "term",
+            "to": "acq",
+            "label": "sale 2",
+            "at": 0.42,
+            "dur": 0.14
+          },
+          {
+            "type": "packet",
+            "from": "term",
+            "to": "acq",
+            "label": "sale 3",
+            "at": 0.54,
+            "dur": 0.14
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "cafe closing counter",
+          "cash register shop"
+        ]
       }
     },
     {
@@ -651,10 +2864,93 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Record clearing dicocokkan dengan DE38 A1B2C3"
+        "description": "Record clearing dicocokkan dengan DE38 A1B2C3",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Clearing record",
+              "sub": "A1B2C3",
+              "tone": "hot",
+              "mono": true
+            },
+            {
+              "label": "Morning approval",
+              "sub": "A1B2C3",
+              "tone": "hot",
+              "mono": true
+            }
+          ],
+          "edges": [
+            {
+              "label": "match ✓"
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 4969
+      },
+      "stage": {
+        "bg": "bank",
+        "actors": [
+          {
+            "id": "acq",
+            "kind": "bank",
+            "x": 0.2,
+            "label": "ACQUIRER",
+            "acc": "glasses",
+            "color": "#cfe3f7",
+            "emo": "happy",
+            "say": {
+              "text": "Code A1B2C3. Match!",
+              "at": 0.25
+            },
+            "scale": 1
+          },
+          {
+            "id": "net",
+            "kind": "network",
+            "x": 0.5,
+            "label": "NETWORK",
+            "acc": "shades",
+            "scale": 0.9
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.8,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "happy",
+            "scale": 0.9
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "acq",
+            "to": "iss",
+            "label": "A1B2C3",
+            "at": 0.1,
+            "dur": 0.2
+          },
+          {
+            "type": "stamp",
+            "text": "MATCH",
+            "tone": "good",
+            "at": 0.6,
+            "x": 0.5,
+            "y": 0.26
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -667,13 +2963,66 @@
       "visual": {
         "type": "remotion-data",
         "description": "Approved $40.00 → cleared $46.00 (+tip)",
-        "on_screen_text": "approved $40 · cleared $46"
+        "on_screen_text": "approved $40 · cleared $46",
+        "spec": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "Approved",
+              "value": "$40.00"
+            },
+            {
+              "label": "Cleared",
+              "value": "$46.00",
+              "tone": "hot"
+            }
+          ],
+          "between": "+ $6 tip"
+        }
       },
       "broll_keywords": [
         "restaurant bill card payment"
       ],
       "duration_ms": {
         "en": 8034
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.25,
+            "label": "YOU",
+            "emo": "happy",
+            "say": {
+              "text": "Generous tip!",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.75,
+            "label": "SHOP OWNER",
+            "emo": "happy",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -685,11 +3034,67 @@
       },
       "visual": {
         "type": "remotion-data",
-        "description": "Dua angka bersebelahan: jumlah di terminal (mata uang asing) dan jumlah posted (mata uang rekening), dengan panah konversi bertanda 'saat clearing'"
+        "description": "Dua angka bersebelahan: jumlah di terminal (mata uang asing) dan jumlah posted (mata uang rekening), dengan panah konversi bertanda 'saat clearing'",
+        "spec": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "Terminal showed",
+              "value": "€10.00"
+            },
+            {
+              "label": "Posted",
+              "value": "$10.85",
+              "tone": "hot"
+            }
+          ],
+          "between": "converted at clearing",
+          "note": "example rate"
+        }
       },
       "broll_keywords": [],
       "duration_ms": {
         "en": 9752
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.25,
+            "label": "YOU",
+            "emo": "shock",
+            "say": {
+              "text": "It says $10.85?!",
+              "at": 0.4
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "phone",
+            "kind": "phone",
+            "x": 0.75,
+            "label": "PHONE",
+            "emo": "smug",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "euro dollar banknotes",
+          "foreign currency money"
+        ]
       }
     },
     {
@@ -702,10 +3107,55 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Baris pending berubah jadi posted",
-        "on_screen_text": "pending → posted"
+        "on_screen_text": "pending → posted",
+        "spec": {
+          "kind": "rows",
+          "rows": [
+            {
+              "label": "Coffee Shop",
+              "amount": "−$5.00",
+              "from": "pending",
+              "to": "posted"
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 8359
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.25,
+            "label": "YOU",
+            "emo": "neutral",
+            "scale": 0.7
+          },
+          {
+            "id": "phone",
+            "kind": "phone",
+            "x": 0.75,
+            "label": "PHONE",
+            "emo": "happy",
+            "say": {
+              "text": "Pending → posted.",
+              "at": 0.5
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -718,10 +3168,85 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Dua jalur: dual-message (approve + clear) dan single-message",
-        "on_screen_text": "dual-message"
+        "on_screen_text": "dual-message",
+        "spec": {
+          "kind": "lanes",
+          "lanes": [
+            {
+              "title": "Dual-message",
+              "nodes": [
+                {
+                  "label": "Approve"
+                },
+                {
+                  "label": "Clear"
+                },
+                {
+                  "label": "Settle"
+                }
+              ],
+              "edges": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Single-message",
+              "nodes": [
+                {
+                  "label": "Approve + charge"
+                },
+                {
+                  "label": "Settle"
+                }
+              ],
+              "edges": [
+                ""
+              ]
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 8916
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.28,
+            "label": "TERMINAL",
+            "emo": "think",
+            "say": {
+              "text": "Two ways to do it.",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.74,
+            "label": "SHOP OWNER",
+            "emo": "think",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -734,10 +3259,61 @@
       "visual": {
         "type": "remotion-code",
         "description": "MTI 0200 financial request",
-        "on_screen_text": "single-message: MTI 0200"
+        "on_screen_text": "single-message: MTI 0200",
+        "spec": {
+          "kind": "code",
+          "title": "Single message (example data)",
+          "lines": [
+            {
+              "k": "MTI",
+              "v": "0200",
+              "note": "financial request: approve + charge"
+            },
+            {
+              "k": "DE4",
+              "v": "000000000500",
+              "note": "amount"
+            }
+          ],
+          "focus": [
+            0
+          ]
+        }
       },
       "duration_ms": {
         "en": 9938
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "right"
+        },
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.2,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "say": {
+              "text": "One message: approve + charge.",
+              "at": 0.3
+            },
+            "scale": 1
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "entering pin keypad",
+          "atm keypad"
+        ]
       }
     },
     {
@@ -749,10 +3325,91 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Jalur single-message langsung posted; jalur settlement tetap"
+        "description": "Jalur single-message langsung posted; jalur settlement tetap",
+        "spec": {
+          "kind": "lanes",
+          "lanes": [
+            {
+              "title": "Dual-message",
+              "nodes": [
+                {
+                  "label": "Approve"
+                },
+                {
+                  "label": "Clear",
+                  "sub": "charge posts"
+                },
+                {
+                  "label": "Settle",
+                  "sub": "shop paid",
+                  "tone": "hot"
+                }
+              ],
+              "edges": [
+                "",
+                ""
+              ]
+            },
+            {
+              "title": "Single-message",
+              "nodes": [
+                {
+                  "label": "Approve + post",
+                  "sub": "charge posts sooner"
+                },
+                {
+                  "label": "Settle",
+                  "sub": "shop paid",
+                  "tone": "hot"
+                }
+              ],
+              "edges": [
+                ""
+              ]
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 6269
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.28,
+            "label": "YOU",
+            "emo": "happy",
+            "say": {
+              "text": "Posts sooner!",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.75,
+            "label": "SHOP OWNER",
+            "emo": "sad",
+            "say": {
+              "text": "Still waiting on my money.",
+              "at": 0.6
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -764,10 +3421,67 @@
       },
       "visual": {
         "type": "remotion-data",
-        "description": "Your account −$5 · shop received $0.00"
+        "description": "Your account −$5 · shop received $0.00",
+        "spec": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "Your account",
+              "value": "−$5.00"
+            },
+            {
+              "label": "Shop received",
+              "value": "$0.00",
+              "tone": "bad"
+            }
+          ],
+          "between": "for now"
+        }
       },
       "duration_ms": {
         "en": 5387
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.25,
+            "label": "YOU",
+            "emo": "neutral",
+            "say": {
+              "text": "−$5 for me.",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.75,
+            "label": "SHOP OWNER",
+            "emo": "sad",
+            "say": {
+              "text": "$0.00 for me.",
+              "at": 0.5
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -780,10 +3494,67 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Matriks bank × bank dengan angka, dipadatkan jadi satu angka bersih per bank",
-        "on_screen_text": "netting"
+        "on_screen_text": "netting",
+        "spec": {
+          "kind": "netting",
+          "banks": [
+            "Bank A",
+            "Bank B",
+            "Bank C"
+          ],
+          "gross": [
+            [
+              "—",
+              "$4.1M",
+              "$2.0M"
+            ],
+            [
+              "$3.2M",
+              "—",
+              "$1.5M"
+            ],
+            [
+              "$0.9M",
+              "$0.7M",
+              "—"
+            ]
+          ],
+          "net": [
+            "−$2.0M",
+            "+$0.1M",
+            "+$1.9M"
+          ]
+        }
       },
       "duration_ms": {
         "en": 5341
+      },
+      "stage": {
+        "bg": "sky",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "net",
+            "kind": "network",
+            "x": 0.5,
+            "label": "NETWORK",
+            "acc": "shades",
+            "emo": "smug",
+            "say": {
+              "text": "I net it all out.",
+              "at": 0.5
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -795,10 +3566,42 @@
       },
       "visual": {
         "type": "remotion-data",
-        "description": "Ribuan panah kecil antar bank, dipadatkan jadi beberapa panah besar"
+        "description": "Ribuan panah kecil antar bank, dipadatkan jadi beberapa panah besar",
+        "spec": {
+          "kind": "collapse",
+          "from": "millions of tiny payments",
+          "to": "a few net transfers"
+        }
       },
       "duration_ms": {
         "en": 6223
+      },
+      "stage": {
+        "bg": "sky",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "net",
+            "kind": "network",
+            "x": 0.5,
+            "label": "NETWORK",
+            "acc": "shades",
+            "emo": "happy",
+            "say": {
+              "text": "Millions in. A few out.",
+              "at": 0.4
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -810,10 +3613,60 @@
       },
       "visual": {
         "type": "remotion-data",
-        "description": "Satu angka besar; $5 disorot sebagai titik kecil"
+        "description": "Satu angka besar; $5 disorot sebagai titik kecil",
+        "spec": {
+          "kind": "bignum",
+          "total": "$4,812,300,000",
+          "label": "one bank's daily total (example)",
+          "mark": "your $5"
+        }
       },
       "duration_ms": {
         "en": 7988
+      },
+      "stage": {
+        "bg": "bank",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.28,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "emo": "shock",
+            "say": {
+              "text": "Today's total!",
+              "at": 0.3
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.74,
+            "label": "YOU",
+            "emo": "smug",
+            "say": {
+              "text": "My $5 is in there. Somewhere.",
+              "at": 0.6
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -825,11 +3678,84 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Banyak bank menunjuk ke satu kotak rekening bank sentral; satu panah total per bank per siklus, bukan jutaan panah kecil"
+        "description": "Banyak bank menunjuk ke satu kotak rekening bank sentral; satu panah total per bank per siklus, bukan jutaan panah kecil",
+        "spec": {
+          "kind": "hub",
+          "items": [
+            "Bank A",
+            "Bank B",
+            "Bank C",
+            "Bank D"
+          ],
+          "hub": {
+            "label": "Central bank accounts",
+            "sub": "one net amount per bank"
+          }
+        }
       },
       "broll_keywords": [],
       "duration_ms": {
         "en": 11192
+      },
+      "stage": {
+        "bg": "vault",
+        "actors": [
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.12,
+            "label": "BANK A",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "scale": 0.7
+          },
+          {
+            "id": "acq",
+            "kind": "bank",
+            "x": 0.3,
+            "label": "BANK B",
+            "acc": "none",
+            "color": "#cfe3f7",
+            "scale": 0.7
+          },
+          {
+            "id": "vault",
+            "kind": "vault",
+            "x": 0.7,
+            "label": "CENTRAL BANK",
+            "acc": "crown",
+            "emo": "smug",
+            "scale": 1.05,
+            "say": {
+              "text": "One net amount per bank.",
+              "at": 0.5
+            }
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "from": "iss",
+            "to": "vault",
+            "label": "net",
+            "at": 0.2,
+            "dur": 0.2
+          },
+          {
+            "type": "packet",
+            "from": "acq",
+            "to": "vault",
+            "label": "net",
+            "at": 0.3,
+            "dur": 0.2
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -842,10 +3768,79 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Acquirer → rekening toko; kalender maju 1 sampai 3 hari kerja",
-        "on_screen_text": "T+1 to T+3"
+        "on_screen_text": "T+1 to T+3",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Acquirer"
+            },
+            {
+              "label": "Shop account",
+              "sub": "1–3 business days after the sale",
+              "tone": "hot"
+            }
+          ],
+          "edges": [
+            "pays"
+          ]
+        }
       },
       "duration_ms": {
         "en": 5341
+      },
+      "stage": {
+        "bg": "cafe",
+        "actors": [
+          {
+            "id": "acq",
+            "kind": "bank",
+            "x": 0.25,
+            "label": "ACQUIRER",
+            "acc": "glasses",
+            "color": "#cfe3f7",
+            "emo": "happy",
+            "scale": 1
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.75,
+            "label": "SHOP OWNER",
+            "emo": "happy",
+            "scale": 1
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "kind": "coin",
+            "from": "acq",
+            "to": "owner",
+            "label": "paid",
+            "at": 0.45,
+            "dur": 0.18
+          },
+          {
+            "type": "pow",
+            "text": "1–3 DAYS",
+            "at": 0.15,
+            "x": 0.5,
+            "y": 0.3
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "barista coffee shop busy",
+          "coffee shop counter"
+        ]
       }
     },
     {
@@ -857,10 +3852,78 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Kalender: Jumat ke Senin/Selasa, akhir pekan dilewati"
+        "description": "Kalender: Jumat ke Senin/Selasa, akhir pekan dilewati",
+        "spec": {
+          "kind": "timeline",
+          "blocks": [
+            {
+              "title": "Fri",
+              "sub": "tap",
+              "tone": "lit"
+            },
+            {
+              "title": "Sat",
+              "sub": "no settlement",
+              "tone": "dim"
+            },
+            {
+              "title": "Sun",
+              "sub": "no settlement",
+              "tone": "dim"
+            },
+            {
+              "title": "Mon",
+              "sub": "paid?",
+              "tone": "hot"
+            },
+            {
+              "title": "Tue",
+              "sub": "or here",
+              "tone": "hot"
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 6687
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.25,
+            "label": "YOU",
+            "emo": "think",
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.75,
+            "label": "SHOP OWNER",
+            "emo": "sad",
+            "say": {
+              "text": "Friday sale. Tuesday money.",
+              "at": 0.5
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -873,10 +3936,51 @@
       "visual": {
         "type": "remotion-data",
         "description": "$5.00 → $4.xx; selisih diberi tanda tanya",
-        "on_screen_text": "shop gets < $5.00"
+        "on_screen_text": "shop gets < $5.00",
+        "spec": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "You paid",
+              "value": "$5.00"
+            },
+            {
+              "label": "Shop gets",
+              "value": "$4.??",
+              "tone": "hot"
+            }
+          ],
+          "between": "− fees"
+        }
       },
       "duration_ms": {
         "en": 4180
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.5,
+            "label": "SHOP OWNER",
+            "emo": "shock",
+            "say": {
+              "text": "Where did the rest go?",
+              "at": 0.5
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     },
     {
@@ -888,10 +3992,64 @@
       },
       "visual": {
         "type": "remotion-data",
-        "description": "Satu angka persen dibuka jadi beberapa potongan bertanda tanya"
+        "description": "Satu angka persen dibuka jadi beberapa potongan bertanda tanya",
+        "spec": {
+          "kind": "breakdown",
+          "total": "one percentage",
+          "parts": [
+            {
+              "label": "fee",
+              "value": "?"
+            },
+            {
+              "label": "fee",
+              "value": "?"
+            },
+            {
+              "label": "fee",
+              "value": "?"
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 6966
+      },
+      "stage": {
+        "bg": "bank",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.28,
+            "label": "SHOP OWNER",
+            "emo": "think",
+            "scale": 0.7
+          },
+          {
+            "id": "acq",
+            "kind": "bank",
+            "x": 0.76,
+            "label": "ACQUIRER",
+            "acc": "glasses",
+            "color": "#cfe3f7",
+            "emo": "smug",
+            "say": {
+              "text": "Some fees. Details later.",
+              "at": 0.55
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -904,10 +4062,133 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Panah balik dari toko ke kamu, lewat acquirer, network, issuer",
-        "on_screen_text": "chargeback"
+        "on_screen_text": "chargeback",
+        "spec": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "label": "Shop"
+            },
+            {
+              "label": "Acquirer"
+            },
+            {
+              "label": "Network"
+            },
+            {
+              "label": "Issuer"
+            },
+            {
+              "label": "You",
+              "tone": "good"
+            }
+          ],
+          "edges": [
+            "chargeback",
+            "",
+            "",
+            "money back"
+          ]
+        }
       },
       "duration_ms": {
         "en": 9195
+      },
+      "stage": {
+        "bg": "bank",
+        "actors": [
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.1,
+            "label": "SHOP OWNER",
+            "scale": 0.8,
+            "emo": "worry"
+          },
+          {
+            "id": "acq",
+            "kind": "bank",
+            "x": 0.3,
+            "label": "ACQUIRER",
+            "acc": "glasses",
+            "color": "#cfe3f7",
+            "scale": 0.8
+          },
+          {
+            "id": "net",
+            "kind": "network",
+            "x": 0.5,
+            "label": "NETWORK",
+            "acc": "shades",
+            "scale": 0.8
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.7,
+            "label": "ISSUER",
+            "acc": "tie",
+            "color": "#e6d3a8",
+            "scale": 0.8
+          },
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.9,
+            "label": "YOU",
+            "scale": 0.8,
+            "emo": "happy",
+            "say": {
+              "text": "I dispute that charge!",
+              "at": 0.1
+            }
+          }
+        ],
+        "fx": [
+          {
+            "type": "packet",
+            "kind": "coin",
+            "from": "owner",
+            "to": "acq",
+            "label": "back",
+            "at": 0.3,
+            "dur": 0.1
+          },
+          {
+            "type": "packet",
+            "kind": "coin",
+            "from": "acq",
+            "to": "net",
+            "at": 0.45,
+            "dur": 0.1
+          },
+          {
+            "type": "packet",
+            "kind": "coin",
+            "from": "net",
+            "to": "iss",
+            "at": 0.58,
+            "dur": 0.1
+          },
+          {
+            "type": "packet",
+            "kind": "coin",
+            "from": "iss",
+            "to": "you",
+            "at": 0.7,
+            "dur": 0.1
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -919,10 +4200,61 @@
       },
       "visual": {
         "type": "remotion-code",
-        "description": "DE38 A1B2C3 muncul lagi di berkas sengketa"
+        "description": "DE38 A1B2C3 muncul lagi di berkas sengketa",
+        "spec": {
+          "kind": "code",
+          "title": "Dispute file (example data)",
+          "lines": [
+            {
+              "k": "Case",
+              "v": "CB-0001",
+              "note": "dispute file (example)"
+            },
+            {
+              "k": "DE38",
+              "v": "A1B2C3",
+              "note": "approval code from the start"
+            }
+          ],
+          "focus": [
+            1
+          ]
+        }
       },
       "duration_ms": {
         "en": 8266
+      },
+      "stage": {
+        "bg": "paper",
+        "insert": {
+          "pos": "right"
+        },
+        "actors": [
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.2,
+            "label": "SHOP OWNER",
+            "emo": "worry",
+            "say": {
+              "text": "I have the approval code!",
+              "at": 0.4
+            },
+            "scale": 1
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
+      },
+      "broll": {
+        "keywords": [
+          "receipt printing",
+          "paper receipt"
+        ]
       }
     },
     {
@@ -934,11 +4266,62 @@
       },
       "visual": {
         "type": "remotion-diagram",
-        "description": "Dua baris di aplikasi bank: charge asli tetap ada, lalu baris credit baru muncul beberapa hari kemudian; panah jalur terbalik di atasnya"
+        "description": "Dua baris di aplikasi bank: charge asli tetap ada, lalu baris credit baru muncul beberapa hari kemudian; panah jalur terbalik di atasnya",
+        "spec": {
+          "kind": "rows",
+          "rows": [
+            {
+              "label": "Coffee Shop",
+              "amount": "−$5.00",
+              "state": "posted"
+            },
+            {
+              "label": "Coffee Shop refund",
+              "amount": "+$5.00",
+              "state": "credit",
+              "appearAt": 0.6
+            }
+          ],
+          "note": "the credit takes its own days"
+        }
       },
       "broll_keywords": [],
       "duration_ms": {
         "en": 11656
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.28,
+            "label": "YOU",
+            "emo": "happy",
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.75,
+            "label": "SHOP OWNER",
+            "emo": "neutral",
+            "say": {
+              "text": "Refund sent. Give it days.",
+              "at": 0.5
+            },
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.08,
+            1
+          ]
+        }
       }
     },
     {
@@ -951,10 +4334,76 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Garis waktu tiga blok dari s02, kini semuanya menyala dengan jam/hari",
-        "on_screen_text": "promise · bill · money"
+        "on_screen_text": "promise · bill · money",
+        "spec": {
+          "kind": "timeline",
+          "blocks": [
+            {
+              "title": "Authorization",
+              "sub": "the promise",
+              "tone": "lit"
+            },
+            {
+              "title": "Clearing",
+              "sub": "the bill",
+              "tone": "lit"
+            },
+            {
+              "title": "Settlement",
+              "sub": "the money",
+              "tone": "lit"
+            }
+          ]
+        }
       },
       "duration_ms": {
         "en": 8452
+      },
+      "stage": {
+        "bg": "cafe",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.2,
+            "label": "YOU",
+            "emo": "happy",
+            "say": {
+              "text": "Promise. Bill. Money.",
+              "at": 0.4
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.5,
+            "label": "TERMINAL",
+            "emo": "happy",
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.8,
+            "label": "SHOP OWNER",
+            "emo": "happy",
+            "scale": 0.7
+          }
+        ],
+        "cam": {
+          "z": [
+            1.02,
+            1.02
+          ],
+          "x": [
+            -0.012,
+            0.012
+          ]
+        }
       }
     },
     {
@@ -967,10 +4416,59 @@
       "visual": {
         "type": "remotion-text",
         "description": "Judul video B + end screen",
-        "on_screen_text": "Next: You Pay $100. Who Takes a Cut?"
+        "on_screen_text": "Next: You Pay $100. Who Takes a Cut?",
+        "spec": {
+          "headline": "Next: You Pay $100. Who Takes a Cut?",
+          "sub": "The plumbing of money"
+        }
       },
       "duration_ms": {
         "en": 8499
+      },
+      "stage": {
+        "bg": "night",
+        "insert": {
+          "pos": "top"
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.3,
+            "label": "YOU",
+            "emo": "happy",
+            "say": {
+              "text": "Who takes a cut?",
+              "at": 0.4
+            },
+            "scale": 0.7
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.7,
+            "label": "SHOP OWNER",
+            "emo": "smug",
+            "say": {
+              "text": "I wonder…",
+              "at": 0.6
+            },
+            "scale": 0.7
+          }
+        ],
+        "fx": [
+          {
+            "type": "coins",
+            "at": 0.1,
+            "n": 12
+          }
+        ],
+        "cam": {
+          "z": [
+            1,
+            1.08
+          ]
+        }
       }
     }
   ],

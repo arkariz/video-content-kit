@@ -44,7 +44,7 @@ riset niche ─► usulan track ─► validasi (V1 riset, V2 pasar) ─► akti
 | Validasi niche (V1 riset, V2 pasar) | Track | `instruksi/02-validasi-niche.md` | `video-portfolio` | `tracks/<ID>/validasi/` | Lulus/gagal sesuai kriteria terkunci |
 | Riset konten viral | Track | `instruksi/03-riset-konten-viral.md` | `video-content-cycle` | `siklus/NNN-*/01-riset-viral.md` | Memilih sudut video |
 | Naskah | Track | `instruksi/04-naskah.md` | `video-content-cycle`, `video-anti-slop` | `02-brief.md`, `03-script.json`, `03-naskah.md` | Menyetujui naskah |
-| Produksi | Track | `instruksi/05-produksi.md` | `video-content-cycle` | `04-assets.json`, render | Menyetujui klip footage |
+| Produksi | Track | `instruksi/05-produksi.md`, dijalankan lewat pipeline (bagian Produksi otomatis) | `video-content-cycle` | `04-assets.json`, render | Menyetujui klip footage |
 | QA anti-slop | Track | `instruksi/06-qa-anti-slop.md` | `video-anti-slop` | `05-qa.md` | Harus `LULUS` |
 | Publish | Track | `instruksi/07-publish.md` | `video-content-cycle` | `06-publish.md` | Selalu minta persetujuan |
 | Analitik + loop | Track | `instruksi/08-analitik-dan-loop.md` | `video-content-cycle` | `tracks/<ID>/analitik/`, `learnings.md` | Tidak ada (keputusan besar lewat review) |
@@ -58,6 +58,21 @@ Nilai `mode_gate` di STATE berlaku untuk semua track:
 
 - `tanya` (default): berhenti dan tunggu jawaban.
 - `otomatis`: pilih opsi yang kamu rekomendasikan, catat alasannya di log, lalu lanjut. Pengecualian yang tetap berhenti: memilih track untuk validasi, keputusan hasil validasi, QA yang `GAGAL`, publish, dan semua keputusan review portfolio.
+
+## Produksi otomatis (langkah 05 sampai 07)
+
+Langkah riset sampai naskah (00 sampai 04) bisa dikerjakan di chat Claude Project dan masuk lewat blok HANDOFF. Langkah 05 sampai 07 dijalankan pipeline Node yang tidak terikat ke satu agent atau track:
+
+```
+node --env-file=.env scripts/pipeline/run.mjs --track <ID> --siklus <NNN> [--dry]
+```
+
+- Syarat input: `01-riset-viral.md`, `02-brief.md`, `03-script.json` (dengan bidang visual sesuai `produksi/CONTRACT.md`), `03-naskah.md`. Pipeline memvalidasi kontrak, lalu TTS, caption, footage, render, QA otomatis, dan paket review di `hasil/review/`.
+- Dokumentasi: `produksi/PIPELINE.md` (tahap, gate, kebutuhan), `produksi/CONTRACT.md` (kontrak visual), `produksi/STYLE.md` (gaya kartun penjelasan).
+- Pipeline berhenti pada QA kritis (kode 2), pada tahap LLM yang file-nya belum ada (kode 3), dan menunggu kreator. **QA otomatis tidak pernah menyatakan LULUS final**; pemeriksaan manual tetap wajib. Perbaikan mekanis: `scripts/pipeline/autofix.mjs`.
+- Publish hanya lewat `scripts/pipeline/approve.mjs` setelah kreator mengetik SETUJU untuk siklus itu. Jangan memanggil API platform dengan jalur lain.
+- Mesin visual dipakai bersama semua track: ubah komponen bersama (`produksi/remotion/src`) hanya di sesi terpisah dan jangan merusak track lain.
+- Pengecualian QA dari kreator ditulis di TRACK.md (`pengecualian_qa`) dan tetap muncul sebagai temuan.
 
 ## Perintah singkat dari kreator
 
