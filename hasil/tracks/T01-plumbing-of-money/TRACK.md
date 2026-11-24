@@ -74,3 +74,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Brief dan naskah 001 (EN + ID) ditulis. Anti-slop teks EN 41/50, ID 39/50 (LULUS). Durasi ±5,5 sampai 6 menit. Menunggu persetujuan kreator.
 - 2026-11-24: Naskah 001 diperpanjang ke 53 scene (1.153 kata EN, target 8:15 sampai 8:45) dan disetujui kreator. Catatan: video ini tanpa kehadiran nyata kreator; jadwalkan di siklus 002 atau 003.
 - 2026-11-24: Kerangka produksi bersama dibangun (produksi/remotion, scripts/produksi/*, katalog footage). Render uji OK. Belum ada audio/footage siklus 001.
+- 2026-11-24: Produksi 001: kandidat footage dicari (3 scene b-roll, Pixabay), TTS EN penuh dibuat dengan akun free (uji, bukan final; ulang dengan paket berbayar). Total audio EN 6,40 menit, di bawah target master ≥ 8:00. Menunggu pilihan footage dan keputusan durasi.

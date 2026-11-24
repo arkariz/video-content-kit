@@ -69,7 +69,10 @@
       },
       "broll_keywords": [
         "contactless card tap coffee shop"
-      ]
+      ],
+      "duration_ms": {
+        "en": 4458
+      }
     },
     {
       "id": "s02",
@@ -81,6 +84,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Garis waktu tiga blok: Authorization (sekarang), Clearing (malam ini), Settlement (1 sampai 3 hari kerja). Hanya blok pertama menyala"
+      },
+      "duration_ms": {
+        "en": 5712
       }
     },
     {
@@ -94,6 +100,9 @@
         "type": "remotion-diagram",
         "description": "Mockup daftar transaksi generik (bukan aplikasi bank tertentu): satu baris Pending, satu Posted, satu dicoret",
         "on_screen_text": "pending · posted · gone"
+      },
+      "duration_ms": {
+        "en": 6594
       }
     },
     {
@@ -107,6 +116,9 @@
         "type": "remotion-diagram",
         "description": "Kartu → terminal, dua paket data: nomor kartu, cryptogram",
         "on_screen_text": "card number + one-time cryptogram"
+      },
+      "duration_ms": {
+        "en": 6641
       }
     },
     {
@@ -119,6 +131,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Cryptogram disalin, dikirim ulang, dicap REJECTED"
+      },
+      "duration_ms": {
+        "en": 5898
       }
     },
     {
@@ -132,6 +147,9 @@
         "type": "remotion-diagram",
         "description": "Nomor kartu asli disamarkan; token berbeda dikirim dari HP",
         "on_screen_text": "token ≠ card number"
+      },
+      "duration_ms": {
+        "en": 7709
       }
     },
     {
@@ -144,6 +162,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Token curian dicoba di toko lain lalu ditolak"
+      },
+      "duration_ms": {
+        "en": 4598
       }
     },
     {
@@ -157,6 +178,9 @@
         "type": "remotion-diagram",
         "description": "Terminal → Acquirer",
         "on_screen_text": "ACQUIRER = the shop's bank"
+      },
+      "duration_ms": {
+        "en": 8638
       }
     },
     {
@@ -170,6 +194,9 @@
         "type": "remotion-diagram",
         "description": "Acquirer → Network; 6 sampai 8 digit pertama disorot (BIN) → Issuer",
         "on_screen_text": "BIN = first 6–8 digits"
+      },
+      "duration_ms": {
+        "en": 10310
       }
     },
     {
@@ -183,6 +210,9 @@
         "type": "remotion-diagram",
         "description": "Network digambar sebagai jalur pesan, ikon biaya kecil per pesan",
         "on_screen_text": "network = messages, not money"
+      },
+      "duration_ms": {
+        "en": 6780
       }
     },
     {
@@ -196,6 +226,9 @@
         "type": "remotion-code",
         "description": "Pesan ISO 8583 contoh (data fiktif), field ditampilkan satu per satu",
         "on_screen_text": "ISO 8583 (1987)"
+      },
+      "duration_ms": {
+        "en": 7152
       }
     },
     {
@@ -209,6 +242,9 @@
         "type": "remotion-code",
         "description": "MTI 0100 disorot",
         "on_screen_text": "MTI 0100 = authorization request"
+      },
+      "duration_ms": {
+        "en": 7198
       }
     },
     {
@@ -222,6 +258,9 @@
         "type": "remotion-code",
         "description": "Field 2, 4, 49 disorot berurutan (nomor kartu fiktif)",
         "on_screen_text": "DE2 · DE4 · DE49"
+      },
+      "duration_ms": {
+        "en": 8173
       }
     },
     {
@@ -234,6 +273,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Issuer disorot; penghitung waktu berjalan"
+      },
+      "duration_ms": {
+        "en": 4087
       }
     },
     {
@@ -246,6 +288,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Empat centang muncul satu per satu"
+      },
+      "duration_ms": {
+        "en": 7663
       }
     },
     {
@@ -258,6 +303,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Titik transaksi baru dibandingkan pola riwayat"
+      },
+      "duration_ms": {
+        "en": 7105
       }
     },
     {
@@ -271,6 +319,9 @@
         "type": "remotion-code",
         "description": "MTI 0110, DE39 = 00",
         "on_screen_text": "DE39 = 00 → approved"
+      },
+      "duration_ms": {
+        "en": 8916
       }
     },
     {
@@ -284,6 +335,9 @@
         "type": "remotion-code",
         "description": "DE38 kode fiktif A1B2C3",
         "on_screen_text": "DE38 = approval code"
+      },
+      "duration_ms": {
+        "en": 6734
       }
     },
     {
@@ -297,6 +351,9 @@
         "type": "remotion-code",
         "description": "DE39 = 51 lalu DE39 = 05",
         "on_screen_text": "51 insufficient funds · 05 do not honor"
+      },
+      "duration_ms": {
+        "en": 11424
       }
     },
     {
@@ -309,6 +366,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Dua kode berbeda menghasilkan layar terminal yang sama: DECLINED"
+      },
+      "duration_ms": {
+        "en": 9195
       }
     },
     {
@@ -322,6 +382,9 @@
         "type": "remotion-data",
         "description": "Penghitung transfer antar bank: $0.00",
         "on_screen_text": "money moved: $0.00"
+      },
+      "duration_ms": {
+        "en": 6780
       }
     },
     {
@@ -335,6 +398,9 @@
         "type": "remotion-data",
         "description": "Dua angka: Available $95, Balance $100",
         "on_screen_text": "available ≠ balance"
+      },
+      "duration_ms": {
+        "en": 6780
       }
     },
     {
@@ -352,7 +418,10 @@
       "broll_keywords": [
         "hands scrolling banking app phone",
         "mobile banking app transactions"
-      ]
+      ],
+      "duration_ms": {
+        "en": 10031
+      }
     },
     {
       "id": "s24",
@@ -369,7 +438,10 @@
       "broll_keywords": [
         "gas pump card payment",
         "hotel front desk check in"
-      ]
+      ],
+      "duration_ms": {
+        "en": 5712
+      }
     },
     {
       "id": "s25",
@@ -381,6 +453,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Hold hotel naik bertahap; label kategori hospitality"
+      },
+      "duration_ms": {
+        "en": 12214
       }
     },
     {
@@ -393,6 +468,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Baris pending memudar dan hilang setelah penghitung hari"
+      },
+      "duration_ms": {
+        "en": 8731
       }
     },
     {
@@ -405,6 +483,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Dua baris pending identik"
+      },
+      "duration_ms": {
+        "en": 2229
       }
     },
     {
@@ -417,6 +498,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Pesan 0110 hilang di tengah jalan; terminal mengirim 0100 kedua"
+      },
+      "duration_ms": {
+        "en": 8220
       }
     },
     {
@@ -429,6 +513,9 @@
       "visual": {
         "type": "remotion-data",
         "description": "Available $90 setelah dua hold $5"
+      },
+      "duration_ms": {
+        "en": 3808
       }
     },
     {
@@ -442,6 +529,9 @@
         "type": "remotion-code",
         "description": "MTI 0400/0420 reversal; satu baris pending dicoret",
         "on_screen_text": "reversal: MTI 04xx"
+      },
+      "duration_ms": {
+        "en": 10588
       }
     },
     {
@@ -457,7 +547,10 @@
       },
       "broll_keywords": [
         "airplane cabin trolley service"
-      ]
+      ],
+      "duration_ms": {
+        "en": 3297
+      }
     },
     {
       "id": "s32",
@@ -470,6 +563,9 @@
         "type": "remotion-diagram",
         "description": "Kartu ↔ terminal saja; jalur ke bank terputus; label offline limit",
         "on_screen_text": "offline approval"
+      },
+      "duration_ms": {
+        "en": 7384
       }
     },
     {
@@ -482,6 +578,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Pesawat mendarat; batch transaksi terkirim; satu ditolak"
+      },
+      "duration_ms": {
+        "en": 8081
       }
     },
     {
@@ -494,6 +593,9 @@
       "visual": {
         "type": "remotion-data",
         "description": "Batas belanja di kabin vs potensi kerugian"
+      },
+      "duration_ms": {
+        "en": 6455
       }
     },
     {
@@ -507,6 +609,9 @@
         "type": "remotion-diagram",
         "description": "Banyak transaksi masuk ke satu amplop batch → acquirer",
         "on_screen_text": "end-of-day batch"
+      },
+      "duration_ms": {
+        "en": 8081
       }
     },
     {
@@ -519,6 +624,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Record clearing dicocokkan dengan DE38 A1B2C3"
+      },
+      "duration_ms": {
+        "en": 4969
       }
     },
     {
@@ -535,7 +643,10 @@
       },
       "broll_keywords": [
         "restaurant bill card payment"
-      ]
+      ],
+      "duration_ms": {
+        "en": 8034
+      }
     },
     {
       "id": "s38",
@@ -548,6 +659,9 @@
         "type": "remotion-diagram",
         "description": "Baris pending berubah jadi posted",
         "on_screen_text": "pending → posted"
+      },
+      "duration_ms": {
+        "en": 8359
       }
     },
     {
@@ -561,6 +675,9 @@
         "type": "remotion-diagram",
         "description": "Dua jalur: dual-message (approve + clear) dan single-message",
         "on_screen_text": "dual-message"
+      },
+      "duration_ms": {
+        "en": 8916
       }
     },
     {
@@ -574,6 +691,9 @@
         "type": "remotion-code",
         "description": "MTI 0200 financial request",
         "on_screen_text": "single-message: MTI 0200"
+      },
+      "duration_ms": {
+        "en": 9938
       }
     },
     {
@@ -586,6 +706,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Jalur single-message langsung posted; jalur settlement tetap"
+      },
+      "duration_ms": {
+        "en": 6269
       }
     },
     {
@@ -598,6 +721,9 @@
       "visual": {
         "type": "remotion-data",
         "description": "Your account −$5 · shop received $0.00"
+      },
+      "duration_ms": {
+        "en": 5387
       }
     },
     {
@@ -611,6 +737,9 @@
         "type": "remotion-diagram",
         "description": "Matriks bank × bank dengan angka, dipadatkan jadi satu angka bersih per bank",
         "on_screen_text": "netting"
+      },
+      "duration_ms": {
+        "en": 5341
       }
     },
     {
@@ -623,6 +752,9 @@
       "visual": {
         "type": "remotion-data",
         "description": "Ribuan panah kecil antar bank, dipadatkan jadi beberapa panah besar"
+      },
+      "duration_ms": {
+        "en": 6223
       }
     },
     {
@@ -635,6 +767,9 @@
       "visual": {
         "type": "remotion-data",
         "description": "Satu angka besar; $5 disorot sebagai titik kecil"
+      },
+      "duration_ms": {
+        "en": 7988
       }
     },
     {
@@ -648,6 +783,9 @@
         "type": "remotion-diagram",
         "description": "Acquirer → rekening toko; kalender maju 1 sampai 3 hari kerja",
         "on_screen_text": "T+1 to T+3"
+      },
+      "duration_ms": {
+        "en": 5666
       }
     },
     {
@@ -660,6 +798,9 @@
       "visual": {
         "type": "remotion-diagram",
         "description": "Kalender: Jumat ke Senin/Selasa, akhir pekan dilewati"
+      },
+      "duration_ms": {
+        "en": 6687
       }
     },
     {
@@ -673,6 +814,9 @@
         "type": "remotion-data",
         "description": "$5.00 → $4.xx; selisih diberi tanda tanya",
         "on_screen_text": "shop gets < $5.00"
+      },
+      "duration_ms": {
+        "en": 4180
       }
     },
     {
@@ -685,6 +829,9 @@
       "visual": {
         "type": "remotion-data",
         "description": "Satu angka persen dibuka jadi beberapa potongan bertanda tanya"
+      },
+      "duration_ms": {
+        "en": 7988
       }
     },
     {
@@ -698,6 +845,9 @@
         "type": "remotion-diagram",
         "description": "Panah balik dari toko ke kamu, lewat acquirer, network, issuer",
         "on_screen_text": "chargeback"
+      },
+      "duration_ms": {
+        "en": 9195
       }
     },
     {
@@ -710,6 +860,9 @@
       "visual": {
         "type": "remotion-code",
         "description": "DE38 A1B2C3 muncul lagi di berkas sengketa"
+      },
+      "duration_ms": {
+        "en": 8266
       }
     },
     {
@@ -723,6 +876,9 @@
         "type": "remotion-diagram",
         "description": "Garis waktu tiga blok dari s02, kini semuanya menyala dengan jam/hari",
         "on_screen_text": "promise · bill · money"
+      },
+      "duration_ms": {
+        "en": 8452
       }
     },
     {
@@ -736,6 +892,9 @@
         "type": "remotion-text",
         "description": "Judul video B + end screen",
         "on_screen_text": "Next: You Pay $100. Who Takes a Cut?"
+      },
+      "duration_ms": {
+        "en": 8499
       }
     }
   ],
