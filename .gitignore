@@ -1,0 +1,11 @@
+.env
+produksi/audio/
+produksi/render/
+produksi/footage/
+node_modules/
+.claude/skills/
+.claude/settings.local.json
+CLAUDE.local.md
+.agents/skills/
+.github/skills/
+.gemini/skills/

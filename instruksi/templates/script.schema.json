@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Video script (satu siklus)",
+  "description": "Sumber tunggal untuk suara, caption, visual Remotion, dan render semua rasio.",
+  "type": "object",
+  "required": ["cycle", "title_options", "promise", "creator_evidence", "scenes", "shorts_cuts"],
+  "properties": {
+    "cycle": { "type": "string", "pattern": "^[0-9]{3}-[a-z0-9-]+$", "description": "Nama folder siklus, misalnya 001-flutter-rebuilds" },
+    "title_options": { "type": "array", "items": { "type": "string" }, "minItems": 3, "maxItems": 3 },
+    "thumbnail_text": { "type": "array", "items": { "type": "string", "maxLength": 32 }, "maxItems": 2 },
+    "promise": { "type": "string", "description": "Janji video dalam satu kalimat" },
+    "creator_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["what", "scene_id"],
+        "properties": {
+          "what": { "type": "string", "description": "Demo kode, data proyek, pengalaman, screen recording" },
+          "scene_id": { "type": "string" },
+          "source_path": { "type": "string", "description": "Path file kode atau rekaman nyata" }
+        }
+      }
+    },
+    "pronunciations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "say_as"],
+        "properties": { "term": { "type": "string" }, "say_as": { "type": "string" } }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["id", "role", "narration", "visual"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^s[0-9]{2}$" },
+          "role": { "enum": ["hook", "context", "body", "rehook", "payoff", "cta"] },
+          "narration": {
+            "type": "object",
+            "required": ["en"],
+            "properties": { "en": { "type": "string" }, "id": { "type": "string" } }
+          },
+          "visual": {
+            "type": "object",
+            "required": ["type"],
+            "properties": {
+              "type": { "enum": ["remotion-diagram", "remotion-code", "remotion-text", "remotion-data", "screen-recording", "broll", "creator-camera"] },
+              "description": { "type": "string" },
+              "code_path": { "type": "string" },
+              "on_screen_text": { "type": "string" }
+            }
+          },
+          "broll_keywords": { "type": "array", "items": { "type": "string" } },
+          "duration_ms": {
+            "type": "object",
+            "description": "Diisi setelah TTS",
+            "properties": { "en": { "type": "integer" }, "id": { "type": "integer" } }
+          }
+        }
+      }
+    },
+    "shorts_cuts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "scene_ids", "hook_override"],
+        "properties": {
+          "name": { "type": "string" },
+          "scene_ids": { "type": "array", "items": { "type": "string" } },
+          "hook_override": { "type": "string", "description": "Hook khusus versi pendek, maksimal 2 detik bicara" }
+        }
+      }
+    },
+    "anti_slop": {
+      "type": "object",
+      "properties": {
+        "text_score_en": { "type": "integer", "minimum": 0, "maximum": 50 },
+        "text_score_id": { "type": "integer", "minimum": 0, "maximum": 50 }
+      }
+    }
+  }
+}
