@@ -6,7 +6,8 @@ Skor = permintaan (1-5) + kekuatan bukti milik kreator (1-5) + kesegaran (1-5). 
 
 | Skor | Ide (judul kerja) | Pilar | Bukti permintaan | Bukti milik kreator | Sumber | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| 14 | Why Jakarta's Commuter Trains Are Second-Hand From Tokyo | 1 | Kereta Asia populer (The Odd Decision 506K) | Footage sendiri di stasiun KRL | [The Odd Decision](https://www.youtube.com/watch?v=1kPrIwngW3E) | baru |
+| 15 | Jakarta Just Refused Tokyo's Old Trains. Here's Why | 1 | Behind Asia 302K (topik dasar); Unix Travels 71K (3,9x, 13 hari) | Footage KRL sendiri; berita pembatalan impor 5 Nov 2026 (sumber ID) | [riset siklus 001](siklus/001-riset/01-riset-viral.md) | usulan siklus 001 |
+| 14 | Why Jakarta's Commuter Trains Are Second-Hand From Tokyo | 1 | Behind Asia 302K (10 bulan, sudut hampir sama) | Footage sendiri di stasiun KRL | [Behind Asia](https://www.youtube.com/watch?v=SVDe_tDGxpk) | digabung ke ide skor 15 sebagai babak 1 |
 | 14 | Why Indonesia Is Building a New Capital 1,200 km From Jakarta | 1 | "why indonesia" 11 video baru di atas 10K | Dokumen pemerintah berbahasa Indonesia | (lihat kandidat-niche-nontech.md) | baru |
 | 13 | Why North Jakarta Is Sinking Faster Than the Sea Is Rising | 2 | INVOICE INDONESIA 143K (12 hari); Construction Files 24K | Footage tanggul pesisir; data subsiden lokal | (lihat kandidat-niche-nontech.md) | baru |
 | 13 | Why the Dutch Left Indonesia Its Laws but Not Its Language | 3 | TheLanguageMap (5,5K subs) 222K | Sumber hukum Indonesia (KUHPerdata) | [TheLanguageMap](https://www.youtube.com/watch?v=1OqPZhXFpow) | baru |
@@ -27,3 +28,7 @@ Skor = permintaan (1-5) + kekuatan bukti milik kreator (1-5) + kesegaran (1-5). 
 | 9 | Why Timor-Leste Uses the US Dollar | 3 | `belum terverifikasi` | Peta, data | (perlu riset viral) | baru |
 | 9 | Indonesia vs Vietnam vs Philippines: Who Builds Faster? | 4 | Perbandingan negara populer (The Odd Decision) | Data proyek publik | (perlu riset viral) | baru |
 | 9 | Why Malaysia and Indonesia Speak Almost the Same Language | 3 | `belum terverifikasi` | Penutur asli | (perlu riset viral) | baru |
+| 12 | Why Indonesia Got Japan's Best Used Trains and Its Neighbours Got Diesels | 1/4 | Komentar Behind Asia (pertanyaan penonton) | Data armada KAI; footage | [riset siklus 001](siklus/001-riset/01-riset-viral.md) | baru (riset siklus 001) |
+| 12 | Why Indonesian Spelling Was Designed by a Dutchman | 3 | Komentar TheLanguageMap 222K (ejaan Van Ophuijsen 1901) | Dokumen ejaan berbahasa Indonesia; penutur asli | [TheLanguageMap](https://www.youtube.com/watch?v=1OqPZhXFpow) | baru (riset siklus 001) |
+| 11 | Why Indonesia Is Building Its Own High-Speed Train | 1 | Komentar The Odd Decision 507K (prototipe dalam negeri) | Sumber berbahasa Indonesia | [The Odd Decision](https://www.youtube.com/watch?v=1kPrIwngW3E) | baru (riset siklus 001), fakta `belum terverifikasi` |
+| 11 | Why Batam Is Closer to Singapore Than to Jakarta | 4 | Offering Things: ferry Batam 105K (24x) | Footage Batam (bila ada perjalanan); data BP Batam | [Offering Things](https://www.youtube.com/@offeringthings/videos) | baru (riset siklus 001) |

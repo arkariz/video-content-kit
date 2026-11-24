@@ -7,10 +7,10 @@ tahap: validasi
 channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
-siklus_aktif: null
-langkah_berikutnya: "validasi V2: riset konten viral sekali untuk sprint (instruksi/03-riset-konten-viral.md), mulai dari variasi A; rekam footage KRL 2026-11-28/29"
+siklus_aktif: "001-riset"
+langkah_berikutnya: "siklus 001 (uji-V2, variasi A): kreator memilih sudut, lalu ganti nama folder siklus dan lanjut brief + naskah (instruksi/04-naskah.md). Rekam footage KRL 2026-11-28/29"
+menunggu_keputusan: "Pilih sudut siklus 001 (siklus/001-riset/01-riset-viral.md): A Jakarta Just Refused Tokyo's Old Trains (rekomendasi), B Why Jakarta's Commuter Trains Are Second-Hand From Tokyo, C Why Tokyo's Retired Trains Work Harder in Jakarta"
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -50,6 +50,7 @@ Skor niche 79. "why indonesia" punya 11 video di atas 10 ribu view dalam 90 hari
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
+| 001 | Kereta KRL bekas Jepang (variasi A) | riset | target 2026-12-07 | uji-V2, variasi A |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -72,3 +73,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Profil publish T02 diisi "equatorlogic" atas permintaan kreator; profil itu belum ada di akun Upload-Post.
 - 2026-11-25: Profil publish T02 diubah ke "default": menurut kreator "equatorlogic" hanya nama tampilan, API memakai "default".
 - 2026-11-25: Gaya wajib untuk semua siklus: diorama 2.5D. Pemeran T02 bisa dipakai sebagai actor:<nama>; peta Asia Tenggara dan aset khusus T02 belum ada di mesin diorama.
+- 2026-11-24: Siklus 001 riset viral selesai untuk seluruh sprint V2 (9 outlier, 3 pola). Temuan: Behind Asia sudah membuat topik kereta bekas (302K, 10 bulan); pembeda = pembatalan impor KRL bekas 5 Nov 2026 + sumber ID + footage sendiri. 4 ide baru di backlog. Menunggu pilihan sudut.
