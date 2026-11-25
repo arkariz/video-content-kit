@@ -2,7 +2,7 @@
   "track": "T01",
   "siklus": "001-approved-not-paid",
   "profil": "moneyplumbing",
-  "dibuat": "2026-11-25T02:34:14.499Z",
+  "dibuat": "2026-11-25T02:37:39.516Z",
   "catatan": "Edit sebelum approve. platformAktif: ubah true/false (TikTok butuh paket berbayar Upload-Post). Jadwal default: master di tanggal tayang TRACK.md 19:00 WIB, Shorts +1 dan +2 hari (rencana.md terkunci: minggu yang sama).",
   "platformAktif": {
     "youtube": true,
@@ -29,8 +29,10 @@
       "nama": "master",
       "file": "produksi/render/T01/001/Master16x9-en.mp4",
       "thumbnail": "produksi/render/T01/001/Thumbnail-A.png",
+      "facebook_media_type": "VIDEO",
       "platforms": [
-        "youtube"
+        "youtube",
+        "facebook"
       ],
       "title": "Your Card Said \"Approved.\" The Shop Hasn't Been Paid.",
       "description": "After watching, you can tell which system created each line in your bank app (pending, posted, or the one that disappears) and why the shop gets paid days after you tap.\n\n0:00 Approved is only a message\n0:18 The tap\n0:59 Acquirer, network, issuer\n1:26 The message itself\n1:52 The bank decides\n3:09 Money moved: zero\n3:24 Holds and pending\n4:05 The charge that shows up twice\n4:35 Offline approval\n4:59 Clearing\n6:15 Netting\n6:48 Settlement and fees\n7:14 Chargebacks\n7:45 The recap\n\nSources:\n- https://docs.aws.amazon.com/payment-cryptography/latest/userguide/use-cases-issuers.generalfunctions.arqc.html\n- https://www.ibm.com/docs/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.csfb400/EMVTrans.htm\n- https://www.emvco.com/knowledge-hub/the-what-why-and-how-of-emv-payment-tokenisation/\n- https://www.wikipedia.org/wiki/Card_scheme\n- https://usa.visa.com/partner-with-us/info-for-partners/numerics-initiative.html\n- https://en.wikipedia.org/wiki/ISO_8583\n- https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring\n- https://docs.stripe.com/issuing/controls/sms-fraud-alerts\n- https://docs.ebanx.com/docs/pay-in/dev-tools/response-codes/iso8583-codes\n- https://stripe.com/us/resources/more/authorization-holds-explained\n- https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf\n- https://usa.visa.com/content/dam/VCOM/regional/na/us/support-legal/documents/authorization-and-reversal-processing-best-practices-for-merchants.pdf\n- https://support.pay.nl/en/knowledge/offline-pinnen\n- https://www.americanbanker.com/news/making-plane-sense-of-in-flight-payment-risk\n- https://corporate.visa.com/en/sites/visa-perspectives/company-news/pay-the-same-exchange-rate-every-time.html\n- https://www.nerdwallet.com/article/credit-cards/currency-exchange-rate-credit-card-statement-doesnt-match-online-rate\n- https://www.marqeta.com/blog/single-vs-dual-messaging-which-ways-the-right-way\n- https://sulagnasasmal.github.io/us-payments-hub/card.html\n- https://coinlaw.io/visa-statistics/\n- https://www.mastercard.com/gb/en/news-and-trends/Insights/2024/how-can-merchants-dispute-credit-card-chargebacks.html\n- https://stripe.com/resources/more/representment-explained\n- https://www.paypal.com/money-hub/article/how-do-credit-card-refunds-work\n\nThe narration uses a synthetic voice and cartoon animation. Real footage is licensed for commercial use (Pexels/Pixabay).",

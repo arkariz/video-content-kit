@@ -6,7 +6,7 @@ Disetujui kreator: (diisi saat approve)
 
 | Item | File | Platform | Judul | Jadwal (WIB) | Label AI |
 | --- | --- | --- | --- | --- | --- |
-| master | produksi/render/T01/001/Master16x9-en.mp4 | youtube | Your Card Said "Approved." The Shop Hasn't Been Paid. | 2026-12-07 19:00:00 | ya |
+| master | produksi/render/T01/001/Master16x9-en.mp4 | youtube, facebook | Your Card Said "Approved." The Shop Hasn't Been Paid. | 2026-12-07 19:00:00 | ya |
 | A1-zero-dollars-moved | produksi/render/T01/001/Short9x16-A1-zero-dollars-moved-en.mp4 | youtube, instagram, facebook | Your card said approved. Zero dollars moved. | 2026-12-08 19:00:00 | ya |
 | A2-pending-to-posted | produksi/render/T01/001/Short9x16-A2-pending-to-posted-en.mp4 | youtube, instagram, facebook | Why your restaurant charge changes the next day. | 2026-12-09 19:00:00 | ya |
 
