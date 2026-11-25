@@ -65,3 +65,4 @@ The narration uses a synthetic voice and cartoon animation. Real footage is lice
 - master: tayang 2026-11-25. YouTube https://www.youtube.com/watch?v=z3M5k4pXXhw (thumbnail kustom GAGAL: channel belum terverifikasi). Facebook https://www.facebook.com/1449973764874542/videos/1827962438451615
 - A1-zero-dollars-moved: terjadwal 2026-11-26 19:00 WIB (YouTube, Instagram, Facebook), job 8f1a7df4f89740c792a862fd91f13986, status queued
 - A2-pending-to-posted: TIDAK TERKIRIM. HTTP 429, batas 10 unggahan per bulan (terpakai 8, butuh 3)
+- A2: atas keputusan kreator dikirim ke YouTube dan Instagram saja (sisa kuota 2); Facebook dilewati.
