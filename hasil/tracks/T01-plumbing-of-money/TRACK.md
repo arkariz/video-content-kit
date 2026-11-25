@@ -8,7 +8,7 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "001: kirim Short A2 (kuota Upload-Post habis; jadwal 2026-11-27 19:00 WIB); kreator verifikasi channel YouTube lalu pasang thumbnail A dan track audio ID di Studio; mulai naskah siklus 002; analitik 001 mulai 2026-12-02"
+langkah_berikutnya: "001: kreator mengunggah Shorts manual (siklus/001-approved-not-paid/06-publish-manual.md), putuskan jadwal A1 yang masih aktif di Upload-Post; verifikasi channel, thumbnail, audio ID; mulai naskah siklus 002; analitik 001 mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
 menunggu_keputusan: null
@@ -105,3 +105,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Kreator memajukan jadwal 001 ke 25-27 Nov. Penyimpangan: konten tayang sebelum periode uji V2 dan tidak sejajar dengan T02; dampaknya dipertimbangkan saat penilaian 2027-01-03. QA manual dicatat di 05-qa.md. Belum dikirim: menunggu SETUJU diketik kreator.
 - 2026-11-25: Kreator mengetik SETUJU. Master 001 tayang di YouTube (https://www.youtube.com/watch?v=z3M5k4pXXhw) dan Facebook; thumbnail kustom YouTube gagal (channel belum terverifikasi). Short A1 terjadwal 11-26 19:00 WIB. Short A2 gagal terkirim: batas 10 unggahan per bulan Upload-Post.
 - 2026-11-25: Kreator memilih mengirim Short A2 ke dua platform (YouTube dan Instagram) karena sisa kuota 2; menunggu approve.mjs dijalankan kreator.
+- 2026-11-25: Kreator memastikan master YouTube terkirim dan memilih mengunggah sisanya manual. Lembar unggah manual dibuat. Short A1 masih terjadwal otomatis di Upload-Post (11-26 19:00 WIB) sampai diputuskan.
