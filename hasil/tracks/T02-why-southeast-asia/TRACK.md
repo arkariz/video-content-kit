@@ -9,6 +9,7 @@ bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: null
 langkah_berikutnya: "validasi V2: riset konten viral sekali untuk sprint (instruksi/03-riset-konten-viral.md), mulai dari variasi A; rekam footage KRL 2026-11-28/29"
+profil_publish: null          # profil Upload-Post channel Asia Tenggara (isi setelah dibuat)
 menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
@@ -67,4 +68,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: V1 dinilai dari 11 kata kunci YouTube: LULUS 5/5. Catatan: permintaan "Indonesia" terbesar saat ini politik/krisis (di luar sudut); pilar 4 (perbandingan antarnegara) terbukti kuat. Rencana V2 disusun (variasi A/B/C), jam_per_minggu 5 → 6. Menunggu persetujuan kreator.
 - 2026-11-24: Kreator menyetujui rencana V2 apa adanya (opsi 1). Rencana dikunci. Berikutnya riset konten viral sprint V2.
 - 2026-11-24: Mesin visual T02 siap: pemeran guide/commuter/hijab/engineer, objek train/island/volcano/city/ship, latar peta Asia Tenggara (tanpa batas negara), stasiun, kota, laut, dataran tinggi, efek pin/route, dan jalur footage milik kreator (produksi/footage-own/T02, dihitung QA sebagai bukti kreator). Footage KRL tetap harus direkam 2026-11-28/29. Belum ada siklus T02.
-
+- 2026-11-25: Publish memakai profil per track; `profil_publish` T02 masih kosong sampai kreator membuat profil kedua di Upload-Post.
