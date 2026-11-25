@@ -11,7 +11,7 @@ Dibuat 2026-11-25. Isi kolom URL setelah tayang, lalu kirim ke agent untuk dicat
 - Setelah Short tayang: taruh tautan video master di komentar yang di-pin (YouTube).
 
 ## A1-zero-dollars-moved
-**Hati-hati: masih terjadwal otomatis di Upload-Post** (job 8f1a7df4f89740c792a862fd91f13986). Unggah manual hanya bila jadwal itu sudah dibatalkan, supaya tidak ganda.
+**Jangan diunggah manual:** terjadwal otomatis di Upload-Post (keputusan kreator 2026-11-25, job 8f1a7df4f89740c792a862fd91f13986).
 
 - File: `produksi/render/T01/001/Short9x16-A1-zero-dollars-moved-en.mp4`
 - Jadwal: 2026-11-26 19:00 WIB
