@@ -4,10 +4,10 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "T01: produksi siklus 001 di Claude Code (ElevenLabs, Pexels/Pixabay, Remotion). T02: riset viral sprint V2 (\"lanjut T02\")"
+langkah_berikutnya: "T01: kreator review dan SETUJU siklus 001, lalu naskah siklus 002 di chat Project (tayang 2026-12-14). T02: riset viral sprint V2 di chat dan rekam footage KRL 2026-11-28/29"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
-terakhir_diperbarui: 2026-11-24
+terakhir_diperbarui: 2026-11-25
 ---
 
 # STATE portfolio
@@ -51,4 +51,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-25: Kreator mengonfirmasi Reel Facebook uji (ID 1005272842019993) berstatus draf. Mode uji aman untuk Facebook meskipun API mengembalikan URL Reel.
 - 2026-11-25: ElevenLabs Starter aktif. Suara per bahasa di produksi/voices.json (ID = R86jddkroI9bJwXFfjsr; EN dari .env).
 - 2026-11-25: T01 siklus 001 dirender ulang dengan audio ElevenLabs Starter (master 8:06). Menunggu review kreator, thumbnail, dan SETUJU publish.
-
+- 2026-11-25: Publish versi Indonesia dilewati dulu; lanjut sesuai rencana awal (versi Inggris).
