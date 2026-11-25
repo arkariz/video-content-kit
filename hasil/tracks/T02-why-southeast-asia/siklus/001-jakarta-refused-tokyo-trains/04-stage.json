@@ -1,0 +1,2044 @@
+{
+  "s01": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": [
+          -8,
+          22
+        ],
+        "dist": 52,
+        "height": 36
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 11,
+        "height": 5
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_ship",
+        "at": 0.3
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "EX-TOKYO",
+        "at": 0.35
+      }
+    ]
+  },
+  "s02": {
+    "bg": "none",
+    "actors": [],
+    "fx": [],
+    "footage": true
+  },
+  "s03": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": [
+          -8,
+          22
+        ],
+        "dist": 52,
+        "height": 36
+      },
+      "to": {
+        "look": [
+          22,
+          30
+        ],
+        "dist": 56,
+        "height": 40
+      },
+      "arrive": 0.9
+    },
+    "highlight": [
+      {
+        "id": "kai",
+        "at": 0.1,
+        "until": 0.3
+      },
+      {
+        "id": "gov",
+        "at": 0.3,
+        "until": 0.5
+      },
+      {
+        "id": "inka",
+        "at": 0.5,
+        "until": 0.7
+      },
+      {
+        "id": "crrc",
+        "at": 0.7,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "kai",
+        "text": "KAI",
+        "at": 0.1,
+        "until": 0.3
+      },
+      {
+        "id": "gov",
+        "text": "RULES",
+        "at": 0.3,
+        "until": 0.5
+      },
+      {
+        "id": "inka",
+        "text": "INKA",
+        "at": 0.5,
+        "until": 0.7
+      },
+      {
+        "id": "crrc",
+        "text": "CRRC",
+        "at": 0.7
+      }
+    ]
+  },
+  "s04": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": [
+          22,
+          30
+        ],
+        "dist": 56,
+        "height": 40
+      },
+      "to": {
+        "look": "tokyo",
+        "dist": 22,
+        "height": 12
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_ship",
+        "at": 0.1
+      }
+    ],
+    "moves": [
+      {
+        "asset": "envelope",
+        "from": "tokyo",
+        "to": "jkt",
+        "at": 0.3,
+        "dur": 0.6,
+        "via": [
+          [
+            -14,
+            20
+          ]
+        ],
+        "label": "GIFT, MAY 2000"
+      }
+    ],
+    "callouts": [
+      {
+        "id": "tokyo",
+        "text": "72 CARS",
+        "at": 0.2
+      }
+    ]
+  },
+  "s05": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "tokyo",
+        "dist": 22,
+        "height": 12
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 14,
+        "height": 6
+      },
+      "arrive": 0.9
+    },
+    "moves": [
+      {
+        "asset": "actor:train",
+        "from": "oldjp",
+        "to": "t_old",
+        "at": 0.3,
+        "dur": 0.4,
+        "via": [
+          [
+            -14,
+            20
+          ]
+        ]
+      }
+    ],
+    "callouts": [
+      {
+        "id": "oldjp",
+        "text": "BUILT 1968",
+        "at": 0.15,
+        "until": 0.55
+      },
+      {
+        "id": "t_old",
+        "text": "RAN TO 2016",
+        "at": 0.6
+      }
+    ]
+  },
+  "s06": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 10,
+        "height": 4
+      },
+      "arrive": 0.9
+    },
+    "grow": [
+      {
+        "id": "t_old",
+        "to": 1.25,
+        "at": 0.4
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "FIRST A/C",
+        "at": 0.25
+      }
+    ]
+  },
+  "s07": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 10,
+        "height": 4
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 14,
+        "height": 6
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "t_old",
+        "at": 0
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "Rp0.8-1 BN",
+        "at": 0.4
+      }
+    ]
+  },
+  "s08": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": [
+          23,
+          1
+        ],
+        "dist": 14,
+        "height": 6
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "t_new",
+        "at": 0.15
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_new",
+        "text": "Rp10-12 BN",
+        "at": 0.3,
+        "until": 0.7
+      },
+      {
+        "id": "t_old",
+        "text": "1/10 PRICE",
+        "at": 0.75
+      }
+    ]
+  },
+  "s09": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": [
+          23,
+          1
+        ],
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": "inka",
+        "dist": 18,
+        "height": 8
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "t_ink",
+        "at": 0.1
+      }
+    ],
+    "highlight": [
+      {
+        "id": "inka",
+        "at": 0.3,
+        "until": 0.7
+      }
+    ],
+    "callouts": [
+      {
+        "id": "inka",
+        "text": "$1.3M NEW",
+        "at": 0.3,
+        "until": 0.75
+      },
+      {
+        "id": "t_old",
+        "text": "1/9 PRICE",
+        "at": 0.8
+      }
+    ]
+  },
+  "s10": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "inka",
+        "dist": 18,
+        "height": 8
+      },
+      "to": {
+        "look": "tokyo",
+        "dist": 20,
+        "height": 10
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_ship",
+        "at": 0.1
+      }
+    ],
+    "moves": [
+      {
+        "asset": "actor:train",
+        "from": "oldjp",
+        "to": "jkt",
+        "at": 0.3,
+        "dur": 0.6,
+        "via": [
+          [
+            -14,
+            20
+          ]
+        ]
+      }
+    ],
+    "callouts": [
+      {
+        "id": "tokyo",
+        "text": "SCRAP COSTS",
+        "at": 0.15,
+        "until": 0.6
+      },
+      {
+        "id": "jkt",
+        "text": "RE-USED",
+        "at": 0.85
+      }
+    ]
+  },
+  "s11": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "tokyo",
+        "dist": 20,
+        "height": 10
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 12,
+        "height": 5
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "WHY FIT?",
+        "at": 0.5
+      }
+    ],
+    "emo": {
+      "guide": "think"
+    }
+  },
+  "s12": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 12,
+        "height": 5
+      },
+      "to": {
+        "look": "tokyo",
+        "dist": 20,
+        "height": 9
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_rail",
+        "at": 0.05
+      }
+    ],
+    "highlight": [
+      {
+        "id": "kota",
+        "at": 0.2,
+        "until": 0.5
+      },
+      {
+        "id": "oldjp",
+        "at": 0.6,
+        "until": 0.95
+      }
+    ],
+    "callouts": [
+      {
+        "id": "kota",
+        "text": "1,067 MM",
+        "at": 0.2,
+        "until": 0.55
+      },
+      {
+        "id": "oldjp",
+        "text": "1,067 MM",
+        "at": 0.6
+      }
+    ]
+  },
+  "s13": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "tokyo",
+        "dist": 20,
+        "height": 9
+      },
+      "to": {
+        "look": "kota",
+        "dist": 22,
+        "height": 11
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_rail",
+        "at": 0.05
+      }
+    ],
+    "callouts": [
+      {
+        "id": "kota",
+        "text": "1867 WIDE",
+        "at": 0.15,
+        "until": 0.6
+      },
+      {
+        "id": "kota",
+        "text": "1940s NARROW",
+        "at": 0.65
+      }
+    ]
+  },
+  "s14": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "kota",
+        "dist": 22,
+        "height": 11
+      },
+      "to": {
+        "look": "tokyo",
+        "dist": 18,
+        "height": 8
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "kota",
+        "text": "1925: 1,500 V",
+        "at": 0.1,
+        "until": 0.5
+      },
+      {
+        "id": "oldjp",
+        "text": "205: 1,500 V",
+        "at": 0.55
+      }
+    ]
+  },
+  "s15": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "tokyo",
+        "dist": 18,
+        "height": 8
+      },
+      "to": {
+        "look": "jkt",
+        "dist": 18,
+        "height": 8
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_ship",
+        "at": 0.05
+      }
+    ],
+    "moves": [
+      {
+        "asset": "actor:ship",
+        "from": "ship",
+        "to": "jkt",
+        "at": 0.1,
+        "dur": 0.7,
+        "via": [
+          [
+            -14,
+            20
+          ]
+        ]
+      }
+    ],
+    "show": [
+      {
+        "id": "ship",
+        "at": 0
+      },
+      {
+        "id": "t_old",
+        "at": 0.8
+      }
+    ],
+    "callouts": [
+      {
+        "id": "jkt",
+        "text": "NEW SIGNS",
+        "at": 0.85
+      }
+    ]
+  },
+  "s16": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "jkt",
+        "dist": 18,
+        "height": 8
+      },
+      "to": {
+        "look": "jkt",
+        "dist": 20,
+        "height": 9
+      },
+      "arrive": 0.9
+    },
+    "grow": [
+      {
+        "id": "t_old",
+        "to": 1.5,
+        "at": 0.55
+      }
+    ],
+    "callouts": [
+      {
+        "id": "jkt",
+        "text": "2012: 140",
+        "at": 0.15,
+        "until": 0.55
+      },
+      {
+        "id": "jkt",
+        "text": "2019: 1,440",
+        "at": 0.6
+      }
+    ]
+  },
+  "s17": {
+    "bg": "none",
+    "actors": [],
+    "fx": [],
+    "footage": true
+  },
+  "s18": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 16,
+        "height": 7
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "t_metro",
+        "at": 0.45
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "780 JR EAST",
+        "at": 0.15
+      },
+      {
+        "id": "t_metro",
+        "text": "128 METRO",
+        "at": 0.55
+      }
+    ]
+  },
+  "s19": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 16,
+        "height": 7
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 12,
+        "height": 5
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "34-41 YEARS",
+        "at": 0.3
+      }
+    ]
+  },
+  "s20": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 12,
+        "height": 5
+      },
+      "to": {
+        "look": "gov",
+        "dist": 18,
+        "height": 8
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "lock",
+        "at": 0.45
+      }
+    ],
+    "highlight": [
+      {
+        "id": "gov",
+        "at": 0.5,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "gov",
+        "text": "BLOCKED 2023",
+        "at": 0.55
+      }
+    ]
+  },
+  "s21": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "gov",
+        "dist": 18,
+        "height": 8
+      },
+      "to": {
+        "look": "tokyo",
+        "dist": 22,
+        "height": 10
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_ship",
+        "at": 0.1
+      }
+    ],
+    "moves": [
+      {
+        "asset": "actor:train",
+        "from": "oldjp",
+        "to": "jkt",
+        "at": 0.25,
+        "dur": 0.5,
+        "via": [
+          [
+            -14,
+            20
+          ]
+        ],
+        "label": "E217"
+      }
+    ],
+    "callouts": [
+      {
+        "id": "oldjp",
+        "text": "348 CARS",
+        "at": 0.2
+      }
+    ]
+  },
+  "s22": {
+    "bg": "none",
+    "actors": [],
+    "fx": [],
+    "footage": true
+  },
+  "s23": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "gov",
+        "dist": 16,
+        "height": 7
+      },
+      "to": {
+        "look": [
+          20,
+          40
+        ],
+        "dist": 50,
+        "height": 34
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_cn",
+        "at": 0.1
+      },
+      {
+        "id": "p_ink",
+        "at": 0.3
+      }
+    ],
+    "show": [
+      {
+        "id": "t_cn",
+        "at": 0.2
+      },
+      {
+        "id": "t_ink",
+        "at": 0.4
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_cn",
+        "text": "CHINA",
+        "at": 0.25,
+        "until": 0.55
+      },
+      {
+        "id": "t_ink",
+        "text": "EAST JAVA",
+        "at": 0.6
+      }
+    ]
+  },
+  "s24": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": [
+          20,
+          40
+        ],
+        "dist": 50,
+        "height": 34
+      },
+      "to": {
+        "look": "inka",
+        "dist": 16,
+        "height": 7
+      },
+      "arrive": 0.9
+    },
+    "moves": [
+      {
+        "asset": "actor:train",
+        "from": "t_old",
+        "to": "inka",
+        "at": 0.15,
+        "dur": 0.45,
+        "label": "REFIT"
+      }
+    ],
+    "highlight": [
+      {
+        "id": "inka",
+        "at": 0.5,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "inka",
+        "text": "REFIT 19",
+        "at": 0.5
+      }
+    ]
+  },
+  "s25": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "inka",
+        "dist": 16,
+        "height": 7
+      },
+      "to": {
+        "look": "crrc",
+        "dist": 22,
+        "height": 10
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_cn",
+        "at": 0.1
+      }
+    ],
+    "moves": [
+      {
+        "asset": "actor:train",
+        "from": "crrc",
+        "to": "jkt",
+        "at": 0.3,
+        "dur": 0.6,
+        "via": [
+          [
+            10,
+            46
+          ]
+        ]
+      }
+    ],
+    "show": [
+      {
+        "id": "t_cn",
+        "at": 0
+      }
+    ],
+    "callouts": [
+      {
+        "id": "crrc",
+        "text": "3 TRAINS",
+        "at": 0.1,
+        "until": 0.45
+      },
+      {
+        "id": "crrc",
+        "text": "Rp783 BN",
+        "at": 0.5
+      }
+    ]
+  },
+  "s26": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "crrc",
+        "dist": 22,
+        "height": 10
+      },
+      "to": {
+        "look": "t_new",
+        "dist": 12,
+        "height": 5
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "t_new",
+        "at": 0
+      }
+    ],
+    "grow": [
+      {
+        "id": "t_new",
+        "to": 1.6,
+        "at": 0.25
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_new",
+        "text": "12 CARS",
+        "at": 0.25,
+        "until": 0.6
+      },
+      {
+        "id": "t_new",
+        "text": "3,400 RIDERS",
+        "at": 0.65
+      }
+    ]
+  },
+  "s27": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "t_new",
+        "dist": 12,
+        "height": 5
+      },
+      "to": {
+        "look": [
+          24,
+          0
+        ],
+        "dist": 14,
+        "height": 6
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "t_new",
+        "at": 0
+      }
+    ],
+    "grow": [
+      {
+        "id": "t_new",
+        "to": 1.9,
+        "at": 0.5
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "~Rp12 BN",
+        "at": 0.15,
+        "until": 0.6
+      },
+      {
+        "id": "t_new",
+        "text": "20x",
+        "at": 0.65
+      }
+    ]
+  },
+  "s28": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": [
+          24,
+          0
+        ],
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 14,
+        "height": 6
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "NOV 2025",
+        "at": 0.15,
+        "until": 0.45
+      },
+      {
+        "id": "t_old",
+        "text": "~50 YEARS",
+        "at": 0.5
+      }
+    ]
+  },
+  "s29": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": "kota",
+        "dist": 12,
+        "height": 5
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "cabin",
+        "at": 0.25
+      }
+    ],
+    "callouts": [
+      {
+        "id": "kota",
+        "text": "ON DISPLAY",
+        "at": 0.45
+      }
+    ]
+  },
+  "s30": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "kota",
+        "dist": 12,
+        "height": 5
+      },
+      "to": {
+        "look": "inka",
+        "dist": 18,
+        "height": 8
+      },
+      "arrive": 0.9
+    },
+    "highlight": [
+      {
+        "id": "inka",
+        "at": 0.25,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "inka",
+        "text": "WEAK POINT",
+        "at": 0.45
+      }
+    ],
+    "emo": {
+      "guide": "think"
+    }
+  },
+  "s31": {
+    "bg": "none",
+    "actors": [],
+    "fx": [],
+    "footage": true
+  },
+  "s32": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "bogor",
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": "inka",
+        "dist": 14,
+        "height": 6
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "inka",
+        "text": "PLAN 8/YR",
+        "at": 0.15,
+        "until": 0.55
+      },
+      {
+        "id": "inka",
+        "text": "REAL 2-3",
+        "at": 0.6
+      }
+    ]
+  },
+  "s33": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "inka",
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": "inka",
+        "dist": 18,
+        "height": 8
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "t_ink",
+        "at": 0
+      }
+    ],
+    "callouts": [
+      {
+        "id": "inka",
+        "text": "7 OF 16",
+        "at": 0.2,
+        "until": 0.6
+      },
+      {
+        "id": "t_ink",
+        "text": "9 IDLE",
+        "at": 0.65
+      }
+    ]
+  },
+  "s34": {
+    "bg": "none",
+    "actors": [],
+    "fx": [],
+    "footage": true
+  },
+  "s35": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "jkt",
+        "dist": 22,
+        "height": 10
+      },
+      "to": {
+        "look": "jkt",
+        "dist": 22,
+        "height": 10
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "jkt",
+        "text": "1.1M / DAY",
+        "at": 0.15,
+        "until": 0.55
+      },
+      {
+        "id": "jkt",
+        "text": "PLAN +3-4%",
+        "at": 0.6
+      }
+    ]
+  },
+  "s36": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "jkt",
+        "dist": 22,
+        "height": 10
+      },
+      "to": {
+        "look": "jkt",
+        "dist": 20,
+        "height": 9
+      },
+      "arrive": 0.9
+    },
+    "grow": [
+      {
+        "id": "jkt",
+        "to": 2,
+        "at": 0.4
+      }
+    ],
+    "callouts": [
+      {
+        "id": "jkt",
+        "text": "1.3M PEAK",
+        "at": 0.2,
+        "until": 0.6
+      },
+      {
+        "id": "jkt",
+        "text": "+200K",
+        "at": 0.65
+      }
+    ]
+  },
+  "s37": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "jkt",
+        "dist": 20,
+        "height": 9
+      },
+      "to": {
+        "look": "kota",
+        "dist": 16,
+        "height": 7
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "kota",
+        "text": "NEED 105",
+        "at": 0.15,
+        "until": 0.55
+      },
+      {
+        "id": "kota",
+        "text": "HAVE 102",
+        "at": 0.6
+      }
+    ]
+  },
+  "s38": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "kota",
+        "dist": 16,
+        "height": 7
+      },
+      "to": {
+        "look": "t_metro",
+        "dist": 14,
+        "height": 6
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "t_metro",
+        "at": 0
+      }
+    ],
+    "hide": [
+      {
+        "id": "t_metro",
+        "at": 0.7
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_metro",
+        "text": "13 RETIRE",
+        "at": 0.3
+      }
+    ]
+  },
+  "s39": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "t_metro",
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": [
+          6,
+          48
+        ],
+        "dist": 36,
+        "height": 22
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_cn",
+        "at": 0.05
+      }
+    ],
+    "moves": [
+      {
+        "asset": "actor:train",
+        "from": "crrc",
+        "to": "jkt",
+        "at": 0.1,
+        "dur": 0.85,
+        "via": [
+          [
+            10,
+            46
+          ]
+        ]
+      }
+    ],
+    "show": [
+      {
+        "id": "t_cn",
+        "at": 0
+      }
+    ],
+    "callouts": [
+      {
+        "id": "crrc",
+        "text": "1-2 YEARS",
+        "at": 0.15,
+        "until": 0.8
+      },
+      {
+        "id": "jkt",
+        "text": "2027+",
+        "at": 0.88
+      }
+    ]
+  },
+  "s40": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": [
+          6,
+          48
+        ],
+        "dist": 36,
+        "height": 22
+      },
+      "to": {
+        "look": "tokyo",
+        "dist": 24,
+        "height": 10
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_ship",
+        "at": 0.1
+      }
+    ],
+    "highlight": [
+      {
+        "id": "tokyo",
+        "at": 0.3,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "tokyo",
+        "text": "SEPT 2026",
+        "at": 0.45
+      }
+    ],
+    "emo": {
+      "guide": "smug"
+    }
+  },
+  "s41": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "tokyo",
+        "dist": 24,
+        "height": 10
+      },
+      "to": {
+        "look": "kai",
+        "dist": 18,
+        "height": 8
+      },
+      "arrive": 0.9
+    },
+    "moves": [
+      {
+        "asset": "envelope",
+        "from": "kai",
+        "to": "gov",
+        "at": 0.3,
+        "dur": 0.5,
+        "label": "REQUEST"
+      }
+    ],
+    "callouts": [
+      {
+        "id": "kai",
+        "text": "SEP 23",
+        "at": 0.15
+      }
+    ]
+  },
+  "s42": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "kai",
+        "dist": 18,
+        "height": 8
+      },
+      "to": {
+        "look": "gov",
+        "dist": 16,
+        "height": 7
+      },
+      "arrive": 0.9
+    },
+    "highlight": [
+      {
+        "id": "gov",
+        "at": 0.25,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "gov",
+        "text": "AGREED",
+        "at": 0.25,
+        "until": 0.55
+      },
+      {
+        "id": "gov",
+        "text": "23 TRAINS",
+        "at": 0.6
+      }
+    ]
+  },
+  "s43": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "gov",
+        "dist": 16,
+        "height": 7
+      },
+      "to": {
+        "look": "jkt",
+        "dist": 24,
+        "height": 11
+      },
+      "arrive": 0.9
+    },
+    "grow": [
+      {
+        "id": "jkt",
+        "to": 2,
+        "at": 0.4
+      }
+    ],
+    "callouts": [
+      {
+        "id": "jkt",
+        "text": "369M TRIPS",
+        "at": 0.3
+      }
+    ]
+  },
+  "s44": {
+    "bg": "none",
+    "actors": [],
+    "fx": [],
+    "footage": true
+  },
+  "s45": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": [
+          -8,
+          22
+        ],
+        "dist": 48,
+        "height": 32
+      },
+      "to": {
+        "look": "gov",
+        "dist": 16,
+        "height": 7
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "lock",
+        "at": 0.25
+      }
+    ],
+    "highlight": [
+      {
+        "id": "gov",
+        "at": 0.3,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "gov",
+        "text": "MAX 20 YRS",
+        "at": 0.3
+      }
+    ]
+  },
+  "s46": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "gov",
+        "dist": 16,
+        "height": 7
+      },
+      "to": {
+        "look": "oldjp",
+        "dist": 14,
+        "height": 6
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "oldjp",
+        "text": "25-28 YEARS",
+        "at": 0.25,
+        "until": 0.6
+      },
+      {
+        "id": "oldjp",
+        "text": "SINCE 1998",
+        "at": 0.65
+      }
+    ]
+  },
+  "s47": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "oldjp",
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 14,
+        "height": 6
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "~10 YRS LEFT",
+        "at": 0.4
+      }
+    ]
+  },
+  "s48": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 14,
+        "height": 6
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 12,
+        "height": 5
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": "NO SPARES",
+        "at": 0.4
+      }
+    ]
+  },
+  "s49": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 12,
+        "height": 5
+      },
+      "to": {
+        "look": "kai",
+        "dist": 16,
+        "height": 7
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "lock",
+        "at": 0.45
+      }
+    ],
+    "hide": [
+      {
+        "id": "ship",
+        "at": 0
+      }
+    ],
+    "highlight": [
+      {
+        "id": "kai",
+        "at": 0.45,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "kai",
+        "text": "NOV 5: CANCELLED",
+        "at": 0.45
+      }
+    ]
+  },
+  "s50": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "kai",
+        "dist": 16,
+        "height": 7
+      },
+      "to": {
+        "look": "tokyo",
+        "dist": 24,
+        "height": 10
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "tokyo",
+        "text": "STILL FOR SALE",
+        "at": 0.2,
+        "until": 0.6
+      },
+      {
+        "id": "oldjp",
+        "text": "TOO OLD",
+        "at": 0.65
+      }
+    ],
+    "emo": {
+      "guide": "think"
+    }
+  },
+  "s51": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "tokyo",
+        "dist": 24,
+        "height": 10
+      },
+      "to": {
+        "look": "oldjp",
+        "dist": 18,
+        "height": 8
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "oldjp",
+        "text": "KEPT 20-30 YRS",
+        "at": 0.3
+      }
+    ]
+  },
+  "s52": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "oldjp",
+        "dist": 18,
+        "height": 8
+      },
+      "to": {
+        "look": [
+          -8,
+          22
+        ],
+        "dist": 52,
+        "height": 36
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_ship",
+        "at": 0
+      }
+    ],
+    "hide": [
+      {
+        "id": "ship",
+        "at": 0
+      }
+    ],
+    "callouts": [
+      {
+        "id": "jkt",
+        "text": "WINDOW CLOSED",
+        "at": 0.6
+      }
+    ]
+  },
+  "s53": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": [
+          -8,
+          22
+        ],
+        "dist": 52,
+        "height": 36
+      },
+      "to": {
+        "look": [
+          24,
+          10
+        ],
+        "dist": 40,
+        "height": 26
+      },
+      "arrive": 0.9
+    },
+    "callouts": [
+      {
+        "id": "inka",
+        "text": "ORDER INKA",
+        "at": 0.15,
+        "until": 0.45
+      },
+      {
+        "id": "t_old",
+        "text": "KEEP OLD",
+        "at": 0.5,
+        "until": 0.75
+      },
+      {
+        "id": "tokyo",
+        "text": "IMPORT USED",
+        "at": 0.8
+      }
+    ]
+  },
+  "s54": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": [
+          24,
+          10
+        ],
+        "dist": 40,
+        "height": 26
+      },
+      "to": {
+        "look": "t_old",
+        "dist": 16,
+        "height": 7
+      },
+      "arrive": 0.9
+    },
+    "highlight": [
+      {
+        "id": "inka",
+        "at": 0.2,
+        "until": 0.5
+      },
+      {
+        "id": "t_old",
+        "at": 0.55,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "t_old",
+        "text": ">40 YEARS",
+        "at": 0.65
+      }
+    ]
+  },
+  "s55": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "t_old",
+        "dist": 16,
+        "height": 7
+      },
+      "to": {
+        "look": "gov",
+        "dist": 18,
+        "height": 8
+      },
+      "arrive": 0.9
+    },
+    "show": [
+      {
+        "id": "t_new",
+        "at": 0.4
+      }
+    ],
+    "callouts": [
+      {
+        "id": "gov",
+        "text": "Rp5 TRILLION",
+        "at": 0.25,
+        "until": 0.65
+      },
+      {
+        "id": "t_new",
+        "text": "30 TRAINS",
+        "at": 0.7
+      }
+    ]
+  },
+  "s56": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": "gov",
+        "dist": 18,
+        "height": 8
+      },
+      "to": {
+        "look": "jkt",
+        "dist": 22,
+        "height": 10
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_ink",
+        "at": 0.05
+      }
+    ],
+    "moves": [
+      {
+        "asset": "actor:train",
+        "from": "inka",
+        "to": "jkt",
+        "at": 0.15,
+        "dur": 0.6,
+        "via": [
+          [
+            40,
+            6
+          ]
+        ],
+        "label": "84 REPLACED"
+      }
+    ],
+    "callouts": [
+      {
+        "id": "jkt",
+        "text": "1.1M > 1.4M",
+        "at": 0.8
+      }
+    ]
+  },
+  "s57": {
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+      "from": {
+        "look": "jkt",
+        "dist": 22,
+        "height": 10
+      },
+      "to": {
+        "look": [
+          -8,
+          22
+        ],
+        "dist": 52,
+        "height": 36
+      },
+      "arrive": 0.9
+    },
+    "paths": [
+      {
+        "id": "p_ink",
+        "at": 0.1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "inka",
+        "text": "BUILT AT HOME",
+        "at": 0.7
+      }
+    ]
+  },
+  "s58": {
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+      "from": {
+        "look": [
+          -8,
+          22
+        ],
+        "dist": 52,
+        "height": 36
+      },
+      "to": {
+        "look": [
+          30,
+          10
+        ],
+        "dist": 54,
+        "height": 40
+      },
+      "arrive": 0.9
+    },
+    "highlight": [
+      {
+        "id": "jkt",
+        "at": 0.3,
+        "until": 1
+      }
+    ],
+    "callouts": [
+      {
+        "id": "jkt",
+        "text": "JAVA",
+        "at": 0.45
+      }
+    ],
+    "emo": {
+      "guide": "happy"
+    }
+  }
+}

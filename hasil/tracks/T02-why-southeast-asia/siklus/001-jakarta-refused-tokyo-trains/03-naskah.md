@@ -400,7 +400,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kesebelas rangkaian China sudah beroperasi, kebanyakan di lintas Bogor dan Cikarang. Footage ini dari November 2026: kereta China di lintas Bogor, berbagi rel dengan kereta Jepang yang lama.
 
-*Visual:* footage kreator `krl-04.mp4`. Footage milik kreator: rangkaian CRRC baru di lintas Bogor · teks layar: "CRRC Sifang train, Bogor line (filmed Nov 2026)"
+*Visual:* footage kreator `krl-04.mp4`. Footage milik kreator: rangkaian CRRC baru di lintas Bogor · teks layar: "CRRC Sifang train, Bogor line"
 
 *Sumber:* [11 rangkaian CRRC sudah dioperasikan untuk Bogor Line dan Cikarang Line](https://finance.detik.com/infrastruktur/d-8571647/kai-buka-bukaan-18-krl-baru-sudah-beroperasi)
 

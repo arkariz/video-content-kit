@@ -1,0 +1,7303 @@
+{
+  "s01": [
+    {
+      "text": "This",
+      "startMs": 100,
+      "endMs": 240
+    },
+    {
+      "text": "train",
+      "startMs": 300,
+      "endMs": 520
+    },
+    {
+      "text": "used",
+      "startMs": 580,
+      "endMs": 680
+    },
+    {
+      "text": "to",
+      "startMs": 720,
+      "endMs": 780
+    },
+    {
+      "text": "carry",
+      "startMs": 840,
+      "endMs": 1040
+    },
+    {
+      "text": "commuters",
+      "startMs": 1100,
+      "endMs": 1480
+    },
+    {
+      "text": "in",
+      "startMs": 1500,
+      "endMs": 1580
+    },
+    {
+      "text": "Tokyo.",
+      "startMs": 1640,
+      "endMs": 2080
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 3000,
+      "endMs": 3380
+    },
+    {
+      "text": "still",
+      "startMs": 3440,
+      "endMs": 3640
+    },
+    {
+      "text": "runs",
+      "startMs": 3680,
+      "endMs": 3940
+    },
+    {
+      "text": "hundreds",
+      "startMs": 4000,
+      "endMs": 4320
+    },
+    {
+      "text": "of",
+      "startMs": 4360,
+      "endMs": 4440
+    },
+    {
+      "text": "cars",
+      "startMs": 4500,
+      "endMs": 4740
+    },
+    {
+      "text": "like",
+      "startMs": 4800,
+      "endMs": 4960
+    },
+    {
+      "text": "it,",
+      "startMs": 5000,
+      "endMs": 5100
+    },
+    {
+      "text": "and",
+      "startMs": 5580,
+      "endMs": 5640
+    },
+    {
+      "text": "in",
+      "startMs": 5680,
+      "endMs": 5740
+    },
+    {
+      "text": "November",
+      "startMs": 5760,
+      "endMs": 6200
+    },
+    {
+      "text": "it",
+      "startMs": 6260,
+      "endMs": 6320
+    },
+    {
+      "text": "refused",
+      "startMs": 6380,
+      "endMs": 6700
+    },
+    {
+      "text": "to",
+      "startMs": 6740,
+      "endMs": 6820
+    },
+    {
+      "text": "buy",
+      "startMs": 6860,
+      "endMs": 7000
+    },
+    {
+      "text": "any",
+      "startMs": 7040,
+      "endMs": 7160
+    },
+    {
+      "text": "more",
+      "startMs": 7220,
+      "endMs": 7420
+    }
+  ],
+  "s02": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "reason",
+      "startMs": 240,
+      "endMs": 480
+    },
+    {
+      "text": "it",
+      "startMs": 520,
+      "endMs": 620
+    },
+    {
+      "text": "came",
+      "startMs": 680,
+      "endMs": 900
+    },
+    {
+      "text": "here",
+      "startMs": 960,
+      "endMs": 1100
+    },
+    {
+      "text": "is",
+      "startMs": 1120,
+      "endMs": 1240
+    },
+    {
+      "text": "simple,",
+      "startMs": 1300,
+      "endMs": 1600
+    },
+    {
+      "text": "and",
+      "startMs": 2080,
+      "endMs": 2140
+    },
+    {
+      "text": "it",
+      "startMs": 2180,
+      "endMs": 2260
+    },
+    {
+      "text": "works",
+      "startMs": 2320,
+      "endMs": 2540
+    },
+    {
+      "text": "like",
+      "startMs": 2580,
+      "endMs": 2760
+    },
+    {
+      "text": "hand-me-down",
+      "startMs": 2840,
+      "endMs": 3480
+    },
+    {
+      "text": "clothes.",
+      "startMs": 3580,
+      "endMs": 4000
+    },
+    {
+      "text": "They",
+      "startMs": 4780,
+      "endMs": 4900
+    },
+    {
+      "text": "only",
+      "startMs": 4940,
+      "endMs": 5160
+    },
+    {
+      "text": "fit",
+      "startMs": 5220,
+      "endMs": 5340
+    },
+    {
+      "text": "if",
+      "startMs": 5380,
+      "endMs": 5440
+    },
+    {
+      "text": "the",
+      "startMs": 5480,
+      "endMs": 5560
+    },
+    {
+      "text": "size",
+      "startMs": 5620,
+      "endMs": 5940
+    },
+    {
+      "text": "matches,",
+      "startMs": 6000,
+      "endMs": 6440
+    },
+    {
+      "text": "and",
+      "startMs": 6780,
+      "endMs": 6860
+    },
+    {
+      "text": "they",
+      "startMs": 6900,
+      "endMs": 7000
+    },
+    {
+      "text": "only",
+      "startMs": 7060,
+      "endMs": 7260
+    },
+    {
+      "text": "help",
+      "startMs": 7320,
+      "endMs": 7520
+    },
+    {
+      "text": "while",
+      "startMs": 7560,
+      "endMs": 7660
+    },
+    {
+      "text": "there's",
+      "startMs": 7700,
+      "endMs": 7900
+    },
+    {
+      "text": "life",
+      "startMs": 7980,
+      "endMs": 8220
+    },
+    {
+      "text": "left",
+      "startMs": 8280,
+      "endMs": 8460
+    },
+    {
+      "text": "in",
+      "startMs": 8520,
+      "endMs": 8580
+    },
+    {
+      "text": "them.",
+      "startMs": 8620,
+      "endMs": 8780
+    },
+    {
+      "text": "The",
+      "startMs": 9480,
+      "endMs": 9560
+    },
+    {
+      "text": "reason",
+      "startMs": 9620,
+      "endMs": 9880
+    },
+    {
+      "text": "it",
+      "startMs": 9920,
+      "endMs": 10020
+    },
+    {
+      "text": "stopped",
+      "startMs": 10120,
+      "endMs": 10480
+    },
+    {
+      "text": "is",
+      "startMs": 10540,
+      "endMs": 10620
+    },
+    {
+      "text": "a",
+      "startMs": 10660,
+      "endMs": 10720
+    },
+    {
+      "text": "rule",
+      "startMs": 10780,
+      "endMs": 10960
+    },
+    {
+      "text": "about",
+      "startMs": 11020,
+      "endMs": 11220
+    },
+    {
+      "text": "age",
+      "startMs": 11320,
+      "endMs": 11560
+    }
+  ],
+  "s03": [
+    {
+      "text": "Four",
+      "startMs": 100,
+      "endMs": 467
+    },
+    {
+      "text": "players",
+      "startMs": 467,
+      "endMs": 1054
+    },
+    {
+      "text": "run",
+      "startMs": 1054,
+      "endMs": 1348
+    },
+    {
+      "text": "this",
+      "startMs": 1348,
+      "endMs": 1715
+    },
+    {
+      "text": "story.",
+      "startMs": 1715,
+      "endMs": 2229
+    },
+    {
+      "text": "KAI,",
+      "startMs": 2229,
+      "endMs": 2596
+    },
+    {
+      "text": "the",
+      "startMs": 2596,
+      "endMs": 2890
+    },
+    {
+      "text": "state",
+      "startMs": 2890,
+      "endMs": 3330
+    },
+    {
+      "text": "railway",
+      "startMs": 3330,
+      "endMs": 3917
+    },
+    {
+      "text": "behind",
+      "startMs": 3917,
+      "endMs": 4431
+    },
+    {
+      "text": "the",
+      "startMs": 4431,
+      "endMs": 4725
+    },
+    {
+      "text": "commuter",
+      "startMs": 4725,
+      "endMs": 5386
+    },
+    {
+      "text": "trains.",
+      "startMs": 5386,
+      "endMs": 5973
+    },
+    {
+      "text": "The",
+      "startMs": 5973,
+      "endMs": 6267
+    },
+    {
+      "text": "government,",
+      "startMs": 6267,
+      "endMs": 7148
+    },
+    {
+      "text": "which",
+      "startMs": 7148,
+      "endMs": 7588
+    },
+    {
+      "text": "sets",
+      "startMs": 7588,
+      "endMs": 7955
+    },
+    {
+      "text": "the",
+      "startMs": 7955,
+      "endMs": 8249
+    },
+    {
+      "text": "import",
+      "startMs": 8249,
+      "endMs": 8763
+    },
+    {
+      "text": "rules.",
+      "startMs": 8763,
+      "endMs": 9277
+    },
+    {
+      "text": "INKA,",
+      "startMs": 9277,
+      "endMs": 9717
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 9717,
+      "endMs": 10598
+    },
+    {
+      "text": "own",
+      "startMs": 10598,
+      "endMs": 10892
+    },
+    {
+      "text": "train",
+      "startMs": 10892,
+      "endMs": 11332
+    },
+    {
+      "text": "builder.",
+      "startMs": 11332,
+      "endMs": 11993
+    },
+    {
+      "text": "And",
+      "startMs": 11993,
+      "endMs": 12287
+    },
+    {
+      "text": "CRRC,",
+      "startMs": 12287,
+      "endMs": 12727
+    },
+    {
+      "text": "a",
+      "startMs": 12727,
+      "endMs": 12874
+    },
+    {
+      "text": "Chinese",
+      "startMs": 12874,
+      "endMs": 13461
+    },
+    {
+      "text": "maker",
+      "startMs": 13461,
+      "endMs": 13901
+    },
+    {
+      "text": "of",
+      "startMs": 13901,
+      "endMs": 14121
+    },
+    {
+      "text": "new",
+      "startMs": 14121,
+      "endMs": 14415
+    },
+    {
+      "text": "trains.",
+      "startMs": 14415,
+      "endMs": 15002
+    },
+    {
+      "text": "We'll",
+      "startMs": 15002,
+      "endMs": 15442
+    },
+    {
+      "text": "cover",
+      "startMs": 15442,
+      "endMs": 15882
+    },
+    {
+      "text": "why",
+      "startMs": 15882,
+      "endMs": 16176
+    },
+    {
+      "text": "Tokyo's",
+      "startMs": 16176,
+      "endMs": 16763
+    },
+    {
+      "text": "trains",
+      "startMs": 16763,
+      "endMs": 17277
+    },
+    {
+      "text": "fit",
+      "startMs": 17277,
+      "endMs": 17571
+    },
+    {
+      "text": "Jakarta,",
+      "startMs": 17571,
+      "endMs": 18232
+    },
+    {
+      "text": "why",
+      "startMs": 18232,
+      "endMs": 18526
+    },
+    {
+      "text": "the",
+      "startMs": 18526,
+      "endMs": 18820
+    },
+    {
+      "text": "deal",
+      "startMs": 18820,
+      "endMs": 19187
+    },
+    {
+      "text": "worked",
+      "startMs": 19187,
+      "endMs": 19701
+    },
+    {
+      "text": "for",
+      "startMs": 19701,
+      "endMs": 19995
+    },
+    {
+      "text": "twenty-five",
+      "startMs": 19995,
+      "endMs": 20876
+    },
+    {
+      "text": "years,",
+      "startMs": 20876,
+      "endMs": 21390
+    },
+    {
+      "text": "and",
+      "startMs": 21390,
+      "endMs": 21684
+    },
+    {
+      "text": "why",
+      "startMs": 21684,
+      "endMs": 21978
+    },
+    {
+      "text": "it",
+      "startMs": 21978,
+      "endMs": 22198
+    },
+    {
+      "text": "ended",
+      "startMs": 22198,
+      "endMs": 22638
+    },
+    {
+      "text": "in",
+      "startMs": 22638,
+      "endMs": 22858
+    },
+    {
+      "text": "November",
+      "startMs": 22858,
+      "endMs": 23519
+    },
+    {
+      "text": "2026.",
+      "startMs": 23519,
+      "endMs": 23959
+    }
+  ],
+  "s04": [
+    {
+      "text": "It",
+      "startMs": 80,
+      "endMs": 285
+    },
+    {
+      "text": "started",
+      "startMs": 285,
+      "endMs": 831
+    },
+    {
+      "text": "with",
+      "startMs": 831,
+      "endMs": 1172
+    },
+    {
+      "text": "a",
+      "startMs": 1172,
+      "endMs": 1309
+    },
+    {
+      "text": "gift.",
+      "startMs": 1309,
+      "endMs": 1719
+    },
+    {
+      "text": "In",
+      "startMs": 1719,
+      "endMs": 1924
+    },
+    {
+      "text": "May",
+      "startMs": 1924,
+      "endMs": 2197
+    },
+    {
+      "text": "2000,",
+      "startMs": 2197,
+      "endMs": 2607
+    },
+    {
+      "text": "Japan's",
+      "startMs": 2607,
+      "endMs": 3153
+    },
+    {
+      "text": "aid",
+      "startMs": 3153,
+      "endMs": 3426
+    },
+    {
+      "text": "agency",
+      "startMs": 3426,
+      "endMs": 3904
+    },
+    {
+      "text": "and",
+      "startMs": 3904,
+      "endMs": 4177
+    },
+    {
+      "text": "the",
+      "startMs": 4177,
+      "endMs": 4450
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 4450,
+      "endMs": 4860
+    },
+    {
+      "text": "city",
+      "startMs": 4860,
+      "endMs": 5201
+    },
+    {
+      "text": "government",
+      "startMs": 5201,
+      "endMs": 5952
+    },
+    {
+      "text": "donated",
+      "startMs": 5952,
+      "endMs": 6498
+    },
+    {
+      "text": "seventy-two",
+      "startMs": 6498,
+      "endMs": 7318
+    },
+    {
+      "text": "used",
+      "startMs": 7318,
+      "endMs": 7659
+    },
+    {
+      "text": "subway",
+      "startMs": 7659,
+      "endMs": 8137
+    },
+    {
+      "text": "cars",
+      "startMs": 8137,
+      "endMs": 8478
+    },
+    {
+      "text": "from",
+      "startMs": 8478,
+      "endMs": 8819
+    },
+    {
+      "text": "Tokyo's",
+      "startMs": 8819,
+      "endMs": 9365
+    },
+    {
+      "text": "Mita",
+      "startMs": 9365,
+      "endMs": 9706
+    },
+    {
+      "text": "Line.",
+      "startMs": 9706,
+      "endMs": 10116
+    }
+  ],
+  "s05": [
+    {
+      "text": "Those",
+      "startMs": 100,
+      "endMs": 280
+    },
+    {
+      "text": "cars",
+      "startMs": 340,
+      "endMs": 560
+    },
+    {
+      "text": "were",
+      "startMs": 600,
+      "endMs": 720
+    },
+    {
+      "text": "built",
+      "startMs": 740,
+      "endMs": 920
+    },
+    {
+      "text": "from",
+      "startMs": 960,
+      "endMs": 1100
+    },
+    {
+      "text": "1968.",
+      "startMs": 1160,
+      "endMs": 2200
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 2760,
+      "endMs": 3100
+    },
+    {
+      "text": "retired",
+      "startMs": 3160,
+      "endMs": 3560
+    },
+    {
+      "text": "them",
+      "startMs": 3600,
+      "endMs": 3760
+    },
+    {
+      "text": "after",
+      "startMs": 3840,
+      "endMs": 4019
+    },
+    {
+      "text": "about",
+      "startMs": 4059,
+      "endMs": 4300
+    },
+    {
+      "text": "thirty",
+      "startMs": 4340,
+      "endMs": 4560
+    },
+    {
+      "text": "years",
+      "startMs": 4620,
+      "endMs": 4820
+    },
+    {
+      "text": "of",
+      "startMs": 4860,
+      "endMs": 4960
+    },
+    {
+      "text": "service,",
+      "startMs": 5020,
+      "endMs": 5380
+    },
+    {
+      "text": "and",
+      "startMs": 5880,
+      "endMs": 5960
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 6020,
+      "endMs": 6360
+    },
+    {
+      "text": "kept",
+      "startMs": 6420,
+      "endMs": 6580
+    },
+    {
+      "text": "them",
+      "startMs": 6600,
+      "endMs": 6720
+    },
+    {
+      "text": "running",
+      "startMs": 6760,
+      "endMs": 6960
+    },
+    {
+      "text": "until",
+      "startMs": 7000,
+      "endMs": 7240
+    },
+    {
+      "text": "2016",
+      "startMs": 7420,
+      "endMs": 8119
+    }
+  ],
+  "s06": [
+    {
+      "text": "They",
+      "startMs": 120,
+      "endMs": 260
+    },
+    {
+      "text": "were",
+      "startMs": 300,
+      "endMs": 400
+    },
+    {
+      "text": "the",
+      "startMs": 440,
+      "endMs": 560
+    },
+    {
+      "text": "first",
+      "startMs": 640,
+      "endMs": 920
+    },
+    {
+      "text": "air-conditioned",
+      "startMs": 1060,
+      "endMs": 1580
+    },
+    {
+      "text": "electric",
+      "startMs": 1680,
+      "endMs": 2000
+    },
+    {
+      "text": "trains",
+      "startMs": 2080,
+      "endMs": 2340
+    },
+    {
+      "text": "in",
+      "startMs": 2380,
+      "endMs": 2480
+    },
+    {
+      "text": "Indonesia.",
+      "startMs": 2520,
+      "endMs": 3120
+    },
+    {
+      "text": "At",
+      "startMs": 4019,
+      "endMs": 4120
+    },
+    {
+      "text": "the",
+      "startMs": 4160,
+      "endMs": 4240
+    },
+    {
+      "text": "time,",
+      "startMs": 4300,
+      "endMs": 4600
+    },
+    {
+      "text": "crowded",
+      "startMs": 5020,
+      "endMs": 5300
+    },
+    {
+      "text": "riders",
+      "startMs": 5380,
+      "endMs": 5700
+    },
+    {
+      "text": "hung",
+      "startMs": 5760,
+      "endMs": 5900
+    },
+    {
+      "text": "out",
+      "startMs": 5940,
+      "endMs": 6020
+    },
+    {
+      "text": "of",
+      "startMs": 6060,
+      "endMs": 6160
+    },
+    {
+      "text": "open",
+      "startMs": 6240,
+      "endMs": 6440
+    },
+    {
+      "text": "doors",
+      "startMs": 6520,
+      "endMs": 6840
+    },
+    {
+      "text": "or",
+      "startMs": 6900,
+      "endMs": 7020
+    },
+    {
+      "text": "sat",
+      "startMs": 7080,
+      "endMs": 7260
+    },
+    {
+      "text": "on",
+      "startMs": 7300,
+      "endMs": 7360
+    },
+    {
+      "text": "the",
+      "startMs": 7400,
+      "endMs": 7460
+    },
+    {
+      "text": "roof",
+      "startMs": 7520,
+      "endMs": 7780
+    }
+  ],
+  "s07": [
+    {
+      "text": "Then",
+      "startMs": 100,
+      "endMs": 413
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 413,
+      "endMs": 913
+    },
+    {
+      "text": "started",
+      "startMs": 913,
+      "endMs": 1413
+    },
+    {
+      "text": "buying",
+      "startMs": 1413,
+      "endMs": 1851
+    },
+    {
+      "text": "them.",
+      "startMs": 1851,
+      "endMs": 2226
+    },
+    {
+      "text": "In",
+      "startMs": 2226,
+      "endMs": 2414
+    },
+    {
+      "text": "2014,",
+      "startMs": 2414,
+      "endMs": 2789
+    },
+    {
+      "text": "the",
+      "startMs": 2789,
+      "endMs": 3039
+    },
+    {
+      "text": "operator",
+      "startMs": 3039,
+      "endMs": 3602
+    },
+    {
+      "text": "said",
+      "startMs": 3602,
+      "endMs": 3915
+    },
+    {
+      "text": "a",
+      "startMs": 3915,
+      "endMs": 4040
+    },
+    {
+      "text": "used",
+      "startMs": 4040,
+      "endMs": 4353
+    },
+    {
+      "text": "car",
+      "startMs": 4353,
+      "endMs": 4603
+    },
+    {
+      "text": "from",
+      "startMs": 4603,
+      "endMs": 4916
+    },
+    {
+      "text": "Japan",
+      "startMs": 4916,
+      "endMs": 5291
+    },
+    {
+      "text": "cost",
+      "startMs": 5291,
+      "endMs": 5604
+    },
+    {
+      "text": "eight",
+      "startMs": 5604,
+      "endMs": 5979
+    },
+    {
+      "text": "hundred",
+      "startMs": 5979,
+      "endMs": 6479
+    },
+    {
+      "text": "million",
+      "startMs": 6479,
+      "endMs": 6979
+    },
+    {
+      "text": "to",
+      "startMs": 6979,
+      "endMs": 7167
+    },
+    {
+      "text": "one",
+      "startMs": 7167,
+      "endMs": 7417
+    },
+    {
+      "text": "billion",
+      "startMs": 7417,
+      "endMs": 7917
+    },
+    {
+      "text": "rupiah.",
+      "startMs": 7917,
+      "endMs": 8417
+    }
+  ],
+  "s08": [
+    {
+      "text": "A",
+      "startMs": 80,
+      "endMs": 194
+    },
+    {
+      "text": "new",
+      "startMs": 194,
+      "endMs": 423
+    },
+    {
+      "text": "car",
+      "startMs": 423,
+      "endMs": 652
+    },
+    {
+      "text": "cost",
+      "startMs": 652,
+      "endMs": 938
+    },
+    {
+      "text": "ten",
+      "startMs": 938,
+      "endMs": 1167
+    },
+    {
+      "text": "to",
+      "startMs": 1167,
+      "endMs": 1339
+    },
+    {
+      "text": "twelve",
+      "startMs": 1339,
+      "endMs": 1739
+    },
+    {
+      "text": "billion.",
+      "startMs": 1739,
+      "endMs": 2254
+    },
+    {
+      "text": "Same",
+      "startMs": 2254,
+      "endMs": 2540
+    },
+    {
+      "text": "seats,",
+      "startMs": 2540,
+      "endMs": 2940
+    },
+    {
+      "text": "same",
+      "startMs": 2940,
+      "endMs": 3226
+    },
+    {
+      "text": "doors,",
+      "startMs": 3226,
+      "endMs": 3626
+    },
+    {
+      "text": "about",
+      "startMs": 3626,
+      "endMs": 3969
+    },
+    {
+      "text": "one",
+      "startMs": 3969,
+      "endMs": 4198
+    },
+    {
+      "text": "tenth",
+      "startMs": 4198,
+      "endMs": 4541
+    },
+    {
+      "text": "of",
+      "startMs": 4541,
+      "endMs": 4713
+    },
+    {
+      "text": "the",
+      "startMs": 4713,
+      "endMs": 4942
+    },
+    {
+      "text": "price.",
+      "startMs": 4942,
+      "endMs": 5340
+    }
+  ],
+  "s09": [
+    {
+      "text": "Indonesia's",
+      "startMs": 80,
+      "endMs": 801
+    },
+    {
+      "text": "own",
+      "startMs": 801,
+      "endMs": 1041
+    },
+    {
+      "text": "train",
+      "startMs": 1041,
+      "endMs": 1402
+    },
+    {
+      "text": "maker,",
+      "startMs": 1402,
+      "endMs": 1823
+    },
+    {
+      "text": "INKA,",
+      "startMs": 1823,
+      "endMs": 2184
+    },
+    {
+      "text": "quoted",
+      "startMs": 2184,
+      "endMs": 2605
+    },
+    {
+      "text": "about",
+      "startMs": 2605,
+      "endMs": 2966
+    },
+    {
+      "text": "one",
+      "startMs": 2966,
+      "endMs": 3206
+    },
+    {
+      "text": "point",
+      "startMs": 3206,
+      "endMs": 3567
+    },
+    {
+      "text": "three",
+      "startMs": 3567,
+      "endMs": 3928
+    },
+    {
+      "text": "million",
+      "startMs": 3928,
+      "endMs": 4409
+    },
+    {
+      "text": "dollars",
+      "startMs": 4409,
+      "endMs": 4890
+    },
+    {
+      "text": "for",
+      "startMs": 4890,
+      "endMs": 5130
+    },
+    {
+      "text": "a",
+      "startMs": 5130,
+      "endMs": 5250
+    },
+    {
+      "text": "new",
+      "startMs": 5250,
+      "endMs": 5490
+    },
+    {
+      "text": "car",
+      "startMs": 5490,
+      "endMs": 5730
+    },
+    {
+      "text": "in",
+      "startMs": 5730,
+      "endMs": 5910
+    },
+    {
+      "text": "2019.",
+      "startMs": 5910,
+      "endMs": 6271
+    },
+    {
+      "text": "Even",
+      "startMs": 6271,
+      "endMs": 6572
+    },
+    {
+      "text": "after",
+      "startMs": 6572,
+      "endMs": 6933
+    },
+    {
+      "text": "shipping,",
+      "startMs": 6933,
+      "endMs": 7534
+    },
+    {
+      "text": "a",
+      "startMs": 7534,
+      "endMs": 7654
+    },
+    {
+      "text": "used",
+      "startMs": 7654,
+      "endMs": 7955
+    },
+    {
+      "text": "car",
+      "startMs": 7955,
+      "endMs": 8195
+    },
+    {
+      "text": "was",
+      "startMs": 8195,
+      "endMs": 8435
+    },
+    {
+      "text": "about",
+      "startMs": 8435,
+      "endMs": 8796
+    },
+    {
+      "text": "one",
+      "startMs": 8796,
+      "endMs": 9036
+    },
+    {
+      "text": "ninth",
+      "startMs": 9036,
+      "endMs": 9397
+    },
+    {
+      "text": "of",
+      "startMs": 9397,
+      "endMs": 9577
+    },
+    {
+      "text": "that",
+      "startMs": 9577,
+      "endMs": 9878
+    },
+    {
+      "text": "price.",
+      "startMs": 9878,
+      "endMs": 10299
+    }
+  ],
+  "s10": [
+    {
+      "text": "For",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "Japan,",
+      "startMs": 240,
+      "endMs": 720
+    },
+    {
+      "text": "the",
+      "startMs": 1120,
+      "endMs": 1200
+    },
+    {
+      "text": "deal",
+      "startMs": 1240,
+      "endMs": 1420
+    },
+    {
+      "text": "was",
+      "startMs": 1460,
+      "endMs": 1600
+    },
+    {
+      "text": "just",
+      "startMs": 1680,
+      "endMs": 1880
+    },
+    {
+      "text": "as",
+      "startMs": 1920,
+      "endMs": 2040
+    },
+    {
+      "text": "good.",
+      "startMs": 2080,
+      "endMs": 2320
+    },
+    {
+      "text": "Scrapping",
+      "startMs": 3640,
+      "endMs": 4019
+    },
+    {
+      "text": "a",
+      "startMs": 4059,
+      "endMs": 4100
+    },
+    {
+      "text": "train",
+      "startMs": 4160,
+      "endMs": 4380
+    },
+    {
+      "text": "costs",
+      "startMs": 4460,
+      "endMs": 4820
+    },
+    {
+      "text": "money.",
+      "startMs": 4880,
+      "endMs": 5140
+    },
+    {
+      "text": "Shipping",
+      "startMs": 5700,
+      "endMs": 5960
+    },
+    {
+      "text": "it",
+      "startMs": 5980,
+      "endMs": 6040
+    },
+    {
+      "text": "to",
+      "startMs": 6080,
+      "endMs": 6140
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 6180,
+      "endMs": 6540
+    },
+    {
+      "text": "cost",
+      "startMs": 6600,
+      "endMs": 6900
+    },
+    {
+      "text": "less,",
+      "startMs": 6960,
+      "endMs": 7200
+    },
+    {
+      "text": "and",
+      "startMs": 7260,
+      "endMs": 7360
+    },
+    {
+      "text": "somebody",
+      "startMs": 7420,
+      "endMs": 7680
+    },
+    {
+      "text": "else",
+      "startMs": 7720,
+      "endMs": 7900
+    },
+    {
+      "text": "would",
+      "startMs": 7920,
+      "endMs": 8020
+    },
+    {
+      "text": "keep",
+      "startMs": 8060,
+      "endMs": 8240
+    },
+    {
+      "text": "using",
+      "startMs": 8300,
+      "endMs": 8520
+    },
+    {
+      "text": "it",
+      "startMs": 8560,
+      "endMs": 8660
+    }
+  ],
+  "s11": [
+    {
+      "text": "But",
+      "startMs": 100,
+      "endMs": 220
+    },
+    {
+      "text": "price",
+      "startMs": 260,
+      "endMs": 520
+    },
+    {
+      "text": "alone",
+      "startMs": 580,
+      "endMs": 860
+    },
+    {
+      "text": "doesn't",
+      "startMs": 920,
+      "endMs": 1100
+    },
+    {
+      "text": "explain",
+      "startMs": 1140,
+      "endMs": 1500
+    },
+    {
+      "text": "it.",
+      "startMs": 1560,
+      "endMs": 1680
+    },
+    {
+      "text": "In",
+      "startMs": 2300,
+      "endMs": 2380
+    },
+    {
+      "text": "many",
+      "startMs": 2420,
+      "endMs": 2600
+    },
+    {
+      "text": "countries,",
+      "startMs": 2660,
+      "endMs": 3000
+    },
+    {
+      "text": "a",
+      "startMs": 3060,
+      "endMs": 3100
+    },
+    {
+      "text": "train",
+      "startMs": 3160,
+      "endMs": 3360
+    },
+    {
+      "text": "from",
+      "startMs": 3380,
+      "endMs": 3520
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 3560,
+      "endMs": 3920
+    },
+    {
+      "text": "can't",
+      "startMs": 4019,
+      "endMs": 4240
+    },
+    {
+      "text": "run",
+      "startMs": 4300,
+      "endMs": 4460
+    },
+    {
+      "text": "without",
+      "startMs": 4480,
+      "endMs": 4760
+    },
+    {
+      "text": "major",
+      "startMs": 4800,
+      "endMs": 5040
+    },
+    {
+      "text": "changes.",
+      "startMs": 5100,
+      "endMs": 5540
+    },
+    {
+      "text": "In",
+      "startMs": 6180,
+      "endMs": 6260
+    },
+    {
+      "text": "Jakarta,",
+      "startMs": 6300,
+      "endMs": 6720
+    },
+    {
+      "text": "it",
+      "startMs": 7020,
+      "endMs": 7100
+    },
+    {
+      "text": "can",
+      "startMs": 7180,
+      "endMs": 7460
+    }
+  ],
+  "s12": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 351
+    },
+    {
+      "text": "first",
+      "startMs": 351,
+      "endMs": 728
+    },
+    {
+      "text": "size",
+      "startMs": 728,
+      "endMs": 1042
+    },
+    {
+      "text": "that",
+      "startMs": 1042,
+      "endMs": 1356
+    },
+    {
+      "text": "matches",
+      "startMs": 1356,
+      "endMs": 1858
+    },
+    {
+      "text": "is",
+      "startMs": 1858,
+      "endMs": 2046
+    },
+    {
+      "text": "the",
+      "startMs": 2046,
+      "endMs": 2297
+    },
+    {
+      "text": "rails.",
+      "startMs": 2297,
+      "endMs": 2737
+    },
+    {
+      "text": "Japan's",
+      "startMs": 2737,
+      "endMs": 3239
+    },
+    {
+      "text": "regular",
+      "startMs": 3239,
+      "endMs": 3741
+    },
+    {
+      "text": "lines",
+      "startMs": 3741,
+      "endMs": 4118
+    },
+    {
+      "text": "and",
+      "startMs": 4118,
+      "endMs": 4369
+    },
+    {
+      "text": "Java's",
+      "startMs": 4369,
+      "endMs": 4809
+    },
+    {
+      "text": "lines",
+      "startMs": 4809,
+      "endMs": 5186
+    },
+    {
+      "text": "are",
+      "startMs": 5186,
+      "endMs": 5437
+    },
+    {
+      "text": "both",
+      "startMs": 5437,
+      "endMs": 5751
+    },
+    {
+      "text": "one",
+      "startMs": 5751,
+      "endMs": 6002
+    },
+    {
+      "text": "thousand",
+      "startMs": 6002,
+      "endMs": 6567
+    },
+    {
+      "text": "and",
+      "startMs": 6567,
+      "endMs": 6818
+    },
+    {
+      "text": "sixty-seven",
+      "startMs": 6818,
+      "endMs": 7571
+    },
+    {
+      "text": "millimetres",
+      "startMs": 7571,
+      "endMs": 8324
+    },
+    {
+      "text": "apart.",
+      "startMs": 8324,
+      "endMs": 8764
+    },
+    {
+      "text": "Change",
+      "startMs": 8764,
+      "endMs": 9204
+    },
+    {
+      "text": "the",
+      "startMs": 9204,
+      "endMs": 9455
+    },
+    {
+      "text": "rail",
+      "startMs": 9455,
+      "endMs": 9769
+    },
+    {
+      "text": "width",
+      "startMs": 9769,
+      "endMs": 10146
+    },
+    {
+      "text": "and",
+      "startMs": 10146,
+      "endMs": 10397
+    },
+    {
+      "text": "you",
+      "startMs": 10397,
+      "endMs": 10648
+    },
+    {
+      "text": "need",
+      "startMs": 10648,
+      "endMs": 10962
+    },
+    {
+      "text": "new",
+      "startMs": 10962,
+      "endMs": 11213
+    },
+    {
+      "text": "wheels,",
+      "startMs": 11213,
+      "endMs": 11715
+    },
+    {
+      "text": "new",
+      "startMs": 11715,
+      "endMs": 11966
+    },
+    {
+      "text": "axles,",
+      "startMs": 11966,
+      "endMs": 12406
+    },
+    {
+      "text": "often",
+      "startMs": 12406,
+      "endMs": 12783
+    },
+    {
+      "text": "a",
+      "startMs": 12783,
+      "endMs": 12909
+    },
+    {
+      "text": "new",
+      "startMs": 12909,
+      "endMs": 13160
+    },
+    {
+      "text": "train.",
+      "startMs": 13160,
+      "endMs": 13600
+    }
+  ],
+  "s13": [
+    {
+      "text": "That",
+      "startMs": 120,
+      "endMs": 280
+    },
+    {
+      "text": "match",
+      "startMs": 340,
+      "endMs": 580
+    },
+    {
+      "text": "has",
+      "startMs": 620,
+      "endMs": 740
+    },
+    {
+      "text": "a",
+      "startMs": 800,
+      "endMs": 860
+    },
+    {
+      "text": "history.",
+      "startMs": 920,
+      "endMs": 1360
+    },
+    {
+      "text": "Java's",
+      "startMs": 2700,
+      "endMs": 3040
+    },
+    {
+      "text": "first",
+      "startMs": 3120,
+      "endMs": 3360
+    },
+    {
+      "text": "railway",
+      "startMs": 3440,
+      "endMs": 3840
+    },
+    {
+      "text": "in",
+      "startMs": 3920,
+      "endMs": 4059
+    },
+    {
+      "text": "1867",
+      "startMs": 4120,
+      "endMs": 5220
+    },
+    {
+      "text": "was",
+      "startMs": 5560,
+      "endMs": 5680
+    },
+    {
+      "text": "built",
+      "startMs": 5740,
+      "endMs": 5920
+    },
+    {
+      "text": "wider.",
+      "startMs": 6000,
+      "endMs": 6320
+    },
+    {
+      "text": "During",
+      "startMs": 7480,
+      "endMs": 7680
+    },
+    {
+      "text": "the",
+      "startMs": 7720,
+      "endMs": 7800
+    },
+    {
+      "text": "Japanese",
+      "startMs": 7860,
+      "endMs": 8320
+    },
+    {
+      "text": "occupation",
+      "startMs": 8420,
+      "endMs": 8980
+    },
+    {
+      "text": "in",
+      "startMs": 9000,
+      "endMs": 9060
+    },
+    {
+      "text": "the",
+      "startMs": 9100,
+      "endMs": 9160
+    },
+    {
+      "text": "1940s,",
+      "startMs": 9220,
+      "endMs": 10140
+    },
+    {
+      "text": "the",
+      "startMs": 10640,
+      "endMs": 10700
+    },
+    {
+      "text": "remaining",
+      "startMs": 10740,
+      "endMs": 11120
+    },
+    {
+      "text": "wide",
+      "startMs": 11200,
+      "endMs": 11440
+    },
+    {
+      "text": "lines",
+      "startMs": 11500,
+      "endMs": 11760
+    },
+    {
+      "text": "on",
+      "startMs": 11800,
+      "endMs": 11920
+    },
+    {
+      "text": "Java",
+      "startMs": 11980,
+      "endMs": 12300
+    },
+    {
+      "text": "were",
+      "startMs": 12600,
+      "endMs": 12700
+    },
+    {
+      "text": "converted",
+      "startMs": 12760,
+      "endMs": 13180
+    },
+    {
+      "text": "to",
+      "startMs": 13220,
+      "endMs": 13280
+    },
+    {
+      "text": "the",
+      "startMs": 13320,
+      "endMs": 13420
+    },
+    {
+      "text": "narrower",
+      "startMs": 13480,
+      "endMs": 13840
+    },
+    {
+      "text": "Japanese",
+      "startMs": 13960,
+      "endMs": 14420
+    },
+    {
+      "text": "width.",
+      "startMs": 14520,
+      "endMs": 14760
+    },
+    {
+      "text": "That",
+      "startMs": 15820,
+      "endMs": 15920
+    },
+    {
+      "text": "is",
+      "startMs": 15960,
+      "endMs": 16040
+    },
+    {
+      "text": "a",
+      "startMs": 16100,
+      "endMs": 16140
+    },
+    {
+      "text": "big",
+      "startMs": 16200,
+      "endMs": 16360
+    },
+    {
+      "text": "reason",
+      "startMs": 16420,
+      "endMs": 16680
+    },
+    {
+      "text": "a",
+      "startMs": 16720,
+      "endMs": 16800
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 16860,
+      "endMs": 17240
+    },
+    {
+      "text": "train",
+      "startMs": 17320,
+      "endMs": 17580
+    },
+    {
+      "text": "fits",
+      "startMs": 17660,
+      "endMs": 17860
+    },
+    {
+      "text": "Java's",
+      "startMs": 17960,
+      "endMs": 18320
+    },
+    {
+      "text": "rails",
+      "startMs": 18380,
+      "endMs": 18680
+    },
+    {
+      "text": "today.",
+      "startMs": 18720,
+      "endMs": 19040
+    }
+  ],
+  "s14": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 368
+    },
+    {
+      "text": "power",
+      "startMs": 368,
+      "endMs": 771
+    },
+    {
+      "text": "matches",
+      "startMs": 771,
+      "endMs": 1308
+    },
+    {
+      "text": "too.",
+      "startMs": 1308,
+      "endMs": 1644
+    },
+    {
+      "text": "Jakarta's",
+      "startMs": 1644,
+      "endMs": 2315
+    },
+    {
+      "text": "electric",
+      "startMs": 2315,
+      "endMs": 2919
+    },
+    {
+      "text": "line",
+      "startMs": 2919,
+      "endMs": 3255
+    },
+    {
+      "text": "opened",
+      "startMs": 3255,
+      "endMs": 3725
+    },
+    {
+      "text": "in",
+      "startMs": 3725,
+      "endMs": 3926
+    },
+    {
+      "text": "1925",
+      "startMs": 3926,
+      "endMs": 4262
+    },
+    {
+      "text": "on",
+      "startMs": 4262,
+      "endMs": 4463
+    },
+    {
+      "text": "fifteen",
+      "startMs": 4463,
+      "endMs": 5000
+    },
+    {
+      "text": "hundred",
+      "startMs": 5000,
+      "endMs": 5537
+    },
+    {
+      "text": "volts",
+      "startMs": 5537,
+      "endMs": 5940
+    },
+    {
+      "text": "DC,",
+      "startMs": 5940,
+      "endMs": 6208
+    },
+    {
+      "text": "the",
+      "startMs": 6208,
+      "endMs": 6476
+    },
+    {
+      "text": "same",
+      "startMs": 6476,
+      "endMs": 6812
+    },
+    {
+      "text": "system",
+      "startMs": 6812,
+      "endMs": 7282
+    },
+    {
+      "text": "the",
+      "startMs": 7282,
+      "endMs": 7550
+    },
+    {
+      "text": "205",
+      "startMs": 7550,
+      "endMs": 7818
+    },
+    {
+      "text": "series",
+      "startMs": 7818,
+      "endMs": 8288
+    },
+    {
+      "text": "was",
+      "startMs": 8288,
+      "endMs": 8556
+    },
+    {
+      "text": "built",
+      "startMs": 8556,
+      "endMs": 8959
+    },
+    {
+      "text": "for",
+      "startMs": 8959,
+      "endMs": 9227
+    },
+    {
+      "text": "in",
+      "startMs": 9227,
+      "endMs": 9428
+    },
+    {
+      "text": "Tokyo.",
+      "startMs": 9428,
+      "endMs": 9898
+    }
+  ],
+  "s15": [
+    {
+      "text": "Same",
+      "startMs": 100,
+      "endMs": 320
+    },
+    {
+      "text": "rails,",
+      "startMs": 400,
+      "endMs": 760
+    },
+    {
+      "text": "same",
+      "startMs": 1200,
+      "endMs": 1420
+    },
+    {
+      "text": "power.",
+      "startMs": 1500,
+      "endMs": 1840
+    },
+    {
+      "text": "A",
+      "startMs": 2780,
+      "endMs": 2840
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 2900,
+      "endMs": 3220
+    },
+    {
+      "text": "train",
+      "startMs": 3300,
+      "endMs": 3480
+    },
+    {
+      "text": "arrives",
+      "startMs": 3540,
+      "endMs": 3880
+    },
+    {
+      "text": "by",
+      "startMs": 3940,
+      "endMs": 4100
+    },
+    {
+      "text": "ship,",
+      "startMs": 4160,
+      "endMs": 4400
+    },
+    {
+      "text": "gets",
+      "startMs": 4800,
+      "endMs": 5000
+    },
+    {
+      "text": "new",
+      "startMs": 5040,
+      "endMs": 5200
+    },
+    {
+      "text": "signs",
+      "startMs": 5260,
+      "endMs": 5540
+    },
+    {
+      "text": "and",
+      "startMs": 5560,
+      "endMs": 5640
+    },
+    {
+      "text": "checks,",
+      "startMs": 5700,
+      "endMs": 6020
+    },
+    {
+      "text": "and",
+      "startMs": 6440,
+      "endMs": 6520
+    },
+    {
+      "text": "goes",
+      "startMs": 6580,
+      "endMs": 6760
+    },
+    {
+      "text": "into",
+      "startMs": 6800,
+      "endMs": 6980
+    },
+    {
+      "text": "service",
+      "startMs": 7040,
+      "endMs": 7340
+    },
+    {
+      "text": "with",
+      "startMs": 7400,
+      "endMs": 7520
+    },
+    {
+      "text": "no",
+      "startMs": 7580,
+      "endMs": 7720
+    },
+    {
+      "text": "rebuilding",
+      "startMs": 7780,
+      "endMs": 8200
+    },
+    {
+      "text": "of",
+      "startMs": 8240,
+      "endMs": 8280
+    },
+    {
+      "text": "the",
+      "startMs": 8320,
+      "endMs": 8380
+    },
+    {
+      "text": "tracks",
+      "startMs": 8440,
+      "endMs": 8860
+    }
+  ],
+  "s16": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 260,
+      "endMs": 640
+    },
+    {
+      "text": "kept",
+      "startMs": 680,
+      "endMs": 880
+    },
+    {
+      "text": "buying.",
+      "startMs": 960,
+      "endMs": 1320
+    },
+    {
+      "text": "In",
+      "startMs": 2000,
+      "endMs": 2120
+    },
+    {
+      "text": "2012,",
+      "startMs": 2300,
+      "endMs": 2820
+    },
+    {
+      "text": "the",
+      "startMs": 2880,
+      "endMs": 2960
+    },
+    {
+      "text": "operator",
+      "startMs": 3020,
+      "endMs": 3360
+    },
+    {
+      "text": "planned",
+      "startMs": 3420,
+      "endMs": 3620
+    },
+    {
+      "text": "to",
+      "startMs": 3660,
+      "endMs": 3720
+    },
+    {
+      "text": "bring",
+      "startMs": 3760,
+      "endMs": 3900
+    },
+    {
+      "text": "in",
+      "startMs": 3940,
+      "endMs": 4080
+    },
+    {
+      "text": "one",
+      "startMs": 4160,
+      "endMs": 4260
+    },
+    {
+      "text": "hundred",
+      "startMs": 4320,
+      "endMs": 4520
+    },
+    {
+      "text": "and",
+      "startMs": 4540,
+      "endMs": 4620
+    },
+    {
+      "text": "forty",
+      "startMs": 4740,
+      "endMs": 4920
+    },
+    {
+      "text": "cars",
+      "startMs": 5020,
+      "endMs": 5280
+    },
+    {
+      "text": "that",
+      "startMs": 5340,
+      "endMs": 5460
+    },
+    {
+      "text": "year",
+      "startMs": 5500,
+      "endMs": 5680
+    },
+    {
+      "text": "and",
+      "startMs": 6260,
+      "endMs": 6400
+    },
+    {
+      "text": "aimed",
+      "startMs": 6480,
+      "endMs": 6680
+    },
+    {
+      "text": "for",
+      "startMs": 6720,
+      "endMs": 6880
+    },
+    {
+      "text": "fourteen",
+      "startMs": 6940,
+      "endMs": 7320
+    },
+    {
+      "text": "hundred",
+      "startMs": 7380,
+      "endMs": 7560
+    },
+    {
+      "text": "and",
+      "startMs": 7600,
+      "endMs": 7680
+    },
+    {
+      "text": "forty",
+      "startMs": 7780,
+      "endMs": 7960
+    },
+    {
+      "text": "cars",
+      "startMs": 8060,
+      "endMs": 8300
+    },
+    {
+      "text": "by",
+      "startMs": 8360,
+      "endMs": 8480
+    },
+    {
+      "text": "2019",
+      "startMs": 8620,
+      "endMs": 9280
+    }
+  ],
+  "s17": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 160
+    },
+    {
+      "text": "biggest",
+      "startMs": 240,
+      "endMs": 500
+    },
+    {
+      "text": "batch",
+      "startMs": 600,
+      "endMs": 820
+    },
+    {
+      "text": "came",
+      "startMs": 900,
+      "endMs": 1080
+    },
+    {
+      "text": "later.",
+      "startMs": 1160,
+      "endMs": 1420
+    },
+    {
+      "text": "JR",
+      "startMs": 2340,
+      "endMs": 2680
+    },
+    {
+      "text": "East's",
+      "startMs": 2820,
+      "endMs": 3140
+    },
+    {
+      "text": "205",
+      "startMs": 3200,
+      "endMs": 3820
+    },
+    {
+      "text": "series,",
+      "startMs": 3920,
+      "endMs": 4300
+    },
+    {
+      "text": "a",
+      "startMs": 4740,
+      "endMs": 4820
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 4860,
+      "endMs": 5220
+    },
+    {
+      "text": "commuter",
+      "startMs": 5300,
+      "endMs": 5600
+    },
+    {
+      "text": "train",
+      "startMs": 5680,
+      "endMs": 5880
+    },
+    {
+      "text": "first",
+      "startMs": 5960,
+      "endMs": 6160
+    },
+    {
+      "text": "built",
+      "startMs": 6240,
+      "endMs": 6420
+    },
+    {
+      "text": "in",
+      "startMs": 6460,
+      "endMs": 6540
+    },
+    {
+      "text": "1985,",
+      "startMs": 6580,
+      "endMs": 7460
+    },
+    {
+      "text": "started",
+      "startMs": 7860,
+      "endMs": 8119
+    },
+    {
+      "text": "running",
+      "startMs": 8200,
+      "endMs": 8440
+    },
+    {
+      "text": "in",
+      "startMs": 8480,
+      "endMs": 8560
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 8600,
+      "endMs": 9080
+    },
+    {
+      "text": "in",
+      "startMs": 9120,
+      "endMs": 9240
+    },
+    {
+      "text": "2013.",
+      "startMs": 9400,
+      "endMs": 10340
+    }
+  ],
+  "s18": [
+    {
+      "text": "Today,",
+      "startMs": 100,
+      "endMs": 340
+    },
+    {
+      "text": "the",
+      "startMs": 400,
+      "endMs": 460
+    },
+    {
+      "text": "backbone",
+      "startMs": 540,
+      "endMs": 920
+    },
+    {
+      "text": "is",
+      "startMs": 940,
+      "endMs": 1020
+    },
+    {
+      "text": "still",
+      "startMs": 1100,
+      "endMs": 1260
+    },
+    {
+      "text": "Japanese.",
+      "startMs": 1340,
+      "endMs": 1920
+    },
+    {
+      "text": "Seven",
+      "startMs": 2780,
+      "endMs": 3000
+    },
+    {
+      "text": "hundred",
+      "startMs": 3060,
+      "endMs": 3260
+    },
+    {
+      "text": "and",
+      "startMs": 3280,
+      "endMs": 3380
+    },
+    {
+      "text": "eighty",
+      "startMs": 3460,
+      "endMs": 3620
+    },
+    {
+      "text": "cars",
+      "startMs": 3740,
+      "endMs": 4019
+    },
+    {
+      "text": "came",
+      "startMs": 4120,
+      "endMs": 4260
+    },
+    {
+      "text": "from",
+      "startMs": 4300,
+      "endMs": 4420
+    },
+    {
+      "text": "JR",
+      "startMs": 4500,
+      "endMs": 4840
+    },
+    {
+      "text": "East's",
+      "startMs": 4960,
+      "endMs": 5260
+    },
+    {
+      "text": "205",
+      "startMs": 5320,
+      "endMs": 5880
+    },
+    {
+      "text": "series",
+      "startMs": 5980,
+      "endMs": 6280
+    },
+    {
+      "text": "and",
+      "startMs": 6720,
+      "endMs": 6860
+    },
+    {
+      "text": "one",
+      "startMs": 6940,
+      "endMs": 7040
+    },
+    {
+      "text": "hundred",
+      "startMs": 7080,
+      "endMs": 7260
+    },
+    {
+      "text": "and",
+      "startMs": 7300,
+      "endMs": 7360
+    },
+    {
+      "text": "twenty-eight",
+      "startMs": 7440,
+      "endMs": 7780
+    },
+    {
+      "text": "from",
+      "startMs": 7820,
+      "endMs": 7960
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 8020,
+      "endMs": 8320
+    },
+    {
+      "text": "Metro",
+      "startMs": 8400,
+      "endMs": 8760
+    }
+  ],
+  "s19": [
+    {
+      "text": "Those",
+      "startMs": 100,
+      "endMs": 434
+    },
+    {
+      "text": "cars",
+      "startMs": 434,
+      "endMs": 712
+    },
+    {
+      "text": "are",
+      "startMs": 712,
+      "endMs": 935
+    },
+    {
+      "text": "thirty-four",
+      "startMs": 935,
+      "endMs": 1603
+    },
+    {
+      "text": "to",
+      "startMs": 1603,
+      "endMs": 1770
+    },
+    {
+      "text": "forty-one",
+      "startMs": 1770,
+      "endMs": 2327
+    },
+    {
+      "text": "years",
+      "startMs": 2327,
+      "endMs": 2661
+    },
+    {
+      "text": "old.",
+      "startMs": 2661,
+      "endMs": 2939
+    },
+    {
+      "text": "Many",
+      "startMs": 2939,
+      "endMs": 3217
+    },
+    {
+      "text": "of",
+      "startMs": 3217,
+      "endMs": 3384
+    },
+    {
+      "text": "them",
+      "startMs": 3384,
+      "endMs": 3662
+    },
+    {
+      "text": "started",
+      "startMs": 3662,
+      "endMs": 4107
+    },
+    {
+      "text": "work",
+      "startMs": 4107,
+      "endMs": 4385
+    },
+    {
+      "text": "in",
+      "startMs": 4385,
+      "endMs": 4552
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 4552,
+      "endMs": 4886
+    },
+    {
+      "text": "before",
+      "startMs": 4886,
+      "endMs": 5276
+    },
+    {
+      "text": "the",
+      "startMs": 5276,
+      "endMs": 5499
+    },
+    {
+      "text": "Berlin",
+      "startMs": 5499,
+      "endMs": 5889
+    },
+    {
+      "text": "Wall",
+      "startMs": 5889,
+      "endMs": 6167
+    },
+    {
+      "text": "fell.",
+      "startMs": 6167,
+      "endMs": 6500
+    }
+  ],
+  "s20": [
+    {
+      "text": "A",
+      "startMs": 80,
+      "endMs": 180
+    },
+    {
+      "text": "fleet",
+      "startMs": 240,
+      "endMs": 440
+    },
+    {
+      "text": "that",
+      "startMs": 500,
+      "endMs": 620
+    },
+    {
+      "text": "old",
+      "startMs": 680,
+      "endMs": 860
+    },
+    {
+      "text": "needs",
+      "startMs": 900,
+      "endMs": 1100
+    },
+    {
+      "text": "replacing",
+      "startMs": 1140,
+      "endMs": 1740
+    },
+    {
+      "text": "and",
+      "startMs": 2100,
+      "endMs": 2180
+    },
+    {
+      "text": "passenger",
+      "startMs": 2300,
+      "endMs": 2740
+    },
+    {
+      "text": "numbers",
+      "startMs": 2800,
+      "endMs": 3100
+    },
+    {
+      "text": "kept",
+      "startMs": 3160,
+      "endMs": 3320
+    },
+    {
+      "text": "rising.",
+      "startMs": 3400,
+      "endMs": 3800
+    },
+    {
+      "text": "The",
+      "startMs": 4560,
+      "endMs": 4660
+    },
+    {
+      "text": "first",
+      "startMs": 4700,
+      "endMs": 4920
+    },
+    {
+      "text": "attempt",
+      "startMs": 4980,
+      "endMs": 5240
+    },
+    {
+      "text": "to",
+      "startMs": 5280,
+      "endMs": 5340
+    },
+    {
+      "text": "replace",
+      "startMs": 5380,
+      "endMs": 5760
+    },
+    {
+      "text": "it",
+      "startMs": 5800,
+      "endMs": 5880
+    },
+    {
+      "text": "with",
+      "startMs": 5920,
+      "endMs": 6040
+    },
+    {
+      "text": "more",
+      "startMs": 6120,
+      "endMs": 6320
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 6380,
+      "endMs": 6720
+    },
+    {
+      "text": "trains",
+      "startMs": 6820,
+      "endMs": 7100
+    },
+    {
+      "text": "came",
+      "startMs": 7160,
+      "endMs": 7320
+    },
+    {
+      "text": "in",
+      "startMs": 7340,
+      "endMs": 7440
+    },
+    {
+      "text": "2023,",
+      "startMs": 7580,
+      "endMs": 8340
+    },
+    {
+      "text": "and",
+      "startMs": 8720,
+      "endMs": 8800
+    },
+    {
+      "text": "it",
+      "startMs": 8840,
+      "endMs": 8900
+    },
+    {
+      "text": "was",
+      "startMs": 8940,
+      "endMs": 9060
+    },
+    {
+      "text": "blocked",
+      "startMs": 9100,
+      "endMs": 9440
+    }
+  ],
+  "s21": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "operator",
+      "startMs": 240,
+      "endMs": 660
+    },
+    {
+      "text": "asked",
+      "startMs": 780,
+      "endMs": 960
+    },
+    {
+      "text": "to",
+      "startMs": 1000,
+      "endMs": 1120
+    },
+    {
+      "text": "import",
+      "startMs": 1180,
+      "endMs": 1560
+    },
+    {
+      "text": "three",
+      "startMs": 1620,
+      "endMs": 1800
+    },
+    {
+      "text": "hundred",
+      "startMs": 1860,
+      "endMs": 2060
+    },
+    {
+      "text": "and",
+      "startMs": 2100,
+      "endMs": 2180
+    },
+    {
+      "text": "forty-eight",
+      "startMs": 2300,
+      "endMs": 2700
+    },
+    {
+      "text": "used",
+      "startMs": 2800,
+      "endMs": 2980
+    },
+    {
+      "text": "cars",
+      "startMs": 3040,
+      "endMs": 3320
+    },
+    {
+      "text": "of",
+      "startMs": 3360,
+      "endMs": 3420
+    },
+    {
+      "text": "a",
+      "startMs": 3460,
+      "endMs": 3520
+    },
+    {
+      "text": "newer",
+      "startMs": 3580,
+      "endMs": 3780
+    },
+    {
+      "text": "Japanese",
+      "startMs": 3880,
+      "endMs": 4300
+    },
+    {
+      "text": "model,",
+      "startMs": 4380,
+      "endMs": 4640
+    },
+    {
+      "text": "the",
+      "startMs": 5040,
+      "endMs": 5200
+    },
+    {
+      "text": "E217,",
+      "startMs": 5280,
+      "endMs": 6220
+    },
+    {
+      "text": "for",
+      "startMs": 6640,
+      "endMs": 6740
+    },
+    {
+      "text": "2023",
+      "startMs": 6920,
+      "endMs": 7620
+    },
+    {
+      "text": "and",
+      "startMs": 7760,
+      "endMs": 7880
+    },
+    {
+      "text": "2024",
+      "startMs": 8060,
+      "endMs": 8740
+    }
+  ],
+  "s22": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "government",
+      "startMs": 220,
+      "endMs": 620
+    },
+    {
+      "text": "said",
+      "startMs": 680,
+      "endMs": 900
+    },
+    {
+      "text": "no.",
+      "startMs": 960,
+      "endMs": 1200
+    },
+    {
+      "text": "The",
+      "startMs": 1700,
+      "endMs": 1760
+    },
+    {
+      "text": "cars",
+      "startMs": 1820,
+      "endMs": 2160
+    },
+    {
+      "text": "stayed",
+      "startMs": 2300,
+      "endMs": 2480
+    },
+    {
+      "text": "in",
+      "startMs": 2500,
+      "endMs": 2580
+    },
+    {
+      "text": "Japan.",
+      "startMs": 2620,
+      "endMs": 3100
+    },
+    {
+      "text": "Officials",
+      "startMs": 3760,
+      "endMs": 4180
+    },
+    {
+      "text": "chose",
+      "startMs": 4220,
+      "endMs": 4460
+    },
+    {
+      "text": "to",
+      "startMs": 4500,
+      "endMs": 4600
+    },
+    {
+      "text": "refit",
+      "startMs": 4640,
+      "endMs": 5020
+    },
+    {
+      "text": "old",
+      "startMs": 5100,
+      "endMs": 5260
+    },
+    {
+      "text": "trains",
+      "startMs": 5320,
+      "endMs": 5680
+    },
+    {
+      "text": "and",
+      "startMs": 5700,
+      "endMs": 5800
+    },
+    {
+      "text": "buy",
+      "startMs": 5840,
+      "endMs": 6000
+    },
+    {
+      "text": "new",
+      "startMs": 6060,
+      "endMs": 6180
+    },
+    {
+      "text": "ones",
+      "startMs": 6240,
+      "endMs": 6400
+    },
+    {
+      "text": "instead",
+      "startMs": 6440,
+      "endMs": 6840
+    }
+  ],
+  "s23": [
+    {
+      "text": "New",
+      "startMs": 80,
+      "endMs": 420
+    },
+    {
+      "text": "trains",
+      "startMs": 420,
+      "endMs": 1014
+    },
+    {
+      "text": "came",
+      "startMs": 1014,
+      "endMs": 1438
+    },
+    {
+      "text": "from",
+      "startMs": 1438,
+      "endMs": 1862
+    },
+    {
+      "text": "two",
+      "startMs": 1862,
+      "endMs": 2202
+    },
+    {
+      "text": "places.",
+      "startMs": 2202,
+      "endMs": 2881
+    },
+    {
+      "text": "A",
+      "startMs": 2881,
+      "endMs": 3051
+    },
+    {
+      "text": "Chinese",
+      "startMs": 3051,
+      "endMs": 3730
+    },
+    {
+      "text": "maker,",
+      "startMs": 3730,
+      "endMs": 4324
+    },
+    {
+      "text": "CRRC",
+      "startMs": 4324,
+      "endMs": 4748
+    },
+    {
+      "text": "Sifang,",
+      "startMs": 4748,
+      "endMs": 5427
+    },
+    {
+      "text": "and",
+      "startMs": 5427,
+      "endMs": 5767
+    },
+    {
+      "text": "INKA",
+      "startMs": 5767,
+      "endMs": 6191
+    },
+    {
+      "text": "in",
+      "startMs": 6191,
+      "endMs": 6446
+    },
+    {
+      "text": "East",
+      "startMs": 6446,
+      "endMs": 6870
+    },
+    {
+      "text": "Java.",
+      "startMs": 6870,
+      "endMs": 7379
+    }
+  ],
+  "s24": [
+    {
+      "text": "INKA",
+      "startMs": 100,
+      "endMs": 335
+    },
+    {
+      "text": "also",
+      "startMs": 335,
+      "endMs": 570
+    },
+    {
+      "text": "took",
+      "startMs": 570,
+      "endMs": 805
+    },
+    {
+      "text": "a",
+      "startMs": 805,
+      "endMs": 899
+    },
+    {
+      "text": "contract",
+      "startMs": 899,
+      "endMs": 1321
+    },
+    {
+      "text": "to",
+      "startMs": 1321,
+      "endMs": 1462
+    },
+    {
+      "text": "refit",
+      "startMs": 1462,
+      "endMs": 1744
+    },
+    {
+      "text": "nineteen",
+      "startMs": 1744,
+      "endMs": 2166
+    },
+    {
+      "text": "of",
+      "startMs": 2166,
+      "endMs": 2307
+    },
+    {
+      "text": "the",
+      "startMs": 2307,
+      "endMs": 2495
+    },
+    {
+      "text": "old",
+      "startMs": 2495,
+      "endMs": 2683
+    },
+    {
+      "text": "trains,",
+      "startMs": 2683,
+      "endMs": 3059
+    },
+    {
+      "text": "so",
+      "startMs": 3059,
+      "endMs": 3200
+    },
+    {
+      "text": "they",
+      "startMs": 3200,
+      "endMs": 3435
+    },
+    {
+      "text": "could",
+      "startMs": 3435,
+      "endMs": 3717
+    },
+    {
+      "text": "keep",
+      "startMs": 3717,
+      "endMs": 3952
+    },
+    {
+      "text": "running",
+      "startMs": 3952,
+      "endMs": 4328
+    },
+    {
+      "text": "while",
+      "startMs": 4328,
+      "endMs": 4610
+    },
+    {
+      "text": "the",
+      "startMs": 4610,
+      "endMs": 4798
+    },
+    {
+      "text": "new",
+      "startMs": 4798,
+      "endMs": 4986
+    },
+    {
+      "text": "ones",
+      "startMs": 4986,
+      "endMs": 5221
+    },
+    {
+      "text": "were",
+      "startMs": 5221,
+      "endMs": 5456
+    },
+    {
+      "text": "built.",
+      "startMs": 5456,
+      "endMs": 5780
+    }
+  ],
+  "s25": [
+    {
+      "text": "In",
+      "startMs": 80,
+      "endMs": 257
+    },
+    {
+      "text": "January",
+      "startMs": 257,
+      "endMs": 730
+    },
+    {
+      "text": "2024,",
+      "startMs": 730,
+      "endMs": 1085
+    },
+    {
+      "text": "the",
+      "startMs": 1085,
+      "endMs": 1321
+    },
+    {
+      "text": "operator",
+      "startMs": 1321,
+      "endMs": 1853
+    },
+    {
+      "text": "signed",
+      "startMs": 1853,
+      "endMs": 2267
+    },
+    {
+      "text": "for",
+      "startMs": 2267,
+      "endMs": 2503
+    },
+    {
+      "text": "three",
+      "startMs": 2503,
+      "endMs": 2858
+    },
+    {
+      "text": "Chinese",
+      "startMs": 2858,
+      "endMs": 3331
+    },
+    {
+      "text": "trains.",
+      "startMs": 3331,
+      "endMs": 3804
+    },
+    {
+      "text": "The",
+      "startMs": 3804,
+      "endMs": 4040
+    },
+    {
+      "text": "contract",
+      "startMs": 4040,
+      "endMs": 4572
+    },
+    {
+      "text": "was",
+      "startMs": 4572,
+      "endMs": 4808
+    },
+    {
+      "text": "seven",
+      "startMs": 4808,
+      "endMs": 5163
+    },
+    {
+      "text": "hundred",
+      "startMs": 5163,
+      "endMs": 5636
+    },
+    {
+      "text": "and",
+      "startMs": 5636,
+      "endMs": 5872
+    },
+    {
+      "text": "eighty-three",
+      "startMs": 5872,
+      "endMs": 6640
+    },
+    {
+      "text": "billion",
+      "startMs": 6640,
+      "endMs": 7113
+    },
+    {
+      "text": "rupiah,",
+      "startMs": 7113,
+      "endMs": 7586
+    },
+    {
+      "text": "about",
+      "startMs": 7586,
+      "endMs": 7941
+    },
+    {
+      "text": "two",
+      "startMs": 7941,
+      "endMs": 8177
+    },
+    {
+      "text": "hundred",
+      "startMs": 8177,
+      "endMs": 8650
+    },
+    {
+      "text": "and",
+      "startMs": 8650,
+      "endMs": 8886
+    },
+    {
+      "text": "sixty-one",
+      "startMs": 8886,
+      "endMs": 9477
+    },
+    {
+      "text": "billion",
+      "startMs": 9477,
+      "endMs": 9950
+    },
+    {
+      "text": "per",
+      "startMs": 9950,
+      "endMs": 10186
+    },
+    {
+      "text": "train.",
+      "startMs": 10186,
+      "endMs": 10600
+    }
+  ],
+  "s26": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 291
+    },
+    {
+      "text": "new",
+      "startMs": 291,
+      "endMs": 482
+    },
+    {
+      "text": "trains",
+      "startMs": 482,
+      "endMs": 816
+    },
+    {
+      "text": "are",
+      "startMs": 816,
+      "endMs": 1007
+    },
+    {
+      "text": "longer.",
+      "startMs": 1007,
+      "endMs": 1389
+    },
+    {
+      "text": "Each",
+      "startMs": 1389,
+      "endMs": 1627
+    },
+    {
+      "text": "one",
+      "startMs": 1627,
+      "endMs": 1818
+    },
+    {
+      "text": "has",
+      "startMs": 1818,
+      "endMs": 2009
+    },
+    {
+      "text": "twelve",
+      "startMs": 2009,
+      "endMs": 2343
+    },
+    {
+      "text": "cars",
+      "startMs": 2343,
+      "endMs": 2581
+    },
+    {
+      "text": "and",
+      "startMs": 2581,
+      "endMs": 2772
+    },
+    {
+      "text": "can",
+      "startMs": 2772,
+      "endMs": 2963
+    },
+    {
+      "text": "carry",
+      "startMs": 2963,
+      "endMs": 3249
+    },
+    {
+      "text": "about",
+      "startMs": 3249,
+      "endMs": 3535
+    },
+    {
+      "text": "three",
+      "startMs": 3535,
+      "endMs": 3821
+    },
+    {
+      "text": "thousand",
+      "startMs": 3821,
+      "endMs": 4250
+    },
+    {
+      "text": "four",
+      "startMs": 4250,
+      "endMs": 4488
+    },
+    {
+      "text": "hundred",
+      "startMs": 4488,
+      "endMs": 4870
+    },
+    {
+      "text": "people",
+      "startMs": 4870,
+      "endMs": 5204
+    },
+    {
+      "text": "per",
+      "startMs": 5204,
+      "endMs": 5395
+    },
+    {
+      "text": "trip.",
+      "startMs": 5395,
+      "endMs": 5680
+    }
+  ],
+  "s27": [
+    {
+      "text": "Compare",
+      "startMs": 80,
+      "endMs": 440
+    },
+    {
+      "text": "that",
+      "startMs": 520,
+      "endMs": 640
+    },
+    {
+      "text": "with",
+      "startMs": 680,
+      "endMs": 780
+    },
+    {
+      "text": "the",
+      "startMs": 820,
+      "endMs": 920
+    },
+    {
+      "text": "old",
+      "startMs": 960,
+      "endMs": 1120
+    },
+    {
+      "text": "deal.",
+      "startMs": 1180,
+      "endMs": 1420
+    },
+    {
+      "text": "Twelve",
+      "startMs": 2220,
+      "endMs": 2500
+    },
+    {
+      "text": "used",
+      "startMs": 2600,
+      "endMs": 2780
+    },
+    {
+      "text": "cars",
+      "startMs": 2840,
+      "endMs": 3080
+    },
+    {
+      "text": "from",
+      "startMs": 3100,
+      "endMs": 3220
+    },
+    {
+      "text": "Japan",
+      "startMs": 3260,
+      "endMs": 3600
+    },
+    {
+      "text": "once",
+      "startMs": 3660,
+      "endMs": 3820
+    },
+    {
+      "text": "cost",
+      "startMs": 3880,
+      "endMs": 4120
+    },
+    {
+      "text": "about",
+      "startMs": 4180,
+      "endMs": 4400
+    },
+    {
+      "text": "twelve",
+      "startMs": 4460,
+      "endMs": 4720
+    },
+    {
+      "text": "billion.",
+      "startMs": 4780,
+      "endMs": 5140
+    },
+    {
+      "text": "One",
+      "startMs": 6040,
+      "endMs": 6160
+    },
+    {
+      "text": "new",
+      "startMs": 6220,
+      "endMs": 6340
+    },
+    {
+      "text": "twelve-car",
+      "startMs": 6420,
+      "endMs": 6860
+    },
+    {
+      "text": "train",
+      "startMs": 6940,
+      "endMs": 7160
+    },
+    {
+      "text": "cost",
+      "startMs": 7220,
+      "endMs": 7460
+    },
+    {
+      "text": "around",
+      "startMs": 7520,
+      "endMs": 7740
+    },
+    {
+      "text": "twenty",
+      "startMs": 7800,
+      "endMs": 8020
+    },
+    {
+      "text": "times",
+      "startMs": 8119,
+      "endMs": 8340
+    },
+    {
+      "text": "as",
+      "startMs": 8380,
+      "endMs": 8480
+    },
+    {
+      "text": "much",
+      "startMs": 8520,
+      "endMs": 8720
+    }
+  ],
+  "s28": [
+    {
+      "text": "New",
+      "startMs": 80,
+      "endMs": 357
+    },
+    {
+      "text": "trains",
+      "startMs": 357,
+      "endMs": 841
+    },
+    {
+      "text": "fix",
+      "startMs": 841,
+      "endMs": 1118
+    },
+    {
+      "text": "one",
+      "startMs": 1118,
+      "endMs": 1395
+    },
+    {
+      "text": "problem:",
+      "startMs": 1395,
+      "endMs": 2018
+    },
+    {
+      "text": "age.",
+      "startMs": 2018,
+      "endMs": 2364
+    },
+    {
+      "text": "In",
+      "startMs": 2364,
+      "endMs": 2572
+    },
+    {
+      "text": "November",
+      "startMs": 2572,
+      "endMs": 3195
+    },
+    {
+      "text": "2025,",
+      "startMs": 3195,
+      "endMs": 3610
+    },
+    {
+      "text": "three",
+      "startMs": 3610,
+      "endMs": 4025
+    },
+    {
+      "text": "of",
+      "startMs": 4025,
+      "endMs": 4233
+    },
+    {
+      "text": "the",
+      "startMs": 4233,
+      "endMs": 4510
+    },
+    {
+      "text": "oldest",
+      "startMs": 4510,
+      "endMs": 4994
+    },
+    {
+      "text": "Japanese",
+      "startMs": 4994,
+      "endMs": 5617
+    },
+    {
+      "text": "series",
+      "startMs": 5617,
+      "endMs": 6101
+    },
+    {
+      "text": "retired,",
+      "startMs": 6101,
+      "endMs": 6724
+    },
+    {
+      "text": "some",
+      "startMs": 6724,
+      "endMs": 7070
+    },
+    {
+      "text": "of",
+      "startMs": 7070,
+      "endMs": 7278
+    },
+    {
+      "text": "them",
+      "startMs": 7278,
+      "endMs": 7624
+    },
+    {
+      "text": "close",
+      "startMs": 7624,
+      "endMs": 8039
+    },
+    {
+      "text": "to",
+      "startMs": 8039,
+      "endMs": 8247
+    },
+    {
+      "text": "fifty",
+      "startMs": 8247,
+      "endMs": 8662
+    },
+    {
+      "text": "years",
+      "startMs": 8662,
+      "endMs": 9077
+    },
+    {
+      "text": "old.",
+      "startMs": 9077,
+      "endMs": 9420
+    }
+  ],
+  "s29": [
+    {
+      "text": "Their",
+      "startMs": 100,
+      "endMs": 452
+    },
+    {
+      "text": "driver",
+      "startMs": 452,
+      "endMs": 863
+    },
+    {
+      "text": "cabins",
+      "startMs": 863,
+      "endMs": 1274
+    },
+    {
+      "text": "are",
+      "startMs": 1274,
+      "endMs": 1509
+    },
+    {
+      "text": "going",
+      "startMs": 1509,
+      "endMs": 1861
+    },
+    {
+      "text": "on",
+      "startMs": 1861,
+      "endMs": 2037
+    },
+    {
+      "text": "display",
+      "startMs": 2037,
+      "endMs": 2507
+    },
+    {
+      "text": "at",
+      "startMs": 2507,
+      "endMs": 2683
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 2683,
+      "endMs": 3153
+    },
+    {
+      "text": "Kota",
+      "startMs": 3153,
+      "endMs": 3447
+    },
+    {
+      "text": "station.",
+      "startMs": 3447,
+      "endMs": 3975
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 3975,
+      "endMs": 4445
+    },
+    {
+      "text": "gave",
+      "startMs": 4445,
+      "endMs": 4739
+    },
+    {
+      "text": "its",
+      "startMs": 4739,
+      "endMs": 4974
+    },
+    {
+      "text": "second-hand",
+      "startMs": 4974,
+      "endMs": 5679
+    },
+    {
+      "text": "trains",
+      "startMs": 5679,
+      "endMs": 6090
+    },
+    {
+      "text": "a",
+      "startMs": 6090,
+      "endMs": 6207
+    },
+    {
+      "text": "retirement",
+      "startMs": 6207,
+      "endMs": 6853
+    },
+    {
+      "text": "ceremony.",
+      "startMs": 6853,
+      "endMs": 7440
+    }
+  ],
+  "s30": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 277
+    },
+    {
+      "text": "the",
+      "startMs": 277,
+      "endMs": 512
+    },
+    {
+      "text": "plan",
+      "startMs": 512,
+      "endMs": 806
+    },
+    {
+      "text": "was",
+      "startMs": 806,
+      "endMs": 1041
+    },
+    {
+      "text": "new",
+      "startMs": 1041,
+      "endMs": 1276
+    },
+    {
+      "text": "trains",
+      "startMs": 1276,
+      "endMs": 1688
+    },
+    {
+      "text": "from",
+      "startMs": 1688,
+      "endMs": 1982
+    },
+    {
+      "text": "China",
+      "startMs": 1982,
+      "endMs": 2335
+    },
+    {
+      "text": "and",
+      "startMs": 2335,
+      "endMs": 2570
+    },
+    {
+      "text": "from",
+      "startMs": 2570,
+      "endMs": 2864
+    },
+    {
+      "text": "INKA.",
+      "startMs": 2864,
+      "endMs": 3217
+    },
+    {
+      "text": "The",
+      "startMs": 3217,
+      "endMs": 3452
+    },
+    {
+      "text": "weak",
+      "startMs": 3452,
+      "endMs": 3746
+    },
+    {
+      "text": "point",
+      "startMs": 3746,
+      "endMs": 4099
+    },
+    {
+      "text": "was",
+      "startMs": 4099,
+      "endMs": 4334
+    },
+    {
+      "text": "INKA's",
+      "startMs": 4334,
+      "endMs": 4746
+    },
+    {
+      "text": "factory.",
+      "startMs": 4746,
+      "endMs": 5276
+    }
+  ],
+  "s31": [
+    {
+      "text": "All",
+      "startMs": 80,
+      "endMs": 335
+    },
+    {
+      "text": "eleven",
+      "startMs": 335,
+      "endMs": 781
+    },
+    {
+      "text": "Chinese",
+      "startMs": 781,
+      "endMs": 1290
+    },
+    {
+      "text": "trains",
+      "startMs": 1290,
+      "endMs": 1736
+    },
+    {
+      "text": "are",
+      "startMs": 1736,
+      "endMs": 1991
+    },
+    {
+      "text": "running,",
+      "startMs": 1991,
+      "endMs": 2564
+    },
+    {
+      "text": "mostly",
+      "startMs": 2564,
+      "endMs": 3010
+    },
+    {
+      "text": "on",
+      "startMs": 3010,
+      "endMs": 3201
+    },
+    {
+      "text": "the",
+      "startMs": 3201,
+      "endMs": 3456
+    },
+    {
+      "text": "Bogor",
+      "startMs": 3456,
+      "endMs": 3838
+    },
+    {
+      "text": "and",
+      "startMs": 3838,
+      "endMs": 4093
+    },
+    {
+      "text": "Cikarang",
+      "startMs": 4093,
+      "endMs": 4666
+    },
+    {
+      "text": "lines.",
+      "startMs": 4666,
+      "endMs": 5112
+    },
+    {
+      "text": "This",
+      "startMs": 5112,
+      "endMs": 5430
+    },
+    {
+      "text": "footage",
+      "startMs": 5430,
+      "endMs": 5939
+    },
+    {
+      "text": "is",
+      "startMs": 5939,
+      "endMs": 6130
+    },
+    {
+      "text": "from",
+      "startMs": 6130,
+      "endMs": 6448
+    },
+    {
+      "text": "November",
+      "startMs": 6448,
+      "endMs": 7021
+    },
+    {
+      "text": "2026:",
+      "startMs": 7021,
+      "endMs": 7403
+    },
+    {
+      "text": "a",
+      "startMs": 7403,
+      "endMs": 7530
+    },
+    {
+      "text": "Chinese",
+      "startMs": 7530,
+      "endMs": 8039
+    },
+    {
+      "text": "train",
+      "startMs": 8039,
+      "endMs": 8421
+    },
+    {
+      "text": "on",
+      "startMs": 8421,
+      "endMs": 8612
+    },
+    {
+      "text": "the",
+      "startMs": 8612,
+      "endMs": 8867
+    },
+    {
+      "text": "Bogor",
+      "startMs": 8867,
+      "endMs": 9249
+    },
+    {
+      "text": "line,",
+      "startMs": 9249,
+      "endMs": 9631
+    },
+    {
+      "text": "sharing",
+      "startMs": 9631,
+      "endMs": 10140
+    },
+    {
+      "text": "the",
+      "startMs": 10140,
+      "endMs": 10395
+    },
+    {
+      "text": "tracks",
+      "startMs": 10395,
+      "endMs": 10841
+    },
+    {
+      "text": "with",
+      "startMs": 10841,
+      "endMs": 11159
+    },
+    {
+      "text": "the",
+      "startMs": 11159,
+      "endMs": 11414
+    },
+    {
+      "text": "old",
+      "startMs": 11414,
+      "endMs": 11669
+    },
+    {
+      "text": "Japanese",
+      "startMs": 11669,
+      "endMs": 12242
+    },
+    {
+      "text": "ones.",
+      "startMs": 12242,
+      "endMs": 12620
+    }
+  ],
+  "s32": [
+    {
+      "text": "Inka",
+      "startMs": 100,
+      "endMs": 320
+    },
+    {
+      "text": "was",
+      "startMs": 360,
+      "endMs": 460
+    },
+    {
+      "text": "expected",
+      "startMs": 500,
+      "endMs": 920
+    },
+    {
+      "text": "to",
+      "startMs": 960,
+      "endMs": 1040
+    },
+    {
+      "text": "build",
+      "startMs": 1100,
+      "endMs": 1300
+    },
+    {
+      "text": "eight",
+      "startMs": 1440,
+      "endMs": 1580
+    },
+    {
+      "text": "trains",
+      "startMs": 1640,
+      "endMs": 1920
+    },
+    {
+      "text": "a",
+      "startMs": 1980,
+      "endMs": 2020
+    },
+    {
+      "text": "year.",
+      "startMs": 2100,
+      "endMs": 2320
+    },
+    {
+      "text": "It",
+      "startMs": 2880,
+      "endMs": 2960
+    },
+    {
+      "text": "delivered",
+      "startMs": 3000,
+      "endMs": 3360
+    },
+    {
+      "text": "two",
+      "startMs": 3420,
+      "endMs": 3560
+    },
+    {
+      "text": "to",
+      "startMs": 3600,
+      "endMs": 3680
+    },
+    {
+      "text": "three",
+      "startMs": 3740,
+      "endMs": 4000
+    }
+  ],
+  "s33": [
+    {
+      "text": "By",
+      "startMs": 100,
+      "endMs": 279
+    },
+    {
+      "text": "September",
+      "startMs": 279,
+      "endMs": 875
+    },
+    {
+      "text": "2026,",
+      "startMs": 875,
+      "endMs": 1233
+    },
+    {
+      "text": "seven",
+      "startMs": 1233,
+      "endMs": 1591
+    },
+    {
+      "text": "of",
+      "startMs": 1591,
+      "endMs": 1770
+    },
+    {
+      "text": "the",
+      "startMs": 1770,
+      "endMs": 2008
+    },
+    {
+      "text": "sixteen",
+      "startMs": 2008,
+      "endMs": 2485
+    },
+    {
+      "text": "INKA",
+      "startMs": 2485,
+      "endMs": 2783
+    },
+    {
+      "text": "trains",
+      "startMs": 2783,
+      "endMs": 3200
+    },
+    {
+      "text": "were",
+      "startMs": 3200,
+      "endMs": 3498
+    },
+    {
+      "text": "in",
+      "startMs": 3498,
+      "endMs": 3677
+    },
+    {
+      "text": "service.",
+      "startMs": 3677,
+      "endMs": 4213
+    },
+    {
+      "text": "That",
+      "startMs": 4213,
+      "endMs": 4511
+    },
+    {
+      "text": "left",
+      "startMs": 4511,
+      "endMs": 4809
+    },
+    {
+      "text": "nine",
+      "startMs": 4809,
+      "endMs": 5107
+    },
+    {
+      "text": "trains",
+      "startMs": 5107,
+      "endMs": 5524
+    },
+    {
+      "text": "the",
+      "startMs": 5524,
+      "endMs": 5762
+    },
+    {
+      "text": "network",
+      "startMs": 5762,
+      "endMs": 6239
+    },
+    {
+      "text": "was",
+      "startMs": 6239,
+      "endMs": 6477
+    },
+    {
+      "text": "counting",
+      "startMs": 6477,
+      "endMs": 7013
+    },
+    {
+      "text": "on,",
+      "startMs": 7013,
+      "endMs": 7251
+    },
+    {
+      "text": "still",
+      "startMs": 7251,
+      "endMs": 7609
+    },
+    {
+      "text": "not",
+      "startMs": 7609,
+      "endMs": 7847
+    },
+    {
+      "text": "carrying",
+      "startMs": 7847,
+      "endMs": 8383
+    },
+    {
+      "text": "anyone.",
+      "startMs": 8383,
+      "endMs": 8860
+    }
+  ],
+  "s34": [
+    {
+      "text": "Meanwhile",
+      "startMs": 80,
+      "endMs": 623
+    },
+    {
+      "text": "the",
+      "startMs": 623,
+      "endMs": 840
+    },
+    {
+      "text": "trains",
+      "startMs": 840,
+      "endMs": 1220
+    },
+    {
+      "text": "got",
+      "startMs": 1220,
+      "endMs": 1437
+    },
+    {
+      "text": "more",
+      "startMs": 1437,
+      "endMs": 1708
+    },
+    {
+      "text": "crowded.",
+      "startMs": 1708,
+      "endMs": 2196
+    },
+    {
+      "text": "Ridership",
+      "startMs": 2196,
+      "endMs": 2739
+    },
+    {
+      "text": "in",
+      "startMs": 2739,
+      "endMs": 2902
+    },
+    {
+      "text": "the",
+      "startMs": 2902,
+      "endMs": 3119
+    },
+    {
+      "text": "first",
+      "startMs": 3119,
+      "endMs": 3445
+    },
+    {
+      "text": "half",
+      "startMs": 3445,
+      "endMs": 3716
+    },
+    {
+      "text": "of",
+      "startMs": 3716,
+      "endMs": 3879
+    },
+    {
+      "text": "2026",
+      "startMs": 3879,
+      "endMs": 4150
+    },
+    {
+      "text": "was",
+      "startMs": 4150,
+      "endMs": 4367
+    },
+    {
+      "text": "up",
+      "startMs": 4367,
+      "endMs": 4530
+    },
+    {
+      "text": "about",
+      "startMs": 4530,
+      "endMs": 4856
+    },
+    {
+      "text": "eleven",
+      "startMs": 4856,
+      "endMs": 5236
+    },
+    {
+      "text": "percent",
+      "startMs": 5236,
+      "endMs": 5670
+    },
+    {
+      "text": "on",
+      "startMs": 5670,
+      "endMs": 5833
+    },
+    {
+      "text": "a",
+      "startMs": 5833,
+      "endMs": 5942
+    },
+    {
+      "text": "year",
+      "startMs": 5942,
+      "endMs": 6213
+    },
+    {
+      "text": "earlier.",
+      "startMs": 6213,
+      "endMs": 6700
+    }
+  ],
+  "s35": [
+    {
+      "text": "That's",
+      "startMs": 120,
+      "endMs": 280
+    },
+    {
+      "text": "about",
+      "startMs": 320,
+      "endMs": 540
+    },
+    {
+      "text": "one",
+      "startMs": 680,
+      "endMs": 800
+    },
+    {
+      "text": "point",
+      "startMs": 900,
+      "endMs": 1140
+    },
+    {
+      "text": "one",
+      "startMs": 1220,
+      "endMs": 1360
+    },
+    {
+      "text": "million",
+      "startMs": 1440,
+      "endMs": 1700
+    },
+    {
+      "text": "trips",
+      "startMs": 1760,
+      "endMs": 1980
+    },
+    {
+      "text": "a",
+      "startMs": 2020,
+      "endMs": 2080
+    },
+    {
+      "text": "day.",
+      "startMs": 2120,
+      "endMs": 2360
+    },
+    {
+      "text": "The",
+      "startMs": 3160,
+      "endMs": 3240
+    },
+    {
+      "text": "operator",
+      "startMs": 3320,
+      "endMs": 3720
+    },
+    {
+      "text": "had",
+      "startMs": 3760,
+      "endMs": 3900
+    },
+    {
+      "text": "planned",
+      "startMs": 3940,
+      "endMs": 4200
+    },
+    {
+      "text": "for",
+      "startMs": 4240,
+      "endMs": 4400
+    },
+    {
+      "text": "three",
+      "startMs": 4440,
+      "endMs": 4620
+    },
+    {
+      "text": "to",
+      "startMs": 4660,
+      "endMs": 4760
+    },
+    {
+      "text": "four",
+      "startMs": 4820,
+      "endMs": 4960
+    },
+    {
+      "text": "percent",
+      "startMs": 5000,
+      "endMs": 5300
+    },
+    {
+      "text": "growth,",
+      "startMs": 5360,
+      "endMs": 5600
+    },
+    {
+      "text": "not",
+      "startMs": 5700,
+      "endMs": 5820
+    },
+    {
+      "text": "eleven",
+      "startMs": 5860,
+      "endMs": 6200
+    }
+  ],
+  "s36": [
+    {
+      "text": "On",
+      "startMs": 80,
+      "endMs": 221
+    },
+    {
+      "text": "the",
+      "startMs": 221,
+      "endMs": 409
+    },
+    {
+      "text": "busiest",
+      "startMs": 409,
+      "endMs": 784
+    },
+    {
+      "text": "days,",
+      "startMs": 784,
+      "endMs": 1066
+    },
+    {
+      "text": "the",
+      "startMs": 1066,
+      "endMs": 1254
+    },
+    {
+      "text": "count",
+      "startMs": 1254,
+      "endMs": 1536
+    },
+    {
+      "text": "can",
+      "startMs": 1536,
+      "endMs": 1724
+    },
+    {
+      "text": "reach",
+      "startMs": 1724,
+      "endMs": 2006
+    },
+    {
+      "text": "one",
+      "startMs": 2006,
+      "endMs": 2194
+    },
+    {
+      "text": "point",
+      "startMs": 2194,
+      "endMs": 2476
+    },
+    {
+      "text": "three",
+      "startMs": 2476,
+      "endMs": 2758
+    },
+    {
+      "text": "million.",
+      "startMs": 2758,
+      "endMs": 3180
+    },
+    {
+      "text": "That's",
+      "startMs": 3180,
+      "endMs": 3509
+    },
+    {
+      "text": "two",
+      "startMs": 3509,
+      "endMs": 3697
+    },
+    {
+      "text": "hundred",
+      "startMs": 3697,
+      "endMs": 4072
+    },
+    {
+      "text": "thousand",
+      "startMs": 4072,
+      "endMs": 4494
+    },
+    {
+      "text": "more",
+      "startMs": 4494,
+      "endMs": 4729
+    },
+    {
+      "text": "trips",
+      "startMs": 4729,
+      "endMs": 5011
+    },
+    {
+      "text": "than",
+      "startMs": 5011,
+      "endMs": 5246
+    },
+    {
+      "text": "an",
+      "startMs": 5246,
+      "endMs": 5387
+    },
+    {
+      "text": "ordinary",
+      "startMs": 5387,
+      "endMs": 5809
+    },
+    {
+      "text": "day.",
+      "startMs": 5809,
+      "endMs": 6040
+    }
+  ],
+  "s37": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 294
+    },
+    {
+      "text": "operator",
+      "startMs": 294,
+      "endMs": 730
+    },
+    {
+      "text": "calculated",
+      "startMs": 730,
+      "endMs": 1263
+    },
+    {
+      "text": "it",
+      "startMs": 1263,
+      "endMs": 1408
+    },
+    {
+      "text": "needs",
+      "startMs": 1408,
+      "endMs": 1699
+    },
+    {
+      "text": "one",
+      "startMs": 1699,
+      "endMs": 1893
+    },
+    {
+      "text": "hundred",
+      "startMs": 1893,
+      "endMs": 2281
+    },
+    {
+      "text": "and",
+      "startMs": 2281,
+      "endMs": 2475
+    },
+    {
+      "text": "five",
+      "startMs": 2475,
+      "endMs": 2717
+    },
+    {
+      "text": "trains.",
+      "startMs": 2717,
+      "endMs": 3105
+    },
+    {
+      "text": "It",
+      "startMs": 3105,
+      "endMs": 3250
+    },
+    {
+      "text": "has",
+      "startMs": 3250,
+      "endMs": 3444
+    },
+    {
+      "text": "one",
+      "startMs": 3444,
+      "endMs": 3638
+    },
+    {
+      "text": "hundred",
+      "startMs": 3638,
+      "endMs": 4026
+    },
+    {
+      "text": "and",
+      "startMs": 4026,
+      "endMs": 4220
+    },
+    {
+      "text": "two.",
+      "startMs": 4220,
+      "endMs": 4460
+    }
+  ],
+  "s38": [
+    {
+      "text": "And",
+      "startMs": 80,
+      "endMs": 180
+    },
+    {
+      "text": "the",
+      "startMs": 200,
+      "endMs": 280
+    },
+    {
+      "text": "gap",
+      "startMs": 360,
+      "endMs": 580
+    },
+    {
+      "text": "was",
+      "startMs": 620,
+      "endMs": 720
+    },
+    {
+      "text": "about",
+      "startMs": 780,
+      "endMs": 980
+    },
+    {
+      "text": "to",
+      "startMs": 1020,
+      "endMs": 1100
+    },
+    {
+      "text": "grow.",
+      "startMs": 1140,
+      "endMs": 1420
+    },
+    {
+      "text": "Thirteen",
+      "startMs": 2620,
+      "endMs": 3080
+    },
+    {
+      "text": "former",
+      "startMs": 3220,
+      "endMs": 3460
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 3560,
+      "endMs": 3900
+    },
+    {
+      "text": "Metro",
+      "startMs": 3980,
+      "endMs": 4260
+    },
+    {
+      "text": "trains",
+      "startMs": 4360,
+      "endMs": 4660
+    },
+    {
+      "text": "were",
+      "startMs": 4700,
+      "endMs": 4840
+    },
+    {
+      "text": "due",
+      "startMs": 4880,
+      "endMs": 4980
+    },
+    {
+      "text": "to",
+      "startMs": 5020,
+      "endMs": 5080
+    },
+    {
+      "text": "retire",
+      "startMs": 5120,
+      "endMs": 5500
+    },
+    {
+      "text": "this",
+      "startMs": 5560,
+      "endMs": 5720
+    },
+    {
+      "text": "year",
+      "startMs": 5760,
+      "endMs": 5920
+    }
+  ],
+  "s39": [
+    {
+      "text": "A",
+      "startMs": 80,
+      "endMs": 140
+    },
+    {
+      "text": "new",
+      "startMs": 180,
+      "endMs": 340
+    },
+    {
+      "text": "train",
+      "startMs": 400,
+      "endMs": 620
+    },
+    {
+      "text": "takes",
+      "startMs": 680,
+      "endMs": 900
+    },
+    {
+      "text": "one",
+      "startMs": 960,
+      "endMs": 1080
+    },
+    {
+      "text": "to",
+      "startMs": 1120,
+      "endMs": 1200
+    },
+    {
+      "text": "two",
+      "startMs": 1260,
+      "endMs": 1400
+    },
+    {
+      "text": "years",
+      "startMs": 1500,
+      "endMs": 1740
+    },
+    {
+      "text": "from",
+      "startMs": 1780,
+      "endMs": 1940
+    },
+    {
+      "text": "order",
+      "startMs": 2000,
+      "endMs": 2200
+    },
+    {
+      "text": "to",
+      "startMs": 2260,
+      "endMs": 2320
+    },
+    {
+      "text": "delivery.",
+      "startMs": 2360,
+      "endMs": 2800
+    },
+    {
+      "text": "An",
+      "startMs": 3680,
+      "endMs": 3820
+    },
+    {
+      "text": "order",
+      "startMs": 3880,
+      "endMs": 4100
+    },
+    {
+      "text": "signed",
+      "startMs": 4220,
+      "endMs": 4460
+    },
+    {
+      "text": "in",
+      "startMs": 4500,
+      "endMs": 4600
+    },
+    {
+      "text": "January",
+      "startMs": 4680,
+      "endMs": 5160
+    },
+    {
+      "text": "2026",
+      "startMs": 5300,
+      "endMs": 5980
+    },
+    {
+      "text": "would",
+      "startMs": 6020,
+      "endMs": 6100
+    },
+    {
+      "text": "arrive",
+      "startMs": 6140,
+      "endMs": 6440
+    },
+    {
+      "text": "in",
+      "startMs": 6480,
+      "endMs": 6560
+    },
+    {
+      "text": "2027",
+      "startMs": 6720,
+      "endMs": 7440
+    },
+    {
+      "text": "at",
+      "startMs": 7480,
+      "endMs": 7540
+    },
+    {
+      "text": "the",
+      "startMs": 7580,
+      "endMs": 7640
+    },
+    {
+      "text": "earliest.",
+      "startMs": 7700,
+      "endMs": 8160
+    }
+  ],
+  "s40": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "in",
+      "startMs": 260,
+      "endMs": 340
+    },
+    {
+      "text": "September",
+      "startMs": 420,
+      "endMs": 860
+    },
+    {
+      "text": "2026,",
+      "startMs": 1080,
+      "endMs": 1880
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 2200,
+      "endMs": 2560
+    },
+    {
+      "text": "went",
+      "startMs": 2600,
+      "endMs": 2780
+    },
+    {
+      "text": "back",
+      "startMs": 2820,
+      "endMs": 2960
+    },
+    {
+      "text": "to",
+      "startMs": 3000,
+      "endMs": 3080
+    },
+    {
+      "text": "Tokyo",
+      "startMs": 3140,
+      "endMs": 3540
+    }
+  ],
+  "s41": [
+    {
+      "text": "On",
+      "startMs": 60,
+      "endMs": 263
+    },
+    {
+      "text": "September",
+      "startMs": 263,
+      "endMs": 938
+    },
+    {
+      "text": "23,",
+      "startMs": 938,
+      "endMs": 1208
+    },
+    {
+      "text": "the",
+      "startMs": 1208,
+      "endMs": 1478
+    },
+    {
+      "text": "head",
+      "startMs": 1478,
+      "endMs": 1816
+    },
+    {
+      "text": "of",
+      "startMs": 1816,
+      "endMs": 2019
+    },
+    {
+      "text": "the",
+      "startMs": 2019,
+      "endMs": 2289
+    },
+    {
+      "text": "national",
+      "startMs": 2289,
+      "endMs": 2897
+    },
+    {
+      "text": "railway",
+      "startMs": 2897,
+      "endMs": 3437
+    },
+    {
+      "text": "asked",
+      "startMs": 3437,
+      "endMs": 3842
+    },
+    {
+      "text": "parliament",
+      "startMs": 3842,
+      "endMs": 4585
+    },
+    {
+      "text": "to",
+      "startMs": 4585,
+      "endMs": 4788
+    },
+    {
+      "text": "allow",
+      "startMs": 4788,
+      "endMs": 5193
+    },
+    {
+      "text": "used",
+      "startMs": 5193,
+      "endMs": 5531
+    },
+    {
+      "text": "Japanese",
+      "startMs": 5531,
+      "endMs": 6139
+    },
+    {
+      "text": "trains",
+      "startMs": 6139,
+      "endMs": 6612
+    },
+    {
+      "text": "again,",
+      "startMs": 6612,
+      "endMs": 7085
+    },
+    {
+      "text": "as",
+      "startMs": 7085,
+      "endMs": 7288
+    },
+    {
+      "text": "a",
+      "startMs": 7288,
+      "endMs": 7423
+    },
+    {
+      "text": "stopgap",
+      "startMs": 7423,
+      "endMs": 7963
+    },
+    {
+      "text": "for",
+      "startMs": 7963,
+      "endMs": 8233
+    },
+    {
+      "text": "2026",
+      "startMs": 8233,
+      "endMs": 8571
+    },
+    {
+      "text": "and",
+      "startMs": 8571,
+      "endMs": 8841
+    },
+    {
+      "text": "2027.",
+      "startMs": 8841,
+      "endMs": 9240
+    }
+  ],
+  "s42": [
+    {
+      "text": "Parliament's",
+      "startMs": 100,
+      "endMs": 520
+    },
+    {
+      "text": "committee",
+      "startMs": 580,
+      "endMs": 880
+    },
+    {
+      "text": "agreed.",
+      "startMs": 940,
+      "endMs": 1340
+    },
+    {
+      "text": "The",
+      "startMs": 2260,
+      "endMs": 2360
+    },
+    {
+      "text": "order",
+      "startMs": 2400,
+      "endMs": 2600
+    },
+    {
+      "text": "would",
+      "startMs": 2640,
+      "endMs": 2740
+    },
+    {
+      "text": "be",
+      "startMs": 2780,
+      "endMs": 2900
+    },
+    {
+      "text": "twenty-three",
+      "startMs": 2980,
+      "endMs": 3480
+    },
+    {
+      "text": "used",
+      "startMs": 3600,
+      "endMs": 3800
+    },
+    {
+      "text": "trains",
+      "startMs": 3860,
+      "endMs": 4220
+    },
+    {
+      "text": "on",
+      "startMs": 4500,
+      "endMs": 4620
+    },
+    {
+      "text": "one",
+      "startMs": 4700,
+      "endMs": 4820
+    },
+    {
+      "text": "condition:",
+      "startMs": 4880,
+      "endMs": 5320
+    },
+    {
+      "text": "keep",
+      "startMs": 5960,
+      "endMs": 6140
+    },
+    {
+      "text": "building",
+      "startMs": 6200,
+      "endMs": 6460
+    },
+    {
+      "text": "up",
+      "startMs": 6520,
+      "endMs": 6640
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 6700,
+      "endMs": 7280
+    },
+    {
+      "text": "own",
+      "startMs": 7360,
+      "endMs": 7520
+    },
+    {
+      "text": "train",
+      "startMs": 7580,
+      "endMs": 7820
+    },
+    {
+      "text": "industry.",
+      "startMs": 7880,
+      "endMs": 8320
+    }
+  ],
+  "s43": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 318
+    },
+    {
+      "text": "pressure",
+      "startMs": 318,
+      "endMs": 808
+    },
+    {
+      "text": "behind",
+      "startMs": 808,
+      "endMs": 1189
+    },
+    {
+      "text": "that",
+      "startMs": 1189,
+      "endMs": 1461
+    },
+    {
+      "text": "vote",
+      "startMs": 1461,
+      "endMs": 1733
+    },
+    {
+      "text": "was",
+      "startMs": 1733,
+      "endMs": 1951
+    },
+    {
+      "text": "a",
+      "startMs": 1951,
+      "endMs": 2060
+    },
+    {
+      "text": "forecast",
+      "startMs": 2060,
+      "endMs": 2550
+    },
+    {
+      "text": "of",
+      "startMs": 2550,
+      "endMs": 2713
+    },
+    {
+      "text": "three",
+      "startMs": 2713,
+      "endMs": 3040
+    },
+    {
+      "text": "hundred",
+      "startMs": 3040,
+      "endMs": 3476
+    },
+    {
+      "text": "and",
+      "startMs": 3476,
+      "endMs": 3694
+    },
+    {
+      "text": "sixty-nine",
+      "startMs": 3694,
+      "endMs": 4293
+    },
+    {
+      "text": "million",
+      "startMs": 4293,
+      "endMs": 4729
+    },
+    {
+      "text": "passenger",
+      "startMs": 4729,
+      "endMs": 5274
+    },
+    {
+      "text": "trips",
+      "startMs": 5274,
+      "endMs": 5601
+    },
+    {
+      "text": "in",
+      "startMs": 5601,
+      "endMs": 5764
+    },
+    {
+      "text": "2026.",
+      "startMs": 5764,
+      "endMs": 6091
+    },
+    {
+      "text": "Every",
+      "startMs": 6091,
+      "endMs": 6418
+    },
+    {
+      "text": "missing",
+      "startMs": 6418,
+      "endMs": 6854
+    },
+    {
+      "text": "train",
+      "startMs": 6854,
+      "endMs": 7181
+    },
+    {
+      "text": "makes",
+      "startMs": 7181,
+      "endMs": 7508
+    },
+    {
+      "text": "the",
+      "startMs": 7508,
+      "endMs": 7726
+    },
+    {
+      "text": "remaining",
+      "startMs": 7726,
+      "endMs": 8271
+    },
+    {
+      "text": "ones",
+      "startMs": 8271,
+      "endMs": 8543
+    },
+    {
+      "text": "fuller.",
+      "startMs": 8543,
+      "endMs": 8979
+    }
+  ],
+  "s44": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "reasoning",
+      "startMs": 220,
+      "endMs": 600
+    },
+    {
+      "text": "was",
+      "startMs": 640,
+      "endMs": 760
+    },
+    {
+      "text": "time.",
+      "startMs": 820,
+      "endMs": 1120
+    },
+    {
+      "text": "A",
+      "startMs": 2040,
+      "endMs": 2120
+    },
+    {
+      "text": "used",
+      "startMs": 2220,
+      "endMs": 2420
+    },
+    {
+      "text": "train",
+      "startMs": 2480,
+      "endMs": 2720
+    },
+    {
+      "text": "could",
+      "startMs": 2760,
+      "endMs": 2860
+    },
+    {
+      "text": "arrive",
+      "startMs": 2900,
+      "endMs": 3160
+    },
+    {
+      "text": "in",
+      "startMs": 3200,
+      "endMs": 3320
+    },
+    {
+      "text": "one",
+      "startMs": 3440,
+      "endMs": 3540
+    },
+    {
+      "text": "to",
+      "startMs": 3600,
+      "endMs": 3680
+    },
+    {
+      "text": "two",
+      "startMs": 3740,
+      "endMs": 3840
+    },
+    {
+      "text": "months.",
+      "startMs": 3940,
+      "endMs": 4240
+    },
+    {
+      "text": "A",
+      "startMs": 4960,
+      "endMs": 5000
+    },
+    {
+      "text": "new",
+      "startMs": 5060,
+      "endMs": 5160
+    },
+    {
+      "text": "one",
+      "startMs": 5200,
+      "endMs": 5320
+    },
+    {
+      "text": "takes",
+      "startMs": 5380,
+      "endMs": 5620
+    },
+    {
+      "text": "one",
+      "startMs": 5720,
+      "endMs": 5840
+    },
+    {
+      "text": "to",
+      "startMs": 5900,
+      "endMs": 5980
+    },
+    {
+      "text": "two",
+      "startMs": 6020,
+      "endMs": 6160
+    },
+    {
+      "text": "years.",
+      "startMs": 6240,
+      "endMs": 6600
+    }
+  ],
+  "s45": [
+    {
+      "text": "Then",
+      "startMs": 120,
+      "endMs": 414
+    },
+    {
+      "text": "it",
+      "startMs": 414,
+      "endMs": 590
+    },
+    {
+      "text": "hit",
+      "startMs": 590,
+      "endMs": 825
+    },
+    {
+      "text": "a",
+      "startMs": 825,
+      "endMs": 943
+    },
+    {
+      "text": "rule.",
+      "startMs": 943,
+      "endMs": 1296
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 1296,
+      "endMs": 2001
+    },
+    {
+      "text": "trade",
+      "startMs": 2001,
+      "endMs": 2354
+    },
+    {
+      "text": "ministry",
+      "startMs": 2354,
+      "endMs": 2883
+    },
+    {
+      "text": "only",
+      "startMs": 2883,
+      "endMs": 3177
+    },
+    {
+      "text": "allows",
+      "startMs": 3177,
+      "endMs": 3588
+    },
+    {
+      "text": "used",
+      "startMs": 3588,
+      "endMs": 3882
+    },
+    {
+      "text": "capital",
+      "startMs": 3882,
+      "endMs": 4352
+    },
+    {
+      "text": "goods",
+      "startMs": 4352,
+      "endMs": 4705
+    },
+    {
+      "text": "like",
+      "startMs": 4705,
+      "endMs": 4999
+    },
+    {
+      "text": "these",
+      "startMs": 4999,
+      "endMs": 5352
+    },
+    {
+      "text": "up",
+      "startMs": 5352,
+      "endMs": 5528
+    },
+    {
+      "text": "to",
+      "startMs": 5528,
+      "endMs": 5704
+    },
+    {
+      "text": "twenty",
+      "startMs": 5704,
+      "endMs": 6115
+    },
+    {
+      "text": "years",
+      "startMs": 6115,
+      "endMs": 6468
+    },
+    {
+      "text": "old.",
+      "startMs": 6468,
+      "endMs": 6760
+    }
+  ],
+  "s46": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 315
+    },
+    {
+      "text": "trains",
+      "startMs": 315,
+      "endMs": 691
+    },
+    {
+      "text": "on",
+      "startMs": 691,
+      "endMs": 852
+    },
+    {
+      "text": "offer",
+      "startMs": 852,
+      "endMs": 1174
+    },
+    {
+      "text": "were",
+      "startMs": 1174,
+      "endMs": 1443
+    },
+    {
+      "text": "twenty-five",
+      "startMs": 1443,
+      "endMs": 2088
+    },
+    {
+      "text": "to",
+      "startMs": 2088,
+      "endMs": 2249
+    },
+    {
+      "text": "twenty-eight",
+      "startMs": 2249,
+      "endMs": 2948
+    },
+    {
+      "text": "years",
+      "startMs": 2948,
+      "endMs": 3270
+    },
+    {
+      "text": "old.",
+      "startMs": 3270,
+      "endMs": 3539
+    },
+    {
+      "text": "On",
+      "startMs": 3539,
+      "endMs": 3700
+    },
+    {
+      "text": "average,",
+      "startMs": 3700,
+      "endMs": 4184
+    },
+    {
+      "text": "they",
+      "startMs": 4184,
+      "endMs": 4453
+    },
+    {
+      "text": "had",
+      "startMs": 4453,
+      "endMs": 4668
+    },
+    {
+      "text": "been",
+      "startMs": 4668,
+      "endMs": 4937
+    },
+    {
+      "text": "carrying",
+      "startMs": 4937,
+      "endMs": 5421
+    },
+    {
+      "text": "passengers",
+      "startMs": 5421,
+      "endMs": 6012
+    },
+    {
+      "text": "in",
+      "startMs": 6012,
+      "endMs": 6173
+    },
+    {
+      "text": "Japan",
+      "startMs": 6173,
+      "endMs": 6495
+    },
+    {
+      "text": "since",
+      "startMs": 6495,
+      "endMs": 6817
+    },
+    {
+      "text": "1998.",
+      "startMs": 6817,
+      "endMs": 7139
+    }
+  ],
+  "s47": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 340
+    },
+    {
+      "text": "transport",
+      "startMs": 340,
+      "endMs": 940
+    },
+    {
+      "text": "ministry",
+      "startMs": 940,
+      "endMs": 1480
+    },
+    {
+      "text": "added",
+      "startMs": 1480,
+      "endMs": 1840
+    },
+    {
+      "text": "another",
+      "startMs": 1840,
+      "endMs": 2320
+    },
+    {
+      "text": "problem.",
+      "startMs": 2320,
+      "endMs": 2860
+    },
+    {
+      "text": "Hand-me-downs",
+      "startMs": 2860,
+      "endMs": 3700
+    },
+    {
+      "text": "wear",
+      "startMs": 3700,
+      "endMs": 4000
+    },
+    {
+      "text": "out.",
+      "startMs": 4000,
+      "endMs": 4300
+    },
+    {
+      "text": "A",
+      "startMs": 4300,
+      "endMs": 4420
+    },
+    {
+      "text": "train",
+      "startMs": 4420,
+      "endMs": 4780
+    },
+    {
+      "text": "used",
+      "startMs": 4780,
+      "endMs": 5080
+    },
+    {
+      "text": "for",
+      "startMs": 5080,
+      "endMs": 5320
+    },
+    {
+      "text": "twenty",
+      "startMs": 5320,
+      "endMs": 5740
+    },
+    {
+      "text": "to",
+      "startMs": 5740,
+      "endMs": 5920
+    },
+    {
+      "text": "thirty",
+      "startMs": 5920,
+      "endMs": 6340
+    },
+    {
+      "text": "years",
+      "startMs": 6340,
+      "endMs": 6700
+    },
+    {
+      "text": "in",
+      "startMs": 6700,
+      "endMs": 6880
+    },
+    {
+      "text": "Japan",
+      "startMs": 6880,
+      "endMs": 7240
+    },
+    {
+      "text": "might",
+      "startMs": 7240,
+      "endMs": 7600
+    },
+    {
+      "text": "have",
+      "startMs": 7600,
+      "endMs": 7900
+    },
+    {
+      "text": "only",
+      "startMs": 7900,
+      "endMs": 8200
+    },
+    {
+      "text": "about",
+      "startMs": 8200,
+      "endMs": 8560
+    },
+    {
+      "text": "ten",
+      "startMs": 8560,
+      "endMs": 8800
+    },
+    {
+      "text": "years",
+      "startMs": 8800,
+      "endMs": 9160
+    },
+    {
+      "text": "left.",
+      "startMs": 9160,
+      "endMs": 9520
+    },
+    {
+      "text": "After",
+      "startMs": 9520,
+      "endMs": 9880
+    },
+    {
+      "text": "that,",
+      "startMs": 9880,
+      "endMs": 10240
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 10240,
+      "endMs": 10720
+    },
+    {
+      "text": "would",
+      "startMs": 10720,
+      "endMs": 11080
+    },
+    {
+      "text": "be",
+      "startMs": 11080,
+      "endMs": 11260
+    },
+    {
+      "text": "shopping",
+      "startMs": 11260,
+      "endMs": 11800
+    },
+    {
+      "text": "for",
+      "startMs": 11800,
+      "endMs": 12040
+    },
+    {
+      "text": "trains",
+      "startMs": 12040,
+      "endMs": 12460
+    },
+    {
+      "text": "again.",
+      "startMs": 12460,
+      "endMs": 12880
+    }
+  ],
+  "s48": [
+    {
+      "text": "Old",
+      "startMs": 80,
+      "endMs": 336
+    },
+    {
+      "text": "trains",
+      "startMs": 336,
+      "endMs": 784
+    },
+    {
+      "text": "are",
+      "startMs": 784,
+      "endMs": 1040
+    },
+    {
+      "text": "also",
+      "startMs": 1040,
+      "endMs": 1360
+    },
+    {
+      "text": "harder",
+      "startMs": 1360,
+      "endMs": 1808
+    },
+    {
+      "text": "to",
+      "startMs": 1808,
+      "endMs": 2000
+    },
+    {
+      "text": "keep",
+      "startMs": 2000,
+      "endMs": 2320
+    },
+    {
+      "text": "running.",
+      "startMs": 2320,
+      "endMs": 2896
+    },
+    {
+      "text": "When",
+      "startMs": 2896,
+      "endMs": 3216
+    },
+    {
+      "text": "three",
+      "startMs": 3216,
+      "endMs": 3600
+    },
+    {
+      "text": "Japanese",
+      "startMs": 3600,
+      "endMs": 4176
+    },
+    {
+      "text": "series",
+      "startMs": 4176,
+      "endMs": 4624
+    },
+    {
+      "text": "retired",
+      "startMs": 4624,
+      "endMs": 5136
+    },
+    {
+      "text": "in",
+      "startMs": 5136,
+      "endMs": 5328
+    },
+    {
+      "text": "2025,",
+      "startMs": 5328,
+      "endMs": 5712
+    },
+    {
+      "text": "one",
+      "startMs": 5712,
+      "endMs": 5968
+    },
+    {
+      "text": "stated",
+      "startMs": 5968,
+      "endMs": 6416
+    },
+    {
+      "text": "reason",
+      "startMs": 6416,
+      "endMs": 6864
+    },
+    {
+      "text": "was",
+      "startMs": 6864,
+      "endMs": 7120
+    },
+    {
+      "text": "that",
+      "startMs": 7120,
+      "endMs": 7440
+    },
+    {
+      "text": "their",
+      "startMs": 7440,
+      "endMs": 7824
+    },
+    {
+      "text": "spare",
+      "startMs": 7824,
+      "endMs": 8208
+    },
+    {
+      "text": "parts",
+      "startMs": 8208,
+      "endMs": 8592
+    },
+    {
+      "text": "had",
+      "startMs": 8592,
+      "endMs": 8848
+    },
+    {
+      "text": "run",
+      "startMs": 8848,
+      "endMs": 9104
+    },
+    {
+      "text": "out.",
+      "startMs": 9104,
+      "endMs": 9420
+    }
+  ],
+  "s49": [
+    {
+      "text": "On",
+      "startMs": 80,
+      "endMs": 284
+    },
+    {
+      "text": "November",
+      "startMs": 284,
+      "endMs": 897
+    },
+    {
+      "text": "5,",
+      "startMs": 897,
+      "endMs": 1101
+    },
+    {
+      "text": "the",
+      "startMs": 1101,
+      "endMs": 1374
+    },
+    {
+      "text": "railway's",
+      "startMs": 1374,
+      "endMs": 2055
+    },
+    {
+      "text": "chief",
+      "startMs": 2055,
+      "endMs": 2464
+    },
+    {
+      "text": "executive",
+      "startMs": 2464,
+      "endMs": 3145
+    },
+    {
+      "text": "cancelled",
+      "startMs": 3145,
+      "endMs": 3826
+    },
+    {
+      "text": "the",
+      "startMs": 3826,
+      "endMs": 4099
+    },
+    {
+      "text": "plan.",
+      "startMs": 4099,
+      "endMs": 4508
+    },
+    {
+      "text": "His",
+      "startMs": 4508,
+      "endMs": 4781
+    },
+    {
+      "text": "words:",
+      "startMs": 4781,
+      "endMs": 5258
+    },
+    {
+      "text": "for",
+      "startMs": 5258,
+      "endMs": 5531
+    },
+    {
+      "text": "the",
+      "startMs": 5531,
+      "endMs": 5804
+    },
+    {
+      "text": "public,",
+      "startMs": 5804,
+      "endMs": 6349
+    },
+    {
+      "text": "it",
+      "startMs": 6349,
+      "endMs": 6553
+    },
+    {
+      "text": "must",
+      "startMs": 6553,
+      "endMs": 6894
+    },
+    {
+      "text": "be",
+      "startMs": 6894,
+      "endMs": 7098
+    },
+    {
+      "text": "new.",
+      "startMs": 7098,
+      "endMs": 7439
+    }
+  ],
+  "s50": [
+    {
+      "text": "Look",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "at",
+      "startMs": 220,
+      "endMs": 280
+    },
+    {
+      "text": "what",
+      "startMs": 320,
+      "endMs": 440
+    },
+    {
+      "text": "actually",
+      "startMs": 540,
+      "endMs": 880
+    },
+    {
+      "text": "blocked",
+      "startMs": 980,
+      "endMs": 1280
+    },
+    {
+      "text": "it.",
+      "startMs": 1340,
+      "endMs": 1460
+    },
+    {
+      "text": "Japan",
+      "startMs": 2240,
+      "endMs": 2580
+    },
+    {
+      "text": "still",
+      "startMs": 2660,
+      "endMs": 2820
+    },
+    {
+      "text": "has",
+      "startMs": 2860,
+      "endMs": 3020
+    },
+    {
+      "text": "trains",
+      "startMs": 3080,
+      "endMs": 3360
+    },
+    {
+      "text": "to",
+      "startMs": 3420,
+      "endMs": 3500
+    },
+    {
+      "text": "sell.",
+      "startMs": 3560,
+      "endMs": 3780
+    },
+    {
+      "text": "They",
+      "startMs": 4380,
+      "endMs": 4500
+    },
+    {
+      "text": "are",
+      "startMs": 4560,
+      "endMs": 4700
+    },
+    {
+      "text": "too",
+      "startMs": 4760,
+      "endMs": 4980
+    },
+    {
+      "text": "old",
+      "startMs": 5060,
+      "endMs": 5220
+    },
+    {
+      "text": "for",
+      "startMs": 5280,
+      "endMs": 5380
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 5440,
+      "endMs": 5960
+    },
+    {
+      "text": "own",
+      "startMs": 6040,
+      "endMs": 6200
+    },
+    {
+      "text": "rule",
+      "startMs": 6260,
+      "endMs": 6500
+    }
+  ],
+  "s51": [
+    {
+      "text": "Japan",
+      "startMs": 100,
+      "endMs": 421
+    },
+    {
+      "text": "keeps",
+      "startMs": 421,
+      "endMs": 742
+    },
+    {
+      "text": "its",
+      "startMs": 742,
+      "endMs": 956
+    },
+    {
+      "text": "commuter",
+      "startMs": 956,
+      "endMs": 1438
+    },
+    {
+      "text": "trains",
+      "startMs": 1438,
+      "endMs": 1813
+    },
+    {
+      "text": "for",
+      "startMs": 1813,
+      "endMs": 2027
+    },
+    {
+      "text": "twenty",
+      "startMs": 2027,
+      "endMs": 2402
+    },
+    {
+      "text": "to",
+      "startMs": 2402,
+      "endMs": 2563
+    },
+    {
+      "text": "thirty",
+      "startMs": 2563,
+      "endMs": 2938
+    },
+    {
+      "text": "years.",
+      "startMs": 2938,
+      "endMs": 3313
+    },
+    {
+      "text": "By",
+      "startMs": 3313,
+      "endMs": 3474
+    },
+    {
+      "text": "the",
+      "startMs": 3474,
+      "endMs": 3688
+    },
+    {
+      "text": "time",
+      "startMs": 3688,
+      "endMs": 3956
+    },
+    {
+      "text": "a",
+      "startMs": 3956,
+      "endMs": 4063
+    },
+    {
+      "text": "car",
+      "startMs": 4063,
+      "endMs": 4277
+    },
+    {
+      "text": "is",
+      "startMs": 4277,
+      "endMs": 4438
+    },
+    {
+      "text": "free",
+      "startMs": 4438,
+      "endMs": 4706
+    },
+    {
+      "text": "to",
+      "startMs": 4706,
+      "endMs": 4867
+    },
+    {
+      "text": "sell,",
+      "startMs": 4867,
+      "endMs": 5188
+    },
+    {
+      "text": "it's",
+      "startMs": 5188,
+      "endMs": 5456
+    },
+    {
+      "text": "usually",
+      "startMs": 5456,
+      "endMs": 5884
+    },
+    {
+      "text": "past",
+      "startMs": 5884,
+      "endMs": 6152
+    },
+    {
+      "text": "Jakarta's",
+      "startMs": 6152,
+      "endMs": 6687
+    },
+    {
+      "text": "limit.",
+      "startMs": 6687,
+      "endMs": 7060
+    }
+  ],
+  "s52": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 160
+    },
+    {
+      "text": "window",
+      "startMs": 220,
+      "endMs": 480
+    },
+    {
+      "text": "that",
+      "startMs": 520,
+      "endMs": 640
+    },
+    {
+      "text": "opened",
+      "startMs": 720,
+      "endMs": 960
+    },
+    {
+      "text": "in",
+      "startMs": 980,
+      "endMs": 1100
+    },
+    {
+      "text": "2000",
+      "startMs": 1140,
+      "endMs": 1740
+    },
+    {
+      "text": "closed",
+      "startMs": 1820,
+      "endMs": 2180
+    },
+    {
+      "text": "on",
+      "startMs": 2240,
+      "endMs": 2320
+    },
+    {
+      "text": "its",
+      "startMs": 2360,
+      "endMs": 2520
+    },
+    {
+      "text": "own.",
+      "startMs": 2600,
+      "endMs": 2820
+    },
+    {
+      "text": "The",
+      "startMs": 3660,
+      "endMs": 3740
+    },
+    {
+      "text": "supply",
+      "startMs": 3780,
+      "endMs": 4120
+    },
+    {
+      "text": "that",
+      "startMs": 4160,
+      "endMs": 4260
+    },
+    {
+      "text": "made",
+      "startMs": 4300,
+      "endMs": 4440
+    },
+    {
+      "text": "Jakarta's",
+      "startMs": 4480,
+      "endMs": 4900
+    },
+    {
+      "text": "network",
+      "startMs": 4960,
+      "endMs": 5280
+    },
+    {
+      "text": "cheap",
+      "startMs": 5340,
+      "endMs": 5600
+    },
+    {
+      "text": "now",
+      "startMs": 5660,
+      "endMs": 5840
+    },
+    {
+      "text": "ages",
+      "startMs": 5900,
+      "endMs": 6140
+    },
+    {
+      "text": "out",
+      "startMs": 6200,
+      "endMs": 6320
+    },
+    {
+      "text": "before",
+      "startMs": 6360,
+      "endMs": 6580
+    },
+    {
+      "text": "it",
+      "startMs": 6620,
+      "endMs": 6680
+    },
+    {
+      "text": "can",
+      "startMs": 6740,
+      "endMs": 6840
+    },
+    {
+      "text": "be",
+      "startMs": 6880,
+      "endMs": 6980
+    },
+    {
+      "text": "shipped",
+      "startMs": 7040,
+      "endMs": 7320
+    }
+  ],
+  "s53": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 293
+    },
+    {
+      "text": "what",
+      "startMs": 293,
+      "endMs": 615
+    },
+    {
+      "text": "do",
+      "startMs": 615,
+      "endMs": 808
+    },
+    {
+      "text": "commuters",
+      "startMs": 808,
+      "endMs": 1451
+    },
+    {
+      "text": "ride",
+      "startMs": 1451,
+      "endMs": 1773
+    },
+    {
+      "text": "next?",
+      "startMs": 1773,
+      "endMs": 2159
+    },
+    {
+      "text": "The",
+      "startMs": 2159,
+      "endMs": 2416
+    },
+    {
+      "text": "operator",
+      "startMs": 2416,
+      "endMs": 2995
+    },
+    {
+      "text": "had",
+      "startMs": 2995,
+      "endMs": 3252
+    },
+    {
+      "text": "three",
+      "startMs": 3252,
+      "endMs": 3638
+    },
+    {
+      "text": "options:",
+      "startMs": 3638,
+      "endMs": 4217
+    },
+    {
+      "text": "order",
+      "startMs": 4217,
+      "endMs": 4603
+    },
+    {
+      "text": "from",
+      "startMs": 4603,
+      "endMs": 4925
+    },
+    {
+      "text": "INKA,",
+      "startMs": 4925,
+      "endMs": 5311
+    },
+    {
+      "text": "keep",
+      "startMs": 5311,
+      "endMs": 5633
+    },
+    {
+      "text": "the",
+      "startMs": 5633,
+      "endMs": 5890
+    },
+    {
+      "text": "old",
+      "startMs": 5890,
+      "endMs": 6147
+    },
+    {
+      "text": "trains",
+      "startMs": 6147,
+      "endMs": 6597
+    },
+    {
+      "text": "running",
+      "startMs": 6597,
+      "endMs": 7112
+    },
+    {
+      "text": "longer,",
+      "startMs": 7112,
+      "endMs": 7627
+    },
+    {
+      "text": "or",
+      "startMs": 7627,
+      "endMs": 7820
+    },
+    {
+      "text": "import",
+      "startMs": 7820,
+      "endMs": 8270
+    },
+    {
+      "text": "used",
+      "startMs": 8270,
+      "endMs": 8592
+    },
+    {
+      "text": "ones.",
+      "startMs": 8592,
+      "endMs": 8978
+    }
+  ],
+  "s54": [
+    {
+      "text": "With",
+      "startMs": 120,
+      "endMs": 430
+    },
+    {
+      "text": "imports",
+      "startMs": 430,
+      "endMs": 926
+    },
+    {
+      "text": "off",
+      "startMs": 926,
+      "endMs": 1174
+    },
+    {
+      "text": "the",
+      "startMs": 1174,
+      "endMs": 1422
+    },
+    {
+      "text": "table,",
+      "startMs": 1422,
+      "endMs": 1856
+    },
+    {
+      "text": "that",
+      "startMs": 1856,
+      "endMs": 2166
+    },
+    {
+      "text": "leaves",
+      "startMs": 2166,
+      "endMs": 2600
+    },
+    {
+      "text": "two.",
+      "startMs": 2600,
+      "endMs": 2910
+    },
+    {
+      "text": "Old",
+      "startMs": 2910,
+      "endMs": 3158
+    },
+    {
+      "text": "Japanese",
+      "startMs": 3158,
+      "endMs": 3716
+    },
+    {
+      "text": "cars",
+      "startMs": 3716,
+      "endMs": 4026
+    },
+    {
+      "text": "stay",
+      "startMs": 4026,
+      "endMs": 4336
+    },
+    {
+      "text": "in",
+      "startMs": 4336,
+      "endMs": 4522
+    },
+    {
+      "text": "service",
+      "startMs": 4522,
+      "endMs": 5018
+    },
+    {
+      "text": "longer,",
+      "startMs": 5018,
+      "endMs": 5514
+    },
+    {
+      "text": "and",
+      "startMs": 5514,
+      "endMs": 5762
+    },
+    {
+      "text": "INKA",
+      "startMs": 5762,
+      "endMs": 6072
+    },
+    {
+      "text": "has",
+      "startMs": 6072,
+      "endMs": 6320
+    },
+    {
+      "text": "to",
+      "startMs": 6320,
+      "endMs": 6506
+    },
+    {
+      "text": "build",
+      "startMs": 6506,
+      "endMs": 6878
+    },
+    {
+      "text": "faster.",
+      "startMs": 6878,
+      "endMs": 7374
+    },
+    {
+      "text": "Some",
+      "startMs": 7374,
+      "endMs": 7684
+    },
+    {
+      "text": "of",
+      "startMs": 7684,
+      "endMs": 7870
+    },
+    {
+      "text": "those",
+      "startMs": 7870,
+      "endMs": 8242
+    },
+    {
+      "text": "cars",
+      "startMs": 8242,
+      "endMs": 8552
+    },
+    {
+      "text": "are",
+      "startMs": 8552,
+      "endMs": 8800
+    },
+    {
+      "text": "already",
+      "startMs": 8800,
+      "endMs": 9296
+    },
+    {
+      "text": "past",
+      "startMs": 9296,
+      "endMs": 9606
+    },
+    {
+      "text": "forty.",
+      "startMs": 9606,
+      "endMs": 10040
+    }
+  ],
+  "s55": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 160
+    },
+    {
+      "text": "money",
+      "startMs": 240,
+      "endMs": 420
+    },
+    {
+      "text": "for",
+      "startMs": 500,
+      "endMs": 600
+    },
+    {
+      "text": "new",
+      "startMs": 640,
+      "endMs": 780
+    },
+    {
+      "text": "trains",
+      "startMs": 840,
+      "endMs": 1160
+    },
+    {
+      "text": "was",
+      "startMs": 1220,
+      "endMs": 1400
+    },
+    {
+      "text": "already",
+      "startMs": 1480,
+      "endMs": 1800
+    },
+    {
+      "text": "approved.",
+      "startMs": 1840,
+      "endMs": 2320
+    },
+    {
+      "text": "A",
+      "startMs": 3220,
+      "endMs": 3280
+    },
+    {
+      "text": "year",
+      "startMs": 3340,
+      "endMs": 3480
+    },
+    {
+      "text": "earlier,",
+      "startMs": 3580,
+      "endMs": 3920
+    },
+    {
+      "text": "the",
+      "startMs": 4200,
+      "endMs": 4260
+    },
+    {
+      "text": "government",
+      "startMs": 4300,
+      "endMs": 4620
+    },
+    {
+      "text": "set",
+      "startMs": 4680,
+      "endMs": 4800
+    },
+    {
+      "text": "aside",
+      "startMs": 4840,
+      "endMs": 5140
+    },
+    {
+      "text": "five",
+      "startMs": 5260,
+      "endMs": 5500
+    },
+    {
+      "text": "trillion",
+      "startMs": 5620,
+      "endMs": 5960
+    },
+    {
+      "text": "rupiah",
+      "startMs": 6040,
+      "endMs": 6420
+    },
+    {
+      "text": "for",
+      "startMs": 6520,
+      "endMs": 6660
+    },
+    {
+      "text": "thirty",
+      "startMs": 6720,
+      "endMs": 6920
+    },
+    {
+      "text": "new",
+      "startMs": 7000,
+      "endMs": 7140
+    },
+    {
+      "text": "trains",
+      "startMs": 7180,
+      "endMs": 7580
+    },
+    {
+      "text": "due",
+      "startMs": 7960,
+      "endMs": 8180
+    },
+    {
+      "text": "within",
+      "startMs": 8300,
+      "endMs": 8500
+    },
+    {
+      "text": "a",
+      "startMs": 8540,
+      "endMs": 8600
+    },
+    {
+      "text": "year.",
+      "startMs": 8660,
+      "endMs": 8920
+    }
+  ],
+  "s56": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 325
+    },
+    {
+      "text": "longer",
+      "startMs": 325,
+      "endMs": 718
+    },
+    {
+      "text": "plan",
+      "startMs": 718,
+      "endMs": 999
+    },
+    {
+      "text": "is",
+      "startMs": 999,
+      "endMs": 1168
+    },
+    {
+      "text": "to",
+      "startMs": 1168,
+      "endMs": 1337
+    },
+    {
+      "text": "replace",
+      "startMs": 1337,
+      "endMs": 1787
+    },
+    {
+      "text": "eighty-four",
+      "startMs": 1787,
+      "endMs": 2461
+    },
+    {
+      "text": "old",
+      "startMs": 2461,
+      "endMs": 2686
+    },
+    {
+      "text": "Japanese",
+      "startMs": 2686,
+      "endMs": 3192
+    },
+    {
+      "text": "trains",
+      "startMs": 3192,
+      "endMs": 3585
+    },
+    {
+      "text": "with",
+      "startMs": 3585,
+      "endMs": 3866
+    },
+    {
+      "text": "INKA-built",
+      "startMs": 3866,
+      "endMs": 4484
+    },
+    {
+      "text": "ones,",
+      "startMs": 4484,
+      "endMs": 4821
+    },
+    {
+      "text": "and",
+      "startMs": 4821,
+      "endMs": 5046
+    },
+    {
+      "text": "raise",
+      "startMs": 5046,
+      "endMs": 5383
+    },
+    {
+      "text": "capacity",
+      "startMs": 5383,
+      "endMs": 5889
+    },
+    {
+      "text": "from",
+      "startMs": 5889,
+      "endMs": 6170
+    },
+    {
+      "text": "one",
+      "startMs": 6170,
+      "endMs": 6395
+    },
+    {
+      "text": "point",
+      "startMs": 6395,
+      "endMs": 6732
+    },
+    {
+      "text": "one",
+      "startMs": 6732,
+      "endMs": 6957
+    },
+    {
+      "text": "to",
+      "startMs": 6957,
+      "endMs": 7126
+    },
+    {
+      "text": "one",
+      "startMs": 7126,
+      "endMs": 7351
+    },
+    {
+      "text": "point",
+      "startMs": 7351,
+      "endMs": 7688
+    },
+    {
+      "text": "four",
+      "startMs": 7688,
+      "endMs": 7969
+    },
+    {
+      "text": "million",
+      "startMs": 7969,
+      "endMs": 8419
+    },
+    {
+      "text": "passengers",
+      "startMs": 8419,
+      "endMs": 9037
+    },
+    {
+      "text": "a",
+      "startMs": 9037,
+      "endMs": 9149
+    },
+    {
+      "text": "day",
+      "startMs": 9149,
+      "endMs": 9374
+    },
+    {
+      "text": "by",
+      "startMs": 9374,
+      "endMs": 9543
+    },
+    {
+      "text": "2030.",
+      "startMs": 9543,
+      "endMs": 9880
+    }
+  ],
+  "s57": [
+    {
+      "text": "For",
+      "startMs": 100,
+      "endMs": 311
+    },
+    {
+      "text": "twenty-five",
+      "startMs": 311,
+      "endMs": 945
+    },
+    {
+      "text": "years,",
+      "startMs": 945,
+      "endMs": 1315
+    },
+    {
+      "text": "Tokyo's",
+      "startMs": 1315,
+      "endMs": 1737
+    },
+    {
+      "text": "old",
+      "startMs": 1737,
+      "endMs": 1948
+    },
+    {
+      "text": "trains",
+      "startMs": 1948,
+      "endMs": 2318
+    },
+    {
+      "text": "let",
+      "startMs": 2318,
+      "endMs": 2529
+    },
+    {
+      "text": "Jakarta",
+      "startMs": 2529,
+      "endMs": 2951
+    },
+    {
+      "text": "grow",
+      "startMs": 2951,
+      "endMs": 3215
+    },
+    {
+      "text": "a",
+      "startMs": 3215,
+      "endMs": 3321
+    },
+    {
+      "text": "rail",
+      "startMs": 3321,
+      "endMs": 3585
+    },
+    {
+      "text": "network",
+      "startMs": 3585,
+      "endMs": 4007
+    },
+    {
+      "text": "it",
+      "startMs": 4007,
+      "endMs": 4165
+    },
+    {
+      "text": "couldn't",
+      "startMs": 4165,
+      "endMs": 4640
+    },
+    {
+      "text": "afford",
+      "startMs": 4640,
+      "endMs": 5010
+    },
+    {
+      "text": "to",
+      "startMs": 5010,
+      "endMs": 5168
+    },
+    {
+      "text": "buy",
+      "startMs": 5168,
+      "endMs": 5379
+    },
+    {
+      "text": "new.",
+      "startMs": 5379,
+      "endMs": 5643
+    },
+    {
+      "text": "The",
+      "startMs": 5643,
+      "endMs": 5854
+    },
+    {
+      "text": "age",
+      "startMs": 5854,
+      "endMs": 6065
+    },
+    {
+      "text": "rule",
+      "startMs": 6065,
+      "endMs": 6329
+    },
+    {
+      "text": "ended",
+      "startMs": 6329,
+      "endMs": 6646
+    },
+    {
+      "text": "that,",
+      "startMs": 6646,
+      "endMs": 6963
+    },
+    {
+      "text": "and",
+      "startMs": 6963,
+      "endMs": 7174
+    },
+    {
+      "text": "now",
+      "startMs": 7174,
+      "endMs": 7385
+    },
+    {
+      "text": "the",
+      "startMs": 7385,
+      "endMs": 7596
+    },
+    {
+      "text": "trains",
+      "startMs": 7596,
+      "endMs": 7966
+    },
+    {
+      "text": "have",
+      "startMs": 7966,
+      "endMs": 8230
+    },
+    {
+      "text": "to",
+      "startMs": 8230,
+      "endMs": 8388
+    },
+    {
+      "text": "be",
+      "startMs": 8388,
+      "endMs": 8546
+    },
+    {
+      "text": "built",
+      "startMs": 8546,
+      "endMs": 8863
+    },
+    {
+      "text": "at",
+      "startMs": 8863,
+      "endMs": 9021
+    },
+    {
+      "text": "home.",
+      "startMs": 9021,
+      "endMs": 9338
+    }
+  ],
+  "s58": [
+    {
+      "text": "Those",
+      "startMs": 100,
+      "endMs": 280
+    },
+    {
+      "text": "trains",
+      "startMs": 360,
+      "endMs": 620
+    },
+    {
+      "text": "carry",
+      "startMs": 680,
+      "endMs": 860
+    },
+    {
+      "text": "people",
+      "startMs": 940,
+      "endMs": 1240
+    },
+    {
+      "text": "to",
+      "startMs": 1340,
+      "endMs": 1480
+    },
+    {
+      "text": "and",
+      "startMs": 1520,
+      "endMs": 1620
+    },
+    {
+      "text": "from",
+      "startMs": 1700,
+      "endMs": 1880
+    },
+    {
+      "text": "one",
+      "startMs": 2040,
+      "endMs": 2160
+    },
+    {
+      "text": "island",
+      "startMs": 2240,
+      "endMs": 2520
+    },
+    {
+      "text": "that",
+      "startMs": 2780,
+      "endMs": 2860
+    },
+    {
+      "text": "holds",
+      "startMs": 2900,
+      "endMs": 3160
+    },
+    {
+      "text": "more",
+      "startMs": 3220,
+      "endMs": 3360
+    },
+    {
+      "text": "than",
+      "startMs": 3400,
+      "endMs": 3520
+    },
+    {
+      "text": "half",
+      "startMs": 3600,
+      "endMs": 3780
+    },
+    {
+      "text": "of",
+      "startMs": 3820,
+      "endMs": 3900
+    },
+    {
+      "text": "Indonesia.",
+      "startMs": 3920,
+      "endMs": 4480
+    },
+    {
+      "text": "Next",
+      "startMs": 5340,
+      "endMs": 5560
+    },
+    {
+      "text": "video,",
+      "startMs": 5600,
+      "endMs": 5940
+    },
+    {
+      "text": "why",
+      "startMs": 6600,
+      "endMs": 6800
+    },
+    {
+      "text": "so",
+      "startMs": 6940,
+      "endMs": 7080
+    },
+    {
+      "text": "many",
+      "startMs": 7140,
+      "endMs": 7340
+    },
+    {
+      "text": "Indonesians",
+      "startMs": 7380,
+      "endMs": 7920
+    },
+    {
+      "text": "live",
+      "startMs": 8020,
+      "endMs": 8160
+    },
+    {
+      "text": "on",
+      "startMs": 8200,
+      "endMs": 8300
+    },
+    {
+      "text": "Java",
+      "startMs": 8380,
+      "endMs": 8740
+    }
+  ]
+}

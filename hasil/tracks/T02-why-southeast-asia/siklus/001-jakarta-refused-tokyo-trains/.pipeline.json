@@ -1,0 +1,70 @@
+{
+  "log": [
+    {
+      "tahap": "visual",
+      "kode": 0,
+      "detik": 0,
+      "waktu": "2026-11-25T06:52:29.983Z"
+    },
+    {
+      "tahap": "kontrak",
+      "kode": 0,
+      "detik": 0,
+      "waktu": "2026-11-25T06:52:30.368Z"
+    },
+    {
+      "tahap": "tts-en",
+      "kode": 0,
+      "detik": 21,
+      "waktu": "2026-11-25T06:52:51.917Z"
+    },
+    {
+      "tahap": "caption-en",
+      "kode": 0,
+      "detik": 45,
+      "waktu": "2026-11-25T06:53:37.021Z"
+    },
+    {
+      "tahap": "adegan",
+      "kode": 0,
+      "detik": 0,
+      "waktu": "2026-11-25T06:54:31.037Z"
+    },
+    {
+      "tahap": "visual",
+      "kode": 0,
+      "detik": 0,
+      "waktu": "2026-11-25T06:54:36.158Z"
+    },
+    {
+      "tahap": "kontrak",
+      "kode": 0,
+      "detik": 0,
+      "waktu": "2026-11-25T06:54:36.357Z"
+    },
+    {
+      "tahap": "render",
+      "kode": 0,
+      "detik": 440,
+      "waktu": "2026-11-25T07:01:56.504Z"
+    },
+    {
+      "tahap": "thumbnail",
+      "kode": 0,
+      "detik": 8,
+      "waktu": "2026-11-25T07:02:04.980Z"
+    },
+    {
+      "tahap": "qa",
+      "kode": 0,
+      "detik": 0,
+      "waktu": "2026-11-25T07:02:05.181Z"
+    },
+    {
+      "tahap": "publish-plan",
+      "kode": 1,
+      "detik": 0,
+      "waktu": "2026-11-25T07:02:05.379Z"
+    }
+  ]
+}

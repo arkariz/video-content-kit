@@ -1,0 +1,69 @@
+{
+  "cycle": "001-jakarta-refused-tokyo-trains",
+  "footage": [
+    {
+      "scene_id": "s02",
+      "catalog_key": "lic:s02-s17-rangkaian-eks-jepang-di-peron-01.mp4",
+      "file": "footage/T02/001/s02.mp4"
+    },
+    {
+      "scene_id": "s17",
+      "catalog_key": "lic:s02-s17-rangkaian-eks-jepang-di-peron-02.mp4",
+      "file": "footage/T02/001/s17.mp4"
+    },
+    {
+      "scene_id": "s22",
+      "catalog_key": "lic:s20-s22-latar.mp4",
+      "file": "footage/T02/001/s22.mp4"
+    },
+    {
+      "scene_id": "s31",
+      "catalog_key": "lic:s31-s53.mp4",
+      "file": "footage/T02/001/s31.mp4"
+    },
+    {
+      "scene_id": "s34",
+      "catalog_key": "lic:s34-s36-kepadatan.mp4",
+      "file": "footage/T02/001/s34.mp4"
+    },
+    {
+      "scene_id": "s44",
+      "catalog_key": "pixabay:129181",
+      "file": "footage/T02/001/s44.mp4"
+    }
+  ],
+  "renders": [
+    {
+      "file": "render/T02/001/Short9x16-A1-why-tokyo-trains-fit-en.mp4",
+      "comp": "Short9x16",
+      "lang": "en",
+      "cut": "A1-why-tokyo-trains-fit"
+    },
+    {
+      "file": "render/T02/001/Short9x16-A2-too-old-to-import-en.mp4",
+      "comp": "Short9x16",
+      "lang": "en",
+      "cut": "A2-too-old-to-import"
+    },
+    {
+      "file": "render/T02/001/Thumbnail-A.png",
+      "comp": "Thumbnail"
+    },
+    {
+      "file": "render/T02/001/Thumbnail-B.png",
+      "comp": "Thumbnail"
+    },
+    {
+      "file": "render/T02/001/Master16x9-en.mp4",
+      "comp": "Master16x9",
+      "lang": "en",
+      "cut": null
+    }
+  ],
+  "voice": {
+    "type": "elevenlabs-non-clone",
+    "paket": "starter",
+    "en": "ELEVENLABS_VOICE_ID (.env)",
+    "dibuat": "2026-11-25"
+  }
+}

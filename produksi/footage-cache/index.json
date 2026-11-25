@@ -71,6 +71,64 @@
       "used_in": [
         "T01/001/s50"
       ]
+    },
+    "lic:s02-s17-rangkaian-eks-jepang-di-peron-01.mp4": {
+      "source": "https://www.youtube.com/watch?v=8goPWyjEAVg",
+      "license": "CC BY (YouTube, Creative Commons Attribution license)",
+      "creator": "Alif Putra Banyuaji",
+      "title": "[4K] Stasiun Jakarta Kota: Kompilasi Kereta TM 6000, JR 205 | KRL Commuter Line (4/6)",
+      "downloaded": "2026-11-25",
+      "used_in": [
+        "T02/001/s02"
+      ]
+    },
+    "lic:s02-s17-rangkaian-eks-jepang-di-peron-02.mp4": {
+      "source": "https://www.youtube.com/watch?v=8goPWyjEAVg",
+      "license": "CC BY (YouTube, Creative Commons Attribution license)",
+      "creator": "Alif Putra Banyuaji",
+      "title": "[4K] Stasiun Jakarta Kota: Kompilasi Kereta TM 6000, JR 205 | KRL Commuter Line (4/6)",
+      "downloaded": "2026-11-25",
+      "used_in": [
+        "T02/001/s17"
+      ]
+    },
+    "lic:s20-s22-latar.mp4": {
+      "source": "https://www.youtube.com/watch?v=fMrVbP9zMDs",
+      "license": "CC BY (YouTube, Creative Commons Attribution license)",
+      "creator": "Java Railfanning",
+      "title": "Delivery of Old Jakarta Commuter Line Trains Set for Maintenance and Many Others",
+      "downloaded": "2026-11-25",
+      "used_in": [
+        "T02/001/s22"
+      ]
+    },
+    "lic:s31-s53.mp4": {
+      "source": "https://www.youtube.com/watch?v=EHxDVzOogME",
+      "license": "CC BY (YouTube, Creative Commons Attribution license)",
+      "creator": "Alif Putra Banyuaji",
+      "title": "[4K] Hunting KRL Baru CLI-125 buatan CRRC di Stasiun Mangga Besar",
+      "downloaded": "2026-11-25",
+      "used_in": [
+        "T02/001/s31"
+      ]
+    },
+    "lic:s34-s36-kepadatan.mp4": {
+      "source": "https://www.youtube.com/watch?v=eoD8fltls2s",
+      "license": "CC BY (YouTube, Creative Commons Attribution license)",
+      "creator": "Bang Acoy",
+      "title": "STASIUN KERETA API INI SIBUK SEKALI‼️ JR 205, TM 6000, iE305/CLI-225, CRRC CLI-125/SFC120-V",
+      "downloaded": "2026-11-25",
+      "used_in": [
+        "T02/001/s34"
+      ]
+    },
+    "pixabay:129181": {
+      "source": "https://pixabay.com/videos/id-129181/",
+      "license": "Pixabay Content License",
+      "downloaded": "2026-11-25",
+      "used_in": [
+        "T02/001/s44"
+      ]
     }
   }
 }

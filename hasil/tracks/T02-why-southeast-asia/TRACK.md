@@ -8,10 +8,10 @@ channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "001-jakarta-refused-tokyo-trains"
-langkah_berikutnya: "siklus 001: produksi di Claude Code. Pratinjau adegan diorama (scripts/produksi/preview-stage.mjs), salin klip produksi/footage-lisensi/T02/ bila belum ada, lalu node --env-file=.env scripts/pipeline/run.mjs --track T02 --siklus 001. Tempel atribusi credits.md ke deskripsi saat 06-publish"
+langkah_berikutnya: "siklus 001: kreator menonton paket review (hasil/review/T02-001-jakarta-refused-tokyo-trains/index.html) dan menjalankan pemeriksaan manual 05-qa.auto.md; Shorts menunggu perbaikan framing 9:16 di sesi terpisah; lalu approve.mjs (SETUJU) atau revisi"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: null
+menunggu_keputusan: "Review video siklus 001: setujui (SETUJU) atau minta revisi"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -51,7 +51,7 @@ Skor niche 79. "why indonesia" punya 11 video di atas 10 ribu view dalam 90 hari
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001 | Jakarta Just Refused Tokyo's Old Trains. Here's Why | naskah | target 2026-12-07 | uji-V2, variasi A |
+| 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | qa | target 2026-12-07 | uji-V2, variasi A |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -85,3 +85,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Dua klip CC BY ditambah (s31-s53, s34-s36-kepadatan), dipasang di s31 dan s34 menggantikan krl-04 dan krl-03. Sumber s31-s53 dikonfirmasi kreator: video Mangga Besar.
 - 2026-11-25: Kreator memilih menambah perkenalan pemain dan analogi. Revisi: s02 (analogi baju bekas turunan), s03 (KAI, pemerintah, INKA, CRRC), callback di s12 dan s47; +53 kata EN (1.384 ke 1.437), perkiraan 8:41. Sumber s03 ditambah. Menunggu persetujuan versi revisi.
 - 2026-11-25: Kreator menyetujui naskah siklus 001 versi revisi (58 scene, 1.437 kata, perkiraan 8:41, anti-slop EN 39/ID 38). Naskah dikunci. Berikutnya produksi lewat pipeline (langkah 05).
+- 2026-11-25: Produksi siklus 001 selesai: master 9:24 dan 2 Shorts dirender, thumbnail A/B, 06-publish disusun (atribusi CC BY, chapter, tag). QA otomatis LULUS-OTOMATIS (0 kritis; sedang: jarak re-hook 113 dtk di awal, bukti kreator). Posisi objek diorama dipindah supaya tidak menutupi subjek; narasi tidak diubah. Klip stok s36, s40, s52 dibuang (tidak sesuai konteks). Teks layar s31 "filmed Nov 2026" dihapus (klip diunggah 2025-06-01). Footage milik kreator tidak ada, scene itu diorama. Temuan: Shorts 9:16 memotong callout dan subjek; belum diperbaiki. Menunggu review kreator.

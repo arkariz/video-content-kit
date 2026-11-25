@@ -19,10 +19,10 @@ world = {
   ],
   "scatter": [
     {"asset": "pine", "count": 70, "area": [-64, 6, -33, 50]},
-    {"asset": "palm", "count": 90, "area": [2, -12, 62, 46]},
-    {"asset": "tree", "count": 40, "area": [30, -14, 62, 40]},
-    {"asset": "house", "count": 40, "area": [10, 2, 34, 28]},
-    {"asset": "bush", "count": 70, "area": [-62, -12, 62, 44]},
+    {"asset": "palm", "count": 90, "area": [38, 18, 62, 46]},
+    {"asset": "tree", "count": 40, "area": [42, 18, 62, 40]},
+    {"asset": "house", "count": 40, "area": [12, 19, 31, 30]},
+    {"asset": "bush", "count": 70, "area": [-62, 8, 62, 44]},
   ],
   "objects": [
     obj("tokyo", "tower", -42, 26, scale=1.5, label="TOKYO"), obj("tk2", "tower", -47, 32), obj("tk3", "tower", -37, 34), obj("tk4", "tower", -50, 24, scale=0.8),
@@ -34,15 +34,15 @@ world = {
     obj("cikarang", "house", 38, 24, scale=1.2, label="CIKARANG"),
     obj("inka", "shop", 54, 8, scale=1.3, label="INKA"),
     obj("crrc", "tower", 2, 78, scale=1.3, label="CHINA: CRRC"),
-    obj("kai", "bankhall", 24, -6, scale=0.9, label="KAI RAILWAY"),
-    obj("gov", "bankhall", 6, -8, scale=0.9, label="GOVERNMENT"),
+    obj("kai", "bankhall", 33, 9, scale=0.8, label="KAI RAILWAY"),
+    obj("gov", "bankhall", 9, 15, scale=0.8, label="GOVERNMENT"),
     obj("t_old", "actor:train", 20, 2, scale=0.8),
     obj("t_new", "actor:train", 27, 0, scale=0.8, hidden=True),
     obj("t_metro", "actor:train", 24, 4, scale=0.8, hidden=True),
     obj("t_cn", "actor:train", 2, 73, scale=0.8, hidden=True),
     obj("t_ink", "actor:train", 54, 3, scale=0.8, hidden=True),
     obj("cabin", "actor:train", 14, 3, scale=0.5, hidden=True),
-    obj("lock", "lock", 6, -5, y=3.6, scale=1.3, hidden=True),
+    obj("lock", "lock", 9, 12, y=3.6, scale=1.3, hidden=True),
     obj("guide", "actor:guide", 13, -3, scale=0.65),
   ],
   "paths": [
@@ -62,9 +62,9 @@ C = lambda look, dist, h: (look, dist, h)
 
 # tiap scene: kamera tujuan, mood, dan aksi. Waktu = pecahan 0..1 dari suara scene.
 S = {
- "s01": dict(c=C("t_old", 8, 4), co=[("t_old", "EX-TOKYO", .35)], pa=[("p_ship", .3)]),
+ "s01": dict(c=C("t_old", 11, 5), co=[("t_old", "EX-TOKYO", .35)], pa=[("p_ship", .3)]),
  "s02": dict(c=OV, pa=[("p_ship", .15)], mv=[("actor:train", "oldjp", "jkt", [[-14, 20]], .2, .6, "")], co=[("gov", "AGE RULE", .8)], hl=[("gov", .8)]),
- "s03": dict(c=C([-8, 22], 46, 34), co=[("tokyo", "1 FIT", .12), ("jkt", "2 DEAL", .42), ("gov", "3 ENDED", .72)], hl=[("tokyo", .12, .38), ("jkt", .42, .68), ("gov", .72, 1)]),
+ "s03": dict(c=C([22, 30], 56, 40), co=[("kai", "KAI", .1, .3), ("gov", "RULES", .3, .5), ("inka", "INKA", .5, .7), ("crrc", "CRRC", .7)], hl=[("kai", .1, .3), ("gov", .3, .5), ("inka", .5, .7), ("crrc", .7, 1)]),
  "s04": dict(c=C("tokyo", 22, 12), pa=[("p_ship", .1)], mv=[("envelope", "tokyo", "jkt", [[-14, 20]], .3, .6, "GIFT, MAY 2000")], co=[("tokyo", "72 CARS", .2)]),
  "s05": dict(c=C("t_old", 14, 6), co=[("oldjp", "BUILT 1968", .15, .55), ("t_old", "RAN TO 2016", .6)], mv=[("actor:train", "oldjp", "t_old", [[-14, 20]], .3, .4, "")]),
  "s06": dict(c=C("t_old", 10, 4), co=[("t_old", "FIRST A/C", .25)], gr=[("t_old", 1.25, .4)]),
@@ -152,13 +152,9 @@ for sc in d["scenes"]:
             st["callouts"].append(e)
     if k.get("emo"): st["emo"] = k["emo"]
     sc["stage"] = st
-    v = sc["visual"]
-    if sc.get("broll"):
-        v["description"] = (v.get("description") or "") + " (footage di atas dunia diorama)"
-    else:
-        v["type"] = "remotion-diagram"
-        v["description"] = "Diorama 2.5D: kamera ke " + (look if isinstance(look, str) else "peta") + "; " + ", ".join(c[1] for c in k.get("co", []))
-        v.pop("spec", None); v.pop("on_screen_text", None)
+    if not sc.get("broll"):  # deskripsi visual dipertahankan (idempoten)
+        sc["visual"]["type"] = "remotion-diagram"
+        sc["visual"].pop("spec", None); sc["visual"].pop("on_screen_text", None)
 
 d["thumbnails"] = [
   {"lines": [{"text": "TOO OLD", "color": "#ffd23f", "size": 170}, {"text": "TO IMPORT", "color": "#ffffff", "size": 150}],

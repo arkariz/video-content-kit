@@ -1,0 +1,106 @@
+{
+  "_catatan": "Dibangun dari 03-script.json (scene.broll). Footage nyata berlisensi, 20-30% durasi, tersebar, maks. 2 berurutan.",
+  "s01": {
+    "own": "krl-01.mp4",
+    "keywords": [
+      "jakarta commuter train"
+    ]
+  },
+  "s02": {
+    "lic": "s02-s17-rangkaian-eks-jepang-di-peron-01.mp4",
+    "keywords": [
+      "jakarta commuter train"
+    ]
+  },
+  "s07": {
+    "keywords": [
+      "jakarta commuter train",
+      "indonesia electric train station"
+    ],
+    "avoid": [
+      "face close up",
+      "logo"
+    ]
+  },
+  "s11": {
+    "own": "krl-05.mp4",
+    "keywords": [
+      "jakarta commuter train"
+    ]
+  },
+  "s17": {
+    "lic": "s02-s17-rangkaian-eks-jepang-di-peron-02.mp4",
+    "keywords": [
+      "jakarta commuter train"
+    ]
+  },
+  "s22": {
+    "lic": "s20-s22-latar.mp4",
+    "keywords": [
+      "jakarta commuter train"
+    ]
+  },
+  "s31": {
+    "lic": "s31-s53.mp4",
+    "keywords": [
+      "jakarta commuter train"
+    ]
+  },
+  "s34": {
+    "lic": "s34-s36-kepadatan.mp4",
+    "keywords": [
+      "jakarta commuter train"
+    ]
+  },
+  "s36": {
+    "keywords": [
+      "crowded train platform commuters",
+      "rush hour train station asia"
+    ],
+    "avoid": [
+      "face close up",
+      "logo"
+    ]
+  },
+  "s40": {
+    "keywords": [
+      "tokyo commuter train station",
+      "japan train platform"
+    ],
+    "avoid": [
+      "face close up"
+    ]
+  },
+  "s44": {
+    "keywords": [
+      "cargo ship at sea",
+      "container ship ocean"
+    ],
+    "avoid": [
+      "face close up",
+      "logo"
+    ]
+  },
+  "s52": {
+    "keywords": [
+      "old train depot",
+      "train yard rail cars"
+    ],
+    "avoid": [
+      "face close up",
+      "logo"
+    ]
+  },
+  "s54": {
+    "own": "krl-02b.mp4",
+    "keywords": [
+      "jakarta commuter train"
+    ]
+  },
+  "s57": {
+    "own": "krl-01b.mp4",
+    "keywords": [
+      "jakarta commuter train"
+    ]
+  }
+}
