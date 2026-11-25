@@ -6,6 +6,14 @@ const { scriptPath, assetsPath } = resolveCycle(o.track, o.siklus); const script
 const specs = readJson(path.join(path.dirname(scriptPath), "04-visual-spec.json"), {});
 const stages = readJson(path.join(path.dirname(scriptPath), "04-stage.json"), {});
 const caps = readJson(path.join(ROOT, "produksi/captions", o.track, o.siklus, `${lang}.json`), {}); const assets = readJson(assetsPath, { footage: [], renders: [] });
+if (o.thumb) { // thumbnail dari script.thumbnails -> Thumbnail-A.png, Thumbnail-B.png, ...
+  const list = script.thumbnails || []; if (!list.length) throw new Error("script.thumbnails kosong");
+  const outDir = path.join(ROOT, "produksi/render", o.track, o.siklus); fs.mkdirSync(outDir, { recursive: true }); const tp = path.join(ROOT, "produksi/render", `.props-${o.track}-${o.siklus}-thumb.json`); const a = readJson(assetsPath, { footage: [], renders: [] });
+  list.forEach((th, i) => { const name = `Thumbnail-${String.fromCharCode(65 + i)}.png`; writeJson(tp, { trackId: o.track, ...th });
+    execFileSync("npx", ["remotion", "still", "src/index.ts", "Thumbnail", path.join(outDir, name), `--props=${tp}`, `--public-dir=${path.join(ROOT, "produksi")}`, "--frame=89"], { cwd: path.join(ROOT, "produksi/remotion"), stdio: "ignore" });
+    const rel = `render/${o.track}/${o.siklus}/${name}`; a.renders = [...a.renders.filter((r) => r.file !== rel), { file: rel, comp: "Thumbnail" }]; console.log("thumbnail", rel); });
+  writeJson(assetsPath, a); process.exit(0);
+}
 const FPS = 30; const PAUSE = Math.round(parseFloat(o.pause ?? "0.9") * FPS); // jeda akhir scene (detik)
 const cutDef = cut && script.shorts_cuts.find((c) => c.name === cut);
 const ids = o.still ? o.still.split(",") : cutDef ? cutDef.scene_ids : script.scenes.map((s) => s.id);

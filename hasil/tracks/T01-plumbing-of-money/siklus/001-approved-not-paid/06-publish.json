@@ -2,7 +2,7 @@
   "track": "T01",
   "siklus": "001-approved-not-paid",
   "profil": "moneyplumbing",
-  "dibuat": "2026-11-25T02:24:55.511Z",
+  "dibuat": "2026-11-25T02:34:14.499Z",
   "catatan": "Edit sebelum approve. platformAktif: ubah true/false (TikTok butuh paket berbayar Upload-Post). Jadwal default: master di tanggal tayang TRACK.md 19:00 WIB, Shorts +1 dan +2 hari (rencana.md terkunci: minggu yang sama).",
   "platformAktif": {
     "youtube": true,
@@ -28,6 +28,7 @@
     {
       "nama": "master",
       "file": "produksi/render/T01/001/Master16x9-en.mp4",
+      "thumbnail": "produksi/render/T01/001/Thumbnail-A.png",
       "platforms": [
         "youtube"
       ],

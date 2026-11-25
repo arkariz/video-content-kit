@@ -60,6 +60,14 @@
       "comp": "Short9x16",
       "lang": "en",
       "cut": "A2-pending-to-posted"
+    },
+    {
+      "file": "render/T01/001/Thumbnail-A.png",
+      "comp": "Thumbnail"
+    },
+    {
+      "file": "render/T01/001/Thumbnail-B.png",
+      "comp": "Thumbnail"
     }
   ],
   "voice": {

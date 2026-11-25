@@ -14,13 +14,6 @@
       "fix": "ubah satu scene di rentang itu jadi re-hook"
     },
     {
-      "layer": "Visual",
-      "level": "sedang",
-      "id": "V7",
-      "msg": "thumbnail belum dibuat",
-      "fix": "render Thumbnail varian A dan B"
-    },
-    {
       "layer": "Visual/Channel",
       "level": "sedang",
       "id": "K1",

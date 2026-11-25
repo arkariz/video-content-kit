@@ -10,6 +10,8 @@ Disetujui kreator: (diisi saat approve)
 | A1-zero-dollars-moved | produksi/render/T01/001/Short9x16-A1-zero-dollars-moved-en.mp4 | youtube, instagram, facebook | Your card said approved. Zero dollars moved. | 2026-12-08 19:00:00 | ya |
 | A2-pending-to-posted | produksi/render/T01/001/Short9x16-A2-pending-to-posted-en.mp4 | youtube, instagram, facebook | Why your restaurant charge changes the next day. | 2026-12-09 19:00:00 | ya |
 
+Thumbnail master: produksi/render/T01/001/Thumbnail-A.png (ganti ke Thumbnail-B.png di 06-publish.json bila mau)
+
 Alasan label: suara sintetis (TTS) dan adegan kartun; konservatif, tidak mengurangi jangkauan menurut YouTube
 
 ## Deskripsi YouTube

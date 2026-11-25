@@ -5015,5 +5015,88 @@
       "url": "https://www.paypal.com/money-hub/article/how-do-credit-card-refunds-work",
       "claim": "Refund tampil sebagai entri terpisah"
     }
+  ],
+  "thumbnails": [
+    {
+      "lines": [
+        {
+          "text": "APPROVED",
+          "color": "#3ddc97",
+          "size": 150
+        },
+        {
+          "text": "≠ PAID",
+          "color": "#ffd23f",
+          "size": 190
+        }
+      ],
+      "stage": {
+        "bg": "cafe",
+        "cam": {
+          "z": [
+            1,
+            1
+          ]
+        },
+        "actors": [
+          {
+            "id": "term",
+            "kind": "terminal",
+            "x": 0.64,
+            "scale": 1.5,
+            "emo": "smug"
+          },
+          {
+            "id": "owner",
+            "kind": "owner",
+            "x": 0.87,
+            "scale": 1.75,
+            "emo": "shock",
+            "pose": "up"
+          }
+        ]
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "$0.00",
+          "color": "#ff5d5d",
+          "size": 230
+        },
+        {
+          "text": "MOVED",
+          "color": "#ffffff",
+          "size": 170
+        }
+      ],
+      "stage": {
+        "bg": "bank",
+        "cam": {
+          "z": [
+            1,
+            1
+          ]
+        },
+        "actors": [
+          {
+            "id": "you",
+            "kind": "you",
+            "x": 0.675,
+            "scale": 1.65,
+            "emo": "shock",
+            "pose": "shrug"
+          },
+          {
+            "id": "iss",
+            "kind": "bank-big",
+            "x": 0.885,
+            "scale": 1.35,
+            "emo": "smug",
+            "acc": "shades"
+          }
+        ]
+      }
+    }
   ]
 }

@@ -31,6 +31,15 @@ Naskah (instruksi 04) menulis juga visualnya, sehingga tahap 05 sampai 07 berjal
 - `sources` untuk setiap scene yang memuat klaim fakta (angka, aturan, tanggal). Klaim tanpa sumber dilunakkan atau dibuang.
 - Opsi lengkap per bidang: `produksi/STYLE.md` (adegan) dan `produksi/README.md` (spec data). Daftar nilai yang valid: `scripts/produksi/vocab.mjs`.
 
+## Thumbnail (tingkat atas `03-script.json`)
+```json
+"thumbnails": [
+  { "lines": [{ "text": "APPROVED", "color": "#3ddc97", "size": 150 }, { "text": "≠ PAID", "color": "#ffd23f", "size": 190 }],
+    "stage": { "bg": "cafe", "cam": { "z": [1, 1] }, "actors": [{ "id": "owner", "kind": "owner", "x": 0.85, "scale": 1.7, "emo": "shock" }] } }
+]
+```
+Dua varian (A dan B), maksimal 4 kata, tanpa label atau bubble. Teks di kiri, tokoh di kanan (x 0,6 ke atas). Hasil: `render.mjs --thumb`.
+
 ## Aturan komposisi (QA otomatis memeriksanya)
 1. **Satu ide per scene**: satu aksi, paling banyak dua bubble, satu efek.
 2. **Bubble** adalah candaan atau reaksi tokoh, bukan pengulang narasi. Maksimal 44 huruf, tanpa klaim fakta baru, tanda seru hemat.

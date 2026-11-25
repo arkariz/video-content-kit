@@ -11,5 +11,6 @@ ${vids.map((f) => `<h3>${f}</h3><video src="${rel(f)}" controls style="max-width
 <h2>Temuan QA</h2><table border=1 cellpadding=6 style="border-collapse:collapse"><tr><th>#<th>Lapisan<th>Tingkat<th>Temuan<th>Perbaikan</tr>${(qa?.temuan ?? []).map((f) => `<tr><td>${f.id}<td>${f.layer}<td>${f.level}<td>${f.msg}<td>${f.fix}</tr>`).join("")}</table>
 <h2>Pemeriksaan manual (wajib)</h2><ul>${(qa?.manual ?? []).map((m) => `<li>${m}`).join("")}</ul>
 <h2>Judul dan thumbnail</h2><ol>${script.title_options.map((t) => `<li>${t}`).join("")}</ol><p>Teks thumbnail: ${script.thumbnail_text.join(" / ")}</p>
+<p>${(fs.existsSync(rd) ? fs.readdirSync(rd) : []).filter((f) => /^Thumbnail-.*\.png$/.test(f)).map((f) => `<figure style="display:inline-block;margin:4px"><img src="${rel(f)}" width=420><figcaption>${f}</figcaption></figure>`).join("")}</p>
 <h2>Setujui atau revisi</h2><pre>node --env-file=.env scripts/pipeline/approve.mjs --track ${o.track} --siklus ${o.siklus}\nnode scripts/pipeline/approve.mjs --track ${o.track} --siklus ${o.siklus} --revisi "catatan"</pre></body>`;
 fs.writeFileSync(path.join(outDir, "index.html"), html); console.log("Paket review:", path.relative(ROOT, path.join(outDir, "index.html")));

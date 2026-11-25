@@ -8,7 +8,7 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "001: kreator menonton paket review (hasil/review/T01-001-approved-not-paid), cek fakta dan audio; buat thumbnail; lalu approve.mjs (SETUJU) sebelum 2026-12-07"
+langkah_berikutnya: "001: kreator menonton paket review (hasil/review/T01-001-approved-not-paid), cek fakta, audio, dan pilih thumbnail A/B; lalu approve.mjs (SETUJU) sebelum 2026-12-07"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
 menunggu_keputusan: null
@@ -97,3 +97,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Kreator membeli ElevenLabs Starter; integrasi tetap lewat API key. Suara EN tetap yang sekarang (bukan clone), suara ID R86jddkroI9bJwXFfjsr (produksi/voices.json). Uji satu scene ID (s02) berhasil. Kreator menyetujui urutan: perbaiki naskah dulu, baru buat ulang audio. Audio EN saat ini masih dari akun free.
 - 2026-11-25: Naskah 001 direvisi sesuai QA: re-hook di s12, bubble pengulang diganti, 46 scene diberi sumber (22 tautan, dari ringkasan hasil pencarian), beberapa klaim dikoreksi (s12, s27, s28, s34-36, s40, s42, s47, s56). QA otomatis: 0 kritis, 3 sedang (suara, thumbnail, bukti kreator). Durasi 8:06 dihitung dari audio lama; menunggu persetujuan naskah.
 - 2026-11-25: Kreator menyetujui naskah revisi. Audio uji dihapus; audio EN (7,35 menit) dan ID (7,84 menit) dibuat di paket Starter, caption EN baru, master 8:06 dan Shorts A1 35 detik, A2 32 detik (di bawah target brief 35-45). QA otomatis 0 kritis, 3 sedang (jarak re-hook 104 detik, thumbnail, bukti kreator). Audio, fakta, dan video belum diperiksa kreator.
+- 2026-11-25: Thumbnail 001 dibuat (A "APPROVED ≠ PAID", B "$0.00 MOVED") dan masuk rencana publish (default A). QA otomatis 0 kritis, 2 sedang (jarak re-hook 104 detik, bukti kreator). Menunggu review kreator.
