@@ -71,3 +71,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Publish memakai profil per track; `profil_publish` T02 masih kosong sampai kreator membuat profil kedua di Upload-Post.
 - 2026-11-25: Profil publish T02 diisi "equatorlogic" atas permintaan kreator; profil itu belum ada di akun Upload-Post.
 - 2026-11-25: Profil publish T02 diubah ke "default": menurut kreator "equatorlogic" hanya nama tampilan, API memakai "default".
+- 2026-11-25: Gaya wajib untuk semua siklus: diorama 2.5D. Pemeran T02 bisa dipakai sebagai actor:<nama>; peta Asia Tenggara dan aset khusus T02 belum ada di mesin diorama.

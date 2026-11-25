@@ -33,6 +33,11 @@ const noLic = assets.footage.filter((f) => !f.catalog_key); if (noLic.length) ad
 // stage/spec lengkap
 for (const s of sc) { if (!stage[s.id]) add("Visual", "kritis", "V6", `scene ${s.id} tanpa adegan`, "isi 04-stage.json"); else if (stage[s.id].insert && !vspec[s.id]) add("Visual", "kritis", "V6", `scene ${s.id} insert tanpa spec`, "isi 04-visual-spec.json"); }
 
+// gaya wajib: diorama 2.5D (produksi/DIORAMA.md). Pengecualian hanya siklus yang sudah tayang sebelum aturan ini.
+const sebelumAturan = o.track === "T01" && o.siklus === "001";
+const dio = sc.filter((s) => stage[s.id]?.engine === "diorama" || stage[s.id]?.footage).length / sc.length;
+if (!sebelumAturan && (!script.world || dio < 0.7)) add("Visual", "kritis", "G1", `gaya wajib diorama 2.5D: world ${script.world ? "ada" : "tidak ada"}, scene diorama/footage ${(dio * 100).toFixed(0)}% (minimal 70%)`, "tulis world dan stage engine diorama sesuai produksi/DIORAMA.md");
+
 // teks: pola
 for (const l of ["en", "id"]) for (const s of sc) { const x = s.narration[l]; if (/—|–/.test(x)) add("Teks " + l.toUpperCase(), "sedang", "T-em", `${s.id}: em dash`, "ganti titik/koma"); if (l === "en" && /\b(it.s|it is|this is) not\b[^.]*\b(it.s|but)\b|\bnot just\b/i.test(x)) add("Teks EN", "sedang", "T-neg", `${s.id}: kontras "bukan X tapi Y"`, "tulis langsung hal yang benar"); }
 const idp = /di era|tidak dapat dipungkiri|perlu diingat|penting untuk dicatat|mari kita|yuk,|tanpa basa-basi|hal ini menunjukkan|memainkan peran|menjadi kunci|semoga bermanfaat|tak hanya itu|lebih lanjut|bukan hanya/i; for (const s of sc) if (idp.test(s.narration.id)) add("Teks ID", "sedang", "T-id", `${s.id}: frasa slop ID`, "tulis ulang santai");

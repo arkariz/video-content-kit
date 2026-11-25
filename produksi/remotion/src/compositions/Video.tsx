@@ -8,17 +8,18 @@ import { DataPanel } from "../components/DataPanel";
 import { clamp, ease } from "../lib/ui";
 import { Fit } from "../lib/Fit";
 import { Stage } from "../toon/Stage";
+import { Diorama } from "../diorama/Diorama";
 
-const Captions: React.FC<{ words: SceneProps["captions"]; big: boolean; accent: string }> = ({ words, big, accent }) => {
+const Captions: React.FC<{ words: SceneProps["captions"]; big: boolean; accent: string; per?: number }> = ({ words, big, accent, per = 4 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const ms = (frame / fps) * 1000;
   const i = words.findIndex((w) => ms >= w.startMs && ms < w.endMs);
   if (i < 0) return null;
-  const page = words.slice(Math.floor(i / 4) * 4, Math.floor(i / 4) * 4 + 4);
+  const page = words.slice(Math.floor(i / per) * per, Math.floor(i / per) * per + per);
   return (
     <div style={{ position: "absolute", left: 60, right: 60, bottom: big ? 300 : 60, textAlign: "center", fontSize: big ? 74 : 54, fontWeight: 900, color: "#fff", fontFamily: "'Chalkboard SE','Marker Felt','Comic Sans MS',sans-serif", WebkitTextStroke: `${big ? 12 : 9}px #1b1b1b`, paintOrder: "stroke fill", letterSpacing: 1, lineHeight: 1.1 }}>
-      {page.map((w, k) => (<span key={k} style={{ color: w === words[i] ? "#ffd23f" : "#fff" }}>{w.text} </span>))}
+      {page.map((w, k) => (<span key={k} style={{ color: per > 1 && w === words[i] ? "#ffd23f" : "#fff", fontSize: per === 1 ? "1.3em" : undefined }}>{w.text} </span>))}
     </div>
   );
 };
@@ -47,7 +48,9 @@ const Scene: React.FC<{ s: SceneProps; trackId: string; vertical: boolean }> = (
           </Loop>
         </AbsoluteFill>
       )}
-      {stage ? (
+      {stage?.engine === "diorama" ? (
+        <Diorama world={stage.world} shot={stage} frame={frame} dur={s.audioFrames} />
+      ) : stage ? (
         <Stage spec={stage} frame={frame} dur={s.audioFrames} vertical={vertical} title={s.type === "remotion-text" ? undefined : s.text} board={stage.insert ? body : null} />
       ) : (
         <>
@@ -60,7 +63,7 @@ const Scene: React.FC<{ s: SceneProps; trackId: string; vertical: boolean }> = (
         </>
       )}
       {s.audio && <Audio src={staticFile(s.audio)} playbackRate={s.audioRate ?? 1} />}
-      <Captions words={s.captions} big={vertical} accent={t.accent} />
+      <Captions words={s.captions} big={vertical} accent={t.accent} per={stage?.engine === "diorama" ? 1 : 4} />
     </AbsoluteFill>
   );
 };

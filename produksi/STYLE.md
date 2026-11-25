@@ -1,5 +1,7 @@
 # Gaya visual: kartun penjelasan (berlaku untuk semua track)
 
+> **Gaya wajib sekarang diorama 2.5D** (`instruksi/referensi/gaya-diorama.md`). Bagian `stage` kartun datar di bawah hanya untuk T01 siklus 001 dan thumbnail; bidang `sources`, `broll`, `chapters`, dan `thumbnails` tetap berlaku.
+
 Referensi pengamatan: channel OverSimplified (kartun 2D, kepala bulat besar, kostum penanda peran, latar bergaya lukisan datar, bubble dialog, subtitle putih berkontur hitam, peta/diagram sebagai sisipan). Yang ditiru hanya bahasa visualnya. Karakter, latar, efek suara, dan teks dibuat orisinal di repo ini. Jangan memakai aset, karakter, musik, atau gaya merek yang persis sama.
 
 ## Prinsip

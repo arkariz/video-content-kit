@@ -5,9 +5,26 @@ const o = args(); const { dir, scriptPath } = resolveCycle(o.track, o.siklus); c
 const errs = []; const warn = []; const e = (id, m) => errs.push(`${id}: ${m}`); const inList = (id, what, v, list) => { if (v !== undefined && !list.includes(v)) e(id, `${what} "${v}" tidak dikenal (${list.join("|")})`); };
 const vspec = {}, stage = {}, broll = { _catatan: "Dibangun dari 03-script.json (scene.broll). Footage nyata berlisensi, 20-30% durasi, tersebar, maks. 2 berurutan." };
 const ids = new Set(script.scenes.map((s) => s.id));
+// ---- diorama 2.5D (gaya wajib, produksi/DIORAMA.md)
+const world = script.world; const wIds = new Set((world?.objects ?? []).map((o) => o.id));
+const asset = (id, a) => { if (!a) return e(id, "aset kosong"); if (a.startsWith("actor:")) inList(id, "tokoh", a.slice(6), V.actors); else inList(id, "aset", a, V.assets); };
+if (world) { (world.objects ?? []).forEach((o) => { if (!o.id || o.x === undefined || o.z === undefined) e("world", `objek ${o.id ?? "?"} perlu id, x, z`); asset("world", o.asset); }); (world.scatter ?? []).forEach((s) => { asset("world", s.asset); if (!(s.area?.length === 4) || !s.count) e("world", "scatter perlu area [x0,z0,x1,z1] dan count"); }); (world.paths ?? []).forEach((p) => p.points.forEach((r) => typeof r === "string" && !wIds.has(r) && e("world", `path ${p.id} merujuk "${r}"`))); }
+function diorama(id, st) {
+  if (!world) return e(id, "stage diorama butuh `world` di tingkat atas 03-script.json");
+  if (!st.camera) e(id, "diorama tanpa camera");
+  inList(id, "mood", st.mood, V.mood);
+  const ref = (r, what) => { if (typeof r === "string" && !wIds.has(r)) e(id, `${what} merujuk objek "${r}" yang tidak ada di world`); };
+  for (const c of [st.camera?.from ?? st.camera, st.camera?.to]) if (c?.look) ref(c.look, "camera.look");
+  for (const k of ["show", "hide", "grow", "highlight", "callouts"]) (st[k] ?? []).forEach((x) => ref(x.id, k));
+  (st.paths ?? []).forEach((x) => (world.paths ?? []).some((p) => p.id === x.id) || e(id, `path "${x.id}" tidak ada`));
+  (st.moves ?? []).forEach((m) => { [m.from, m.to, ...(m.via ?? [])].forEach((r) => ref(r, "moves")); if (m.asset) asset(id, m.asset); if (m.from === undefined || m.to === undefined) e(id, "moves perlu from dan to"); });
+  const aksi = ["moves", "paths", "show", "hide", "grow", "highlight", "callouts"].some((k) => st[k]?.length);
+  if (!aksi && JSON.stringify(st.camera?.from) === JSON.stringify(st.camera?.to ?? st.camera?.from)) warn.push(`${id}: tidak ada yang berubah (kamera diam, tanpa aksi)`);
+}
 for (const s of script.scenes) {
   const id = s.id, st = s.stage, sp = s.visual?.spec;
   if (!st) { e(id, "tanpa `stage`"); continue; }
+  if (st.engine === "diorama") { diorama(id, st); stage[id] = st; if (s.broll) broll[id] = s.broll; continue; }
   if (sp) { vspec[id] = sp; const need = sp.headline ? [] : V.spec[sp.kind ?? "flow"]; if (!sp.headline && !V.spec[sp.kind ?? "flow"]) e(id, `spec.kind "${sp.kind}" tidak dikenal`); for (const k of need ?? []) if (sp[k] === undefined) e(id, `spec ${sp.kind ?? "flow"} tanpa bidang "${k}"`); }
   if (st.insert && !sp) e(id, "stage.insert tanpa visual.spec"); if (st.insert) inList(id, "insert.pos", st.insert.pos ?? "full", V.insertPos);
   inList(id, "bg", st.bg ?? "paper", V.bg); const labels = new Set();

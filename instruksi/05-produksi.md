@@ -2,6 +2,8 @@
 
 Tujuan: dari `03-script.json` menghasilkan suara, caption, visual, dan render semua format. Semua tahap membaca file data yang sama, jadi perubahan naskah cukup dilakukan di satu tempat.
 
+**Gaya wajib:** diorama 2.5D (`instruksi/referensi/gaya-diorama.md`), dijalankan lewat `scripts/pipeline/run.mjs`.
+
 ## Prasyarat
 
 - `.env` berisi `ELEVENLABS_API_KEY` dan `ELEVENLABS_VOICE_ID` (paket berbayar, karena paket gratis tidak boleh dipakai komersial). Opsional: `PEXELS_API_KEY`, `PIXABAY_API_KEY`.

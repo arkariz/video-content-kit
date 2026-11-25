@@ -2,6 +2,8 @@
 
 Yang ditiru hanya bahasa visual. Aset, karakter, musik, logo, dan susunan adegan dibuat orisinal; jangan menyalin atau memakai ulang materi referensi.
 
+Arah yang dipilih kreator (2026-11-25): **diorama 2.5D**, wajib untuk semua track. Kontrak: `instruksi/referensi/gaya-diorama.md`.
+
 ## R2: Histo Graph, "Kenapa Ada Terowongan di Dalam Gunung Kelud?" (diberikan kreator, 2026-11-25)
 
 https://www.facebook.com/reel/1069633245847151 · 162,6 detik · 9:16

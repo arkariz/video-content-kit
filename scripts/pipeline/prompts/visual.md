@@ -1,3 +1,5 @@
+WAJIB: baca instruksi/referensi/gaya-diorama.md dan hasil/learnings-global.md. Visual ditulis sebagai `world` + `stage.engine: "diorama"` di 03-script.json; aturan gaya kartun datar di bawah ini tidak berlaku bila bertentangan.
+
 Baca produksi/CONTRACT.md. Tulis visual langsung ke 03-script.json (bidang `visual.spec`, `stage`, `broll`, `sources` per scene), lalu jalankan `node scripts/produksi/build-visual.mjs --track {{track}} --siklus {{siklus}}` sampai valid. Jangan menulis 04-*.json dengan tangan.
 
 Track {{track}}, siklus {{siklus}}. Baca produksi/STYLE.md. Dari 03-script.json tulis di folder siklus:

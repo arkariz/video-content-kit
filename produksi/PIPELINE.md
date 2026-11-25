@@ -10,6 +10,8 @@ node --env-file=.env scripts/pipeline/approve.mjs --track T01 --siklus 001    # 
 node scripts/pipeline/approve.mjs --track T01 --siklus 001 --revisi "catatan" # minta revisi
 ```
 
+Gaya wajib: diorama 2.5D (`instruksi/referensi/gaya-diorama.md`); QA menandai kritis bila kurang dari 70% scene diorama atau footage.
+
 ## Tahap
 
 | Tahap | Jenis | Hasil | Idempotent |

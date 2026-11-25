@@ -56,3 +56,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-25: T01-001 tayang (master YouTube dan Facebook), A1 terjadwal, A2 tertahan kuota Upload-Post (10/bulan). Paket gratis tidak cukup untuk paket uji V2 dua track.
 - 2026-11-25: Atas arahan kreator, pelajaran T01-001 (terlalu padat, visual dan fondasi kurang) disimpan di learnings-global.md untuk semua track dan siklus berikutnya. Mesin, kontrak, dan QA tidak diubah.
 - 2026-11-25: Referensi gaya video dari kreator (diorama 2.5D, banyak aset dan gerak) dipelajari dan dicatat di produksi/REFERENSI-GAYA.md. Mesin visual belum diubah.
+- 2026-11-25: Kreator memilih diorama 2.5D sebagai gaya wajib semua track dan siklus. Mesin diorama dibangun (produksi/remotion/src/diorama), kontrak di instruksi/referensi/gaya-diorama.md, QA menegakkannya (kecuali T01-001). instruksi/ diubah atas permintaan kreator (penunjuk gaya wajib).

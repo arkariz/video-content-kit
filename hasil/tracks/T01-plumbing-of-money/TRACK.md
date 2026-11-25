@@ -109,3 +109,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Kreator memilih jadwal otomatis Short A1 tetap berjalan; hanya A2 yang diunggah manual.
 - 2026-11-25: Pelajaran siklus 001 dicatat di learnings.md (dari penilaian kreator, belum ada data penonton): terlalu padat, visual kurang menjelaskan, fondasi teori tidak dibangun. Delapan aturan diuji mulai 002.
 - 2026-11-25: Kreator memilih menyimpan pelajaran 001 sebagai catatan untuk siklus berikutnya dan track lain (learnings-global.md), tanpa mengubah mesin, kontrak, atau QA.
+- 2026-11-25: Gaya wajib mulai siklus 002: diorama 2.5D.

@@ -2,6 +2,8 @@
 
 Tujuan: satu naskah yang ditulis untuk didengar, dengan satu ide per scene dan bukti milik kreator, lulus gate anti-slop sebelum diproduksi.
 
+**Wajib dibaca dulu:** `instruksi/referensi/gaya-diorama.md` dan `hasil/learnings-global.md`. Naskah ditulis bersama `world` dan `stage` diorama.
+
 ## 2a. Brief
 
 Tulis `02-brief.md` (template `brief.md`):

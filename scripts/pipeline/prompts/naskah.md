@@ -1,3 +1,5 @@
+WAJIB: baca instruksi/referensi/gaya-diorama.md dan hasil/learnings-global.md. Visual ditulis sebagai `world` + `stage.engine: "diorama"` di 03-script.json; aturan gaya kartun datar di bawah ini tidak berlaku bila bertentangan.
+
 Track {{track}}, siklus {{siklus}}. Ikuti instruksi/04-naskah.md, skill video-anti-slop (lapisan teks), humanizer, stop-slop.
 Tulis 03-script.json (skema instruksi/templates/script.schema.json) dan 03-naskah.md. Wajib: setiap scene faktual punya `sources` ([{url, claim}]) di 03-script.json (daftar `sources` tingkat atas juga boleh);
 klaim tanpa sumber dilunakkan atau dibuang. Durasi EN setelah TTS harus ≥ 8:00 untuk long-form. Re-hook tiap 60-90 detik. Tanpa klaim kredensial, tanpa nasihat produk.

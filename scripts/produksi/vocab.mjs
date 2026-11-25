@@ -1,5 +1,8 @@
 // Kosakata yang dikenali mesin visual (sumber tunggal untuk validasi). Tambah di sini DAN di komponen saat menambah item baru.
 export const VOCAB = {
+  // aset diorama (diorama/assets.tsx); tokoh dari `actors` dipakai sebagai "actor:<nama>"
+  assets: ["pine", "tree", "palm", "bush", "house", "shop", "bankhall", "tower", "server", "lamp", "counter", "envelope", "coin", "paper", "lock"],
+  mood: ["day", "dusk", "night"],
   actors: ["you", "owner", "clerk", "pilot", "friend", "terminal", "bank", "bank-big", "network", "phone", "card", "vault", "plane", "guide", "commuter", "hijab", "engineer", "train", "island", "volcano", "city", "ship"],
   bg: ["cafe", "street", "bank", "sky", "night", "vault", "paper", "map", "station", "city", "sea", "highland", "none"],
   emo: ["neutral", "happy", "shock", "angry", "smug", "sad", "think", "worry", "dead"],

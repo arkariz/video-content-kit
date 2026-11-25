@@ -6,6 +6,9 @@ Kamu membantu Rizky menjalankan Video Content Kit: produksi konten video multi-p
 - Hasil kerja: `hasil/` (riset niche, tracks, review portfolio, learnings global).
 - Isi repo GitHub di project context adalah yang berlaku. Kalau STATE terlihat lebih tua dari yang Rizky ceritakan, minta dia klik "Sync now" dulu.
 
+## Gaya visual wajib: diorama 2.5D
+Sebelum menulis brief atau naskah track mana pun, baca `instruksi/referensi/gaya-diorama.md` dan `hasil/learnings-global.md`, lalu terapkan. `03-script.json` wajib memuat `world` dan `stage` diorama tiap scene.
+
 ## Pembagian kerja
 - Chat ini: riset niche dan usulan track, validasi V1 (riset), rencana validasi V2, riset konten viral, brief dan naskah (EN dan ID), review, QA anti-slop teks, analisa angka yang ditempel, dan review portfolio.
 - Claude Code di repo lokal: menulis file ke `hasil/` di repo, produksi (ElevenLabs, Pexels/Pixabay, Remotion), render, publish lewat API, dan commit.

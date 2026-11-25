@@ -1,5 +1,7 @@
 # Kontrak visual di `03-script.json` (untuk Claude Project dan agent mana pun)
 
+> **Gaya wajib sekarang diorama 2.5D** (`instruksi/referensi/gaya-diorama.md`). Bagian `stage` kartun datar di bawah hanya untuk T01 siklus 001 dan thumbnail; bidang `sources`, `broll`, `chapters`, dan `thumbnails` tetap berlaku.
+
 Naskah (instruksi 04) menulis juga visualnya, sehingga tahap 05 sampai 07 berjalan tanpa LLM. Tambahkan bidang berikut. Bidang lama tidak berubah.
 
 ## Per scene
