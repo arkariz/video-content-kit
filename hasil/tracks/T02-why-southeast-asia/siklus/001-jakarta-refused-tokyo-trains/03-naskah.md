@@ -1,6 +1,6 @@
 # Naskah: siklus 001-jakarta-refused-tokyo-trains (T02, uji-V2 variasi A)
 
-Status: **menunggu persetujuan kreator.** Sumber tunggal untuk produksi adalah `03-script.json`; file ini versi baca.
+Status: **disetujui kreator 2026-11-25.** Sumber tunggal untuk produksi adalah `03-script.json`; file ini versi baca.
 
 - **Janji:** After watching, you can explain why Jakarta could run Tokyo's retired trains for 25 years without rebuilding its tracks, and why a 20-year import age limit ended that in November 2026.
 - **Hook (s01):** This train used to carry commuters in Tokyo. Jakarta still runs hundreds of cars like it, and in November it refused to buy any more.

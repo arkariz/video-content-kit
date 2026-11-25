@@ -4,7 +4,7 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "T01: kirim Short A2 (kuota habis), verifikasi channel YouTube, setujui naskah 002 + rekam 2 klip tangan. T02: kreator menyetujui naskah siklus 001 (diorama 2.5D), rekam footage KRL 2026-11-28/29, lalu produksi"
+langkah_berikutnya: "T01: kirim Short A2 (kuota habis), verifikasi channel YouTube, setujui naskah 002 + rekam 2 klip tangan. T02: produksi siklus 001 (naskah disetujui 2026-11-25), pratinjau diorama lalu pipeline"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-26
@@ -19,7 +19,7 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Kirim Short A2, naskah 002 | 5,5 | 2026-11-25: master 001 tayang |
-| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | Siklus 001: naskah menunggu persetujuan | 6 | 2026-11-25: naskah diorama selesai |
+| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | Siklus 001: produksi | 6 | 2026-11-25: naskah diorama selesai |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
 | T05 | Indonesia dan Asia Tenggara dari dalam | Nusantara before the maps | usulan | Channel Asia Tenggara | Cadangan | - | 2026-11-24: cadangan |
@@ -59,4 +59,5 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-25: Kreator memilih diorama 2.5D sebagai gaya wajib semua track dan siklus. Mesin diorama dibangun (produksi/remotion/src/diorama), kontrak di instruksi/referensi/gaya-diorama.md, QA menegakkannya (kecuali T01-001). instruksi/ diubah atas permintaan kreator (penunjuk gaya wajib).
 - 2026-11-25: T02 rebase ke main terbaru. Naskah siklus 001 dikonversi ke diorama 2.5D (world + stage), menunggu persetujuan kreator; aturan fondasi-dulu belum penuh (opsi di TRACK.md).
 - 2026-11-25: T02 rebase ke main terbaru. Naskah siklus 001 dikonversi ke diorama 2.5D (world + stage), menunggu persetujuan kreator; fondasi-dulu dipenuhi lewat revisi s02-s03.
+- 2026-11-25: T02 siklus 001 naskah disetujui kreator. Berikutnya produksi.
 - 2026-11-26: Atas permintaan kreator, gaya cerita dari 3 transkrip (Kurzgesagt x2, OverSimplified) dijadikan acuan wajib semua naskah: instruksi/referensi/gaya-cerita.md. 04-naskah.md, AGENTS.md, CLAUDE.md, PROJECT-INSTRUCTIONS.md, dan learnings-global.md diperbarui atas izin kreator. T01: draft naskah 002 ditulis, menunggu persetujuan.

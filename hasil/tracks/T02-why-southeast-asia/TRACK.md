@@ -8,10 +8,10 @@ channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "001-jakarta-refused-tokyo-trains"
-langkah_berikutnya: "siklus 001: kreator menyetujui naskah (03-naskah.md), rekam footage KRL 2026-11-28/29 (daftar di 02-brief.md) dan jalankan pipeline produksi (scripts/pipeline/run.mjs --track T02 --siklus 001)"
+langkah_berikutnya: "siklus 001: produksi di Claude Code. Pratinjau adegan diorama (scripts/produksi/preview-stage.mjs), salin klip produksi/footage-lisensi/T02/ bila belum ada, lalu node --env-file=.env scripts/pipeline/run.mjs --track T02 --siklus 001. Tempel atribusi credits.md ke deskripsi saat 06-publish"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: "Setujui naskah siklus 001 versi revisi (siklus/001-jakarta-refused-tokyo-trains/03-naskah.md): 58 scene, 1.437 kata, perkiraan 8:41, anti-slop EN 39/ID 38, visual diorama, 5 klip CC BY terpasang. Revisi atas pilihanmu: analogi baju bekas turunan + perkenalan empat pemain di s02-s03 (dipanggil lagi di s12 dan s47). Opsi: (1) setujui (rekomendasi), (2) minta perubahan lagi"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -84,3 +84,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Kreator memutuskan memakai klip CC BY dari credits.md sebagai pengganti rekaman sendiri (preseden T01: pengecualian bukti-kreator). Klip diganti nama sesuai scene, sumber di produksi/footage-lisensi/T02/sources.json, dipasang di s02, s17, s22 lewat broll.lic. footage.mjs mendukung awalan lic: (additif, atribusi dari sources.json). krl-01, krl-05, krl-04, krl-03, krl-02b, krl-01b tidak dipakai kecuali kreator merekam; scene itu berjalan diorama saja.
 - 2026-11-25: Dua klip CC BY ditambah (s31-s53, s34-s36-kepadatan), dipasang di s31 dan s34 menggantikan krl-04 dan krl-03. Sumber s31-s53 dikonfirmasi kreator: video Mangga Besar.
 - 2026-11-25: Kreator memilih menambah perkenalan pemain dan analogi. Revisi: s02 (analogi baju bekas turunan), s03 (KAI, pemerintah, INKA, CRRC), callback di s12 dan s47; +53 kata EN (1.384 ke 1.437), perkiraan 8:41. Sumber s03 ditambah. Menunggu persetujuan versi revisi.
+- 2026-11-25: Kreator menyetujui naskah siklus 001 versi revisi (58 scene, 1.437 kata, perkiraan 8:41, anti-slop EN 39/ID 38). Naskah dikunci. Berikutnya produksi lewat pipeline (langkah 05).
