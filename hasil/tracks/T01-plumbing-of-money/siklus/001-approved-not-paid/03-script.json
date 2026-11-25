@@ -56,7 +56,7 @@
       "role": "hook",
       "narration": {
         "en": "Your card just said approved. The coffee shop hasn't been paid, and it won't be today.",
-        "id": "Approved dalam dua detik. Tapi kedai kopinya belum dibayar, dan hari ini pun belum."
+        "id": "Kartumu baru saja bilang approved. Kedai kopinya belum dibayar, dan hari ini pun belum."
       },
       "visual": {
         "type": "remotion-diagram",
@@ -220,7 +220,7 @@
             "label": "SHOP OWNER",
             "emo": "smug",
             "say": {
-              "text": "Two more systems.",
+              "text": "Brace yourself.",
               "at": 0.6
             },
             "scale": 0.7
@@ -282,7 +282,7 @@
             "label": "YOU",
             "emo": "think",
             "say": {
-              "text": "Pending? Posted? Gone?",
+              "text": "My app is a mystery.",
               "at": 0.35
             },
             "scale": 0.7
@@ -432,7 +432,7 @@
             "label": "CARD",
             "emo": "smug",
             "say": {
-              "text": "Replay it tomorrow!",
+              "text": "Copy me. I dare you.",
               "at": 0.1
             },
             "scale": 1
@@ -478,14 +478,20 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://docs.aws.amazon.com/payment-cryptography/latest/userguide/use-cases-issuers.generalfunctions.arqc.html",
+          "claim": "Kartu membuat cryptogram (ARQC) dari kunci turunan dan data transaksi; issuer memverifikasinya"
+        }
+      ]
     },
     {
       "id": "s06",
       "role": "body",
       "narration": {
         "en": "That code is called a cryptogram. The chip, or your phone, computes it from a secret key that never leaves the device, plus the amount and a running counter. Your bank holds the matching key, so it can check the math.",
-        "id": "Kode itu disebut cryptogram. Chip, atau ponselmu, menghitungnya dari kunci rahasia yang tidak pernah keluar dari perangkat, ditambah jumlah transaksi dan sebuah penghitung. Bank-mu menyimpan kunci pasangannya, jadi bisa memeriksa hitungannya."
+        "id": "Kode itu disebut cryptogram. Chip, atau ponselmu, menghitungnya dari kunci rahasia yang tidak pernah keluar dari perangkat, ditambah nilai transaksi dan sebuah penghitung. Bank-mu menyimpan kunci pasangannya, jadi bisa memeriksa hitungannya."
       },
       "visual": {
         "type": "remotion-diagram",
@@ -564,7 +570,17 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://docs.aws.amazon.com/payment-cryptography/latest/userguide/use-cases-issuers.generalfunctions.arqc.html",
+          "claim": "Kartu membuat cryptogram (ARQC) dari kunci turunan dan data transaksi; issuer memverifikasinya"
+        },
+        {
+          "url": "https://www.ibm.com/docs/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.csfb400/EMVTrans.htm",
+          "claim": "Cryptogram dibuat kartu dan diverifikasi dengan kunci issuer"
+        }
+      ]
     },
     {
       "id": "s07",
@@ -616,7 +632,7 @@
             "label": "PHONE",
             "emo": "smug",
             "say": {
-              "text": "Token, not my card number.",
+              "text": "My real number? Never.",
               "at": 0.12
             },
             "scale": 1
@@ -652,7 +668,13 @@
           "mobile payment smartphone nfc",
           "pay with phone store"
         ]
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.emvco.com/knowledge-hub/the-what-why-and-how-of-emv-payment-tokenisation/",
+          "claim": "Token mengganti nomor kartu dan bisa dibatasi ke satu perangkat"
+        }
+      ]
     },
     {
       "id": "s08",
@@ -689,7 +711,7 @@
             "label": "THIEF",
             "emo": "smug",
             "say": {
-              "text": "Stolen token!",
+              "text": "Easy money.",
               "at": 0.1
             },
             "scale": 1
@@ -733,7 +755,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.emvco.com/knowledge-hub/the-what-why-and-how-of-emv-payment-tokenisation/",
+          "claim": "Token mengganti nomor kartu dan bisa dibatasi ke satu perangkat"
+        }
+      ]
     },
     {
       "id": "s09",
@@ -816,7 +844,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.wikipedia.org/wiki/Card_scheme",
+          "claim": "Peran jaringan kartu, issuer, acquirer"
+        }
+      ]
     },
     {
       "id": "s10",
@@ -914,7 +948,17 @@
             1.08
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://usa.visa.com/partner-with-us/info-for-partners/numerics-initiative.html",
+          "claim": "BIN penerbit 6 sampai 8 digit"
+        },
+        {
+          "url": "https://www.wikipedia.org/wiki/Card_scheme",
+          "claim": "Peran jaringan kartu, issuer, acquirer"
+        }
+      ]
     },
     {
       "id": "s11",
@@ -1019,14 +1063,20 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.wikipedia.org/wiki/Card_scheme",
+          "claim": "Peran jaringan kartu, issuer, acquirer"
+        }
+      ]
     },
     {
       "id": "s12",
-      "role": "body",
+      "role": "rehook",
       "narration": {
-        "en": "Banks have passed these messages in the same format since 1987. It's called ISO 8583.",
-        "id": "Bank memakai format pesan yang sama sejak 1987. Namanya ISO 8583."
+        "en": "Now open the message itself. Card networks use a format called ISO 8583, first defined in 1987.",
+        "id": "Sekarang buka pesannya. Jaringan kartu memakai format bernama ISO 8583, yang pertama dirumuskan tahun 1987."
       },
       "visual": {
         "type": "remotion-code",
@@ -1075,7 +1125,7 @@
             "label": "TERMINAL",
             "emo": "happy",
             "say": {
-              "text": "ISO 8583. Since 1987.",
+              "text": "I'm older than your phone.",
               "at": 0.1
             },
             "scale": 1
@@ -1091,7 +1141,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/ISO_8583",
+          "claim": "ISO 8583 edisi 1987, MTI dan data element, kelas pesan reversal"
+        }
+      ]
     },
     {
       "id": "s13",
@@ -1151,7 +1207,7 @@
             "emo": "happy",
             "pose": "point",
             "say": {
-              "text": "0100 = may I charge this card?",
+              "text": "The politest number I know.",
               "at": 0.2
             },
             "scale": 1
@@ -1163,7 +1219,13 @@
             1.08
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/ISO_8583",
+          "claim": "ISO 8583 edisi 1987, MTI dan data element, kelas pesan reversal"
+        }
+      ]
     },
     {
       "id": "s14",
@@ -1224,7 +1286,7 @@
             "label": "TERMINAL",
             "emo": "think",
             "say": {
-              "text": "Card, amount, currency.",
+              "text": "Fill in the blanks.",
               "at": 0.2
             },
             "scale": 1
@@ -1236,7 +1298,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/ISO_8583",
+          "claim": "ISO 8583 edisi 1987, MTI dan data element, kelas pesan reversal"
+        }
+      ]
     },
     {
       "id": "s15",
@@ -1289,7 +1357,7 @@
             "color": "#e6d3a8",
             "emo": "shock",
             "say": {
-              "text": "Under one second?!",
+              "text": "No pressure.",
               "at": 0.2
             },
             "scale": 1
@@ -1322,7 +1390,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring",
+          "claim": "Skor risiko real-time dipakai issuer untuk menyetujui atau menolak"
+        }
+      ]
     },
     {
       "id": "s16",
@@ -1362,7 +1436,7 @@
             "color": "#e6d3a8",
             "emo": "happy",
             "say": {
-              "text": "Real card? Right code? ✓",
+              "text": "Papers, please.",
               "at": 0.15,
               "by": 0.02
             },
@@ -1375,7 +1449,13 @@
             1.08
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring",
+          "claim": "Skor risiko real-time dipakai issuer untuk menyetujui atau menolak"
+        }
+      ]
     },
     {
       "id": "s17",
@@ -1424,7 +1504,7 @@
             "color": "#e6d3a8",
             "emo": "think",
             "say": {
-              "text": "Hmm. Usual shop? Usual hour?",
+              "text": "Hmm. This is new.",
               "at": 0.2
             },
             "scale": 0.7
@@ -1444,7 +1524,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring",
+          "claim": "Skor risiko real-time dipakai issuer untuk menyetujui atau menolak"
+        }
+      ]
     },
     {
       "id": "s18",
@@ -1514,7 +1600,17 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring",
+          "claim": "Skor risiko real-time dipakai issuer untuk menyetujui atau menolak"
+        },
+        {
+          "url": "https://docs.stripe.com/issuing/controls/sms-fraud-alerts",
+          "claim": "SMS konfirmasi setelah transaksi dicurigai"
+        }
+      ]
     },
     {
       "id": "s19",
@@ -1583,7 +1679,13 @@
             1.08
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/ISO_8583",
+          "claim": "ISO 8583 edisi 1987, MTI dan data element, kelas pesan reversal"
+        }
+      ]
     },
     {
       "id": "s20",
@@ -1637,7 +1739,7 @@
             "label": "TERMINAL",
             "emo": "happy",
             "say": {
-              "text": "Approval code. Keep it!",
+              "text": "Don't lose this.",
               "at": 0.3
             },
             "scale": 1
@@ -1649,7 +1751,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/ISO_8583",
+          "claim": "ISO 8583 edisi 1987, MTI dan data element, kelas pesan reversal"
+        }
+      ]
     },
     {
       "id": "s21",
@@ -1717,7 +1825,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://docs.ebanx.com/docs/pay-in/dev-tools/response-codes/iso8583-codes",
+          "claim": "Response code 05 dan 51"
+        }
+      ]
     },
     {
       "id": "s22",
@@ -1755,7 +1869,7 @@
             "label": "YOU",
             "emo": "shock",
             "say": {
-              "text": "Why?!",
+              "text": "But why?",
               "at": 0.3
             },
             "scale": 1
@@ -1804,7 +1918,13 @@
           "card declined payment terminal",
           "cashier payment terminal"
         ]
-      }
+      },
+      "sources": [
+        {
+          "url": "https://docs.ebanx.com/docs/pay-in/dev-tools/response-codes/iso8583-codes",
+          "claim": "Response code 05 dan 51"
+        }
+      ]
     },
     {
       "id": "s23",
@@ -1850,7 +1970,7 @@
             "label": "SHOP OWNER",
             "emo": "worry",
             "say": {
-              "text": "Zero. Between banks.",
+              "text": "So I got nothing.",
               "at": 0.4
             },
             "scale": 0.7
@@ -1907,7 +2027,7 @@
             "label": "YOU",
             "emo": "think",
             "say": {
-              "text": "I see $95?",
+              "text": "I see less money.",
               "at": 0.3
             },
             "scale": 0.7
@@ -1931,7 +2051,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://stripe.com/us/resources/more/authorization-holds-explained",
+          "claim": "Authorization hold kedaluwarsa bila tidak di-capture"
+        }
+      ]
     },
     {
       "id": "s25",
@@ -1963,7 +2089,7 @@
             "emo": "smug",
             "scale": 0.9,
             "say": {
-              "text": "Pending and posted are two records.",
+              "text": "I have two stories.",
               "at": 0.2
             }
           }
@@ -1981,7 +2107,13 @@
           "mobile banking app transactions"
         ],
         "keep": "pixabay:1110"
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf",
+          "claim": "Authorization, clearing, settlement"
+        }
+      ]
     },
     {
       "id": "s26",
@@ -2031,14 +2163,24 @@
           "fuel pump"
         ],
         "keep": "pixabay:175"
-      }
+      },
+      "sources": [
+        {
+          "url": "https://stripe.com/us/resources/more/authorization-holds-explained",
+          "claim": "Authorization hold kedaluwarsa bila tidak di-capture"
+        },
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/regional/na/us/support-legal/documents/authorization-and-reversal-processing-best-practices-for-merchants.pdf",
+          "claim": "Estimated dan incremental authorization untuk hotel dan rental"
+        }
+      ]
     },
     {
       "id": "s27",
       "role": "body",
       "narration": {
-        "en": "A hotel can also raise the hold during your stay, and the final charge can clear for more than was approved. Card rules allow that for hotels, car rentals, and restaurants, not for an ordinary shop.",
-        "id": "Hotel juga bisa menaikkan hold selama kamu menginap, dan tagihan akhirnya boleh lebih besar dari yang di-approve. Aturan kartu mengizinkan itu untuk hotel, rental mobil, dan restoran, tidak untuk toko biasa."
+        "en": "A hotel can also raise the hold during your stay, and the final charge can differ from the first amount. Card rules give hotels and car rentals room to do that, and a restaurant can add your tip.",
+        "id": "Hotel juga bisa menaikkan hold selama kamu menginap, dan tagihan akhirnya bisa beda dari jumlah awal. Aturan kartu memberi hotel dan rental mobil ruang untuk itu, dan restoran bisa menambahkan tip."
       },
       "visual": {
         "type": "remotion-diagram",
@@ -2094,14 +2236,20 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/regional/na/us/support-legal/documents/authorization-and-reversal-processing-best-practices-for-merchants.pdf",
+          "claim": "Estimated dan incremental authorization untuk hotel dan rental"
+        }
+      ]
     },
     {
       "id": "s28",
       "role": "body",
       "narration": {
-        "en": "If the shop never follows up, the hold expires, usually within a few days to a week for a purchase like this. That's the pending charge that disappears.",
-        "id": "Kalau toko tidak pernah menindaklanjuti, hold-nya kedaluwarsa, biasanya beberapa hari sampai seminggu untuk transaksi seperti ini. Itulah transaksi pending yang tiba-tiba hilang."
+        "en": "If the shop never follows up, the hold expires. For a purchase like this, that is usually a matter of days. That's the pending charge that disappears.",
+        "id": "Kalau toko tidak pernah menindaklanjuti, hold-nya kedaluwarsa. Untuk transaksi seperti ini biasanya hitungan hari. Itulah transaksi pending yang tiba-tiba hilang."
       },
       "visual": {
         "type": "remotion-diagram",
@@ -2156,7 +2304,13 @@
             1.08
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://stripe.com/us/resources/more/authorization-holds-explained",
+          "claim": "Authorization hold kedaluwarsa bila tidak di-capture"
+        }
+      ]
     },
     {
       "id": "s29",
@@ -2201,7 +2355,7 @@
             "label": "YOU",
             "emo": "shock",
             "say": {
-              "text": "I bought ONE coffee!",
+              "text": "I bought ONE coffee.",
               "at": 0.3
             },
             "scale": 0.7
@@ -2269,7 +2423,7 @@
             "label": "TERMINAL",
             "emo": "worry",
             "say": {
-              "text": "Hello?? Hello??",
+              "text": "Hello? Anyone?",
               "at": 0.6
             },
             "scale": 1
@@ -2338,7 +2492,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/ISO_8583",
+          "claim": "ISO 8583 edisi 1987, MTI dan data element, kelas pesan reversal"
+        }
+      ]
     },
     {
       "id": "s31",
@@ -2382,7 +2542,7 @@
             "label": "YOU",
             "emo": "shock",
             "say": {
-              "text": "Two holds!",
+              "text": "That's double.",
               "at": 0.3
             },
             "scale": 0.7
@@ -2465,7 +2625,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/ISO_8583",
+          "claim": "ISO 8583 edisi 1987, MTI dan data element, kelas pesan reversal"
+        }
+      ]
     },
     {
       "id": "s33",
@@ -2522,8 +2688,8 @@
       "id": "s34",
       "role": "body",
       "narration": {
-        "en": "On a flight with no connection, the card and the terminal approve the purchase offline, using a spending limit the bank wrote onto the chip.",
-        "id": "Di penerbangan tanpa koneksi, kartu dan terminal menyetujui transaksi secara offline, pakai batas belanja yang ditulis bank ke dalam chip."
+        "en": "On a flight with no connection, the card and the terminal can approve the purchase offline, within limits set on the chip and the terminal.",
+        "id": "Di penerbangan tanpa koneksi, kartu dan terminal bisa menyetujui transaksi secara offline, dalam batas yang dipasang di chip dan terminal."
       },
       "visual": {
         "type": "remotion-diagram",
@@ -2568,7 +2734,7 @@
             "label": "TERMINAL",
             "emo": "happy",
             "say": {
-              "text": "Approved. Offline!",
+              "text": "Trust me on this one.",
               "at": 0.2
             },
             "scale": 1
@@ -2583,7 +2749,7 @@
             "emo": "shock",
             "scale": 0.9,
             "say": {
-              "text": "Hello? Anyone?",
+              "text": "I heard nothing.",
               "at": 0.55
             }
           }
@@ -2600,14 +2766,24 @@
           "airplane cabin passengers",
           "airplane interior seats"
         ]
-      }
+      },
+      "sources": [
+        {
+          "url": "https://support.pay.nl/en/knowledge/offline-pinnen",
+          "claim": "Pembayaran offline: risiko ada di merchant"
+        },
+        {
+          "url": "https://www.americanbanker.com/news/making-plane-sense-of-in-flight-payment-risk",
+          "claim": "Risiko pembayaran di pesawat"
+        }
+      ]
     },
     {
       "id": "s35",
       "role": "body",
       "narration": {
-        "en": "The bank finds out after landing, when the airline uploads the sales. If the card is no good by then, the airline usually takes the loss.",
-        "id": "Bank baru tahu setelah mendarat, saat maskapai mengunggah data penjualan. Kalau kartunya ternyata bermasalah, biasanya maskapai yang menanggung ruginya."
+        "en": "The bank finds out after landing, when the airline uploads the sales. If the card is no good by then, the airline can end up taking the loss.",
+        "id": "Bank baru tahu setelah mendarat, saat maskapai mengunggah data penjualan. Kalau kartunya ternyata bermasalah, maskapai bisa jadi yang menanggung ruginya."
       },
       "visual": {
         "type": "remotion-diagram",
@@ -2648,7 +2824,7 @@
             "emo": "happy",
             "scale": 1.1,
             "say": {
-              "text": "Landed! Uploading sales.",
+              "text": "Landed. Uploading.",
               "at": 0.1
             }
           },
@@ -2662,7 +2838,7 @@
             "emo": "angry",
             "scale": 0.9,
             "say": {
-              "text": "This card is no good!",
+              "text": "Well, that's awkward.",
               "at": 0.6
             }
           }
@@ -2691,14 +2867,24 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://support.pay.nl/en/knowledge/offline-pinnen",
+          "claim": "Pembayaran offline: risiko ada di merchant"
+        },
+        {
+          "url": "https://www.americanbanker.com/news/making-plane-sense-of-in-flight-payment-risk",
+          "claim": "Risiko pembayaran di pesawat"
+        }
+      ]
     },
     {
       "id": "s36",
       "role": "body",
       "narration": {
-        "en": "That's also why some airlines cap what you can buy on board. A higher limit means a bigger possible loss.",
-        "id": "Itu juga alasan sebagian maskapai membatasi nilai belanja di pesawat. Batas lebih tinggi berarti potensi rugi lebih besar."
+        "en": "That's one reason an airline might cap what you can buy on board. A higher limit means a bigger possible loss.",
+        "id": "Itu salah satu alasan maskapai bisa membatasi nilai belanja di pesawat. Batas lebih tinggi berarti potensi rugi lebih besar."
       },
       "visual": {
         "type": "remotion-data",
@@ -2760,7 +2946,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.americanbanker.com/news/making-plane-sense-of-in-flight-payment-risk",
+          "claim": "Risiko pembayaran di pesawat"
+        }
+      ]
     },
     {
       "id": "s37",
@@ -2800,7 +2992,7 @@
             "label": "TERMINAL",
             "emo": "happy",
             "say": {
-              "text": "End of day: one big batch.",
+              "text": "Bundle time.",
               "at": 0.15
             },
             "scale": 1
@@ -2854,7 +3046,13 @@
           "cafe closing counter",
           "cash register shop"
         ]
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf",
+          "claim": "Authorization, clearing, settlement"
+        }
+      ]
     },
     {
       "id": "s38",
@@ -2904,7 +3102,7 @@
             "color": "#cfe3f7",
             "emo": "happy",
             "say": {
-              "text": "Code A1B2C3. Match!",
+              "text": "Found you.",
               "at": 0.25
             },
             "scale": 1
@@ -2952,7 +3150,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf",
+          "claim": "Authorization, clearing, settlement"
+        }
+      ]
     },
     {
       "id": "s39",
@@ -3000,7 +3204,7 @@
             "label": "YOU",
             "emo": "happy",
             "say": {
-              "text": "Generous tip!",
+              "text": "Keep the change.",
               "at": 0.3
             },
             "scale": 0.7
@@ -3024,18 +3228,24 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf",
+          "claim": "Authorization, clearing, settlement"
+        }
+      ]
     },
     {
       "id": "s40",
       "role": "body",
       "narration": {
-        "en": "Pay in another currency and the amount changes again. The conversion usually happens when the purchase clears, so the posted amount can differ from what the terminal showed.",
-        "id": "Bayar dalam mata uang lain dan jumlahnya berubah lagi. Konversinya biasanya terjadi saat transaksi di-clearing, jadi jumlah yang posted bisa beda dari yang tampil di terminal."
+        "en": "Pay in another currency and there is one more step. The amount gets converted, and your bank may add a foreign transaction fee, so your statement can differ from your own quick math.",
+        "id": "Bayar dalam mata uang lain dan ada satu langkah lagi. Jumlahnya dikonversi, dan bank-mu bisa menambahkan biaya transaksi luar negeri, jadi angka di tagihan bisa beda dari hitungan cepatmu."
       },
       "visual": {
         "type": "remotion-data",
-        "description": "Dua angka bersebelahan: jumlah di terminal (mata uang asing) dan jumlah posted (mata uang rekening), dengan panah konversi bertanda 'saat clearing'",
+        "description": "Dua angka bersebelahan: jumlah di terminal (mata uang asing) dan jumlah posted (mata uang rekening), dengan panah bertanda rate + fees",
         "spec": {
           "kind": "stats",
           "items": [
@@ -3049,7 +3259,7 @@
               "tone": "hot"
             }
           ],
-          "between": "converted at clearing",
+          "between": "rate + fees",
           "note": "example rate"
         }
       },
@@ -3070,7 +3280,7 @@
             "label": "YOU",
             "emo": "shock",
             "say": {
-              "text": "It says $10.85?!",
+              "text": "That's not my math.",
               "at": 0.4
             },
             "scale": 0.7
@@ -3096,7 +3306,17 @@
           "euro dollar banknotes",
           "foreign currency money"
         ]
-      }
+      },
+      "sources": [
+        {
+          "url": "https://corporate.visa.com/en/sites/visa-perspectives/company-news/pay-the-same-exchange-rate-every-time.html",
+          "claim": "Kurs Visa"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/credit-cards/currency-exchange-rate-credit-card-statement-doesnt-match-online-rate",
+          "claim": "Angka tagihan bisa beda dari kurs online"
+        }
+      ]
     },
     {
       "id": "s41",
@@ -3157,14 +3377,20 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf",
+          "claim": "Authorization, clearing, settlement"
+        }
+      ]
     },
     {
       "id": "s42",
       "role": "body",
       "narration": {
-        "en": "Everything so far is the dual-message path: one message to approve, a second record to charge. Most credit card purchases go this way.",
-        "id": "Semua tadi adalah jalur dual-message: satu pesan untuk approve, satu record lagi untuk menagih. Kebanyakan transaksi kartu kredit lewat jalur ini."
+        "en": "Everything so far is the dual-message path: one message to approve, a second record to charge. Credit card purchases typically go this way.",
+        "id": "Semua tadi adalah jalur dual-message: satu pesan untuk approve, satu record lagi untuk menagih. Transaksi kartu kredit biasanya lewat jalur ini."
       },
       "visual": {
         "type": "remotion-diagram",
@@ -3248,7 +3474,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.marqeta.com/blog/single-vs-dual-messaging-which-ways-the-right-way",
+          "claim": "Single-message (debit PIN) dan dual-message"
+        }
+      ]
     },
     {
       "id": "s43",
@@ -3315,7 +3547,13 @@
           "entering pin keypad",
           "atm keypad"
         ]
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.marqeta.com/blog/single-vs-dual-messaging-which-ways-the-right-way",
+          "claim": "Single-message (debit PIN) dan dual-message"
+        }
+      ]
     },
     {
       "id": "s44",
@@ -3387,7 +3625,7 @@
             "label": "YOU",
             "emo": "happy",
             "say": {
-              "text": "Posts sooner!",
+              "text": "That was quick.",
               "at": 0.3
             },
             "scale": 0.7
@@ -3411,7 +3649,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.marqeta.com/blog/single-vs-dual-messaging-which-ways-the-right-way",
+          "claim": "Single-message (debit PIN) dan dual-message"
+        }
+      ]
     },
     {
       "id": "s45",
@@ -3556,14 +3800,24 @@
             1.08
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf",
+          "claim": "Authorization, clearing, settlement"
+        },
+        {
+          "url": "https://sulagnasasmal.github.io/us-payments-hub/card.html",
+          "claim": "Net settlement lewat bank settlement/Fedwire; merchant dibayar T+1 sampai T+3"
+        }
+      ]
     },
     {
       "id": "s47",
       "role": "body",
       "narration": {
-        "en": "Without netting, every purchase would be its own transfer between banks: hundreds of millions of tiny payments a day.",
-        "id": "Tanpa netting, setiap transaksi jadi transfer sendiri antar bank: ratusan juta pembayaran kecil setiap hari."
+        "en": "Without netting, every purchase would be its own transfer between banks, and Visa alone handles hundreds of millions of transactions a day.",
+        "id": "Tanpa netting, setiap transaksi jadi transfer sendiri antar bank, padahal Visa saja menangani ratusan juta transaksi sehari."
       },
       "visual": {
         "type": "remotion-data",
@@ -3603,7 +3857,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://coinlaw.io/visa-statistics/",
+          "claim": "Visa: ratusan juta transaksi per hari (sumber sekunder dari laporan tahunan Visa)"
+        }
+      ]
     },
     {
       "id": "s48",
@@ -3640,7 +3900,7 @@
             "color": "#e6d3a8",
             "emo": "shock",
             "say": {
-              "text": "Today's total!",
+              "text": "Big envelope today.",
               "at": 0.3
             },
             "scale": 0.7
@@ -3668,7 +3928,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://sulagnasasmal.github.io/us-payments-hub/card.html",
+          "claim": "Net settlement lewat bank settlement/Fedwire; merchant dibayar T+1 sampai T+3"
+        }
+      ]
     },
     {
       "id": "s49",
@@ -3728,7 +3994,7 @@
             "emo": "smug",
             "scale": 1.05,
             "say": {
-              "text": "One net amount per bank.",
+              "text": "Form a line, banks.",
               "at": 0.5
             }
           }
@@ -3757,7 +4023,13 @@
             1.08
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://sulagnasasmal.github.io/us-payments-hub/card.html",
+          "claim": "Net settlement lewat bank settlement/Fedwire; merchant dibayar T+1 sampai T+3"
+        }
+      ]
     },
     {
       "id": "s50",
@@ -3842,7 +4114,13 @@
           "barista coffee shop busy",
           "coffee shop counter"
         ]
-      }
+      },
+      "sources": [
+        {
+          "url": "https://sulagnasasmal.github.io/us-payments-hub/card.html",
+          "claim": "Net settlement lewat bank settlement/Fedwire; merchant dibayar T+1 sampai T+3"
+        }
+      ]
     },
     {
       "id": "s51",
@@ -3925,7 +4203,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://sulagnasasmal.github.io/us-payments-hub/card.html",
+          "claim": "Net settlement lewat bank settlement/Fedwire; merchant dibayar T+1 sampai T+3"
+        }
+      ]
     },
     {
       "id": "s52",
@@ -3970,7 +4254,7 @@
             "label": "SHOP OWNER",
             "emo": "shock",
             "say": {
-              "text": "Where did the rest go?",
+              "text": "Where did it go?",
               "at": 0.5
             },
             "scale": 0.7
@@ -4051,7 +4335,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://sulagnasasmal.github.io/us-payments-hub/card.html",
+          "claim": "Net settlement lewat bank settlement/Fedwire; merchant dibayar T+1 sampai T+3"
+        }
+      ]
     },
     {
       "id": "s54",
@@ -4140,7 +4430,7 @@
             "scale": 0.8,
             "emo": "happy",
             "say": {
-              "text": "I dispute that charge!",
+              "text": "Hang on. Give it back.",
               "at": 0.1
             }
           }
@@ -4190,7 +4480,13 @@
             0.012
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.mastercard.com/gb/en/news-and-trends/Insights/2024/how-can-merchants-dispute-credit-card-chargebacks.html",
+          "claim": "Proses chargeback dan bantahan merchant"
+        }
+      ]
     },
     {
       "id": "s55",
@@ -4238,7 +4534,7 @@
             "label": "SHOP OWNER",
             "emo": "worry",
             "say": {
-              "text": "I have the approval code!",
+              "text": "Not so fast.",
               "at": 0.4
             },
             "scale": 1
@@ -4256,14 +4552,24 @@
           "receipt printing",
           "paper receipt"
         ]
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.mastercard.com/gb/en/news-and-trends/Insights/2024/how-can-merchants-dispute-credit-card-chargebacks.html",
+          "claim": "Proses chargeback dan bantahan merchant"
+        },
+        {
+          "url": "https://stripe.com/resources/more/representment-explained",
+          "claim": "Bukti representment seperti struk"
+        }
+      ]
     },
     {
       "id": "s56",
       "role": "body",
       "narration": {
-        "en": "A refund is a separate thing. The shop sends a new credit back through the same path, in the other direction, so it takes its own days to arrive. The original charge doesn't get erased.",
-        "id": "Refund itu hal yang terpisah. Toko mengirim kredit baru lewat jalur yang sama, dengan arah sebaliknya, jadi butuh beberapa hari sendiri untuk sampai. Transaksi aslinya tidak dihapus."
+        "en": "A refund is a separate thing. The shop sends a new credit back through the same path, in the other direction, so it takes its own days to arrive. The original charge usually stays on your statement.",
+        "id": "Refund itu hal yang terpisah. Toko mengirim kredit baru lewat jalur yang sama, dengan arah sebaliknya, jadi butuh beberapa hari sendiri untuk sampai. Transaksi aslinya biasanya tetap ada."
       },
       "visual": {
         "type": "remotion-diagram",
@@ -4311,7 +4617,7 @@
             "label": "SHOP OWNER",
             "emo": "neutral",
             "say": {
-              "text": "Refund sent. Give it days.",
+              "text": "Patience, please.",
               "at": 0.5
             },
             "scale": 0.7
@@ -4323,7 +4629,13 @@
             1
           ]
         }
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.paypal.com/money-hub/article/how-do-credit-card-refunds-work",
+          "claim": "Refund tampil sebagai entri terpisah"
+        }
+      ]
     },
     {
       "id": "s57",
@@ -4373,7 +4685,7 @@
             "label": "YOU",
             "emo": "happy",
             "say": {
-              "text": "Promise. Bill. Money.",
+              "text": "Now it makes sense.",
               "at": 0.4
             },
             "scale": 0.7
@@ -4439,7 +4751,7 @@
             "label": "YOU",
             "emo": "happy",
             "say": {
-              "text": "Who takes a cut?",
+              "text": "Tell me everything.",
               "at": 0.4
             },
             "scale": 0.7
@@ -4555,6 +4867,96 @@
     {
       "scene": "s57",
       "title": "The recap"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://docs.aws.amazon.com/payment-cryptography/latest/userguide/use-cases-issuers.generalfunctions.arqc.html",
+      "claim": "Kartu membuat cryptogram (ARQC) dari kunci turunan dan data transaksi; issuer memverifikasinya"
+    },
+    {
+      "url": "https://www.ibm.com/docs/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.csfb400/EMVTrans.htm",
+      "claim": "Cryptogram dibuat kartu dan diverifikasi dengan kunci issuer"
+    },
+    {
+      "url": "https://www.emvco.com/knowledge-hub/the-what-why-and-how-of-emv-payment-tokenisation/",
+      "claim": "Token mengganti nomor kartu dan bisa dibatasi ke satu perangkat"
+    },
+    {
+      "url": "https://www.wikipedia.org/wiki/Card_scheme",
+      "claim": "Peran jaringan kartu, issuer, acquirer"
+    },
+    {
+      "url": "https://usa.visa.com/partner-with-us/info-for-partners/numerics-initiative.html",
+      "claim": "BIN penerbit 6 sampai 8 digit"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/ISO_8583",
+      "claim": "ISO 8583 edisi 1987, MTI dan data element, kelas pesan reversal"
+    },
+    {
+      "url": "https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring",
+      "claim": "Skor risiko real-time dipakai issuer untuk menyetujui atau menolak"
+    },
+    {
+      "url": "https://docs.stripe.com/issuing/controls/sms-fraud-alerts",
+      "claim": "SMS konfirmasi setelah transaksi dicurigai"
+    },
+    {
+      "url": "https://docs.ebanx.com/docs/pay-in/dev-tools/response-codes/iso8583-codes",
+      "claim": "Response code 05 dan 51"
+    },
+    {
+      "url": "https://stripe.com/us/resources/more/authorization-holds-explained",
+      "claim": "Authorization hold kedaluwarsa bila tidak di-capture"
+    },
+    {
+      "url": "https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf",
+      "claim": "Authorization, clearing, settlement"
+    },
+    {
+      "url": "https://usa.visa.com/content/dam/VCOM/regional/na/us/support-legal/documents/authorization-and-reversal-processing-best-practices-for-merchants.pdf",
+      "claim": "Estimated dan incremental authorization untuk hotel dan rental"
+    },
+    {
+      "url": "https://support.pay.nl/en/knowledge/offline-pinnen",
+      "claim": "Pembayaran offline: risiko ada di merchant"
+    },
+    {
+      "url": "https://www.americanbanker.com/news/making-plane-sense-of-in-flight-payment-risk",
+      "claim": "Risiko pembayaran di pesawat"
+    },
+    {
+      "url": "https://corporate.visa.com/en/sites/visa-perspectives/company-news/pay-the-same-exchange-rate-every-time.html",
+      "claim": "Kurs Visa"
+    },
+    {
+      "url": "https://www.nerdwallet.com/article/credit-cards/currency-exchange-rate-credit-card-statement-doesnt-match-online-rate",
+      "claim": "Angka tagihan bisa beda dari kurs online"
+    },
+    {
+      "url": "https://www.marqeta.com/blog/single-vs-dual-messaging-which-ways-the-right-way",
+      "claim": "Single-message (debit PIN) dan dual-message"
+    },
+    {
+      "url": "https://sulagnasasmal.github.io/us-payments-hub/card.html",
+      "claim": "Net settlement lewat bank settlement/Fedwire; merchant dibayar T+1 sampai T+3"
+    },
+    {
+      "url": "https://coinlaw.io/visa-statistics/",
+      "claim": "Visa: ratusan juta transaksi per hari (sumber sekunder dari laporan tahunan Visa)"
+    },
+    {
+      "url": "https://www.mastercard.com/gb/en/news-and-trends/Insights/2024/how-can-merchants-dispute-credit-card-chargebacks.html",
+      "claim": "Proses chargeback dan bantahan merchant"
+    },
+    {
+      "url": "https://stripe.com/resources/more/representment-explained",
+      "claim": "Bukti representment seperti struk"
+    },
+    {
+      "url": "https://www.paypal.com/money-hub/article/how-do-credit-card-refunds-work",
+      "claim": "Refund tampil sebagai entri terpisah"
     }
   ]
 }

@@ -655,7 +655,7 @@
         "tone": "hot"
       }
     ],
-    "between": "converted at clearing",
+    "between": "rate + fees",
     "note": "example rate"
   },
   "s41": {

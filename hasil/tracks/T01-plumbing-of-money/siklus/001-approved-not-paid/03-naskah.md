@@ -1,6 +1,6 @@
 # Naskah: siklus 001-approved-not-paid (T01, uji-V2 variasi A)
 
-Tanggal: 2026-11-24 · Status: disetujui kreator 2026-11-24 (versi 58 scene) · Kata EN: 1334 · Kata ID: 1114
+Tanggal: 2026-11-24 · Status: direvisi 2026-11-25 sesuai QA, menunggu persetujuan kreator · Kata EN: 1350 · Kata ID: 1124
 
 **Janji:** After watching, you can tell which system created each line in your bank app (pending, posted, or the one that disappears) and why the shop gets paid days after you tap.
 
@@ -17,7 +17,7 @@ Tanggal: 2026-11-24 · Status: disetujui kreator 2026-11-24 (versi 58 scene) · 
 
 EN: Your card just said approved. The coffee shop hasn't been paid, and it won't be today.
 
-ID: Approved dalam dua detik. Tapi kedai kopinya belum dibayar, dan hari ini pun belum.
+ID: Kartumu baru saja bilang approved. Kedai kopinya belum dibayar, dan hari ini pun belum.
 
 Visual: Terminal menampilkan APPROVED; di sebelahnya saldo rekening kedai kopi tetap $0.00 · Teks layar: "APPROVED · shop received: $0.00"
 
@@ -57,7 +57,7 @@ Visual: Cryptogram disalin, dikirim ulang, dicap REJECTED
 
 EN: That code is called a cryptogram. The chip, or your phone, computes it from a secret key that never leaves the device, plus the amount and a running counter. Your bank holds the matching key, so it can check the math.
 
-ID: Kode itu disebut cryptogram. Chip, atau ponselmu, menghitungnya dari kunci rahasia yang tidak pernah keluar dari perangkat, ditambah jumlah transaksi dan sebuah penghitung. Bank-mu menyimpan kunci pasangannya, jadi bisa memeriksa hitungannya.
+ID: Kode itu disebut cryptogram. Chip, atau ponselmu, menghitungnya dari kunci rahasia yang tidak pernah keluar dari perangkat, ditambah nilai transaksi dan sebuah penghitung. Bank-mu menyimpan kunci pasangannya, jadi bisa memeriksa hitungannya.
 
 Visual: Kunci di dalam chip + jumlah + penghitung masuk ke satu kotak, keluar kode; bank di sisi lain memegang kunci pasangan dan mencocokkan hasilnya
 
@@ -101,11 +101,11 @@ ID: Jaringan kartu tidak menyimpan uangmu dan tidak meminjamkan apa pun. Ia meng
 
 Visual: Network digambar sebagai jalur pesan, ikon biaya kecil per pesan · Teks layar: "network = messages, not money"
 
-### s12 · body · remotion-code
+### s12 · rehook · remotion-code
 
-EN: Banks have passed these messages in the same format since 1987. It's called ISO 8583.
+EN: Now open the message itself. Card networks use a format called ISO 8583, first defined in 1987.
 
-ID: Bank memakai format pesan yang sama sejak 1987. Namanya ISO 8583.
+ID: Sekarang buka pesannya. Jaringan kartu memakai format bernama ISO 8583, yang pertama dirumuskan tahun 1987.
 
 Visual: Pesan ISO 8583 contoh (data fiktif), field ditampilkan satu per satu · Teks layar: "ISO 8583 (1987)"
 
@@ -223,17 +223,17 @@ Visual: Pom bensin, meja resepsionis hotel · Teks layar: "hold > final amount"
 
 ### s27 · body · remotion-diagram
 
-EN: A hotel can also raise the hold during your stay, and the final charge can clear for more than was approved. Card rules allow that for hotels, car rentals, and restaurants, not for an ordinary shop.
+EN: A hotel can also raise the hold during your stay, and the final charge can differ from the first amount. Card rules give hotels and car rentals room to do that, and a restaurant can add your tip.
 
-ID: Hotel juga bisa menaikkan hold selama kamu menginap, dan tagihan akhirnya boleh lebih besar dari yang di-approve. Aturan kartu mengizinkan itu untuk hotel, rental mobil, dan restoran, tidak untuk toko biasa.
+ID: Hotel juga bisa menaikkan hold selama kamu menginap, dan tagihan akhirnya bisa beda dari jumlah awal. Aturan kartu memberi hotel dan rental mobil ruang untuk itu, dan restoran bisa menambahkan tip.
 
 Visual: Hold hotel naik bertahap; label kategori hospitality
 
 ### s28 · body · remotion-diagram
 
-EN: If the shop never follows up, the hold expires, usually within a few days to a week for a purchase like this. That's the pending charge that disappears.
+EN: If the shop never follows up, the hold expires. For a purchase like this, that is usually a matter of days. That's the pending charge that disappears.
 
-ID: Kalau toko tidak pernah menindaklanjuti, hold-nya kedaluwarsa, biasanya beberapa hari sampai seminggu untuk transaksi seperti ini. Itulah transaksi pending yang tiba-tiba hilang.
+ID: Kalau toko tidak pernah menindaklanjuti, hold-nya kedaluwarsa. Untuk transaksi seperti ini biasanya hitungan hari. Itulah transaksi pending yang tiba-tiba hilang.
 
 Visual: Baris pending memudar dan hilang setelah penghitung hari
 
@@ -279,25 +279,25 @@ Visual: Troli penjualan di kabin pesawat
 
 ### s34 · body · remotion-diagram
 
-EN: On a flight with no connection, the card and the terminal approve the purchase offline, using a spending limit the bank wrote onto the chip.
+EN: On a flight with no connection, the card and the terminal can approve the purchase offline, within limits set on the chip and the terminal.
 
-ID: Di penerbangan tanpa koneksi, kartu dan terminal menyetujui transaksi secara offline, pakai batas belanja yang ditulis bank ke dalam chip.
+ID: Di penerbangan tanpa koneksi, kartu dan terminal bisa menyetujui transaksi secara offline, dalam batas yang dipasang di chip dan terminal.
 
 Visual: Kartu ↔ terminal saja; jalur ke bank terputus; label offline limit · Teks layar: "offline approval"
 
 ### s35 · body · remotion-diagram
 
-EN: The bank finds out after landing, when the airline uploads the sales. If the card is no good by then, the airline usually takes the loss.
+EN: The bank finds out after landing, when the airline uploads the sales. If the card is no good by then, the airline can end up taking the loss.
 
-ID: Bank baru tahu setelah mendarat, saat maskapai mengunggah data penjualan. Kalau kartunya ternyata bermasalah, biasanya maskapai yang menanggung ruginya.
+ID: Bank baru tahu setelah mendarat, saat maskapai mengunggah data penjualan. Kalau kartunya ternyata bermasalah, maskapai bisa jadi yang menanggung ruginya.
 
 Visual: Pesawat mendarat; batch transaksi terkirim; satu ditolak
 
 ### s36 · body · remotion-data
 
-EN: That's also why some airlines cap what you can buy on board. A higher limit means a bigger possible loss.
+EN: That's one reason an airline might cap what you can buy on board. A higher limit means a bigger possible loss.
 
-ID: Itu juga alasan sebagian maskapai membatasi nilai belanja di pesawat. Batas lebih tinggi berarti potensi rugi lebih besar.
+ID: Itu salah satu alasan maskapai bisa membatasi nilai belanja di pesawat. Batas lebih tinggi berarti potensi rugi lebih besar.
 
 Visual: Batas belanja di kabin vs potensi kerugian
 
@@ -327,9 +327,9 @@ Visual: Approved $40.00 → cleared $46.00 (+tip) · Teks layar: "approved $40 �
 
 ### s40 · body · remotion-data
 
-EN: Pay in another currency and the amount changes again. The conversion usually happens when the purchase clears, so the posted amount can differ from what the terminal showed.
+EN: Pay in another currency and there is one more step. The amount gets converted, and your bank may add a foreign transaction fee, so your statement can differ from your own quick math.
 
-ID: Bayar dalam mata uang lain dan jumlahnya berubah lagi. Konversinya biasanya terjadi saat transaksi di-clearing, jadi jumlah yang posted bisa beda dari yang tampil di terminal.
+ID: Bayar dalam mata uang lain dan ada satu langkah lagi. Jumlahnya dikonversi, dan bank-mu bisa menambahkan biaya transaksi luar negeri, jadi angka di tagihan bisa beda dari hitungan cepatmu.
 
 Visual: Dua angka bersebelahan: jumlah di terminal (mata uang asing) dan jumlah posted (mata uang rekening), dengan panah konversi bertanda 'saat clearing'
 
@@ -343,9 +343,9 @@ Visual: Baris pending berubah jadi posted · Teks layar: "pending → posted"
 
 ### s42 · body · remotion-diagram
 
-EN: Everything so far is the dual-message path: one message to approve, a second record to charge. Most credit card purchases go this way.
+EN: Everything so far is the dual-message path: one message to approve, a second record to charge. Credit card purchases typically go this way.
 
-ID: Semua tadi adalah jalur dual-message: satu pesan untuk approve, satu record lagi untuk menagih. Kebanyakan transaksi kartu kredit lewat jalur ini.
+ID: Semua tadi adalah jalur dual-message: satu pesan untuk approve, satu record lagi untuk menagih. Transaksi kartu kredit biasanya lewat jalur ini.
 
 Visual: Dua jalur: dual-message (approve + clear) dan single-message · Teks layar: "dual-message"
 
@@ -383,9 +383,9 @@ Visual: Matriks bank × bank dengan angka, dipadatkan jadi satu angka bersih per
 
 ### s47 · body · remotion-data
 
-EN: Without netting, every purchase would be its own transfer between banks: hundreds of millions of tiny payments a day.
+EN: Without netting, every purchase would be its own transfer between banks, and Visa alone handles hundreds of millions of transactions a day.
 
-ID: Tanpa netting, setiap transaksi jadi transfer sendiri antar bank: ratusan juta pembayaran kecil setiap hari.
+ID: Tanpa netting, setiap transaksi jadi transfer sendiri antar bank, padahal Visa saja menangani ratusan juta transaksi sehari.
 
 Visual: Ribuan panah kecil antar bank, dipadatkan jadi beberapa panah besar
 
@@ -455,9 +455,9 @@ Visual: DE38 A1B2C3 muncul lagi di berkas sengketa
 
 ### s56 · body · remotion-diagram
 
-EN: A refund is a separate thing. The shop sends a new credit back through the same path, in the other direction, so it takes its own days to arrive. The original charge doesn't get erased.
+EN: A refund is a separate thing. The shop sends a new credit back through the same path, in the other direction, so it takes its own days to arrive. The original charge usually stays on your statement.
 
-ID: Refund itu hal yang terpisah. Toko mengirim kredit baru lewat jalur yang sama, dengan arah sebaliknya, jadi butuh beberapa hari sendiri untuk sampai. Transaksi aslinya tidak dihapus.
+ID: Refund itu hal yang terpisah. Toko mengirim kredit baru lewat jalur yang sama, dengan arah sebaliknya, jadi butuh beberapa hari sendiri untuk sampai. Transaksi aslinya biasanya tetap ada.
 
 Visual: Dua baris di aplikasi bank: charge asli tetap ada, lalu baris credit baru muncul beberapa hari kemudian; panah jalur terbalik di atasnya
 
@@ -520,3 +520,34 @@ Judul: janji "shop hasn't been paid" terbayar di dua scene pertama (sebelum deti
 ## Revisi 2026-11-24 (perpanjangan durasi)
 
 TTS uji menunjukkan audio EN hanya 6,40 menit. Kreator meminta dua hal: (1) jeda 0,9 detik antar scene di render, (2) 5 scene isi baru: s06 cryptogram, s18 skor risiko fraud, s40 konversi mata uang saat clearing, s49 settlement antarbank lewat bank sentral, s56 refund. ID scene dinomori ulang; nomor di Shorts dan creator_evidence ikut diubah. Revisi ini perlu persetujuan ulang kreator.
+
+## Revisi 2026-11-25 (temuan QA)
+
+Narasi berubah di s01 (ID), s06 (ID), s12, s27, s28, s34, s35, s36, s40, s42, s47, s56. s12 jadi re-hook. Klaim yang dilunakkan atau dikoreksi: s12 (bukan "format yang sama sejak 1987"), s27 (tanpa "tidak untuk toko biasa"), s28, s34 sampai s36 (sumber lemah, dibuat bersyarat), s40 (Visa memakai kurs saat otorisasi, jadi klaim "konversi saat clearing" dihapus), s42, s47, s56. Bubble yang mengulang narasi diganti.
+
+## Sumber
+
+Diambil dari hasil pencarian 2026-11-25. Yang dibaca baru ringkasan hasil pencarian, bukan halaman lengkap; buka tautannya saat cek fakta.
+
+- [s05, s06] Kartu membuat cryptogram (ARQC) dari kunci turunan dan data transaksi; issuer memverifikasinya: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/use-cases-issuers.generalfunctions.arqc.html
+- [s06] Cryptogram dibuat kartu dan diverifikasi dengan kunci issuer: https://www.ibm.com/docs/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.csfb400/EMVTrans.htm
+- [s07, s08] Token mengganti nomor kartu dan bisa dibatasi ke satu perangkat: https://www.emvco.com/knowledge-hub/the-what-why-and-how-of-emv-payment-tokenisation/
+- [s09, s10, s11] Peran jaringan kartu, issuer, acquirer: https://www.wikipedia.org/wiki/Card_scheme
+- [s10] BIN penerbit 6 sampai 8 digit: https://usa.visa.com/partner-with-us/info-for-partners/numerics-initiative.html
+- [s12, s13, s14, s19, s20, s30, s32] ISO 8583 edisi 1987, MTI dan data element, kelas pesan reversal: https://en.wikipedia.org/wiki/ISO_8583
+- [s15, s16, s17, s18] Skor risiko real-time dipakai issuer untuk menyetujui atau menolak: https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring
+- [s18] SMS konfirmasi setelah transaksi dicurigai: https://docs.stripe.com/issuing/controls/sms-fraud-alerts
+- [s21, s22] Response code 05 dan 51: https://docs.ebanx.com/docs/pay-in/dev-tools/response-codes/iso8583-codes
+- [s24, s26, s28] Authorization hold kedaluwarsa bila tidak di-capture: https://stripe.com/us/resources/more/authorization-holds-explained
+- [s25, s37, s38, s39, s41, s46] Authorization, clearing, settlement: https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf
+- [s26, s27] Estimated dan incremental authorization untuk hotel dan rental: https://usa.visa.com/content/dam/VCOM/regional/na/us/support-legal/documents/authorization-and-reversal-processing-best-practices-for-merchants.pdf
+- [s34, s35] Pembayaran offline: risiko ada di merchant: https://support.pay.nl/en/knowledge/offline-pinnen
+- [s34, s35, s36] Risiko pembayaran di pesawat: https://www.americanbanker.com/news/making-plane-sense-of-in-flight-payment-risk
+- [s40] Kurs Visa: https://corporate.visa.com/en/sites/visa-perspectives/company-news/pay-the-same-exchange-rate-every-time.html
+- [s40] Angka tagihan bisa beda dari kurs online: https://www.nerdwallet.com/article/credit-cards/currency-exchange-rate-credit-card-statement-doesnt-match-online-rate
+- [s42, s43, s44] Single-message (debit PIN) dan dual-message: https://www.marqeta.com/blog/single-vs-dual-messaging-which-ways-the-right-way
+- [s46, s48, s49, s50, s51, s53] Net settlement lewat bank settlement/Fedwire; merchant dibayar T+1 sampai T+3: https://sulagnasasmal.github.io/us-payments-hub/card.html
+- [s47] Visa: ratusan juta transaksi per hari (sumber sekunder dari laporan tahunan Visa): https://coinlaw.io/visa-statistics/
+- [s54, s55] Proses chargeback dan bantahan merchant: https://www.mastercard.com/gb/en/news-and-trends/Insights/2024/how-can-merchants-dispute-credit-card-chargebacks.html
+- [s55] Bukti representment seperti struk: https://stripe.com/resources/more/representment-explained
+- [s56] Refund tampil sebagai entri terpisah: https://www.paypal.com/money-hub/article/how-do-credit-card-refunds-work

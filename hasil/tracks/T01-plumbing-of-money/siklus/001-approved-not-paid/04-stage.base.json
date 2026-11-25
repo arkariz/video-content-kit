@@ -91,7 +91,7 @@
         "label": "SHOP OWNER",
         "emo": "smug",
         "say": {
-          "text": "Two more systems.",
+          "text": "Brace yourself.",
           "at": 0.6
         },
         "scale": 0.7
@@ -117,7 +117,7 @@
         "label": "YOU",
         "emo": "think",
         "say": {
-          "text": "Pending? Posted? Gone?",
+          "text": "My app is a mystery.",
           "at": 0.35
         },
         "scale": 0.7
@@ -211,7 +211,7 @@
         "label": "CARD",
         "emo": "smug",
         "say": {
-          "text": "Replay it tomorrow!",
+          "text": "Copy me. I dare you.",
           "at": 0.1
         },
         "scale": 1
@@ -312,7 +312,7 @@
         "label": "PHONE",
         "emo": "smug",
         "say": {
-          "text": "Token, not my card number.",
+          "text": "My real number? Never.",
           "at": 0.12
         },
         "scale": 1
@@ -353,7 +353,7 @@
         "label": "THIEF",
         "emo": "smug",
         "say": {
-          "text": "Stolen token!",
+          "text": "Easy money.",
           "at": 0.1
         },
         "scale": 1
@@ -592,7 +592,7 @@
         "label": "TERMINAL",
         "emo": "happy",
         "say": {
-          "text": "ISO 8583. Since 1987.",
+          "text": "I'm older than your phone.",
           "at": 0.1
         },
         "scale": 1
@@ -623,7 +623,7 @@
         "emo": "happy",
         "pose": "point",
         "say": {
-          "text": "0100 = may I charge this card?",
+          "text": "The politest number I know.",
           "at": 0.2
         },
         "scale": 1
@@ -649,7 +649,7 @@
         "label": "TERMINAL",
         "emo": "think",
         "say": {
-          "text": "Card, amount, currency.",
+          "text": "Fill in the blanks.",
           "at": 0.2
         },
         "scale": 1
@@ -683,7 +683,7 @@
         "color": "#e6d3a8",
         "emo": "shock",
         "say": {
-          "text": "Under one second?!",
+          "text": "No pressure.",
           "at": 0.2
         },
         "scale": 1
@@ -732,7 +732,7 @@
         "color": "#e6d3a8",
         "emo": "happy",
         "say": {
-          "text": "Real card? Right code? ✓",
+          "text": "Papers, please.",
           "at": 0.15,
           "by": 0.02
         },
@@ -761,7 +761,7 @@
         "color": "#e6d3a8",
         "emo": "think",
         "say": {
-          "text": "Hmm. Usual shop? Usual hour?",
+          "text": "Hmm. This is new.",
           "at": 0.2
         },
         "scale": 0.7
@@ -873,7 +873,7 @@
         "label": "TERMINAL",
         "emo": "happy",
         "say": {
-          "text": "Approval code. Keep it!",
+          "text": "Don't lose this.",
           "at": 0.3
         },
         "scale": 1
@@ -928,7 +928,7 @@
         "label": "YOU",
         "emo": "shock",
         "say": {
-          "text": "Why?!",
+          "text": "But why?",
           "at": 0.3
         },
         "scale": 1
@@ -993,7 +993,7 @@
         "label": "SHOP OWNER",
         "emo": "worry",
         "say": {
-          "text": "Zero. Between banks.",
+          "text": "So I got nothing.",
           "at": 0.4
         },
         "scale": 0.7
@@ -1019,7 +1019,7 @@
         "label": "YOU",
         "emo": "think",
         "say": {
-          "text": "I see $95?",
+          "text": "I see less money.",
           "at": 0.3
         },
         "scale": 0.7
@@ -1055,7 +1055,7 @@
         "emo": "smug",
         "scale": 0.9,
         "say": {
-          "text": "Pending and posted are two records.",
+          "text": "I have two stories.",
           "at": 0.2
         }
       }
@@ -1175,7 +1175,7 @@
         "label": "YOU",
         "emo": "shock",
         "say": {
-          "text": "I bought ONE coffee!",
+          "text": "I bought ONE coffee.",
           "at": 0.3
         },
         "scale": 0.7
@@ -1206,7 +1206,7 @@
         "label": "TERMINAL",
         "emo": "worry",
         "say": {
-          "text": "Hello?? Hello??",
+          "text": "Hello? Anyone?",
           "at": 0.6
         },
         "scale": 1
@@ -1289,7 +1289,7 @@
         "label": "YOU",
         "emo": "shock",
         "say": {
-          "text": "Two holds!",
+          "text": "That's double.",
           "at": 0.3
         },
         "scale": 0.7
@@ -1373,7 +1373,7 @@
         "label": "TERMINAL",
         "emo": "happy",
         "say": {
-          "text": "Approved. Offline!",
+          "text": "Trust me on this one.",
           "at": 0.2
         },
         "scale": 1
@@ -1388,7 +1388,7 @@
         "emo": "shock",
         "scale": 0.9,
         "say": {
-          "text": "Hello? Anyone?",
+          "text": "I heard nothing.",
           "at": 0.55
         }
       }
@@ -1411,7 +1411,7 @@
         "emo": "happy",
         "scale": 1.1,
         "say": {
-          "text": "Landed! Uploading sales.",
+          "text": "Landed. Uploading.",
           "at": 0.1
         }
       },
@@ -1425,7 +1425,7 @@
         "emo": "angry",
         "scale": 0.9,
         "say": {
-          "text": "This card is no good!",
+          "text": "Well, that's awkward.",
           "at": 0.6
         }
       }
@@ -1503,7 +1503,7 @@
         "label": "TERMINAL",
         "emo": "happy",
         "say": {
-          "text": "End of day: one big batch.",
+          "text": "Bundle time.",
           "at": 0.15
         },
         "scale": 1
@@ -1564,7 +1564,7 @@
         "color": "#cfe3f7",
         "emo": "happy",
         "say": {
-          "text": "Code A1B2C3. Match!",
+          "text": "Found you.",
           "at": 0.25
         },
         "scale": 1
@@ -1626,7 +1626,7 @@
         "label": "YOU",
         "emo": "happy",
         "say": {
-          "text": "Generous tip!",
+          "text": "Keep the change.",
           "at": 0.3
         },
         "scale": 0.7
@@ -1664,7 +1664,7 @@
         "label": "YOU",
         "emo": "shock",
         "say": {
-          "text": "It says $10.85?!",
+          "text": "That's not my math.",
           "at": 0.4
         },
         "scale": 0.7
@@ -1796,7 +1796,7 @@
         "label": "YOU",
         "emo": "happy",
         "say": {
-          "text": "Posts sooner!",
+          "text": "That was quick.",
           "at": 0.3
         },
         "scale": 0.7
@@ -1932,7 +1932,7 @@
         "color": "#e6d3a8",
         "emo": "shock",
         "say": {
-          "text": "Today's total!",
+          "text": "Big envelope today.",
           "at": 0.3
         },
         "scale": 0.7
@@ -1991,7 +1991,7 @@
         "emo": "smug",
         "scale": 1.05,
         "say": {
-          "text": "One net amount per bank.",
+          "text": "Form a line, banks.",
           "at": 0.5
         }
       }
@@ -2119,7 +2119,7 @@
         "label": "SHOP OWNER",
         "emo": "shock",
         "say": {
-          "text": "Where did the rest go?",
+          "text": "Where did it go?",
           "at": 0.5
         },
         "scale": 0.7
@@ -2213,7 +2213,7 @@
         "scale": 0.8,
         "emo": "happy",
         "say": {
-          "text": "I dispute that charge!",
+          "text": "Hang on. Give it back.",
           "at": 0.1
         }
       }
@@ -2277,7 +2277,7 @@
         "label": "SHOP OWNER",
         "emo": "worry",
         "say": {
-          "text": "I have the approval code!",
+          "text": "Not so fast.",
           "at": 0.4
         },
         "scale": 1
@@ -2311,7 +2311,7 @@
         "label": "SHOP OWNER",
         "emo": "neutral",
         "say": {
-          "text": "Refund sent. Give it days.",
+          "text": "Patience, please.",
           "at": 0.5
         },
         "scale": 0.7
@@ -2337,7 +2337,7 @@
         "label": "YOU",
         "emo": "happy",
         "say": {
-          "text": "Promise. Bill. Money.",
+          "text": "Now it makes sense.",
           "at": 0.4
         },
         "scale": 0.7
@@ -2383,7 +2383,7 @@
         "label": "YOU",
         "emo": "happy",
         "say": {
-          "text": "Who takes a cut?",
+          "text": "Tell me everything.",
           "at": 0.4
         },
         "scale": 0.7

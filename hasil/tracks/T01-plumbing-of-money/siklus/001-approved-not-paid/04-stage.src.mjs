@@ -1,3 +1,4 @@
+// USANG sejak kontrak visual: sumber adegan sekarang bidang `stage` di 03-script.json. Jangan dijalankan (akan menimpa 04-stage.base.json).
 import fs from "node:fs";
 const dir = "hasil/tracks/T01-plumbing-of-money/siklus/001-approved-not-paid/";
 const j = JSON.parse(fs.readFileSync(dir + "03-script.json")); const specs = JSON.parse(fs.readFileSync(dir + "04-visual-spec.json"));

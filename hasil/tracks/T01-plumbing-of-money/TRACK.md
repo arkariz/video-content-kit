@@ -11,7 +11,7 @@ siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "001: (1) perbaiki naskah sesuai 05-qa.auto (re-hook sekitar s12, sumber per klaim, s56, ID s01 dan s06, bubble pengulang), (2) hapus audio uji EN dengan persetujuan kreator lalu buat ulang EN dan ID di paket Starter, catat assets.voice, (3) caption, render, QA ulang, thumbnail; master wajib tetap >= 8:00"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: null
+menunggu_keputusan: "Setujui naskah 001 versi revisi 2026-11-25? 1) setujui (rekomendasi, setelah cek diff di 03-naskah.md), 2) revisi dulu. Setelah disetujui: audio EN uji dihapus (perlu persetujuan) lalu dibuat ulang EN dan ID"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -52,7 +52,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | qa (GAGAL) | 2026-12-07 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | naskah | 2026-12-07 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
@@ -94,3 +94,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Uji kirim T01-001 A1 ke profil "moneyplumbing": YouTube privat sukses (ID p4CE55YrczE); Facebook sukses diminta sebagai draf (ID 1005272842019993), tetapi API mengembalikan URL Reel, jadi status draf perlu dikonfirmasi kreator (cek tanpa login tidak konklusif). Instagram tidak diuji. Video uji perlu dihapus kreator.
 - 2026-11-25: Kreator mengonfirmasi Reel Facebook uji (ID 1005272842019993) berstatus draf. Mode uji aman untuk Facebook meskipun API mengembalikan URL Reel.
 - 2026-11-25: Kreator membeli ElevenLabs Starter; integrasi tetap lewat API key. Suara EN tetap yang sekarang (bukan clone), suara ID R86jddkroI9bJwXFfjsr (produksi/voices.json). Uji satu scene ID (s02) berhasil. Kreator menyetujui urutan: perbaiki naskah dulu, baru buat ulang audio. Audio EN saat ini masih dari akun free.
+- 2026-11-25: Naskah 001 direvisi sesuai QA: re-hook di s12, bubble pengulang diganti, 46 scene diberi sumber (22 tautan, dari ringkasan hasil pencarian), beberapa klaim dikoreksi (s12, s27, s28, s34-36, s40, s42, s47, s56). QA otomatis: 0 kritis, 3 sedang (suara, thumbnail, bukti kreator). Durasi 8:06 dihitung dari audio lama; menunggu persetujuan naskah.
