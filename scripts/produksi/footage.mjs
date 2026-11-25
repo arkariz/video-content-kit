@@ -20,6 +20,7 @@ if (cmd === "plan") {
     if (sceneId.startsWith("_")) continue;
     const sc = script.scenes.find((s) => s.id === sceneId); const need = ((sc?.duration_ms?.en || 6000) / 1000) + 1;
     if (pl.own) { picks[sceneId] = `own:${pl.own}`; continue; }
+    if (pl.lic) { picks[sceneId] = `lic:${pl.lic}`; continue; } // klip berlisensi pihak lain (CC BY): produksi/footage-lisensi/<track>/
     if (pl.keep) { picks[sceneId] = pl.keep; continue; }
     const words = new Set(pl.keywords.flatMap((k) => k.toLowerCase().split(/\s+/))); const avoid = new Set([...(pl.avoid || []).flatMap((k) => k.toLowerCase().split(/\s+/)), "ai", "generated", "cartoon", "animation", "animated", "illustration", "vector", "3d", "loop", "motion", "graphics"]);
     const all = []; for (const q of pl.keywords) all.push(...(await fetchHits(q)));
@@ -62,6 +63,13 @@ if (cmd === "search") {
       const src = path.join(ROOT, "produksi/footage-own", o.track, ref.slice(4)); if (!fs.existsSync(src)) { console.warn(`footage milik kreator tidak ada: ${path.relative(ROOT, src)}`); continue; }
       const rel = `footage/${o.track}/${o.siklus}/${sceneId}.mp4`, dest = path.join(ROOT, "produksi", rel); fs.mkdirSync(path.dirname(dest), { recursive: true }); fs.copyFileSync(src, dest);
       catalog.clips[ref] = { source: "rekaman kreator", license: "milik kreator", downloaded: new Date().toISOString().slice(0, 10), used_in: [...new Set([...(catalog.clips[ref]?.used_in || []), `${o.track}/${o.siklus}/${sceneId}`])] };
+      assets.footage = [...assets.footage.filter((f) => f.scene_id !== sceneId), { scene_id: sceneId, catalog_key: ref, file: rel }]; continue;
+    }
+    if (ref.startsWith("lic:")) { // klip berlisensi pihak lain (mis. CC BY YouTube); atribusi dibaca dari produksi/footage-lisensi/<track>/sources.json
+      const dir = path.join(ROOT, "produksi/footage-lisensi", o.track), src = path.join(dir, ref.slice(4)); if (!fs.existsSync(src)) { console.warn(`klip berlisensi tidak ada: ${path.relative(ROOT, src)}`); continue; }
+      const meta = readJson(path.join(dir, "sources.json"), {})[ref.slice(4)]; if (!meta?.url || !meta?.license) { console.warn(`sources.json tanpa url/license untuk ${ref}; klip dilewati`); continue; }
+      const rel = `footage/${o.track}/${o.siklus}/${sceneId}.mp4`, dest = path.join(ROOT, "produksi", rel); fs.mkdirSync(path.dirname(dest), { recursive: true }); fs.copyFileSync(src, dest);
+      catalog.clips[ref] = { source: meta.url, license: meta.license, creator: meta.creator, title: meta.title, downloaded: new Date().toISOString().slice(0, 10), used_in: [...new Set([...(catalog.clips[ref]?.used_in || []), `${o.track}/${o.siklus}/${sceneId}`])] };
       assets.footage = [...assets.footage.filter((f) => f.scene_id !== sceneId), { scene_id: sceneId, catalog_key: ref, file: rel }]; continue;
     }
     let c = (cand[sceneId] || []).find((x) => `${x.provider}:${x.id}` === ref);
