@@ -48,4 +48,37 @@ Footage credits (CC BY, via YouTube):
 - "[4K] KRL SFC-120V buatan CRRC di Stasiun Bogor" by Alif Putra Banyuaji, https://www.youtube.com/watch?v=cx4-2KoKfH4. Licensed under Creative Commons Attribution.
 ```
 
-Status klip: belum ada yang dipilih. Pilihan ada di kreator.
+## Klip yang sudah diterima (2026-11-25)
+
+Dikonversi ke 1920x1080, 30 fps, tanpa audio, disimpan di `produksi/footage-lisensi/T02/` (sengaja bukan `footage-own/`, supaya QA tidak menghitungnya sebagai bukti kreator). File besar ini tidak di-commit; asli ada di unggahan kreator.
+
+| File | Durasi | Scene | Sumber | Status lisensi |
+| --- | --- | --- | --- | --- |
+| `cc-s02-s17-peron-01.mp4` | 12,8 dtk | s02, s17 | Rangkaian eks Jepang (KAI) masuk peron, stasiun berkanopi | Sumber belum dikonfirmasi kreator. Nama file cocok dengan baris video Alif Putra Banyuaji (Jakarta Kota), CC BY terverifikasi |
+| `cc-s02-s17-peron-02.mp4` | 15,8 dtk | s02, s17 | Sama, pengambilan kedua | Sama |
+| `cc-s20-s22-latar.mp4` | 22,4 dtk | s20 sampai s22 | Rangkaian KRL lama dan gerbong bagasi hijau di lengkung rel berhutan | Sumber belum dikonfirmasi. Nama file cocok dengan baris Java Railfanning, CC BY terverifikasi |
+| (belum disimpan) | 23,5 dtk | belum dipetakan | Central City, "Jakarta Trains - All the Lines" (https://www.youtube.com/watch?v=6QzYVkNr7eA) | **Bukan CC. Izin dibutuhkan.** Lihat di bawah |
+
+Yang perlu dikonfirmasi kreator untuk tiga klip pertama: URL video asal dan menit asalnya. Tanpa itu atribusi yang benar tidak bisa ditulis, dan tebakan dari nama file saja tidak cukup.
+
+### Central City, video `6QzYVkNr7eA`
+
+- Judul: "Jakarta Trains - All the Lines | KRL | MRT | LRT | ARL - 10 Lines (2026) [4K60]"
+- Pembuat: Central City - Metros and Rail Videos, https://www.youtube.com/@central-city
+- Diunggah: 2026-06-27, durasi 1:04:06
+- Lisensi: **lisensi YouTube standar**. Halaman videonya tidak memuat label Creative Commons (diperiksa 2026-11-25), jadi semua hak dipegang pembuatnya.
+- Isi klip yang diterima: interior gerbong (kemungkinan LRT atau MRT, bukan KRL eks Jepang) dengan beberapa penumpang yang wajahnya terlihat jelas.
+
+Kredit saja tidak membuat klip ini boleh dipakai di video yang dimonetisasi. Dua syarat sebelum dipakai: izin tertulis dari pembuatnya (kirim lewat kanalnya, sebutkan penggunaan komersial dan minta konfirmasi bahwa atribusi cukup), dan keputusan soal wajah penumpang yang terlihat. Teks atribusi disiapkan untuk dipakai **setelah** izin ada:
+
+```
+- "Jakarta Trains - All the Lines | KRL | MRT | LRT | ARL - 10 Lines (2026) [4K60]" by Central City - Metros and Rail Videos, https://www.youtube.com/watch?v=6QzYVkNr7eA. Used with permission.
+```
+
+Selain itu, gambarnya interior kereta modern, bukan eks Jepang, jadi tidak cocok untuk s01 sampai s19. Kalau tidak ada izin, buang klip ini. Alternatifnya rekaman interior sendiri (`krl-01`, `krl-01b`).
+
+## Pemakaian di naskah
+
+Belum dihubungkan ke `03-script.json`. `footage.mjs` belum mengenal folder `footage-lisensi/` atau sumber CC BY, dan itu perubahan mesin bersama untuk sesi portfolio terpisah. Sementara, scene s02 tetap memakai `krl-02.mp4` milik kreator.
+
+Status klip: belum ada yang dipilih di naskah.
