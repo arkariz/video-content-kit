@@ -8,7 +8,7 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "001: kreator menonton paket review (hasil/review/T01-001-approved-not-paid), cek fakta, audio, dan pilih thumbnail A/B; lalu approve.mjs (SETUJU) sebelum 2026-12-07"
+langkah_berikutnya: "001: kreator menonton paket review (hasil/review/T01-001-approved-not-paid), cek fakta dan audio (thumbnail A sudah dipilih); lalu approve.mjs (SETUJU) sebelum 2026-12-07"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
 menunggu_keputusan: null
@@ -68,6 +68,7 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-24 | Naskah 001 disetujui | Footage s23 dari Pexels/Pixabay (bukan rekaman kreator); master ≥ 8:00 untuk mid-roll YouTube; tanpa klaim kredensial di narasi | siklus/001-approved-not-paid/03-naskah.md |
 | 2026-11-24 | Naskah 001 versi 58 scene disetujui | Audio uji 6,40 menit < 8:00; ditambah 5 scene isi dan jeda 0,9 detik (estimasi render ±8:17) | siklus/001-approved-not-paid/03-naskah.md |
 | 2026-11-25 | Naskah 001 revisi QA disetujui; audio dibuat ulang dengan ElevenLabs Starter (suara EN lama, ID R86jddkroI9bJwXFfjsr) | QA otomatis 0 kritis; durasi master 8:06 | siklus/001-approved-not-paid/05-qa.auto.md |
+| 2026-11-25 | Thumbnail master 001: varian A "APPROVED ≠ PAID" | Pilihan kreator; mengulang janji judul dan hook | produksi/render/T01/001/Thumbnail-A.png |
 
 ## Log
 
