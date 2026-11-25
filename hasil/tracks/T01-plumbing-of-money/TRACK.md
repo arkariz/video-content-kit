@@ -11,7 +11,7 @@ siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "001: kreator menonton paket review (hasil/review/T01-001-approved-not-paid), cek fakta dan audio (thumbnail A sudah dipilih); lalu approve.mjs (SETUJU) sebelum 2026-12-07"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: null
+menunggu_keputusan: "Percepatan jadwal 001 (rencana V2 terkunci menetapkan tayang pertama 2026-12-07): 1) tetap 12-07 s.d. 12-09 (rekomendasi), 2) majukan ke 11-26 s.d. 11-28 sebagai penyimpangan tercatat; juga konfirmasi audio, video, dan fakta sudah diperiksa. Publish belum dikirim"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -100,4 +100,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Kreator menyetujui naskah revisi. Audio uji dihapus; audio EN (7,35 menit) dan ID (7,84 menit) dibuat di paket Starter, caption EN baru, master 8:06 dan Shorts A1 35 detik, A2 32 detik (di bawah target brief 35-45). QA otomatis 0 kritis, 3 sedang (jarak re-hook 104 detik, thumbnail, bukti kreator). Audio, fakta, dan video belum diperiksa kreator.
 - 2026-11-25: Thumbnail 001 dibuat (A "APPROVED ≠ PAID", B "$0.00 MOVED") dan masuk rencana publish (default A). QA otomatis 0 kritis, 2 sedang (jarak re-hook 104 detik, bukti kreator). Menunggu review kreator.
 - 2026-11-25: Atas pertanyaan kreator, master juga dikirim ke Facebook sebagai video Page (16:9), selain YouTube. Rencana publish 001 diperbarui; belum diuji ke API.
-
+- 2026-11-25: Kreator menyatakan publish disetujui dan meminta jadwal dipercepat (tanggal belum disebut). Track audio ID untuk master dibuat (produksi/render/T01/001/Master16x9-audio-id.m4a, 486,25 detik, sama dengan master; 16 scene dipercepat sampai 1,26x; belum didengar). Belum ada yang dikirim.

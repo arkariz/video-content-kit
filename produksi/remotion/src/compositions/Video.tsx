@@ -59,7 +59,7 @@ const Scene: React.FC<{ s: SceneProps; trackId: string; vertical: boolean }> = (
           </div>
         </>
       )}
-      {s.audio && <Audio src={staticFile(s.audio)} />}
+      {s.audio && <Audio src={staticFile(s.audio)} playbackRate={s.audioRate ?? 1} />}
       <Captions words={s.captions} big={vertical} accent={t.accent} />
     </AbsoluteFill>
   );

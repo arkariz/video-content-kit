@@ -8,6 +8,7 @@ export type SceneProps = {
   spec?: any;
   stage?: any;             // adegan kartun per scene (04-stage.json)              // data visual per scene (lihat produksi/README.md)
   audio?: string;          // path relatif ke public-dir (produksi/)
+  audioRate?: number;      // >1 hanya untuk track dubbing yang lebih panjang dari slot scene
   audioFrames: number;     // panjang suara; animasi selesai di sini
   durationFrames: number;  // audioFrames + jeda
   clip?: string;
