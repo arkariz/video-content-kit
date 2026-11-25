@@ -9,7 +9,7 @@ bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "perbaiki temuan QA 001 selain T1 (T2 sampai T11 di 05-qa.md), lalu QA ulang; T1 (bukti kreator) ditunda kreator, publish tetap tertahan sampai T1 diputuskan; master wajib tetap ≥ 8:00"
-profil_publish: "default"     # profil Upload-Post channel uang
+profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
 menunggu_keputusan: null
 dibuat: 2026-11-24
@@ -90,3 +90,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Pipeline otomatis dibangun dan diuji pada 001. Footage nyata berlisensi di 8 scene (11% durasi, pilih otomatis), jeda variabel, caption disamakan otomatis dengan naskah. QA otomatis menemukan dugaan salah ucap "acquirer", autofix membuang say_as dan audio tiga scene dibuat ulang, dan transkrip balik kini cocok. Sisa temuan: re-hook pertama 3:07, bubble pengulang narasi (21), sumber belum ada, thumbnail, catatan suara.
 - 2026-11-24: Uji unggah privat A1 ke YouTube lewat Upload-Post berhasil dan diperiksa kreator. Publish sungguhan tetap menunggu QA 001 (temuan sedang tersisa: re-hook, bubble pengulang, sumber, thumbnail, catatan suara) dan SETUJU kreator.
 - 2026-11-25: Profil publish T01 ditetapkan: "default" (YouTube terhubung).
+- 2026-11-25: Profil publish T01 diganti ke "moneyplumbing" atas permintaan kreator. Uji unggah sebelumnya memakai profil "default"; profil baru belum diuji kirim.
