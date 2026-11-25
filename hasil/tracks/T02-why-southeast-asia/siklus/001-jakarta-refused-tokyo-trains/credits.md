@@ -56,12 +56,12 @@ Dikonversi ke 1920x1080, 30 fps, tanpa audio, disimpan di `produksi/footage-lise
 | --- | --- | --- | --- | --- | --- |
 | `s02-s17-rangkaian-eks-jepang-di-peron-01.mp4` | 12,8 dtk | s02 | [Stasiun Jakarta Kota: Kompilasi TM 6000, JR 205](https://www.youtube.com/watch?v=8goPWyjEAVg) | Alif Putra Banyuaji | CC BY |
 | `s02-s17-rangkaian-eks-jepang-di-peron-02.mp4` | 15,8 dtk | s17 | sama | Alif Putra Banyuaji | CC BY |
-| `s31-s53.mp4` | 12,8 dtk | s31 | [Hunting KRL Baru CLI-125 buatan CRRC di Stasiun Mangga Besar](https://www.youtube.com/watch?v=EHxDVzOogME) (dicocokkan dari nama file; lihat catatan) | Alif Putra Banyuaji | CC BY |
+| `s31-s53.mp4` | 12,8 dtk | s31 | [Hunting KRL Baru CLI-125 buatan CRRC di Stasiun Mangga Besar](https://www.youtube.com/watch?v=EHxDVzOogME) | Alif Putra Banyuaji | CC BY |
 | `s34-s36-kepadatan.mp4` | 14,2 dtk | s34 | [Stasiun Kereta Api Ini Sibuk Sekali (Depok)](https://www.youtube.com/watch?v=eoD8fltls2s) | Bang Acoy | CC BY |
 | `s20-s22-latar.mp4` | 22,4 dtk | s22 | [Delivery of Old Jakarta Commuter Line Trains Set for Maintenance](https://www.youtube.com/watch?v=fMrVbP9zMDs) | Java Railfanning | CC BY |
 | (tidak disimpan) | 23,5 dtk | none | Central City, "Jakarta Trains - All the Lines" | Central City | Bukan CC, lihat di bawah |
 
-**Perlu dikonfirmasi:** latar `s31-s53.mp4` berupa stasiun berpagar tiang merah dengan bukit hijau di belakang, tidak tampak seperti Mangga Besar (stasiun layang di tengah kota). Bisa jadi klip ini dari [KRL SFC-120V buatan CRRC di Stasiun Bogor](https://www.youtube.com/watch?v=cx4-2KoKfH4) (Alif Putra Banyuaji, CC BY juga). Atribusi di `sources.json` sementara mengikuti nama file; ganti kalau asalnya Bogor.
+Sumber `s31-s53.mp4` dikonfirmasi kreator (2026-11-25): video Mangga Besar (EHxDVzOogME).
 
 Menit asal di video sumber belum dicatat (tidak diketahui). Atribusi cukup memakai judul, pembuat, dan URL.
 
@@ -70,7 +70,7 @@ Teks atribusi untuk deskripsi video (siap salin, klip yang terpasang):
 ```
 Footage credits (CC BY, via YouTube):
 - "[4K] Stasiun Jakarta Kota: Kompilasi Kereta TM 6000, JR 205 | KRL Commuter Line (4/6)" by Alif Putra Banyuaji, https://www.youtube.com/watch?v=8goPWyjEAVg. Licensed under Creative Commons Attribution.
-- "[4K] Hunting KRL Baru CLI-125 buatan CRRC di Stasiun Mangga Besar" by Alif Putra Banyuaji, https://www.youtube.com/watch?v=EHxDVzOogME. Licensed under Creative Commons Attribution. (konfirmasi sumber dulu, lihat catatan)
+- "[4K] Hunting KRL Baru CLI-125 buatan CRRC di Stasiun Mangga Besar" by Alif Putra Banyuaji, https://www.youtube.com/watch?v=EHxDVzOogME. Licensed under Creative Commons Attribution.
 - "STASIUN KERETA API INI SIBUK SEKALI‼️ JR 205, TM 6000, iE305/CLI-225, CRRC CLI-125/SFC120-V" by Bang Acoy, https://www.youtube.com/watch?v=eoD8fltls2s. Licensed under Creative Commons Attribution.
 - "Delivery of Old Jakarta Commuter Line Trains Set for Maintenance and Many Others" by Java Railfanning, https://www.youtube.com/watch?v=fMrVbP9zMDs. Licensed under Creative Commons Attribution.
 ```
