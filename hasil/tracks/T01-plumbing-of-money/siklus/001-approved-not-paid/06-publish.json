@@ -105,7 +105,6 @@
       "status": "completed",
       "detail": [
         {
-          "user_email": "nationpotato94@gmail.com",
           "profile_username": "moneyplumbing",
           "platform": "youtube",
           "media_type": "video",
@@ -150,7 +149,6 @@
           "request_total_platforms": 2
         },
         {
-          "user_email": "nationpotato94@gmail.com",
           "profile_username": "moneyplumbing",
           "platform": "facebook",
           "media_type": "video",

@@ -88,7 +88,8 @@ export async function send({ track, siklus, dry, test }) {
 }
 export async function status({ track, siklus, uji }) {
   const { dir } = resolveCycle(track, siklus); const pubP = path.join(dir, "06-publish.json"); const out = readJson(pubP); const list = uji ? out.uji || [] : out.hasil;
-  for (const h of list) { const q = h.job_id ? `job_id=${h.job_id}` : `request_id=${h.request_id}`; const r = await (await fetch(`${BASE}/api/uploadposts/status?${q}`, { headers: headers() })).json(); h.status = r.status; h.detail = r.results; console.log(h.nama, r.status, JSON.stringify(r.results ?? "").slice(0, 200)); }
+  for (const h of list) { const q = h.job_id ? `job_id=${h.job_id}` : `request_id=${h.request_id}`; const r = await (await fetch(`${BASE}/api/uploadposts/status?${q}`, { headers: headers() })).json(); h.status = r.status; h.detail = r.results?.map(({ user_email, ...x }) => x); // email akun tidak disimpan di repo
+    console.log(h.nama, h.status, JSON.stringify(h.detail ?? "").slice(0, 200)); }
   const hist = await (await fetch(`${BASE}/api/uploadposts/history?limit=50`, { headers: headers() })).json().catch(() => ({})); for (const h of list) h.urls = (hist.history || []).filter((x) => x.external_id === `${out.track}-${out.siklus}-${h.nama}`).map((x) => ({ platform: x.platform, url: x.post_url })); writeJson(pubP, out);
 }
 export async function accounts() {
