@@ -9,7 +9,7 @@ bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: null
 langkah_berikutnya: "validasi V2: riset konten viral sekali untuk sprint (instruksi/03-riset-konten-viral.md), mulai dari variasi A; rekam footage KRL 2026-11-28/29"
-profil_publish: "equatorlogic"     # profil Upload-Post channel Asia Tenggara
+profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
 menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
@@ -70,3 +70,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Mesin visual T02 siap: pemeran guide/commuter/hijab/engineer, objek train/island/volcano/city/ship, latar peta Asia Tenggara (tanpa batas negara), stasiun, kota, laut, dataran tinggi, efek pin/route, dan jalur footage milik kreator (produksi/footage-own/T02, dihitung QA sebagai bukti kreator). Footage KRL tetap harus direkam 2026-11-28/29. Belum ada siklus T02.
 - 2026-11-25: Publish memakai profil per track; `profil_publish` T02 masih kosong sampai kreator membuat profil kedua di Upload-Post.
 - 2026-11-25: Profil publish T02 diisi "equatorlogic" atas permintaan kreator; profil itu belum ada di akun Upload-Post.
+- 2026-11-25: Profil publish T02 diubah ke "default": menurut kreator "equatorlogic" hanya nama tampilan, API memakai "default".

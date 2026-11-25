@@ -46,4 +46,5 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-24: Uji kirim Upload-Post berhasil: Short A1 T01-001 ke YouTube sebagai privat (kreator memeriksa di Studio, hasil oke). Instagram dan Facebook belum terhubung di Upload-Post, jadi belum teruji. Video uji perlu dihapus kreator di Studio.
 - 2026-11-25: Publish mendukung beberapa profil Upload-Post: satu profil per track lewat `profil_publish` di TRACK.md (T01 = "default"; T02 belum ada). Profil lintas niche ditolak.
 - 2026-11-25: Profil publish: T01 = "moneyplumbing" (YouTube, Facebook, Instagram terhubung), T02 = "equatorlogic" (belum ada di akun Upload-Post; batas 2 profil sudah terisi "default" dan "moneyplumbing").
+- 2026-11-25: Koreksi profil T02: pakai "default" (nama API); "equatorlogic" hanya nama tampilan. T01 tetap "moneyplumbing".
 
