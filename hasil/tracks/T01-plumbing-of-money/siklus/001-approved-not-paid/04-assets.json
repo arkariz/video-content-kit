@@ -61,5 +61,12 @@
       "lang": "en",
       "cut": "A2-pending-to-posted"
     }
-  ]
+  ],
+  "voice": {
+    "type": "elevenlabs-non-clone",
+    "paket": "starter",
+    "en": "ELEVENLABS_VOICE_ID (.env)",
+    "id": "R86jddkroI9bJwXFfjsr",
+    "dibuat": "2026-11-25"
+  }
 }

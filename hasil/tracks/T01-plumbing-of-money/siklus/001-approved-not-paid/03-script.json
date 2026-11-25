@@ -80,7 +80,8 @@
         "contactless card tap coffee shop"
       ],
       "duration_ms": {
-        "en": 4458
+        "en": 4458,
+        "id": 4969
       },
       "stage": {
         "bg": "cafe",
@@ -192,7 +193,7 @@
         }
       },
       "duration_ms": {
-        "en": 5712,
+        "en": 5294,
         "id": 5480
       },
       "stage": {
@@ -267,7 +268,8 @@
         }
       },
       "duration_ms": {
-        "en": 6594
+        "en": 6594,
+        "id": 7988
       },
       "stage": {
         "bg": "cafe",
@@ -335,7 +337,8 @@
         }
       },
       "duration_ms": {
-        "en": 6641
+        "en": 6409,
+        "id": 5805
       },
       "stage": {
         "bg": "cafe",
@@ -420,7 +423,8 @@
         }
       },
       "duration_ms": {
-        "en": 5898
+        "en": 6084,
+        "id": 5573
       },
       "stage": {
         "bg": "bank",
@@ -525,7 +529,8 @@
       },
       "broll_keywords": [],
       "duration_ms": {
-        "en": 14303
+        "en": 13003,
+        "id": 14721
       },
       "stage": {
         "bg": "paper",
@@ -620,7 +625,8 @@
         }
       },
       "duration_ms": {
-        "en": 7709
+        "en": 7988,
+        "id": 9195
       },
       "stage": {
         "bg": "cafe",
@@ -699,7 +705,8 @@
         }
       },
       "duration_ms": {
-        "en": 4598
+        "en": 4133,
+        "id": 4505
       },
       "stage": {
         "bg": "street",
@@ -792,7 +799,8 @@
         }
       },
       "duration_ms": {
-        "en": 8313
+        "en": 7755,
+        "id": 9009
       },
       "stage": {
         "bg": "cafe",
@@ -886,7 +894,8 @@
         }
       },
       "duration_ms": {
-        "en": 10310
+        "en": 10635,
+        "id": 11564
       },
       "stage": {
         "bg": "bank",
@@ -993,7 +1002,8 @@
         }
       },
       "duration_ms": {
-        "en": 6780
+        "en": 6084,
+        "id": 8313
       },
       "stage": {
         "bg": "sky",
@@ -1110,7 +1120,8 @@
         }
       },
       "duration_ms": {
-        "en": 7152
+        "en": 8731,
+        "id": 9056
       },
       "stage": {
         "bg": "paper",
@@ -1191,7 +1202,8 @@
         }
       },
       "duration_ms": {
-        "en": 7198
+        "en": 6873,
+        "id": 6084
       },
       "stage": {
         "bg": "paper",
@@ -1271,7 +1283,8 @@
         }
       },
       "duration_ms": {
-        "en": 8173
+        "en": 8916,
+        "id": 6269
       },
       "stage": {
         "bg": "paper",
@@ -1334,7 +1347,8 @@
         }
       },
       "duration_ms": {
-        "en": 4087
+        "en": 3715,
+        "id": 4969
       },
       "stage": {
         "bg": "bank",
@@ -1419,7 +1433,8 @@
         }
       },
       "duration_ms": {
-        "en": 7663
+        "en": 8824,
+        "id": 8731
       },
       "stage": {
         "bg": "bank",
@@ -1487,7 +1502,8 @@
         }
       },
       "duration_ms": {
-        "en": 7105
+        "en": 6780,
+        "id": 6409
       },
       "stage": {
         "bg": "bank",
@@ -1555,7 +1571,8 @@
       },
       "broll_keywords": [],
       "duration_ms": {
-        "en": 13468
+        "en": 15000,
+        "id": 15372
       },
       "stage": {
         "bg": "bank",
@@ -1644,7 +1661,8 @@
         }
       },
       "duration_ms": {
-        "en": 8916
+        "en": 8499,
+        "id": 8173
       },
       "stage": {
         "bg": "paper",
@@ -1724,7 +1742,8 @@
         }
       },
       "duration_ms": {
-        "en": 6734
+        "en": 6827,
+        "id": 7198
       },
       "stage": {
         "bg": "paper",
@@ -1792,7 +1811,8 @@
         }
       },
       "duration_ms": {
-        "en": 11424
+        "en": 11842,
+        "id": 11006
       },
       "stage": {
         "bg": "paper",
@@ -1857,7 +1877,8 @@
         }
       },
       "duration_ms": {
-        "en": 9195
+        "en": 9613,
+        "id": 10635
       },
       "stage": {
         "bg": "cafe",
@@ -1947,7 +1968,8 @@
         }
       },
       "duration_ms": {
-        "en": 6780
+        "en": 6177,
+        "id": 6594
       },
       "stage": {
         "bg": "cafe",
@@ -2012,7 +2034,8 @@
         }
       },
       "duration_ms": {
-        "en": 6780
+        "en": 7012,
+        "id": 6687
       },
       "stage": {
         "bg": "cafe",
@@ -2076,7 +2099,8 @@
         "mobile banking app transactions"
       ],
       "duration_ms": {
-        "en": 10031
+        "en": 9567,
+        "id": 11935
       },
       "stage": {
         "bg": "none",
@@ -2132,7 +2156,8 @@
         "hotel front desk check in"
       ],
       "duration_ms": {
-        "en": 5712
+        "en": 5480,
+        "id": 7105
       },
       "stage": {
         "bg": "none",
@@ -2197,7 +2222,8 @@
         }
       },
       "duration_ms": {
-        "en": 12214
+        "en": 11099,
+        "id": 11192
       },
       "stage": {
         "bg": "bank",
@@ -2269,7 +2295,8 @@
         }
       },
       "duration_ms": {
-        "en": 8731
+        "en": 9009,
+        "id": 9938
       },
       "stage": {
         "bg": "cafe",
@@ -2340,7 +2367,8 @@
         }
       },
       "duration_ms": {
-        "en": 2229
+        "en": 2368,
+        "id": 2322
       },
       "stage": {
         "bg": "cafe",
@@ -2411,7 +2439,8 @@
         }
       },
       "duration_ms": {
-        "en": 8220
+        "en": 8359,
+        "id": 8406
       },
       "stage": {
         "bg": "bank",
@@ -2527,7 +2556,8 @@
         }
       },
       "duration_ms": {
-        "en": 3808
+        "en": 3576,
+        "id": 3158
       },
       "stage": {
         "bg": "cafe",
@@ -2598,7 +2628,8 @@
         }
       },
       "duration_ms": {
-        "en": 10588
+        "en": 11285,
+        "id": 11842
       },
       "stage": {
         "bg": "paper",
@@ -2648,7 +2679,8 @@
         "airplane cabin trolley service"
       ],
       "duration_ms": {
-        "en": 3297
+        "en": 3344,
+        "id": 3529
       },
       "stage": {
         "bg": "none",
@@ -2722,7 +2754,8 @@
         }
       },
       "duration_ms": {
-        "en": 7384
+        "en": 7338,
+        "id": 7291
       },
       "stage": {
         "bg": "sky",
@@ -2811,7 +2844,8 @@
         }
       },
       "duration_ms": {
-        "en": 8081
+        "en": 7988,
+        "id": 8824
       },
       "stage": {
         "bg": "sky",
@@ -2907,7 +2941,8 @@
         }
       },
       "duration_ms": {
-        "en": 6455
+        "en": 6687,
+        "id": 6873
       },
       "stage": {
         "bg": "sky",
@@ -2980,7 +3015,8 @@
         }
       },
       "duration_ms": {
-        "en": 8081
+        "en": 7291,
+        "id": 6687
       },
       "stage": {
         "bg": "cafe",
@@ -3088,7 +3124,8 @@
         }
       },
       "duration_ms": {
-        "en": 4969
+        "en": 4923,
+        "id": 5991
       },
       "stage": {
         "bg": "bank",
@@ -3189,7 +3226,8 @@
         "restaurant bill card payment"
       ],
       "duration_ms": {
-        "en": 8034
+        "en": 7245,
+        "id": 7152
       },
       "stage": {
         "bg": "cafe",
@@ -3265,7 +3303,8 @@
       },
       "broll_keywords": [],
       "duration_ms": {
-        "en": 9752
+        "en": 11006,
+        "id": 10960
       },
       "stage": {
         "bg": "cafe",
@@ -3342,7 +3381,8 @@
         }
       },
       "duration_ms": {
-        "en": 8359
+        "en": 7848,
+        "id": 7848
       },
       "stage": {
         "bg": "cafe",
@@ -3435,7 +3475,8 @@
         }
       },
       "duration_ms": {
-        "en": 8916
+        "en": 9056,
+        "id": 8452
       },
       "stage": {
         "bg": "paper",
@@ -3514,7 +3555,8 @@
         }
       },
       "duration_ms": {
-        "en": 9938
+        "en": 9752,
+        "id": 9845
       },
       "stage": {
         "bg": "paper",
@@ -3610,7 +3652,8 @@
         }
       },
       "duration_ms": {
-        "en": 6269
+        "en": 6502,
+        "id": 7709
       },
       "stage": {
         "bg": "cafe",
@@ -3684,7 +3727,8 @@
         }
       },
       "duration_ms": {
-        "en": 5387
+        "en": 5062,
+        "id": 5526
       },
       "stage": {
         "bg": "cafe",
@@ -3772,7 +3816,8 @@
         }
       },
       "duration_ms": {
-        "en": 5341
+        "en": 5062,
+        "id": 6827
       },
       "stage": {
         "bg": "sky",
@@ -3829,7 +3874,8 @@
         }
       },
       "duration_ms": {
-        "en": 6223
+        "en": 7895,
+        "id": 7198
       },
       "stage": {
         "bg": "sky",
@@ -3883,7 +3929,8 @@
         }
       },
       "duration_ms": {
-        "en": 7988
+        "en": 7755,
+        "id": 9660
       },
       "stage": {
         "bg": "bank",
@@ -3962,7 +4009,8 @@
       },
       "broll_keywords": [],
       "duration_ms": {
-        "en": 11192
+        "en": 10495,
+        "id": 13886
       },
       "stage": {
         "bg": "vault",
@@ -4060,7 +4108,8 @@
         }
       },
       "duration_ms": {
-        "en": 5341
+        "en": 4923,
+        "id": 4969
       },
       "stage": {
         "bg": "cafe",
@@ -4164,7 +4213,8 @@
         }
       },
       "duration_ms": {
-        "en": 6687
+        "en": 6177,
+        "id": 6223
       },
       "stage": {
         "bg": "cafe",
@@ -4239,7 +4289,8 @@
         }
       },
       "duration_ms": {
-        "en": 4180
+        "en": 4087,
+        "id": 4505
       },
       "stage": {
         "bg": "cafe",
@@ -4298,7 +4349,8 @@
         }
       },
       "duration_ms": {
-        "en": 6966
+        "en": 6687,
+        "id": 7895
       },
       "stage": {
         "bg": "bank",
@@ -4383,7 +4435,8 @@
         }
       },
       "duration_ms": {
-        "en": 9195
+        "en": 7895,
+        "id": 10728
       },
       "stage": {
         "bg": "bank",
@@ -4519,7 +4572,8 @@
         }
       },
       "duration_ms": {
-        "en": 8266
+        "en": 8545,
+        "id": 7988
       },
       "stage": {
         "bg": "paper",
@@ -4594,7 +4648,8 @@
       },
       "broll_keywords": [],
       "duration_ms": {
-        "en": 11656
+        "en": 12028,
+        "id": 13189
       },
       "stage": {
         "bg": "cafe",
@@ -4670,7 +4725,8 @@
         }
       },
       "duration_ms": {
-        "en": 8452
+        "en": 8545,
+        "id": 9799
       },
       "stage": {
         "bg": "cafe",
@@ -4736,7 +4792,8 @@
         }
       },
       "duration_ms": {
-        "en": 8499
+        "en": 8684,
+        "id": 10820
       },
       "stage": {
         "bg": "night",

@@ -2,16 +2,16 @@
   "track": "T01",
   "siklus": "001",
   "tanggal": "2026-11-25",
-  "durasi": "8:06",
+  "durasi": "8:04",
   "footage_pct": 11.2,
   "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
   "temuan": [
     {
-      "layer": "Audio",
+      "layer": "Struktur",
       "level": "sedang",
-      "id": "A3",
-      "msg": "jenis/lisensi suara belum dicatat (assets.voice.type)",
-      "fix": "catat: clone milik kreator atau voice berlisensi komersial, paket berbayar"
+      "id": "S2",
+      "msg": "jarak re-hook terpanjang 104 dtk mulai 1:26 (target 60-90)",
+      "fix": "ubah satu scene di rentang itu jadi re-hook"
     },
     {
       "layer": "Visual",

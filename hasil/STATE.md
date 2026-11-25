@@ -18,7 +18,7 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Produksi siklus 001 | 5,5 | 2026-11-24: naskah 001 disetujui |
+| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Review kreator siklus 001, thumbnail, approve publish | 5,5 | 2026-11-25: naskah revisi disetujui, audio berbayar dan render selesai |
 | T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | Riset viral sprint V2 | 6 | 2026-11-24: rencana V2 dikunci |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
@@ -50,4 +50,5 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-25: Uji kirim T01-001 A1 ke profil "moneyplumbing": YouTube privat sukses (ID p4CE55YrczE); Facebook sukses diminta sebagai draf (ID 1005272842019993), tetapi API mengembalikan URL Reel, jadi status draf perlu dikonfirmasi kreator (cek tanpa login tidak konklusif). Instagram tidak diuji. Video uji perlu dihapus kreator.
 - 2026-11-25: Kreator mengonfirmasi Reel Facebook uji (ID 1005272842019993) berstatus draf. Mode uji aman untuk Facebook meskipun API mengembalikan URL Reel.
 - 2026-11-25: ElevenLabs Starter aktif. Suara per bahasa di produksi/voices.json (ID = R86jddkroI9bJwXFfjsr; EN dari .env).
+- 2026-11-25: T01 siklus 001 dirender ulang dengan audio ElevenLabs Starter (master 8:06). Menunggu review kreator, thumbnail, dan SETUJU publish.
 

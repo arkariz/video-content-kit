@@ -8,10 +8,10 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "001: (1) perbaiki naskah sesuai 05-qa.auto (re-hook sekitar s12, sumber per klaim, s56, ID s01 dan s06, bubble pengulang), (2) hapus audio uji EN dengan persetujuan kreator lalu buat ulang EN dan ID di paket Starter, catat assets.voice, (3) caption, render, QA ulang, thumbnail; master wajib tetap >= 8:00"
+langkah_berikutnya: "001: kreator menonton paket review (hasil/review/T01-001-approved-not-paid), cek fakta dan audio; buat thumbnail; lalu approve.mjs (SETUJU) sebelum 2026-12-07"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: "Setujui naskah 001 versi revisi 2026-11-25? 1) setujui (rekomendasi, setelah cek diff di 03-naskah.md), 2) revisi dulu. Setelah disetujui: audio EN uji dihapus (perlu persetujuan) lalu dibuat ulang EN dan ID"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -52,7 +52,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | naskah | 2026-12-07 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | qa | 2026-12-07 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
@@ -67,6 +67,7 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-24 | Sudut sprint V2: ketiga usulan riset viral (opsi 1) | Celah authorization vs settlement (A), fee split tanpa nasihat (B), mitos asal-usul Diners Club terbukti PR (C) | siklus/001-approved-not-paid/01-riset-viral.md |
 | 2026-11-24 | Naskah 001 disetujui | Footage s23 dari Pexels/Pixabay (bukan rekaman kreator); master ≥ 8:00 untuk mid-roll YouTube; tanpa klaim kredensial di narasi | siklus/001-approved-not-paid/03-naskah.md |
 | 2026-11-24 | Naskah 001 versi 58 scene disetujui | Audio uji 6,40 menit < 8:00; ditambah 5 scene isi dan jeda 0,9 detik (estimasi render ±8:17) | siklus/001-approved-not-paid/03-naskah.md |
+| 2026-11-25 | Naskah 001 revisi QA disetujui; audio dibuat ulang dengan ElevenLabs Starter (suara EN lama, ID R86jddkroI9bJwXFfjsr) | QA otomatis 0 kritis; durasi master 8:06 | siklus/001-approved-not-paid/05-qa.auto.md |
 
 ## Log
 
@@ -95,3 +96,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Kreator mengonfirmasi Reel Facebook uji (ID 1005272842019993) berstatus draf. Mode uji aman untuk Facebook meskipun API mengembalikan URL Reel.
 - 2026-11-25: Kreator membeli ElevenLabs Starter; integrasi tetap lewat API key. Suara EN tetap yang sekarang (bukan clone), suara ID R86jddkroI9bJwXFfjsr (produksi/voices.json). Uji satu scene ID (s02) berhasil. Kreator menyetujui urutan: perbaiki naskah dulu, baru buat ulang audio. Audio EN saat ini masih dari akun free.
 - 2026-11-25: Naskah 001 direvisi sesuai QA: re-hook di s12, bubble pengulang diganti, 46 scene diberi sumber (22 tautan, dari ringkasan hasil pencarian), beberapa klaim dikoreksi (s12, s27, s28, s34-36, s40, s42, s47, s56). QA otomatis: 0 kritis, 3 sedang (suara, thumbnail, bukti kreator). Durasi 8:06 dihitung dari audio lama; menunggu persetujuan naskah.
+- 2026-11-25: Kreator menyetujui naskah revisi. Audio uji dihapus; audio EN (7,35 menit) dan ID (7,84 menit) dibuat di paket Starter, caption EN baru, master 8:06 dan Shorts A1 35 detik, A2 32 detik (di bawah target brief 35-45). QA otomatis 0 kritis, 3 sedang (jarak re-hook 104 detik, thumbnail, bukti kreator). Audio, fakta, dan video belum diperiksa kreator.

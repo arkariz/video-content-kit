@@ -18,20 +18,42 @@ After watching, you can tell which system created each line in your bank app (pe
 
 0:00 Approved is only a message
 0:18 The tap
-1:01 Acquirer, network, issuer
-1:28 The message itself
+0:59 Acquirer, network, issuer
+1:26 The message itself
 1:52 The bank decides
-3:07 Money moved: zero
-3:22 Holds and pending
+3:09 Money moved: zero
+3:24 Holds and pending
 4:05 The charge that shows up twice
-4:34 Offline approval
-4:58 Clearing
-6:14 Netting
+4:35 Offline approval
+4:59 Clearing
+6:15 Netting
 6:48 Settlement and fees
 7:14 Chargebacks
-7:46 The recap
+7:45 The recap
 
-Sources: (not filled in yet, see QA T-src)
+Sources:
+- https://docs.aws.amazon.com/payment-cryptography/latest/userguide/use-cases-issuers.generalfunctions.arqc.html
+- https://www.ibm.com/docs/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.csfb400/EMVTrans.htm
+- https://www.emvco.com/knowledge-hub/the-what-why-and-how-of-emv-payment-tokenisation/
+- https://www.wikipedia.org/wiki/Card_scheme
+- https://usa.visa.com/partner-with-us/info-for-partners/numerics-initiative.html
+- https://en.wikipedia.org/wiki/ISO_8583
+- https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring
+- https://docs.stripe.com/issuing/controls/sms-fraud-alerts
+- https://docs.ebanx.com/docs/pay-in/dev-tools/response-codes/iso8583-codes
+- https://stripe.com/us/resources/more/authorization-holds-explained
+- https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf
+- https://usa.visa.com/content/dam/VCOM/regional/na/us/support-legal/documents/authorization-and-reversal-processing-best-practices-for-merchants.pdf
+- https://support.pay.nl/en/knowledge/offline-pinnen
+- https://www.americanbanker.com/news/making-plane-sense-of-in-flight-payment-risk
+- https://corporate.visa.com/en/sites/visa-perspectives/company-news/pay-the-same-exchange-rate-every-time.html
+- https://www.nerdwallet.com/article/credit-cards/currency-exchange-rate-credit-card-statement-doesnt-match-online-rate
+- https://www.marqeta.com/blog/single-vs-dual-messaging-which-ways-the-right-way
+- https://sulagnasasmal.github.io/us-payments-hub/card.html
+- https://coinlaw.io/visa-statistics/
+- https://www.mastercard.com/gb/en/news-and-trends/Insights/2024/how-can-merchants-dispute-credit-card-chargebacks.html
+- https://stripe.com/resources/more/representment-explained
+- https://www.paypal.com/money-hub/article/how-do-credit-card-refunds-work
 
 The narration uses a synthetic voice and cartoon animation. Real footage is licensed for commercial use (Pexels/Pixabay).
 
