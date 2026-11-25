@@ -19,9 +19,15 @@ Dinilai manual dengan `skills/video-anti-slop/references/spoken-script-rules.md`
 
 Yang sudah diperbaiki saat baca ulang: "this month" di hook (salah setelah tayang 7 Des) diganti "in November"; "most countries" dilunakkan jadi "many countries"; pengulangan "1940s" dan "this year's" dibuang; s35 tidak lagi mencampur jumlah perjalanan dengan persentase pertumbuhan; s36 klaim "jumlah kereta yang sama" (tanpa sumber) diganti selisih yang bisa dihitung; s44 lama ("bagian yang menurut saya paling menarik") diganti karena klaim orang pertama dengan suara sintetis.
 
-Cek otomatis: tanpa em dash, tanpa kontras "not just", tanpa frasa slop ID dari daftar, pembuka tanpa basa-basi. Bubble: 33, maksimal 30 huruf, 7 tanda seru/tanya, dibuat sebagai reaksi tokoh, bukan pengulang narasi.
+Cek otomatis: tanpa em dash, tanpa kontras "not just", tanpa frasa slop ID dari daftar, pembuka tanpa basa-basi. Tanpa bubble dan papan teks (gaya diorama): angka menempel pada benda sebagai callout.
 
 Sisa risiko yang tercatat: Rhythm 7 karena banyak kalimat dua klausa dengan panjang mirip di babak 3; s03 adalah peta tiga bagian (struktur, bukan triad hiasan) dan s52 memakai satu metafora "jendela". Dua-duanya dipertahankan, kreator boleh memotong.
+
+## Gaya visual: diorama 2.5D
+
+Sejak 2026-11-25 semua siklus wajib diorama (`instruksi/referensi/gaya-diorama.md`). Visual naskah ini sudah dikonversi: satu `world` (Tokyo, laut, Jakarta, Jawa Timur, Tiongkok), kamera berpindah tiap scene, angka menempel pada benda, tanpa bubble dan papan teks. Footage milik kreator tetap di atas dunia pada 12 scene. Detail dunia dan anggaran konsep ada di `02-brief.md`. Pratinjau visual belum bisa dibuat di sesi ini (Remotion belum terpasang); `build-visual.mjs --check` dan `check_kit.py` lolos.
+
+**Catatan jujur sebelum menyetujui:** aturan "fondasi dulu" belum terpenuhi penuh. Pemain keputusan (KAI, pemerintah, INKA) baru diperkenalkan setelah s20, dan belum ada satu analogi sehari-hari yang dipakai sampai akhir.
 
 ## Struktur
 
@@ -82,7 +88,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Tiga bagian. Kenapa kereta Tokyo cocok untuk Jakarta. Kenapa cara ini berjalan dua puluh lima tahun. Dan kenapa berakhir di November 2026.
 
-*Visual:* remotion-diagram. Garis waktu tiga blok: 2000 (mulai), 2000-2025 (jalan), Nov 2026 (berhenti)
+*Visual:* diorama 2.5D. kamera ke peta; 1 FIT, 2 DEAL, 3 ENDED
 
 *Bubble:* "I've heard this story."
 
@@ -92,7 +98,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Semuanya dimulai dari hibah. Mei 2000, badan bantuan Jepang dan pemerintah kota Tokyo memberi tujuh puluh dua gerbong kereta bawah tanah bekas dari jalur Mita di Tokyo.
 
-*Visual:* remotion-data. Angka besar 72 gerbong, label Toei 6000, Mei 2000
+*Visual:* diorama 2.5D. kamera ke tokyo; 72 CARS
 
 *Bubble:* "Is it always this warm?"
 
@@ -104,7 +110,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Gerbong itu dibuat mulai 1968. Tokyo memensiunkannya setelah sekitar tiga puluh tahun, dan Jakarta masih menjalankannya sampai 2016.
 
-*Visual:* remotion-diagram. Garis waktu Toei 6000: 1968 dibuat, 1999 pensiun di Tokyo, 2000-2016 di Jakarta
+*Visual:* diorama 2.5D. kamera ke t_old; BUILT 1968, RAN TO 2016
 
 *Bubble:* "Retirement? Never heard of it."
 
@@ -116,7 +122,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Itu kereta listrik ber-AC pertama di Indonesia. Waktu itu, penumpang yang berjejal bergelantungan di pintu terbuka, bahkan duduk di atap.
 
-*Visual:* remotion-diagram. Dua kolom: sebelum 2000 (tanpa AC, penumpang di atap), sesudah (gerbong ber-AC)
+*Visual:* diorama 2.5D. kamera ke t_old; FIRST A/C
 
 *Bubble:* "Wait, it's cold in here?"
 
@@ -138,7 +144,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Gerbong baru sepuluh sampai dua belas miliar. Kursinya sama, pintunya sama, harganya kira-kira sepersepuluh.
 
-*Visual:* remotion-data. Batang: bekas Rp1 miliar vs baru Rp10 miliar
+*Visual:* diorama 2.5D. kamera ke peta; Rp10-12 BN, 1/10 PRICE
 
 *Bubble:* "I'll take ten."
 
@@ -150,7 +156,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Pabrik kereta Indonesia sendiri, INKA, mematok sekitar satu koma tiga juta dolar per gerbong baru di 2019. Bahkan setelah ongkos kirim, gerbong bekas harganya kira-kira sepersembilan dari itu.
 
-*Visual:* remotion-data. Statistik: harga INKA US$1,3 juta per gerbong (2019)
+*Visual:* diorama 2.5D. kamera ke inka; $1.3M NEW, 1/9 PRICE
 
 *Sumber:* [Dirut INKA 2019: kereta bekas Jepang sekitar Rp2 miliar, kereta INKA sekitar US$1,3 juta](https://finance.detik.com/read/2019/08/19/161619/4671967/1036/ri-bisa-bikin-krl-tapi-kok-impor-yang-bekas-dari-jepang); [Kereta bekas Jepang sekitar Rp2 miliar termasuk ongkos kirim, INKA sekitar Rp18 miliar](https://finance.detik.com/read/2019/08/19/161619/4671967/1036/ri-bisa-bikin-krl-tapi-kok-impor-yang-bekas-dari-jepang)
 
@@ -160,7 +166,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Untuk Jepang, ini juga untung. Membuang kereta itu mahal. Mengirimnya ke Jakarta lebih murah, dan keretanya tetap dipakai orang lain.
 
-*Visual:* remotion-diagram. Alur: kereta pensiun di Tokyo → ongkos membuang mahal → kirim ke Jakarta
+*Visual:* diorama 2.5D. kamera ke tokyo; SCRAP COSTS, RE-USED
 
 *Bubble:* "Next stop, Tanjung Priok."
 
@@ -180,7 +186,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Lebar relnya sama. Jalur kereta biasa di Jepang dan jalur di Jawa sama-sama seribu enam puluh tujuh milimeter. Kalau lebar relnya beda, roda dan as harus diganti, sering kali keretanya juga.
 
-*Visual:* remotion-data. Dua batang sama panjang: Jepang 1.067 mm, Jawa 1.067 mm; pembanding 1.435 mm (Eropa, China)
+*Visual:* diorama 2.5D. kamera ke tokyo; 1,067 MM, 1,067 MM
 
 *Bubble:* "Measured twice."
 
@@ -192,7 +198,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kesamaan ini ada sejarahnya. Jalur kereta pertama di Jawa, tahun 1867, dibangun lebih lebar. Saat pendudukan Jepang tahun 1940-an, jalur lebar yang tersisa di Jawa diubah ke lebar rel Jepang yang lebih sempit. Itu alasan besar kereta Tokyo pas di rel Jawa sekarang.
 
-*Visual:* remotion-diagram. Garis waktu: 1867 rel 1.435 mm, 1942-1945 diubah ke 1.067 mm
+*Visual:* diorama 2.5D. kamera ke kota; 1867 WIDE, 1940s NARROW
 
 *Sumber:* [Rel pertama 1867 memakai 1.435 mm; saat pendudukan Jepang dikonversi ke 1.067 mm](https://en.wikipedia.org/wiki/Rail_transport_in_Indonesia); [Lebar rel Indonesia diseragamkan oleh Jepang saat Perang Dunia II](https://www.newsweekjapan.jp/articles/-/21721?page=1)
 
@@ -202,7 +208,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Listriknya juga cocok. Jalur listrik Jakarta dibuka tahun 1925 dengan seribu lima ratus volt DC, sistem yang sama dengan rancangan seri 205 di Tokyo.
 
-*Visual:* remotion-data. Statistik: 1.500 V DC aliran atas, sejak 1925
+*Visual:* diorama 2.5D. kamera ke tokyo; 1925: 1,500 V, 205: 1,500 V
 
 *Bubble:* "Feels like home."
 
@@ -214,7 +220,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Rel sama, listrik sama. Kereta Tokyo datang naik kapal, diganti tandanya dan diperiksa, lalu langsung dipakai tanpa membongkar rel.
 
-*Visual:* remotion-diagram. Alur: kapal → pelabuhan → pemeriksaan → beroperasi
+*Visual:* diorama 2.5D. kamera ke jkt; NEW SIGNS
 
 *Bubble:* "No new rails needed."
 
@@ -226,7 +232,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Jadi Jakarta terus membeli. Tahun 2012, operatornya menargetkan seratus empat puluh gerbong tahun itu, dan seribu empat ratus empat puluh gerbong di 2019.
 
-*Visual:* remotion-data. Counter naik: 140 (2012) ke 1.440 (target 2019)
+*Visual:* diorama 2.5D. kamera ke jkt; 2012: 140, 2019: 1,440
 
 *Bubble:* "More trains, fewer roofs."
 
@@ -238,7 +244,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Gelombang terbesar datang belakangan. Seri 205 milik JR East, kereta komuter Tokyo yang pertama dibuat tahun 1985, mulai jalan di Jakarta tahun 2013.
 
-*Visual:* remotion-diagram. Garis waktu seri 205: 1985 diperkenalkan di Tokyo, 2013 mulai di Jakarta
+*Visual:* diorama 2.5D. kamera ke t_old; 2013
 
 *Bubble:* "Window seat, please."
 
@@ -250,7 +256,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Sampai sekarang tulang punggungnya masih Jepang. Tujuh ratus delapan puluh gerbong dari seri 205 milik JR East, dan seratus dua puluh delapan dari Tokyo Metro.
 
-*Visual:* remotion-data. Breakdown armada: 780 JR East 205, 128 Tokyo Metro 6000
+*Visual:* diorama 2.5D. kamera ke t_old; 780 JR EAST, 128 METRO
 
 *Sumber:* [Masih beroperasi 780 unit JR East 205 dan 128 unit Tokyo Metro 6000 (Juli 2026)](https://ekonomi.bisnis.com/read/20260713/98/1987706/kai-sebut-18-krl-baru-siap-beroperasi-9-rangkaian-pensiun-tahun-ini)
 
@@ -260,7 +266,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Umur gerbong itu tiga puluh empat sampai empat puluh satu tahun. Banyak yang mulai bekerja di Tokyo sebelum Tembok Berlin runtuh.
 
-*Visual:* remotion-data. Angka besar: 34 sampai 41 tahun
+*Visual:* diorama 2.5D. kamera ke t_old; 34-41 YEARS
 
 *Bubble:* "My knees, though."
 
@@ -272,7 +278,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Armada setua itu harus diganti, dan jumlah penumpang terus naik. Upaya pertama menggantinya dengan kereta Tokyo lagi terjadi di 2023, dan ditolak.
 
-*Visual:* remotion-diagram. Stempel DITOLAK di atas tahun 2023
+*Visual:* diorama 2.5D. kamera ke gov; BLOCKED 2023
 
 ### s21 · body · 3:06
 
@@ -280,7 +286,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Operatornya minta izin impor tiga ratus empat puluh delapan gerbong bekas model Jepang yang lebih baru, E217, untuk 2023 dan 2024.
 
-*Visual:* remotion-data. Breakdown: 120 gerbong (2023) + 228 gerbong (2024) = 348 E217
+*Visual:* diorama 2.5D. kamera ke tokyo; 348 CARS
 
 *Bubble:* "Just a few more?"
 
@@ -292,7 +298,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Pemerintah menolak. Gerbongnya tetap di Jepang. Sebagai gantinya, kereta lama diperbarui dan kereta baru dibeli.
 
-*Visual:* remotion-diagram. Daftar pilihan 2023: retrofit kereta lama, beli baru dari INKA, beli baru dari China
+*Visual:* diorama 2.5D. kamera ke gov; NO
 
 *Sumber:* [2023 pemerintah menolak impor KRL bekas Jepang, memilih retrofit KRL lama dan pengadaan KRL baru](https://www.metrotvnews.com/play/NxGCXq5a-dulu-ditolak-kini-indonesia-mau-impor-krl-bekas-dari-jepang)
 
@@ -302,7 +308,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kereta baru datang dari dua tempat. Pabrikan China, CRRC Sifang, dan INKA di Jawa Timur.
 
-*Visual:* remotion-diagram. Dua sumber kereta baru: CRRC Sifang (China), INKA (Madiun)
+*Visual:* diorama 2.5D. kamera ke peta; CHINA, EAST JAVA
 
 *Sumber:* [Total pemesanan: 16 trainset INKA dan 11 trainset CRRC Qingdao Sifang](https://www.liputan6.com/bisnis/read/6007403/kai-commuter-kembali-terima-2-krl-baru-dari-china)
 
@@ -312,7 +318,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** INKA juga mendapat kontrak memperbarui sembilan belas rangkaian lama, supaya tetap bisa jalan selama kereta baru dibuat.
 
-*Visual:* remotion-data. Angka besar: 19 rangkaian lama di-retrofit oleh INKA
+*Visual:* diorama 2.5D. kamera ke inka; REFIT 19
 
 *Bubble:* "New paint, same knees."
 
@@ -324,7 +330,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Januari 2024, operatornya meneken kontrak tiga rangkaian dari China. Nilainya tujuh ratus delapan puluh tiga miliar rupiah, sekitar dua ratus enam puluh satu miliar per rangkaian.
 
-*Visual:* remotion-data. Angka besar: Rp783 miliar untuk 3 rangkaian, Rp261 miliar per rangkaian
+*Visual:* diorama 2.5D. kamera ke crrc; 3 TRAINS, Rp783 BN
 
 *Bubble:* "That's a lot of zeros."
 
@@ -336,7 +342,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kereta barunya lebih panjang. Tiap rangkaian berisi dua belas gerbong dan bisa mengangkut sekitar tiga ribu empat ratus orang sekali jalan.
 
-*Visual:* remotion-data. Statistik: 12 gerbong, ~3.400 penumpang sekali jalan
+*Visual:* diorama 2.5D. kamera ke t_new; 12 CARS, 3,400 RIDERS
 
 *Bubble:* "Finally, legroom. Kind of."
 
@@ -348,7 +354,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Bandingkan dengan cara lama. Dua belas gerbong bekas Jepang dulu sekitar dua belas miliar. Satu rangkaian baru berisi dua belas gerbong harganya kira-kira dua puluh kali lipat.
 
-*Visual:* remotion-data. Batang: 12 gerbong bekas (~Rp12 miliar, harga 2013) vs 1 rangkaian baru CRRC (Rp261 miliar)
+*Visual:* diorama 2.5D. kamera ke peta; ~Rp12 BN, 20x
 
 *Bubble:* "Told you I was a bargain."
 
@@ -360,7 +366,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kereta baru menyelesaikan satu masalah: umur. November 2025, tiga seri Jepang tertua pensiun, sebagian umurnya hampir lima puluh tahun.
 
-*Visual:* remotion-diagram. Daftar seri pensiun Nov 2025: Tokyu 8500, Tokyo Metro 7000, JR 203
+*Visual:* diorama 2.5D. kamera ke t_old; NOV 2025, ~50 YEARS
 
 *Bubble:* "Finally, a pension."
 
@@ -372,7 +378,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kabin masinisnya akan dipajang permanen di Stasiun Jakarta Kota. Jakarta memberi kereta bekasnya upacara pensiun yang layak.
 
-*Visual:* remotion-text. Teks: kabin masinis dipajang di Stasiun Jakarta Kota
+*Visual:* diorama 2.5D. kamera ke kota; ON DISPLAY
 
 *Bubble:* "I'll miss the creaks."
 
@@ -384,7 +390,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Jadi rencananya kereta baru dari China dan dari INKA. Titik lemahnya ada di pabrik INKA.
 
-*Visual:* remotion-diagram. Dua sumber; INKA disorot merah
+*Visual:* diorama 2.5D. kamera ke inka; WEAK POINT
 
 *Sumber:* [Pesanan 16 trainset INKA dan 11 trainset CRRC](https://www.liputan6.com/bisnis/read/6007403/kai-commuter-kembali-terima-2-krl-baru-dari-china)
 
@@ -404,7 +410,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** INKA diproyeksikan membuat delapan rangkaian setahun. Yang terwujud dua sampai tiga.
 
-*Visual:* remotion-data. Batang: target 8 per tahun vs realisasi 2-3
+*Visual:* diorama 2.5D. kamera ke inka; PLAN 8/YR, REAL 2-3
 
 *Bubble:* "Working on it."
 
@@ -416,7 +422,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Sampai September 2026, baru tujuh dari enam belas rangkaian INKA yang beroperasi. Artinya masih ada sembilan rangkaian yang diandalkan, tapi belum mengangkut siapa pun.
 
-*Visual:* remotion-data. Counter: 7 dari 16
+*Visual:* diorama 2.5D. kamera ke inka; 7 OF 16, 9 IDLE
 
 *Sumber:* [Baru 7 dari 16 EMU iE305 INKA yang beroperasi](https://www.railjournal.com/fleet/indonesias-kai-abandons-plans-to-import-second-hand-japanese-trains/); [Hingga September 2026 baru 7 rangkaian yang beroperasi](https://www.metrotvnews.com/play/NxGCXq5a-dulu-ditolak-kini-indonesia-mau-impor-krl-bekas-dari-jepang)
 
@@ -436,7 +442,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Itu sekitar satu koma satu juta perjalanan per hari. Operatornya merencanakan pertumbuhan tiga sampai empat persen, bukan sebelas.
 
-*Visual:* remotion-data. Statistik: 1,1 juta perjalanan per hari; pertumbuhan +11% vs rencana 3-4%
+*Visual:* diorama 2.5D. kamera ke jkt; 1.1M / DAY, PLAN +3-4%
 
 *Bubble:* "Is there room for my bag?"
 
@@ -458,7 +464,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Operatornya menghitung butuh seratus lima rangkaian. Yang tersedia seratus dua.
 
-*Visual:* remotion-data. Statistik: butuh 105, ada 102
+*Visual:* diorama 2.5D. kamera ke kota; NEED 105, HAVE 102
 
 *Bubble:* "Three short."
 
@@ -470,7 +476,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Dan kekurangannya akan membesar. Tiga belas rangkaian eks Tokyo Metro dijadwalkan pensiun tahun ini.
 
-*Visual:* remotion-data. Angka besar: 13 rangkaian Tokyo Metro 6000 pensiun 2026
+*Visual:* diorama 2.5D. kamera ke t_metro; 13 RETIRE
 
 *Sumber:* [13 rangkaian eks Tokyo Metro seri 6000 akan ditarik tahun ini](https://www.railjournal.com/fleet/indonesias-kai-abandons-plans-to-import-second-hand-japanese-trains/)
 
@@ -480,7 +486,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kereta baru butuh satu sampai dua tahun dari pesan sampai datang. Pesanan yang diteken Januari 2026 paling cepat baru datang di 2027.
 
-*Visual:* remotion-diagram. Garis waktu: pesan → 1-2 tahun → datang; kekurangan sekarang
+*Visual:* diorama 2.5D. kamera ke peta; 1-2 YEARS, 2027+
 
 *Bubble:* "I needed it yesterday."
 
@@ -500,7 +506,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Tanggal 23 September, pimpinan KAI meminta DPR mengizinkan lagi kereta bekas Jepang, sebagai tambalan untuk 2026 dan 2027.
 
-*Visual:* remotion-diagram. Kartu usulan: impor KRL bekas, sementara, 2026-2027
+*Visual:* diorama 2.5D. kamera ke kai; SEP 23
 
 *Bubble:* "Just as a bridge."
 
@@ -512,7 +518,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Komisi VI DPR setuju. Rencananya dua puluh tiga rangkaian bekas, dengan satu syarat: industri kereta dalam negeri tetap diperkuat.
 
-*Visual:* remotion-diagram. Stempel DISETUJUI, 23 rangkaian, syarat industri dalam negeri
+*Visual:* diorama 2.5D. kamera ke gov; AGREED, 23 TRAINS
 
 *Sumber:* [Komisi VI DPR menyetujui usulan impor KRL bekas dari Jepang (28 Sept 2026)](https://katadata.co.id/infografik/6ab9d5bf9a9fd/infografik-impor-krl-eks-jepang-kembali-diizinkan); [Rencana impor 23 rangkaian; syarat tetap meningkatkan industri perkeretaapian dalam negeri](https://katadata.co.id/amp/finansial/makro/6aec65cdc2b9f/kai-batalkan-impor-krl-bekas-23-trainset-akan-dipasok-dari-dalam-negeri)
 
@@ -522,7 +528,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Tekanan di balik keputusan itu adalah proyeksi tiga ratus enam puluh sembilan juta perjalanan di 2026. Setiap rangkaian yang kurang membuat rangkaian lain makin penuh.
 
-*Visual:* remotion-data. Angka besar: 369 juta perjalanan (proyeksi 2026)
+*Visual:* diorama 2.5D. kamera ke jkt; 369M TRIPS
 
 *Bubble:* "Somebody count the seats."
 
@@ -546,7 +552,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Lalu rencananya menabrak aturan. Kementerian Perdagangan hanya mengizinkan barang modal bekas seperti ini maksimal berumur dua puluh tahun.
 
-*Visual:* remotion-data. Gauge: batas usia impor 20 tahun
+*Visual:* diorama 2.5D. kamera ke gov; MAX 20 YRS
 
 *Sumber:* [Ketentuan Kementerian Perdagangan: usia maksimal 20 tahun](https://ekonomi.bisnis.com/read/20261003/98/2009402/impor-krl-bekas-terganjal-usia-kereta)
 
@@ -556,7 +562,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kereta yang ditawarkan berumur dua puluh lima sampai dua puluh delapan tahun. Rata-rata sudah mengangkut penumpang di Jepang sejak 1998.
 
-*Visual:* remotion-data. Stats: batas 20 tahun vs kereta 25-28 tahun
+*Visual:* diorama 2.5D. kamera ke oldjp; 25-28 YEARS, SINCE 1998
 
 *Bubble:* "I'm only 28."
 
@@ -568,7 +574,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kementerian Perhubungan menambah satu masalah. Kereta yang sudah dipakai dua puluh sampai tiga puluh tahun di Jepang mungkin cuma tersisa sekitar sepuluh tahun. Setelah itu, Jakarta harus belanja kereta lagi.
 
-*Visual:* remotion-diagram. Garis waktu umur kereta: 20-30 tahun di Jepang, sisa ~10 tahun di Jakarta
+*Visual:* diorama 2.5D. kamera ke t_old; ~10 YRS LEFT
 
 *Bubble:* "Ten years, maybe."
 
@@ -580,7 +586,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kereta tua juga makin sulit dirawat. Saat tiga seri Jepang pensiun di 2025, salah satu alasannya adalah suku cadangnya sudah habis.
 
-*Visual:* remotion-diagram. Daftar alasan pensiun 2025: umur, suku cadang habis
+*Visual:* diorama 2.5D. kamera ke t_old; NO SPARES
 
 *Sumber:* [Seri 8500, 7000, dan 203 pensiun karena usia dan habisnya suku cadang](https://rri.co.id/en/archipelago/1967107/jakarta-s-legendary-krl-trains-retired-after-decades-of-service); [Suku cadang kereta bekas Jepang susah didapat karena banyak yang sudah tidak diproduksi](https://katadata.co.id/berita/2019/08/21/candu-impor-kereta-bekas-jepang)
 
@@ -590,7 +596,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Tanggal 5 November, direktur utama KAI membatalkan rencana itu. Katanya: untuk rakyat, harus yang baru.
 
-*Visual:* remotion-diagram. Stempel DIBATALKAN, 5 Nov 2026
+*Visual:* diorama 2.5D. kamera ke kai; NOV 5: CANCELLED
 
 *Sumber:* [Dirut KAI 5 Nov: kami tidak impor bekas, untuk rakyat harus yang baru](https://katadata.co.id/amp/finansial/makro/6aec65cdc2b9f/kai-batalkan-impor-krl-bekas-23-trainset-akan-dipasok-dari-dalam-negeri); [KAI memastikan tidak mengimpor KRL bekas Jepang](https://finance.detik.com/infrastruktur/d-8740270/impor-krl-bekas-akhirnya-batal)
 
@@ -600,7 +606,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Lihat apa yang sebenarnya menghalangi. Jepang masih punya kereta untuk dijual. Keretanya terlalu tua untuk aturan Indonesia sendiri.
 
-*Visual:* remotion-diagram. Dua kolom: Jepang punya kereta / aturan 20 tahun menolak
+*Visual:* diorama 2.5D. kamera ke tokyo; STILL FOR SALE, TOO OLD
 
 *Sumber:* [KRL bekas berusia 25 tahun, ketentuan maksimal 20 tahun](https://ekonomi.bisnis.com/read/20261003/98/2009402/impor-krl-bekas-terganjal-usia-kereta)
 
@@ -610,7 +616,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Jepang memakai kereta komuternya dua puluh sampai tiga puluh tahun. Saat gerbongnya siap dijual, umurnya biasanya sudah lewat batas Jakarta.
 
-*Visual:* remotion-diagram. Garis waktu satu gerbong: 0 tahun (baru di Tokyo), 20 tahun (batas impor), 25-30 tahun (pensiun di Jepang)
+*Visual:* diorama 2.5D. kamera ke oldjp; KEPT 20-30 YRS
 
 *Bubble:* "Missed it by five years."
 
@@ -630,7 +636,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Jadi penumpang naik apa berikutnya? Operatornya punya tiga pilihan: pesan ke INKA, memperpanjang umur kereta lama, atau impor bekas.
 
-*Visual:* remotion-diagram. Tiga pilihan; impor bekas dicoret
+*Visual:* diorama 2.5D. kamera ke peta; ORDER INKA, KEEP OLD, IMPORT USED
 
 *Bubble:* "Option four: I walk?"
 
@@ -652,7 +658,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Dananya sudah disetujui. Setahun sebelumnya, pemerintah menyiapkan lima triliun rupiah untuk tiga puluh rangkaian baru, ditargetkan selesai dalam setahun.
 
-*Visual:* remotion-data. Statistik: Rp5 triliun untuk 30 rangkaian baru
+*Visual:* diorama 2.5D. kamera ke gov; Rp5 TRILLION, 30 TRAINS
 
 *Bubble:* "Within a year?"
 
@@ -664,7 +670,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Rencana jangka panjangnya mengganti delapan puluh empat rangkaian Jepang tua dengan buatan INKA, dan menaikkan kapasitas dari satu koma satu ke satu koma empat juta penumpang per hari pada 2030.
 
-*Visual:* remotion-data. Statistik: 84 rangkaian diganti; kapasitas 1,1 → 1,4 juta/hari pada 2030
+*Visual:* diorama 2.5D. kamera ke jkt; 1.1M > 1.4M
 
 *Bubble:* "No pressure."
 
@@ -684,7 +690,7 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 **ID:** Kereta-kereta itu mengangkut orang di satu pulau yang dihuni lebih dari separuh penduduk Indonesia. Video berikutnya: kenapa begitu banyak orang Indonesia tinggal di Jawa.
 
-*Visual:* remotion-diagram. Peta Jawa disorot, teks video berikutnya
+*Visual:* diorama 2.5D. kamera ke peta; JAVA
 
 *Sumber:* [Jawa dihuni lebih dari separuh penduduk Indonesia (verifikasi angka BPS di siklus 002)](https://en.wikipedia.org/wiki/Java)
 

@@ -8,9 +8,9 @@ channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "001-jakarta-refused-tokyo-trains"
-langkah_berikutnya: "siklus 001: kreator menyetujui naskah (03-naskah.md), lalu naskah diubah ke gaya diorama 2.5D (world + stage), rekam footage KRL 2026-11-28/29 (daftar di 02-brief.md) dan jalankan pipeline produksi (scripts/pipeline/run.mjs --track T02 --siklus 001)"
+langkah_berikutnya: "siklus 001: kreator menyetujui naskah (03-naskah.md), rekam footage KRL 2026-11-28/29 (daftar di 02-brief.md) dan jalankan pipeline produksi (scripts/pipeline/run.mjs --track T02 --siklus 001)"
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: "Setujui naskah siklus 001 (siklus/001-jakarta-refused-tokyo-trains/03-naskah.md): 58 scene, perkiraan 8:24, anti-slop EN 39/ID 38, 3 judul, 2 Shorts. Koreksi fakta atau insight dari kreator boleh ditambahkan"
+menunggu_keputusan: "Setujui naskah siklus 001 (siklus/001-jakarta-refused-tokyo-trains/03-naskah.md; visual sudah diorama 2.5D). Pilihan soal aturan fondasi-dulu: (1) setujui apa adanya, tanpa analogi (rekomendasi untuk uji V2 yang jadwalnya ketat); (2) tambah 2 sampai 3 kalimat di s02-s03 yang memperkenalkan pemain (KAI, pemerintah, INKA) dan satu analogi, anti-slop dinilai ulang; (3) pindahkan perkenalan pemain ke s04-s06 dengan memadatkan hibah 2000. Koreksi fakta dari kreator boleh ditambahkan"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -77,3 +77,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Siklus 001 riset viral selesai untuk seluruh sprint V2 (9 outlier, 3 pola). Temuan: Behind Asia sudah membuat topik kereta bekas (302K, 10 bulan); pembeda = pembatalan impor KRL bekas 5 Nov 2026 + sumber ID + footage sendiri. 4 ide baru di backlog. Menunggu pilihan sudut.
 - 2026-11-24: Kreator memilih sudut A untuk siklus 001. Folder diganti ke 001-jakarta-refused-tokyo-trains. Status brief.
 - 2026-11-24: Siklus 001 brief + naskah selesai (58 scene, 1.384 kata EN, perkiraan 8:24, 66 sumber, anti-slop EN 39/ID 38). Kontrak visual valid (build-visual --check). Butuh 7 file footage milik kreator (02-brief.md). Menunggu persetujuan naskah.
+- 2026-11-25: Rebase ke main terbaru. Gaya wajib diorama 2.5D diterapkan ke naskah siklus 001: `world` (Tokyo, laut, Jakarta, INKA, Tiongkok) dan `stage.engine: diorama` di 58 scene lewat `03-script.diorama.py`, tanpa bubble dan papan teks, `thumbnails` ditambahkan. Narasi dan sumber tidak berubah. `build-visual --check` dan `check_kit.py` lolos. Aturan fondasi-dulu belum penuh (lihat menunggu_keputusan).

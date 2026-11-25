@@ -52,19 +52,39 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: interior KRL eks JR East 205, stiker dan tulisan Jepang di dinding gerbong",
+    "description": "Footage milik kreator: interior KRL eks JR East 205, stiker dan tulisan Jepang di dinding gerbong (footage di atas dunia diorama)",
     "on_screen_text": "Filmed on Jakarta's commuter line, Nov 2026"
    },
    "stage": {
-    "bg": "none",
-    "actors": [
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 52,
+      "height": 36
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 8,
+      "height": 4
+     },
+     "arrive": 0.9
+    },
+    "paths": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.12,
-      "label": "GUIDE",
-      "emo": "think",
-      "scale": 0.7
+      "id": "p_ship",
+      "at": 0.3
+     }
+    ],
+    "callouts": [
+     {
+      "id": "t_old",
+      "text": "EX-TOKYO",
+      "at": 0.35
      }
     ]
    },
@@ -90,11 +110,61 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: rangkaian eks Jepang masuk peron"
+    "description": "Footage milik kreator: rangkaian eks Jepang masuk peron (footage di atas dunia diorama)"
    },
    "stage": {
-    "bg": "none",
-    "actors": []
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 8,
+      "height": 4
+     },
+     "to": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 52,
+      "height": 36
+     },
+     "arrive": 0.9
+    },
+    "paths": [
+     {
+      "id": "p_ship",
+      "at": 0.15
+     }
+    ],
+    "moves": [
+     {
+      "asset": "actor:train",
+      "from": "oldjp",
+      "to": "jkt",
+      "at": 0.2,
+      "dur": 0.6,
+      "via": [
+       [
+        -14,
+        20
+       ]
+      ]
+     }
+    ],
+    "highlight": [
+     {
+      "id": "gov",
+      "at": 0.8
+     }
+    ],
+    "callouts": [
+     {
+      "id": "gov",
+      "text": "AGE RULE",
+      "at": 0.8
+     }
+    ]
    },
    "broll": {
     "own": "krl-02.mp4",
@@ -112,53 +182,62 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Garis waktu tiga blok: 2000 (mulai), 2000-2025 (jalan), Nov 2026 (berhenti)",
-    "spec": {
-     "kind": "timeline",
-     "blocks": [
-      {
-       "title": "Why they fit",
-       "sub": "the rails",
-       "tone": "lit"
-      },
-      {
-       "title": "Why it worked",
-       "sub": "2000 to 2025",
-       "tone": "dim"
-      },
-      {
-       "title": "Why it ended",
-       "sub": "Nov 2026",
-       "tone": "dim"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke peta; 1 FIT, 2 DEAL, 3 ENDED"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 52,
+      "height": 36
+     },
+     "to": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 46,
+      "height": 34
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "highlight": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.18,
-      "label": "GUIDE",
-      "emo": "happy",
-      "scale": 0.75
+      "id": "tokyo",
+      "at": 0.12,
+      "until": 0.38
      },
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.72,
-      "label": "OLD TRAIN",
-      "emo": "smug",
-      "say": {
-       "text": "I've heard this story.",
-       "at": 0.55
-      },
-      "scale": 0.8
+      "id": "jkt",
+      "at": 0.42,
+      "until": 0.68
+     },
+     {
+      "id": "gov",
+      "at": 0.72,
+      "until": 1
+     }
+    ],
+    "callouts": [
+     {
+      "id": "tokyo",
+      "text": "1 FIT",
+      "at": 0.12
+     },
+     {
+      "id": "jkt",
+      "text": "2 DEAL",
+      "at": 0.42
+     },
+     {
+      "id": "gov",
+      "text": "3 ENDED",
+      "at": 0.72
      }
     ]
    }
@@ -171,40 +250,55 @@
     "id": "Semuanya dimulai dari hibah. Mei 2000, badan bantuan Jepang dan pemerintah kota Tokyo memberi tujuh puluh dua gerbong kereta bawah tanah bekas dari jalur Mita di Tokyo."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Angka besar 72 gerbong, label Toei 6000, Mei 2000",
-    "spec": {
-     "kind": "bignum",
-     "total": "72 cars",
-     "label": "Toei 6000 series, donated May 2000",
-     "mark": "from Tokyo's Mita Line"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke tokyo; 72 CARS"
    },
    "stage": {
-    "bg": "sea",
-    "insert": {
-     "pos": "top"
-    },
-    "actors": [
-     {
-      "id": "sh",
-      "kind": "ship",
-      "x": 0.3,
-      "label": "SHIP",
-      "emo": "happy",
-      "scale": 0.9
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 46,
+      "height": 34
      },
+     "to": {
+      "look": "tokyo",
+      "dist": 22,
+      "height": 12
+     },
+     "arrive": 0.9
+    },
+    "paths": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.7,
-      "label": "TOEI 6000",
-      "emo": "happy",
-      "say": {
-       "text": "Is it always this warm?",
-       "at": 0.45
-      },
-      "scale": 0.7
+      "id": "p_ship",
+      "at": 0.1
+     }
+    ],
+    "moves": [
+     {
+      "asset": "envelope",
+      "from": "tokyo",
+      "to": "jkt",
+      "at": 0.3,
+      "dur": 0.6,
+      "via": [
+       [
+        -14,
+        20
+       ]
+      ],
+      "label": "GIFT, MAY 2000"
+     }
+    ],
+    "callouts": [
+     {
+      "id": "tokyo",
+      "text": "72 CARS",
+      "at": 0.2
      }
     ]
    },
@@ -224,45 +318,50 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Garis waktu Toei 6000: 1968 dibuat, 1999 pensiun di Tokyo, 2000-2016 di Jakarta",
-    "spec": {
-     "kind": "timeline",
-     "blocks": [
-      {
-       "title": "1968",
-       "sub": "built for Tokyo",
-       "tone": "dim"
-      },
-      {
-       "title": "1999",
-       "sub": "retired in Tokyo",
-       "tone": "hot"
-      },
-      {
-       "title": "2000 to 2016",
-       "sub": "second life in Jakarta",
-       "tone": "lit"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke t_old; BUILT 1968, RAN TO 2016"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "tokyo",
+      "dist": 22,
+      "height": 12
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "moves": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.78,
-      "label": "TOEI 6000",
-      "emo": "happy",
-      "say": {
-       "text": "Retirement? Never heard of it.",
-       "at": 0.6
-      },
-      "scale": 0.75
+      "asset": "actor:train",
+      "from": "oldjp",
+      "to": "t_old",
+      "at": 0.3,
+      "dur": 0.4,
+      "via": [
+       [
+        -14,
+        20
+       ]
+      ]
+     }
+    ],
+    "callouts": [
+     {
+      "id": "oldjp",
+      "text": "BUILT 1968",
+      "at": 0.15,
+      "until": 0.55
+     },
+     {
+      "id": "t_old",
+      "text": "RAN TO 2016",
+      "at": 0.6
      }
     ]
    },
@@ -286,43 +385,36 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Dua kolom: sebelum 2000 (tanpa AC, penumpang di atap), sesudah (gerbong ber-AC)",
-    "spec": {
-     "kind": "checks",
-     "header": "Jakarta commuter trains",
-     "items": [
-      {
-       "text": "Older trains: no air conditioning",
-       "mark": "odd"
-      },
-      {
-       "text": "Riders on the roof at rush hour",
-       "mark": "odd"
-      },
-      {
-       "text": "2000: first air-conditioned electric trains",
-       "mark": "ok"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke t_old; FIRST A/C"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "right"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 10,
+      "height": 4
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "grow": [
      {
-      "id": "c",
-      "kind": "commuter",
-      "x": 0.2,
-      "label": "COMMUTER",
-      "emo": "shock",
-      "say": {
-       "text": "Wait, it's cold in here?",
-       "at": 0.5
-      },
-      "scale": 0.85
+      "id": "t_old",
+      "to": 1.25,
+      "at": 0.4
+     }
+    ],
+    "callouts": [
+     {
+      "id": "t_old",
+      "text": "FIRST A/C",
+      "at": 0.25
      }
     ]
    },
@@ -346,19 +438,36 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage stok: KRL di Jakarta",
+    "description": "Footage stok: KRL di Jakarta (footage di atas dunia diorama)",
     "on_screen_text": "Used car from Japan: Rp 0.8 to 1 bn (2014)"
    },
    "stage": {
-    "bg": "none",
-    "actors": [
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 10,
+      "height": 4
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
+    },
+    "show": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.2,
-      "label": "BUYER",
-      "emo": "think",
-      "scale": 0.7
+      "id": "t_old",
+      "at": 0
+     }
+    ],
+    "callouts": [
+     {
+      "id": "t_old",
+      "text": "Rp0.8-1 BN",
+      "at": 0.4
      }
     ]
    },
@@ -387,49 +496,45 @@
     "id": "Gerbong baru sepuluh sampai dua belas miliar. Kursinya sama, pintunya sama, harganya kira-kira sepersepuluh."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Batang: bekas Rp1 miliar vs baru Rp10 miliar",
-    "spec": {
-     "kind": "bars",
-     "bars": [
-      {
-       "label": "Used, from Japan",
-       "v": 1,
-       "tone": "good"
-      },
-      {
-       "label": "New",
-       "v": 11,
-       "tone": "hot"
-      }
-     ],
-     "unit": "billion rupiah per car, 2014"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke peta; Rp10-12 BN, 1/10 PRICE"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": [
+       23,
+       1
+      ],
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.2,
-      "label": "BUYER",
-      "emo": "happy",
-      "say": {
-       "text": "I'll take ten.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "t_new",
+      "at": 0.15
      }
     ],
-    "fx": [
+    "callouts": [
      {
-      "type": "coins",
-      "at": 0.5,
-      "n": 10
+      "id": "t_new",
+      "text": "Rp10-12 BN",
+      "at": 0.3,
+      "until": 0.7
+     },
+     {
+      "id": "t_old",
+      "text": "1/10 PRICE",
+      "at": 0.75
      }
     ]
    },
@@ -448,33 +553,54 @@
     "id": "Pabrik kereta Indonesia sendiri, INKA, mematok sekitar satu koma tiga juta dolar per gerbong baru di 2019. Bahkan setelah ongkos kirim, gerbong bekas harganya kira-kira sepersembilan dari itu."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Statistik: harga INKA US$1,3 juta per gerbong (2019)",
-    "spec": {
-     "kind": "stats",
-     "items": [
-      {
-       "label": "Used, from Japan",
-       "value": "~Rp 2 bn",
-       "tone": "good",
-       "sub": "INKA's estimate, 2019"
-      },
-      {
-       "label": "New, from INKA",
-       "value": "US$1.3 m",
-       "tone": "hot",
-       "sub": "2019"
-      }
-     ],
-     "between": "vs"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke inka; $1.3M NEW, 1/9 PRICE"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "full"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": [
+       23,
+       1
+      ],
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": "inka",
+      "dist": 18,
+      "height": 8
+     },
+     "arrive": 0.9
     },
-    "actors": []
+    "show": [
+     {
+      "id": "t_ink",
+      "at": 0.1
+     }
+    ],
+    "highlight": [
+     {
+      "id": "inka",
+      "at": 0.3,
+      "until": 0.7
+     }
+    ],
+    "callouts": [
+     {
+      "id": "inka",
+      "text": "$1.3M NEW",
+      "at": 0.3,
+      "until": 0.75
+     },
+     {
+      "id": "t_old",
+      "text": "1/9 PRICE",
+      "at": 0.8
+     }
+    ]
    },
    "sources": [
     {
@@ -496,47 +622,56 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Alur: kereta pensiun di Tokyo → ongkos membuang mahal → kirim ke Jakarta",
-    "spec": {
-     "kind": "flow",
-     "nodes": [
-      {
-       "label": "Retired in Tokyo"
-      },
-      {
-       "label": "Scrap it",
-       "sub": "costs money",
-       "tone": "bad"
-      },
-      {
-       "label": "Ship it to Jakarta",
-       "sub": "costs less",
-       "tone": "good"
-      }
-     ],
-     "edges": [
-      "option 1",
-      "option 2"
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke tokyo; SCRAP COSTS, RE-USED"
    },
    "stage": {
-    "bg": "sea",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "inka",
+      "dist": 18,
+      "height": 8
+     },
+     "to": {
+      "look": "tokyo",
+      "dist": 20,
+      "height": 10
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "paths": [
      {
-      "id": "sh",
-      "kind": "ship",
-      "x": 0.25,
-      "label": "SHIP",
-      "emo": "happy",
-      "say": {
-       "text": "Next stop, Tanjung Priok.",
-       "at": 0.55
-      },
-      "scale": 0.9
+      "id": "p_ship",
+      "at": 0.1
+     }
+    ],
+    "moves": [
+     {
+      "asset": "actor:train",
+      "from": "oldjp",
+      "to": "jkt",
+      "at": 0.3,
+      "dur": 0.6,
+      "via": [
+       [
+        -14,
+        20
+       ]
+      ]
+     }
+    ],
+    "callouts": [
+     {
+      "id": "tokyo",
+      "text": "SCRAP COSTS",
+      "at": 0.15,
+      "until": 0.6
+     },
+     {
+      "id": "jkt",
+      "text": "RE-USED",
+      "at": 0.85
      }
     ]
    },
@@ -556,20 +691,34 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: rel dan kabel listrik aliran atas dari jendela kereta"
+    "description": "Footage milik kreator: rel dan kabel listrik aliran atas dari jendela kereta (footage di atas dunia diorama)"
    },
    "stage": {
-    "bg": "none",
-    "actors": [
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "tokyo",
+      "dist": 20,
+      "height": 10
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 12,
+      "height": 5
+     },
+     "arrive": 0.9
+    },
+    "callouts": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.12,
-      "label": "GUIDE",
-      "emo": "smug",
-      "scale": 0.7
+      "id": "t_old",
+      "text": "WHY FIT?",
+      "at": 0.5
      }
-    ]
+    ],
+    "emo": {
+     "guide": "think"
+    }
    },
    "broll": {
     "own": "krl-05.mp4",
@@ -586,47 +735,54 @@
     "id": "Lebar relnya sama. Jalur kereta biasa di Jepang dan jalur di Jawa sama-sama seribu enam puluh tujuh milimeter. Kalau lebar relnya beda, roda dan as harus diganti, sering kali keretanya juga."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Dua batang sama panjang: Jepang 1.067 mm, Jawa 1.067 mm; pembanding 1.435 mm (Eropa, China)",
-    "spec": {
-     "kind": "bars",
-     "bars": [
-      {
-       "label": "Japan, regular lines: 1,067 mm",
-       "v": 1067,
-       "tone": "good"
-      },
-      {
-       "label": "Java: 1,067 mm",
-       "v": 1067,
-       "tone": "good"
-      },
-      {
-       "label": "Europe, China: 1,435 mm",
-       "v": 1435,
-       "tone": "muted"
-      }
-     ],
-     "unit": "track gauge"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke tokyo; 1,067 MM, 1,067 MM"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 12,
+      "height": 5
+     },
+     "to": {
+      "look": "tokyo",
+      "dist": 20,
+      "height": 9
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "paths": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.82,
-      "label": "ENGINEER",
-      "emo": "happy",
-      "say": {
-       "text": "Measured twice.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "p_rail",
+      "at": 0.05
+     }
+    ],
+    "highlight": [
+     {
+      "id": "kota",
+      "at": 0.2,
+      "until": 0.5
+     },
+     {
+      "id": "oldjp",
+      "at": 0.6,
+      "until": 0.95
+     }
+    ],
+    "callouts": [
+     {
+      "id": "kota",
+      "text": "1,067 MM",
+      "at": 0.2,
+      "until": 0.55
+     },
+     {
+      "id": "oldjp",
+      "text": "1,067 MM",
+      "at": 0.6
      }
     ]
    },
@@ -650,73 +806,41 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Garis waktu: 1867 rel 1.435 mm, 1942-1945 diubah ke 1.067 mm",
-    "spec": {
-     "kind": "timeline",
-     "blocks": [
-      {
-       "title": "1867",
-       "sub": "first line: 1,435 mm",
-       "tone": "dim"
-      },
-      {
-       "title": "1942 to 1945",
-       "sub": "converted to 1,067 mm",
-       "tone": "hot"
-      },
-      {
-       "title": "Today",
-       "sub": "Java runs on 1,067 mm",
-       "tone": "lit"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke kota; 1867 WIDE, 1940s NARROW"
    },
    "stage": {
-    "bg": "map",
-    "view": {
-     "lon": [
-      104,
-      116
-     ],
-     "lat": [
-      -10,
-      -3
-     ]
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "tokyo",
+      "dist": 20,
+      "height": 9
+     },
+     "to": {
+      "look": "kota",
+      "dist": 22,
+      "height": 11
+     },
+     "arrive": 0.9
     },
-    "insert": {
-     "pos": "top"
-    },
-    "actors": [
+    "paths": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.12,
-      "label": "GUIDE",
-      "emo": "think",
-      "scale": 0.7
+      "id": "p_rail",
+      "at": 0.05
      }
     ],
-    "fx": [
+    "callouts": [
      {
-      "type": "pin",
-      "place": "jakarta",
-      "label": "Batavia",
-      "at": 0.3
+      "id": "kota",
+      "text": "1867 WIDE",
+      "at": 0.15,
+      "until": 0.6
      },
      {
-      "type": "route",
-      "from": [
-       110.4,
-       -7.0
-      ],
-      "to": [
-       110.4,
-       -7.8
-      ],
-      "label": "1867",
-      "at": 0.5,
-      "dur": 0.2
+      "id": "kota",
+      "text": "1940s NARROW",
+      "at": 0.65
      }
     ]
    },
@@ -739,42 +863,36 @@
     "id": "Listriknya juga cocok. Jalur listrik Jakarta dibuka tahun 1925 dengan seribu lima ratus volt DC, sistem yang sama dengan rancangan seri 205 di Tokyo."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Statistik: 1.500 V DC aliran atas, sejak 1925",
-    "spec": {
-     "kind": "stats",
-     "items": [
-      {
-       "label": "Jakarta, since 1925",
-       "value": "1,500 V DC",
-       "tone": "good"
-      },
-      {
-       "label": "205 series, Tokyo",
-       "value": "1,500 V DC",
-       "tone": "good"
-      }
-     ],
-     "between": "="
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke tokyo; 1925: 1,500 V, 205: 1,500 V"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "kota",
+      "dist": 22,
+      "height": 11
+     },
+     "to": {
+      "look": "tokyo",
+      "dist": 18,
+      "height": 8
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.2,
-      "label": "OLD TRAIN",
-      "emo": "happy",
-      "say": {
-       "text": "Feels like home.",
-       "at": 0.55
-      },
-      "scale": 0.8
+      "id": "kota",
+      "text": "1925: 1,500 V",
+      "at": 0.1,
+      "until": 0.5
+     },
+     {
+      "id": "oldjp",
+      "text": "205: 1,500 V",
+      "at": 0.55
      }
     ]
    },
@@ -798,56 +916,60 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Alur: kapal → pelabuhan → pemeriksaan → beroperasi",
-    "spec": {
-     "kind": "flow",
-     "nodes": [
-      {
-       "label": "Ship"
-      },
-      {
-       "label": "Tanjung Priok port"
-      },
-      {
-       "label": "Checks, new signs"
-      },
-      {
-       "label": "In service",
-       "tone": "good"
-      }
-     ],
-     "edges": [
-      "",
-      "",
-      ""
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke jkt; NEW SIGNS"
    },
    "stage": {
-    "bg": "sea",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "tokyo",
+      "dist": 18,
+      "height": 8
+     },
+     "to": {
+      "look": "jkt",
+      "dist": 18,
+      "height": 8
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "paths": [
      {
-      "id": "sh",
-      "kind": "ship",
-      "x": 0.2,
-      "label": "SHIP",
-      "emo": "happy",
-      "scale": 0.85
+      "id": "p_ship",
+      "at": 0.05
+     }
+    ],
+    "moves": [
+     {
+      "asset": "actor:ship",
+      "from": "ship",
+      "to": "jkt",
+      "at": 0.1,
+      "dur": 0.7,
+      "via": [
+       [
+        -14,
+        20
+       ]
+      ]
+     }
+    ],
+    "show": [
+     {
+      "id": "ship",
+      "at": 0
      },
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.8,
-      "label": "ENGINEER",
-      "emo": "smug",
-      "say": {
-       "text": "No new rails needed.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "t_old",
+      "at": 0.8
+     }
+    ],
+    "callouts": [
+     {
+      "id": "jkt",
+      "text": "NEW SIGNS",
+      "at": 0.85
      }
     ]
    },
@@ -866,45 +988,43 @@
     "id": "Jadi Jakarta terus membeli. Tahun 2012, operatornya menargetkan seratus empat puluh gerbong tahun itu, dan seribu empat ratus empat puluh gerbong di 2019."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Counter naik: 140 (2012) ke 1.440 (target 2019)",
-    "spec": {
-     "kind": "counter",
-     "values": [
-      "140",
-      "500",
-      "1,000",
-      "1,440"
-     ],
-     "label": "planned fleet, cars (target for 2019)",
-     "tone": "hot"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke jkt; 2012: 140, 2019: 1,440"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "jkt",
+      "dist": 18,
+      "height": 8
+     },
+     "to": {
+      "look": "jkt",
+      "dist": 20,
+      "height": 9
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "grow": [
      {
-      "id": "c",
-      "kind": "commuter",
-      "x": 0.15,
-      "label": "COMMUTER",
-      "emo": "happy",
-      "scale": 0.75
+      "id": "t_old",
+      "to": 1.5,
+      "at": 0.55
+     }
+    ],
+    "callouts": [
+     {
+      "id": "jkt",
+      "text": "2012: 140",
+      "at": 0.15,
+      "until": 0.55
      },
      {
-      "id": "h",
-      "kind": "hijab",
-      "x": 0.85,
-      "label": "COMMUTER",
-      "emo": "happy",
-      "say": {
-       "text": "More trains, fewer roofs.",
-       "at": 0.6
-      },
-      "scale": 0.75
+      "id": "jkt",
+      "text": "2019: 1,440",
+      "at": 0.6
      }
     ]
    },
@@ -924,48 +1044,45 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Garis waktu seri 205: 1985 diperkenalkan di Tokyo, 2013 mulai di Jakarta",
-    "spec": {
-     "kind": "timeline",
-     "blocks": [
-      {
-       "title": "1985",
-       "sub": "205 series enters service in Tokyo",
-       "tone": "dim"
-      },
-      {
-       "title": "2013",
-       "sub": "first 205s run in Jakarta",
-       "tone": "lit"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke t_old; 2013"
    },
    "stage": {
-    "bg": "sea",
-    "insert": {
-     "pos": "top"
-    },
-    "actors": [
-     {
-      "id": "sh",
-      "kind": "ship",
-      "x": 0.22,
-      "label": "SHIP",
-      "emo": "happy",
-      "scale": 0.85
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "jkt",
+      "dist": 20,
+      "height": 9
      },
+     "to": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
+    },
+    "moves": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.78,
-      "label": "205 SERIES",
-      "emo": "smug",
-      "say": {
-       "text": "Window seat, please.",
-       "at": 0.6
-      },
-      "scale": 0.75
+      "asset": "actor:train",
+      "from": "oldjp",
+      "to": "jkt",
+      "at": 0.2,
+      "dur": 0.6,
+      "via": [
+       [
+        -14,
+        20
+       ]
+      ],
+      "label": "205 SERIES"
+     }
+    ],
+    "callouts": [
+     {
+      "id": "jkt",
+      "text": "2013",
+      "at": 0.85
      }
     ]
    },
@@ -984,36 +1101,41 @@
     "id": "Sampai sekarang tulang punggungnya masih Jepang. Tujuh ratus delapan puluh gerbong dari seri 205 milik JR East, dan seratus dua puluh delapan dari Tokyo Metro."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Breakdown armada: 780 JR East 205, 128 Tokyo Metro 6000",
-    "spec": {
-     "kind": "breakdown",
-     "total": "908 cars",
-     "parts": [
-      {
-       "label": "JR East 205",
-       "value": "780"
-      },
-      {
-       "label": "Tokyo Metro 6000",
-       "value": "128"
-      }
-     ]
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke t_old; 780 JR EAST, 128 METRO"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 16,
+      "height": 7
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.18,
-      "label": "205 SERIES",
-      "emo": "smug",
-      "scale": 0.8
+      "id": "t_metro",
+      "at": 0.45
+     }
+    ],
+    "callouts": [
+     {
+      "id": "t_old",
+      "text": "780 JR EAST",
+      "at": 0.15
+     },
+     {
+      "id": "t_metro",
+      "text": "128 METRO",
+      "at": 0.55
      }
     ]
    },
@@ -1032,32 +1154,30 @@
     "id": "Umur gerbong itu tiga puluh empat sampai empat puluh satu tahun. Banyak yang mulai bekerja di Tokyo sebelum Tembok Berlin runtuh."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Angka besar: 34 sampai 41 tahun",
-    "spec": {
-     "kind": "bignum",
-     "total": "34 to 41 years",
-     "label": "age of the Japanese cars still running",
-     "mark": "built in the 1980s"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke t_old; 34-41 YEARS"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 16,
+      "height": 7
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 12,
+      "height": 5
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.2,
-      "label": "205 SERIES",
-      "emo": "sad",
-      "say": {
-       "text": "My knees, though.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "t_old",
+      "text": "34-41 YEARS",
+      "at": 0.3
      }
     ]
    },
@@ -1077,40 +1197,42 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Stempel DITOLAK di atas tahun 2023",
-    "spec": {
-     "kind": "stamp",
-     "lines": [
-      "Import request, 2023",
-      "Used cars from Japan"
-     ],
-     "stamp": "BLOCKED",
-     "tone": "bad"
-    }
+    "description": "Diorama 2.5D: kamera ke gov; BLOCKED 2023"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 12,
+      "height": 5
+     },
+     "to": {
+      "look": "gov",
+      "dist": 18,
+      "height": 8
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "c",
-      "kind": "city",
-      "x": 0.2,
-      "label": "JAKARTA",
-      "emo": "worry",
-      "scale": 0.8
+      "id": "lock",
+      "at": 0.45
      }
     ],
-    "fx": [
+    "highlight": [
      {
-      "type": "stamp",
-      "text": "BLOCKED",
-      "tone": "bad",
-      "at": 0.6,
-      "x": 0.5,
-      "y": 0.2
+      "id": "gov",
+      "at": 0.5,
+      "until": 1
+     }
+    ],
+    "callouts": [
+     {
+      "id": "gov",
+      "text": "BLOCKED 2023",
+      "at": 0.55
      }
     ]
    }
@@ -1123,40 +1245,52 @@
     "id": "Operatornya minta izin impor tiga ratus empat puluh delapan gerbong bekas model Jepang yang lebih baru, E217, untuk 2023 dan 2024."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Breakdown: 120 gerbong (2023) + 228 gerbong (2024) = 348 E217",
-    "spec": {
-     "kind": "breakdown",
-     "total": "348 cars",
-     "parts": [
-      {
-       "label": "for 2023",
-       "value": "120"
-      },
-      {
-       "label": "for 2024",
-       "value": "228"
-      }
-     ]
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke tokyo; 348 CARS"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "gov",
+      "dist": 18,
+      "height": 8
+     },
+     "to": {
+      "look": "tokyo",
+      "dist": 22,
+      "height": 10
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "paths": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.2,
-      "label": "OPERATOR",
-      "emo": "happy",
-      "say": {
-       "text": "Just a few more?",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "p_ship",
+      "at": 0.1
+     }
+    ],
+    "moves": [
+     {
+      "asset": "actor:train",
+      "from": "oldjp",
+      "to": "jkt",
+      "at": 0.25,
+      "dur": 0.5,
+      "via": [
+       [
+        -14,
+        20
+       ]
+      ],
+      "label": "E217"
+     }
+    ],
+    "callouts": [
+     {
+      "id": "oldjp",
+      "text": "348 CARS",
+      "at": 0.2
      }
     ]
    },
@@ -1176,39 +1310,42 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Daftar pilihan 2023: retrofit kereta lama, beli baru dari INKA, beli baru dari China",
-    "spec": {
-     "kind": "checks",
-     "header": "The 2023 decision",
-     "items": [
-      {
-       "text": "Import used cars from Japan",
-       "mark": "odd"
-      },
-      {
-       "text": "Refit the old trains",
-       "mark": "ok"
-      },
-      {
-       "text": "Buy new trains",
-       "mark": "ok"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke gov; NO"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "right"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "tokyo",
+      "dist": 22,
+      "height": 10
+     },
+     "to": {
+      "look": "gov",
+      "dist": 16,
+      "height": 7
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.18,
-      "label": "GUIDE",
-      "emo": "neutral",
-      "scale": 0.8
+      "id": "lock",
+      "at": 0.25
+     }
+    ],
+    "highlight": [
+     {
+      "id": "gov",
+      "at": 0.3,
+      "until": 1
+     }
+    ],
+    "callouts": [
+     {
+      "id": "gov",
+      "text": "NO",
+      "at": 0.3
      }
     ]
    },
@@ -1228,45 +1365,58 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Dua sumber kereta baru: CRRC Sifang (China), INKA (Madiun)",
-    "spec": {
-     "kind": "flow",
-     "nodes": [
-      {
-       "label": "CRRC Sifang",
-       "sub": "China"
-      },
-      {
-       "label": "KAI Commuter",
-       "tone": "hot"
-      },
-      {
-       "label": "INKA",
-       "sub": "Madiun, East Java"
-      }
-     ],
-     "edges": [
-      "new trains",
-      {
-       "label": "new trains",
-       "back": true
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke peta; CHINA, EAST JAVA"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "gov",
+      "dist": 16,
+      "height": 7
+     },
+     "to": {
+      "look": [
+       20,
+       40
+      ],
+      "dist": 50,
+      "height": 34
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "paths": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.5,
-      "label": "OPERATOR",
-      "emo": "think",
-      "scale": 0.8
+      "id": "p_cn",
+      "at": 0.1
+     },
+     {
+      "id": "p_ink",
+      "at": 0.3
+     }
+    ],
+    "show": [
+     {
+      "id": "t_cn",
+      "at": 0.2
+     },
+     {
+      "id": "t_ink",
+      "at": 0.4
+     }
+    ],
+    "callouts": [
+     {
+      "id": "t_cn",
+      "text": "CHINA",
+      "at": 0.25,
+      "until": 0.55
+     },
+     {
+      "id": "t_ink",
+      "text": "EAST JAVA",
+      "at": 0.6
      }
     ]
    },
@@ -1285,32 +1435,50 @@
     "id": "INKA juga mendapat kontrak memperbarui sembilan belas rangkaian lama, supaya tetap bisa jalan selama kereta baru dibuat."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Angka besar: 19 rangkaian lama di-retrofit oleh INKA",
-    "spec": {
-     "kind": "bignum",
-     "total": "19 trains",
-     "label": "old trains refitted by INKA",
-     "mark": "keep them running a few more years"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke inka; REFIT 19"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": [
+       20,
+       40
+      ],
+      "dist": 50,
+      "height": 34
+     },
+     "to": {
+      "look": "inka",
+      "dist": 16,
+      "height": 7
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "moves": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.82,
-      "label": "INKA",
-      "emo": "happy",
-      "say": {
-       "text": "New paint, same knees.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "asset": "actor:train",
+      "from": "t_old",
+      "to": "inka",
+      "at": 0.15,
+      "dur": 0.45,
+      "label": "REFIT"
+     }
+    ],
+    "highlight": [
+     {
+      "id": "inka",
+      "at": 0.5,
+      "until": 1
+     }
+    ],
+    "callouts": [
+     {
+      "id": "inka",
+      "text": "REFIT 19",
+      "at": 0.5
      }
     ]
    },
@@ -1329,39 +1497,63 @@
     "id": "Januari 2024, operatornya meneken kontrak tiga rangkaian dari China. Nilainya tujuh ratus delapan puluh tiga miliar rupiah, sekitar dua ratus enam puluh satu miliar per rangkaian."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Angka besar: Rp783 miliar untuk 3 rangkaian, Rp261 miliar per rangkaian",
-    "spec": {
-     "kind": "bignum",
-     "total": "Rp 783 bn",
-     "label": "3 new trains from CRRC Sifang, January 2024",
-     "mark": "Rp 261 bn per train"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke crrc; 3 TRAINS, Rp783 BN"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "inka",
+      "dist": 16,
+      "height": 7
+     },
+     "to": {
+      "look": "crrc",
+      "dist": 22,
+      "height": 10
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "paths": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.8,
-      "label": "OPERATOR",
-      "emo": "shock",
-      "say": {
-       "text": "That's a lot of zeros.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "p_cn",
+      "at": 0.1
      }
     ],
-    "fx": [
+    "moves": [
      {
-      "type": "coins",
-      "at": 0.4,
-      "n": 14
+      "asset": "actor:train",
+      "from": "crrc",
+      "to": "jkt",
+      "at": 0.3,
+      "dur": 0.6,
+      "via": [
+       [
+        10,
+        46
+       ]
+      ]
+     }
+    ],
+    "show": [
+     {
+      "id": "t_cn",
+      "at": 0
+     }
+    ],
+    "callouts": [
+     {
+      "id": "crrc",
+      "text": "3 TRAINS",
+      "at": 0.1,
+      "until": 0.45
+     },
+     {
+      "id": "crrc",
+      "text": "Rp783 BN",
+      "at": 0.5
      }
     ]
    },
@@ -1380,41 +1572,49 @@
     "id": "Kereta barunya lebih panjang. Tiap rangkaian berisi dua belas gerbong dan bisa mengangkut sekitar tiga ribu empat ratus orang sekali jalan."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Statistik: 12 gerbong, ~3.400 penumpang sekali jalan",
-    "spec": {
-     "kind": "stats",
-     "items": [
-      {
-       "label": "Cars per new train",
-       "value": "12",
-       "tone": "good"
-      },
-      {
-       "label": "Passengers per trip",
-       "value": "~3,400",
-       "tone": "hot"
-      }
-     ]
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke t_new; 12 CARS, 3,400 RIDERS"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "crrc",
+      "dist": 22,
+      "height": 10
+     },
+     "to": {
+      "look": "t_new",
+      "dist": 12,
+      "height": 5
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "h",
-      "kind": "hijab",
-      "x": 0.18,
-      "label": "COMMUTER",
-      "emo": "happy",
-      "say": {
-       "text": "Finally, legroom. Kind of.",
-       "at": 0.6
-      },
-      "scale": 0.75
+      "id": "t_new",
+      "at": 0
+     }
+    ],
+    "grow": [
+     {
+      "id": "t_new",
+      "to": 1.6,
+      "at": 0.25
+     }
+    ],
+    "callouts": [
+     {
+      "id": "t_new",
+      "text": "12 CARS",
+      "at": 0.25,
+      "until": 0.6
+     },
+     {
+      "id": "t_new",
+      "text": "3,400 RIDERS",
+      "at": 0.65
      }
     ]
    },
@@ -1433,42 +1633,52 @@
     "id": "Bandingkan dengan cara lama. Dua belas gerbong bekas Jepang dulu sekitar dua belas miliar. Satu rangkaian baru berisi dua belas gerbong harganya kira-kira dua puluh kali lipat."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Batang: 12 gerbong bekas (~Rp12 miliar, harga 2013) vs 1 rangkaian baru CRRC (Rp261 miliar)",
-    "spec": {
-     "kind": "bars",
-     "bars": [
-      {
-       "label": "12 used cars from Japan (2014 prices)",
-       "v": 12,
-       "tone": "good"
-      },
-      {
-       "label": "1 new 12-car train from China (2024)",
-       "v": 261,
-       "tone": "hot"
-      }
-     ],
-     "unit": "billion rupiah"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke peta; ~Rp12 BN, 20x"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "t_new",
+      "dist": 12,
+      "height": 5
+     },
+     "to": {
+      "look": [
+       24,
+       0
+      ],
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.18,
-      "label": "OLD TRAIN",
-      "emo": "smug",
-      "say": {
-       "text": "Told you I was a bargain.",
-       "at": 0.65
-      },
-      "scale": 0.75
+      "id": "t_new",
+      "at": 0
+     }
+    ],
+    "grow": [
+     {
+      "id": "t_new",
+      "to": 1.9,
+      "at": 0.5
+     }
+    ],
+    "callouts": [
+     {
+      "id": "t_old",
+      "text": "~Rp12 BN",
+      "at": 0.15,
+      "until": 0.6
+     },
+     {
+      "id": "t_new",
+      "text": "20x",
+      "at": 0.65
      }
     ]
    },
@@ -1496,43 +1706,38 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Daftar seri pensiun Nov 2025: Tokyu 8500, Tokyo Metro 7000, JR 203",
-    "spec": {
-     "kind": "checks",
-     "header": "Retired, November 2025",
-     "items": [
-      {
-       "text": "Tokyu 8500",
-       "mark": "ok"
-      },
-      {
-       "text": "Tokyo Metro 7000",
-       "mark": "ok"
-      },
-      {
-       "text": "JR 203",
-       "mark": "ok"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke t_old; NOV 2025, ~50 YEARS"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "right"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": [
+       24,
+       0
+      ],
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.2,
-      "label": "8500 SERIES",
-      "emo": "happy",
-      "say": {
-       "text": "Finally, a pension.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "t_old",
+      "text": "NOV 2025",
+      "at": 0.15,
+      "until": 0.45
+     },
+     {
+      "id": "t_old",
+      "text": "~50 YEARS",
+      "at": 0.5
      }
     ]
    },
@@ -1551,38 +1756,36 @@
     "id": "Kabin masinisnya akan dipajang permanen di Stasiun Jakarta Kota. Jakarta memberi kereta bekasnya upacara pensiun yang layak."
    },
    "visual": {
-    "type": "remotion-text",
-    "description": "Teks: kabin masinis dipajang di Stasiun Jakarta Kota",
-    "spec": {
-     "headline": "On display at Jakarta Kota station",
-     "sub": "driver cabins of the retired series"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke kota; ON DISPLAY"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
-    },
-    "actors": [
-     {
-      "id": "c",
-      "kind": "commuter",
-      "x": 0.2,
-      "label": "COMMUTER",
-      "emo": "sad",
-      "say": {
-       "text": "I'll miss the creaks.",
-       "at": 0.55
-      },
-      "scale": 0.8
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
      },
+     "to": {
+      "look": "kota",
+      "dist": 12,
+      "height": 5
+     },
+     "arrive": 0.9
+    },
+    "show": [
      {
-      "id": "h",
-      "kind": "hijab",
-      "x": 0.8,
-      "label": "COMMUTER",
-      "emo": "smug",
-      "scale": 0.8
+      "id": "cabin",
+      "at": 0.25
+     }
+    ],
+    "callouts": [
+     {
+      "id": "kota",
+      "text": "ON DISPLAY",
+      "at": 0.45
      }
     ]
    },
@@ -1602,45 +1805,41 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Dua sumber; INKA disorot merah",
-    "spec": {
-     "kind": "flow",
-     "nodes": [
-      {
-       "label": "CRRC Sifang",
-       "sub": "11 trains",
-       "tone": "good"
-      },
-      {
-       "label": "KAI Commuter"
-      },
-      {
-       "label": "INKA",
-       "sub": "16 trains",
-       "tone": "bad"
-      }
-     ],
-     "edges": [
-      "",
-      ""
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke inka; WEAK POINT"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "kota",
+      "dist": 12,
+      "height": 5
+     },
+     "to": {
+      "look": "inka",
+      "dist": 18,
+      "height": 8
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "highlight": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.12,
-      "label": "GUIDE",
-      "emo": "worry",
-      "scale": 0.75
+      "id": "inka",
+      "at": 0.25,
+      "until": 1
      }
-    ]
+    ],
+    "callouts": [
+     {
+      "id": "inka",
+      "text": "WEAK POINT",
+      "at": 0.45
+     }
+    ],
+    "emo": {
+     "guide": "think"
+    }
    },
    "sources": [
     {
@@ -1658,12 +1857,42 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: rangkaian CRRC baru di lintas Bogor",
+    "description": "Footage milik kreator: rangkaian CRRC baru di lintas Bogor (footage di atas dunia diorama)",
     "on_screen_text": "CRRC Sifang train, Bogor line (filmed Nov 2026)"
    },
    "stage": {
-    "bg": "none",
-    "actors": []
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "inka",
+      "dist": 18,
+      "height": 8
+     },
+     "to": {
+      "look": "bogor",
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
+    },
+    "paths": [
+     {
+      "id": "p_rail",
+      "at": 0.05
+     },
+     {
+      "id": "p_rail2",
+      "at": 0.2
+     }
+    ],
+    "callouts": [
+     {
+      "id": "bogor",
+      "text": "11 RUNNING",
+      "at": 0.4
+     }
+    ]
    },
    "broll": {
     "own": "krl-04.mp4",
@@ -1686,42 +1915,36 @@
     "id": "INKA diproyeksikan membuat delapan rangkaian setahun. Yang terwujud dua sampai tiga."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Batang: target 8 per tahun vs realisasi 2-3",
-    "spec": {
-     "kind": "bars",
-     "bars": [
-      {
-       "label": "Projected",
-       "v": 8,
-       "tone": "muted"
-      },
-      {
-       "label": "Delivered",
-       "v": 2.5,
-       "tone": "bad"
-      }
-     ],
-     "unit": "trains per year"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke inka; PLAN 8/YR, REAL 2-3"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "bogor",
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": "inka",
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.82,
-      "label": "INKA",
-      "emo": "worry",
-      "say": {
-       "text": "Working on it.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "inka",
+      "text": "PLAN 8/YR",
+      "at": 0.15,
+      "until": 0.55
+     },
+     {
+      "id": "inka",
+      "text": "REAL 2-3",
+      "at": 0.6
      }
     ]
    },
@@ -1740,33 +1963,42 @@
     "id": "Sampai September 2026, baru tujuh dari enam belas rangkaian INKA yang beroperasi. Artinya masih ada sembilan rangkaian yang diandalkan, tapi belum mengangkut siapa pun."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Counter: 7 dari 16",
-    "spec": {
-     "kind": "counter",
-     "values": [
-      "0 / 16",
-      "3 / 16",
-      "5 / 16",
-      "7 / 16"
-     ],
-     "label": "INKA trains in service, September 2026",
-     "tone": "bad"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke inka; 7 OF 16, 9 IDLE"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "inka",
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": "inka",
+      "dist": 18,
+      "height": 8
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.12,
-      "label": "GUIDE",
-      "emo": "think",
-      "scale": 0.7
+      "id": "t_ink",
+      "at": 0
+     }
+    ],
+    "callouts": [
+     {
+      "id": "inka",
+      "text": "7 OF 16",
+      "at": 0.2,
+      "until": 0.6
+     },
+     {
+      "id": "t_ink",
+      "text": "9 IDLE",
+      "at": 0.65
      }
     ]
    },
@@ -1790,11 +2022,38 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: peron saat jam sibuk, diambil dari belakang (tanpa wajah dekat)"
+    "description": "Footage milik kreator: peron saat jam sibuk, diambil dari belakang (tanpa wajah dekat) (footage di atas dunia diorama)"
    },
    "stage": {
-    "bg": "none",
-    "actors": []
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "inka",
+      "dist": 18,
+      "height": 8
+     },
+     "to": {
+      "look": "jkt",
+      "dist": 22,
+      "height": 10
+     },
+     "arrive": 0.9
+    },
+    "grow": [
+     {
+      "id": "jkt",
+      "to": 1.7,
+      "at": 0.5
+     }
+    ],
+    "callouts": [
+     {
+      "id": "jkt",
+      "text": "+11%",
+      "at": 0.45
+     }
+    ]
    },
    "broll": {
     "own": "krl-03.mp4",
@@ -1817,50 +2076,36 @@
     "id": "Itu sekitar satu koma satu juta perjalanan per hari. Operatornya merencanakan pertumbuhan tiga sampai empat persen, bukan sebelas."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Statistik: 1,1 juta perjalanan per hari; pertumbuhan +11% vs rencana 3-4%",
-    "spec": {
-     "kind": "stats",
-     "items": [
-      {
-       "label": "Trips per day",
-       "value": "~1.1 m",
-       "tone": "hot"
-      },
-      {
-       "label": "Growth, H1 2026",
-       "value": "+11%",
-       "tone": "bad",
-       "sub": "plan: 3 to 4%"
-      }
-     ]
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke jkt; 1.1M / DAY, PLAN +3-4%"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "jkt",
+      "dist": 22,
+      "height": 10
+     },
+     "to": {
+      "look": "jkt",
+      "dist": 22,
+      "height": 10
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "c",
-      "kind": "commuter",
-      "x": 0.15,
-      "label": "COMMUTER",
-      "emo": "worry",
-      "say": {
-       "text": "Is there room for my bag?",
-       "at": 0.6
-      },
-      "scale": 0.75
+      "id": "jkt",
+      "text": "1.1M / DAY",
+      "at": 0.15,
+      "until": 0.55
      },
      {
-      "id": "h",
-      "kind": "hijab",
-      "x": 0.85,
-      "label": "COMMUTER",
-      "emo": "angry",
-      "scale": 0.75
+      "id": "jkt",
+      "text": "PLAN +3-4%",
+      "at": 0.6
      }
     ]
    },
@@ -1884,19 +2129,43 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage stok: peron padat jam sibuk (tanpa wajah dekat)",
+    "description": "Footage stok: peron padat jam sibuk (tanpa wajah dekat) (footage di atas dunia diorama)",
     "on_screen_text": "Busiest days: up to 1.3 million trips"
    },
    "stage": {
-    "bg": "none",
-    "actors": [
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "jkt",
+      "dist": 22,
+      "height": 10
+     },
+     "to": {
+      "look": "jkt",
+      "dist": 20,
+      "height": 9
+     },
+     "arrive": 0.9
+    },
+    "grow": [
      {
-      "id": "c",
-      "kind": "commuter",
-      "x": 0.15,
-      "label": "COMMUTER",
-      "emo": "dead",
-      "scale": 0.7
+      "id": "jkt",
+      "to": 2.0,
+      "at": 0.4
+     }
+    ],
+    "callouts": [
+     {
+      "id": "jkt",
+      "text": "1.3M PEAK",
+      "at": 0.2,
+      "until": 0.6
+     },
+     {
+      "id": "jkt",
+      "text": "+200K",
+      "at": 0.65
      }
     ]
    },
@@ -1929,42 +2198,36 @@
     "id": "Operatornya menghitung butuh seratus lima rangkaian. Yang tersedia seratus dua."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Statistik: butuh 105, ada 102",
-    "spec": {
-     "kind": "stats",
-     "items": [
-      {
-       "label": "Trains needed",
-       "value": "105",
-       "tone": "hot"
-      },
-      {
-       "label": "Trains available",
-       "value": "102",
-       "tone": "bad"
-      }
-     ],
-     "between": "vs"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke kota; NEED 105, HAVE 102"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "jkt",
+      "dist": 20,
+      "height": 9
+     },
+     "to": {
+      "look": "kota",
+      "dist": 16,
+      "height": 7
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.82,
-      "label": "OPERATOR",
-      "emo": "worry",
-      "say": {
-       "text": "Three short.",
-       "at": 0.55
-      },
-      "scale": 0.8
+      "id": "kota",
+      "text": "NEED 105",
+      "at": 0.15,
+      "until": 0.55
+     },
+     {
+      "id": "kota",
+      "text": "HAVE 102",
+      "at": 0.6
      }
     ]
    },
@@ -1983,28 +2246,42 @@
     "id": "Dan kekurangannya akan membesar. Tiga belas rangkaian eks Tokyo Metro dijadwalkan pensiun tahun ini."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Angka besar: 13 rangkaian Tokyo Metro 6000 pensiun 2026",
-    "spec": {
-     "kind": "bignum",
-     "total": "13 trains",
-     "label": "former Tokyo Metro 6000 series",
-     "mark": "due to retire in 2026"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke t_metro; 13 RETIRE"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "kota",
+      "dist": 16,
+      "height": 7
+     },
+     "to": {
+      "look": "t_metro",
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.2,
-      "label": "6000 SERIES",
-      "emo": "sad",
-      "scale": 0.8
+      "id": "t_metro",
+      "at": 0
+     }
+    ],
+    "hide": [
+     {
+      "id": "t_metro",
+      "at": 0.7
+     }
+    ],
+    "callouts": [
+     {
+      "id": "t_metro",
+      "text": "13 RETIRE",
+      "at": 0.3
      }
     ]
    },
@@ -2024,45 +2301,65 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Garis waktu: pesan → 1-2 tahun → datang; kekurangan sekarang",
-    "spec": {
-     "kind": "timeline",
-     "blocks": [
-      {
-       "title": "Order",
-       "sub": "today",
-       "tone": "lit"
-      },
-      {
-       "title": "1 to 2 years",
-       "sub": "build and test",
-       "tone": "dim"
-      },
-      {
-       "title": "New train",
-       "sub": "too late for 2026",
-       "tone": "hot"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke peta; 1-2 YEARS, 2027+"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "t_metro",
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": [
+       6,
+       48
+      ],
+      "dist": 36,
+      "height": 22
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "paths": [
      {
-      "id": "c",
-      "kind": "city",
-      "x": 0.2,
-      "label": "JAKARTA",
-      "emo": "worry",
-      "say": {
-       "text": "I needed it yesterday.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "p_cn",
+      "at": 0.05
+     }
+    ],
+    "moves": [
+     {
+      "asset": "actor:train",
+      "from": "crrc",
+      "to": "jkt",
+      "at": 0.1,
+      "dur": 0.85,
+      "via": [
+       [
+        10,
+        46
+       ]
+      ]
+     }
+    ],
+    "show": [
+     {
+      "id": "t_cn",
+      "at": 0
+     }
+    ],
+    "callouts": [
+     {
+      "id": "crrc",
+      "text": "1-2 YEARS",
+      "at": 0.15,
+      "until": 0.8
+     },
+     {
+      "id": "jkt",
+      "text": "2027+",
+      "at": 0.88
      }
     ]
    },
@@ -2082,20 +2379,50 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage stok: kereta komuter Tokyo di stasiun"
+    "description": "Footage stok: kereta komuter Tokyo di stasiun (footage di atas dunia diorama)"
    },
    "stage": {
-    "bg": "none",
-    "actors": [
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": [
+       6,
+       48
+      ],
+      "dist": 36,
+      "height": 22
+     },
+     "to": {
+      "look": "tokyo",
+      "dist": 24,
+      "height": 10
+     },
+     "arrive": 0.9
+    },
+    "paths": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.12,
-      "label": "GUIDE",
-      "emo": "shock",
-      "scale": 0.7
+      "id": "p_ship",
+      "at": 0.1
      }
-    ]
+    ],
+    "highlight": [
+     {
+      "id": "tokyo",
+      "at": 0.3,
+      "until": 1
+     }
+    ],
+    "callouts": [
+     {
+      "id": "tokyo",
+      "text": "SEPT 2026",
+      "at": 0.45
+     }
+    ],
+    "emo": {
+     "guide": "smug"
+    }
    },
    "broll": {
     "keywords": [
@@ -2116,38 +2443,39 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Kartu usulan: impor KRL bekas, sementara, 2026-2027",
-    "spec": {
-     "kind": "stamp",
-     "lines": [
-      "Proposal, 23 Sept 2026",
-      "Used Japanese trains, temporary"
-     ],
-     "chips": [
-      "2026",
-      "2027"
-     ],
-     "stamp": "PROPOSED",
-     "tone": "hot"
-    }
+    "description": "Diorama 2.5D: kamera ke kai; SEP 23"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "tokyo",
+      "dist": 24,
+      "height": 10
+     },
+     "to": {
+      "look": "kai",
+      "dist": 18,
+      "height": 8
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "moves": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.2,
-      "label": "KAI",
-      "emo": "think",
-      "say": {
-       "text": "Just as a bridge.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "asset": "envelope",
+      "from": "kai",
+      "to": "gov",
+      "at": 0.3,
+      "dur": 0.5,
+      "label": "REQUEST"
+     }
+    ],
+    "callouts": [
+     {
+      "id": "kai",
+      "text": "SEP 23",
+      "at": 0.15
      }
     ]
    },
@@ -2167,40 +2495,42 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Stempel DISETUJUI, 23 rangkaian, syarat industri dalam negeri",
-    "spec": {
-     "kind": "stamp",
-     "lines": [
-      "23 used trains from Japan",
-      "Condition: grow domestic industry"
-     ],
-     "stamp": "APPROVED",
-     "tone": "good"
-    }
+    "description": "Diorama 2.5D: kamera ke gov; AGREED, 23 TRAINS"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "kai",
+      "dist": 18,
+      "height": 8
+     },
+     "to": {
+      "look": "gov",
+      "dist": 16,
+      "height": 7
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "highlight": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.82,
-      "label": "GUIDE",
-      "emo": "happy",
-      "scale": 0.75
+      "id": "gov",
+      "at": 0.25,
+      "until": 1
      }
     ],
-    "fx": [
+    "callouts": [
      {
-      "type": "stamp",
-      "text": "APPROVED",
-      "tone": "good",
-      "at": 0.35,
-      "x": 0.5,
-      "y": 0.2
+      "id": "gov",
+      "text": "AGREED",
+      "at": 0.25,
+      "until": 0.55
+     },
+     {
+      "id": "gov",
+      "text": "23 TRAINS",
+      "at": 0.6
      }
     ]
    },
@@ -2223,32 +2553,37 @@
     "id": "Tekanan di balik keputusan itu adalah proyeksi tiga ratus enam puluh sembilan juta perjalanan di 2026. Setiap rangkaian yang kurang membuat rangkaian lain makin penuh."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Angka besar: 369 juta perjalanan (proyeksi 2026)",
-    "spec": {
-     "kind": "bignum",
-     "total": "369 m",
-     "label": "passenger trips forecast for 2026",
-     "mark": "Greater Jakarta commuter line"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke jkt; 369M TRIPS"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "gov",
+      "dist": 16,
+      "height": 7
+     },
+     "to": {
+      "look": "jkt",
+      "dist": 24,
+      "height": 11
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "grow": [
      {
-      "id": "c",
-      "kind": "city",
-      "x": 0.2,
-      "label": "JAKARTA",
-      "emo": "worry",
-      "say": {
-       "text": "Somebody count the seats.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "jkt",
+      "to": 2.0,
+      "at": 0.4
+     }
+    ],
+    "callouts": [
+     {
+      "id": "jkt",
+      "text": "369M TRIPS",
+      "at": 0.3
      }
     ]
    },
@@ -2268,23 +2603,66 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage stok: kapal kargo di laut",
+    "description": "Footage stok: kapal kargo di laut (footage di atas dunia diorama)",
     "on_screen_text": "Used: 1 to 2 months · New: 1 to 2 years"
    },
    "stage": {
-    "bg": "none",
-    "actors": [
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "jkt",
+      "dist": 24,
+      "height": 11
+     },
+     "to": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 48,
+      "height": 32
+     },
+     "arrive": 0.9
+    },
+    "paths": [
      {
-      "id": "sh",
-      "kind": "ship",
-      "x": 0.2,
-      "label": "SHIP",
-      "emo": "happy",
-      "say": {
-       "text": "Already packed.",
-       "at": 0.6
-      },
-      "scale": 0.7
+      "id": "p_ship",
+      "at": 0.05
+     },
+     {
+      "id": "p_cn",
+      "at": 0.05
+     }
+    ],
+    "moves": [
+     {
+      "asset": "actor:train",
+      "from": "oldjp",
+      "to": "jkt",
+      "at": 0.1,
+      "dur": 0.25,
+      "via": [
+       [
+        -14,
+        20
+       ]
+      ],
+      "label": "1-2 MONTHS"
+     },
+     {
+      "asset": "actor:train",
+      "from": "crrc",
+      "to": "jkt",
+      "at": 0.1,
+      "dur": 0.85,
+      "via": [
+       [
+        10,
+        46
+       ]
+      ],
+      "label": "1-2 YEARS"
      }
     ]
    },
@@ -2313,31 +2691,46 @@
     "id": "Lalu rencananya menabrak aturan. Kementerian Perdagangan hanya mengizinkan barang modal bekas seperti ini maksimal berumur dua puluh tahun."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Gauge: batas usia impor 20 tahun",
-    "spec": {
-     "kind": "gauge",
-     "zones": [
-      "allowed: up to 20 years",
-      "not allowed"
-     ],
-     "target": "20 years",
-     "label": "import age limit"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke gov; MAX 20 YRS"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 48,
+      "height": 32
+     },
+     "to": {
+      "look": "gov",
+      "dist": 16,
+      "height": 7
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.15,
-      "label": "JAPANESE TRAIN",
-      "emo": "worry",
-      "scale": 0.75
+      "id": "lock",
+      "at": 0.25
+     }
+    ],
+    "highlight": [
+     {
+      "id": "gov",
+      "at": 0.3,
+      "until": 1
+     }
+    ],
+    "callouts": [
+     {
+      "id": "gov",
+      "text": "MAX 20 YRS",
+      "at": 0.3
      }
     ]
    },
@@ -2356,43 +2749,36 @@
     "id": "Kereta yang ditawarkan berumur dua puluh lima sampai dua puluh delapan tahun. Rata-rata sudah mengangkut penumpang di Jepang sejak 1998."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Stats: batas 20 tahun vs kereta 25-28 tahun",
-    "spec": {
-     "kind": "stats",
-     "items": [
-      {
-       "label": "Import limit",
-       "value": "20 yrs",
-       "tone": "good"
-      },
-      {
-       "label": "Trains on offer",
-       "value": "25 to 28 yrs",
-       "tone": "bad",
-       "sub": "in service since 1998"
-      }
-     ],
-     "between": "vs"
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke oldjp; 25-28 YEARS, SINCE 1998"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "gov",
+      "dist": 16,
+      "height": 7
+     },
+     "to": {
+      "look": "oldjp",
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.15,
-      "label": "JAPANESE TRAIN",
-      "emo": "shock",
-      "say": {
-       "text": "I'm only 28.",
-       "at": 0.6
-      },
-      "scale": 0.75
+      "id": "oldjp",
+      "text": "25-28 YEARS",
+      "at": 0.25,
+      "until": 0.6
+     },
+     {
+      "id": "oldjp",
+      "text": "SINCE 1998",
+      "at": 0.65
      }
     ]
    },
@@ -2416,45 +2802,29 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Garis waktu umur kereta: 20-30 tahun di Jepang, sisa ~10 tahun di Jakarta",
-    "spec": {
-     "kind": "timeline",
-     "blocks": [
-      {
-       "title": "Japan",
-       "sub": "20 to 30 years",
-       "tone": "dim"
-      },
-      {
-       "title": "Jakarta",
-       "sub": "about 10 years left",
-       "tone": "hot"
-      },
-      {
-       "title": "Then",
-       "sub": "replace again",
-       "tone": "dim"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke t_old; ~10 YRS LEFT"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "oldjp",
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.82,
-      "label": "ENGINEER",
-      "emo": "think",
-      "say": {
-       "text": "Ten years, maybe.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "t_old",
+      "text": "~10 YRS LEFT",
+      "at": 0.4
      }
     ]
    },
@@ -2474,44 +2844,29 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Daftar alasan pensiun 2025: umur, suku cadang habis",
-    "spec": {
-     "kind": "checks",
-     "header": "Why three series retired in 2025",
-     "items": [
-      {
-       "text": "Age: up to 50 years",
-       "mark": "odd"
-      },
-      {
-       "text": "Spare parts ran out",
-       "mark": "odd"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke t_old; NO SPARES"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "right"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 14,
+      "height": 6
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 12,
+      "height": 5
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.2,
-      "label": "OLD TRAIN",
-      "emo": "dead",
-      "scale": 0.8
-     }
-    ],
-    "fx": [
-     {
-      "type": "pow",
-      "text": "CLUNK",
-      "at": 0.5,
-      "x": 0.25,
-      "y": 0.35
+      "id": "t_old",
+      "text": "NO SPARES",
+      "at": 0.4
      }
     ]
    },
@@ -2535,40 +2890,48 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Stempel DIBATALKAN, 5 Nov 2026",
-    "spec": {
-     "kind": "stamp",
-     "lines": [
-      "Used trains from Japan",
-      "5 November 2026"
-     ],
-     "stamp": "CANCELLED",
-     "tone": "bad"
-    }
+    "description": "Diorama 2.5D: kamera ke kai; NOV 5: CANCELLED"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 12,
+      "height": 5
+     },
+     "to": {
+      "look": "kai",
+      "dist": 16,
+      "height": 7
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "c",
-      "kind": "city",
-      "x": 0.2,
-      "label": "JAKARTA",
-      "emo": "shock",
-      "scale": 0.8
+      "id": "lock",
+      "at": 0.45
      }
     ],
-    "fx": [
+    "hide": [
      {
-      "type": "stamp",
-      "text": "CANCELLED",
-      "tone": "bad",
-      "at": 0.35,
-      "x": 0.5,
-      "y": 0.2
+      "id": "ship",
+      "at": 0
+     }
+    ],
+    "highlight": [
+     {
+      "id": "kai",
+      "at": 0.45,
+      "until": 1
+     }
+    ],
+    "callouts": [
+     {
+      "id": "kai",
+      "text": "NOV 5: CANCELLED",
+      "at": 0.45
      }
     ]
    },
@@ -2592,43 +2955,40 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Dua kolom: Jepang punya kereta / aturan 20 tahun menolak",
-    "spec": {
-     "kind": "flow",
-     "nodes": [
-      {
-       "label": "Japan's retired trains",
-       "sub": "25 to 28 years old"
-      },
-      {
-       "label": "Indonesia's rule",
-       "sub": "max 20 years",
-       "tone": "bad"
-      }
-     ],
-     "edges": [
-      {
-       "label": "blocked",
-       "broken": true
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke tokyo; STILL FOR SALE, TOO OLD"
    },
    "stage": {
-    "bg": "paper",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "kai",
+      "dist": 16,
+      "height": 7
+     },
+     "to": {
+      "look": "tokyo",
+      "dist": 24,
+      "height": 10
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.12,
-      "label": "GUIDE",
-      "emo": "smug",
-      "scale": 0.75
+      "id": "tokyo",
+      "text": "STILL FOR SALE",
+      "at": 0.2,
+      "until": 0.6
+     },
+     {
+      "id": "oldjp",
+      "text": "TOO OLD",
+      "at": 0.65
      }
-    ]
+    ],
+    "emo": {
+     "guide": "think"
+    }
    },
    "sources": [
     {
@@ -2646,45 +3006,29 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Garis waktu satu gerbong: 0 tahun (baru di Tokyo), 20 tahun (batas impor), 25-30 tahun (pensiun di Jepang)",
-    "spec": {
-     "kind": "timeline",
-     "blocks": [
-      {
-       "title": "Year 0",
-       "sub": "new in Tokyo",
-       "tone": "dim"
-      },
-      {
-       "title": "Year 20",
-       "sub": "Jakarta's import limit",
-       "tone": "hot"
-      },
-      {
-       "title": "Year 25 to 30",
-       "sub": "retired in Japan",
-       "tone": "bad"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke oldjp; KEPT 20-30 YRS"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "tokyo",
+      "dist": 24,
+      "height": 10
+     },
+     "to": {
+      "look": "oldjp",
+      "dist": 18,
+      "height": 8
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "t",
-      "kind": "train",
-      "x": 0.82,
-      "label": "JAPANESE TRAIN",
-      "emo": "sad",
-      "say": {
-       "text": "Missed it by five years.",
-       "at": 0.65
-      },
-      "scale": 0.75
+      "id": "oldjp",
+      "text": "KEPT 20-30 YRS",
+      "at": 0.3
      }
     ]
    },
@@ -2704,19 +3048,45 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage stok: depo kereta tua",
+    "description": "Footage stok: depo kereta tua (footage di atas dunia diorama)",
     "on_screen_text": "2000 donation · 2023 blocked · 2026 cancelled"
    },
    "stage": {
-    "bg": "none",
-    "actors": [
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "oldjp",
+      "dist": 18,
+      "height": 8
+     },
+     "to": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 52,
+      "height": 36
+     },
+     "arrive": 0.9
+    },
+    "paths": [
      {
-      "id": "c",
-      "kind": "city",
-      "x": 0.2,
-      "label": "JAKARTA",
-      "emo": "think",
-      "scale": 0.7
+      "id": "p_ship",
+      "at": 0
+     }
+    ],
+    "hide": [
+     {
+      "id": "ship",
+      "at": 0
+     }
+    ],
+    "callouts": [
+     {
+      "id": "jkt",
+      "text": "WINDOW CLOSED",
+      "at": 0.6
      }
     ]
    },
@@ -2740,43 +3110,47 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Tiga pilihan; impor bekas dicoret",
-    "spec": {
-     "kind": "checks",
-     "header": "KAI's three options",
-     "items": [
-      {
-       "text": "Order new trains from INKA",
-       "mark": "ok"
-      },
-      {
-       "text": "Extend the old trains' service life",
-       "mark": "ok"
-      },
-      {
-       "text": "Import used trains",
-       "mark": "odd"
-      }
-     ]
-    }
+    "description": "Diorama 2.5D: kamera ke peta; ORDER INKA, KEEP OLD, IMPORT USED"
    },
    "stage": {
-    "bg": "station",
-    "insert": {
-     "pos": "right"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 52,
+      "height": 36
+     },
+     "to": {
+      "look": [
+       24,
+       10
+      ],
+      "dist": 40,
+      "height": 26
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "callouts": [
      {
-      "id": "c",
-      "kind": "commuter",
-      "x": 0.18,
-      "label": "COMMUTER",
-      "emo": "think",
-      "say": {
-       "text": "Option four: I walk?",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "inka",
+      "text": "ORDER INKA",
+      "at": 0.15,
+      "until": 0.45
+     },
+     {
+      "id": "t_old",
+      "text": "KEEP OLD",
+      "at": 0.5,
+      "until": 0.75
+     },
+     {
+      "id": "tokyo",
+      "text": "IMPORT USED",
+      "at": 0.8
      }
     ]
    },
@@ -2796,11 +3170,46 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: eks JR 205 di peron (pengambilan berbeda dari s02)"
+    "description": "Footage milik kreator: eks JR 205 di peron (pengambilan berbeda dari s02) (footage di atas dunia diorama)"
    },
    "stage": {
-    "bg": "none",
-    "actors": []
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": [
+       24,
+       10
+      ],
+      "dist": 40,
+      "height": 26
+     },
+     "to": {
+      "look": "t_old",
+      "dist": 16,
+      "height": 7
+     },
+     "arrive": 0.9
+    },
+    "highlight": [
+     {
+      "id": "inka",
+      "at": 0.2,
+      "until": 0.5
+     },
+     {
+      "id": "t_old",
+      "at": 0.55,
+      "until": 1
+     }
+    ],
+    "callouts": [
+     {
+      "id": "t_old",
+      "text": ">40 YEARS",
+      "at": 0.65
+     }
+    ]
    },
    "broll": {
     "own": "krl-02b.mp4",
@@ -2823,49 +3232,42 @@
     "id": "Dananya sudah disetujui. Setahun sebelumnya, pemerintah menyiapkan lima triliun rupiah untuk tiga puluh rangkaian baru, ditargetkan selesai dalam setahun."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Statistik: Rp5 triliun untuk 30 rangkaian baru",
-    "spec": {
-     "kind": "stats",
-     "items": [
-      {
-       "label": "Budget for new trains",
-       "value": "Rp 5 tn",
-       "tone": "good"
-      },
-      {
-       "label": "New trains",
-       "value": "30",
-       "tone": "hot",
-       "sub": "target: one year"
-      }
-     ]
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke gov; Rp5 TRILLION, 30 TRAINS"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "t_old",
+      "dist": 16,
+      "height": 7
+     },
+     "to": {
+      "look": "gov",
+      "dist": 18,
+      "height": 8
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "show": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.82,
-      "label": "INKA",
-      "emo": "shock",
-      "say": {
-       "text": "Within a year?",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "t_new",
+      "at": 0.4
      }
     ],
-    "fx": [
+    "callouts": [
      {
-      "type": "coins",
-      "at": 0.35,
-      "n": 12
+      "id": "gov",
+      "text": "Rp5 TRILLION",
+      "at": 0.25,
+      "until": 0.65
+     },
+     {
+      "id": "t_new",
+      "text": "30 TRAINS",
+      "at": 0.7
      }
     ]
    },
@@ -2884,41 +3286,52 @@
     "id": "Rencana jangka panjangnya mengganti delapan puluh empat rangkaian Jepang tua dengan buatan INKA, dan menaikkan kapasitas dari satu koma satu ke satu koma empat juta penumpang per hari pada 2030."
    },
    "visual": {
-    "type": "remotion-data",
-    "description": "Statistik: 84 rangkaian diganti; kapasitas 1,1 → 1,4 juta/hari pada 2030",
-    "spec": {
-     "kind": "stats",
-     "items": [
-      {
-       "label": "Old Japanese trains to replace",
-       "value": "84",
-       "tone": "hot"
-      },
-      {
-       "label": "Capacity by 2030",
-       "value": "1.1 → 1.4 m/day",
-       "tone": "good"
-      }
-     ]
-    }
+    "type": "remotion-diagram",
+    "description": "Diorama 2.5D: kamera ke jkt; 1.1M > 1.4M"
    },
    "stage": {
-    "bg": "city",
-    "insert": {
-     "pos": "top"
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": "gov",
+      "dist": 18,
+      "height": 8
+     },
+     "to": {
+      "look": "jkt",
+      "dist": 22,
+      "height": 10
+     },
+     "arrive": 0.9
     },
-    "actors": [
+    "paths": [
      {
-      "id": "e",
-      "kind": "engineer",
-      "x": 0.82,
-      "label": "INKA",
-      "emo": "think",
-      "say": {
-       "text": "No pressure.",
-       "at": 0.6
-      },
-      "scale": 0.8
+      "id": "p_ink",
+      "at": 0.05
+     }
+    ],
+    "moves": [
+     {
+      "asset": "actor:train",
+      "from": "inka",
+      "to": "jkt",
+      "at": 0.15,
+      "dur": 0.6,
+      "via": [
+       [
+        40,
+        6
+       ]
+      ],
+      "label": "84 REPLACED"
+     }
+    ],
+    "callouts": [
+     {
+      "id": "jkt",
+      "text": "1.1M > 1.4M",
+      "at": 0.8
      }
     ]
    },
@@ -2938,11 +3351,40 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: interior eks JR 205, tulisan Jepang (pengambilan penutup)"
+    "description": "Footage milik kreator: interior eks JR 205, tulisan Jepang (pengambilan penutup) (footage di atas dunia diorama)"
    },
    "stage": {
-    "bg": "none",
-    "actors": []
+    "engine": "diorama",
+    "mood": "dusk",
+    "camera": {
+     "from": {
+      "look": "jkt",
+      "dist": 22,
+      "height": 10
+     },
+     "to": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 52,
+      "height": 36
+     },
+     "arrive": 0.9
+    },
+    "paths": [
+     {
+      "id": "p_ink",
+      "at": 0.1
+     }
+    ],
+    "callouts": [
+     {
+      "id": "inka",
+      "text": "BUILT AT HOME",
+      "at": 0.7
+     }
+    ]
    },
    "broll": {
     "own": "krl-01b.mp4",
@@ -2960,51 +3402,47 @@
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Peta Jawa disorot, teks video berikutnya",
-    "spec": {
-     "headline": "Next: why so many Indonesians live on Java",
-     "sub": "one island, more than half the country"
-    }
+    "description": "Diorama 2.5D: kamera ke peta; JAVA"
    },
    "stage": {
-    "bg": "map",
-    "view": {
-     "lon": [
-      102,
-      118
-     ],
-     "lat": [
-      -10,
-      -2
-     ]
+    "engine": "diorama",
+    "mood": "day",
+    "camera": {
+     "from": {
+      "look": [
+       -8,
+       22
+      ],
+      "dist": 52,
+      "height": 36
+     },
+     "to": {
+      "look": [
+       30,
+       10
+      ],
+      "dist": 54,
+      "height": 40
+     },
+     "arrive": 0.9
     },
-    "insert": {
-     "pos": "top"
-    },
-    "actors": [
+    "highlight": [
      {
-      "id": "g",
-      "kind": "guide",
-      "x": 0.1,
-      "label": "GUIDE",
-      "emo": "happy",
-      "scale": 0.7
+      "id": "jkt",
+      "at": 0.3,
+      "until": 1
      }
     ],
-    "fx": [
+    "callouts": [
      {
-      "type": "pin",
-      "place": "jakarta",
-      "label": "Jakarta",
-      "at": 0.2
-     },
-     {
-      "type": "pin",
-      "place": "surabaya",
-      "label": "Surabaya",
-      "at": 0.4
+      "id": "jkt",
+      "text": "JAVA",
+      "at": 0.45
      }
-    ]
+    ],
+    "emo": {
+     "guide": "happy"
+    }
    },
    "sources": [
     {
@@ -3372,6 +3810,483 @@
    "scene": "s58",
    "url": "https://en.wikipedia.org/wiki/Java",
    "claim": "Jawa dihuni lebih dari separuh penduduk Indonesia (verifikasi angka BPS di siklus 002)"
+  }
+ ],
+ "world": {
+  "ground": "#a9cf8e",
+  "areas": [
+   {
+    "points": [
+     [
+      -30,
+      -12
+     ],
+     [
+      6,
+      -12
+     ],
+     [
+      10,
+      60
+     ],
+     [
+      -30,
+      66
+     ]
+    ],
+    "color": "#7cc4dd"
+   },
+   {
+    "points": [
+     [
+      -14,
+      50
+     ],
+     [
+      64,
+      50
+     ],
+     [
+      64,
+      68
+     ],
+     [
+      -14,
+      68
+     ]
+    ],
+    "color": "#7cc4dd"
+   },
+   {
+    "points": [
+     [
+      -24,
+      68
+     ],
+     [
+      30,
+      68
+     ],
+     [
+      30,
+      92
+     ],
+     [
+      -24,
+      92
+     ]
+    ],
+    "color": "#cdd4a6"
+   },
+   {
+    "points": [
+     [
+      -64,
+      0
+     ],
+     [
+      -32,
+      0
+     ],
+     [
+      -32,
+      52
+     ],
+     [
+      -64,
+      52
+     ]
+    ],
+    "color": "#cfc9b9"
+   },
+   {
+    "points": [
+     [
+      8,
+      0
+     ],
+     [
+      36,
+      0
+     ],
+     [
+      36,
+      30
+     ],
+     [
+      8,
+      30
+     ]
+    ],
+    "color": "#dccfb0"
+   }
+  ],
+  "scatter": [
+   {
+    "asset": "pine",
+    "count": 70,
+    "area": [
+     -64,
+     6,
+     -33,
+     50
+    ]
+   },
+   {
+    "asset": "palm",
+    "count": 90,
+    "area": [
+     2,
+     -12,
+     62,
+     46
+    ]
+   },
+   {
+    "asset": "tree",
+    "count": 40,
+    "area": [
+     30,
+     -14,
+     62,
+     40
+    ]
+   },
+   {
+    "asset": "house",
+    "count": 40,
+    "area": [
+     10,
+     2,
+     34,
+     28
+    ]
+   },
+   {
+    "asset": "bush",
+    "count": 70,
+    "area": [
+     -62,
+     -12,
+     62,
+     44
+    ]
+   }
+  ],
+  "objects": [
+   {
+    "id": "tokyo",
+    "asset": "tower",
+    "x": -42,
+    "z": 26,
+    "scale": 1.5,
+    "label": "TOKYO"
+   },
+   {
+    "id": "tk2",
+    "asset": "tower",
+    "x": -47,
+    "z": 32
+   },
+   {
+    "id": "tk3",
+    "asset": "tower",
+    "x": -37,
+    "z": 34
+   },
+   {
+    "id": "tk4",
+    "asset": "tower",
+    "x": -50,
+    "z": 24,
+    "scale": 0.8
+   },
+   {
+    "id": "oldjp",
+    "asset": "actor:train",
+    "x": -35,
+    "z": 16,
+    "scale": 1.0
+   },
+   {
+    "id": "ship",
+    "asset": "actor:ship",
+    "x": -28,
+    "z": 14,
+    "scale": 1.0,
+    "hidden": true
+   },
+   {
+    "id": "jkt",
+    "asset": "tower",
+    "x": 20,
+    "z": 17,
+    "scale": 1.4,
+    "label": "JAKARTA"
+   },
+   {
+    "id": "jk2",
+    "asset": "tower",
+    "x": 26,
+    "z": 21
+   },
+   {
+    "id": "jk3",
+    "asset": "tower",
+    "x": 15,
+    "z": 22,
+    "scale": 0.9
+   },
+   {
+    "id": "kota",
+    "asset": "house",
+    "x": 12,
+    "z": 6,
+    "scale": 1.3,
+    "label": "JAKARTA KOTA"
+   },
+   {
+    "id": "bogor",
+    "asset": "house",
+    "x": 30,
+    "z": -14,
+    "scale": 1.2,
+    "label": "BOGOR"
+   },
+   {
+    "id": "cikarang",
+    "asset": "house",
+    "x": 38,
+    "z": 24,
+    "scale": 1.2,
+    "label": "CIKARANG"
+   },
+   {
+    "id": "inka",
+    "asset": "shop",
+    "x": 54,
+    "z": 8,
+    "scale": 1.3,
+    "label": "INKA"
+   },
+   {
+    "id": "crrc",
+    "asset": "tower",
+    "x": 2,
+    "z": 78,
+    "scale": 1.3,
+    "label": "CHINA: CRRC"
+   },
+   {
+    "id": "kai",
+    "asset": "bankhall",
+    "x": 24,
+    "z": -6,
+    "scale": 0.9,
+    "label": "KAI RAILWAY"
+   },
+   {
+    "id": "gov",
+    "asset": "bankhall",
+    "x": 6,
+    "z": -8,
+    "scale": 0.9,
+    "label": "GOVERNMENT"
+   },
+   {
+    "id": "t_old",
+    "asset": "actor:train",
+    "x": 20,
+    "z": 2,
+    "scale": 0.8
+   },
+   {
+    "id": "t_new",
+    "asset": "actor:train",
+    "x": 27,
+    "z": 0,
+    "scale": 0.8,
+    "hidden": true
+   },
+   {
+    "id": "t_metro",
+    "asset": "actor:train",
+    "x": 24,
+    "z": 4,
+    "scale": 0.8,
+    "hidden": true
+   },
+   {
+    "id": "t_cn",
+    "asset": "actor:train",
+    "x": 2,
+    "z": 73,
+    "scale": 0.8,
+    "hidden": true
+   },
+   {
+    "id": "t_ink",
+    "asset": "actor:train",
+    "x": 54,
+    "z": 3,
+    "scale": 0.8,
+    "hidden": true
+   },
+   {
+    "id": "cabin",
+    "asset": "actor:train",
+    "x": 14,
+    "z": 3,
+    "scale": 0.5,
+    "hidden": true
+   },
+   {
+    "id": "lock",
+    "asset": "lock",
+    "x": 6,
+    "z": -5,
+    "y": 3.6,
+    "scale": 1.3,
+    "hidden": true
+   },
+   {
+    "id": "guide",
+    "asset": "actor:guide",
+    "x": 13,
+    "z": -3,
+    "scale": 0.65
+   }
+  ],
+  "paths": [
+   {
+    "id": "p_ship",
+    "points": [
+     "oldjp",
+     [
+      -14,
+      20
+     ],
+     "jkt"
+    ],
+    "hidden": true,
+    "color": "#e4572e"
+   },
+   {
+    "id": "p_cn",
+    "points": [
+     "crrc",
+     [
+      10,
+      46
+     ],
+     "jkt"
+    ],
+    "hidden": true,
+    "color": "#e4572e"
+   },
+   {
+    "id": "p_ink",
+    "points": [
+     "inka",
+     [
+      40,
+      6
+     ],
+     "jkt"
+    ],
+    "hidden": true,
+    "color": "#e4572e"
+   },
+   {
+    "id": "p_rail",
+    "points": [
+     "kota",
+     [
+      20,
+      2
+     ],
+     "bogor"
+    ],
+    "hidden": true
+   },
+   {
+    "id": "p_rail2",
+    "points": [
+     "jkt",
+     [
+      30,
+      22
+     ],
+     "cikarang"
+    ],
+    "hidden": true
+   }
+  ]
+ },
+ "thumbnails": [
+  {
+   "lines": [
+    {
+     "text": "TOO OLD",
+     "color": "#ffd23f",
+     "size": 170
+    },
+    {
+     "text": "TO IMPORT",
+     "color": "#ffffff",
+     "size": 150
+    }
+   ],
+   "stage": {
+    "bg": "station",
+    "cam": {
+     "z": [
+      1,
+      1
+     ]
+    },
+    "actors": [
+     {
+      "id": "t",
+      "kind": "train",
+      "x": 0.78,
+      "scale": 1.7,
+      "emo": "shock"
+     }
+    ]
+   }
+  },
+  {
+   "lines": [
+    {
+     "text": "TOKYO'S TRAINS",
+     "color": "#ffffff",
+     "size": 130
+    },
+    {
+     "text": "REJECTED",
+     "color": "#e4572e",
+     "size": 190
+    }
+   ],
+   "stage": {
+    "bg": "sea",
+    "cam": {
+     "z": [
+      1,
+      1
+     ]
+    },
+    "actors": [
+     {
+      "id": "t",
+      "kind": "train",
+      "x": 0.8,
+      "scale": 1.7,
+      "emo": "sad"
+     }
+    ]
+   }
   }
  ]
 }

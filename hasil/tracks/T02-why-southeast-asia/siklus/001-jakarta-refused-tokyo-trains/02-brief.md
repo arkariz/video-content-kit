@@ -19,14 +19,21 @@
   - QA T01 T1: bukti nyata kreator di layar sebelum 30% durasi. Di sini berupa footage KRL sendiri di s01, s02, s11.
   - QA T01 T4: setiap klaim fakta bersumber (66 sumber per scene di `03-script.json`).
   - QA T01 T6: re-hook tiap 60 sampai 90 detik (s11, s20, s30, s40, s50).
-  - QA T01 T8: bubble berisi candaan atau reaksi, bukan pengulang narasi. Total 7 tanda seru dan tanya.
+  - QA T01 T8 (bubble) tidak berlaku lagi: gaya diorama tanpa bubble. Angka dan keterangan menempel pada benda (callout).
   - QA T01 T2: tidak ada `say_as` untuk istilah yang biasa dibaca benar oleh TTS. Hanya "Sifang".
+- **Gaya visual wajib: diorama 2.5D** (`instruksi/referensi/gaya-diorama.md`, berlaku sejak 2026-11-25). Naskah ditulis ulang visualnya, narasi dan sumber tidak berubah (`03-script.diorama.py` menghasilkan `world` dan `stage` tiap scene).
+  - **Dunia (satu peta tetap):** Tokyo di kiri (menara, pinus, kereta lama), laut Jepang-Jawa di tengah, Jakarta di kanan (menara kota, stasiun Jakarta Kota, lintas Bogor dan Cikarang), pabrik INKA di Jawa Timur, CRRC di utara seberang laut (Tiongkok), gedung KAI dan pemerintah/DPR di tepi Jakarta. Jalur pengiriman kapal dan lintas rel digambar bertahap.
+  - **Tokoh dan benda:** kereta (`actor:train`) sebagai tokoh utama, kapal, Guide sebagai penutur kecil. Tanpa bubble dan tanpa papan teks.
+  - **Aset baru yang dibutuhkan:** tidak ada. Dipakai apa adanya: `tower`, `house`, `bankhall`, `shop`, `palm`, `pine`, `tree`, `bush`, `lock`, `envelope`, `actor:train`, `actor:ship`, `actor:guide`. Opsional kalau agent repo sempat: livery kereta Jepang vs Tiongkok yang berbeda warna, dan rel di tanah.
+  - **Footage:** 12 scene memakai footage (7 file milik kreator dan stok) di atas dunia diorama, 20 sampai 34% durasi.
+  - **Anggaran konsep (maks. 8 per video panjang):** lebar rel, listrik 1.500 V DC, seri 205, INKA, CRRC Sifang, batas umur barang modal bekas, retrofit, KAI sebagai operator. Delapan istilah, pas di batas. Istilah lain (E217, Tokyo Metro 6000, Mita Line) hanya disebut sebagai nama, tidak dijelaskan.
+  - **Belum terpenuhi sepenuhnya:** aturan "fondasi dulu" (60 sampai 90 detik pertama harus memperkenalkan pemain, tahap, dan satu analogi sehari-hari). Hook sampai s06 memperkenalkan kereta dan Tokyo, tetapi pemain keputusan (KAI, pemerintah, INKA) baru muncul di s20 ke atas, dan belum ada analogi. Lihat pilihan di `menunggu_keputusan` TRACK.md.
 - **Hal yang sengaja dihindari:**
   - Menyebut nama tokoh politik atau pejabat yang masih aktif. Naskah hanya menyebut institusi (KAI, Kemendag, Kemenhub, Komisi VI DPR). Kutipan direktur utama KAI ditulis tanpa nama.
   - Dugaan tekanan China lewat pinjaman kereta cepat (CNN Indonesia 2024, sumber anonim) dan kasus korupsi impor KRL 2006–2007. Keduanya di luar sudut track (politik berjalan, kriminal) dan belum bisa diverifikasi.
   - Angka 395 kerusakan motor traksi (IRJ). Konteks artikelnya armada lokomotif, bukan KRL, jadi diganti alasan suku cadang dari RRI.
   - Klaim orang pertama ("saya naik KRL ini setiap hari") karena narasinya suara sintetis dan belum ada konfirmasi pengalaman kreator.
-  - Peta dengan rute Tokyo–Jakarta, karena peta T02 tidak menggambar Jepang. Pengiriman ditampilkan dengan latar laut dan kapal.
+  - Batas negara pada peta dunia diorama. Tokyo, Jakarta, INKA, dan Tiongkok hanya berupa tempat bertanda, tanpa garis perbatasan.
 
 ## Footage yang harus direkam kreator (target 2026-11-28/29)
 
