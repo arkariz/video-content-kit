@@ -92,3 +92,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Profil publish T01 ditetapkan: "default" (YouTube terhubung).
 - 2026-11-25: Profil publish T01 diganti ke "moneyplumbing" atas permintaan kreator. Uji unggah sebelumnya memakai profil "default"; profil baru belum diuji kirim.
 - 2026-11-25: Uji kirim T01-001 A1 ke profil "moneyplumbing": YouTube privat sukses (ID p4CE55YrczE); Facebook sukses diminta sebagai draf (ID 1005272842019993), tetapi API mengembalikan URL Reel, jadi status draf perlu dikonfirmasi kreator (cek tanpa login tidak konklusif). Instagram tidak diuji. Video uji perlu dihapus kreator.
+- 2026-11-25: Kreator mengonfirmasi Reel Facebook uji (ID 1005272842019993) berstatus draf. Mode uji aman untuk Facebook meskipun API mengembalikan URL Reel.

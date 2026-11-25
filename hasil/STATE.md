@@ -48,3 +48,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-25: Profil publish: T01 = "moneyplumbing" (YouTube, Facebook, Instagram terhubung), T02 = "equatorlogic" (belum ada di akun Upload-Post; batas 2 profil sudah terisi "default" dan "moneyplumbing").
 - 2026-11-25: Koreksi profil T02: pakai "default" (nama API); "equatorlogic" hanya nama tampilan. T01 tetap "moneyplumbing".
 - 2026-11-25: Uji kirim T01-001 A1 ke profil "moneyplumbing": YouTube privat sukses (ID p4CE55YrczE); Facebook sukses diminta sebagai draf (ID 1005272842019993), tetapi API mengembalikan URL Reel, jadi status draf perlu dikonfirmasi kreator (cek tanpa login tidak konklusif). Instagram tidak diuji. Video uji perlu dihapus kreator.
+- 2026-11-25: Kreator mengonfirmasi Reel Facebook uji (ID 1005272842019993) berstatus draf. Mode uji aman untuk Facebook meskipun API mengembalikan URL Reel.
