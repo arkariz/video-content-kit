@@ -4,7 +4,7 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "T01: kreator review dan SETUJU siklus 001, lalu naskah siklus 002 di chat Project (tayang 2026-12-14). T02: riset viral sprint V2 di chat dan rekam footage KRL 2026-11-28/29"
+langkah_berikutnya: "T01: kirim Short A2 (kuota habis), verifikasi channel YouTube, naskah siklus 002. T02: riset viral sprint V2 dan rekam footage KRL 2026-11-28/29"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-25
@@ -18,7 +18,7 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Review kreator siklus 001, thumbnail, approve publish | 5,5 | 2026-11-25: naskah revisi disetujui, audio berbayar dan render selesai |
+| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Kirim Short A2, naskah 002 | 5,5 | 2026-11-25: master 001 tayang |
 | T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | Riset viral sprint V2 | 6 | 2026-11-24: rencana V2 dikunci |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
@@ -53,4 +53,5 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-25: T01 siklus 001 dirender ulang dengan audio ElevenLabs Starter (master 8:06). Menunggu review kreator, thumbnail, dan SETUJU publish.
 - 2026-11-25: Publish versi Indonesia dilewati dulu; lanjut sesuai rencana awal (versi Inggris).
 - 2026-11-25: Kreator memajukan publish T01-001 ke 25-27 Nov (penyimpangan dari rencana V2 terkunci). Menunggu kreator menjalankan approve.mjs.
+- 2026-11-25: T01-001 tayang (master YouTube dan Facebook), A1 terjadwal, A2 tertahan kuota Upload-Post (10/bulan). Paket gratis tidak cukup untuk paket uji V2 dua track.
 

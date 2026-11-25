@@ -92,5 +92,144 @@
       "lokal": "2026-11-27 19:00:00"
     }
   ],
-  "hasil": []
+  "hasil": [
+    {
+      "nama": "master",
+      "profil": "moneyplumbing",
+      "platforms": [
+        "youtube",
+        "facebook"
+      ],
+      "request_id": "8639ebcbf2ad44b6a3b4cbb328ac9418",
+      "job_id": "79939cc122504edab0a4f6fe62dd98f2",
+      "scheduled_date": null,
+      "dikirim": "2026-11-25T03:09:07.835Z",
+      "status": "completed",
+      "detail": [
+        {
+          "user_email": "nationpotato94@gmail.com",
+          "profile_username": "moneyplumbing",
+          "platform": "youtube",
+          "media_type": "video",
+          "upload_timestamp": {
+            "$date": "2026-11-25T03:09:00.291Z"
+          },
+          "success": true,
+          "platform_post_id": "z3M5k4pXXhw",
+          "post_url": "https://www.youtube.com/watch?v=z3M5k4pXXhw",
+          "error_message": null,
+          "error_signature": null,
+          "error_code": null,
+          "failure_stage": null,
+          "media_size_bytes": 316779221,
+          "post_title": "Your Card Said \"Approved.\" The Shop Hasn't Been Paid.",
+          "post_caption": "After watching, you can tell which system created each line in your bank app (pending, posted, or the one that disappears) and why the shop gets paid days after you tap.\r\n\r\n0:00 Approved is only a message\r\n0:18 The tap\r\n0:59 Acquirer, network, issuer\r\n1:26 The message itself\r\n1:52 The bank decides\r\n3:09 Money moved: zero\r\n3:24 Holds and pending\r\n4:05 The charge that shows up twice\r\n4:35 Offline approval\r\n4:59 Clearing\r\n6:15 Netting\r\n6:48 Settlement and fees\r\n7:14 Chargebacks\r\n7:45 The recap\r\n\r\nSources:\r\n- https://docs.aws.amazon.com/payment-cryptography/latest/userguide/use-cases-issuers.generalfunctions.arqc.html\r\n- https://www.ibm.com/docs/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.csfb400/EMVTrans.htm\r\n- https://www.emvco.com/knowledge-hub/the-what-why-and-how-of-emv-payment-tokenisation/\r\n- https://www.wikipedia.org/wiki/Card_scheme\r\n- https://usa.visa.com/partner-with-us/info-for-partners/numerics-initiative.html\r\n- https://en.wikipedia.org/wiki/ISO_8583\r\n- https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring\r\n- https://docs.stripe.com/issuing/controls/sms-fraud-alerts\r\n- https://docs.ebanx.com/docs/pay-in/dev-tools/response-codes/iso8583-codes\r\n- https://stripe.com/us/resources/more/authorization-holds-explained\r\n- https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf\r\n- https://usa.visa.com/content/dam/VCOM/regional/na/us/support-legal/documents/authorization-and-reversal-processing-best-practices-for-merchants.pdf\r\n- https://support.pay.nl/en/knowledge/offline-pinnen\r\n- https://www.americanbanker.com/news/making-plane-sense-of-in-flight-payment-risk\r\n- https://corporate.visa.com/en/sites/visa-perspectives/company-news/pay-the-same-exchange-rate-every-time.html\r\n- https://www.nerdwallet.com/article/credit-cards/currency-exchange-rate-credit-card-statement-doesnt-match-online-rate\r\n- https://www.marqeta.com/blog/single-vs-dual-messaging-which-ways-the-right-way\r\n- https://sulagnasasmal.github.io/us-payments-hub/card.html\r\n- https://coinlaw.io/visa-statistics/\r\n- https://www.mastercard.com/gb/en/news-and-trends/Insights/2024/how-can-merchants-dispute-credit-card-chargebacks.html\r\n- https://stripe.com/resources/more/representment-explained\r\n- https://www.paypal.com/money-hub/article/how-do-credit-card-refunds-work\r\n\r\nThe narration uses a synthetic voice and cartoon animation. Real footage is licensed for commercial use (Pexels/Pixabay).",
+          "is_async": true,
+          "dashboard": false,
+          "source": "api",
+          "client": "node_generic",
+          "client_version": null,
+          "video_was_transcoded": false,
+          "changes": [],
+          "prevalidation_metadata": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30,
+            "duration": 486.251,
+            "container": "mov,mp4,m4a,3gp,3g2,mj2",
+            "video_codec": "h264",
+            "audio_codec": "aac"
+          },
+          "target_linkedin_page_id": null,
+          "thumbnail_set": false,
+          "thumbnail_error": "Cannot set custom thumbnail: Your YouTube account may not be verified or you lack permission. To upload custom thumbnails, verify your account at https://www.youtube.com/verify",
+          "warnings": [
+            "Custom thumbnail was not applied: Cannot set custom thumbnail: Your YouTube account may not be verified or you lack permission. To upload custom thumbnails, verify your account at https://www.youtube.com/verify"
+          ],
+          "request_id": "8639ebcbf2ad44b6a3b4cbb328ac9418",
+          "request_id_logs": "8639ebcbf2ad44b6a3b4cbb328ac9418",
+          "job_id": "79939cc122504edab0a4f6fe62dd98f2",
+          "request_total_platforms": 2
+        },
+        {
+          "user_email": "nationpotato94@gmail.com",
+          "profile_username": "moneyplumbing",
+          "platform": "facebook",
+          "media_type": "video",
+          "upload_timestamp": {
+            "$date": "2026-11-25T03:09:24.471Z"
+          },
+          "success": true,
+          "platform_post_id": "1827962438451615",
+          "post_url": "https://www.facebook.com/1449973764874542/videos/1827962438451615",
+          "error_message": null,
+          "error_signature": null,
+          "error_code": null,
+          "failure_stage": null,
+          "media_size_bytes": 316779221,
+          "post_title": "Your Card Said \"Approved.\" The Shop Hasn't Been Paid.",
+          "post_caption": "After watching, you can tell which system created each line in your bank app (pending, posted, or the one that disappears) and why the shop gets paid days after you tap.\r\n\r\n0:00 Approved is only a message\r\n0:18 The tap\r\n0:59 Acquirer, network, issuer\r\n1:26 The message itself\r\n1:52 The bank decides\r\n3:09 Money moved: zero\r\n3:24 Holds and pending\r\n4:05 The charge that shows up twice\r\n4:35 Offline approval\r\n4:59 Clearing\r\n6:15 Netting\r\n6:48 Settlement and fees\r\n7:14 Chargebacks\r\n7:45 The recap\r\n\r\nSources:\r\n- https://docs.aws.amazon.com/payment-cryptography/latest/userguide/use-cases-issuers.generalfunctions.arqc.html\r\n- https://www.ibm.com/docs/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.csfb400/EMVTrans.htm\r\n- https://www.emvco.com/knowledge-hub/the-what-why-and-how-of-emv-payment-tokenisation/\r\n- https://www.wikipedia.org/wiki/Card_scheme\r\n- https://usa.visa.com/partner-with-us/info-for-partners/numerics-initiative.html\r\n- https://en.wikipedia.org/wiki/ISO_8583\r\n- https://www.visa.com/en-us/thought-leadership/risk-fraud/what-is-fraud-scoring\r\n- https://docs.stripe.com/issuing/controls/sms-fraud-alerts\r\n- https://docs.ebanx.com/docs/pay-in/dev-tools/response-codes/iso8583-codes\r\n- https://stripe.com/us/resources/more/authorization-holds-explained\r\n- https://www.philadelphiafed.org/-/media/frbp/assets/consumer-finance/discussion-papers/D-2013-October-Clearing-Settlement.pdf\r\n- https://usa.visa.com/content/dam/VCOM/regional/na/us/support-legal/documents/authorization-and-reversal-processing-best-practices-for-merchants.pdf\r\n- https://support.pay.nl/en/knowledge/offline-pinnen\r\n- https://www.americanbanker.com/news/making-plane-sense-of-in-flight-payment-risk\r\n- https://corporate.visa.com/en/sites/visa-perspectives/company-news/pay-the-same-exchange-rate-every-time.html\r\n- https://www.nerdwallet.com/article/credit-cards/currency-exchange-rate-credit-card-statement-doesnt-match-online-rate\r\n- https://www.marqeta.com/blog/single-vs-dual-messaging-which-ways-the-right-way\r\n- https://sulagnasasmal.github.io/us-payments-hub/card.html\r\n- https://coinlaw.io/visa-statistics/\r\n- https://www.mastercard.com/gb/en/news-and-trends/Insights/2024/how-can-merchants-dispute-credit-card-chargebacks.html\r\n- https://stripe.com/resources/more/representment-explained\r\n- https://www.paypal.com/money-hub/article/how-do-credit-card-refunds-work\r\n\r\nThe narration uses a synthetic voice and cartoon animation. Real footage is licensed for commercial use (Pexels/Pixabay).",
+          "is_async": true,
+          "dashboard": false,
+          "source": "api",
+          "client": "node_generic",
+          "client_version": null,
+          "video_was_transcoded": false,
+          "changes": [],
+          "prevalidation_metadata": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 30,
+            "duration": 486.251,
+            "container": "mov,mp4,m4a,3gp,3g2,mj2",
+            "video_codec": "h264",
+            "audio_codec": "aac"
+          },
+          "target_linkedin_page_id": null,
+          "facebook_page_id": "1449973764874542",
+          "thumbnail_set": true,
+          "request_id": "8639ebcbf2ad44b6a3b4cbb328ac9418",
+          "request_id_logs": "8639ebcbf2ad44b6a3b4cbb328ac9418",
+          "job_id": "79939cc122504edab0a4f6fe62dd98f2",
+          "request_total_platforms": 2
+        }
+      ],
+      "urls": []
+    },
+    {
+      "nama": "A1-zero-dollars-moved",
+      "profil": "moneyplumbing",
+      "platforms": [
+        "youtube",
+        "instagram",
+        "facebook"
+      ],
+      "request_id": "6b4ee109a94d4ee38d8c3d8b637dde44",
+      "job_id": "8f1a7df4f89740c792a862fd91f13986",
+      "scheduled_date": "2026-11-26T19:00:00+07:00",
+      "dikirim": "2026-11-25T03:09:14.864Z",
+      "status": "queued",
+      "detail": [
+        {
+          "platform": "youtube",
+          "status": "queued",
+          "attempts": 0,
+          "success": false
+        },
+        {
+          "platform": "instagram",
+          "status": "queued",
+          "attempts": 0,
+          "success": false
+        },
+        {
+          "platform": "facebook",
+          "status": "queued",
+          "attempts": 0,
+          "success": false
+        }
+      ],
+      "urls": []
+    }
+  ]
 }
