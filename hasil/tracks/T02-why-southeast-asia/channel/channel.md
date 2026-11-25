@@ -15,7 +15,8 @@ Sudah dipakai: Monsoon Atlas, Tropic Logic, Tropic Atlas, Local Atlas, Archipela
 
 ## Aset
 
-- `profil-equator-logic.png` (800×800, dipotong lingkaran oleh platform): Guide (pemeran tetap T02) setengah badan di atas peta laut, garis khatulistiwa merah putus-putus.
+- `profil-equator-logic-emblem.png` (1000×1000, **dipakai**): emblem bulat. Cincin krem bertuliskan EQUATOR LOGIC / WHY SOUTHEAST ASIA WORKS; di dalam, Guide dengan matahari sebagai lingkaran cahaya di belakang kepala, gunung api, kapal kontainer, laut, dan garis khatulistiwa merah sebagai cakrawala. Generator: `make_profile_badge.py`.
+- `profil-equator-logic.png` (800×800): versi sederhana sebelumnya, cadangan.
 - `banner-youtube-equator-logic.png` (2560×1440): peta Asia Tenggara dari `toon/geo.ts` tanpa batas negara, garis khatulistiwa, panel nama di area aman tengah 1546×423 (terlihat di HP, desktop, TV).
 - `make_assets.py`: generator. Ganti `NAME`/`TAG`/`SUB` bila nama berubah, lalu jalankan `python3 make_assets.py` (butuh `rsvg-convert` dan font Poppins).
 

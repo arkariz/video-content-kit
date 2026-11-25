@@ -47,31 +47,35 @@ def write(name, w, h, body):
     open(p, "w").write(f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">{body}</svg>')
     subprocess.run(["rsvg-convert", "-w", str(w), "-h", str(h), "-o", os.path.join(HERE, name + ".png"), p], check=True)
 
-# ---------- foto profil 800x800 (dipotong lingkaran oleh platform) ----------
-W = 800
-eq_y = 560
-prof = sea_bg(W, W, 8)
-prof += f'<line x1="0" y1="{eq_y}" x2="{W}" y2="{eq_y}" stroke="{RED}" stroke-width="12" stroke-dasharray="38 24"/>'
-prof += f'<g transform="translate(115,95) scale(1.9)">{guide()}</g>'
-write("profil-equator-logic", W, W, prof)
+def main():
+    # ---------- foto profil 800x800 (dipotong lingkaran oleh platform) ----------
+    W = 800
+    eq_y = 560
+    prof = sea_bg(W, W, 8)
+    prof += f'<line x1="0" y1="{eq_y}" x2="{W}" y2="{eq_y}" stroke="{RED}" stroke-width="12" stroke-dasharray="38 24"/>'
+    prof += f'<g transform="translate(115,95) scale(1.9)">{guide()}</g>'
+    write("profil-equator-logic", W, W, prof)
 
-# ---------- banner YouTube 2560x1440, area aman 1546x423 di tengah ----------
-BW, BH = 2560, 1440
-v = ((92, 142), (-10, 18))
-ban = sea_bg(BW, BH, 16)
-for pts in coast():
-    ban += '<polygon points="' + " ".join("%.1f,%.1f" % project(p, BW, BH, v) for p in pts) + f'" fill="{SAND}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
-ey = project((0, 0), BW, BH, v)[1]
-ban += f'<line x1="0" y1="{ey}" x2="{BW}" y2="{ey}" stroke="{RED}" stroke-width="9" stroke-dasharray="40 26" opacity="0.9"/>'
-sx, sy, sw_, sh = (BW-1546)/2, (BH-423)/2, 1546, 423
-px, py, pw, ph = sx+20, sy+18, sw_-40, sh-36
-ban += f'<rect x="{px+12}" y="{py+14}" width="{pw}" height="{ph}" rx="40" fill="{INK}" opacity="0.25"/>'
-ban += f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="40" fill="{CREAM}" stroke="{INK}" stroke-width="8"/>'
-ban += f'<g transform="translate({px+40},{py+18}) scale(0.95)">{guide()}</g>'
-tx = px + 380
-ban += f'<text x="{tx}" y="{py+170}" font-family="{FONT}" font-weight="800" font-size="112" letter-spacing="3" fill="{INK}">{NAME}</text>'
-ban += f'<rect x="{tx}" y="{py+200}" width="250" height="10" rx="5" fill="{RED}"/>'
-ban += f'<text x="{tx}" y="{py+282}" font-family="{FONT}" font-weight="700" font-size="58" fill="{OUTFIT}">{TAG}</text>'
-ban += f'<text x="{tx}" y="{py+344}" font-family="{FONT}" font-weight="500" font-size="38" fill="#4a4a4a">{SUB}</text>'
-write("banner-youtube-equator-logic", BW, BH, ban)
-print("ok")
+    # ---------- banner YouTube 2560x1440, area aman 1546x423 di tengah ----------
+    BW, BH = 2560, 1440
+    v = ((92, 142), (-10, 18))
+    ban = sea_bg(BW, BH, 16)
+    for pts in coast():
+        ban += '<polygon points="' + " ".join("%.1f,%.1f" % project(p, BW, BH, v) for p in pts) + f'" fill="{SAND}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+    ey = project((0, 0), BW, BH, v)[1]
+    ban += f'<line x1="0" y1="{ey}" x2="{BW}" y2="{ey}" stroke="{RED}" stroke-width="9" stroke-dasharray="40 26" opacity="0.9"/>'
+    sx, sy, sw_, sh = (BW-1546)/2, (BH-423)/2, 1546, 423
+    px, py, pw, ph = sx+20, sy+18, sw_-40, sh-36
+    ban += f'<rect x="{px+12}" y="{py+14}" width="{pw}" height="{ph}" rx="40" fill="{INK}" opacity="0.25"/>'
+    ban += f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="40" fill="{CREAM}" stroke="{INK}" stroke-width="8"/>'
+    ban += f'<g transform="translate({px+40},{py+18}) scale(0.95)">{guide()}</g>'
+    tx = px + 380
+    ban += f'<text x="{tx}" y="{py+170}" font-family="{FONT}" font-weight="800" font-size="112" letter-spacing="3" fill="{INK}">{NAME}</text>'
+    ban += f'<rect x="{tx}" y="{py+200}" width="250" height="10" rx="5" fill="{RED}"/>'
+    ban += f'<text x="{tx}" y="{py+282}" font-family="{FONT}" font-weight="700" font-size="58" fill="{OUTFIT}">{TAG}</text>'
+    ban += f'<text x="{tx}" y="{py+344}" font-family="{FONT}" font-weight="500" font-size="38" fill="#4a4a4a">{SUB}</text>'
+    write("banner-youtube-equator-logic", BW, BH, ban)
+    print("ok")
+
+if __name__ == "__main__":
+    main()
