@@ -1869,7 +1869,7 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: rangkaian CRRC baru di lintas Bogor (footage di atas dunia diorama)",
+    "description": "Klip CC BY: rangkaian CRRC baru masuk stasiun (Alif Putra Banyuaji), di atas dunia diorama",
     "on_screen_text": "CRRC Sifang train, Bogor line (filmed Nov 2026)"
    },
    "stage": {
@@ -1907,7 +1907,7 @@
     ]
    },
    "broll": {
-    "own": "krl-04.mp4",
+    "lic": "s31-s53.mp4",
     "keywords": [
      "jakarta commuter train"
     ]
@@ -2034,7 +2034,7 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: peron saat jam sibuk, diambil dari belakang (tanpa wajah dekat) (footage di atas dunia diorama)"
+    "description": "Klip CC BY: peron KRL ramai, rangkaian eks Jepang berhenti (Bang Acoy), di atas dunia diorama"
    },
    "stage": {
     "engine": "diorama",
@@ -2068,7 +2068,7 @@
     ]
    },
    "broll": {
-    "own": "krl-03.mp4",
+    "lic": "s34-s36-kepadatan.mp4",
     "keywords": [
      "jakarta commuter train"
     ]
