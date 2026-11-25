@@ -17,6 +17,8 @@ node scripts/produksi/render.mjs --track T01 --siklus 001 --comp Master16x9 --la
 node scripts/produksi/render.mjs --track T01 --siklus 001 --comp Short9x16 --cut A1-zero-dollars-moved
 ```
 
+Suara per bahasa diatur di `produksi/voices.json` (EN boleh dari `ELEVENLABS_VOICE_ID`). Ejaan fonetik `pronunciations` hanya dipakai untuk EN.
+
 Catatan: caption dibuat per scene (waktu relatif scene), bukan dari audio gabungan. Preview satu scene: `--still s10,s19` (PNG di `render/<ID>/<siklus>/stills/`).
 
 ## Gaya visual

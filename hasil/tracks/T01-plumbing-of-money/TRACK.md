@@ -8,7 +8,7 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "perbaiki temuan QA 001 selain T1 (T2 sampai T11 di 05-qa.md), lalu QA ulang; T1 (bukti kreator) ditunda kreator, publish tetap tertahan sampai T1 diputuskan; master wajib tetap ≥ 8:00"
+langkah_berikutnya: "001: (1) perbaiki naskah sesuai 05-qa.auto (re-hook sekitar s12, sumber per klaim, s56, ID s01 dan s06, bubble pengulang), (2) hapus audio uji EN dengan persetujuan kreator lalu buat ulang EN dan ID di paket Starter, catat assets.voice, (3) caption, render, QA ulang, thumbnail; master wajib tetap >= 8:00"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
 menunggu_keputusan: null
@@ -93,3 +93,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Profil publish T01 diganti ke "moneyplumbing" atas permintaan kreator. Uji unggah sebelumnya memakai profil "default"; profil baru belum diuji kirim.
 - 2026-11-25: Uji kirim T01-001 A1 ke profil "moneyplumbing": YouTube privat sukses (ID p4CE55YrczE); Facebook sukses diminta sebagai draf (ID 1005272842019993), tetapi API mengembalikan URL Reel, jadi status draf perlu dikonfirmasi kreator (cek tanpa login tidak konklusif). Instagram tidak diuji. Video uji perlu dihapus kreator.
 - 2026-11-25: Kreator mengonfirmasi Reel Facebook uji (ID 1005272842019993) berstatus draf. Mode uji aman untuk Facebook meskipun API mengembalikan URL Reel.
+- 2026-11-25: Kreator membeli ElevenLabs Starter; integrasi tetap lewat API key. Suara EN tetap yang sekarang (bukan clone), suara ID R86jddkroI9bJwXFfjsr (produksi/voices.json). Uji satu scene ID (s02) berhasil. Kreator menyetujui urutan: perbaiki naskah dulu, baru buat ulang audio. Audio EN saat ini masih dari akun free.

@@ -1,0 +1,4 @@
+{
+  "_catatan": "Voice ID ElevenLabs per bahasa (bukan rahasia; API key tetap hanya di .env). Urutan: <ID track> lalu default. Bahasa 'en' boleh kosong: dipakai ELEVENLABS_VOICE_ID dari .env.",
+  "default": { "id": "R86jddkroI9bJwXFfjsr" }
+}
