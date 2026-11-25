@@ -2,13 +2,13 @@
 
 Profil Upload-Post: moneyplumbing
 
-Disetujui kreator: (diisi saat approve)
+Disetujui kreator: 2026-11-25 lewat chat ("publish disetujui", lalu "Majukan mulai sekarang 25-27 Nov")
 
 | Item | File | Platform | Judul | Jadwal (WIB) | Label AI |
 | --- | --- | --- | --- | --- | --- |
-| master | produksi/render/T01/001/Master16x9-en.mp4 | youtube, facebook | Your Card Said "Approved." The Shop Hasn't Been Paid. | 2026-12-07 19:00:00 | ya |
-| A1-zero-dollars-moved | produksi/render/T01/001/Short9x16-A1-zero-dollars-moved-en.mp4 | youtube, instagram, facebook | Your card said approved. Zero dollars moved. | 2026-12-08 19:00:00 | ya |
-| A2-pending-to-posted | produksi/render/T01/001/Short9x16-A2-pending-to-posted-en.mp4 | youtube, instagram, facebook | Why your restaurant charge changes the next day. | 2026-12-09 19:00:00 | ya |
+| master | produksi/render/T01/001/Master16x9-en.mp4 | youtube, facebook | Your Card Said "Approved." The Shop Hasn't Been Paid. | segera (2026-11-25) | ya |
+| A1-zero-dollars-moved | produksi/render/T01/001/Short9x16-A1-zero-dollars-moved-en.mp4 | youtube, instagram, facebook | Your card said approved. Zero dollars moved. | 2026-11-26 19:00:00 | ya |
+| A2-pending-to-posted | produksi/render/T01/001/Short9x16-A2-pending-to-posted-en.mp4 | youtube, instagram, facebook | Why your restaurant charge changes the next day. | 2026-11-27 19:00:00 | ya |
 
 Thumbnail master: produksi/render/T01/001/Thumbnail-A.png (ganti ke Thumbnail-B.png di 06-publish.json bila mau)
 

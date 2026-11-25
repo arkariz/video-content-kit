@@ -52,3 +52,5 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-25: ElevenLabs Starter aktif. Suara per bahasa di produksi/voices.json (ID = R86jddkroI9bJwXFfjsr; EN dari .env).
 - 2026-11-25: T01 siklus 001 dirender ulang dengan audio ElevenLabs Starter (master 8:06). Menunggu review kreator, thumbnail, dan SETUJU publish.
 - 2026-11-25: Publish versi Indonesia dilewati dulu; lanjut sesuai rencana awal (versi Inggris).
+- 2026-11-25: Kreator memajukan publish T01-001 ke 25-27 Nov (penyimpangan dari rencana V2 terkunci). Menunggu kreator menjalankan approve.mjs.
+

@@ -3,7 +3,7 @@
   "siklus": "001-approved-not-paid",
   "profil": "moneyplumbing",
   "dibuat": "2026-11-25T02:37:39.516Z",
-  "catatan": "Edit sebelum approve. platformAktif: ubah true/false (TikTok butuh paket berbayar Upload-Post). Jadwal default: master di tanggal tayang TRACK.md 19:00 WIB, Shorts +1 dan +2 hari (rencana.md terkunci: minggu yang sama).",
+  "catatan": "Jadwal dimajukan atas keputusan kreator 2026-11-25 (penyimpangan dari rencana V2): master segera, Shorts 26 dan 27 Nov 19:00 WIB. Jangan jalankan `plan` lagi (menimpa jadwal ini).",
   "platformAktif": {
     "youtube": true,
     "tiktok": false,
@@ -45,9 +45,9 @@
         "ISO 8583",
         "fintech explained"
       ],
-      "scheduled_date": "2026-12-07T12:00:00Z",
+      "scheduled_date": null,
       "timezone": "Asia/Jakarta",
-      "lokal": "2026-12-07 19:00:00"
+      "lokal": "segera (2026-11-25)"
     },
     {
       "nama": "A1-zero-dollars-moved",
@@ -66,9 +66,9 @@
         "authorization",
         "shorts"
       ],
-      "scheduled_date": "2026-12-08T12:00:00Z",
+      "scheduled_date": "2026-11-26T12:00:00Z",
       "timezone": "Asia/Jakarta",
-      "lokal": "2026-12-08 19:00:00"
+      "lokal": "2026-11-26 19:00:00"
     },
     {
       "nama": "A2-pending-to-posted",
@@ -87,9 +87,9 @@
         "authorization",
         "shorts"
       ],
-      "scheduled_date": "2026-12-09T12:00:00Z",
+      "scheduled_date": "2026-11-27T12:00:00Z",
       "timezone": "Asia/Jakarta",
-      "lokal": "2026-12-09 19:00:00"
+      "lokal": "2026-11-27 19:00:00"
     }
   ],
   "hasil": []

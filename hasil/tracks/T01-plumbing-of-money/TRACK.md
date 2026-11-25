@@ -8,10 +8,10 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "001: kreator menonton paket review (hasil/review/T01-001-approved-not-paid), cek fakta dan audio (thumbnail A sudah dipilih); lalu approve.mjs (SETUJU) sebelum 2026-12-07"
+langkah_berikutnya: "001: kreator menjalankan approve.mjs dan mengetik SETUJU (master segera, Shorts 2026-11-26 dan 11-27); lalu cek status publish dan unggah track audio ID di YouTube Studio"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: "Percepatan jadwal 001 (rencana V2 terkunci menetapkan tayang pertama 2026-12-07): 1) tetap 12-07 s.d. 12-09 (rekomendasi), 2) majukan ke 11-26 s.d. 11-28 sebagai penyimpangan tercatat; juga konfirmasi audio, video, dan fakta sudah diperiksa. Publish belum dikirim"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -52,7 +52,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | qa | 2026-12-07 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | siap-publish | 2026-11-25 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
@@ -69,6 +69,7 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-24 | Naskah 001 versi 58 scene disetujui | Audio uji 6,40 menit < 8:00; ditambah 5 scene isi dan jeda 0,9 detik (estimasi render ±8:17) | siklus/001-approved-not-paid/03-naskah.md |
 | 2026-11-25 | Naskah 001 revisi QA disetujui; audio dibuat ulang dengan ElevenLabs Starter (suara EN lama, ID R86jddkroI9bJwXFfjsr) | QA otomatis 0 kritis; durasi master 8:06 | siklus/001-approved-not-paid/05-qa.auto.md |
 | 2026-11-25 | Thumbnail master 001: varian A "APPROVED ≠ PAID" | Pilihan kreator; mengulang janji judul dan hook | produksi/render/T01/001/Thumbnail-A.png |
+| 2026-11-25 | Jadwal 001 dimajukan ke 25-27 Nov (master 11-25, Shorts 11-26 dan 11-27) | Keputusan kreator; penyimpangan dari rencana V2 terkunci (tayang pertama 2026-12-07). rencana.md tidak diubah | siklus/001-approved-not-paid/06-publish.json |
 
 ## Log
 
@@ -101,3 +102,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Thumbnail 001 dibuat (A "APPROVED ≠ PAID", B "$0.00 MOVED") dan masuk rencana publish (default A). QA otomatis 0 kritis, 2 sedang (jarak re-hook 104 detik, bukti kreator). Menunggu review kreator.
 - 2026-11-25: Atas pertanyaan kreator, master juga dikirim ke Facebook sebagai video Page (16:9), selain YouTube. Rencana publish 001 diperbarui; belum diuji ke API.
 - 2026-11-25: Kreator menyatakan publish disetujui dan meminta jadwal dipercepat (tanggal belum disebut). Track audio ID untuk master dibuat (produksi/render/T01/001/Master16x9-audio-id.m4a, 486,25 detik, sama dengan master; 16 scene dipercepat sampai 1,26x; belum didengar). Belum ada yang dikirim.
+- 2026-11-25: Kreator memajukan jadwal 001 ke 25-27 Nov. Penyimpangan: konten tayang sebelum periode uji V2 dan tidak sejajar dengan T02; dampaknya dipertimbangkan saat penilaian 2027-01-03. QA manual dicatat di 05-qa.md. Belum dikirim: menunggu SETUJU diketik kreator.
