@@ -91,3 +91,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-24: Uji unggah privat A1 ke YouTube lewat Upload-Post berhasil dan diperiksa kreator. Publish sungguhan tetap menunggu QA 001 (temuan sedang tersisa: re-hook, bubble pengulang, sumber, thumbnail, catatan suara) dan SETUJU kreator.
 - 2026-11-25: Profil publish T01 ditetapkan: "default" (YouTube terhubung).
 - 2026-11-25: Profil publish T01 diganti ke "moneyplumbing" atas permintaan kreator. Uji unggah sebelumnya memakai profil "default"; profil baru belum diuji kirim.
+- 2026-11-25: Uji kirim T01-001 A1 ke profil "moneyplumbing": YouTube privat sukses (ID p4CE55YrczE); Facebook sukses diminta sebagai draf (ID 1005272842019993), tetapi API mengembalikan URL Reel, jadi status draf perlu dikonfirmasi kreator (cek tanpa login tidak konklusif). Instagram tidak diuji. Video uji perlu dihapus kreator.
