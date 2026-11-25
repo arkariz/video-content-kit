@@ -8,10 +8,8 @@ channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "001-jakarta-refused-tokyo-trains"
-langkah_berikutnya: "siklus 001 (uji-V2, variasi A): brief + naskah long-form \"Jakarta Just Refused Tokyo's Old Trains. Here's Why\" plus 2 Shorts A (instruksi/04-naskah.md). Rekam footage KRL 2026-11-28/29"
-menunggu_keputusan: null
+langkah_berikutnya: "siklus 001: kreator menyetujui naskah (03-naskah.md), lalu naskah diubah ke gaya diorama 2.5D (world + stage), rekam footage KRL 2026-11-28/29 (daftar di 02-brief.md) dan jalankan pipeline produksi (scripts/pipeline/run.mjs --track T02 --siklus 001)"
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-langkah_berikutnya: "siklus 001: kreator menyetujui naskah (03-naskah.md), lalu rekam footage KRL 2026-11-28/29 (daftar di 02-brief.md) dan jalankan pipeline produksi (scripts/pipeline/run.mjs --track T02 --siklus 001)"
 menunggu_keputusan: "Setujui naskah siklus 001 (siklus/001-jakarta-refused-tokyo-trains/03-naskah.md): 58 scene, perkiraan 8:24, anti-slop EN 39/ID 38, 3 judul, 2 Shorts. Koreksi fakta atau insight dari kreator boleh ditambahkan"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
