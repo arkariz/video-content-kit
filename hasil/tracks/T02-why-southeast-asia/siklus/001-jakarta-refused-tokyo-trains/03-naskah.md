@@ -4,13 +4,13 @@ Status: **menunggu persetujuan kreator.** Sumber tunggal untuk produksi adalah `
 
 - **Janji:** After watching, you can explain why Jakarta could run Tokyo's retired trains for 25 years without rebuilding its tracks, and why a 20-year import age limit ended that in November 2026.
 - **Hook (s01):** This train used to carry commuters in Tokyo. Jakarta still runs hundreds of cars like it, and in November it refused to buy any more.
-- **Panjang:** 58 scene, 1384 kata EN, 1220 kata ID. Perkiraan durasi master sekitar 8:24 (0,33 detik per kata + jeda pipeline); angka pasti setelah TTS, syarat ≥ 8:00.
+- **Panjang:** 58 scene, 1437 kata EN, 1271 kata ID. Perkiraan durasi master sekitar 8:41 (0,33 detik per kata + jeda pipeline); angka pasti setelah TTS, syarat ≥ 8:00.
 - **Judul:** (1) Jakarta Just Refused Tokyo's Old Trains. Here's Why · (2) Why Jakarta Runs on Tokyo's Retired Trains, and Why That Just Ended · (3) Tokyo's Old Trains Are Now Too Old for Jakarta
 - **Teks thumbnail:** TOO OLD TO IMPORT · TOKYO'S TRAINS, REJECTED
 
 ## Skor anti-slop (lapisan Teks)
 
-Dinilai manual dengan `skills/video-anti-slop/references/spoken-script-rules.md`, `pola-slop-indonesia.md`, dan pola yang diperiksa `scripts/pipeline/qa.mjs`. Ini penilaian penulis naskah, bukan QA final; langkah 06 tetap wajib.
+Dinilai manual (dinilai ulang setelah revisi s02, s03, s12, s47: skor tidak berubah, tanpa pola terlarang menurut cek regex) dengan `skills/video-anti-slop/references/spoken-script-rules.md`, `pola-slop-indonesia.md`, dan pola yang diperiksa `scripts/pipeline/qa.mjs`. Ini penilaian penulis naskah, bukan QA final; langkah 06 tetap wajib.
 
 | Bahasa | Directness | Rhythm | Trust | Authenticity | Density | Total | Lulus (≥35) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ Sisa risiko yang tercatat: Rhythm 7 karena banyak kalimat dua klausa dengan panj
 
 Sejak 2026-11-25 semua siklus wajib diorama (`instruksi/referensi/gaya-diorama.md`). Visual naskah ini sudah dikonversi: satu `world` (Tokyo, laut, Jakarta, Jawa Timur, Tiongkok), kamera berpindah tiap scene, angka menempel pada benda, tanpa bubble dan papan teks. Footage milik kreator tetap di atas dunia pada 12 scene. Detail dunia dan anggaran konsep ada di `02-brief.md`. Pratinjau visual belum bisa dibuat di sesi ini (Remotion belum terpasang); `build-visual.mjs --check` dan `check_kit.py` lolos.
 
-**Catatan jujur sebelum menyetujui:** aturan "fondasi dulu" belum terpenuhi penuh. Pemain keputusan (KAI, pemerintah, INKA) baru diperkenalkan setelah s20, dan belum ada satu analogi sehari-hari yang dipakai sampai akhir.
+**Fondasi dulu (revisi 2026-11-25):** s02 memperkenalkan analogi baju bekas turunan (cocok ukurannya, masih ada umur pakainya), s03 memperkenalkan empat pemain (KAI, pemerintah, INKA, CRRC), dan analogi dipanggil lagi di s12 (ukuran rel) dan s47 (umur pakai). Penambahan sekitar 70 kata.
 
 ## Struktur
 
@@ -76,19 +76,19 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 ### s02 · context · 0:08
 
-**EN:** The reason it came here is simple. The reason it stopped is a rule about age, and it explains what Jakarta's commuters ride next.
+**EN:** The reason it came here is simple, and it works like hand-me-down clothes. They only fit if the size matches, and they only help while there's life left in them. The reason it stopped is a rule about age.
 
-**ID:** Alasan kereta ini datang ke sini sederhana. Alasan berhentinya adalah aturan soal umur, dan itu menentukan kereta apa yang dinaiki warga Jakarta berikutnya.
+**ID:** Alasan kereta ini datang ke sini sederhana, dan cara kerjanya seperti baju bekas turunan. Baju itu hanya cocok kalau ukurannya sama, dan hanya berguna selama masih ada umur pakainya. Alasan berhentinya adalah aturan soal umur.
 
 *Visual:* footage kreator `krl-02.mp4`. Footage milik kreator: rangkaian eks Jepang masuk peron
 
 ### s03 · context · 0:17
 
-**EN:** Three parts. Why Tokyo's trains fit Jakarta. Why the deal worked for twenty-five years. And why it ended in November 2026.
+**EN:** Four players run this story. KAI, the state railway behind the commuter trains. The government, which sets the import rules. INKA, Indonesia's own train builder. And CRRC, a Chinese maker of new trains. We'll cover why Tokyo's trains fit Jakarta, why the deal worked for twenty-five years, and why it ended in November 2026.
 
-**ID:** Tiga bagian. Kenapa kereta Tokyo cocok untuk Jakarta. Kenapa cara ini berjalan dua puluh lima tahun. Dan kenapa berakhir di November 2026.
+**ID:** Ada empat pemain dalam cerita ini. KAI, perusahaan kereta api negara di balik KRL. Pemerintah, yang menetapkan aturan impor. INKA, pembuat kereta dalam negeri. Dan CRRC, pembuat kereta baru dari Tiongkok. Kita bahas kenapa kereta Tokyo cocok untuk Jakarta, kenapa kesepakatan itu bertahan dua puluh lima tahun, dan kenapa berakhir November 2026.
 
-*Visual:* diorama 2.5D. kamera ke peta; 1 FIT, 2 DEAL, 3 ENDED
+*Visual:* diorama 2.5D. peta dunia, empat pemain disorot berurutan: KAI, pemerintah, INKA, CRRC
 
 *Bubble:* "I've heard this story."
 
@@ -182,9 +182,9 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 ### s12 · body · 1:34
 
-**EN:** The rails are the same width. Japan's regular lines and Java's lines are both one thousand and sixty-seven millimetres apart. Change the rail width and you need new wheels, new axles, often a new train.
+**EN:** The first size that matches is the rails. Japan's regular lines and Java's lines are both one thousand and sixty-seven millimetres apart. Change the rail width and you need new wheels, new axles, often a new train.
 
-**ID:** Lebar relnya sama. Jalur kereta biasa di Jepang dan jalur di Jawa sama-sama seribu enam puluh tujuh milimeter. Kalau lebar relnya beda, roda dan as harus diganti, sering kali keretanya juga.
+**ID:** Ukuran pertama yang cocok adalah relnya. Jalur kereta biasa di Jepang dan jalur di Jawa sama-sama seribu enam puluh tujuh milimeter. Kalau lebar relnya beda, roda dan as harus diganti, sering kali keretanya juga.
 
 *Visual:* diorama 2.5D. kamera ke tokyo; 1,067 MM, 1,067 MM
 
@@ -570,9 +570,9 @@ Footage milik kreator pertama di 0:00 dan s11 di 1:26, jauh sebelum 30% durasi (
 
 ### s47 · body · 6:29
 
-**EN:** The transport ministry added another problem. A train used for twenty to thirty years in Japan might have only about ten years left. After that, Jakarta would be shopping for trains again.
+**EN:** The transport ministry added another problem. Hand-me-downs wear out. A train used for twenty to thirty years in Japan might have only about ten years left. After that, Jakarta would be shopping for trains again.
 
-**ID:** Kementerian Perhubungan menambah satu masalah. Kereta yang sudah dipakai dua puluh sampai tiga puluh tahun di Jepang mungkin cuma tersisa sekitar sepuluh tahun. Setelah itu, Jakarta harus belanja kereta lagi.
+**ID:** Kementerian Perhubungan menambah satu masalah. Barang bekas turunan ada batas pakainya. Kereta yang sudah dipakai dua puluh sampai tiga puluh tahun di Jepang mungkin cuma tersisa sekitar sepuluh tahun. Setelah itu, Jakarta harus belanja kereta lagi.
 
 *Visual:* diorama 2.5D. kamera ke t_old; ~10 YRS LEFT
 

@@ -5,7 +5,7 @@
 - **Bukti milik kreator:**
   - Footage rekaman sendiri di KRL, wajib sebelum 30% durasi: s01 (interior eks JR 205 dengan tulisan Jepang), s02 (rangkaian eks Jepang masuk peron), s11 (rel dan kabel aliran atas dari jendela). Lalu s31 (rangkaian CRRC di lintas Bogor), s34 (peron jam sibuk), s54 dan s57 (pengambilan penutup).
   - Sumber berbahasa Indonesia (Bisnis, Katadata, detik, Liputan6, MetroTV, CNBC Indonesia, Puslit DPR) untuk babak 2023 sampai 2026. Babak ini belum dibuat video berbahasa Inggris mana pun di riset.
-- **Format:** master sekitar 8:25 (perkiraan dari 1.380 kata EN, dicek ulang setelah TTS; syarat ≥ 8:00), 2 Shorts (A1, A2), versi Indonesia: ya (audio track kedua).
+- **Format:** master sekitar 8:41 (perkiraan dari 1.437 kata EN, dicek ulang setelah TTS; syarat ≥ 8:00), 2 Shorts (A1, A2), versi Indonesia: ya (audio track kedua).
 - **Judul (3 varian):**
   1. Jakarta Just Refused Tokyo's Old Trains. Here's Why
   2. Why Jakarta Runs on Tokyo's Retired Trains, and Why That Just Ended
@@ -27,7 +27,7 @@
   - **Aset baru yang dibutuhkan:** tidak ada. Dipakai apa adanya: `tower`, `house`, `bankhall`, `shop`, `palm`, `pine`, `tree`, `bush`, `lock`, `envelope`, `actor:train`, `actor:ship`, `actor:guide`. Opsional kalau agent repo sempat: livery kereta Jepang vs Tiongkok yang berbeda warna, dan rel di tanah.
   - **Footage:** 12 scene memakai footage (7 file milik kreator dan stok) di atas dunia diorama, 20 sampai 34% durasi.
   - **Anggaran konsep (maks. 8 per video panjang):** lebar rel, listrik 1.500 V DC, seri 205, INKA, CRRC Sifang, batas umur barang modal bekas, retrofit, KAI sebagai operator. Delapan istilah, pas di batas. Istilah lain (E217, Tokyo Metro 6000, Mita Line) hanya disebut sebagai nama, tidak dijelaskan.
-  - **Belum terpenuhi sepenuhnya:** aturan "fondasi dulu" (60 sampai 90 detik pertama harus memperkenalkan pemain, tahap, dan satu analogi sehari-hari). Hook sampai s06 memperkenalkan kereta dan Tokyo, tetapi pemain keputusan (KAI, pemerintah, INKA) baru muncul di s20 ke atas, dan belum ada analogi. Lihat pilihan di `menunggu_keputusan` TRACK.md.
+  - **Fondasi dulu (revisi 2026-11-25, atas pilihan kreator):** s02 memperkenalkan analogi baju bekas turunan (ukuran cocok, masih ada umur pakai), s03 memperkenalkan empat pemain (KAI, pemerintah, INKA, CRRC) dengan sorotan di dunia diorama. Analogi dipanggil lagi di s12 (ukuran rel) dan s47 (umur pakai). Total sekitar 70 kata tambahan, KAI tidak dihitung konsep baru karena sudah ada di anggaran delapan konsep.
 - **Hal yang sengaja dihindari:**
   - Menyebut nama tokoh politik atau pejabat yang masih aktif. Naskah hanya menyebut institusi (KAI, Kemendag, Kemenhub, Komisi VI DPR). Kutipan direktur utama KAI ditulis tanpa nama.
   - Dugaan tekanan China lewat pinjaman kereta cepat (CNN Indonesia 2024, sumber anonim) dan kasus korupsi impor KRL 2006–2007. Keduanya di luar sudut track (politik berjalan, kriminal) dan belum bisa diverifikasi.

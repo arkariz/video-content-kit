@@ -105,8 +105,8 @@
    "id": "s02",
    "role": "context",
    "narration": {
-    "en": "The reason it came here is simple. The reason it stopped is a rule about age, and it explains what Jakarta's commuters ride next.",
-    "id": "Alasan kereta ini datang ke sini sederhana. Alasan berhentinya adalah aturan soal umur, dan itu menentukan kereta apa yang dinaiki warga Jakarta berikutnya."
+    "en": "The reason it came here is simple, and it works like hand-me-down clothes. They only fit if the size matches, and they only help while there's life left in them. The reason it stopped is a rule about age.",
+    "id": "Alasan kereta ini datang ke sini sederhana, dan cara kerjanya seperti baju bekas turunan. Baju itu hanya cocok kalau ukurannya sama, dan hanya berguna selama masih ada umur pakainya. Alasan berhentinya adalah aturan soal umur."
    },
    "visual": {
     "type": "broll",
@@ -177,12 +177,12 @@
    "id": "s03",
    "role": "context",
    "narration": {
-    "en": "Three parts. Why Tokyo's trains fit Jakarta. Why the deal worked for twenty-five years. And why it ended in November 2026.",
-    "id": "Tiga bagian. Kenapa kereta Tokyo cocok untuk Jakarta. Kenapa cara ini berjalan dua puluh lima tahun. Dan kenapa berakhir di November 2026."
+    "en": "Four players run this story. KAI, the state railway behind the commuter trains. The government, which sets the import rules. INKA, Indonesia's own train builder. And CRRC, a Chinese maker of new trains. We'll cover why Tokyo's trains fit Jakarta, why the deal worked for twenty-five years, and why it ended in November 2026.",
+    "id": "Ada empat pemain dalam cerita ini. KAI, perusahaan kereta api negara di balik KRL. Pemerintah, yang menetapkan aturan impor. INKA, pembuat kereta dalam negeri. Dan CRRC, pembuat kereta baru dari Tiongkok. Kita bahas kenapa kereta Tokyo cocok untuk Jakarta, kenapa kesepakatan itu bertahan dua puluh lima tahun, dan kenapa berakhir November 2026."
    },
    "visual": {
     "type": "remotion-diagram",
-    "description": "Diorama 2.5D: kamera ke peta; 1 FIT, 2 DEAL, 3 ENDED"
+    "description": "Diorama 2.5D: peta dunia, empat pemain disorot berurutan: KAI, pemerintah, INKA, CRRC"
    },
    "stage": {
     "engine": "diorama",
@@ -198,49 +198,72 @@
      },
      "to": {
       "look": [
-       -8,
-       22
+       22,
+       30
       ],
-      "dist": 46,
-      "height": 34
+      "dist": 56,
+      "height": 40
      },
      "arrive": 0.9
     },
     "highlight": [
      {
-      "id": "tokyo",
-      "at": 0.12,
-      "until": 0.38
-     },
-     {
-      "id": "jkt",
-      "at": 0.42,
-      "until": 0.68
+      "id": "kai",
+      "at": 0.1,
+      "until": 0.3
      },
      {
       "id": "gov",
-      "at": 0.72,
+      "at": 0.3,
+      "until": 0.5
+     },
+     {
+      "id": "inka",
+      "at": 0.5,
+      "until": 0.7
+     },
+     {
+      "id": "crrc",
+      "at": 0.7,
       "until": 1
      }
     ],
     "callouts": [
      {
-      "id": "tokyo",
-      "text": "1 FIT",
-      "at": 0.12
-     },
-     {
-      "id": "jkt",
-      "text": "2 DEAL",
-      "at": 0.42
+      "id": "kai",
+      "text": "KAI",
+      "at": 0.1,
+      "until": 0.3
      },
      {
       "id": "gov",
-      "text": "3 ENDED",
-      "at": 0.72
+      "text": "RULES",
+      "at": 0.3,
+      "until": 0.5
+     },
+     {
+      "id": "inka",
+      "text": "INKA",
+      "at": 0.5,
+      "until": 0.7
+     },
+     {
+      "id": "crrc",
+      "text": "CRRC",
+      "at": 0.7
      }
     ]
-   }
+   },
+   "sources": [
+    {
+     "url": "https://www.liputan6.com/bisnis/read/6007403/kai-commuter-kembali-terima-2-krl-baru-dari-china",
+     "claim": "KAI Commuter menerima KRL baru; pesanan 16 trainset INKA dan 11 trainset CRRC Qingdao Sifang"
+    },
+    {
+     "url": "https://ekonomi.bisnis.com/read/20261003/98/2009402/impor-krl-bekas-terganjal-usia-kereta",
+     "claim": "Kementerian Perdagangan menetapkan aturan impor barang modal bekas (usia maksimal 20 tahun)"
+    }
+   ]
   },
   {
    "id": "s04",
@@ -731,8 +754,8 @@
    "id": "s12",
    "role": "body",
    "narration": {
-    "en": "The rails are the same width. Japan's regular lines and Java's lines are both one thousand and sixty-seven millimetres apart. Change the rail width and you need new wheels, new axles, often a new train.",
-    "id": "Lebar relnya sama. Jalur kereta biasa di Jepang dan jalur di Jawa sama-sama seribu enam puluh tujuh milimeter. Kalau lebar relnya beda, roda dan as harus diganti, sering kali keretanya juga."
+    "en": "The first size that matches is the rails. Japan's regular lines and Java's lines are both one thousand and sixty-seven millimetres apart. Change the rail width and you need new wheels, new axles, often a new train.",
+    "id": "Ukuran pertama yang cocok adalah relnya. Jalur kereta biasa di Jepang dan jalur di Jawa sama-sama seribu enam puluh tujuh milimeter. Kalau lebar relnya beda, roda dan as harus diganti, sering kali keretanya juga."
    },
    "visual": {
     "type": "remotion-diagram",
@@ -2809,8 +2832,8 @@
    "id": "s47",
    "role": "body",
    "narration": {
-    "en": "The transport ministry added another problem. A train used for twenty to thirty years in Japan might have only about ten years left. After that, Jakarta would be shopping for trains again.",
-    "id": "Kementerian Perhubungan menambah satu masalah. Kereta yang sudah dipakai dua puluh sampai tiga puluh tahun di Jepang mungkin cuma tersisa sekitar sepuluh tahun. Setelah itu, Jakarta harus belanja kereta lagi."
+    "en": "The transport ministry added another problem. Hand-me-downs wear out. A train used for twenty to thirty years in Japan might have only about ten years left. After that, Jakarta would be shopping for trains again.",
+    "id": "Kementerian Perhubungan menambah satu masalah. Barang bekas turunan ada batas pakainya. Kereta yang sudah dipakai dua puluh sampai tiga puluh tahun di Jepang mungkin cuma tersisa sekitar sepuluh tahun. Setelah itu, Jakarta harus belanja kereta lagi."
    },
    "visual": {
     "type": "remotion-diagram",
