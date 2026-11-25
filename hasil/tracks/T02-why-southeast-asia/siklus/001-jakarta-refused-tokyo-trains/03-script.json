@@ -110,7 +110,7 @@
    },
    "visual": {
     "type": "broll",
-    "description": "Footage milik kreator: rangkaian eks Jepang masuk peron (footage di atas dunia diorama)"
+    "description": "Klip CC BY: rangkaian eks Jepang masuk peron Jakarta Kota (Alif Putra Banyuaji), di atas dunia diorama"
    },
    "stage": {
     "engine": "diorama",
@@ -167,7 +167,7 @@
     ]
    },
    "broll": {
-    "own": "krl-02.mp4",
+    "lic": "s02-s17-rangkaian-eks-jepang-di-peron-01.mp4",
     "keywords": [
      "jakarta commuter train"
     ]
@@ -1043,8 +1043,8 @@
     "id": "Gelombang terbesar datang belakangan. Seri 205 milik JR East, kereta komuter Tokyo yang pertama dibuat tahun 1985, mulai jalan di Jakarta tahun 2013."
    },
    "visual": {
-    "type": "remotion-diagram",
-    "description": "Diorama 2.5D: kamera ke t_old; 2013"
+    "type": "broll",
+    "description": "Klip CC BY: rangkaian eks Jepang di peron Jakarta Kota (Alif Putra Banyuaji), di atas dunia diorama"
    },
    "stage": {
     "engine": "diorama",
@@ -1091,7 +1091,13 @@
      "url": "https://en.wikipedia.org/wiki/205_series",
      "claim": "Seri 205 diperkenalkan JNR 1985, dioperasikan KAI Commuter sejak 2013"
     }
-   ]
+   ],
+   "broll": {
+    "lic": "s02-s17-rangkaian-eks-jepang-di-peron-02.mp4",
+    "keywords": [
+     "jakarta commuter train"
+    ]
+   }
   },
   {
    "id": "s18",
@@ -1309,8 +1315,8 @@
     "id": "Pemerintah menolak. Gerbongnya tetap di Jepang. Sebagai gantinya, kereta lama diperbarui dan kereta baru dibeli."
    },
    "visual": {
-    "type": "remotion-diagram",
-    "description": "Diorama 2.5D: kamera ke gov; NO"
+    "type": "broll",
+    "description": "Klip CC BY: rangkaian KRL lama dan gerbong bagasi di lengkung rel (Java Railfanning), di atas dunia diorama"
    },
    "stage": {
     "engine": "diorama",
@@ -1354,7 +1360,13 @@
      "url": "https://www.metrotvnews.com/play/NxGCXq5a-dulu-ditolak-kini-indonesia-mau-impor-krl-bekas-dari-jepang",
      "claim": "2023 pemerintah menolak impor KRL bekas Jepang, memilih retrofit KRL lama dan pengadaan KRL baru"
     }
-   ]
+   ],
+   "broll": {
+    "lic": "s20-s22-latar.mp4",
+    "keywords": [
+     "jakarta commuter train"
+    ]
+   }
   },
   {
    "id": "s23",

@@ -50,16 +50,24 @@ Footage credits (CC BY, via YouTube):
 
 ## Klip yang sudah diterima (2026-11-25)
 
-Dikonversi ke 1920x1080, 30 fps, tanpa audio, disimpan di `produksi/footage-lisensi/T02/` (sengaja bukan `footage-own/`, supaya QA tidak menghitungnya sebagai bukti kreator). File besar ini tidak di-commit; asli ada di unggahan kreator.
+Dikonversi ke 1920x1080, 30 fps, tanpa audio, disimpan di `produksi/footage-lisensi/T02/` (sengaja bukan `footage-own/`, supaya QA tidak menghitungnya sebagai bukti kreator). File video tidak di-commit; yang di-commit hanya `sources.json` (judul, pembuat, URL, lisensi per file, dibaca pipeline untuk katalog). Sumber dikonfirmasi kreator: URL sama dengan baris kandidat di atas.
 
-| File | Durasi | Scene | Sumber | Status lisensi |
-| --- | --- | --- | --- | --- |
-| `cc-s02-s17-peron-01.mp4` | 12,8 dtk | s02, s17 | Rangkaian eks Jepang (KAI) masuk peron, stasiun berkanopi | Sumber belum dikonfirmasi kreator. Nama file cocok dengan baris video Alif Putra Banyuaji (Jakarta Kota), CC BY terverifikasi |
-| `cc-s02-s17-peron-02.mp4` | 15,8 dtk | s02, s17 | Sama, pengambilan kedua | Sama |
-| `cc-s20-s22-latar.mp4` | 22,4 dtk | s20 sampai s22 | Rangkaian KRL lama dan gerbong bagasi hijau di lengkung rel berhutan | Sumber belum dikonfirmasi. Nama file cocok dengan baris Java Railfanning, CC BY terverifikasi |
-| (belum disimpan) | 23,5 dtk | belum dipetakan | Central City, "Jakarta Trains - All the Lines" (https://www.youtube.com/watch?v=6QzYVkNr7eA) | **Bukan CC. Izin dibutuhkan.** Lihat di bawah |
+| File | Durasi | Scene | Video asal | Pembuat | Lisensi |
+| --- | --- | --- | --- | --- | --- |
+| `s02-s17-rangkaian-eks-jepang-di-peron-01.mp4` | 12,8 dtk | s02 | [Stasiun Jakarta Kota: Kompilasi TM 6000, JR 205](https://www.youtube.com/watch?v=8goPWyjEAVg) | Alif Putra Banyuaji | CC BY |
+| `s02-s17-rangkaian-eks-jepang-di-peron-02.mp4` | 15,8 dtk | s17 | sama | Alif Putra Banyuaji | CC BY |
+| `s20-s22-latar.mp4` | 22,4 dtk | s22 | [Delivery of Old Jakarta Commuter Line Trains Set for Maintenance](https://www.youtube.com/watch?v=fMrVbP9zMDs) | Java Railfanning | CC BY |
+| (tidak disimpan) | 23,5 dtk | none | Central City, "Jakarta Trains - All the Lines" | Central City | Bukan CC, lihat di bawah |
 
-Yang perlu dikonfirmasi kreator untuk tiga klip pertama: URL video asal dan menit asalnya. Tanpa itu atribusi yang benar tidak bisa ditulis, dan tebakan dari nama file saja tidak cukup.
+Menit asal di video sumber belum dicatat (tidak diketahui). Atribusi cukup memakai judul, pembuat, dan URL.
+
+Teks atribusi untuk deskripsi video (siap salin, klip yang terpasang):
+
+```
+Footage credits (CC BY, via YouTube):
+- "[4K] Stasiun Jakarta Kota: Kompilasi Kereta TM 6000, JR 205 | KRL Commuter Line (4/6)" by Alif Putra Banyuaji, https://www.youtube.com/watch?v=8goPWyjEAVg. Licensed under Creative Commons Attribution.
+- "Delivery of Old Jakarta Commuter Line Trains Set for Maintenance and Many Others" by Java Railfanning, https://www.youtube.com/watch?v=fMrVbP9zMDs. Licensed under Creative Commons Attribution.
+```
 
 ### Central City, video `6QzYVkNr7eA`
 
@@ -79,6 +87,6 @@ Selain itu, gambarnya interior kereta modern, bukan eks Jepang, jadi tidak cocok
 
 ## Pemakaian di naskah
 
-Belum dihubungkan ke `03-script.json`. `footage.mjs` belum mengenal folder `footage-lisensi/` atau sumber CC BY, dan itu perubahan mesin bersama untuk sesi portfolio terpisah. Sementara, scene s02 tetap memakai `krl-02.mp4` milik kreator.
+Terpasang lewat `broll.lic` di s02, s17, dan s22 (`footage.mjs download` diuji 2026-11-25, katalog mencatat sumber dan lisensi). Atribusi otomatis di deskripsi publish belum ada: tempel teks di atas secara manual saat `06-publish`. QA mencatat K1 (bukti kreator) sebagai temuan sedang lewat `pengecualian_qa`.
 
-Status klip: belum ada yang dipilih di naskah.
+Status klip: 3 terpasang (s02, s17, s22).
