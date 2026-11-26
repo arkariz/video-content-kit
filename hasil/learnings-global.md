@@ -13,13 +13,13 @@ Penilaian kreator atas hasil jadi: isi terlalu kompleks, penjelasan hampir hanya
 1. **Fondasi dulu:** dalam 60 sampai 90 detik pertama (Short: kalimat awal), jelaskan siapa pemainnya, tahapnya apa, dan satu analogi sehari-hari yang dipakai sampai akhir.
 2. **Anggaran konsep:** maksimal 8 istilah atau konsep baru per video panjang dan 3 per Short, tidak lebih dari satu per 45 detik.
 3. **Definisikan saat pertama muncul** dengan bahasa awam, contoh, dan gambar. Yang tidak sempat didefinisikan dibuang.
-4. **Perlihatkan prosesnya:** minimal 70% scene memperlihatkan benda bergerak atau berubah; papan teks maksimal 30%.
+4. **Perlihatkan prosesnya:** setiap shot memperlihatkan benda bergerak atau berubah; tanpa papan teks.
 5. **Satu peta yang tetap** (alur, peta wilayah, atau garis waktu) muncul berulang dengan posisi saat ini disorot.
 6. **Satu pendalaman teknis per video.**
-7. **Bubble boleh menjelaskan** dengan bahasa awam, tidak hanya bercanda.
+7. **Penjelasan dibawa gambar dan label pada benda** dengan bahasa awam; bubble hanya untuk sikap atau lelucon.
 8. **Jangan menambah konsep demi durasi.** Tambah contoh atau ulangi lewat analogi; bila tetap kurang, kreator yang memutuskan.
 
-**Gaya wajib:** ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`, sejak 2026-11-26). Untuk poin 7, penjelasan dibawa label pil pada benda dan gambarnya sendiri; bubble di gaya ini hanya untuk sikap atau lelucon. Poin 4 dan 5 dipenuhi lewat `shots` (satu kalimat satu gambar, wajib ada `motion`) dan `anchor`.
+**Gaya wajib:** ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`, sejak 2026-11-26). Poin 4 dan 5 dipenuhi lewat `shots` (satu kalimat satu gambar, wajib ada `motion`) dan `anchor`.
 
 Referensi gaya dari kreator (latar kaya, banyak aset, banyak gerakan): `produksi/REFERENSI-GAYA.md`.
 

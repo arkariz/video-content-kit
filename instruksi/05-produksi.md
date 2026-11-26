@@ -42,7 +42,7 @@ Komposisi standar (semua membaca `script.json` + `04-assets.json` + captions):
 | `ClipID9x16` | 1080x1920 | Satu `shorts_cut`, audio Indonesia, caption Indonesia |
 | `Thumbnail` | 1280x720 | Still frame untuk 2 varian teks thumbnail |
 
-Aturan visual:
+Aturan visual (selengkapnya `instruksi/referensi/gaya-visual.md`):
 
 - Layout 9:16 dirancang ulang, bukan di-crop dari 16:9.
 - Kode tampil dari file sumber nyata, bukan diketik ulang manual (supaya tidak ada typo atau kode palsu).

@@ -2,36 +2,7 @@
 
 Yang ditiru hanya bahasa visual. Aset, karakter, musik, logo, dan susunan adegan dibuat orisinal; jangan menyalin atau memakai ulang materi referensi.
 
-Arah yang dipilih kreator: **R3, ilustrasi gerak penjelas** (sejak 2026-11-26, menggantikan diorama 2.5D dari 2026-11-25). Kontrak: `instruksi/referensi/gaya-visual.md`.
-
-## R2: Histo Graph, "Kenapa Ada Terowongan di Dalam Gunung Kelud?" (diberikan kreator, 2026-11-25)
-
-https://www.facebook.com/reel/1069633245847151 · 162,6 detik · 9:16
-
-Cara diamati: sekitar 14 frame diambil sepanjang video di browser, tanpa suara. Gerakan dan irama tidak ditonton utuh, jadi kecepatan transisi dan efek suara belum dinilai.
-
-### Yang terlihat
-1. **Satu dunia yang utuh.** Gunung, kawah, desa, sawah, dan terowongan tampil sebagai diorama bersudut pandang (2.5D/3D bergaya kertas), bukan latar datar yang berganti per scene.
-2. **Kamera berpindah di dunia itu:** pandangan udara, mendekat ke mulut terowongan, masuk ke dalam, potongan kawah, lalu kembali menjauh. Lokasi selalu bisa dikenali.
-3. **Layar adalah objek yang dijelaskan.** Hampir tanpa papan teks, tokoh, atau bubble.
-4. **Angka ditempel pada bendanya:** "40 juta m³" di atas danau; ukuran danau mengecil saat angkanya turun.
-5. **Perbandingan berdampingan:** layar dibagi atas dan bawah ("danau besar" lawan "danau kecil") dengan akibat yang terlihat pada desa.
-6. **Analogi berbentuk model:** kolam dengan pompa untuk menjelaskan cara kerja penguras.
-7. **Suasana menjelaskan keadaan:** siang, malam, cahaya lentera di terowongan, jalur bercahaya.
-8. **Kaya lewat pengulangan aset kecil:** ratusan pohon, rumah, petak sawah, palem.
-9. **Gaya gambar konsisten:** warna kalem, garis tinta tipis, arsiran datar bergradasi.
-10. **Caption satu kata** di tengah bawah, putih berkontur hitam, besar.
-
-### Dibanding mesin kita (siklus 001)
-| Aspek | Sekarang | Referensi |
-| --- | --- | --- |
-| Ruang | latar datar berganti per scene | satu dunia berkedalaman |
-| Kamera | zoom 1 sampai 1,08 | terbang, miring, masuk ke dalam objek |
-| Penjelasan | papan teks di atas adegan | benda berubah di dalam dunia |
-| Aset | beberapa tokoh dan bentuk latar | banyak objek kecil berulang |
-| Teks layar | banner, bubble, papan, caption 4 kata | angka pada benda, caption 1 kata |
-
-Terkait aturan "perlihatkan prosesnya" dan "satu peta yang tetap" di `hasil/learnings-global.md`.
+Arah yang dipilih kreator: **R3, ilustrasi gerak penjelas** (sejak 2026-11-26). Aturan: `instruksi/referensi/gaya-visual.md`.
 
 ## R3: Kurzgesagt, "Dying Is Complicated" (diberikan kreator, 2026-11-26)
 
@@ -120,13 +91,3 @@ Bahan: rekaman layar dari kreator, `asddd.mov` (20 detik, R3 3:45–4:05) dan `a
   - kamera miring dari permukaan ke potongan membran (18,3–19 detik) masih berupa crossfade dua adegan, jadi sempat tampak berbayang; aslinya satu kamera yang benar-benar berputar di ruang 3D;
   - sudut kiri atas sedikit lebih gelap (#170341 lawan #280357).
 - Kesimpulan teknis: semua yang datar (label, petir, iris, wipe, partikel, blur kedalaman) bisa ditiru dengan SVG di Remotion. Gerak kamera 3D sungguhan (permukaan yang dilihat miring lalu diputar) butuh lapisan 3D, misalnya `@remotion/three`, kalau ingin sama persis.
-
-### Dibanding eksperimen kita (T02 s04–s06, 2026-11-25)
-| Aspek | Eksperimen kita | R3 |
-| --- | --- | --- |
-| Gambar per kalimat | ya, 2–3 shot per scene | ya, pergantian shot tepat di awal kalimat |
-| Panjang shot | ±3,5 detik | 6,5–8 detik |
-| Peta tetap | tidak ada (tiap shot berdiri sendiri) | siluet tubuh dan tokoh "you" dipakai berulang |
-| Metafora | hanya "gift" yang digambar harfiah | hampir setiap metafora digambar |
-| Emosi benda | ekspresi orang saja | wajah pada sel dan molekul |
-| Gaya | garis tinta tebal, diorama berlapis | datar tanpa garis, glow, blur |

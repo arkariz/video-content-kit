@@ -3,22 +3,61 @@
   "title": "Video script (satu siklus)",
   "description": "Sumber tunggal untuk suara, caption, visual Remotion, dan render semua rasio.",
   "type": "object",
-  "required": ["cycle", "title_options", "promise", "creator_evidence", "scenes", "shorts_cuts"],
+  "required": [
+    "cycle",
+    "title_options",
+    "promise",
+    "creator_evidence",
+    "scenes",
+    "shorts_cuts"
+  ],
   "properties": {
-    "cycle": { "type": "string", "pattern": "^[0-9]{3}-[a-z0-9-]+$", "description": "Nama folder siklus, misalnya 001-flutter-rebuilds" },
-    "title_options": { "type": "array", "items": { "type": "string" }, "minItems": 3, "maxItems": 3 },
-    "thumbnail_text": { "type": "array", "items": { "type": "string", "maxLength": 32 }, "maxItems": 2 },
-    "promise": { "type": "string", "description": "Janji video dalam satu kalimat" },
+    "cycle": {
+      "type": "string",
+      "pattern": "^[0-9]{3}-[a-z0-9-]+$",
+      "description": "Nama folder siklus, misalnya 001-flutter-rebuilds"
+    },
+    "title_options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "thumbnail_text": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 32
+      },
+      "maxItems": 2
+    },
+    "promise": {
+      "type": "string",
+      "description": "Janji video dalam satu kalimat"
+    },
     "creator_evidence": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["what", "scene_id"],
+        "required": [
+          "what",
+          "scene_id"
+        ],
         "properties": {
-          "what": { "type": "string", "description": "Demo kode, data proyek, pengalaman, screen recording" },
-          "scene_id": { "type": "string" },
-          "source_path": { "type": "string", "description": "Path file kode atau rekaman nyata" }
+          "what": {
+            "type": "string",
+            "description": "Demo kode, data proyek, pengalaman, screen recording"
+          },
+          "scene_id": {
+            "type": "string"
+          },
+          "source_path": {
+            "type": "string",
+            "description": "Path file kode atau rekaman nyata"
+          }
         }
       }
     },
@@ -26,8 +65,18 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["term", "say_as"],
-        "properties": { "term": { "type": "string" }, "say_as": { "type": "string" } }
+        "required": [
+          "term",
+          "say_as"
+        ],
+        "properties": {
+          "term": {
+            "type": "string"
+          },
+          "say_as": {
+            "type": "string"
+          }
+        }
       }
     },
     "scenes": {
@@ -35,30 +84,159 @@
       "minItems": 3,
       "items": {
         "type": "object",
-        "required": ["id", "role", "narration", "visual"],
+        "required": [
+          "id",
+          "role",
+          "narration"
+        ],
         "properties": {
-          "id": { "type": "string", "pattern": "^s[0-9]{2}$" },
-          "role": { "enum": ["hook", "context", "body", "rehook", "payoff", "cta"] },
+          "id": {
+            "type": "string",
+            "pattern": "^s[0-9]{2}$"
+          },
+          "role": {
+            "enum": [
+              "hook",
+              "context",
+              "body",
+              "rehook",
+              "payoff",
+              "cta"
+            ]
+          },
           "narration": {
             "type": "object",
-            "required": ["en"],
-            "properties": { "en": { "type": "string" }, "id": { "type": "string" } }
-          },
-          "visual": {
-            "type": "object",
-            "required": ["type"],
+            "required": [
+              "en"
+            ],
             "properties": {
-              "type": { "enum": ["remotion-diagram", "remotion-code", "remotion-text", "remotion-data", "screen-recording", "broll", "creator-camera"] },
-              "description": { "type": "string" },
-              "code_path": { "type": "string" },
-              "on_screen_text": { "type": "string" }
+              "en": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              }
             }
           },
-          "broll_keywords": { "type": "array", "items": { "type": "string" } },
           "duration_ms": {
             "type": "object",
             "description": "Diisi setelah TTS",
-            "properties": { "en": { "type": "integer" }, "id": { "type": "integer" } }
+            "properties": {
+              "en": {
+                "type": "integer"
+              },
+              "id": {
+                "type": "integer"
+              }
+            }
+          },
+          "shots": {
+            "type": "array",
+            "description": "Satu shot per kalimat narasi Inggris (instruksi/referensi/gaya-visual.md bagian 6)",
+            "items": {
+              "type": "object",
+              "required": [
+                "sentence",
+                "show",
+                "motion"
+              ],
+              "properties": {
+                "sentence": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "show": {
+                  "type": "string"
+                },
+                "scale": {
+                  "enum": [
+                    "map",
+                    "place",
+                    "object",
+                    "inside"
+                  ]
+                },
+                "motion": {
+                  "type": "string"
+                },
+                "transition": {
+                  "enum": [
+                    "cut",
+                    "iris",
+                    "wipe",
+                    "push",
+                    "hold"
+                  ]
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "text",
+                      "word"
+                    ],
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "word": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "count": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "as": {
+                      "enum": [
+                        "dots",
+                        "items",
+                        "timeline",
+                        "split"
+                      ]
+                    }
+                  }
+                },
+                "faces": {
+                  "type": "object"
+                },
+                "mood": {
+                  "type": "string"
+                },
+                "bubble": {
+                  "type": "string"
+                },
+                "three_d": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "broll": {
+            "description": "Footage nyata untuk scene dunia nyata: {keywords, avoid} atau {own} atau {lic}"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "url",
+                "claim"
+              ],
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "claim": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       }
@@ -67,20 +245,61 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["name", "scene_ids", "hook_override"],
+        "required": [
+          "name",
+          "scene_ids",
+          "hook_override"
+        ],
         "properties": {
-          "name": { "type": "string" },
-          "scene_ids": { "type": "array", "items": { "type": "string" } },
-          "hook_override": { "type": "string", "description": "Hook khusus versi pendek, maksimal 2 detik bicara" }
+          "name": {
+            "type": "string"
+          },
+          "scene_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "hook_override": {
+            "type": "string",
+            "description": "Hook khusus versi pendek, maksimal 2 detik bicara"
+          }
         }
       }
     },
     "anti_slop": {
       "type": "object",
       "properties": {
-        "text_score_en": { "type": "integer", "minimum": 0, "maximum": 50 },
-        "text_score_id": { "type": "integer", "minimum": 0, "maximum": 50 }
+        "text_score_en": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        },
+        "text_score_id": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50
+        }
       }
+    },
+    "anchor": {
+      "type": "object",
+      "description": "Jangkar visual yang muncul berulang",
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "desc": {
+          "type": "string"
+        }
+      }
+    },
+    "cast": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Pemeran dari produksi/STYLE.md"
     }
   }
 }

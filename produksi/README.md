@@ -25,25 +25,4 @@ Catatan: caption dibuat per scene (waktu relatif scene), bukan dari audio gabung
 
 ## Gaya visual
 
-Gaya kartun penjelasan berlaku untuk semua track: lihat `produksi/STYLE.md` (pemeran, latar, spec adegan `04-stage.json`). Spec data di bawah menjadi papan sisipan di dalam adegan.
-
-## Visual berbasis spec
-
-Isi tiap scene non-b-roll dibaca dari `hasil/tracks/<ID>/siklus/<NNN>/04-visual-spec.json` (kunci = id scene). Komponen dipilih dari `kind`, bukan dari tipe di `03-script.json`, dan dipakai ulang lintas track (gaya per track di `src/themes/`). Isi diukur lalu diskalakan otomatis agar pas layar 16:9 maupun 9:16.
-
-| Komponen | `kind` | Bentuk spec |
-| --- | --- | --- |
-| Diagram | `flow` (default) | `nodes:[{label,sub,tone}]`, `edges:[string \| {label,broken,back}]`, `note` |
-| | `lanes` | `lanes:[{title,nodes,edges}]` |
-| | `timeline` | `blocks:[{title,sub,tone:"lit\|dim\|hot"}]` |
-| | `rows` | `rows:[{label,amount,state \| from,to,toAmount,switchAt,appearAt}]`, `header`, `note` |
-| | `checks` | `items:[text \| {text,mark:"ok\|odd"}]`, `header` |
-| | `gauge` | `zones:[..]`, `target`, `label` |
-| | `stamp` | `lines`, `chips`, `stamp`, `tone`, `side:{label,value}` |
-| | `hub` | `items:[..]`, `hub:{label,sub}` |
-| Code | `code` | `title`, `lines:[{k,v,note}]`, `focus:[idx..]`, `note` |
-| Data | `stats` | `items:[{label,value,tone,sub}]`, `between`, `note` |
-| | `counter` / `bars` / `netting` / `collapse` / `bignum` / `breakdown` | lihat `src/components/DataPanel.tsx` |
-| Teks | (ada `headline`) | `headline`, `sub` |
-
-`tone`: `default`, `good`, `bad`, `hot`, `muted`. Scene tanpa spec jatuh ke teks `on_screen_text`.
+Aturan wajib: `instruksi/referensi/gaya-visual.md`. Cara menggambar tokoh, palet, dan pemeran: `produksi/STYLE.md`. Kontrak di naskah: `produksi/CONTRACT.md`.

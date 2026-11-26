@@ -60,7 +60,7 @@ Berlaku untuk **semua track dan semua siklus**, untuk agent chat maupun agent di
 2. `hasil/learnings-global.md`: aturan agar isi tidak padat dan prosesnya terlihat.
 3. `instruksi/referensi/gaya-cerita.md`: acuan utama cerita untuk semua naskah (keputusan kreator 2026-11-26).
 
-Naskah siklus baru tanpa `shots` per kalimat tidak boleh lanjut ke produksi; QA otomatis menandainya kritis. Diorama 2.5D hanya untuk T02 siklus 001 dan kartun datar (`produksi/STYLE.md` bagian mesin lama) hanya untuk T01 siklus 001 dan thumbnail. Lapisan 3D (`@remotion/three`) sudah disetujui kreator untuk kamera yang berputar di ruang 3D, tetapi belum dibangun. Mesin untuk merender `shots` dibangun agent repo di sesi terpisah.
+Naskah siklus baru tanpa `shots` per kalimat tidak boleh lanjut ke produksi; QA otomatis menandainya kritis. T01 siklus 001 dan T02 siklus 001 sudah dirender dengan mesin lama dan tidak dijadikan acuan. Lapisan 3D (`@remotion/three`) sudah disetujui kreator untuk kamera yang berputar di ruang 3D, tetapi belum dibangun. Mesin untuk merender `shots` dibangun agent repo di sesi terpisah.
 
 ## Mode gate
 
@@ -78,7 +78,7 @@ node --env-file=.env scripts/pipeline/run.mjs --track <ID> --siklus <NNN> [--dry
 ```
 
 - Syarat input: `01-riset-viral.md`, `02-brief.md`, `03-script.json` (dengan bidang visual sesuai `produksi/CONTRACT.md`), `03-naskah.md`. Pipeline memvalidasi kontrak, lalu TTS, caption, footage, render, QA otomatis, dan paket review di `hasil/review/`.
-- Dokumentasi: `produksi/PIPELINE.md` (tahap, gate, kebutuhan), `produksi/CONTRACT.md` (kontrak visual), `produksi/STYLE.md` (gaya kartun penjelasan).
+- Dokumentasi: `produksi/PIPELINE.md` (tahap, gate, kebutuhan), `produksi/CONTRACT.md` (kontrak visual), `produksi/STYLE.md` (bahasa bentuk, palet, pemeran).
 - Pipeline berhenti pada QA kritis (kode 2), pada tahap LLM yang file-nya belum ada (kode 3), dan menunggu kreator. **QA otomatis tidak pernah menyatakan LULUS final**; pemeriksaan manual tetap wajib. Perbaikan mekanis: `scripts/pipeline/autofix.mjs`.
 - Publish hanya lewat `scripts/pipeline/approve.mjs` setelah kreator mengetik SETUJU untuk siklus itu. Jangan memanggil API platform dengan jalur lain.
 - Mesin visual dipakai bersama semua track: ubah komponen bersama (`produksi/remotion/src`) hanya di sesi terpisah dan jangan merusak track lain.

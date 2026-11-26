@@ -26,7 +26,7 @@ Gabungkan keahlian kreator dengan permintaan pasar. Setiap kandidat ditulis spes
 | Nilai penonton | Tier RPM dari referensi; negara penonton yang dominan |
 | Sponsor | Brand yang sudah mensponsori channel di niche ini |
 | Risiko kebijakan | Masuk topik sensitif (keuangan, kesehatan, hukum) yang berisiko bila memakai suara AI? |
-| Kecocokan produksi | Bisa divisualkan dengan Remotion (diagram, kode, data) + footage? |
+| Kecocokan produksi | Bisa divisualkan sebagai ilustrasi gerak (proses, skala, benda yang bisa digambar) + footage? |
 | Evergreen | Apakah video masih relevan 12 bulan lagi? |
 
 Catat semua data dan tautannya di `hasil/00-riset-niche/kandidat-niche.md`. Data yang tidak bisa diverifikasi ditandai `belum terverifikasi`, jangan dikarang.

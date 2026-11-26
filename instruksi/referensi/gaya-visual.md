@@ -1,6 +1,6 @@
 # Gaya visual wajib: ilustrasi gerak penjelas (R3)
 
-**Berlaku untuk semua track dan semua siklus sejak 2026-11-26, bagi agent chat maupun agent di repo.** Dipilih kreator. Menggantikan `instruksi/referensi/gaya-diorama.md`. Pengecualian hanya siklus yang sudah dirender sebelum aturan ini: T01 siklus 001 (kartun datar) dan T02 siklus 001 (diorama). QA otomatis menandai **kritis** bila scene siklus baru tidak punya `shots`.
+**Berlaku untuk semua track dan semua siklus sejak 2026-11-26, bagi agent chat maupun agent di repo.** Dipilih kreator. Pengecualian hanya siklus yang sudah dirender sebelum aturan ini (T01 siklus 001 dan T02 siklus 001); keduanya bukan acuan. QA otomatis menandai **kritis** bila scene siklus baru tidak punya `shots`.
 
 Dipakai bersama `instruksi/referensi/gaya-cerita.md` (cerita) dan `hasil/learnings-global.md` (kepadatan dan fondasi). Dasar pengamatan: Kurzgesagt "Dying Is Complicated", dianalisa per kalimat dan per frame, lalu dua klipnya direproduksi di Remotion (`produksi/REFERENSI-GAYA.md`, bagian R3). **Yang ditiru hanya teknik.** Tokoh, aset, huruf, musik, warna merek, dan susunan adegan mereka tidak disalin.
 
@@ -99,5 +99,5 @@ Per scene, satu shot per kalimat (urut sesuai narasi Inggris):
 
 ## 8. Untuk agent repo
 - Contoh kerja: `produksi/remotion/src/experiment/` (scene per kalimat s04–s06, pemeran T02, reproduksi R3 `repAsd.tsx` dan `repAsddd.tsx`).
-- **Mesin bersama untuk merender `shots` belum dibangun.** Sampai ada, produksi siklus baru menunggu mesin itu; jangan kembali ke diorama atau kartun datar. Pembangunannya dilakukan di sesi terpisah dan tidak boleh merusak render siklus lama.
-- Aturan ini tidak mengubah thumbnail; thumbnail tetap memakai kontrak `thumbnails` di `produksi/CONTRACT.md`.
+- **Mesin bersama untuk merender `shots` belum dibangun.** Sampai ada, produksi siklus baru menunggu mesin itu; jangan memakai mesin lama untuk siklus baru. Pembangunannya dilakukan di sesi terpisah dan tidak boleh merusak render siklus lama.
+- Thumbnail memakai kontrak `thumbnails` di `produksi/CONTRACT.md`.

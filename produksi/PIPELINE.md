@@ -10,7 +10,7 @@ node --env-file=.env scripts/pipeline/approve.mjs --track T01 --siklus 001    # 
 node scripts/pipeline/approve.mjs --track T01 --siklus 001 --revisi "catatan" # minta revisi
 ```
 
-Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); QA menandai kritis bila scene siklus baru tidak punya `shots` (kecuali scene footage). Mesin render `shots` belum dibangun, jadi siklus baru berhenti di QA sampai mesin itu ada. T01-001 (kartun) dan T02-001 (diorama) tetap dirender dengan mesin lama.
+Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); QA menandai kritis bila scene siklus baru tidak punya `shots` (kecuali scene footage). Mesin render `shots` belum dibangun, jadi siklus baru berhenti di QA sampai mesin itu ada. T01-001 dan T02-001 tetap dirender dengan mesin lama.
 
 ## Tahap
 
@@ -18,10 +18,10 @@ Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); 
 | --- | --- | --- | --- |
 | riset-brief | LLM | `01-riset-viral.md`, `02-brief.md` | ya |
 | naskah | LLM | `03-script.json`, `03-naskah.md` (sumber per klaim, stop-slop ≥ 35) | ya |
-| visual | LLM | `04-visual-spec.json`, `04-stage.src.mjs` (→ `04-stage.base.json`), `04-broll-plan.json` | ya |
+| visual | LLM | `anchor`, `cast`, dan `shots` per kalimat di `03-script.json`, `broll` untuk scene dunia nyata | ya |
 | tts-en, caption-en | skrip | audio, caption (disamakan dengan naskah, hasil STT mentah disimpan) | ya |
 | footage | skrip | pilih otomatis footage nyata berlisensi (skor tag + durasi, tanpa duplikat), unduh, catat lisensi | ya |
-| adegan | skrip | scene footage jadi latar nyata + satu komentator kartun | ya |
+| adegan | skrip | scene footage jadi latar nyata | ya |
 | render | skrip | Master16x9 + semua Shorts di `shorts_cuts` | ya |
 | qa | skrip | `05-qa.auto.json/.md`; **kritis = berhenti** | selalu jalan |
 | paket-review | skrip | `hasil/review/<ID>-<siklus>/index.html` | selalu jalan |
