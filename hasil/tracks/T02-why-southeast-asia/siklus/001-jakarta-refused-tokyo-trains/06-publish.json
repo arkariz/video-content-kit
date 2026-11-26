@@ -114,7 +114,8 @@
       "cara": "manual",
       "platforms": [
         "youtube",
-        "facebook"
+        "facebook",
+        "instagram"
       ],
       "urls": [
         {
@@ -124,6 +125,10 @@
         {
           "platform": "facebook",
           "url": "https://www.facebook.com/share/r/1CZcFPZtcG/"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/reel/DgMeilctoqF/"
         }
       ],
       "tayang": "2026-11-26"
@@ -133,7 +138,8 @@
       "cara": "manual",
       "platforms": [
         "youtube",
-        "facebook"
+        "facebook",
+        "instagram"
       ],
       "urls": [
         {
@@ -143,6 +149,10 @@
         {
           "platform": "facebook",
           "url": "https://www.facebook.com/share/r/1MghokmAqm/"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/reel/DgMevlyBmuQ/"
         }
       ],
       "tayang": "2026-11-26"
