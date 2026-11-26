@@ -4,7 +4,7 @@ import React from "react";
 import { defineShots } from "@r3";
 import { T02 } from "@r3/three";
 import {
-  A, Arrow, Archipelago, Ball, Bank, Bills, Box, Bucket, Burst, Cable, Calendar, Cell, Check, City, Clock, Coin, Console, Cross, Cyl, G, Gate, Gift, Gr, Grid, Guy, House, In, Isle, L, M, Move, Num, Palm, Phone, Pile, Pipe, Pole, Progress,
+  THREE, A, Arrow, Archipelago, Ball, Bank, Bills, Box, Bucket, Burst, Cable, Calendar, Cell, Check, City, Clock, Coin, Console, Cross, Cyl, G, Gate, Gift, Gr, Grid, Guy, House, In, Isle, L, M, Move, Num, Palm, Phone, Pile, Pipe, Pole, Progress,
   R, Road, Rod, Router, S, Scale, Shop, Stack, Tower, V3, Wallet, Wave, Arrow as Ar, bob, go, mix, sc, seg, BLU, GRN, GOLD, PUR,
 } from "../../../../../produksi/remotion/src/r3/soft/kit";
 

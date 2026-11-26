@@ -1,0 +1,7 @@
+{
+  "_catatan": "Musik latar dipakai ulang dari T01 siklus 004 (ElevenLabs Music, akun yang sama) supaya tidak memakai kredit baru. Efek suara label dan transisi dari produksi/sfx.",
+  "target_lufs": -14,
+  "music": { "prompt": "dipakai ulang dari T01/004", "volume": 0.2 },
+  "sfx": {},
+  "cues": []
+}

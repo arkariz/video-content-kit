@@ -1,0 +1,2346 @@
+{
+  "cycle": "004-karhutla-who-lit-the-match",
+  "title_options": [
+    "Indonesia Is Burning. Who Lit the Match?",
+    "2.9 Million Hectares Burned. Who Pays?",
+    "Why Indonesia Keeps Burning, and Who Gets Away With It"
+  ],
+  "thumbnail_text": [
+    "WHO LIT IT?",
+    "2.9M BURNED"
+  ],
+  "promise": "After watching, you can explain why drained peat burns, what is proven and unproven about the 2026 fires, and where enforcement has fallen short.",
+  "creator_evidence": [
+    {
+      "what": "Sumber berbahasa Indonesia (Detik, Kompas, Mongabay Indonesia, Katadata, Suara) tentang tersangka korporasi, segel konsesi, denda belum tertagih, dan data Jambi. Footage milik kreator belum ada",
+      "scene_id": "s14"
+    }
+  ],
+  "pronunciations": [
+    {
+      "term": "Bumitama Agri",
+      "say_as": "Boo-mee-tah-mah Agri"
+    },
+    {
+      "term": "Jambi",
+      "say_as": "Jahm-bee"
+    },
+    {
+      "term": "Surya Darmadi",
+      "say_as": "Soor-ya Dar-mah-dee"
+    },
+    {
+      "term": "Sawit Watch",
+      "say_as": "Sah-wit Watch"
+    },
+    {
+      "term": "Riau",
+      "say_as": "Ree-ow"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "role": "hook",
+      "narration": {
+        "en": "It's morning in Borneo, and you can't see the end of your own street. The sky is orange, and every breath tastes like smoke.",
+        "id": "Pagi di Kalimantan, dan ujung jalanmu sendiri tidak terlihat. Langitnya jingga, dan udaranya berasa asap."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Komo di jalan desa berkabut asap tebal",
+          "scale": "place",
+          "motion": "asap bergulung menutup rumah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "NO VIEW",
+              "word": "see"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "matahari jingga redup di balik asap, Komo batuk",
+          "scale": "place",
+          "motion": "matahari meredup, partikel abu melayang",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "SMOKE",
+              "word": "smoke"
+            }
+          ]
+        }
+      ],
+      "sources": [],
+      "duration_ms": {
+        "en": 7291
+      }
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": {
+        "en": "Between January and October 2026, fires burned nearly two point nine million hectares of Indonesia, according to one satellite monitor. That is close to the size of Belgium.",
+        "id": "Antara Januari dan Oktober 2026, kebakaran menghanguskan hampir 2,9 juta hektare Indonesia, menurut satu pemantau satelit. Itu mendekati luas Belgia."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta Indonesia dari atas, titik api menyala di Sumatra dan Kalimantan, satelit melintas",
+          "scale": "place",
+          "motion": "titik api bertambah satu per satu",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "2.9M HECTARES",
+              "word": "million"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "siluet bidang seluas Belgia di samping area terbakar",
+          "scale": "place",
+          "motion": "bidang diletakkan menutupi area",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "≈ BELGIUM",
+              "word": "Belgium"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 11285
+      }
+    },
+    {
+      "id": "s03",
+      "role": "rehook",
+      "narration": {
+        "en": "So who lit the match? The honest answer is that, in many places, nobody has proven it yet. The sharper questions are who made the land ready to burn, and who pays.",
+        "id": "Siapa yang menyalakan korek? Jawaban jujurnya: sering kali belum ada yang membuktikan. Pertanyaan yang lebih tajam: siapa yang membuat tanahnya mudah terbakar, dan siapa yang membayar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "korek api raksasa di atas peta, tanda tanya",
+          "scale": "place",
+          "motion": "korek menggores, api kecil muncul",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "WHO?",
+              "word": "who"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "kaca pembesar di atas lahan hangus tanpa jejak pelaku",
+          "scale": "place",
+          "motion": "kaca pembesar menyapu, tidak menemukan apa-apa",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "UNPROVEN",
+              "word": "proven"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "tanah kering retak dan dompet pembayar",
+          "scale": "place",
+          "motion": "tanah retak, dompet terbuka",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "WHO PREPARED?",
+              "word": "ready"
+            },
+            {
+              "text": "WHO PAYS?",
+              "word": "pays"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 10820
+      }
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": {
+        "en": "Meet the players. People like you, companies holding concessions, and the state that grants them.",
+        "id": "Kenali para pemainnya. Warga seperti kamu, perusahaan yang memegang konsesi, dan negara yang menerbitkan izin itu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tiga pemain muncul di panggung peta",
+          "scale": "place",
+          "motion": "tiga lampu sorot menyala",
+          "transition": "wipe",
+          "labels": []
+        },
+        {
+          "sentence": 2,
+          "show": "Komo, gedung perusahaan memegang peta bidang, Pak Aturan memegang stempel",
+          "scale": "place",
+          "motion": "tokoh muncul sesuai urutan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "YOU",
+              "word": "you"
+            },
+            {
+              "text": "COMPANIES",
+              "word": "companies"
+            },
+            {
+              "text": "THE STATE",
+              "word": "state"
+            }
+          ]
+        }
+      ],
+      "sources": [],
+      "duration_ms": {
+        "en": 5341
+      }
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": {
+        "en": "A concession is a block of land the state licenses to a company, for example to grow oil palm, or trees for paper. Whoever holds that licence is expected to keep it from burning.",
+        "id": "Konsesi adalah bidang lahan yang disewakan negara kepada perusahaan untuk dipakai, misalnya untuk kelapa sawit, atau pohon bahan kertas. Siapa pun pemegang izinnya wajib menjaganya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "bidang tanah dipatok, satu setengah ditanami sawit, setengah pohon kertas",
+          "scale": "place",
+          "motion": "patok menancap, tanaman tumbuh",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "CONCESSION",
+              "word": "concession"
+            },
+            {
+              "text": "OIL PALM",
+              "word": "palm"
+            },
+            {
+              "text": "PAPER TREES",
+              "word": "paper"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "pemegang izin memegang selang air di tepi bidang",
+          "scale": "place",
+          "motion": "selang diarahkan, perisai muncul",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "DUTY",
+              "word": "expected"
+            }
+          ]
+        }
+      ],
+      "sources": [],
+      "duration_ms": {
+        "en": 10728
+      }
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": {
+        "en": "Now, two numbers that often get mixed up. Government data quoted by the press showed about two hundred and two thousand hectares burned through July. The satellite monitor counted nearly two point nine million through October.",
+        "id": "Sekarang dua angka yang sering tertukar. Data resmi yang dikutip media menunjukkan sekitar 202 ribu hektare terbakar sampai Juli. Pemantau satelit tadi menghitung hampir 2,9 juta sampai Oktober."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua batang angka berdampingan bergoyang",
+          "scale": "place",
+          "motion": "dua batang muncul",
+          "transition": "wipe",
+          "labels": []
+        },
+        {
+          "sentence": 2,
+          "show": "batang pendek dengan kalender sampai Juli",
+          "scale": "place",
+          "motion": "kalender berhenti di Juli",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "202K, TO JULY",
+              "word": "July"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "batang tinggi dengan kalender sampai Oktober",
+          "scale": "place",
+          "motion": "batang menjulang, satelit di atasnya",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "2.9M, TO OCT",
+              "word": "October"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.suara.com/news/2026/10/02/070500/luas-karhutla-indonesia-capai-202-ribu-hektare-hingga-juli-2026",
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 12260
+      }
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": {
+        "en": "Different months and different methods, so you cannot set them head to head. Both still point to a very bad year.",
+        "id": "Periodenya berbeda dan metodenya berbeda, jadi kedua angka itu tidak bisa diadu langsung. Tetapi keduanya menunjuk tahun yang sangat berat."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "timbangan dengan dua benda berbeda bentuk",
+          "scale": "place",
+          "motion": "timbangan bergoyang lalu ditutup silang",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "NOT LIKE-FOR-LIKE",
+              "word": "methods"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "peta dengan api, kalender 2026",
+          "scale": "place",
+          "motion": "api berdenyut bersamaan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "BAD YEAR",
+              "word": "year"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.suara.com/news/2026/10/02/070500/luas-karhutla-indonesia-capai-202-ribu-hektare-hingga-juli-2026",
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 7059
+      }
+    },
+    {
+      "id": "s08",
+      "role": "rehook",
+      "narration": {
+        "en": "To see why these fires are so stubborn, look under your feet. Much of the danger sits in a soil called peat.",
+        "id": "Untuk paham kenapa apinya begitu bandel, lihat ke bawah kakimu. Banyak lahan yang terbakar berdiri di atas gambut."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kamera menembus tanah di bawah kaki Komo",
+          "scale": "place",
+          "motion": "kamera turun ke lapisan tanah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "LOOK DOWN",
+              "word": "feet"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "penampang lapisan gambut cokelat gelap",
+          "scale": "place",
+          "motion": "lapisan menyala",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "PEAT",
+              "word": "peat"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://agris.fao.org/search/en/records/690c9d6ee36ca6284360dd89"
+      ],
+      "duration_ms": {
+        "en": 6316
+      }
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": {
+        "en": "Peat is half-rotted plants, piled up in water over thousands of years. Kept wet, it behaves like a soaked sponge that is hard to light.",
+        "id": "Gambut adalah sisa tanaman yang baru setengah lapuk, menumpuk di air selama ribuan tahun. Saat basah, ia seperti spons yang sulit dibakar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "daun dan batang menumpuk dalam air, jam pasir",
+          "scale": "place",
+          "motion": "daun jatuh dan menumpuk",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "HALF-ROTTED",
+              "word": "half-rotted"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "spons besar penuh air, api kecil mati saat menyentuh",
+          "scale": "place",
+          "motion": "api mendesis padam",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "WET SPONGE",
+              "word": "sponge"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://earthobservatory.nasa.gov/features/IndonesianFires/page2.php"
+      ],
+      "duration_ms": {
+        "en": 8127
+      }
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": {
+        "en": "Then come the ditches. Canals are dug to pull the water out, so crops like oil palm or paper trees can grow there.",
+        "id": "Lalu datang parit. Kanal digali untuk membuang air, supaya sawit atau pohon kertas bisa tumbuh di tanah itu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "ekskavator menggali kanal lurus di gambut",
+          "scale": "place",
+          "motion": "kanal tergali memanjang",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "CANALS",
+              "word": "ditches"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "air mengalir keluar lewat kanal, bibit tumbuh di tanah yang mengering",
+          "scale": "place",
+          "motion": "muka air turun, tanaman naik",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "WATER OUT",
+              "word": "water"
+            },
+            {
+              "text": "CROPS IN",
+              "word": "crops"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://earthobservatory.nasa.gov/features/IndonesianFires/page2.php"
+      ],
+      "duration_ms": {
+        "en": 6455
+      }
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": {
+        "en": "The sponge dries from the top down. What once resisted fire turns into a deep store of fuel.",
+        "id": "Spons itu mengering dari atas. Yang tadinya penahan api berubah menjadi bahan bakar yang dalam."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "spons mengering dan mengecil, warna pudar",
+          "scale": "place",
+          "motion": "garis air turun",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "DRYING",
+              "word": "dries"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "blok gambut kering seperti arang dalam",
+          "scale": "place",
+          "motion": "warna berubah menjadi arang membara",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "FUEL",
+              "word": "fuel"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://earthobservatory.nasa.gov/features/IndonesianFires/page2.php",
+        "https://agris.fao.org/search/en/records/690c9d6ee36ca6284360dd89"
+      ],
+      "duration_ms": {
+        "en": 5991
+      }
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": {
+        "en": "A twenty twenty-five study of Sumatra and Borneo compared peatland with and without canals. Drained peat showed up to thirteen times more fire hotspots per square kilometre.",
+        "id": "Studi 2025 di Sumatra dan Kalimantan menemukan gambut yang dikeringkan punya kepadatan titik panas sampai 13 kali lebih tinggi daripada gambut tanpa kanal."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua petak gambut, satu berkanal satu utuh, tahun 2025",
+          "scale": "place",
+          "motion": "kaca pembesar berpindah antara keduanya",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "2025 STUDY",
+              "word": "study"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "grid titik panas: satu titik di petak utuh, tiga belas di petak berkanal",
+          "scale": "place",
+          "motion": "titik menyala satu per satu sampai tiga belas",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "UP TO 13×",
+              "word": "thirteen"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://agris.fao.org/search/en/records/690c9d6ee36ca6284360dd89"
+      ],
+      "duration_ms": {
+        "en": 11192
+      }
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": {
+        "en": "A peat fire can creep underground. It can smoulder out of sight, sometimes for months, and it is very hard to put out.",
+        "id": "Api gambut bisa merayap di bawah tanah. Ia membara tanpa lidah api, kadang berbulan-bulan, dan sangat sulit dipadamkan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "penampang: bara menjalar di bawah permukaan",
+          "scale": "place",
+          "motion": "bara bergerak di lapisan bawah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "UNDERGROUND",
+              "word": "underground"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "petugas menyiram permukaan, asap tetap keluar dari retakan",
+          "scale": "place",
+          "motion": "kalender berganti bulan, asap tak berhenti",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MONTHS",
+              "word": "months"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://earthobservatory.nasa.gov/features/IndonesianFires/page2.php"
+      ],
+      "duration_ms": {
+        "en": 6966
+      }
+    },
+    {
+      "id": "s14",
+      "role": "rehook",
+      "narration": {
+        "en": "And the smoke ends up in people's chests. In Jambi province alone, health officials recorded more than seventy-six thousand respiratory infections from early August to mid October.",
+        "id": "Asap itu masuk ke dada orang. Di satu provinsi saja, Jambi, dinas kesehatan mencatat lebih dari 76 ribu kasus infeksi saluran napas antara awal Agustus dan pertengahan Oktober."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "asap masuk ke paru-paru kartun yang sedih",
+          "scale": "place",
+          "motion": "paru-paru memudar kelabu",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "YOUR LUNGS",
+              "word": "chests"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "antrean warga bermasker di klinik, penghitung naik",
+          "scale": "place",
+          "motion": "antrean memanjang, kalender Agustus sampai Oktober",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "76,000+ CASES",
+              "word": "seventy-six"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "http://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/"
+      ],
+      "duration_ms": {
+        "en": 11192
+      }
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": {
+        "en": "The haze also crosses borders. It reached Malaysia and Singapore, and Singapore's environment agency asked ten companies for information.",
+        "id": "Asapnya juga menyeberang batas. Kabut asap sampai ke Malaysia dan Singapura, dan badan lingkungan Singapura meminta keterangan dari sepuluh perusahaan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta: asap bergerak ke utara melintasi laut",
+          "scale": "place",
+          "motion": "awan asap melayang ke negara tetangga",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "HAZE",
+              "word": "haze"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "dua kota tetangga tertutup kabut, surat permintaan dikirim ke sepuluh gedung",
+          "scale": "place",
+          "motion": "amplop terbang ke sepuluh gedung",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MALAYSIA",
+              "word": "Malaysia"
+            },
+            {
+              "text": "10 COMPANIES",
+              "word": "ten"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows",
+        "https://news.mongabay.com/2026/11/indonesia-fires-test-palm-oil-certification-scheme-as-ngos-question-rspo-accountability/"
+      ],
+      "duration_ms": {
+        "en": 8499
+      }
+    },
+    {
+      "id": "s16",
+      "role": "body",
+      "narration": {
+        "en": "So why would fire be used at all? One reason is money, because burning is a cheap way to clear land.",
+        "id": "Lalu kenapa ada api sejak awal? Salah satu alasannya uang. Membakar adalah cara murah membersihkan lahan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "korek api di samping lahan penuh semak",
+          "scale": "place",
+          "motion": "tanda tanya muncul",
+          "transition": "wipe",
+          "labels": []
+        },
+        {
+          "sentence": 2,
+          "show": "dua cara membersihkan lahan: alat berat mahal dan korek murah",
+          "scale": "place",
+          "motion": "label harga muncul di keduanya",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "CHEAP",
+              "word": "cheap"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "http://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/"
+      ],
+      "duration_ms": {
+        "en": 6130
+      }
+    },
+    {
+      "id": "s17",
+      "role": "body",
+      "narration": {
+        "en": "Sawit Watch, a palm oil watchdog group, estimates fire can cut clearing costs by up to half compared with machines. That is their estimate, not an audited figure.",
+        "id": "Sawit Watch, organisasi pemantau sawit, memperkirakan membakar bisa memangkas biaya sampai separuh dibandingkan alat berat. Itu perkiraan mereka, bukan hasil audit."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua tumpukan koin, tumpukan api setengah tinggi tumpukan ekskavator",
+          "scale": "place",
+          "motion": "tumpukan menyusut jadi setengah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "UP TO HALF",
+              "word": "half"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "catatan perkiraan dengan tanda kira-kira",
+          "scale": "place",
+          "motion": "tanda kira-kira berdenyut",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "ESTIMATE",
+              "word": "estimate"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "http://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/"
+      ],
+      "duration_ms": {
+        "en": 11378
+      }
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "narration": {
+        "en": "On paper, clearing land by burning is banned. A two thousand and nine environment law says so.",
+        "id": "Di atas kertas, membuka lahan dengan membakar dilarang. Undang-undang lingkungan 2009 melarangnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Pak Aturan mengangkat stempel larangan di atas api",
+          "scale": "place",
+          "motion": "stempel menghantam",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "BANNED",
+              "word": "banned"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "buku undang-undang terbuka dengan tahun 2009",
+          "scale": "place",
+          "motion": "halaman membuka",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "LAW 32/2009",
+              "word": "law"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://news.detik.com/berita/d-3051823/uu-lingkungan-hidup-izinkan-masyarakat-bakar-lahan"
+      ],
+      "duration_ms": {
+        "en": 5712
+      }
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "narration": {
+        "en": "There is an exception for local custom. A family may burn up to two hectares for local crop varieties, with a firebreak around it.",
+        "id": "Tetapi ada pengecualian untuk kearifan lokal: sebuah keluarga boleh membakar maksimal dua hektare, untuk tanaman varietas lokal, dengan sekat bakar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "ladang kecil keluarga di tepi hutan",
+          "scale": "place",
+          "motion": "lampu menyorot ladang kecil",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "EXCEPTION",
+              "word": "exception"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "dua petak kecil dikelilingi parit sekat, keluarga menjaga",
+          "scale": "place",
+          "motion": "sekat tergambar mengelilingi petak",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "≤ 2 HECTARES",
+              "word": "two"
+            },
+            {
+              "text": "FIREBREAK",
+              "word": "firebreak"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://news.detik.com/berita/d-3051823/uu-lingkungan-hidup-izinkan-masyarakat-bakar-lahan"
+      ],
+      "duration_ms": {
+        "en": 7477
+      }
+    },
+    {
+      "id": "s20",
+      "role": "rehook",
+      "narration": {
+        "en": "So whose land burned this year? On November thirteenth, a study pointed to burned ground inside concessions tied to large listed firms.",
+        "id": "Jadi di tanah siapa api tahun ini terjadi? Pada 13 November, sebuah studi menunjuk lahan terbakar di dalam konsesi milik perusahaan besar yang tercatat di bursa."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta bidang konsesi dengan tanda tanya",
+          "scale": "place",
+          "motion": "bidang menyala satu per satu",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "WHOSE LAND?",
+              "word": "land"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "laporan studi dibuka, satelit menunjuk bidang hangus",
+          "scale": "place",
+          "motion": "satelit menyorot bidang",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NOV 13 STUDY",
+              "word": "study"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 8731
+      }
+    },
+    {
+      "id": "s21",
+      "role": "body",
+      "narration": {
+        "en": "The Rainforest Action Network and Nusantara Atlas found more than fourteen thousand six hundred burned hectares in one pulpwood concession that supplies Asia Pulp and Paper. The paper company said it was unable to comment.",
+        "id": "Rainforest Action Network dan Nusantara Atlas menemukan lebih dari 14.600 hektare terbakar di satu konsesi pemasok bubur kertas bagi Asia Pulp and Paper. Perusahaan itu menyatakan tidak bisa berkomentar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "konsesi pohon kertas hangus luas",
+          "scale": "place",
+          "motion": "area hitam melebar, penghitung naik",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "14,600+ HA",
+              "word": "fourteen"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "gedung perusahaan dengan jendela tertutup",
+          "scale": "place",
+          "motion": "tirai menutup",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NO COMMENT",
+              "word": "comment"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 13514
+      }
+    },
+    {
+      "id": "s22",
+      "role": "body",
+      "narration": {
+        "en": "In a West Borneo palm concession run by First Resources, they mapped at least three thousand seven hundred burned hectares. The company says it follows a zero-burning policy.",
+        "id": "Di konsesi sawit milik anak usaha First Resources di Kalimantan Barat, mereka mencatat setidaknya 3.742 hektare terbakar. Perusahaan itu menyatakan menjalankan kebijakan tanpa bakar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "konsesi sawit dengan bercak hangus",
+          "scale": "place",
+          "motion": "bercak menyebar",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "3,700+ HA",
+              "word": "three"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "perusahaan memegang tanda larangan api",
+          "scale": "place",
+          "motion": "tanda diangkat",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "ZERO-BURNING",
+              "word": "zero-burning"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 10356
+      }
+    },
+    {
+      "id": "s23",
+      "role": "body",
+      "narration": {
+        "en": "In a Bumitama Agri concession, the study counted four thousand four hundred and seventy-three hectares, eighty-eight percent of it on peat. The company said it was still investigating.",
+        "id": "Di satu konsesi Bumitama Agri, luasnya 4.473 hektare, dan 88 persennya berada di gambut. Perusahaan itu menyatakan masih menyelidiki."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "bidang terbakar dengan lapisan gambut, grid delapan puluh delapan dari seratus",
+          "scale": "place",
+          "motion": "titik menyala sampai 88",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "4,473 HA",
+              "word": "four"
+            },
+            {
+              "text": "88% PEAT",
+              "word": "eighty-eight"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "petugas perusahaan dengan senter di lahan hangus",
+          "scale": "place",
+          "motion": "senter menyapu",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "INVESTIGATING",
+              "word": "investigating"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 10913
+      }
+    },
+    {
+      "id": "s24",
+      "role": "body",
+      "narration": {
+        "en": "Read this carefully. The study mapped where it burned. It did not establish how the fires started.",
+        "id": "Baca ini dengan teliti. Studi itu memetakan di mana api terjadi. Ia tidak menetapkan bagaimana api itu dinyalakan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kaca pembesar besar di atas laporan",
+          "scale": "place",
+          "motion": "kaca mendekat",
+          "transition": "wipe",
+          "labels": []
+        },
+        {
+          "sentence": 2,
+          "show": "peta dengan bidang terbakar ditandai",
+          "scale": "place",
+          "motion": "penanda muncul",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "WHERE",
+              "word": "where"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "korek api dengan tanda tanya dan silang",
+          "scale": "place",
+          "motion": "tanda tanya berputar",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NOT HOW",
+              "word": "how"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 6223
+      }
+    },
+    {
+      "id": "s25",
+      "role": "body",
+      "narration": {
+        "en": "Alex Helan of the Rainforest Action Network, one of the study's authors, put it this way. The question is less who lit the match than who drained the peat and created the conditions.",
+        "id": "Alex Helan dari Rainforest Action Network merumuskannya begini: soalnya bukan benar-benar siapa menyalakan korek, tetapi siapa yang mengeringkan gambut dan menciptakan kondisinya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peneliti berbicara di depan peta",
+          "scale": "place",
+          "motion": "mikrofon menyala",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "RAN",
+              "word": "Rainforest"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "korek mengecil, kanal dan gambut kering membesar",
+          "scale": "place",
+          "motion": "fokus pindah dari korek ke kanal",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "WHO DRAINED?",
+              "word": "drained"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+      ],
+      "duration_ms": {
+        "en": 10077
+      }
+    },
+    {
+      "id": "s26",
+      "role": "rehook",
+      "narration": {
+        "en": "There is also a serious counterpoint. The palm certification body, the RSPO, cites data showing nearly ninety percent of land burned through September lay outside palm concessions.",
+        "id": "Ada juga bantahan yang kuat. RSPO, badan sertifikasi sawit, mengutip data bahwa hampir 90 persen lahan terbakar sampai September berada di luar konsesi sawit."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "timbangan dengan sisi lain terangkat",
+          "scale": "place",
+          "motion": "sisi kedua diisi",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "BUT",
+              "word": "counterpoint"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "grid seratus titik, sembilan puluh di luar pagar sawit",
+          "scale": "place",
+          "motion": "titik menyala sampai 90",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "≈90% OUTSIDE",
+              "word": "ninety"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.palmoilmagazine.com/rspo/2026/11/03/rspo-says-most-indonesia-land-fires-in-2026-occurred-outside-palm-oil-concessions/"
+      ],
+      "duration_ms": {
+        "en": 11517
+      }
+    },
+    {
+      "id": "s27",
+      "role": "body",
+      "narration": {
+        "en": "Outside palm concessions can mean forests, village land, or other kinds of concession, such as pulpwood. It narrows one accusation without answering all of them.",
+        "id": "Di luar konsesi sawit berarti banyak hal: hutan, lahan desa, dan konsesi jenis lain, termasuk pohon kertas. Itu mempersempit satu tuduhan tanpa menjawab semuanya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tiga jenis lahan di luar pagar sawit: hutan, ladang desa, pohon kertas",
+          "scale": "place",
+          "motion": "tiga lahan menyala bergantian",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "FOREST",
+              "word": "forests"
+            },
+            {
+              "text": "VILLAGES",
+              "word": "village"
+            },
+            {
+              "text": "PULPWOOD",
+              "word": "pulpwood"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "daftar tuduhan, satu diperkecil sisanya tetap",
+          "scale": "place",
+          "motion": "satu kartu menyusut",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "STILL OPEN",
+              "word": "without"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.palmoilmagazine.com/rspo/2026/11/03/rspo-says-most-indonesia-land-fires-in-2026-occurred-outside-palm-oil-concessions/"
+      ],
+      "duration_ms": {
+        "en": 10310
+      }
+    },
+    {
+      "id": "s28",
+      "role": "body",
+      "narration": {
+        "en": "The RSPO also says fire reached about fourteen thousand five hundred hectares of certified concessions, much of it in just two of them. It says it found no evidence that any certified unit started fires on purpose.",
+        "id": "RSPO juga mengakui api masuk ke lahan bersertifikat: sekitar 14.500 hektare, hampir separuhnya di dua konsesi. Mereka menyatakan belum menemukan bukti unit bersertifikat sengaja menyalakan api."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "konsesi bersertifikat dengan dua bidang hangus besar",
+          "scale": "place",
+          "motion": "dua bidang menyala",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "14,500 HA",
+              "word": "fourteen"
+            },
+            {
+              "text": "2 CONCESSIONS",
+              "word": "two"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "kaca pembesar di atas sertifikat, tidak menemukan jejak",
+          "scale": "place",
+          "motion": "kaca menyapu sertifikat",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NO EVIDENCE",
+              "word": "evidence"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://news.mongabay.com/2026/11/indonesia-fires-test-palm-oil-certification-scheme-as-ngos-question-rspo-accountability/"
+      ],
+      "duration_ms": {
+        "en": 13235
+      }
+    },
+    {
+      "id": "s29",
+      "role": "body",
+      "narration": {
+        "en": "In Jambi, the environmental group Walhi reported nine land holders to police, and says they account for more than a fifth of the burned area. One of them, a cooperative, says its fire was neither deliberate nor meant to clear land.",
+        "id": "Di Jambi, kelompok lingkungan Walhi melaporkan sembilan pemegang lahan ke polisi, dan menghitung mereka mencakup lebih dari seperlima area terbakar. Salah satunya, sebuah koperasi, menyatakan apinya tidak disengaja."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "sembilan bidang menyala di peta provinsi, berkas dikirim ke kantor polisi",
+          "scale": "place",
+          "motion": "sembilan bidang menyala, berkas terbang",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "9 REPORTED",
+              "word": "nine"
+            },
+            {
+              "text": "1 IN 5",
+              "word": "fifth"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "ketua koperasi mengangkat tangan di kebun",
+          "scale": "place",
+          "motion": "tangan terangkat, tanda bantahan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "DENIED",
+              "word": "neither"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "http://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/"
+      ],
+      "duration_ms": {
+        "en": 13375
+      }
+    },
+    {
+      "id": "s30",
+      "role": "body",
+      "narration": {
+        "en": "Police have moved on two fronts. In Jambi, by late October, all sixteen suspects were individuals. Nationally, investigators had named twenty companies as suspects.",
+        "id": "Polisi bergerak ke dua arah. Di Jambi, sampai 28 Oktober, ada 16 tersangka, semuanya perorangan. Secara nasional, 20 perusahaan sudah dijadikan tersangka."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua panah dari kantor polisi",
+          "scale": "place",
+          "motion": "panah memanjang",
+          "transition": "wipe",
+          "labels": []
+        },
+        {
+          "sentence": 2,
+          "show": "enam belas tokoh kecil berbaris",
+          "scale": "place",
+          "motion": "tokoh muncul sampai 16",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "16 PEOPLE",
+              "word": "sixteen"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "dua puluh gedung kecil berbaris",
+          "scale": "place",
+          "motion": "gedung muncul sampai 20",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "20 COMPANIES",
+              "word": "twenty"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "http://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/"
+      ],
+      "duration_ms": {
+        "en": 11656
+      }
+    },
+    {
+      "id": "s31",
+      "role": "body",
+      "narration": {
+        "en": "On November twenty-fourth came number twenty-one, a palm company in Riau called PT MAS. Police allege a hundred and sixty hectares burned inside its own concession, and that its early warning system did not work.",
+        "id": "Pada 24 November datang yang ke-21: perusahaan sawit PT MAS di Riau. Penyidik menduga 160 hektare terbakar di jalur hijau dalam konsesinya sendiri, dan sistem deteksi dininya tidak bekerja."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gedung ke dua puluh satu bergabung ke barisan, label Riau",
+          "scale": "place",
+          "motion": "gedung jatuh ke barisan",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "NO. 21",
+              "word": "twenty-one"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "bidang hangus kecil di dalam pagar, alarm mati",
+          "scale": "place",
+          "motion": "alarm berkedip lalu padam",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "160 HA ALLEGED",
+              "word": "sixty"
+            },
+            {
+              "text": "ALARM FAILED",
+              "word": "warning"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://news.detik.com/berita/d-8767357/bareskrim-tetapkan-pt-mas-tersangka-korporasi-karhutla-di-riau"
+      ],
+      "duration_ms": {
+        "en": 12771
+      }
+    },
+    {
+      "id": "s32",
+      "role": "body",
+      "narration": {
+        "en": "A suspect has not been found guilty. A court decides that, and it can take years.",
+        "id": "Tersangka belum berarti bersalah. Pengadilan yang memutuskan, dan itu bisa memakan waktu bertahun-tahun."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "timbangan pengadilan seimbang, gedung menunggu",
+          "scale": "place",
+          "motion": "timbangan bergoyang pelan",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "NOT GUILTY YET",
+              "word": "guilty"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "palu hakim dan kalender berbalik cepat",
+          "scale": "place",
+          "motion": "halaman kalender berbalik",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "YEARS",
+              "word": "years"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://news.detik.com/berita/d-8767357/bareskrim-tetapkan-pt-mas-tersangka-korporasi-karhutla-di-riau"
+      ],
+      "duration_ms": {
+        "en": 5062
+      }
+    },
+    {
+      "id": "s33",
+      "role": "body",
+      "narration": {
+        "en": "There are administrative penalties too. In September, the environment ministry said it had sealed thirty companies, and in October the forestry ministry sanctioned thirty-two.",
+        "id": "Ada juga sanksi administratif. Pada September, kementerian lingkungan menyatakan sudah menyegel 30 perusahaan. Pada Oktober, kementerian kehutanan menjatuhkan sanksi kepada 32 perusahaan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "pita segel dan surat sanksi",
+          "scale": "place",
+          "motion": "pita direntangkan",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "PENALTIES",
+              "word": "penalties"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "tiga puluh pita segel lalu tiga puluh dua surat",
+          "scale": "place",
+          "motion": "penghitung naik di dua sisi",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "30 SEALED",
+              "word": "thirty"
+            },
+            {
+              "text": "32 SANCTIONED",
+              "word": "thirty-two"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://regional.kompas.com/read/2026/09/04/193204678/kementerian-lh-klaim-sudah-segel-30-perusahaan-sawit-hingga-tebu-terkait",
+        "http://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/"
+      ],
+      "duration_ms": {
+        "en": 10170
+      }
+    },
+    {
+      "id": "s34",
+      "role": "rehook",
+      "narration": {
+        "en": "But does punishment actually land? As of twenty twenty-one, more than three point four trillion rupiah in final court awards against fire-linked firms had not reached the treasury.",
+        "id": "Apakah hukumannya benar-benar mengena? Lihat catatan lama. Pada 2021, lebih dari 3,4 triliun rupiah denda yang sudah berkekuatan hukum tetap belum masuk kas negara."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "palu hakim berhenti di udara",
+          "scale": "place",
+          "motion": "palu menggantung",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "DOES IT LAND?",
+              "word": "land"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "tumpukan uang besar di luar brankas negara",
+          "scale": "place",
+          "motion": "brankas tetap kosong, tumpukan menunggu",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "Rp3.4T UNPAID",
+              "word": "trillion"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/"
+      ],
+      "duration_ms": {
+        "en": 10728
+      }
+    },
+    {
+      "id": "s35",
+      "role": "body",
+      "narration": {
+        "en": "From civil cases won between twenty fifteen and twenty twenty-one, only about seventy-eight billion rupiah had been executed. An enforcement official blamed red tape, field problems, and the work of tracing assets.",
+        "id": "Dari perkara perdata 2015 sampai 2021, yang sudah dieksekusi hanya sekitar 78,5 miliar rupiah. Pejabat penegak hukumnya menyebut kendala teknis, birokrasi, dan pelacakan aset."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "satu koin kecil masuk brankas, tumpukan besar tetap di luar",
+          "scale": "place",
+          "motion": "koin kecil menggelinding masuk",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "Rp78B EXECUTED",
+              "word": "seventy-eight"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "petugas mencari aset dengan senter di tumpukan berkas",
+          "scale": "place",
+          "motion": "berkas menumpuk",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "RED TAPE",
+              "word": "tape"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/"
+      ],
+      "duration_ms": {
+        "en": 13003
+      }
+    },
+    {
+      "id": "s36",
+      "role": "body",
+      "narration": {
+        "en": "Greenpeace looked at twenty fifteen to twenty nineteen. By its count, eight of the ten palm companies with the largest burned areas had received no sanction.",
+        "id": "Greenpeace melihat 2015 sampai 2019. Menurut hitungan mereka, delapan dari sepuluh perusahaan sawit dengan area terbakar terluas belum menerima sanksi apa pun."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "garis waktu 2015 sampai 2019",
+          "scale": "place",
+          "motion": "penanda bergerak",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "2015–2019",
+              "word": "nineteen"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "sepuluh gedung, delapan tanpa pita segel",
+          "scale": "place",
+          "motion": "dua gedung ditandai, delapan tetap bersih",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "8 OF 10",
+              "word": "eight"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/"
+      ],
+      "duration_ms": {
+        "en": 9613
+      }
+    },
+    {
+      "id": "s37",
+      "role": "rehook",
+      "narration": {
+        "en": "Now, corruption, and here is what a court has actually found. In twenty twenty-three, palm tycoon Surya Darmadi was convicted over plantation permits he secured with a district head back in two thousand and four.",
+        "id": "Lalu soal korupsi. Ini yang sudah terbukti di pengadilan. Pada 2023, taipan sawit Surya Darmadi divonis bersalah korupsi terkait izin kebun yang diperoleh bersama seorang bupati pada 2004."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gedung pengadilan menyala",
+          "scale": "place",
+          "motion": "pintu pengadilan terbuka",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "PROVEN IN COURT",
+              "word": "court"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "dokumen izin berpindah tangan di bawah meja, tahun 2004 dan 2023",
+          "scale": "place",
+          "motion": "amplop bergeser, stempel vonis jatuh",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "2023 CONVICTION",
+              "word": "convicted"
+            },
+            {
+              "text": "2004 PERMITS",
+              "word": "permits"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/"
+      ],
+      "duration_ms": {
+        "en": 13746
+      }
+    },
+    {
+      "id": "s38",
+      "role": "body",
+      "narration": {
+        "en": "The Supreme Court later raised the sentence to sixteen years. It also cut the money he must repay to about two point two trillion rupiah, from roughly forty-two trillion.",
+        "id": "Mahkamah Agung kemudian menaikkan hukumannya menjadi 16 tahun, tetapi memangkas uang pengganti menjadi sekitar 2,2 triliun rupiah, dari puluhan triliun di pengadilan pertama."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kalender enam belas tahun",
+          "scale": "place",
+          "motion": "penghitung naik ke 16",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "16 YEARS",
+              "word": "sixteen"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "tumpukan raksasa menyusut jadi kecil",
+          "scale": "place",
+          "motion": "tumpukan dipotong",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "Rp42T → Rp2.2T",
+              "word": "repay"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://katadata.co.id/amp/berita/nasional/650a5a1f81b74/ma-ubah-vonis-surya-darmadi-jadi-16-tahun-batal-bayar-denda-rp-41-9-t",
+        "https://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/"
+      ],
+      "duration_ms": {
+        "en": 10170
+      }
+    },
+    {
+      "id": "s39",
+      "role": "body",
+      "narration": {
+        "en": "That case is about permits, not about any fire this year. I found no court ruling that ties the twenty twenty-six fires to bribery.",
+        "id": "Penting: perkara itu soal izin dan alih fungsi lahan, bukan soal kebakaran 2026. Saya tidak menemukan putusan pengadilan yang mengaitkan api tahun ini dengan suap."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua berkas terpisah: izin dan api",
+          "scale": "place",
+          "motion": "garis penghubung diputus",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SEPARATE CASE",
+              "word": "permits"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "rak putusan kosong untuk 2026",
+          "scale": "place",
+          "motion": "senter menyapu rak kosong",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NO RULING",
+              "word": "ruling"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/"
+      ],
+      "duration_ms": {
+        "en": 7059
+      }
+    },
+    {
+      "id": "s40",
+      "role": "body",
+      "narration": {
+        "en": "What is on record is permit corruption in the past, fines left uncollected, and burned concessions that drew no penalty. That is enough reason to keep asking questions.",
+        "id": "Yang tercatat adalah ini: izin pernah dibeli, denda menumpuk belum tertagih, dan banyak pemegang lahan terbakar tidak disanksi. Itu cukup untuk terus bertanya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tiga bukti diletakkan di meja",
+          "scale": "place",
+          "motion": "tiga kartu muncul",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "PERMIT GRAFT",
+              "word": "corruption"
+            },
+            {
+              "text": "UNPAID FINES",
+              "word": "fines"
+            },
+            {
+              "text": "NO PENALTY",
+              "word": "penalty"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "Komo mengangkat tangan di depan meja bukti",
+          "scale": "place",
+          "motion": "tangan terangkat",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "KEEP ASKING",
+              "word": "asking"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/",
+        "https://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/"
+      ],
+      "duration_ms": {
+        "en": 10356
+      }
+    },
+    {
+      "id": "s41",
+      "role": "body",
+      "narration": {
+        "en": "So who pays in the meantime? The World Bank estimated that the twenty fifteen fires burned two point six million hectares and cost Indonesia sixteen billion dollars.",
+        "id": "Siapa yang membayar sementara ini? Bank Dunia menghitung kebakaran 2015 membakar 2,6 juta hektare dan merugikan Indonesia 16,1 miliar dolar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dompet banyak warga terbuka",
+          "scale": "place",
+          "motion": "koin keluar dari dompet",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "WHO PAYS?",
+              "word": "pays"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "tumpukan koin raksasa di atas lahan hangus 2015",
+          "scale": "place",
+          "motion": "penghitung dolar naik",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "2015",
+              "word": "fifteen"
+            },
+            {
+              "text": "$16 BILLION",
+              "word": "sixteen"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://openknowledge.worldbank.org/entities/publication/391e19f4-18f7-56c2-8c28-bb89cc9e7d6f"
+      ],
+      "duration_ms": {
+        "en": 9056
+      }
+    },
+    {
+      "id": "s42",
+      "role": "body",
+      "narration": {
+        "en": "Bills like that land on lungs, on closed schools, on grounded flights, and on lost harvests.",
+        "id": "Biaya seperti itu jatuh ke paru-paru, sekolah yang diliburkan, penerbangan yang batal, dan panen yang hilang."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "paru-paru, sekolah tertutup, pesawat di landasan, ladang gagal",
+          "scale": "place",
+          "motion": "empat benda muncul sesuai urutan",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "LUNGS",
+              "word": "lungs"
+            },
+            {
+              "text": "SCHOOLS",
+              "word": "schools"
+            },
+            {
+              "text": "FLIGHTS",
+              "word": "flights"
+            },
+            {
+              "text": "HARVESTS",
+              "word": "harvests"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://openknowledge.worldbank.org/entities/publication/391e19f4-18f7-56c2-8c28-bb89cc9e7d6f"
+      ],
+      "duration_ms": {
+        "en": 5712
+      }
+    },
+    {
+      "id": "s43",
+      "role": "body",
+      "narration": {
+        "en": "For this year, a research group called Celios estimates economic and health costs of roughly three hundred sixty to five hundred sixty-five trillion rupiah. That is an estimate, not a final bill.",
+        "id": "Untuk tahun ini, lembaga riset Celios memperkirakan biaya ekonomi dan kesehatan antara sekitar 360 dan 565 triliun rupiah. Itu estimasi, dan musimnya belum selesai dihitung."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua tumpukan koin raksasa, rendah dan tinggi",
+          "scale": "place",
+          "motion": "dua tumpukan tumbuh",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "Rp360–565T",
+              "word": "trillion"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "kalkulator dengan tanda kira-kira",
+          "scale": "place",
+          "motion": "tanda berdenyut",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "ESTIMATE",
+              "word": "estimate"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "http://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/"
+      ],
+      "duration_ms": {
+        "en": 13096
+      }
+    },
+    {
+      "id": "s44",
+      "role": "payoff",
+      "narration": {
+        "en": "So here is the scoreboard. Drained peat burns more easily, and some of the burned ground sits inside company concessions. Who struck most of the matches is still unproven, the new cases are still open, and old fines were still waiting to be paid.",
+        "id": "Jadi inilah papan skornya. Gambut kering lebih mudah terbakar. Sebagian lahan terbakar ada di dalam konsesi. Siapa yang menyalakan sebagian besar masih belum terbukti. Kasus sedang berjalan, dan denda lama banyak yang belum tertagih."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "papan skor kosong dengan empat baris",
+          "scale": "place",
+          "motion": "papan turun dari atas",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SCOREBOARD",
+              "word": "scoreboard"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "baris satu dan dua terisi: gambut kering dan pagar konsesi",
+          "scale": "place",
+          "motion": "dua baris menyala bergantian",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "DRAINED PEAT",
+              "word": "Drained"
+            },
+            {
+              "text": "IN CONCESSIONS",
+              "word": "concessions"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "baris tiga empat lima: tanda tanya, berkas terbuka, tumpukan koin menunggu",
+          "scale": "place",
+          "motion": "tiga baris menyala berurutan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "UNPROVEN",
+              "word": "unproven"
+            },
+            {
+              "text": "CASES OPEN",
+              "word": "open"
+            },
+            {
+              "text": "FINES WAITING",
+              "word": "fines"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://agris.fao.org/search/en/records/690c9d6ee36ca6284360dd89",
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows",
+        "https://news.detik.com/berita/d-8767357/bareskrim-tetapkan-pt-mas-tersangka-korporasi-karhutla-di-riau",
+        "https://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/"
+      ],
+      "duration_ms": {
+        "en": 14721
+      }
+    },
+    {
+      "id": "s45",
+      "role": "payoff",
+      "narration": {
+        "en": "So go back to the sponge. Keep it wet, and a match struggles. Drain it, and one spark, from anyone, can burn for months.",
+        "id": "Kembali ke spons. Selama ia dibiarkan basah, korek api kesulitan. Begitu dikeringkan, satu percikan dari siapa pun bisa menjadi api berbulan-bulan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "spons besar kembali di tengah peta",
+          "scale": "place",
+          "motion": "spons berputar",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "THE SPONGE",
+              "word": "sponge"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "spons basah memadamkan korek",
+          "scale": "place",
+          "motion": "api padam",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "WET",
+              "word": "wet"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "spons kering menyala dari satu percikan",
+          "scale": "place",
+          "motion": "api membesar dan merayap",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "DRY",
+              "word": "Drain"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://agris.fao.org/search/en/records/690c9d6ee36ca6284360dd89",
+        "https://earthobservatory.nasa.gov/features/IndonesianFires/page2.php"
+      ],
+      "duration_ms": {
+        "en": 8452
+      }
+    },
+    {
+      "id": "s46",
+      "role": "payoff",
+      "narration": {
+        "en": "So watch more than the hand holding the match. Watch who digs the canals, whether fines get paid, and whether those twenty-one company cases reach a verdict.",
+        "id": "Maka yang layak diawasi bukan hanya tangan yang memegang korek. Awasi siapa yang menggali kanal, apakah vonis benar dibayar, dan apakah ke-21 kasus perusahaan itu sampai ke putusan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tangan korek dikelilingi hal lain",
+          "scale": "place",
+          "motion": "kamera mundur dari tangan",
+          "transition": "wipe",
+          "labels": []
+        },
+        {
+          "sentence": 2,
+          "show": "tiga pos pengawasan: kanal, brankas, pengadilan",
+          "scale": "place",
+          "motion": "tiga lampu menyala berurutan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "CANALS",
+              "word": "canals"
+            },
+            {
+              "text": "FINES",
+              "word": "fines"
+            },
+            {
+              "text": "21 CASES",
+              "word": "twenty-one"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "https://news.detik.com/berita/d-8767357/bareskrim-tetapkan-pt-mas-tersangka-korporasi-karhutla-di-riau",
+        "https://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/"
+      ],
+      "duration_ms": {
+        "en": 9427
+      }
+    },
+    {
+      "id": "s47",
+      "role": "cta",
+      "narration": {
+        "en": "If you have lived under this smoke, tell me in the comments what you saw. Follow along to see where these cases end.",
+        "id": "Kalau kamu pernah hidup di bawah asap ini, tulis di komentar apa yang kamu lihat. Dan ikuti channel ini untuk tahu kelanjutannya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "warga bermasker menulis di balon komentar",
+          "scale": "place",
+          "motion": "balon komentar muncul",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "YOUR STORY",
+              "word": "comments"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "garis waktu menuju gedung pengadilan",
+          "scale": "place",
+          "motion": "penanda maju",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "TO BE CONTINUED",
+              "word": "Follow"
+            }
+          ]
+        }
+      ],
+      "sources": [],
+      "duration_ms": {
+        "en": 6362
+      }
+    }
+  ],
+  "shorts_cuts": [
+    {
+      "name": "B1-why-peat-burns",
+      "scene_ids": [
+        "s09",
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "hook_override": "This soil should not burn. Then someone drains it.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "WHY IT",
+            "size": 170,
+            "color": "#ffffff"
+          },
+          {
+            "text": "BURNS",
+            "size": 190,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T02-why-southeast-asia/siklus/004-karhutla-who-lit-the-match/04-shots.tsx",
+          "scene": "thumbS1"
+        }
+      }
+    },
+    {
+      "name": "B2-fines-never-paid",
+      "scene_ids": [
+        "s34",
+        "s35",
+        "s36"
+      ],
+      "hook_override": "Courts ruled. Did anyone pay?",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "FINES",
+            "size": 180,
+            "color": "#ffffff"
+          },
+          {
+            "text": "UNPAID?",
+            "size": 170,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T02-why-southeast-asia/siklus/004-karhutla-who-lit-the-match/04-shots.tsx",
+          "scene": "thumbS2"
+        }
+      }
+    }
+  ],
+  "sources": [
+    "http://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/",
+    "https://agris.fao.org/search/en/records/690c9d6ee36ca6284360dd89",
+    "https://earthobservatory.nasa.gov/features/IndonesianFires/page2.php",
+    "https://katadata.co.id/amp/berita/nasional/650a5a1f81b74/ma-ubah-vonis-surya-darmadi-jadi-16-tahun-batal-bayar-denda-rp-41-9-t",
+    "https://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/",
+    "https://news.detik.com/berita/d-3051823/uu-lingkungan-hidup-izinkan-masyarakat-bakar-lahan",
+    "https://news.detik.com/berita/d-8767357/bareskrim-tetapkan-pt-mas-tersangka-korporasi-karhutla-di-riau",
+    "https://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/",
+    "https://news.mongabay.com/2026/11/indonesia-fires-test-palm-oil-certification-scheme-as-ngos-question-rspo-accountability/",
+    "https://openknowledge.worldbank.org/entities/publication/391e19f4-18f7-56c2-8c28-bb89cc9e7d6f",
+    "https://regional.kompas.com/read/2026/09/04/193204678/kementerian-lh-klaim-sudah-segel-30-perusahaan-sawit-hingga-tebu-terkait",
+    "https://www.palmoilmagazine.com/rspo/2026/11/03/rspo-says-most-indonesia-land-fires-in-2026-occurred-outside-palm-oil-concessions/",
+    "https://www.suara.com/news/2026/10/02/070500/luas-karhutla-indonesia-capai-202-ribu-hektare-hingga-juli-2026",
+    "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+  ],
+  "chapters": [
+    {
+      "scene": "s01",
+      "title": "Under the smoke"
+    },
+    {
+      "scene": "s06",
+      "title": "Two numbers"
+    },
+    {
+      "scene": "s08",
+      "title": "The soil that burns"
+    },
+    {
+      "scene": "s14",
+      "title": "Who breathes it"
+    },
+    {
+      "scene": "s16",
+      "title": "Why fire"
+    },
+    {
+      "scene": "s20",
+      "title": "Whose land burned"
+    },
+    {
+      "scene": "s26",
+      "title": "The counterpoint"
+    },
+    {
+      "scene": "s30",
+      "title": "The cases"
+    },
+    {
+      "scene": "s34",
+      "title": "Do penalties land?"
+    },
+    {
+      "scene": "s37",
+      "title": "What courts have found"
+    },
+    {
+      "scene": "s45",
+      "title": "Back to the sponge"
+    }
+  ],
+  "tags": [
+    "Indonesia fires",
+    "karhutla",
+    "haze",
+    "peatland",
+    "palm oil",
+    "Borneo",
+    "Sumatra",
+    "deforestation",
+    "Southeast Asia",
+    "enforcement"
+  ],
+  "anchor": {
+    "kind": "map",
+    "desc": "peta Indonesia dengan titik api di Sumatra dan Kalimantan, dan metafora spons gambut: basah sulit terbakar, dikeringkan menjadi bahan bakar"
+  },
+  "cast": [
+    "komo",
+    "aturan",
+    "cicak"
+  ],
+  "thumbnails": [
+    {
+      "lines": [
+        {
+          "text": "WHO LIT",
+          "size": 170,
+          "color": "#ffffff"
+        },
+        {
+          "text": "IT?",
+          "size": 220,
+          "color": "#ffd23f"
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T02-why-southeast-asia/siklus/004-karhutla-who-lit-the-match/04-shots.tsx",
+        "scene": "thumbA"
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "2.9M HA",
+          "size": 180,
+          "color": "#ffd23f"
+        },
+        {
+          "text": "BURNED",
+          "size": 170,
+          "color": "#ffffff"
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T02-why-southeast-asia/siklus/004-karhutla-who-lit-the-match/04-shots.tsx",
+        "scene": "thumbB"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "track": "T01",
+  "siklus": "002",
+  "tanggal": "2026-11-26",
+  "durasi": "8:05",
+  "footage_pct": 0,
+  "verdict": "GAGAL",
+  "temuan": [
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s41: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s43: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s43: transkrip balik tidak memuat \"rupiah\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Visual/Channel",
+      "level": "sedang",
+      "id": "K1",
+      "msg": "bukti nyata kreator tidak ada; DIPERBOLEHKAN oleh pengecualian kreator (pengecualian_qa)",
+      "fix": "tetap tercatat di laporan; kreator memikul risiko kebijakan konten AI"
+    }
+  ],
+  "manual": [
+    "Dengarkan audio: nada, artefak TTS, pengucapan istilah (kemunculan pertama)",
+    "Tonton master dan Shorts: irama, kecepatan animasi, bubble tidak menutup isi",
+    "Periksa fakta tiap klaim terhadap sumber",
+    "Setujui thumbnail dan judul"
+  ]
+}

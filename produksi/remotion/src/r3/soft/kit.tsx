@@ -207,7 +207,7 @@ export const Cart: React.FC<{ t: number; p?: V3; s?: number; taken?: number; rol
     {Array.from({ length: 100 }, (_, i) => (i < 100 - taken ? <Coin key={i} s={0.46} p={[-1.8 + (i % 10) * 0.4, 1.62 + bob(t, i, 0.015), -1.26 + Math.floor(i / 10) * 0.28]} /> : null))}
   </Gr>
 );
-export const Gate: React.FC<{ t: number; p?: V3; s?: number; open?: number; c?: string; ry?: number }> = ({ p = [0, 0, 0], s = 1, open = 0, c = "#e2573d", ry = 0 }) => (
+export const Gate: React.FC<{ t?: number; p?: V3; s?: number; open?: number; c?: string; ry?: number }> = ({ p = [0, 0, 0], s = 1, open = 0, c = "#e2573d", ry = 0 }) => (
   <Gr p={p} s={s} r={[0, ry, 0]}><Box w={0.8} h={2.6} d={0.8} c="#f2e4c8" p={[-2.4, 1.3, 0]} /><S g={G.dome(0.55)} c={c} p={[-2.4, 2.6, 0]} />
     <Gr p={[-2.1, 2.0, 0.45]} r={[0, 0, open * 1.35]}><Box w={4.4} h={0.32} d={0.25} c={c} p={[2.2, 0, 0]} />{[1, 2.2, 3.4].map((x) => <Box key={x} w={0.45} h={0.34} d={0.27} c="#fff4da" p={[x, 0, 0]} />)}</Gr></Gr>
 );

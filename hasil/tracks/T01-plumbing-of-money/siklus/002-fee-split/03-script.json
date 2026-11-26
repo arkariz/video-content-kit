@@ -20,10 +20,6 @@
     {
       "term": "QRIS",
       "say_as": "kris"
-    },
-    {
-      "term": "rupiah",
-      "say_as": "roo-PEE-ah"
     }
   ],
   "anchor": {
@@ -507,7 +503,7 @@
           "show": "server mengangkat papan nama kosong lalu label menempel",
           "scale": "object",
           "motion": "server mengangguk",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "TERMINAL CO",
@@ -952,7 +948,7 @@
           "show": "pipa tap mengalirkan koin deras",
           "scale": "inside",
           "motion": "koin mengucur setiap ada bunyi tap, bank tersenyum",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "TAP FEE",
@@ -1000,7 +996,7 @@
           "show": "hadiah kecil meletus dari kartu: bintang, pesawat kertas, koin balik",
           "scale": "object",
           "motion": "tiap hadiah muncul di katanya",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "POINTS",
@@ -1086,7 +1082,7 @@
           "show": "sisa koin kecil dipeluk bank",
           "scale": "object",
           "motion": "bank menarik sisa ke brankas",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "70¢",
@@ -1182,7 +1178,7 @@
           "show": "dua keping menyatu jadi satu tumpukan kecil",
           "scale": "object",
           "motion": "keping melebur, palang naik",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "16¢",
@@ -1326,7 +1322,7 @@
           "show": "koin dari gerobak membentuk satu tumpukan di tag",
           "scale": "object",
           "motion": "tumpukan terkumpul",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "$2.75",
@@ -1598,7 +1594,7 @@
           "show": "timbangan kanan: koin untuk bank lebih berat",
           "scale": "object",
           "motion": "panci kanan turun",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "20.5¢",
@@ -1708,7 +1704,7 @@
           "show": "peta lebar dengan semua tumpukan di tiap pemberhentian",
           "scale": "map",
           "motion": "tumpukan menyala bergantian",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "$100",
@@ -1968,7 +1964,7 @@
           "show": "aliran koin tipis mengalir dari rumah kecil ke rumah besar",
           "scale": "map",
           "motion": "aliran bergerak ke kanan",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "LOWER",
@@ -2220,7 +2216,7 @@
         }
       ],
       "duration_ms": {
-        "en": 12167
+        "en": 11703
       }
     },
     {
@@ -2298,7 +2294,7 @@
           "show": "dua tumpukan berdampingan, tumpukan kartu hampir empat kali lebih tinggi",
           "scale": "object",
           "motion": "tumpukan kartu tumbuh melewati tumpukan QR",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "$2.75",
@@ -2345,7 +2341,7 @@
           "show": "karung hadiah kecil di jalan pulau, bank sentral memegang daftar tarif",
           "scale": "map",
           "motion": "daftar tarif dibuka, karung tetap kecil",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "CENTRAL BANK",
@@ -2391,7 +2387,7 @@
           "show": "bank 'you' menyala, jejak hadiah kembali ke dompet",
           "scale": "map",
           "motion": "koin mengalir ke bank lalu sebagian balik",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "$2.20",
@@ -2405,7 +2401,7 @@
           "show": "menara dan gedung server menyala berurutan",
           "scale": "map",
           "motion": "dua tumpukan mendarat di katanya",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "16¢",

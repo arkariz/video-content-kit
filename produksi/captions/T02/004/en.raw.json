@@ -1,0 +1,6066 @@
+{
+  "s01": [
+    {
+      "text": "It's",
+      "startMs": 80,
+      "endMs": 240
+    },
+    {
+      "text": "morning",
+      "startMs": 300,
+      "endMs": 540
+    },
+    {
+      "text": "in",
+      "startMs": 580,
+      "endMs": 660
+    },
+    {
+      "text": "Borneo,",
+      "startMs": 720,
+      "endMs": 1080
+    },
+    {
+      "text": "and",
+      "startMs": 1380,
+      "endMs": 1460
+    },
+    {
+      "text": "you",
+      "startMs": 1500,
+      "endMs": 1580
+    },
+    {
+      "text": "can't",
+      "startMs": 1640,
+      "endMs": 1860
+    },
+    {
+      "text": "see",
+      "startMs": 1920,
+      "endMs": 2020
+    },
+    {
+      "text": "the",
+      "startMs": 2080,
+      "endMs": 2200
+    },
+    {
+      "text": "end",
+      "startMs": 2240,
+      "endMs": 2380
+    },
+    {
+      "text": "of",
+      "startMs": 2420,
+      "endMs": 2500
+    },
+    {
+      "text": "your",
+      "startMs": 2520,
+      "endMs": 2620
+    },
+    {
+      "text": "own",
+      "startMs": 2640,
+      "endMs": 2820
+    },
+    {
+      "text": "street.",
+      "startMs": 2900,
+      "endMs": 3200
+    },
+    {
+      "text": "The",
+      "startMs": 4200,
+      "endMs": 4260
+    },
+    {
+      "text": "sky",
+      "startMs": 4340,
+      "endMs": 4560
+    },
+    {
+      "text": "is",
+      "startMs": 4600,
+      "endMs": 4740
+    },
+    {
+      "text": "orange,",
+      "startMs": 4840,
+      "endMs": 5140
+    },
+    {
+      "text": "and",
+      "startMs": 5200,
+      "endMs": 5300
+    },
+    {
+      "text": "every",
+      "startMs": 5480,
+      "endMs": 5680
+    },
+    {
+      "text": "breath",
+      "startMs": 5800,
+      "endMs": 6060
+    },
+    {
+      "text": "tastes",
+      "startMs": 6120,
+      "endMs": 6340
+    },
+    {
+      "text": "like",
+      "startMs": 6380,
+      "endMs": 6560
+    },
+    {
+      "text": "smoke.",
+      "startMs": 6660,
+      "endMs": 6960
+    }
+  ],
+  "s02": [
+    {
+      "text": "Between",
+      "startMs": 100,
+      "endMs": 440
+    },
+    {
+      "text": "January",
+      "startMs": 560,
+      "endMs": 1060
+    },
+    {
+      "text": "and",
+      "startMs": 1100,
+      "endMs": 1180
+    },
+    {
+      "text": "October",
+      "startMs": 1220,
+      "endMs": 1580
+    },
+    {
+      "text": "2026,",
+      "startMs": 1780,
+      "endMs": 2680
+    },
+    {
+      "text": "fires",
+      "startMs": 3120,
+      "endMs": 3440
+    },
+    {
+      "text": "burned",
+      "startMs": 3540,
+      "endMs": 3780
+    },
+    {
+      "text": "nearly",
+      "startMs": 3860,
+      "endMs": 4160
+    },
+    {
+      "text": "2.9",
+      "startMs": 4240,
+      "endMs": 4880
+    },
+    {
+      "text": "million",
+      "startMs": 4980,
+      "endMs": 5280
+    },
+    {
+      "text": "hectares",
+      "startMs": 5340,
+      "endMs": 5700
+    },
+    {
+      "text": "of",
+      "startMs": 5740,
+      "endMs": 5800
+    },
+    {
+      "text": "Indonesia,",
+      "startMs": 5840,
+      "endMs": 6360
+    },
+    {
+      "text": "according",
+      "startMs": 6820,
+      "endMs": 7120
+    },
+    {
+      "text": "to",
+      "startMs": 7160,
+      "endMs": 7280
+    },
+    {
+      "text": "one",
+      "startMs": 7360,
+      "endMs": 7480
+    },
+    {
+      "text": "satellite",
+      "startMs": 7580,
+      "endMs": 7960
+    },
+    {
+      "text": "monitor.",
+      "startMs": 8000,
+      "endMs": 8320
+    },
+    {
+      "text": "That",
+      "startMs": 9220,
+      "endMs": 9360
+    },
+    {
+      "text": "is",
+      "startMs": 9400,
+      "endMs": 9520
+    },
+    {
+      "text": "close",
+      "startMs": 9580,
+      "endMs": 9840
+    },
+    {
+      "text": "to",
+      "startMs": 9880,
+      "endMs": 9940
+    },
+    {
+      "text": "the",
+      "startMs": 9980,
+      "endMs": 10060
+    },
+    {
+      "text": "size",
+      "startMs": 10120,
+      "endMs": 10360
+    },
+    {
+      "text": "of",
+      "startMs": 10400,
+      "endMs": 10500
+    },
+    {
+      "text": "Belgium.",
+      "startMs": 10540,
+      "endMs": 10940
+    }
+  ],
+  "s03": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 240
+    },
+    {
+      "text": "who",
+      "startMs": 380,
+      "endMs": 520
+    },
+    {
+      "text": "lit",
+      "startMs": 560,
+      "endMs": 700
+    },
+    {
+      "text": "the",
+      "startMs": 740,
+      "endMs": 800
+    },
+    {
+      "text": "match?",
+      "startMs": 860,
+      "endMs": 1180
+    },
+    {
+      "text": "The",
+      "startMs": 2120,
+      "endMs": 2200
+    },
+    {
+      "text": "honest",
+      "startMs": 2240,
+      "endMs": 2520
+    },
+    {
+      "text": "answer",
+      "startMs": 2600,
+      "endMs": 2860
+    },
+    {
+      "text": "is",
+      "startMs": 2920,
+      "endMs": 3020
+    },
+    {
+      "text": "that",
+      "startMs": 3080,
+      "endMs": 3340
+    },
+    {
+      "text": "in",
+      "startMs": 3400,
+      "endMs": 3480
+    },
+    {
+      "text": "many",
+      "startMs": 3540,
+      "endMs": 3700
+    },
+    {
+      "text": "places,",
+      "startMs": 3780,
+      "endMs": 4180
+    },
+    {
+      "text": "nobody",
+      "startMs": 4360,
+      "endMs": 4660
+    },
+    {
+      "text": "has",
+      "startMs": 4700,
+      "endMs": 4840
+    },
+    {
+      "text": "proven",
+      "startMs": 4880,
+      "endMs": 5120
+    },
+    {
+      "text": "it",
+      "startMs": 5160,
+      "endMs": 5240
+    },
+    {
+      "text": "yet.",
+      "startMs": 5280,
+      "endMs": 5460
+    },
+    {
+      "text": "The",
+      "startMs": 6800,
+      "endMs": 6900
+    },
+    {
+      "text": "sharper",
+      "startMs": 6940,
+      "endMs": 7240
+    },
+    {
+      "text": "questions",
+      "startMs": 7320,
+      "endMs": 7760
+    },
+    {
+      "text": "are",
+      "startMs": 7800,
+      "endMs": 7920
+    },
+    {
+      "text": "who",
+      "startMs": 7980,
+      "endMs": 8080
+    },
+    {
+      "text": "made",
+      "startMs": 8140,
+      "endMs": 8320
+    },
+    {
+      "text": "the",
+      "startMs": 8340,
+      "endMs": 8420
+    },
+    {
+      "text": "land",
+      "startMs": 8480,
+      "endMs": 8720
+    },
+    {
+      "text": "ready",
+      "startMs": 8780,
+      "endMs": 8960
+    },
+    {
+      "text": "to",
+      "startMs": 9000,
+      "endMs": 9060
+    },
+    {
+      "text": "burn",
+      "startMs": 9140,
+      "endMs": 9400
+    },
+    {
+      "text": "and",
+      "startMs": 9820,
+      "endMs": 9920
+    },
+    {
+      "text": "who",
+      "startMs": 9960,
+      "endMs": 10080
+    },
+    {
+      "text": "pays?",
+      "startMs": 10140,
+      "endMs": 10500
+    }
+  ],
+  "s04": [
+    {
+      "text": "Meet",
+      "startMs": 80,
+      "endMs": 240
+    },
+    {
+      "text": "the",
+      "startMs": 260,
+      "endMs": 360
+    },
+    {
+      "text": "players,",
+      "startMs": 400,
+      "endMs": 800
+    },
+    {
+      "text": "people",
+      "startMs": 1280,
+      "endMs": 1500
+    },
+    {
+      "text": "like",
+      "startMs": 1540,
+      "endMs": 1740
+    },
+    {
+      "text": "you,",
+      "startMs": 1820,
+      "endMs": 1940
+    },
+    {
+      "text": "companies",
+      "startMs": 2060,
+      "endMs": 2460
+    },
+    {
+      "text": "holding",
+      "startMs": 2500,
+      "endMs": 2740
+    },
+    {
+      "text": "concessions,",
+      "startMs": 2780,
+      "endMs": 3400
+    },
+    {
+      "text": "and",
+      "startMs": 3720,
+      "endMs": 3800
+    },
+    {
+      "text": "the",
+      "startMs": 3840,
+      "endMs": 3920
+    },
+    {
+      "text": "state",
+      "startMs": 4019,
+      "endMs": 4240
+    },
+    {
+      "text": "that",
+      "startMs": 4280,
+      "endMs": 4400
+    },
+    {
+      "text": "grants",
+      "startMs": 4460,
+      "endMs": 4760
+    },
+    {
+      "text": "them.",
+      "startMs": 4820,
+      "endMs": 4980
+    }
+  ],
+  "s05": [
+    {
+      "text": "A",
+      "startMs": 60,
+      "endMs": 100
+    },
+    {
+      "text": "concession",
+      "startMs": 180,
+      "endMs": 720
+    },
+    {
+      "text": "is",
+      "startMs": 780,
+      "endMs": 840
+    },
+    {
+      "text": "a",
+      "startMs": 900,
+      "endMs": 980
+    },
+    {
+      "text": "block",
+      "startMs": 1020,
+      "endMs": 1280
+    },
+    {
+      "text": "of",
+      "startMs": 1320,
+      "endMs": 1400
+    },
+    {
+      "text": "land",
+      "startMs": 1460,
+      "endMs": 1740
+    },
+    {
+      "text": "the",
+      "startMs": 1780,
+      "endMs": 1880
+    },
+    {
+      "text": "state",
+      "startMs": 1940,
+      "endMs": 2140
+    },
+    {
+      "text": "licenses",
+      "startMs": 2220,
+      "endMs": 2740
+    },
+    {
+      "text": "to",
+      "startMs": 2780,
+      "endMs": 2860
+    },
+    {
+      "text": "a",
+      "startMs": 2900,
+      "endMs": 2980
+    },
+    {
+      "text": "company,",
+      "startMs": 3020,
+      "endMs": 3420
+    },
+    {
+      "text": "for",
+      "startMs": 3960,
+      "endMs": 4019
+    },
+    {
+      "text": "example,",
+      "startMs": 4059,
+      "endMs": 4420
+    },
+    {
+      "text": "to",
+      "startMs": 4500,
+      "endMs": 4580
+    },
+    {
+      "text": "grow",
+      "startMs": 4640,
+      "endMs": 4820
+    },
+    {
+      "text": "oil",
+      "startMs": 4900,
+      "endMs": 5060
+    },
+    {
+      "text": "palm",
+      "startMs": 5140,
+      "endMs": 5360
+    },
+    {
+      "text": "or",
+      "startMs": 5720,
+      "endMs": 5860
+    },
+    {
+      "text": "trees",
+      "startMs": 5900,
+      "endMs": 6160
+    },
+    {
+      "text": "for",
+      "startMs": 6180,
+      "endMs": 6260
+    },
+    {
+      "text": "paper.",
+      "startMs": 6360,
+      "endMs": 6680
+    },
+    {
+      "text": "Whoever",
+      "startMs": 7560,
+      "endMs": 7860
+    },
+    {
+      "text": "holds",
+      "startMs": 7960,
+      "endMs": 8200
+    },
+    {
+      "text": "that",
+      "startMs": 8260,
+      "endMs": 8380
+    },
+    {
+      "text": "license",
+      "startMs": 8440,
+      "endMs": 8800
+    },
+    {
+      "text": "is",
+      "startMs": 8860,
+      "endMs": 8920
+    },
+    {
+      "text": "expected",
+      "startMs": 8960,
+      "endMs": 9380
+    },
+    {
+      "text": "to",
+      "startMs": 9420,
+      "endMs": 9500
+    },
+    {
+      "text": "keep",
+      "startMs": 9560,
+      "endMs": 9740
+    },
+    {
+      "text": "it",
+      "startMs": 9760,
+      "endMs": 9840
+    },
+    {
+      "text": "from",
+      "startMs": 9900,
+      "endMs": 10020
+    },
+    {
+      "text": "burning.",
+      "startMs": 10080,
+      "endMs": 10400
+    }
+  ],
+  "s06": [
+    {
+      "text": "Now,",
+      "startMs": 100,
+      "endMs": 260
+    },
+    {
+      "text": "two",
+      "startMs": 620,
+      "endMs": 760
+    },
+    {
+      "text": "numbers",
+      "startMs": 840,
+      "endMs": 1160
+    },
+    {
+      "text": "that",
+      "startMs": 1200,
+      "endMs": 1300
+    },
+    {
+      "text": "often",
+      "startMs": 1380,
+      "endMs": 1600
+    },
+    {
+      "text": "get",
+      "startMs": 1640,
+      "endMs": 1760
+    },
+    {
+      "text": "mixed",
+      "startMs": 1800,
+      "endMs": 2040
+    },
+    {
+      "text": "up.",
+      "startMs": 2120,
+      "endMs": 2240
+    },
+    {
+      "text": "Government",
+      "startMs": 3120,
+      "endMs": 3460
+    },
+    {
+      "text": "data",
+      "startMs": 3540,
+      "endMs": 3740
+    },
+    {
+      "text": "quoted",
+      "startMs": 3840,
+      "endMs": 4080
+    },
+    {
+      "text": "by",
+      "startMs": 4140,
+      "endMs": 4220
+    },
+    {
+      "text": "the",
+      "startMs": 4260,
+      "endMs": 4360
+    },
+    {
+      "text": "press",
+      "startMs": 4400,
+      "endMs": 4660
+    },
+    {
+      "text": "showed",
+      "startMs": 4720,
+      "endMs": 4880
+    },
+    {
+      "text": "about",
+      "startMs": 4940,
+      "endMs": 5160
+    },
+    {
+      "text": "202,000",
+      "startMs": 5220,
+      "endMs": 6340
+    },
+    {
+      "text": "hectares",
+      "startMs": 6400,
+      "endMs": 6800
+    },
+    {
+      "text": "burned",
+      "startMs": 6900,
+      "endMs": 7140
+    },
+    {
+      "text": "through",
+      "startMs": 7180,
+      "endMs": 7340
+    },
+    {
+      "text": "July.",
+      "startMs": 7400,
+      "endMs": 7820
+    },
+    {
+      "text": "The",
+      "startMs": 8560,
+      "endMs": 8640
+    },
+    {
+      "text": "satellite",
+      "startMs": 8680,
+      "endMs": 9060
+    },
+    {
+      "text": "monitor",
+      "startMs": 9140,
+      "endMs": 9420
+    },
+    {
+      "text": "counted",
+      "startMs": 9540,
+      "endMs": 9780
+    },
+    {
+      "text": "nearly",
+      "startMs": 9840,
+      "endMs": 10120
+    },
+    {
+      "text": "2.9",
+      "startMs": 10300,
+      "endMs": 10900
+    },
+    {
+      "text": "million",
+      "startMs": 10940,
+      "endMs": 11220
+    },
+    {
+      "text": "through",
+      "startMs": 11280,
+      "endMs": 11420
+    },
+    {
+      "text": "October.",
+      "startMs": 11460,
+      "endMs": 11900
+    }
+  ],
+  "s07": [
+    {
+      "text": "Different",
+      "startMs": 100,
+      "endMs": 400
+    },
+    {
+      "text": "months",
+      "startMs": 540,
+      "endMs": 860
+    },
+    {
+      "text": "and",
+      "startMs": 980,
+      "endMs": 1100
+    },
+    {
+      "text": "different",
+      "startMs": 1180,
+      "endMs": 1440
+    },
+    {
+      "text": "methods,",
+      "startMs": 1540,
+      "endMs": 1900
+    },
+    {
+      "text": "so",
+      "startMs": 2260,
+      "endMs": 2360
+    },
+    {
+      "text": "you",
+      "startMs": 2400,
+      "endMs": 2500
+    },
+    {
+      "text": "cannot",
+      "startMs": 2560,
+      "endMs": 2920
+    },
+    {
+      "text": "set",
+      "startMs": 3000,
+      "endMs": 3160
+    },
+    {
+      "text": "them",
+      "startMs": 3220,
+      "endMs": 3340
+    },
+    {
+      "text": "head-to-head.",
+      "startMs": 3400,
+      "endMs": 3920
+    },
+    {
+      "text": "Both",
+      "startMs": 4740,
+      "endMs": 4940
+    },
+    {
+      "text": "still",
+      "startMs": 5020,
+      "endMs": 5180
+    },
+    {
+      "text": "point",
+      "startMs": 5280,
+      "endMs": 5500
+    },
+    {
+      "text": "to",
+      "startMs": 5560,
+      "endMs": 5640
+    },
+    {
+      "text": "a",
+      "startMs": 5700,
+      "endMs": 5820
+    },
+    {
+      "text": "very",
+      "startMs": 5900,
+      "endMs": 6120
+    },
+    {
+      "text": "bad",
+      "startMs": 6220,
+      "endMs": 6420
+    },
+    {
+      "text": "year.",
+      "startMs": 6480,
+      "endMs": 6700
+    }
+  ],
+  "s08": [
+    {
+      "text": "To",
+      "startMs": 100,
+      "endMs": 160
+    },
+    {
+      "text": "see",
+      "startMs": 240,
+      "endMs": 340
+    },
+    {
+      "text": "why",
+      "startMs": 400,
+      "endMs": 500
+    },
+    {
+      "text": "these",
+      "startMs": 540,
+      "endMs": 700
+    },
+    {
+      "text": "fires",
+      "startMs": 780,
+      "endMs": 1060
+    },
+    {
+      "text": "are",
+      "startMs": 1080,
+      "endMs": 1180
+    },
+    {
+      "text": "so",
+      "startMs": 1220,
+      "endMs": 1340
+    },
+    {
+      "text": "stubborn,",
+      "startMs": 1460,
+      "endMs": 1780
+    },
+    {
+      "text": "look",
+      "startMs": 2060,
+      "endMs": 2200
+    },
+    {
+      "text": "under",
+      "startMs": 2240,
+      "endMs": 2420
+    },
+    {
+      "text": "your",
+      "startMs": 2460,
+      "endMs": 2580
+    },
+    {
+      "text": "feet.",
+      "startMs": 2640,
+      "endMs": 2880
+    },
+    {
+      "text": "Much",
+      "startMs": 3720,
+      "endMs": 3880
+    },
+    {
+      "text": "of",
+      "startMs": 3920,
+      "endMs": 3980
+    },
+    {
+      "text": "the",
+      "startMs": 4019,
+      "endMs": 4080
+    },
+    {
+      "text": "danger",
+      "startMs": 4140,
+      "endMs": 4460
+    },
+    {
+      "text": "sits",
+      "startMs": 4580,
+      "endMs": 4760
+    },
+    {
+      "text": "in",
+      "startMs": 4800,
+      "endMs": 4840
+    },
+    {
+      "text": "a",
+      "startMs": 4900,
+      "endMs": 4980
+    },
+    {
+      "text": "soil",
+      "startMs": 5040,
+      "endMs": 5300
+    },
+    {
+      "text": "called",
+      "startMs": 5400,
+      "endMs": 5600
+    },
+    {
+      "text": "peat.",
+      "startMs": 5700,
+      "endMs": 5940
+    }
+  ],
+  "s09": [
+    {
+      "text": "Peat",
+      "startMs": 100,
+      "endMs": 280
+    },
+    {
+      "text": "is",
+      "startMs": 360,
+      "endMs": 480
+    },
+    {
+      "text": "half-rotted",
+      "startMs": 540,
+      "endMs": 1080
+    },
+    {
+      "text": "plants",
+      "startMs": 1160,
+      "endMs": 1520
+    },
+    {
+      "text": "piled",
+      "startMs": 1800,
+      "endMs": 2020
+    },
+    {
+      "text": "up",
+      "startMs": 2080,
+      "endMs": 2140
+    },
+    {
+      "text": "in",
+      "startMs": 2180,
+      "endMs": 2260
+    },
+    {
+      "text": "water",
+      "startMs": 2320,
+      "endMs": 2560
+    },
+    {
+      "text": "over",
+      "startMs": 2620,
+      "endMs": 2760
+    },
+    {
+      "text": "thousands",
+      "startMs": 2880,
+      "endMs": 3320
+    },
+    {
+      "text": "of",
+      "startMs": 3360,
+      "endMs": 3440
+    },
+    {
+      "text": "years.",
+      "startMs": 3500,
+      "endMs": 3780
+    },
+    {
+      "text": "Kept",
+      "startMs": 4360,
+      "endMs": 4580
+    },
+    {
+      "text": "wet,",
+      "startMs": 4680,
+      "endMs": 4880
+    },
+    {
+      "text": "it",
+      "startMs": 5360,
+      "endMs": 5440
+    },
+    {
+      "text": "behaves",
+      "startMs": 5500,
+      "endMs": 5860
+    },
+    {
+      "text": "like",
+      "startMs": 5900,
+      "endMs": 6000
+    },
+    {
+      "text": "a",
+      "startMs": 6040,
+      "endMs": 6120
+    },
+    {
+      "text": "soaked",
+      "startMs": 6200,
+      "endMs": 6420
+    },
+    {
+      "text": "sponge",
+      "startMs": 6540,
+      "endMs": 6860
+    },
+    {
+      "text": "that",
+      "startMs": 6900,
+      "endMs": 7000
+    },
+    {
+      "text": "is",
+      "startMs": 7020,
+      "endMs": 7120
+    },
+    {
+      "text": "hard",
+      "startMs": 7180,
+      "endMs": 7360
+    },
+    {
+      "text": "to",
+      "startMs": 7420,
+      "endMs": 7500
+    },
+    {
+      "text": "light.",
+      "startMs": 7560,
+      "endMs": 7780
+    }
+  ],
+  "s10": [
+    {
+      "text": "Then",
+      "startMs": 100,
+      "endMs": 220
+    },
+    {
+      "text": "come",
+      "startMs": 320,
+      "endMs": 460
+    },
+    {
+      "text": "the",
+      "startMs": 480,
+      "endMs": 560
+    },
+    {
+      "text": "ditches.",
+      "startMs": 600,
+      "endMs": 980
+    },
+    {
+      "text": "Canals",
+      "startMs": 1860,
+      "endMs": 2200
+    },
+    {
+      "text": "are",
+      "startMs": 2240,
+      "endMs": 2340
+    },
+    {
+      "text": "dug",
+      "startMs": 2380,
+      "endMs": 2540
+    },
+    {
+      "text": "to",
+      "startMs": 2560,
+      "endMs": 2640
+    },
+    {
+      "text": "pull",
+      "startMs": 2680,
+      "endMs": 2820
+    },
+    {
+      "text": "the",
+      "startMs": 2840,
+      "endMs": 2920
+    },
+    {
+      "text": "water",
+      "startMs": 2960,
+      "endMs": 3200
+    },
+    {
+      "text": "out",
+      "startMs": 3260,
+      "endMs": 3420
+    },
+    {
+      "text": "so",
+      "startMs": 3500,
+      "endMs": 3600
+    },
+    {
+      "text": "crops",
+      "startMs": 3680,
+      "endMs": 3940
+    },
+    {
+      "text": "like",
+      "startMs": 3980,
+      "endMs": 4160
+    },
+    {
+      "text": "oil",
+      "startMs": 4240,
+      "endMs": 4420
+    },
+    {
+      "text": "palm",
+      "startMs": 4500,
+      "endMs": 4760
+    },
+    {
+      "text": "or",
+      "startMs": 4820,
+      "endMs": 4940
+    },
+    {
+      "text": "paper",
+      "startMs": 5000,
+      "endMs": 5220
+    },
+    {
+      "text": "trees",
+      "startMs": 5300,
+      "endMs": 5500
+    },
+    {
+      "text": "can",
+      "startMs": 5540,
+      "endMs": 5640
+    },
+    {
+      "text": "grow",
+      "startMs": 5700,
+      "endMs": 5860
+    },
+    {
+      "text": "there.",
+      "startMs": 5920,
+      "endMs": 6100
+    }
+  ],
+  "s11": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "sponge",
+      "startMs": 240,
+      "endMs": 560
+    },
+    {
+      "text": "dries",
+      "startMs": 640,
+      "endMs": 940
+    },
+    {
+      "text": "from",
+      "startMs": 980,
+      "endMs": 1080
+    },
+    {
+      "text": "the",
+      "startMs": 1120,
+      "endMs": 1180
+    },
+    {
+      "text": "top",
+      "startMs": 1240,
+      "endMs": 1460
+    },
+    {
+      "text": "down.",
+      "startMs": 1540,
+      "endMs": 1800
+    },
+    {
+      "text": "What",
+      "startMs": 2700,
+      "endMs": 2840
+    },
+    {
+      "text": "once",
+      "startMs": 2900,
+      "endMs": 3120
+    },
+    {
+      "text": "resisted",
+      "startMs": 3180,
+      "endMs": 3580
+    },
+    {
+      "text": "fire",
+      "startMs": 3680,
+      "endMs": 3980
+    },
+    {
+      "text": "turns",
+      "startMs": 4040,
+      "endMs": 4260
+    },
+    {
+      "text": "into",
+      "startMs": 4300,
+      "endMs": 4480
+    },
+    {
+      "text": "a",
+      "startMs": 4540,
+      "endMs": 4580
+    },
+    {
+      "text": "deep",
+      "startMs": 4660,
+      "endMs": 4880
+    },
+    {
+      "text": "store",
+      "startMs": 4960,
+      "endMs": 5140
+    },
+    {
+      "text": "of",
+      "startMs": 5180,
+      "endMs": 5260
+    },
+    {
+      "text": "fuel.",
+      "startMs": 5320,
+      "endMs": 5620
+    }
+  ],
+  "s12": [
+    {
+      "text": "A",
+      "startMs": 80,
+      "endMs": 140
+    },
+    {
+      "text": "2025",
+      "startMs": 320,
+      "endMs": 980
+    },
+    {
+      "text": "study",
+      "startMs": 1080,
+      "endMs": 1300
+    },
+    {
+      "text": "of",
+      "startMs": 1360,
+      "endMs": 1440
+    },
+    {
+      "text": "Sumatra",
+      "startMs": 1480,
+      "endMs": 1980
+    },
+    {
+      "text": "and",
+      "startMs": 2020,
+      "endMs": 2100
+    },
+    {
+      "text": "Borneo",
+      "startMs": 2180,
+      "endMs": 2560
+    },
+    {
+      "text": "compared",
+      "startMs": 3020,
+      "endMs": 3380
+    },
+    {
+      "text": "peatland",
+      "startMs": 3480,
+      "endMs": 3900
+    },
+    {
+      "text": "with",
+      "startMs": 3980,
+      "endMs": 4200
+    },
+    {
+      "text": "and",
+      "startMs": 4260,
+      "endMs": 4380
+    },
+    {
+      "text": "without",
+      "startMs": 4420,
+      "endMs": 4700
+    },
+    {
+      "text": "canals.",
+      "startMs": 4740,
+      "endMs": 5160
+    },
+    {
+      "text": "Drained",
+      "startMs": 6340,
+      "endMs": 6640
+    },
+    {
+      "text": "peat",
+      "startMs": 6720,
+      "endMs": 6940
+    },
+    {
+      "text": "showed",
+      "startMs": 7260,
+      "endMs": 7460
+    },
+    {
+      "text": "up",
+      "startMs": 7500,
+      "endMs": 7580
+    },
+    {
+      "text": "to",
+      "startMs": 7640,
+      "endMs": 7760
+    },
+    {
+      "text": "13",
+      "startMs": 7820,
+      "endMs": 8240
+    },
+    {
+      "text": "times",
+      "startMs": 8320,
+      "endMs": 8600
+    },
+    {
+      "text": "more",
+      "startMs": 8660,
+      "endMs": 8860
+    },
+    {
+      "text": "fire",
+      "startMs": 8920,
+      "endMs": 9160
+    },
+    {
+      "text": "hotspots",
+      "startMs": 9220,
+      "endMs": 9740
+    },
+    {
+      "text": "per",
+      "startMs": 9820,
+      "endMs": 9920
+    },
+    {
+      "text": "square",
+      "startMs": 10020,
+      "endMs": 10280
+    },
+    {
+      "text": "kilometer.",
+      "startMs": 10360,
+      "endMs": 10820
+    }
+  ],
+  "s13": [
+    {
+      "text": "A",
+      "startMs": 80,
+      "endMs": 120
+    },
+    {
+      "text": "peat",
+      "startMs": 200,
+      "endMs": 380
+    },
+    {
+      "text": "fire",
+      "startMs": 460,
+      "endMs": 700
+    },
+    {
+      "text": "can",
+      "startMs": 740,
+      "endMs": 880
+    },
+    {
+      "text": "creep",
+      "startMs": 920,
+      "endMs": 1180
+    },
+    {
+      "text": "underground.",
+      "startMs": 1220,
+      "endMs": 1800
+    },
+    {
+      "text": "It",
+      "startMs": 2460,
+      "endMs": 2520
+    },
+    {
+      "text": "can",
+      "startMs": 2560,
+      "endMs": 2700
+    },
+    {
+      "text": "smolder",
+      "startMs": 2780,
+      "endMs": 3120
+    },
+    {
+      "text": "out",
+      "startMs": 3180,
+      "endMs": 3260
+    },
+    {
+      "text": "of",
+      "startMs": 3300,
+      "endMs": 3400
+    },
+    {
+      "text": "sight,",
+      "startMs": 3480,
+      "endMs": 3720
+    },
+    {
+      "text": "sometimes",
+      "startMs": 3820,
+      "endMs": 4240
+    },
+    {
+      "text": "for",
+      "startMs": 4280,
+      "endMs": 4380
+    },
+    {
+      "text": "months,",
+      "startMs": 4440,
+      "endMs": 4720
+    },
+    {
+      "text": "and",
+      "startMs": 5240,
+      "endMs": 5300
+    },
+    {
+      "text": "it",
+      "startMs": 5340,
+      "endMs": 5400
+    },
+    {
+      "text": "is",
+      "startMs": 5440,
+      "endMs": 5560
+    },
+    {
+      "text": "very",
+      "startMs": 5640,
+      "endMs": 5900
+    },
+    {
+      "text": "hard",
+      "startMs": 5960,
+      "endMs": 6120
+    },
+    {
+      "text": "to",
+      "startMs": 6160,
+      "endMs": 6240
+    },
+    {
+      "text": "put",
+      "startMs": 6280,
+      "endMs": 6420
+    },
+    {
+      "text": "out.",
+      "startMs": 6500,
+      "endMs": 6680
+    }
+  ],
+  "s14": [
+    {
+      "text": "And",
+      "startMs": 80,
+      "endMs": 180
+    },
+    {
+      "text": "the",
+      "startMs": 200,
+      "endMs": 300
+    },
+    {
+      "text": "smoke",
+      "startMs": 380,
+      "endMs": 640
+    },
+    {
+      "text": "ends",
+      "startMs": 740,
+      "endMs": 940
+    },
+    {
+      "text": "up",
+      "startMs": 980,
+      "endMs": 1080
+    },
+    {
+      "text": "in",
+      "startMs": 1120,
+      "endMs": 1220
+    },
+    {
+      "text": "people's",
+      "startMs": 1260,
+      "endMs": 1580
+    },
+    {
+      "text": "chests.",
+      "startMs": 1660,
+      "endMs": 2160
+    },
+    {
+      "text": "In",
+      "startMs": 3540,
+      "endMs": 3700
+    },
+    {
+      "text": "Jambi",
+      "startMs": 3760,
+      "endMs": 4140
+    },
+    {
+      "text": "province",
+      "startMs": 4260,
+      "endMs": 4640
+    },
+    {
+      "text": "alone,",
+      "startMs": 4720,
+      "endMs": 5080
+    },
+    {
+      "text": "health",
+      "startMs": 5500,
+      "endMs": 5700
+    },
+    {
+      "text": "officials",
+      "startMs": 5740,
+      "endMs": 6160
+    },
+    {
+      "text": "recorded",
+      "startMs": 6220,
+      "endMs": 6580
+    },
+    {
+      "text": "more",
+      "startMs": 6640,
+      "endMs": 6800
+    },
+    {
+      "text": "than",
+      "startMs": 6820,
+      "endMs": 7000
+    },
+    {
+      "text": "76,000",
+      "startMs": 7460,
+      "endMs": 8039
+    },
+    {
+      "text": "respiratory",
+      "startMs": 8119,
+      "endMs": 8580
+    },
+    {
+      "text": "infections",
+      "startMs": 8620,
+      "endMs": 9160
+    },
+    {
+      "text": "from",
+      "startMs": 9200,
+      "endMs": 9380
+    },
+    {
+      "text": "early",
+      "startMs": 9440,
+      "endMs": 9660
+    },
+    {
+      "text": "August",
+      "startMs": 9780,
+      "endMs": 10060
+    },
+    {
+      "text": "to",
+      "startMs": 10100,
+      "endMs": 10180
+    },
+    {
+      "text": "mid-October.",
+      "startMs": 10240,
+      "endMs": 10840
+    }
+  ],
+  "s15": [
+    {
+      "text": "The",
+      "startMs": 120,
+      "endMs": 200
+    },
+    {
+      "text": "haze",
+      "startMs": 280,
+      "endMs": 560
+    },
+    {
+      "text": "also",
+      "startMs": 700,
+      "endMs": 940
+    },
+    {
+      "text": "crosses",
+      "startMs": 1020,
+      "endMs": 1380
+    },
+    {
+      "text": "borders.",
+      "startMs": 1480,
+      "endMs": 1860
+    },
+    {
+      "text": "It",
+      "startMs": 2780,
+      "endMs": 2860
+    },
+    {
+      "text": "reached",
+      "startMs": 2920,
+      "endMs": 3160
+    },
+    {
+      "text": "Malaysia",
+      "startMs": 3200,
+      "endMs": 3620
+    },
+    {
+      "text": "and",
+      "startMs": 3660,
+      "endMs": 3760
+    },
+    {
+      "text": "Singapore,",
+      "startMs": 3880,
+      "endMs": 4340
+    },
+    {
+      "text": "and",
+      "startMs": 4680,
+      "endMs": 4780
+    },
+    {
+      "text": "Singapore's",
+      "startMs": 4860,
+      "endMs": 5300
+    },
+    {
+      "text": "environment",
+      "startMs": 5320,
+      "endMs": 5780
+    },
+    {
+      "text": "agency",
+      "startMs": 5900,
+      "endMs": 6280
+    },
+    {
+      "text": "asked",
+      "startMs": 6400,
+      "endMs": 6660
+    },
+    {
+      "text": "10",
+      "startMs": 6720,
+      "endMs": 6900
+    },
+    {
+      "text": "companies",
+      "startMs": 6980,
+      "endMs": 7380
+    },
+    {
+      "text": "for",
+      "startMs": 7420,
+      "endMs": 7500
+    },
+    {
+      "text": "information.",
+      "startMs": 7560,
+      "endMs": 8160
+    }
+  ],
+  "s16": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 220
+    },
+    {
+      "text": "why",
+      "startMs": 300,
+      "endMs": 480
+    },
+    {
+      "text": "would",
+      "startMs": 520,
+      "endMs": 680
+    },
+    {
+      "text": "fire",
+      "startMs": 740,
+      "endMs": 980
+    },
+    {
+      "text": "be",
+      "startMs": 1020,
+      "endMs": 1100
+    },
+    {
+      "text": "used",
+      "startMs": 1160,
+      "endMs": 1320
+    },
+    {
+      "text": "at",
+      "startMs": 1340,
+      "endMs": 1420
+    },
+    {
+      "text": "all?",
+      "startMs": 1500,
+      "endMs": 1700
+    },
+    {
+      "text": "One",
+      "startMs": 2500,
+      "endMs": 2640
+    },
+    {
+      "text": "reason",
+      "startMs": 2700,
+      "endMs": 3020
+    },
+    {
+      "text": "is",
+      "startMs": 3080,
+      "endMs": 3200
+    },
+    {
+      "text": "money,",
+      "startMs": 3300,
+      "endMs": 3560
+    },
+    {
+      "text": "because",
+      "startMs": 3780,
+      "endMs": 4040
+    },
+    {
+      "text": "burning",
+      "startMs": 4120,
+      "endMs": 4400
+    },
+    {
+      "text": "is",
+      "startMs": 4440,
+      "endMs": 4500
+    },
+    {
+      "text": "a",
+      "startMs": 4540,
+      "endMs": 4620
+    },
+    {
+      "text": "cheap",
+      "startMs": 4700,
+      "endMs": 4940
+    },
+    {
+      "text": "way",
+      "startMs": 4980,
+      "endMs": 5080
+    },
+    {
+      "text": "to",
+      "startMs": 5120,
+      "endMs": 5180
+    },
+    {
+      "text": "clear",
+      "startMs": 5240,
+      "endMs": 5420
+    },
+    {
+      "text": "land.",
+      "startMs": 5480,
+      "endMs": 5780
+    }
+  ],
+  "s17": [
+    {
+      "text": "Sawit",
+      "startMs": 100,
+      "endMs": 460
+    },
+    {
+      "text": "Watch,",
+      "startMs": 560,
+      "endMs": 840
+    },
+    {
+      "text": "a",
+      "startMs": 1340,
+      "endMs": 1400
+    },
+    {
+      "text": "palm",
+      "startMs": 1500,
+      "endMs": 1820
+    },
+    {
+      "text": "oil",
+      "startMs": 1880,
+      "endMs": 2080
+    },
+    {
+      "text": "watchdog",
+      "startMs": 2180,
+      "endMs": 2620
+    },
+    {
+      "text": "group,",
+      "startMs": 2680,
+      "endMs": 2880
+    },
+    {
+      "text": "estimates",
+      "startMs": 3400,
+      "endMs": 3840
+    },
+    {
+      "text": "fire",
+      "startMs": 3940,
+      "endMs": 4180
+    },
+    {
+      "text": "can",
+      "startMs": 4220,
+      "endMs": 4360
+    },
+    {
+      "text": "cut",
+      "startMs": 4420,
+      "endMs": 4600
+    },
+    {
+      "text": "clearing",
+      "startMs": 4660,
+      "endMs": 4940
+    },
+    {
+      "text": "costs",
+      "startMs": 5040,
+      "endMs": 5420
+    },
+    {
+      "text": "by",
+      "startMs": 5720,
+      "endMs": 5860
+    },
+    {
+      "text": "up",
+      "startMs": 5920,
+      "endMs": 6000
+    },
+    {
+      "text": "to",
+      "startMs": 6040,
+      "endMs": 6140
+    },
+    {
+      "text": "half",
+      "startMs": 6240,
+      "endMs": 6500
+    },
+    {
+      "text": "compared",
+      "startMs": 6560,
+      "endMs": 6880
+    },
+    {
+      "text": "with",
+      "startMs": 6920,
+      "endMs": 7040
+    },
+    {
+      "text": "machines.",
+      "startMs": 7080,
+      "endMs": 7580
+    },
+    {
+      "text": "That",
+      "startMs": 8500,
+      "endMs": 8680
+    },
+    {
+      "text": "is",
+      "startMs": 8740,
+      "endMs": 8860
+    },
+    {
+      "text": "their",
+      "startMs": 8920,
+      "endMs": 9140
+    },
+    {
+      "text": "estimate,",
+      "startMs": 9200,
+      "endMs": 9580
+    },
+    {
+      "text": "not",
+      "startMs": 9920,
+      "endMs": 10060
+    },
+    {
+      "text": "an",
+      "startMs": 10100,
+      "endMs": 10240
+    },
+    {
+      "text": "audited",
+      "startMs": 10320,
+      "endMs": 10600
+    },
+    {
+      "text": "figure.",
+      "startMs": 10700,
+      "endMs": 11020
+    }
+  ],
+  "s18": [
+    {
+      "text": "On",
+      "startMs": 60,
+      "endMs": 160
+    },
+    {
+      "text": "paper,",
+      "startMs": 260,
+      "endMs": 580
+    },
+    {
+      "text": "clearing",
+      "startMs": 980,
+      "endMs": 1280
+    },
+    {
+      "text": "land",
+      "startMs": 1340,
+      "endMs": 1540
+    },
+    {
+      "text": "by",
+      "startMs": 1580,
+      "endMs": 1700
+    },
+    {
+      "text": "burning",
+      "startMs": 1780,
+      "endMs": 2040
+    },
+    {
+      "text": "is",
+      "startMs": 2080,
+      "endMs": 2180
+    },
+    {
+      "text": "banned.",
+      "startMs": 2240,
+      "endMs": 2560
+    },
+    {
+      "text": "A",
+      "startMs": 3140,
+      "endMs": 3200
+    },
+    {
+      "text": "2009",
+      "startMs": 3360,
+      "endMs": 4100
+    },
+    {
+      "text": "environment",
+      "startMs": 4140,
+      "endMs": 4600
+    },
+    {
+      "text": "law",
+      "startMs": 4660,
+      "endMs": 4860
+    },
+    {
+      "text": "says",
+      "startMs": 4920,
+      "endMs": 5120
+    },
+    {
+      "text": "so.",
+      "startMs": 5180,
+      "endMs": 5380
+    }
+  ],
+  "s19": [
+    {
+      "text": "There",
+      "startMs": 100,
+      "endMs": 240
+    },
+    {
+      "text": "is",
+      "startMs": 280,
+      "endMs": 360
+    },
+    {
+      "text": "an",
+      "startMs": 400,
+      "endMs": 460
+    },
+    {
+      "text": "exception",
+      "startMs": 500,
+      "endMs": 1000
+    },
+    {
+      "text": "for",
+      "startMs": 1080,
+      "endMs": 1180
+    },
+    {
+      "text": "local",
+      "startMs": 1240,
+      "endMs": 1460
+    },
+    {
+      "text": "custom.",
+      "startMs": 1540,
+      "endMs": 1920
+    },
+    {
+      "text": "A",
+      "startMs": 2540,
+      "endMs": 2620
+    },
+    {
+      "text": "family",
+      "startMs": 2700,
+      "endMs": 2980
+    },
+    {
+      "text": "may",
+      "startMs": 3040,
+      "endMs": 3180
+    },
+    {
+      "text": "burn",
+      "startMs": 3240,
+      "endMs": 3400
+    },
+    {
+      "text": "up",
+      "startMs": 3440,
+      "endMs": 3520
+    },
+    {
+      "text": "to",
+      "startMs": 3560,
+      "endMs": 3660
+    },
+    {
+      "text": "two",
+      "startMs": 3700,
+      "endMs": 3860
+    },
+    {
+      "text": "hectares",
+      "startMs": 3920,
+      "endMs": 4340
+    },
+    {
+      "text": "for",
+      "startMs": 4380,
+      "endMs": 4500
+    },
+    {
+      "text": "local",
+      "startMs": 4540,
+      "endMs": 4780
+    },
+    {
+      "text": "crop",
+      "startMs": 4860,
+      "endMs": 5060
+    },
+    {
+      "text": "varieties",
+      "startMs": 5100,
+      "endMs": 5600
+    },
+    {
+      "text": "with",
+      "startMs": 5960,
+      "endMs": 6040
+    },
+    {
+      "text": "a",
+      "startMs": 6080,
+      "endMs": 6160
+    },
+    {
+      "text": "firebreak",
+      "startMs": 6220,
+      "endMs": 6680
+    },
+    {
+      "text": "around",
+      "startMs": 6740,
+      "endMs": 6980
+    },
+    {
+      "text": "it.",
+      "startMs": 7040,
+      "endMs": 7120
+    }
+  ],
+  "s20": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "whose",
+      "startMs": 280,
+      "endMs": 500
+    },
+    {
+      "text": "land",
+      "startMs": 560,
+      "endMs": 780
+    },
+    {
+      "text": "burned",
+      "startMs": 860,
+      "endMs": 1120
+    },
+    {
+      "text": "this",
+      "startMs": 1160,
+      "endMs": 1300
+    },
+    {
+      "text": "year?",
+      "startMs": 1360,
+      "endMs": 1560
+    },
+    {
+      "text": "On",
+      "startMs": 2480,
+      "endMs": 2580
+    },
+    {
+      "text": "November",
+      "startMs": 2640,
+      "endMs": 3020
+    },
+    {
+      "text": "13th,",
+      "startMs": 3120,
+      "endMs": 3680
+    },
+    {
+      "text": "a",
+      "startMs": 4120,
+      "endMs": 4180
+    },
+    {
+      "text": "study",
+      "startMs": 4240,
+      "endMs": 4460
+    },
+    {
+      "text": "pointed",
+      "startMs": 4560,
+      "endMs": 4780
+    },
+    {
+      "text": "to",
+      "startMs": 4840,
+      "endMs": 4920
+    },
+    {
+      "text": "burned",
+      "startMs": 5000,
+      "endMs": 5260
+    },
+    {
+      "text": "ground",
+      "startMs": 5340,
+      "endMs": 5660
+    },
+    {
+      "text": "inside",
+      "startMs": 5800,
+      "endMs": 6160
+    },
+    {
+      "text": "concessions",
+      "startMs": 6200,
+      "endMs": 6740
+    },
+    {
+      "text": "tied",
+      "startMs": 6840,
+      "endMs": 7040
+    },
+    {
+      "text": "to",
+      "startMs": 7100,
+      "endMs": 7200
+    },
+    {
+      "text": "large",
+      "startMs": 7280,
+      "endMs": 7580
+    },
+    {
+      "text": "listed",
+      "startMs": 7660,
+      "endMs": 7940
+    },
+    {
+      "text": "firms.",
+      "startMs": 8039,
+      "endMs": 8400
+    }
+  ],
+  "s21": [
+    {
+      "text": "The",
+      "startMs": 120,
+      "endMs": 200
+    },
+    {
+      "text": "Rainforest",
+      "startMs": 260,
+      "endMs": 820
+    },
+    {
+      "text": "Action",
+      "startMs": 960,
+      "endMs": 1220
+    },
+    {
+      "text": "Network",
+      "startMs": 1300,
+      "endMs": 1660
+    },
+    {
+      "text": "and",
+      "startMs": 1700,
+      "endMs": 1800
+    },
+    {
+      "text": "Nusantara",
+      "startMs": 1880,
+      "endMs": 2500
+    },
+    {
+      "text": "Atlas",
+      "startMs": 2620,
+      "endMs": 2940
+    },
+    {
+      "text": "found",
+      "startMs": 3340,
+      "endMs": 3540
+    },
+    {
+      "text": "more",
+      "startMs": 3600,
+      "endMs": 3760
+    },
+    {
+      "text": "than",
+      "startMs": 3780,
+      "endMs": 3900
+    },
+    {
+      "text": "14,600",
+      "startMs": 4059,
+      "endMs": 5660
+    },
+    {
+      "text": "burned",
+      "startMs": 5740,
+      "endMs": 5960
+    },
+    {
+      "text": "hectares",
+      "startMs": 6020,
+      "endMs": 6440
+    },
+    {
+      "text": "in",
+      "startMs": 6780,
+      "endMs": 6980
+    },
+    {
+      "text": "one",
+      "startMs": 7040,
+      "endMs": 7180
+    },
+    {
+      "text": "pulpwood",
+      "startMs": 7300,
+      "endMs": 7640
+    },
+    {
+      "text": "concession",
+      "startMs": 7700,
+      "endMs": 8180
+    },
+    {
+      "text": "that",
+      "startMs": 8440,
+      "endMs": 8520
+    },
+    {
+      "text": "supplies",
+      "startMs": 8580,
+      "endMs": 9020
+    },
+    {
+      "text": "Asia",
+      "startMs": 9200,
+      "endMs": 9400
+    },
+    {
+      "text": "Pulp",
+      "startMs": 9500,
+      "endMs": 9680
+    },
+    {
+      "text": "&",
+      "startMs": 9720,
+      "endMs": 9760
+    },
+    {
+      "text": "Paper.",
+      "startMs": 9840,
+      "endMs": 10160
+    },
+    {
+      "text": "The",
+      "startMs": 11060,
+      "endMs": 11140
+    },
+    {
+      "text": "paper",
+      "startMs": 11180,
+      "endMs": 11400
+    },
+    {
+      "text": "company",
+      "startMs": 11480,
+      "endMs": 11780
+    },
+    {
+      "text": "said",
+      "startMs": 11880,
+      "endMs": 12000
+    },
+    {
+      "text": "it",
+      "startMs": 12040,
+      "endMs": 12100
+    },
+    {
+      "text": "was",
+      "startMs": 12140,
+      "endMs": 12280
+    },
+    {
+      "text": "unable",
+      "startMs": 12320,
+      "endMs": 12620
+    },
+    {
+      "text": "to",
+      "startMs": 12640,
+      "endMs": 12720
+    },
+    {
+      "text": "comment.",
+      "startMs": 12780,
+      "endMs": 13160
+    }
+  ],
+  "s22": [
+    {
+      "text": "In",
+      "startMs": 100,
+      "endMs": 160
+    },
+    {
+      "text": "a",
+      "startMs": 200,
+      "endMs": 260
+    },
+    {
+      "text": "West",
+      "startMs": 300,
+      "endMs": 520
+    },
+    {
+      "text": "Borneo",
+      "startMs": 600,
+      "endMs": 940
+    },
+    {
+      "text": "palm",
+      "startMs": 1060,
+      "endMs": 1260
+    },
+    {
+      "text": "concession",
+      "startMs": 1320,
+      "endMs": 1780
+    },
+    {
+      "text": "run",
+      "startMs": 1880,
+      "endMs": 2040
+    },
+    {
+      "text": "by",
+      "startMs": 2100,
+      "endMs": 2300
+    },
+    {
+      "text": "First",
+      "startMs": 2420,
+      "endMs": 2640
+    },
+    {
+      "text": "Resources,",
+      "startMs": 2720,
+      "endMs": 3260
+    },
+    {
+      "text": "they",
+      "startMs": 3720,
+      "endMs": 3840
+    },
+    {
+      "text": "mapped",
+      "startMs": 3900,
+      "endMs": 4080
+    },
+    {
+      "text": "at",
+      "startMs": 4120,
+      "endMs": 4220
+    },
+    {
+      "text": "least",
+      "startMs": 4300,
+      "endMs": 4540
+    },
+    {
+      "text": "3,700",
+      "startMs": 4600,
+      "endMs": 5860
+    },
+    {
+      "text": "burned",
+      "startMs": 5940,
+      "endMs": 6160
+    },
+    {
+      "text": "hectares.",
+      "startMs": 6200,
+      "endMs": 6680
+    },
+    {
+      "text": "The",
+      "startMs": 7420,
+      "endMs": 7500
+    },
+    {
+      "text": "company",
+      "startMs": 7540,
+      "endMs": 7840
+    },
+    {
+      "text": "says",
+      "startMs": 7940,
+      "endMs": 8100
+    },
+    {
+      "text": "it",
+      "startMs": 8140,
+      "endMs": 8220
+    },
+    {
+      "text": "follows",
+      "startMs": 8320,
+      "endMs": 8660
+    },
+    {
+      "text": "a",
+      "startMs": 8740,
+      "endMs": 8780
+    },
+    {
+      "text": "zero-burning",
+      "startMs": 8900,
+      "endMs": 9460
+    },
+    {
+      "text": "policy.",
+      "startMs": 9540,
+      "endMs": 10020
+    }
+  ],
+  "s23": [
+    {
+      "text": "In",
+      "startMs": 80,
+      "endMs": 180
+    },
+    {
+      "text": "a",
+      "startMs": 220,
+      "endMs": 260
+    },
+    {
+      "text": "Bumitama",
+      "startMs": 420,
+      "endMs": 1300
+    },
+    {
+      "text": "Agri",
+      "startMs": 1460,
+      "endMs": 1700
+    },
+    {
+      "text": "concession,",
+      "startMs": 1760,
+      "endMs": 2260
+    },
+    {
+      "text": "the",
+      "startMs": 2700,
+      "endMs": 2780
+    },
+    {
+      "text": "study",
+      "startMs": 2860,
+      "endMs": 3080
+    },
+    {
+      "text": "counted",
+      "startMs": 3180,
+      "endMs": 3420
+    },
+    {
+      "text": "4,473",
+      "startMs": 3700,
+      "endMs": 5520
+    },
+    {
+      "text": "hectares,",
+      "startMs": 5560,
+      "endMs": 5980
+    },
+    {
+      "text": "88%",
+      "startMs": 6540,
+      "endMs": 7200
+    },
+    {
+      "text": "of",
+      "startMs": 7240,
+      "endMs": 7300
+    },
+    {
+      "text": "it",
+      "startMs": 7340,
+      "endMs": 7420
+    },
+    {
+      "text": "on",
+      "startMs": 7480,
+      "endMs": 7600
+    },
+    {
+      "text": "peat.",
+      "startMs": 7660,
+      "endMs": 7900
+    },
+    {
+      "text": "The",
+      "startMs": 8760,
+      "endMs": 8820
+    },
+    {
+      "text": "company",
+      "startMs": 8880,
+      "endMs": 9200
+    },
+    {
+      "text": "said",
+      "startMs": 9300,
+      "endMs": 9420
+    },
+    {
+      "text": "it",
+      "startMs": 9460,
+      "endMs": 9500
+    },
+    {
+      "text": "was",
+      "startMs": 9540,
+      "endMs": 9620
+    },
+    {
+      "text": "still",
+      "startMs": 9700,
+      "endMs": 9840
+    },
+    {
+      "text": "investigating.",
+      "startMs": 9880,
+      "endMs": 10560
+    }
+  ],
+  "s24": [
+    {
+      "text": "Read",
+      "startMs": 80,
+      "endMs": 240
+    },
+    {
+      "text": "this",
+      "startMs": 280,
+      "endMs": 420
+    },
+    {
+      "text": "carefully.",
+      "startMs": 480,
+      "endMs": 940
+    },
+    {
+      "text": "The",
+      "startMs": 1480,
+      "endMs": 1560
+    },
+    {
+      "text": "study",
+      "startMs": 1620,
+      "endMs": 1880
+    },
+    {
+      "text": "mapped",
+      "startMs": 1940,
+      "endMs": 2200
+    },
+    {
+      "text": "where",
+      "startMs": 2260,
+      "endMs": 2420
+    },
+    {
+      "text": "it",
+      "startMs": 2460,
+      "endMs": 2560
+    },
+    {
+      "text": "burned.",
+      "startMs": 2620,
+      "endMs": 2920
+    },
+    {
+      "text": "It",
+      "startMs": 3960,
+      "endMs": 4019
+    },
+    {
+      "text": "did",
+      "startMs": 4059,
+      "endMs": 4140
+    },
+    {
+      "text": "not",
+      "startMs": 4180,
+      "endMs": 4320
+    },
+    {
+      "text": "establish",
+      "startMs": 4360,
+      "endMs": 4840
+    },
+    {
+      "text": "how",
+      "startMs": 4880,
+      "endMs": 4980
+    },
+    {
+      "text": "the",
+      "startMs": 5020,
+      "endMs": 5100
+    },
+    {
+      "text": "fire",
+      "startMs": 5160,
+      "endMs": 5380
+    },
+    {
+      "text": "started.",
+      "startMs": 5500,
+      "endMs": 5820
+    }
+  ],
+  "s25": [
+    {
+      "text": "Alex",
+      "startMs": 80,
+      "endMs": 340
+    },
+    {
+      "text": "Heelan",
+      "startMs": 420,
+      "endMs": 740
+    },
+    {
+      "text": "of",
+      "startMs": 880,
+      "endMs": 940
+    },
+    {
+      "text": "the",
+      "startMs": 980,
+      "endMs": 1040
+    },
+    {
+      "text": "Rainforest",
+      "startMs": 1100,
+      "endMs": 1660
+    },
+    {
+      "text": "Action",
+      "startMs": 1800,
+      "endMs": 2040
+    },
+    {
+      "text": "Network,",
+      "startMs": 2100,
+      "endMs": 2460
+    },
+    {
+      "text": "one",
+      "startMs": 2900,
+      "endMs": 2960
+    },
+    {
+      "text": "of",
+      "startMs": 3000,
+      "endMs": 3060
+    },
+    {
+      "text": "the",
+      "startMs": 3100,
+      "endMs": 3160
+    },
+    {
+      "text": "study's",
+      "startMs": 3220,
+      "endMs": 3560
+    },
+    {
+      "text": "authors,",
+      "startMs": 3640,
+      "endMs": 4000
+    },
+    {
+      "text": "put",
+      "startMs": 4320,
+      "endMs": 4400
+    },
+    {
+      "text": "it",
+      "startMs": 4440,
+      "endMs": 4500
+    },
+    {
+      "text": "this",
+      "startMs": 4560,
+      "endMs": 4700
+    },
+    {
+      "text": "way,",
+      "startMs": 4760,
+      "endMs": 4920
+    },
+    {
+      "text": "\"The",
+      "startMs": 5540,
+      "endMs": 5640
+    },
+    {
+      "text": "question",
+      "startMs": 5700,
+      "endMs": 6100
+    },
+    {
+      "text": "is",
+      "startMs": 6160,
+      "endMs": 6280
+    },
+    {
+      "text": "less",
+      "startMs": 6380,
+      "endMs": 6640
+    },
+    {
+      "text": "who",
+      "startMs": 6700,
+      "endMs": 6820
+    },
+    {
+      "text": "lit",
+      "startMs": 6880,
+      "endMs": 7000
+    },
+    {
+      "text": "the",
+      "startMs": 7040,
+      "endMs": 7100
+    },
+    {
+      "text": "match",
+      "startMs": 7180,
+      "endMs": 7460
+    },
+    {
+      "text": "than",
+      "startMs": 7500,
+      "endMs": 7640
+    },
+    {
+      "text": "who",
+      "startMs": 7700,
+      "endMs": 7820
+    },
+    {
+      "text": "drained",
+      "startMs": 7860,
+      "endMs": 8080
+    },
+    {
+      "text": "the",
+      "startMs": 8100,
+      "endMs": 8200
+    },
+    {
+      "text": "peat",
+      "startMs": 8240,
+      "endMs": 8460
+    },
+    {
+      "text": "and",
+      "startMs": 8540,
+      "endMs": 8640
+    },
+    {
+      "text": "created",
+      "startMs": 8700,
+      "endMs": 9060
+    },
+    {
+      "text": "the",
+      "startMs": 9080,
+      "endMs": 9140
+    },
+    {
+      "text": "conditions.\"",
+      "startMs": 9180,
+      "endMs": 9740
+    }
+  ],
+  "s26": [
+    {
+      "text": "There",
+      "startMs": 120,
+      "endMs": 240
+    },
+    {
+      "text": "is",
+      "startMs": 280,
+      "endMs": 380
+    },
+    {
+      "text": "also",
+      "startMs": 460,
+      "endMs": 700
+    },
+    {
+      "text": "a",
+      "startMs": 740,
+      "endMs": 840
+    },
+    {
+      "text": "serious",
+      "startMs": 900,
+      "endMs": 1240
+    },
+    {
+      "text": "counterpoint.",
+      "startMs": 1320,
+      "endMs": 1860
+    },
+    {
+      "text": "The",
+      "startMs": 2520,
+      "endMs": 2600
+    },
+    {
+      "text": "palm",
+      "startMs": 2660,
+      "endMs": 2880
+    },
+    {
+      "text": "certification",
+      "startMs": 2940,
+      "endMs": 3560
+    },
+    {
+      "text": "body,",
+      "startMs": 3640,
+      "endMs": 3920
+    },
+    {
+      "text": "the",
+      "startMs": 4300,
+      "endMs": 4440
+    },
+    {
+      "text": "RSPO,",
+      "startMs": 4560,
+      "endMs": 5260
+    },
+    {
+      "text": "cites",
+      "startMs": 5740,
+      "endMs": 6020
+    },
+    {
+      "text": "data",
+      "startMs": 6060,
+      "endMs": 6280
+    },
+    {
+      "text": "showing",
+      "startMs": 6360,
+      "endMs": 6640
+    },
+    {
+      "text": "nearly",
+      "startMs": 6700,
+      "endMs": 7020
+    },
+    {
+      "text": "90%",
+      "startMs": 7100,
+      "endMs": 7660
+    },
+    {
+      "text": "of",
+      "startMs": 7700,
+      "endMs": 7780
+    },
+    {
+      "text": "land",
+      "startMs": 7840,
+      "endMs": 8100
+    },
+    {
+      "text": "burned",
+      "startMs": 8200,
+      "endMs": 8460
+    },
+    {
+      "text": "through",
+      "startMs": 8500,
+      "endMs": 8660
+    },
+    {
+      "text": "September",
+      "startMs": 8720,
+      "endMs": 9140
+    },
+    {
+      "text": "lay",
+      "startMs": 9560,
+      "endMs": 9740
+    },
+    {
+      "text": "outside",
+      "startMs": 9820,
+      "endMs": 10200
+    },
+    {
+      "text": "palm",
+      "startMs": 10280,
+      "endMs": 10500
+    },
+    {
+      "text": "concessions.",
+      "startMs": 10540,
+      "endMs": 11160
+    }
+  ],
+  "s27": [
+    {
+      "text": "Outside",
+      "startMs": 80,
+      "endMs": 420
+    },
+    {
+      "text": "palm",
+      "startMs": 500,
+      "endMs": 680
+    },
+    {
+      "text": "concessions",
+      "startMs": 720,
+      "endMs": 1240
+    },
+    {
+      "text": "can",
+      "startMs": 1300,
+      "endMs": 1400
+    },
+    {
+      "text": "mean",
+      "startMs": 1440,
+      "endMs": 1580
+    },
+    {
+      "text": "forests,",
+      "startMs": 1740,
+      "endMs": 2220
+    },
+    {
+      "text": "village",
+      "startMs": 2700,
+      "endMs": 2940
+    },
+    {
+      "text": "land,",
+      "startMs": 3040,
+      "endMs": 3300
+    },
+    {
+      "text": "or",
+      "startMs": 3820,
+      "endMs": 3940
+    },
+    {
+      "text": "other",
+      "startMs": 4000,
+      "endMs": 4160
+    },
+    {
+      "text": "kinds",
+      "startMs": 4220,
+      "endMs": 4460
+    },
+    {
+      "text": "of",
+      "startMs": 4480,
+      "endMs": 4560
+    },
+    {
+      "text": "concession,",
+      "startMs": 4600,
+      "endMs": 5100
+    },
+    {
+      "text": "such",
+      "startMs": 5420,
+      "endMs": 5560
+    },
+    {
+      "text": "as",
+      "startMs": 5600,
+      "endMs": 5700
+    },
+    {
+      "text": "pulpwood.",
+      "startMs": 5760,
+      "endMs": 6180
+    },
+    {
+      "text": "It",
+      "startMs": 7180,
+      "endMs": 7300
+    },
+    {
+      "text": "narrows",
+      "startMs": 7380,
+      "endMs": 7780
+    },
+    {
+      "text": "one",
+      "startMs": 7860,
+      "endMs": 7960
+    },
+    {
+      "text": "accusation",
+      "startMs": 8020,
+      "endMs": 8580
+    },
+    {
+      "text": "without",
+      "startMs": 8620,
+      "endMs": 8900
+    },
+    {
+      "text": "answering",
+      "startMs": 9000,
+      "endMs": 9420
+    },
+    {
+      "text": "all",
+      "startMs": 9500,
+      "endMs": 9620
+    },
+    {
+      "text": "of",
+      "startMs": 9660,
+      "endMs": 9740
+    },
+    {
+      "text": "them.",
+      "startMs": 9800,
+      "endMs": 9960
+    }
+  ],
+  "s28": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "RSPO",
+      "startMs": 300,
+      "endMs": 920
+    },
+    {
+      "text": "also",
+      "startMs": 1060,
+      "endMs": 1320
+    },
+    {
+      "text": "says",
+      "startMs": 1440,
+      "endMs": 1640
+    },
+    {
+      "text": "fire",
+      "startMs": 1760,
+      "endMs": 1980
+    },
+    {
+      "text": "reached",
+      "startMs": 2060,
+      "endMs": 2280
+    },
+    {
+      "text": "about",
+      "startMs": 2340,
+      "endMs": 2540
+    },
+    {
+      "text": "14,500",
+      "startMs": 2700,
+      "endMs": 4300
+    },
+    {
+      "text": "hectares",
+      "startMs": 4360,
+      "endMs": 4780
+    },
+    {
+      "text": "of",
+      "startMs": 4820,
+      "endMs": 4900
+    },
+    {
+      "text": "certified",
+      "startMs": 4940,
+      "endMs": 5340
+    },
+    {
+      "text": "concessions,",
+      "startMs": 5400,
+      "endMs": 5960
+    },
+    {
+      "text": "much",
+      "startMs": 6580,
+      "endMs": 6720
+    },
+    {
+      "text": "of",
+      "startMs": 6780,
+      "endMs": 6840
+    },
+    {
+      "text": "it",
+      "startMs": 6880,
+      "endMs": 7000
+    },
+    {
+      "text": "in",
+      "startMs": 7040,
+      "endMs": 7160
+    },
+    {
+      "text": "just",
+      "startMs": 7220,
+      "endMs": 7420
+    },
+    {
+      "text": "two",
+      "startMs": 7480,
+      "endMs": 7600
+    },
+    {
+      "text": "of",
+      "startMs": 7640,
+      "endMs": 7720
+    },
+    {
+      "text": "them.",
+      "startMs": 7780,
+      "endMs": 7940
+    },
+    {
+      "text": "It",
+      "startMs": 8860,
+      "endMs": 9000
+    },
+    {
+      "text": "says",
+      "startMs": 9080,
+      "endMs": 9300
+    },
+    {
+      "text": "it",
+      "startMs": 9340,
+      "endMs": 9440
+    },
+    {
+      "text": "found",
+      "startMs": 9500,
+      "endMs": 9760
+    },
+    {
+      "text": "no",
+      "startMs": 9840,
+      "endMs": 9980
+    },
+    {
+      "text": "evidence",
+      "startMs": 10040,
+      "endMs": 10400
+    },
+    {
+      "text": "that",
+      "startMs": 10440,
+      "endMs": 10600
+    },
+    {
+      "text": "any",
+      "startMs": 10680,
+      "endMs": 10820
+    },
+    {
+      "text": "certified",
+      "startMs": 10920,
+      "endMs": 11340
+    },
+    {
+      "text": "unit",
+      "startMs": 11420,
+      "endMs": 11620
+    },
+    {
+      "text": "started",
+      "startMs": 11680,
+      "endMs": 11920
+    },
+    {
+      "text": "fires",
+      "startMs": 12020,
+      "endMs": 12300
+    },
+    {
+      "text": "on",
+      "startMs": 12340,
+      "endMs": 12440
+    },
+    {
+      "text": "purpose.",
+      "startMs": 12500,
+      "endMs": 12880
+    }
+  ],
+  "s29": [
+    {
+      "text": "In",
+      "startMs": 80,
+      "endMs": 200
+    },
+    {
+      "text": "Jambi,",
+      "startMs": 260,
+      "endMs": 720
+    },
+    {
+      "text": "the",
+      "startMs": 1120,
+      "endMs": 1200
+    },
+    {
+      "text": "environmental",
+      "startMs": 1220,
+      "endMs": 1800
+    },
+    {
+      "text": "group",
+      "startMs": 1880,
+      "endMs": 2060
+    },
+    {
+      "text": "WALHI",
+      "startMs": 2140,
+      "endMs": 2500
+    },
+    {
+      "text": "reported",
+      "startMs": 2540,
+      "endMs": 2940
+    },
+    {
+      "text": "nine",
+      "startMs": 3040,
+      "endMs": 3260
+    },
+    {
+      "text": "landholders",
+      "startMs": 3320,
+      "endMs": 3860
+    },
+    {
+      "text": "to",
+      "startMs": 3920,
+      "endMs": 3980
+    },
+    {
+      "text": "police",
+      "startMs": 4040,
+      "endMs": 4420
+    },
+    {
+      "text": "and",
+      "startMs": 4920,
+      "endMs": 5020
+    },
+    {
+      "text": "says",
+      "startMs": 5080,
+      "endMs": 5280
+    },
+    {
+      "text": "they",
+      "startMs": 5320,
+      "endMs": 5400
+    },
+    {
+      "text": "account",
+      "startMs": 5460,
+      "endMs": 5760
+    },
+    {
+      "text": "for",
+      "startMs": 5800,
+      "endMs": 5900
+    },
+    {
+      "text": "more",
+      "startMs": 5960,
+      "endMs": 6120
+    },
+    {
+      "text": "than",
+      "startMs": 6140,
+      "endMs": 6240
+    },
+    {
+      "text": "a",
+      "startMs": 6280,
+      "endMs": 6380
+    },
+    {
+      "text": "fifth",
+      "startMs": 6460,
+      "endMs": 6660
+    },
+    {
+      "text": "of",
+      "startMs": 6700,
+      "endMs": 6760
+    },
+    {
+      "text": "the",
+      "startMs": 6800,
+      "endMs": 6860
+    },
+    {
+      "text": "burned",
+      "startMs": 6940,
+      "endMs": 7180
+    },
+    {
+      "text": "area.",
+      "startMs": 7260,
+      "endMs": 7560
+    },
+    {
+      "text": "One",
+      "startMs": 8480,
+      "endMs": 8560
+    },
+    {
+      "text": "of",
+      "startMs": 8620,
+      "endMs": 8700
+    },
+    {
+      "text": "them,",
+      "startMs": 8760,
+      "endMs": 8920
+    },
+    {
+      "text": "a",
+      "startMs": 9120,
+      "endMs": 9160
+    },
+    {
+      "text": "cooperative,",
+      "startMs": 9200,
+      "endMs": 9800
+    },
+    {
+      "text": "says",
+      "startMs": 10220,
+      "endMs": 10360
+    },
+    {
+      "text": "its",
+      "startMs": 10400,
+      "endMs": 10540
+    },
+    {
+      "text": "fire",
+      "startMs": 10620,
+      "endMs": 10840
+    },
+    {
+      "text": "was",
+      "startMs": 10900,
+      "endMs": 11020
+    },
+    {
+      "text": "neither",
+      "startMs": 11080,
+      "endMs": 11360
+    },
+    {
+      "text": "deliberate",
+      "startMs": 11400,
+      "endMs": 11880
+    },
+    {
+      "text": "nor",
+      "startMs": 11960,
+      "endMs": 12140
+    },
+    {
+      "text": "meant",
+      "startMs": 12200,
+      "endMs": 12340
+    },
+    {
+      "text": "to",
+      "startMs": 12360,
+      "endMs": 12440
+    },
+    {
+      "text": "clear",
+      "startMs": 12480,
+      "endMs": 12700
+    },
+    {
+      "text": "land.",
+      "startMs": 12760,
+      "endMs": 13080
+    }
+  ],
+  "s30": [
+    {
+      "text": "Police",
+      "startMs": 100,
+      "endMs": 400
+    },
+    {
+      "text": "have",
+      "startMs": 440,
+      "endMs": 580
+    },
+    {
+      "text": "moved",
+      "startMs": 620,
+      "endMs": 820
+    },
+    {
+      "text": "on",
+      "startMs": 880,
+      "endMs": 1000
+    },
+    {
+      "text": "two",
+      "startMs": 1060,
+      "endMs": 1180
+    },
+    {
+      "text": "fronts.",
+      "startMs": 1280,
+      "endMs": 1620
+    },
+    {
+      "text": "In",
+      "startMs": 2520,
+      "endMs": 2620
+    },
+    {
+      "text": "Jambi,",
+      "startMs": 2700,
+      "endMs": 3160
+    },
+    {
+      "text": "by",
+      "startMs": 3300,
+      "endMs": 3420
+    },
+    {
+      "text": "late",
+      "startMs": 3540,
+      "endMs": 3680
+    },
+    {
+      "text": "October,",
+      "startMs": 3740,
+      "endMs": 4180
+    },
+    {
+      "text": "all",
+      "startMs": 4720,
+      "endMs": 4880
+    },
+    {
+      "text": "16",
+      "startMs": 4920,
+      "endMs": 5300
+    },
+    {
+      "text": "suspects",
+      "startMs": 5400,
+      "endMs": 5880
+    },
+    {
+      "text": "were",
+      "startMs": 5920,
+      "endMs": 6020
+    },
+    {
+      "text": "individuals.",
+      "startMs": 6080,
+      "endMs": 6760
+    },
+    {
+      "text": "Nationally,",
+      "startMs": 7640,
+      "endMs": 8160
+    },
+    {
+      "text": "investigators",
+      "startMs": 8600,
+      "endMs": 9260
+    },
+    {
+      "text": "had",
+      "startMs": 9300,
+      "endMs": 9420
+    },
+    {
+      "text": "named",
+      "startMs": 9460,
+      "endMs": 9700
+    },
+    {
+      "text": "20",
+      "startMs": 9780,
+      "endMs": 10000
+    },
+    {
+      "text": "companies",
+      "startMs": 10060,
+      "endMs": 10520
+    },
+    {
+      "text": "as",
+      "startMs": 10600,
+      "endMs": 10720
+    },
+    {
+      "text": "suspects.",
+      "startMs": 10780,
+      "endMs": 11300
+    }
+  ],
+  "s31": [
+    {
+      "text": "On",
+      "startMs": 80,
+      "endMs": 160
+    },
+    {
+      "text": "November",
+      "startMs": 200,
+      "endMs": 540
+    },
+    {
+      "text": "24th",
+      "startMs": 620,
+      "endMs": 1180
+    },
+    {
+      "text": "came",
+      "startMs": 1260,
+      "endMs": 1400
+    },
+    {
+      "text": "number",
+      "startMs": 1440,
+      "endMs": 1600
+    },
+    {
+      "text": "21,",
+      "startMs": 1700,
+      "endMs": 2280
+    },
+    {
+      "text": "a",
+      "startMs": 2780,
+      "endMs": 2820
+    },
+    {
+      "text": "palm",
+      "startMs": 2900,
+      "endMs": 3100
+    },
+    {
+      "text": "company",
+      "startMs": 3160,
+      "endMs": 3440
+    },
+    {
+      "text": "in",
+      "startMs": 3480,
+      "endMs": 3600
+    },
+    {
+      "text": "Riau",
+      "startMs": 3640,
+      "endMs": 3940
+    },
+    {
+      "text": "called",
+      "startMs": 4019,
+      "endMs": 4220
+    },
+    {
+      "text": "PT",
+      "startMs": 4320,
+      "endMs": 4580
+    },
+    {
+      "text": "Mass.",
+      "startMs": 4660,
+      "endMs": 4960
+    },
+    {
+      "text": "Police",
+      "startMs": 5840,
+      "endMs": 6140
+    },
+    {
+      "text": "allege",
+      "startMs": 6200,
+      "endMs": 6520
+    },
+    {
+      "text": "160",
+      "startMs": 6740,
+      "endMs": 7480
+    },
+    {
+      "text": "hectares",
+      "startMs": 7520,
+      "endMs": 7900
+    },
+    {
+      "text": "burned",
+      "startMs": 8000,
+      "endMs": 8280
+    },
+    {
+      "text": "inside",
+      "startMs": 8340,
+      "endMs": 8660
+    },
+    {
+      "text": "its",
+      "startMs": 8700,
+      "endMs": 8840
+    },
+    {
+      "text": "own",
+      "startMs": 8900,
+      "endMs": 9060
+    },
+    {
+      "text": "concession",
+      "startMs": 9120,
+      "endMs": 9660
+    },
+    {
+      "text": "and",
+      "startMs": 10240,
+      "endMs": 10340
+    },
+    {
+      "text": "that",
+      "startMs": 10400,
+      "endMs": 10500
+    },
+    {
+      "text": "its",
+      "startMs": 10540,
+      "endMs": 10740
+    },
+    {
+      "text": "early",
+      "startMs": 10780,
+      "endMs": 11020
+    },
+    {
+      "text": "warning",
+      "startMs": 11120,
+      "endMs": 11360
+    },
+    {
+      "text": "system",
+      "startMs": 11440,
+      "endMs": 11720
+    },
+    {
+      "text": "did",
+      "startMs": 11800,
+      "endMs": 11920
+    },
+    {
+      "text": "not",
+      "startMs": 11980,
+      "endMs": 12160
+    },
+    {
+      "text": "work.",
+      "startMs": 12200,
+      "endMs": 12440
+    }
+  ],
+  "s32": [
+    {
+      "text": "A",
+      "startMs": 80,
+      "endMs": 140
+    },
+    {
+      "text": "suspect",
+      "startMs": 200,
+      "endMs": 620
+    },
+    {
+      "text": "has",
+      "startMs": 660,
+      "endMs": 820
+    },
+    {
+      "text": "not",
+      "startMs": 900,
+      "endMs": 1080
+    },
+    {
+      "text": "been",
+      "startMs": 1120,
+      "endMs": 1260
+    },
+    {
+      "text": "found",
+      "startMs": 1320,
+      "endMs": 1500
+    },
+    {
+      "text": "guilty.",
+      "startMs": 1580,
+      "endMs": 1940
+    },
+    {
+      "text": "A",
+      "startMs": 2400,
+      "endMs": 2460
+    },
+    {
+      "text": "court",
+      "startMs": 2520,
+      "endMs": 2700
+    },
+    {
+      "text": "decides",
+      "startMs": 2740,
+      "endMs": 3180
+    },
+    {
+      "text": "that,",
+      "startMs": 3260,
+      "endMs": 3380
+    },
+    {
+      "text": "and",
+      "startMs": 3680,
+      "endMs": 3740
+    },
+    {
+      "text": "it",
+      "startMs": 3780,
+      "endMs": 3860
+    },
+    {
+      "text": "can",
+      "startMs": 3920,
+      "endMs": 4040
+    },
+    {
+      "text": "take",
+      "startMs": 4120,
+      "endMs": 4340
+    },
+    {
+      "text": "years.",
+      "startMs": 4400,
+      "endMs": 4740
+    }
+  ],
+  "s33": [
+    {
+      "text": "There",
+      "startMs": 100,
+      "endMs": 280
+    },
+    {
+      "text": "are",
+      "startMs": 340,
+      "endMs": 480
+    },
+    {
+      "text": "administrative",
+      "startMs": 540,
+      "endMs": 1180
+    },
+    {
+      "text": "penalties",
+      "startMs": 1280,
+      "endMs": 1720
+    },
+    {
+      "text": "too.",
+      "startMs": 1820,
+      "endMs": 2060
+    },
+    {
+      "text": "In",
+      "startMs": 2960,
+      "endMs": 3060
+    },
+    {
+      "text": "September,",
+      "startMs": 3120,
+      "endMs": 3580
+    },
+    {
+      "text": "the",
+      "startMs": 3660,
+      "endMs": 3720
+    },
+    {
+      "text": "Environment",
+      "startMs": 3760,
+      "endMs": 4200
+    },
+    {
+      "text": "Ministry",
+      "startMs": 4280,
+      "endMs": 4640
+    },
+    {
+      "text": "said",
+      "startMs": 4740,
+      "endMs": 4880
+    },
+    {
+      "text": "it",
+      "startMs": 4900,
+      "endMs": 4960
+    },
+    {
+      "text": "had",
+      "startMs": 5000,
+      "endMs": 5120
+    },
+    {
+      "text": "sealed",
+      "startMs": 5180,
+      "endMs": 5440
+    },
+    {
+      "text": "30",
+      "startMs": 5500,
+      "endMs": 5700
+    },
+    {
+      "text": "companies,",
+      "startMs": 5780,
+      "endMs": 6220
+    },
+    {
+      "text": "and",
+      "startMs": 6720,
+      "endMs": 6800
+    },
+    {
+      "text": "in",
+      "startMs": 6840,
+      "endMs": 6900
+    },
+    {
+      "text": "October,",
+      "startMs": 6960,
+      "endMs": 7440
+    },
+    {
+      "text": "the",
+      "startMs": 7740,
+      "endMs": 7820
+    },
+    {
+      "text": "Forestry",
+      "startMs": 7880,
+      "endMs": 8240
+    },
+    {
+      "text": "Ministry",
+      "startMs": 8320,
+      "endMs": 8660
+    },
+    {
+      "text": "sanctioned",
+      "startMs": 8780,
+      "endMs": 9140
+    },
+    {
+      "text": "32.",
+      "startMs": 9300,
+      "endMs": 9840
+    }
+  ],
+  "s34": [
+    {
+      "text": "But",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "does",
+      "startMs": 220,
+      "endMs": 360
+    },
+    {
+      "text": "punishment",
+      "startMs": 460,
+      "endMs": 920
+    },
+    {
+      "text": "actually",
+      "startMs": 1020,
+      "endMs": 1380
+    },
+    {
+      "text": "land?",
+      "startMs": 1440,
+      "endMs": 1720
+    },
+    {
+      "text": "As",
+      "startMs": 2780,
+      "endMs": 2900
+    },
+    {
+      "text": "of",
+      "startMs": 2960,
+      "endMs": 3080
+    },
+    {
+      "text": "2021,",
+      "startMs": 3160,
+      "endMs": 4019
+    },
+    {
+      "text": "more",
+      "startMs": 4520,
+      "endMs": 4660
+    },
+    {
+      "text": "than",
+      "startMs": 4700,
+      "endMs": 4860
+    },
+    {
+      "text": "3.4",
+      "startMs": 4920,
+      "endMs": 5660
+    },
+    {
+      "text": "trillion",
+      "startMs": 5720,
+      "endMs": 6040
+    },
+    {
+      "text": "rupiah",
+      "startMs": 6120,
+      "endMs": 6480
+    },
+    {
+      "text": "in",
+      "startMs": 6540,
+      "endMs": 6640
+    },
+    {
+      "text": "final",
+      "startMs": 6720,
+      "endMs": 6960
+    },
+    {
+      "text": "court",
+      "startMs": 7060,
+      "endMs": 7220
+    },
+    {
+      "text": "awards",
+      "startMs": 7280,
+      "endMs": 7580
+    },
+    {
+      "text": "against",
+      "startMs": 7620,
+      "endMs": 7940
+    },
+    {
+      "text": "fire-linked",
+      "startMs": 7980,
+      "endMs": 8440
+    },
+    {
+      "text": "firms",
+      "startMs": 8500,
+      "endMs": 8800
+    },
+    {
+      "text": "had",
+      "startMs": 9120,
+      "endMs": 9280
+    },
+    {
+      "text": "not",
+      "startMs": 9340,
+      "endMs": 9560
+    },
+    {
+      "text": "reached",
+      "startMs": 9600,
+      "endMs": 9800
+    },
+    {
+      "text": "the",
+      "startMs": 9840,
+      "endMs": 9920
+    },
+    {
+      "text": "treasury.",
+      "startMs": 9960,
+      "endMs": 10360
+    }
+  ],
+  "s35": [
+    {
+      "text": "From",
+      "startMs": 100,
+      "endMs": 240
+    },
+    {
+      "text": "civil",
+      "startMs": 360,
+      "endMs": 580
+    },
+    {
+      "text": "cases",
+      "startMs": 680,
+      "endMs": 1060
+    },
+    {
+      "text": "won",
+      "startMs": 1180,
+      "endMs": 1340
+    },
+    {
+      "text": "between",
+      "startMs": 1380,
+      "endMs": 1700
+    },
+    {
+      "text": "2015",
+      "startMs": 1840,
+      "endMs": 2380
+    },
+    {
+      "text": "and",
+      "startMs": 2420,
+      "endMs": 2520
+    },
+    {
+      "text": "2021,",
+      "startMs": 2580,
+      "endMs": 3280
+    },
+    {
+      "text": "only",
+      "startMs": 3900,
+      "endMs": 4080
+    },
+    {
+      "text": "about",
+      "startMs": 4140,
+      "endMs": 4380
+    },
+    {
+      "text": "78",
+      "startMs": 4460,
+      "endMs": 4940
+    },
+    {
+      "text": "billion",
+      "startMs": 5060,
+      "endMs": 5360
+    },
+    {
+      "text": "rupiah",
+      "startMs": 5440,
+      "endMs": 5820
+    },
+    {
+      "text": "had",
+      "startMs": 5940,
+      "endMs": 6040
+    },
+    {
+      "text": "been",
+      "startMs": 6060,
+      "endMs": 6200
+    },
+    {
+      "text": "executed.",
+      "startMs": 6260,
+      "endMs": 6800
+    },
+    {
+      "text": "An",
+      "startMs": 7660,
+      "endMs": 7720
+    },
+    {
+      "text": "enforcement",
+      "startMs": 7780,
+      "endMs": 8260
+    },
+    {
+      "text": "official",
+      "startMs": 8300,
+      "endMs": 8660
+    },
+    {
+      "text": "blamed",
+      "startMs": 8760,
+      "endMs": 9020
+    },
+    {
+      "text": "red",
+      "startMs": 9120,
+      "endMs": 9300
+    },
+    {
+      "text": "tape,",
+      "startMs": 9380,
+      "endMs": 9600
+    },
+    {
+      "text": "field",
+      "startMs": 10020,
+      "endMs": 10220
+    },
+    {
+      "text": "problems,",
+      "startMs": 10300,
+      "endMs": 10700
+    },
+    {
+      "text": "and",
+      "startMs": 11120,
+      "endMs": 11200
+    },
+    {
+      "text": "the",
+      "startMs": 11240,
+      "endMs": 11320
+    },
+    {
+      "text": "work",
+      "startMs": 11360,
+      "endMs": 11540
+    },
+    {
+      "text": "of",
+      "startMs": 11580,
+      "endMs": 11660
+    },
+    {
+      "text": "tracing",
+      "startMs": 11720,
+      "endMs": 12120
+    },
+    {
+      "text": "assets.",
+      "startMs": 12220,
+      "endMs": 12640
+    }
+  ],
+  "s36": [
+    {
+      "text": "Greenpeace",
+      "startMs": 100,
+      "endMs": 580
+    },
+    {
+      "text": "looked",
+      "startMs": 640,
+      "endMs": 800
+    },
+    {
+      "text": "at",
+      "startMs": 820,
+      "endMs": 900
+    },
+    {
+      "text": "2015",
+      "startMs": 1040,
+      "endMs": 1620
+    },
+    {
+      "text": "to",
+      "startMs": 1880,
+      "endMs": 1960
+    },
+    {
+      "text": "2019.",
+      "startMs": 2000,
+      "endMs": 2660
+    },
+    {
+      "text": "By",
+      "startMs": 3720,
+      "endMs": 3860
+    },
+    {
+      "text": "its",
+      "startMs": 3900,
+      "endMs": 4080
+    },
+    {
+      "text": "count,",
+      "startMs": 4140,
+      "endMs": 4380
+    },
+    {
+      "text": "8",
+      "startMs": 4980,
+      "endMs": 5100
+    },
+    {
+      "text": "of",
+      "startMs": 5140,
+      "endMs": 5200
+    },
+    {
+      "text": "the",
+      "startMs": 5240,
+      "endMs": 5320
+    },
+    {
+      "text": "10",
+      "startMs": 5380,
+      "endMs": 5580
+    },
+    {
+      "text": "palm",
+      "startMs": 5680,
+      "endMs": 5880
+    },
+    {
+      "text": "companies",
+      "startMs": 5960,
+      "endMs": 6360
+    },
+    {
+      "text": "with",
+      "startMs": 6400,
+      "endMs": 6500
+    },
+    {
+      "text": "the",
+      "startMs": 6520,
+      "endMs": 6600
+    },
+    {
+      "text": "largest",
+      "startMs": 6680,
+      "endMs": 7040
+    },
+    {
+      "text": "burned",
+      "startMs": 7120,
+      "endMs": 7380
+    },
+    {
+      "text": "areas",
+      "startMs": 7440,
+      "endMs": 7760
+    },
+    {
+      "text": "had",
+      "startMs": 8020,
+      "endMs": 8119
+    },
+    {
+      "text": "received",
+      "startMs": 8160,
+      "endMs": 8540
+    },
+    {
+      "text": "no",
+      "startMs": 8600,
+      "endMs": 8740
+    },
+    {
+      "text": "sanction.",
+      "startMs": 8840,
+      "endMs": 9260
+    }
+  ],
+  "s37": [
+    {
+      "text": "Now,",
+      "startMs": 100,
+      "endMs": 340
+    },
+    {
+      "text": "corruption,",
+      "startMs": 740,
+      "endMs": 1260
+    },
+    {
+      "text": "and",
+      "startMs": 1700,
+      "endMs": 1820
+    },
+    {
+      "text": "here",
+      "startMs": 1900,
+      "endMs": 2200
+    },
+    {
+      "text": "is",
+      "startMs": 2240,
+      "endMs": 2320
+    },
+    {
+      "text": "what",
+      "startMs": 2360,
+      "endMs": 2440
+    },
+    {
+      "text": "a",
+      "startMs": 2480,
+      "endMs": 2520
+    },
+    {
+      "text": "court",
+      "startMs": 2560,
+      "endMs": 2720
+    },
+    {
+      "text": "has",
+      "startMs": 2740,
+      "endMs": 2860
+    },
+    {
+      "text": "actually",
+      "startMs": 2920,
+      "endMs": 3160
+    },
+    {
+      "text": "found.",
+      "startMs": 3260,
+      "endMs": 3580
+    },
+    {
+      "text": "In",
+      "startMs": 4480,
+      "endMs": 4580
+    },
+    {
+      "text": "2023,",
+      "startMs": 4760,
+      "endMs": 5460
+    },
+    {
+      "text": "palm",
+      "startMs": 6020,
+      "endMs": 6220
+    },
+    {
+      "text": "tycoon",
+      "startMs": 6280,
+      "endMs": 6740
+    },
+    {
+      "text": "Surya",
+      "startMs": 6900,
+      "endMs": 7320
+    },
+    {
+      "text": "Darmadi",
+      "startMs": 7540,
+      "endMs": 8100
+    },
+    {
+      "text": "was",
+      "startMs": 8580,
+      "endMs": 8700
+    },
+    {
+      "text": "convicted",
+      "startMs": 8740,
+      "endMs": 9200
+    },
+    {
+      "text": "over",
+      "startMs": 9260,
+      "endMs": 9380
+    },
+    {
+      "text": "plantation",
+      "startMs": 9460,
+      "endMs": 9980
+    },
+    {
+      "text": "permits",
+      "startMs": 10040,
+      "endMs": 10340
+    },
+    {
+      "text": "he",
+      "startMs": 10380,
+      "endMs": 10480
+    },
+    {
+      "text": "secured",
+      "startMs": 10520,
+      "endMs": 10920
+    },
+    {
+      "text": "with",
+      "startMs": 11220,
+      "endMs": 11300
+    },
+    {
+      "text": "a",
+      "startMs": 11340,
+      "endMs": 11420
+    },
+    {
+      "text": "district",
+      "startMs": 11460,
+      "endMs": 11820
+    },
+    {
+      "text": "head",
+      "startMs": 11900,
+      "endMs": 12080
+    },
+    {
+      "text": "back",
+      "startMs": 12140,
+      "endMs": 12300
+    },
+    {
+      "text": "in",
+      "startMs": 12320,
+      "endMs": 12420
+    },
+    {
+      "text": "2004.",
+      "startMs": 12580,
+      "endMs": 13420
+    }
+  ],
+  "s38": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 160
+    },
+    {
+      "text": "Supreme",
+      "startMs": 200,
+      "endMs": 520
+    },
+    {
+      "text": "Court",
+      "startMs": 620,
+      "endMs": 820
+    },
+    {
+      "text": "later",
+      "startMs": 900,
+      "endMs": 1100
+    },
+    {
+      "text": "raised",
+      "startMs": 1180,
+      "endMs": 1440
+    },
+    {
+      "text": "the",
+      "startMs": 1480,
+      "endMs": 1560
+    },
+    {
+      "text": "sentence",
+      "startMs": 1620,
+      "endMs": 1940
+    },
+    {
+      "text": "to",
+      "startMs": 2000,
+      "endMs": 2100
+    },
+    {
+      "text": "16",
+      "startMs": 2160,
+      "endMs": 2580
+    },
+    {
+      "text": "years.",
+      "startMs": 2640,
+      "endMs": 2920
+    },
+    {
+      "text": "It",
+      "startMs": 3940,
+      "endMs": 4000
+    },
+    {
+      "text": "also",
+      "startMs": 4080,
+      "endMs": 4340
+    },
+    {
+      "text": "cut",
+      "startMs": 4380,
+      "endMs": 4500
+    },
+    {
+      "text": "the",
+      "startMs": 4540,
+      "endMs": 4620
+    },
+    {
+      "text": "money",
+      "startMs": 4680,
+      "endMs": 4880
+    },
+    {
+      "text": "he",
+      "startMs": 4960,
+      "endMs": 5100
+    },
+    {
+      "text": "must",
+      "startMs": 5180,
+      "endMs": 5380
+    },
+    {
+      "text": "repay",
+      "startMs": 5420,
+      "endMs": 5760
+    },
+    {
+      "text": "to",
+      "startMs": 6080,
+      "endMs": 6140
+    },
+    {
+      "text": "about",
+      "startMs": 6200,
+      "endMs": 6440
+    },
+    {
+      "text": "2.2",
+      "startMs": 6500,
+      "endMs": 7140
+    },
+    {
+      "text": "trillion",
+      "startMs": 7200,
+      "endMs": 7480
+    },
+    {
+      "text": "rupiah",
+      "startMs": 7560,
+      "endMs": 7900
+    },
+    {
+      "text": "from",
+      "startMs": 8300,
+      "endMs": 8440
+    },
+    {
+      "text": "roughly",
+      "startMs": 8480,
+      "endMs": 8780
+    },
+    {
+      "text": "42",
+      "startMs": 8940,
+      "endMs": 9380
+    },
+    {
+      "text": "trillion.",
+      "startMs": 9460,
+      "endMs": 9840
+    }
+  ],
+  "s39": [
+    {
+      "text": "That",
+      "startMs": 120,
+      "endMs": 220
+    },
+    {
+      "text": "case",
+      "startMs": 320,
+      "endMs": 520
+    },
+    {
+      "text": "is",
+      "startMs": 560,
+      "endMs": 640
+    },
+    {
+      "text": "about",
+      "startMs": 680,
+      "endMs": 920
+    },
+    {
+      "text": "permits,",
+      "startMs": 980,
+      "endMs": 1340
+    },
+    {
+      "text": "not",
+      "startMs": 1460,
+      "endMs": 1560
+    },
+    {
+      "text": "about",
+      "startMs": 1620,
+      "endMs": 1860
+    },
+    {
+      "text": "any",
+      "startMs": 1920,
+      "endMs": 2060
+    },
+    {
+      "text": "fire",
+      "startMs": 2160,
+      "endMs": 2400
+    },
+    {
+      "text": "this",
+      "startMs": 2440,
+      "endMs": 2580
+    },
+    {
+      "text": "year.",
+      "startMs": 2620,
+      "endMs": 2820
+    },
+    {
+      "text": "I",
+      "startMs": 3460,
+      "endMs": 3560
+    },
+    {
+      "text": "found",
+      "startMs": 3620,
+      "endMs": 3820
+    },
+    {
+      "text": "no",
+      "startMs": 3880,
+      "endMs": 4040
+    },
+    {
+      "text": "court",
+      "startMs": 4080,
+      "endMs": 4280
+    },
+    {
+      "text": "ruling",
+      "startMs": 4320,
+      "endMs": 4540
+    },
+    {
+      "text": "that",
+      "startMs": 4580,
+      "endMs": 4680
+    },
+    {
+      "text": "ties",
+      "startMs": 4720,
+      "endMs": 4960
+    },
+    {
+      "text": "the",
+      "startMs": 5020,
+      "endMs": 5080
+    },
+    {
+      "text": "2026",
+      "startMs": 5200,
+      "endMs": 5780
+    },
+    {
+      "text": "fires",
+      "startMs": 5840,
+      "endMs": 6100
+    },
+    {
+      "text": "to",
+      "startMs": 6140,
+      "endMs": 6220
+    },
+    {
+      "text": "bribery.",
+      "startMs": 6260,
+      "endMs": 6680
+    }
+  ],
+  "s40": [
+    {
+      "text": "What",
+      "startMs": 120,
+      "endMs": 240
+    },
+    {
+      "text": "is",
+      "startMs": 360,
+      "endMs": 460
+    },
+    {
+      "text": "on",
+      "startMs": 520,
+      "endMs": 660
+    },
+    {
+      "text": "record",
+      "startMs": 720,
+      "endMs": 1040
+    },
+    {
+      "text": "is",
+      "startMs": 1100,
+      "endMs": 1240
+    },
+    {
+      "text": "permit",
+      "startMs": 1280,
+      "endMs": 1540
+    },
+    {
+      "text": "corruption",
+      "startMs": 1600,
+      "endMs": 2020
+    },
+    {
+      "text": "in",
+      "startMs": 2060,
+      "endMs": 2120
+    },
+    {
+      "text": "the",
+      "startMs": 2160,
+      "endMs": 2220
+    },
+    {
+      "text": "past,",
+      "startMs": 2300,
+      "endMs": 2680
+    },
+    {
+      "text": "fines",
+      "startMs": 3160,
+      "endMs": 3460
+    },
+    {
+      "text": "left",
+      "startMs": 3520,
+      "endMs": 3740
+    },
+    {
+      "text": "uncollected,",
+      "startMs": 3800,
+      "endMs": 4420
+    },
+    {
+      "text": "and",
+      "startMs": 4780,
+      "endMs": 4900
+    },
+    {
+      "text": "burned",
+      "startMs": 4980,
+      "endMs": 5200
+    },
+    {
+      "text": "concessions",
+      "startMs": 5260,
+      "endMs": 5820
+    },
+    {
+      "text": "that",
+      "startMs": 5860,
+      "endMs": 5980
+    },
+    {
+      "text": "drew",
+      "startMs": 6040,
+      "endMs": 6220
+    },
+    {
+      "text": "no",
+      "startMs": 6340,
+      "endMs": 6460
+    },
+    {
+      "text": "penalty.",
+      "startMs": 6580,
+      "endMs": 7000
+    },
+    {
+      "text": "That",
+      "startMs": 8020,
+      "endMs": 8119
+    },
+    {
+      "text": "is",
+      "startMs": 8160,
+      "endMs": 8240
+    },
+    {
+      "text": "enough",
+      "startMs": 8260,
+      "endMs": 8500
+    },
+    {
+      "text": "reason",
+      "startMs": 8560,
+      "endMs": 8800
+    },
+    {
+      "text": "to",
+      "startMs": 8840,
+      "endMs": 8900
+    },
+    {
+      "text": "keep",
+      "startMs": 8960,
+      "endMs": 9120
+    },
+    {
+      "text": "asking",
+      "startMs": 9180,
+      "endMs": 9440
+    },
+    {
+      "text": "questions.",
+      "startMs": 9500,
+      "endMs": 10000
+    }
+  ],
+  "s41": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 240
+    },
+    {
+      "text": "who",
+      "startMs": 300,
+      "endMs": 380
+    },
+    {
+      "text": "pays",
+      "startMs": 480,
+      "endMs": 680
+    },
+    {
+      "text": "in",
+      "startMs": 720,
+      "endMs": 780
+    },
+    {
+      "text": "the",
+      "startMs": 800,
+      "endMs": 860
+    },
+    {
+      "text": "meantime?",
+      "startMs": 900,
+      "endMs": 1380
+    },
+    {
+      "text": "The",
+      "startMs": 1740,
+      "endMs": 1800
+    },
+    {
+      "text": "World",
+      "startMs": 1860,
+      "endMs": 2060
+    },
+    {
+      "text": "Bank",
+      "startMs": 2140,
+      "endMs": 2320
+    },
+    {
+      "text": "estimated",
+      "startMs": 2420,
+      "endMs": 2880
+    },
+    {
+      "text": "that",
+      "startMs": 2940,
+      "endMs": 3040
+    },
+    {
+      "text": "the",
+      "startMs": 3080,
+      "endMs": 3160
+    },
+    {
+      "text": "2015",
+      "startMs": 3320,
+      "endMs": 3780
+    },
+    {
+      "text": "fires",
+      "startMs": 3900,
+      "endMs": 4220
+    },
+    {
+      "text": "burned",
+      "startMs": 4320,
+      "endMs": 4580
+    },
+    {
+      "text": "2.6",
+      "startMs": 4760,
+      "endMs": 5340
+    },
+    {
+      "text": "million",
+      "startMs": 5480,
+      "endMs": 5740
+    },
+    {
+      "text": "hectares",
+      "startMs": 5820,
+      "endMs": 6260
+    },
+    {
+      "text": "and",
+      "startMs": 6300,
+      "endMs": 6380
+    },
+    {
+      "text": "cost",
+      "startMs": 6460,
+      "endMs": 6700
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 6780,
+      "endMs": 7180
+    },
+    {
+      "text": "16",
+      "startMs": 7320,
+      "endMs": 7780
+    },
+    {
+      "text": "billion",
+      "startMs": 7960,
+      "endMs": 8260
+    },
+    {
+      "text": "dollars.",
+      "startMs": 8340,
+      "endMs": 8740
+    }
+  ],
+  "s42": [
+    {
+      "text": "Bills",
+      "startMs": 100,
+      "endMs": 340
+    },
+    {
+      "text": "like",
+      "startMs": 380,
+      "endMs": 540
+    },
+    {
+      "text": "that",
+      "startMs": 600,
+      "endMs": 740
+    },
+    {
+      "text": "land",
+      "startMs": 800,
+      "endMs": 980
+    },
+    {
+      "text": "on",
+      "startMs": 1020,
+      "endMs": 1140
+    },
+    {
+      "text": "lungs,",
+      "startMs": 1240,
+      "endMs": 1700
+    },
+    {
+      "text": "on",
+      "startMs": 1780,
+      "endMs": 1880
+    },
+    {
+      "text": "closed",
+      "startMs": 1940,
+      "endMs": 2200
+    },
+    {
+      "text": "schools,",
+      "startMs": 2280,
+      "endMs": 2680
+    },
+    {
+      "text": "on",
+      "startMs": 2760,
+      "endMs": 2860
+    },
+    {
+      "text": "grounded",
+      "startMs": 3300,
+      "endMs": 3680
+    },
+    {
+      "text": "flights,",
+      "startMs": 3800,
+      "endMs": 4100
+    },
+    {
+      "text": "and",
+      "startMs": 4160,
+      "endMs": 4240
+    },
+    {
+      "text": "on",
+      "startMs": 4280,
+      "endMs": 4380
+    },
+    {
+      "text": "lost",
+      "startMs": 4480,
+      "endMs": 4780
+    },
+    {
+      "text": "harvests.",
+      "startMs": 4840,
+      "endMs": 5360
+    }
+  ],
+  "s43": [
+    {
+      "text": "For",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "this",
+      "startMs": 260,
+      "endMs": 420
+    },
+    {
+      "text": "year,",
+      "startMs": 500,
+      "endMs": 700
+    },
+    {
+      "text": "a",
+      "startMs": 1120,
+      "endMs": 1200
+    },
+    {
+      "text": "research",
+      "startMs": 1260,
+      "endMs": 1620
+    },
+    {
+      "text": "group",
+      "startMs": 1660,
+      "endMs": 1840
+    },
+    {
+      "text": "called",
+      "startMs": 1920,
+      "endMs": 2140
+    },
+    {
+      "text": "Celios",
+      "startMs": 2360,
+      "endMs": 2900
+    },
+    {
+      "text": "estimates",
+      "startMs": 3300,
+      "endMs": 3720
+    },
+    {
+      "text": "economic",
+      "startMs": 3820,
+      "endMs": 4300
+    },
+    {
+      "text": "and",
+      "startMs": 4440,
+      "endMs": 4600
+    },
+    {
+      "text": "health",
+      "startMs": 4660,
+      "endMs": 4860
+    },
+    {
+      "text": "costs",
+      "startMs": 4940,
+      "endMs": 5340
+    },
+    {
+      "text": "of",
+      "startMs": 5400,
+      "endMs": 5460
+    },
+    {
+      "text": "roughly",
+      "startMs": 5500,
+      "endMs": 5780
+    },
+    {
+      "text": "360",
+      "startMs": 6040,
+      "endMs": 6860
+    },
+    {
+      "text": "to",
+      "startMs": 7180,
+      "endMs": 7300
+    },
+    {
+      "text": "565",
+      "startMs": 7560,
+      "endMs": 8580
+    },
+    {
+      "text": "trillion",
+      "startMs": 8660,
+      "endMs": 9040
+    },
+    {
+      "text": "rupiah.",
+      "startMs": 9120,
+      "endMs": 9500
+    },
+    {
+      "text": "That",
+      "startMs": 10460,
+      "endMs": 10720
+    },
+    {
+      "text": "is",
+      "startMs": 10880,
+      "endMs": 10960
+    },
+    {
+      "text": "an",
+      "startMs": 10980,
+      "endMs": 11060
+    },
+    {
+      "text": "estimate,",
+      "startMs": 11140,
+      "endMs": 11520
+    },
+    {
+      "text": "not",
+      "startMs": 11920,
+      "endMs": 12060
+    },
+    {
+      "text": "a",
+      "startMs": 12100,
+      "endMs": 12140
+    },
+    {
+      "text": "final",
+      "startMs": 12200,
+      "endMs": 12420
+    },
+    {
+      "text": "bill.",
+      "startMs": 12480,
+      "endMs": 12740
+    }
+  ],
+  "s44": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "here",
+      "startMs": 280,
+      "endMs": 420
+    },
+    {
+      "text": "is",
+      "startMs": 460,
+      "endMs": 560
+    },
+    {
+      "text": "the",
+      "startMs": 600,
+      "endMs": 680
+    },
+    {
+      "text": "scoreboard.",
+      "startMs": 720,
+      "endMs": 1220
+    },
+    {
+      "text": "Drained",
+      "startMs": 1840,
+      "endMs": 2200
+    },
+    {
+      "text": "peat",
+      "startMs": 2260,
+      "endMs": 2460
+    },
+    {
+      "text": "burns",
+      "startMs": 2540,
+      "endMs": 2800
+    },
+    {
+      "text": "more",
+      "startMs": 2860,
+      "endMs": 3040
+    },
+    {
+      "text": "easily,",
+      "startMs": 3080,
+      "endMs": 3460
+    },
+    {
+      "text": "and",
+      "startMs": 3920,
+      "endMs": 4019
+    },
+    {
+      "text": "some",
+      "startMs": 4100,
+      "endMs": 4220
+    },
+    {
+      "text": "of",
+      "startMs": 4260,
+      "endMs": 4320
+    },
+    {
+      "text": "the",
+      "startMs": 4360,
+      "endMs": 4420
+    },
+    {
+      "text": "burned",
+      "startMs": 4500,
+      "endMs": 4720
+    },
+    {
+      "text": "ground",
+      "startMs": 4800,
+      "endMs": 5080
+    },
+    {
+      "text": "sits",
+      "startMs": 5160,
+      "endMs": 5380
+    },
+    {
+      "text": "inside",
+      "startMs": 5440,
+      "endMs": 5840
+    },
+    {
+      "text": "company",
+      "startMs": 5900,
+      "endMs": 6180
+    },
+    {
+      "text": "concessions.",
+      "startMs": 6240,
+      "endMs": 6880
+    },
+    {
+      "text": "Who",
+      "startMs": 7780,
+      "endMs": 7900
+    },
+    {
+      "text": "struck",
+      "startMs": 7980,
+      "endMs": 8260
+    },
+    {
+      "text": "most",
+      "startMs": 8320,
+      "endMs": 8500
+    },
+    {
+      "text": "of",
+      "startMs": 8540,
+      "endMs": 8600
+    },
+    {
+      "text": "the",
+      "startMs": 8640,
+      "endMs": 8700
+    },
+    {
+      "text": "matches",
+      "startMs": 8760,
+      "endMs": 9120
+    },
+    {
+      "text": "is",
+      "startMs": 9160,
+      "endMs": 9260
+    },
+    {
+      "text": "still",
+      "startMs": 9320,
+      "endMs": 9520
+    },
+    {
+      "text": "unproven.",
+      "startMs": 9580,
+      "endMs": 10120
+    },
+    {
+      "text": "The",
+      "startMs": 10580,
+      "endMs": 10660
+    },
+    {
+      "text": "new",
+      "startMs": 10700,
+      "endMs": 10840
+    },
+    {
+      "text": "cases",
+      "startMs": 10900,
+      "endMs": 11200
+    },
+    {
+      "text": "are",
+      "startMs": 11240,
+      "endMs": 11320
+    },
+    {
+      "text": "still",
+      "startMs": 11380,
+      "endMs": 11580
+    },
+    {
+      "text": "open,",
+      "startMs": 11680,
+      "endMs": 11940
+    },
+    {
+      "text": "and",
+      "startMs": 12320,
+      "endMs": 12480
+    },
+    {
+      "text": "old",
+      "startMs": 12560,
+      "endMs": 12740
+    },
+    {
+      "text": "fines",
+      "startMs": 12840,
+      "endMs": 13140
+    },
+    {
+      "text": "were",
+      "startMs": 13160,
+      "endMs": 13280
+    },
+    {
+      "text": "still",
+      "startMs": 13340,
+      "endMs": 13540
+    },
+    {
+      "text": "waiting",
+      "startMs": 13600,
+      "endMs": 13820
+    },
+    {
+      "text": "to",
+      "startMs": 13860,
+      "endMs": 13920
+    },
+    {
+      "text": "be",
+      "startMs": 13960,
+      "endMs": 14060
+    },
+    {
+      "text": "paid.",
+      "startMs": 14100,
+      "endMs": 14380
+    }
+  ],
+  "s45": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "go",
+      "startMs": 260,
+      "endMs": 360
+    },
+    {
+      "text": "back",
+      "startMs": 440,
+      "endMs": 580
+    },
+    {
+      "text": "to",
+      "startMs": 620,
+      "endMs": 660
+    },
+    {
+      "text": "the",
+      "startMs": 700,
+      "endMs": 780
+    },
+    {
+      "text": "sponge.",
+      "startMs": 820,
+      "endMs": 1240
+    },
+    {
+      "text": "Keep",
+      "startMs": 1700,
+      "endMs": 1840
+    },
+    {
+      "text": "it",
+      "startMs": 1860,
+      "endMs": 1960
+    },
+    {
+      "text": "wet,",
+      "startMs": 2020,
+      "endMs": 2220
+    },
+    {
+      "text": "and",
+      "startMs": 2640,
+      "endMs": 2720
+    },
+    {
+      "text": "a",
+      "startMs": 2760,
+      "endMs": 2820
+    },
+    {
+      "text": "match",
+      "startMs": 2900,
+      "endMs": 3120
+    },
+    {
+      "text": "struggles.",
+      "startMs": 3200,
+      "endMs": 3640
+    },
+    {
+      "text": "Drain",
+      "startMs": 4160,
+      "endMs": 4400
+    },
+    {
+      "text": "it,",
+      "startMs": 4440,
+      "endMs": 4540
+    },
+    {
+      "text": "and",
+      "startMs": 5040,
+      "endMs": 5140
+    },
+    {
+      "text": "one",
+      "startMs": 5260,
+      "endMs": 5420
+    },
+    {
+      "text": "spark",
+      "startMs": 5540,
+      "endMs": 5920
+    },
+    {
+      "text": "from",
+      "startMs": 6120,
+      "endMs": 6300
+    },
+    {
+      "text": "anyone",
+      "startMs": 6360,
+      "endMs": 6760
+    },
+    {
+      "text": "can",
+      "startMs": 7060,
+      "endMs": 7200
+    },
+    {
+      "text": "burn",
+      "startMs": 7280,
+      "endMs": 7500
+    },
+    {
+      "text": "for",
+      "startMs": 7560,
+      "endMs": 7660
+    },
+    {
+      "text": "months.",
+      "startMs": 7740,
+      "endMs": 8080
+    }
+  ],
+  "s46": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "watch",
+      "startMs": 280,
+      "endMs": 540
+    },
+    {
+      "text": "more",
+      "startMs": 620,
+      "endMs": 840
+    },
+    {
+      "text": "than",
+      "startMs": 860,
+      "endMs": 980
+    },
+    {
+      "text": "the",
+      "startMs": 1020,
+      "endMs": 1080
+    },
+    {
+      "text": "hand",
+      "startMs": 1140,
+      "endMs": 1360
+    },
+    {
+      "text": "holding",
+      "startMs": 1420,
+      "endMs": 1700
+    },
+    {
+      "text": "the",
+      "startMs": 1720,
+      "endMs": 1800
+    },
+    {
+      "text": "match.",
+      "startMs": 1860,
+      "endMs": 2160
+    },
+    {
+      "text": "Watch",
+      "startMs": 3040,
+      "endMs": 3240
+    },
+    {
+      "text": "who",
+      "startMs": 3300,
+      "endMs": 3460
+    },
+    {
+      "text": "digs",
+      "startMs": 3500,
+      "endMs": 3720
+    },
+    {
+      "text": "the",
+      "startMs": 3760,
+      "endMs": 3820
+    },
+    {
+      "text": "canals,",
+      "startMs": 3860,
+      "endMs": 4300
+    },
+    {
+      "text": "whether",
+      "startMs": 4780,
+      "endMs": 5020
+    },
+    {
+      "text": "fines",
+      "startMs": 5060,
+      "endMs": 5340
+    },
+    {
+      "text": "get",
+      "startMs": 5380,
+      "endMs": 5540
+    },
+    {
+      "text": "paid,",
+      "startMs": 5600,
+      "endMs": 5880
+    },
+    {
+      "text": "and",
+      "startMs": 6360,
+      "endMs": 6460
+    },
+    {
+      "text": "whether",
+      "startMs": 6500,
+      "endMs": 6720
+    },
+    {
+      "text": "those",
+      "startMs": 6760,
+      "endMs": 6960
+    },
+    {
+      "text": "21",
+      "startMs": 7020,
+      "endMs": 7500
+    },
+    {
+      "text": "company",
+      "startMs": 7540,
+      "endMs": 7840
+    },
+    {
+      "text": "cases",
+      "startMs": 7940,
+      "endMs": 8300
+    },
+    {
+      "text": "reach",
+      "startMs": 8420,
+      "endMs": 8600
+    },
+    {
+      "text": "a",
+      "startMs": 8640,
+      "endMs": 8700
+    },
+    {
+      "text": "verdict.",
+      "startMs": 8740,
+      "endMs": 9080
+    }
+  ],
+  "s47": [
+    {
+      "text": "If",
+      "startMs": 100,
+      "endMs": 160
+    },
+    {
+      "text": "you",
+      "startMs": 220,
+      "endMs": 280
+    },
+    {
+      "text": "have",
+      "startMs": 320,
+      "endMs": 440
+    },
+    {
+      "text": "lived",
+      "startMs": 480,
+      "endMs": 640
+    },
+    {
+      "text": "under",
+      "startMs": 680,
+      "endMs": 840
+    },
+    {
+      "text": "this",
+      "startMs": 880,
+      "endMs": 1020
+    },
+    {
+      "text": "smoke,",
+      "startMs": 1080,
+      "endMs": 1340
+    },
+    {
+      "text": "tell",
+      "startMs": 1880,
+      "endMs": 1980
+    },
+    {
+      "text": "me",
+      "startMs": 2020,
+      "endMs": 2080
+    },
+    {
+      "text": "in",
+      "startMs": 2120,
+      "endMs": 2160
+    },
+    {
+      "text": "the",
+      "startMs": 2200,
+      "endMs": 2260
+    },
+    {
+      "text": "comments",
+      "startMs": 2300,
+      "endMs": 2660
+    },
+    {
+      "text": "what",
+      "startMs": 2680,
+      "endMs": 2780
+    },
+    {
+      "text": "you",
+      "startMs": 2820,
+      "endMs": 2920
+    },
+    {
+      "text": "saw.",
+      "startMs": 2980,
+      "endMs": 3200
+    },
+    {
+      "text": "Follow",
+      "startMs": 4100,
+      "endMs": 4340
+    },
+    {
+      "text": "along",
+      "startMs": 4400,
+      "endMs": 4680
+    },
+    {
+      "text": "to",
+      "startMs": 4720,
+      "endMs": 4800
+    },
+    {
+      "text": "see",
+      "startMs": 4860,
+      "endMs": 5000
+    },
+    {
+      "text": "where",
+      "startMs": 5040,
+      "endMs": 5160
+    },
+    {
+      "text": "these",
+      "startMs": 5220,
+      "endMs": 5380
+    },
+    {
+      "text": "cases",
+      "startMs": 5440,
+      "endMs": 5740
+    },
+    {
+      "text": "end.",
+      "startMs": 5800,
+      "endMs": 6000
+    }
+  ]
+}

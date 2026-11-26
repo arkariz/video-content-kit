@@ -87,7 +87,7 @@
           "show": "dari udara, titik-titik orang muncul memenuhi pulau Jawa dari barat ke timur sampai pulau terang penuh",
           "scale": "map",
           "motion": "titik bertambah cepat dengan penghitung naik sampai 158 juta",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "158 MILLION",
@@ -200,7 +200,7 @@
           "show": "titik-titik orang mengalir keluar dari Jawa lewat garis rute",
           "scale": "map",
           "motion": "penghitung keluar naik sampai 9,2 juta",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "9.2 MILLION",
@@ -217,7 +217,7 @@
           "show": "di saat yang sama Jawa menggembung, titik baru bermunculan jauh lebih cepat dari yang keluar",
           "scale": "map",
           "motion": "penghitung kedua naik sampai 95 juta dan menyusul penghitung pertama",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "+95 MILLION",
@@ -329,7 +329,7 @@
           "show": "Sumatra dan Kalimantan membesar dan bersinar, Jawa terlihat kecil di bawahnya",
           "scale": "map",
           "motion": "dua pulau besar mengembang sedikit, Jawa tetap kecil",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "SUMATRA",
@@ -437,7 +437,7 @@
           "show": "gambar datar itu retak dan jatuh, di baliknya muncul Jawa yang bergunung",
           "scale": "place",
           "motion": "retakan menjalar, potongan gambar runtuh",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "WRONG",
@@ -484,17 +484,6 @@
         "en": "People don't keep away from them either. On the slopes of Merapi, the most active volcano on Java, farmers leave when it erupts and come back to the same fields.",
         "id": "Orang juga tidak menjauh dari gunung itu. Di lereng Merapi, gunung api paling aktif di Jawa, petani mengungsi saat gunung meletus lalu kembali ke ladang yang sama."
       },
-      "broll": {
-        "keywords": [
-          "merapi volcano farmland",
-          "volcano village java farmers",
-          "mount merapi"
-        ],
-        "avoid": [
-          "lava closeup night",
-          "drone selfie"
-        ]
-      },
       "sources": [
         {
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/opag-2022-0122/html?lang=en",
@@ -507,7 +496,30 @@
       ],
       "duration_ms": {
         "en": 9706
-      }
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "lereng gunung api dengan desa dan petani yang tetap tinggal",
+          "scale": "place",
+          "motion": "petani pergi saat asap naik",
+          "transition": "wipe",
+          "labels": []
+        },
+        {
+          "sentence": 2,
+          "show": "petani kembali ke ladang yang sama di lereng Merapi",
+          "scale": "place",
+          "motion": "petani berjalan kembali, tunas tumbuh",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MERAPI",
+              "word": "Merapi"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "s09",
@@ -598,7 +610,7 @@
           "show": "tangan petani mengambil karung beras dari rak, lalu gunung di atas kulkas batuk abu dan rak terisi lagi",
           "scale": "object",
           "motion": "rak kosong sebentar, abu turun, isi rak muncul kembali",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "REFILL",
@@ -749,7 +761,7 @@
           "show": "keluarga itu berlipat ganda berkali-kali sampai antrean panjang mengular di depan kulkas",
           "scale": "place",
           "motion": "antrean memanjang cepat ke luar frame",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "SO MANY",
@@ -782,17 +794,6 @@
         "en": "This is a sawah, a flooded rice field. Water from the mountains runs from one terrace to the next and carries fresh minerals down with it.",
         "id": "Inilah sawah, ladang padi yang digenangi air. Air dari gunung mengalir dari satu teras ke teras berikutnya dan membawa mineral baru bersamanya."
       },
-      "broll": {
-        "keywords": [
-          "rice terraces java",
-          "sawah irrigation water",
-          "paddy field indonesia"
-        ],
-        "avoid": [
-          "bali tourist swing",
-          "drone selfie"
-        ]
-      },
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/Agricultural_Involution",
@@ -801,7 +802,35 @@
       ],
       "duration_ms": {
         "en": 9009
-      }
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "petak sawah tergenang bertingkat dilihat miring",
+          "scale": "place",
+          "motion": "air berkilau, kamera melayang",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SAWAH",
+              "word": "sawah"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "air mengalir dari gunung antar teras membawa butir mineral",
+          "scale": "place",
+          "motion": "butir mineral turun bersama air",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MINERALS",
+              "word": "minerals"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "s15",
@@ -837,7 +866,7 @@
           "show": "garis waktu musim bergerak di bawah petak sawah, padi tumbuh, dipanen, ditanam lagi berulang",
           "scale": "place",
           "motion": "siklus tanam-panen berputar cepat, penanda musim bergeser",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "SEASON",
@@ -884,7 +913,7 @@
           "show": "jam pasir di pematang, setiap butir yang jatuh menambah satu bulir padi di petak",
           "scale": "object",
           "motion": "pasir jatuh, bulir padi bertambah satu per satu",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "+1 HOUR",
@@ -978,7 +1007,7 @@
           "show": "satu petak hutan dibuka, ladang tumbuh, lalu memudar pucat, dan keluarga berjalan ke petak berikutnya",
           "scale": "place",
           "motion": "siklus buka-tanam-tinggalkan berulang tiga kali, jejak kaki berpindah",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "MOVE ON",
@@ -1038,7 +1067,7 @@
           "show": "di sisi Jawa orang bertambah di petak yang sama, di sisi Kalimantan satu orang berjalan menempati petak makin luas",
           "scale": "place",
           "motion": "kedua sisi bergerak berlawanan, titik orang Jawa memadat",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "MORE PEOPLE",
@@ -1103,7 +1132,7 @@
           "show": "garis waktu mulai berjalan cepat ke kanan, penghitung bergetar siap melonjak",
           "scale": "map",
           "motion": "garis waktu berakselerasi, kamera bergetar ringan",
-          "transition": "hold",
+          "transition": "cut",
           "mood": "bright"
         }
       ],
@@ -1236,7 +1265,7 @@
           "show": "kue anggaran Belanda berbentuk lingkaran, sepertiganya terisi warna dari kapal Jawa",
           "scale": "object",
           "motion": "irisan sepertiga mengisi pelan, penanda tahun 1840 ke 1880 bergeser",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "1/3 OF BUDGET",
@@ -1282,7 +1311,7 @@
           "show": "di peta Jawa bermunculan cerobong pabrik gula, masing-masing tepat di samping petak tebu dan kerumunan titik penduduk",
           "scale": "map",
           "motion": "cerobong muncul satu per satu dan mulai berasap",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "SUGAR MILLS",
@@ -1326,14 +1355,14 @@
           "show": "titik mulai berkembang biak",
           "scale": "map",
           "motion": "titik membelah diri",
-          "transition": "hold"
+          "transition": "cut"
         },
         {
           "sentence": 3,
           "show": "garis waktu tiba di 1900, penghitung naik sampai 28,5 juta",
           "scale": "map",
           "motion": "penanda tahun meluncur ke 1900, titik memenuhi pulau",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "1900",
@@ -1816,7 +1845,7 @@
           "show": "grid 100 titik di atas Lampung, 75 titik berwarna sama dengan Jawa, Madura, dan Bali",
           "scale": "map",
           "motion": "titik berubah warna satu per satu sampai tiga perempat",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "3/4",
@@ -1978,7 +2007,7 @@
           "show": "satu ibu dengan barisan enam anak di sampingnya",
           "scale": "object",
           "motion": "anak muncul satu per satu sampai enam",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "5.6 CHILDREN",
@@ -2042,7 +2071,7 @@
           "show": "dua batang pertumbuhan berdampingan: Jawa 1,7 persen, pulau lain 2,6 persen",
           "scale": "object",
           "motion": "batang pulau lain naik lebih tinggi",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "1.7%",
@@ -2096,7 +2125,7 @@
           "show": "dua pulau Jawa bayangan: yang pudar berisi 185 juta, yang nyata berisi 158 juta, selisihnya melayang di tengah",
           "scale": "map",
           "motion": "selisih 27 juta titik terangkat dari pulau bayangan",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "185 MILLION",
@@ -2182,7 +2211,7 @@
           "show": "kapal yang sama berganti menjadi kapal modern berisi 1.394 keluarga, penanda tahun 2025",
           "scale": "map",
           "motion": "kapal kayu berubah bentuk menjadi kapal modern, penghitung naik",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "1,394 FAMILIES",
@@ -2256,7 +2285,7 @@
           "show": "dari 154 pin tinggal 53 yang menyala, sebagian besar di timur, dan amplop bulanan jatuh ke tangan keluarga transmigran",
           "scale": "map",
           "motion": "pin padam satu per satu, amplop melayang turun",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "53 AREAS",
@@ -2339,18 +2368,6 @@
         "en": "Because the crowd built everything else. Java produces about fifty-seven percent of Indonesia's economy.",
         "id": "Karena kerumunan itu membangun semua hal lainnya. Jawa menghasilkan sekitar lima puluh tujuh persen perekonomian Indonesia."
       },
-      "broll": {
-        "keywords": [
-          "jakarta skyline traffic",
-          "jakarta commuters crowd",
-          "surabaya city"
-        ],
-        "avoid": [
-          "protest",
-          "flood",
-          "politician"
-        ]
-      },
       "sources": [
         {
           "url": "https://www.bps.go.id/id/pressrelease/2026/02/05/2546/ekonomi-indonesia-tahun-2025-tumbuh-5-11-persen",
@@ -2359,7 +2376,30 @@
       ],
       "duration_ms": {
         "en": 6037
-      }
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kerumunan di Jawa membangun gedung dan jalan",
+          "scale": "place",
+          "motion": "gedung tumbuh dari tengah kerumunan",
+          "transition": "wipe",
+          "labels": []
+        },
+        {
+          "sentence": 2,
+          "show": "kue ekonomi Indonesia, irisan lima puluh tujuh persen milik Jawa",
+          "scale": "place",
+          "motion": "irisan terangkat dan menyala",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "57%",
+              "word": "fifty-seven"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "s45",
@@ -2388,7 +2428,7 @@
           "show": "titik-titik dari desa dan pulau lain bergerak seperti tertarik magnet ke kota-kota Jawa",
           "scale": "map",
           "motion": "aliran titik bergerak ke kota, kota makin terang",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "JOBS",
@@ -2429,7 +2469,7 @@
           "show": "52 dari 100 titik kelabu jatuh di Jawa, hampir sama dengan porsi titik penduduk",
           "scale": "map",
           "motion": "titik kelabu mengendap di Jawa, dua grid disandingkan",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "52%",
@@ -2486,7 +2526,7 @@
           "show": "anak-anak mereka di kota: kantor, sekolah, dan meja makan keluarga besar",
           "scale": "place",
           "motion": "kamera bergeser dari kantor ke sekolah ke meja makan",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "JOBS",
@@ -2531,7 +2571,7 @@
           "show": "gunung di atas kulkas batuk abu kecil, rak terisi lagi",
           "scale": "object",
           "motion": "abu turun, rak terisi",
-          "transition": "hold",
+          "transition": "cut",
           "bubble": "Still on duty"
         },
         {
@@ -2625,7 +2665,26 @@
         "s34",
         "s41"
       ],
-      "hook_override": "You'd think moving nine million people would empty Java."
+      "hook_override": "You'd think moving nine million people would empty Java.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "MOVED 9M",
+            "size": 160,
+            "color": "#ffffff"
+          },
+          {
+            "text": "GREW 95M",
+            "size": 160,
+            "color": "#f2b632"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T02-why-southeast-asia/siklus/003-why-half-lives-on-one-island/04-shots.tsx",
+          "scene": "thumbS1"
+        }
+      }
     },
     {
       "name": "B2-island-the-size-of-england",
@@ -2636,7 +2695,26 @@
         "s09",
         "s10"
       ],
-      "hook_override": "You're on an island the size of England, with 158 million people."
+      "hook_override": "You're on an island the size of England, with 158 million people.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "158 MILLION",
+            "size": 130,
+            "color": "#f2b632"
+          },
+          {
+            "text": "ONE ISLAND",
+            "size": 130,
+            "color": "#ffffff"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T02-why-southeast-asia/siklus/003-why-half-lives-on-one-island/04-shots.tsx",
+          "scene": "thumbS2"
+        }
+      }
     }
   ],
   "anti_slop": {
@@ -2648,64 +2726,38 @@
       "lines": [
         {
           "text": "HALF ON",
-          "color": "#ffffff",
-          "size": 150
+          "size": 150,
+          "color": "#ffffff"
         },
         {
           "text": "ONE ISLAND",
-          "color": "#f2b632",
-          "size": 180
+          "size": 160,
+          "color": "#f2b632"
         }
       ],
       "stage": {
-        "bg": "sea",
-        "cam": {
-          "z": [
-            1,
-            1
-          ]
-        },
-        "actors": [
-          {
-            "id": "i",
-            "kind": "island",
-            "x": 0.8,
-            "scale": 1.7,
-            "emo": "shock"
-          }
-        ]
+        "engine": "r3",
+        "module": "hasil/tracks/T02-why-southeast-asia/siklus/003-why-half-lives-on-one-island/04-shots.tsx",
+        "scene": "thumbA"
       }
     },
     {
       "lines": [
         {
           "text": "158 MILLION",
-          "color": "#f2b632",
-          "size": 170
+          "size": 150,
+          "color": "#f2b632"
         },
         {
           "text": "HERE",
-          "color": "#ffffff",
-          "size": 190
+          "size": 190,
+          "color": "#ffffff"
         }
       ],
       "stage": {
-        "bg": "sea",
-        "cam": {
-          "z": [
-            1,
-            1
-          ]
-        },
-        "actors": [
-          {
-            "id": "v",
-            "kind": "volcano",
-            "x": 0.8,
-            "scale": 1.7,
-            "emo": "smug"
-          }
-        ]
+        "engine": "r3",
+        "module": "hasil/tracks/T02-why-southeast-asia/siklus/003-why-half-lives-on-one-island/04-shots.tsx",
+        "scene": "thumbB"
       }
     }
   ],
