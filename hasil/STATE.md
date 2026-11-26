@@ -4,7 +4,7 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "T01: kirim Short A2 (kuota habis), verifikasi channel YouTube, setujui naskah 002 + rekam 2 klip tangan. T02: analitik siklus 001 mulai 2026-12-03"
+langkah_berikutnya: "T01: kirim Short A2 (kuota habis), verifikasi channel YouTube, setujui naskah 002 + rekam 2 klip tangan. T02: analitik siklus 001 (2026-11-28 dan 2026-12-03), lalu siklus 002 variasi B"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-26
@@ -19,7 +19,7 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Kirim Short A2, naskah 002 | 5,5 | 2026-11-25: master 001 tayang |
-| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | 001 tayang di semua platform; analitik mulai 2026-12-03 | 6 | 2026-11-26: video 001 tayang di YouTube dan Facebook |
+| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (@equator.logic di TikTok) | Analitik 001 (11-28, 12-03), lalu siklus 002 | 6 | 2026-11-26: 001 tayang di semua platform |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
 | T05 | Indonesia dan Asia Tenggara dari dalam | Nusantara before the maps | usulan | Channel Asia Tenggara | Cadangan | - | 2026-11-24: cadangan |
@@ -71,3 +71,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: T02-001 (master dan 2 Shorts) juga tayang di Facebook, unggah manual.
 - 2026-11-26: Shorts T02-001 juga tayang di Instagram Reels, unggah manual.
 - 2026-11-26: T02-001 juga tayang di TikTok (master dan 2 Shorts), unggah manual.
+- 2026-11-26: T02 siklus 001 selesai sampai publish. Berikutnya analitik, lalu siklus 002.

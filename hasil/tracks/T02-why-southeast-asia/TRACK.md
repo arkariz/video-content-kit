@@ -8,7 +8,7 @@ channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "001-jakarta-refused-tokyo-trains"
-langkah_berikutnya: "siklus 001 tayang di YouTube, Facebook, TikTok, dan Instagram (Shorts) 2026-11-26: tarik analitik mulai 2026-12-03 (instruksi/08-analitik-dan-loop.md). Siklus 002: uji gaya mulus (learnings-global.md) sebelum render penuh"
+langkah_berikutnya: "siklus 001 selesai tayang (2026-11-26): cek awal analitik 2026-11-28, analisa lengkap 2026-12-03 (instruksi/08). Lalu siklus 002 (variasi B: Why Half of Indonesia Lives on One Island, 1 long-form + 2 Shorts, target tayang mulai 2026-12-07): uji gaya mulus sebelum render penuh"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
 menunggu_keputusan: null
@@ -94,3 +94,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Siklus 001 juga tayang di Facebook (manual): master https://www.facebook.com/share/v/1QqcwTdNX4/, A1 https://www.facebook.com/share/r/1CZcFPZtcG/, A2 https://www.facebook.com/share/r/1MghokmAqm/.
 - 2026-11-26: Kedua Shorts siklus 001 juga tayang di Instagram Reels (manual): A1 https://www.instagram.com/reel/DgMeilctoqF/, A2 https://www.instagram.com/reel/DgMevlyBmuQ/.
 - 2026-11-26: Siklus 001 juga tayang di TikTok @equator.logic (manual): master https://www.tiktok.com/@equator.logic/video/7712368324813835521, A1 https://www.tiktok.com/@equator.logic/video/7712368173294669062, A2 https://www.tiktok.com/@equator.logic/video/7712368551411092788.
+- 2026-11-26: Siklus 001 ditandai selesai sampai publish (status tayang). Distribusi: YouTube, Facebook, TikTok (master + 2 Shorts), Instagram (2 Shorts). Menunggu analitik; QA anti-slop manual tidak dibuat sebelum publish. Sisa paket uji V2: 4 Shorts + 1 long-form.
