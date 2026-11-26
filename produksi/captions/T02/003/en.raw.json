@@ -149,13 +149,13 @@
     },
     {
       "text": "of",
-      "startMs": 3460,
+      "startMs": 3480,
       "endMs": 3540
     },
     {
-      "text": "Indonesia,",
+      "text": "Indonesia",
       "startMs": 3580,
-      "endMs": 4059
+      "endMs": 4080
     },
     {
       "text": "on",
@@ -185,7 +185,7 @@
     {
       "text": "country's",
       "startMs": 5720,
-      "endMs": 6120
+      "endMs": 6100
     },
     {
       "text": "land.",
@@ -662,7 +662,7 @@
     },
     {
       "text": "in",
-      "startMs": 6280,
+      "startMs": 6300,
       "endMs": 6400
     },
     {
@@ -711,8 +711,8 @@
       "endMs": 10460
     },
     {
-      "text": "1,200.",
-      "startMs": 10500,
+      "text": "1200.",
+      "startMs": 10520,
       "endMs": 11120
     }
   ],
@@ -877,7 +877,7 @@
     {
       "text": "People",
       "startMs": 100,
-      "endMs": 280
+      "endMs": 300
     },
     {
       "text": "don't",
@@ -886,148 +886,143 @@
     },
     {
       "text": "keep",
-      "startMs": 520,
-      "endMs": 660
+      "startMs": 540,
+      "endMs": 680
     },
     {
       "text": "away",
-      "startMs": 700,
-      "endMs": 880
+      "startMs": 720,
+      "endMs": 900
     },
     {
       "text": "from",
-      "startMs": 940,
-      "endMs": 1040
+      "startMs": 960,
+      "endMs": 1060
     },
     {
       "text": "them",
-      "startMs": 1080,
-      "endMs": 1160
+      "startMs": 1100,
+      "endMs": 1240
     },
     {
       "text": "either.",
-      "startMs": 1220,
-      "endMs": 1480
+      "startMs": 1280,
+      "endMs": 1540
     },
     {
       "text": "On",
-      "startMs": 2520,
-      "endMs": 2580
+      "startMs": 2420,
+      "endMs": 2500
     },
     {
       "text": "the",
-      "startMs": 2620,
-      "endMs": 2700
+      "startMs": 2540,
+      "endMs": 2620
     },
     {
       "text": "slopes",
-      "startMs": 2760,
-      "endMs": 3040
+      "startMs": 2680,
+      "endMs": 2940
     },
     {
       "text": "of",
-      "startMs": 3080,
-      "endMs": 3180
+      "startMs": 2980,
+      "endMs": 3060
     },
     {
-      "text": "Murah",
-      "startMs": 3260,
-      "endMs": 3660
+      "text": "Merapi,",
+      "startMs": 3100,
+      "endMs": 3500
     },
     {
-      "text": "P,",
-      "startMs": 3760,
+      "text": "the",
+      "startMs": 3880,
       "endMs": 3940
     },
     {
-      "text": "the",
-      "startMs": 4360,
-      "endMs": 4420
-    },
-    {
       "text": "most",
-      "startMs": 4460,
-      "endMs": 4700
+      "startMs": 3980,
+      "endMs": 4240
     },
     {
       "text": "active",
-      "startMs": 4800,
-      "endMs": 5040
+      "startMs": 4340,
+      "endMs": 4600
     },
     {
       "text": "volcano",
-      "startMs": 5100,
-      "endMs": 5540
+      "startMs": 4640,
+      "endMs": 5100
     },
     {
       "text": "on",
-      "startMs": 5580,
-      "endMs": 5700
+      "startMs": 5160,
+      "endMs": 5300
     },
     {
       "text": "Java,",
-      "startMs": 5760,
-      "endMs": 6100
+      "startMs": 5360,
+      "endMs": 5720
     },
     {
       "text": "farmers",
-      "startMs": 6720,
-      "endMs": 7060
+      "startMs": 6280,
+      "endMs": 6640
     },
     {
       "text": "leave",
-      "startMs": 7120,
-      "endMs": 7360
+      "startMs": 6700,
+      "endMs": 6880
     },
     {
       "text": "when",
-      "startMs": 7380,
-      "endMs": 7460
+      "startMs": 6920,
+      "endMs": 7000
     },
     {
       "text": "it",
-      "startMs": 7480,
-      "endMs": 7540
+      "startMs": 7020,
+      "endMs": 7080
     },
     {
       "text": "erupts",
-      "startMs": 7600,
-      "endMs": 7920
+      "startMs": 7140,
+      "endMs": 7560
     },
     {
       "text": "and",
-      "startMs": 7960,
-      "endMs": 8039
+      "startMs": 7840,
+      "endMs": 7940
     },
     {
       "text": "come",
-      "startMs": 8119,
-      "endMs": 8260
+      "startMs": 8000,
+      "endMs": 8140
     },
     {
       "text": "back",
-      "startMs": 8300,
-      "endMs": 8440
+      "startMs": 8180,
+      "endMs": 8340
     },
     {
       "text": "to",
-      "startMs": 8480,
-      "endMs": 8540
+      "startMs": 8380,
+      "endMs": 8440
     },
     {
       "text": "the",
-      "startMs": 8580,
-      "endMs": 8660
+      "startMs": 8480,
+      "endMs": 8560
     },
     {
       "text": "same",
-      "startMs": 8720,
-      "endMs": 8940
+      "startMs": 8640,
+      "endMs": 8860
     },
     {
       "text": "fields.",
-      "startMs": 9000,
-      "endMs": 9360
+      "startMs": 8920,
+      "endMs": 9300
     }
   ],
   "s09": [
@@ -1538,9 +1533,9 @@
       "endMs": 6000
     },
     {
-      "text": "Western",
+      "text": "western",
       "startMs": 6060,
-      "endMs": 6360
+      "endMs": 6400
     },
     {
       "text": "Java",
@@ -1634,7 +1629,7 @@
     },
     {
       "text": "kind",
-      "startMs": 13380,
+      "startMs": 13360,
       "endMs": 13560
     },
     {
@@ -1660,7 +1655,7 @@
     {
       "text": "of",
       "startMs": 14880,
-      "endMs": 14960
+      "endMs": 14980
     },
     {
       "text": "Java",
@@ -1680,7 +1675,7 @@
     {
       "text": "be",
       "startMs": 15800,
-      "endMs": 15880
+      "endMs": 15900
     },
     {
       "text": "built",
@@ -1843,7 +1838,7 @@
   "s14": [
     {
       "text": "This",
-      "startMs": 120,
+      "startMs": 100,
       "endMs": 220
     },
     {
@@ -1857,119 +1852,119 @@
       "endMs": 480
     },
     {
-      "text": "sahwa,",
-      "startMs": 660,
-      "endMs": 1400
+      "text": "Sawa,",
+      "startMs": 560,
+      "endMs": 920
     },
     {
       "text": "a",
-      "startMs": 1880,
-      "endMs": 1960
+      "startMs": 1260,
+      "endMs": 1300
     },
     {
       "text": "flooded",
-      "startMs": 2020,
-      "endMs": 2300
+      "startMs": 1440,
+      "endMs": 1720
     },
     {
       "text": "rice",
-      "startMs": 2360,
-      "endMs": 2600
+      "startMs": 1800,
+      "endMs": 2040
     },
     {
       "text": "field.",
-      "startMs": 2680,
-      "endMs": 2960
+      "startMs": 2100,
+      "endMs": 2380
     },
     {
       "text": "Water",
-      "startMs": 4000,
-      "endMs": 4200
+      "startMs": 3280,
+      "endMs": 3500
     },
     {
       "text": "from",
-      "startMs": 4260,
-      "endMs": 4360
+      "startMs": 3560,
+      "endMs": 3680
     },
     {
       "text": "the",
-      "startMs": 4400,
-      "endMs": 4460
+      "startMs": 3700,
+      "endMs": 3780
     },
     {
       "text": "mountains",
-      "startMs": 4520,
-      "endMs": 4880
+      "startMs": 3840,
+      "endMs": 4200
     },
     {
       "text": "runs",
-      "startMs": 4960,
-      "endMs": 5180
+      "startMs": 4280,
+      "endMs": 4480
     },
     {
       "text": "from",
-      "startMs": 5220,
-      "endMs": 5380
+      "startMs": 4520,
+      "endMs": 4680
     },
     {
       "text": "one",
-      "startMs": 5480,
-      "endMs": 5620
+      "startMs": 4760,
+      "endMs": 4880
     },
     {
       "text": "terrace",
-      "startMs": 5680,
-      "endMs": 5960
+      "startMs": 4960,
+      "endMs": 5240
     },
     {
       "text": "to",
-      "startMs": 6000,
-      "endMs": 6060
+      "startMs": 5280,
+      "endMs": 5360
     },
     {
       "text": "the",
-      "startMs": 6100,
-      "endMs": 6160
+      "startMs": 5400,
+      "endMs": 5460
     },
     {
       "text": "next",
-      "startMs": 6220,
-      "endMs": 6500
+      "startMs": 5520,
+      "endMs": 5760
     },
     {
       "text": "and",
-      "startMs": 6860,
-      "endMs": 6980
+      "startMs": 5800,
+      "endMs": 5920
     },
     {
       "text": "carries",
-      "startMs": 7040,
-      "endMs": 7380
+      "startMs": 5980,
+      "endMs": 6280
     },
     {
       "text": "fresh",
-      "startMs": 7440,
-      "endMs": 7680
+      "startMs": 6400,
+      "endMs": 6640
     },
     {
       "text": "minerals",
-      "startMs": 7740,
-      "endMs": 8080
+      "startMs": 6700,
+      "endMs": 7060
     },
     {
       "text": "down",
-      "startMs": 8140,
-      "endMs": 8340
+      "startMs": 7120,
+      "endMs": 7300
     },
     {
       "text": "with",
-      "startMs": 8380,
-      "endMs": 8500
+      "startMs": 7340,
+      "endMs": 7480
     },
     {
       "text": "it.",
-      "startMs": 8560,
-      "endMs": 8680
+      "startMs": 7520,
+      "endMs": 7640
     }
   ],
   "s15": [
@@ -2093,107 +2088,107 @@
     {
       "text": "There's",
       "startMs": 100,
-      "endMs": 280
+      "endMs": 360
     },
     {
       "text": "one",
-      "startMs": 320,
-      "endMs": 400
+      "startMs": 420,
+      "endMs": 540
     },
     {
       "text": "thing",
-      "startMs": 460,
-      "endMs": 600
+      "startMs": 580,
+      "endMs": 740
     },
     {
       "text": "you",
-      "startMs": 620,
-      "endMs": 680
+      "startMs": 760,
+      "endMs": 820
     },
     {
       "text": "need",
-      "startMs": 720,
-      "endMs": 860
+      "startMs": 860,
+      "endMs": 960
     },
     {
       "text": "to",
-      "startMs": 900,
-      "endMs": 980
+      "startMs": 1000,
+      "endMs": 1060
     },
     {
       "text": "know",
-      "startMs": 1020,
-      "endMs": 1120
+      "startMs": 1100,
+      "endMs": 1180
     },
     {
       "text": "about",
-      "startMs": 1180,
-      "endMs": 1340
+      "startMs": 1240,
+      "endMs": 1360
     },
     {
       "text": "a",
-      "startMs": 1380,
-      "endMs": 1460
+      "startMs": 1400,
+      "endMs": 1480
     },
     {
-      "text": "SAHWA.",
-      "startMs": 1560,
-      "endMs": 2360
+      "text": "Sawa.",
+      "startMs": 1540,
+      "endMs": 2040
     },
     {
       "text": "It",
-      "startMs": 2980,
-      "endMs": 3080
+      "startMs": 2600,
+      "endMs": 2680
     },
     {
       "text": "pays",
-      "startMs": 3120,
-      "endMs": 3360
+      "startMs": 2740,
+      "endMs": 2980
     },
     {
       "text": "back",
-      "startMs": 3420,
-      "endMs": 3620
+      "startMs": 3020,
+      "endMs": 3220
     },
     {
       "text": "almost",
-      "startMs": 3680,
-      "endMs": 4059
+      "startMs": 3280,
+      "endMs": 3580
     },
     {
       "text": "every",
-      "startMs": 4140,
-      "endMs": 4360
+      "startMs": 3640,
+      "endMs": 3820
     },
     {
       "text": "extra",
-      "startMs": 4440,
-      "endMs": 4660
+      "startMs": 3880,
+      "endMs": 4120
     },
     {
       "text": "hour",
-      "startMs": 4780,
-      "endMs": 4920
+      "startMs": 4180,
+      "endMs": 4340
     },
     {
       "text": "you",
-      "startMs": 5000,
-      "endMs": 5080
+      "startMs": 4400,
+      "endMs": 4480
     },
     {
       "text": "put",
-      "startMs": 5120,
-      "endMs": 5220
+      "startMs": 4500,
+      "endMs": 4620
     },
     {
       "text": "into",
-      "startMs": 5260,
-      "endMs": 5500
+      "startMs": 4660,
+      "endMs": 4840
     },
     {
       "text": "it.",
-      "startMs": 5540,
-      "endMs": 5640
+      "startMs": 4880,
+      "endMs": 4980
     }
   ],
   "s17": [
@@ -2755,8 +2750,8 @@
   "s20": [
     {
       "text": "By",
-      "startMs": 80,
-      "endMs": 260
+      "startMs": 100,
+      "endMs": 240
     },
     {
       "text": "1815,",
@@ -2765,13 +2760,13 @@
     },
     {
       "text": "when",
-      "startMs": 1420,
-      "endMs": 1520
+      "startMs": 1460,
+      "endMs": 1540
     },
     {
       "text": "a",
-      "startMs": 1560,
-      "endMs": 1620
+      "startMs": 1580,
+      "endMs": 1640
     },
     {
       "text": "British",
@@ -2780,138 +2775,133 @@
     },
     {
       "text": "administrator",
-      "startMs": 1960,
-      "endMs": 2540
+      "startMs": 1940,
+      "endMs": 2520
     },
     {
       "text": "named",
-      "startMs": 2640,
-      "endMs": 2920
+      "startMs": 2600,
+      "endMs": 2780
     },
     {
-      "text": "R.A.F.",
-      "startMs": 3040,
-      "endMs": 3600
-    },
-    {
-      "text": "Olds",
-      "startMs": 3760,
-      "endMs": 4019
+      "text": "Raffles",
+      "startMs": 2900,
+      "endMs": 3340
     },
     {
       "text": "ran",
-      "startMs": 4240,
-      "endMs": 4360
+      "startMs": 3420,
+      "endMs": 3560
     },
     {
       "text": "a",
-      "startMs": 4400,
-      "endMs": 4460
+      "startMs": 3600,
+      "endMs": 3640
     },
     {
       "text": "count,",
-      "startMs": 4520,
-      "endMs": 4760
+      "startMs": 3700,
+      "endMs": 3960
     },
     {
       "text": "Java",
-      "startMs": 5400,
-      "endMs": 5660
+      "startMs": 4480,
+      "endMs": 4740
     },
     {
       "text": "had",
-      "startMs": 5700,
-      "endMs": 5800
+      "startMs": 4800,
+      "endMs": 4880
     },
     {
       "text": "about",
-      "startMs": 5840,
-      "endMs": 6020
+      "startMs": 4940,
+      "endMs": 5160
     },
     {
       "text": "four",
-      "startMs": 6160,
-      "endMs": 6320
+      "startMs": 5240,
+      "endMs": 5400
     },
     {
       "text": "and",
-      "startMs": 6340,
-      "endMs": 6400
+      "startMs": 5420,
+      "endMs": 5480
     },
     {
       "text": "a",
-      "startMs": 6460,
-      "endMs": 6500
+      "startMs": 5540,
+      "endMs": 5580
     },
     {
       "text": "half",
-      "startMs": 6560,
-      "endMs": 6780
+      "startMs": 5640,
+      "endMs": 5860
     },
     {
       "text": "million",
-      "startMs": 6840,
-      "endMs": 7100
+      "startMs": 5920,
+      "endMs": 6220
     },
     {
       "text": "people.",
-      "startMs": 7180,
-      "endMs": 7480
+      "startMs": 6300,
+      "endMs": 6620
     },
     {
       "text": "Historians",
-      "startMs": 8240,
-      "endMs": 8820
+      "startMs": 7520,
+      "endMs": 8119
     },
     {
       "text": "think",
-      "startMs": 8860,
-      "endMs": 9020
+      "startMs": 8160,
+      "endMs": 8340
     },
     {
       "text": "he",
-      "startMs": 9040,
-      "endMs": 9120
+      "startMs": 8380,
+      "endMs": 8540
     },
     {
       "text": "undercounted.",
-      "startMs": 9160,
-      "endMs": 9740
+      "startMs": 8600,
+      "endMs": 9260
     },
     {
       "text": "Even",
-      "startMs": 10640,
-      "endMs": 10880
+      "startMs": 10060,
+      "endMs": 10240
     },
     {
       "text": "so,",
-      "startMs": 10960,
-      "endMs": 11160
+      "startMs": 10360,
+      "endMs": 10540
     },
     {
       "text": "what",
-      "startMs": 11560,
-      "endMs": 11700
+      "startMs": 10980,
+      "endMs": 11100
     },
     {
       "text": "came",
-      "startMs": 11760,
-      "endMs": 11940
+      "startMs": 11160,
+      "endMs": 11320
     },
     {
       "text": "next",
-      "startMs": 11980,
-      "endMs": 12200
+      "startMs": 11380,
+      "endMs": 11640
     },
     {
       "text": "was",
-      "startMs": 12240,
-      "endMs": 12320
+      "startMs": 11700,
+      "endMs": 11780
     },
     {
       "text": "extreme.",
-      "startMs": 12360,
-      "endMs": 12880
+      "startMs": 11820,
+      "endMs": 12320
     }
   ],
   "s21": [
@@ -3548,57 +3538,52 @@
     {
       "text": "about",
       "startMs": 300,
-      "endMs": 540
+      "endMs": 520
     },
     {
       "text": "six",
-      "startMs": 600,
+      "startMs": 580,
       "endMs": 780
     },
     {
       "text": "times",
       "startMs": 840,
-      "endMs": 1120
+      "endMs": 1080
     },
     {
-      "text": "RAF",
-      "startMs": 1200,
-      "endMs": 1500
-    },
-    {
-      "text": "Ullsw",
-      "startMs": 1600,
-      "endMs": 1800
+      "text": "Raffles'",
+      "startMs": 1160,
+      "endMs": 1540
     },
     {
       "text": "count",
-      "startMs": 1880,
-      "endMs": 2120
+      "startMs": 1640,
+      "endMs": 1840
     },
     {
       "text": "in",
-      "startMs": 2380,
-      "endMs": 2460
+      "startMs": 1900,
+      "endMs": 1980
     },
     {
       "text": "less",
-      "startMs": 2520,
-      "endMs": 2700
+      "startMs": 2040,
+      "endMs": 2200
     },
     {
       "text": "than",
-      "startMs": 2720,
-      "endMs": 2820
+      "startMs": 2220,
+      "endMs": 2300
     },
     {
       "text": "a",
-      "startMs": 2860,
-      "endMs": 2900
+      "startMs": 2340,
+      "endMs": 2400
     },
     {
       "text": "century.",
-      "startMs": 2960,
-      "endMs": 3400
+      "startMs": 2440,
+      "endMs": 2840
     }
   ],
   "s27": [
@@ -5094,22 +5079,17 @@
   ],
   "s40": [
     {
-      "text": "Add",
+      "text": "Added",
       "startMs": 80,
-      "endMs": 180
-    },
-    {
-      "text": "it",
-      "startMs": 220,
       "endMs": 280
     },
     {
-      "text": "up.",
+      "text": "up,",
       "startMs": 380,
       "endMs": 500
     },
     {
-      "text": "If",
+      "text": "if",
       "startMs": 1580,
       "endMs": 1700
     },
@@ -5256,7 +5236,7 @@
     {
       "text": "Java",
       "startMs": 12540,
-      "endMs": 12800
+      "endMs": 12780
     },
     {
       "text": "too.",

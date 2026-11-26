@@ -26,24 +26,12 @@
   ],
   "pronunciations": [
     {
-      "term": "Merapi",
-      "say_as": "Muh-RAH-pee"
-    },
-    {
-      "term": "sawah",
-      "say_as": "SAH-wah"
-    },
-    {
       "term": "Lampung",
       "say_as": "LAHM-poong"
     },
     {
       "term": "Madura",
       "say_as": "Mah-DOO-rah"
-    },
-    {
-      "term": "Raffles",
-      "say_as": "RAF-ulz"
     }
   ],
   "anchor": {
@@ -495,7 +483,7 @@
         }
       ],
       "duration_ms": {
-        "en": 9706
+        "en": 9613
       },
       "shots": [
         {
@@ -801,7 +789,7 @@
         }
       ],
       "duration_ms": {
-        "en": 9009
+        "en": 7988
       },
       "shots": [
         {
@@ -933,7 +921,7 @@
         }
       ],
       "duration_ms": {
-        "en": 5991
+        "en": 5341
       }
     },
     {
@@ -1147,7 +1135,7 @@
         }
       ],
       "duration_ms": {
-        "en": 13189
+        "en": 12678
       }
     },
     {
@@ -1426,7 +1414,7 @@
         }
       ],
       "duration_ms": {
-        "en": 3762
+        "en": 3204
       }
     },
     {
