@@ -11,7 +11,7 @@ siklus_aktif: "002-gta6-download-9-hours"
 langkah_berikutnya: "002 (naskah disetujui 2026-11-26): 11-28 uji gaya mulus (gate gaya) dan cek awal analitik 001; 11-29 s.d. 11-30 audio, 04-shots.tsx, render; sebelum publish cek klaim bertanda di 03-naskah.md (APJII s23, ATSI s28, Ookla); 11-30 s.d. 12-01 QA anti-slop dan publish (gate), target tayang 2026-12-01"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: "Setujui naskah siklus 003 Jawa (49 scene, 1.297 kata EN, ±9:00, anti-slop EN 40/ID 38) atau minta revisi"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -128,3 +128,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Kreator meminta hook lebih agresif. s01 naskah 002 kini: satu jam, teman di Singapura sudah main GTA 6; penonton di Indonesia masih 8 jam lagi. Judul 1, thumbnail A, dan hook Short B1 disesuaikan. Naskah masih menunggu persetujuan.
 - 2026-11-26: Kreator menyetujui naskah siklus 002 (versi hook agresif). Naskah dikunci; status produksi. Klaim yang belum dibuka dari sumber asli tetap harus dicek sebelum publish.
 - 2026-11-26: Branch T02-GTA dan T02-JAWA digabung ke main. Folder Jawa dinomori ulang 002 → 003 sesuai jadwal yang disetujui.
+- 2026-11-26: Kreator menyetujui naskah siklus 003 (Jawa) untuk diproduksi malam ini bersama 002.

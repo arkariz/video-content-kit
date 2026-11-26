@@ -82,3 +82,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: T02 siklus 002 brief + naskah draf selesai; menunggu persetujuan kreator.
 - 2026-11-26: T02 siklus 002 naskah disetujui kreator. Berikutnya uji gaya mulus lalu produksi.
 - 2026-11-26: Semua branch (T02-GTA, T02-JAWA, T01-S004-GTAVI; T02 sama dengan main) digabung ke main atas permintaan kreator. Folder Jawa dinomori ulang 002 → 003.
+- 2026-11-26: Produksi malam disetujui: T02-002, T01-002, T02-003 (naskah disetujui), berhenti 06.00 WIB. Lihat hasil/review/rencana-produksi-2026-11-26.md.
