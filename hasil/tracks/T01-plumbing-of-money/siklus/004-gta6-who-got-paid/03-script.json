@@ -1,4 +1,5 @@
 {
+  "caption_mode": "word",
   "cycle": "004-gta6-who-got-paid",
   "track": "T01",
   "di_luar_v2": true,
@@ -82,7 +83,7 @@
           ],
           "mood": "night",
           "faces": {
-            "you": "excited"
+            "you": "happy"
           }
         },
         {
@@ -106,7 +107,7 @@
           "transition": "hold",
           "mood": "cold",
           "faces": {
-            "bag": "waiting"
+            "bag": "tired"
           }
         }
       ],
@@ -160,7 +161,7 @@
             }
           ],
           "faces": {
-            "publisher": "proud"
+            "publisher": "smug"
           }
         }
       ],
@@ -213,7 +214,7 @@
         },
         {
           "sentence": 3,
-          "show": "the 56 coins freeze mid-air above the table, a small clock icon above them",
+          "show": "the 56 coins freeze mid-air above the table, a small clock model above them",
           "scale": "object",
           "motion": "coins hang and wobble, clock hands spin",
           "transition": "hold",
@@ -294,7 +295,7 @@
             "as": "dots"
           },
           "faces": {
-            "bag": "nervous"
+            "bag": "shock"
           }
         },
         {
@@ -355,7 +356,7 @@
             }
           ],
           "faces": {
-            "state": "stern"
+            "state": "angry"
           }
         },
         {
@@ -387,7 +388,7 @@
             }
           ],
           "faces": {
-            "card": "busy"
+            "card": "neutral"
           }
         },
         {
@@ -403,7 +404,7 @@
             }
           ],
           "faces": {
-            "publisher": "patient"
+            "publisher": "neutral"
           }
         }
       ],
@@ -552,7 +553,7 @@
             }
           ],
           "faces": {
-            "state": "stern"
+            "state": "angry"
           }
         },
         {
@@ -606,7 +607,7 @@
           "motion": "stack slides along a chute into the capitol door",
           "transition": "hold",
           "faces": {
-            "store": "bored"
+            "store": "neutral"
           }
         },
         {
@@ -736,7 +737,7 @@
           "transition": "wipe",
           "labels": [
             {
-              "text": "30% · 30% · 30%",
+              "text": "30% EACH",
               "word": "thirty"
             }
           ],
@@ -769,7 +770,7 @@
           "motion": "spotlight snaps on, kiosk straightens up",
           "transition": "push",
           "faces": {
-            "store": "serious"
+            "store": "neutral"
           }
         },
         {
@@ -777,7 +778,7 @@
           "show": "a console box on a price tag, a red minus coin falling out of it; then game boxes streaming past with coins flowing back",
           "scale": "object",
           "motion": "minus coin drops, then a stream of plus coins returns",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "LOSS",
@@ -808,7 +809,7 @@
           "show": "behind the door, a casino-like hall where every game box passed drops a coin into the house's bin",
           "scale": "place",
           "motion": "boxes slide past, coins clink into the bin",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "THE HOUSE",
@@ -892,10 +893,10 @@
           "show": "4 player icons walk toward the kiosks; 3 go left",
           "scale": "object",
           "motion": "icons walk, three peel off to one kiosk",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
-              "text": "≈ 3 OF 4",
+              "text": "3 OF 4",
               "word": "three"
             }
           ],
@@ -963,7 +964,7 @@
             }
           ],
           "faces": {
-            "card": "busy"
+            "card": "neutral"
           }
         },
         {
@@ -986,7 +987,7 @@
           "motion": "tower shakes, coin drifts toward the store",
           "transition": "hold",
           "faces": {
-            "publisher": "relieved"
+            "publisher": "happy"
           }
         }
       ],
@@ -1028,7 +1029,7 @@
           "show": "the store kiosk gets a little badge pinned on it",
           "scale": "object",
           "motion": "badge pins on with a pop",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "MERCHANT OF RECORD",
@@ -1036,7 +1037,7 @@
             }
           ],
           "faces": {
-            "store": "proud"
+            "store": "smug"
           }
         }
       ],
@@ -1121,7 +1122,7 @@
           "show": "the three buildings shrink into a sticky note that sticks on the edge of the table",
           "scale": "object",
           "motion": "note slaps onto the table edge",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "NEXT VIDEO",
@@ -1207,7 +1208,7 @@
           "motion": "mountain grows behind the stack, stack looks tiny",
           "transition": "cut",
           "faces": {
-            "publisher": "worried"
+            "publisher": "sad"
           }
         },
         {
@@ -1291,7 +1292,7 @@
           "show": "a billboard-shaped chunk stays standing at the end",
           "scale": "object",
           "motion": "last chunk wobbles but stays",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "MARKETING",
@@ -1360,7 +1361,7 @@
             }
           ],
           "faces": {
-            "publisher": "relieved"
+            "publisher": "happy"
           },
           "bubble": "Phew."
         }
@@ -1525,7 +1526,7 @@
             }
           ],
           "faces": {
-            "yourbank": "confident"
+            "yourbank": "smug"
           }
         },
         {
@@ -1567,7 +1568,7 @@
           "transition": "iris",
           "mood": "night",
           "faces": {
-            "bag": "sleepy"
+            "bag": "tired"
           }
         },
         {
@@ -1590,7 +1591,7 @@
             }
           ],
           "faces": {
-            "publisher": "confused"
+            "publisher": "shock"
           }
         }
       ],
@@ -1626,7 +1627,7 @@
           "show": "a sealed envelope with a wax seal passes from store to tower; inside, a calendar page with dates blurred",
           "scale": "object",
           "motion": "envelope slides across; calendar peeks out, blurred",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "PAYOUT",
@@ -1644,7 +1645,7 @@
           "show": "a wall calendar flips from November to December while the envelope waits in a mail slot",
           "scale": "object",
           "motion": "pages flip, envelope stays in slot",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "IF MONTHLY",
@@ -1729,7 +1730,7 @@
           "motion": "kiosk climbs the steps, doors swing open",
           "transition": "wipe",
           "faces": {
-            "store": "nervous"
+            "store": "shock"
           }
         }
       ],
@@ -1768,7 +1769,7 @@
           "show": "a calendar flips to Nov 17, gavel bangs, the claim paper flies out of the courtroom window; a second calendar page shows Nov 19 two days later",
           "scale": "place",
           "motion": "gavel bangs, paper flies, calendar flips forward two days",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "NOV 17",
@@ -1812,7 +1813,7 @@
           "transition": "cut",
           "mood": "warm",
           "faces": {
-            "store": "sincere"
+            "store": "neutral"
           }
         },
         {
@@ -1837,10 +1838,10 @@
           "show": "a deposition tape recorder plays; a console box on a price tag shows a red minus coin",
           "scale": "object",
           "motion": "tape reels turn, minus coin drops",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
-              "text": "SOLD AT A LOSS",
+              "text": "AT A LOSS",
               "word": "loss"
             }
           ]
@@ -2002,7 +2003,7 @@
           "transition": "iris",
           "mood": "night",
           "faces": {
-            "you": "playing"
+            "you": "happy"
           }
         },
         {
@@ -2010,7 +2011,7 @@
           "show": "overlay: the table on the left, the coin clock on the right",
           "scale": "place",
           "motion": "both slide in from the sides",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "THE TABLE",
@@ -2023,7 +2024,7 @@
           "show": "the clock hands move toward day 3; the truck drives out",
           "scale": "object",
           "motion": "hands sweep, truck leaves frame",
-          "transition": "hold",
+          "transition": "cut",
           "labels": [
             {
               "text": "THE CLOCK",
@@ -2054,7 +2055,7 @@
         },
         {
           "sentence": 2,
-          "show": "a small table icon stamps over the number",
+          "show": "a small table model stamps over the number",
           "scale": "object",
           "motion": "icon stamps with a pop",
           "transition": "hold",
@@ -2067,7 +2068,7 @@
         },
         {
           "sentence": 3,
-          "show": "a small clock icon stamps next to it",
+          "show": "a small clock model stamps next to it",
           "scale": "object",
           "motion": "icon stamps with a pop",
           "transition": "hold",
@@ -2104,9 +2105,9 @@
           "show": "they land in your bank's hand; the bank grins",
           "scale": "object",
           "motion": "bank catches, grins",
-          "transition": "hold",
+          "transition": "cut",
           "faces": {
-            "yourbank": "grinning"
+            "yourbank": "happy"
           }
         },
         {
@@ -2137,7 +2138,26 @@
         "s07",
         "s08"
       ],
-      "hook_override": "You paid $80. The publisher got $56."
+      "hook_override": "You paid $80. The publisher got $56.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "$80 PAID",
+            "size": 150,
+            "color": "#ffffff"
+          },
+          {
+            "text": "$56 TO WHO?",
+            "size": 118,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/04-shots.tsx",
+          "scene": "thumbS1"
+        }
+      }
     },
     {
       "name": "S2-who-pays-card-fee",
@@ -2147,7 +2167,26 @@
         "s17",
         "s18"
       ],
-      "hook_override": "Rockstar doesn't pay the card fee."
+      "hook_override": "Rockstar doesn't pay the card fee.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "WHO PAYS",
+            "size": 150,
+            "color": "#ffffff"
+          },
+          {
+            "text": "CARD FEE?",
+            "size": 150,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/04-shots.tsx",
+          "scene": "thumbS2"
+        }
+      }
     }
   ],
   "anti_slop": {
@@ -2156,5 +2195,45 @@
   },
   "title_chosen": "Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It.",
   "thumbnail_chosen": "$80 → WHO?",
-  "approved": "2026-11-26"
+  "approved": "2026-11-26",
+  "thumbnails": [
+    {
+      "lines": [
+        {
+          "text": "$80 →",
+          "color": "#ffffff",
+          "size": 170
+        },
+        {
+          "text": "WHO?",
+          "color": "#ffd23f",
+          "size": 230
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/04-shots.tsx",
+        "scene": "thumbA"
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "WHO GOT",
+          "color": "#ffffff",
+          "size": 150
+        },
+        {
+          "text": "PAID?",
+          "color": "#ffd23f",
+          "size": 220
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/04-shots.tsx",
+        "scene": "thumbB"
+      }
+    }
+  ]
 }

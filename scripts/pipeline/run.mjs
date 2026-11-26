@@ -16,7 +16,7 @@ const stages = [
   { id: "footage", done: () => readJson(path.join(dir, "04-assets.json"), { footage: [] }).footage.length > 0, run: () => node("produksi/footage.mjs", ["plan"]) || node("produksi/footage.mjs", ["download"]) },
   { id: "adegan", done: () => E("04-stage.json"), run: () => node("produksi/apply-footage.mjs") },
   { id: "render", done: () => fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Master16x9-en.mp4")), run: () => { let st = node("produksi/render.mjs", ["--comp", "Master16x9", "--lang", "en"]); for (const c of script().shorts_cuts || []) st = st || node("produksi/render.mjs", ["--comp", "Short9x16", "--lang", "en", "--cut", c.name]); return st; } },
-  { id: "thumbnail", done: () => fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Thumbnail-A.png")), run: () => node("produksi/render.mjs", ["--thumb"]) },
+  { id: "thumbnail", done: () => ["Thumbnail-A.png", ...(script().shorts_cuts || []).map((c) => `Thumbnail-Short-${c.name}.png`)].every((f) => fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, f))), run: () => node("produksi/render.mjs", ["--thumb"]) },
   { id: "qa", done: () => false, run: () => spawnSync("node", ["scripts/pipeline/qa.mjs", "--track", o.track, "--siklus", o.siklus], { cwd: ROOT, stdio: "inherit" }).status },
   { id: "publish-plan", done: () => E("06-publish.json"), run: () => spawnSync("node", ["scripts/pipeline/publish.mjs", "plan", "--track", o.track, "--siklus", o.siklus], { cwd: ROOT, stdio: "inherit" }).status },
   { id: "paket-review", done: () => false, run: () => spawnSync("node", ["scripts/pipeline/review.mjs", "--track", o.track, "--siklus", o.siklus], { cwd: ROOT, stdio: "inherit" }).status },

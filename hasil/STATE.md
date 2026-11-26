@@ -74,5 +74,6 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: T02 siklus 001 selesai sampai publish. Berikutnya analitik, lalu siklus 002.
 - 2026-11-26: T01 siklus 004 (GTA VI) dibuat di luar paket V2 terkunci atas keputusan kreator; tidak dinilai di penilaian V2. Naskah menunggu persetujuan.
 - 2026-11-26: T01-004 naskah disetujui (judul 1, thumbnail A); siap produksi R3.
+- 2026-11-26: Atas permintaan kreator, berlaku semua track dan siklus berikutnya: tiap Short wajib punya thumbnail 1080x1920 (`shorts_cuts[].thumbnail`, komposisi ThumbnailShort, QA V8) dan caption tampil per kalimat. T01-001, T01-004, T02-001 tetap caption per kata (`caption_mode: "word"`). Mesin bersama, kontrak, instruksi 04/05, skema, dan prompt pipeline diperbarui di sesi produksi T01-004.
 - 2026-11-26: Kreator mengonfirmasi T01 siklus 001 (master dan 2 Shorts) dan T02 siklus 001 sudah tayang di semua platform. Tautan T01 A1 dan A2 belum dicatat.
 - 2026-11-26: Pembersihan dan penyelarasan repo atas permintaan kreator: file sampah dan generator sekali pakai yang usang dihapus dari git, dokumen progres dan catatan mesin visual (AGENTS.md, gaya-visual.md, PIPELINE.md, README) diselaraskan. Rencana validasi terkunci dan log lama tidak diubah.

@@ -1,0 +1,654 @@
+{
+ "_catatan": "Musik latar dan efek suara dari ElevenLabs. cues: waktu = awal kata `word` di scene (tanpa word = awal scene) + offset detik.",
+ "target_lufs": -14,
+ "music": {
+  "prompt": "Instrumental background bed for a money explainer video. Light playful heist mood at night: warm plucked upright bass, soft brushed percussion, muted vibraphone, gentle marimba, subtle analog pads. Steady 96 bpm, even dynamics, no drops, no big builds, no vocals, leaves room for narration.",
+  "length_ms": 180000,
+  "volume": 0.2
+ },
+ "sfx": {
+  "click": {
+   "seconds": 0.6,
+   "prompt": "single crisp plastic game controller button press, close, dry"
+  },
+  "coins": {
+   "seconds": 1.8,
+   "prompt": "many small gold coins pouring and clinking onto a felt table, bright, short"
+  },
+  "coin": {
+   "seconds": 0.8,
+   "prompt": "two coins clinking once, soft and bright"
+  },
+  "bag": {
+   "seconds": 0.8,
+   "prompt": "heavy cloth money bag dropping on a wooden table, soft thud with coin jingle"
+  },
+  "crack": {
+   "seconds": 1.0,
+   "prompt": "glass pane cracking, short sharp crack, no shatter"
+  },
+  "tick": {
+   "seconds": 2.0,
+   "prompt": "mechanical wall clock ticking quickly, four ticks, dry"
+  },
+  "seat": {
+   "seconds": 0.7,
+   "prompt": "soft cartoon landing thump of someone sitting on a chair"
+  },
+  "magic": {
+   "seconds": 1.2,
+   "prompt": "short soft sparkle transformation swoosh, light chimes"
+  },
+  "stamp": {
+   "seconds": 0.7,
+   "prompt": "heavy rubber stamp slamming on paper on a desk"
+  },
+  "paper": {
+   "seconds": 1.0,
+   "prompt": "paper sheet sliding and unfolding, soft rustle"
+  },
+  "gavel": {
+   "seconds": 1.2,
+   "prompt": "wooden judge gavel hitting twice in a quiet courtroom"
+  },
+  "register": {
+   "seconds": 1.2,
+   "prompt": "old cash register drawer opening with a bell ding"
+  },
+  "truck": {
+   "seconds": 3.0,
+   "prompt": "small delivery truck engine passing by, gentle, cartoon friendly"
+  },
+  "chime": {
+   "seconds": 1.2,
+   "prompt": "warm short success chime, soft bells"
+  }
+ },
+ "cues": [
+  {
+   "scene": "s01",
+   "word": "Buy",
+   "offset": -0.05,
+   "sfx": "click",
+   "vol": 0.7
+  },
+  {
+   "scene": "s01",
+   "word": "money",
+   "offset": -0.2,
+   "sfx": "bag",
+   "vol": 0.45
+  },
+  {
+   "scene": "s02",
+   "word": "billion",
+   "offset": -0.1,
+   "sfx": "coins",
+   "vol": 0.35
+  },
+  {
+   "scene": "s02",
+   "word": "biggest",
+   "sfx": "chime",
+   "vol": 0.35
+  },
+  {
+   "scene": "s03",
+   "word": "skip",
+   "offset": -0.35,
+   "sfx": "crack",
+   "vol": 0.55
+  },
+  {
+   "scene": "s03",
+   "word": "fifty-six",
+   "offset": -1.4,
+   "sfx": "coins",
+   "vol": 0.4
+  },
+  {
+   "scene": "s03",
+   "word": "night",
+   "offset": -0.8,
+   "sfx": "tick",
+   "vol": 0.45
+  },
+  {
+   "scene": "s04",
+   "word": "clock",
+   "sfx": "tick",
+   "vol": 0.45
+  },
+  {
+   "scene": "s05",
+   "word": "bag",
+   "offset": -0.3,
+   "sfx": "bag",
+   "vol": 0.6
+  },
+  {
+   "scene": "s05",
+   "word": "eighty",
+   "offset": -0.2,
+   "sfx": "coins",
+   "vol": 0.4
+  },
+  {
+   "scene": "s05",
+   "word": "Your",
+   "offset": -0.15,
+   "sfx": "magic",
+   "vol": 0.4
+  },
+  {
+   "scene": "s06",
+   "word": "state",
+   "offset": 0.2,
+   "sfx": "seat",
+   "vol": 0.45
+  },
+  {
+   "scene": "s06",
+   "word": "tax",
+   "sfx": "coin",
+   "vol": 0.4
+  },
+  {
+   "scene": "s06",
+   "word": "console",
+   "offset": 0.2,
+   "sfx": "seat",
+   "vol": 0.45
+  },
+  {
+   "scene": "s06",
+   "word": "card",
+   "offset": 0.2,
+   "sfx": "seat",
+   "vol": 0.45
+  },
+  {
+   "scene": "s06",
+   "word": "publisher",
+   "offset": 0.2,
+   "sfx": "seat",
+   "vol": 0.45
+  },
+  {
+   "scene": "s07",
+   "word": "years",
+   "offset": -1.5,
+   "sfx": "paper",
+   "vol": 0.4
+  },
+  {
+   "scene": "s07",
+   "word": "At",
+   "offset": -0.9,
+   "sfx": "crack",
+   "vol": 0.3
+  },
+  {
+   "scene": "s07",
+   "word": "last",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.4
+  },
+  {
+   "scene": "s08",
+   "word": "retail",
+   "offset": 0,
+   "sfx": "register",
+   "vol": 0.45
+  },
+  {
+   "scene": "s08",
+   "word": "everyone",
+   "offset": -0.8,
+   "sfx": "coins",
+   "vol": 0.35
+  },
+  {
+   "scene": "s08",
+   "word": "Headlines",
+   "offset": 0.1,
+   "sfx": "paper",
+   "vol": 0.5
+  },
+  {
+   "scene": "s09",
+   "word": "sales",
+   "offset": 0,
+   "sfx": "coins",
+   "vol": 0.4
+  },
+  {
+   "scene": "s10",
+   "word": "five",
+   "offset": -0.3,
+   "sfx": "coin",
+   "vol": 0.4
+  },
+  {
+   "scene": "s10",
+   "word": "passes",
+   "offset": 0,
+   "sfx": "coins",
+   "vol": 0.3
+  },
+  {
+   "scene": "s10",
+   "word": "Oregon",
+   "offset": 0,
+   "sfx": "chime",
+   "vol": 0.3
+  },
+  {
+   "scene": "s11",
+   "word": "thirty",
+   "offset": -0.9,
+   "sfx": "magic",
+   "vol": 0.4
+  },
+  {
+   "scene": "s11",
+   "word": "twenty-four",
+   "offset": -0.4,
+   "sfx": "coins",
+   "vol": 0.4
+  },
+  {
+   "scene": "s12",
+   "word": "secret",
+   "offset": -0.9,
+   "sfx": "paper",
+   "vol": 0.5
+  },
+  {
+   "scene": "s12",
+   "word": "thirty",
+   "offset": -0.1,
+   "sfx": "stamp",
+   "vol": 0.4
+  },
+  {
+   "scene": "s13",
+   "word": "earn",
+   "offset": 0,
+   "sfx": "coins",
+   "vol": 0.35
+  },
+  {
+   "scene": "s13",
+   "word": "door",
+   "offset": -0.3,
+   "sfx": "magic",
+   "vol": 0.35
+  },
+  {
+   "scene": "s14",
+   "word": "ten",
+   "offset": 0,
+   "sfx": "coins",
+   "vol": 0.4
+  },
+  {
+   "scene": "s14",
+   "word": "two",
+   "offset": 0,
+   "sfx": "register",
+   "vol": 0.45
+  },
+  {
+   "scene": "s15",
+   "word": "three",
+   "offset": -0.5,
+   "sfx": "coin",
+   "vol": 0.35
+  },
+  {
+   "scene": "s15",
+   "word": "boxed",
+   "offset": 0,
+   "sfx": "paper",
+   "vol": 0.35
+  },
+  {
+   "scene": "s16",
+   "word": "Who",
+   "offset": -0.2,
+   "sfx": "coin",
+   "vol": 0.45
+  },
+  {
+   "scene": "s17",
+   "word": "seller",
+   "offset": -0.9,
+   "sfx": "paper",
+   "vol": 0.45
+  },
+  {
+   "scene": "s17",
+   "word": "charges",
+   "offset": -0.05,
+   "sfx": "stamp",
+   "vol": 0.55
+  },
+  {
+   "scene": "s17",
+   "word": "merchant",
+   "offset": -0.2,
+   "sfx": "chime",
+   "vol": 0.35
+  },
+  {
+   "scene": "s18",
+   "word": "two",
+   "offset": -0.3,
+   "sfx": "coin",
+   "vol": 0.45
+  },
+  {
+   "scene": "s19",
+   "word": "split",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.45
+  },
+  {
+   "scene": "s19",
+   "word": "video",
+   "offset": -0.2,
+   "sfx": "paper",
+   "vol": 0.45
+  },
+  {
+   "scene": "s20",
+   "word": "left",
+   "offset": -0.6,
+   "sfx": "coins",
+   "vol": 0.35
+  },
+  {
+   "scene": "s20",
+   "word": "That's",
+   "offset": -0.3,
+   "sfx": "magic",
+   "vol": 0.35
+  },
+  {
+   "scene": "s21",
+   "word": "cost",
+   "offset": -0.8,
+   "sfx": "coins",
+   "vol": 0.45
+  },
+  {
+   "scene": "s21",
+   "word": "confirmed",
+   "offset": 0,
+   "sfx": "paper",
+   "vol": 0.35
+  },
+  {
+   "scene": "s22",
+   "word": "billion",
+   "offset": 0,
+   "sfx": "bag",
+   "vol": 0.4
+  },
+  {
+   "scene": "s22",
+   "word": "downloads",
+   "offset": -0.8,
+   "sfx": "coins",
+   "vol": 0.3
+  },
+  {
+   "scene": "s22",
+   "word": "marketing",
+   "offset": -0.4,
+   "sfx": "chime",
+   "vol": 0.25
+  },
+  {
+   "scene": "s23",
+   "word": "thirty-two",
+   "offset": 0,
+   "sfx": "magic",
+   "vol": 0.35
+  },
+  {
+   "scene": "s24",
+   "word": "not",
+   "offset": -0.2,
+   "sfx": "tick",
+   "vol": 0.55
+  },
+  {
+   "scene": "s25",
+   "word": "single",
+   "offset": 0,
+   "sfx": "tick",
+   "vol": 0.35
+  },
+  {
+   "scene": "s25",
+   "word": "Five",
+   "offset": 0,
+   "sfx": "magic",
+   "vol": 0.35
+  },
+  {
+   "scene": "s26",
+   "word": "approved",
+   "offset": -0.05,
+   "sfx": "stamp",
+   "vol": 0.65
+  },
+  {
+   "scene": "s26",
+   "word": "promise",
+   "offset": -0.3,
+   "sfx": "chime",
+   "vol": 0.3
+  },
+  {
+   "scene": "s26",
+   "word": "batches",
+   "offset": -0.9,
+   "sfx": "truck",
+   "vol": 0.35
+  },
+  {
+   "scene": "s27",
+   "word": "midnight",
+   "offset": 0,
+   "sfx": "tick",
+   "vol": 0.4
+  },
+  {
+   "scene": "s27",
+   "word": "counter",
+   "offset": 0,
+   "sfx": "register",
+   "vol": 0.35
+  },
+  {
+   "scene": "s28",
+   "word": "card",
+   "offset": -0.6,
+   "sfx": "truck",
+   "vol": 0.35
+  },
+  {
+   "scene": "s28",
+   "word": "settles",
+   "offset": 0,
+   "sfx": "coins",
+   "vol": 0.35
+  },
+  {
+   "scene": "s28",
+   "word": "contract",
+   "offset": -1,
+   "sfx": "paper",
+   "vol": 0.45
+  },
+  {
+   "scene": "s28",
+   "word": "December",
+   "offset": -0.8,
+   "sfx": "paper",
+   "vol": 0.5
+  },
+  {
+   "scene": "s29",
+   "word": "record",
+   "offset": 0,
+   "sfx": "chime",
+   "vol": 0.45
+  },
+  {
+   "scene": "s29",
+   "word": "truck",
+   "offset": -0.8,
+   "sfx": "truck",
+   "vol": 0.3
+  },
+  {
+   "scene": "s30",
+   "word": "court",
+   "offset": -0.2,
+   "sfx": "gavel",
+   "vol": 0.4
+  },
+  {
+   "scene": "s31",
+   "word": "seventeenth",
+   "offset": -0.3,
+   "sfx": "paper",
+   "vol": 0.35
+  },
+  {
+   "scene": "s31",
+   "word": "threw",
+   "offset": -0.3,
+   "sfx": "gavel",
+   "vol": 0.6
+  },
+  {
+   "scene": "s32",
+   "word": "servers",
+   "offset": 0,
+   "sfx": "magic",
+   "vol": 0.25
+  },
+  {
+   "scene": "s32",
+   "word": "loss",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.4
+  },
+  {
+   "scene": "s33",
+   "word": "sued",
+   "offset": -0.1,
+   "sfx": "stamp",
+   "vol": 0.5
+  },
+  {
+   "scene": "s33",
+   "word": "paid",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.5
+  },
+  {
+   "scene": "s34",
+   "word": "twenty-four",
+   "offset": -0.8,
+   "sfx": "coins",
+   "vol": 0.35
+  },
+  {
+   "scene": "s34",
+   "word": "two",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.4
+  },
+  {
+   "scene": "s34",
+   "word": "Fifty-six",
+   "offset": -0.7,
+   "sfx": "coins",
+   "vol": 0.35
+  },
+  {
+   "scene": "s34",
+   "word": "tax",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.4
+  },
+  {
+   "scene": "s35",
+   "word": "table",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.4
+  },
+  {
+   "scene": "s35",
+   "word": "clock",
+   "offset": -0.5,
+   "sfx": "tick",
+   "vol": 0.45
+  },
+  {
+   "scene": "s36",
+   "word": "time",
+   "offset": 0,
+   "sfx": "paper",
+   "vol": 0.5
+  },
+  {
+   "scene": "s36",
+   "word": "keeps",
+   "offset": 0,
+   "sfx": "stamp",
+   "vol": 0.45
+  },
+  {
+   "scene": "s36",
+   "word": "when",
+   "offset": 0,
+   "sfx": "stamp",
+   "vol": 0.45
+  },
+  {
+   "scene": "s37",
+   "word": "dollars",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.4
+  },
+  {
+   "scene": "s37",
+   "word": "biggest",
+   "offset": 0,
+   "sfx": "chime",
+   "vol": 0.35
+  },
+  {
+   "scene": "s37",
+   "word": "next",
+   "offset": 0,
+   "sfx": "magic",
+   "vol": 0.35
+  }
+ ]
+}

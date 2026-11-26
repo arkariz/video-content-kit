@@ -17,4 +17,4 @@ export type SceneProps = {
   /** mesin R3 (gaya-visual.md): shot berwaktu dari render.mjs dan modul komponen adegan siklus */
   r3?: { module: string; track: string; shots: import("../r3/context").R3ShotSpec[] };
 };
-export type VideoProps = { trackId: string; lang: Lang; scenes: SceneProps[]; hookOverride?: string };
+export type VideoProps = { trackId: string; lang: Lang; scenes: SceneProps[]; hookOverride?: string; captionMode?: "word" | "sentence" };

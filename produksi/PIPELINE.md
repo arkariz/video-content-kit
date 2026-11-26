@@ -90,6 +90,7 @@ Adegan 3D berkedalaman (kamera orbit perspektif, cahaya dan bayangan kartun, kab
 - Benda: `props.tsx` (kereta, rel, kapal, pabrik, angka yang bisa dihitung), `map.tsx` (peta jangkar), pemeran `cast/T02.tsx`.
 - Shorts: `vx` = titik dunia di tengah, `vd` = pengali jarak kamera (default 1,75), jadi tidak sekadar dipotong.
 - Thumbnail: `stage: { "engine": "r3", "module": "<path 04-shots.tsx>", "scene": "thumbA" }`.
+- Thumbnail Shorts (wajib): `shorts_cuts[].thumbnail`, satu per Short, komposisi `ThumbnailShort` (lihat CONTRACT.md). Caption siklus baru per kalimat (`src/lib/SentenceCaptions.tsx`).
 - Cek tata letak memakai `render.mjs --still <scene>` (tambah `--comp Short9x16` untuk tegak).
 
 ### Belum ada

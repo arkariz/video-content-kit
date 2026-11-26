@@ -260,6 +260,12 @@
               "type": "string"
             }
           },
+          "thumbnail": {
+            "type": "object",
+            "description": "Wajib untuk siklus baru: thumbnail tegak 1080x1920 Short ini (produksi/CONTRACT.md)",
+            "required": ["lines", "stage"],
+            "properties": { "lines": { "type": "array", "items": { "type": "object" } }, "stage": { "type": "object" } }
+          },
           "hook_override": {
             "type": "string",
             "description": "Hook khusus versi pendek, maksimal 2 detik bicara"
