@@ -2,7 +2,7 @@
 
 Tujuan: satu naskah yang ditulis untuk didengar, dengan satu ide per scene dan bukti milik kreator, lulus gate anti-slop sebelum diproduksi.
 
-**Wajib dibaca dulu:** `instruksi/referensi/gaya-diorama.md` dan `hasil/learnings-global.md`. Naskah ditulis bersama `world` dan `stage` diorama.
+**Wajib dibaca dulu:** `instruksi/referensi/gaya-cerita.md` (acuan utama cerita), `instruksi/referensi/gaya-diorama.md`, dan `hasil/learnings-global.md`. Naskah ditulis bersama `world` dan `stage` diorama.
 
 ## 2a. Brief
 
@@ -43,4 +43,4 @@ Jalankan skill `video-anti-slop` lapisan **Teks** pada narasi Inggris dan Indone
 
 ## Gate: kreator menyetujui naskah
 
-Sajikan ringkasan: janji, hook, struktur scene, bukti milik kreator, skor anti-slop, dan 3 judul. Kreator bisa menambah insight atau mengoreksi akurasi teknis. Setelah disetujui, ubah status siklus di `TRACK.md` menjadi `produksi`.
+Sajikan ringkasan: janji, hook, struktur scene, bukti milik kreator, skor anti-slop, checklist cerita (`gaya-cerita.md`), dan 3 judul. Kreator bisa menambah insight atau mengoreksi akurasi teknis. Setelah disetujui, ubah status siklus di `TRACK.md` menjadi `produksi`.

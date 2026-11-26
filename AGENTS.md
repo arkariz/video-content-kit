@@ -58,6 +58,7 @@ Berlaku untuk **semua track dan semua siklus**, untuk agent chat maupun agent di
 
 1. `instruksi/referensi/gaya-diorama.md`: kontrak `world` dan `stage` diorama.
 2. `hasil/learnings-global.md`: aturan agar isi tidak padat dan prosesnya terlihat.
+3. `instruksi/referensi/gaya-cerita.md`: acuan utama cerita untuk semua naskah (keputusan kreator 2026-11-26).
 
 Naskah tanpa `world` dan adegan diorama tidak boleh lanjut ke produksi; QA otomatis menandainya kritis. Gaya kartun datar (`produksi/STYLE.md`) hanya dipertahankan untuk T01 siklus 001 dan untuk thumbnail. Aset yang belum ada ditambahkan oleh agent repo di sesi terpisah.
 

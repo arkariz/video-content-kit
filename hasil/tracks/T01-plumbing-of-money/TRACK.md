@@ -8,7 +8,7 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "001: kreator mengunggah Short A2 manual (06-publish-manual.md, 2026-11-27); A1 otomatis 11-26; verifikasi channel, thumbnail, audio ID; mulai naskah siklus 002; analitik 001 mulai 2026-12-02"
+langkah_berikutnya: "001: kreator mengunggah Short A2 manual (06-publish-manual.md, 2026-11-27); A1 otomatis 11-26; verifikasi channel, thumbnail, audio ID; 002: kreator menyetujui naskah dan merekam 2 klip tangan (s02, s38), lalu 03-script.json; analitik 001 mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
 menunggu_keputusan: null
@@ -53,7 +53,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
 | 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | tayang | 2026-11-25 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
-| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | brief | 2026-12-14 | uji-V2; pakai riset 001 |
+| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | naskah | 2026-12-14 | uji-V2; pakai riset 001 |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
@@ -110,3 +110,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Pelajaran siklus 001 dicatat di learnings.md (dari penilaian kreator, belum ada data penonton): terlalu padat, visual kurang menjelaskan, fondasi teori tidak dibangun. Delapan aturan diuji mulai 002.
 - 2026-11-25: Kreator memilih menyimpan pelajaran 001 sebagai catatan untuk siklus berikutnya dan track lain (learnings-global.md), tanpa mengubah mesin, kontrak, atau QA.
 - 2026-11-25: Gaya wajib mulai siklus 002: diorama 2.5D.
+- 2026-11-26: Brief dan draft naskah 002 (44 scene, anti-slop EN 40/50, ID 39/50) ditulis dengan gaya cerita wajib (instruksi/referensi/gaya-cerita.md). 01-riset-viral.md disalin dari 001. Menunggu persetujuan kreator dan 2 klip tangan kreator (s02 tap kartu, s38 bayar QRIS).

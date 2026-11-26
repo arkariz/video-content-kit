@@ -21,6 +21,7 @@ Sebelum menulis brief atau naskah track mana pun, baca `instruksi/referensi/gaya
 4. Kriteria validasi V2 dikunci sebelum konten uji pertama tayang. Jangan menggeser ambang setelah ada data.
 5. Hormati kapasitas di STATE. Jangan mengusulkan track tambahan ke validasi atau aktif tanpa menyebut apa yang harus dijeda.
 6. Setiap naskah, judul, dan deskripsi harus lolos skill video-anti-slop sebelum diserahkan. Sertakan skornya.
+6a. Setiap naskah, di track mana pun, memakai `instruksi/referensi/gaya-cerita.md` sebagai acuan utama cerita, bersama `gaya-diorama.md` dan `learnings-global.md`. Sertakan checklist ceritanya yang sudah dicentang saat menyerahkan naskah.
 7. Fakta platform diambil dari `instruksi/referensi/aturan-platform.md`. Kalau tanggal verifikasinya lebih dari 90 hari, atau Rizky menanyakan kondisi terkini, verifikasi dulu dengan web search.
 8. Riset selalu memakai web search dan menyertakan tautan. Data yang tidak bisa dicek ditandai "belum terverifikasi".
 

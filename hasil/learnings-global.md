@@ -27,6 +27,10 @@ Uji sebelum publish: bisakah orang awam menjelaskan ulang inti video setelah sek
 
 Aturan ini belum dicek otomatis oleh QA dan belum ada komponen visual baru untuk poin 4 dan 5, jadi dipenuhi lewat naskah dan spec adegan, lalu diperiksa manual.
 
+### Gaya cerita wajib (2026-11-26)
+
+Semua naskah memakai `instruksi/referensi/gaya-cerita.md` sebagai acuan utama dan mencentang checklist ceritanya. Sumber: teknik dari 3 transkrip (Kurzgesagt x2, OverSimplified) yang dipilih kreator. Dinilai ulang di review portfolio setelah analitik T01-002.
+
 ## Format dan struktur
 
 ## Hook dan judul
