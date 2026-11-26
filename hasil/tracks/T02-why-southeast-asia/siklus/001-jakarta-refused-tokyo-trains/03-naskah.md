@@ -1,6 +1,6 @@
 # Naskah: siklus 001-jakarta-refused-tokyo-trains (T02, uji-V2 variasi A)
 
-Status: **ditulis ulang 2026-11-26 ke gaya cerita dan gaya visual R3; menunggu persetujuan ulang kreator** (versi sebelumnya disetujui 2026-11-25 dan dirender dengan mesin lama). Sumber tunggal untuk produksi adalah `03-script.json`; file ini versi baca. Visual per kalimat ada di `shots` di JSON dan komponennya di `04-shots.tsx`.
+Status: **tayang 2026-11-26** (versi gaya cerita + R3 3D, dipakai atas perintah kreator, lihat TRACK.md). Sumber tunggal untuk produksi adalah `03-script.json`; file ini versi baca. Visual per kalimat ada di `shots` di JSON dan komponennya di `04-shots.tsx`.
 
 - **Janji:** After watching, you can explain why Jakarta could run Tokyo's retired trains for 25 years without rebuilding its tracks, and why a 20-year import age limit ended that in November 2026.
 - **Hook (s01):** You step onto a Jakarta commuter train that started its working life in Tokyo, decades ago. In November, Jakarta refused to buy any more.
@@ -29,7 +29,7 @@ Status: **ditulis ulang 2026-11-26 ke gaya cerita dan gaya visual R3; menunggu p
 - **Pemeran (`cast`):** Komo (penumpang, "kamu"), Sepuh (kereta eks-Tokyo), Pak Aturan (aturan dan lembaga).
 - Satu shot per kalimat, tiap shot punya `motion`, label maks. 3 kata muncul di kata yang diucapkan, angka dibuat bisa dihitung (titik, deretan gerbong, garis waktu). Tanpa papan teks.
 - Scene footage nyata CC BY (s17, s22, s31, s34) dan stok s44 tetap footage penuh karena mesin R3 mengabaikan `broll` bila ada `shots`. s02 (analogi fondasi) kini digambar R3, jadi klip `s02-s17-...-01.mp4` tidak dipakai.
-- Gambar ditulis di `04-shots.tsx` (dihasilkan oleh `03-script.r3.py` dari `04-shots.head.tsx`).
+- Gambar ditulis di `04-shots.tsx`.
 
 ## Potongan Shorts
 

@@ -1,5 +1,7 @@
 # Brief: T01 siklus 002-fee-split (Variasi B)
 
+> **Usang (2026-11-26):** draft ini memakai gaya diorama 2.5D yang sudah diganti R3. Isi cerita boleh dipakai ulang, tetapi visual wajib ditulis ulang (`instruksi/referensi/gaya-visual.md`) sebelum disetujui.
+
 ## Janji video
 Setelah menonton, kamu tahu ke mana saja $2,75 dari belanja $100 pergi, siapa yang mengambilnya, dan siapa yang sebenarnya menanggungnya.
 

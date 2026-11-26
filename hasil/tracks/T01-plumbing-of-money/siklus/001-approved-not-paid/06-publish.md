@@ -66,3 +66,4 @@ The narration uses a synthetic voice and cartoon animation. Real footage is lice
 - A1-zero-dollars-moved: terjadwal 2026-11-26 19:00 WIB (YouTube, Instagram, Facebook), job 8f1a7df4f89740c792a862fd91f13986, status queued
 - A2-pending-to-posted: TIDAK TERKIRIM. HTTP 429, batas 10 unggahan per bulan (terpakai 8, butuh 3)
 - A2: atas keputusan kreator dikirim ke YouTube dan Instagram saja (sisa kuota 2); Facebook dilewati.
+- A1-zero-dollars-moved dan A2-pending-to-posted: tayang. Kreator mengonfirmasi 2026-11-26 master dan kedua Shorts sudah tayang di semua platform; menggantikan catatan terjadwal/gagal kirim di atas. Tautan Shorts belum dicatat.

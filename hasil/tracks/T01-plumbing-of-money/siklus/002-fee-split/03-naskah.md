@@ -1,5 +1,7 @@
 # Naskah: T01 siklus 002-fee-split (DRAFT, menunggu persetujuan kreator)
 
+> **Usang (2026-11-26):** draft ini memakai gaya diorama 2.5D yang sudah diganti R3. Isi cerita boleh dipakai ulang, tetapi visual wajib ditulis ulang (`instruksi/referensi/gaya-visual.md`) sebelum disetujui.
+
 Judul kerja: You Pay $100. Here's Who Takes a Cut.
 Janji: setelah menonton, kamu tahu ke mana $2,75 dari belanja $100 pergi dan siapa yang menanggungnya.
 Gaya: diorama 2.5D (`instruksi/referensi/gaya-diorama.md`) + cerita (`instruksi/referensi/gaya-cerita.md`).

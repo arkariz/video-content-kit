@@ -1,6 +1,6 @@
 # Lembar unggah manual: T02 siklus 001
 
-Dibuat 2026-11-26. Kreator mengunggah sendiri hari ini. Jangan jalankan `approve.mjs` untuk siklus ini.
+Dibuat 2026-11-26. **Arsip:** sudah tayang di semua platform (tautan di `06-publish.md`); jangan diunggah ulang. Kreator mengunggah sendiri. Jangan jalankan `approve.mjs` untuk siklus ini.
 
 ## Sebelum menekan publish
 

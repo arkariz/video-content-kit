@@ -1,6 +1,6 @@
 # Gaya visual wajib: ilustrasi gerak penjelas (R3)
 
-**Berlaku untuk semua track dan semua siklus sejak 2026-11-26, bagi agent chat maupun agent di repo.** Dipilih kreator. Pengecualian hanya siklus yang sudah dirender sebelum aturan ini (T01 siklus 001 dan T02 siklus 001); keduanya bukan acuan. QA otomatis menandai **kritis** bila scene siklus baru tidak punya `shots`.
+**Berlaku untuk semua track dan semua siklus sejak 2026-11-26, bagi agent chat maupun agent di repo.** Dipilih kreator. Pengecualian hanya T01 siklus 001, yang dirender sebelum aturan ini; T01 siklus 001 dan T02 siklus 001 bukan acuan. QA otomatis menandai **kritis** bila scene siklus baru tidak punya `shots`.
 
 Dipakai bersama `instruksi/referensi/gaya-cerita.md` (cerita) dan `hasil/learnings-global.md` (kepadatan dan fondasi). Dasar pengamatan: Kurzgesagt "Dying Is Complicated", dianalisa per kalimat dan per frame, lalu dua klipnya direproduksi di Remotion (`produksi/REFERENSI-GAYA.md`, bagian R3). **Yang ditiru hanya teknik.** Tokoh, aset, huruf, musik, warna merek, dan susunan adegan mereka tidak disalin.
 
@@ -47,7 +47,7 @@ Transisi dipilih menurut makna: iris = masuk lebih dalam, wipe = pindah tempat a
 
 ## 4. Lapisan 3D (keputusan kreator 2026-11-26)
 
-Lapisan 3D (`@remotion/three`) **disetujui** untuk shot yang butuh kamera benar-benar berputar di ruang 3D: permukaan yang dilihat miring lalu diputar, terbang melewati benda, atau orbit mengelilingi objek. **Belum dibangun.** Sampai ada, tandai shot seperti itu dengan `"three_d": true` dan tetap tulis versi 2D-nya (iris, wipe, atau dorong) supaya bisa diproduksi.
+Lapisan 3D (`@remotion/three`) **disetujui** untuk shot yang butuh kamera benar-benar berputar di ruang 3D: permukaan yang dilihat miring lalu diputar, terbang melewati benda, atau orbit mengelilingi objek. **Sudah dibangun** di `produksi/remotion/src/r3/three` (opsional per siklus, cara di `produksi/PIPELINE.md`). Tandai shot seperti itu dengan `"three_d": true`; siklus yang tidak memakai lapisan 3D menulis versi 2D-nya (iris, wipe, atau dorong).
 
 ## 5. Kaitan dengan gaya cerita
 

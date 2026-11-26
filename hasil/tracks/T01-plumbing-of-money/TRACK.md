@@ -8,7 +8,7 @@ channel: "Channel uang (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "001: kreator mengunggah Short A2 manual (06-publish-manual.md, 2026-11-27); A1 otomatis 11-26; verifikasi channel, thumbnail, audio ID; 002: kreator menyetujui naskah dan merekam 2 klip tangan (s02, s38), lalu 03-script.json; analitik 001 mulai 2026-12-02"
+langkah_berikutnya: "siklus 001 selesai tayang (2026-11-26): analitik mulai 2026-12-02 (instruksi/08). Siklus 002: naskah draft masih gaya diorama (usang), tulis ulang ke R3 + gaya cerita, kreator menyetujui dan merekam 2 klip tangan (s02, s38). Belum dikonfirmasi: tautan A1/A2, verifikasi channel YouTube dan thumbnail master, audio ID"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
 menunggu_keputusan: null
@@ -52,9 +52,9 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | tayang | 2026-11-25 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33) |
-| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | naskah | 2026-12-14 | uji-V2; pakai riset 001 |
-| 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | brief | 2026-12-21 | uji-V2; pakai riset 001 |
+| 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | tayang | 2026-11-25 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33); 2026-11-26 master dan 2 Shorts tayang di semua platform |
+| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | naskah | 2026-12-14 | uji-V2; pakai riset 001; draft masih gaya diorama, wajib ditulis ulang ke R3 sebelum disetujui |
+| 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -111,3 +111,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Kreator memilih menyimpan pelajaran 001 sebagai catatan untuk siklus berikutnya dan track lain (learnings-global.md), tanpa mengubah mesin, kontrak, atau QA.
 - 2026-11-25: Gaya wajib mulai siklus 002: diorama 2.5D.
 - 2026-11-26: Brief dan draft naskah 002 (44 scene, anti-slop EN 40/50, ID 39/50) ditulis dengan gaya cerita wajib (instruksi/referensi/gaya-cerita.md). 01-riset-viral.md disalin dari 001. Menunggu persetujuan kreator dan 2 klip tangan kreator (s02 tap kartu, s38 bayar QRIS).
+- 2026-11-26: Kreator mengonfirmasi master dan 2 Shorts siklus 001 tayang di semua platform. Tautan A1 dan A2 belum dicatat. Berikutnya analitik; draft naskah 002 (diorama) harus ditulis ulang ke R3.

@@ -11,5 +11,9 @@ CLAUDE.local.md
 .gemini/skills/
 produksi/render/.props-*.json
 produksi/preview/*.candidates.json
+produksi/preview/*.html
 produksi/footage-own/
 produksi/render/_preview/
+.DS_Store
+__pycache__/
+*.pyc

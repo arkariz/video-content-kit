@@ -1,6 +1,6 @@
 # Unggah manual: siklus 001
 
-Dibuat 2026-11-25. Isi kolom URL setelah tayang, lalu kirim ke agent untuk dicatat.
+Dibuat 2026-11-25. **Arsip:** 2026-11-26 kreator mengonfirmasi master dan kedua Shorts tayang di semua platform; jangan diunggah ulang. Kolom URL yang kosong masih bisa dikirim ke agent untuk dicatat.
 
 **Sudah terkirim lewat Upload-Post, jangan diunggah ulang:** master di YouTube dan Facebook.
 

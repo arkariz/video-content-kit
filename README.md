@@ -20,7 +20,8 @@ Lalu buka folder ini di agent pilihanmu dan ketik **`mulai`**. Agent membaca `ha
 | `instruksi/` | Instruksi per fase, referensi aturan platform, template | Kreator |
 | `skills/` | `video-portfolio`, `video-content-cycle`, `video-niche-research`, `video-anti-slop`, plus `humanizer` dan `stop-slop` (pihak ketiga, MIT) | Kreator |
 | `hasil/` | Semua hasil kerja: `STATE.md` portfolio, `tracks/<ID>/` per track, `review/` | Agent |
-| `scripts/` | Pemasang skill dan validator | Kreator |
+| `produksi/` | Mesin Remotion bersama, caption, footage, dokumen pipeline (`PIPELINE.md`) | Agent |
+| `scripts/` | Pemasang skill, validator, pipeline produksi dan publish | Kreator |
 
 ## Alur
 

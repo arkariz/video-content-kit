@@ -1,6 +1,6 @@
 # Profil channel T02 (dipakai juga T05, T06)
 
-Status: **usulan, nama belum dikonfirmasi kreator** (2026-11-25). Setelah dikonfirmasi, isi `channel` di `TRACK.md` T02.
+Status: **Equator Logic dipakai** (TikTok @equator.logic, tayang 2026-11-26). Handle YouTube, Instagram, dan Facebook belum dicatat di repo. Tabel di bawah adalah arsip usulan 2026-11-25.
 
 ## Nama dan handle
 

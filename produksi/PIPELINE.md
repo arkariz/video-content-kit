@@ -10,7 +10,7 @@ node --env-file=.env scripts/pipeline/approve.mjs --track T01 --siklus 001    # 
 node scripts/pipeline/approve.mjs --track T01 --siklus 001 --revisi "catatan" # minta revisi
 ```
 
-Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); QA menandai kritis bila scene siklus baru tidak punya `shots` (kecuali scene footage). Scene dengan `shots` dirender mesin R3 (bagian "Mesin R3" di bawah). T01-001 dan T02-001 tetap dirender dengan mesin lama.
+Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); QA menandai kritis bila scene siklus baru tidak punya `shots` (kecuali scene footage). Scene dengan `shots` dirender mesin R3 (bagian "Mesin R3" di bawah). T01-001 tetap dirender dengan mesin lama; T02-001 sudah diproduksi ulang dengan R3 3D.
 
 ## Tahap
 
@@ -69,7 +69,7 @@ export default defineShots({
 - Primitif (`kit.tsx`): `Frame`, `Backdrop` (gradien + glow + partikel), `Particles`, `Layer` (parallax, `cam {x,y,z}`), `Blur` (kedalaman), `Glow`, `GlowEdge`, `Sparks` (kejadian acak 3–9 frame), `Pill`, `Bubble`, `Footnote`, `FlatRect`, `Shadow`; waktu `seg`, `pop`, `out`, `keys`, `mix`; warna `shade`, `tint`, `fade`, `lerpColor`; acak deterministik `R`, `pick`.
 - Penghitung (`count.tsx`) untuk `count`: `Dots` (proporsi), `Items` (jumlah satu per satu + angka), `Timeline` (garis waktu dan penanda), `Split` (dua panel, kiri bisa dicoret).
 - Pemeran: `cast.T02` (Komo, Sepuh, Aturan, Cicak, figuran `Warga`, `Gerbong`, `Rel`, `Kabel`, `Pantograf`, `Matahari`, `Awan`, `Gedung`, `Kelapa`). Track baru: tambah `src/r3/cast/<ID>.tsx`, daftarkan di `cast/index.ts` dan `CAST` di `scripts/produksi/r3.mjs`.
-- Aturan: koordinat logis 1920×1080. Semua gerak fungsi dari `t` (tanpa `Math.random`, state, atau efek). Ambil waktu kata lewat `word()`, jangan menulis detik dari caption. Gaya datar tanpa garis tinta. Shot `three_d` tetap ditulis versi 2D.
+- Aturan: koordinat logis 1920×1080. Semua gerak fungsi dari `t` (tanpa `Math.random`, state, atau efek). Ambil waktu kata lewat `word()`, jangan menulis detik dari caption. Gaya datar tanpa garis tinta. Tanpa lapisan 3D (di bawah), shot `three_d` ditulis versi 2D.
 - Komponen yang belum ada dirender sebagai layar "ADEGAN BELUM ADA" dan ditandai kritis oleh QA G6.
 
 ### Cek sebelum produksi penuh

@@ -5,6 +5,10 @@ Engine Remotion bersama untuk semua track. Data dan output dipisah per `<ID>/<si
 - `remotion/`: engine (komposisi, `src/themes/<ID>`, mesin R3 di `src/r3/`). Sesi track hanya mengubah tema track-nya sendiri; adegan R3 per siklus ditulis di `04-shots.tsx` folder siklus.
 - `contoh-r3/`: contoh naskah dan adegan R3 di luar siklus (dirender dengan `--script`).
 - `footage-cache/index.json`: katalog global klip (lisensi, tanggal unduh, dipakai di mana). Di-commit.
+- `footage-lisensi/<ID>/sources.json`: sumber dan atribusi klip berlisensi pihak lain. Di-commit.
+- `preview/`: pilihan footage (`*.picks.json`, di-commit); halaman pratinjau dan kandidat dibuat ulang oleh `footage.mjs search`.
+- `sfx/`, `voices.json`: efek suara orisinal dan suara per bahasa.
+- Dokumen: `PIPELINE.md` (tahap dan gate), `CONTRACT.md` (kontrak visual), `STYLE.md` (gambar dan pemeran), `REFERENSI-GAYA.md`.
 - `audio/ captions/ footage/ render/`: di-gitignore (captions di-commit).
 
 Urutan (dari root repo, `--env-file` dibaca Node, bukan agent):

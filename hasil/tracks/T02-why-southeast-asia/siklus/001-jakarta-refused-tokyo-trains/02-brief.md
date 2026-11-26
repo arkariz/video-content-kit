@@ -21,7 +21,7 @@
   - QA T01 T6: re-hook tiap 60 sampai 90 detik (s11, s20, s30, s40, s50).
   - QA T01 T8 (bubble): bubble hanya untuk sikap atau lelucon (maks. 6 kata, jarang); siklus ini tidak memakai bubble.
   - QA T01 T2: tidak ada `say_as` untuk istilah yang biasa dibaca benar oleh TTS. Hanya "Sifang".
-- **Gaya visual wajib: ilustrasi gerak penjelas R3** (`instruksi/referensi/gaya-visual.md`, berlaku sejak 2026-11-26, menggantikan diorama 2.5D). Siklus 001 ditulis ulang ke gaya ini atas permintaan kreator 2026-11-26, walau aturan repo mengecualikannya. `03-script.r3.py` menghasilkan `anchor`, `cast`, `shots` per kalimat, dan `04-shots.tsx`.
+- **Gaya visual wajib: ilustrasi gerak penjelas R3** (`instruksi/referensi/gaya-visual.md`, berlaku sejak 2026-11-26, menggantikan diorama 2.5D). Siklus 001 ditulis ulang ke gaya ini atas permintaan kreator 2026-11-26, walau aturan repo mengecualikannya. `03-script.r3.py` menghasilkan `anchor`, `cast`, `shots` per kalimat, dan `04-shots.tsx` (generator itu dihapus 2026-11-26; ada di riwayat git).
   - **Jangkar:** satu peta Jepang-Jawa-Tiongkok dengan garis laut Tokyo-Jakarta, pin kota, dan kapal pembawa kereta. Muncul di fondasi (s03, s04), tengah (s30, s40), dan penutup (s57, s58).
   - **Pemeran:** Komo (penumpang, "kamu"), Sepuh (kereta eks-Tokyo), Pak Aturan (aturan dan lembaga). Cicak tidak dipakai.
   - **Footage:** scene CC BY (s17, s22, s31, s34) dan stok s44 tetap footage penuh (mesin R3 mengabaikan `broll` bila ada `shots`). Porsi sekitar 7%, di bawah target 20 sampai 30%; menambah klip berlisensi bisa menaikkannya.

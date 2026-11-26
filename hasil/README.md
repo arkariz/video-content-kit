@@ -12,18 +12,20 @@ hasil/
 │   ├── kandidat-niche.md       # 10-15 kandidat + data mentah
 │   └── analisa-niche.md        # skor + usulan track
 ├── review/
-│   └── YYYY-MM-DD-review-portfolio.md   # keputusan lanjut / scale / pivot / jeda / drop
+│   ├── YYYY-MM-DD-review-portfolio.md   # keputusan lanjut / scale / pivot / jeda / drop
+│   └── <ID>-<siklus>/index.html         # paket review video, dibuat pipeline
 └── tracks/
     └── T01-slug/
         ├── TRACK.md            # status track (frontmatter) + hipotesis + siklus + keputusan + log
         ├── backlog.md
         ├── learnings.md
+        ├── channel/            # opsional: profil, aset, dan generator aset channel
         ├── validasi/
         │   ├── rencana.md      # kriteria lulus/gagal ditulis SEBELUM data masuk
         │   └── hasil.md
         ├── siklus/
         │   └── NNN-slug/       # 01-riset-viral.md, 02-brief.md, 03-script.json, 03-naskah.md,
-        │                       # 04-assets.json, 05-qa.md, 06-publish.md
+        │                       # 04-shots.tsx, 04-assets.json, 05-qa.md, 06-publish.md
         └── analitik/
             └── YYYY-MM-DD.md
 ```
