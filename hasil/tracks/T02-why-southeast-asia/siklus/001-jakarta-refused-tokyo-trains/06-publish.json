@@ -89,5 +89,48 @@
       "lokal": "manual, 2026-11-26"
     }
   ],
-  "hasil": []
+  "hasil": [
+    {
+      "nama": "master",
+      "cara": "manual",
+      "platforms": [
+        "youtube"
+      ],
+      "urls": [
+        {
+          "platform": "youtube",
+          "url": "https://youtu.be/XC3g2ZL9lPE"
+        }
+      ],
+      "tayang": "2026-11-26"
+    },
+    {
+      "nama": "A1-why-tokyo-trains-fit",
+      "cara": "manual",
+      "platforms": [
+        "youtube"
+      ],
+      "urls": [
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/shorts/6r6uGB9LA_4"
+        }
+      ],
+      "tayang": "2026-11-26"
+    },
+    {
+      "nama": "A2-too-old-to-import",
+      "cara": "manual",
+      "platforms": [
+        "youtube"
+      ],
+      "urls": [
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/shorts/DPSRC4Ef_8w"
+        }
+      ],
+      "tayang": "2026-11-26"
+    }
+  ]
 }
