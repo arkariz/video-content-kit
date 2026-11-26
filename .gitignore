@@ -17,6 +17,3 @@ produksi/render/_preview/
 .DS_Store
 __pycache__/
 *.pyc
-
-# Gambar referensi pihak ketiga (hak cipta pemiliknya): hanya untuk acuan lokal, jangan di-commit/push
-produksi/acuan-visual/eksternal/
