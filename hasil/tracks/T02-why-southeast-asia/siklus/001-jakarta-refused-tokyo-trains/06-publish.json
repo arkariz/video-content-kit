@@ -94,12 +94,17 @@
       "nama": "master",
       "cara": "manual",
       "platforms": [
-        "youtube"
+        "youtube",
+        "facebook"
       ],
       "urls": [
         {
           "platform": "youtube",
           "url": "https://youtu.be/XC3g2ZL9lPE"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/share/v/1QqcwTdNX4/"
         }
       ],
       "tayang": "2026-11-26"
@@ -108,12 +113,17 @@
       "nama": "A1-why-tokyo-trains-fit",
       "cara": "manual",
       "platforms": [
-        "youtube"
+        "youtube",
+        "facebook"
       ],
       "urls": [
         {
           "platform": "youtube",
           "url": "https://youtube.com/shorts/6r6uGB9LA_4"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/share/r/1CZcFPZtcG/"
         }
       ],
       "tayang": "2026-11-26"
@@ -122,12 +132,17 @@
       "nama": "A2-too-old-to-import",
       "cara": "manual",
       "platforms": [
-        "youtube"
+        "youtube",
+        "facebook"
       ],
       "urls": [
         {
           "platform": "youtube",
           "url": "https://youtube.com/shorts/DPSRC4Ef_8w"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/share/r/1MghokmAqm/"
         }
       ],
       "tayang": "2026-11-26"
