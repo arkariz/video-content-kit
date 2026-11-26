@@ -5,7 +5,7 @@ Dibuat 2026-11-26. Isi kolom URL setelah tayang, lalu kirim ke agent untuk dicat
 ## Sebelum mengunggah (wajib semua)
 - [x] Short S1 dan S2 selesai dirender.
 - [x] Musik dan efek suara dicampur ke ketiga video (-14,1 LUFS).
-- [ ] QA anti-slop **LULUS** (`05-qa.md`). Belum dijalankan; tanpa ini jangan publish.
+- [x] QA: **LULUS atas keputusan kreator** 2026-11-26 (`05-qa.md`); pemeriksaan QA tidak dipakai.
 - [ ] Tonton master dan kedua Shorts penuh dengan suara; cek pengucapan "GTA 6", "Take-Two", "Alinea".
 - [ ] Cek fakta terhadap sumber, terutama yang belum punya tautan: tarif kartu "a couple of percent" (s18), "your bank keeps the biggest piece" (s37), dan perbandingan film Avatar (s25).
 - [ ] Cek ketentuan ElevenLabs untuk pemakaian komersial musik dan efek suara.

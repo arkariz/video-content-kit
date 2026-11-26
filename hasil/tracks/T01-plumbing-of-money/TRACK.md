@@ -11,7 +11,7 @@ siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "siklus 001 selesai tayang (2026-11-26): analitik mulai 2026-12-02 (instruksi/08). Siklus 002: naskah draft masih gaya diorama (usang), tulis ulang ke R3 + gaya cerita, kreator menyetujui dan merekam 2 klip tangan (s02, s38). Belum dikonfirmasi: tautan A1/A2, verifikasi channel YouTube dan thumbnail master, audio ID"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: "004: master 7:04 (< 8:00), dirender apa adanya; konfirmasi publish tanpa mid-roll, atau minta diperpanjang"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -55,7 +55,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | tayang | 2026-11-25 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33); 2026-11-26 master dan 2 Shorts tayang di semua platform |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | naskah | 2026-12-14 | uji-V2; pakai riset 001; draft masih gaya diorama, wajib ditulis ulang ke R3 sebelum disetujui |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
-| 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | qa | target ≤ 2026-12-03 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov |
+| 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | siap-publish | target ≤ 2026-12-03 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -120,3 +120,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Siklus 004: gaya preview disetujui; adegan s07-s37 ditulis; master (7:04) dan Short S1 dirender, dicampur musik dan efek suara ElevenLabs ke -14,1 LUFS; thumbnail master dan Shorts dibuat; lembar unggah manual ditulis. Transisi sejumlah shot diubah dari hold ke cut, nilai faces, tiga teks label, dan dua teks show disesuaikan dengan kontrak (narasi tidak berubah). Ditunda atas permintaan kreator: render Short S2 (lalu mix.mjs) dan QA. Belum publish.
 - 2026-11-26: Kreator mengonfirmasi master dan 2 Shorts siklus 001 tayang di semua platform. Tautan A1 dan A2 belum dicatat. Berikutnya analitik; draft naskah 002 (diorama) harus ditulis ulang ke R3.
 - 2026-11-26: Short S2 004 dirender; master dan kedua Shorts dicampur ke -14,1 LUFS. Kedua Shorts memotong sebagian benda dan label di sisi layar (framing 9:16); kreator memutuskan dipakai apa adanya. Berikutnya QA anti-slop, lalu publish manual (06-publish-manual.md). Belum publish.
+- 2026-11-26: Siklus 004: kreator memutuskan QA dianggap LULUS dari persetujuannya, tanpa pemeriksaan QA (05-qa.md). QA otomatis yang sempat dijalankan GAGAL (durasi < 8:00; dugaan salah ucap "Alinea" di s15) dan diterima apa adanya; master tayang tanpa mid-roll. Status siap-publish; publish manual oleh kreator.
