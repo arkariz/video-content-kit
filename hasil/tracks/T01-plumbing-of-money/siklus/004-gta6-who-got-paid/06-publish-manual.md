@@ -3,8 +3,8 @@
 Dibuat 2026-11-26. Isi kolom URL setelah tayang, lalu kirim ke agent untuk dicatat. Belum ada yang dikirim ke platform mana pun.
 
 ## Sebelum mengunggah (wajib semua)
-- [ ] Short S1 dan S2 selesai dirender.
-- [ ] Musik dan efek suara dicampur: `node scripts/produksi/mix.mjs --track T01 --siklus 004`
+- [x] Short S1 dan S2 selesai dirender.
+- [x] Musik dan efek suara dicampur ke ketiga video (-14,1 LUFS).
 - [ ] QA anti-slop **LULUS** (`05-qa.md`). Belum dijalankan; tanpa ini jangan publish.
 - [ ] Tonton master dan kedua Shorts penuh dengan suara; cek pengucapan "GTA 6", "Take-Two", "Alinea".
 - [ ] Cek fakta terhadap sumber, terutama yang belum punya tautan: tarif kartu "a couple of percent" (s18), "your bank keeps the biggest piece" (s37), dan perbandingan film Avatar (s25).
@@ -120,6 +120,7 @@ Full video on the channel.
 - URL tayang: 
 
 ## Catatan
+- Framing 9:16 kedua Shorts memotong sebagian benda dan label di sisi layar. Keputusan kreator 2026-11-26: dipakai apa adanya.
 - Judul, deskripsi, tag, dan jadwal di atas boleh diubah sebelum unggah.
 - TikTok tidak termasuk (belum aktif untuk channel ini).
 - Track audio Indonesia tidak dibuat untuk siklus ini.
