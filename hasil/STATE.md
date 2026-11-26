@@ -5,7 +5,7 @@ batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
 langkah_berikutnya: "Review video T01-002 dan T02-002/003/004 (hasil/review/rencana-produksi-2026-11-26.md), lalu publish sesuai jadwal; analitik 001 T02 11-28, T01 12-02"
-menunggu_keputusan: "Fase 3.5 Phase B: setujui standar ilustrasi baru (STYLE.md 1-5, REFERENSI-GAYA.md T1-T13, PIPELINE.md 9-10, art direction versi 2) dan spesifikasi benchmark produksi/contoh-r3/P01b-s01-benchmark/03-visual.json sebelum still Phase C (Sonnet)"
+menunggu_keputusan: "Fase 3.5 Phase C: penilaian visual still benchmark s01 (produksi/render/_contoh/P01b-s01-benchmark/stills/, EVALUASI.md). Agent menilai belum lulus gate (material+cahaya 3, polesan 3): satu putaran still lagi, atau terima dan lanjut animasi"
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-26
 ---
@@ -89,3 +89,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: Fase 3 prototipe P01 tetes air selesai (Sonnet): 16 klaim, 4 scene 17 dtk, audio dan caption ElevenLabs asli, render 1920x1080 dan 1080x1920, still deterministik. resolveCycle menerima id semu `_contoh`. Menunggu persetujuan visual kreator.
 - 2026-11-26: Kreator meminta Fase 3.5 (koreksi kualitas visual) sebelum Fase 4. Phase A audit selesai: akar masalah di standar STYLE.md 2.1/2.2 dan proses tanpa tahap desain still, bukan engine; benchmark diusulkan s01.
 - 2026-11-26: Fase 3.5 Phase B: 11 still referensi dari kreator dibedah jadi resep T1-T13 (rendering datar bertingkat, bukan gradien/blur); STYLE.md 1-5 ditulis ulang (hierarki L1-L3, sistem material, model cahaya, desain lingkungan); art direction versi 2 di 03-visual.json; arsitektur aset, alur still-dulu, dan rubrik 12 dimensi di PIPELINE.md; spesifikasi benchmark s01 di produksi/contoh-r3/P01b-s01-benchmark/. Engine tidak diubah.
+- 2026-11-26: Fase 3.5 Phase C (Opus atas permintaan kreator): still benchmark s01 dirender (5 iterasi), aset lokal parts/art.tsx (Shade, Drop2, Block 3/4, WaterTower, FarCity, Cloud, Tree). Deterministik. Penilaian agent: siluet dan akurasi 4, material/cahaya/polesan 3; belum lulus gate. Engine tidak diubah.
