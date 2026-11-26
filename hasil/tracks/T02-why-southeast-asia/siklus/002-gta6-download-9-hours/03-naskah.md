@@ -3,16 +3,16 @@
 Status: **menunggu persetujuan kreator** (draf 2026-11-26). Sumber tunggal produksi adalah `03-script.json`; file ini versi baca.
 
 - **Janji:** After watching, you can explain why a typical Indonesian home waits about nine hours for a file a Singapore home gets in one, and why the sea is only part of the reason.
-- **Hook (s01):** You waited thirteen years for GTA 6, and on a typical Indonesian home connection you still have nine hours to go. Your friend in Singapore needs one.
-- **Panjang:** 34 scene, 1424 kata EN, 1196 kata ID, 100 shot. Perkiraan 8:45 sampai 9:15 (dari rasio siklus 001); dicek ulang setelah TTS, syarat ≥ 8:00.
-- **Judul:** (1) GTA 6: Singapore Is Playing. Indonesia Has 9 Hours Left. · (2) GTA 6 Is Out. Why Is Indonesia Still Downloading? · (3) GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9.
-- **Teks thumbnail:** GTA 6: 9 HOURS?! / STILL DOWNLOADING?!
+- **Hook (s01):** One hour in, your friend in Singapore is already playing GTA 6. You, in Indonesia, started at the same second and still have eight hours to go.
+- **Panjang:** 34 scene, 1425 kata EN, 1193 kata ID, 100 shot. Perkiraan 8:45 sampai 9:15 (dari rasio siklus 001); dicek ulang setelah TTS, syarat ≥ 8:00.
+- **Judul:** (1) GTA 6: Singapore Is Already Playing. Indonesia Has 8 Hours Left. · (2) GTA 6 Is Out. Why Is Indonesia Still Downloading? · (3) GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9.
+- **Teks thumbnail:** 8 HOURS LEFT?! / STILL DOWNLOADING?!
 
 ## Checklist gaya cerita
 
 | Syarat | Di mana | Isi |
 | --- | --- | --- |
-| [x] Scene 1 "you" di momen kunci, maks. 2 kalimat, hook angka dulu | s01 | menunggu 13 tahun, masih 9 jam lagi vs 1 jam |
+| [x] Scene 1 "you" di momen kunci, maks. 2 kalimat, hook angka dulu | s01 | angka dulu: satu jam, teman sudah main; kamu masih 8 jam lagi |
 | [x] Analogi di fondasi dan kembali di penutup | s03, s04 → s33, s34 | internet = air: tangki, pipa induk, pipa jalan, selang terakhir |
 | [x] Tebakan dipatahkan | s09 → s13, s14 | "lautnya": Jakarta Barat tanpa laut masih hampir 7 jam |
 | [x] Mesin insentif | s20, s21 | pemasang kabel balik modal per rumah; menara melayani satu lingkungan |
@@ -29,7 +29,7 @@ Status: **menunggu persetujuan kreator** (draf 2026-11-26). Sumber tunggal produ
 
 ## Potongan Shorts
 
-- **B1-one-hour-vs-nine** (s01, s07, s33). Hook: "GTA 6 is out. They play. You wait nine hours."
+- **B1-one-hour-vs-nine** (s01, s07, s33). Hook: "Singapore is playing GTA 6. You are not."
 - **B2-phone-beats-home-wifi** (s08, s21). Hook: "Your phone could beat your Wi-Fi to GTA 6."
 
 ## Skor anti-slop (lapisan Teks, dinilai sendiri oleh agent)
@@ -47,7 +47,6 @@ EN **39/50** (Directness 8, Rhythm 7, Trust 8, Authenticity 8, Density 8). ID **
 | Palapa Ring (4.426 km, 14 Okt 2019), hibah 10G Singapura | s11, s18 | dari ringkasan pencarian, halaman tidak dibuka |
 | 4,86% GNI dan patokan 2% | s24 | Tabloid Pulsa (25 Nov), sumber asal tidak disebut |
 | Data Bank Dunia | s15, s19, s25 | halaman dibuka; artikel 2022, disebut tahunnya di narasi |
-| GTA V rilis September 2013 (13 tahun) | s01 | pengetahuan umum, halaman Wikipedia belum dibuka |
 | Lebih dari separuh penduduk di Jawa | s34 | belum dicek di siklus ini |
 | Tiga zona waktu | s28 | pengetahuan umum, belum dibuka sumbernya |
 
@@ -55,19 +54,19 @@ EN **39/50** (Directness 8, Rhythm 7, Trust 8, Authenticity 8, Density 8). ID **
 
 ### s01 · hook
 
-**EN:** You waited thirteen years for GTA 6, and on a typical Indonesian home connection you still have nine hours to go. Your friend in Singapore needs one.
+**EN:** One hour in, your friend in Singapore is already playing GTA 6. You, in Indonesia, started at the same second and still have eight hours to go.
 
-**ID:** Kamu sudah menunggu 13 tahun untuk GTA 6, dan dengan internet rumah yang tipikal di Indonesia, masih ada sembilan jam lagi. Temanmu di Singapura cuma butuh satu.
+**ID:** Baru satu jam, temanmu di Singapura sudah main GTA 6. Kamu, di Indonesia, mulai di detik yang sama dan masih harus menunggu delapan jam.
 
 *Visual (R3, satu per kalimat):*
-1. [place/cut] kamar malam, close-up: Komo gemetar memegang stik, progress bar generik raksasa nyaris kosong, kalender tahunan beterbangan → kalender tiga belas tahun tersobek cepat, tombol ditekan, bar merayap satu piksel, angka sembilan jam menghantam layar · label: "13 YEARS"@thirteen, "9 HOURS"@nine
-2. [place/wipe] layar terbelah: kiri Komo membeku, kanan teman di Singapura dengan bar penuh dan layar menyala → panel kanan menghantam masuk, bar teman penuh, teman melompat, Komo menoleh pelan · label: "1 HOUR"@one
+1. [place/cut] close-up teman di Singapura: bar penuh meledak jadi cahaya, layar konsol menyala, jam kecil di sudut menunjuk satu jam → bar menghantam penuh, kilatan, teman melompat dari sofa, kamera mundur cepat · label: "1 HOUR"@hour, "ALREADY PLAYING"@playing
+2. [place/wipe] hantaman potong ke kamar gelap Komo: progress bar raksasa baru sekitar sepersembilan, angka delapan jam menekan dari atas → warna jatuh jadi dingin, bar merayap satu piksel, angka delapan jam jatuh menghantam, Komo melongo · label: "8 HOURS LEFT"@eight
 
-*Sumber:* [1](https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara) Median unduh fixed broadband September 2026 (Ookla): Indonesia 52,62 Mbps, Singapura 476,02 Mbps. [2](https://vandal.elespanol.com/en/grand-theft-auto-6/how-long-to-download.html) 212 GB pada 476,02 Mbps sekitar 59 menit. [3](https://en.wikipedia.org/wiki/Grand_Theft_Auto_V) GTA V rilis September 2013; GTA VI rilis November 2026.
+*Sumber:* [1](https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara) Median unduh fixed broadband September 2026 (Ookla): Indonesia 52,62 Mbps, Singapura 476,02 Mbps. [2](https://vandal.elespanol.com/en/grand-theft-auto-6/how-long-to-download.html) 212 GB pada 476,02 Mbps sekitar 59 menit.
 
 ### s02 · context
 
-**EN:** GTA 6 landed on November nineteenth at up to two hundred and twelve gigabytes. Divide that by the middle speed of Indonesian homes, assume it never drops, and you get your nine hours. The ocean explains only part of it, and your own phone is about to embarrass your home cable.
+**EN:** GTA 6 landed on November nineteenth at up to two hundred and twelve gigabytes. Divide that by the middle speed of Indonesian homes, assume it never drops, and you get nine hours in total. The ocean explains only part of it, and your own phone is about to embarrass your home cable.
 
 **ID:** GTA 6 keluar 19 November, bisa memakan sampai 212 gigabita, dan sembilan jam itu dihitung dari kecepatan unduh tengah di rumah-rumah Indonesia, tanpa pernah turun. Lautan cuma menjelaskan sebagian, dan HP-mu sendiri bakal mempermalukan kabel di rumahmu.
 

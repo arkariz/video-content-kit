@@ -1,12 +1,12 @@
 {
   "cycle": "002-gta6-download-9-hours",
   "title_options": [
-    "GTA 6: Singapore Is Playing. Indonesia Has 9 Hours Left.",
+    "GTA 6: Singapore Is Already Playing. Indonesia Has 8 Hours Left.",
     "GTA 6 Is Out. Why Is Indonesia Still Downloading?",
     "GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9."
   ],
   "thumbnail_text": [
-    "GTA 6: 9 HOURS?!",
+    "8 HOURS LEFT?!",
     "STILL DOWNLOADING?!"
   ],
   "promise": "After watching, you can explain why a typical Indonesian home waits about nine hours for a file a Singapore home gets in one, and why the sea is only part of the reason.",
@@ -27,43 +27,44 @@
       "id": "s01",
       "role": "hook",
       "narration": {
-        "en": "You waited thirteen years for GTA 6, and on a typical Indonesian home connection you still have nine hours to go. Your friend in Singapore needs one.",
-        "id": "Kamu sudah menunggu 13 tahun untuk GTA 6, dan dengan internet rumah yang tipikal di Indonesia, masih ada sembilan jam lagi. Temanmu di Singapura cuma butuh satu."
+        "en": "One hour in, your friend in Singapore is already playing GTA 6. You, in Indonesia, started at the same second and still have eight hours to go.",
+        "id": "Baru satu jam, temanmu di Singapura sudah main GTA 6. Kamu, di Indonesia, mulai di detik yang sama dan masih harus menunggu delapan jam."
       },
       "shots": [
         {
           "sentence": 1,
-          "show": "kamar malam, close-up: Komo gemetar memegang stik, progress bar generik raksasa nyaris kosong, kalender tahunan beterbangan",
+          "show": "close-up teman di Singapura: bar penuh meledak jadi cahaya, layar konsol menyala, jam kecil di sudut menunjuk satu jam",
           "scale": "place",
-          "motion": "kalender tiga belas tahun tersobek cepat, tombol ditekan, bar merayap satu piksel, angka sembilan jam menghantam layar",
+          "motion": "bar menghantam penuh, kilatan, teman melompat dari sofa, kamera mundur cepat",
           "transition": "cut",
           "labels": [
             {
-              "text": "13 YEARS",
-              "word": "thirteen"
+              "text": "1 HOUR",
+              "word": "hour"
             },
             {
-              "text": "9 HOURS",
-              "word": "nine"
+              "text": "ALREADY PLAYING",
+              "word": "playing"
             }
           ]
         },
         {
           "sentence": 2,
-          "show": "layar terbelah: kiri Komo membeku, kanan teman di Singapura dengan bar penuh dan layar menyala",
+          "show": "hantaman potong ke kamar gelap Komo: progress bar raksasa baru sekitar sepersembilan, angka delapan jam menekan dari atas",
           "scale": "place",
-          "motion": "panel kanan menghantam masuk, bar teman penuh, teman melompat, Komo menoleh pelan",
+          "motion": "warna jatuh jadi dingin, bar merayap satu piksel, angka delapan jam jatuh menghantam, Komo melongo",
           "transition": "wipe",
           "labels": [
             {
-              "text": "1 HOUR",
-              "word": "one"
+              "text": "8 HOURS LEFT",
+              "word": "eight"
             }
           ],
           "count": {
             "value": 2,
             "as": "split"
-          }
+          },
+          "mood": "cool"
         }
       ],
       "sources": [
@@ -74,10 +75,6 @@
         {
           "url": "https://vandal.elespanol.com/en/grand-theft-auto-6/how-long-to-download.html",
           "claim": "212 GB pada 476,02 Mbps sekitar 59 menit"
-        },
-        {
-          "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
-          "claim": "GTA V rilis September 2013; GTA VI rilis November 2026"
         }
       ]
     },
@@ -85,7 +82,7 @@
       "id": "s02",
       "role": "context",
       "narration": {
-        "en": "GTA 6 landed on November nineteenth at up to two hundred and twelve gigabytes. Divide that by the middle speed of Indonesian homes, assume it never drops, and you get your nine hours. The ocean explains only part of it, and your own phone is about to embarrass your home cable.",
+        "en": "GTA 6 landed on November nineteenth at up to two hundred and twelve gigabytes. Divide that by the middle speed of Indonesian homes, assume it never drops, and you get nine hours in total. The ocean explains only part of it, and your own phone is about to embarrass your home cable.",
         "id": "GTA 6 keluar 19 November, bisa memakan sampai 212 gigabita, dan sembilan jam itu dihitung dari kecepatan unduh tengah di rumah-rumah Indonesia, tanpa pernah turun. Lautan cuma menjelaskan sebagian, dan HP-mu sendiri bakal mempermalukan kabel di rumahmu."
       },
       "shots": [
@@ -2044,7 +2041,7 @@
         "s07",
         "s33"
       ],
-      "hook_override": "GTA 6 is out. They play. You wait nine hours."
+      "hook_override": "Singapore is playing GTA 6. You are not."
     },
     {
       "name": "B2-phone-beats-home-wifi",
@@ -2069,11 +2066,6 @@
       "scene": "s01",
       "url": "https://vandal.elespanol.com/en/grand-theft-auto-6/how-long-to-download.html",
       "claim": "212 GB pada 476,02 Mbps sekitar 59 menit"
-    },
-    {
-      "scene": "s01",
-      "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
-      "claim": "GTA V rilis September 2013; GTA VI rilis November 2026"
     },
     {
       "scene": "s02",
@@ -2260,13 +2252,13 @@
     {
       "lines": [
         {
-          "text": "GTA 6:",
-          "color": "#ffffff",
-          "size": 150
+          "text": "8 HOURS",
+          "color": "#ffd23f",
+          "size": 190
         },
         {
-          "text": "9 HOURS?!",
-          "color": "#ffd23f",
+          "text": "LEFT?!",
+          "color": "#ffffff",
           "size": 190
         }
       ],
