@@ -27,6 +27,20 @@ Uji sebelum publish: bisakah orang awam menjelaskan ulang inti video setelah sek
 
 Aturan ini belum dicek otomatis oleh QA dan belum ada komponen visual baru untuk poin 4 dan 5, jadi dipenuhi lewat naskah dan spec adegan, lalu diperiksa manual.
 
+### Lebih mulus, tanpa garis kaku: jangan terlihat seperti kartun balok (2026-11-26, dari T02 siklus 001 versi 3D)
+
+Penilaian kreator atas render 3D: hasilnya **masih terlihat kartun, dengan garis kaku yang tegas, dan tidak mulus**. Arah untuk video berikutnya: tampilan dan gerak yang mulus seperti video Kurzgesagt (In a Nutshell). Yang ditiru tetap hanya teknik; tokoh, aset, huruf, warna merek, dan susunan adegannya tidak disalin. Kedalaman 3D tetap dipertahankan.
+
+Terjemahan ke produksi (usulan agent, belum disetujui kreator lewat contoh gambar):
+
+1. **Tidak ada tepi tegas yang tidak perlu:** bentuk organik dan sudut sangat membulat; hindari tumpukan kotak dan silinder polos. Tanpa garis luar, garis kisi lantai, atau garis dekorasi tipis yang kontras.
+2. **Bayangan dan warna melebur:** gradien halus pada permukaan, bayangan lembut, cahaya tepi dan glow; hindari pita bayangan bertingkat dan bayangan jatuh bertepi keras.
+3. **Gerak mengalir:** setiap gerak memakai easing dengan awalan dan susulan (termasuk gerak sekunder); tidak ada benda yang muncul patah, berhenti mendadak, atau bergerak seperti benda kaku.
+4. **Transisi halus:** garis putih tegas pada iris dan wipe dinilai ulang (`instruksi/referensi/gaya-visual.md` bagian 3 masih memintanya; ubah hanya atas izin kreator).
+5. **Uji dulu sebelum render penuh:** buat 3 sampai 5 gambar diam dan satu klip pendek (10 sampai 20 detik), bandingkan berdampingan dengan referensi kreator, dan tunggu persetujuan gaya. Berlaku juga dalam mode `otomatis`.
+
+Belum ada komponen atau cek QA yang menegakkan aturan ini. T02 siklus 001 versi 3D tidak dijadikan acuan gaya.
+
 ### Gaya cerita wajib (2026-11-26)
 
 Semua naskah memakai `instruksi/referensi/gaya-cerita.md` sebagai acuan utama dan mencentang checklist ceritanya. Sumber: teknik dari 3 transkrip (Kurzgesagt x2, OverSimplified) yang dipilih kreator. Dinilai ulang di review portfolio setelah analitik T01-002.
