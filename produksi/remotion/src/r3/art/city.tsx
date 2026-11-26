@@ -1,200 +1,7 @@
-// Aset ilustrasi benchmark s01 (Fase 3.5): rendering datar bertingkat (STYLE.md 2.2, resep REFERENSI-GAYA.md T1-T13).
-// Semua bentuk fungsi murni dari parameter dan t; acak hanya lewat R.
+// Kota (L2/L3): blok 3/4, rumah pelana, kantor, menara air, siluet jauh, kereta layang, latar depan atap, pohon, lampu.
 import React from "react";
-import { R, clamp, mix } from "@r3";
-
-export type V2 = [number, number];
-export type Tones = [string, string, string, string]; // inti bayangan, bayangan, dasar, highlight
-
-const useSid = () => React.useId().replace(/[^a-zA-Z0-9]/g, "");
-const f1 = (n: number) => n.toFixed(1);
-
-/** Path kotak membulat; rt/rb = radius sudut atas/bawah. */
-export const rr = (x: number, y: number, w: number, h: number, rt: number, rb = rt) =>
-  `M${f1(x + rt)} ${f1(y)}H${f1(x + w - rt)}Q${f1(x + w)} ${f1(y)} ${f1(x + w)} ${f1(y + rt)}V${f1(y + h - rb)}Q${f1(x + w)} ${f1(y + h)} ${f1(x + w - rb)} ${f1(y + h)}H${f1(x + rb)}Q${f1(x)} ${f1(y + h)} ${f1(x)} ${f1(y + h - rb)}V${f1(y + rt)}Q${f1(x)} ${f1(y)} ${f1(x + rt)} ${f1(y)}Z`;
-
-/**
- * T1: shading datar bertingkat. Badan diisi inti bayangan, lalu salinan badan yang digeser ke arah cahaya
- * (bayangan, lalu dasar) sehingga sisi jauh tersisa sebagai sabit; highlight = badan dikurangi salinan yang digeser menjauh.
- * L = vektor satuan ke arah cahaya. s = [geser bayangan, geser dasar, lebar highlight].
- */
-export const Shade: React.FC<{ d: string; tones: Tones; L: V2; s?: [number, number, number]; op?: number; children?: React.ReactNode; lightOp?: number }> = ({ d, tones, L, s = [5, 12, 8], op = 1, children, lightOp = 1 }) => {
-  const id = useSid();
-  const [core, sh, base, lt] = tones;
-  const [lx, ly] = L;
-  return (
-    <g opacity={op}>
-      <defs>
-        <clipPath id={`c${id}`}><path d={d} /></clipPath>
-        <mask id={`m${id}`} maskUnits="userSpaceOnUse" x={-6000} y={-6000} width={12000} height={12000}>
-          <rect x={-6000} y={-6000} width={12000} height={12000} fill="#fff" />
-          <path d={d} transform={`translate(${f1(-lx * s[2])} ${f1(-ly * s[2])})`} fill="#000" />
-        </mask>
-      </defs>
-      <path d={d} fill={core} />
-      <g clipPath={`url(#c${id})`}>
-        <path d={d} transform={`translate(${f1(lx * s[0])} ${f1(ly * s[0])})`} fill={sh} />
-        <path d={d} transform={`translate(${f1(lx * s[1])} ${f1(ly * s[1])})`} fill={base} />
-        {s[2] > 0 && <path d={d} fill={lt} mask={`url(#m${id})`} opacity={lightOp} />}
-        {children}
-      </g>
-    </g>
-  );
-};
-
-/* ============================== TETES (L1, material liquid) ============================== */
-
-/** Path tetes: flat 0 = hampir bulat, 1 = roti burger (atas kubah, dasar rata sedikit cekung). Asimetri halus lewat `lean`. */
-export const dropPath = (r: number, flat: number, sx = 1, sy = 1, lean = 0) => {
-  const f = clamp(flat, 0, 1.15), q = 0.552;
-  const W = r * (1 + 0.2 * f) * sx, Ht = r * (1 - 0.05 * f) * sy, Hb = r * (1 - 0.42 * f) * sy, cav = r * 0.035 * clamp(f) * sy;
-  const pk = -r * 0.07 * f + lean * r; // puncak kubah sedikit ke kiri
-  const kx = W * 0.6 * clamp(f); // titik sudut dasar
-  return [
-    `M${f1(-W)} ${f1(0)}`,
-    `C${f1(-W)} ${f1(-Ht * q)} ${f1(pk - W * q)} ${f1(-Ht)} ${f1(pk)} ${f1(-Ht)}`,
-    `C${f1(pk + W * q)} ${f1(-Ht)} ${f1(W)} ${f1(-Ht * q)} ${f1(W)} ${f1(0)}`,
-    `C${f1(W)} ${f1(Hb * mix(q, 0.8, f))} ${f1(mix(W * q, W * 0.9, f))} ${f1(Hb)} ${f1(kx)} ${f1(Hb)}`,
-    `C${f1(kx * 0.45)} ${f1(Hb)} ${f1(kx * 0.2)} ${f1(Hb - cav)} ${f1(0)} ${f1(Hb - cav)}`,
-    `C${f1(-kx * 0.2)} ${f1(Hb - cav)} ${f1(-kx * 0.45)} ${f1(Hb)} ${f1(-kx)} ${f1(Hb)}`,
-    `C${f1(-mix(W * q, W * 0.9, f))} ${f1(Hb)} ${f1(-W)} ${f1(Hb * mix(q, 0.8, f))} ${f1(-W)} ${f1(0)}Z`,
-  ].join("");
-};
-export const dropBox = (r: number, flat: number, sx = 1, sy = 1) => {
-  const f = clamp(flat, 0, 1.15);
-  return { W: r * (1 + 0.2 * f) * sx, Ht: r * (1 - 0.05 * f) * sy, Hb: r * (1 - 0.42 * f) * sy };
-};
-
-export const WATER: Tones = ["#0a4a8c", "#127fd0", "#33c4f2", "#a8f0ff"];
-
-/** Pantulan kota terbalik di dalam tetes: pita siluet dua nada yang melengkung mengikuti dasar, dengan menara air (tengara) dan jendela. */
-const Reflection: React.FC<{ W: number; Hb: number; Ht: number; t: number }> = ({ W, Hb, Ht, t }) => {
-  const shift = Math.sin(t * 0.6) * W * 0.04;
-  const horizon = Hb * 0.62; // cakrawala terpantul rendah di bagian bawah tetes
-  const blocks: { x: number; w: number; h: number; kind: number }[] = [];
-  let x = -W * 1.3;
-  for (let i = 0; x < W * 1.3; i++) {
-    const w = W * (0.09 + R(i, 31) * 0.1), h = Hb * (0.18 + R(i, 32) * 0.32);
-    blocks.push({ x, w, h, kind: i === 4 ? 9 : Math.floor(R(i, 33) * 3) });
-    x += w * (0.86 + R(i, 34) * 0.12);
-  }
-  const bend = (bx: number) => horizon - (bx / W) * (bx / W) * Hb * 0.35; // cakrawala melengkung mengikuti badan
-  return (
-    <g transform={`translate(${f1(shift)} 0)`}>
-      {/* langit terpantul: pita terang di atas cakrawala */}
-      <path d={`M${f1(-W * 1.3)} ${f1(bend(-W) - Hb * 0.18)}Q0 ${f1(horizon - Hb * 0.02)} ${f1(W * 1.3)} ${f1(bend(W) - Hb * 0.18)}L${f1(W * 1.3)} ${f1(bend(W))}Q0 ${f1(horizon + Hb * 0.22)} ${f1(-W * 1.3)} ${f1(bend(-W))}Z`} fill="#ffb36b" opacity={0} />
-      {blocks.map((b, i) => {
-        const y0 = bend(b.x + b.w / 2);
-        if (b.kind === 9) { // menara air terbalik
-          const tw = b.w * 1.3, th = Hb * 0.2;
-          return (
-            <g key={i} fill="#0b4f86" opacity={0.65}>
-              <rect x={b.x + b.w * 0.2} y={y0} width={b.w * 0.08} height={Hb * 0.32} rx={2} />
-              <rect x={b.x + b.w * 0.72} y={y0} width={b.w * 0.08} height={Hb * 0.32} rx={2} />
-              <path d={rr(b.x - tw * 0.05, y0 + Hb * 0.3, tw, th, tw * 0.12)} />
-              <path d={`M${f1(b.x - tw * 0.08)} ${f1(y0 + Hb * 0.3 + th)}L${f1(b.x + b.w / 2)} ${f1(y0 + Hb * 0.3 + th + Hb * 0.12)}L${f1(b.x + tw * 1.03)} ${f1(y0 + Hb * 0.3 + th)}Z`} />
-              <circle cx={b.x + b.w / 2} cy={y0 + Hb * 0.3 + th + Hb * 0.14} r={Math.max(2, W * 0.012)} fill="#ff6a5c" opacity={0.9} />
-            </g>
-          );
-        }
-        const top = b.kind === 1 ? b.w * 0.25 : 3;
-        return (
-          <g key={i}>
-            <path d={rr(b.x, y0, b.w, b.h, 2, top)} fill={i % 2 ? "#0b4f86" : "#11619a"} opacity={0.55} />
-            {Array.from({ length: 3 }, (_, k) => R(i * 7 + k, 35) > 0.45 && (
-              <rect key={k} x={b.x + b.w * (0.22 + (k % 2) * 0.36)} y={y0 + b.h * (0.25 + k * 0.22)} width={Math.max(3, b.w * 0.16)} height={Math.max(3, b.w * 0.14)} rx={1.5} fill="#ffd98f" opacity={0.85} />
-            ))}
-          </g>
-        );
-      })}
-    </g>
-  );
-};
-
-/** Tetes air versi 2: T1 (4 nada), T2 (garis highlight putus), T9 (air distilisasi), T10 (sedikit tembus). */
-export const Drop2: React.FC<{ x: number; y: number; r: number; flat: number; sx?: number; sy?: number; rot?: number; t: number; refl?: number; lean?: number; detail?: number }> = ({ x, y, r, flat, sx = 1, sy = 1, rot = 0, t, refl = 1, lean = 0, detail = 1 }) => {
-  const id = useSid();
-  const d = dropPath(r, flat, sx, sy, lean);
-  const { W, Ht, Hb } = dropBox(r, flat, sx, sy);
-  const tw = Math.sin(t * 3.1) * 0.5 + 0.5; // kilap berdenyut lembut
-  return (
-    <g transform={`translate(${f1(x)} ${f1(y)}) rotate(${f1(rot)})`}>
-      <defs><clipPath id={`d${id}`}><path d={d} /></clipPath></defs>
-      {/* T10: badan sedikit tembus */}
-      <Shade d={d} tones={WATER} L={[-0.3, -0.95]} s={[r * 0.1, r * 0.26, r * 0.15]} op={0.95} lightOp={0.6}>
-        {/* pantulan kota (T9: pita siluet, bukan batang) */}
-        {refl > 0 && detail > 0 && <g opacity={refl}><Reflection W={W} Hb={Hb} Ht={Ht} t={t} /></g>}
-        {/* inti bayangan di cekungan dasar */}
-        <path d={`M${f1(-W * 0.95)} ${f1(Hb * 0.55)}Q0 ${f1(Hb * 0.92)} ${f1(W * 0.95)} ${f1(Hb * 0.55)}L${f1(W)} ${f1(Hb * 1.2)}H${f1(-W)}Z`} fill="#0b4f86" opacity={0.42} />
-        {/* riak tipis mengikuti kubah */}
-        <path d={`M${f1(-W * 0.55)} ${f1(-Ht * 0.42)}Q${f1(-W * 0.05)} ${f1(-Ht * 0.78)} ${f1(W * 0.42)} ${f1(-Ht * 0.5)}`} stroke="#a6ecff" strokeWidth={r * 0.028} fill="none" strokeLinecap="round" opacity={0.55} />
-      </Shade>
-      {/* meniskus: cincin tipis lebih gelap di tepi, lalu garis terang tipis di dalam */}
-      <g clipPath={`url(#d${id})`}>
-        <path d={d} fill="none" stroke="#0b4f86" strokeWidth={r * 0.09} opacity={0.6} />
-        <path d={dropPath(r * 0.93, flat, sx, sy, lean)} fill="none" stroke="#c9f4ff" strokeWidth={r * 0.018} opacity={0.35} />
-      </g>
-      {/* T2 + T8: rim jingga senja, putus, di kanan bawah */}
-      <path d={`M${f1(W * 0.93)} ${f1(-Ht * 0.05)}C${f1(W * 0.95)} ${f1(Hb * 0.5)} ${f1(W * 0.78)} ${f1(Hb * 0.86)} ${f1(W * 0.42)} ${f1(Hb * 0.93)}`} stroke="#ffb36b" strokeWidth={r * 0.045} fill="none" strokeLinecap="round" strokeDasharray={`${f1(r * 0.42)} ${f1(r * 0.12)} ${f1(r * 0.12)} ${f1(r * 0.12)}`} opacity={0.95} />
-      {/* sabit highlight putih besar kiri atas (pantulan langit) */}
-      <path d={`M${f1(-W * 0.78)} ${f1(-Ht * 0.12)}C${f1(-W * 0.78)} ${f1(-Ht * 0.62)} ${f1(-W * 0.4)} ${f1(-Ht * 0.86)} ${f1(-W * 0.02)} ${f1(-Ht * 0.88)}C${f1(-W * 0.34)} ${f1(-Ht * 0.74)} ${f1(-W * 0.6)} ${f1(-Ht * 0.48)} ${f1(-W * 0.66)} ${f1(-Ht * 0.06)}Z`} fill="#ffffff" opacity={0.9} />
-      <circle cx={W * 0.1} cy={-Ht * 0.72} r={r * 0.045} fill="#fff" opacity={0.75 + 0.25 * tw} />
-      <circle cx={W * 0.22} cy={-Ht * 0.66} r={r * 0.022} fill="#fff" opacity={0.8} />
-      <circle cx={-W * 0.72} cy={Hb * 0.22} r={r * 0.03} fill="#fff" opacity={0.55} />
-    </g>
-  );
-};
-
-/* ============================== LANGIT DAN AWAN ============================== */
-
-export const SKY = { top: "#1a0f4a", hi: "#3a237a", mid: "#7e3a96", low: "#d0587e", glow: "#f5835e", sun: "#ffc58a" };
-
-export const Sky: React.FC<{ t: number }> = ({ t }) => {
-  const id = useSid();
-  return (
-    <g>
-      <defs>
-        <linearGradient id={`s${id}`} gradientUnits="userSpaceOnUse" x1={0} y1={-300} x2={0} y2={980}>
-          <stop offset={0} stopColor={SKY.top} /><stop offset={0.3} stopColor={SKY.hi} /><stop offset={0.58} stopColor={SKY.mid} />
-          <stop offset={0.8} stopColor={SKY.low} /><stop offset={0.93} stopColor={SKY.glow} /><stop offset={1} stopColor="#ffb27a" />
-        </linearGradient>
-        <radialGradient id={`g${id}`} cx={0.5} cy={0.5} r={0.5}>
-          <stop offset={0} stopColor={SKY.sun} stopOpacity={0.95} /><stop offset={0.25} stopColor="#ff9a6a" stopOpacity={0.55} /><stop offset={1} stopColor="#ff9a6a" stopOpacity={0} />
-        </radialGradient>
-      </defs>
-      <rect x={-600} y={-700} width={3200} height={2600} fill={`url(#s${id})`} />
-      <circle cx={1050} cy={690} r={560 + Math.sin(t * 0.8) * 6} fill={`url(#g${id})`} />
-      <circle cx={1050} cy={690} r={66} fill="#ffe2b0" opacity={0.95} />
-      <circle cx={1050} cy={690} r={108} fill="#ffd29a" opacity={0.3} />
-    </g>
-  );
-};
-
-/** T4: awan gugus lobus, bawah kanan menyala jingga (matahari rendah di kanan bawah). */
-export const Cloud: React.FC<{ x: number; y: number; s: number; seed: number; base?: string; lit?: string; shadow?: string; op?: number }> = ({ x, y, s, seed, base = "#4a3482", lit = "#f0906a", shadow = "#33246a", op = 1 }) => {
-  const id = useSid();
-  const n = 6 + Math.floor(R(seed, 41) * 4);
-  const lobes = Array.from({ length: n }, (_, i) => {
-    const u = i / (n - 1);
-    const cx = (u - 0.5) * 2 * s * (0.9 + R(seed + i, 42) * 0.15);
-    const rad = s * (0.28 + Math.sin(u * Math.PI) * 0.42 + R(seed + i, 43) * 0.12);
-    return { cx, cy: -rad * 0.55 + R(seed + i, 44) * s * 0.08, r: rad };
-  });
-  const flatBottom = s * 0.18;
-  const all = (fill: string, dx = 0, dy = 0) => (
-    <g fill={fill} transform={`translate(${dx} ${dy})`}>
-      {lobes.map((l, i) => <circle key={i} cx={l.cx} cy={l.cy} r={l.r} />)}
-      <path d={rr(-s * 1.05, -s * 0.3, s * 2.1, s * 0.3 + flatBottom, s * 0.15)} />
-    </g>
-  );
-  return (
-    <g transform={`translate(${x} ${y})`} opacity={op}>
-      <defs><clipPath id={`k${id}`}>{lobes.map((l, i) => <circle key={i} cx={l.cx} cy={l.cy} r={l.r} />)}<path d={rr(-s * 1.05, -s * 0.3, s * 2.1, s * 0.3 + flatBottom, s * 0.15)} /></clipPath></defs>
-      {all(lit)}
-      <g clipPath={`url(#k${id})`}>{all(base, -s * 0.05, -s * 0.07)}{all(shadow, -s * 0.16, -s * 0.2)}</g>
-    </g>
-  );
-};
+import { R, clamp, mix } from "../kit";
+import { Shade, Tones, V2, f1, rr, useSid } from "./core";
 
 /* ============================== KOTA ============================== */
 
@@ -304,6 +111,7 @@ export const WaterTower: React.FC<{ x: number; base: number; s: number; t: numbe
         <path d={`M${x - tw * 0.38} ${base - legH * 0.6}H${x + tw * 0.38}`} />
       </g>
       <path d={rr(x - tw * 0.56, base - legH - 8 * s, tw * 1.12, 12 * s, 5 * s)} fill={MID[0]} />
+      <ellipse cx={x + 10 * s} cy={base + 2} rx={tw * 0.62} ry={7 * s} fill="#141c46" opacity={0.55} />
       <Shade d={rr(x - tw / 2, ty, tw, th, 14 * s)} tones={["#3a2420", "#5c3a2c", "#8a5a3e", "#c98a5a"]} L={[1, -0.25]} s={[6 * s, 18 * s, 9 * s]}>
         {[0.28, 0.62].map((u) => <rect key={u} x={x - tw / 2} y={ty + th * u} width={tw} height={7 * s} rx={3 * s} fill="#2c1c22" opacity={0.75} />)}
         {Array.from({ length: 6 }, (_, i) => <rect key={i} x={x - tw / 2 + 14 * s + i * tw * 0.16} y={ty + 6 * s} width={3 * s} height={th - 12 * s} rx={1.5 * s} fill="#c98a5a" opacity={0.35} />)}
@@ -318,12 +126,14 @@ export const WaterTower: React.FC<{ x: number; base: number; s: number; t: numbe
 };
 
 /** Siluet kota jauh (L3): satu path gugus, digeser jauh ke langit; puncak bervariasi (rata, kubah, menara, bertangga). */
-export const FarCity: React.FC<{ x0: number; x1: number; base: number; seed: number; fill: string; hi: string; t: number; lights?: number }> = ({ x0, x1, base, seed, fill, hi, t, lights = 0.06 }) => {
+export const FarCity: React.FC<{ x0: number; x1: number; base: number; seed: number; fill: string; hi: string; t: number; lights?: number; gap?: [number, number] }> = ({ x0, x1, base, seed, fill, hi, t, lights = 0.06, gap }) => {
   const items: React.ReactNode[] = [];
   let x = x0, i = 0;
   const rhythm = [0.55, 1, 0.7, 0.4, 0.85, 0.6, 1.2, 0.5];
   while (x < x1) {
-    const w = 70 + R(seed + i, 71) * 90, h = 80 + rhythm[i % rhythm.length] * 170 + R(seed + i, 72) * 50, kind = Math.floor(R(seed + i, 73) * 5);
+    const w = 70 + R(seed + i, 71) * 90, kind = Math.floor(R(seed + i, 73) * 5);
+    const inGap = gap && x + w > gap[0] && x < gap[1];
+    const h = inGap ? 40 + R(seed + i, 72) * 30 : 80 + rhythm[i % rhythm.length] * 170 + R(seed + i, 72) * 50;
     items.push(<path key={`b${i}`} d={rr(x, base - h, w, h + 200, kind === 1 ? w * 0.5 : 6, 0)} fill={fill} />);
     if (kind === 2) items.push(<path key={`s${i}`} d={`M${x + w / 2 - 6} ${base - h}L${x + w / 2} ${base - h - 70}L${x + w / 2 + 6} ${base - h}Z`} fill={fill} />);
     if (kind === 3) items.push(<path key={`t${i}`} d={rr(x + w * 0.2, base - h - 34, w * 0.6, 40, 6, 0)} fill={fill} />);
@@ -391,45 +201,6 @@ export const RoofCorner: React.FC<{ x: number; y: number; t: number }> = ({ x, y
   );
 };
 
-/* ============================== HUJAN DAN ATMOSFER ============================== */
-
-/** Hujan sebagai garis bulat pendek di satu kedalaman; jatuh relatif (latar naik karena tetes jatuh). */
-export const RainLayer: React.FC<{ t: number; n: number; seed: number; len: [number, number]; w: number; color: string; op: number; speed: number; area?: [number, number, number, number] }> = ({ t, n, seed, len, w, color, op, speed, area = [-100, -200, 2020, 1280] }) => {
-  const [ax, ay, bx, by] = area, H2 = by - ay;
-  return (
-    <g stroke={color} strokeWidth={w} strokeLinecap="round" opacity={op}>
-      {Array.from({ length: n }, (_, i) => {
-        const L = mix(len[0], len[1], R(seed + i, 91)), x = mix(ax, bx, R(seed + i, 92));
-        const y = ay + ((R(seed + i, 93) * H2 + t * speed) % H2 + H2) % H2;
-        return <path key={i} d={`M${x} ${y}l${-L * 0.08} ${-L}`} />;
-      })}
-    </g>
-  );
-};
-
-/** Pita kabut tipis antar lapisan (gradien boleh untuk atmosfer). */
-export const MistBand: React.FC<{ y: number; h: number; color: string; op: number }> = ({ y, h, color, op }) => {
-  const id = useSid();
-  return (
-    <g>
-      <defs><linearGradient id={`m${id}`} x1={0} y1={0} x2={0} y2={1}><stop offset={0} stopColor={color} stopOpacity={0} /><stop offset={0.5} stopColor={color} stopOpacity={op} /><stop offset={1} stopColor={color} stopOpacity={0} /></linearGradient></defs>
-      <rect x={-600} y={y} width={3200} height={h} fill={`url(#m${id})`} />
-    </g>
-  );
-};
-
-/** Siluet air mata (miskonsepsi, L2 metafora): tembus pucat, garis tepi putus. */
-export const TearGhost2: React.FC<{ x: number; y: number; r: number; p: number }> = ({ x, y, r, p }) => {
-  if (p <= 0) return null;
-  const d = `M0 ${-r * 1.75}C${r * 0.25} ${-r * 1.2} ${r * 1.02} ${-r * 0.55} ${r * 1.02} ${r * 0.15}C${r * 1.02} ${r * 0.72} ${r * 0.56} ${r * 1.05} 0 ${r * 1.05}C${-r * 0.56} ${r * 1.05} ${-r * 1.02} ${r * 0.72} ${-r * 1.02} ${r * 0.15}C${-r * 1.02} ${-r * 0.55} ${-r * 0.25} ${-r * 1.2} 0 ${-r * 1.75}Z`;
-  return (
-    <g transform={`translate(${x} ${y}) scale(${0.85 + 0.15 * p})`} opacity={p}>
-      <path d={d} fill="#ffc2d4" opacity={0.28} />
-      <path d={d} fill="none" stroke="#ffd6e2" strokeWidth={r * 0.035} strokeLinecap="round" strokeDasharray={`${r * 0.16} ${r * 0.1}`} />
-    </g>
-  );
-};
-
 /* ============================== BLOK KOTA 3/4 (L2, versi iterasi 2) ============================== */
 
 const ROOF_TOP = "#6b8fd0";
@@ -440,7 +211,7 @@ const Win: React.FC<{ x: number; y: number; w: number; h: number; lit: boolean; 
     {R(seed, 56) > 0.5 && <rect x={x} y={y} width={w * 0.45} height={h} rx={3} fill="#e98a4a" opacity={0.55} />}
     <rect x={x - 2} y={y + h - 3} width={w + 4} height={4} rx={2} fill="#141c46" opacity={0.7} />
   </g>
-) : <rect x={x} y={y} width={w} height={h} rx={3} fill={WIN_OFF} />;
+) : <g><rect x={x} y={y} width={w} height={h} rx={3} fill={WIN_OFF} /><path d={`M${x + w * 0.15} ${y + h * 0.75}L${x + w * 0.75} ${y + h * 0.1}`} stroke="#5a6fb8" strokeWidth={Math.max(2, w * 0.18)} strokeLinecap="round" opacity={0.55} /></g>;
 
 /**
  * Gedung 3/4: muka depan (Shade, cahaya dari kanan), muka samping kiri lebih gelap, atap terlihat dari atas
@@ -472,7 +243,8 @@ export const Block: React.FC<{ x: number; base: number; w: number; h: number; si
   const kit: React.ReactNode[] = [];
   if (top === "step") kit.push(<Shade key="st" d={rr(x + w * 0.18, y - h * 0.14, w * 0.6, h * 0.14 + 6, 8, 0)} tones={tones} L={[1, -0.2]} s={[6, 14, 5]}><Windows x={x + w * 0.24} y={y - h * 0.1} cols={3} rows={1} cw={18} ch={22} gx={w * 0.12} gy={0} seed={seed + 300} t={t} on={0.6} /></Shade>);
   if (top === "dome") kit.push(<g key="dm"><Shade d={rr(x + w * 0.3, y - 60, w * 0.34, 64, 6, 0)} tones={tones} L={[1, -0.2]} s={[4, 10, 4]} /><Shade d={`M${x + w * 0.27} ${y - 58}A${w * 0.2} ${w * 0.2} 0 0 1 ${x + w * 0.67} ${y - 58}Z`} tones={["#20163f", "#2f2366", "#46378a", "#7a5fb8"]} L={[0.7, -0.7]} s={[4, 10, 7]} /></g>);
-  if (R(seed, 57) > 0.3) kit.push(<g key="tk"><path d={rr(x + w * 0.66, roofy - 54, 40, 52, 10)} fill="#8a5a3e" /><rect x={x + w * 0.66} y={roofy - 40} width={40} height={5} rx={2.5} fill="#3a2420" /><path d={`M${x + w * 0.66 + 38} ${roofy - 50}V${roofy - 6}`} stroke={RIM} strokeWidth={3} strokeLinecap="round" /></g>);
+  if (R(seed, 57) > 0.3) kit.push(<g key="tk"><ellipse cx={x + w * 0.66 + 22} cy={roofy} rx={30} ry={5} fill="#1a2554" opacity={0.5} /><path d={rr(x + w * 0.66, roofy - 54, 40, 52, 10)} fill="#8a5a3e" /><rect x={x + w * 0.66 + 26} y={roofy - 50} width={6} height={44} rx={3} fill="#c98a5a" opacity={0.8} /><rect x={x + w * 0.66} y={roofy - 40} width={40} height={5} rx={2.5} fill="#3a2420" /><path d={`M${x + w * 0.66 + 38} ${roofy - 50}V${roofy - 6}`} stroke={RIM} strokeWidth={3} strokeLinecap="round" /></g>);
+  kit.push(<ellipse key="sh1" cx={x + w * 0.35} cy={roofy + 1} rx={w * 0.4} ry={5} fill="#1a2554" opacity={0.45} />);
   kit.push(<g key="ac">{[0, 1].map((i) => <g key={i}><path d={rr(x + 16 + i * 46, roofy - 24, 38, 24, 5)} fill="#9fb6e0" /><circle cx={x + 35 + i * 46} cy={roofy - 12} r={7} fill="#5a74a8" /></g>)}</g>);
   if (R(seed, 58) > 0.4) kit.push(<g key="an" stroke="#2a3a70" strokeWidth={4} strokeLinecap="round"><path d={`M${x + w * 0.4} ${roofy - 4}V${roofy - 90}`} /><path d={`M${x + w * 0.4 - 16} ${roofy - 70}H${x + w * 0.4 + 16}`} /><path d={`M${x + w * 0.4 - 10} ${roofy - 54}H${x + w * 0.4 + 10}`} /></g>);
   if (R(seed, 59) > 0.35) kit.push(<g key="pl">{[0, 1, 2].map((i) => <circle key={i} cx={x + w * 0.52 + i * 16} cy={roofy - 14 - (i % 2) * 8} r={13 - (i % 2) * 3} fill={i % 2 ? "#3f8a72" : "#2f6e5e"} />)}<path d={rr(x + w * 0.5 - 4, roofy - 10, 52, 12, 4)} fill="#7a4a3a" /></g>);

@@ -245,7 +245,25 @@ Digambar dengan `produksi/remotion/src/r3/soft/kit.tsx` di `04-shots.tsx` siklus
 
 Kode: 2D di `produksi/remotion/src/r3/cast/T02.tsx` (Komo, Sepuh, Pak Aturan, Cicak, figuran `Warga`, benda T02 seperti `Gerbong`); 3D di `r3/three/cast/T02.tsx`. Lembar karakter: `produksi/remotion/src/experiment/castIndex.tsx`, hasil di `produksi/render/_eksperimen/T02-pemeran-lembar.png`.
 
-## 10. Contoh visual
+## 10. Galeri acuan dan contoh visual
+
+### 10.1 Galeri acuan (target visual yang dipakai agent)
+Gambar di `produksi/acuan-visual/` adalah **render kita sendiri** yang menjadi target kualitas. Gambar referensi pihak ketiga tidak disimpan di sini.
+
+Cara memakainya:
+- Agent membandingkan setiap still dengan acuan yang paling dekat jenis adegannya, memakai rubrik di `produksi/PIPELINE.md` bagian "Mesin R3" 10.
+- Acuan baru ditambahkan hanya setelah kreator menyetujui still-nya.
+
+| File | Jenis adegan | Yang dicontohkan | Status |
+| --- | --- | --- | --- |
+| `P01b-s01-Master16x9-t2.9.jpg` | subjek L1 di atas lingkungan kota senja | material air (T1, T2, T9, T10), blok kota 3/4, tengara, kedalaman lewat geser warna, cahaya senja | acuan sementara (putaran 6), menunggu persetujuan akhir |
+| `P01b-s01-Master16x9-t1.5.jpg` | miskonsepsi dicoret | metafora ditandai: siluet pucat bergaris putus + coretan | sama |
+| `P01b-s01-closeup-tetes-t2.9.jpg` | close-up subjek L1 | 4 nada datar, sabit putih, rim jingga putus, pantulan siluet kecil | sama |
+| `P01b-s01-detail-lingkungan-t2.9.jpg` | detail lingkungan L2 | menara air, perabot atap dengan bayangan kontak, balkon, jendela kaca memantulkan langit | sama |
+| `P01b-s01-Short9x16-t2.9.jpg` | tata letak vertikal | subjek di tengah, label di atas, caption di sepertiga bawah | sama |
+| `P01b-banding-P01-vs-P01b-s01.jpg` | sebelum dan sesudah | kiri: jebakan primitif (P01); kanan: standar ini | sama |
+
+### 10.2 Contoh visual lain
 
 | Yang diperlihatkan | File |
 | --- | --- |

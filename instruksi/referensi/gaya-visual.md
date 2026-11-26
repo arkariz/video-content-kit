@@ -251,7 +251,7 @@ Pola adalah alat bantu, bukan template wajib. Pilih menurut cerita dan subjek, t
 
 ## 7. Gate kesiapan visual
 
-Sebelum naskah disetujui untuk produksi, setiap scene dicek (oleh penulis, lalu oleh QA otomatis setelah validator Fase 4 ada):
+Sebelum naskah disetujui untuk produksi, setiap scene dicek (oleh penulis, lalu oleh QA otomatis G7):
 
 - [ ] Tujuan naratif jelas (`purpose`).
 - [ ] Semua subjek penting disebut dengan nama spesifik dan anatominya cukup untuk digambar.
@@ -264,7 +264,7 @@ Sebelum naskah disetujui untuk produksi, setiap scene dicek (oleh penulis, lalu 
 - [ ] (versi 2) Ilustrator bisa menggambar subjek L1 tanpa menebak siluet, material, dan cahaya.
 - [ ] (versi 2) Lingkungan punya tengara, tipe benda yang bervariasi, dan kejadian kecil.
 
-Gate kualitas **gambar** (still sebelum animasi) ada di `produksi/PIPELINE.md` bagian "Mesin R3" 9; gate di atas hanya menilai kelengkapan spesifikasi.
+Gate kualitas **gambar** (still sebelum animasi, tahap `still` di pipeline, `04-still.json`) ada di `produksi/PIPELINE.md` bagian "Mesin R3" 10; gate di atas hanya menilai kelengkapan spesifikasi dan diperiksa otomatis oleh QA G7.
 
 Mengembalikan scene ke penulis: animator menulis `"needs": "<pertanyaan>"` pada scene itu di `03-visual.json` dan tidak menggambarnya. Penulis menjawab dengan memperbarui bidangnya dan menghapus `needs`. Scene dengan `needs` tidak boleh masuk render penuh.
 

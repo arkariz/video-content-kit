@@ -55,6 +55,35 @@ Close-up dan detail lingkungan adalah crop dari render 1920×1080, bukan render 
 - Belum lulus: material + cahaya (3), lingkungan + komposisi (rata-rata 3,5), dan polesan (3).
 - Kesimpulan agent: **belum lulus gate still**. Dibutuhkan satu putaran lagi sebelum animasi.
 
+## Putaran 6 (setelah permintaan kreator "satu putaran lagi")
+
+| Perbaikan | Hasil |
+| --- | --- |
+| Celah di siluet kota jauh (`FarCity gap`) dan cahaya hangat menyapu adegan | matahari dan awan menyala terlihat di tengah, kota kanan tersiram jingga |
+| Bayangan kontak di bawah AC, tangki, dan menara air; pita highlight pada tangki | perabot atap tidak lagi melayang |
+| Jendela gelap memantulkan garis langit (material kaca) | muka gedung lebih kaya tanpa menambah benda |
+| Lobus nada terang di tengah tetes; hujan depan dipindah ke belakang subjek | bidang cyan lebih bervariasi, tidak ada garis hujan yang lewat di depan tetes |
+| Label pindah ke ruang negatif kiri atas, awan kiri diperkecil, tata letak vertikal disesuaikan | kanan atas lega; versi vertikal: label di atas, tetes kecil di samping menara |
+
+Skor perkiraan putaran 6, juga dicatat di `04-still.json`:
+
+| Dimensi | Skor |
+| --- | --- |
+| siluet | 4 |
+| kompleksitas | 3 |
+| hierarki | 4 |
+| material | 3 |
+| cahaya | 4 |
+| lingkungan | 4 |
+| komposisi | 4 |
+| kedalaman | 4 |
+| akurasi | 4 |
+| polesan | 3 |
+
+Gate masih tertahan di **material dan polesan (3)**. Sisanya sudah di 4.
+
+Kreator menyatakan puas dengan arah ini dan meminta pustaka aset, galeri acuan, gate still, dan validator dibangun. Still putaran 6 dipakai sebagai acuan sementara di `produksi/acuan-visual/`.
+
 ## Yang perlu diperbaiki di putaran berikutnya
 1. **Cahaya senja:**
    - Matahari dan awan menyala diletakkan di celah yang terlihat.
@@ -77,7 +106,7 @@ Close-up dan detail lingkungan adalah crop dari render 1920×1080, bukan render 
 - **Determinisme:** `s01-Master16x9-t2.9.png` dirender dua kali menghasilkan SHA-1 identik (`2958cefc35466bc9265f8ad4f483ea4b354258e9`).
 - **Waktu render:** sekitar 15 detik per still.
 - **Engine:** tidak diubah. Semua teknik memakai SVG yang sudah didukung (clipPath, mask, stroke-dasharray, `lerpColor`). Sejauh ini belum ada bukti bahwa engine perlu diubah (kelas D kosong).
-- **Aset:** semuanya lokal di `parts/art.tsx`. Prototipe P01 tidak diubah.
+- **Aset:** sejak putaran 6 dipindah ke pustaka bersama `@r3/art` (`produksi/remotion/src/r3/art/`). Siluet air mata tetap lokal di `parts/ghost.tsx`. Hash still identik sebelum dan sesudah pemindahan. Prototipe P01 tidak diubah.
 
 ## Perintah
 ```

@@ -3,7 +3,8 @@
 import React from "react";
 import { Easing } from "remotion";
 import { Frame, Layer, clamp, defineShots, mix, seg, shot, useShot } from "@r3";
-import { Lamp, TEAL, Tree, VIOLET, Block, Cloud, Drop2, Elevated, FarCity, Gables, MistBand, Office, RainLayer, RoofCorner, Sky, TearGhost2, WaterTower } from "./parts/art";
+import { Lamp, TEAL, Tree, VIOLET, Block, Cloud, Drop2, Elevated, FarCity, Gables, MistBand, Office, RainLayer, RoofCorner, Sky, WaterTower } from "@r3/art";
+import { TearGhost2 } from "./parts/ghost";
 
 const tw = (x: number, fb: number) => (Number.isFinite(x) ? x : fb);
 
@@ -39,7 +40,7 @@ const FallShot: React.FC = () => {
       <Layer cam={cam} d={0}><Sky t={t} /></Layer>
       <Layer cam={cam} d={0.08}>
         <g transform={`translate(${cityShift * 0.3} ${-fall * 0.15})`}>
-          <Cloud x={260} y={210} s={170} seed={3} base="#4a3486" lit="#f2a07c" shadow="#3a2a76" op={0.95} />
+          <Cloud x={110} y={300} s={120} seed={3} base="#4a3486" lit="#f2a07c" shadow="#3a2a76" op={0.95} />
           <Cloud x={1250} y={150} s={120} seed={7} op={0.85} />
           <Cloud x={1700} y={560} s={210} seed={11} base="#6a3a86" lit="#ffb07a" shadow="#4c2f7a" />
           <Cloud x={700} y={640} s={140} seed={5} base="#5a3784" lit="#f59a72" shadow="#45307a" op={0.9} />
@@ -49,8 +50,8 @@ const FallShot: React.FC = () => {
       </Layer>
       <Layer cam={cam} d={0.2}>
         <g transform={`translate(${cityShift * 0.5} ${cityDrop * 0.6 - fall * 0.3})`}>
-          <FarCity x0={-500} x1={2500} base={760} seed={44} fill="#6a4a96" hi="#f0a08a" t={t} lights={0.03} />
-          <FarCity x0={-500} x1={2500} base={820} seed={21} fill="#4c3a86" hi="#e0868a" t={t} />
+          <FarCity x0={-500} x1={2500} base={760} seed={44} fill="#6a4a96" hi="#f0a08a" t={t} lights={0.03} gap={[960, 1150]} />
+          <FarCity x0={-500} x1={2500} base={820} seed={21} fill="#4c3a86" hi="#e0868a" t={t} gap={[930, 1180]} />
         </g>
         <MistBand y={640 + cityDrop * 0.6 - fall * 0.3} h={260} color="#b0609a" op={0.5} />
       </Layer>
@@ -79,6 +80,9 @@ const FallShot: React.FC = () => {
         <MistBand y={930 + cityDrop - fall * 0.7} h={260} color="#6a3a86" op={0.45} />
       </Layer>
       <RainLayer t={t} n={70} seed={1} len={[22, 40]} w={2.5} color="#b9d8ff" op={0.35} speed={500} />
+      <RainLayer t={t} n={26} seed={2} len={[60, 110]} w={5} color="#d8ecff" op={0.3} speed={1100} />
+      <rect x={-200} y={-200} width={2400} height={1500} fill="url(#warmwash)" />
+      <defs><radialGradient id="warmwash" gradientUnits="userSpaceOnUse" cx={1050} cy={720} r={900}><stop offset={0} stopColor="#ff9a6a" stopOpacity={0.22} /><stop offset={1} stopColor="#ff9a6a" stopOpacity={0} /></radialGradient></defs>
       <Layer cam={cam} d={1}>
         {/* tekanan udara di bawah dasar tetes (penyederhanaan, C02) */}
         {air > 0 && [-0.55, 0.55].map((s, i) => {
@@ -95,9 +99,8 @@ const FallShot: React.FC = () => {
           </g>
         )}
         {/* tetes kecil (L2): tetap bulat */}
-        <Drop2 x={vertical ? 1000 : 1190} y={(vertical ? 250 : 400) + Math.sin(t * 2.6 + 1) * 8 - fall * 0.2} r={vertical ? 52 : 62} flat={0} t={t + 3} refl={0} />
+        <Drop2 x={vertical ? 980 : 1190} y={(vertical ? 660 : 400) + Math.sin(t * 2.6 + 1) * 8 - fall * 0.2} r={vertical ? 52 : 62} flat={0} t={t + 3} refl={0} />
       </Layer>
-      <RainLayer t={t} n={26} seed={2} len={[60, 110]} w={5} color="#d8ecff" op={0.3} speed={1100} />
       <Layer cam={cam} d={1.5}>
         <g transform={`translate(${vertical ? 380 : 0} ${(vertical ? 120 : 0) - fall * 0.9})`}><RoofCorner x={-60} y={975} t={t} /></g>
       </Layer>
@@ -106,5 +109,5 @@ const FallShot: React.FC = () => {
 };
 
 export default defineShots({
-  s01: [shot(FallShot, { labels: { "NOT A TEARDROP": [1090, 120, "none"], "FLATTENS": [1090, 215, "none"] }, labelBg: ["#d8466a", "#1484c2"], drift: false, focus: 760 })],
+  s01: [shot(FallShot, { labels: { "NOT A TEARDROP": [560, 100, "none"], "FLATTENS": [560, 195, "none"] }, labelBg: ["#d8466a", "#1484c2"], drift: false, focus: 760 })],
 });

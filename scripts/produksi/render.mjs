@@ -24,7 +24,9 @@ if (o.thumb) { // thumbnail dari script.thumbnails -> Thumbnail-A.png, Thumbnail
 }
 // Siklus yang memakai lapisan 3D (@r3/three) butuh WebGL di Chrome headless.
 const shotsFile = path.join(path.dirname(scriptPath), "04-shots.tsx");
-const gl = fs.existsSync(shotsFile) && /@r3\/three|r3\/soft\//.test(fs.readFileSync(shotsFile, "utf8")) ? ["--gl=angle"] : [];
+// Pindai 04-shots.tsx dan semua .tsx di folder siklus (mis. parts/), karena import 3D bisa ada di file bagian.
+const tsxFiles = (d) => fs.existsSync(d) ? fs.readdirSync(d, { withFileTypes: true }).flatMap((x) => x.isDirectory() ? tsxFiles(path.join(d, x.name)) : x.name.endsWith(".tsx") ? [path.join(d, x.name)] : []) : [];
+const gl = fs.existsSync(shotsFile) && tsxFiles(path.dirname(shotsFile)).some((f) => /@r3\/three|r3\/soft\//.test(fs.readFileSync(f, "utf8"))) ? ["--gl=angle"] : [];
 const FPS = 30; const PAUSE = Math.round(parseFloat(o.pause ?? "0.9") * FPS); // jeda akhir scene (detik)
 const cutDef = cut && script.shorts_cuts.find((c) => c.name === cut);
 const ids = o.still ? o.still.split(",") : o.scenes ? o.scenes.split(",") : cutDef ? cutDef.scene_ids : script.scenes.map((s) => s.id);

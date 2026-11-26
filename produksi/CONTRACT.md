@@ -22,7 +22,7 @@ Informasi tidak disalin antar lapisan: narasi hanya di `03-script.json`; klaim h
 ```
 - `id`: `C` + dua digit, unik per siklus, tidak dipakai ulang setelah dihapus.
 - `Status`: `terverifikasi`, `disederhanakan`, atau `belum` (arti di `instruksi/referensi/gaya-cerita.md` bagian 1.2).
-- Validator Fase 4 membaca baris yang diawali `| C`.
+- Validator (`readClaims` di `scripts/produksi/r3.mjs`) membaca baris yang memuat id `Cnn` dan status.
 
 ## Tingkat atas
 ```json
@@ -89,6 +89,7 @@ Wajib bila `03-script.json` menulis `"visual_spec": "03-visual.json"` (semua sik
 - Kunci `scenes` = id scene di `03-script.json`. Setiap scene yang punya `shots` harus punya entri.
 - `treatment`: `literal`, `simplified`, atau `metaphor`. `dimension`: `2d`, `2.5d`, atau `3d`. `pattern`: id dari `P01`–`P14` (`gaya-visual.md` bagian 6).
 - `claims`: id dari tabel riset. Subjek atau perilaku `literal` tidak boleh merujuk klaim berstatus `belum`.
+- `claims_file` (opsional, tingkat atas): path relatif ke file riset berisi tabel klaim; default `01-riset-viral.md` di folder siklus.
 - `palette` tingkat atas hanya untuk contoh di luar track; siklus track memakai palet track di `produksi/STYLE.md`.
 
 ### Versi 2: art direction (`"version": 2`)
@@ -116,14 +117,14 @@ Ditambahkan di Fase 3.5. Semua bidang opsional di skema. Siklus lama dan P01 (ve
 | V-13 | scene tanpa `light` atau `art_refs` | sedang |
 | V-14 | scene dengan `environment.setting` tanpa `landmark`, `types` (≥2), atau `life` | sedang |
 
-### Aturan validasi (diimplementasi di Fase 4, `validateVisualSpec` di `scripts/produksi/r3.mjs`)
+### Aturan validasi (`validateVisualSpec` di `scripts/produksi/r3.mjs`; dipanggil `build-visual.mjs --check` dan QA G7)
 | Kode | Aturan | Tingkat |
 | --- | --- | --- |
 | V-1 | `visual_spec` ditulis tapi file tidak ada | kritis |
 | V-2 | scene ber-`shots` tanpa entri | kritis |
 | V-3 | entri tanpa `purpose`, `subjects`, `environment`, `composition`, `animation`, `pattern`, atau `dimension` | kritis |
 | V-4 | subjek tanpa `treatment`, atau `anatomy` kurang dari 12 kata, atau tanpa `scale_ref` | sedang |
-| V-5 | `literal`/`simplified` tanpa `claims` di siklus yang punya tabel riset | sedang |
+| V-5 | perilaku, atau subjek L1 (atau tanpa `detail_level`), yang `literal`/`simplified` tanpa `claims` di siklus yang punya tabel riset; benda latar L2/L3 tidak wajib | sedang |
 | V-6 | klaim yang dirujuk tidak ada di tabel, atau `literal` merujuk klaim `belum` | kritis |
 | V-7 | label atau `count` berisi angka tanpa klaim di scene itu | sedang |
 | V-8 | `animation` tanpa `initial`, `sequence`, atau `final`; `behavior` memakai hanya kata kerja abstrak | kecil |
@@ -164,4 +165,4 @@ Keputusan kreator 2026-11-26: caption tampil **per kalimat** (satu kalimat utuh 
 9. **Pemeran tetap per track** (`produksi/STYLE.md`) supaya penonton mengenalinya.
 
 ## Alur
-Scene dengan `shots` dirender mesin R3: agent repo menulis komponen adegan per shot di `04-shots.tsx` (folder siklus), mesin mengatur waktu dari caption per kata, label, transisi, dan efek suara. Cara menulisnya, kamera, gerak, transisi, dan perintah cek ada di `produksi/PIPELINE.md`, bagian "Mesin R3"; tampilan di `produksi/STYLE.md`. Kontrak yang salah ditolak `build-visual.mjs` dan dilaporkan QA (G1–G6, dan G7 untuk `03-visual.json` setelah Fase 4) per scene.
+Scene dengan `shots` dirender mesin R3: agent repo menulis komponen adegan per shot di `04-shots.tsx` (folder siklus), mesin mengatur waktu dari caption per kata, label, transisi, dan efek suara. Cara menulisnya, kamera, gerak, transisi, dan perintah cek ada di `produksi/PIPELINE.md`, bagian "Mesin R3"; tampilan di `produksi/STYLE.md`. Kontrak yang salah ditolak `build-visual.mjs` dan dilaporkan QA (G1–G6, dan G7 untuk `03-visual.json`) per scene.

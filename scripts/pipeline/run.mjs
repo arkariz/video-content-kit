@@ -1,7 +1,7 @@
 // Penggerak produksi satu siklus. Pemakaian: node --env-file=.env scripts/pipeline/run.mjs --track T01 --siklus 001 [--from tahap] [--only tahap] [--dry]
 // Tiap tahap idempotent dan bisa dilanjutkan. Tahap LLM butuh CLI `claude` atau agen di sesi Claude Code (kode keluar 3).
 import fs from "node:fs"; import path from "node:path"; import { spawnSync } from "node:child_process";
-import { ROOT, args, resolveCycle, readJson, writeJson } from "../produksi/lib.mjs"; import { runPrompt } from "./llm.mjs";
+import { ROOT, args, resolveCycle, readJson, writeJson } from "../produksi/lib.mjs"; import { runPrompt } from "./llm.mjs"; import { stillBerlaku, stillStatus } from "./still.mjs";
 const o = args(); const { dir, cycleId } = resolveCycle(o.track, o.siklus); const trackdir = path.basename(path.dirname(path.dirname(dir)));
 const E = (f) => fs.existsSync(path.join(dir, f)); const node = (s, extra = []) => spawnSync("node", ["--env-file=.env", `scripts/${s}`, "--track", o.track, "--siklus", o.siklus, ...extra], { cwd: ROOT, stdio: "inherit" }).status;
 const script = () => readJson(path.join(dir, "03-script.json"), { scenes: [] });
@@ -13,6 +13,8 @@ const stages = [
   { id: "kontrak", done: () => false, run: () => node("produksi/build-visual.mjs", ["--check"]) },
   { id: "tts-en", done: allDur, run: () => node("produksi/tts.mjs", ["--lang", "en"]) },
   { id: "caption-en", done: () => fs.existsSync(path.join(ROOT, "produksi/captions", o.track, o.siklus, "en.json")), run: () => node("produksi/captions.mjs", ["--lang", "en"]) },
+  // gate kualitas visual: still per scene dinilai rubrik dan disetujui kreator sebelum render (hanya naskah visual_spec versi 2)
+  { id: "still", done: () => !stillBerlaku(dir, script()) || stillStatus(dir, script()).ok, run: () => node("pipeline/still.mjs") },
   { id: "footage", done: () => readJson(path.join(dir, "04-assets.json"), { footage: [] }).footage.length > 0, run: () => node("produksi/footage.mjs", ["plan"]) || node("produksi/footage.mjs", ["download"]) },
   { id: "adegan", done: () => E("04-stage.json"), run: () => node("produksi/apply-footage.mjs") },
   { id: "render", done: () => fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Master16x9-en.mp4")), run: () => { let st = node("produksi/render.mjs", ["--comp", "Master16x9", "--lang", "en"]); for (const c of script().shorts_cuts || []) st = st || node("produksi/render.mjs", ["--comp", "Short9x16", "--lang", "en", "--cut", c.name]); return st; } },
@@ -32,6 +34,7 @@ for (const s of stages) {
   const code = s.build?.() ? node("produksi/build-visual.mjs") : s.llm ? runPrompt(s.llm, { track: o.track, siklus: o.siklus, trackdir }) : s.run();
   state.log.push({ tahap: s.id, kode: code, detik: Math.round((Date.now() - t0) / 1000), waktu: new Date().toISOString() }); writeJson(path.join(dir, ".pipeline.json"), state);
   if (s.id === "qa" && code === 2) { console.log("■ QA GAGAL: berhenti (gate wajib). Lihat 05-qa.auto.md."); process.exit(2); }
+  if (code === 3 && s.id === "still") { console.log(`■ still menunggu penilaian rubrik dan persetujuan kreator (04-still.json). Cek: node scripts/pipeline/still.mjs --track ${o.track} --siklus ${o.siklus} --cek`); process.exit(3); }
   if (code === 3) { console.log(`■ ${s.id} butuh agen LLM. Jalankan "lanjut ${o.track}" di sesi Claude Code, lalu ulangi.`); process.exit(3); }
   if (code) { console.log(`■ ${s.id} gagal (kode ${code})`); process.exit(1); }
 }

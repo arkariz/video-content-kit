@@ -1,9 +1,9 @@
-// QA gaya wajib R3 (G1-G6). Dipakai qa.mjs, dan bisa dijalankan sendiri untuk satu naskah atau satu scene:
+// QA gaya wajib R3 (G1-G7). Dipakai qa.mjs, dan bisa dijalankan sendiri untuk satu naskah atau satu scene:
 //   node scripts/pipeline/qa-r3.mjs --track T02 --siklus 002 [--scene s06] [--script produksi/contoh-r3/.../03-script.json]
 // Kode keluar 2 bila ada temuan kritis.
 import path from "node:path"; import { pathToFileURL } from "node:url";
 import { ROOT, readJson, resolveCycle } from "../produksi/lib.mjs";
-import { longSentences, sentences, timeShots, validateR3 } from "../produksi/r3.mjs";
+import { longSentences, sentences, timeShots, validateR3, validateVisualSpec } from "../produksi/r3.mjs";
 
 const daftar = (a) => a.slice(0, 6).join(", ") + (a.length > 6 ? "…" : "");
 
@@ -33,6 +33,12 @@ export function cekR3(script, { footageIds = new Set(), captions = {}, scriptPat
     const lain = errs.filter((e) => !/show kosong|motion kosong|^anchor:|: word "/.test(e));
     if (lain.length) add("kritis", "G6", `kontrak R3 atau komponen adegan bermasalah (${lain.length}): ${daftar(lain)}`, "perbaiki kontrak shots / tulis 04-shots.tsx (produksi/PIPELINE.md, bagian Mesin R3)");
   }
+  // G7: arah visual 03-visual.json (V-1 sampai V-14), hanya bila naskah menulis visual_spec
+  const vs = validateVisualSpec(script, { scriptPath }).filter((f) => !only || only.includes(f.id) || !/^s\d/.test(f.id));
+  if (vs.length) {
+    const level = vs.some((f) => f.level === "kritis") ? "kritis" : vs.some((f) => f.level === "sedang") ? "sedang" : "kecil";
+    add(level, "G7", `arah visual belum siap (${vs.length}): ${daftar(vs.map((f) => `${f.id} ${f.code} ${f.msg}`))}`, "lengkapi 03-visual.json sesuai instruksi/referensi/gaya-visual.md bagian 3 dan 7");
+  }
   return F;
 }
 
@@ -45,7 +51,7 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const only = o.scene ? String(o.scene).split(",") : null;
   const footageIds = o.script ? new Set() : new Set(assets.footage.map((f) => f.scene_id));
   const F = cekR3(script, { footageIds, captions, scriptPath, track: o.track, only });
-  const ids = ["G1", "G2", "G3", "G4", "G5", "G6"];
+  const ids = ["G1", "G2", "G3", "G4", "G5", "G6", "G7"];
   console.log(`QA R3 ${o.track}/${o.siklus}${o.script ? ` (${path.relative(ROOT, scriptPath)})` : ""}${only ? ` scene ${only.join(",")}` : ""}`);
   for (const id of ids) { const f = F.find((x) => x.id === id); console.log(f ? `  ${id} ${f.level.toUpperCase()}: ${f.msg}` : `  ${id} lolos`); }
   process.exit(F.some((f) => f.level === "kritis") ? 2 : 0);

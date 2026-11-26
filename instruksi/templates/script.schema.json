@@ -422,6 +422,10 @@
             1,
             2
           ]
+        },
+        "claims_file": {
+          "type": "string",
+          "description": "Path relatif ke file riset berisi tabel klaim; default 01-riset-viral.md di folder siklus"
         }
       }
     },

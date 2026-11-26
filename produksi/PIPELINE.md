@@ -21,6 +21,7 @@ Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); 
 | visual | LLM | `anchor`, `cast`, dan `shots` per kalimat di `03-script.json`, arah visual per scene di `03-visual.json`, `broll` untuk scene dunia nyata, dan komponen adegan `04-shots.tsx` | ya |
 | kontrak | skrip | `build-visual.mjs --check`: shots, anchor, cast, dan komponen tiap scene di `04-shots.tsx` | ya |
 | tts-en, caption-en | skrip | audio, caption (disamakan dengan naskah, hasil STT mentah disimpan) | ya |
+| still | skrip + gate | `scripts/pipeline/still.mjs`: still per scene R3 → `04-still.json` dinilai rubrik (agent) lalu disetujui kreator. Hanya naskah `visual_spec` versi 2; berhenti kode 3 sampai lulus. Berlaku juga di mode `otomatis`. | ya |
 | footage | skrip | pilih otomatis footage nyata berlisensi (skor tag + durasi, tanpa duplikat), unduh, catat lisensi | ya |
 | adegan | skrip | scene footage jadi latar nyata | ya |
 | render | skrip | Master16x9 + semua Shorts di `shorts_cuts` | ya |
@@ -44,6 +45,7 @@ Kode bersama ada di `produksi/remotion/src/r3/`:
 | `cast/` | pemeran 2D per track |
 | `three/` (`@r3/three`) | lapisan 3D: `World`, `Post`, `s3` |
 | `soft/kit.tsx` | pustaka 3D lembut: `sc`, kamera bernama, benda dan wajah |
+| `art/` (`@r3/art`) | pustaka aset ilustrasi 2D/2.5D bersama (bagian 9): `Shade`, air, langit, kota, atmosfer |
 
 Logika waktu dan validasi di Node ada di `scripts/produksi/r3.mjs`, dipakai oleh `build-visual.mjs`, `render.mjs`, dan `scripts/pipeline/qa-r3.mjs`. Contoh scene 2D lengkap: `produksi/contoh-r3/T02-001-s06/` (s06 naskah T02-001 ditulis ulang; render T02-001 tidak berubah). Contoh 3D yang dipakai sebagai acuan: T02 siklus 002 sampai 004 (pustaka `soft`) dan T01 siklus 004 (`s3` sendiri di `parts/base.tsx`). T02-001 bukan acuan gaya.
 
@@ -210,10 +212,7 @@ Aturan pemilihan:
 ### 8. Batasan implementasi
 - **Koordinat:** logis 1920×1080 untuk 2D. Komposisi menskalakan ke 1080×1920 (`Short9x16`, `ClipID9x16`, `ThumbnailShort`). Untuk 2D vertikal, mesin memotong strip 607 px di sekitar `focus`.
 - **Determinisme:** semua gerak adalah fungsi murni dari `t`. Tanpa `Math.random`, `useState`, `useEffect`, atau waktu dinding. Acak hanya lewat `R`/`pick`.
-- **WebGL:** siklus yang mengimpor `@r3/three` atau `r3/soft/` dirender dengan `--gl=angle`.
-  - `render.mjs` sekarang hanya memeriksa `04-shots.tsx`.
-  - Import 3D yang ada di file bagian (`parts/*.tsx`) belum terdeteksi. Perbaikannya dijadwalkan di Fase 4.
-  - Sementara itu, tulis import 3D juga di `04-shots.tsx`.
+- **WebGL:** siklus yang mengimpor `@r3/three` atau `r3/soft/` dirender dengan `--gl=angle`. `render.mjs` memeriksa `04-shots.tsx` dan semua `.tsx` di folder siklus, termasuk `parts/`.
 - **Cache:** geometri, material, dan tekstur 3D di-cache per modul. Jangan membuat geometri baru per frame.
 - **Komponen hilang:** dirender sebagai "ADEGAN BELUM ADA" dan ditandai kritis oleh QA G6.
 - **Komponen baru:**
@@ -225,10 +224,22 @@ Pembagian tanggung jawab:
 
 | Lapisan | Menentukan | Tempat |
 | --- | --- | --- |
-| **Aset ilustrasi** | seperti apa benda terlihat: siluet, bagian, material, keadaan | fungsi React per subjek (`<Drop state flat t />`), di `parts/` siklus atau contoh. Dipromosikan ke `r3/art/` setelah dipakai ulang. |
+| **Aset ilustrasi** | seperti apa benda terlihat: siluet, bagian, material, keadaan | pustaka bersama `@r3/art` (lihat daftar di bawah); aset baru dibuat di `parts/` siklus, lalu dipromosikan ke `r3/art/` setelah lulus gate still |
 | **Scene** | susunan benda, lapisan, kamera | komponen shot di `04-shots.tsx` |
 | **Animasi** | gerak dan deformasi | parameter aset sebagai fungsi `t` (`seg`, `keys`, `pop`), di komponen shot |
 | **Engine** | waktu, label, transisi, render, Shorts | `r3/engine.tsx` (tidak berubah untuk gaya) |
+
+**Pustaka `@r3/art`** (Fase 3.5, dari benchmark P01b yang lulus putaran 6):
+
+| Modul | Komponen | Pakai untuk |
+| --- | --- | --- |
+| `core` | `Shade` (T1: nada bertingkat + highlight), `rr` (path kotak membulat), `useSid`, tipe `Tones` | setiap benda L1/L2: gambar path badan, bungkus dengan `Shade` |
+| `water` | `Drop2` (tetes, parameter `flat`, `refl`, squash `sx/sy`), `dropPath`, `WATER` | tetes, gelembung, permukaan air kecil |
+| `sky` | `Sky` (gradien senja + matahari), `Cloud` (gugus lobus, bawah menyala), `SKY` | langit senja dan awan |
+| `city` | `Block` (gedung 3/4 + perabot atap), `Gables` (pelana), `Office`, `WaterTower`, `FarCity` (siluet jauh, opsi `gap`), `Elevated` (kereta layang), `Tree`, `Lamp`, `RoofCorner` (latar depan atap + talang), keluarga nada `MID`, `TEAL`, `VIOLET`, `RIM` | lingkungan kota di semua track |
+| `atmos` | `RainLayer`, `MistBand` | hujan berlapis, kabut antar-lapisan |
+
+Contoh pemakaian lengkap: `produksi/contoh-r3/P01b-s01-benchmark/04-shots.tsx`. Mengubah komponen pustaka mengubah semua siklus yang memakainya. Jadi ubah hanya dengan menambah parameter baru (nilai bawaan tetap), lalu cek hash still P01b tidak berubah (bagian Cek).
 
 **Alur hibrida pembuatan aset:**
 1. **Aset tulisan tangan (wajib untuk L1).**
@@ -270,12 +281,12 @@ Pembagian tanggung jawab:
 Engine tetap fokus pada waktu, kamera, dan render; ia tidak menjadi editor ilustrasi.
 
 ### 10. Alur still-dulu dan gate kualitas visual
-1. **Spesifikasi lengkap.** Scene lulus gate kesiapan (`gaya-visual.md` bagian 7, termasuk bidang versi 2).
+1. **Spesifikasi lengkap.** Scene lulus gate kesiapan (`gaya-visual.md` bagian 7, termasuk bidang versi 2). Validator: QA G7 (`validateVisualSpec`, aturan V-1 sampai V-14 di CONTRACT.md).
 2. **Still dulu.**
    - Gambar komposisi utama sebagai satu frame diam, lalu render dengan `--still <scene> --at <detik>`.
    - Tambahkan close-up subjek L1, detail lingkungan, dan, bila berguna, satu sudut kamera alternatif.
    - Still harus sudah tampak di-art-direct tanpa bantuan gerak, kamera, atau efek.
-3. **Nilai still** dengan rubrik di bawah, berdampingan dengan acuan (`REFERENSI-GAYA.md`). Minta penilaian manusia (kreator).
+3. **Nilai still** dengan rubrik di bawah, berdampingan dengan galeri acuan `produksi/acuan-visual/` (indeks di `STYLE.md` 10.1). Isi `04-still.json`: skor per dimensi, catatan, dan `lulus`. Minta kreator melihat still dan mengisi `kreator.disetujui`.
 4. **Animasi** hanya setelah still lulus. Gerak menghidupkan ilustrasi yang sudah bagus, bukan menutupi kekurangannya.
 5. **Render video** dan nilai ulang dimensi gerak.
 
@@ -301,6 +312,17 @@ Engine tetap fokus pada waktu, kamera, dan render; ia tidak menjadi editor ilust
 
 - Penilaian agent dari still adalah perkiraan. Skor lulus final butuh penilaian manusia. Bila alat tidak memungkinkan penilaian objektif, misalnya karena still hanya dilihat sebagai JPEG kecil, tulis keterbatasannya, jangan klaim lulus.
 - Render yang berhasil tidak sama dengan kualitas visual yang berhasil.
+
+**Gate di pipeline:**
+- Tahap `still` di `run.mjs` (setelah caption, sebelum footage dan render) hanya lolos bila `04-still.json` memenuhi semua syarat berikut:
+  - setiap scene R3 punya skor minimal 4 pada dimensi wajib;
+  - setiap scene bernilai `lulus: true`;
+  - `kreator.disetujui: true`;
+  - file itu lebih baru dari `04-shots.tsx`.
+- Perintah:
+  - render dan buat kerangka penilaian: `node scripts/pipeline/still.mjs --track <ID> --siklus <NNN>`;
+  - cek status: tambah `--cek`.
+- Agent yang tidak bisa melihat gambar tidak boleh mengisi skor. Ia menyerahkan still ke kreator.
 
 ### Menulis `04-shots.tsx`
 ```tsx
@@ -351,7 +373,8 @@ npm --prefix produksi/remotion run typecheck
 node scripts/produksi/build-visual.mjs --track T02 --siklus 002 --check
 node scripts/produksi/render.mjs --track T02 --siklus 002 --still s06            # satu gambar per shot (atau --at 1.2,5)
 node scripts/produksi/render.mjs --track T02 --siklus 002 --scenes s05,s06       # render pendek, tidak dicatat di 04-assets.json
-node scripts/pipeline/qa-r3.mjs --track T02 --siklus 002 [--scene s06]           # G1-G6
+node scripts/pipeline/qa-r3.mjs --track T02 --siklus 002 [--scene s06]           # G1-G7
+node scripts/pipeline/still.mjs --track T02 --siklus 005 [--cek]                  # gate still (visual_spec versi 2)
 ```
 - Naskah di luar siklus (contoh): tambah `--script produksi/contoh-r3/<nama>/03-script.json`. Hasilnya masuk ke `produksi/render/_contoh/<nama>/`.
 - Registri hanya memindai `hasil/tracks/**/04-shots.tsx` dan `produksi/contoh-r3/**/04-shots.tsx`.
@@ -365,7 +388,7 @@ node scripts/pipeline/qa-r3.mjs --track T02 --siklus 002 [--scene s06]          
 - Musik latar terus-menerus.
 - Shorts versi 2D masih memotong bagian tengah 16:9 di titik `focus`.
 - `dissolve` belum menjadi jenis transisi kontrak.
-- Validator `03-visual.json` dan perbaikan deteksi GL dijadwalkan di Fase 4.
+- Animasi benchmark P01b (Phase D) belum dibuat; pustaka `@r3/art` baru teruji di still.
 
 ## Publish (Upload-Post)
 
@@ -388,7 +411,7 @@ Isi `.env` (nama variabel saja): `UPLOADPOST_API_KEY` (`UPLOADPOST_PROFILE` tida
 - Pengecualian QA dari kreator dicatat di TRACK.md (`pengecualian_qa`) dan tetap tampil sebagai temuan.
 
 ## Yang dicek QA otomatis
-Durasi ≥ 8:00 (jeda variabel: 0,65 dtk, 1,4 dtk sebelum re-hook/payoff/CTA), jarak re-hook, gaya R3 (G1 scene tanpa shots, G2 shot kurang dari kalimat, G3 shot tanpa show/motion, G4 label tidak di kalimatnya, G5 tanpa anchor, G6 kontrak atau komponen adegan bermasalah), footage ≤ ⅓ dan tidak lebih dari 2 scene berurutan, file dan lisensi footage, kelengkapan adegan, pola slop (em dash, kontras palsu, pembuka basa-basi, frasa slop ID), bubble yang mengulang narasi, jumlah sumber, salah ucap lewat transkrip balik, catatan suara, thumbnail, bukti kreator.
+Durasi ≥ 8:00 (jeda variabel: 0,65 dtk, 1,4 dtk sebelum re-hook/payoff/CTA), jarak re-hook, gaya R3 (G1 scene tanpa shots, G2 shot kurang dari kalimat, G3 shot tanpa show/motion, G4 label tidak di kalimatnya, G5 tanpa anchor, G6 kontrak atau komponen adegan bermasalah, G7 arah visual `03-visual.json` belum siap), footage ≤ ⅓ dan tidak lebih dari 2 scene berurutan, file dan lisensi footage, kelengkapan adegan, pola slop (em dash, kontras palsu, pembuka basa-basi, frasa slop ID), bubble yang mengulang narasi, jumlah sumber, salah ucap lewat transkrip balik, catatan suara, thumbnail, bukti kreator.
 
 ## Kebutuhan agar benar-benar tanpa tangan
 1. CLI `claude` terpasang (tahap LLM), atau tetap pakai sesi Claude Code.

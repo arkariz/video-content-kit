@@ -1,6 +1,7 @@
 {
   "version": 2,
   "cycle": "P01b",
+  "claims_file": "../P01-tetes-air/01-riset-viral.md",
   "_catatan": "Spesifikasi benchmark s01 (Fase 3.5). Klaim C01-C04: produksi/contoh-r3/P01-tetes-air/01-riset-viral.md. Resep T1-T13: produksi/REFERENSI-GAYA.md.",
   "palette": {
     "bg": [
