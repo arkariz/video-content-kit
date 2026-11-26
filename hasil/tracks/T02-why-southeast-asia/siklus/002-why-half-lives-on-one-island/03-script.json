@@ -1,0 +1,2953 @@
+{
+  "cycle": "002-why-half-lives-on-one-island",
+  "title_options": [
+    "Why Half of Indonesia Lives on One Island",
+    "Indonesia Moved 9 Million People Off Java. Java Grew by 95 Million",
+    "158 Million People, One Island: Why Java Is So Crowded"
+  ],
+  "thumbnail_text": [
+    "HALF ON ONE ISLAND",
+    "158 MILLION HERE"
+  ],
+  "promise": "After watching, you can explain why more than half of Indonesia lives on Java, and why 75 years of moving people off the island barely changed that.",
+  "creator_evidence": [
+    {
+      "what": "Sumber berbahasa Indonesia di layar sebagai catatan kaki: SUPAS 2025 (BPS, Mei 2026) dan data Kementerian Transmigrasi",
+      "scene_id": "s03"
+    },
+    {
+      "what": "Data dan arsip berbahasa Indonesia: jurnal transmigrasi Unri/UNY/Unmul, berita kolonisasi 1905, perubahan program 2026 (Katadata)",
+      "scene_id": "s29"
+    },
+    {
+      "what": "Opsional: klip kreator 5-10 detik kerumunan stasiun atau jalan di Jawa (produksi/footage-own/T02/jawa-01.mp4) untuk s44; bila tidak ada, pengecualian bukti-kreator berlaku",
+      "scene_id": "s44"
+    }
+  ],
+  "pronunciations": [
+    {
+      "term": "Merapi",
+      "say_as": "Muh-RAH-pee"
+    },
+    {
+      "term": "sawah",
+      "say_as": "SAH-wah"
+    },
+    {
+      "term": "Lampung",
+      "say_as": "LAHM-poong"
+    },
+    {
+      "term": "Madura",
+      "say_as": "Mah-DOO-rah"
+    },
+    {
+      "term": "Raffles",
+      "say_as": "RAF-ulz"
+    }
+  ],
+  "anchor": {
+    "kind": "map",
+    "desc": "satu peta Indonesia tetap: Jawa sebagai pulau terang penuh titik penduduk (grid titik bisa dihitung), pulau lain redup; garis waktu tahun di bawah peta (1815, 1830, 1900, 1950, 1961, 1970, 2025). Muncul di fondasi (s02, s05), tengah (s25, s32-s34, s37), dan penutup (s45-s49). Benda metafora berulang: kulkas Jawa (s10, s28, s48)"
+  },
+  "cast": [
+    "komo",
+    "aturan",
+    "cicak",
+    "sepuh"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "role": "hook",
+      "narration": {
+        "en": "You're standing on an island the size of England. A hundred and fifty-eight million people live on it with you.",
+        "id": "Kamu berdiri di sebuah pulau seluas Inggris. Seratus lima puluh delapan juta orang tinggal di pulau itu bersamamu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Komo berdiri di pematang sawah di Jawa saat pagi, lalu peta Jawa ditumpuk tepat di atas siluet England dengan ukuran yang sama",
+          "scale": "place",
+          "motion": "kamera naik dari Komo ke udara, siluet England meluncur masuk dan pas menutupi Jawa",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "SAME SIZE",
+              "word": "size"
+            }
+          ],
+          "faces": {
+            "komo": "neutral"
+          },
+          "mood": "day"
+        },
+        {
+          "sentence": 2,
+          "show": "dari udara, titik-titik orang muncul memenuhi pulau Jawa dari barat ke timur sampai pulau terang penuh",
+          "scale": "map",
+          "motion": "titik bertambah cepat dengan penghitung naik sampai 158 juta",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "158 MILLION",
+              "word": "million"
+            }
+          ],
+          "count": {
+            "value": 158000000,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+          "claim": "SUPAS 2025: penduduk Indonesia 284,67 juta, 55,65% di Jawa (sekitar 158 juta)"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Java",
+          "claim": "Luas Jawa sekitar 132.600 km² termasuk Madura"
+        },
+        {
+          "url": "https://www.britannica.com/summary/England",
+          "claim": "Luas England 130.278 km²"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": {
+        "en": "That's more people than all of Russia. It's also more than half of Indonesia, on about seven percent of the country's land.",
+        "id": "Lebih banyak dari seluruh penduduk Rusia. Juga lebih dari separuh Indonesia, di sekitar tujuh persen daratannya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua panel: Jawa yang padat titik di kiri, Rusia yang luas dengan titik lebih sedikit di kanan",
+          "scale": "map",
+          "motion": "titik Jawa terus bertambah sampai melewati jumlah titik Rusia, panel Jawa menyala",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "RUSSIA: 146M",
+              "word": "Russia"
+            }
+          ],
+          "count": {
+            "value": 146,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "peta Indonesia utuh, daratan dibagi grid kotak, hanya 7 kotak dari 100 yang menyala di Jawa tetapi separuh titik penduduk berkumpul di sana",
+          "scale": "map",
+          "motion": "kamera mundur dari Jawa ke seluruh nusantara, kotak lain meredup satu per satu",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "7% OF LAND",
+              "word": "seven"
+            }
+          ],
+          "count": {
+            "value": 7,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://tass.com/society/1907243",
+          "claim": "Penduduk Rusia 146,0 juta per 1 Januari 2025 (Rosstat)"
+        },
+        {
+          "url": "https://databoks.katadata.co.id/en/demographics/statistics/4e9e52829d77f4b/more-than-half-of-indonesias-population-lives-on-java",
+          "claim": "Jawa sekitar 7% luas daratan Indonesia, 56,1% penduduk (SP2020)"
+        },
+        {
+          "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+          "claim": "55,65% penduduk di Jawa (SUPAS 2025)"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "rehook",
+      "narration": {
+        "en": "For seventy-five years, Indonesia has been moving people off this island. It has moved more than nine million. Java grew anyway, by about ninety-five million.",
+        "id": "Selama tujuh puluh lima tahun, Indonesia memindahkan orang dari pulau ini. Lebih dari sembilan juta sudah dipindah. Jawa tetap bertambah, sekitar sembilan puluh lima juta."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kapal kecil berangkat dari pantai utara Jawa membawa keluarga ke pulau-pulau lain di peta",
+          "scale": "map",
+          "motion": "kapal bolak-balik, garis rute tergambar dari Jawa ke Sumatra dan Kalimantan",
+          "transition": "cut",
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "titik-titik orang mengalir keluar dari Jawa lewat garis rute",
+          "scale": "map",
+          "motion": "penghitung keluar naik sampai 9,2 juta",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "9.2 MILLION",
+              "word": "nine"
+            }
+          ],
+          "count": {
+            "value": 9200000,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "di saat yang sama Jawa menggembung, titik baru bermunculan jauh lebih cepat dari yang keluar",
+          "scale": "map",
+          "motion": "penghitung kedua naik sampai 95 juta dan menyusul penghitung pertama",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "+95 MILLION",
+              "word": "ninety-five"
+            }
+          ],
+          "count": {
+            "value": 95000000,
+            "as": "items"
+          },
+          "mood": "bright"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
+          "claim": "Sejak 1950 transmigrasi memindahkan sekitar 2,2 juta KK atau 9,2 juta jiwa (Kementerian Transmigrasi)"
+        },
+        {
+          "url": "https://journal.student.uny.ac.id/ilmu-sejarah/article/download/16594/16054",
+          "claim": "Jawa sekitar 63 juta jiwa pada 1961"
+        },
+        {
+          "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+          "claim": "Jawa sekitar 158 juta jiwa pada 2025"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "payoff",
+      "narration": {
+        "en": "The short answer is under your feet. Java's ground can feed a lot of people from a small field, and once the people came, everything else followed them.",
+        "id": "Jawaban singkatnya ada di bawah kakimu. Tanah Jawa bisa memberi makan banyak orang dari petak yang kecil, dan setelah orangnya datang, semua hal lain menyusul."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kamera menukik dari peta ke kaki Komo di pematang, lalu menembus tanah ke lapisan tanah gelap berbutir mineral",
+          "scale": "inside",
+          "motion": "kamera masuk ke dalam tanah, butir mineral berkilau",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "UNDER YOUR FEET",
+              "word": "feet"
+            }
+          ],
+          "faces": {
+            "komo": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "satu petak sawah menghasilkan tumpukan karung beras yang memberi makan barisan keluarga, lalu jalan, pabrik, dan kota tumbuh di sekitar barisan itu",
+          "scale": "place",
+          "motion": "karung bertambah, keluarga bertambah, bangunan muncul satu per satu mengikuti kerumunan",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "MORE PEOPLE",
+              "word": "people"
+            }
+          ],
+          "mood": "warm"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://kids.britannica.com/students/article/Java/327496",
+          "claim": "Tanah Jawa sangat subur karena diperkaya abu vulkanik secara berkala"
+        },
+        {
+          "url": "https://www.bps.go.id/id/pressrelease/2026/02/05/2546/ekonomi-indonesia-tahun-2025-tumbuh-5-11-persen",
+          "claim": "Jawa menyumbang 56,93% PDB Indonesia 2025"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": {
+        "en": "Start with the map. Java is one of five big islands, and two of them, Sumatra and Borneo, are far bigger.",
+        "id": "Mulai dari peta. Jawa satu dari lima pulau besar, dan dua di antaranya, Sumatra dan Kalimantan, jauh lebih besar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta Indonesia (jangkar) muncul dari laut, lima pulau besar terangkat satu per satu",
+          "scale": "map",
+          "motion": "pulau naik dari air dengan cipratan kecil, kamera melayang pelan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MAP",
+              "word": "map"
+            }
+          ],
+          "mood": "day"
+        },
+        {
+          "sentence": 2,
+          "show": "Sumatra dan Kalimantan membesar dan bersinar, Jawa terlihat kecil di bawahnya",
+          "scale": "map",
+          "motion": "dua pulau besar mengembang sedikit, Jawa tetap kecil",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "SUMATRA",
+              "word": "Sumatra"
+            },
+            {
+              "text": "BORNEO",
+              "word": "Borneo"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Java",
+          "claim": "Jawa pulau terbesar kelima di Indonesia"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": {
+        "en": "Indonesia's part of Borneo alone is about four times the size of Java. It holds about one Indonesian in sixteen, roughly thirty people per square kilometre against Java's twelve hundred.",
+        "id": "Bagian Kalimantan milik Indonesia saja sekitar empat kali luas Jawa. Isinya hanya sekitar satu dari enam belas orang Indonesia, kira-kira tiga puluh orang per kilometer persegi, dibanding seribu dua ratus di Jawa."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "empat potongan Jawa ditumpuk berjejer di atas Kalimantan sampai menutup pulau itu",
+          "scale": "map",
+          "motion": "potongan Jawa jatuh satu per satu dan mengunci di tempatnya",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "4× JAVA",
+              "word": "four"
+            }
+          ],
+          "count": {
+            "value": 4,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "dua kotak satu kilometer persegi berdampingan: kotak Kalimantan dengan 30 orang kecil, kotak Jawa dengan 1.200 orang berdesakan",
+          "scale": "object",
+          "motion": "orang di kotak Jawa terus muncul sampai penuh, kotak Kalimantan hampir kosong dan tenang",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "30 PER KM²",
+              "word": "thirty"
+            },
+            {
+              "text": "1,200",
+              "word": "twelve"
+            }
+          ],
+          "count": {
+            "value": 1200,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thejakartapost.com/news/2021/05/23/indonesia-remains-java-centric-despite-jokowis-infrastructure-campaign.html",
+          "claim": "Kalimantan luasnya empat kali Jawa dan dihuni 6,15% penduduk (SP2020)"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Java",
+          "claim": "Kepadatan Jawa sekitar 1.190 jiwa/km²"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "rehook",
+      "narration": {
+        "en": "So you'd guess Java won because it was the easy island, flat and calm. It's the opposite. A chain of volcanoes runs down its spine, and thirty-five of them are active.",
+        "id": "Jadi mungkin kamu menebak Jawa menang karena pulaunya mudah, datar dan tenang. Justru terbalik. Deretan gunung api membentang di punggungnya, dan tiga puluh lima masih aktif."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Komo membayangkan Jawa sebagai dataran hijau yang rata dan damai, gambar itu pudar seperti mimpi",
+          "scale": "place",
+          "motion": "gambar datar bergoyang lalu memudar",
+          "transition": "cut",
+          "faces": {
+            "komo": "happy"
+          },
+          "mood": "faded"
+        },
+        {
+          "sentence": 2,
+          "show": "gambar datar itu retak dan jatuh, di baliknya muncul Jawa yang bergunung",
+          "scale": "place",
+          "motion": "retakan menjalar, potongan gambar runtuh",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "WRONG",
+              "word": "opposite"
+            }
+          ],
+          "faces": {
+            "komo": "shock"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "dari samping, deretan gunung api berdiri di sepanjang punggung pulau, 35 puncak mengepulkan asap",
+          "scale": "map",
+          "motion": "asap naik satu per satu dari puncak, penghitung puncak aktif naik ke 35",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "35 ACTIVE",
+              "word": "thirty-five"
+            }
+          ],
+          "count": {
+            "value": 35,
+            "as": "items"
+          },
+          "mood": "danger"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://kids.britannica.com/students/article/Java/327496",
+          "claim": "Jawa punya 112 gunung api, 35 di antaranya aktif"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": {
+        "en": "People don't keep away from them either. On the slopes of Merapi, the most active volcano on Java, farmers leave when it erupts and come back to the same fields.",
+        "id": "Orang juga tidak menjauh dari gunung itu. Di lereng Merapi, gunung api paling aktif di Jawa, petani mengungsi saat gunung meletus lalu kembali ke ladang yang sama."
+      },
+      "broll": {
+        "keywords": [
+          "merapi volcano farmland",
+          "volcano village java farmers",
+          "mount merapi"
+        ],
+        "avoid": [
+          "lava closeup night",
+          "drone selfie"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/opag-2022-0122/html?lang=en",
+          "claim": "Merapi gunung api paling aktif di Jawa; banyak orang tetap tinggal di sana sebagai petani"
+        },
+        {
+          "url": "https://journal.ugm.ac.id/jae/article/download/82362/37573",
+          "claim": "Warga mengungsi saat erupsi dan kembali setelah bahaya lewat"
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": {
+        "en": "The reason is what the volcano leaves behind. Volcanic ash is crushed rock full of minerals that plants need. Every eruption sprinkles a fresh layer over the fields.",
+        "id": "Alasannya ada pada yang ditinggalkan gunung itu. Abu vulkanik adalah batuan halus penuh mineral yang dibutuhkan tanaman. Tiap letusan menaburkan lapisan baru di atas ladang."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "puncak gunung meletus kecil, awan abu mengembang dan melayang ke arah ladang di bawahnya",
+          "scale": "place",
+          "motion": "awan abu bergulung pelan menuruni lereng",
+          "transition": "cut",
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "kamera masuk ke satu butir abu: batuan pecah berisi butir mineral berwarna",
+          "scale": "inside",
+          "motion": "butir abu membesar, mineral di dalamnya menyala satu per satu",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "ASH",
+              "word": "ash"
+            },
+            {
+              "text": "MINERALS",
+              "word": "minerals"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "abu turun seperti salju tipis di atas sawah, lalu tunas padi tumbuh menembusnya",
+          "scale": "place",
+          "motion": "lapisan abu menebal, tunas hijau tumbuh cepat",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "FRESH LAYER",
+              "word": "layer"
+            }
+          ],
+          "mood": "warm"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://kids.britannica.com/students/article/Java/327496",
+          "claim": "Tanah Jawa subur karena diperkaya abu vulkanik secara berkala"
+        },
+        {
+          "url": "https://www.britannica.com/place/Indonesia/Soils",
+          "claim": "Batuan Jawa sebagian besar andesit vulkanik; tanah dari material andesit termasuk yang paling subur"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": {
+        "en": "Think of Java's soil as a fridge that restocks itself. Every harvest takes food off the shelves, and every so often the mountain fills them back up.",
+        "id": "Bayangkan tanah Jawa sebagai kulkas yang mengisi dirinya sendiri. Setiap panen mengambil makanan dari raknya, dan sesekali gunung itu mengisinya kembali."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "pulau Jawa berubah bentuk menjadi kulkas besar dengan gunung api di atasnya, pintunya terbuka memperlihatkan rak penuh beras dan sayur",
+          "scale": "object",
+          "motion": "pintu kulkas terbuka pelan, lampu dalamnya menyala hangat",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "THE FRIDGE",
+              "word": "fridge"
+            }
+          ],
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "tangan petani mengambil karung beras dari rak, lalu gunung di atas kulkas batuk abu dan rak terisi lagi",
+          "scale": "object",
+          "motion": "rak kosong sebentar, abu turun, isi rak muncul kembali",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "REFILL",
+              "word": "fills"
+            }
+          ],
+          "bubble": "Self-service, volcanic edition"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": {
+        "en": "Most tropical soil works the other way. Heavy rain washes the minerals down and out of reach. On much of Borneo, the fridge was emptied long ago, and nothing refills it.",
+        "id": "Tanah tropis umumnya sebaliknya. Hujan deras mencuci mineralnya jauh ke bawah. Di banyak bagian Kalimantan, kulkasnya sudah lama kosong, dan tak ada yang mengisi."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kulkas kedua berbentuk Kalimantan berdiri di samping kulkas Jawa, tanpa gunung api di atasnya",
+          "scale": "object",
+          "motion": "kamera bergeser dari kulkas Jawa ke kulkas Kalimantan",
+          "transition": "wipe",
+          "mood": "cool"
+        },
+        {
+          "sentence": 2,
+          "show": "potongan tanah: hujan deras turun, butir mineral tersapu air ke lapisan dalam jauh di bawah akar",
+          "scale": "inside",
+          "motion": "air merembes ke bawah membawa butir mineral, akar tidak sampai",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "WASHED OUT",
+              "word": "washes"
+            }
+          ],
+          "mood": "cool"
+        },
+        {
+          "sentence": 3,
+          "show": "pintu kulkas Kalimantan terbuka, raknya kosong dan berdebu, lampunya berkedip",
+          "scale": "object",
+          "motion": "pintu berderit terbuka, lampu berkedip lalu redup",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "EMPTY",
+              "word": "emptied"
+            }
+          ],
+          "mood": "faded"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.britannica.com/place/Indonesia/Soils",
+          "claim": "Suhu tinggi dan hujan lebat menyebabkan pencucian mineral yang menghasilkan tanah miskin; Kalimantan didominasi granit dan endapan"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": {
+        "en": "One correction, because the popular version gets this wrong. Ash from some volcanoes, in western Java and across much of Sumatra, is acidic and far less fertile. The best soil comes from one kind of lava, and much of Java happens to be built from it.",
+        "id": "Satu koreksi, karena versi populernya keliru di sini. Abu dari sebagian gunung api, di Jawa bagian barat dan di banyak bagian Sumatra, bersifat asam dan jauh kurang subur. Tanah terbaik datang dari satu jenis lava, dan sebagian besar Jawa kebetulan terbentuk dari lava itu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Cicak menempel di sudut peta dan mengangkat tangan kecilnya",
+          "scale": "object",
+          "motion": "Cicak merayap masuk ke frame lalu berhenti",
+          "transition": "cut",
+          "faces": {
+            "cicak": "smug"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "dua kulkas vulkanik: satu di Sumatra dan Jawa barat berisi rak setengah kosong berwarna kelabu",
+          "scale": "object",
+          "motion": "rak kelabu meredup, label asam menempel di pintu",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "ACIDIC",
+              "word": "acidic"
+            }
+          ],
+          "mood": "faded"
+        },
+        {
+          "sentence": 3,
+          "show": "aliran lava jenis tertentu mengalir di bawah sebagian besar Jawa dan berubah menjadi lapisan tanah gelap yang kaya",
+          "scale": "inside",
+          "motion": "lava mengalir lalu mendingin menjadi tanah, butir mineral menyala",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "BEST LAVA",
+              "word": "lava"
+            }
+          ],
+          "mood": "warm"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/77BD65D89AB2B22D403B0B336C3856D2/S0026749X00000196a.pdf/div-class-title-economic-myth-and-geographical-reality-in-indonesia-div.pdf",
+          "claim": "Tidak semua tanah vulkanik subur; abu di Jawa barat dan banyak bagian Sumatra bersifat asam"
+        },
+        {
+          "url": "https://www.britannica.com/place/Indonesia/Soils",
+          "claim": "Batuan Jawa sebagian besar andesit; tanah andesit termasuk yang paling subur"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "rehook",
+      "narration": {
+        "en": "A full fridge explains how people could live here. It doesn't explain how so many did. For that, you need to see what Javanese farmers did with water.",
+        "id": "Kulkas penuh menjelaskan kenapa orang bisa hidup di sini. Belum menjelaskan kenapa sebanyak ini. Untuk itu, lihat apa yang dilakukan petani Jawa dengan air."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kulkas Jawa penuh, satu keluarga kecil duduk di depannya",
+          "scale": "object",
+          "motion": "kamera melayang pelan mengelilingi kulkas",
+          "transition": "cut",
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "keluarga itu berlipat ganda berkali-kali sampai antrean panjang mengular di depan kulkas",
+          "scale": "place",
+          "motion": "antrean memanjang cepat ke luar frame",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "SO MANY",
+              "word": "many"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "air mengalir dari puncak gunung menuruni lereng menuju petak-petak sawah",
+          "scale": "place",
+          "motion": "aliran air bercabang dan berkilau di bawah matahari",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "WATER",
+              "word": "water"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "narration": {
+        "en": "This is a sawah, a flooded rice field. Water from the mountains runs from one terrace to the next and carries fresh minerals down with it.",
+        "id": "Inilah sawah, ladang padi yang digenangi air. Air dari gunung mengalir dari satu teras ke teras berikutnya dan membawa mineral baru bersamanya."
+      },
+      "broll": {
+        "keywords": [
+          "rice terraces java",
+          "sawah irrigation water",
+          "paddy field indonesia"
+        ],
+        "avoid": [
+          "bali tourist swing",
+          "drone selfie"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Agricultural_Involution",
+          "claim": "Sawah (padi beririgasi) adalah bentuk pertanian dominan di Jawa dan Bali"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": {
+        "en": "A flooded field holds up far better than a dry one. Farmers can plant it season after season without the soil giving out.",
+        "id": "Ladang yang digenangi jauh lebih tahan dibanding ladang kering. Petani bisa menanaminya musim demi musim tanpa tanahnya habis."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua petak berdampingan: petak kering retak dan pucat, petak sawah tergenang hijau",
+          "scale": "object",
+          "motion": "petak kering makin retak, petak sawah beriak lembut",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "DRY FIELD",
+              "word": "dry"
+            },
+            {
+              "text": "FLOODED",
+              "word": "flooded"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "garis waktu musim bergerak di bawah petak sawah, padi tumbuh, dipanen, ditanam lagi berulang",
+          "scale": "place",
+          "motion": "siklus tanam-panen berputar cepat, penanda musim bergeser",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "SEASON",
+              "word": "season"
+            }
+          ],
+          "count": {
+            "value": 10,
+            "as": "timeline"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://muse.jhu.edu/article/367736",
+          "claim": "Sawah merespons setiap tambahan tenaga kerja dan menjadi sistem yang stabil (Geertz 1963)"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "body",
+      "narration": {
+        "en": "There's one thing you need to know about a sawah. It pays back almost every extra hour you put into it.",
+        "id": "Ada satu hal yang perlu kamu tahu soal sawah. Sawah membalas hampir setiap jam tambahan yang kamu curahkan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "petak sawah diberi wajah ramah, menatap Komo",
+          "scale": "object",
+          "motion": "permukaan air sawah beriak membentuk senyum",
+          "transition": "push",
+          "faces": {
+            "komo": "neutral"
+          },
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "jam pasir di pematang, setiap butir yang jatuh menambah satu bulir padi di petak",
+          "scale": "object",
+          "motion": "pasir jatuh, bulir padi bertambah satu per satu",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "+1 HOUR",
+              "word": "hour"
+            }
+          ],
+          "count": {
+            "value": 12,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://muse.jhu.edu/article/367736",
+          "claim": "Sawah responsif terhadap setiap tambahan input tenaga kerja (Geertz 1963)"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "role": "body",
+      "narration": {
+        "en": "Weed a little more, plant the seedlings closer, guide the water more carefully, and the same field gives a little more rice. So for a farming family, one more child meant one more pair of hands, and more food from the same land.",
+        "id": "Siangi sedikit lebih rajin, tanam bibit lebih rapat, atur air lebih teliti, dan petak yang sama memberi sedikit lebih banyak padi. Jadi bagi keluarga petani, satu anak lagi berarti sepasang tangan lagi, dan lebih banyak makanan dari tanah yang sama."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tiga tangan bekerja di petak yang sama: mencabut gulma, menancap bibit rapat, membuka pintu air kecil",
+          "scale": "object",
+          "motion": "tiap tindakan membuat tumpukan beras di tepi petak naik sedikit",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "SAME FIELD",
+              "word": "field"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "keluarga petani di pematang bertambah satu anak, anak itu ikut menanam dan karung beras keluarga bertambah",
+          "scale": "place",
+          "motion": "anak muncul, mengambil bibit, karung baru jatuh ke tumpukan",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "+1 HANDS",
+              "word": "hands"
+            }
+          ],
+          "count": {
+            "value": 5,
+            "as": "items"
+          },
+          "mood": "warm"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://muse.jhu.edu/article/367736",
+          "claim": "Sawah yang menyerap tambahan tenaga kerja mendorong sistem kepemilikan dan keluarga yang makin rapat"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "narration": {
+        "en": "In Borneo's forests, many farmers did the opposite. They cleared a patch, grew crops for a few years until the soil was spent, then moved on. That kind of farming needs a lot of land for each family, so villages stayed small and far apart.",
+        "id": "Di hutan Kalimantan, banyak petani melakukan sebaliknya. Mereka membuka lahan, menanaminya beberapa tahun sampai tanahnya habis, lalu pindah. Cara itu butuh lahan luas per keluarga, jadi desanya kecil dan berjauhan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta wipe ke hutan Kalimantan dari atas",
+          "scale": "map",
+          "motion": "kamera turun ke kanopi hutan",
+          "transition": "wipe",
+          "mood": "cool"
+        },
+        {
+          "sentence": 2,
+          "show": "satu petak hutan dibuka, ladang tumbuh, lalu memudar pucat, dan keluarga berjalan ke petak berikutnya",
+          "scale": "place",
+          "motion": "siklus buka-tanam-tinggalkan berulang tiga kali, jejak kaki berpindah",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "MOVE ON",
+              "word": "moved"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "timeline"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "dari atas, desa-desa kecil berjauhan di tengah hutan luas",
+          "scale": "map",
+          "motion": "kamera mundur jauh, desa tampak seperti titik kecil terpencar",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "FAR APART",
+              "word": "apart"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Agricultural_Involution",
+          "claim": "Dua bentuk pertanian dominan: ladang berpindah (swidden) dan sawah; ladang berpindah lebih umum di luar Jawa dan Bali"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "narration": {
+        "en": "Same country, two different rules. One rewards more people on the same land, and the other needs more land for each person.",
+        "id": "Negara sama, dua aturan berbeda. Yang satu menghargai lebih banyak orang di tanah yang sama, yang lain butuh lebih banyak tanah per orang."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "layar dibelah dua: Jawa dengan sawah padat, Kalimantan dengan hutan luas",
+          "scale": "map",
+          "motion": "garis pembelah bergeser ke tengah, kedua sisi bergerak pelan",
+          "transition": "cut",
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "di sisi Jawa orang bertambah di petak yang sama, di sisi Kalimantan satu orang berjalan menempati petak makin luas",
+          "scale": "place",
+          "motion": "kedua sisi bergerak berlawanan, titik orang Jawa memadat",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "MORE PEOPLE",
+              "word": "people"
+            },
+            {
+              "text": "MORE LAND",
+              "word": "land"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "role": "rehook",
+      "narration": {
+        "en": "By 1815, when a British administrator named Raffles ran a count, Java had about four and a half million people. Historians think he undercounted. Even so, what came next was extreme.",
+        "id": "Pada 1815, saat pejabat Inggris bernama Raffles menghitung, Jawa berpenduduk sekitar empat setengah juta. Sejarawan menduga hitungannya terlalu rendah. Meski begitu, yang terjadi setelahnya luar biasa."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "garis waktu muncul di bawah peta dengan penanda 1815, juru hitung bertopi tinggi mencoret buku catatan",
+          "scale": "map",
+          "motion": "penanda tahun berhenti di 1815, titik orang muncul di Jawa sampai 4,5 juta",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "1815",
+              "word": "1815"
+            },
+            {
+              "text": "4.5 MILLION",
+              "word": "million"
+            }
+          ],
+          "count": {
+            "value": 4500000,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "buku catatan dengan halaman yang terlipat dan beberapa titik di luar catatan",
+          "scale": "object",
+          "motion": "titik-titik kecil menyelinap keluar dari halaman",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "UNDERCOUNT",
+              "word": "undercounted"
+            }
+          ],
+          "bubble": "Missed a few villages"
+        },
+        {
+          "sentence": 3,
+          "show": "garis waktu mulai berjalan cepat ke kanan, penghitung bergetar siap melonjak",
+          "scale": "map",
+          "motion": "garis waktu berakselerasi, kamera bergetar ringan",
+          "transition": "hold",
+          "mood": "bright"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://informahealthcare.com/doi/abs/10.1080/00324728.1970.10406113",
+          "claim": "Sensus Raffles 1815 sekitar 4,5 juta; 1900 sekitar 28,5 juta"
+        },
+        {
+          "url": "https://kyoto-seas.org/pdf/28/4/280404.pdf",
+          "claim": "Angka Raffles kemungkinan terlalu rendah"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "role": "rehook",
+      "narration": {
+        "en": "In 1830, the Dutch, who ruled Java, made a decision that tied the island's people to its fields for decades.",
+        "id": "Pada 1830, Belanda yang menguasai Jawa membuat keputusan yang mengikat penduduknya ke ladang selama puluhan tahun."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Pak Aturan versi kolonial (dokumen resmi berstempel Belanda) muncul di atas peta Jawa, tali-tali menjulur dari dokumen ke setiap desa",
+          "scale": "map",
+          "motion": "tali mengencang satu per satu mengikat desa ke ladang di sekitarnya, penanda tahun 1830",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "1830",
+              "word": "1830"
+            }
+          ],
+          "faces": {
+            "aturan": "smug"
+          },
+          "mood": "dusk"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+          "claim": "Sistem Tanam Paksa (Cultuurstelsel) diperkenalkan Belanda di Jawa, 1830"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "role": "body",
+      "narration": {
+        "en": "It was called the Cultivation System. Each village had to set aside a fifth of its land for export crops, like sugar and coffee, grown for the Dutch government.",
+        "id": "Namanya Sistem Tanam Paksa. Setiap desa wajib menyisihkan seperlima tanahnya untuk tanaman ekspor, seperti tebu dan kopi, yang ditanam untuk pemerintah Belanda."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dokumen Pak Aturan terbuka, stempel besar menghantam peta Jawa",
+          "scale": "object",
+          "motion": "stempel jatuh, debu kertas beterbangan",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "CULTIVATION SYSTEM",
+              "word": "Cultivation"
+            }
+          ],
+          "faces": {
+            "aturan": "smug"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "satu desa dari atas, ladangnya dibagi lima, satu bagian berubah warna menjadi kebun tebu dan kopi",
+          "scale": "place",
+          "motion": "garis pembagi tergambar, satu dari lima petak berganti tanaman",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "1/5 OF LAND",
+              "word": "fifth"
+            }
+          ],
+          "count": {
+            "value": 5,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+          "claim": "Desa menyisihkan seperlima tanah garapan untuk tanaman ekspor; tebu dan nila lalu kopi dan lainnya"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "role": "body",
+      "narration": {
+        "en": "It made the Netherlands rich. Between 1840 and 1880, sales from it paid for about a third of the Dutch national budget.",
+        "id": "Sistem itu membuat Belanda kaya. Antara 1840 dan 1880, hasil penjualannya membiayai sekitar sepertiga anggaran negara Belanda."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kapal penuh karung gula dan kopi berlayar dari Jawa ke Belanda di peta",
+          "scale": "map",
+          "motion": "kapal bergerak, gunungan koin tumbuh di Belanda",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "RICH",
+              "word": "rich"
+            }
+          ],
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "kue anggaran Belanda berbentuk lingkaran, sepertiganya terisi warna dari kapal Jawa",
+          "scale": "object",
+          "motion": "irisan sepertiga mengisi pelan, penanda tahun 1840 ke 1880 bergeser",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "1/3 OF BUDGET",
+              "word": "third"
+            }
+          ],
+          "count": {
+            "value": 33,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+          "claim": "1840–1880 penjualannya rata-rata 18 juta gulden per tahun, sekitar sepertiga anggaran Belanda"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "role": "body",
+      "narration": {
+        "en": "So the Dutch had every reason to keep the work where it already was. Sugar mills went up across Java, right next to the fields and the people who worked them.",
+        "id": "Jadi Belanda punya semua alasan untuk menjaga pekerjaan tetap di tempatnya. Pabrik gula berdiri di seluruh Jawa, tepat di samping ladang dan orang-orang yang menggarapnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Pak Aturan memegang peta Jawa erat-erat seperti barang berharga",
+          "scale": "object",
+          "motion": "Pak Aturan memeluk peta, kilau koin memantul di wajahnya",
+          "transition": "cut",
+          "faces": {
+            "aturan": "smug"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "di peta Jawa bermunculan cerobong pabrik gula, masing-masing tepat di samping petak tebu dan kerumunan titik penduduk",
+          "scale": "map",
+          "motion": "cerobong muncul satu per satu dan mulai berasap",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "SUGAR MILLS",
+              "word": "mills"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.doi.org/10.1017/S0026749X00007307",
+          "claim": "Industri gula Jawa ditransformasi di bawah Tanam Paksa lalu perusahaan gula Belanda"
+        },
+        {
+          "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+          "claim": "Tanam Paksa memperluas produksi desa di Jawa"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "role": "body",
+      "narration": {
+        "en": "Java's population didn't shrink under all that work. It grew. By 1900, Java had about twenty-eight and a half million people.",
+        "id": "Penduduk Jawa tidak menyusut di bawah kerja itu. Malah bertambah. Pada 1900, Jawa dihuni sekitar dua puluh delapan setengah juta orang."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "titik penduduk Jawa bergetar di bawah beban karung tebu tapi tidak berkurang",
+          "scale": "map",
+          "motion": "karung ditumpuk di atas titik, titik tetap bertahan",
+          "transition": "cut",
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "titik mulai berkembang biak",
+          "scale": "map",
+          "motion": "titik membelah diri",
+          "transition": "hold"
+        },
+        {
+          "sentence": 3,
+          "show": "garis waktu tiba di 1900, penghitung naik sampai 28,5 juta",
+          "scale": "map",
+          "motion": "penanda tahun meluncur ke 1900, titik memenuhi pulau",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "1900",
+              "word": "1900"
+            },
+            {
+              "text": "28.5 MILLION",
+              "word": "million"
+            }
+          ],
+          "count": {
+            "value": 28500000,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://informahealthcare.com/doi/abs/10.1080/00324728.1970.10406113",
+          "claim": "Jawa sekitar 28,5 juta pada 1900"
+        },
+        {
+          "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+          "claim": "Penduduk Jawa naik dari 6 juta ke 9,5 juta selama Tanam Paksa berjalan penuh"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "role": "body",
+      "narration": {
+        "en": "That's about six times Raffles' count, in less than a century.",
+        "id": "Sekitar enam kali hitungan Raffles, dalam kurang dari seabad."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "enam tumpukan titik seukuran hitungan 1815 berjajar, menyamai jumlah tahun 1900",
+          "scale": "object",
+          "motion": "tumpukan muncul satu per satu sampai enam, garis waktu 1815–1900 di bawahnya",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "6×",
+              "word": "six"
+            }
+          ],
+          "count": {
+            "value": 6,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://informahealthcare.com/doi/abs/10.1080/00324728.1970.10406113",
+          "claim": "4,5 juta (1815) ke 28,5 juta (1900)"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "role": "body",
+      "narration": {
+        "en": "Then came the catch. Each new generation split the family field again, until many plots were too small to feed the people working them.",
+        "id": "Di sinilah masalahnya. Tiap generasi baru membagi lagi sawah keluarga, sampai banyak petak terlalu kecil untuk menghidupi penggarapnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Cicak menunjuk retakan kecil di pematang",
+          "scale": "object",
+          "motion": "retakan kecil menjalar pelan",
+          "transition": "cut",
+          "faces": {
+            "cicak": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "satu petak sawah dibagi dua, lalu empat, lalu delapan, tiap potongan diisi satu keluarga yang makin berdesakan",
+          "scale": "object",
+          "motion": "garis pembagi muncul berulang, petak makin kecil, karung beras tiap keluarga makin tipis",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "SPLIT AGAIN",
+              "word": "split"
+            },
+            {
+              "text": "TOO SMALL",
+              "word": "small"
+            }
+          ],
+          "count": {
+            "value": 8,
+            "as": "split"
+          },
+          "mood": "faded"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ageconsearch.umn.edu/record/320860/files/AgMonograph15.pdf",
+          "claim": "Tekanan penduduk di Jawa membuat kepemilikan lahan terus terbagi-bagi"
+        },
+        {
+          "url": "https://dare.uva.nl/id/a580592c-eb8b-48c8-b247-414dafaef637",
+          "claim": "Tesis involusi Geertz diperdebatkan sejarawan Jawa"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "role": "rehook",
+      "narration": {
+        "en": "By the early 1900s, even the Dutch could see the fridge had more mouths than shelves. So they tried the obvious fix: move people somewhere else.",
+        "id": "Awal 1900-an, Belanda pun melihat kulkas itu punya lebih banyak mulut daripada rak. Jadi mereka mencoba solusi paling jelas: memindahkan orang."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kulkas Jawa kembali, antrean orang di depannya jauh lebih panjang dari jumlah raknya",
+          "scale": "object",
+          "motion": "antrean bergerak maju, rak hampir kosong",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MORE MOUTHS",
+              "word": "mouths"
+            }
+          ],
+          "mood": "faded"
+        },
+        {
+          "sentence": 2,
+          "show": "Pak Aturan kolonial menunjuk ke laut, ke arah Sumatra",
+          "scale": "map",
+          "motion": "panah besar tergambar dari Jawa menyeberang ke Sumatra",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SOMEWHERE ELSE",
+              "word": "somewhere"
+            }
+          ],
+          "faces": {
+            "aturan": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "role": "body",
+      "narration": {
+        "en": "In November 1905, the colonial government sent 155 Javanese families to Lampung, on the southern tip of Sumatra.",
+        "id": "Pada November 1905, pemerintah kolonial mengirim 155 keluarga Jawa ke Lampung, di ujung selatan Sumatra."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kapal kayu kecil berangkat dari Jawa membawa 155 keluarga, menyeberang ke ujung selatan Sumatra",
+          "scale": "map",
+          "motion": "kapal menyeberang selat, pin Lampung menyala, penanda tahun 1905",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "155 FAMILIES",
+              "word": "families"
+            },
+            {
+              "text": "LAMPUNG",
+              "word": "Lampung"
+            }
+          ],
+          "count": {
+            "value": 155,
+            "as": "items"
+          },
+          "mood": "dusk"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.detik.com/bali/berita/d-8238991/nusron-minta-warga-bali-ke-luar-pulau-ini-riwayat-transmigrasi-di-indonesia",
+          "claim": "November 1905: 155 KK dari Karanganyar, Kebumen, Purworejo, Kedu dipindahkan ke Gedong Tataan, Lampung"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "role": "body",
+      "narration": {
+        "en": "After independence, Indonesia turned that experiment into a national program called transmigration. In December 1950, the first group of twenty-five families left for Lampung.",
+        "id": "Setelah merdeka, Indonesia mengubah percobaan itu menjadi program nasional bernama transmigrasi. Pada Desember 1950, rombongan pertama berisi dua puluh lima keluarga berangkat ke Lampung."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Pak Aturan versi Indonesia (dokumen merah putih) mengambil alih peta dan menulis kata program di atas rute kapal",
+          "scale": "map",
+          "motion": "dokumen berganti warna, rute kapal menebal jadi jalur resmi",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "TRANSMIGRATION",
+              "word": "transmigration"
+            }
+          ],
+          "faces": {
+            "aturan": "happy"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "25 keluarga naik kapal di pelabuhan, penanda tahun 1950",
+          "scale": "place",
+          "motion": "keluarga melangkah ke kapal satu per satu, kapal berangkat",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "1950",
+              "word": "1950"
+            }
+          ],
+          "count": {
+            "value": 25,
+            "as": "items"
+          },
+          "mood": "warm"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://jkp.ejournal.unri.ac.id/index.php/JKP/article/download/8157/6888",
+          "claim": "Transmigrasi resmi dimulai 12 Desember 1950: 25 KK (98 orang) ke Lampung"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "role": "body",
+      "narration": {
+        "en": "Settlers got a plot of land, a house, and support for their first year.",
+        "id": "Transmigran mendapat lahan, rumah, dan bantuan untuk tahun pertama."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "keluarga transmigran tiba di lahan baru: sebidang tanah dipatok, rumah kayu berdiri, kalender satu tahun tergantung di dinding",
+          "scale": "place",
+          "motion": "patok tertancap, rumah naik dari tanah, halaman kalender terbalik",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "LAND",
+              "word": "land"
+            },
+            {
+              "text": "HOUSE",
+              "word": "house"
+            }
+          ],
+          "mood": "warm"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://jurnal.fkip.unmul.ac.id/index.php/yupa/article/download/3803/2249/22100",
+          "claim": "Transmigran diberi lahan untuk bercocok tanam dan dukungan keuangan selama satu tahun"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "role": "body",
+      "narration": {
+        "en": "So you'd expect Java to slowly empty out. In 1961, the first census after independence found sixty-three million people on Java.",
+        "id": "Jadi kamu mungkin mengira Jawa perlahan-lahan menyusut. Pada 1961, sensus pertama setelah merdeka mencatat enam puluh tiga juta orang di Jawa."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gambaran tebakan: pulau Jawa yang makin kosong dan sepi, dibuat pudar",
+          "scale": "map",
+          "motion": "titik di Jawa berkurang perlahan dalam gambaran tebakan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "THE GUESS",
+              "word": "expect"
+            }
+          ],
+          "mood": "faded"
+        },
+        {
+          "sentence": 2,
+          "show": "garis waktu ke 1961, petugas sensus menghitung, penghitung Jawa naik ke 63 juta",
+          "scale": "map",
+          "motion": "penanda tahun meluncur ke 1961, titik penuh kembali",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "1961",
+              "word": "1961"
+            },
+            {
+              "text": "63 MILLION",
+              "word": "sixty-three"
+            }
+          ],
+          "count": {
+            "value": 63000000,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://journal.student.uny.ac.id/ilmu-sejarah/article/download/16594/16054",
+          "claim": "1961: penduduk Indonesia ±97 juta, Jawa ±63 juta"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/1961_Indonesian_census",
+          "claim": "Sensus 1961 adalah sensus pertama setelah merdeka"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "role": "body",
+      "narration": {
+        "en": "Since 1950, transmigration has moved about nine point two million people, according to the ministry that runs it.",
+        "id": "Sejak 1950, transmigrasi sudah memindahkan sekitar sembilan koma dua juta orang, menurut kementerian yang menjalankannya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kapal demi kapal berangkat dari Jawa, setiap kapal menambah penghitung keluar",
+          "scale": "map",
+          "motion": "armada kapal bergerak terus, penghitung naik ke 9,2 juta, catatan kaki sumber kementerian",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "9.2 MILLION",
+              "word": "million"
+            }
+          ],
+          "count": {
+            "value": 9200000,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
+          "claim": "Sejak 1950: sekitar 2,2 juta KK atau 9,2 juta jiwa (Kementerian Transmigrasi)"
+        },
+        {
+          "url": "https://jkp.ejournal.unri.ac.id/index.php/JKP/article/download/8157/6888",
+          "claim": "Angka lain: 7,8 juta jiwa (Kemendes PDTT 2019)"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "role": "body",
+      "narration": {
+        "en": "Over the same years, Java went from sixty-three million to about a hundred and fifty-eight million. For every person the program moved, Java gained about ten.",
+        "id": "Di tahun-tahun yang sama, Jawa naik dari enam puluh tiga juta ke sekitar seratus lima puluh delapan juta. Tiap satu orang yang dipindahkan, Jawa bertambah sekitar sepuluh."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "garis waktu 1961 ke 2025, penghitung Jawa naik dari 63 juta ke 158 juta",
+          "scale": "map",
+          "motion": "penanda tahun meluncur, pulau menggembung",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "158 MILLION",
+              "word": "fifty-eight"
+            }
+          ],
+          "count": {
+            "value": 158000000,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "satu orang naik kapal keluar, sepuluh orang baru muncul di Jawa",
+          "scale": "object",
+          "motion": "pola satu keluar sepuluh masuk berulang dengan ritme",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "1 OUT",
+              "word": "every"
+            },
+            {
+              "text": "10 IN",
+              "word": "ten"
+            }
+          ],
+          "count": {
+            "value": 10,
+            "as": "items"
+          },
+          "faces": {
+            "komo": "shock"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://journal.student.uny.ac.id/ilmu-sejarah/article/download/16594/16054",
+          "claim": "Jawa ±63 juta (1961)"
+        },
+        {
+          "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+          "claim": "Jawa ±158 juta (SUPAS 2025)"
+        },
+        {
+          "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
+          "claim": "9,2 juta jiwa dipindahkan sejak 1950"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "role": "body",
+      "narration": {
+        "en": "To be fair, transmigration did change the map. In Lampung, about three quarters of the people today descend from migrants from Java, Madura and Bali.",
+        "id": "Supaya adil, transmigrasi memang mengubah peta. Di Lampung, sekitar tiga perempat penduduknya sekarang adalah keturunan pendatang dari Jawa, Madura, dan Bali."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "suasana berubah lebih terang, kamera iris ke Sumatra selatan",
+          "scale": "map",
+          "motion": "warna peta Sumatra menghangat",
+          "transition": "iris",
+          "mood": "bright"
+        },
+        {
+          "sentence": 2,
+          "show": "grid 100 titik di atas Lampung, 75 titik berwarna sama dengan Jawa, Madura, dan Bali",
+          "scale": "map",
+          "motion": "titik berubah warna satu per satu sampai tiga perempat",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "3/4",
+              "word": "three"
+            }
+          ],
+          "count": {
+            "value": 75,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Lampung",
+          "claim": "Tiga perempat penduduk Lampung keturunan pendatang Jawa, Madura, dan Bali"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "role": "body",
+      "narration": {
+        "en": "The program built whole districts and towns. It just could never move people as fast as Java was growing.",
+        "id": "Program itu membangun kabupaten dan kota baru. Hanya saja, tak pernah secepat pertumbuhan Jawa."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kota-kota kecil bermunculan di Sumatra dan Kalimantan di titik tujuan kapal",
+          "scale": "map",
+          "motion": "bangunan tumbuh di tiap pin tujuan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NEW TOWNS",
+              "word": "towns"
+            }
+          ],
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "lomba dua garis: garis kapal yang naik pelan dan garis penduduk Jawa yang melesat",
+          "scale": "object",
+          "motion": "dua garis berlomba, garis Jawa makin jauh di depan",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "JAVA",
+              "word": "Java"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://jkp.ejournal.unri.ac.id/index.php/JKP/article/download/8157/6888",
+          "claim": "Transmigrasi membentuk 1.183 desa definitif, 385 kecamatan, 104 kota/kabupaten, 2 ibu kota provinsi"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "role": "rehook",
+      "narration": {
+        "en": "Java's share of Indonesia did fall, from about sixty-five percent in 1961 to under fifty-six today. A big part of that came from something that never left the island.",
+        "id": "Porsi Jawa memang turun, dari sekitar enam puluh lima persen pada 1961 ke bawah lima puluh enam persen sekarang. Banyak dari penurunan itu datang dari sesuatu yang tak pernah meninggalkan pulau."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "grid 100 titik Indonesia, titik Jawa berkurang dari 65 ke 56",
+          "scale": "map",
+          "motion": "sembilan titik Jawa berganti warna menjadi pulau lain",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "65%",
+              "word": "sixty-five"
+            },
+            {
+              "text": "56%",
+              "word": "fifty-six"
+            }
+          ],
+          "count": {
+            "value": 56,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "kamera berputar kembali ke sebuah rumah desa di Jawa, pintunya tertutup",
+          "scale": "place",
+          "motion": "kamera mendekat pelan ke pintu rumah",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "NEVER LEFT",
+              "word": "never"
+            }
+          ],
+          "mood": "calm"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/1961_Indonesian_census",
+          "claim": "1961: 65% penduduk tinggal di Jawa"
+        },
+        {
+          "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+          "claim": "2025: 55,65% di Jawa"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "role": "body",
+      "narration": {
+        "en": "In 1970, Indonesia launched a national family planning program. At the time, a woman had between five and six children on average.",
+        "id": "Pada 1970, Indonesia meluncurkan program Keluarga Berencana nasional. Saat itu, rata-rata seorang perempuan punya lima sampai enam anak."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "pintu rumah terbuka, di dalamnya poster program Keluarga Berencana bergambar keluarga kecil, penanda tahun 1970",
+          "scale": "place",
+          "motion": "pintu terbuka, poster berkibar pelan",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "1970",
+              "word": "1970"
+            },
+            {
+              "text": "FAMILY PLANNING",
+              "word": "planning"
+            }
+          ],
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "satu ibu dengan barisan enam anak di sampingnya",
+          "scale": "object",
+          "motion": "anak muncul satu per satu sampai enam",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "5.6 CHILDREN",
+              "word": "children"
+            }
+          ],
+          "count": {
+            "value": 6,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://indonesia.unfpa.org/en/node/11919",
+          "claim": "Program KB didirikan 1970 di bawah BKKBN; TFR 5,6 pada akhir 1960-an"
+        },
+        {
+          "url": "https://databoks.katadata.co.id/en/demographics/statistics/e30b7b2cff9a7d8/indonesias-birth-rate-continues-to-decline",
+          "claim": "TFR 1971: 5,61"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "role": "body",
+      "narration": {
+        "en": "By 2020, that number was about two. And Java got there earlier. In the 1970s, Java grew by under two percent a year, while the other islands grew by more than two and a half.",
+        "id": "Pada 2020, angkanya sekitar dua. Dan Jawa sampai ke sana lebih dulu. Pada 1970-an, penduduk Jawa tumbuh di bawah dua persen per tahun, sementara pulau-pulau lain tumbuh lebih dari dua setengah persen."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "barisan enam anak menyusut menjadi dua, garis waktu bergerak dari 1971 ke 2020",
+          "scale": "object",
+          "motion": "empat anak memudar satu per satu",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "2.2",
+              "word": "two"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "dua pelari di lintasan: Jawa melambat lebih dulu",
+          "scale": "object",
+          "motion": "pelari Jawa mengurangi kecepatan",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 3,
+          "show": "dua batang pertumbuhan berdampingan: Jawa 1,7 persen, pulau lain 2,6 persen",
+          "scale": "object",
+          "motion": "batang pulau lain naik lebih tinggi",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "1.7%",
+              "word": "two"
+            },
+            {
+              "text": "2.6%",
+              "word": "half"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://databoks.katadata.co.id/en/demographics/statistics/e30b7b2cff9a7d8/indonesias-birth-rate-continues-to-decline",
+          "claim": "TFR turun ke 2,18 pada 2020"
+        },
+        {
+          "url": "https://discmaster.textfiles.com/view/12548/abacus-multimedia-mania.iso/dp/0020/00209.txt",
+          "claim": "1971–80: pertumbuhan penduduk Jawa 1,7% per tahun, pulau lain 2,6%"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "role": "body",
+      "narration": {
+        "en": "Add it up. If Java had kept its 1961 share, it would have about a hundred and eighty-five million people today. The boats moved nine million of the difference, and their children were born outside Java too. Slower births on Java itself did much of the rest.",
+        "id": "Coba dijumlahkan. Kalau Jawa mempertahankan porsinya di 1961, penduduknya sekarang sekitar seratus delapan puluh lima juta. Kapal memindahkan sembilan juta dari selisih itu, dan anak-anak mereka juga lahir di luar Jawa. Kelahiran yang lebih lambat di Jawa sendiri mengerjakan sebagian besar sisanya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kalkulator kayu di pematang, Komo memencet tombolnya",
+          "scale": "object",
+          "motion": "tombol ditekan, layar kalkulator berkedip",
+          "transition": "cut",
+          "faces": {
+            "komo": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "dua pulau Jawa bayangan: yang pudar berisi 185 juta, yang nyata berisi 158 juta, selisihnya melayang di tengah",
+          "scale": "map",
+          "motion": "selisih 27 juta titik terangkat dari pulau bayangan",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "185 MILLION",
+              "word": "eighty-five"
+            }
+          ],
+          "count": {
+            "value": 27000000,
+            "as": "dots"
+          },
+          "mood": "faded"
+        },
+        {
+          "sentence": 3,
+          "show": "kapal membawa sebagian titik selisih ke Sumatra dan Kalimantan, di sana titik itu beranak",
+          "scale": "map",
+          "motion": "kapal berlayar, titik di tujuan membelah diri",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "9 MILLION",
+              "word": "nine"
+            }
+          ]
+        },
+        {
+          "sentence": 4,
+          "show": "sisa titik selisih tidak pernah muncul, keluarga di rumah Jawa tetap kecil",
+          "scale": "place",
+          "motion": "titik sisa memudar menjadi bintang kecil, keluarga dua anak tersenyum",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "SLOWER BIRTHS",
+              "word": "births"
+            }
+          ],
+          "mood": "calm"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/1961_Indonesian_census",
+          "claim": "Porsi Jawa 65% pada 1961"
+        },
+        {
+          "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+          "claim": "Penduduk Indonesia 284,67 juta (2025)"
+        },
+        {
+          "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
+          "claim": "9,2 juta jiwa dipindahkan"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "role": "body",
+      "narration": {
+        "en": "Remember those 155 families on the boat in 1905? In 2025, the program moved 1,394 families. That's roughly five thousand people, about what Java adds in a single day.",
+        "id": "Ingat 155 keluarga di kapal tahun 1905 tadi? Pada 2025, program itu memindahkan 1.394 keluarga. Itu kira-kira lima ribu orang, sekitar jumlah yang bertambah di Jawa dalam satu hari."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kapal kayu kecil tahun 1905 muncul lagi di peta dengan komposisi yang sama",
+          "scale": "map",
+          "motion": "kapal kayu berlayar pelan seperti di awal",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "1905",
+              "word": "1905"
+            }
+          ],
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "kapal yang sama berganti menjadi kapal modern berisi 1.394 keluarga, penanda tahun 2025",
+          "scale": "map",
+          "motion": "kapal kayu berubah bentuk menjadi kapal modern, penghitung naik",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "1,394 FAMILIES",
+              "word": "families"
+            }
+          ],
+          "count": {
+            "value": 1394,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "jam satu hari berputar di atas Jawa, dan selama satu putaran muncul titik baru sebanyak isi kapal itu",
+          "scale": "map",
+          "motion": "jarum jam berputar sekali, titik baru memenuhi kapal bayangan di samping Jawa",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "ONE DAY",
+              "word": "day"
+            }
+          ],
+          "count": {
+            "value": 5000,
+            "as": "dots"
+          },
+          "faces": {
+            "komo": "shock"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.detik.com/bali/berita/d-8238991/nusron-minta-warga-bali-ke-luar-pulau-ini-riwayat-transmigrasi-di-indonesia",
+          "claim": "155 KK pada 1905"
+        },
+        {
+          "url": "https://www.goodnewsfromindonesia.id/short/sebanyak-1394-kepala-keluarga-ikut-transmigrasi-selama-2025",
+          "claim": "2025: 1.394 KK ikut transmigrasi; 95 KK setara 360 jiwa"
+        },
+        {
+          "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+          "claim": "Laju pertumbuhan penduduk 1,08% per tahun"
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "role": "body",
+      "narration": {
+        "en": "This year, the ministry changed course again. It now focuses on fewer settlement areas, mostly in eastern Indonesia, and pays settlers a monthly allowance while they start out.",
+        "id": "Tahun ini, kementerian kembali mengubah arah. Fokusnya sekarang pada lebih sedikit kawasan, sebagian besar di Indonesia timur, dan transmigran mendapat jaminan hidup bulanan selama masa awal."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Pak Aturan versi sekarang mencoret banyak pin di peta",
+          "scale": "map",
+          "motion": "pin-pin dicoret, sebagian kecil tetap menyala",
+          "transition": "cut",
+          "faces": {
+            "aturan": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "dari 154 pin tinggal 53 yang menyala, sebagian besar di timur, dan amplop bulanan jatuh ke tangan keluarga transmigran",
+          "scale": "map",
+          "motion": "pin padam satu per satu, amplop melayang turun",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "53 AREAS",
+              "word": "areas"
+            },
+            {
+              "text": "MONTHLY",
+              "word": "monthly"
+            }
+          ],
+          "count": {
+            "value": 53,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://katadata.co.id/berita/nasional/6a7c54e7b6ccc/pemerintah-ubah-pola-transmigrasi-warga-dapat-jaminan-rp-3-6-juta-per-bulan",
+          "claim": "2026: fokus dari 154 kawasan dipersempit ke 53 kawasan prioritas, terutama Indonesia timur; jaminan hidup Rp3,6 juta per bulan"
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "role": "rehook",
+      "narration": {
+        "en": "So the soil filled Java, the Dutch kept it full, and the boats couldn't empty it. That explains the past. Why does the crowd stay now?",
+        "id": "Jadi tanah mengisi Jawa, Belanda menjaganya penuh, dan kapal tak mampu mengosongkannya. Itu menjelaskan masa lalu. Kenapa kerumunannya bertahan sekarang?"
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "rangkuman tiga gambar yang muncul cepat: kulkas penuh, stempel Belanda, kapal kecil",
+          "scale": "object",
+          "motion": "tiga gambar bergeser seperti kartu di meja",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "sawah di pinggir kota berganti menjadi deretan pabrik dan gedung",
+          "scale": "place",
+          "motion": "padi tergantikan beton dari tepi ke tengah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "THE PAST",
+              "word": "past"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "Komo berdiri di tengah kerumunan stasiun kota, menoleh ke kamera",
+          "scale": "place",
+          "motion": "kerumunan mengalir di sekeliling Komo",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "WHY STAY?",
+              "word": "stay"
+            }
+          ],
+          "faces": {
+            "komo": "neutral"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "role": "body",
+      "narration": {
+        "en": "Because the crowd built everything else. Java produces about fifty-seven percent of Indonesia's economy.",
+        "id": "Karena kerumunan itu membangun semua hal lainnya. Jawa menghasilkan sekitar lima puluh tujuh persen perekonomian Indonesia."
+      },
+      "broll": {
+        "keywords": [
+          "jakarta skyline traffic",
+          "jakarta commuters crowd",
+          "surabaya city"
+        ],
+        "avoid": [
+          "protest",
+          "flood",
+          "politician"
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.bps.go.id/id/pressrelease/2026/02/05/2546/ekonomi-indonesia-tahun-2025-tumbuh-5-11-persen",
+          "claim": "Kontribusi Jawa terhadap PDB 2025: 56,93% (BPS)"
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "role": "body",
+      "narration": {
+        "en": "Ports, factories, universities and the capital, Jakarta, grew where the people already were. And those jobs keep pulling people toward Java's cities.",
+        "id": "Pelabuhan, pabrik, kampus, dan ibu kota, Jakarta, tumbuh di tempat orang-orangnya sudah berada. Dan pekerjaan itu terus menarik orang ke kota-kota di Jawa."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta Jawa dengan kerumunan titik, lalu pelabuhan, pabrik, kampus, dan kota Jakarta muncul tepat di atas kerumunan terpadat",
+          "scale": "map",
+          "motion": "bangunan tumbuh dari tengah kerumunan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "JAKARTA",
+              "word": "Jakarta"
+            }
+          ],
+          "mood": "day"
+        },
+        {
+          "sentence": 2,
+          "show": "titik-titik dari desa dan pulau lain bergerak seperti tertarik magnet ke kota-kota Jawa",
+          "scale": "map",
+          "motion": "aliran titik bergerak ke kota, kota makin terang",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "JOBS",
+              "word": "jobs"
+            }
+          ],
+          "mood": "night"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thejakartapost.com/news/2021/05/23/indonesia-remains-java-centric-despite-jokowis-infrastructure-campaign.html",
+          "claim": "Indonesia tetap berpusat di Jawa meskipun kampanye infrastruktur"
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "role": "body",
+      "narration": {
+        "en": "Even the hard numbers follow the crowd. Just over half of Indonesia's poor also live on Java, which is about what you'd expect from where everyone lives.",
+        "id": "Angka yang berat pun mengikuti kerumunan. Sedikit lebih dari separuh penduduk miskin Indonesia juga di Jawa, kurang lebih sesuai sebaran penduduknya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "grid titik penduduk miskin ditumpuk di atas peta",
+          "scale": "map",
+          "motion": "titik kelabu turun satu per satu",
+          "transition": "cut",
+          "mood": "cool"
+        },
+        {
+          "sentence": 2,
+          "show": "52 dari 100 titik kelabu jatuh di Jawa, hampir sama dengan porsi titik penduduk",
+          "scale": "map",
+          "motion": "titik kelabu mengendap di Jawa, dua grid disandingkan",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "52%",
+              "word": "half"
+            }
+          ],
+          "count": {
+            "value": 52,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.idntimes.com/business/economy/lebih-dari-separuh-penduduk-miskin-indonesia-terkonsentrasi-di-jawa-00-gshdq-r7kydq",
+          "claim": "Maret 2026: 52,42% penduduk miskin Indonesia di Jawa"
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "role": "body",
+      "narration": {
+        "en": "Which is why moving the crowd is so hard. People came for the soil. Their children stay for the jobs, the schools and the family that are already here.",
+        "id": "Itu sebabnya kerumunan ini sulit dipindah. Orang datang karena tanahnya. Anak-anaknya bertahan karena kerja, sekolah, dan keluarga yang sudah ada di sini."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kerumunan di Jawa dari atas, sebuah tangan raksasa mencoba mendorongnya, kerumunan kembali seperti air",
+          "scale": "map",
+          "motion": "tangan mendorong, kerumunan mengalir kembali ke tempatnya",
+          "transition": "cut",
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "keluarga petani lama datang ke sawah subur",
+          "scale": "place",
+          "motion": "keluarga berjalan menuruni lereng ke sawah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SOIL",
+              "word": "soil"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "anak-anak mereka di kota: kantor, sekolah, dan meja makan keluarga besar",
+          "scale": "place",
+          "motion": "kamera bergeser dari kantor ke sekolah ke meja makan",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "JOBS",
+              "word": "jobs"
+            },
+            {
+              "text": "FAMILY",
+              "word": "family"
+            }
+          ],
+          "mood": "warm"
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "role": "payoff",
+      "narration": {
+        "en": "So go back to the fridge. It still restocks itself every time a volcano clears its throat. What keeps the island full now is the crowd itself.",
+        "id": "Kembali ke kulkas tadi. Kulkas itu masih terisi sendiri tiap kali gunung berdeham. Yang membuat pulau ini tetap penuh sekarang adalah kerumunannya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kulkas Jawa dari awal video kembali dengan komposisi yang sama",
+          "scale": "object",
+          "motion": "pintu kulkas terbuka pelan seperti di awal",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "THE FRIDGE",
+              "word": "fridge"
+            }
+          ],
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "gunung di atas kulkas batuk abu kecil, rak terisi lagi",
+          "scale": "object",
+          "motion": "abu turun, rak terisi",
+          "transition": "hold",
+          "bubble": "Still on duty"
+        },
+        {
+          "sentence": 3,
+          "show": "kamera mundur: kulkas ternyata berdiri di tengah kota yang penuh orang, kerumunan mengelilinginya",
+          "scale": "place",
+          "motion": "kamera mundur jauh, kota terang di malam hari",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "THE CROWD",
+              "word": "crowd"
+            }
+          ],
+          "mood": "night"
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "role": "cta",
+      "narration": {
+        "en": "And that crowd has to get to work every morning. Jakarta's answer was to run its commuter trains on Tokyo's retired cars for decades, until a twist this November. That's the video to watch next.",
+        "id": "Dan kerumunan itu harus berangkat kerja setiap pagi. Jawaban Jakarta: kereta komuter dari gerbong pensiunan Tokyo, selama puluhan tahun, sampai kejutan November ini. Itu video yang perlu kamu tonton berikutnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "pagi hari, kerumunan dari kota mengalir ke satu peron stasiun",
+          "scale": "place",
+          "motion": "kerumunan bergerak ke peron, matahari terbit",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "EVERY MORNING",
+              "word": "morning"
+            }
+          ],
+          "mood": "day"
+        },
+        {
+          "sentence": 2,
+          "show": "Sepuh, kereta tua eks-Tokyo, masuk ke peron dan membuka pintunya",
+          "scale": "place",
+          "motion": "Sepuh berhenti, pintu terbuka, penumpang naik",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "TOKYO",
+              "word": "Tokyo"
+            }
+          ],
+          "faces": {
+            "sepuh": "tired"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "peta laut Tokyo ke Jakarta dari video sebelumnya, kapal membawa kereta, kamera berhenti",
+          "scale": "map",
+          "motion": "kapal bergerak, layar membeku dengan tanda putar",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "NEXT VIDEO",
+              "word": "video"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+          "claim": "Kerumunan di Jawa (konteks)"
+        }
+      ]
+    }
+  ],
+  "shorts_cuts": [
+    {
+      "name": "B1-moved-9-million-grew-95",
+      "scene_ids": [
+        "s32",
+        "s33",
+        "s34",
+        "s41"
+      ],
+      "hook_override": "You'd think moving nine million people would empty Java."
+    },
+    {
+      "name": "B2-island-the-size-of-england",
+      "scene_ids": [
+        "s01",
+        "s02",
+        "s07",
+        "s09",
+        "s10"
+      ],
+      "hook_override": "You're on an island the size of England, with 158 million people."
+    }
+  ],
+  "anti_slop": {
+    "text_score_en": 40,
+    "text_score_id": 38
+  },
+  "thumbnails": [
+    {
+      "lines": [
+        {
+          "text": "HALF ON",
+          "color": "#ffffff",
+          "size": 150
+        },
+        {
+          "text": "ONE ISLAND",
+          "color": "#f2b632",
+          "size": 180
+        }
+      ],
+      "stage": {
+        "bg": "sea",
+        "cam": {
+          "z": [
+            1,
+            1
+          ]
+        },
+        "actors": [
+          {
+            "id": "i",
+            "kind": "island",
+            "x": 0.8,
+            "scale": 1.7,
+            "emo": "shock"
+          }
+        ]
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "158 MILLION",
+          "color": "#f2b632",
+          "size": 170
+        },
+        {
+          "text": "HERE",
+          "color": "#ffffff",
+          "size": 190
+        }
+      ],
+      "stage": {
+        "bg": "sea",
+        "cam": {
+          "z": [
+            1,
+            1
+          ]
+        },
+        "actors": [
+          {
+            "id": "v",
+            "kind": "volcano",
+            "x": 0.8,
+            "scale": 1.7,
+            "emo": "smug"
+          }
+        ]
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "scene": "s01",
+      "title": "One island, 158 million people"
+    },
+    {
+      "scene": "s05",
+      "title": "The ground"
+    },
+    {
+      "scene": "s14",
+      "title": "A field that pays for more hands"
+    },
+    {
+      "scene": "s21",
+      "title": "The Dutch decision"
+    },
+    {
+      "scene": "s29",
+      "title": "Moving people off Java"
+    },
+    {
+      "scene": "s38",
+      "title": "What actually slowed Java"
+    },
+    {
+      "scene": "s44",
+      "title": "Why the crowd stays"
+    },
+    {
+      "scene": "s48",
+      "title": "Back to the fridge"
+    }
+  ],
+  "tags": [
+    "Java",
+    "Indonesia",
+    "most populated island",
+    "transmigration",
+    "volcanic soil",
+    "Southeast Asia",
+    "geography",
+    "population",
+    "Cultivation System",
+    "sawah"
+  ],
+  "sources": [
+    {
+      "scene": "s01",
+      "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+      "claim": "SUPAS 2025: penduduk Indonesia 284,67 juta, 55,65% di Jawa (sekitar 158 juta)"
+    },
+    {
+      "scene": "s01",
+      "url": "https://en.wikipedia.org/wiki/Java",
+      "claim": "Luas Jawa sekitar 132.600 km² termasuk Madura"
+    },
+    {
+      "scene": "s01",
+      "url": "https://www.britannica.com/summary/England",
+      "claim": "Luas England 130.278 km²"
+    },
+    {
+      "scene": "s02",
+      "url": "https://tass.com/society/1907243",
+      "claim": "Penduduk Rusia 146,0 juta per 1 Januari 2025 (Rosstat)"
+    },
+    {
+      "scene": "s02",
+      "url": "https://databoks.katadata.co.id/en/demographics/statistics/4e9e52829d77f4b/more-than-half-of-indonesias-population-lives-on-java",
+      "claim": "Jawa sekitar 7% luas daratan Indonesia, 56,1% penduduk (SP2020)"
+    },
+    {
+      "scene": "s02",
+      "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+      "claim": "55,65% penduduk di Jawa (SUPAS 2025)"
+    },
+    {
+      "scene": "s03",
+      "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
+      "claim": "Sejak 1950 transmigrasi memindahkan sekitar 2,2 juta KK atau 9,2 juta jiwa (Kementerian Transmigrasi)"
+    },
+    {
+      "scene": "s03",
+      "url": "https://journal.student.uny.ac.id/ilmu-sejarah/article/download/16594/16054",
+      "claim": "Jawa sekitar 63 juta jiwa pada 1961"
+    },
+    {
+      "scene": "s03",
+      "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+      "claim": "Jawa sekitar 158 juta jiwa pada 2025"
+    },
+    {
+      "scene": "s04",
+      "url": "https://kids.britannica.com/students/article/Java/327496",
+      "claim": "Tanah Jawa sangat subur karena diperkaya abu vulkanik secara berkala"
+    },
+    {
+      "scene": "s04",
+      "url": "https://www.bps.go.id/id/pressrelease/2026/02/05/2546/ekonomi-indonesia-tahun-2025-tumbuh-5-11-persen",
+      "claim": "Jawa menyumbang 56,93% PDB Indonesia 2025"
+    },
+    {
+      "scene": "s05",
+      "url": "https://en.wikipedia.org/wiki/Java",
+      "claim": "Jawa pulau terbesar kelima di Indonesia"
+    },
+    {
+      "scene": "s06",
+      "url": "https://www.thejakartapost.com/news/2021/05/23/indonesia-remains-java-centric-despite-jokowis-infrastructure-campaign.html",
+      "claim": "Kalimantan luasnya empat kali Jawa dan dihuni 6,15% penduduk (SP2020)"
+    },
+    {
+      "scene": "s06",
+      "url": "https://en.wikipedia.org/wiki/Java",
+      "claim": "Kepadatan Jawa sekitar 1.190 jiwa/km²"
+    },
+    {
+      "scene": "s07",
+      "url": "https://kids.britannica.com/students/article/Java/327496",
+      "claim": "Jawa punya 112 gunung api, 35 di antaranya aktif"
+    },
+    {
+      "scene": "s08",
+      "url": "https://www.degruyterbrill.com/document/doi/10.1515/opag-2022-0122/html?lang=en",
+      "claim": "Merapi gunung api paling aktif di Jawa; banyak orang tetap tinggal di sana sebagai petani"
+    },
+    {
+      "scene": "s08",
+      "url": "https://journal.ugm.ac.id/jae/article/download/82362/37573",
+      "claim": "Warga mengungsi saat erupsi dan kembali setelah bahaya lewat"
+    },
+    {
+      "scene": "s09",
+      "url": "https://kids.britannica.com/students/article/Java/327496",
+      "claim": "Tanah Jawa subur karena diperkaya abu vulkanik secara berkala"
+    },
+    {
+      "scene": "s09",
+      "url": "https://www.britannica.com/place/Indonesia/Soils",
+      "claim": "Batuan Jawa sebagian besar andesit vulkanik; tanah dari material andesit termasuk yang paling subur"
+    },
+    {
+      "scene": "s11",
+      "url": "https://www.britannica.com/place/Indonesia/Soils",
+      "claim": "Suhu tinggi dan hujan lebat menyebabkan pencucian mineral yang menghasilkan tanah miskin; Kalimantan didominasi granit dan endapan"
+    },
+    {
+      "scene": "s12",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/77BD65D89AB2B22D403B0B336C3856D2/S0026749X00000196a.pdf/div-class-title-economic-myth-and-geographical-reality-in-indonesia-div.pdf",
+      "claim": "Tidak semua tanah vulkanik subur; abu di Jawa barat dan banyak bagian Sumatra bersifat asam"
+    },
+    {
+      "scene": "s12",
+      "url": "https://www.britannica.com/place/Indonesia/Soils",
+      "claim": "Batuan Jawa sebagian besar andesit; tanah andesit termasuk yang paling subur"
+    },
+    {
+      "scene": "s14",
+      "url": "https://en.wikipedia.org/wiki/Agricultural_Involution",
+      "claim": "Sawah (padi beririgasi) adalah bentuk pertanian dominan di Jawa dan Bali"
+    },
+    {
+      "scene": "s15",
+      "url": "https://muse.jhu.edu/article/367736",
+      "claim": "Sawah merespons setiap tambahan tenaga kerja dan menjadi sistem yang stabil (Geertz 1963)"
+    },
+    {
+      "scene": "s16",
+      "url": "https://muse.jhu.edu/article/367736",
+      "claim": "Sawah responsif terhadap setiap tambahan input tenaga kerja (Geertz 1963)"
+    },
+    {
+      "scene": "s17",
+      "url": "https://muse.jhu.edu/article/367736",
+      "claim": "Sawah yang menyerap tambahan tenaga kerja mendorong sistem kepemilikan dan keluarga yang makin rapat"
+    },
+    {
+      "scene": "s18",
+      "url": "https://en.wikipedia.org/wiki/Agricultural_Involution",
+      "claim": "Dua bentuk pertanian dominan: ladang berpindah (swidden) dan sawah; ladang berpindah lebih umum di luar Jawa dan Bali"
+    },
+    {
+      "scene": "s20",
+      "url": "https://informahealthcare.com/doi/abs/10.1080/00324728.1970.10406113",
+      "claim": "Sensus Raffles 1815 sekitar 4,5 juta; 1900 sekitar 28,5 juta"
+    },
+    {
+      "scene": "s20",
+      "url": "https://kyoto-seas.org/pdf/28/4/280404.pdf",
+      "claim": "Angka Raffles kemungkinan terlalu rendah"
+    },
+    {
+      "scene": "s21",
+      "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+      "claim": "Sistem Tanam Paksa (Cultuurstelsel) diperkenalkan Belanda di Jawa, 1830"
+    },
+    {
+      "scene": "s22",
+      "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+      "claim": "Desa menyisihkan seperlima tanah garapan untuk tanaman ekspor; tebu dan nila lalu kopi dan lainnya"
+    },
+    {
+      "scene": "s23",
+      "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+      "claim": "1840–1880 penjualannya rata-rata 18 juta gulden per tahun, sekitar sepertiga anggaran Belanda"
+    },
+    {
+      "scene": "s24",
+      "url": "https://www.doi.org/10.1017/S0026749X00007307",
+      "claim": "Industri gula Jawa ditransformasi di bawah Tanam Paksa lalu perusahaan gula Belanda"
+    },
+    {
+      "scene": "s24",
+      "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+      "claim": "Tanam Paksa memperluas produksi desa di Jawa"
+    },
+    {
+      "scene": "s25",
+      "url": "https://informahealthcare.com/doi/abs/10.1080/00324728.1970.10406113",
+      "claim": "Jawa sekitar 28,5 juta pada 1900"
+    },
+    {
+      "scene": "s25",
+      "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
+      "claim": "Penduduk Jawa naik dari 6 juta ke 9,5 juta selama Tanam Paksa berjalan penuh"
+    },
+    {
+      "scene": "s26",
+      "url": "https://informahealthcare.com/doi/abs/10.1080/00324728.1970.10406113",
+      "claim": "4,5 juta (1815) ke 28,5 juta (1900)"
+    },
+    {
+      "scene": "s27",
+      "url": "https://ageconsearch.umn.edu/record/320860/files/AgMonograph15.pdf",
+      "claim": "Tekanan penduduk di Jawa membuat kepemilikan lahan terus terbagi-bagi"
+    },
+    {
+      "scene": "s27",
+      "url": "https://dare.uva.nl/id/a580592c-eb8b-48c8-b247-414dafaef637",
+      "claim": "Tesis involusi Geertz diperdebatkan sejarawan Jawa"
+    },
+    {
+      "scene": "s29",
+      "url": "https://www.detik.com/bali/berita/d-8238991/nusron-minta-warga-bali-ke-luar-pulau-ini-riwayat-transmigrasi-di-indonesia",
+      "claim": "November 1905: 155 KK dari Karanganyar, Kebumen, Purworejo, Kedu dipindahkan ke Gedong Tataan, Lampung"
+    },
+    {
+      "scene": "s30",
+      "url": "https://jkp.ejournal.unri.ac.id/index.php/JKP/article/download/8157/6888",
+      "claim": "Transmigrasi resmi dimulai 12 Desember 1950: 25 KK (98 orang) ke Lampung"
+    },
+    {
+      "scene": "s31",
+      "url": "https://jurnal.fkip.unmul.ac.id/index.php/yupa/article/download/3803/2249/22100",
+      "claim": "Transmigran diberi lahan untuk bercocok tanam dan dukungan keuangan selama satu tahun"
+    },
+    {
+      "scene": "s32",
+      "url": "https://journal.student.uny.ac.id/ilmu-sejarah/article/download/16594/16054",
+      "claim": "1961: penduduk Indonesia ±97 juta, Jawa ±63 juta"
+    },
+    {
+      "scene": "s32",
+      "url": "https://en.wikipedia.org/wiki/1961_Indonesian_census",
+      "claim": "Sensus 1961 adalah sensus pertama setelah merdeka"
+    },
+    {
+      "scene": "s33",
+      "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
+      "claim": "Sejak 1950: sekitar 2,2 juta KK atau 9,2 juta jiwa (Kementerian Transmigrasi)"
+    },
+    {
+      "scene": "s33",
+      "url": "https://jkp.ejournal.unri.ac.id/index.php/JKP/article/download/8157/6888",
+      "claim": "Angka lain: 7,8 juta jiwa (Kemendes PDTT 2019)"
+    },
+    {
+      "scene": "s34",
+      "url": "https://journal.student.uny.ac.id/ilmu-sejarah/article/download/16594/16054",
+      "claim": "Jawa ±63 juta (1961)"
+    },
+    {
+      "scene": "s34",
+      "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+      "claim": "Jawa ±158 juta (SUPAS 2025)"
+    },
+    {
+      "scene": "s34",
+      "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
+      "claim": "9,2 juta jiwa dipindahkan sejak 1950"
+    },
+    {
+      "scene": "s35",
+      "url": "https://en.wikipedia.org/wiki/Lampung",
+      "claim": "Tiga perempat penduduk Lampung keturunan pendatang Jawa, Madura, dan Bali"
+    },
+    {
+      "scene": "s36",
+      "url": "https://jkp.ejournal.unri.ac.id/index.php/JKP/article/download/8157/6888",
+      "claim": "Transmigrasi membentuk 1.183 desa definitif, 385 kecamatan, 104 kota/kabupaten, 2 ibu kota provinsi"
+    },
+    {
+      "scene": "s37",
+      "url": "https://en.wikipedia.org/wiki/1961_Indonesian_census",
+      "claim": "1961: 65% penduduk tinggal di Jawa"
+    },
+    {
+      "scene": "s37",
+      "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+      "claim": "2025: 55,65% di Jawa"
+    },
+    {
+      "scene": "s38",
+      "url": "https://indonesia.unfpa.org/en/node/11919",
+      "claim": "Program KB didirikan 1970 di bawah BKKBN; TFR 5,6 pada akhir 1960-an"
+    },
+    {
+      "scene": "s38",
+      "url": "https://databoks.katadata.co.id/en/demographics/statistics/e30b7b2cff9a7d8/indonesias-birth-rate-continues-to-decline",
+      "claim": "TFR 1971: 5,61"
+    },
+    {
+      "scene": "s39",
+      "url": "https://databoks.katadata.co.id/en/demographics/statistics/e30b7b2cff9a7d8/indonesias-birth-rate-continues-to-decline",
+      "claim": "TFR turun ke 2,18 pada 2020"
+    },
+    {
+      "scene": "s39",
+      "url": "https://discmaster.textfiles.com/view/12548/abacus-multimedia-mania.iso/dp/0020/00209.txt",
+      "claim": "1971–80: pertumbuhan penduduk Jawa 1,7% per tahun, pulau lain 2,6%"
+    },
+    {
+      "scene": "s40",
+      "url": "https://en.wikipedia.org/wiki/1961_Indonesian_census",
+      "claim": "Porsi Jawa 65% pada 1961"
+    },
+    {
+      "scene": "s40",
+      "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+      "claim": "Penduduk Indonesia 284,67 juta (2025)"
+    },
+    {
+      "scene": "s40",
+      "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
+      "claim": "9,2 juta jiwa dipindahkan"
+    },
+    {
+      "scene": "s41",
+      "url": "https://www.detik.com/bali/berita/d-8238991/nusron-minta-warga-bali-ke-luar-pulau-ini-riwayat-transmigrasi-di-indonesia",
+      "claim": "155 KK pada 1905"
+    },
+    {
+      "scene": "s41",
+      "url": "https://www.goodnewsfromindonesia.id/short/sebanyak-1394-kepala-keluarga-ikut-transmigrasi-selama-2025",
+      "claim": "2025: 1.394 KK ikut transmigrasi; 95 KK setara 360 jiwa"
+    },
+    {
+      "scene": "s41",
+      "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+      "claim": "Laju pertumbuhan penduduk 1,08% per tahun"
+    },
+    {
+      "scene": "s42",
+      "url": "https://katadata.co.id/berita/nasional/6a7c54e7b6ccc/pemerintah-ubah-pola-transmigrasi-warga-dapat-jaminan-rp-3-6-juta-per-bulan",
+      "claim": "2026: fokus dari 154 kawasan dipersempit ke 53 kawasan prioritas, terutama Indonesia timur; jaminan hidup Rp3,6 juta per bulan"
+    },
+    {
+      "scene": "s44",
+      "url": "https://www.bps.go.id/id/pressrelease/2026/02/05/2546/ekonomi-indonesia-tahun-2025-tumbuh-5-11-persen",
+      "claim": "Kontribusi Jawa terhadap PDB 2025: 56,93% (BPS)"
+    },
+    {
+      "scene": "s45",
+      "url": "https://www.thejakartapost.com/news/2021/05/23/indonesia-remains-java-centric-despite-jokowis-infrastructure-campaign.html",
+      "claim": "Indonesia tetap berpusat di Jawa meskipun kampanye infrastruktur"
+    },
+    {
+      "scene": "s46",
+      "url": "https://www.idntimes.com/business/economy/lebih-dari-separuh-penduduk-miskin-indonesia-terkonsentrasi-di-jawa-00-gshdq-r7kydq",
+      "claim": "Maret 2026: 52,42% penduduk miskin Indonesia di Jawa"
+    },
+    {
+      "scene": "s49",
+      "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+      "claim": "Kerumunan di Jawa (konteks)"
+    }
+  ]
+}
