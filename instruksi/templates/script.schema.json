@@ -212,7 +212,8 @@
                   "type": "string"
                 },
                 "three_d": {
-                  "type": "boolean"
+                  "type": "boolean",
+                  "description": "Penanda informatif; 3D dipilih lewat import di 04-shots.tsx"
                 }
               }
             }
@@ -234,6 +235,11 @@
                 },
                 "claim": {
                   "type": "string"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^C\\d{2,}$",
+                  "description": "id klaim di tabel Riset fakta 01-riset-viral.md"
                 }
               }
             }
@@ -263,8 +269,21 @@
           "thumbnail": {
             "type": "object",
             "description": "Wajib untuk siklus baru: thumbnail tegak 1080x1920 Short ini (produksi/CONTRACT.md)",
-            "required": ["lines", "stage"],
-            "properties": { "lines": { "type": "array", "items": { "type": "object" } }, "stage": { "type": "object" } }
+            "required": [
+              "lines",
+              "stage"
+            ],
+            "properties": {
+              "lines": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "stage": {
+                "type": "object"
+              }
+            }
           },
           "hook_override": {
             "type": "string",
@@ -306,6 +325,342 @@
         "type": "string"
       },
       "description": "Pemeran dari produksi/STYLE.md"
+    },
+    "visual_spec": {
+      "type": "string",
+      "description": "Path relatif ke dokumen arah visual per scene (biasanya 03-visual.json, bentuk di $defs.visual). Wajib untuk siklus baru; menyalakan aturan V-1..V-9 (produksi/CONTRACT.md)."
+    },
+    "sources": {
+      "type": "array",
+      "description": "Ringkasan sumber tingkat atas (dihitung QA)",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "url",
+              "claim"
+            ],
+            "properties": {
+              "scene": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "claim": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^C\\d{2,}$"
+              }
+            }
+          },
+          {
+            "type": "string",
+            "description": "URL polos, hanya siklus lama"
+          }
+        ]
+      }
+    },
+    "chapters": {
+      "type": "array",
+      "description": "Chapter untuk deskripsi YouTube",
+      "items": {
+        "type": "object"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "thumbnails": {
+      "type": "array",
+      "description": "Varian thumbnail A/B (produksi/CONTRACT.md)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "lines": {
+            "type": "array"
+          },
+          "stage": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "visual": {
+      "title": "03-visual.json",
+      "description": "Arah visual per scene (instruksi/referensi/gaya-visual.md bagian 3)",
+      "type": "object",
+      "required": [
+        "scenes"
+      ],
+      "properties": {
+        "cycle": {
+          "type": "string"
+        },
+        "palette": {
+          "type": "object"
+        },
+        "scenes": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^s\\d{2}$"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/visual_scene"
+          }
+        }
+      }
+    },
+    "visual_scene": {
+      "type": "object",
+      "required": [
+        "purpose",
+        "subjects",
+        "environment",
+        "composition",
+        "animation",
+        "pattern",
+        "dimension"
+      ],
+      "properties": {
+        "purpose": {
+          "type": "string"
+        },
+        "emphasis": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pattern": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^P\\d{2}$"
+          }
+        },
+        "dimension": {
+          "enum": [
+            "2d",
+            "2.5d",
+            "3d"
+          ]
+        },
+        "subjects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "treatment",
+              "anatomy"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "treatment": {
+                "enum": [
+                  "literal",
+                  "simplified",
+                  "metaphor"
+                ]
+              },
+              "anatomy": {
+                "type": "string",
+                "description": "Bagian yang bisa digambar, minimal 12 kata"
+              },
+              "scale_ref": {
+                "type": "string"
+              },
+              "must_show": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "must_not": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "claims": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^C\\d{2,}$"
+                }
+              }
+            }
+          }
+        },
+        "environment": {
+          "type": "object",
+          "required": [
+            "setting"
+          ],
+          "properties": {
+            "setting": {
+              "type": "string"
+            },
+            "layers": {
+              "type": "object",
+              "properties": {
+                "bg": {
+                  "type": "string"
+                },
+                "env": {
+                  "type": "string"
+                },
+                "subject": {
+                  "type": "string"
+                },
+                "fg": {
+                  "type": "string"
+                },
+                "atmos": {
+                  "type": "string"
+                }
+              }
+            },
+            "palette": {
+              "type": "string"
+            },
+            "lighting": {
+              "type": "string"
+            }
+          }
+        },
+        "behavior": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "subject",
+              "action"
+            ],
+            "properties": {
+              "subject": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string"
+              },
+              "trigger": {
+                "type": "string"
+              },
+              "result": {
+                "type": "string"
+              },
+              "interacts": {
+                "type": "string"
+              },
+              "treatment": {
+                "enum": [
+                  "literal",
+                  "simplified",
+                  "metaphor"
+                ]
+              },
+              "claims": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^C\\d{2,}$"
+                }
+              }
+            }
+          }
+        },
+        "composition": {
+          "type": "object",
+          "properties": {
+            "camera": {
+              "type": "string"
+            },
+            "placement": {
+              "type": "string"
+            },
+            "focal": {
+              "type": "string"
+            },
+            "negative_space": {
+              "type": "string"
+            },
+            "support": {
+              "type": "string"
+            }
+          }
+        },
+        "animation": {
+          "type": "object",
+          "required": [
+            "initial",
+            "sequence",
+            "final"
+          ],
+          "properties": {
+            "initial": {
+              "type": "string"
+            },
+            "sequence": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "camera_move": {
+              "type": "string"
+            },
+            "secondary": {
+              "type": "string"
+            },
+            "transition": {
+              "type": "string"
+            },
+            "final": {
+              "type": "string"
+            }
+          }
+        },
+        "simplifications": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        },
+        "shots": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "needs": {
+          "type": "string"
+        }
+      }
     }
   }
 }

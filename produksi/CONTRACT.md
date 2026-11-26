@@ -1,14 +1,38 @@
-# Kontrak visual di `03-script.json` (untuk Claude Project dan agent mana pun)
+# Kontrak data cerita dan visual (untuk Claude Project dan agent mana pun)
 
-Gaya wajib: R3, ilustrasi gerak penjelas (`instruksi/referensi/gaya-visual.md`). Naskah (instruksi 04) menulis juga visualnya, sehingga tahap 05 sampai 07 berjalan tanpa LLM. Skema: `instruksi/templates/script.schema.json`.
+Gaya wajib: R3, ilustrasi gerak penjelas (`instruksi/referensi/gaya-visual.md`). Naskah (instruksi 04) menulis juga visualnya, sehingga tahap 05 sampai 07 berjalan tanpa LLM. Skema: `instruksi/templates/script.schema.json` (dokumen visual di `$defs.visual`).
+
+## Empat lapisan data
+
+| Lapisan | File | Isi | Ditautkan lewat |
+| --- | --- | --- | --- |
+| Riset | `01-riset-viral.md`, bagian "Riset fakta" | tabel klaim `C01…`: klaim, sumber, kutipan, status | id klaim |
+| Cerita | `03-script.json` | narasi, urutan scene, `shots` per kalimat, `sources`, Shorts, thumbnail | id scene, nomor kalimat |
+| Arah visual | `03-visual.json` | per scene: tujuan, subjek, lingkungan, perilaku, komposisi, animasi, dasar fakta, kebutuhan produksi | id scene → `03-script.json`; `claims` → riset |
+| Render | `04-shots.tsx`, props dan caption buatan skrip | komponen per shot, waktu dari caption | id scene dan urutan shot |
+
+Informasi tidak disalin antar lapisan: narasi hanya di `03-script.json`; klaim hanya di riset (lapisan lain merujuk id-nya).
+
+## Riset fakta (`01-riset-viral.md`)
+```
+## Riset fakta
+| id | Klaim | Sumber (URL) | Kutipan / halaman | Status | Catatan |
+| --- | --- | --- | --- | --- | --- |
+| C01 | Sel darah merah berbentuk cakram cekung dua sisi, tanpa inti | https://openstax.org/... | "biconcave disc" | terverifikasi | |
+```
+- `id`: `C` + dua digit, unik per siklus, tidak dipakai ulang setelah dihapus.
+- `Status`: `terverifikasi`, `disederhanakan`, atau `belum` (arti di `instruksi/referensi/gaya-cerita.md` bagian 1.2).
+- Validator Fase 4 membaca baris yang diawali `| C`.
 
 ## Tingkat atas
 ```json
 "anchor": { "kind": "map", "desc": "peta jalur KRL Jabodetabek, stasiun utama sebagai titik" },
-"cast": ["komo", "sepuh", "aturan", "cicak"]
+"cast": ["komo", "sepuh", "aturan", "cicak"],
+"visual_spec": "03-visual.json"
 ```
 - `anchor`: jangkar visual yang muncul berulang (peta, siluet, atau benda metafora besar dari `gaya-cerita.md`).
 - `cast`: pemeran track dari `produksi/STYLE.md`.
+- `visual_spec`: path relatif ke dokumen arah visual; kehadirannya menyalakan aturan V-1 sampai V-9.
 
 ## Per scene
 ```json
@@ -22,9 +46,65 @@ Gaya wajib: R3, ilustrasi gerak penjelas (`instruksi/referensi/gaya-visual.md`).
   "sources": [{ "url": "https://...", "claim": "..." }]
 }
 ```
-- `shots`: satu per kalimat narasi Inggris; isi tiap bidang di `instruksi/referensi/gaya-visual.md` bagian 6.
+- `shots`: satu per kalimat narasi Inggris. Bidang:
+  - `sentence`: nomor kalimat di narasi Inggris scene itu, mulai dari 1.
+  - `show`: apa yang terlihat, konkret dan bisa digambar. Dilarang: "tokoh berdiri", "ikon", "teks".
+  - `scale`: `map`, `place`, `object`, atau `inside` (lebih kecil dari benda).
+  - `motion`: apa yang bergerak atau berubah. Wajib.
+  - `transition`: `cut`, `iris`, `wipe`, `push`, atau `hold` (makna di `produksi/PIPELINE.md` bagian 4).
+  - `labels`: `[{ "text", "word" }]`, teks maksimal 3 kata, `word` diucapkan di kalimat itu.
+  - `count` (opsional): `{ "value": 72, "as": "dots|items|timeline|split" }`.
+  - `faces`, `mood`, `bubble` (maksimal 6 kata, sikap atau lelucon).
+  - `three_d` (opsional): penanda informatif saja; 3D dipilih lewat import di `04-shots.tsx`.
 - `broll` hanya untuk scene dunia nyata yang bisa dicari: `{ "keywords": [...], "avoid": [...] }`, `{ "own": "krl-01.mp4" }` untuk footage milik kreator (di `produksi/footage-own/<ID>/`, dihitung QA sebagai bukti kreator bila muncul sebelum 30% durasi), atau klip berlisensi lewat `lic:`. Jangan untuk konsep abstrak.
-- `sources` untuk setiap scene yang memuat klaim fakta (angka, aturan, tanggal). Klaim tanpa sumber dilunakkan atau dibuang.
+- `sources` untuk setiap scene yang memuat klaim fakta (angka, aturan, tanggal): `[{ "url", "claim", "id"? }]`, dengan `id` = id klaim riset bila ada. URL polos (string) hanya diterima di siklus lama. Klaim tanpa sumber dilunakkan atau dibuang. Daftar tingkat atas `sources: [{ "scene", "url", "claim" }]` boleh sebagai ringkasan (dipakai QA untuk menghitung sumber).
+
+## Arah visual (`03-visual.json`)
+
+Wajib bila `03-script.json` menulis `"visual_spec": "03-visual.json"` (semua siklus baru). Arti tiap bidang dan syarat detailnya: `instruksi/referensi/gaya-visual.md` bagian 3 sampai 7.
+
+```json
+{
+  "cycle": "P01",
+  "palette": { "bg": ["#0e2a3f", "#3d7a9a"], "primary": ["#5fc8f0"], "secondary": ["#9aa7b4", "#e9e1cf"], "accent": "#ffd23f", "meaning": "biru jernih = air bersih, cokelat keruh = air kotor" },
+  "scenes": {
+    "s01": {
+      "purpose": "…",
+      "emphasis": ["…"],
+      "pattern": ["P01"],
+      "dimension": "2.5d",
+      "subjects": [{ "id": "tetes", "name": "…", "treatment": "literal", "anatomy": "…", "scale_ref": "…", "must_show": ["…"], "must_not": ["…"], "claims": ["C01"] }],
+      "environment": { "setting": "…", "layers": { "bg": "…", "env": "…", "subject": "…", "fg": "…", "atmos": "…" }, "palette": "…", "lighting": "…" },
+      "behavior": [{ "subject": "tetes", "action": "…", "trigger": "…", "result": "…", "treatment": "simplified", "claims": ["C02"] }],
+      "composition": { "camera": "…", "placement": "…", "focal": "…", "negative_space": "…" },
+      "animation": { "initial": "…", "sequence": ["…"], "camera_move": "…", "secondary": "…", "transition": "…", "final": "…" },
+      "simplifications": ["…"],
+      "assets": ["…"],
+      "shots": { "2": "catatan khusus untuk shot ke-2 (opsional)" },
+      "needs": "pertanyaan animator ke penulis (opsional; scene dengan needs tidak boleh dirender penuh)"
+    }
+  }
+}
+```
+- Kunci `scenes` = id scene di `03-script.json`. Setiap scene yang punya `shots` harus punya entri.
+- `treatment`: `literal`, `simplified`, atau `metaphor`. `dimension`: `2d`, `2.5d`, atau `3d`. `pattern`: id dari `P01`–`P14` (`gaya-visual.md` bagian 6).
+- `claims`: id dari tabel riset. Subjek atau perilaku `literal` tidak boleh merujuk klaim berstatus `belum`.
+- `palette` tingkat atas hanya untuk contoh di luar track; siklus track memakai palet track di `produksi/STYLE.md`.
+
+### Aturan validasi (diimplementasi di Fase 4, `validateVisualSpec` di `scripts/produksi/r3.mjs`)
+| Kode | Aturan | Tingkat |
+| --- | --- | --- |
+| V-1 | `visual_spec` ditulis tapi file tidak ada | kritis |
+| V-2 | scene ber-`shots` tanpa entri | kritis |
+| V-3 | entri tanpa `purpose`, `subjects`, `environment`, `composition`, `animation`, `pattern`, atau `dimension` | kritis |
+| V-4 | subjek tanpa `treatment`, atau `anatomy` kurang dari 12 kata, atau tanpa `scale_ref` | sedang |
+| V-5 | `literal`/`simplified` tanpa `claims` di siklus yang punya tabel riset | sedang |
+| V-6 | klaim yang dirujuk tidak ada di tabel, atau `literal` merujuk klaim `belum` | kritis |
+| V-7 | label atau `count` berisi angka tanpa klaim di scene itu | sedang |
+| V-8 | `animation` tanpa `initial`, `sequence`, atau `final`; `behavior` memakai hanya kata kerja abstrak | kecil |
+| V-9 | scene masih punya `needs` | kritis (render penuh), boleh untuk still |
+
+Siklus lama tanpa `visual_spec` tidak diperiksa aturan ini.
 
 ## Thumbnail (tingkat atas `03-script.json`)
 ```json
@@ -59,4 +139,4 @@ Keputusan kreator 2026-11-26: caption tampil **per kalimat** (satu kalimat utuh 
 9. **Pemeran tetap per track** (`produksi/STYLE.md`) supaya penonton mengenalinya.
 
 ## Alur
-Scene dengan `shots` dirender mesin R3: agent repo menulis komponen adegan per shot di `04-shots.tsx` (folder siklus), mesin mengatur waktu dari caption per kata, label, transisi, dan efek suara. Cara menulisnya dan perintah cek ada di `produksi/PIPELINE.md`, bagian "Mesin R3". Kontrak yang salah ditolak `build-visual.mjs` dan dilaporkan QA (G1–G6) per scene.
+Scene dengan `shots` dirender mesin R3: agent repo menulis komponen adegan per shot di `04-shots.tsx` (folder siklus), mesin mengatur waktu dari caption per kata, label, transisi, dan efek suara. Cara menulisnya, kamera, gerak, transisi, dan perintah cek ada di `produksi/PIPELINE.md`, bagian "Mesin R3"; tampilan di `produksi/STYLE.md`. Kontrak yang salah ditolak `build-visual.mjs` dan dilaporkan QA (G1–G6, dan G7 untuk `03-visual.json` setelah Fase 4) per scene.

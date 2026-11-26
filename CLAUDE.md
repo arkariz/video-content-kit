@@ -2,7 +2,7 @@
 
 ## Khusus Claude Code
 
-- **Gaya visual wajib R3, ilustrasi gerak penjelas** (lihat AGENTS.md): baca `instruksi/referensi/gaya-visual.md`, `instruksi/referensi/gaya-cerita.md` (acuan utama cerita), dan `hasil/learnings-global.md` sebelum brief, naskah, atau produksi.
+- **Gaya visual wajib R3, ilustrasi gerak penjelas** (lihat AGENTS.md): baca `instruksi/referensi/gaya-cerita.md` (riset dan cerita), `instruksi/referensi/gaya-visual.md` (spesifikasi scene), `produksi/STYLE.md` (Style Bible), dan `hasil/learnings-global.md` sebelum brief, naskah, atau produksi. Agent yang menulis `04-shots.tsx` juga membaca `produksi/PIPELINE.md` bagian "Mesin R3".
 
 - Skill proyek ada di `skills/`. Jalankan `bash scripts/install-skills.sh` sekali (dan setiap kali `skills/` berubah) supaya dimuat dari `.claude/skills/`.
 - **Satu track dan satu langkah per sesi.** Setelah langkah selesai dan TRACK.md/STATE diperbarui, sarankan kreator menjalankan `/clear`. STATE.md adalah memorinya, bukan riwayat chat.

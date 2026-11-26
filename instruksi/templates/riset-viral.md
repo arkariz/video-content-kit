@@ -29,4 +29,21 @@ Tanggal: YYYY-MM-DD · Niche: · Learnings yang dibaca: (ya/tidak)
 
 **Rekomendasi:** (A/B/C + alasan)
 
+## Riset fakta
+
+Wajib sebelum naskah. Aturan di `instruksi/referensi/gaya-cerita.md` bagian 1 (pertanyaan riset, prioritas sumber, status). Satu baris per klaim; id tidak dipakai ulang.
+
+| id | Klaim | Sumber (URL) | Kutipan / halaman | Status | Catatan |
+| --- | --- | --- | --- | --- | --- |
+| C01 | | | | terverifikasi / disederhanakan / belum | |
+
+**Subjek yang akan digambar** (bentuk, bagian, ukuran relatif, lingkungan, gerak, dengan id klaim):
+-
+
+**Miskonsepsi umum:**
+-
+
+**Belum pasti / sengaja tidak dipakai:**
+-
+
 ## Sumber

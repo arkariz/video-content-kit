@@ -10,7 +10,7 @@ node --env-file=.env scripts/pipeline/approve.mjs --track T01 --siklus 001    # 
 node scripts/pipeline/approve.mjs --track T01 --siklus 001 --revisi "catatan" # minta revisi
 ```
 
-Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); QA menandai kritis bila scene siklus baru tidak punya `shots` (kecuali scene footage). Scene dengan `shots` dirender mesin R3 (bagian "Mesin R3" di bawah). T01-001 tetap dirender dengan mesin lama; T02-001 sudah diproduksi ulang dengan R3 3D.
+Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); QA menandai kritis bila scene siklus baru tidak punya `shots` (kecuali scene footage). Scene dengan `shots` dirender mesin R3 (bagian "Mesin R3" di bawah). T01-001 tetap dirender dengan mesin lama; T02-001 diproduksi ulang dengan R3 3D tetapi bukan acuan gaya.
 
 ## Tahap
 
@@ -18,7 +18,7 @@ Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); 
 | --- | --- | --- | --- |
 | riset-brief | LLM | `01-riset-viral.md`, `02-brief.md` | ya |
 | naskah | LLM | `03-script.json`, `03-naskah.md` (sumber per klaim, stop-slop ≥ 35) | ya |
-| visual | LLM | `anchor`, `cast`, dan `shots` per kalimat di `03-script.json`, `broll` untuk scene dunia nyata, dan komponen adegan `04-shots.tsx` | ya |
+| visual | LLM | `anchor`, `cast`, dan `shots` per kalimat di `03-script.json`, arah visual per scene di `03-visual.json`, `broll` untuk scene dunia nyata, dan komponen adegan `04-shots.tsx` | ya |
 | kontrak | skrip | `build-visual.mjs --check`: shots, anchor, cast, dan komponen tiap scene di `04-shots.tsx` | ya |
 | tts-en, caption-en | skrip | audio, caption (disamakan dengan naskah, hasil STT mentah disimpan) | ya |
 | footage | skrip | pilih otomatis footage nyata berlisensi (skor tag + durasi, tanpa duplikat), unduh, catat lisensi | ya |
@@ -29,22 +29,196 @@ Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); 
 
 Tahap LLM berjalan lewat `claude -p` bila CLI `claude` ada di PATH. Kalau tidak, penggerak mencetak prompt (`scripts/pipeline/prompts/`) dan keluar dengan kode 3. Di sesi Claude Code, "lanjut T01" menjalankan tahap itu. Bagian `claude -p` belum teruji di mesin ini karena CLI belum terpasang.
 
-## Mesin R3 (`shots`)
+## Mesin R3 (`shots`): spesifikasi animasi
 
-Kode bersama: `produksi/remotion/src/r3/` (`kit.tsx` primitif, `count.tsx` penghitung, `engine.tsx` waktu dan transisi, `three/` lapisan 3D, `registry.ts`, `cast/` pemeran per track). Logika waktu dan validasi di Node: `scripts/produksi/r3.mjs` (dipakai `build-visual.mjs`, `render.mjs`, dan `scripts/pipeline/qa-r3.mjs`). Contoh lengkap: `produksi/contoh-r3/T02-001-s06/` (s06 naskah T02-001 ditulis ulang; tidak mengubah render T02-001).
+Bagian ini adalah sumber kebenaran untuk **cara menggerakkan dan merender** di Remotion. Tampilan (bentuk, warna, kedalaman, tipografi) diatur di `produksi/STYLE.md`. Apa yang harus digambar per scene datang dari penulis lewat `shots` (di `03-script.json`) dan `03-visual.json` (`instruksi/referensi/gaya-visual.md`). Penulis tidak menulis kode; lapisan ini memutuskan *bagaimana* sebuah arah visual dianimasikan.
+
+Kode bersama ada di `produksi/remotion/src/r3/`:
+
+| Modul | Isi |
+| --- | --- |
+| `kit.tsx` | primitif 2D SVG, waktu, warna, kamera 2D, parallax |
+| `count.tsx` | penghitung |
+| `engine.tsx` | waktu shot, transisi, label, efek suara, Shorts |
+| `registry.ts` | pemindai `04-shots.tsx` |
+| `cast/` | pemeran 2D per track |
+| `three/` (`@r3/three`) | lapisan 3D: `World`, `Post`, `s3` |
+| `soft/kit.tsx` | pustaka 3D lembut: `sc`, kamera bernama, benda dan wajah |
+
+Logika waktu dan validasi di Node ada di `scripts/produksi/r3.mjs`, dipakai oleh `build-visual.mjs`, `render.mjs`, dan `scripts/pipeline/qa-r3.mjs`. Contoh scene 2D lengkap: `produksi/contoh-r3/T02-001-s06/` (s06 naskah T02-001 ditulis ulang; render T02-001 tidak berubah). Contoh 3D yang dipakai sebagai acuan: T02 siklus 002 sampai 004 (pustaka `soft`) dan T01 siklus 004 (`s3` sendiri di `parts/base.tsx`). T02-001 bukan acuan gaya.
 
 ### Alur per siklus
-1. Naskah: `anchor`, `cast`, dan `shots` per scene di `03-script.json` (kontrak di `produksi/CONTRACT.md`).
-2. Agent menulis `04-shots.tsx` di folder siklus (di samping `03-script.json`): satu komponen React per shot, memakai primitif bersama. `show` berupa teks bebas, jadi gambarnya ditulis per siklus; mesin mengurus waktu, transisi, label, efek suara, dan Shorts.
+1. Naskah: `anchor`, `cast`, dan `shots` per scene di `03-script.json`. Arah visual rinci per scene ada di `03-visual.json`, yang wajib bila naskah menulis `"visual_spec": "03-visual.json"`. Kontrak di `produksi/CONTRACT.md`.
+2. Agent menulis `04-shots.tsx` di folder siklus (di samping `03-script.json`): satu komponen React per shot.
+   - Gambar dan geraknya mengikuti `show`/`motion` shot dan entri `03-visual.json` scene itu (subjek, anatomi, lingkungan, perilaku, komposisi, animasi).
+   - Mesin mengurus waktu, transisi, label, efek suara, dan Shorts.
 3. `build-visual.mjs` memvalidasi kontrak dan memastikan tiap scene punya komponen. Scene R3 ditulis ke `04-stage.base.json` sebagai `{ "engine": "r3" }`.
 4. Setelah TTS dan caption, `render.mjs` menghitung waktu tiap shot dan label dari caption per kata, lalu mengirimnya ke komposisi. `Video.tsx` memakai mesin R3 untuk scene yang punya `shots`.
 
-### Waktu (dari `gaya-visual.md` bagian 3)
-- Shot ke-n mulai di kata pertama kalimat `sentence`-nya; shot pertama mulai di awal scene; shot berakhir saat shot berikutnya mulai. Kalimat yang tidak punya shot sendiri ikut shot sebelumnya.
-- Label membesar dengan pantulan (±0,2 dtk) tepat di awal `word`-nya, lalu mengecil hilang ±0,25 dtk sebelum transisi berikutnya.
-- `iris` 0,45 dtk, lingkaran bergaris putih dari titik `from`, mempercepat, terbuka penuh di kata pertama. `wipe` 0,4 dtk, garis putih 8 px kiri ke kanan, berpusat di kata pertama. `push`: shot lama menyala lalu didorong masuk 0,3 dtk ke titik `from`, shot baru mulai 1,14× lalu mengendap 0,5 dtk. `cut` langsung. `hold` meneruskan gambar shot sebelumnya (isi `null` di `04-shots.tsx`), labelnya tetap muncul di katanya.
-- Transisi shot pertama scene hanya berlaku bila scene sebelumnya juga R3 (mesin menggambar shot terakhir scene itu); selain itu potong langsung.
+### 1. Waktu (dikunci ke caption per kata)
+- **Batas shot:**
+  - Shot ke-n mulai di kata pertama kalimat `sentence`-nya.
+  - Shot pertama mulai di awal scene.
+  - Shot berakhir saat shot berikutnya mulai.
+  - Kalimat yang tidak punya shot sendiri ikut shot sebelumnya.
+- **Label:** membesar dengan pantulan (±0,2 dtk) tepat di awal `word`-nya, lalu mengecil hilang ±0,25 dtk sebelum transisi berikutnya.
+- **Waktu kata:** selalu diambil lewat `word()` (2D) atau `a.w()` (3D). Detik dari caption tidak boleh ditulis tangan.
+- **Pemetaan ke `03-visual.json`:**
+  - `animation.sequence` dipetakan ke kunci waktu dalam shot.
+  - Langkah yang terikat kata ("saat kata *engulf*") memakai `word("engulf")`.
+  - Langkah tanpa kata dibagi rata pada sisa durasi shot dengan `seg`/`keys`.
+- **Kalimat pendek** (kurang dari 4 kata) boleh berbagi shot dengan kalimat sebelumnya. Jeda dramatis boleh nyaris diam, tapi kamera tetap melayang.
+
+### 2. Kamera
+Kamera melayani penjelasan: setiap gerak kamera harus menjawab "apa yang sekarang perlu dilihat penonton". Gerak dekoratif hanya berupa drift bawaan.
+
+| Gerak | Kapan dipakai | 2D (`kit.tsx`) | 3D (`soft` / `three`) | Waktu dan easing |
+| --- | --- | --- | --- | --- |
+| Drift (bawaan) | selalu, supaya tidak ada frame mati | otomatis di `engine.tsx` (±9 px, zoom naik 4,5% sepanjang shot); `drift: false` bila komponen mengatur kamera sendiri | jarak dan yaw `[a, b]` berbeda sedikit | sepanjang shot, sinus pelan |
+| Dolly masuk/keluar | memperkenalkan detail / mengembalikan konteks | `Layer` dengan `cam.z` naik/turun | `CAMS.push` / `CAMS.pull`, atau `d` dari besar ke kecil | 1,5 sampai 4 dtk, `inOut(cubic)` |
+| Pan | memindah perhatian di bidang yang sama | `cam.x` bergeser | yaw berubah, `at` tetap | 1 sampai 3 dtk, `inOut(sin)` |
+| Tracking | mengikuti subjek bergerak | `cam.x/y` = posisi subjek dikurangi offset tetap, dihaluskan | `at` = posisi subjek tiap frame | ikut subjek; offset berubah pelan |
+| Orbit | memperlihatkan bentuk 3D atau sisi lain | (tidak; pakai 3D) | yaw `a→b` minimal 20° (`CAMS.left`/`right`) | 3 sampai 8 dtk |
+| Parallax | menegaskan kedalaman saat kamera bergerak | `Layer d`: latar 0 sampai 0,3, lingkungan 0,6, subjek 1, latar depan 1,3 sampai 1,8 | otomatis dari perspektif | mengikuti gerak kamera |
+| Push-through | masuk ke dalam benda (pipa, sel) | transisi `push`, atau `cam.z` membesar sampai benda memenuhi layar lalu shot baru mulai 1,14× | `d` menuju 0 menembus permukaan, `Post` blur naik di akhir | 0,6 sampai 1,2 dtk, `in(cubic)` lalu shot baru `out(cubic)` |
+| Transisi skala | pindah skala (kota → jalan → pipa) | iris dari titik pada benda, atau dolly + crossfade lapisan | dolly sangat besar, lingkungan skala baru diganti saat layar penuh | 0,45 sampai 1,5 dtk |
+| Focus shift | narasi pindah dari satu subjek ke subjek lain | `Blur b` dipindah antar `Layer` | DOF `Post` (fokus pada jarak subjek baru) | 0,4 sampai 0,8 dtk |
+| Reveal | membuka konteks yang tadinya tertutup | `cam.z` mundur, latar depan bergeser keluar bingkai | `CAMS.pull` atau `pitch` naik ke `top`/`map` | 1,5 sampai 3 dtk |
+
+Kamera 3D bernama di `soft` (`CamName`):
+- Sudut dan jarak: `wide`, `mid`, `close`, `top`, `low`, `left`, `right`, `map`.
+- Gerak: `push`, `pull`.
+
+Masing-masing berupa pasangan `[awal, akhir]` yang diinterpolasi sepanjang shot. Kamera bebas berbentuk `[Cam, Cam]` dengan `{ at, d, yaw, pitch, fov }`.
+
+### 3. Gerak benda
+| Prinsip | Aturan | Alat |
+| --- | --- | --- |
+| Easing | Tidak ada gerak linier, kecuali aliran kontinu (sungai, partikel). Masuk/keluar memakai `inOut(cubic)`; muncul memakai `pop` (back 1,8); hilang memakai `out` (back 1,5). | `seg`, `pop`, `out`, `keys`, `go` |
+| Anticipation | Gerak besar didahului gerak kecil berlawanan (5 sampai 10% jarak, 0,1 sampai 0,2 dtk). | `keys(t, [a-0.15, a, b], [0, -0.08, 1])` |
+| Follow-through | Benda berhenti dengan sedikit melewati target lalu kembali (overshoot 3 sampai 6%). Bagian lunak (ekor, rambut, pseudopodia) berhenti lebih lambat dari badan. | `Easing.out(Easing.back(1.2))`, delay 0,05 sampai 0,15 dtk per bagian |
+| Secondary motion | Subjek utama punya satu gerak kecil yang terus jalan (napas, denyut membran, kedip) dengan amplitudo kecil (2 sampai 4% ukuran). | `float`, `bob`, sinus dengan seed berbeda |
+| Organik | Bentuk lunak berubah bentuk saat bergerak: memanjang ke arah gerak, memendek saat berhenti. | path SVG dengan titik kontrol dari `t`; skala non-seragam |
+| Floating | Benda di cairan atau udara melayang dengan dua sinus berbeda frekuensi di x dan y. | `float(t, amp, seed)` |
+| Rotasi | Benda bebas berputar pelan (≤ 15°/dtk), kecuali mesin yang memang berputar. | `R(i)` untuk arah dan laju |
+| Pulse | Sorotan berdenyut 1,5 sampai 2 Hz, maksimal 3 denyut, lalu tetap. | `Glow pulse`, `GlowEdge` |
+| Morph | Perubahan keadaan pada benda yang sama (tetes → uap, bentuk A → B) lewat interpolasi titik path atau skala/opasitas silang 0,4 sampai 0,8 dtk. | `mix` per titik, `lerpColor` |
+| Squash and stretch | Hanya untuk benda lunak atau yang jatuh/memantul (tetes air, sel). Volume dijaga: `sx × sy ≈ 1`, maksimal 25%. | skala non-seragam dari kecepatan |
+| Partikel | Atmosfer (lapisan 5) tipis dan lambat; partikel bermakna (molekul, tetes hujan) punya arah sesuai fisika. | `Particles`, `Sparks`, `Flow` (`soft`) |
+| Acak terkendali | Semua variasi dari seed: `R(i, k)` dan `pick`. **Dilarang `Math.random`, state, dan efek.** Hasil render sama setiap kali dijalankan. | `R`, `pick` |
+
+Batas: maksimal tiga benda bergerak menonjol bersamaan; selebihnya bergerak kecil. Gerak yang tidak menjelaskan apa pun dibuang.
+
+### 4. Transisi
+Transisi dipilih menurut makna naratif (kolom `transition` di `shots`, rinciannya di `03-visual.json` `animation.transition`).
+
+| Transisi | Makna | Status | Cara |
+| --- | --- | --- | --- |
+| `cut` | topik baru | ada | langsung |
+| `hold` | kalimat masih bicara gambar yang sama | ada | isi `null` di `04-shots.tsx`, label tetap muncul di katanya |
+| `iris` | masuk ke skala lebih kecil | ada | 0,45 dtk, lingkaran bergaris putih dari titik `from`, mempercepat, terbuka penuh di kata pertama |
+| `wipe` | pindah tempat atau waktu di skala sama | ada | 0,4 dtk, garis putih 8 px kiri ke kanan, berpusat di kata pertama |
+| `push` | masuk ke dalam benda | ada | shot lama menyala lalu didorong masuk 0,3 dtk ke titik `from`; shot baru mulai 1,14× lalu mengendap 0,5 dtk |
+| Match cut | dua benda berbentuk sama di dua skala/tempat | dalam shot | posisi dan ukuran benda dikunci sama di akhir shot A dan awal shot B, transisi `cut` |
+| Shape morph | benda berubah jadi benda lain | dalam shot | morph (bagian 3) di akhir shot, lalu `hold` atau `cut` |
+| Scale transition | kota → pipa → tetes | dalam shot | dolly / push-through (bagian 2) dalam satu komponen yang menggambar dua skala |
+| Camera transition | kamera terus bergerak melintasi batas shot | dalam shot | satu komponen untuk dua kalimat (shot kedua `hold`) dengan kamera kontinu |
+| Mask reveal | konteks dibuka lewat bentuk | dalam shot | `clipPath` bentuk yang membesar, mengikuti benda |
+| Dissolve | perubahan waktu yang tenang | belum ada sebagai jenis | opasitas silang dalam satu komponen (0,6 sampai 1 dtk); hemat |
+| Environment transition | lingkungan berubah, subjek tetap | dalam shot | subjek di lapisan 3 tetap, lapisan 1 sampai 2 berganti dengan wipe lembut atau perubahan cahaya |
+| Object-based | benda yang lewat menutup layar | dalam shot | benda latar depan besar melintas, shot baru di baliknya (`hold` + kamera kontinu) |
+
+Aturan:
+- Transisi shot pertama scene hanya berlaku bila scene sebelumnya juga R3; selain itu potong langsung.
 - Efek suara otomatis: `pop` di setiap label, `whoosh` di setiap transisi.
+- Transisi "dalam shot" ditulis di komponen. Kontrak `transition` tidak berubah.
+
+### 5. Cahaya dan atmosfer
+| Efek | 2D | 3D | Aturan |
+| --- | --- | --- | --- |
+| Ambient | warna latar `Backdrop` | `SKY.<nama>.amb`, hemisphere light di `World` | sesuai suasana di STYLE.md 3.4 |
+| Kunci + bayangan | `FlatRect` sisi gelap, `Shadow` | directional light + shadow map; `soft()` | satu arah per scene |
+| Rim | `GlowEdge` tipis | `soft(c, glow)` | memisahkan subjek dari latar gelap |
+| Glow | `Glow` (opsional `pulse`) | `glow` pada material | hanya sumber cahaya nyata atau sorotan |
+| Kabut / kedalaman | `Layer opacity` + `Blur` | `fog` di `World`, DOF di `Post` | makin jauh makin pudar |
+| Partikel atmosfer | `Backdrop particles`, `Particles` | `Env` di `soft` | tipis, lambat, tidak menutupi subjek |
+| Langit / matahari / vinyet | `Backdrop`, `Frame vignette` | `Post` (gradien langit, matahari, vinyet) | vinyet 0,4 sampai 0,6 |
+
+### 6. Tipografi di layar
+- **Label:**
+  - Opsi `labels` di `shot(...)` memberi posisi tetap.
+  - `"own"` dipakai bila komponen menggambar label sendiri (`useLabel` + `Pill`). Ini wajib untuk label pada benda bergerak.
+  - Di 3D, label berupa pin `L(teks, [x,y,z], penunjuk, warna)`, yang diproyeksikan dan dijepit ke zona aman.
+- **Teks lain:**
+  - Angka yang dihitung memakai `count.tsx`: `Dots`, `Items`, `Timeline`, `Split`.
+  - Catatan kaki memakai `Footnote`.
+  - Bubble memakai `Bubble`, otomatis dari kontrak.
+- **Zona aman:**
+  - 16:9: label di atas y 860.
+  - 9:16: label dijepit ke setengah lebar 303 px dari `focus`, dan tidak masuk sepertiga bawah.
+- **Animasi teks:** masuk dengan `pop`, keluar dengan `out`. Teks tidak diketik huruf demi huruf.
+
+### 7. 2D, 2.5D, dan 3D
+| Perlakuan | Dipakai untuk | Alat | Catatan |
+| --- | --- | --- | --- |
+| **2D** (bahasa utama) | diagram, penghitung, perbandingan, potongan datar, label padat | `kit.tsx`, `count.tsx`, `cast/` | paling cepat dirender, kontrol bentuk organik paling halus (path SVG) |
+| **2.5D** | lingkungan berlapis, parallax, kamera bergerak di bidang, transisi kedalaman | `Layer` (`d`, `blur`) + `Blur` + `float` | default untuk scene lingkungan; murah, tetap lembut |
+| **3D** | kamera benar-benar berputar (orbit, permukaan dilihat miring lalu diputar, terbang menembus struktur), benda yang bentuknya harus dipahami dari banyak sisi | `soft` (`sc`, `CAMS`, `SKY`) untuk adegan bertokoh dan benda membulat; `three` (`s3`, `env`) untuk set yang sudah ada dan peta | butuh `--gl=angle`; lebih lambat; jaga bentuk tetap membulat (STYLE.md 2.2) |
+
+Aturan pemilihan:
+- `dimension` di `03-visual.json` menyatakan kebutuhan. Mesin memilih alatnya.
+- 3D hanya bila nilai penjelasannya nyata. Jangan memaksa semua scene jadi 3D.
+- `three_d` di `shots` hanya penanda informatif. 3D dipilih lewat import `@r3/three` atau `r3/soft/` di file adegan.
+
+**Lapisan 3D `three` (`s3`):**
+- Bentuk panggilan: `s3({ env, cam: [dari, ke], items: (a) => <>…</>, labels: [[teks, [x,y,z], penunjuk, warna]], vx, vd })`.
+  - `a.t` adalah detik shot.
+  - `a.w("kata", cadangan)` adalah detik kata.
+- Koordinat:
+  - x ke kanan, y ke atas (tanah 0), z ke arah kamera.
+  - Bidang utama kira-kira x -10..10.
+  - Kamera ditulis `{ at, d, yaw, pitch, fov }`.
+- `env`: jkt, hot, jktDay, jktGrey, tokyo, yard, yardDusk, yardNight, paper, grey, night, dusk, sea, map, mapStudio.
+- Benda:
+  - `props.tsx`: kereta, rel, kapal, pabrik, angka yang bisa dihitung.
+  - `map.tsx`: peta jangkar.
+  - `sets.tsx`: set siap pakai.
+  - `cast/T02.tsx`: pemeran 3D.
+
+**Pustaka `soft` (`r3/soft/kit.tsx`):**
+- Cara memuat: diimpor dengan path relatif, misalnya `../../../../../produksi/remotion/src/r3/soft/kit`.
+- Bentuk panggilan: `sc(sky, (a) => <>…</>, [L("1 HOUR", [x,y,z], "down", GRN)], { cam, vx, vd, floor })`.
+- Langit:
+  - `SKY`: night, lamp, cold, day, warm, sea, mint, grey, dan lainnya.
+- Bentuk dasar:
+  - `Ball`, `Box` (`rr` membulat), `Cyl`.
+  - `Hose`/`Rod` untuk tangan selang.
+- Gerak:
+  - `In` (muncul), `Move` (pindah dengan lengkung `lift`), `go`, `bob`, `lerp3`.
+- Wajah dan tokoh:
+  - `Face` dengan `Expr` calm, happy, sad, shock, stern, smug, busy.
+  - Tokoh `Guy` dengan aksesori `Acc`.
+- Benda siap pakai:
+  - Uang dan dokumen: `Coin`, `Stack`, `Pile`, `Bills`, `Wallet`, `Card`, `Envelope`.
+  - Aliran: `Flow`, `Pipe` (pipa berisi aliran air), `Cable`.
+  - Tempat dan bangunan: `House`, `Shop`, `City`, `Road`, `Gate`, `Bank`, `Tower`, `Server`.
+  - Perangkat: `Phone`, `Router`, `Terminal`.
+  - Lain-lain: `Cell`, `Bucket`, `Clock`, `Grid`.
+
+**Shorts:** `vx` adalah titik dunia di tengah layar, `vd` adalah pengali jarak kamera (default 1,75 di `three`, 1,7 di `soft`). Kamera direka ulang, tidak sekadar dipotong.
+
+### 8. Batasan implementasi
+- **Koordinat:** logis 1920×1080 untuk 2D. Komposisi menskalakan ke 1080×1920 (`Short9x16`, `ClipID9x16`, `ThumbnailShort`). Untuk 2D vertikal, mesin memotong strip 607 px di sekitar `focus`.
+- **Determinisme:** semua gerak adalah fungsi murni dari `t`. Tanpa `Math.random`, `useState`, `useEffect`, atau waktu dinding. Acak hanya lewat `R`/`pick`.
+- **WebGL:** siklus yang mengimpor `@r3/three` atau `r3/soft/` dirender dengan `--gl=angle`.
+  - `render.mjs` sekarang hanya memeriksa `04-shots.tsx`.
+  - Import 3D yang ada di file bagian (`parts/*.tsx`) belum terdeteksi. Perbaikannya dijadwalkan di Fase 4.
+  - Sementara itu, tulis import 3D juga di `04-shots.tsx`.
+- **Cache:** geometri, material, dan tekstur 3D di-cache per modul. Jangan membuat geometri baru per frame.
+- **Komponen hilang:** dirender sebagai "ADEGAN BELUM ADA" dan ditandai kritis oleh QA G6.
+- **Komponen baru:**
+  - Dibuat dulu di folder siklus atau contoh.
+  - Dipindah ke `kit.tsx`/`soft` hanya setelah terbukti dipakai ulang. Jangan membuat modul kosong.
 
 ### Menulis `04-shots.tsx`
 ```tsx
@@ -63,14 +237,31 @@ export default defineShots({
   s06: [shot(Pertama, { labels: { "FIRST AC TRAIN": [1100, 236] }, from: [1100, 520] }), shot(Kedua, { labels: "own" })],
 });
 ```
-- Kunci = id scene, isi = komponen per shot, urut sama dengan `shots`. Komponen polos (tanpa `shot(...)`) juga boleh.
-- `useShot()`: `t` (detik sejak shot), `T` (detik sejak scene), `dur`, `word(teks, n)` (detik kata diucapkan, relatif shot), `label(teks)`, `faces`, `mood`, `bubble`, `vertical`, `shot` (kontrak).
-- Opsi `shot(C, {...})`: `labels` (posisi tetap `[x, y, penunjuk]` per teks, atau `"own"` bila komponen menggambar label sendiri dengan `useLabel` + `Pill`, wajib untuk label pada benda bergerak; tanpa opsi, label dijajarkan di atas), `from` (titik asal iris/dorong), `focus` (x yang dijaga di tengah untuk Shorts 9:16), `drift: false` (komponen mengatur kamera sendiri), `bubble: "own"` / `bubbleAt`.
-- Primitif (`kit.tsx`): `Frame`, `Backdrop` (gradien + glow + partikel), `Particles`, `Layer` (parallax, `cam {x,y,z}`), `Blur` (kedalaman), `Glow`, `GlowEdge`, `Sparks` (kejadian acak 3–9 frame), `Pill`, `Bubble`, `Footnote`, `FlatRect`, `Shadow`; waktu `seg`, `pop`, `out`, `keys`, `mix`; warna `shade`, `tint`, `fade`, `lerpColor`; acak deterministik `R`, `pick`.
-- Penghitung (`count.tsx`) untuk `count`: `Dots` (proporsi), `Items` (jumlah satu per satu + angka), `Timeline` (garis waktu dan penanda), `Split` (dua panel, kiri bisa dicoret).
-- Pemeran: `cast.T02` (Komo, Sepuh, Aturan, Cicak, figuran `Warga`, `Gerbong`, `Rel`, `Kabel`, `Pantograf`, `Matahari`, `Awan`, `Gedung`, `Kelapa`). Track baru: tambah `src/r3/cast/<ID>.tsx`, daftarkan di `cast/index.ts` dan `CAST` di `scripts/produksi/r3.mjs`.
-- Aturan: koordinat logis 1920×1080. Semua gerak fungsi dari `t` (tanpa `Math.random`, state, atau efek). Ambil waktu kata lewat `word()`, jangan menulis detik dari caption. Gaya datar tanpa garis tinta. Tanpa lapisan 3D (di bawah), shot `three_d` ditulis versi 2D.
-- Komponen yang belum ada dirender sebagai layar "ADEGAN BELUM ADA" dan ditandai kritis oleh QA G6.
+- **Struktur:** kunci = id scene, isi = komponen per shot dengan urutan sama seperti `shots`. Komponen polos (tanpa `shot(...)`) juga boleh.
+- **`useShot()`** mengembalikan:
+  - waktu: `t` (detik sejak shot), `T` (detik sejak scene), `dur`;
+  - kata: `word(teks, n)` (detik kata diucapkan, relatif shot), `label(teks)`;
+  - kontrak: `faces`, `mood`, `bubble`, `vertical`, `shot`.
+- **Opsi `shot(C, {...})`:**
+  - `labels`:
+    - Posisi tetap ditulis `[x, y, penunjuk]` per teks.
+    - `"own"` dipakai bila komponen menggambar label sendiri.
+    - Tanpa opsi ini, label dijajarkan di atas.
+  - `from`: titik asal iris atau dorong.
+  - `focus`: x yang dijaga di tengah untuk Shorts 9:16.
+  - `drift: false`: komponen mengatur kamera sendiri.
+  - `bubble: "own"` / `bubbleAt`.
+- **Primitif (`kit.tsx`):**
+  - Bingkai dan latar: `Frame`, `Backdrop`, `Particles`.
+  - Kedalaman: `Layer`, `Blur`.
+  - Cahaya: `Glow`, `GlowEdge`, `Sparks`.
+  - Teks: `Pill`, `Bubble`, `Footnote`.
+  - Bentuk: `FlatRect`, `Shadow`.
+  - Waktu: `seg`, `pop`, `out`, `keys`, `mix`, `float`.
+  - Warna: `shade`, `tint`, `fade`, `lerpColor`.
+  - Acak: `R`, `pick`.
+- **Pemeran 2D:** `cast.T02` (Komo, Sepuh, Aturan, Cicak, `Warga`, `Gerbong`, `Rel`, `Kabel`, `Pantograf`, `Matahari`, `Awan`, `Gedung`, `Kelapa`).
+  - Untuk track baru, tambah `src/r3/cast/<ID>.tsx`, lalu daftarkan di `cast/index.ts` dan di `CAST` pada `scripts/produksi/r3.mjs`.
 
 ### Cek sebelum produksi penuh
 ```
@@ -80,21 +271,19 @@ node scripts/produksi/render.mjs --track T02 --siklus 002 --still s06           
 node scripts/produksi/render.mjs --track T02 --siklus 002 --scenes s05,s06       # render pendek, tidak dicatat di 04-assets.json
 node scripts/pipeline/qa-r3.mjs --track T02 --siklus 002 [--scene s06]           # G1-G6
 ```
-Naskah di luar siklus (contoh): tambah `--script produksi/contoh-r3/<nama>/03-script.json`; hasil ke `produksi/render/_contoh/<nama>/`. Registri hanya memindai `hasil/tracks/**/04-shots.tsx` dan `produksi/contoh-r3/**/04-shots.tsx`.
-
-### Lapisan 3D (`r3/three`, 2026-11-26)
-Adegan 3D berkedalaman (kamera orbit perspektif, cahaya dan bayangan kartun, kabut jarak, blur kedalaman) untuk shot R3. Opsional: hanya siklus yang `04-shots.tsx`-nya mengimpor `@r3/three`; `render.mjs` lalu menambahkan `--gl=angle`. Contoh lengkap: T02 siklus 001.
-- Satu shot: `s3({ env, cam: [dari, ke], items: (a) => <>…</>, labels: [[teks, [x,y,z], penunjuk, warna]], vx, vd })`. `a.t` detik shot, `a.w("kata", cadangan)` detik kata.
-- Koordinat: x kanan, y atas (tanah 0), z ke kamera; bidang utama kira-kira x -10..10. Kamera: `{ at, d, yaw, pitch, fov }`.
-- `env`: jkt, hot, jktDay, jktGrey, tokyo, yard, yardDusk, yardNight, paper, grey, night, dusk, sea, map, mapStudio.
-- Benda: `props.tsx` (kereta, rel, kapal, pabrik, angka yang bisa dihitung), `map.tsx` (peta jangkar), pemeran `cast/T02.tsx`.
-- Shorts: `vx` = titik dunia di tengah, `vd` = pengali jarak kamera (default 1,75), jadi tidak sekadar dipotong.
-- Thumbnail: `stage: { "engine": "r3", "module": "<path 04-shots.tsx>", "scene": "thumbA" }`.
-- Thumbnail Shorts (wajib): `shorts_cuts[].thumbnail`, satu per Short, komposisi `ThumbnailShort` (lihat CONTRACT.md). Caption siklus baru per kalimat (`src/lib/SentenceCaptions.tsx`).
-- Cek tata letak memakai `render.mjs --still <scene>` (tambah `--comp Short9x16` untuk tegak).
+- Naskah di luar siklus (contoh): tambah `--script produksi/contoh-r3/<nama>/03-script.json`. Hasilnya masuk ke `produksi/render/_contoh/<nama>/`.
+- Registri hanya memindai `hasil/tracks/**/04-shots.tsx` dan `produksi/contoh-r3/**/04-shots.tsx`.
+- Tata letak tegak dicek dengan `--still <scene> --comp Short9x16`.
+- Thumbnail:
+  - Ditulis `stage: { "engine": "r3", "module": "<path 04-shots.tsx>", "scene": "thumbA" }`.
+  - Thumbnail Shorts wajib ditulis di `shorts_cuts[].thumbnail`, satu per Short (lihat CONTRACT.md).
+  - Caption siklus baru tampil per kalimat (`src/lib/SentenceCaptions.tsx`).
 
 ### Belum ada
-Musik latar terus-menerus. Shorts versi 2D masih memotong bagian tengah 16:9 di titik `focus`.
+- Musik latar terus-menerus.
+- Shorts versi 2D masih memotong bagian tengah 16:9 di titik `focus`.
+- `dissolve` belum menjadi jenis transisi kontrak.
+- Validator `03-visual.json` dan perbaikan deteksi GL dijadwalkan di Fase 4.
 
 ## Publish (Upload-Post)
 
