@@ -5,7 +5,7 @@ batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
 langkah_berikutnya: "Review video T01-002 dan T02-002/003/004 (hasil/review/rencana-produksi-2026-11-26.md), lalu publish sesuai jadwal; analitik 001 T02 11-28, T01 12-02"
-menunggu_keputusan: "Persetujuan visual prototipe P01 tetes air (produksi/render/_contoh/P01-tetes-air/, EVALUASI.md): setujui untuk Fase 4, atau satu putaran revisi dulu"
+menunggu_keputusan: "Fase 3.5: setujui audit visual P01 (hasil/review/2026-11-26-audit-visual-P01.md) dan benchmark s01 sebelum Phase B (arah ilustrasi)"
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-26
 ---
@@ -87,3 +87,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: Fase 1-2 sistem visual storytelling: audit R3 (peringatan 3D basi di r3.mjs, deteksi GL di render.mjs, EXPR beda dengan soft); spesifikasi dikonsolidasi tanpa file aturan baru: Style Bible di produksi/STYLE.md, spek animasi di PIPELINE.md Mesin R3, spek scene A-I + pola P01-P14 + gate kesiapan di gaya-visual.md, riset klaim di gaya-cerita.md, 03-visual.json + aturan V-1..V-9 di CONTRACT.md. Engine belum diubah. Menunggu persetujuan kreator.
 - 2026-11-26: Kreator menyetujui dokumen Fase 2. Fase 3 (prototipe P01 tetes air di produksi/contoh-r3/) dimulai dengan Sonnet.
 - 2026-11-26: Fase 3 prototipe P01 tetes air selesai (Sonnet): 16 klaim, 4 scene 17 dtk, audio dan caption ElevenLabs asli, render 1920x1080 dan 1080x1920, still deterministik. resolveCycle menerima id semu `_contoh`. Menunggu persetujuan visual kreator.
+- 2026-11-26: Kreator meminta Fase 3.5 (koreksi kualitas visual) sebelum Fase 4. Phase A audit selesai: akar masalah di standar STYLE.md 2.1/2.2 dan proses tanpa tahap desain still, bukan engine; benchmark diusulkan s01.
