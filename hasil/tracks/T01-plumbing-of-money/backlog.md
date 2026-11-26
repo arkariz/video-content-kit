@@ -31,3 +31,6 @@ Skor = permintaan (1-5) + kekuatan bukti milik kreator (1-5) + kesegaran (1-5). 
 | 9 | Why Southeast Asia Skipped Credit Cards for E-Wallets | 4 | Brandon Nguyen (Vietnam QR) 12K | Pengalaman e-wallet Indonesia | [Brandon Nguyen](https://www.youtube.com/watch?v=jqnJkpUQSKE) | baru |
 | 9 | What Happens When a Bank's Core System Goes Down | 1 | `belum terverifikasi` | Pengalaman insiden (umum) | (perlu riset viral) | baru |
 | 9 | The Digital Euro, Explained by How Payments Already Work | 4 | Council of the EU 407K; Redacted 141K | Mekanisme, bukan opini politik | [Council of the EU](https://www.youtube.com/watch?v=tIJ00OqXZ-o) | baru |
+| 14 | Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. | 3 | 5 video GTA 6 $3,79B dalam 5 hari (view belum terverifikasi) | merchant of record, settlement, payout | riset 004 | dipakai:004 |
+| 10 | 32 Million Preorders: When Does Your Card Actually Get Charged? | 1 | preorder rekor 32,5 juta | authorization hold, refund | riset 004 | baru |
+| 9 | In GTA, Crime Runs on Cash. Real Banks Are Watching Every Transfer. (Shorts) | 1 | tema game ramai | pemantauan transaksi dari sisi sistem | riset 004 | baru |
