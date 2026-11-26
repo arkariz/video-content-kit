@@ -1,0 +1,2354 @@
+{
+  "cycle": "002-gta6-download-9-hours",
+  "title_options": [
+    "GTA 6: Singapore Is Already Playing. Indonesia Has 8 Hours Left.",
+    "GTA 6 Is Out. Why Is Indonesia Still Downloading?",
+    "GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9."
+  ],
+  "thumbnail_text": [
+    "8 HOURS LEFT?!",
+    "STILL DOWNLOADING?!"
+  ],
+  "promise": "After watching, you can explain why a typical Indonesian home waits about nine hours for a file a Singapore home gets in one, and why the sea is only part of the reason.",
+  "creator_evidence": [
+    {
+      "what": "Sumber berbahasa Indonesia (Medcom, Databoks, Fokus, Periskop, Tabloid Pulsa, Pewarta, detik, CNBC Indonesia) tentang biaya kabel, survei APJII, dan kecepatan per kota. Rekaman Speedtest di rumah kreator belum ada",
+      "scene_id": "s23"
+    }
+  ],
+  "pronunciations": [
+    {
+      "term": "Palapa",
+      "say_as": "Pah-lah-pah"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "role": "hook",
+      "narration": {
+        "en": "One hour in, your friend in Singapore is already playing GTA 6. You, in Indonesia, started at the same second and still have eight hours to go.",
+        "id": "Baru satu jam, temanmu di Singapura sudah main GTA 6. Kamu, di Indonesia, mulai di detik yang sama dan masih harus menunggu delapan jam."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "close-up teman di Singapura: bar penuh meledak jadi cahaya, layar konsol menyala, jam kecil di sudut menunjuk satu jam",
+          "scale": "place",
+          "motion": "bar menghantam penuh, kilatan, teman melompat dari sofa, kamera mundur cepat",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "1 HOUR",
+              "word": "hour"
+            },
+            {
+              "text": "ALREADY PLAYING",
+              "word": "playing"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "hantaman potong ke kamar gelap Komo: progress bar raksasa baru sekitar sepersembilan, angka delapan jam menekan dari atas",
+          "scale": "place",
+          "motion": "warna jatuh jadi dingin, bar merayap satu piksel, angka delapan jam jatuh menghantam, Komo melongo",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "8 HOURS LEFT",
+              "word": "eight"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          },
+          "mood": "cool"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+          "claim": "Median unduh fixed broadband September 2026 (Ookla): Indonesia 52,62 Mbps, Singapura 476,02 Mbps"
+        },
+        {
+          "url": "https://vandal.elespanol.com/en/grand-theft-auto-6/how-long-to-download.html",
+          "claim": "212 GB pada 476,02 Mbps sekitar 59 menit"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "context",
+      "narration": {
+        "en": "GTA 6 landed on November nineteenth at up to two hundred and twelve gigabytes. Divide that by the middle speed of Indonesian homes, assume it never drops, and you get nine hours in total. The ocean explains only part of it, and your own phone is about to embarrass your home cable.",
+        "id": "GTA 6 keluar 19 November, bisa memakan sampai 212 gigabita, dan sembilan jam itu dihitung dari kecepatan unduh tengah di rumah-rumah Indonesia, tanpa pernah turun. Lautan cuma menjelaskan sebagian, dan HP-mu sendiri bakal mempermalukan kabel di rumahmu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kotak file raksasa tanpa logo jatuh menimpa konsol kecil",
+          "scale": "object",
+          "motion": "kotak jatuh, lantai bergetar, penghitung gigabita melesat",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "212 GB",
+              "word": "gigabytes"
+            }
+          ],
+          "count": {
+            "value": 212,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "file dipotong-potong mengalir lewat satu selang ke rumah Komo, jam di dinding",
+          "scale": "object",
+          "motion": "potongan mengalir stabil, jarum jam melompat per jam sampai sembilan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MIDDLE SPEED",
+              "word": "middle"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "ombak berwajah mengangkat tangan, lalu HP menyalip router sambil pamer",
+          "scale": "object",
+          "motion": "ombak muncul lalu minggir, HP melesat melewati router, router memerah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "OCEAN?",
+              "word": "ocean"
+            },
+            {
+              "text": "YOUR PHONE",
+              "word": "phone"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+          "claim": "GTA VI rilis 19 November 2026; menurut situs Rockstar preload bisa butuh sampai 212 GB tergantung perangkat"
+        },
+        {
+          "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+          "claim": "52,62 Mbps; 212 GB = sekitar 8 jam 57 menit (hitungan sendiri, kecepatan konstan); seluler 70,77 Mbps"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "context",
+      "narration": {
+        "en": "Think of the internet as water. The file is a full tank that has to reach your house, and your speed is how hard your pipe flows. A thin pipe fills the same tank, only later.",
+        "id": "Anggap internet seperti air. Filenya tangki penuh yang harus sampai ke rumahmu, dan kecepatanmu adalah seberapa deras pipanya mengalir. Pipa tipis mengisi tangki yang sama, hanya lebih lama."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta jangkar: pulau-pulau dengan jaringan pipa biru yang menyala",
+          "scale": "map",
+          "motion": "air menyala mengalir di pipa dari satu waduk ke rumah-rumah",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "WATER",
+              "word": "water"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "tangki besar di atas bukit, pipa turun ke rumah Komo, ember di rumah mulai terisi",
+          "scale": "place",
+          "motion": "air keluar dari tangki, mengalir di pipa, ember naik pelan",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "THE FILE",
+              "word": "file"
+            },
+            {
+              "text": "YOUR SPEED",
+              "word": "speed"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "dua pipa berdampingan, tebal dan tipis, dua ember sama besar",
+          "scale": "object",
+          "motion": "ember pipa tebal penuh lebih dulu, ember tipis menetes",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "THIN PIPE",
+              "word": "thin"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "context",
+      "narration": {
+        "en": "Follow that pipe from the sea to your door. It has three parts: the main pipe between cities and islands, the street pipe past your neighbourhood, and the last hose into one house. Three players matter too: the state, which laid part of the main pipe, the companies that sell the water, and you, who pays.",
+        "id": "Ikuti pipa itu dari laut sampai ke pintumu. Ada tiga bagian: pipa induk antarkota dan antarpulau, pipa jalan yang melewati lingkunganmu, dan selang terakhir yang masuk ke satu rumah. Pemainnya juga tiga: negara yang memasang sebagian pipa induk, perusahaan yang menjual airnya, dan kamu yang membayar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta jangkar: pipa dari laut ke satu rumah menyala",
+          "scale": "map",
+          "motion": "cahaya berjalan di sepanjang pipa, kamera mengikuti",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "FOLLOW",
+              "word": "Follow"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "potongan pipa tiga ukuran: induk di dasar laut, pipa jalan, selang ke pintu",
+          "scale": "map",
+          "motion": "tiga bagian menyala satu per satu saat disebut",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "MAIN PIPE",
+              "word": "main"
+            },
+            {
+              "text": "STREET PIPE",
+              "word": "street"
+            },
+            {
+              "text": "LAST HOSE",
+              "word": "hose"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "tiga tokoh di sepanjang pipa: Pak Aturan di induk, penjual berloket di jalan, Komo berdompet di pintu",
+          "scale": "place",
+          "motion": "tiga tokoh muncul berurutan di sepanjang pipa",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "THE STATE",
+              "word": "state"
+            },
+            {
+              "text": "SELLERS",
+              "word": "companies"
+            },
+            {
+              "text": "YOU",
+              "word": "you"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "context",
+      "narration": {
+        "en": "Speed is counted in megabits per second, which is how much water passes each second. The numbers here are medians, the middle result when every speed test is lined up from slowest to fastest.",
+        "id": "Kecepatan diukur dalam megabit per detik: seberapa banyak air yang lewat setiap detik. Angka di video ini adalah median, hasil tengah kalau semua tes kecepatan dijejerkan dari paling lambat sampai paling cepat."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "meteran air di pipa dengan jarum dan tetes yang dihitung",
+          "scale": "inside",
+          "motion": "jarum bergerak, tetes dihitung tiap detik",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "MBPS",
+              "word": "megabits"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "barisan titik tes dari kecil ke besar, satu titik tengah menyala",
+          "scale": "object",
+          "motion": "titik berbaris terurut, sorotan berhenti di tengah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "MEDIAN",
+              "word": "medians"
+            }
+          ],
+          "count": {
+            "value": 101,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+          "claim": "Speedtest Global Index Ookla memakai median kecepatan unduh"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "rehook",
+      "narration": {
+        "en": "So when do you actually get to play? For home internet, called fixed broadband, Indonesia's median in September was about fifty-three megabits per second. Singapore's was four hundred and seventy-six, roughly nine times the flow. Indonesia ranked one hundred and twelfth in the world, and ninth of ten on a Southeast Asian list, ahead of only Myanmar.",
+        "id": "Jadi kapan kamu benar-benar bisa main? Untuk internet rumah, yang disebut fixed broadband, median Indonesia pada September 2026 adalah 52,62 megabit per detik. Singapura 476, kira-kira sembilan kali lebih deras. Indonesia peringkat 112 di dunia dan kesembilan dari sepuluh negara di daftar Asia Tenggara, hanya di atas Myanmar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Komo mendekatkan wajah ke bar unduhan yang nyaris diam",
+          "scale": "object",
+          "motion": "kamera mendekat ke bar, Cicak mengetuk layar",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "rumah Indonesia dengan kabel masuk dinding, meteran di angka 53",
+          "scale": "place",
+          "motion": "kabel menyala dari jalan ke router, meteran naik lalu berhenti",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "FIXED BROADBAND",
+              "word": "fixed"
+            },
+            {
+              "text": "53 MBPS",
+              "word": "fifty-three"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "pipa Singapura sembilan kali lebih tebal di samping pipa Indonesia",
+          "scale": "object",
+          "motion": "sembilan pipa tipis menyatu jadi satu pipa tebal",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "476 MBPS",
+              "word": "seventy-six"
+            },
+            {
+              "text": "9×",
+              "word": "nine"
+            }
+          ],
+          "count": {
+            "value": 9,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 4,
+          "show": "tangga sepuluh anak tangga negara, Komo di anak tangga kesembilan",
+          "scale": "place",
+          "motion": "kamera turun menyusuri tangga, anak tangga kesembilan menyala",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "RANK 112",
+              "word": "twelfth"
+            },
+            {
+              "text": "9TH OF 10",
+              "word": "ninth"
+            }
+          ],
+          "count": {
+            "value": 10,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+          "claim": "September 2026: ID 52,62 Mbps peringkat 112, SG 476,02 Mbps; ID urutan 9 dari 10 negara Asia Tenggara, di atas Myanmar 23,46"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": {
+        "en": "The neighbours wait far less. The same file takes about an hour and a half at Thailand's or Vietnam's median, and about two and a half hours at Malaysia's. Singapore takes fifty-nine minutes. Indonesia takes eight hours and fifty-seven minutes.",
+        "id": "Tetangganya menunggu jauh lebih sebentar. File yang sama butuh sekitar satu setengah jam pada median Thailand atau Vietnam, dan sekitar dua setengah jam pada median Malaysia. Singapura 59 menit. Indonesia delapan jam 57 menit."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta Asia Tenggara tanpa batas negara, jam kecil di tiap tempat",
+          "scale": "map",
+          "motion": "jam-jam muncul satu per satu di peta",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "tiga jalur lomba: ember Thailand, Vietnam, Malaysia terisi",
+          "scale": "place",
+          "motion": "ember terisi berbeda cepat, jam berhenti saat penuh",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "THAILAND",
+              "word": "Thailand"
+            },
+            {
+              "text": "VIETNAM",
+              "word": "Vietnam"
+            },
+            {
+              "text": "MALAYSIA",
+              "word": "Malaysia"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "ember Singapura penuh seketika, jam 0:59",
+          "scale": "object",
+          "motion": "air menyembur, jam berhenti",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "59 MIN",
+              "word": "fifty-nine"
+            }
+          ]
+        },
+        {
+          "sentence": 4,
+          "show": "ember Komo masih seperlima, matahari terbit di jendela",
+          "scale": "object",
+          "motion": "langit berubah dari malam ke pagi, ember naik sangat pelan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "8 H 57",
+              "word": "eight"
+            }
+          ],
+          "mood": "cool"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+          "claim": "September 2026: TH 303,68; VN 297,64; MY 181,24; SG 476,02; ID 52,62 Mbps"
+        },
+        {
+          "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+          "claim": "212 GB; waktu unduh adalah hitungan sendiri dari median"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "rehook",
+      "narration": {
+        "en": "Then your phone offers a shortcut into GTA 6. In September's speed rankings, Indonesia's mobile networks reached about seventy-one megabits per second, faster than its home internet. At that median, your phone would finish more than two hours before your cable.",
+        "id": "Lalu HP-mu menawarkan jalan pintas ke GTA 6. Di peringkat kecepatan bulan September, jaringan seluler Indonesia mencapai sekitar 71 megabit per detik, lebih cepat daripada internet rumahnya. Dengan median itu, HP-mu akan selesai lebih dari dua jam lebih awal daripada kabelmu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Komo menoleh dari router ke HP-nya sendiri",
+          "scale": "object",
+          "motion": "kamera dorong ke HP yang mulai menyala",
+          "transition": "push"
+        },
+        {
+          "sentence": 2,
+          "show": "HP dan router berlomba dengan dua meteran, HP lebih tinggi",
+          "scale": "object",
+          "motion": "dua jarum naik, jarum HP melewati jarum router",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "PHONE: 71",
+              "word": "seventy-one"
+            },
+            {
+              "text": "HOME: 53",
+              "word": "home"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "dua jam berdampingan, jam HP berhenti lebih dulu, Cicak melongo",
+          "scale": "object",
+          "motion": "jam HP berhenti, jam kabel terus berputar",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "6 H 39",
+              "word": "finish"
+            }
+          ],
+          "bubble": "Lho, kok bisa?"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+          "claim": "September 2026: median seluler Indonesia 70,77 Mbps (212 GB = sekitar 6 jam 39 menit, hitungan sendiri)"
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": {
+        "en": "The obvious suspect is the sea. Singapore covers about seven hundred and forty-four square kilometres. Indonesia covers about one point nine million, spread over more than seventeen thousand islands.",
+        "id": "Tersangka yang paling gampang kita tunjuk adalah lautnya. Luas Singapura cuma sekitar 744 kilometer persegi. Luas Indonesia sekitar 1,9 juta kilometer persegi, tersebar di lebih dari 17 ribu pulau."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "ombak besar berwajah di antara pulau, memegang pipa",
+          "scale": "place",
+          "motion": "ombak naik dan menyeringai",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "THE SEA?",
+              "word": "sea"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "Singapura sebagai satu titik terang, penuh rumah rapat",
+          "scale": "map",
+          "motion": "kamera zoom in ke satu pulau kecil",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "744 KM²",
+              "word": "seven"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "kamera mundur sampai kepulauan memenuhi layar, titik Singapura mengecil",
+          "scale": "map",
+          "motion": "zoom out cepat, pulau-pulau menyala beruntun",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "1.9 MILLION",
+              "word": "million"
+            },
+            {
+              "text": "17,000+ ISLANDS",
+              "word": "seventeen"
+            }
+          ],
+          "count": {
+            "value": 170,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Singapore",
+          "claim": "Luas total Singapura 744,3 km²"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Indonesia",
+          "claim": "Luas total Indonesia 1.904.569 km²; lebih dari 17.000 pulau"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": {
+        "en": "For every one patch of ground Singapore has to serve, Indonesia has about two and a half thousand. And between many of them is water, with a seabed that needs a cable.",
+        "id": "Kira-kira, untuk setiap satu bidang tanah yang harus dilayani Singapura, Indonesia punya sekitar 2.500 bidang. Dan di antara bidang-bidang itu ada air, yang dasarnya harus dipasangi kabel."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "satu ubin Singapura, di sebelahnya grid ubin yang terus bertambah",
+          "scale": "object",
+          "motion": "ubin menggandakan diri memenuhi layar",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "≈2,500×",
+              "word": "thousand"
+            }
+          ],
+          "count": {
+            "value": 2500,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "penampang laut: kapal peletak kabel menurunkan kabel ke dasar",
+          "scale": "inside",
+          "motion": "kapal bergerak, kabel turun dan rebah di dasar laut",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "SEABED CABLE",
+              "word": "cable"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Singapore",
+          "claim": "744,3 km²"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Indonesia",
+          "claim": "1.904.569 km² (rasio sekitar 2.560, hitungan sendiri)"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": {
+        "en": "Indonesia did lay that pipe. A state project called the Palapa Ring carried the fibre backbone, the main pipe, out to remote parts of the country. The eastern section alone has more than four thousand kilometres of undersea cable, and the project was inaugurated in 2019.",
+        "id": "Indonesia memang memasang pipa itu. Proyek negara bernama Palapa Ring membawa pipa induk serat optik sampai ke daerah-daerah terpencil. Di bagian timur saja ada lebih dari empat ribu kilometer kabel bawah laut, dan proyek ini diresmikan pada 2019."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta jangkar: garis kabel menyala dari barat ke timur",
+          "scale": "map",
+          "motion": "garis serat optik tumbuh antarpulau",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "kabel bercahaya masuk ke pulau kecil jauh dengan satu desa",
+          "scale": "map",
+          "motion": "cahaya sampai di pulau, lampu desa menyala",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "PALAPA RING",
+              "word": "Palapa"
+            },
+            {
+              "text": "BACKBONE",
+              "word": "backbone"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "garis kabel timur dengan penghitung kilometer, garis waktu berhenti di 2019",
+          "scale": "map",
+          "motion": "penghitung naik, penanda waktu meluncur ke 2019",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "4,000+ KM",
+              "word": "four"
+            },
+            {
+              "text": "2019",
+              "word": "2019"
+            }
+          ],
+          "count": {
+            "value": 4000,
+            "as": "timeline"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://inet.detik.com/read/2019/08/17/142736/4670042/328/palapa-ring-timur-selesai-tol-langit-jadi-kado-ultah-ke-74-ri",
+          "claim": "Palapa Ring Paket Timur: sekitar 4.426 km kabel laut, selesai konstruksi Agustus 2019"
+        },
+        {
+          "url": "https://www.cnbcindonesia.com/tech/20191015185411-37-107253/tol-langit-palapa-ring-diresmikan-bye-bye-internet-lemot",
+          "claim": "Palapa Ring diresmikan 14 Oktober 2019"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": {
+        "en": "That main pipe matters, and on remote islands it can still be the weak point. But a main pipe only brings water as far as town. It has not entered a single house.",
+        "id": "Pipa induk itu penting, dan di pulau-pulau terpencil masih bisa jadi hambatan. Tapi pipa induk hanya membawa air sampai ke kota. Air itu belum masuk ke satu rumah pun."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "pulau terpencil dengan pipa induk kecil, antrean ember",
+          "scale": "place",
+          "motion": "air menetes, antrean bergeser pelan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "WEAK POINT",
+              "word": "weak"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "pipa induk besar berhenti di gerbang kota",
+          "scale": "place",
+          "motion": "air deras berhenti di katup di tepi kota",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "TOWN",
+              "word": "town"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "deretan rumah kering di belakang katup",
+          "scale": "place",
+          "motion": "kamera menyusuri rumah-rumah tanpa selang",
+          "transition": "cut",
+          "mood": "cool"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "rehook",
+      "narration": {
+        "en": "So go somewhere with no sea in the way: West Jakarta, on Java. In the first half of 2026 its median was about seventy megabits per second, the highest of any Indonesian city in that report. That is still almost seven hours before GTA 6 opens.",
+        "id": "Jadi coba pindah ke tempat yang tidak punya masalah laut: Jakarta Barat, di Jawa. Pada paruh pertama 2026, mediannya sekitar 70 megabit per detik, tertinggi di antara kota-kota Indonesia. Itu masih hampir tujuh jam sebelum GTA 6 bisa dibuka."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kamera mendarat di Jawa, lalu blok kota padat Jakarta Barat",
+          "scale": "map",
+          "motion": "zoom dari peta ke jalanan kota",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "WEST JAKARTA",
+              "word": "West"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "papan lomba kota sebagai pipa, pipa Jakarta Barat paling tebal",
+          "scale": "place",
+          "motion": "pipa kota muncul berurutan, yang teratas menyala",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "70 MBPS",
+              "word": "seventy"
+            },
+            {
+              "text": "FASTEST CITY",
+              "word": "highest"
+            }
+          ],
+          "count": {
+            "value": 10,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "Komo di apartemen kota, jam berputar sampai tujuh",
+          "scale": "place",
+          "motion": "jarum jam berputar, Komo menguap",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "≈7 HOURS",
+              "word": "seven"
+            }
+          ],
+          "faces": {
+            "komo": "tired"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6aa8fddbf05bb/indonesian-cities-with-the-fastest-fixed-internet-download-speeds-in-h1-2026",
+          "claim": "H1 2026 (Ookla via Databoks): Jakarta Barat 70,08 Mbps, tertinggi dari 10 kota; Bandung 48,53 Mbps"
+        },
+        {
+          "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+          "claim": "212 GB; 70,08 Mbps = sekitar 6 jam 43 menit (hitungan sendiri)"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "payoff",
+      "narration": {
+        "en": "Bandung, a major city on the same island, had about forty-nine. The sea explains part of the gap. It cannot explain why cities on Indonesia's most crowded island still wait six to ten hours.",
+        "id": "Bandung, kota besar di pulau yang sama, mediannya sekitar 49. Laut menjelaskan sebagian celahnya. Laut tidak bisa menjelaskan kenapa kota di pulau terpadat Indonesia masih menunggu enam sampai sepuluh jam."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kota Bandung berbukit, pipa lebih tipis",
+          "scale": "place",
+          "motion": "kamera pindah ke bukit, meteran turun ke 49",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "BANDUNG: 49",
+              "word": "forty-nine"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "ombak berwajah mengangkat bahu, hanya sebagian bar celah yang terisi warna laut",
+          "scale": "object",
+          "motion": "bar celah terisi sebagian saja",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "PART",
+              "word": "part"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "Jawa penuh titik rumah, di atasnya jam-jam menunggu; ombak mundur keluar layar",
+          "scale": "map",
+          "motion": "ombak surut, jam-jam menyala di Jawa",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "6–10 HOURS",
+              "word": "six"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6aa8fddbf05bb/indonesian-cities-with-the-fastest-fixed-internet-download-speeds-in-h1-2026",
+          "claim": "H1 2026: kota dalam daftar 48,53 sampai 70,08 Mbps (212 GB = sekitar 6 jam 43 sampai 9 jam 42, hitungan sendiri)"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": {
+        "en": "The trouble moves to the last hose, the stretch from the street into your home. Here every metre has to be paid for, dug in or strung up, and then looked after. A World Bank team estimated in 2022 that seventy to eighty percent of home broadband costs usually sit in poles, ducts and cables like these.",
+        "id": "Masalahnya bergeser ke selang terakhir: bagian dari jalan ke rumahmu. Di sini setiap meter harus dibayar, digali atau digantung, lalu dirawat. Bank Dunia pada 2022 memperkirakan 70 sampai 80 persen biaya internet rumah ada di tiang, saluran, dan kabel semacam itu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "jalan perumahan, selang terputus di depan pintu Komo",
+          "scale": "place",
+          "motion": "kamera meluncur dari jalan ke celah sebelum pintu",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "LAST MILE",
+              "word": "hose"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "pekerja menggali, memasang tiang, menambal kabel",
+          "scale": "object",
+          "motion": "sekop turun, tiang berdiri, kabel dibentang berurutan",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "DIG",
+              "word": "dug"
+            },
+            {
+              "text": "POLES",
+              "word": "strung"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "tumpukan koin biaya, sebagian besar diwarnai tiang dan saluran",
+          "scale": "object",
+          "motion": "grid seratus koin, tujuh puluh lima berubah warna",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "70–80% COST",
+              "word": "seventy"
+            }
+          ],
+          "count": {
+            "value": 75,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.worldbank.org/en/eastasiapacific/how-can-indonesia-improve-quality-its-internet-services-and-universalize-access",
+          "claim": "Blog Bank Dunia, 3 Juni 2022: 70-80% biaya fixed broadband biasanya terkait infrastruktur pasif"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "body",
+      "narration": {
+        "en": "One price comes from Indonesia's internet provider association, talking about Tangerang, next to Jakarta. In May, its regional chair put burying cable at about seventy-five thousand rupiah per metre. If three or four cables share one duct, he said, it could drop to about twenty-two thousand.",
+        "id": "Satu contoh harga datang dari asosiasi penyedia internet Indonesia di Tangerang, dekat Jakarta. Pada Mei 2026, ketuanya di Banten menyebut menanam kabel sekitar 75 ribu rupiah per meter. Kalau tiga atau empat kabel berbagi satu saluran, ia mengatakan angkanya bisa turun ke sekitar 22 ribu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Pak Aturan memegang meteran di jalan Tangerang bersama pekerja",
+          "scale": "place",
+          "motion": "meteran dibentang di trotoar",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "TANGERANG",
+              "word": "Tangerang"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "penampang tanah: satu meter parit dengan tumpukan uang",
+          "scale": "inside",
+          "motion": "parit terbuka, uang menumpuk di atas satu meter",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "Rp75,000 / M",
+              "word": "seventy-five"
+            }
+          ],
+          "count": {
+            "value": 75,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "empat kabel masuk satu pipa saluran, tumpukan uang menyusut",
+          "scale": "inside",
+          "motion": "kabel bergabung ke satu saluran, uang turun",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "SHARED: Rp22,000",
+              "word": "twenty-two"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://berita.fokus.co.id/2026/05/apjii-banten-kabel-fiber.html",
+          "claim": "Fokus, 23 Mei 2026: Ketua APJII Banten menyebut penanaman kabel bawah tanah sekitar Rp75 ribu per meter; dengan satu saluran untuk 3-4 kabel bisa sekitar Rp22 ribu"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "role": "rehook",
+      "narration": {
+        "en": "Singapore built its last hose as one network, with a clear answer to who owns the pipe. Its fibre network was split into three layers. One company holds the cables and ducts, another runs the equipment, and many retailers sell plans over the same pipe.",
+        "id": "Singapura membangun selang terakhir itu sebagai satu jaringan, dengan jawaban jelas soal siapa pemilik pipanya. Jaringan seratnya dibagi tiga lapis. Satu perusahaan memegang kabel dan saluran, satu lagi menjalankan peralatannya, dan banyak penjual menawarkan paket di atas pipa yang sama."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta kecil Singapura, satu pipa ke setiap pintu",
+          "scale": "map",
+          "motion": "pipa tumbuh serentak ke semua rumah",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "ONE NETWORK",
+              "word": "owns"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "kue tiga lapis dari pipa, saklar, dan toko",
+          "scale": "object",
+          "motion": "tiga lapis terpisah naik",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "3 LAYERS",
+              "word": "three"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "lapis bawah satu pemilik, tengah mesin berputar, atas deretan toko berebut pelanggan",
+          "scale": "object",
+          "motion": "tiap lapis menyala sesuai urutan, toko-toko bermunculan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "CABLES",
+              "word": "cables"
+            },
+            {
+              "text": "EQUIPMENT",
+              "word": "equipment"
+            },
+            {
+              "text": "RETAILERS",
+              "word": "retailers"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Internet_in_Singapore",
+          "claim": "Next Gen NBN: NetCo (NetLink Trust) infrastruktur pasif, OpCo (Nucleus Connect) aktif, banyak penyedia ritel"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "narration": {
+        "en": "Plans went on sale in 2010 with speeds up to one gigabit per second. By mid 2013, it reached more than ninety-five percent of homes and businesses. In 2024, the government set aside up to a hundred million Singapore dollars to push it toward ten gigabits.",
+        "id": "Paketnya mulai dijual pada 2010, sampai satu gigabit per detik. Pertengahan 2013, jaringan itu sudah menjangkau lebih dari 95 persen rumah dan tempat usaha. Pada 2024, pemerintah mengumumkan sampai 100 juta dolar Singapura untuk meningkatkannya ke sepuluh gigabit."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "garis waktu mulai di 2010, pipa membesar",
+          "scale": "map",
+          "motion": "penanda 2010 muncul, aliran menderas",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "2010",
+              "word": "2010"
+            },
+            {
+              "text": "1 GIGABIT",
+              "word": "gigabit"
+            }
+          ],
+          "count": {
+            "value": 2010,
+            "as": "timeline"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "grid rumah Singapura menyala hampir seluruhnya",
+          "scale": "map",
+          "motion": "95 dari 100 rumah menyala",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "95%+",
+              "word": "ninety-five"
+            }
+          ],
+          "count": {
+            "value": 95,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "pipa Singapura diperlebar oleh pekerja",
+          "scale": "object",
+          "motion": "pipa mengembang sepuluh kali, koin masuk",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "10 GIGABIT",
+              "word": "ten"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Internet_in_Singapore",
+          "claim": "Paket NGNBN diluncurkan Agustus 2010 sampai 1 Gbps; Juli 2013 lebih dari 95% rumah dan bisnis"
+        },
+        {
+          "url": "https://imda.gov.sg/how-we-can-help/10g-nbn-grant",
+          "claim": "Februari 2024: sampai S$100 juta untuk upgrade NBN ke 10 Gbps"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "narration": {
+        "en": "Indonesia grew differently. The World Bank wrote that sharing infrastructure was common among mobile networks, but not in home broadband. So each provider tends to carry its own poles and cables.",
+        "id": "Indonesia berjalan lain. Bank Dunia menulis bahwa berbagi infrastruktur lazim di jaringan seluler, tapi tidak lazim di internet rumah. Akibatnya tiap penyedia cenderung menanggung sendiri tiang dan kabelnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "jalan Indonesia dengan langit penuh kabel berbeda warna",
+          "scale": "place",
+          "motion": "kamera naik ke tiang yang penuh kabel",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 2,
+          "show": "kiri satu menara dengan tiga antena berbagi, kanan tiga tiang berjajar untuk satu gang",
+          "scale": "place",
+          "motion": "antena bergabung di satu menara, tiang-tiang berlipat di sisi lain",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "SHARED",
+              "word": "sharing"
+            },
+            {
+              "text": "NOT SHARED",
+              "word": "not"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "tiga pekerja berbeda menarik tiga kabel ke gang yang sama",
+          "scale": "object",
+          "motion": "tiga kabel saling menumpuk, tiang miring",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "OWN POLES",
+              "word": "own"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.worldbank.org/en/eastasiapacific/how-can-indonesia-improve-quality-its-internet-services-and-universalize-access",
+          "claim": "Berbagi infrastruktur lazim di jaringan seluler tetapi tidak di pasar fixed broadband (2022)"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "role": "body",
+      "narration": {
+        "en": "Whoever lays your cable has one problem: each hose has to earn its money back from the house at the end of it. A dense street that can pay gets the cable first. A thin or tight street waits.",
+        "id": "Siapa pun yang memasang kabelmu punya satu persoalan: setiap selang harus balik modal dari rumah di ujungnya. Gang yang padat dan sanggup bayar didatangi lebih dulu. Gang yang jarang atau pas-pasan menunggu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "pemasang kabel menghitung koin sambil melihat satu rumah",
+          "scale": "place",
+          "motion": "koin keluar sepanjang selang, koin kecil kembali dari rumah",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "EARN BACK",
+              "word": "earn"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "gang padat bercahaya, banyak pintu mengulurkan koin",
+          "scale": "place",
+          "motion": "kabel meluncur cepat ke gang padat",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "DENSE",
+              "word": "dense"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "rumah renggang di pinggir sawah, pemasang berhenti di ujung jalan",
+          "scale": "place",
+          "motion": "kabel berhenti, rumput bergoyang, penghuni menunggu",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "WAITS",
+              "word": "waits"
+            }
+          ],
+          "mood": "cool"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "role": "body",
+      "narration": {
+        "en": "A phone tower works on different arithmetic. One tower covers a whole neighbourhood with no trench to each door, and its customers already carry the receiver in their pockets. For an operator, that is a quicker way to sell water to many people.",
+        "id": "Menara seluler berhitung lain. Satu menara melayani satu lingkungan sekaligus, tanpa menggali ke tiap pintu, dan pelanggannya sudah membawa alat penerimanya di saku. Bagi operator, itu jalan yang lebih cepat untuk menjual air ke banyak orang."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "menara berwajah ramah berdiri di tengah kampung",
+          "scale": "place",
+          "motion": "menara menyala, gelombang melingkar",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "PHONE TOWER",
+              "word": "tower"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "air memancar seperti penyiram ke puluhan HP di rumah-rumah",
+          "scale": "place",
+          "motion": "pancaran menyapu, HP menyala satu per satu",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "NO TRENCH",
+              "word": "trench"
+            },
+            {
+              "text": "IN POCKETS",
+              "word": "pockets"
+            }
+          ],
+          "count": {
+            "value": 40,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "operator menjual dari air mancur, antrean panjang berkoin",
+          "scale": "object",
+          "motion": "koin masuk beruntun",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "QUICKER",
+              "word": "quicker"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "role": "rehook",
+      "narration": {
+        "en": "Now look at it from the living room. By the communications ministry's figure, only about one household in five subscribes to fixed home internet. Many of the others are already online through a phone.",
+        "id": "Sekarang lihat dari ruang tamu. Menurut angka kementerian, hanya sekitar satu dari lima rumah tangga yang berlangganan internet tetap. Banyak rumah lainnya sudah online lewat HP."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "ruang tamu Komo, keluarga dengan HP",
+          "scale": "place",
+          "motion": "kamera masuk lewat jendela",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "grid rumah, satu dari lima menyala dengan kabel",
+          "scale": "map",
+          "motion": "satu dari tiap lima rumah menyala",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "1 IN 5",
+              "word": "five"
+            }
+          ],
+          "count": {
+            "value": 20,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "rumah tanpa kabel tetap bersinar dari layar HP",
+          "scale": "place",
+          "motion": "layar HP menyala di jendela-jendela gelap",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "ON PHONES",
+              "word": "phone"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://tabloidpulsa.id/internet-rakyat-wifi-rumah-5g-unlimited-100-mbps",
+          "claim": "25 Nov 2026: Komdigi, baru sekitar 21% rumah tangga berlangganan internet tetap"
+        },
+        {
+          "url": "https://pewarta.co.id/2026/11/kapan-internet-rumah-100-mbps-harga-di-bawah-rp200-ribu-bisa-dinikmati-ini-target-komdigi.html",
+          "claim": "Komdigi: penetrasi fixed broadband sekitar 22 persen (basis berbeda)"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "role": "body",
+      "narration": {
+        "en": "The providers' association asked why in its 2026 survey. About forty-seven percent of those without it said mobile data already covers their needs. About thirty-three percent said home internet costs too much.",
+        "id": "Asosiasi penyedia internet menanyakan alasannya dalam survei 2026. Sekitar 47 persen dari yang belum berlangganan bilang paket seluler sudah cukup. Sekitar 33 persen bilang internet rumah terlalu mahal."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "petugas survei berpapan jalan mengetuk pintu",
+          "scale": "place",
+          "motion": "pintu terbuka, papan jalan terangkat",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "2026 SURVEY",
+              "word": "survey"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "grid seratus orang, empat puluh tujuh mengangkat HP",
+          "scale": "object",
+          "motion": "empat puluh tujuh titik berubah jadi HP",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "47% PHONE ENOUGH",
+              "word": "forty-seven"
+            }
+          ],
+          "count": {
+            "value": 47,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "dompet kurus menatap router berharga",
+          "scale": "object",
+          "motion": "tiga puluh tiga titik berubah merah, dompet menciut",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "33% TOO COSTLY",
+              "word": "thirty-three"
+            }
+          ],
+          "count": {
+            "value": 33,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://periskop.id/teknologi/20261125/internet-indonesia-mahal-komdigi-target-fixed-broadband-50-persen",
+          "claim": "Survei APJII 2026: alasan belum berlangganan fixed broadband, 47,2% cukup dengan seluler, 32,9% terlalu mahal"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "role": "body",
+      "narration": {
+        "en": "The price complaint has a basis. A figure reported in November puts fixed internet at about four point nine percent of national income per person. The international affordability target is two percent.",
+        "id": "Keluhan soal harga ada dasarnya. Angka yang diberitakan pada November menaruh biaya internet tetap di 4,86 persen dari pendapatan nasional per orang. Patokan internasional untuk harga terjangkau adalah dua persen."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Komo menimbang router di timbangan",
+          "scale": "object",
+          "motion": "timbangan miring ke sisi router",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "kue pendapatan, irisan 4,9 persen ditarik keluar",
+          "scale": "object",
+          "motion": "irisan terangkat dan menyala",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "4.9% OF INCOME",
+              "word": "percent"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "dua irisan berdampingan, target jauh lebih tipis",
+          "scale": "object",
+          "motion": "irisan target muncul di samping, jauh lebih kecil",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "TARGET: 2%",
+              "word": "two"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://tabloidpulsa.id/internet-rakyat-wifi-rumah-5g-unlimited-100-mbps",
+          "claim": "Biaya internet tetap 4,86% dari GNI per kapita; patokan internasional 2%"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "role": "body",
+      "narration": {
+        "en": "Even where the cable is on offer, people do not automatically take it. A 2022 World Bank study found that only twenty-six percent of homes with access to a provider subscribed. High cost was the main reason named, by forty-four percent of households.",
+        "id": "Dan di tempat kabel sudah tersedia pun, orang tidak otomatis memasangnya. Studi Bank Dunia 2022 menemukan hanya 26 persen rumah yang punya akses ke penyedia benar-benar berlangganan. Hampir separuh rumah tangga menyebut biaya sebagai alasan utama."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kabel menjuntai di depan pintu tertutup",
+          "scale": "place",
+          "motion": "kabel mengetuk, pintu tetap tertutup",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 2,
+          "show": "seratus pintu dilewati kabel, dua puluh enam terbuka",
+          "scale": "map",
+          "motion": "dua puluh enam pintu terbuka bergantian",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "26% SUBSCRIBE",
+              "word": "twenty-six"
+            }
+          ],
+          "count": {
+            "value": 26,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "keluarga menunjuk label harga besar",
+          "scale": "place",
+          "motion": "label harga turun dan memantul",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "44%: COST",
+              "word": "forty-four"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.worldbank.org/en/eastasiapacific/how-can-indonesia-improve-quality-its-internet-services-and-universalize-access",
+          "claim": "2022: hanya 26% rumah dengan akses penyedia fixed broadband yang berlangganan; 44% rumah tangga menyebut biaya tinggi sebagai alasan utama tidak berlangganan"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "role": "payoff",
+      "narration": {
+        "en": "Put those pieces together and a likely loop appears. Few homes sign up, so the cost of each cable is split among few people. The price per home stays hard to cut, many stay on phones, and subscribers often pick small plans. A median measures what people actually get, including what they choose to buy, and fibre itself can go far faster.",
+        "id": "Gabungkan potongan itu dan muncul sebuah lingkaran yang masuk akal. Sedikit rumah berlangganan, jadi tiap kabel dibagi biayanya ke sedikit orang. Harga per rumah sulit turun, banyak yang bertahan di HP, dan yang berlangganan cenderung memilih paket kecil. Median itu mencerminkan apa yang dibeli orang, bukan batas teknologi kabelnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "lingkaran panah besar menghubungkan rumah, koin, dan kabel",
+          "scale": "map",
+          "motion": "panah mulai berputar",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "THE LOOP",
+              "word": "loop"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "satu kabel panjang, hanya sedikit tangan memegang tagihannya",
+          "scale": "object",
+          "motion": "tagihan dibagi ke dua orang yang kelelahan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "FEW HOMES",
+              "word": "Few"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "panah lanjut: label harga tinggi, HP, ember kecil",
+          "scale": "object",
+          "motion": "tiga ikon menyala berurutan mengikuti panah",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "PRICE",
+              "word": "price"
+            },
+            {
+              "text": "PHONES",
+              "word": "phones"
+            },
+            {
+              "text": "SMALL PLANS",
+              "word": "small"
+            }
+          ]
+        },
+        {
+          "sentence": 4,
+          "show": "serat optik tebal berkilau, hanya aliran kecil yang dipakai",
+          "scale": "inside",
+          "motion": "kamera masuk ke serat, sebagian besar jalur masih gelap",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "WHAT'S BOUGHT",
+              "word": "buy"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+          "claim": "median fixed 52,62 Mbps (mencerminkan hasil tes pengguna)"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "role": "body",
+      "narration": {
+        "en": "On a fifty megabit home plan, GTA 6 cannot arrive in less than roughly nine and a half hours, however good the cable is. On a three hundred megabit plan, the same sum falls to about an hour and a half.",
+        "id": "Dengan paket rumah 50 megabit, GTA 6 tidak bisa selesai lebih cepat dari kira-kira sembilan setengah jam, sebagus apa pun kabelnya. Dengan paket 300 megabit, hitungannya turun ke sekitar satu setengah jam."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "keran bertanda 50 diputar penuh, ember tetap pelan",
+          "scale": "object",
+          "motion": "Komo memutar keran sampai mentok, aliran tidak bertambah",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "50 PLAN",
+              "word": "fifty"
+            },
+            {
+              "text": "9.5 HOURS",
+              "word": "nine"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "keran besar bertanda 300, ember cepat penuh",
+          "scale": "object",
+          "motion": "aliran menderas, jam berhenti di 1:34",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "300 PLAN",
+              "word": "three"
+            },
+            {
+              "text": "1.5 HOURS",
+              "word": "half"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+          "claim": "212 GB: pada 50 Mbps sekitar 9 jam 25 menit, pada 300 Mbps sekitar 1 jam 34 menit (hitungan sendiri; Vice menulis 1 jam 34 pada 300 Mbps)"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "role": "rehook",
+      "narration": {
+        "en": "To be fair, Singapore is a lopsided opponent. It is one city island against a country stretched across three time zones. Indonesia's mobile operators have also asked that mobile speed comparisons account for when five G arrived and which frequencies it got.",
+        "id": "Adilnya, Singapura lawan yang berat sebelah. Satu pulau kota melawan negara selebar tiga zona waktu. Asosiasi operator seluler juga meminta perbandingan kecepatan seluler memperhitungkan kapan 5G digelar dan frekuensinya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "timbangan tinju: titik kecil lawan kepulauan raksasa",
+          "scale": "place",
+          "motion": "warna berubah hangat, dua petinju saling membungkuk hormat",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "TO BE FAIR",
+              "word": "fair"
+            }
+          ],
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "tiga jam dinding berjajar di atas kepulauan",
+          "scale": "map",
+          "motion": "tiga jam muncul dari barat ke timur",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "3 TIME ZONES",
+              "word": "three"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "operator memegang garis waktu 5G yang mulai belakangan",
+          "scale": "place",
+          "motion": "dua pelari start di waktu berbeda",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "LATER START",
+              "word": "frequencies"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://teknologi.bisnis.com/read/20261016/101/2013214/kecepatan-internet-ri-tertinggal-dari-vietnam-atsi-minta-perbandingan-yang-adil",
+          "claim": "16 Okt 2026: ATSI meminta perbandingan kecepatan seluler dengan Vietnam memperhitungkan waktu penggelaran 5G dan ketersediaan frekuensi (diambil dari ringkasan pencarian; halaman menolak akses otomatis)"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Indonesia",
+          "claim": "Indonesia membentang di tiga zona waktu"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "role": "body",
+      "narration": {
+        "en": "And a small cheap plan, or phone data alone, can be a sensible choice. For a family that mostly chats and watches short videos, paying for a giant pipe adds little. GTA 6 launch week is not an ordinary week.",
+        "id": "Dan paket kecil yang murah, atau kuota HP, bisa jadi pilihan yang masuk akal. Untuk keluarga yang hanya berkirim pesan dan menonton video pendek, membayar pipa raksasa tidak menambah banyak. Minggu rilis GTA 6 memang bukan hari biasa."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "keluarga santai dengan HP dan dompet yang lega",
+          "scale": "place",
+          "motion": "dompet mengembang, semua tersenyum",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "SENSIBLE",
+              "word": "sensible"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "pipa raksasa menuangkan air ke gelas kecil, tumpah",
+          "scale": "object",
+          "motion": "air meluap, Cicak kebasahan",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 3,
+          "show": "kotak file raksasa datang mengetuk, keluarga kaget",
+          "scale": "object",
+          "motion": "kotak menutupi pintu",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "LAUNCH WEEK",
+              "word": "launch"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+          "claim": "ukuran 212 GB"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "role": "rehook",
+      "narration": {
+        "en": "The last hose is also being tried without a trench. Fixed wireless uses a tower to send internet to a box in your home. One operator offers it for about a hundred thousand rupiah a month at up to a hundred megabits, and reported around nine hundred thousand customers by September.",
+        "id": "Selang terakhir itu juga mulai dicoba tanpa galian. Fixed wireless memakai menara untuk mengirim internet ke sebuah kotak di rumah. Satu operator menawarkannya sekitar 100 ribu rupiah sebulan dengan kecepatan sampai 100 megabit, dan melaporkan sekitar 900 ribu pelanggan per September."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "selang diganti pancaran dari menara ke antena rumah",
+          "scale": "place",
+          "motion": "selang menghilang, pancaran muncul",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "menara mengirim berkas ke kotak di jendela Komo, router menyala",
+          "scale": "object",
+          "motion": "berkas sampai, lampu kotak berkedip hijau",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "FIXED WIRELESS",
+              "word": "Fixed"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "grid rumah dengan kotak bertambah",
+          "scale": "map",
+          "motion": "kotak bermunculan, penghitung naik ke 900 ribu",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "UP TO 100",
+              "word": "megabits"
+            },
+            {
+              "text": "≈900,000",
+              "word": "nine"
+            }
+          ],
+          "count": {
+            "value": 900,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://tabloidpulsa.id/internet-rakyat-wifi-rumah-5g-unlimited-100-mbps",
+          "claim": "Internet Rakyat (anak usaha SURGE): Rp100.000/bulan, hingga 100 Mbps; sekitar 900.000 pelanggan per 30 Sep 2026"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "role": "body",
+      "narration": {
+        "en": "The communications ministry has also floated a goal: a hundred megabit home plan for under two hundred thousand rupiah. For now that is a goal, and no national package has a date. Even at that speed, GTA 6 would need close to five hours.",
+        "id": "Kementerian komunikasi juga sudah menyebut target: internet rumah 100 megabit di bawah 200 ribu rupiah. Sejauh ini itu target, belum paket yang tersedia secara nasional. Pada kecepatan itu, GTA 6 masih butuh hampir lima jam."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Pak Aturan menempel bendera target di ujung jalan",
+          "scale": "place",
+          "motion": "bendera naik di garis finis yang jauh",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "TARGET: 100",
+              "word": "goal"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "kalender kosong di samping bendera",
+          "scale": "object",
+          "motion": "halaman kalender berbalik tanpa tanda",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NO DATE",
+              "word": "date"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "ember di pipa 100, jam berhenti di 4:43",
+          "scale": "object",
+          "motion": "jam berputar sampai mendekati lima",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "4 H 43",
+              "word": "five"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://pewarta.co.id/2026/11/kapan-internet-rumah-100-mbps-harga-di-bawah-rp200-ribu-bisa-dinikmati-ini-target-komdigi.html",
+          "claim": "Komdigi (pernyataan 30 Okt 2026): target 100 Mbps di bawah Rp200 ribu; masih target, belum ada tanggal peluncuran nasional"
+        },
+        {
+          "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+          "claim": "212 GB pada 100 Mbps sekitar 4 jam 43 menit"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "role": "payoff",
+      "narration": {
+        "en": "So your nine hour wait for GTA 6 has no single broken cable behind it. The sea is real, but in Java's cities the explanation sits closer: the price of the last hose, who shares the pipe, and what makes sense for a household to buy.",
+        "id": "Jadi sembilan jam menunggu GTA 6 itu bukan karena satu kabel putus. Lautnya nyata, tapi di kota-kota Jawa penjelasannya ada lebih dekat: ongkos selang terakhir, siapa yang berbagi pipa, dan apa yang masuk akal dibeli sebuah rumah."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta jangkar penuh, tidak ada satu titik putus yang menyala sendirian",
+          "scale": "map",
+          "motion": "seluruh jaringan berdenyut bersama",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "9 HOURS",
+              "word": "nine"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "dari laut kamera mendekat ke tiga hal di depan pintu rumah",
+          "scale": "place",
+          "motion": "zoom dari ombak ke selang, saluran bersama, dan dompet",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "LAST HOSE",
+              "word": "hose"
+            },
+            {
+              "text": "SHARING",
+              "word": "shares"
+            },
+            {
+              "text": "HOUSEHOLD",
+              "word": "household"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "items"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "role": "payoff",
+      "narration": {
+        "en": "Think about your friend in Singapore again. Your friend did nothing clever. The pipe to that door was laid as one shared network, years before anyone needed to pull something this big through it.",
+        "id": "Ingat temanmu di Singapura. Temanmu tidak melakukan hal yang cerdik. Pipa ke pintunya dipasang sebagai satu jaringan yang dipakai bersama, jauh sebelum ada yang mau mengunduh sesuatu sebesar ini."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "komposisi dua panel pembuka kembali, teman sedang bermain",
+          "scale": "place",
+          "motion": "panel kanan masuk seperti di awal",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 2,
+          "show": "teman hanya duduk santai mengunyah camilan",
+          "scale": "object",
+          "motion": "teman mengangkat bahu",
+          "transition": "cut",
+          "mood": "warm"
+        },
+        {
+          "sentence": 3,
+          "show": "kamera turun dari kamar teman ke bawah tanah, satu pipa bersama bertanda 2010",
+          "scale": "inside",
+          "motion": "kamera menembus lantai, pipa menyala ke belakang waktu",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "YEARS BEFORE",
+              "word": "years"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Internet_in_Singapore",
+          "claim": "NGNBN diluncurkan 2010"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "role": "cta",
+      "narration": {
+        "en": "Back in Jakarta, your quicker route may be in your pocket, though your data quota would like a word. The pipe to your door still matters, and for many doors it has yet to arrive at a price that fits. Next long video: why more than half of Indonesians live on a single island.",
+        "id": "Sementara itu di Jakarta, jalan tercepat mungkin ada di sakumu, walau kuotamu pasti mau protes. Kabel tetap penting, cuma belum sampai dengan harga yang pas ke banyak pintu. Video panjang berikutnya: kenapa lebih dari separuh orang Indonesia tinggal di satu pulau."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "Komo mengangkat HP, kuota berwajah panik",
+          "scale": "object",
+          "motion": "HP bersinar, ikon kuota berkeringat",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "YOUR POCKET",
+              "word": "pocket"
+            }
+          ],
+          "bubble": "Kuota: jangan!"
+        },
+        {
+          "sentence": 2,
+          "show": "gang Komo, selang bercahaya berhenti satu langkah dari pintu",
+          "scale": "place",
+          "motion": "selang maju pelan mendekati pintu",
+          "transition": "cut"
+        },
+        {
+          "sentence": 3,
+          "show": "peta jangkar mundur, Jawa menyala dan dipenuhi titik",
+          "scale": "map",
+          "motion": "titik penduduk menumpuk di Jawa",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "NEXT: JAVA",
+              "word": "island"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shorts_cuts": [
+    {
+      "name": "B1-one-hour-vs-nine",
+      "scene_ids": [
+        "s01",
+        "s07",
+        "s33"
+      ],
+      "hook_override": "Singapore is playing GTA 6. You are not."
+    },
+    {
+      "name": "B2-phone-beats-home-wifi",
+      "scene_ids": [
+        "s08",
+        "s21"
+      ],
+      "hook_override": "Your phone could beat your Wi-Fi to GTA 6."
+    }
+  ],
+  "anti_slop": {
+    "text_score_en": 39,
+    "text_score_id": 38
+  },
+  "sources": [
+    {
+      "scene": "s01",
+      "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+      "claim": "Median unduh fixed broadband September 2026 (Ookla): Indonesia 52,62 Mbps, Singapura 476,02 Mbps"
+    },
+    {
+      "scene": "s01",
+      "url": "https://vandal.elespanol.com/en/grand-theft-auto-6/how-long-to-download.html",
+      "claim": "212 GB pada 476,02 Mbps sekitar 59 menit"
+    },
+    {
+      "scene": "s02",
+      "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+      "claim": "GTA VI rilis 19 November 2026; menurut situs Rockstar preload bisa butuh sampai 212 GB tergantung perangkat"
+    },
+    {
+      "scene": "s02",
+      "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+      "claim": "52,62 Mbps; 212 GB = sekitar 8 jam 57 menit (hitungan sendiri, kecepatan konstan); seluler 70,77 Mbps"
+    },
+    {
+      "scene": "s05",
+      "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+      "claim": "Speedtest Global Index Ookla memakai median kecepatan unduh"
+    },
+    {
+      "scene": "s06",
+      "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+      "claim": "September 2026: ID 52,62 Mbps peringkat 112, SG 476,02 Mbps; ID urutan 9 dari 10 negara Asia Tenggara, di atas Myanmar 23,46"
+    },
+    {
+      "scene": "s07",
+      "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+      "claim": "September 2026: TH 303,68; VN 297,64; MY 181,24; SG 476,02; ID 52,62 Mbps"
+    },
+    {
+      "scene": "s07",
+      "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+      "claim": "212 GB; waktu unduh adalah hitungan sendiri dari median"
+    },
+    {
+      "scene": "s08",
+      "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+      "claim": "September 2026: median seluler Indonesia 70,77 Mbps (212 GB = sekitar 6 jam 39 menit, hitungan sendiri)"
+    },
+    {
+      "scene": "s09",
+      "url": "https://en.wikipedia.org/wiki/Singapore",
+      "claim": "Luas total Singapura 744,3 km²"
+    },
+    {
+      "scene": "s09",
+      "url": "https://en.wikipedia.org/wiki/Indonesia",
+      "claim": "Luas total Indonesia 1.904.569 km²; lebih dari 17.000 pulau"
+    },
+    {
+      "scene": "s10",
+      "url": "https://en.wikipedia.org/wiki/Singapore",
+      "claim": "744,3 km²"
+    },
+    {
+      "scene": "s10",
+      "url": "https://en.wikipedia.org/wiki/Indonesia",
+      "claim": "1.904.569 km² (rasio sekitar 2.560, hitungan sendiri)"
+    },
+    {
+      "scene": "s11",
+      "url": "https://inet.detik.com/read/2019/08/17/142736/4670042/328/palapa-ring-timur-selesai-tol-langit-jadi-kado-ultah-ke-74-ri",
+      "claim": "Palapa Ring Paket Timur: sekitar 4.426 km kabel laut, selesai konstruksi Agustus 2019"
+    },
+    {
+      "scene": "s11",
+      "url": "https://www.cnbcindonesia.com/tech/20191015185411-37-107253/tol-langit-palapa-ring-diresmikan-bye-bye-internet-lemot",
+      "claim": "Palapa Ring diresmikan 14 Oktober 2019"
+    },
+    {
+      "scene": "s13",
+      "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6aa8fddbf05bb/indonesian-cities-with-the-fastest-fixed-internet-download-speeds-in-h1-2026",
+      "claim": "H1 2026 (Ookla via Databoks): Jakarta Barat 70,08 Mbps, tertinggi dari 10 kota; Bandung 48,53 Mbps"
+    },
+    {
+      "scene": "s13",
+      "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+      "claim": "212 GB; 70,08 Mbps = sekitar 6 jam 43 menit (hitungan sendiri)"
+    },
+    {
+      "scene": "s14",
+      "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6aa8fddbf05bb/indonesian-cities-with-the-fastest-fixed-internet-download-speeds-in-h1-2026",
+      "claim": "H1 2026: kota dalam daftar 48,53 sampai 70,08 Mbps (212 GB = sekitar 6 jam 43 sampai 9 jam 42, hitungan sendiri)"
+    },
+    {
+      "scene": "s15",
+      "url": "https://blogs.worldbank.org/en/eastasiapacific/how-can-indonesia-improve-quality-its-internet-services-and-universalize-access",
+      "claim": "Blog Bank Dunia, 3 Juni 2022: 70-80% biaya fixed broadband biasanya terkait infrastruktur pasif"
+    },
+    {
+      "scene": "s16",
+      "url": "https://berita.fokus.co.id/2026/05/apjii-banten-kabel-fiber.html",
+      "claim": "Fokus, 23 Mei 2026: Ketua APJII Banten menyebut penanaman kabel bawah tanah sekitar Rp75 ribu per meter; dengan satu saluran untuk 3-4 kabel bisa sekitar Rp22 ribu"
+    },
+    {
+      "scene": "s17",
+      "url": "https://en.wikipedia.org/wiki/Internet_in_Singapore",
+      "claim": "Next Gen NBN: NetCo (NetLink Trust) infrastruktur pasif, OpCo (Nucleus Connect) aktif, banyak penyedia ritel"
+    },
+    {
+      "scene": "s18",
+      "url": "https://en.wikipedia.org/wiki/Internet_in_Singapore",
+      "claim": "Paket NGNBN diluncurkan Agustus 2010 sampai 1 Gbps; Juli 2013 lebih dari 95% rumah dan bisnis"
+    },
+    {
+      "scene": "s18",
+      "url": "https://imda.gov.sg/how-we-can-help/10g-nbn-grant",
+      "claim": "Februari 2024: sampai S$100 juta untuk upgrade NBN ke 10 Gbps"
+    },
+    {
+      "scene": "s19",
+      "url": "https://blogs.worldbank.org/en/eastasiapacific/how-can-indonesia-improve-quality-its-internet-services-and-universalize-access",
+      "claim": "Berbagi infrastruktur lazim di jaringan seluler tetapi tidak di pasar fixed broadband (2022)"
+    },
+    {
+      "scene": "s22",
+      "url": "https://tabloidpulsa.id/internet-rakyat-wifi-rumah-5g-unlimited-100-mbps",
+      "claim": "25 Nov 2026: Komdigi, baru sekitar 21% rumah tangga berlangganan internet tetap"
+    },
+    {
+      "scene": "s22",
+      "url": "https://pewarta.co.id/2026/11/kapan-internet-rumah-100-mbps-harga-di-bawah-rp200-ribu-bisa-dinikmati-ini-target-komdigi.html",
+      "claim": "Komdigi: penetrasi fixed broadband sekitar 22 persen (basis berbeda)"
+    },
+    {
+      "scene": "s23",
+      "url": "https://periskop.id/teknologi/20261125/internet-indonesia-mahal-komdigi-target-fixed-broadband-50-persen",
+      "claim": "Survei APJII 2026: alasan belum berlangganan fixed broadband, 47,2% cukup dengan seluler, 32,9% terlalu mahal"
+    },
+    {
+      "scene": "s24",
+      "url": "https://tabloidpulsa.id/internet-rakyat-wifi-rumah-5g-unlimited-100-mbps",
+      "claim": "Biaya internet tetap 4,86% dari GNI per kapita; patokan internasional 2%"
+    },
+    {
+      "scene": "s25",
+      "url": "https://blogs.worldbank.org/en/eastasiapacific/how-can-indonesia-improve-quality-its-internet-services-and-universalize-access",
+      "claim": "2022: hanya 26% rumah dengan akses penyedia fixed broadband yang berlangganan; 44% rumah tangga menyebut biaya tinggi sebagai alasan utama tidak berlangganan"
+    },
+    {
+      "scene": "s26",
+      "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
+      "claim": "median fixed 52,62 Mbps (mencerminkan hasil tes pengguna)"
+    },
+    {
+      "scene": "s27",
+      "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+      "claim": "212 GB: pada 50 Mbps sekitar 9 jam 25 menit, pada 300 Mbps sekitar 1 jam 34 menit (hitungan sendiri; Vice menulis 1 jam 34 pada 300 Mbps)"
+    },
+    {
+      "scene": "s28",
+      "url": "https://teknologi.bisnis.com/read/20261016/101/2013214/kecepatan-internet-ri-tertinggal-dari-vietnam-atsi-minta-perbandingan-yang-adil",
+      "claim": "16 Okt 2026: ATSI meminta perbandingan kecepatan seluler dengan Vietnam memperhitungkan waktu penggelaran 5G dan ketersediaan frekuensi (diambil dari ringkasan pencarian; halaman menolak akses otomatis)"
+    },
+    {
+      "scene": "s28",
+      "url": "https://en.wikipedia.org/wiki/Indonesia",
+      "claim": "Indonesia membentang di tiga zona waktu"
+    },
+    {
+      "scene": "s29",
+      "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+      "claim": "ukuran 212 GB"
+    },
+    {
+      "scene": "s30",
+      "url": "https://tabloidpulsa.id/internet-rakyat-wifi-rumah-5g-unlimited-100-mbps",
+      "claim": "Internet Rakyat (anak usaha SURGE): Rp100.000/bulan, hingga 100 Mbps; sekitar 900.000 pelanggan per 30 Sep 2026"
+    },
+    {
+      "scene": "s31",
+      "url": "https://pewarta.co.id/2026/11/kapan-internet-rumah-100-mbps-harga-di-bawah-rp200-ribu-bisa-dinikmati-ini-target-komdigi.html",
+      "claim": "Komdigi (pernyataan 30 Okt 2026): target 100 Mbps di bawah Rp200 ribu; masih target, belum ada tanggal peluncuran nasional"
+    },
+    {
+      "scene": "s31",
+      "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
+      "claim": "212 GB pada 100 Mbps sekitar 4 jam 43 menit"
+    },
+    {
+      "scene": "s33",
+      "url": "https://en.wikipedia.org/wiki/Internet_in_Singapore",
+      "claim": "NGNBN diluncurkan 2010"
+    }
+  ],
+  "thumbnails": [
+    {
+      "lines": [
+        {
+          "text": "8 HOURS",
+          "color": "#ffd23f",
+          "size": 190
+        },
+        {
+          "text": "LEFT?!",
+          "color": "#ffffff",
+          "size": 190
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T02-why-southeast-asia/siklus/002-gta6-download-9-hours/04-shots.tsx",
+        "scene": "thumbA"
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "STILL",
+          "color": "#ffffff",
+          "size": 170
+        },
+        {
+          "text": "DOWNLOADING?!",
+          "color": "#e4572e",
+          "size": 140
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T02-why-southeast-asia/siklus/002-gta6-download-9-hours/04-shots.tsx",
+        "scene": "thumbB"
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "scene": "s01",
+      "title": "GTA 6: one hour vs nine"
+    },
+    {
+      "scene": "s04",
+      "title": "Follow the pipe"
+    },
+    {
+      "scene": "s09",
+      "title": "Is it the sea?"
+    },
+    {
+      "scene": "s13",
+      "title": "Cities wait too"
+    },
+    {
+      "scene": "s15",
+      "title": "The last hose"
+    },
+    {
+      "scene": "s17",
+      "title": "How Singapore shares"
+    },
+    {
+      "scene": "s20",
+      "title": "Cables vs towers"
+    },
+    {
+      "scene": "s22",
+      "title": "Why homes skip cable"
+    },
+    {
+      "scene": "s28",
+      "title": "The fair comparison"
+    },
+    {
+      "scene": "s32",
+      "title": "What the nine hours mean"
+    }
+  ],
+  "tags": [
+    "GTA 6",
+    "download speed",
+    "Indonesia",
+    "Singapore",
+    "internet speed",
+    "broadband",
+    "Southeast Asia",
+    "fiber optic",
+    "Jakarta",
+    "infrastructure"
+  ],
+  "anchor": {
+    "kind": "map",
+    "desc": "internet sebagai air: peta kepulauan dengan pipa bercahaya (induk bawah laut, pipa jalan, selang ke satu pintu) dibandingkan satu pipa bersama di pulau Singapura; muncul di fondasi, tengah, dan penutup"
+  },
+  "cast": [
+    "komo",
+    "aturan",
+    "cicak"
+  ]
+}
