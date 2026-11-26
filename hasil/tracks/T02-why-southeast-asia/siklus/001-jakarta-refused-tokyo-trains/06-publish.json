@@ -3,16 +3,16 @@
   "siklus": "001-jakarta-refused-tokyo-trains",
   "profil": "default",
   "dibuat": "2026-11-25T07:10:45.724Z",
-  "catatan": "Edit sebelum approve. platformAktif: ubah true/false (TikTok butuh paket berbayar Upload-Post). Jadwal default: master di tanggal tayang TRACK.md 19:00 WIB, Shorts +1 dan +2 hari (rencana.md terkunci: minggu yang sama).",
+  "catatan": "Kreator mengunggah MANUAL (keputusan 2026-11-26). Semua platformAktif dimatikan supaya publish.mjs tidak mengirim ganda. Lembar unggah: 06-publish-manual.md.",
   "platformAktif": {
-    "youtube": true,
+    "youtube": false,
     "tiktok": false,
-    "instagram": true,
-    "facebook": true
+    "instagram": false,
+    "facebook": false
   },
   "label_ai": {
     "berlaku": true,
-    "alasan": "suara sintetis (TTS) dan adegan kartun; konservatif, tidak mengurangi jangkauan menurut YouTube",
+    "alasan": "suara sintetis (TTS) dan animasi 3D; konservatif",
     "youtube": "containsSyntheticMedia",
     "tiktok": "is_aigc",
     "instagram": "is_ai_generated",
@@ -35,7 +35,7 @@
         "facebook"
       ],
       "title": "Jakarta Just Refused Tokyo's Old Trains. Here's Why",
-      "description": "After watching, you can explain why Jakarta could run Tokyo's retired trains for 25 years without rebuilding its tracks, and why a 20-year import age limit ended that in November 2026.\n\n0:00 Tokyo's trains in Jakarta\n0:46 The gift and the bargain\n1:52 Why the trains fit\n3:35 The 2023 block and new trains\n5:06 Too many riders, too few trains\n6:25 Back to Tokyo\n7:07 The age rule\n8:20 What commuters ride next\n\nSources:\n- https://finance.detik.com/infrastruktur/d-8740270/impor-krl-bekas-akhirnya-batal\n- https://en.wikipedia.org/wiki/KRL_Commuterline\n- https://katadata.co.id/berita/2019/08/21/candu-impor-kereta-bekas-jepang\n- https://ekonomi.republika.co.id/berita/ng0apv/impor-kereta-demi-tarif-murah\n- https://finance.detik.com/read/2019/08/19/161619/4671967/1036/ri-bisa-bikin-krl-tapi-kok-impor-yang-bekas-dari-jepang\n- https://www.newsweekjapan.jp/articles/-/21721?page=1\n- https://en.wikipedia.org/wiki/Rail_transport_in_Indonesia\n- https://en.wikipedia.org/wiki/205_series\n- https://rmol.id/read/2012/05/16/64003/atap-berkarat-gerbong-penuh-poster-iklan\n- https://ekonomi.bisnis.com/read/20260713/98/1987706/kai-sebut-18-krl-baru-siap-beroperasi-9-rangkaian-pensiun-tahun-ini\n- https://www.cnbcindonesia.com/news/20230303072844-4-418508/impor-krl-bekas-jepang-berpolemik-ini-biang-keroknya\n- https://www.metrotvnews.com/play/NxGCXq5a-dulu-ditolak-kini-indonesia-mau-impor-krl-bekas-dari-jepang\n- https://www.liputan6.com/bisnis/read/6007403/kai-commuter-kembali-terima-2-krl-baru-dari-china\n- https://berkas.dpr.go.id/pusaka/files/isu_sepekan/Isu%20Sepekan---I-PUSLIT-Februari-2024-228.pdf\n- https://ekonomi.bisnis.com/read/20240201/98/1737487/perbandingan-impor-krl-dari-china-dan-jepang-siapa-lebih-mahal\n- https://finance.detik.com/infrastruktur/d-7943442/krl-made-in-china-resmi-operasi-punya-banyak-fitur-baru\n- https://rri.co.id/en/archipelago/1967107/jakarta-s-legendary-krl-trains-retired-after-decades-of-service\n- https://finance.detik.com/infrastruktur/d-8571647/kai-buka-bukaan-18-krl-baru-sudah-beroperasi\n- https://www.railjournal.com/fleet/indonesias-kai-abandons-plans-to-import-second-hand-japanese-trains/\n- https://investortrust.id/business/121803/kai-scraps-plan-to-import-used-japanese-commuter-trains-prioritizes-domestic-fleet\n- https://afu.id/ekonomi/dirut-kai-batalkan-impor-23-krl-bekas-jepang-yang-sudah-disetujui-dpr-ini-alasannya\n- https://katadata.co.id/infografik/6ab9d5bf9a9fd/infografik-impor-krl-eks-jepang-kembali-diizinkan\n- https://katadata.co.id/amp/finansial/makro/6aec65cdc2b9f/kai-batalkan-impor-krl-bekas-23-trainset-akan-dipasok-dari-dalam-negeri\n- https://ekonomi.bisnis.com/read/20261003/98/2009402/impor-krl-bekas-terganjal-usia-kereta\n- https://ekonomi.bisnis.com/read/20261110/98/2020013/3-pertimbangan-kai-batal-impor-krl-bekas-jepang\n- https://ekonomi.bisnis.com/read/20261010/98/2011478/kemenhub-ingin-pt-kai-punya-krl-baru-bukan-bekas\n- https://www.railjournal.com/passenger/commuter-rail/indonesia-pursues-major-fleet-modernisation/\n- https://en.wikipedia.org/wiki/Java\n\nThe narration uses a synthetic voice and cartoon animation.\nStock footage: Pixabay Content License.\n\nFootage credits (CC BY, via YouTube):\n- \"[4K] Stasiun Jakarta Kota: Kompilasi Kereta TM 6000, JR 205 | KRL Commuter Line (4/6)\" by Alif Putra Banyuaji, https://www.youtube.com/watch?v=8goPWyjEAVg. Licensed under Creative Commons Attribution.\n- \"[4K] Hunting KRL Baru CLI-125 buatan CRRC di Stasiun Mangga Besar\" by Alif Putra Banyuaji, https://www.youtube.com/watch?v=EHxDVzOogME. Licensed under Creative Commons Attribution.\n- \"STASIUN KERETA API INI SIBUK SEKALI‼️ JR 205, TM 6000, iE305/CLI-225, CRRC CLI-125/SFC120-V\" by Bang Acoy, https://www.youtube.com/watch?v=eoD8fltls2s. Licensed under Creative Commons Attribution.\n- \"Delivery of Old Jakarta Commuter Line Trains Set for Maintenance and Many Others\" by Java Railfanning, https://www.youtube.com/watch?v=fMrVbP9zMDs. Licensed under Creative Commons Attribution.",
+      "description": "After watching, you can explain why Jakarta could run Tokyo's retired trains for 25 years without rebuilding its tracks, and why a 20-year import age limit ended that in November 2026.\n\n0:00 Tokyo's trains in Jakarta\n0:46 The gift and the bargain\n1:53 Why the trains fit\n3:37 The 2023 block and new trains\n5:08 Too many riders, too few trains\n6:24 Back to Tokyo\n7:22 The age rule\n8:37 What commuters ride next\n\nSources:\n- https://finance.detik.com/infrastruktur/d-8740270/impor-krl-bekas-akhirnya-batal\n- https://en.wikipedia.org/wiki/KRL_Commuterline\n- https://katadata.co.id/berita/2019/08/21/candu-impor-kereta-bekas-jepang\n- https://ekonomi.republika.co.id/berita/ng0apv/impor-kereta-demi-tarif-murah\n- https://finance.detik.com/read/2019/08/19/161619/4671967/1036/ri-bisa-bikin-krl-tapi-kok-impor-yang-bekas-dari-jepang\n- https://www.newsweekjapan.jp/articles/-/21721?page=1\n- https://en.wikipedia.org/wiki/Rail_transport_in_Indonesia\n- https://en.wikipedia.org/wiki/205_series\n- https://rmol.id/read/2012/05/16/64003/atap-berkarat-gerbong-penuh-poster-iklan\n- https://ekonomi.bisnis.com/read/20260713/98/1987706/kai-sebut-18-krl-baru-siap-beroperasi-9-rangkaian-pensiun-tahun-ini\n- https://www.cnbcindonesia.com/news/20230303072844-4-418508/impor-krl-bekas-jepang-berpolemik-ini-biang-keroknya\n- https://www.metrotvnews.com/play/NxGCXq5a-dulu-ditolak-kini-indonesia-mau-impor-krl-bekas-dari-jepang\n- https://www.liputan6.com/bisnis/read/6007403/kai-commuter-kembali-terima-2-krl-baru-dari-china\n- https://berkas.dpr.go.id/pusaka/files/isu_sepekan/Isu%20Sepekan---I-PUSLIT-Februari-2024-228.pdf\n- https://ekonomi.bisnis.com/read/20240201/98/1737487/perbandingan-impor-krl-dari-china-dan-jepang-siapa-lebih-mahal\n- https://finance.detik.com/infrastruktur/d-7943442/krl-made-in-china-resmi-operasi-punya-banyak-fitur-baru\n- https://rri.co.id/en/archipelago/1967107/jakarta-s-legendary-krl-trains-retired-after-decades-of-service\n- https://finance.detik.com/infrastruktur/d-8571647/kai-buka-bukaan-18-krl-baru-sudah-beroperasi\n- https://www.railjournal.com/fleet/indonesias-kai-abandons-plans-to-import-second-hand-japanese-trains/\n- https://investortrust.id/business/121803/kai-scraps-plan-to-import-used-japanese-commuter-trains-prioritizes-domestic-fleet\n- https://afu.id/ekonomi/dirut-kai-batalkan-impor-23-krl-bekas-jepang-yang-sudah-disetujui-dpr-ini-alasannya\n- https://katadata.co.id/infografik/6ab9d5bf9a9fd/infografik-impor-krl-eks-jepang-kembali-diizinkan\n- https://katadata.co.id/amp/finansial/makro/6aec65cdc2b9f/kai-batalkan-impor-krl-bekas-23-trainset-akan-dipasok-dari-dalam-negeri\n- https://ekonomi.bisnis.com/read/20261003/98/2009402/impor-krl-bekas-terganjal-usia-kereta\n- https://ekonomi.bisnis.com/read/20261110/98/2020013/3-pertimbangan-kai-batal-impor-krl-bekas-jepang\n- https://ekonomi.bisnis.com/read/20261010/98/2011478/kemenhub-ingin-pt-kai-punya-krl-baru-bukan-bekas\n- https://www.railjournal.com/passenger/commuter-rail/indonesia-pursues-major-fleet-modernisation/\n- https://en.wikipedia.org/wiki/Java\n\nThe narration uses a synthetic voice. Visuals are 3D animation and licensed real footage.\nStock footage: Pixabay Content License.\n\nFootage credits (CC BY, via YouTube; clips trimmed and muted):\n- \"[4K] Stasiun Jakarta Kota: Kompilasi Kereta TM 6000, JR 205 | KRL Commuter Line (4/6)\" by Alif Putra Banyuaji, https://www.youtube.com/watch?v=8goPWyjEAVg. Licensed under Creative Commons Attribution.\n- \"[4K] Hunting KRL Baru CLI-125 buatan CRRC di Stasiun Mangga Besar\" by Alif Putra Banyuaji, https://www.youtube.com/watch?v=EHxDVzOogME. Licensed under Creative Commons Attribution.\n- \"STASIUN KERETA API INI SIBUK SEKALI‼️ JR 205, TM 6000, iE305/CLI-225, CRRC CLI-125/SFC120-V\" by Bang Acoy, https://www.youtube.com/watch?v=eoD8fltls2s. Licensed under Creative Commons Attribution.\n- \"Delivery of Old Jakarta Commuter Line Trains Set for Maintenance and Many Others\" by Java Railfanning, https://www.youtube.com/watch?v=fMrVbP9zMDs. Licensed under Creative Commons Attribution.",
       "tags": [
         "Jakarta",
         "KRL",
@@ -48,9 +48,7 @@
         "INKA",
         "CRRC"
       ],
-      "scheduled_date": "2026-12-07T12:00:00Z",
-      "timezone": "Asia/Jakarta",
-      "lokal": "2026-12-07 19:00:00"
+      "lokal": "manual, 2026-11-26"
     },
     {
       "nama": "A1-why-tokyo-trains-fit",
@@ -61,17 +59,15 @@
         "instagram",
         "facebook"
       ],
-      "title": "Why Jakarta's trains still have Japanese writing inside.",
-      "description": "Why Jakarta's trains still have Japanese writing inside.\n\nFull video on the channel.",
+      "title": "You step onto a Jakarta train that started in Tokyo. Here's why it still fits.",
+      "description": "You step onto a Jakarta train that started in Tokyo. Here's why it still fits.\n\nFull video on the channel.",
       "tags": [
         "Jakarta",
         "KRL",
         "Tokyo trains",
         "shorts"
       ],
-      "scheduled_date": "2026-12-08T12:00:00Z",
-      "timezone": "Asia/Jakarta",
-      "lokal": "2026-12-08 19:00:00"
+      "lokal": "manual, 2026-11-26"
     },
     {
       "nama": "A2-too-old-to-import",
@@ -82,17 +78,15 @@
         "instagram",
         "facebook"
       ],
-      "title": "Jakarta wanted Tokyo's old trains again. A rule said no.",
-      "description": "Jakarta wanted Tokyo's old trains again. A rule said no.\n\nFull video on the channel.",
+      "title": "You'd think Jakarta could just buy more of Tokyo's old trains. A rule said no.",
+      "description": "You'd think Jakarta could just buy more of Tokyo's old trains. A rule said no.\n\nFull video on the channel.",
       "tags": [
         "Jakarta",
         "KRL",
         "Tokyo trains",
         "shorts"
       ],
-      "scheduled_date": "2026-12-09T12:00:00Z",
-      "timezone": "Asia/Jakarta",
-      "lokal": "2026-12-09 19:00:00"
+      "lokal": "manual, 2026-11-26"
     }
   ],
   "hasil": []

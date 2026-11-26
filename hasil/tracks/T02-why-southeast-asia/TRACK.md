@@ -8,10 +8,10 @@ channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "001-jakarta-refused-tokyo-trains"
-langkah_berikutnya: "siklus 001 dirender ulang gaya R3 3D (2026-11-26): jalankan QA anti-slop (instruksi/06-qa-anti-slop.md) di sesi baru dan tulis 05-qa.md, lalu kreator menonton master + 2 Shorts + thumbnail"
+langkah_berikutnya: "siklus 001: kreator mengunggah manual master + 2 Shorts (06-publish-manual.md), lalu kirim tautan dan jam tayang untuk dicatat"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: "Tonton render 3D siklus 001 (hasil/review/T02-001-jakarta-refused-tokyo-trains/index.html): setujui atau minta revisi, setelah QA anti-slop LULUS"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -51,7 +51,7 @@ Skor niche 79. "why indonesia" punya 11 video di atas 10 ribu view dalam 90 hari
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | qa | target 2026-12-07 | uji-V2, variasi A; render 3D 2026-11-26 |
+| 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | qa | rencana manual 2026-11-26 | uji-V2, variasi A; render 3D 2026-11-26; QA anti-slop manual belum ada |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -89,3 +89,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Produksi siklus 001 selesai: master 9:24 dan 2 Shorts dirender, thumbnail A/B, 06-publish disusun (atribusi CC BY, chapter, tag). QA otomatis LULUS-OTOMATIS (0 kritis; sedang: jarak re-hook 113 dtk di awal, bukti kreator). Posisi objek diorama dipindah supaya tidak menutupi subjek; narasi tidak diubah. Klip stok s36, s40, s52 dibuang (tidak sesuai konteks). Teks layar s31 "filmed Nov 2026" dihapus (klip diunggah 2025-06-01). Footage milik kreator tidak ada, scene itu diorama. Temuan: Shorts 9:16 memotong callout dan subjek; belum diperbaiki. Menunggu review kreator.
 - 2026-11-26: Kreator meminta siklus 001 memakai gaya cerita dan visual baru (walau dikecualikan aturan). Naskah ditulis ulang lewat `03-script.r3.py`: narasi diubah di s01 (orang kedua), s31 (tanpa klaim tanggal rekaman), s43 (blok insentif), s44 (beat jujur), s50 (tebakan patah), s57 (penutup callback + analogi); `anchor` peta, `cast` Komo/Sepuh/Aturan, 123 `shots` di 53 scene, komponen di `04-shots.tsx` (dihasilkan dari `04-shots.head.tsx`). Scene footage CC BY (s17, s22, s31, s34) dan stok s44 tetap footage penuh; s02 digambar R3 (klip -01 tidak dipakai). `build-visual --check` dan `check_kit.py` lolos, QA R3 G1-G6 lolos kecuali G4 terhadap caption lama. Render lama (2026-11-25) tidak lagi sesuai naskah; perlu TTS, render ulang, QA anti-slop ulang. Menunggu persetujuan naskah.
 - 2026-11-26: Siklus 001 diproduksi ulang dengan R3 3D: lapisan `produksi/remotion/src/r3/three` (three 0.187.0, @react-three/fiber, @remotion/three), 122 shot ditulis ulang di `04-shots.tsx` (generator lama `04-shots.head.tsx` dihapus), peta 3D, pemeran 3D, thumbnail 3D, Shorts dengan kamera tegak sendiri. Audio dibuat ulang untuk s01, s31, s43, s44, s50, s57; caption semua scene. Master 9:49, 2 Shorts. QA otomatis 0 kritis (sedang: re-hook awal 113 dtk, bukti kreator dikecualikan; kecil: footage 9%). Loudness master sekitar -23 LUFS, sama dengan render lama. QA anti-slop manual belum dijalankan. Render 2D lama di produksi/render/T02/001/_lama-2d.
+- 2026-11-26: Kreator memutuskan mengunggah master dan Shorts siklus 001 secara manual hari ini ke semua platform, memajukan jadwal dari 2026-12-07 (penyimpangan dari rencana V2 terkunci; `validasi/rencana.md` tidak diubah). QA anti-slop manual (05-qa.md) belum dijalankan. Lembar unggah: 06-publish-manual.md; chapter, judul Shorts, dan keterangan visual diperbarui; publish otomatis dimatikan. Belum ada tautan tayang.

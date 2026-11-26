@@ -4,7 +4,7 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "T01: kirim Short A2 (kuota habis), verifikasi channel YouTube, setujui naskah 002 + rekam 2 klip tangan. T02: QA anti-slop lalu review render 3D siklus 001"
+langkah_berikutnya: "T01: kirim Short A2 (kuota habis), verifikasi channel YouTube, setujui naskah 002 + rekam 2 klip tangan. T02: unggah manual siklus 001 lalu catat tautan"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-26
@@ -19,7 +19,7 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Kirim Short A2, naskah 002 | 5,5 | 2026-11-25: master 001 tayang |
-| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | Siklus 001: QA anti-slop lalu review render 3D | 6 | 2026-11-26: video 001 dirender ulang 3D |
+| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | Siklus 001: unggah manual, kirim tautan | 6 | 2026-11-26: video 001 dirender ulang 3D |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
 | T05 | Indonesia dan Asia Tenggara dari dalam | Nusantara before the maps | usulan | Channel Asia Tenggara | Cadangan | - | 2026-11-24: cadangan |
@@ -66,3 +66,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: Mesin render `shots` (gaya R3) dibangun di produksi/remotion/src/r3 (primitif, penghitung, transisi iris/wipe/dorong/potong/tahan, pemeran T02). Waktu shot dan label dihitung dari caption per kata (scripts/produksi/r3.mjs); agent menulis adegan per siklus di `04-shots.tsx` (cara di produksi/PIPELINE.md, bagian Mesin R3). build-visual, render, run, dan QA (G1–G6, scripts/pipeline/qa-r3.mjs) diselaraskan. Contoh: s06 T02-001 ditulis ulang di produksi/contoh-r3/T02-001-s06, QA G1–G6 lolos. T01-001 dan T02-001 tetap dirender mesin lama. instruksi/referensi/gaya-visual.md bagian 8 masih menyebut mesin belum ada (folder instruksi/ tidak diubah tanpa izin kreator).
 - 2026-11-26: Mesin render shots R3 (produksi/remotion/src/r3, sesi terpisah) digabung ke T02. Siklus baru bisa diproduksi dengan gaya R3; T02-001 akan dibuat ulang dengan R3 di sesi baru.
 - 2026-11-26: T02 siklus 001 diproduksi ulang dengan visual R3 3D berkedalaman atas permintaan kreator. Lapisan 3D bersama dibangun sebagai tambahan (`r3/three`, opsional per siklus) di sesi produksi yang sama; perubahan kecil di render.mjs (`--gl=angle` untuk siklus 3D), Thumbnail.tsx, dan tsconfig. Render track lain belum diuji ulang. AGENTS.md dan instruksi/referensi/gaya-visual.md masih menyebut lapisan 3D belum dibangun (tidak diubah tanpa izin).
+- 2026-11-26: Kreator mengunggah T02-001 secara manual lebih awal (penyimpangan dari jendela tayang V2 T02). QA anti-slop manual belum dijalankan. Menunggu tautan tayang.
