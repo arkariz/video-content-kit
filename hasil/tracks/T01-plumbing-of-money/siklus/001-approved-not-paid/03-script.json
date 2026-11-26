@@ -1,4 +1,5 @@
 {
+  "caption_mode": "word",
   "cycle": "001-approved-not-paid",
   "title_options": [
     "Your Card Said \"Approved.\" The Shop Hasn't Been Paid.",

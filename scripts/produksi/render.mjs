@@ -12,10 +12,14 @@ const caps = readJson(path.join(ROOT, "produksi/captions", o.track, o.siklus, `$
 if (o.thumb) { // thumbnail dari script.thumbnails -> Thumbnail-A.png, Thumbnail-B.png, ...
   const list = script.thumbnails || []; if (!list.length) throw new Error("script.thumbnails kosong");
   const outDir = path.join(ROOT, "produksi/render", o.track, o.siklus); fs.mkdirSync(outDir, { recursive: true }); const tp = path.join(ROOT, "produksi/render", `.props-${o.track}-${o.siklus}-thumb.json`); const a = readJson(assetsPath, { footage: [], renders: [] });
-  const gl3 = list.some((t) => t.stage?.engine === "r3") ? ["--gl=angle"] : [];
-  list.forEach((th, i) => { const name = `Thumbnail-${String.fromCharCode(65 + i)}.png`; writeJson(tp, { trackId: o.track, ...th });
-    execFileSync("npx", ["remotion", "still", "src/index.ts", "Thumbnail", path.join(outDir, name), `--props=${tp}`, `--public-dir=${path.join(ROOT, "produksi")}`, "--frame=89", ...gl3], { cwd: path.join(ROOT, "produksi/remotion"), stdio: "ignore" });
-    const rel = `render/${o.track}/${o.siklus}/${name}`; a.renders = [...a.renders.filter((r) => r.file !== rel), { file: rel, comp: "Thumbnail" }]; console.log("thumbnail", rel); });
+  const jobs = list.map((th, i) => ({ th, comp: "Thumbnail", name: `Thumbnail-${String.fromCharCode(65 + i)}.png` }));
+  for (const c of script.shorts_cuts || []) { // satu thumbnail tegak 1080x1920 per Short
+    if (c.thumbnail) jobs.push({ th: c.thumbnail, comp: "ThumbnailShort", name: `Thumbnail-Short-${c.name}.png` });
+    else console.log(`  peringatan: Short ${c.name} belum punya "thumbnail" di shorts_cuts`);
+  }
+  for (const { th, comp: tc, name } of jobs) { writeJson(tp, { trackId: o.track, vertical: tc === "ThumbnailShort", ...th });
+    execFileSync("npx", ["remotion", "still", "src/index.ts", tc, path.join(outDir, name), `--props=${tp}`, `--public-dir=${path.join(ROOT, "produksi")}`, "--frame=89", ...(th.stage?.engine === "r3" ? ["--gl=angle"] : [])], { cwd: path.join(ROOT, "produksi/remotion"), stdio: "ignore" });
+    const rel = `render/${o.track}/${o.siklus}/${name}`; a.renders = [...a.renders.filter((r) => r.file !== rel), { file: rel, comp: tc }]; console.log("thumbnail", rel); }
   writeJson(assetsPath, a); process.exit(0);
 }
 // Siklus yang memakai lapisan 3D (@r3/three) butuh WebGL di Chrome headless.
@@ -36,7 +40,8 @@ const scenes = ids.map((id, idx) => { const s = script.scenes.find((x) => x.id =
 const dubbed = [];
 if (o.dub) for (const s of scenes) { const ms = script.scenes.find((x) => x.id === s.id).duration_ms?.[o.dub]; if (!ms) throw new Error(`${s.id}: belum ada audio ${o.dub}`);
   s.audio = `audio/${o.track}/${o.siklus}/${o.dub}/${s.id}.mp3`; const rate = (ms / 1000) * FPS / (s.durationFrames - 2); if (rate > 1) { s.audioRate = Math.round(rate * 1000) / 1000; dubbed.push([s.id, s.audioRate]); } }
-const props = { trackId: o.track, lang, scenes, vertical: comp !== "Master16x9" };
+// caption per kalimat untuk semua siklus; "word" hanya untuk siklus lama yang sudah dirender begitu
+const props = { trackId: o.track, lang, scenes, vertical: comp !== "Master16x9", captionMode: script.caption_mode ?? "sentence" };
 const tmp = path.join(ROOT, "produksi/render", `.props-${o.track}-${o.siklus}${contoh ? "-contoh" : ""}.json`); writeJson(tmp, props);
 const tag = cut ? "-" + cut : o.scenes ? "-" + ids.join("-") : "";
 const outRel = o.dub ? `${outBase}/${comp}${tag}-audio-${o.dub}.m4a` : `${outBase}/${comp}${tag}-${lang}.mp4`; fs.mkdirSync(path.dirname(path.join(ROOT, "produksi", outRel)), { recursive: true });
@@ -53,7 +58,7 @@ if (o.still) {
   }
   process.exit(0);
 }
-execFileSync("npx", ["remotion", "render", "src/index.ts", comp, path.join(ROOT, "produksi", outRel), `--props=${tmp}`, `--public-dir=${path.join(ROOT, "produksi")}`, "--concurrency=50%", ...gl, ...(o.dub ? ["--codec=aac"] : [])], { cwd: path.join(ROOT, "produksi/remotion"), stdio: "inherit" });
+execFileSync("npx", ["remotion", "render", "src/index.ts", comp, path.join(ROOT, "produksi", outRel), `--props=${tmp}`, `--public-dir=${path.join(ROOT, "produksi")}`, "--concurrency=50%", "--timeout=120000", ...gl, ...(o.dub ? ["--codec=aac"] : [])], { cwd: path.join(ROOT, "produksi/remotion"), stdio: "inherit" });
 if (!contoh && !o.scenes) { assets.renders = [...assets.renders.filter((r) => r.file !== outRel), { file: outRel, comp, lang: o.dub || lang, cut: cut || null, ...(o.dub ? { dub: true, dipercepat: Object.fromEntries(dubbed) } : {}) }]; writeJson(assetsPath, assets); }
 console.log("render", outRel);
 if (o.dub) console.log(`dub ${o.dub}: ${dubbed.length} scene dipercepat`, dubbed.map(([i, r]) => `${i}×${r}`).join(" "));

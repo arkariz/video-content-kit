@@ -1,0 +1,42 @@
+{
+  "footage": [],
+  "renders": [
+    {
+      "file": "render/T01/004/Thumbnail-A.png",
+      "comp": "Thumbnail"
+    },
+    {
+      "file": "render/T01/004/Thumbnail-B.png",
+      "comp": "Thumbnail"
+    },
+    {
+      "file": "render/T01/004/Master16x9-en.mp4",
+      "comp": "Master16x9",
+      "lang": "en",
+      "cut": null
+    },
+    {
+      "file": "render/T01/004/Short9x16-S1-not-rockstars-money-en.mp4",
+      "comp": "Short9x16",
+      "lang": "en",
+      "cut": "S1-not-rockstars-money"
+    }
+  ],
+  "audio_extra": {
+    "sumber": "ElevenLabs (Music API, Sound Generation)",
+    "musik": "Instrumental background bed for a money explainer video. Light playful heist mood at night: warm plucked upright bass, soft brushed percussion, muted vibraphone, gentle marimba, subtle analog pads. Steady 96 bpm, even dynamics, no drops, no big builds, no vocals, leaves room for narration.",
+    "tercampur": [
+      {
+        "file": "Master16x9-en.mp4",
+        "sfx": 84,
+        "lufs": -14.1
+      },
+      {
+        "file": "Short9x16-S1-not-rockstars-money-en.mp4",
+        "sfx": 11,
+        "lufs": -14.1
+      }
+    ],
+    "sfx_belum_ada": []
+  }
+}

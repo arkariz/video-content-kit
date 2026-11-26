@@ -13,6 +13,7 @@ Tulis `02-brief.md` (template `brief.md`):
 - **Bukti milik kreator**: minimal satu (demo kode nyata, angka dari proyek yang boleh dibagi, pengalaman spesifik, screen recording).
 - **Format**: durasi master, jumlah Shorts yang akan dipotong, versi Indonesia.
 - **3 varian judul** dan **2 varian teks thumbnail** (maksimal 4 kata).
+- **Thumbnail tiap Short** (wajib, 1080x1920): isi `shorts_cuts[].thumbnail`, maksimal 5 kata (kontrak di `produksi/CONTRACT.md`).
 - **Learnings yang diterapkan** dari `hasil/tracks/<ID>/learnings.md`.
 
 ## 2b. Naskah

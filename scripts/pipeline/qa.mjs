@@ -59,6 +59,12 @@ else for (const p of script.pronunciations || []) { if (!/^[a-z]+$/i.test(p.term
 if (!assets.voice?.type) add("Audio", "sedang", "A3", "jenis/lisensi suara belum dicatat (assets.voice.type)", "catat: clone milik kreator atau voice berlisensi komersial, paket berbayar");
 // thumbnail
 if (!fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Thumbnail-A.png"))) add("Visual", "sedang", "V7", "thumbnail belum dibuat", "render Thumbnail varian A dan B");
+// thumbnail Shorts dan caption per kalimat: wajib untuk semua siklus selain siklus lama (caption_mode "word")
+{ const lama = script.caption_mode === "word";
+  for (const c of script.shorts_cuts || []) {
+    if (!c.thumbnail && !lama) add("Visual", "kritis", "V8", `Short ${c.name} tanpa "thumbnail" di shorts_cuts`, "tulis thumbnail tegak untuk tiap Short");
+    else if (c.thumbnail && !fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, `Thumbnail-Short-${c.name}.png`))) add("Visual", "sedang", "V8", `thumbnail Short ${c.name} belum dirender`, "render.mjs --thumb");
+  } }
 // bukti kreator: footage milik kreator di 30% awal memenuhi syarat
 const ownEarly = assets.footage.filter((f) => f.catalog_key?.startsWith("own:") && start[f.scene_id] !== undefined && start[f.scene_id] <= 0.3 * total);
 if (ownEarly.length) add("Visual/Channel", "kecil", "K1", `bukti kreator: footage milik kreator di ${ownEarly.map((f) => f.scene_id).join(", ")} (sebelum 30% durasi)`, "tidak ada, periksa manual bahwa isinya menjelaskan topik");

@@ -11,7 +11,7 @@ siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "siklus 001 selesai tayang (2026-11-26): analitik mulai 2026-12-02 (instruksi/08). Siklus 002: naskah draft masih gaya diorama (usang), tulis ulang ke R3 + gaya cerita, kreator menyetujui dan merekam 2 klip tangan (s02, s38). Belum dikonfirmasi: tautan A1/A2, verifikasi channel YouTube dan thumbnail master, audio ID"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: null
+menunggu_keputusan: "004: (1) setujui gaya preview s01-s06 atau beri revisi sebelum 31 scene lain ditulis; (2) master diperkirakan 7:03 (< 8:00): perlambat TTS, tambah jeda, atau tanpa mid-roll"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -55,6 +55,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | tayang | 2026-11-25 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33); 2026-11-26 master dan 2 Shorts tayang di semua platform |
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | naskah | 2026-12-14 | uji-V2; pakai riset 001; draft masih gaya diorama, wajib ditulis ulang ke R3 sebelum disetujui |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
+| 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | produksi | target ≤ 2026-12-03 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -70,6 +71,8 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-25 | Naskah 001 revisi QA disetujui; audio dibuat ulang dengan ElevenLabs Starter (suara EN lama, ID R86jddkroI9bJwXFfjsr) | QA otomatis 0 kritis; durasi master 8:06 | siklus/001-approved-not-paid/05-qa.auto.md |
 | 2026-11-25 | Thumbnail master 001: varian A "APPROVED ≠ PAID" | Pilihan kreator; mengulang janji judul dan hook | produksi/render/T01/001/Thumbnail-A.png |
 | 2026-11-25 | Jadwal 001 dimajukan ke 25-27 Nov (master 11-25, Shorts 11-26 dan 11-27) | Keputusan kreator; penyimpangan dari rencana V2 terkunci (tayang pertama 2026-12-07). rencana.md tidak diubah | siklus/001-approved-not-paid/06-publish.json |
+| 2026-11-26 | Siklus 004 (GTA VI) dibuat di luar paket V2, sudut A "who actually got it" | Hype rilis 19 Nov ($3,79 miliar day one); rencana.md tidak diubah; dikeluarkan dari penilaian 2027-01-03 | siklus/004-gta6-who-got-paid/01-riset-viral.md |
+| 2026-11-26 | Naskah 004 disetujui; judul 1 "Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It."; thumbnail A "$80 → WHO?" | Anti-slop EN 40/50, ID 39/50; checklist cerita 7/7 | siklus/004-gta6-who-got-paid/03-naskah.md |
 
 ## Log
 
@@ -111,4 +114,8 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Kreator memilih menyimpan pelajaran 001 sebagai catatan untuk siklus berikutnya dan track lain (learnings-global.md), tanpa mengubah mesin, kontrak, atau QA.
 - 2026-11-25: Gaya wajib mulai siklus 002: diorama 2.5D.
 - 2026-11-26: Brief dan draft naskah 002 (44 scene, anti-slop EN 40/50, ID 39/50) ditulis dengan gaya cerita wajib (instruksi/referensi/gaya-cerita.md). 01-riset-viral.md disalin dari 001. Menunggu persetujuan kreator dan 2 klip tangan kreator (s02 tap kartu, s38 bayar QRIS).
+- 2026-11-26: Siklus 004-gta6-who-got-paid dibuat atas keputusan kreator (opsi 1: di luar paket V2; sudut A). Penyimpangan dari rencana V2 terkunci dicatat; rencana.md tidak diubah. Riset viral, brief, 03-script.json (37 scene, R3 shots per kalimat) dan 03-naskah.md (EN 1.144 kata, ID 1.046, estimasi ±8:06 pada 150 kpm; anti-slop EN 40/50, ID 39/50) ditulis. Menunggu persetujuan naskah. Produksi 002 mundur 2 sampai 3 hari, jadwal tayang 002 tetap 2026-12-14.
+- 2026-11-26: Kreator menyetujui naskah 004 (judul 1, thumbnail A). Status produksi. Klip tangan s01 opsional, belum ada. Bila master < 8:00 setelah TTS, kreator memutuskan (perlambat TTS, tambah jeda, atau tanpa mid-roll); jangan menambah konsep.
+- 2026-11-26: Siklus 004: TTS EN (ElevenLabs, audio 6,51 menit) dan caption dibuat. Atas permintaan kreator, hanya preview: komponen 3D s01-s06 ditulis (04-shots.tsx) dan klip 63 detik dirender (produksi/render/T01/004/Master16x9-s01-s02-s03-s04-s05-s06-en.mp4). s07-s37 belum ditulis, video penuh belum dirender, QA belum dijalankan. Estimasi master 7:03, di bawah 8:00. Menunggu review gaya dan keputusan durasi.
+- 2026-11-26: Siklus 004: gaya preview disetujui; adegan s07-s37 ditulis; master (7:04) dan Short S1 dirender, dicampur musik dan efek suara ElevenLabs ke -14,1 LUFS; thumbnail master dan Shorts dibuat; lembar unggah manual ditulis. Transisi sejumlah shot diubah dari hold ke cut, nilai faces, tiga teks label, dan dua teks show disesuaikan dengan kontrak (narasi tidak berubah). Ditunda atas permintaan kreator: render Short S2 (lalu mix.mjs) dan QA. Belum publish.
 - 2026-11-26: Kreator mengonfirmasi master dan 2 Shorts siklus 001 tayang di semua platform. Tautan A1 dan A2 belum dicatat. Berikutnya analitik; draft naskah 002 (diorama) harus ditulis ulang ke R3.

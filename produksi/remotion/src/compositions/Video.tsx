@@ -10,6 +10,7 @@ import { Fit } from "../lib/Fit";
 import { Stage } from "../toon/Stage";
 import { Diorama } from "../diorama/Diorama";
 import { R3Scene } from "../r3/engine";
+import { SentenceCaptions } from "../lib/SentenceCaptions";
 
 const Captions: React.FC<{ words: SceneProps["captions"]; big: boolean; accent: string; per?: number }> = ({ words, big, accent, per = 4 }) => {
   const frame = useCurrentFrame();
@@ -32,7 +33,7 @@ const TextCard: React.FC<{ spec: any; p: number; t: ReturnType<typeof themeFor> 
   </div>
 );
 
-const Scene: React.FC<{ s: SceneProps; prev?: SceneProps; trackId: string; vertical: boolean }> = ({ s, prev, trackId, vertical }) => {
+const Scene: React.FC<{ s: SceneProps; prev?: SceneProps; trackId: string; vertical: boolean; captionMode?: "word" | "sentence" }> = ({ s, prev, trackId, vertical, captionMode }) => {
   const t = themeFor(trackId);
   const frame = useCurrentFrame();
   const p = clamp(frame / Math.max(1, s.audioFrames));
@@ -66,17 +67,18 @@ const Scene: React.FC<{ s: SceneProps; prev?: SceneProps; trackId: string; verti
         </>
       )}
       {s.audio && <Audio src={staticFile(s.audio)} playbackRate={s.audioRate ?? 1} />}
-      <Captions words={s.captions} big={vertical} accent={t.accent} per={s.r3 || stage?.engine === "diorama" ? 1 : 4} />
+      {captionMode === "sentence" ? <SentenceCaptions words={s.captions} vertical={vertical} />
+        : <Captions words={s.captions} big={vertical} accent={t.accent} per={s.r3 || stage?.engine === "diorama" ? 1 : 4} />}
     </AbsoluteFill>
   );
 };
 
-export const Video: React.FC<VideoProps & { vertical?: boolean }> = ({ scenes, trackId, vertical = false }) => {
+export const Video: React.FC<VideoProps & { vertical?: boolean }> = ({ scenes, trackId, vertical = false, captionMode }) => {
   let from = 0;
   return (
     <AbsoluteFill>
       {scenes.map((s, i) => {
-        const el = (<Sequence key={s.id} from={from} durationInFrames={s.durationFrames}><Scene s={s} prev={scenes[i - 1]} trackId={trackId} vertical={vertical} /></Sequence>);
+        const el = (<Sequence key={s.id} from={from} durationInFrames={s.durationFrames}><Scene s={s} prev={scenes[i - 1]} trackId={trackId} vertical={vertical} captionMode={captionMode} /></Sequence>);
         from += s.durationFrames;
         return el;
       })}

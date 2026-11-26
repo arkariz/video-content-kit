@@ -1,0 +1,2239 @@
+{
+  "caption_mode": "word",
+  "cycle": "004-gta6-who-got-paid",
+  "track": "T01",
+  "di_luar_v2": true,
+  "title_options": [
+    "Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It.",
+    "You Paid $80 for GTA 6. Here's Where Every Dollar Went.",
+    "GTA 6 Sold $3.79 Billion in a Day. Who Got Paid, and When?"
+  ],
+  "thumbnail_text": [
+    "$80 → WHO?",
+    "WHO GOT PAID?"
+  ],
+  "promise": "After watching, you know who takes each part of an $80 GTA 6 download, and why none of it lands on launch night.",
+  "creator_evidence": [
+    {
+      "what": "Payment-flow knowledge from building a consumer finance app: merchant of record, card settlement timing, store payouts (narrated without credential claims)",
+      "scene_id": "s17"
+    },
+    {
+      "what": "Callback to the channel's own explainer (approved ≠ paid, cycle 001)",
+      "scene_id": "s26"
+    },
+    {
+      "what": "OPTIONAL: creator hand clip pressing a generic controller button (no console logos)",
+      "scene_id": "s01"
+    }
+  ],
+  "pronunciations": [
+    {
+      "term": "GTA 6",
+      "say_as": "G T A six"
+    },
+    {
+      "term": "GTA 5",
+      "say_as": "G T A five"
+    },
+    {
+      "term": "Take-Two",
+      "say_as": "take two"
+    },
+    {
+      "term": "Alinea",
+      "say_as": "ah-LIN-ee-ah"
+    }
+  ],
+  "anchor": {
+    "kind": "object",
+    "desc": "round heist table under a hanging lamp with an 80-coin bag and four seats; corner tracker shows hand 1-4; a coin-made wall clock above the table for timing"
+  },
+  "cast": [
+    "you",
+    "bag",
+    "state",
+    "store",
+    "card",
+    "publisher",
+    "yourbank"
+  ],
+  "ip_rules": "No GTA/Rockstar footage, trailer, logo, cover art, characters, map or font; no console brand logos. Generic controller, generic kiosks. 'GTA 6' only in title and narration.",
+  "scenes": [
+    {
+      "id": "s01",
+      "role": "hook",
+      "chapter": "The click",
+      "narration": {
+        "en": "Midnight, November nineteenth, and you press Buy on GTA 6 for seventy-nine ninety-nine. The game starts downloading. The money doesn't.",
+        "id": "Tengah malam, sembilan belas November, kamu menekan Buy untuk GTA 6, tujuh puluh sembilan dolar sembilan puluh sembilan. Gamenya mulai terunduh. Uangnya belum."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "close-up of your thumb on a generic controller, TV glow on a dark living room, a clock on the wall at 12:00",
+          "scale": "object",
+          "motion": "thumb presses, screen flashes; camera eases back to show you on the couch",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "$79.99",
+              "word": "seventy-nine"
+            }
+          ],
+          "mood": "night",
+          "faces": {
+            "you": "happy"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "progress bar on the TV filling with light, a stream of data dots flying into the console",
+          "scale": "object",
+          "motion": "bar fills fast, dots stream left to right",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "DOWNLOADING",
+              "word": "downloading"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "a small gold coin bag on the coffee table, still, while everything else moves",
+          "scale": "object",
+          "motion": "camera drifts to the bag; the bag stays put, grey-tinted",
+          "transition": "hold",
+          "mood": "cold",
+          "faces": {
+            "bag": "tired"
+          }
+        }
+      ],
+      "broll": {
+        "own": "OPSIONAL: klip tangan kreator menekan tombol controller generik (tanpa logo console), ±4 detik"
+      },
+      "duration_ms": {
+        "en": 8081
+      }
+    },
+    {
+      "id": "s02",
+      "role": "context",
+      "chapter": "The click",
+      "narration": {
+        "en": "By the end of that day, fans had spent three point seven nine billion dollars on this one game. Take-Two, the company that owns Rockstar, calls it the biggest launch in entertainment history.",
+        "id": "Sampai hari itu berakhir, penggemar sudah menghabiskan tiga koma tujuh sembilan miliar dolar untuk satu game ini. Take-Two, perusahaan pemilik Rockstar, menyebutnya peluncuran terbesar dalam sejarah hiburan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "zoom out from one living room to a night map of the world, thousands of TV glows lighting up city by city",
+          "scale": "map",
+          "motion": "lights spread across the map, a counter races upward",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "$3.79B",
+              "word": "billion"
+            }
+          ],
+          "count": {
+            "value": 3790000000,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a tall office tower with a calm face and a trophy on its roof, beside a short tower holding a smaller trophy",
+          "scale": "place",
+          "motion": "the tall tower lifts its trophy; label pops on the tall one",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "TAKE-TWO",
+              "word": "Take-Two"
+            },
+            {
+              "text": "ROCKSTAR",
+              "word": "Rockstar"
+            }
+          ],
+          "faces": {
+            "publisher": "smug"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://basic-tutorials.com/news/gta-6-sales-figures-3-79-billion-on-launch-day/",
+          "claim": "Take-Two: $3.79B day-one retail sales, company estimate through end of Nov 19; 32.5M copies sold before launch"
+        },
+        {
+          "url": "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/",
+          "claim": "Take-Two calls it the biggest entertainment launch in history"
+        }
+      ],
+      "duration_ms": {
+        "en": 11146
+      }
+    },
+    {
+      "id": "s03",
+      "role": "rehook",
+      "chapter": "The click",
+      "narration": {
+        "en": "Here's the part most headlines skip. Out of your eighty dollars, the publisher gets about fifty-six. And it doesn't get it that night.",
+        "id": "Ini bagian yang dilewatkan kebanyakan berita. Dari delapan puluh dolarmu, publisher dapat sekitar lima puluh enam. Dan uang itu tidak datang malam itu juga."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the $3.79B counter on the map cracks like glass",
+          "scale": "map",
+          "motion": "crack spreads, counter dims",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "80 gold coins on a table; 56 slide toward the tall tower, 24 stay behind",
+          "scale": "object",
+          "motion": "coins slide in a stream, counter ticks 0 to 56",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "$56",
+              "word": "fifty-six"
+            }
+          ],
+          "count": {
+            "value": 56,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "the 56 coins freeze mid-air above the table, a small clock model above them",
+          "scale": "object",
+          "motion": "coins hang and wobble, clock hands spin",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "NOT YET",
+              "word": "night"
+            }
+          ],
+          "mood": "cold"
+        }
+      ],
+      "duration_ms": {
+        "en": 7291
+      }
+    },
+    {
+      "id": "s04",
+      "role": "context",
+      "chapter": "The click",
+      "narration": {
+        "en": "Four hands touch your money before then. This video follows each one, and the clock that decides when the money actually lands.",
+        "id": "Ada empat tangan yang menyentuh uangmu sebelum itu. Video ini mengikuti satu per satu, dan jam yang menentukan kapan uang itu benar-benar sampai."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "four hands with distinct sleeves reach toward the coin bag from four sides of a table",
+          "scale": "object",
+          "motion": "hands slide in one at a time with a pop each",
+          "transition": "cut",
+          "count": {
+            "value": 4,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a big wall clock above the table, its hands made of coins",
+          "scale": "object",
+          "motion": "clock hand ticks; camera tilts up to it",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "WHEN?",
+              "word": "lands"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 7848
+      }
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "chapter": "The table",
+      "narration": {
+        "en": "Picture your payment as a bag of eighty coins: the take from a job. In GTA, a crew splits the take at a table after a heist. Your eighty dollars gets split the same way, just with more paperwork.",
+        "id": "Bayangkan pembayaranmu sebagai kantong berisi delapan puluh koin: hasil dari sebuah pekerjaan. Di GTA, sebuah kru membagi hasil di meja setelah perampokan. Delapan puluh dolarmu dibagi dengan cara yang sama, hanya dengan lebih banyak kertas."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the coin bag drops onto a round table under a hanging lamp, coins spill into a neat pile of 80",
+          "scale": "object",
+          "motion": "bag thuds, coins spread and stack",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "80 COINS",
+              "word": "eighty"
+            }
+          ],
+          "count": {
+            "value": 80,
+            "as": "dots"
+          },
+          "faces": {
+            "bag": "shock"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "four silhouettes in hats around the same table, original characters, sliding coin stacks to each other",
+          "scale": "place",
+          "motion": "silhouettes slide stacks; lamp sways",
+          "transition": "wipe",
+          "mood": "warm"
+        },
+        {
+          "sentence": 3,
+          "show": "the silhouettes turn into a capitol building, a store kiosk, a card gate and an office tower, each in a chair, each with a stack of paper",
+          "scale": "place",
+          "motion": "morph from silhouettes to buildings, paper stacks pop up",
+          "transition": "hold",
+          "bubble": "Sign here. And here."
+        }
+      ],
+      "duration_ms": {
+        "en": 12260
+      }
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "chapter": "The table",
+      "narration": {
+        "en": "Four players sit at this table. The state, which adds tax on top. The console store that sold you the download. The card system that moves the money. And the publisher, Take-Two, sitting last.",
+        "id": "Empat pemain duduk di meja ini. Negara, yang menambahkan pajak di atas harga. Toko console yang menjual unduhan itu. Sistem kartu yang memindahkan uangnya. Dan publisher, Take-Two, duduk paling akhir."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "wide shot of the table, four empty chairs lit one by one",
+          "scale": "place",
+          "motion": "spotlights click on chair by chair",
+          "transition": "cut",
+          "count": {
+            "value": 4,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a domed capitol building with a face sits down, sliding a small extra coin stack onto the pile",
+          "scale": "object",
+          "motion": "capitol sits, adds coins on top",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "STATE",
+              "word": "state"
+            },
+            {
+              "text": "+TAX",
+              "word": "tax"
+            }
+          ],
+          "faces": {
+            "state": "angry"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "a store kiosk shaped like a generic console with a shop awning sits down",
+          "scale": "object",
+          "motion": "awning unrolls, kiosk winks",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "CONSOLE STORE",
+              "word": "store"
+            }
+          ],
+          "faces": {
+            "store": "smug"
+          }
+        },
+        {
+          "sentence": 4,
+          "show": "a card-shaped gate with a face sits down, a conveyor of coins running through it",
+          "scale": "object",
+          "motion": "conveyor starts moving",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "CARD SYSTEM",
+              "word": "card"
+            }
+          ],
+          "faces": {
+            "card": "neutral"
+          }
+        },
+        {
+          "sentence": 5,
+          "show": "the office tower squeezes into the last chair at the far end, smallest lamp above it",
+          "scale": "object",
+          "motion": "tower sits, lamp flickers on last",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "PUBLISHER",
+              "word": "publisher"
+            }
+          ],
+          "faces": {
+            "publisher": "neutral"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 11703
+      }
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "chapter": "The table",
+      "narration": {
+        "en": "Most people guess the publisher takes nearly all of it, because the publisher made the game. It feels right, since the publisher paid for years of work. At this table, the publisher is served last, and gets what's left.",
+        "id": "Kebanyakan orang menebak publisher mengambil hampir semuanya, karena merekalah yang membuat gamenya. Rasanya wajar, karena publisher yang membiayai kerja bertahun-tahun. Di meja ini, publisher dilayani paling akhir, dan mendapat sisanya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "split panel: left, the tower hugging the whole coin pile; this panel fades and gets crossed out",
+          "scale": "object",
+          "motion": "pile drains into tower",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "THE GUESS",
+              "word": "guess"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "same left panel: years of calendar pages fall into the tower like paid bills",
+          "scale": "object",
+          "motion": "pages fall, tower nods; then a big X wipes over the panel",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "YEARS OF WORK",
+              "word": "work"
+            }
+          ],
+          "mood": "cold"
+        },
+        {
+          "sentence": 3,
+          "show": "right panel: coins pass hand to hand around the table, the tower at the end catches the remainder",
+          "scale": "object",
+          "motion": "coins travel clockwise, tower catches last stack",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SERVED LAST",
+              "word": "last"
+            }
+          ],
+          "mood": "warm"
+        }
+      ],
+      "duration_ms": {
+        "en": 12492
+      }
+    },
+    {
+      "id": "s08",
+      "role": "rehook",
+      "chapter": "The table",
+      "narration": {
+        "en": "One word to watch first. Three point seven nine billion is retail sales: what buyers paid, counted at the till. Revenue is what a company keeps after everyone else takes a cut. Headlines print the first number.",
+        "id": "Satu istilah yang perlu diperhatikan dulu. Tiga koma tujuh sembilan miliar itu retail sales: yang dibayar pembeli, dihitung di kasir. Revenue adalah yang disimpan perusahaan setelah semua pihak lain mengambil bagiannya. Berita memuat angka yang pertama."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a magnifying glass slides over a receipt on the table",
+          "scale": "object",
+          "motion": "glass sweeps across the receipt",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "a cash register pile labeled with the big number, coins pouring in from buyers",
+          "scale": "object",
+          "motion": "coins drop into the register, counter climbs",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "RETAIL SALES",
+              "word": "retail"
+            }
+          ],
+          "faces": {
+            "bag": "happy"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "the same pile after four hands each scoop some away; a smaller pile remains in front of the tower",
+          "scale": "object",
+          "motion": "four scoops lift coins away, pile shrinks",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "REVENUE",
+              "word": "Revenue"
+            }
+          ]
+        },
+        {
+          "sentence": 4,
+          "show": "a newspaper slaps onto the table showing only the big pile picture",
+          "scale": "object",
+          "motion": "paper lands, flutters, settles",
+          "transition": "cut",
+          "bubble": "Bigger number, bigger font."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://basic-tutorials.com/news/gta-6-sales-figures-3-79-billion-on-launch-day/",
+          "claim": "Take-Two: $3.79B day-one retail sales, company estimate through end of Nov 19; 32.5M copies sold before launch"
+        }
+      ],
+      "duration_ms": {
+        "en": 14118
+      }
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "chapter": "Hand one: the state",
+      "narration": {
+        "en": "First hand: the state. In most US states, sales tax rides on top of the price, so the bag is heavier than eighty coins before anyone sits down.",
+        "id": "Tangan pertama: negara. Di sebagian besar negara bagian Amerika, pajak penjualan ditambahkan di atas harga, jadi kantongnya sudah lebih berat dari delapan puluh koin sebelum ada yang duduk."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the capitol building stands, its hand hovering over the bag; the clock-anchor in the corner shows hand 1 of 4 lit",
+          "scale": "object",
+          "motion": "hand lowers, corner tracker lights segment 1",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "HAND 1",
+              "word": "First"
+            }
+          ],
+          "faces": {
+            "state": "angry"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "extra coins stack on top of the 80, the bag stretches and sags",
+          "scale": "object",
+          "motion": "coins drop one by one on top; bag bulges",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "SALES TAX",
+              "word": "tax"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 9752
+      }
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "chapter": "Hand one: the state",
+      "narration": {
+        "en": "In a state with seven percent tax, that's about five dollars sixty. The store collects it, and passes it to the government. It never belonged to anyone at the table. In a state with no sales tax, like Oregon, the bag stays at exactly eighty.",
+        "id": "Di negara bagian dengan pajak tujuh persen, itu sekitar lima dolar enam puluh. Toko yang memungutnya, lalu menyetorkannya ke pemerintah. Uang itu sejak awal bukan milik siapa pun di meja. Di negara bagian tanpa pajak penjualan, seperti Oregon, kantongnya tetap delapan puluh."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a little stack of 5.6 coins glows above the pile, with a footnote tag",
+          "scale": "object",
+          "motion": "stack glows and counts up",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "≈ $5.60",
+              "word": "five"
+            }
+          ],
+          "count": {
+            "value": 5.6,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "the store kiosk scoops the tax stack and slides it through a slot into the capitol",
+          "scale": "object",
+          "motion": "stack slides along a chute into the capitol door",
+          "transition": "hold",
+          "faces": {
+            "store": "neutral"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "the chairs at the table, the tax coins gone; the bag is back to 80",
+          "scale": "place",
+          "motion": "camera pulls back to the table",
+          "transition": "hold",
+          "count": {
+            "value": 80,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 4,
+          "show": "a small map of the US, one state on the northwest coast lit; the bag above it stays slim",
+          "scale": "map",
+          "motion": "state lights, bag bobs unchanged",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "OREGON",
+              "word": "Oregon"
+            },
+            {
+              "text": "NO TAX",
+              "word": "no"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 14257
+      }
+    },
+    {
+      "id": "s11",
+      "role": "rehook",
+      "chapter": "Hand two: the store",
+      "narration": {
+        "en": "Second hand, and the big one: the console store. It takes thirty percent of the price. On seventy-nine ninety-nine, that's twenty-four dollars.",
+        "id": "Tangan kedua, dan yang terbesar: toko console. Toko ini mengambil tiga puluh persen dari harga. Dari tujuh puluh sembilan sembilan puluh sembilan, itu dua puluh empat dolar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tracker segment 2 lights; the store kiosk leans across the table",
+          "scale": "object",
+          "motion": "kiosk stretches over the pile",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "HAND 2",
+              "word": "Second"
+            }
+          ],
+          "faces": {
+            "store": "smug"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a grid of 10 x 8 coins; three of every ten turn store-colored",
+          "scale": "object",
+          "motion": "coins flip color column by column",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "30%",
+              "word": "thirty"
+            }
+          ],
+          "count": {
+            "value": 30,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "the store pulls a stack of 24 coins to its side",
+          "scale": "object",
+          "motion": "stack slides, counter ticks to 24",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "$24",
+              "word": "twenty-four"
+            }
+          ],
+          "count": {
+            "value": 24,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tweaktown.com/news/94485/epic-may-pay-flat-30-fee-on-playstation-nintendo-and-xbox-with-no-reduced-split-for-fortnite/index.html",
+          "claim": "Sweeney (Epic v Google): Nintendo, PlayStation, Xbox all charge 30% for games"
+        }
+      ],
+      "duration_ms": {
+        "en": 9102
+      }
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "chapter": "Hand two: the store",
+      "narration": {
+        "en": "That number isn't a secret. In the Epic versus Google trial, Epic's chief executive confirmed that Nintendo, PlayStation and Xbox all charge thirty percent on games.",
+        "id": "Angka itu bukan rahasia. Dalam sidang Epic melawan Google, chief executive Epic mengonfirmasi bahwa Nintendo, PlayStation, dan Xbox semuanya memungut tiga puluh persen untuk game."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a filing cabinet drawer slides open and a single sheet floats up",
+          "scale": "object",
+          "motion": "drawer opens, sheet rises and turns",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "a courtroom with a witness stand; three identical store kiosks in the jury box each hold a 30% card",
+          "scale": "place",
+          "motion": "courtroom fades in; the three cards flip up together",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "30% EACH",
+              "word": "thirty"
+            }
+          ],
+          "mood": "cool"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tweaktown.com/news/94485/epic-may-pay-flat-30-fee-on-playstation-nintendo-and-xbox-with-no-reduced-split-for-fortnite/index.html",
+          "claim": "Sweeney (Epic v Google): Nintendo, PlayStation, Xbox all charge 30% for games"
+        }
+      ],
+      "duration_ms": {
+        "en": 10913
+      }
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "chapter": "Hand two: the store",
+      "narration": {
+        "en": "There's something you need to know about console makers. They sell the console itself cheaply, often at a loss, and earn it back later, from every game sold in their store. The console gets you through the door. The store is where the house makes its money.",
+        "id": "Ada satu hal yang perlu kamu tahu soal pembuat console. Mereka menjual console-nya murah, sering kali rugi, lalu mengembalikannya nanti dari setiap game yang terjual di toko mereka. Console membuatmu masuk ke dalam. Toko adalah tempat bandar mendapat uangnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the store kiosk character steps forward under a spotlight, as if for an interview",
+          "scale": "object",
+          "motion": "spotlight snaps on, kiosk straightens up",
+          "transition": "push",
+          "faces": {
+            "store": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a console box on a price tag, a red minus coin falling out of it; then game boxes streaming past with coins flowing back",
+          "scale": "object",
+          "motion": "minus coin drops, then a stream of plus coins returns",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "LOSS",
+              "word": "loss"
+            },
+            {
+              "text": "BACK",
+              "word": "back"
+            }
+          ],
+          "mood": "warm"
+        },
+        {
+          "sentence": 3,
+          "show": "a doorway shaped like a console; you walk through it",
+          "scale": "place",
+          "motion": "you step through the door",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "THE DOOR",
+              "word": "door"
+            }
+          ]
+        },
+        {
+          "sentence": 4,
+          "show": "behind the door, a casino-like hall where every game box passed drops a coin into the house's bin",
+          "scale": "place",
+          "motion": "boxes slide past, coins clink into the bin",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "THE HOUSE",
+              "word": "house"
+            }
+          ],
+          "bubble": "The house always eats."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://gonintendo.com/comments/11811",
+          "claim": "Epic CFO Gelber: consoles subsidize hardware, sold at a loss per published reports, fee needs to cover that; considers console markets competitive"
+        }
+      ],
+      "duration_ms": {
+        "en": 15186
+      }
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "chapter": "Hand two: the store",
+      "narration": {
+        "en": "Scale it up. If ten million copies sold through one store at full price, that store's cut would be two hundred and forty million dollars, from a game it didn't make.",
+        "id": "Perbesar skalanya. Kalau sepuluh juta kopi terjual lewat satu toko dengan harga penuh, bagian toko itu dua ratus empat puluh juta dolar, dari game yang tidak mereka buat."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "camera rises above the table; the single stack of 24 multiplies into a sea of stacks",
+          "scale": "map",
+          "motion": "stacks clone outward in waves",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "a counter climbing to $240M while 10 million dots fill a grid",
+          "scale": "map",
+          "motion": "dots fill the grid, counter runs",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "10M COPIES",
+              "word": "million"
+            },
+            {
+              "text": "$240M",
+              "word": "forty"
+            }
+          ],
+          "count": {
+            "value": 240000000,
+            "as": "items"
+          },
+          "bubble": "Hypothetical. Still nice."
+        }
+      ],
+      "duration_ms": {
+        "en": 8777
+      }
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "chapter": "Hand two: the store",
+      "narration": {
+        "en": "Which store matters too. Analysts at Alinea estimate PlayStation took about three of every four copies sold on launch weekend. A boxed copy from a shop takes a different road, where the shop keeps its own margin. To keep the bag simple, this video follows the download.",
+        "id": "Toko mana yang dipakai juga penting. Analis di Alinea memperkirakan PlayStation mengambil sekitar tiga dari setiap empat kopi yang terjual di akhir pekan peluncuran. Kopi dalam kotak dari toko fisik menempuh jalan lain, dan tokonya menyimpan marginnya sendiri. Supaya kantongnya tetap sederhana, video ini mengikuti versi unduhan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "two store kiosks side by side, one generic blue-ish, one generic green-ish, no logos",
+          "scale": "object",
+          "motion": "both kiosks bob, queue forms",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "4 player icons walk toward the kiosks; 3 go left",
+          "scale": "object",
+          "motion": "icons walk, three peel off to one kiosk",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "3 OF 4",
+              "word": "three"
+            }
+          ],
+          "count": {
+            "value": 4,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "a cardboard box with a paper code inside travels down a side road to a shop counter",
+          "scale": "place",
+          "motion": "box rides a side road, shop takes a coin",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "BOXED",
+              "word": "boxed"
+            }
+          ]
+        },
+        {
+          "sentence": 4,
+          "show": "camera returns to the main road with the coin bag",
+          "scale": "place",
+          "motion": "bag rolls back onto the main road",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "DOWNLOAD",
+              "word": "download"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/media-advertising/articles/gta-vi-launch-weekend-sales-190418068.html",
+          "claim": "Alinea estimate: PS5 ~75% of units sold launch weekend (estimate, not confirmed)"
+        }
+      ],
+      "duration_ms": {
+        "en": 17879
+      }
+    },
+    {
+      "id": "s16",
+      "role": "rehook",
+      "chapter": "Hand three: the card",
+      "narration": {
+        "en": "Third hand: the card, and a twist. Who pays the card fee on your eighty dollars? Not Rockstar.",
+        "id": "Tangan ketiga: kartu, dan ada twist-nya. Siapa yang membayar biaya kartu dari delapan puluh dolarmu? Bukan Rockstar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tracker segment 3 lights; the card gate rolls up to the table",
+          "scale": "object",
+          "motion": "gate rolls in, conveyor whirs",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "HAND 3",
+              "word": "Third"
+            }
+          ],
+          "faces": {
+            "card": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a small question-mark coin spins above the table",
+          "scale": "object",
+          "motion": "coin spins and hovers",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "CARD FEE",
+              "word": "fee"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "the office tower shakes its head; the question coin floats away from it",
+          "scale": "object",
+          "motion": "tower shakes, coin drifts toward the store",
+          "transition": "hold",
+          "faces": {
+            "publisher": "happy"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 6920
+      }
+    },
+    {
+      "id": "s17",
+      "role": "body",
+      "chapter": "Hand three: the card",
+      "narration": {
+        "en": "When you buy from a console store, the store is the seller. Its name is on your receipt, and it's the one the card system charges. That role has a name: the merchant of record.",
+        "id": "Saat kamu membeli dari toko console, tokonya yang menjadi penjual. Namanya tertulis di struk, dan dialah yang ditagih sistem kartu. Peran itu punya nama: merchant of record."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a receipt prints out of the kiosk with the store's name at the top",
+          "scale": "object",
+          "motion": "receipt unrolls",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "zoom on the receipt's top line, then the card gate stamps the store, not the tower",
+          "scale": "object",
+          "motion": "stamp swings onto the kiosk",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "STORE NAME",
+              "word": "name"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "the store kiosk gets a little badge pinned on it",
+          "scale": "object",
+          "motion": "badge pins on with a pop",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MERCHANT OF RECORD",
+              "word": "merchant"
+            }
+          ],
+          "faces": {
+            "store": "smug"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 10217
+      }
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "chapter": "Hand three: the card",
+      "narration": {
+        "en": "So the card fee comes out of the store's twenty-four dollars. On a typical US card, that fee is a couple of percent, roughly two dollars here. A company Sony's size likely pays less, but its rate isn't public.",
+        "id": "Jadi biaya kartu diambil dari dua puluh empat dolar milik toko. Untuk kartu biasa di Amerika, biayanya sekitar dua persen, kira-kira dua dolar di sini. Perusahaan sebesar Sony kemungkinan membayar lebih kecil, tapi tarifnya tidak dipublikasikan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the card gate reaches into the store's stack of 24, not the main pile",
+          "scale": "object",
+          "motion": "gate's arm dips into the store's stack",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "two coins lift out and ride the conveyor",
+          "scale": "object",
+          "motion": "two coins pop onto the conveyor",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "≈ $2",
+              "word": "two"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "a frosted-glass rate card with blurred numbers",
+          "scale": "object",
+          "motion": "glass fogs over the numbers",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "NOT PUBLIC",
+              "word": "public"
+            }
+          ],
+          "mood": "cool"
+        }
+      ],
+      "duration_ms": {
+        "en": 13886
+      }
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "chapter": "Hand three: the card",
+      "narration": {
+        "en": "Those two dollars have their own split, between your bank, the card network and the store's payment company. That one gets its own video on this channel.",
+        "id": "Dua dolar itu punya pembagiannya sendiri, antara bankmu, jaringan kartu, dan perusahaan pembayaran milik toko. Itu akan dibahas di video tersendiri di channel ini."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the two coins on the conveyor break into three tiny pieces that fly to three small buildings",
+          "scale": "object",
+          "motion": "coins crack into three, pieces fly off",
+          "transition": "iris",
+          "count": {
+            "value": 3,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "the three buildings shrink into a sticky note that sticks on the edge of the table",
+          "scale": "object",
+          "motion": "note slaps onto the table edge",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NEXT VIDEO",
+              "word": "video"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 8452
+      }
+    },
+    {
+      "id": "s20",
+      "role": "rehook",
+      "chapter": "Hand four: the publisher",
+      "narration": {
+        "en": "Fourth hand: the publisher, which gets what's left after the store's cut, fifty-five dollars and ninety-nine cents. That's seventy percent.",
+        "id": "Tangan keempat: publisher, yang mendapat sisa setelah bagian toko, lima puluh lima dolar sembilan puluh sembilan sen. Itu tujuh puluh persen."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tracker segment 4 lights; the office tower finally slides the remaining stack toward itself",
+          "scale": "object",
+          "motion": "stack slides, counter ticks to 55.99",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "HAND 4",
+              "word": "Fourth"
+            },
+            {
+              "text": "$55.99",
+              "word": "fifty-five"
+            }
+          ],
+          "faces": {
+            "publisher": "happy"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "the 10x8 coin grid again, seven of every ten in the publisher's color",
+          "scale": "object",
+          "motion": "columns flip to tower color",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "70%",
+              "word": "seventy"
+            }
+          ],
+          "count": {
+            "value": 70,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tweaktown.com/news/94485/epic-may-pay-flat-30-fee-on-playstation-nintendo-and-xbox-with-no-reduced-split-for-fortnite/index.html",
+          "claim": "Sweeney (Epic v Google): Nintendo, PlayStation, Xbox all charge 30% for games"
+        }
+      ],
+      "duration_ms": {
+        "en": 7941
+      }
+    },
+    {
+      "id": "s21",
+      "role": "body",
+      "chapter": "Hand four: the publisher",
+      "narration": {
+        "en": "It sounds like plenty, until you put it next to what the game cost. Reports put GTA 6's budget at more than a billion dollars, built over more than a decade. Rockstar has never confirmed a number.",
+        "id": "Kedengarannya banyak, sampai kamu menaruhnya di samping biaya pembuatannya. Laporan menyebut anggaran GTA 6 lebih dari satu miliar dolar, dikerjakan lebih dari satu dekade. Rockstar tidak pernah mengonfirmasi angkanya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the tower's small stack sits next to a mountain of coins that rises behind it",
+          "scale": "place",
+          "motion": "mountain grows behind the stack, stack looks tiny",
+          "transition": "cut",
+          "faces": {
+            "publisher": "sad"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a timeline ribbon with years ticking past behind the mountain",
+          "scale": "place",
+          "motion": "years scroll left to right",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "$1B+",
+              "word": "billion"
+            },
+            {
+              "text": "10+ YEARS",
+              "word": "decade"
+            }
+          ],
+          "count": {
+            "value": 13,
+            "as": "timeline"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "the mountain gets a small paper tag on a string, the tag is blank",
+          "scale": "object",
+          "motion": "tag swings in the wind",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "UNCONFIRMED",
+              "word": "confirmed"
+            }
+          ],
+          "mood": "cool"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://deadline.com/2026/11/gta6-first-day-sales-4-billion-1237230465/",
+          "claim": "GTA V 2013 previous record ~$800M; GTA VI dev cost estimated ~$1B"
+        },
+        {
+          "url": "https://www.creativebloq.com/entertainment/gaming/rockstar-could-have-set-gta-6-at-any-price-im-not-mad-at-what-they-just-announced",
+          "claim": "Budget rumoured $1-2B over a decade, unconfirmed"
+        }
+      ],
+      "duration_ms": {
+        "en": 13003
+      }
+    },
+    {
+      "id": "s22",
+      "role": "body",
+      "chapter": "Hand four: the publisher",
+      "narration": {
+        "en": "At fifty-six dollars a copy, a billion dollars takes about eighteen million downloads just to pay back. That's before marketing. Eighteen million is roughly everyone in the Netherlands buying one copy each.",
+        "id": "Dengan lima puluh enam dolar per kopi, satu miliar dolar butuh sekitar delapan belas juta unduhan hanya untuk balik modal. Itu belum termasuk biaya pemasaran. Delapan belas juta itu kira-kira seluruh penduduk Belanda masing-masing membeli satu kopi."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "downloads arrive as little boxes that each knock one chunk off the mountain",
+          "scale": "place",
+          "motion": "boxes fly in, mountain shrinks chunk by chunk",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "≈ 18M",
+              "word": "eighteen"
+            }
+          ],
+          "count": {
+            "value": 18000000,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a billboard-shaped chunk stays standing at the end",
+          "scale": "object",
+          "motion": "last chunk wobbles but stays",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MARKETING",
+              "word": "marketing"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "a small country outline fills with 18 million dots, each dot holding a tiny game box",
+          "scale": "map",
+          "motion": "dots fill the outline row by row",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "≈ NETHERLANDS",
+              "word": "Netherlands"
+            }
+          ],
+          "count": {
+            "value": 18000000,
+            "as": "dots"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 12260
+      }
+    },
+    {
+      "id": "s23",
+      "role": "body",
+      "chapter": "Hand four: the publisher",
+      "narration": {
+        "en": "Take-Two says thirty-two and a half million copies were sold before the game even launched. Even with boxed copies and lower margins mixed in, that's far past eighteen million.",
+        "id": "Take-Two menyebut tiga puluh dua setengah juta kopi sudah terjual sebelum gamenya rilis. Meskipun bercampur dengan kopi kotak dan margin yang lebih kecil, angka itu jauh melewati delapan belas juta."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a bar for 32.5M grows beside the 18M line, passing it before a 'launch' flag on the timeline",
+          "scale": "object",
+          "motion": "bar shoots up past the line",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "32.5M",
+              "word": "thirty-two"
+            }
+          ],
+          "count": {
+            "value": 32.5,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "the mountain behind the tower is gone; the tower exhales",
+          "scale": "place",
+          "motion": "dust settles, tower relaxes",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "18M",
+              "word": "eighteen"
+            }
+          ],
+          "faces": {
+            "publisher": "happy"
+          },
+          "bubble": "Phew."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://basic-tutorials.com/news/gta-6-sales-figures-3-79-billion-on-launch-day/",
+          "claim": "Take-Two: $3.79B day-one retail sales, company estimate through end of Nov 19; 32.5M copies sold before launch"
+        }
+      ],
+      "duration_ms": {
+        "en": 10310
+      }
+    },
+    {
+      "id": "s24",
+      "role": "rehook",
+      "chapter": "The clock",
+      "narration": {
+        "en": "So everyone at the table gets paid. Just not on launch night.",
+        "id": "Jadi semua orang di meja dibayar. Hanya saja, tidak di malam peluncuran."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the four players at the table each holding their stacks, smiling",
+          "scale": "place",
+          "motion": "stacks raise like a toast",
+          "transition": "cut",
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "the coin clock above the table bongs; every stack turns grey and translucent",
+          "scale": "place",
+          "motion": "clock strikes, color drains from coins",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "NOT TONIGHT",
+              "word": "night"
+            }
+          ],
+          "mood": "cold"
+        }
+      ],
+      "duration_ms": {
+        "en": 3762
+      }
+    },
+    {
+      "id": "s25",
+      "role": "body",
+      "chapter": "The clock",
+      "narration": {
+        "en": "Three point seven nine billion in a single day works out to about forty-four thousand dollars every second. Five times what GTA 5 made on its first day in 2013. Take that single day, and it roughly matches what the last two Avatar films grossed combined.",
+        "id": "Tiga koma tujuh sembilan miliar dalam satu hari berarti sekitar empat puluh empat ribu dolar setiap detik. Lima kali lipat dari yang didapat GTA 5 di hari pertamanya pada 2013. Satu hari itu kira-kira setara dengan pendapatan dua film Avatar terakhir digabung."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a stopwatch; each tick drops a bundle of coins on a growing pile",
+          "scale": "object",
+          "motion": "stopwatch ticks, bundles drop on each tick",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "$44K / SEC",
+              "word": "second"
+            }
+          ],
+          "count": {
+            "value": 43866,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "side-by-side bars, 2013 short, 2026 tall",
+          "scale": "object",
+          "motion": "2026 bar grows to ~4.7x the 2013 bar",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "2013",
+              "word": "2013"
+            },
+            {
+              "text": "≈ 5x",
+              "word": "Five"
+            }
+          ],
+          "count": {
+            "value": 5,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "two film reels stacked on one side of a scale, a single day-calendar page on the other, balanced",
+          "scale": "object",
+          "motion": "scale wobbles to level",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "2 FILMS",
+              "word": "films"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://basic-tutorials.com/news/gta-6-sales-figures-3-79-billion-on-launch-day/",
+          "claim": "Take-Two: $3.79B day-one retail sales, company estimate through end of Nov 19; 32.5M copies sold before launch"
+        },
+        {
+          "url": "https://deadline.com/2026/11/gta6-first-day-sales-4-billion-1237230465/",
+          "claim": "GTA V 2013 previous record ~$800M; GTA VI dev cost estimated ~$1B"
+        },
+        {
+          "url": "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/",
+          "claim": "Take-Two calls it the biggest entertainment launch in history"
+        }
+      ],
+      "duration_ms": {
+        "en": 17090
+      }
+    },
+    {
+      "id": "s26",
+      "role": "body",
+      "chapter": "The clock",
+      "narration": {
+        "en": "But as the last video on this channel showed, approved is not paid. When your card says approved, your bank has made a promise. The money itself moves later, in batches, usually in one to three days.",
+        "id": "Tapi seperti di video sebelumnya di channel ini, approved belum berarti dibayar. Saat kartumu bilang approved, bankmu baru membuat janji. Uangnya sendiri berpindah belakangan, dalam satu kumpulan, biasanya dalam satu sampai tiga hari."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the APPROVED stamp from the previous video slams onto a paper on the table",
+          "scale": "object",
+          "motion": "stamp slams, paper jumps",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "APPROVED ≠ PAID",
+              "word": "approved"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "your bank building with a face holds a pinky-promise card; your coin bag still sits inside its vault",
+          "scale": "object",
+          "motion": "bank winks, vault door stays shut",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "PROMISE",
+              "word": "promise"
+            }
+          ],
+          "faces": {
+            "yourbank": "smug"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "a delivery truck loads many bags at once and drives along a day-by-day timeline",
+          "scale": "place",
+          "motion": "truck rolls past day markers 1, 2, 3",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "1–3 DAYS",
+              "word": "days"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "timeline"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 12585
+      }
+    },
+    {
+      "id": "s27",
+      "role": "body",
+      "chapter": "The clock",
+      "narration": {
+        "en": "So for a purchase made at midnight, your coins were still sitting at your bank. The store had a promise. Take-Two had a number on a sales counter.",
+        "id": "Jadi untuk pembelian tengah malam, koin-koinmu masih ada di bankmu. Toko memegang janji. Take-Two memegang angka di penghitung penjualan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "inside your bank's vault, your 80-coin bag with a midnight clock on the wall",
+          "scale": "inside",
+          "motion": "camera iris into the vault, bag breathes",
+          "transition": "iris",
+          "mood": "night",
+          "faces": {
+            "bag": "tired"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "the store kiosk holding a glowing promise card",
+          "scale": "object",
+          "motion": "card glows and flickers",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 3,
+          "show": "the tower staring at a big digital counter that keeps rising, its own coin tray empty",
+          "scale": "object",
+          "motion": "counter rises, tray stays empty",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "SALES COUNTER",
+              "word": "counter"
+            }
+          ],
+          "faces": {
+            "publisher": "shock"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 8266
+      }
+    },
+    {
+      "id": "s28",
+      "role": "body",
+      "chapter": "The clock",
+      "narration": {
+        "en": "Days later, the card money settles with the store. Then the store pays the publisher, on a payout schedule written into a contract the public never gets to read. If that schedule pays once a month, a sale on November nineteenth might not reach the publisher until December.",
+        "id": "Beberapa hari kemudian, uang kartu sampai ke toko. Lalu toko membayar publisher, sesuai jadwal pembayaran yang tertulis di kontrak yang tidak pernah bisa dibaca publik. Kalau jadwal itu membayar sebulan sekali, penjualan tanggal sembilan belas November mungkin baru sampai ke publisher di bulan Desember."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the truck arrives at the store kiosk and unloads, coins turn gold again",
+          "scale": "place",
+          "motion": "truck unloads, coins regain color",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SETTLED",
+              "word": "settles"
+            }
+          ],
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "a sealed envelope with a wax seal passes from store to tower; inside, a calendar page with dates blurred",
+          "scale": "object",
+          "motion": "envelope slides across; calendar peeks out, blurred",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "PAYOUT",
+              "word": "payout"
+            },
+            {
+              "text": "CONTRACT",
+              "word": "contract"
+            }
+          ],
+          "mood": "cool"
+        },
+        {
+          "sentence": 3,
+          "show": "a wall calendar flips from November to December while the envelope waits in a mail slot",
+          "scale": "object",
+          "motion": "pages flip, envelope stays in slot",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "IF MONTHLY",
+              "word": "month"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 15975
+      }
+    },
+    {
+      "id": "s29",
+      "role": "body",
+      "chapter": "The clock",
+      "narration": {
+        "en": "That's how a company can announce a record day, while its money is still travelling. The trophy is real. The coins are still on a truck.",
+        "id": "Begitulah sebuah perusahaan bisa mengumumkan hari rekor, sementara uangnya masih dalam perjalanan. Pialanya nyata. Koinnya masih di atas truk."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the tower on a stage with confetti and a giant trophy; behind the stage, the delivery truck is still on the road",
+          "scale": "place",
+          "motion": "confetti falls on the stage",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "close on the trophy, shiny",
+          "scale": "object",
+          "motion": "trophy gleams",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "REAL",
+              "word": "real"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "camera pans behind the stage: the delivery truck still on the road",
+          "scale": "place",
+          "motion": "truck drives slowly past day markers",
+          "transition": "hold",
+          "bubble": "Any minute now."
+        }
+      ],
+      "duration_ms": {
+        "en": 7663
+      }
+    },
+    {
+      "id": "s30",
+      "role": "rehook",
+      "chapter": "Is thirty percent fair?",
+      "narration": {
+        "en": "Is thirty percent a rip-off? Someone took that question to court.",
+        "id": "Apakah tiga puluh persen itu kemahalan? Ada yang membawa pertanyaan itu ke pengadilan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the 24-coin stack on a courtroom scale, light cold blue",
+          "scale": "object",
+          "motion": "scale tips back and forth",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "RIP-OFF?",
+              "word": "rip-off"
+            }
+          ],
+          "mood": "cool"
+        },
+        {
+          "sentence": 2,
+          "show": "a courthouse exterior, the store kiosk walking up the steps with a briefcase",
+          "scale": "place",
+          "motion": "kiosk climbs the steps, doors swing open",
+          "transition": "wipe",
+          "faces": {
+            "store": "shock"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 3622
+      }
+    },
+    {
+      "id": "s31",
+      "role": "body",
+      "chapter": "Is thirty percent fair?",
+      "narration": {
+        "en": "In London, a class action on behalf of about twelve million PlayStation users argued that the store's cut made prices unfair. On November seventeenth, two days before GTA 6 launched, the tribunal threw the claim out.",
+        "id": "Di London, sebuah gugatan kelompok atas nama sekitar dua belas juta pengguna PlayStation berargumen bahwa potongan toko membuat harga tidak adil. Pada tujuh belas November, dua hari sebelum GTA 6 rilis, tribunal menolak gugatan itu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a crowd of 12 million dots forms the shape of a courtroom gallery",
+          "scale": "place",
+          "motion": "dots stream in and settle",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "≈ 12M USERS",
+              "word": "twelve"
+            }
+          ],
+          "count": {
+            "value": 12200000,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a calendar flips to Nov 17, gavel bangs, the claim paper flies out of the courtroom window; a second calendar page shows Nov 19 two days later",
+          "scale": "place",
+          "motion": "gavel bangs, paper flies, calendar flips forward two days",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NOV 17",
+              "word": "seventeenth"
+            },
+            {
+              "text": "DISMISSED",
+              "word": "threw"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://games.gg/news/sony-playstation-store-uk-pricing-lawsuit/",
+          "claim": "CAT London dismissed the $2.6B claim over the 30% cut on Nov 17, 2026"
+        },
+        {
+          "url": "https://www.invenglobal.com/articles/28728/sony-defeats-2bn-uk-playstation-store-class-action",
+          "claim": "Panel: class rep failed to establish Sony infringed competition law; ~12.2M UK users"
+        }
+      ],
+      "duration_ms": {
+        "en": 13746
+      }
+    },
+    {
+      "id": "s32",
+      "role": "body",
+      "chapter": "Is thirty percent fair?",
+      "narration": {
+        "en": "And here's the store's side, told fairly. It built the console, it runs the servers that deliver a game this size overnight, and it handles refunds and fraud. Epic's finance chief said in court that the cut is needed because consoles are sold at a loss.",
+        "id": "Dan ini sisi toko, diceritakan dengan adil. Toko membuat console-nya, menjalankan server yang mengirim game sebesar ini dalam semalam, dan mengurus refund serta penipuan. Kepala keuangan Epic mengatakan di pengadilan bahwa potongan itu diperlukan karena console dijual rugi."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "light turns warm; the store kiosk stands at equal height to the other players",
+          "scale": "object",
+          "motion": "lighting shifts warm, kiosk straightens",
+          "transition": "cut",
+          "mood": "warm",
+          "faces": {
+            "store": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "behind the kiosk: a factory building consoles, a server room with blinking racks, a refund desk",
+          "scale": "place",
+          "motion": "camera pans across three rooms, lights blinking",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SERVERS",
+              "word": "servers"
+            },
+            {
+              "text": "REFUNDS",
+              "word": "refunds"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "a deposition tape recorder plays; a console box on a price tag shows a red minus coin",
+          "scale": "object",
+          "motion": "tape reels turn, minus coin drops",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "AT A LOSS",
+              "word": "loss"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://gonintendo.com/comments/11811",
+          "claim": "Epic CFO Gelber: consoles subsidize hardware, sold at a loss per published reports, fee needs to cover that; considers console markets competitive"
+        }
+      ],
+      "duration_ms": {
+        "en": 16068
+      }
+    },
+    {
+      "id": "s33",
+      "role": "body",
+      "chapter": "Is thirty percent fair?",
+      "narration": {
+        "en": "That's the same Epic that sued Apple and Google over their thirty percent. On consoles, it called the market competitive and paid the cut.",
+        "id": "Ini Epic yang sama yang menggugat Apple dan Google karena tiga puluh persen mereka. Untuk console, Epic menyebut pasarnya kompetitif dan membayar potongannya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a phone-shaped door with a lawsuit paper nailed to it",
+          "scale": "place",
+          "motion": "paper flaps, camera slides right",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SUED",
+              "word": "sued"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "next door, console-shaped: a coin drops into a tip jar",
+          "scale": "place",
+          "motion": "coin drops with a clink",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "PAID",
+              "word": "paid"
+            }
+          ],
+          "bubble": "Different door, different rules."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://gonintendo.com/comments/11811",
+          "claim": "Epic CFO Gelber: consoles subsidize hardware, sold at a loss per published reports, fee needs to cover that; considers console markets competitive"
+        },
+        {
+          "url": "https://www.tweaktown.com/news/94485/epic-may-pay-flat-30-fee-on-playstation-nintendo-and-xbox-with-no-reduced-split-for-fortnite/index.html",
+          "claim": "Sweeney (Epic v Google): Nintendo, PlayStation, Xbox all charge 30% for games"
+        }
+      ],
+      "duration_ms": {
+        "en": 7755
+      }
+    },
+    {
+      "id": "s34",
+      "role": "payoff",
+      "chapter": "The split",
+      "narration": {
+        "en": "Back to the table. From your seventy-nine ninety-nine, twenty-four went to the store, and about two of that went to the card system. Fifty-six went to the publisher. The tax on top went to the state.",
+        "id": "Kembali ke meja. Dari tujuh puluh sembilan sembilan puluh sembilan, dua puluh empat ke toko, dan sekitar dua dari situ ke sistem kartu. Lima puluh enam ke publisher. Pajak di atasnya ke negara."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the round table and hanging lamp again, coin bag empty in the center",
+          "scale": "place",
+          "motion": "camera descends to the table, tracker shows all 4 lit",
+          "transition": "wipe",
+          "count": {
+            "value": 4,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "the store's 24 stack, with 2 coins sliding over to the card gate",
+          "scale": "object",
+          "motion": "two coins hop to the gate",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "$24",
+              "word": "twenty-four"
+            },
+            {
+              "text": "≈ $2",
+              "word": "two"
+            }
+          ],
+          "count": {
+            "value": 24,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "the tower's 56 stack glows",
+          "scale": "object",
+          "motion": "stack glows warm",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "$56",
+              "word": "Fifty-six"
+            }
+          ]
+        },
+        {
+          "sentence": 4,
+          "show": "the tax stack disappears into the capitol's door",
+          "scale": "object",
+          "motion": "door closes on the coins",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "TAX",
+              "word": "tax"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tweaktown.com/news/94485/epic-may-pay-flat-30-fee-on-playstation-nintendo-and-xbox-with-no-reduced-split-for-fortnite/index.html",
+          "claim": "Sweeney (Epic v Google): Nintendo, PlayStation, Xbox all charge 30% for games"
+        }
+      ],
+      "duration_ms": {
+        "en": 12585
+      }
+    },
+    {
+      "id": "s35",
+      "role": "payoff",
+      "chapter": "The split",
+      "narration": {
+        "en": "And none of it landed the night you pressed Buy. The split happens at the table. The payment happens on the clock.",
+        "id": "Dan tidak ada yang sampai di malam kamu menekan Buy. Pembagiannya terjadi di meja. Pembayarannya mengikuti jam."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "back in your living room at 12:00, the download bar full, the coin bag on the coffee table gone",
+          "scale": "place",
+          "motion": "iris out from the table back into the living room",
+          "transition": "iris",
+          "mood": "night",
+          "faces": {
+            "you": "happy"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "overlay: the table on the left, the coin clock on the right",
+          "scale": "place",
+          "motion": "both slide in from the sides",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "THE TABLE",
+              "word": "table"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "the clock hands move toward day 3; the truck drives out",
+          "scale": "object",
+          "motion": "hands sweep, truck leaves frame",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "THE CLOCK",
+              "word": "clock"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 6130
+      }
+    },
+    {
+      "id": "s36",
+      "role": "cta",
+      "chapter": "The split",
+      "narration": {
+        "en": "So the next time a game makes billions in a day, ask two things. Who keeps it? And when does it land?",
+        "id": "Jadi lain kali ada game yang menghasilkan miliaran dalam sehari, tanyakan dua hal. Siapa yang menyimpannya? Dan kapan uangnya sampai?"
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a newspaper with a giant headline-number drops on the coffee table",
+          "scale": "object",
+          "motion": "paper drops, flutters",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "a small table model stamps over the number",
+          "scale": "object",
+          "motion": "icon stamps with a pop",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "WHO KEEPS IT?",
+              "word": "keeps"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "a small clock model stamps next to it",
+          "scale": "object",
+          "motion": "icon stamps with a pop",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "WHEN?",
+              "word": "when"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 5991
+      }
+    },
+    {
+      "id": "s37",
+      "role": "cta",
+      "chapter": "The split",
+      "narration": {
+        "en": "And those two dollars the card system took? Your bank keeps the biggest piece. That's the next video.",
+        "id": "Lalu dua dolar yang diambil sistem kartu? Bankmu menyimpan bagian terbesarnya. Itu video berikutnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the two card-fee coins from earlier roll off the table edge",
+          "scale": "object",
+          "motion": "coins roll and fall",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "they land in your bank's hand; the bank grins",
+          "scale": "object",
+          "motion": "bank catches, grins",
+          "transition": "cut",
+          "faces": {
+            "yourbank": "happy"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "the sticky note from earlier unfolds into an end card",
+          "scale": "object",
+          "motion": "note unfolds to fill the frame",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "NEXT",
+              "word": "next"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 5433
+      }
+    }
+  ],
+  "shorts_cuts": [
+    {
+      "name": "S1-not-rockstars-money",
+      "scene_ids": [
+        "s01",
+        "s03",
+        "s07",
+        "s08"
+      ],
+      "hook_override": "You paid $80. The publisher got $56.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "$80 PAID",
+            "size": 150,
+            "color": "#ffffff"
+          },
+          {
+            "text": "$56 TO WHO?",
+            "size": 118,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/04-shots.tsx",
+          "scene": "thumbS1"
+        }
+      }
+    },
+    {
+      "name": "S2-who-pays-card-fee",
+      "scene_ids": [
+        "s11",
+        "s16",
+        "s17",
+        "s18"
+      ],
+      "hook_override": "Rockstar doesn't pay the card fee.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "WHO PAYS",
+            "size": 150,
+            "color": "#ffffff"
+          },
+          {
+            "text": "CARD FEE?",
+            "size": 150,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/04-shots.tsx",
+          "scene": "thumbS2"
+        }
+      }
+    }
+  ],
+  "anti_slop": {
+    "text_score_en": 40,
+    "text_score_id": 39
+  },
+  "title_chosen": "Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It.",
+  "thumbnail_chosen": "$80 → WHO?",
+  "approved": "2026-11-26",
+  "thumbnails": [
+    {
+      "lines": [
+        {
+          "text": "$80 →",
+          "color": "#ffffff",
+          "size": 170
+        },
+        {
+          "text": "WHO?",
+          "color": "#ffd23f",
+          "size": 230
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/04-shots.tsx",
+        "scene": "thumbA"
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "WHO GOT",
+          "color": "#ffffff",
+          "size": 150
+        },
+        {
+          "text": "PAID?",
+          "color": "#ffd23f",
+          "size": 220
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/04-shots.tsx",
+        "scene": "thumbB"
+      }
+    }
+  ]
+}

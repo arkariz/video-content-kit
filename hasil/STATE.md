@@ -18,7 +18,7 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Analitik 001 (mulai 12-02), naskah 002 ditulis ulang ke R3 | 5,5 | 2026-11-26: 001 tayang di semua platform |
+| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Analitik 001 (mulai 12-02), naskah 002 ditulis ulang ke R3, produksi 004 (GTA VI, di luar V2, naskah disetujui) | 5,5 | 2026-11-26: 001 tayang di semua platform |
 | T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (@equator.logic di TikTok) | 002 GTA: uji gaya 11-28, produksi, tayang 12-01 | 6 | 2026-11-26: 001 tayang di semua platform; jadwal setelah 001 disetujui |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
@@ -74,7 +74,11 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: T02 siklus 001 selesai sampai publish. Berikutnya analitik, lalu siklus 002.
 - 2026-11-26: T02 siklus 003 (variasi B, Jawa; saat dibuat bernomor 002) dibuat: riset viral, sudut A dipilih kreator, brief dan naskah R3 ditulis. Menunggu persetujuan naskah 001 dan 003.
 - 2026-11-26: T02: GTA menjadi siklus 002 (target 2026-12-01), Jawa mundur ke siklus 003 (2027-01-05). Penyimpangan isi dan jadwal dari rencana V2; kriteria tidak diubah.
+- 2026-11-26: T01 siklus 004 (GTA VI) dibuat di luar paket V2 terkunci atas keputusan kreator; tidak dinilai di penilaian V2. Naskah menunggu persetujuan.
+- 2026-11-26: T01-004 naskah disetujui (judul 1, thumbnail A); siap produksi R3.
+- 2026-11-26: Atas permintaan kreator, berlaku semua track dan siklus berikutnya: tiap Short wajib punya thumbnail 1080x1920 (`shorts_cuts[].thumbnail`, komposisi ThumbnailShort, QA V8) dan caption tampil per kalimat. T01-001, T01-004, T02-001 tetap caption per kata (`caption_mode: "word"`). Mesin bersama, kontrak, instruksi 04/05, skema, dan prompt pipeline diperbarui di sesi produksi T01-004.
 - 2026-11-26: Kreator mengonfirmasi T01 siklus 001 (master dan 2 Shorts) dan T02 siklus 001 sudah tayang di semua platform. Tautan T01 A1 dan A2 belum dicatat.
 - 2026-11-26: Pembersihan dan penyelarasan repo atas permintaan kreator: file sampah dan generator sekali pakai yang usang dihapus dari git, dokumen progres dan catatan mesin visual (AGENTS.md, gaya-visual.md, PIPELINE.md, README) diselaraskan. Rencana validasi terkunci dan log lama tidak diubah.
 - 2026-11-26: T02 siklus 002 brief + naskah draf selesai; menunggu persetujuan kreator.
 - 2026-11-26: T02 siklus 002 naskah disetujui kreator. Berikutnya uji gaya mulus lalu produksi.
+- 2026-11-26: Semua branch (T02-GTA, T02-JAWA, T01-S004-GTAVI; T02 sama dengan main) digabung ke main atas permintaan kreator. Folder Jawa dinomori ulang 002 → 003.

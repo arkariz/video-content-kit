@@ -41,6 +41,7 @@ Komposisi standar (semua membaca `script.json` + `04-assets.json` + captions):
 | `Short9x16` | 1080x1920 | Satu `shorts_cut`, audio Inggris, caption besar |
 | `ClipID9x16` | 1080x1920 | Satu `shorts_cut`, audio Indonesia, caption Indonesia |
 | `Thumbnail` | 1280x720 | Still frame untuk 2 varian teks thumbnail |
+| `ThumbnailShort` | 1080x1920 | Satu thumbnail per `shorts_cut` |
 
 Aturan visual (selengkapnya `instruksi/referensi/gaya-visual.md`):
 
@@ -48,6 +49,8 @@ Aturan visual (selengkapnya `instruksi/referensi/gaya-visual.md`):
 - Kode tampil dari file sumber nyata, bukan diketik ulang manual (supaya tidak ada typo atau kode palsu).
 - Variasikan template: jangan pakai layout, warna, dan transisi yang persis sama 3 video berturut-turut.
 - Caption dibakar ke video, ukuran terbaca di HP.
+- Caption muncul **per kalimat**, bukan kata per kata. Jangan menulis `caption_mode` di siklus baru.
+- Setiap Short punya thumbnail sendiri (`render.mjs --thumb`, hasil `Thumbnail-Short-<name>.png`).
 
 ## 3e. Render
 

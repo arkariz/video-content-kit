@@ -35,6 +35,18 @@ Gaya wajib: R3, ilustrasi gerak penjelas (`instruksi/referensi/gaya-visual.md`).
 ```
 Dua varian (A dan B), maksimal 4 kata, tanpa label atau bubble. Teks di kiri, tokoh di kanan (x 0,6 ke atas). Hasil: `render.mjs --thumb`.
 
+### Thumbnail Shorts (wajib, tiap `shorts_cuts`)
+Keputusan kreator 2026-11-26, berlaku semua track dan siklus berikutnya. Satu thumbnail tegak 1080x1920 per Short:
+```json
+"shorts_cuts": [{ "name": "S1-...", "scene_ids": ["s01"], "hook_override": "...",
+  "thumbnail": { "lines": [{ "text": "WHO PAYS", "color": "#ffffff", "size": 150 }, { "text": "CARD FEE?", "color": "#ffd23f", "size": 150 }],
+    "stage": { "engine": "r3", "module": "<path 04-shots.tsx>", "scene": "thumbS1" } } }]
+```
+Maksimal 5 kata. Teks otomatis di tengah atas, benda utama di tengah bawah. Hasil `render.mjs --thumb`: `Thumbnail-Short-<name>.png`. QA: V8 (kritis bila tidak ditulis, sedang bila belum dirender).
+
+## Caption
+Keputusan kreator 2026-11-26: caption tampil **per kalimat** (satu kalimat utuh selama diucapkan, kalimat di atas 20 kata dipecah di koma). Ini bawaan semua siklus baru, tanpa pengaturan apa pun. `"caption_mode": "word"` di tingkat atas hanya penanda siklus lama (T01-001, T01-004, T02-001) dan tidak boleh dipakai di siklus baru. Sisakan pita bawah untuk caption: label dan benda penting di atas y 860 (16:9) atau di atas sepertiga bawah (9:16).
+
 ## Aturan komposisi (QA otomatis memeriksanya)
 1. **Satu kalimat, satu shot**: setiap kalimat narasi digambar sesuai isinya, pergantian shot di batas kalimat, setiap shot punya `motion` (QA G1–G3).
 2. **Label** di kata yang diucapkan (QA G4), maksimal 3 kata atau satu angka. Tanpa papan teks.
