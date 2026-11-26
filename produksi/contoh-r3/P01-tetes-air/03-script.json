@@ -1,0 +1,218 @@
+{
+  "_catatan": "Prototipe Fase 3 (bukan siklus track). Audio dan caption dibuat dengan: node --env-file=.env scripts/produksi/tts.mjs --track _contoh --siklus P01 lalu captions.mjs. Render: node scripts/produksi/render.mjs --track _contoh --siklus P01 --script produksi/contoh-r3/P01-tetes-air/03-script.json",
+  "cycle": "P01-tetes-air",
+  "title_options": [
+    "How a Single Drop of Water Travels Through a City"
+  ],
+  "promise": "Setelah menonton, penonton tahu bentuk asli tetes hujan dan jalur air dari atap ke keran ke sungai.",
+  "creator_evidence": [],
+  "anchor": {
+    "kind": "object",
+    "desc": "satu tetes air bening dengan kota terbalik terpantul di dalamnya; muncul di pembuka dan penutup"
+  },
+  "cast": [],
+  "visual_spec": "03-visual.json",
+  "scenes": [
+    {
+      "id": "s01",
+      "role": "hook",
+      "narration": {
+        "en": "Raindrops are not teardrops: big ones flatten like hamburger buns.",
+        "id": "Tetes hujan bukan berbentuk air mata: yang besar memipih seperti roti burger."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "satu tetes hujan besar jatuh melewati kota senja berhujan; siluet air mata runcing muncul pudar di sekitarnya lalu dicoret; tetes kecil bulat di sampingnya; aliran udara naik di bawah tetes besar yang memipih",
+          "scale": "object",
+          "motion": "tetes jatuh dengan latar bergerak naik, siluet air mata pudar dan tercoret, dasar tetes memipih dengan goyangan teredam, tetes kecil tetap bulat",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NOT A TEARDROP",
+              "word": "teardrops"
+            },
+            {
+              "text": "FLATTENS",
+              "word": "flatten"
+            }
+          ],
+          "mood": "dusk"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/water-science-school/science/are-raindrops-shaped-teardrops",
+          "claim": "Tetes hujan kecil bulat, yang besar memipih seperti roti burger; bukan bentuk air mata",
+          "id": "C01"
+        },
+        {
+          "url": "https://gpm.nasa.gov/resources/students-and-educators/the-shape-of-a-raindrop",
+          "claim": "Hambatan udara di bawah tetes meratakan dasarnya",
+          "id": "C02"
+        }
+      ],
+      "duration_ms": {
+        "en": 4087
+      }
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": {
+        "en": "In a city, one lands on a roof, slides down a drain, and ends up in the river.",
+        "id": "Di kota, satu tetes mendarat di atap, meluncur lewat saluran, dan berakhir di sungai."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "potongan melintang jalur limpasan: tetes mendarat di atap miring, meluncur ke talang dan pipa tegak, mengalir di selokan jalan ke grate got, masuk pipa bawah tanah, keluar ke sungai",
+          "scale": "place",
+          "motion": "tetes memipih saat mendarat lalu memanjang saat meluncur, kamera mengikuti dari atap turun ke pipa bawah tanah lalu ke tepi sungai, air memercik di sungai, tetes agak keruh",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "ROOF",
+              "word": "roof"
+            },
+            {
+              "text": "STORM DRAIN",
+              "word": "drain"
+            },
+            {
+              "text": "RIVER",
+              "word": "river"
+            }
+          ],
+          "mood": "dusk"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.epa.gov/caddis/urbanization-stormwater-runoff",
+          "claim": "Atap dan jalan kedap; saluran hujan menyalurkan limpasan ke perairan",
+          "id": "C05"
+        },
+        {
+          "url": "https://epa.gov/npdes/combined-sewer-overflow-basics",
+          "claim": "Sistem terpisah membawa limpasan hujan lewat jaringan sendiri ke perairan lokal",
+          "id": "C06"
+        }
+      ],
+      "duration_ms": {
+        "en": 5248
+      }
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": {
+        "en": "A plant clumps, filters, and chlorinates it before pipes carry it to your tap.",
+        "id": "Instalasi menggumpalkan, menyaring, dan mengklorinasinya sebelum pipa membawanya ke keranmu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "potongan instalasi pengolahan air: bak koagulasi dengan pengaduk, bak flokulasi, bak pengendap berlumpur, filter pasir, klorinasi, lalu pipa bercabang mengecil ke keran di dapur",
+          "scale": "inside",
+          "motion": "tetes keruh melewati tiap bak: kotoran menggumpal jadi flok dan mengendap, air menjernih saat melewati pasir, titik klorin menyebar, lalu tetes didorong pipa sampai menetes dari keran",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "CLUMP",
+              "word": "clumps"
+            },
+            {
+              "text": "FILTER",
+              "word": "filters"
+            },
+            {
+              "text": "CHLORINE",
+              "word": "chlorinates"
+            },
+            {
+              "text": "TAP",
+              "word": "tap"
+            }
+          ],
+          "mood": "cool"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html",
+          "claim": "Koagulasi, flokulasi, sedimentasi, filtrasi, disinfeksi",
+          "id": "C09"
+        },
+        {
+          "url": "https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html",
+          "claim": "Koagulan menyatukan kotoran halus; flok mengendap; klorin sebagai disinfektan",
+          "id": "C10"
+        },
+        {
+          "url": "https://epa.gov/dwsixyearreview/drinking-water-distribution-systems",
+          "claim": "Distribusi: jaringan pipa, tangki, katup, dan pompa ke pelanggan",
+          "id": "C12"
+        },
+        {
+          "url": "https://www.epa.gov/dwreginfo/swtr-plain-english-guide",
+          "claim": "Sebagian besar sistem air minum memakai air permukaan seperti sungai",
+          "id": "C08"
+        }
+      ],
+      "duration_ms": {
+        "en": 4458
+      }
+    },
+    {
+      "id": "s04",
+      "role": "payoff",
+      "narration": {
+        "en": "Down the drain, it is treated again and returned to the river.",
+        "id": "Lewat saluran pembuangan, ia diolah lagi lalu dikembalikan ke sungai."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "air bekas pakai mengalir dari wastafel ke pipa pembuangan menuju instalasi pengolahan limbah: saringan, bak pengendap, bak aerasi bergelembung dengan bakteri, klorinasi, lalu pipa keluar ke sungai senja yang sama dengan pembuka",
+          "scale": "place",
+          "motion": "tetes keruh abu melewati saringan dan bak, gelembung aerasi naik, tetes menjernih, keluar pipa ke sungai; kamera mundur sampai tetes berpantulan kota seperti di pembuka",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "TREATED",
+              "word": "treated"
+            },
+            {
+              "text": "RIVER",
+              "word": "river"
+            }
+          ],
+          "mood": "dusk"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2015-09/documents/primer.pdf",
+          "claim": "Limbah diolah (saringan, pengendapan, bakteri, klorinasi) lalu dibuang ke sungai, muara, atau laut",
+          "id": "C14"
+        }
+      ],
+      "duration_ms": {
+        "en": 3204
+      }
+    }
+  ],
+  "shorts_cuts": [
+    {
+      "name": "S1-tetes-air",
+      "scene_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ],
+      "hook_override": "Raindrops are not teardrops."
+    }
+  ]
+}

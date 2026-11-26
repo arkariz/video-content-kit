@@ -5,7 +5,7 @@ batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
 langkah_berikutnya: "Review video T01-002 dan T02-002/003/004 (hasil/review/rencana-produksi-2026-11-26.md), lalu publish sesuai jadwal; analitik 001 T02 11-28, T01 12-02"
-menunggu_keputusan: "Setujui dokumen Fase 2 sistem visual storytelling (STYLE.md, PIPELINE.md Mesin R3, gaya-visual.md, gaya-cerita.md, CONTRACT.md) sebelum prototipe P01 tetes air (Fase 3, dikerjakan dengan Sonnet)"
+menunggu_keputusan: "Persetujuan visual prototipe P01 tetes air (produksi/render/_contoh/P01-tetes-air/, EVALUASI.md): setujui untuk Fase 4, atau satu putaran revisi dulu"
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-26
 ---
@@ -85,3 +85,5 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: Produksi malam disetujui: T02-002, T01-002, T02-003 (naskah disetujui), berhenti 06.00 WIB. Lihat hasil/review/rencana-produksi-2026-11-26.md.
 - 2026-11-26: Produksi malam selesai dirender: T01-002, T02-002, T02-003, T02-004 (long-form, 2 Shorts, thumbnail). Semua menunggu review kreator; belum ada publish.
 - 2026-11-26: Fase 1-2 sistem visual storytelling: audit R3 (peringatan 3D basi di r3.mjs, deteksi GL di render.mjs, EXPR beda dengan soft); spesifikasi dikonsolidasi tanpa file aturan baru: Style Bible di produksi/STYLE.md, spek animasi di PIPELINE.md Mesin R3, spek scene A-I + pola P01-P14 + gate kesiapan di gaya-visual.md, riset klaim di gaya-cerita.md, 03-visual.json + aturan V-1..V-9 di CONTRACT.md. Engine belum diubah. Menunggu persetujuan kreator.
+- 2026-11-26: Kreator menyetujui dokumen Fase 2. Fase 3 (prototipe P01 tetes air di produksi/contoh-r3/) dimulai dengan Sonnet.
+- 2026-11-26: Fase 3 prototipe P01 tetes air selesai (Sonnet): 16 klaim, 4 scene 17 dtk, audio dan caption ElevenLabs asli, render 1920x1080 dan 1080x1920, still deterministik. resolveCycle menerima id semu `_contoh`. Menunggu persetujuan visual kreator.

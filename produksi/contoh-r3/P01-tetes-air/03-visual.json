@@ -1,0 +1,197 @@
+{
+  "cycle": "P01-tetes-air",
+  "palette": {
+    "bg": ["#27384f", "#6f8fa8", "#c9d7df"],
+    "primary": ["#6fd0f2", "#2f8fc4"],
+    "secondary": ["#7b8b99", "#d9d2c0", "#46586b"],
+    "accent": "#ffc857",
+    "meaning": "biru jernih = air bersih atau yang sudah diolah; cokelat keruh dan abu = air yang membawa kotoran; kuning hangat = lampu kota dan sorotan; abu-biru = infrastruktur"
+  },
+  "scenes": {
+    "s01": {
+      "purpose": "Membongkar miskonsepsi bentuk tetes hujan di detik pertama, sekaligus memperkenalkan tetes sebagai tokoh yang akan diikuti sepanjang video.",
+      "emphasis": ["teardrops", "flatten"],
+      "pattern": ["P02", "P07"],
+      "dimension": "2.5d",
+      "subjects": [
+        {
+          "id": "tetes-besar", "name": "tetes hujan besar", "treatment": "literal",
+          "anatomy": "tetes besar tanpa ujung lancip: atas membulat, dasar memipih dan sedikit cekung seperti roti burger; permukaan bening biru muda dengan pinggiran meniskus lebih gelap, satu kilap putih di kiri atas, dan pantulan kota terbalik tembus di dalamnya",
+          "scale_ref": "sekitar dua kali lebar tetes kecil di sampingnya",
+          "must_show": ["dasar pipih", "pinggiran lebih gelap", "pantulan kota terbalik", "kilap"],
+          "must_not": ["ujung lancip di atas", "wajah", "garis tinta"],
+          "claims": ["C01", "C02"]
+        },
+        {
+          "id": "tetes-kecil", "name": "tetes hujan kecil", "treatment": "literal",
+          "anatomy": "bola bening kecil dengan pinggiran meniskus gelap tipis dan satu titik kilap putih; tetap bulat saat jatuh",
+          "scale_ref": "setengah lebar tetes besar",
+          "must_not": ["ujung lancip", "wajah"], "claims": ["C01"]
+        },
+        {
+          "id": "siluet-air-mata", "name": "siluet air mata (miskonsepsi)", "treatment": "metaphor",
+          "anatomy": "bentuk tetes klasik runcing di atas dan bulat di bawah, isian pucat tembus tanpa kilap, ditandai dicoret oleh balok merah membulat",
+          "scale_ref": "seukuran tetes besar", "must_not": ["terlihat nyata seperti air"], "claims": ["C02"]
+        }
+      ],
+      "environment": {
+        "setting": "udara terbuka di atas kota senja yang sedang hujan",
+        "layers": {
+          "bg": "langit senja kelabu-ungu bergradien dengan awan tipis",
+          "env": "dua lapis siluet gedung kota pudar dan blur, jendela kuning kecil",
+          "subject": "tetes besar di tengah, tetes kecil di sampingnya, aliran udara naik di bawah tetes besar",
+          "fg": "garis hujan besar blur melintas cepat ke atas",
+          "atmos": "kabut tipis dan butiran hujan kecil"
+        },
+        "palette": "latar abu-biru, tetes biru jernih, aksen kuning hangat pada jendela",
+        "lighting": "cahaya lembut dari kiri atas, rim cyan tipis pada tetes"
+      },
+      "behavior": [
+        { "subject": "tetes-besar", "action": "jatuh ke bawah dengan latar bergeser naik, dasarnya ditekan udara dari bawah sehingga meratakan", "trigger": "hambatan udara di dasar tetes", "result": "bentuk bola berubah menjadi roti burger dan bergoyang teredam", "treatment": "simplified", "claims": ["C02", "C04"] },
+        { "subject": "siluet-air-mata", "action": "menyala pudar menimpa tetes, lalu tercoret dan menyusut hilang", "trigger": "kata teardrops", "result": "miskonsepsi ditolak", "treatment": "metaphor", "claims": ["C02"] }
+      ],
+      "composition": { "camera": "sejajar mata, dolly masuk pelan", "placement": "tetes besar di tengah (vertikal: tetes kecil naik ke atasnya), siluet menimpa tetes", "focal": "tetes besar", "negative_space": "langit kosong kiri dan kanan" },
+      "animation": {
+        "initial": "tetes besar bulat jatuh di tengah, latar hujan bergerak naik",
+        "sequence": ["siluet air mata pudar muncul menimpa tetes dan dicoret (kata teardrops)", "siluet hilang, aliran udara naik, dasar tetes memipih dengan goyangan (kata flatten)", "tetes tetap bun sampai akhir; pantulan kota berdenyut pelan (kata buns)"],
+        "camera_move": "dolly masuk 12 persen sepanjang shot ditambah drift",
+        "secondary": "pantulan kota di dalam tetes bergeser, tetes kecil berputar naik turun kecil, partikel hujan",
+        "transition": "cut ke s02 lewat iris dari titik jatuh",
+        "final": "tetes besar berbentuk roti burger di tengah, tenang"
+      },
+      "simplifications": ["Tetes digambar jatuh tanpa kecepatan nyata; gerak latar menyatakan jatuh.", "Pipih ditunjukkan sebagai perubahan bentuk bertahap; aslinya terjadi sepanjang jatuh.", "Ukuran tetes tanpa angka (batas jari-jari berbeda antar sumber)."],
+      "assets": ["Drop (parts/drop.tsx, baru)", "Skyline berlapis (parts/city.tsx, baru)", "Hujan (parts/city.tsx, baru)"]
+    },
+    "s02": {
+      "purpose": "Menunjukkan jalur limpasan hujan di kota: dari atap ke sungai lewat saluran, agar penonton bisa menjelaskan ulang jalurnya dari gambar.",
+      "emphasis": ["roof", "drain", "river"],
+      "pattern": ["P09", "P04", "P03"],
+      "dimension": "2.5d",
+      "subjects": [
+        {
+          "id": "tetes", "name": "tetes hujan yang diikuti", "treatment": "metaphor",
+          "anatomy": "tetes bening biru muda yang sama dengan pembuka, memipih saat mendarat dan memanjang saat meluncur, makin keruh kecokelatan sepanjang jalur, pinggiran lebih gelap dan kilap putih tetap",
+          "scale_ref": "seukuran separuh lebar talang",
+          "must_show": ["pipih saat mendarat", "memanjang saat meluncur", "warna menjadi keruh"],
+          "must_not": ["wajah"], "claims": ["C15"]
+        },
+        {
+          "id": "jalur", "name": "jalur limpasan (atap, talang, got, pipa, sungai)", "treatment": "simplified",
+          "anatomy": "atap miring bergenteng membulat di kiri, talang dan pipa tegak di dinding gedung, selokan jalan beton ke grate bergaris, poros pendek ke pipa bundar bawah tanah, mulut pipa di tepi sungai",
+          "scale_ref": "pipa tegak setinggi satu lantai gedung; pipa bawah tanah selebar tiga tetes",
+          "must_show": ["potongan tembus pipa", "grate got", "mulut pipa ke sungai"],
+          "must_not": ["pipa terputus"], "claims": ["C05", "C06"]
+        }
+      ],
+      "environment": {
+        "setting": "potongan melintang satu blok kota berhujan, di atas dan di bawah tanah, berujung di tepi sungai",
+        "layers": { "bg": "langit senja kelabu", "env": "siluet gedung jauh blur", "subject": "gedung, jalan, pipa bawah tanah, sungai, tetes", "fg": "garis hujan blur dan tiang lampu", "atmos": "kabut hujan dan percikan" },
+        "palette": "abu-biru infrastruktur, tetes biru yang berubah cokelat keruh, sungai biru gelap",
+        "lighting": "senja, cahaya dari kiri atas, lampu jalan hangat"
+      },
+      "behavior": [
+        { "subject": "tetes", "action": "mendarat di atap lalu meluncur menuruni genteng ke talang", "trigger": "gravitasi dan kemiringan atap", "result": "tetes masuk pipa tegak", "treatment": "simplified", "claims": ["C05"] },
+        { "subject": "tetes", "action": "jatuh di pipa tegak, mengalir di selokan, jatuh lewat grate, mengalir di pipa bawah tanah, menyembur dari mulut pipa", "trigger": "gravitasi dan kemiringan pipa", "result": "tetes bercampur ke sungai dengan percikan", "treatment": "simplified", "claims": ["C05", "C06"] }
+      ],
+      "composition": { "camera": "samping tracking, potongan melintang", "placement": "tetes ditahan di tengah layar oleh kamera", "focal": "tetes", "negative_space": "ruang di arah gerak tetes" },
+      "animation": {
+        "initial": "tetes jatuh dari atas ke atap di kiri bawah",
+        "sequence": ["mendarat dan memipih di atap (kata lands)", "meluncur memanjang ke talang dan pipa tegak (kata roof, slides)", "masuk grate dan pipa bawah tanah (kata drain)", "menyembur ke sungai dengan percikan (kata river)"],
+        "camera_move": "tracking tetes dari atap turun ke pipa bawah tanah lalu ke kanan ke sungai",
+        "secondary": "hujan lain jatuh di latar, riak sungai, lampu jalan berkedip pelan",
+        "transition": "iris dari titik jatuh tetes s01; keluar ke s03 lewat push",
+        "final": "tetes mengapung di sungai keruh di tepi kanan"
+      },
+      "simplifications": ["Hanya jalur sistem terpisah; sistem gabungan (hujan dan limbah satu pipa) tidak digambar.", "Waktu dipadatkan menjadi beberapa detik tanpa angka.", "Satu tetes diikuti sebagai metafora; tetes sungguhan tidak dilacak."],
+      "assets": ["Jalur limpasan potongan melintang (baru)", "Drop (dipakai ulang)"]
+    },
+    "s03": {
+      "purpose": "Menjawab bagaimana air sungai menjadi air keran: tahap pengolahan dilihat dari dalam, lalu dikirim lewat pipa.",
+      "emphasis": ["clumps", "filters", "chlorinates", "tap"],
+      "pattern": ["P09", "P04", "P10"],
+      "dimension": "2.5d",
+      "subjects": [
+        {
+          "id": "tetes", "name": "tetes keruh yang diikuti", "treatment": "metaphor",
+          "anatomy": "tetes cokelat keruh yang sama dengan s02, makin jernih di tiap bak, bening biru di akhir; pinggiran meniskus dan kilap putih tetap",
+          "scale_ref": "seperempat lebar bak", "must_show": ["warna keruh menjadi jernih"], "must_not": ["wajah"], "claims": ["C15"]
+        },
+        {
+          "id": "instalasi", "name": "instalasi pengolahan air minum (potongan)", "treatment": "simplified",
+          "anatomy": "empat bak berurutan dari kiri ke kanan: bak koagulasi dengan pengaduk berputar, bak flokulasi dengan gumpalan cokelat membesar, bak pengendap dengan lumpur di dasar, filter pasir berlapis kerikil dan pasir, lalu bak klorin dengan titik terang",
+          "scale_ref": "tiap bak seukuran dua kali tinggi pipa",
+          "must_show": ["pengaduk berputar", "gumpalan mengendap", "lapisan pasir", "titik klorin"],
+          "must_not": ["bak tanpa sambungan"], "claims": ["C09", "C10", "C11"]
+        },
+        {
+          "id": "pipa-distribusi", "name": "pipa distribusi", "treatment": "simplified",
+          "anatomy": "pipa utama besar mengecil bercabang seperti pohon menuju dapur sebuah rumah, berakhir di keran dengan gagang membulat",
+          "scale_ref": "pipa utama setebal satu bak, keran sekitar setengah tetes besar",
+          "claims": ["C12", "C13"]
+        }
+      ],
+      "environment": {
+        "setting": "potongan melintang instalasi di tepi sungai lalu pipa bawah kota menuju sebuah rumah",
+        "layers": { "bg": "dinding instalasi biru gelap bergradien", "env": "bak-bak dan pipa pudar di belakang", "subject": "bak aktif, tetes, pipa", "fg": "pipa besar blur menyilang", "atmos": "gelembung, partikel kotoran, kilau klorin" },
+        "palette": "latar biru dingin, air keruh cokelat berubah biru jernih, aksen kuning pada pengaduk dan keran",
+        "lighting": "dingin dari atas, rim cyan pada tetes"
+      },
+      "behavior": [
+        { "subject": "instalasi", "action": "pengaduk berputar sehingga kotoran halus menempel dan menggumpal menjadi flok yang tenggelam ke dasar", "trigger": "bahan kimia penggumpal dan pengadukan lembut", "result": "air di atas lumpur lebih jernih", "treatment": "simplified", "claims": ["C10"] },
+        { "subject": "tetes", "action": "meluncur melewati lapisan pasir dan titik klorin menyebar di sekitarnya", "trigger": "aliran air antar bak", "result": "tetes jernih keluar bak terakhir ke pipa", "treatment": "simplified", "claims": ["C09", "C11"] },
+        { "subject": "tetes", "action": "terdorong melewati pipa yang mengecil bercabang sampai menggantung dan jatuh dari keran", "trigger": "aliran dan tekanan di pipa", "result": "tetes menetes dari keran dapur", "treatment": "simplified", "claims": ["C12"] }
+      ],
+      "composition": { "camera": "samping tracking, potongan melintang", "placement": "tetes di sepertiga kiri bergerak ke kanan, bak di belakangnya", "focal": "tetes", "negative_space": "ruang kosong di depan tetes" },
+      "animation": {
+        "initial": "tetes keruh masuk dari kiri ke bak koagulasi",
+        "sequence": ["gumpalan terbentuk di bak koagulasi dan flokulasi (kata clumps)", "air melewati pasir dan menjernih (kata filters)", "titik klorin menyebar (kata chlorinates)", "pipa mengecil bercabang menuju keran dan tetes menetes (kata tap)"],
+        "camera_move": "tracking kanan mengikuti tetes, naik ke dapur di akhir",
+        "secondary": "gelembung naik, pengaduk berputar, flok tenggelam pelan",
+        "transition": "push dari s02 (titik masuk: mulut pipa); keluar ke s04 lewat wipe",
+        "final": "tetes jernih menggantung di mulut keran"
+      },
+      "simplifications": ["Lima tahap digabung menjadi empat bak.", "Waktu tiap tahap dipadatkan tanpa angka.", "Sumber tekanan pipa tidak digambar (C13 hanya sebagian)."],
+      "assets": ["Bak instalasi dengan pengaduk, flok, pasir, klorin (baru)", "Pipa bercabang dan keran (baru)"]
+    },
+    "s04": {
+      "purpose": "Menutup lingkaran: air bekas pakai diolah lagi lalu kembali ke sungai, dan penonton melihat tetes yang sama dengan pembuka.",
+      "emphasis": ["treated", "river"],
+      "pattern": ["P09", "P14", "P10"],
+      "dimension": "2.5d",
+      "subjects": [
+        {
+          "id": "tetes", "name": "tetes air bekas pakai", "treatment": "metaphor",
+          "anatomy": "tetes abu keruh dari wastafel yang membawa kotoran, menjernih setelah bak aerasi, pinggiran meniskus gelap dan kilap putih, pantulan kota terbalik muncul lagi di akhir",
+          "scale_ref": "sama dengan s03", "must_show": ["abu keruh menjadi jernih", "pantulan kota kembali"], "must_not": ["wajah"], "claims": ["C15"]
+        },
+        {
+          "id": "ipal", "name": "instalasi pengolahan air limbah (potongan)", "treatment": "simplified",
+          "anatomy": "saringan berjeruji miring di kiri, bak pengendap lebar dengan lumpur di dasar, bak aerasi dengan gelembung dan bakteri kecil berbentuk kapsul cokelat, bak klorin, lalu pipa pelepasan bergaris ke sungai",
+          "scale_ref": "bak aerasi sekitar dua kali bak pengendap",
+          "must_show": ["jeruji saringan", "gelembung aerasi", "mulut pelepasan ke sungai"], "must_not": ["bakteri berwajah"], "claims": ["C14"]
+        }
+      ],
+      "environment": {
+        "setting": "potongan melintang IPAL di tepi sungai senja yang sama dengan pembuka",
+        "layers": { "bg": "langit senja yang sama dengan s01", "env": "siluet kota pudar di seberang sungai", "subject": "bak-bak, pipa, tetes", "fg": "rumput dan rangka pipa blur", "atmos": "gelembung, kabut malam" },
+        "palette": "latar senja ungu-abu, bak abu-biru, air abu keruh menjadi biru jernih, lampu kuning kota",
+        "lighting": "senja dari kiri atas, rim cyan pada tetes"
+      },
+      "behavior": [
+        { "subject": "tetes", "action": "meluncur dari pipa pembuangan melewati saringan, mengendap sebentar, lalu naik turun di antara gelembung aerasi", "trigger": "aliran pipa dan gelembung udara", "result": "tetes menjernih", "treatment": "simplified", "claims": ["C14"] },
+        { "subject": "tetes", "action": "keluar dari pipa pelepasan dan jatuh ke sungai, mengapung dengan pantulan kota", "trigger": "aliran pipa", "result": "tetes kembali ke sungai", "treatment": "simplified", "claims": ["C14"] }
+      ],
+      "composition": { "camera": "samping tracking lalu mundur", "placement": "tetes di tengah, di akhir kamera mundur menampakkan sungai dan kota", "focal": "tetes", "negative_space": "langit di atas sungai" },
+      "animation": {
+        "initial": "tetes abu keruh jatuh dari wastafel kecil ke pipa di kiri",
+        "sequence": ["tetes melewati saringan dan bak pengendap (kata treated)", "gelembung aerasi menjernihkan tetes (kata again)", "keluar pipa dan mengapung di sungai (kata river)"],
+        "camera_move": "tracking kanan lalu mundur membuka kota senja",
+        "secondary": "gelembung naik, riak sungai, lampu kota berkedip",
+        "transition": "wipe dari s03; selesai di sungai senja",
+        "final": "tetes jernih mengapung di sungai dengan pantulan kota terbalik, sama dengan pembuka"
+      },
+      "simplifications": ["Tahap IPAL digabung menjadi empat bak.", "Persentase penghilangan bahan organik tidak ditampilkan.", "Air dari sungai menuju laut atau kembali ke awan tidak digambar."],
+      "assets": ["Bak IPAL dengan saringan, aerasi (baru)", "Drop dan skyline (dipakai ulang)"]
+    }
+  }
+}

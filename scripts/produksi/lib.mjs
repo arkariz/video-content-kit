@@ -9,6 +9,12 @@ export function args() {
   return o;
 }
 export function resolveCycle(track, siklus) {
+  if (track.startsWith("_")) { // id semu untuk contoh di luar track: --track _contoh --siklus P01 -> produksi/contoh-r3/P01-*/ (audio dan caption di bawah produksi/audio|captions/_contoh/P01)
+    const cdir = fs.readdirSync(path.join(ROOT, "produksi/contoh-r3")).find((d) => d.startsWith(siklus + "-"));
+    if (!cdir) throw new Error(`Contoh ${siklus} tidak ditemukan di produksi/contoh-r3`);
+    const dir = path.join(ROOT, "produksi/contoh-r3", cdir);
+    return { dir, cycleId: cdir, scriptPath: path.join(dir, "03-script.json"), assetsPath: path.join(dir, "04-assets.json") };
+  }
   const tdir = fs.readdirSync(path.join(ROOT, "hasil/tracks")).find((d) => d.startsWith(track + "-"));
   if (!tdir) throw new Error(`Track ${track} tidak ditemukan`);
   const sdir = fs.readdirSync(path.join(ROOT, "hasil/tracks", tdir, "siklus")).find((d) => d.startsWith(siklus));
