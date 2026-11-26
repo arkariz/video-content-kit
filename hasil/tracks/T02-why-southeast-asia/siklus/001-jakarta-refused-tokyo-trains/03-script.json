@@ -83,7 +83,10 @@
             }
           ]
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8359
+      }
     },
     {
       "id": "s02",
@@ -1535,7 +1538,10 @@
           "url": "https://finance.detik.com/infrastruktur/d-8571647/kai-buka-bukaan-18-krl-baru-sudah-beroperasi",
           "claim": "11 rangkaian CRRC sudah dioperasikan untuk Bogor Line dan Cikarang Line"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9520
+      }
     },
     {
       "id": "s32",
@@ -2115,7 +2121,10 @@
             }
           ]
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 26006
+      }
     },
     {
       "id": "s44",
@@ -2139,6 +2148,9 @@
           "face close up",
           "logo"
         ]
+      },
+      "duration_ms": {
+        "en": 7198
       }
     },
     {
@@ -2455,7 +2467,10 @@
             }
           ]
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8127
+      }
     },
     {
       "id": "s51",
@@ -2776,7 +2791,10 @@
             }
           ]
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 17136
+      }
     },
     {
       "id": "s58",
@@ -3199,22 +3217,9 @@
         }
       ],
       "stage": {
-        "bg": "station",
-        "cam": {
-          "z": [
-            1,
-            1
-          ]
-        },
-        "actors": [
-          {
-            "id": "t",
-            "kind": "train",
-            "x": 0.78,
-            "scale": 1.7,
-            "emo": "shock"
-          }
-        ]
+        "engine": "r3",
+        "module": "hasil/tracks/T02-why-southeast-asia/siklus/001-jakarta-refused-tokyo-trains/04-shots.tsx",
+        "scene": "thumbA"
       }
     },
     {
@@ -3231,22 +3236,9 @@
         }
       ],
       "stage": {
-        "bg": "sea",
-        "cam": {
-          "z": [
-            1,
-            1
-          ]
-        },
-        "actors": [
-          {
-            "id": "t",
-            "kind": "train",
-            "x": 0.8,
-            "scale": 1.7,
-            "emo": "sad"
-          }
-        ]
+        "engine": "r3",
+        "module": "hasil/tracks/T02-why-southeast-asia/siklus/001-jakarta-refused-tokyo-trains/04-shots.tsx",
+        "scene": "thumbB"
       }
     }
   ],

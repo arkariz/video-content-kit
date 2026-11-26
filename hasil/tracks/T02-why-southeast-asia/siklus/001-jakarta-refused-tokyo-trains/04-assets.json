@@ -34,18 +34,6 @@
   ],
   "renders": [
     {
-      "file": "render/T02/001/Short9x16-A1-why-tokyo-trains-fit-en.mp4",
-      "comp": "Short9x16",
-      "lang": "en",
-      "cut": "A1-why-tokyo-trains-fit"
-    },
-    {
-      "file": "render/T02/001/Short9x16-A2-too-old-to-import-en.mp4",
-      "comp": "Short9x16",
-      "lang": "en",
-      "cut": "A2-too-old-to-import"
-    },
-    {
       "file": "render/T02/001/Thumbnail-A.png",
       "comp": "Thumbnail"
     },
@@ -58,6 +46,18 @@
       "comp": "Master16x9",
       "lang": "en",
       "cut": null
+    },
+    {
+      "file": "render/T02/001/Short9x16-A1-why-tokyo-trains-fit-en.mp4",
+      "comp": "Short9x16",
+      "lang": "en",
+      "cut": "A1-why-tokyo-trains-fit"
+    },
+    {
+      "file": "render/T02/001/Short9x16-A2-too-old-to-import-en.mp4",
+      "comp": "Short9x16",
+      "lang": "en",
+      "cut": "A2-too-old-to-import"
     }
   ],
   "voice": {

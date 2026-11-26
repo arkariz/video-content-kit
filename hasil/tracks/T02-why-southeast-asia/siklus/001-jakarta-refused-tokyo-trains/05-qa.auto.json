@@ -1,9 +1,9 @@
 {
   "track": "T02",
   "siklus": "001",
-  "tanggal": "2026-11-25",
-  "durasi": "9:24",
-  "footage_pct": 10.1,
+  "tanggal": "2026-11-26",
+  "durasi": "9:47",
+  "footage_pct": 9.1,
   "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
   "temuan": [
     {
@@ -12,6 +12,13 @@
       "id": "S2",
       "msg": "jarak re-hook terpanjang 113 dtk mulai 0:00 (target 60-90)",
       "fix": "ubah satu scene di rentang itu jadi re-hook"
+    },
+    {
+      "layer": "Visual",
+      "level": "kecil",
+      "id": "V3",
+      "msg": "footage hanya 9% (target komposisi 20-30%)",
+      "fix": "tambah kunci PEXELS_API_KEY atau kata kunci b-roll"
     },
     {
       "layer": "Visual/Channel",

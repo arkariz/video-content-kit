@@ -345,7 +345,5 @@ d["shorts_cuts"] = [
 ]
 json.dump(d, open(P, "w"), ensure_ascii=False, indent=2)
 # ---------------------------------------------------------------- 04-shots.tsx
-head = open(here / "04-shots.head.tsx").read()
-body = ["", "const D: Record<string, any[]> = " + json.dumps({sid: sts for sid, sts in ts}, ensure_ascii=False) + ";", "const build = () => Object.fromEntries(Object.entries(D).map(([id, list]) => [id, list.map((st: any) => mk(st))]));", "export default defineShots(build());", ""]
-open(here / "04-shots.tsx", "w").write(head + "\n".join(body))
+# 04-shots.tsx sekarang ditulis tangan (versi 3D, 2026-11-26); generator ini tidak lagi membuat atau menimpanya.
 print("scenes", len(d["scenes"]), "shots", sum(len(s.get("shots", [])) for s in d["scenes"]))
