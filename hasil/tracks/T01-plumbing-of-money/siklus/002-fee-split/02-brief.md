@@ -1,49 +1,56 @@
 # Brief: T01 siklus 002-fee-split (Variasi B)
 
-> **Usang (2026-11-26):** draft ini memakai gaya diorama 2.5D yang sudah diganti R3. Isi cerita boleh dipakai ulang, tetapi visual wajib ditulis ulang (`instruksi/referensi/gaya-visual.md`) sebelum disetujui.
+Versi R3, ditulis ulang 2026-11-26. Menggantikan draft diorama 2.5D.
 
 ## Janji video
-Setelah menonton, kamu tahu ke mana saja $2,75 dari belanja $100 pergi, siapa yang mengambilnya, dan siapa yang sebenarnya menanggungnya.
+After watching, you know where $2.75 of a $100 card purchase goes in one worked US example, who takes it, and who ends up paying.
 
 ## Penonton
-Penonton tier-1 yang memakai kartu kredit setiap hari dan tidak tahu ada biaya di balik tap. Sebagian sudah menonton 001 (approved ≠ paid). Tidak perlu tahu istilah industri.
+Penonton tier-1 yang memakai kartu setiap hari dan tidak tahu ada biaya di balik tap. Sebagian sudah menonton 001 (approved bukan berarti paid). Tidak perlu tahu istilah industri.
 
 ## Bukti milik kreator
-- Klip tangan kreator tap kartu (s02, ±5 detik) dan bayar QRIS di warung (s38, ±10 detik). Wajib: syarat pengecualian QA 001 (siklus 002 dan 003 memuat kehadiran nyata).
-- Sudut Indonesia (QRIS, aturan Bank Indonesia) sebagai pembanding dari sisi pasar kreator. Tanpa klaim kredensial di narasi.
+- `produksi/footage-own/T01/tap-01.mp4` (s02, ±8 detik): tangan tap kartu. Tanpa wajah, nomor kartu tidak terlihat.
+- `produksi/footage-own/T01/qris-01.mp4` (s42, ±10 detik): tangan bayar QRIS di warung. Tanpa wajah, nama toko dan saldo tidak terlihat.
+- Sudut Indonesia (QRIS) sebagai pembanding. Tanpa klaim kredensial di narasi.
 
 ## Format
-- Master 16:9 EN, target ±8:15 (≥ 8:00 untuk mid-roll), audio ID sebagai track kedua.
-- 2 Shorts (B1, B2), hook angka dulu (rencana V2 terkunci).
-- Gaya: diorama 2.5D, satu `world`. Cerita: `instruksi/referensi/gaya-cerita.md`.
+- Master 16:9 EN, 49 scene, estimasi ±8:15 (syarat 8:00 atau lebih), audio ID sebagai track kedua.
+- 2 Shorts: B1 (s01, s03, s35), B2 (s36, s37, s48). Estimasi suara 26 sampai 33 detik, belum termasuk jeda.
+- Visual: R3, ilustrasi gerak penjelas, satu shot per kalimat. Cerita: `instruksi/referensi/gaya-cerita.md`.
 
-## Judul (3 varian)
-1. You Pay $100. Here's Who Takes a Cut.
+## Judul
+1. You Pay $100. Here's Who Takes a Cut. (rekomendasi)
 2. Every Card Tap Pays 4 Companies. Here's the Split.
-3. Where the Missing $2.75 Goes When You Tap a Card
+3. Where $2.75 Goes When You Tap a Card
 
-## Teks thumbnail (2 varian, maks 4 kata)
-- A: "$100 → $97.25"
+## Thumbnail
+- A: "$100 → $97.25" (rekomendasi)
 - B: "WHO TOOK $2.75?"
 
 ## Learnings yang diterapkan
-- learnings T01 / global 1: fondasi dulu. Pemain + analogi gerobak di jalan tol selesai di s11 (±1:40).
-- 2: anggaran konsep 7 istilah (card network, terminal company, interchange, rewards, network fee, markup, QRIS), jarak ≥ 45 detik kecuali rewards → network fee (kata sehari-hari).
-- 3: setiap istilah didefinisikan di kalimat yang sama.
-- 4: semua scene diorama punya perpindahan koin/gerobak atau kamera; tanpa papan teks.
-- 5: satu peta tetap (kota + jalan tol), kembali di s04, s29, s42.
-- 6: satu pendalaman teknis: tabel tarif interchange (s15–s17).
-- 8: durasi dicapai lewat contoh (kartu biasa vs premium, cashback, QRIS), bukan konsep tambahan.
-- Gaya cerita wajib: `instruksi/referensi/gaya-cerita.md` (checklist dicentang di 03-naskah.md).
+- Fondasi dulu: pemain dan analogi gerobak di jalan tol selesai di s11, ±1:40 (sedikit di atas target 90 detik).
+- Anggaran konsep: 6 istilah (card network, terminal company, interchange, rewards, markup, QRIS), dari batas 8. Jarak network, terminal company, interchange hanya ±35 detik (di bawah 45) karena semuanya fondasi.
+- Definisi di kalimat yang sama saat istilah muncul.
+- Satu jangkar tetap (peta jalan tol): s04 sampai s06, s12, s23, s33, s47.
+- Satu pendalaman teknis: dua baris tarif interchange (s15 sampai s17).
+- Durasi ditambah lewat contoh (kartu biasa vs premium, kaus kaki $5, seribu pasang, tagihan Rp1 juta), bukan istilah baru.
 
-## World (garis besar untuk 03-script.json)
-- Kota kecil (peta tetap). Kiri jauh: rumah kamu + "YOUR BANK" (bankhall). Belakang tengah di bukit: gerbang tol + menara network (tower). Tengah depan: toko sepatu (shop) dengan terminal; antrean: you, cash payer (friend). Kanan dekat toko: perusahaan terminal (server). Kanan jauh: "SHOP'S BANK" (bankhall). Rumah-rumah kecil-besar di pinggir (untuk s34).
-- Jalan (path): your bank → gerbang tol → shop's bank, cabang ke server dan toko.
-- Seberang laut, kanan belakang: pulau (actor:island) dengan warung (shop) + stiker QR.
-- Mood: day (s01–s29), dusk (s30–s35), dusk di pulau (s36–s41), night (s42–s44).
-- Butuh aset baru: tollgate, cart, qr-stand, shoebox, cash-bills. SFX koin (clink) di setiap potongan.
+## Pemeran T01 (usulan, perlu persetujuan kreator)
+Belum ada di `produksi/STYLE.md`. Bahasa bentuk mengikuti STYLE.md.
+| id | Peran | Usulan bentuk |
+| --- | --- | --- |
+| you | pembeli | badan kacang, aksesori syal |
+| owner | pemilik toko sepatu | kapsul, celemek |
+| bank | bank pembeli | gedung berwajah dengan pintu brankas |
+| network | jaringan kartu | menara pengawas dengan lampu sorot, tanpa logo merek |
+| terminal | perusahaan terminal | server dengan headset |
+| cash | pembayar tunai | bola, topi pet |
+
+Palet usulan: krem #fff4da, hijau uang #2f8f6b, koin #ffd23f, biru malam #172447, koral #e4572e.
 
 ## Risiko
-- Angka interchange premium (2,10% + $0,10) dari ringkasan Helcim; cocokkan dengan PDF Visa (tabel 24 Okt 2026) sebelum render.
-- Topik sengketa swipe fee Visa/Mastercard tetap tidak dibahas (TRACK).
-- Boston Fed 2010 disebut tahunnya; jangan disajikan sebagai angka terkini.
+- Semua angka biaya adalah satu contoh AS: Visa kredit, tarif retail standar (24 Okt 2026), toko memakai tarif rata Stripe. Bukan angka untuk semua toko.
+- Tarif Stripe dicek lewat NerdWallet; cocokkan dengan stripe.com/pricing sebelum render.
+- Boston Fed memakai data lama (terbit 2010) dan berupa estimasi model.
+- Visual tidak memakai logo Visa, Mastercard, Stripe, atau QRIS.
+- Sengketa swipe fee tetap tidak dibahas.
