@@ -4,7 +4,7 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "T02: 002 naskah disetujui, uji gaya mulus 11-28 lalu produksi, tayang 2026-12-01; analitik 001 2026-11-28 dan 12-03. T01: analitik siklus 001 mulai 2026-12-02; tulis ulang naskah 002 ke R3 dan rekam 2 klip tangan"
+langkah_berikutnya: "Review video T01-002 dan T02-002/003/004 (hasil/review/rencana-produksi-2026-11-26.md), lalu publish sesuai jadwal; analitik 001 T02 11-28, T01 12-02"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-26
@@ -18,8 +18,8 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Analitik 001 (mulai 12-02), naskah 002 ditulis ulang ke R3, produksi 004 (GTA VI, di luar V2, naskah disetujui) | 5,5 | 2026-11-26: 001 tayang di semua platform |
-| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (@equator.logic di TikTok) | 002 GTA: uji gaya 11-28, produksi, tayang 12-01 | 6 | 2026-11-26: 001 tayang di semua platform; jadwal setelah 001 disetujui |
+| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | 002 menunggu review; 004 siap publish; analitik 001 mulai 12-02 | 5,5 | 2026-11-26: 002 dirender |
+| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (@equator.logic di TikTok) | Review 002, 003, 004; publish 002 target 12-01 | 6 | 2026-11-26: 002, 003, 004 dirender |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
 | T05 | Indonesia dan Asia Tenggara dari dalam | Nusantara before the maps | usulan | Channel Asia Tenggara | Cadangan | - | 2026-11-24: cadangan |
@@ -83,3 +83,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: T02 siklus 002 naskah disetujui kreator. Berikutnya uji gaya mulus lalu produksi.
 - 2026-11-26: Semua branch (T02-GTA, T02-JAWA, T01-S004-GTAVI; T02 sama dengan main) digabung ke main atas permintaan kreator. Folder Jawa dinomori ulang 002 → 003.
 - 2026-11-26: Produksi malam disetujui: T02-002, T01-002, T02-003 (naskah disetujui), berhenti 06.00 WIB. Lihat hasil/review/rencana-produksi-2026-11-26.md.
+- 2026-11-26: Produksi malam selesai dirender: T01-002, T02-002, T02-003, T02-004 (long-form, 2 Shorts, thumbnail). Semua menunggu review kreator; belum ada publish.

@@ -79,7 +79,7 @@ const Scene: React.FC<{ spec: Spec }> = ({ spec }) => {
   const u = seg(t, 0, Math.max(dur + 0.3, 2), Easing.inOut(Easing.sin));
   const at = (o.at ?? [mix(from.at[0], to.at[0], u), mix(from.at[1], to.at[1], u), mix(from.at[2], to.at[2], u)]) as V3;
   let cam: Cam = { at, d: mix(from.d, to.d, u) * (o.d ?? 1), yaw: mix(from.yaw, to.yaw, u) + Math.sin(t * 0.5 + c.index) * 0.8, pitch: mix(from.pitch, to.pitch, u) + Math.cos(t * 0.4 + c.index) * 0.4, fov: 35 };
-  if (vertical) cam = { ...cam, at: [o.vx ?? cam.at[0], cam.at[1], cam.at[2]], d: cam.d * (o.vd ?? 1.7), yaw: cam.yaw * 0.7 };
+  if (vertical) cam = { ...cam, at: [o.vx ?? cam.at[0], cam.at[1], cam.at[2]], d: cam.d * (o.vd ?? 1.7) * 1.2, yaw: cam.yaw * 0.7 };
   const half = vertical ? 303 : 960;
   return (
     <>
@@ -92,7 +92,7 @@ const Scene: React.FC<{ spec: Spec }> = ({ spec }) => {
           x = clamp(x, SW / 2 - half + lo + 24, SW / 2 + half - hi - 24); y = clamp(y, ptr === "up" ? 60 : 130, 860);
           return <Pill key={text} x={x} y={y} text={text} p={c.label(text)} bg={bg} ptr={ptr} size={size} />;
         })}
-        {c.bubble && o.bubbleAt && c.t > 0.5 && <Bubble x={project(cam, o.bubbleAt)[0]} y={project(cam, o.bubbleAt)[1]} text={c.bubble} p={seg(c.t, 0.5, 0.8)} />}
+        {c.bubble && o.bubbleAt && c.t > 0.5 && <Bubble x={vertical ? clamp(project(cam, o.bubbleAt)[0], 780, 960) : project(cam, o.bubbleAt)[0]} y={project(cam, o.bubbleAt)[1]} text={c.bubble} p={seg(c.t, 0.5, 0.8)} />}
       </Frame>
     </>
   );
@@ -308,7 +308,12 @@ export const Arrow: React.FC<{ a: V3; b: V3; c?: string; w?: number; on?: number
   return <><Hose a={a} c={mid} b={b} w={w} color={c} n={20} upto={on} /><mesh geometry={G.cone(w * 3, w * 6, 20)} material={soft(c, 0.4)} position={e} quaternion={qq} /></>;
 };
 /** Teks angka/kata pendek pada benda (bukan papan penjelasan). */
-export const Num: React.FC<{ text: string; p: V3; h?: number; c?: string; bg?: string }> = ({ text, p, h = 1.2, c = "#ffffff", bg }) => <TextPlane text={text} h={h} color={c} bg={bg} p={p} />;
+export const Num: React.FC<{ text: string; p: V3; h?: number; c?: string; bg?: string }> = ({ text, p, h = 1.2, c = "#ffffff", bg }) => (
+  <group position={p}><TextPlane text={text} h={h} color={c} bg={bg} />
+    {/* bidang tak terlihat yang menulis kedalaman, supaya teks tidak ikut diburamkan efek fokus */}
+    <mesh renderOrder={5} position={[0, 0, -0.01]}><planeGeometry args={[h * Math.round(((text.length * 92 + 100) / 240) * 4) / 4, h * 0.8]} /><meshBasicMaterial colorWrite={false} depthWrite transparent /></mesh>
+  </group>
+);
 
 /* ---------- peta ---------- */
 /** Pulau lembut dari daftar gumpalan [x, z, rx, rz]. */

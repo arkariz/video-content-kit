@@ -8,10 +8,10 @@ channel: "Equator Logic (channel Asia Tenggara; TikTok @equator.logic)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "002-gta6-download-9-hours"
-langkah_berikutnya: "002 (naskah disetujui 2026-11-26): 11-28 uji gaya mulus (gate gaya) dan cek awal analitik 001; 11-29 s.d. 11-30 audio, 04-shots.tsx, render; sebelum publish cek klaim bertanda di 03-naskah.md (APJII s23, ATSI s28, Ookla); 11-30 s.d. 12-01 QA anti-slop dan publish (gate), target tayang 2026-12-01"
+langkah_berikutnya: "Kreator menonton 002, 003, 004 dan mengecek hasil/review/rencana-produksi-2026-11-26.md; 002: cek klaim bertanda lalu publish (target 2026-12-01); analitik 001 2026-11-28 dan 12-03"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: null
+menunggu_keputusan: "Review video 002, 003, 004 sebelum publish; 004: cek fakta dan risiko nama perusahaan/orang, lalu jadwal atau tahan"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -70,8 +70,9 @@ Catatan: 002 tayang sebelum jendela V2 (2026-12-07) dan menggantikan judul Jawa;
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
 | 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | tayang | 2026-11-26 | uji-V2, variasi A; tayang di semua platform (YouTube, Facebook, TikTok: master + 2 Shorts; Instagram: 2 Shorts), unggah manual; tanpa QA anti-slop manual |
-| 002-gta6-download-9-hours | GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9. | produksi | target 2026-12-01 | uji-V2, variasi B (menggantikan judul Jawa); 1 long-form + 2 Shorts; naskah disetujui 2026-11-26 |
-| 003-why-half-lives-on-one-island | Why Half of Indonesia Lives on One Island | naskah | target minggu 2026-12-14 | uji-V2, variasi B |
+| 002-gta6-download-9-hours | GTA 6: Singapore Is Already Playing. Indonesia Has 8 Hours Left. | qa | target 2026-12-01 | uji-V2, variasi B; master 8:47 + 2 Shorts + thumbnail dirender 2026-11-26; QA otomatis lulus, QA manual belum |
+| 003-why-half-lives-on-one-island | Why Half of Indonesia Lives on One Island | qa | target 2027-01-05 | uji-V2, variasi B; master 8:12 + 2 Shorts + thumbnail dirender 2026-11-26; QA manual belum |
+| 004-karhutla-who-lit-the-match | Indonesia Is Burning. Who Lit the Match? | qa | belum dijadwalkan | di luar V2; permintaan kreator; topik sensitif, wajib cek fakta sebelum publish |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -129,3 +130,5 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Kreator menyetujui naskah siklus 002 (versi hook agresif). Naskah dikunci; status produksi. Klaim yang belum dibuka dari sumber asli tetap harus dicek sebelum publish.
 - 2026-11-26: Branch T02-GTA dan T02-JAWA digabung ke main. Folder Jawa dinomori ulang 002 → 003 sesuai jadwal yang disetujui.
 - 2026-11-26: Kreator menyetujui naskah siklus 003 (Jawa) untuk diproduksi malam ini bersama 002.
+- 2026-11-26: Produksi malam: 002 dan 003 dirender (long-form, 2 Shorts, thumbnail) dengan adegan 3D halus (r3/soft). Scene footage 003 diganti ilustrasi.
+- 2026-11-26: Siklus 004 (karhutla) dibuat atas permintaan kreator, di luar paket V2 dan menyimpang dari "Tidak akan dibahas" (isu berjalan). Riset fakta, naskah, audio, render otomatis; naskah belum dibaca kreator. Dugaan disebut dugaan; nama pejabat aktif tidak disebut.

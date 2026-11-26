@@ -1,0 +1,37 @@
+{
+  "track": "T02",
+  "siklus": "004",
+  "tanggal": "2026-11-26",
+  "durasi": "8:08",
+  "footage_pct": 0,
+  "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
+  "temuan": [
+    {
+      "layer": "Struktur",
+      "level": "sedang",
+      "id": "S2",
+      "msg": "jarak re-hook terpanjang 118 dtk mulai 6:10 (target 60-90)",
+      "fix": "ubah satu scene di rentang itu jadi re-hook"
+    },
+    {
+      "layer": "Teks ID",
+      "level": "sedang",
+      "id": "T-id",
+      "msg": "s46: frasa slop ID",
+      "fix": "tulis ulang santai"
+    },
+    {
+      "layer": "Visual/Channel",
+      "level": "sedang",
+      "id": "K1",
+      "msg": "bukti nyata kreator tidak ada; DIPERBOLEHKAN oleh pengecualian kreator (pengecualian_qa)",
+      "fix": "tetap tercatat di laporan; kreator memikul risiko kebijakan konten AI"
+    }
+  ],
+  "manual": [
+    "Dengarkan audio: nada, artefak TTS, pengucapan istilah (kemunculan pertama)",
+    "Tonton master dan Shorts: irama, kecepatan animasi, bubble tidak menutup isi",
+    "Periksa fakta tiap klaim terhadap sumber",
+    "Setujui thumbnail dan judul"
+  ]
+}

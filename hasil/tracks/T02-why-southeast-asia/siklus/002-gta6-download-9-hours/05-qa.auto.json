@@ -4,22 +4,8 @@
   "tanggal": "2026-11-26",
   "durasi": "8:46",
   "footage_pct": 0,
-  "verdict": "GAGAL",
+  "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
   "temuan": [
-    {
-      "layer": "Audio",
-      "level": "kritis",
-      "id": "A2",
-      "msg": "s11: transkrip balik tidak memuat \"Palapa\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
-    },
-    {
-      "layer": "Audio",
-      "level": "sedang",
-      "id": "A3",
-      "msg": "jenis/lisensi suara belum dicatat (assets.voice.type)",
-      "fix": "catat: clone milik kreator atau voice berlisensi komersial, paket berbayar"
-    },
     {
       "layer": "Visual/Channel",
       "level": "sedang",
