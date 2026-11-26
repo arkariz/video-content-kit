@@ -5,7 +5,7 @@
 - **Bukti milik kreator:**
   - Footage rekaman sendiri di KRL, wajib sebelum 30% durasi: s01 (interior eks JR 205 dengan tulisan Jepang), s02 (rangkaian eks Jepang masuk peron), s11 (rel dan kabel aliran atas dari jendela). Lalu s31 (rangkaian CRRC di lintas Bogor), s34 (peron jam sibuk), s54 dan s57 (pengambilan penutup).
   - Sumber berbahasa Indonesia (Bisnis, Katadata, detik, Liputan6, MetroTV, CNBC Indonesia, Puslit DPR) untuk babak 2023 sampai 2026. Babak ini belum dibuat video berbahasa Inggris mana pun di riset.
-- **Format:** master sekitar 8:41 (perkiraan dari 1.437 kata EN, dicek ulang setelah TTS; syarat ≥ 8:00), 2 Shorts (A1, A2), versi Indonesia: ya (audio track kedua).
+- **Format:** master sekitar 8:50 (perkiraan dari 1.502 kata EN setelah penulisan ulang R3, dicek ulang setelah TTS; syarat ≥ 8:00), 2 Shorts (A1, A2), versi Indonesia: ya (audio track kedua).
 - **Judul (3 varian):**
   1. Jakarta Just Refused Tokyo's Old Trains. Here's Why
   2. Why Jakarta Runs on Tokyo's Retired Trains, and Why That Just Ended
@@ -19,15 +19,15 @@
   - QA T01 T1: bukti nyata kreator di layar sebelum 30% durasi. Di sini berupa footage KRL sendiri di s01, s02, s11.
   - QA T01 T4: setiap klaim fakta bersumber (66 sumber per scene di `03-script.json`).
   - QA T01 T6: re-hook tiap 60 sampai 90 detik (s11, s20, s30, s40, s50).
-  - QA T01 T8 (bubble) tidak berlaku lagi: gaya diorama tanpa bubble. Angka dan keterangan menempel pada benda (callout).
+  - QA T01 T8 (bubble): bubble hanya untuk sikap atau lelucon (maks. 6 kata, jarang); siklus ini tidak memakai bubble.
   - QA T01 T2: tidak ada `say_as` untuk istilah yang biasa dibaca benar oleh TTS. Hanya "Sifang".
-- **Gaya visual wajib: diorama 2.5D** (`instruksi/referensi/gaya-diorama.md`, berlaku sejak 2026-11-25). Naskah ditulis ulang visualnya, narasi dan sumber tidak berubah (`03-script.diorama.py` menghasilkan `world` dan `stage` tiap scene).
-  - **Dunia (satu peta tetap):** Tokyo di kiri (menara, pinus, kereta lama), laut Jepang-Jawa di tengah, Jakarta di kanan (menara kota, stasiun Jakarta Kota, lintas Bogor dan Cikarang), pabrik INKA di Jawa Timur, CRRC di utara seberang laut (Tiongkok), gedung KAI dan pemerintah/DPR di tepi Jakarta. Jalur pengiriman kapal dan lintas rel digambar bertahap.
-  - **Tokoh dan benda:** kereta (`actor:train`) sebagai tokoh utama, kapal, Guide sebagai penutur kecil. Tanpa bubble dan tanpa papan teks.
-  - **Aset baru yang dibutuhkan:** tidak ada. Dipakai apa adanya: `tower`, `house`, `bankhall`, `shop`, `palm`, `pine`, `tree`, `bush`, `lock`, `envelope`, `actor:train`, `actor:ship`, `actor:guide`. Opsional kalau agent repo sempat: livery kereta Jepang vs Tiongkok yang berbeda warna, dan rel di tanah.
-  - **Footage:** 12 scene memakai footage (7 file milik kreator dan stok) di atas dunia diorama, 20 sampai 34% durasi.
-  - **Anggaran konsep (maks. 8 per video panjang):** lebar rel, listrik 1.500 V DC, seri 205, INKA, CRRC Sifang, batas umur barang modal bekas, retrofit, KAI sebagai operator. Delapan istilah, pas di batas. Istilah lain (E217, Tokyo Metro 6000, Mita Line) hanya disebut sebagai nama, tidak dijelaskan.
-  - **Fondasi dulu (revisi 2026-11-25, atas pilihan kreator):** s02 memperkenalkan analogi baju bekas turunan (ukuran cocok, masih ada umur pakai), s03 memperkenalkan empat pemain (KAI, pemerintah, INKA, CRRC) dengan sorotan di dunia diorama. Analogi dipanggil lagi di s12 (ukuran rel) dan s47 (umur pakai). Total sekitar 70 kata tambahan, KAI tidak dihitung konsep baru karena sudah ada di anggaran delapan konsep.
+- **Gaya visual wajib: ilustrasi gerak penjelas R3** (`instruksi/referensi/gaya-visual.md`, berlaku sejak 2026-11-26, menggantikan diorama 2.5D). Siklus 001 ditulis ulang ke gaya ini atas permintaan kreator 2026-11-26, walau aturan repo mengecualikannya. `03-script.r3.py` menghasilkan `anchor`, `cast`, `shots` per kalimat, dan `04-shots.tsx`.
+  - **Jangkar:** satu peta Jepang-Jawa-Tiongkok dengan garis laut Tokyo-Jakarta, pin kota, dan kapal pembawa kereta. Muncul di fondasi (s03, s04), tengah (s30, s40), dan penutup (s57, s58).
+  - **Pemeran:** Komo (penumpang, "kamu"), Sepuh (kereta eks-Tokyo), Pak Aturan (aturan dan lembaga). Cicak tidak dipakai.
+  - **Footage:** scene CC BY (s17, s22, s31, s34) dan stok s44 tetap footage penuh (mesin R3 mengabaikan `broll` bila ada `shots`). Porsi sekitar 7%, di bawah target 20 sampai 30%; menambah klip berlisensi bisa menaikkannya.
+  - **Anggaran konsep (maks. 8 per video panjang):** lebar rel, listrik 1.500 V DC, seri 205, INKA, CRRC Sifang, batas umur barang modal bekas, retrofit, KAI sebagai operator. Delapan istilah, pas di batas.
+  - **Fondasi dulu:** s02 memperkenalkan analogi baju bekas turunan (digambar R3 dengan Komo dan kemeja), s03 memperkenalkan empat pemain. Analogi kembali di s47 dan penutup s57.
+- **Gaya cerita wajib** (`instruksi/referensi/gaya-cerita.md`): lihat tabel checklist di `03-naskah.md`. Perubahan narasi 2026-11-26: s01 (orang kedua), s31 (tanpa klaim tanggal rekaman), s43 (blok insentif), s44 (beat jujur), s50 (tebakan yang patah), s57 (penutup dengan callback dan analogi).
 - **Hal yang sengaja dihindari:**
   - Menyebut nama tokoh politik atau pejabat yang masih aktif. Naskah hanya menyebut institusi (KAI, Kemendag, Kemenhub, Komisi VI DPR). Kutipan direktur utama KAI ditulis tanpa nama.
   - Dugaan tekanan China lewat pinjaman kereta cepat (CNN Indonesia 2024, sumber anonim) dan kasus korupsi impor KRL 2006–2007. Keduanya di luar sudut track (politik berjalan, kriminal) dan belum bisa diverifikasi.
@@ -35,21 +35,9 @@
   - Klaim orang pertama ("saya naik KRL ini setiap hari") karena narasinya suara sintetis dan belum ada konfirmasi pengalaman kreator.
   - Batas negara pada peta dunia diorama. Tokyo, Jakarta, INKA, dan Tiongkok hanya berupa tempat bertanda, tanpa garis perbatasan.
 
-## Footage yang harus direkam kreator (target 2026-11-28/29)
+## Footage kreator
 
-Taruh di `produksi/footage-own/T02/`. Tanpa wajah orang yang dikenali dari dekat; ambil dari belakang atau dengan fokus pada kereta.
-
-| File | Isi | Scene | Durasi minimal |
-| --- | --- | --- | --- |
-| `krl-01.mp4` | Interior eks JR East 205: stiker, tulisan, atau pelat Jepang di dinding atau atas pintu | s01 (hook) | 12 detik |
-| `krl-01b.mp4` | Interior eks JR 205, pengambilan berbeda (misalnya pegangan tangan atau jendela) | s57 (penutup) | 15 detik |
-| `krl-02.mp4` | Rangkaian eks Jepang masuk peron | s02 | 12 detik |
-| `krl-02b.mp4` | Rangkaian eks Jepang di peron lain atau sudut lain | s54 | 14 detik |
-| `krl-03.mp4` | Peron atau gerbong saat jam sibuk, dari belakang | s34 | 10 detik |
-| `krl-04.mp4` | Rangkaian CRRC baru (seri SFC120-V) di lintas Bogor | s31 | 16 detik |
-| `krl-05.mp4` | Rel dan kabel listrik aliran atas dari jendela kereta | s11 (re-hook) | 12 detik |
-
-Kalau `krl-01`, `krl-02`, dan `krl-05` belum ada, QA otomatis akan GAGAL di K1 (bukti kreator), sama seperti T01.
+Diganti klip CC BY dari `produksi/footage-lisensi/T02/` (keputusan kreator 2026-11-25), dengan atribusi di `credits.md`. Tidak ada rekaman sendiri yang dibutuhkan; QA K1 (bukti kreator) ditangani lewat `pengecualian_qa: ["bukti-kreator"]` di TRACK.md.
 
 ## Catatan untuk tooling bersama (di luar sesi track ini)
 

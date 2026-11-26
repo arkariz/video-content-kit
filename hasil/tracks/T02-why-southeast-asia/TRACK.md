@@ -8,10 +8,10 @@ channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "001-jakarta-refused-tokyo-trains"
-langkah_berikutnya: "siklus 001: kreator menonton paket review (hasil/review/T02-001-jakarta-refused-tokyo-trains/index.html) dan menjalankan pemeriksaan manual 05-qa.auto.md; Shorts menunggu perbaikan framing 9:16 di sesi terpisah; lalu approve.mjs (SETUJU) atau revisi"
+langkah_berikutnya: "siklus 001 ditulis ulang ke gaya cerita + R3 (2026-11-26): kreator menyetujui naskah baru (03-naskah.md, checklist cerita) → jalankan pipeline ulang: tts, caption, footage, render (node --env-file=.env scripts/pipeline/run.mjs --track T02 --siklus 001), lalu QA anti-slop dan review; Shorts diperiksa framing 9:16"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: "Review video siklus 001: setujui (SETUJU) atau minta revisi"
+menunggu_keputusan: "Setujui naskah siklus 001 versi gaya cerita + R3 (03-naskah.md) sebelum TTS dan render ulang, atau minta revisi"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -86,3 +86,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-25: Kreator memilih menambah perkenalan pemain dan analogi. Revisi: s02 (analogi baju bekas turunan), s03 (KAI, pemerintah, INKA, CRRC), callback di s12 dan s47; +53 kata EN (1.384 ke 1.437), perkiraan 8:41. Sumber s03 ditambah. Menunggu persetujuan versi revisi.
 - 2026-11-25: Kreator menyetujui naskah siklus 001 versi revisi (58 scene, 1.437 kata, perkiraan 8:41, anti-slop EN 39/ID 38). Naskah dikunci. Berikutnya produksi lewat pipeline (langkah 05).
 - 2026-11-25: Produksi siklus 001 selesai: master 9:24 dan 2 Shorts dirender, thumbnail A/B, 06-publish disusun (atribusi CC BY, chapter, tag). QA otomatis LULUS-OTOMATIS (0 kritis; sedang: jarak re-hook 113 dtk di awal, bukti kreator). Posisi objek diorama dipindah supaya tidak menutupi subjek; narasi tidak diubah. Klip stok s36, s40, s52 dibuang (tidak sesuai konteks). Teks layar s31 "filmed Nov 2026" dihapus (klip diunggah 2025-06-01). Footage milik kreator tidak ada, scene itu diorama. Temuan: Shorts 9:16 memotong callout dan subjek; belum diperbaiki. Menunggu review kreator.
+- 2026-11-26: Kreator meminta siklus 001 memakai gaya cerita dan visual baru (walau dikecualikan aturan). Naskah ditulis ulang lewat `03-script.r3.py`: narasi diubah di s01 (orang kedua), s31 (tanpa klaim tanggal rekaman), s43 (blok insentif), s44 (beat jujur), s50 (tebakan patah), s57 (penutup callback + analogi); `anchor` peta, `cast` Komo/Sepuh/Aturan, 123 `shots` di 53 scene, komponen di `04-shots.tsx` (dihasilkan dari `04-shots.head.tsx`). Scene footage CC BY (s17, s22, s31, s34) dan stok s44 tetap footage penuh; s02 digambar R3 (klip -01 tidak dipakai). `build-visual --check` dan `check_kit.py` lolos, QA R3 G1-G6 lolos kecuali G4 terhadap caption lama. Render lama (2026-11-25) tidak lagi sesuai naskah; perlu TTS, render ulang, QA anti-slop ulang. Menunggu persetujuan naskah.
