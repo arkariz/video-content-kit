@@ -1,13 +1,13 @@
 {
   "cycle": "002-gta6-download-9-hours",
   "title_options": [
-    "GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9.",
-    "Why Indonesia Needs 9 Hours to Download GTA 6",
-    "Indonesia's Home Internet Is Slower Than Its Phones. Why?"
+    "GTA 6: Singapore Is Playing. Indonesia Has 9 Hours Left.",
+    "GTA 6 Is Out. Why Is Indonesia Still Downloading?",
+    "GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9."
   ],
   "thumbnail_text": [
-    "1 HOUR vs 9",
-    "WHY 9 HOURS?"
+    "GTA 6: 9 HOURS?!",
+    "STILL DOWNLOADING?!"
   ],
   "promise": "After watching, you can explain why a typical Indonesian home waits about nine hours for a file a Singapore home gets in one, and why the sea is only part of the reason.",
   "creator_evidence": [
@@ -27,20 +27,20 @@
       "id": "s01",
       "role": "hook",
       "narration": {
-        "en": "You press download on GTA 6 in Jakarta, and at a typical home speed you wait nine hours. Your friend in Singapore is playing after just one.",
-        "id": "Kamu unduh GTA 6 di Jakarta, dan pada kecepatan rumah tipikal, tunggunya sembilan jam. Temanmu di Singapura main setelah satu jam."
+        "en": "You waited thirteen years for GTA 6, and on a typical Indonesian home connection you still have nine hours to go. Your friend in Singapore needs one.",
+        "id": "Kamu sudah menunggu 13 tahun untuk GTA 6, dan dengan internet rumah yang tipikal di Indonesia, masih ada sembilan jam lagi. Temanmu di Singapura cuma butuh satu."
       },
       "shots": [
         {
           "sentence": 1,
-          "show": "kamar malam: Komo di lantai memegang stik, di layar progress bar generik hampir kosong dengan jam di sampingnya",
+          "show": "kamar malam, close-up: Komo gemetar memegang stik, progress bar generik raksasa nyaris kosong, kalender tahunan beterbangan",
           "scale": "place",
-          "motion": "jari menekan tombol, bar merayap sedikit, jarum jam berputar cepat",
+          "motion": "kalender tiga belas tahun tersobek cepat, tombol ditekan, bar merayap satu piksel, angka sembilan jam menghantam layar",
           "transition": "cut",
           "labels": [
             {
-              "text": "JAKARTA",
-              "word": "Jakarta"
+              "text": "13 YEARS",
+              "word": "thirteen"
             },
             {
               "text": "9 HOURS",
@@ -50,9 +50,9 @@
         },
         {
           "sentence": 2,
-          "show": "dua panel: kiri Komo menunggu, kanan teman di kamar Singapura dengan bar penuh",
+          "show": "layar terbelah: kiri Komo membeku, kanan teman di Singapura dengan bar penuh dan layar menyala",
           "scale": "place",
-          "motion": "panel kanan masuk, bar teman penuh, teman melompat girang, Komo melirik",
+          "motion": "panel kanan menghantam masuk, bar teman penuh, teman melompat, Komo menoleh pelan",
           "transition": "wipe",
           "labels": [
             {
@@ -74,6 +74,10 @@
         {
           "url": "https://vandal.elespanol.com/en/grand-theft-auto-6/how-long-to-download.html",
           "claim": "212 GB pada 476,02 Mbps sekitar 59 menit"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
+          "claim": "GTA V rilis September 2013; GTA VI rilis November 2026"
         }
       ]
     },
@@ -81,15 +85,15 @@
       "id": "s02",
       "role": "context",
       "narration": {
-        "en": "The game came out on November nineteenth, and it can take up to two hundred and twelve gigabytes. Nine hours is simple arithmetic: the whole file, divided by the middle download speed of Indonesian homes, assuming it never drops.",
-        "id": "Game ini rilis 19 November dan bisa memakan sampai 212 gigabita. Sembilan jam itu cuma hitungan: seluruh file dibagi kecepatan unduh tengah di rumah-rumah Indonesia, dengan anggapan kecepatannya tidak pernah turun."
+        "en": "GTA 6 landed on November nineteenth at up to two hundred and twelve gigabytes. Divide that by the middle speed of Indonesian homes, assume it never drops, and you get your nine hours. The ocean explains only part of it, and your own phone is about to embarrass your home cable.",
+        "id": "GTA 6 keluar 19 November, bisa memakan sampai 212 gigabita, dan sembilan jam itu dihitung dari kecepatan unduh tengah di rumah-rumah Indonesia, tanpa pernah turun. Lautan cuma menjelaskan sebagian, dan HP-mu sendiri bakal mempermalukan kabel di rumahmu."
       },
       "shots": [
         {
           "sentence": 1,
-          "show": "kotak file raksasa tanpa logo jatuh ke depan konsol kecil",
+          "show": "kotak file raksasa tanpa logo jatuh menimpa konsol kecil",
           "scale": "object",
-          "motion": "kotak jatuh dan memantul, penghitung gigabita naik",
+          "motion": "kotak jatuh, lantai bergetar, penghitung gigabita melesat",
           "transition": "push",
           "labels": [
             {
@@ -114,6 +118,23 @@
               "word": "middle"
             }
           ]
+        },
+        {
+          "sentence": 3,
+          "show": "ombak berwajah mengangkat tangan, lalu HP menyalip router sambil pamer",
+          "scale": "object",
+          "motion": "ombak muncul lalu minggir, HP melesat melewati router, router memerah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "OCEAN?",
+              "word": "ocean"
+            },
+            {
+              "text": "YOUR PHONE",
+              "word": "phone"
+            }
+          ]
         }
       ],
       "sources": [
@@ -123,7 +144,7 @@
         },
         {
           "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
-          "claim": "52,62 Mbps; 212 GB = sekitar 8 jam 57 menit (hitungan sendiri, kecepatan konstan)"
+          "claim": "52,62 Mbps; 212 GB = sekitar 8 jam 57 menit (hitungan sendiri, kecepatan konstan); seluler 70,77 Mbps"
         }
       ]
     },
@@ -303,8 +324,8 @@
       "id": "s06",
       "role": "rehook",
       "narration": {
-        "en": "So how slow is that? For home internet, called fixed broadband, Indonesia's median in September was about fifty-three megabits per second. Singapore's was four hundred and seventy-six, roughly nine times the flow. Indonesia ranked one hundred and twelfth in the world, and ninth of ten on a Southeast Asian list, ahead of only Myanmar.",
-        "id": "Seberapa lambat sebenarnya? Untuk internet rumah, yang disebut fixed broadband, median Indonesia pada September 2026 adalah 52,62 megabit per detik. Singapura 476, kira-kira sembilan kali lebih deras. Indonesia peringkat 112 di dunia dan kesembilan dari sepuluh negara di daftar Asia Tenggara, hanya di atas Myanmar."
+        "en": "So when do you actually get to play? For home internet, called fixed broadband, Indonesia's median in September was about fifty-three megabits per second. Singapore's was four hundred and seventy-six, roughly nine times the flow. Indonesia ranked one hundred and twelfth in the world, and ninth of ten on a Southeast Asian list, ahead of only Myanmar.",
+        "id": "Jadi kapan kamu benar-benar bisa main? Untuk internet rumah, yang disebut fixed broadband, median Indonesia pada September 2026 adalah 52,62 megabit per detik. Singapura 476, kira-kira sembilan kali lebih deras. Indonesia peringkat 112 di dunia dan kesembilan dari sepuluh negara di daftar Asia Tenggara, hanya di atas Myanmar."
       },
       "shots": [
         {
@@ -460,8 +481,8 @@
       "id": "s08",
       "role": "rehook",
       "narration": {
-        "en": "Then it gets strange. In September's speed rankings, Indonesia's mobile networks reached about seventy-one megabits per second, faster than its home internet. At that median, your phone would finish more than two hours before your cable.",
-        "id": "Lalu muncul keanehan. Di peringkat kecepatan bulan September, jaringan seluler Indonesia mencapai sekitar 71 megabit per detik, lebih cepat daripada internet rumahnya. Dengan median itu, HP-mu akan selesai lebih dari dua jam lebih awal daripada kabelmu."
+        "en": "Then your phone offers a shortcut into GTA 6. In September's speed rankings, Indonesia's mobile networks reached about seventy-one megabits per second, faster than its home internet. At that median, your phone would finish more than two hours before your cable.",
+        "id": "Lalu HP-mu menawarkan jalan pintas ke GTA 6. Di peringkat kecepatan bulan September, jaringan seluler Indonesia mencapai sekitar 71 megabit per detik, lebih cepat daripada internet rumahnya. Dengan median itu, HP-mu akan selesai lebih dari dua jam lebih awal daripada kabelmu."
       },
       "shots": [
         {
@@ -744,8 +765,8 @@
       "id": "s13",
       "role": "rehook",
       "narration": {
-        "en": "So go somewhere with no sea in the way: West Jakarta, on Java. In the first half of 2026 its median was about seventy megabits per second, the highest of any Indonesian city in that report. That is still almost seven hours for our file.",
-        "id": "Jadi coba pindah ke tempat yang tidak punya masalah laut: Jakarta Barat, di Jawa. Pada paruh pertama 2026, mediannya sekitar 70 megabit per detik, tertinggi di antara kota-kota Indonesia. Itu masih hampir tujuh jam untuk file kita."
+        "en": "So go somewhere with no sea in the way: West Jakarta, on Java. In the first half of 2026 its median was about seventy megabits per second, the highest of any Indonesian city in that report. That is still almost seven hours before GTA 6 opens.",
+        "id": "Jadi coba pindah ke tempat yang tidak punya masalah laut: Jakarta Barat, di Jawa. Pada paruh pertama 2026, mediannya sekitar 70 megabit per detik, tertinggi di antara kota-kota Indonesia. Itu masih hampir tujuh jam sebelum GTA 6 bisa dibuka."
       },
       "shots": [
         {
@@ -1599,8 +1620,8 @@
       "id": "s27",
       "role": "body",
       "narration": {
-        "en": "On a fifty megabit home plan, the download cannot beat roughly nine and a half hours, however good the cable is. On a three hundred megabit plan, the same sum falls to about an hour and a half.",
-        "id": "Dengan paket rumah 50 megabit, bar unduhan tidak bisa mengalahkan kira-kira sembilan setengah jam, sebagus apa pun kabelnya. Dengan paket 300 megabit, hitungannya turun ke sekitar satu setengah jam."
+        "en": "On a fifty megabit home plan, GTA 6 cannot arrive in less than roughly nine and a half hours, however good the cable is. On a three hundred megabit plan, the same sum falls to about an hour and a half.",
+        "id": "Dengan paket rumah 50 megabit, GTA 6 tidak bisa selesai lebih cepat dari kira-kira sembilan setengah jam, sebagus apa pun kabelnya. Dengan paket 300 megabit, hitungannya turun ke sekitar satu setengah jam."
       },
       "shots": [
         {
@@ -1717,8 +1738,8 @@
       "id": "s29",
       "role": "body",
       "narration": {
-        "en": "And a small cheap plan, or phone data alone, can be a sensible choice. For a family that mostly chats and watches short videos, paying for a giant pipe adds little. A two hundred and twelve gigabyte tank is not an ordinary day.",
-        "id": "Dan paket kecil yang murah, atau kuota HP, bisa jadi pilihan yang masuk akal. Untuk keluarga yang hanya berkirim pesan dan menonton video pendek, membayar pipa raksasa tidak menambah banyak. Tangki 212 gigabita memang bukan hari biasa."
+        "en": "And a small cheap plan, or phone data alone, can be a sensible choice. For a family that mostly chats and watches short videos, paying for a giant pipe adds little. GTA 6 launch week is not an ordinary week.",
+        "id": "Dan paket kecil yang murah, atau kuota HP, bisa jadi pilihan yang masuk akal. Untuk keluarga yang hanya berkirim pesan dan menonton video pendek, membayar pipa raksasa tidak menambah banyak. Minggu rilis GTA 6 memang bukan hari biasa."
       },
       "shots": [
         {
@@ -1749,8 +1770,8 @@
           "transition": "cut",
           "labels": [
             {
-              "text": "212 GB",
-              "word": "gigabyte"
+              "text": "LAUNCH WEEK",
+              "word": "launch"
             }
           ]
         }
@@ -1823,8 +1844,8 @@
       "id": "s31",
       "role": "body",
       "narration": {
-        "en": "The communications ministry has also floated a goal: a hundred megabit home plan for under two hundred thousand rupiah. For now that is a goal, and no national package has a date. Even at that speed, our file would need close to five hours.",
-        "id": "Kementerian komunikasi juga sudah menyebut target: internet rumah 100 megabit di bawah 200 ribu rupiah. Sejauh ini itu target, belum paket yang tersedia secara nasional. Pada kecepatan itu, file kita masih butuh hampir lima jam."
+        "en": "The communications ministry has also floated a goal: a hundred megabit home plan for under two hundred thousand rupiah. For now that is a goal, and no national package has a date. Even at that speed, GTA 6 would need close to five hours.",
+        "id": "Kementerian komunikasi juga sudah menyebut target: internet rumah 100 megabit di bawah 200 ribu rupiah. Sejauh ini itu target, belum paket yang tersedia secara nasional. Pada kecepatan itu, GTA 6 masih butuh hampir lima jam."
       },
       "shots": [
         {
@@ -1882,8 +1903,8 @@
       "id": "s32",
       "role": "payoff",
       "narration": {
-        "en": "So the nine hours have no single broken cable behind them. The sea is real, but in Java's cities the explanation sits closer: the price of the last hose, who shares the pipe, and what makes sense for a household to buy.",
-        "id": "Jadi sembilan jam itu bukan satu kabel putus. Lautnya nyata, tapi di kota-kota Jawa penjelasannya ada lebih dekat: ongkos selang terakhir, siapa yang berbagi pipa, dan apa yang masuk akal dibeli sebuah rumah."
+        "en": "So your nine hour wait for GTA 6 has no single broken cable behind it. The sea is real, but in Java's cities the explanation sits closer: the price of the last hose, who shares the pipe, and what makes sense for a household to buy.",
+        "id": "Jadi sembilan jam menunggu GTA 6 itu bukan karena satu kabel putus. Lautnya nyata, tapi di kota-kota Jawa penjelasannya ada lebih dekat: ongkos selang terakhir, siapa yang berbagi pipa, dan apa yang masuk akal dibeli sebuah rumah."
       },
       "shots": [
         {
@@ -2023,7 +2044,7 @@
         "s07",
         "s33"
       ],
-      "hook_override": "You press download. Singapore waits one hour. You wait nine."
+      "hook_override": "GTA 6 is out. They play. You wait nine hours."
     },
     {
       "name": "B2-phone-beats-home-wifi",
@@ -2031,7 +2052,7 @@
         "s08",
         "s21"
       ],
-      "hook_override": "Your phone may be faster than your home Wi-Fi. Here's why."
+      "hook_override": "Your phone could beat your Wi-Fi to GTA 6."
     }
   ],
   "anti_slop": {
@@ -2050,6 +2071,11 @@
       "claim": "212 GB pada 476,02 Mbps sekitar 59 menit"
     },
     {
+      "scene": "s01",
+      "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
+      "claim": "GTA V rilis September 2013; GTA VI rilis November 2026"
+    },
+    {
       "scene": "s02",
       "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
       "claim": "GTA VI rilis 19 November 2026; menurut situs Rockstar preload bisa butuh sampai 212 GB tergantung perangkat"
@@ -2057,7 +2083,7 @@
     {
       "scene": "s02",
       "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
-      "claim": "52,62 Mbps; 212 GB = sekitar 8 jam 57 menit (hitungan sendiri, kecepatan konstan)"
+      "claim": "52,62 Mbps; 212 GB = sekitar 8 jam 57 menit (hitungan sendiri, kecepatan konstan); seluler 70,77 Mbps"
     },
     {
       "scene": "s05",
@@ -2234,14 +2260,14 @@
     {
       "lines": [
         {
-          "text": "1 HOUR",
-          "color": "#3ddc97",
-          "size": 180
+          "text": "GTA 6:",
+          "color": "#ffffff",
+          "size": 150
         },
         {
-          "text": "vs 9",
+          "text": "9 HOURS?!",
           "color": "#ffd23f",
-          "size": 210
+          "size": 190
         }
       ],
       "stage": {
@@ -2253,14 +2279,14 @@
     {
       "lines": [
         {
-          "text": "WHY 9",
+          "text": "STILL",
           "color": "#ffffff",
-          "size": 180
+          "size": 170
         },
         {
-          "text": "HOURS?",
+          "text": "DOWNLOADING?!",
           "color": "#e4572e",
-          "size": 190
+          "size": 140
         }
       ],
       "stage": {
@@ -2273,7 +2299,7 @@
   "chapters": [
     {
       "scene": "s01",
-      "title": "One hour vs nine"
+      "title": "GTA 6: one hour vs nine"
     },
     {
       "scene": "s04",
