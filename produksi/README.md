@@ -2,7 +2,8 @@
 
 Engine Remotion bersama untuk semua track. Data dan output dipisah per `<ID>/<siklus>`.
 
-- `remotion/`: engine (komposisi, `src/themes/<ID>`). Sesi track hanya mengubah tema track-nya sendiri.
+- `remotion/`: engine (komposisi, `src/themes/<ID>`, mesin R3 di `src/r3/`). Sesi track hanya mengubah tema track-nya sendiri; adegan R3 per siklus ditulis di `04-shots.tsx` folder siklus.
+- `contoh-r3/`: contoh naskah dan adegan R3 di luar siklus (dirender dengan `--script`).
 - `footage-cache/index.json`: katalog global klip (lisensi, tanggal unduh, dipakai di mana). Di-commit.
 - `audio/ captions/ footage/ render/`: di-gitignore (captions di-commit).
 
@@ -21,7 +22,7 @@ Track audio bahasa lain seukuran master (untuk YouTube Studio > Languages): `ren
 
 Suara per bahasa diatur di `produksi/voices.json` (EN boleh dari `ELEVENLABS_VOICE_ID`). Ejaan fonetik `pronunciations` hanya dipakai untuk EN.
 
-Catatan: caption dibuat per scene (waktu relatif scene), bukan dari audio gabungan. Preview satu scene: `--still s10,s19` (PNG di `render/<ID>/<siklus>/stills/`).
+Catatan: caption dibuat per scene (waktu relatif scene), bukan dari audio gabungan. Preview satu scene: `--still s10,s19` (PNG di `render/<ID>/<siklus>/stills/`; scene R3 mendapat satu PNG per shot). Render pendek: `--scenes s05,s06`.
 
 ## Gaya visual
 

@@ -9,6 +9,7 @@ import { clamp, ease } from "../lib/ui";
 import { Fit } from "../lib/Fit";
 import { Stage } from "../toon/Stage";
 import { Diorama } from "../diorama/Diorama";
+import { R3Scene } from "../r3/engine";
 
 const Captions: React.FC<{ words: SceneProps["captions"]; big: boolean; accent: string; per?: number }> = ({ words, big, accent, per = 4 }) => {
   const frame = useCurrentFrame();
@@ -31,7 +32,7 @@ const TextCard: React.FC<{ spec: any; p: number; t: ReturnType<typeof themeFor> 
   </div>
 );
 
-const Scene: React.FC<{ s: SceneProps; trackId: string; vertical: boolean }> = ({ s, trackId, vertical }) => {
+const Scene: React.FC<{ s: SceneProps; prev?: SceneProps; trackId: string; vertical: boolean }> = ({ s, prev, trackId, vertical }) => {
   const t = themeFor(trackId);
   const frame = useCurrentFrame();
   const p = clamp(frame / Math.max(1, s.audioFrames));
@@ -48,7 +49,9 @@ const Scene: React.FC<{ s: SceneProps; trackId: string; vertical: boolean }> = (
           </Loop>
         </AbsoluteFill>
       )}
-      {stage?.engine === "diorama" ? (
+      {s.r3 ? (
+        <R3Scene s={s} prev={prev} vertical={vertical} />
+      ) : stage?.engine === "diorama" ? (
         <Diorama world={stage.world} shot={stage} frame={frame} dur={s.audioFrames} />
       ) : stage ? (
         <Stage spec={stage} frame={frame} dur={s.audioFrames} vertical={vertical} title={s.type === "remotion-text" ? undefined : s.text} board={stage.insert ? body : null} />
@@ -63,7 +66,7 @@ const Scene: React.FC<{ s: SceneProps; trackId: string; vertical: boolean }> = (
         </>
       )}
       {s.audio && <Audio src={staticFile(s.audio)} playbackRate={s.audioRate ?? 1} />}
-      <Captions words={s.captions} big={vertical} accent={t.accent} per={stage?.engine === "diorama" ? 1 : 4} />
+      <Captions words={s.captions} big={vertical} accent={t.accent} per={s.r3 || stage?.engine === "diorama" ? 1 : 4} />
     </AbsoluteFill>
   );
 };
@@ -72,8 +75,8 @@ export const Video: React.FC<VideoProps & { vertical?: boolean }> = ({ scenes, t
   let from = 0;
   return (
     <AbsoluteFill>
-      {scenes.map((s) => {
-        const el = (<Sequence key={s.id} from={from} durationInFrames={s.durationFrames}><Scene s={s} trackId={trackId} vertical={vertical} /></Sequence>);
+      {scenes.map((s, i) => {
+        const el = (<Sequence key={s.id} from={from} durationInFrames={s.durationFrames}><Scene s={s} prev={scenes[i - 1]} trackId={trackId} vertical={vertical} /></Sequence>);
         from += s.durationFrames;
         return el;
       })}

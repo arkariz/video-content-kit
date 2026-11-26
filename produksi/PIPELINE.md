@@ -10,7 +10,7 @@ node --env-file=.env scripts/pipeline/approve.mjs --track T01 --siklus 001    # 
 node scripts/pipeline/approve.mjs --track T01 --siklus 001 --revisi "catatan" # minta revisi
 ```
 
-Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); QA menandai kritis bila scene siklus baru tidak punya `shots` (kecuali scene footage). Mesin render `shots` belum dibangun, jadi siklus baru berhenti di QA sampai mesin itu ada. T01-001 dan T02-001 tetap dirender dengan mesin lama.
+Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); QA menandai kritis bila scene siklus baru tidak punya `shots` (kecuali scene footage). Scene dengan `shots` dirender mesin R3 (bagian "Mesin R3" di bawah). T01-001 dan T02-001 tetap dirender dengan mesin lama.
 
 ## Tahap
 
@@ -18,7 +18,8 @@ Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); 
 | --- | --- | --- | --- |
 | riset-brief | LLM | `01-riset-viral.md`, `02-brief.md` | ya |
 | naskah | LLM | `03-script.json`, `03-naskah.md` (sumber per klaim, stop-slop ≥ 35) | ya |
-| visual | LLM | `anchor`, `cast`, dan `shots` per kalimat di `03-script.json`, `broll` untuk scene dunia nyata | ya |
+| visual | LLM | `anchor`, `cast`, dan `shots` per kalimat di `03-script.json`, `broll` untuk scene dunia nyata, dan komponen adegan `04-shots.tsx` | ya |
+| kontrak | skrip | `build-visual.mjs --check`: shots, anchor, cast, dan komponen tiap scene di `04-shots.tsx` | ya |
 | tts-en, caption-en | skrip | audio, caption (disamakan dengan naskah, hasil STT mentah disimpan) | ya |
 | footage | skrip | pilih otomatis footage nyata berlisensi (skor tag + durasi, tanpa duplikat), unduh, catat lisensi | ya |
 | adegan | skrip | scene footage jadi latar nyata | ya |
@@ -27,6 +28,62 @@ Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); 
 | paket-review | skrip | `hasil/review/<ID>-<siklus>/index.html` | selalu jalan |
 
 Tahap LLM berjalan lewat `claude -p` bila CLI `claude` ada di PATH. Kalau tidak, penggerak mencetak prompt (`scripts/pipeline/prompts/`) dan keluar dengan kode 3. Di sesi Claude Code, "lanjut T01" menjalankan tahap itu. Bagian `claude -p` belum teruji di mesin ini karena CLI belum terpasang.
+
+## Mesin R3 (`shots`)
+
+Kode bersama: `produksi/remotion/src/r3/` (`kit.tsx` primitif, `count.tsx` penghitung, `engine.tsx` waktu dan transisi, `registry.ts`, `cast/` pemeran per track). Logika waktu dan validasi di Node: `scripts/produksi/r3.mjs` (dipakai `build-visual.mjs`, `render.mjs`, dan `scripts/pipeline/qa-r3.mjs`). Contoh lengkap: `produksi/contoh-r3/T02-001-s06/` (s06 naskah T02-001 ditulis ulang; tidak mengubah render T02-001).
+
+### Alur per siklus
+1. Naskah: `anchor`, `cast`, dan `shots` per scene di `03-script.json` (kontrak di `produksi/CONTRACT.md`).
+2. Agent menulis `04-shots.tsx` di folder siklus (di samping `03-script.json`): satu komponen React per shot, memakai primitif bersama. `show` berupa teks bebas, jadi gambarnya ditulis per siklus; mesin mengurus waktu, transisi, label, efek suara, dan Shorts.
+3. `build-visual.mjs` memvalidasi kontrak dan memastikan tiap scene punya komponen. Scene R3 ditulis ke `04-stage.base.json` sebagai `{ "engine": "r3" }`.
+4. Setelah TTS dan caption, `render.mjs` menghitung waktu tiap shot dan label dari caption per kata, lalu mengirimnya ke komposisi. `Video.tsx` memakai mesin R3 untuk scene yang punya `shots`.
+
+### Waktu (dari `gaya-visual.md` bagian 3)
+- Shot ke-n mulai di kata pertama kalimat `sentence`-nya; shot pertama mulai di awal scene; shot berakhir saat shot berikutnya mulai. Kalimat yang tidak punya shot sendiri ikut shot sebelumnya.
+- Label membesar dengan pantulan (±0,2 dtk) tepat di awal `word`-nya, lalu mengecil hilang ±0,25 dtk sebelum transisi berikutnya.
+- `iris` 0,45 dtk, lingkaran bergaris putih dari titik `from`, mempercepat, terbuka penuh di kata pertama. `wipe` 0,4 dtk, garis putih 8 px kiri ke kanan, berpusat di kata pertama. `push`: shot lama menyala lalu didorong masuk 0,3 dtk ke titik `from`, shot baru mulai 1,14× lalu mengendap 0,5 dtk. `cut` langsung. `hold` meneruskan gambar shot sebelumnya (isi `null` di `04-shots.tsx`), labelnya tetap muncul di katanya.
+- Transisi shot pertama scene hanya berlaku bila scene sebelumnya juga R3 (mesin menggambar shot terakhir scene itu); selain itu potong langsung.
+- Efek suara otomatis: `pop` di setiap label, `whoosh` di setiap transisi.
+
+### Menulis `04-shots.tsx`
+```tsx
+import React from "react";
+import { Backdrop, Frame, Layer, Pill, cast, defineShots, seg, shot, useLabel, useShot } from "@r3";
+const { Komo } = cast.T02;
+
+const Pertama: React.FC = () => {
+  const { t, word } = useShot();             // t = detik sejak shot mulai
+  const dingin = seg(t, word("air-conditioned"), word("air-conditioned") + 0.9);
+  return <Frame><Backdrop stops={["#f08a3c", "#fde6b4"]} t={t} />{/* ... */}</Frame>;
+};
+const Kedua: React.FC = () => { const { t } = useShot(); const p = useLabel("ROOF RIDERS"); return <Frame>{/* ... */}<Pill x={900} y={400} text="ROOF RIDERS" p={p} /></Frame>; };
+
+export default defineShots({
+  s06: [shot(Pertama, { labels: { "FIRST AC TRAIN": [1100, 236] }, from: [1100, 520] }), shot(Kedua, { labels: "own" })],
+});
+```
+- Kunci = id scene, isi = komponen per shot, urut sama dengan `shots`. Komponen polos (tanpa `shot(...)`) juga boleh.
+- `useShot()`: `t` (detik sejak shot), `T` (detik sejak scene), `dur`, `word(teks, n)` (detik kata diucapkan, relatif shot), `label(teks)`, `faces`, `mood`, `bubble`, `vertical`, `shot` (kontrak).
+- Opsi `shot(C, {...})`: `labels` (posisi tetap `[x, y, penunjuk]` per teks, atau `"own"` bila komponen menggambar label sendiri dengan `useLabel` + `Pill`, wajib untuk label pada benda bergerak; tanpa opsi, label dijajarkan di atas), `from` (titik asal iris/dorong), `focus` (x yang dijaga di tengah untuk Shorts 9:16), `drift: false` (komponen mengatur kamera sendiri), `bubble: "own"` / `bubbleAt`.
+- Primitif (`kit.tsx`): `Frame`, `Backdrop` (gradien + glow + partikel), `Particles`, `Layer` (parallax, `cam {x,y,z}`), `Blur` (kedalaman), `Glow`, `GlowEdge`, `Sparks` (kejadian acak 3–9 frame), `Pill`, `Bubble`, `Footnote`, `FlatRect`, `Shadow`; waktu `seg`, `pop`, `out`, `keys`, `mix`; warna `shade`, `tint`, `fade`, `lerpColor`; acak deterministik `R`, `pick`.
+- Penghitung (`count.tsx`) untuk `count`: `Dots` (proporsi), `Items` (jumlah satu per satu + angka), `Timeline` (garis waktu dan penanda), `Split` (dua panel, kiri bisa dicoret).
+- Pemeran: `cast.T02` (Komo, Sepuh, Aturan, Cicak, figuran `Warga`, `Gerbong`, `Rel`, `Kabel`, `Pantograf`, `Matahari`, `Awan`, `Gedung`, `Kelapa`). Track baru: tambah `src/r3/cast/<ID>.tsx`, daftarkan di `cast/index.ts` dan `CAST` di `scripts/produksi/r3.mjs`.
+- Aturan: koordinat logis 1920×1080. Semua gerak fungsi dari `t` (tanpa `Math.random`, state, atau efek). Ambil waktu kata lewat `word()`, jangan menulis detik dari caption. Gaya datar tanpa garis tinta. Shot `three_d` tetap ditulis versi 2D.
+- Komponen yang belum ada dirender sebagai layar "ADEGAN BELUM ADA" dan ditandai kritis oleh QA G6.
+
+### Cek sebelum produksi penuh
+```
+npm --prefix produksi/remotion run typecheck
+node scripts/produksi/build-visual.mjs --track T02 --siklus 002 --check
+node scripts/produksi/render.mjs --track T02 --siklus 002 --still s06            # satu gambar per shot (atau --at 1.2,5)
+node scripts/produksi/render.mjs --track T02 --siklus 002 --scenes s05,s06       # render pendek, tidak dicatat di 04-assets.json
+node scripts/pipeline/qa-r3.mjs --track T02 --siklus 002 [--scene s06]           # G1-G6
+```
+Naskah di luar siklus (contoh): tambah `--script produksi/contoh-r3/<nama>/03-script.json`; hasil ke `produksi/render/_contoh/<nama>/`. Registri hanya memindai `hasil/tracks/**/04-shots.tsx` dan `produksi/contoh-r3/**/04-shots.tsx`.
+
+### Belum ada
+Lapisan 3D (`@remotion/three`), musik latar terus-menerus, dan komposisi khusus Shorts (sekarang Shorts memotong bagian tengah 16:9 di titik `focus`).
 
 ## Publish (Upload-Post)
 
@@ -49,7 +106,7 @@ Isi `.env` (nama variabel saja): `UPLOADPOST_API_KEY` (`UPLOADPOST_PROFILE` tida
 - Pengecualian QA dari kreator dicatat di TRACK.md (`pengecualian_qa`) dan tetap tampil sebagai temuan.
 
 ## Yang dicek QA otomatis
-Durasi ≥ 8:00 (jeda variabel: 0,65 dtk, 1,4 dtk sebelum re-hook/payoff/CTA), jarak re-hook, footage ≤ ⅓ dan tidak lebih dari 2 scene berurutan, file dan lisensi footage, kelengkapan adegan, pola slop (em dash, kontras palsu, pembuka basa-basi, frasa slop ID), bubble yang mengulang narasi, jumlah sumber, salah ucap lewat transkrip balik, catatan suara, thumbnail, bukti kreator.
+Durasi ≥ 8:00 (jeda variabel: 0,65 dtk, 1,4 dtk sebelum re-hook/payoff/CTA), jarak re-hook, gaya R3 (G1 scene tanpa shots, G2 shot kurang dari kalimat, G3 shot tanpa show/motion, G4 label tidak di kalimatnya, G5 tanpa anchor, G6 kontrak atau komponen adegan bermasalah), footage ≤ ⅓ dan tidak lebih dari 2 scene berurutan, file dan lisensi footage, kelengkapan adegan, pola slop (em dash, kontras palsu, pembuka basa-basi, frasa slop ID), bubble yang mengulang narasi, jumlah sumber, salah ucap lewat transkrip balik, catatan suara, thumbnail, bukti kreator.
 
 ## Kebutuhan agar benar-benar tanpa tangan
 1. CLI `claude` terpasang (tahap LLM), atau tetap pakai sesi Claude Code.

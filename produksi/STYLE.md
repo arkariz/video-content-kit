@@ -34,4 +34,4 @@ Palet referensi R3 yang terukur (sel, neuron, membran) ada di `produksi/REFERENS
 | T02 | Cicak | pengamat kecil yang menempel di mana saja | usulan |
 | T01 | belum ada | dirancang ulang dengan bahasa bentuk di atas | - |
 
-Contoh kode dan lembar karakter: `produksi/remotion/src/experiment/cast.tsx`, render di `produksi/render/_eksperimen/T02-pemeran-lembar.png`.
+Kode pemeran dipakai bersama mesin R3: `produksi/remotion/src/r3/cast/T02.tsx` (Komo, Sepuh, Pak Aturan, Cicak, figuran `Warga`, dan benda T02 seperti `Gerbong`). Lembar karakter: render `produksi/remotion/src/experiment/castIndex.tsx`, hasil di `produksi/render/_eksperimen/T02-pemeran-lembar.png`.

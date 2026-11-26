@@ -60,7 +60,7 @@ Berlaku untuk **semua track dan semua siklus**, untuk agent chat maupun agent di
 2. `hasil/learnings-global.md`: aturan agar isi tidak padat dan prosesnya terlihat.
 3. `instruksi/referensi/gaya-cerita.md`: acuan utama cerita untuk semua naskah (keputusan kreator 2026-11-26).
 
-Naskah siklus baru tanpa `shots` per kalimat tidak boleh lanjut ke produksi; QA otomatis menandainya kritis. T01 siklus 001 dan T02 siklus 001 sudah dirender dengan mesin lama dan tidak dijadikan acuan. Lapisan 3D (`@remotion/three`) sudah disetujui kreator untuk kamera yang berputar di ruang 3D, tetapi belum dibangun. Mesin untuk merender `shots` dibangun agent repo di sesi terpisah.
+Naskah siklus baru tanpa `shots` per kalimat tidak boleh lanjut ke produksi; QA otomatis menandainya kritis. T01 siklus 001 dan T02 siklus 001 sudah dirender dengan mesin lama dan tidak dijadikan acuan. Lapisan 3D (`@remotion/three`) sudah disetujui kreator untuk kamera yang berputar di ruang 3D, tetapi belum dibangun. Scene dengan `shots` dirender mesin R3 (`produksi/remotion/src/r3`); gambar tiap shot ditulis agent repo sebagai komponen di `04-shots.tsx` folder siklus (cara di `produksi/PIPELINE.md`, bagian "Mesin R3").
 
 ## Mode gate
 

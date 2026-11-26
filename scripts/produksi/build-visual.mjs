@@ -1,7 +1,9 @@
 // Turunkan 04-visual-spec.json, 04-stage.base.json, 04-broll-plan.json dari 03-script.json (tanpa LLM) dan validasi kontraknya.
-// Kontrak: lihat produksi/CONTRACT.md. Pemakaian: node scripts/produksi/build-visual.mjs --track T01 --siklus 001 [--check]
-import path from "node:path"; import { args, resolveCycle, readJson, writeJson } from "./lib.mjs"; import { VOCAB as V } from "./vocab.mjs";
-const o = args(); const { dir, scriptPath } = resolveCycle(o.track, o.siklus); const script = readJson(scriptPath);
+// Kontrak: lihat produksi/CONTRACT.md. Pemakaian: node scripts/produksi/build-visual.mjs --track T01 --siklus 001 [--check] [--script <path>]
+// Scene dengan `shots` (gaya R3) divalidasi lewat scripts/produksi/r3.mjs: shots, anchor, cast, dan komponen di 04-shots.tsx.
+import path from "node:path"; import { ROOT, args, resolveCycle, readJson, writeJson } from "./lib.mjs"; import { VOCAB as V } from "./vocab.mjs"; import { validateR3 } from "./r3.mjs";
+const o = args(); const cyc = resolveCycle(o.track, o.siklus); const scriptPath = o.script ? path.resolve(ROOT, o.script) : cyc.scriptPath; const dir = o.script ? path.dirname(scriptPath) : cyc.dir; const script = readJson(scriptPath);
+if (o.script) o.check = true; // naskah contoh: hanya validasi
 const errs = []; const warn = []; const e = (id, m) => errs.push(`${id}: ${m}`); const inList = (id, what, v, list) => { if (v !== undefined && !list.includes(v)) e(id, `${what} "${v}" tidak dikenal (${list.join("|")})`); };
 const vspec = {}, stage = {}, broll = { _catatan: "Dibangun dari 03-script.json (scene.broll). Footage nyata berlisensi, 20-30% durasi, tersebar, maks. 2 berurutan." };
 const ids = new Set(script.scenes.map((s) => s.id));
@@ -21,9 +23,13 @@ function diorama(id, st) {
   const aksi = ["moves", "paths", "show", "hide", "grow", "highlight", "callouts"].some((k) => st[k]?.length);
   if (!aksi && JSON.stringify(st.camera?.from) === JSON.stringify(st.camera?.to ?? st.camera?.from)) warn.push(`${id}: tidak ada yang berubah (kamera diam, tanpa aksi)`);
 }
+// ---- R3 (gaya wajib sejak 2026-11-26): shots per kalimat, anchor, cast, komponen adegan
+const r3v = validateR3(script, { track: o.track, scriptPath }); r3v.errs.forEach((x) => errs.push(x)); r3v.warn.forEach((x) => warn.push(x));
 for (const s of script.scenes) {
   const id = s.id, st = s.stage, sp = s.visual?.spec;
-  if (!st) { e(id, "tanpa `stage`"); continue; }
+  if (s.shots?.length) { stage[id] = { engine: "r3" }; if (s.broll) broll[id] = s.broll; continue; }
+  if (!st && s.broll) { stage[id] = { bg: "none", actors: [], fx: [] }; broll[id] = s.broll; if (!s.broll.keywords?.length && !s.broll.keep && !s.broll.own && !s.broll.lic) e(id, "broll tanpa keywords/keep/own/lic"); continue; }
+  if (!st) { e(id, "tanpa `shots` (gaya R3) atau `broll`"); continue; }
   if (st.engine === "diorama") { diorama(id, st); stage[id] = st; if (s.broll) broll[id] = s.broll; continue; }
   if (sp) { vspec[id] = sp; const need = sp.headline ? [] : V.spec[sp.kind ?? "flow"]; if (!sp.headline && !V.spec[sp.kind ?? "flow"]) e(id, `spec.kind "${sp.kind}" tidak dikenal`); for (const k of need ?? []) if (sp[k] === undefined) e(id, `spec ${sp.kind ?? "flow"} tanpa bidang "${k}"`); }
   if (st.insert && !sp) e(id, "stage.insert tanpa visual.spec"); if (st.insert) inList(id, "insert.pos", st.insert.pos ?? "full", V.insertPos);
@@ -44,4 +50,4 @@ if (script.scenes.length > 10 && (share < 0.1 || share > 0.34)) warn.push(`porsi
 for (const w of warn) console.log("  peringatan:", w);
 if (errs.length) { console.log(`KONTRAK TIDAK VALID (${errs.length}):`); for (const x of errs) console.log("  -", x); process.exit(1); }
 if (!o.check) { writeJson(path.join(dir, "04-visual-spec.json"), vspec); writeJson(path.join(dir, "04-stage.base.json"), stage); writeJson(path.join(dir, "04-broll-plan.json"), broll); }
-console.log(`${o.check ? "valid" : "ditulis"}: ${Object.keys(vspec).length} spec, ${Object.keys(stage).length} adegan, ${fb.length} scene broll`);
+console.log(`${o.check ? "valid" : "ditulis"}: ${Object.keys(vspec).length} spec, ${Object.keys(stage).length} adegan (${r3v.r3.length} R3), ${fb.length} scene broll`);

@@ -9,7 +9,7 @@ const allDur = () => script().scenes.length > 0 && script().scenes.every((s) => 
 const stages = [
   { id: "riset-brief", llm: "riset-brief", done: () => E("01-riset-viral.md") && E("02-brief.md") },
   { id: "naskah", llm: "naskah", done: () => E("03-script.json") && E("03-naskah.md") },
-  { id: "visual", llm: "visual", build: () => script().scenes.length > 0 && script().scenes.every((s) => s.stage), done: () => E("04-visual-spec.json") && E("04-stage.base.json") && E("04-broll-plan.json") && fs.statSync(path.join(dir, "04-visual-spec.json")).mtimeMs >= fs.statSync(path.join(dir, "03-script.json")).mtimeMs },
+  { id: "visual", llm: "visual", build: () => script().scenes.length > 0 && script().scenes.every((s) => s.stage || s.shots?.length || s.broll), done: () => E("04-visual-spec.json") && E("04-stage.base.json") && E("04-broll-plan.json") && fs.statSync(path.join(dir, "04-visual-spec.json")).mtimeMs >= fs.statSync(path.join(dir, "03-script.json")).mtimeMs },
   { id: "kontrak", done: () => false, run: () => node("produksi/build-visual.mjs", ["--check"]) },
   { id: "tts-en", done: allDur, run: () => node("produksi/tts.mjs", ["--lang", "en"]) },
   { id: "caption-en", done: () => fs.existsSync(path.join(ROOT, "produksi/captions", o.track, o.siklus, "en.json")), run: () => node("produksi/captions.mjs", ["--lang", "en"]) },

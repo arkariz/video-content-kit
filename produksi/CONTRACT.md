@@ -47,4 +47,4 @@ Dua varian (A dan B), maksimal 4 kata, tanpa label atau bubble. Teks di kiri, to
 9. **Pemeran tetap per track** (`produksi/STYLE.md`) supaya penonton mengenalinya.
 
 ## Alur
-Mesin render `shots` belum dibangun. Sampai ada, siklus baru berhenti di QA dan menunggu mesin itu. Kontrak yang salah dilaporkan QA per scene.
+Scene dengan `shots` dirender mesin R3: agent repo menulis komponen adegan per shot di `04-shots.tsx` (folder siklus), mesin mengatur waktu dari caption per kata, label, transisi, dan efek suara. Cara menulisnya dan perintah cek ada di `produksi/PIPELINE.md`, bagian "Mesin R3". Kontrak yang salah ditolak `build-visual.mjs` dan dilaporkan QA (G1–G6) per scene.

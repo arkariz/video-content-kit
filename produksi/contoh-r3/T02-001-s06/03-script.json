@@ -1,0 +1,82 @@
+{
+  "_catatan": "Contoh mesin R3: scene s06 dari naskah T02-001 ditulis ulang dengan shots. Bukan siklus baru dan tidak mengubah render T02-001. Audio dan caption memakai milik T02/001. Render: node scripts/produksi/render.mjs --track T02 --siklus 001 --script produksi/contoh-r3/T02-001-s06/03-script.json [--still s06]",
+  "cycle": {
+    "track": "T02",
+    "siklus": "001",
+    "contoh": true
+  },
+  "anchor": {
+    "kind": "map",
+    "desc": "peta jalur KRL Jabodetabek, stasiun utama sebagai titik"
+  },
+  "cast": [
+    "komo",
+    "sepuh",
+    "aturan",
+    "cicak"
+  ],
+  "scenes": [
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": {
+        "en": "They were the first air-conditioned electric trains in Indonesia. At the time, crowded riders hung out of open doors or sat on the roof.",
+        "id": "Itu kereta listrik ber-AC pertama di Indonesia. Waktu itu, penumpang yang berjejal bergelantungan di pintu terbuka, bahkan duduk di atap."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "potongan gerbong eks-Tokyo dari samping: di dalam penumpang dan Komo, unit AC di atap, di luar terik dengan matahari dan udara bergetar, pantograf menyentuh kabel listrik",
+          "scale": "inside",
+          "motion": "udara dingin mengalir turun dari unit AC dan isi gerbong berubah dari oranye gerah ke biru sejuk, wajah penumpang dari lelah ke lega; percikan listrik di pantograf; pemandangan luar bergeser karena kereta melaju",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "FIRST AC TRAIN",
+              "word": "air-conditioned"
+            },
+            {
+              "text": "ELECTRIC",
+              "word": "electric"
+            }
+          ],
+          "faces": {
+            "komo": "happy"
+          },
+          "mood": "cool"
+        },
+        {
+          "sentence": 2,
+          "show": "kereta ekonomi lama tanpa AC di peron, penumpang bergelantungan di pintu yang terbuka dan duduk berjejal di atap",
+          "scale": "place",
+          "motion": "kereta berangkat pelan lalu makin cepat, angin mengibaskan penumpang; kamera mendekati pintu lalu naik ke atap, lalu mundur",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "BACK THEN",
+              "word": "time"
+            },
+            {
+              "text": "ROOF RIDERS",
+              "word": "roof"
+            }
+          ],
+          "mood": "faded"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/KRL_Commuterline",
+          "claim": "Toei 6000 adalah kereta listrik ber-AC pertama di Indonesia"
+        },
+        {
+          "url": "https://katadata.co.id/berita/2019/08/21/candu-impor-kereta-bekas-jepang",
+          "claim": "Sebelum itu banyak penumpang duduk di atap karena gerbong terlalu padat"
+        }
+      ],
+      "duration_ms": {
+        "en": 8127
+      }
+    }
+  ]
+}
