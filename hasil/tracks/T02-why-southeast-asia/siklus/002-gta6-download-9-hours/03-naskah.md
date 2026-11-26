@@ -1,6 +1,6 @@
 # Naskah: siklus 002-gta6-download-9-hours (T02, uji-V2 variasi B)
 
-Status: **menunggu persetujuan kreator** (draf 2026-11-26). Sumber tunggal produksi adalah `03-script.json`; file ini versi baca.
+Status: **disetujui kreator 2026-11-26.** Sumber tunggal produksi adalah `03-script.json`; file ini versi baca.
 
 - **Janji:** After watching, you can explain why a typical Indonesian home waits about nine hours for a file a Singapore home gets in one, and why the sea is only part of the reason.
 - **Hook (s01):** One hour in, your friend in Singapore is already playing GTA 6. You, in Indonesia, started at the same second and still have eight hours to go.
