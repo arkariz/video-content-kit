@@ -2,45 +2,10 @@
   "track": "T02",
   "siklus": "003",
   "tanggal": "2026-11-26",
-  "durasi": "8:10",
+  "durasi": "8:07",
   "footage_pct": 0,
-  "verdict": "GAGAL",
+  "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
   "temuan": [
-    {
-      "layer": "Audio",
-      "level": "kritis",
-      "id": "A2",
-      "msg": "s08: transkrip balik tidak memuat \"Merapi\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
-    },
-    {
-      "layer": "Audio",
-      "level": "kritis",
-      "id": "A2",
-      "msg": "s14: transkrip balik tidak memuat \"sawah\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
-    },
-    {
-      "layer": "Audio",
-      "level": "kritis",
-      "id": "A2",
-      "msg": "s16: transkrip balik tidak memuat \"sawah\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
-    },
-    {
-      "layer": "Audio",
-      "level": "kritis",
-      "id": "A2",
-      "msg": "s20: transkrip balik tidak memuat \"Raffles\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
-    },
-    {
-      "layer": "Audio",
-      "level": "kritis",
-      "id": "A2",
-      "msg": "s26: transkrip balik tidak memuat \"Raffles\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
-    },
     {
       "layer": "Visual/Channel",
       "level": "sedang",

@@ -198,8 +198,8 @@ ID: Penting: perkara itu soal izin dan alih fungsi lahan, bukan soal kebakaran 2
 Sumber: https://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/
 
 ## s40 · body
-EN: What is on record is permit corruption in the past, fines left uncollected, and burned concessions that drew no penalty. That is enough reason to keep asking questions.
-ID: Yang tercatat adalah ini: izin pernah dibeli, denda menumpuk belum tertagih, dan banyak pemegang lahan terbakar tidak disanksi. Itu cukup untuk terus bertanya.
+EN: What is on record is a past corruption conviction over permits, old fines left uncollected, and, in a count from 2015 to 2019, large burned concessions that drew no penalty. That is enough reason to keep asking questions.
+ID: Yang tercatat adalah ini: satu vonis korupsi lama soal izin, denda lama yang belum tertagih, dan, dalam hitungan 2015 sampai 2019, konsesi besar yang terbakar tanpa sanksi. Itu cukup untuk terus bertanya.
 Sumber: https://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/; https://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/
 
 ## s41 · body

@@ -2,7 +2,7 @@
   "track": "T02",
   "siklus": "004",
   "tanggal": "2026-11-26",
-  "durasi": "8:08",
+  "durasi": "8:13",
   "footage_pct": 0,
   "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
   "temuan": [
@@ -10,7 +10,7 @@
       "layer": "Struktur",
       "level": "sedang",
       "id": "S2",
-      "msg": "jarak re-hook terpanjang 118 dtk mulai 6:10 (target 60-90)",
+      "msg": "jarak re-hook terpanjang 124 dtk mulai 6:10 (target 60-90)",
       "fix": "ubah satu scene di rentang itu jadi re-hook"
     },
     {

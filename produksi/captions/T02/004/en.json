@@ -5220,143 +5220,193 @@
   "s40": [
     {
       "text": "What",
-      "startMs": 120,
-      "endMs": 240
+      "startMs": 100,
+      "endMs": 446
     },
     {
       "text": "is",
-      "startMs": 360,
-      "endMs": 460
+      "startMs": 446,
+      "endMs": 654
     },
     {
       "text": "on",
-      "startMs": 520,
-      "endMs": 660
+      "startMs": 654,
+      "endMs": 862
     },
     {
       "text": "record",
-      "startMs": 720,
-      "endMs": 1040
+      "startMs": 862,
+      "endMs": 1347
     },
     {
       "text": "is",
-      "startMs": 1100,
-      "endMs": 1240
+      "startMs": 1347,
+      "endMs": 1555
     },
     {
-      "text": "permit",
-      "startMs": 1280,
-      "endMs": 1540
+      "text": "a",
+      "startMs": 1555,
+      "endMs": 1694
+    },
+    {
+      "text": "past",
+      "startMs": 1694,
+      "endMs": 2040
     },
     {
       "text": "corruption",
-      "startMs": 1600,
-      "endMs": 2020
+      "startMs": 2040,
+      "endMs": 2802
     },
     {
-      "text": "in",
-      "startMs": 2060,
-      "endMs": 2120
+      "text": "conviction",
+      "startMs": 2802,
+      "endMs": 3564
     },
     {
-      "text": "the",
-      "startMs": 2160,
-      "endMs": 2220
+      "text": "over",
+      "startMs": 3564,
+      "endMs": 3910
     },
     {
-      "text": "past,",
-      "startMs": 2300,
-      "endMs": 2680
+      "text": "permits,",
+      "startMs": 3910,
+      "endMs": 4534
+    },
+    {
+      "text": "old",
+      "startMs": 4534,
+      "endMs": 4811
     },
     {
       "text": "fines",
-      "startMs": 3160,
-      "endMs": 3460
+      "startMs": 4811,
+      "endMs": 5227
     },
     {
       "text": "left",
-      "startMs": 3520,
-      "endMs": 3740
+      "startMs": 5227,
+      "endMs": 5573
     },
     {
       "text": "uncollected,",
-      "startMs": 3800,
-      "endMs": 4420
+      "startMs": 5573,
+      "endMs": 6474
     },
     {
-      "text": "and",
-      "startMs": 4780,
-      "endMs": 4900
+      "text": "and,",
+      "startMs": 6474,
+      "endMs": 6820
     },
     {
-      "text": "burned",
-      "startMs": 4980,
-      "endMs": 5200
+      "text": "in",
+      "startMs": 6820,
+      "endMs": 7028
     },
     {
-      "text": "concessions",
-      "startMs": 5260,
-      "endMs": 5820
+      "text": "a",
+      "startMs": 7028,
+      "endMs": 7167
     },
     {
-      "text": "that",
-      "startMs": 5860,
-      "endMs": 5980
+      "text": "count",
+      "startMs": 7167,
+      "endMs": 7583
     },
     {
-      "text": "drew",
-      "startMs": 6040,
-      "endMs": 6220
+      "text": "from",
+      "startMs": 7583,
+      "endMs": 7929
     },
     {
-      "text": "no",
-      "startMs": 6340,
-      "endMs": 6460
-    },
-    {
-      "text": "penalty.",
-      "startMs": 6580,
-      "endMs": 7000
-    },
-    {
-      "text": "That",
-      "startMs": 8020,
-      "endMs": 8119
-    },
-    {
-      "text": "is",
-      "startMs": 8160,
-      "endMs": 8240
-    },
-    {
-      "text": "enough",
-      "startMs": 8260,
-      "endMs": 8500
-    },
-    {
-      "text": "reason",
-      "startMs": 8560,
-      "endMs": 8800
+      "text": "2015",
+      "startMs": 7929,
+      "endMs": 8275
     },
     {
       "text": "to",
-      "startMs": 8840,
-      "endMs": 8900
+      "startMs": 8275,
+      "endMs": 8483
+    },
+    {
+      "text": "2019,",
+      "startMs": 8483,
+      "endMs": 8899
+    },
+    {
+      "text": "large",
+      "startMs": 8899,
+      "endMs": 9315
+    },
+    {
+      "text": "burned",
+      "startMs": 9315,
+      "endMs": 9800
+    },
+    {
+      "text": "concessions",
+      "startMs": 9800,
+      "endMs": 10631
+    },
+    {
+      "text": "that",
+      "startMs": 10631,
+      "endMs": 10977
+    },
+    {
+      "text": "drew",
+      "startMs": 10977,
+      "endMs": 11323
+    },
+    {
+      "text": "no",
+      "startMs": 11323,
+      "endMs": 11531
+    },
+    {
+      "text": "penalty.",
+      "startMs": 11531,
+      "endMs": 12155
+    },
+    {
+      "text": "That",
+      "startMs": 12155,
+      "endMs": 12501
+    },
+    {
+      "text": "is",
+      "startMs": 12501,
+      "endMs": 12709
+    },
+    {
+      "text": "enough",
+      "startMs": 12709,
+      "endMs": 13194
+    },
+    {
+      "text": "reason",
+      "startMs": 13194,
+      "endMs": 13679
+    },
+    {
+      "text": "to",
+      "startMs": 13679,
+      "endMs": 13887
     },
     {
       "text": "keep",
-      "startMs": 8960,
-      "endMs": 9120
+      "startMs": 13887,
+      "endMs": 14233
     },
     {
       "text": "asking",
-      "startMs": 9180,
-      "endMs": 9440
+      "startMs": 14233,
+      "endMs": 14718
     },
     {
       "text": "questions.",
-      "startMs": 9500,
-      "endMs": 10000
+      "startMs": 14718,
+      "endMs": 15480
     }
   ],
   "s41": [
