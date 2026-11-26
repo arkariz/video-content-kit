@@ -2,7 +2,7 @@
 
 Tujuan: dari `03-script.json` menghasilkan suara, caption, visual, dan render semua format. Semua tahap membaca file data yang sama, jadi perubahan naskah cukup dilakukan di satu tempat.
 
-**Gaya wajib:** ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`), dijalankan lewat `scripts/pipeline/run.mjs`. Mesin untuk merender `shots` belum dibangun; sampai ada, produksi siklus baru menunggu.
+**Gaya wajib:** ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`), dijalankan lewat `scripts/pipeline/run.mjs`. Scene `shots` dirender mesin R3 (`produksi/PIPELINE.md`, bagian "Mesin R3").
 
 ## Prasyarat
 

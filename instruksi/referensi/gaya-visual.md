@@ -99,5 +99,5 @@ Per scene, satu shot per kalimat (urut sesuai narasi Inggris):
 
 ## 8. Untuk agent repo
 - Contoh kerja: `produksi/remotion/src/experiment/` (scene per kalimat s04–s06, pemeran T02, reproduksi R3 `repAsd.tsx` dan `repAsddd.tsx`).
-- **Mesin bersama untuk merender `shots` belum dibangun.** Sampai ada, produksi siklus baru menunggu mesin itu; jangan memakai mesin lama untuk siklus baru. Pembangunannya dilakukan di sesi terpisah dan tidak boleh merusak render siklus lama.
+- **Mesin R3** ada di `produksi/remotion/src/r3/`: agent menulis komponen adegan per shot di `04-shots.tsx` (folder siklus), mesin mengatur waktu dari caption per kata, label, transisi, dan efek suara. Cara dan perintah cek: `produksi/PIPELINE.md` bagian "Mesin R3". Jangan memakai mesin lama untuk siklus baru.
 - Thumbnail memakai kontrak `thumbnails` di `produksi/CONTRACT.md`.
