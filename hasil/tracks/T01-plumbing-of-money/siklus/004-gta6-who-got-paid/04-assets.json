@@ -20,6 +20,12 @@
       "comp": "Short9x16",
       "lang": "en",
       "cut": "S1-not-rockstars-money"
+    },
+    {
+      "file": "render/T01/004/Short9x16-S2-who-pays-card-fee-en.mp4",
+      "comp": "Short9x16",
+      "lang": "en",
+      "cut": "S2-who-pays-card-fee"
     }
   ],
   "audio_extra": {
@@ -34,6 +40,11 @@
       {
         "file": "Short9x16-S1-not-rockstars-money-en.mp4",
         "sfx": 11,
+        "lufs": -14.1
+      },
+      {
+        "file": "Short9x16-S2-who-pays-card-fee-en.mp4",
+        "sfx": 7,
         "lufs": -14.1
       }
     ],
