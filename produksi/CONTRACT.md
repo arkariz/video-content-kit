@@ -91,6 +91,31 @@ Wajib bila `03-script.json` menulis `"visual_spec": "03-visual.json"` (semua sik
 - `claims`: id dari tabel riset. Subjek atau perilaku `literal` tidak boleh merujuk klaim berstatus `belum`.
 - `palette` tingkat atas hanya untuk contoh di luar track; siklus track memakai palet track di `produksi/STYLE.md`.
 
+### Versi 2: art direction (`"version": 2`)
+Ditambahkan di Fase 3.5. Semua bidang opsional di skema. Siklus lama dan P01 (versi 1) tidak terpengaruh. Arti tiap bidang: `instruksi/referensi/gaya-visual.md` bagian 3, "Art direction".
+```json
+{
+  "version": 2,
+  "palette": { "bg": ["#1b1440", "#3a2a6e"], "families": { "air": ["#0f6fa8", "#1fa3d6", "#5fd3f3", "#c9f4ff"] }, "accent": "#ffb347", "meaning": "…" },
+  "scenes": { "s01": {
+    "light": { "key": "kiri atas", "key_color": "#ffcf8a", "shadow_color": "#3a2a6e", "rim": { "color": "#7fe3ff", "side": "kanan" }, "sources": ["lampu jendela"], "contact_shadows": ["…"] },
+    "art_refs": [{ "ref": "T9", "want": "air distilisasi: nada bertingkat + garis riak putih" }],
+    "subjects": [{ "id": "tetes", "detail_level": "L1", "silhouette": "…", "proportions": "…",
+      "material": { "type": "liquid", "surface": "…", "transparency": 0.85, "highlight": "…", "notes": "…" },
+      "details": ["…"] }],
+    "environment": { "landmark": "…", "types": ["…"], "life": ["…"], "layers": { "bg": "…", "far": "…", "mid": "…", "subject": "…", "fg": "…", "atmos": "…" } },
+    "animation": { "deformation": "…" }
+  } }
+}
+```
+| Kode | Aturan versi 2 | Tingkat |
+| --- | --- | --- |
+| V-10 | subjek tanpa `detail_level`; scene tanpa L1 | sedang |
+| V-11 | L1 tanpa `silhouette`, `proportions`, `material.type`, atau `details` | kritis |
+| V-12 | `material.type` di luar tabel `STYLE.md` 2.4 | sedang |
+| V-13 | scene tanpa `light` atau `art_refs` | sedang |
+| V-14 | scene dengan `environment.setting` tanpa `landmark`, `types` (≥2), atau `life` | sedang |
+
 ### Aturan validasi (diimplementasi di Fase 4, `validateVisualSpec` di `scripts/produksi/r3.mjs`)
 | Kode | Aturan | Tingkat |
 | --- | --- | --- |

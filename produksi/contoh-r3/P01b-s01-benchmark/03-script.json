@@ -1,0 +1,69 @@
+{
+  "cycle": "P01b",
+  "title_options": [
+    "How a Single Drop of Water Travels Through a City"
+  ],
+  "promise": "Setelah menonton, penonton tahu bentuk asli tetes hujan dan jalur air dari atap ke keran ke sungai.",
+  "creator_evidence": [],
+  "anchor": {
+    "kind": "object",
+    "desc": "satu tetes air bening dengan kota terbalik terpantul di dalamnya; muncul di pembuka dan penutup"
+  },
+  "cast": [],
+  "visual_spec": "03-visual.json",
+  "_catatan": "Benchmark Fase 3.5: hanya s01 dari P01, ilustrasi digambar ulang dengan standar STYLE.md versi Fase 3.5. Narasi, audio, dan caption memakai P01 (render dengan --track _contoh --siklus P01 --script produksi/contoh-r3/P01b-s01-benchmark/03-script.json). Klaim di produksi/contoh-r3/P01-tetes-air/01-riset-viral.md.",
+  "scenes": [
+    {
+      "id": "s01",
+      "role": "hook",
+      "narration": {
+        "en": "Raindrops are not teardrops: big ones flatten like hamburger buns.",
+        "id": "Tetes hujan bukan berbentuk air mata: yang besar memipih seperti roti burger."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "satu tetes hujan besar jatuh melewati kota senja berhujan; siluet air mata runcing muncul pudar di sekitarnya lalu dicoret; tetes kecil bulat di sampingnya; aliran udara naik di bawah tetes besar yang memipih",
+          "scale": "object",
+          "motion": "tetes jatuh dengan latar bergerak naik, siluet air mata pudar dan tercoret, dasar tetes memipih dengan goyangan teredam, tetes kecil tetap bulat",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NOT A TEARDROP",
+              "word": "teardrops"
+            },
+            {
+              "text": "FLATTENS",
+              "word": "flatten"
+            }
+          ],
+          "mood": "dusk"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/water-science-school/science/are-raindrops-shaped-teardrops",
+          "claim": "Tetes hujan kecil bulat, yang besar memipih seperti roti burger; bukan bentuk air mata",
+          "id": "C01"
+        },
+        {
+          "url": "https://gpm.nasa.gov/resources/students-and-educators/the-shape-of-a-raindrop",
+          "claim": "Hambatan udara di bawah tetes meratakan dasarnya",
+          "id": "C02"
+        }
+      ],
+      "duration_ms": {
+        "en": 4087
+      }
+    }
+  ],
+  "shorts_cuts": [
+    {
+      "name": "S1-benchmark",
+      "scene_ids": [
+        "s01"
+      ],
+      "hook_override": "Raindrops are not teardrops."
+    }
+  ]
+}

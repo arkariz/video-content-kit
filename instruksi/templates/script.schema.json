@@ -416,6 +416,12 @@
           "additionalProperties": {
             "$ref": "#/$defs/visual_scene"
           }
+        },
+        "version": {
+          "enum": [
+            1,
+            2
+          ]
         }
       }
     },
@@ -503,6 +509,64 @@
                   "type": "string",
                   "pattern": "^C\\d{2,}$"
                 }
+              },
+              "detail_level": {
+                "enum": [
+                  "L1",
+                  "L2",
+                  "L3"
+                ]
+              },
+              "silhouette": {
+                "type": "string"
+              },
+              "proportions": {
+                "type": "string"
+              },
+              "details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "material": {
+                "type": "object",
+                "required": [
+                  "type"
+                ],
+                "properties": {
+                  "type": {
+                    "enum": [
+                      "matte",
+                      "glossy",
+                      "translucent",
+                      "liquid",
+                      "glass",
+                      "organic",
+                      "membrane",
+                      "metal",
+                      "concrete",
+                      "fabric",
+                      "soil",
+                      "vegetation",
+                      "atmosphere"
+                    ]
+                  },
+                  "surface": {
+                    "type": "string"
+                  },
+                  "transparency": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "highlight": {
+                    "type": "string"
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -533,6 +597,12 @@
                 },
                 "atmos": {
                   "type": "string"
+                },
+                "far": {
+                  "type": "string"
+                },
+                "mid": {
+                  "type": "string"
                 }
               }
             },
@@ -541,6 +611,21 @@
             },
             "lighting": {
               "type": "string"
+            },
+            "landmark": {
+              "type": "string"
+            },
+            "types": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "life": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           }
         },
@@ -633,6 +718,9 @@
             },
             "final": {
               "type": "string"
+            },
+            "deformation": {
+              "type": "string"
             }
           }
         },
@@ -659,6 +747,64 @@
         },
         "needs": {
           "type": "string"
+        },
+        "light": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string"
+            },
+            "key_color": {
+              "type": "string"
+            },
+            "shadow_color": {
+              "type": "string"
+            },
+            "fill": {
+              "type": "string"
+            },
+            "rim": {
+              "type": "object",
+              "properties": {
+                "color": {
+                  "type": "string"
+                },
+                "side": {
+                  "type": "string"
+                }
+              }
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "contact_shadows": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "art_refs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "want"
+            ],
+            "properties": {
+              "ref": {
+                "type": "string",
+                "pattern": "^T\\d{1,2}$"
+              },
+              "want": {
+                "type": "string"
+              }
+            }
+          }
         }
       }
     }

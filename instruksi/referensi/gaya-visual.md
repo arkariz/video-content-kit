@@ -8,7 +8,7 @@ Dokumen ini untuk **penulis**: apa yang harus dijelaskan dan digambar di setiap 
 | --- | --- |
 | Riset, narasi, struktur cerita | `instruksi/referensi/gaya-cerita.md` |
 | Apa yang digambar per kalimat dan per scene (dokumen ini) | `gaya-visual.md` |
-| Seperti apa tampilannya (bentuk, warna, kedalaman, tipografi, pemeran) | `produksi/STYLE.md` |
+| Seperti apa tampilannya (bentuk, rendering, material, cahaya, kedalaman, lingkungan, tipografi, pemeran) | `produksi/STYLE.md`; resep teknik dari referensi di `produksi/REFERENSI-GAYA.md` (T1–T13) |
 | Bagaimana dianimasikan dan dirender (kamera, gerak, transisi, cahaya, 2D/2.5D/3D) | `produksi/PIPELINE.md` bagian "Mesin R3" |
 | Bentuk data (`shots`, `03-visual.json`, klaim) | `produksi/CONTRACT.md` |
 | Kepadatan isi dan fondasi | `hasil/learnings-global.md` |
@@ -58,12 +58,46 @@ Setiap scene di `03-visual.json` mengisi bidang di bawah. Tidak semua bidang waj
 | **H. Dasar fakta** | `claims[]` di subjek dan perilaku, `simplifications[]` | id klaim dari riset yang mendukung gambar, apa yang disederhanakan, apa yang tidak boleh disalahartikan | ya, untuk topik faktual |
 | **I. Catatan produksi** | `pattern`, `dimension`, `assets[]`, `notes` | pola komposisi (bagian 6), 2d / 2.5d / 3d, komponen yang dipakai ulang, ilustrasi atau aset baru, batasan | `pattern`, `dimension` ya |
 
+### Art direction (versi 2, wajib untuk siklus baru)
+Bidang A sampai I menjawab **apa yang dikomunikasikan**. Bidang di bawah ini menjawab **seperti apa digambar**, supaya animator dan renderer tidak perlu mengarang art direction. Aktif bila `03-visual.json` menulis `"version": 2`.
+
+| Bidang | Untuk | Yang ditulis |
+| --- | --- | --- |
+| `subjects[].detail_level` | setiap subjek | `L1`, `L2`, atau `L3` (`produksi/STYLE.md` 2.3). Satu sampai dua L1 per scene. |
+| `subjects[].silhouette` | L1, L2 | Bentuk luar yang khas, ditulis sebagai bentuk: "atas membulat, dasar rata sedikit cekung, lebih lebar dari tinggi 1,6:1, sedikit miring ke kiri". Tulis juga bedanya dengan subjek lain di frame. |
+| `subjects[].proportions` | L1 | Perbandingan bagian: "inti 40% lebar sel", "atap 1/3 tinggi gedung" |
+| `subjects[].material` | L1, L2 | `{ "type": "liquid" }` dari tabel material `STYLE.md` 2.4, ditambah `surface` (variasi permukaan, tekstur), `transparency`, `highlight`, dan `notes` |
+| `subjects[].details` | L1 | Daftar detail yang wajib digambar, urut menurut pentingnya (bukan hanya `must_show`) |
+| `light` | scene | Arah dan warna kunci, warna bayangan, rim (warna dan sisi), sumber cahaya nyata di frame, bayangan kontak yang wajib |
+| `environment.landmark` | scene dengan lingkungan | Satu tengara yang dikenali |
+| `environment.types` | scene dengan lingkungan | Tipe benda yang membentuk tempat, dengan siluet berbeda (mis. 3 tipe bangunan) |
+| `environment.life` | scene dengan lingkungan | 1 sampai 3 kejadian kecil yang membuat dunia hidup |
+| `environment.layers` | scene | Isi tiap lapisan, termasuk `mid` (lingkungan tengah) dan geseran warna ke langit |
+| `art_refs` | scene | Ciri yang dituju, dirujuk ke resep `REFERENSI-GAYA.md` (`T1`, `T9`, …) dan ditulis sebagai karakteristik ("air distilisasi: nada bertingkat + garis riak putih"), bukan "tiru gambar X" |
+| `animation.deformation` | subjek lunak | Bagaimana bentuk berubah saat bergerak (memipih, memanjang, bergoyang teredam) |
+
+**Fakta vs gaya:** `treatment` dan `claims` mengatur kebenaran (bentuk, bagian, proporsi, perilaku). `silhouette`, `material`, `light`, dan `art_refs` mengatur interpretasi gaya. Gaya tidak boleh mengubah fakta. Contohnya, tetes besar tetap memipih (C01), seindah apa pun bentuk lain.
+
+**Empat peran dalam satu scene:**
+
+| Peran | Apa yang ditentukannya | Tempat |
+| --- | --- | --- |
+| Penulis | Apa yang dikomunikasikan dan fakta pendukungnya | A, B, E, H |
+| Art direction (penulis visual) | Apa yang digambar dan seperti apa | C, D, F, bidang versi 2 |
+| Animator | Bagaimana bergerak | G, `animation.deformation` |
+| Engine | Waktu, kamera, transisi, render | `produksi/PIPELINE.md`, tidak ditulis di scene |
+
 ### Syarat detail minimum
 - **Subjek**: anatomi ditulis sebagai bagian-bagian yang bisa digambar (bentuk badan, bagian dalam, permukaan, warna dasar), minimal 12 kata, dan `scale_ref` terhadap benda lain di scene.
 - **Perilaku**: kata kerja fisik (menggelinding, menempel, memanjang, membungkus), bukan kata kerja abstrak (menyerang, melawan, bekerja).
 - **Lingkungan**: minimal lapisan lingkungan dan latar terisi; arah aliran atau gravitasi bila relevan.
 - **Animasi**: minimal keadaan awal, satu langkah urutan, dan keadaan akhir.
 - Kalimat "tampilkan X" saja **gagal** bila X butuh detail fisik atau perilaku.
+- **Versi 2:**
+  - Setiap L1 punya `silhouette`, `proportions`, `material`, dan `details`.
+  - Setiap scene punya `light` dan `art_refs`.
+  - Scene dengan lingkungan punya `landmark`, `types`, dan `life`.
+  - "Kota", "bangunan", atau "tangki" tanpa tipe dan siluet dianggap kurang.
 
 | Tidak cukup | Cukup |
 | --- | --- |
@@ -227,6 +261,10 @@ Sebelum naskah disetujui untuk produksi, setiap scene dicek (oleh penulis, lalu 
 - [ ] Metafora dibedakan dari representasi faktual (`treatment`).
 - [ ] Klaim faktual didukung riset (`claims` ke tabel riset, status bukan `belum` untuk `literal`).
 - [ ] Animator bisa mengerjakan scene tanpa menebak.
+- [ ] (versi 2) Ilustrator bisa menggambar subjek L1 tanpa menebak siluet, material, dan cahaya.
+- [ ] (versi 2) Lingkungan punya tengara, tipe benda yang bervariasi, dan kejadian kecil.
+
+Gate kualitas **gambar** (still sebelum animasi) ada di `produksi/PIPELINE.md` bagian "Mesin R3" 9; gate di atas hanya menilai kelengkapan spesifikasi.
 
 Mengembalikan scene ke penulis: animator menulis `"needs": "<pertanyaan>"` pada scene itu di `03-visual.json` dan tidak menggambarnya. Penulis menjawab dengan memperbarui bidangnya dan menghapus `needs`. Scene dengan `needs` tidak boleh masuk render penuh.
 

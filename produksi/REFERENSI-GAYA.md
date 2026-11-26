@@ -91,3 +91,53 @@ Bahan: rekaman layar dari kreator, `asddd.mov` (20 detik, R3 3:45–4:05) dan `a
   - kamera miring dari permukaan ke potongan membran (18,3–19 detik) masih berupa crossfade dua adegan, jadi sempat tampak berbayang; aslinya satu kamera yang benar-benar berputar di ruang 3D;
   - sudut kiri atas sedikit lebih gelap (#170341 lawan #280357).
 - Kesimpulan teknis: semua yang datar (label, petir, iris, wipe, partikel, blur kedalaman) bisa ditiru dengan SVG di Remotion. Gerak kamera 3D sungguhan (permukaan yang dilihat miring lalu diputar) butuh lapisan 3D, misalnya `@remotion/three`, kalau ingin sama persis.
+
+## Still In a Nutshell dari kreator (2026-11-26): resep teknik ilustrasi
+
+**Bahan:** 11 still yang ditempel kreator di chat, tidak disimpan di repo karena hak cipta. Isinya:
+- lanskap prasejarah dengan air terjun;
+- pembuluh dan sel imun (tegak);
+- koloni planet senja;
+- penyelam di antara bakteri;
+- membran lipid dengan molekul air;
+- sel imun mengepung sel terinfeksi;
+- kota di atas awan;
+- lapisan bintang yang dibelah;
+- garis waktu spiral dinosaurus;
+- gua cahaya;
+- observatorium malam.
+
+Dibandingkan dengan still prototipe P01 (audit di `hasil/review/2026-11-26-audit-visual-P01.md`).
+
+**Kesimpulan utama:** kematangan visualnya **tidak** datang dari gradien, blur, atau kilap realistis. Sumbernya adalah **bentuk datar bertingkat yang dirancang satu per satu**:
+- siluet yang unik;
+- 3 sampai 4 nada datar per benda;
+- highlight berupa bentuk dan garis;
+- detail permukaan dari tanda-tanda kecil yang terkendali;
+- kedalaman lewat geseran warna.
+
+Prototipe P01 melakukan kebalikannya: gradien lembut dan blur pada bentuk dasar yang generik.
+
+| # | Teknik | Yang terlihat di still | Cara di SVG |
+| --- | --- | --- | --- |
+| T1 | **Shading datar bertingkat** | Batu, kubah, sel, dan bukit punya nada dasar, bentuk bayangan bulan sabit di sisi jauh cahaya, inti bayangan lebih gelap yang kecil, dan bentuk highlight sempit di sisi dekat cahaya. Gradien hampir hanya ada di langit dan glow. | Path badan sebagai `clipPath`, lalu salinan badan yang digeser ke arah cahaya diisi nada dasar di atas isian bayangan; nada tambahan dengan geseran lebih jauh |
+| T2 | **Highlight sebagai garis** | Garis terang tipis dengan ujung bulat, sejajar tepi dalam, sering terputus (kubah kaca, gelembung, tepi sel, tabung) | `stroke-linecap="round"` + `stroke-dasharray` pada path yang di-inset |
+| T3 | **Detail permukaan "konfeti" terkendali** | Titik, kapsul pendek, dan garis putus 1 sampai 2 nada dari dasar, lebih rapat di area bayangan atau tepi. Bintik halus untuk material kasar (lapisan planet, batu). | Sebaran ber-seed `R()` dalam `clipPath` badan; kepadatan dari fungsi posisi |
+| T4 | **Siluet gugus lobus** | Pohon, awan, busa, dan semak berupa gugus lingkaran beda ukuran yang menyatu, bukan satu elips. Bangunan punya siluet berkarakter (atap bertumpuk, kubah, menara, rangka kayu) dengan sudut membulat. | Satu path gabungan, atau beberapa lingkaran dengan isian sama; atap dan badan bangunan sebagai path, bukan `rect` |
+| T5 | **Kedalaman lewat nilai dan hue, bukan blur** | Lapisan jauh digeser ke warna langit: kontras turun, detail hilang, menjadi siluet satu sampai dua nada. Blur kuat hanya untuk benda sangat dekat kamera (bakteri yang blur). | `lerpColor(warna, warnaLangit, k)` per lapisan; blur hanya untuk latar depan ekstrem |
+| T6 | **Pembingkai latar depan** | Daun, batu, semak, atau awan gelap besar di tepi bawah atau samping, sebagian keluar bingkai | Lapisan `d > 1` dengan nada gelap, kontras rendah |
+| T7 | **Warna jenuh dan terkurasi** | Palet analog (biru-ungu-magenta atau hijau-toska) ditambah satu komplementer hangat (oranye/kuning) untuk fokus dan cahaya. Latar gelap indigo membuat warna menyala. Tanpa abu-abu kusam. | Palet per scene di `03-visual.json` |
+| T8 | **Cahaya sebagai bentuk** | Sumber cahaya berupa glow radial lembut dan kilau 4 sudut. Benda dekat sumber mendapat rim berwarna sumber. Kontras hangat-dingin. | `Glow`, bintang 4 sudut, rim = T2 berwarna sumber |
+| T9 | **Air yang distilisasi** | Isian cyan datar bertingkat dengan garis putih pendek mendatar (riak, pantulan). Busa berupa gugus lingkaran putih. Air terjun berupa pita tegak bertingkat dengan highlight putih di tepi atas. Tanpa refraksi realistis. | Path + T1 + T2; garis riak bergerak pelan |
+| T10 | **Kaca dan tembus pandang** | Isian sedikit lebih terang dari latar dengan opasitas sebagian, isi di dalam terlihat, garis highlight tebal di satu sisi, sabit putih besar, kilau | Opasitas 0,25 sampai 0,5 + T2 + sabit |
+| T11 | **Dunia yang hidup** | Banyak figur pendukung kecil (burung, hewan, kendaraan, mesin) yang menjelaskan konteks; setiap area punya kejadian kecil | Figur tingkat L2/L3 dengan gerak sekunder kecil |
+| T12 | **Struktur komposisi** | Horizon melengkung, jalur spiral atau diagonal, tepi gelap; subjek paling jenuh dan paling kontras | Kamera dan tata letak; vinyet nilai, bukan sekadar gelap |
+| T13 | **Garis dalam, bukan tinta** | Garis kontur di dalam bentuk dengan nada lebih terang atau lebih gelap dari isian (pita kubah, pembuluh), ujung bulat. Tidak ada garis luar hitam. | Stroke nada isian ±, `linecap round` |
+
+**Untuk tetes air (benchmark s01):**
+- Tetes digambar dengan T1, T2, T9, dan T10:
+  - nada cyan bertingkat dengan sabit bawah lebih gelap;
+  - sabit highlight putih besar di kiri atas, ditambah titik kilap kecil;
+  - garis highlight putus di tepi kanan;
+  - pantulan kota disederhanakan menjadi pita siluet dua nada yang melengkung mengikuti badan, bukan deret batang.
+- Refraksi atau kaustik realistis **tidak** dibutuhkan untuk gaya ini. Ini mengoreksi usulan "refraksi/kaustik" di audit.

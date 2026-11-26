@@ -1,6 +1,6 @@
 # Visual Style Bible (semua track)
 
-Sumber kebenaran untuk **tampilan**: identitas visual, bahasa bentuk, warna, kedalaman, komposisi, tipografi, palet dan pemeran per track. Dokumen lain hanya menautkan ke sini.
+Sumber kebenaran untuk **tampilan**: identitas visual, bentuk dan rendering, hierarki detail, material, warna, cahaya, kedalaman, lingkungan, komposisi, tipografi, palet dan pemeran per track. Dokumen lain hanya menautkan ke sini.
 
 - Cara menulis spesifikasi scene dan pola komposisi (untuk penulis): `instruksi/referensi/gaya-visual.md`.
 - Cara menggerakkan dan merender (kamera, gerak, transisi, cahaya, 2D/2.5D/3D di Remotion): `produksi/PIPELINE.md` bagian "Mesin R3".
@@ -10,109 +10,180 @@ Arah: ilustrasi gerak penjelas (R3), terinspirasi teknik bercerita visual Kurzge
 
 ## 1. Identitas
 
-Ilustrasi vektor penjelas yang rapi dan tenang: bentuk bersih dengan siluet jelas, warna terkurasi, kedalaman berlapis, cahaya lembut. Setiap gambar harus **menjelaskan sesuatu**; dekorasi hanya boleh bila menambah suasana tanpa mencuri fokus.
+Gaya ini adalah ilustrasi vektor penjelas dengan **rendering datar bertingkat**. Ciri-cirinya:
+- bentuk datar berlapis yang dirancang satu per satu;
+- siluet yang unik dan warna jenuh yang terkurasi;
+- kedalaman dibangun lewat geseran warna dan susunan lapisan;
+- dunia ilustrasi yang hidup.
 
-Tiga sifat yang dijaga di semua track:
-1. **Kredibel secara struktur.** Subjek nyata (sel, mesin, kota, uang) digambar dengan bagian-bagian yang benar dan proporsi yang masuk akal, lalu disederhanakan. Penyederhanaan tidak boleh mengubah mekanisme (lihat `gaya-visual.md` bagian 4).
-2. **Lembut, bukan kaku.** Sudut membulat, bayangan melebur, gerak mengalir. Bukan tumpukan kotak dan silinder polos (penilaian kreator atas T02-001 versi 3D, 2026-11-26).
-3. **Terbaca dalam sedetik.** Satu fokus per frame, hierarki ukuran dan kontras yang jelas, teks minimal.
+Setiap gambar harus **menjelaskan sesuatu**. Lingkungan juga ikut menjelaskan: tempat, skala, dan sebab-akibat.
 
-Hindari: semua subjek dijadikan tokoh kartun generik; ikon datar ala slide; papan teks; foto stok di dalam ilustrasi; efek berlebihan (bloom tebal, lens flare, glitch).
+Analisis teknik dari referensi ada di `produksi/REFERENSI-GAYA.md` (resep T1 sampai T13). Standar di dokumen ini adalah turunannya.
 
-## 2. Bahasa bentuk dan ilustrasi
+Empat sifat yang dijaga di semua track:
+1. **Kredibel secara struktur.** Subjek nyata (sel, mesin, kota, uang) digambar dengan bagian-bagian yang benar dan proporsi yang masuk akal, lalu distilisasi. Penyederhanaan tidak boleh mengubah mekanisme (`gaya-visual.md` bagian 4).
+2. **Dirancang, bukan dirakit.** Subjek utama adalah satu ilustrasi utuh dengan siluet, proporsi, bagian, dan material yang disengaja. Ia bukan tumpukan lingkaran, kotak, dan silinder.
+3. **Lembut tapi tegas.** Sudut membulat dan tanpa garis tinta hitam. Batas bentuk tetap tegas karena dibentuk oleh beda nada datar, bukan oleh blur atau gradien.
+4. **Terbaca dalam sedetik.** Satu fokus per frame. Fokus selalu menjadi bagian paling jenuh dan paling kontras.
 
-### 2.1 Bentuk
-- **Organik** untuk makhluk hidup, cairan, alam, emosi: kurva kontinu, tanpa sudut tajam, ketebalan berubah halus. Contoh: sel, tetes air, daun, awan.
-- **Geometris** untuk buatan manusia dan sistem: kotak, silinder, lingkaran dengan radius sudut besar. Contoh: gedung, pipa, kartu, server.
-- **Campuran** untuk benda yang dirasakan manusia (kendaraan, perangkat): kerangka geometris, permukaan dan detail organik.
-- Siluet harus terbaca dari bayangannya saja. Uji: isi bentuk dengan satu warna gelap; kalau subjek masih dikenali, bentuknya lulus.
+Hindari:
+- **Jebakan primitif:** gedung dari `rect`, awan atau pohon dari satu elips, tangki dari kotak membulat, detail dari pola acak yang berulang.
+- **Gaya clip-art:** gradien lembut dan blur di semua benda, satu kilap generik, bayangan sama untuk semua material.
+- Ikon datar ala slide dan papan teks.
+- Efek tebal: bloom, lens flare, glitch.
 
-### 2.2 Garis, sudut, permukaan
-| Aspek | Aturan |
+## 2. Bentuk dan rendering
+
+### 2.1 Bahasa bentuk
+- **Organik:** makhluk hidup, cairan, alam, emosi.
+  - Kurva kontinu dan asimetris dengan ketidakteraturan terkendali.
+  - Benda lunak bergugus (pohon, awan, busa, semak) dibentuk dari **gugus lobus**: lingkaran beda ukuran yang menyatu dalam satu isian.
+- **Geometris berkarakter:** buatan manusia.
+  - Kerangka dibuat dari path dengan proporsi khas tipe bendanya (atap pelana bertumpuk, kubah, menara air, tangki silinder dengan cincin dan tangga, pipa bersambung flensa).
+  - Sudut membulat, tapi siluetnya harus langsung dikenali sebagai benda itu.
+- **Campuran:** kendaraan dan perangkat. Kerangka geometris dengan detail organik.
+- **Uji siluet:** isi bentuk dengan satu warna gelap. Subjek harus tetap dikenali, dan harus berbeda dari subjek lain di frame.
+- Primitif murni (lingkaran, kotak membulat) hanya boleh untuk tingkat L3 (bagian 2.3) dan diagram.
+
+### 2.2 Rendering datar bertingkat (wajib untuk L1 dan L2)
+| Lapisan | Aturan |
 | --- | --- |
-| Garis luar | **Tidak ada garis tinta.** Batas bentuk dibuat dari beda nilai warna. Garis tipis hanya untuk struktur yang memang garis (kabel, rambut halus, retakan), dengan warna yang tidak kontras keras. |
-| Radius sudut | Benda geometris: radius minimal sekitar 12% dari sisi terpendek. Benda organik: tanpa sudut. Hanya ujung yang memang tajam di dunia nyata (duri, pisau) yang boleh lancip. |
-| Isian | Gradien lembut dua nilai searah cahaya (bukan isian datar penuh). Selisih terang-gelap sekitar 8 sampai 15% lightness. |
-| Bayangan diri | Satu bayangan lembut di sisi jauh dari cahaya, sekitar 55% opasitas warna lebih gelap, tepi diblur, bukan pita bertingkat. |
-| Kilap | Satu kilap kecil putih (sekitar 22%) di sisi atas menghadap cahaya. Benda basah (air, mata) boleh dua kilap. |
-| Rim light | Garis cahaya tipis di tepi yang membelakangi latar terang atau saat benda harus dipisah dari latar gelap. |
-| Bayangan jatuh | Elips gelap tipis dan blur di bawah benda yang menyentuh tanah. Tidak bertepi keras. |
-| Tekstur | Tekstur halus (bintik, serat) hanya bila membantu mengenali bahan (kulit kayu, kain, permukaan sel). Opasitas rendah, skala kecil, tidak bergerak terhadap bentuknya. |
+| Nada dasar | Isian datar, warna lokal material |
+| Bayangan bentuk | Bentuk sabit di sisi jauh dari cahaya: nada dasar digeser ke warna bayangan scene (bukan sekadar lebih gelap); tepi tegas mengikuti bentuk |
+| Inti bayangan | Bentuk lebih kecil dan lebih gelap di dalam bayangan, untuk benda bervolume besar |
+| Highlight bentuk | Sabit sempit di sisi dekat cahaya, nada dasar digeser ke warna cahaya kunci |
+| Highlight garis | Garis terang tipis berujung bulat, sejajar tepi dalam, sering terputus (T2) |
+| Kilap | Titik atau sabit putih hanya untuk material mengilap (air, kaca, logam poles, mata) |
+| Garis dalam | Kontur atau lipatan di dalam bentuk dengan nada isian ±, ujung bulat; **tidak ada garis luar hitam** |
+| Bayangan jatuh/kontak | Bentuk datar gelap ber-opasitas di bawah benda yang menyentuh permukaan, mengikuti bentuk alas; benda tidak boleh tampak mengapung |
 
-### 2.3 Kepadatan detail
-- **Subjek utama**: detail paling banyak, termasuk bagian yang dibutuhkan penjelasan (misalnya inti bersegmen pada neutrofil, katup pada pipa).
-- **Lingkungan**: detail sedang, bentuk berulang dengan variasi (ukuran, rotasi, warna ±5%) supaya tidak tampak salinan.
-- **Latar jauh**: siluet dan gradien saja.
-- Aturan praktis: rasio detail subjek : lingkungan : latar kira-kira 3 : 2 : 1.
+- **Gradien** hanya untuk langit, latar jauh, glow, cairan dalam, dan pemudaran atmosfer. Gradien tidak boleh menjadi pengganti shading benda.
+- **Blur** hanya untuk lapisan latar depan ekstrem dan latar sangat jauh (bagian 4).
+- Arah cahaya sama untuk semua benda di satu scene.
 
-### 2.4 Konsistensi antar-scene
-- Subjek yang sama memakai komponen yang sama di semua scene (satu fungsi gambar, parameter keadaan). Jangan menggambar ulang dengan gaya lain.
-- Proporsi antar-subjek dicatat sekali (di `03-visual.json`, `subjects[].scale_ref`) dan dipakai di semua scene. Contoh: neutrofil sekitar 1,5 sampai 2 kali diameter sel darah merah.
-- Perubahan keadaan ditunjukkan pada benda yang sama (warna, ekspresi, bentuk), bukan dengan mengganti bendanya.
+### 2.3 Hierarki detail
+| Tingkat | Untuk | Detail | Rendering |
+| --- | --- | --- | --- |
+| **L1: subjek utama** | benda yang sedang dijelaskan (tetes, sel, mesin, gedung kunci) | Siluet dirancang khusus. Bagian dalam yang relevan terlihat. Detail permukaan T3. Semua lapisan 2.2. | Path tulisan tangan (aset), bukan rakitan primitif |
+| **L2: pendukung** | benda yang berinteraksi atau menjelaskan konteks (pipa di sekitar tangki, bakteri di sekitar sel, mobil dan pohon) | Siluet khas tipenya, 3 nada, satu highlight garis | Komponen reusable dengan variasi parameter |
+| **L3: latar dan atmosfer** | gedung jauh, partikel, bukit, awan jauh | Siluet 1 sampai 2 nada, tanpa detail kecil | Primitif dan path sederhana boleh; warna digeser ke langit |
+
+- Detail dipusatkan di tempat yang membantu pemahaman, tidak ditambahkan acak demi tampak rumit.
+- Rasio kepadatan detail L1 : L2 : L3 kira-kira 3 : 2 : 1.
+- Ukuran minimum subjek L1:
+  - 16:9: sekitar 12% tinggi frame saat sedang dijelaskan.
+  - 9:16: sekitar 18%.
+
+### 2.4 Sistem material
+Setiap permukaan L1 dan L2 diberi satu material. Material menentukan nada, highlight, tepi, transparansi, dan tekstur.
+
+| Material | Nada | Highlight | Tepi | Transparansi | Detail permukaan |
+| --- | --- | --- | --- | --- | --- |
+| Matte (cat, plastik, kulit buah) | 3 | sabit lebar lembut, tanpa kilap | tegas | opak | sedikit atau tidak ada |
+| Glossy (logam poles, plastik keras) | 3–4 | sabit sempit + kilap titik + garis T2 | tegas | opak | tanpa |
+| Translucent (gel, sitoplasma, daun tipis) | 3 | sabit + rim terang | rim lebih terang dari badan | 0,6–0,85; isi dalam terlihat samar | partikel dalam |
+| Cairan / air | 3–4 nada cyan, sabit bawah lebih gelap | sabit putih besar + titik kilap + garis T2 putus | meniskus: tepi sedikit lebih gelap, lalu rim terang | 0,7–0,9; latar tembus sedikit | riak berupa garis pendek putih, pantulan berupa pita siluet dua nada yang melengkung mengikuti badan |
+| Kaca | warna latar +terang | garis T2 tebal satu sisi + sabit putih besar + kilau 4 sudut | garis terang | 0,25–0,5 | tanpa |
+| Jaringan organik | 3 nada hangat | sabit lembut | tidak rata, bergelombang | opak / translucent | bintik dan kapsul T3 |
+| Membran biologis | 2 nada berlapis | garis T2 di sisi luar | ganda (dua garis sejajar) | translucent | butir atau ekor lipid berulang dengan variasi |
+| Logam (baja, besi) | 3–4 nada dingin | pita highlight memanjang searah bentuk | tegas; flensa, baut, sambungan sebagai detail L1/L2 | opak | goresan atau karat hanya bila relevan |
+| Beton / batu | 3 nada netral hangat atau dingin | sabit lebar matte | sedikit tidak rata | opak | bintik halus T3 dan retak sebagai garis dalam |
+| Kain | 3 | sabit lembut mengikuti lipatan | lipatan sebagai garis dalam | opak | jahitan bila relevan |
+| Tanah | 3 nada cokelat-jingga | sabit pada gundukan | bergelombang | opak | kerikil sebagai T3, akar sebagai garis dalam |
+| Vegetasi | 3–4 nada hijau, geser ke kuning di sisi cahaya | sabit di lobus atas | gugus lobus | opak | urat daun sebagai garis dalam (L1 saja) |
+| Atmosfer (kabut, uap, awan) | 2 nada | tepi atas lebih terang | gugus lobus lembut | 0,3–0,7 | tanpa |
+
+### 2.5 Konsistensi antar-scene
+- Subjek yang sama memakai komponen aset yang sama di semua scene: satu fungsi gambar, dengan parameter untuk keadaannya.
+- Proporsi antar-subjek dicatat sekali di `03-visual.json` (`subjects[].scale_ref`, `proportions`) dan dipakai di semua scene.
+- Perubahan keadaan ditunjukkan pada benda yang sama (warna, ekspresi, bentuk), bukan dengan mengganti benda.
 
 ## 3. Sistem warna
 
 ### 3.1 Struktur palet
-Setiap track punya palet sendiri (bagian 8), tetapi strukturnya sama:
+Setiap track punya palet sendiri (bagian 8), dan setiap scene punya palet turunan di `03-visual.json`. Strukturnya sama:
 
 | Peran | Fungsi | Jumlah |
 | --- | --- | --- |
-| Latar | Gradien langit/ruang, gelap atau terang tergantung suasana | 2 sampai 3 nilai |
-| Primer | Warna identitas track, dipakai pada subjek utama atau jangkar | 1 sampai 2 |
-| Sekunder | Lingkungan dan subjek pendukung | 2 sampai 3 |
-| Aksen | Satu warna jenuh untuk fokus, label, sorotan | 1 |
-| Semantik | Hidup/berhasil, mati/gagal, bahaya, netral (bagian 3.2) | 4 |
-| Cahaya | Warna kunci (hangat/dingin) dan warna isi bayangan | 2 |
+| Latar | Langit atau ruang; sering gelap (indigo, ungu tua, biru malam) agar warna lain menyala | 2 sampai 3 nilai |
+| Primer | Warna identitas, dipakai pada subjek utama atau jangkar | 1 sampai 2 keluarga (masing-masing 3 sampai 4 nada) |
+| Sekunder | Lingkungan dan subjek pendukung, analog dengan primer | 2 sampai 3 keluarga |
+| Aksen | Komplementer hangat (oranye, kuning, merah muda) untuk fokus, cahaya, label | 1 |
+| Semantik | Hidup/berhasil, mati/gagal, bahaya, netral (3.2) | 4 |
+| Cahaya | Warna cahaya kunci, warna bayangan, warna rim | 3 |
+
+- **Keluarga nada:** setiap warna dipakai sebagai keluarga 3 sampai 4 nada (bayangan inti, bayangan, dasar, highlight) yang digeser hue-nya, bukan hanya lightness. Contoh: bayangan biru bergeser ke ungu, highlight hijau bergeser ke kuning.
+- **Saturasi tinggi dan terkurasi.** Hindari abu-abu netral kusam. Netral pun diberi warna, misalnya abu-biru atau abu-ungu.
 
 ### 3.2 Warna bermakna (bukan pemetaan kaku)
-- Hangat dan terang untuk hidup, aktif, berhasil; dingin, pudar, atau kelabu untuk mati, pasif, gagal, ditolak. Perubahan keadaan = perubahan warna pada benda yang sama.
-- Merah tidak otomatis berarti "jahat" dan hijau tidak otomatis "baik". Makna warna ditetapkan per video di `03-visual.json` (`environment.palette`) dan dipakai konsisten di video itu.
-- Warna yang punya makna nyata dipertahankan: air bersih dibiarkan biru-jernih, darah merah, daun hijau. Warna semantik tidak boleh melawan warna nyata subjek.
+- Hangat dan terang untuk hidup, aktif, atau berhasil. Dingin, pudar, atau kelabu untuk mati, pasif, gagal, atau ditolak. Perubahan keadaan ditunjukkan sebagai perubahan warna pada benda yang sama.
+- Makna warna ditetapkan per video di `03-visual.json` (`palette.meaning`) dan dipakai konsisten sepanjang video itu.
+- Warna yang punya makna nyata dipertahankan: air bersih biru-cyan, darah merah, daun hijau. Warna semantik tidak boleh melawan warna nyata subjek.
 
 ### 3.3 Kontras dan keterbacaan
-- Subjek utama punya kontras lightness minimal sekitar 25 poin dari latar di sekitarnya.
+- Subjek utama adalah yang **paling jenuh dan paling kontras** di frame. Kontras lightness-nya terhadap latar di sekitarnya minimal sekitar 25 poin.
 - Teks label: kontras minimal 4,5:1 terhadap isian pilnya.
-- Tidak lebih dari satu aksen jenuh di satu frame, kecuali perbandingan dua pihak.
-- Uji dalam skala abu-abu sebelum dikunci: fokus harus tetap paling terang atau paling kontras.
+- Satu aksen komplementer per frame, kecuali saat membandingkan dua pihak.
+- Uji dalam skala abu-abu sebelum dikunci. Fokus harus tetap terbaca, dan tiap lapisan kedalaman harus punya rentang nilai yang terpisah.
 
-### 3.4 Cahaya
-- Satu arah cahaya kunci per scene (default: kiri atas), dipakai untuk semua bayangan dan kilap di scene itu.
-- Suasana: hangat (matahari, senja) = cahaya kuning-oranye, bayangan ungu kebiruan; dingin (malam, dalam tubuh, laut) = cahaya biru-toska, bayangan biru tua; netral (studio, diagram) = cahaya putih lembut, bayangan abu-biru.
-- Glow hanya untuk sumber cahaya nyata (lampu, inti yang aktif, bioluminesensi) atau sorotan yang disengaja.
+## 4. Cahaya, kedalaman, dan lingkungan
 
-## 4. Kedalaman dan lapisan
+### 4.1 Model cahaya
+| Unsur | Aturan |
+| --- | --- |
+| Ambient | Warna latar mewarnai semua bayangan. Bayangan memakai hue latar, bukan hitam. |
+| Kunci | Satu arah per scene (default kiri atas). Menentukan sisi highlight dan bayangan semua benda. |
+| Isi (fill) | Bayangan tidak pernah hitam pekat; nilai terendah dibatasi agar bentuk tetap terbaca |
+| Rim | Garis T2 berwarna sumber cahaya atau warna langit di tepi yang membelakangi cahaya. Memisahkan subjek dari latar gelap. |
+| Bayangan kontak dan jatuh | Wajib bila benda menyentuh permukaan. Datar, gelap, ber-opasitas, mengikuti alas. |
+| Oklusi | Lipatan, sudut dalam, dan bagian yang tertutup diberi nada bayangan inti |
+| Sumber cahaya nyata | Lampu, matahari, inti aktif: glow radial lembut + kilau 4 sudut; benda di dekatnya mendapat rim berwarna sumber |
+| Suasana | Hangat (senja, matahari): cahaya kuning-oranye, bayangan ungu. Dingin (malam, dalam tubuh, laut): cahaya cyan, bayangan biru tua-ungu. |
 
-Setiap frame disusun dari lima lapisan, dari jauh ke dekat:
-
+### 4.2 Lapisan kedalaman
 | Lapisan | Isi | Perlakuan |
 | --- | --- | --- |
-| 1. Latar | Langit, ruang, dinding jauh | Gradien, tanpa detail, bergerak paling lambat |
-| 2. Lingkungan | Struktur tempat (dinding pembuluh, jalan, gedung) | Detail sedang, sedikit lebih pudar dan lebih dingin dari subjek |
-| 3. Subjek | Benda utama dan pendukungnya | Detail penuh, kontras tertinggi, tajam |
-| 4. Latar depan | Benda yang lewat dekat kamera (sel lain, daun, partikel besar) | Besar, gelap atau blur, menutup sebagian tepi, bergerak paling cepat |
-| 5. Atmosfer | Partikel kecil, kabut, cahaya volumetrik | Tipis, tidak menutupi subjek |
+| 1. Latar | Langit, ruang, dinding jauh | Gradien boleh, tanpa detail, bergerak paling lambat |
+| 2. Lingkungan jauh | Siluet kota, bukit, hutan | L3, 1 sampai 2 nada, warna digeser **40 sampai 70%** ke warna langit |
+| 3. Lingkungan tengah | Struktur tempat (gedung dekat, dinding pembuluh, jalan) | L2, 3 nada, warna digeser **10 sampai 30%** ke langit |
+| 4. Subjek | Benda utama dan pendukung yang berinteraksi | L1/L2, rendering penuh, tidak digeser |
+| 5. Latar depan | Daun, batu, awan, benda yang lewat dekat kamera | Besar, gelap, kontras rendah, sebagian keluar bingkai. Blur hanya bila sangat dekat. |
+| 6. Atmosfer | Partikel, hujan, kabut, kilau | Tipis, tidak menutupi subjek |
 
-Aturan:
-- **Perspektif udara:** makin jauh, makin kecil, makin pudar, makin mendekati warna latar.
-- **Tumpang tindih:** benda di depan menutup sebagian benda di belakangnya; ini isyarat kedalaman terkuat, pakai di setiap frame.
-- **Blur kedalaman:** latar depan dan latar jauh blur, subjek tajam. Fokus boleh berpindah (lihat "focus shift" di PIPELINE.md) hanya saat narasi berpindah subjek.
+- **Perspektif udara** dibuat dengan menggeser warna ke langit, bukan dengan blur. Makin jauh, makin kecil, makin sedikit detail, dan makin dekat ke warna langit.
+- **Tumpang tindih** wajib di setiap frame.
 - **Parallax:** kecepatan geser tiap lapisan sebanding dengan kedekatannya ke kamera (angka di PIPELINE.md).
-- **Transisi skala:** saat masuk ke skala lebih kecil (kota → pipa → tetes air), lapisan subjek skala lama menjadi latar skala baru, supaya penonton tahu ia sedang "masuk".
+- **Transisi skala:** lapisan subjek pada skala lama menjadi latar pada skala baru.
+
+### 4.3 Desain lingkungan
+- **Lingkungan adalah dunia yang dirancang**, bukan latar berulang:
+  - Satu tengara (landmark) yang dikenali per tempat, misalnya menara air atau jembatan.
+  - Tipe benda yang bervariasi: minimal 3 tipe bangunan dengan siluet berbeda di kota, bukan satu kotak yang diulang.
+  - Detail permukaan di lapisan tengah: atap, tangki di atap, balkon, papan tanpa teks, pohon gugus lobus, lampu jalan.
+- **Lingkungan ikut menjelaskan:** tempat menyatakan skala dan konteks proses. Di adegan hujan kota, misalnya, terlihat talang, atap, dan saluran sebagai petunjuk ke mana air akan pergi.
+- **Dunia yang hidup:** di setiap lapisan ada 1 sampai 3 kejadian kecil (burung, kendaraan, lampu menyala, uap), dengan gerak sekunder kecil yang tidak mencuri fokus.
+- Irama, bukan acak: jarak dan tinggi benda berulang dengan variasi terencana (pola besar-kecil-sedang), bukan sebaran `R()` murni.
 
 ## 5. Komposisi
 
-- **Satu fokus per frame.** Fokus diletakkan di titik sepertiga atau di tengah bila subjek simetris atau sedang diperkenalkan.
-- **Ruang negatif** di arah gerak dan pandangan subjek (benda bergerak ke kanan diletakkan di sepertiga kiri).
-- **Hierarki:** subjek > pendukung > lingkungan > latar, lewat ukuran, kontras, dan ketajaman.
-- **Sudut kamera bermakna:** sejajar mata untuk empati, dari atas untuk peta atau sistem, dari bawah untuk skala besar atau ancaman, potongan (cutaway) untuk isi dalam.
-- **Zona aman:** label dan benda penting di atas y 860 pada 16:9 (pita caption) dan di sepertiga tengah pada 9:16; tepi 5% kosong dari teks.
-- **Vertikal (9:16):** subjek ditumpuk tegak; jangan sekadar memotong tengah 16:9 bila subjek atau label keluar bingkai (cara reframe di PIPELINE.md).
+- **Satu fokus per frame.** Fokus diletakkan di titik sepertiga, atau di tengah bila subjek simetris atau sedang diperkenalkan.
+- **Struktur:** pakai diagonal, horizon melengkung, atau jalur berkelok yang membawa mata ke fokus.
+- **Pembingkai:** latar depan gelap di satu atau dua tepi.
+- **Ruang negatif** di arah gerak dan arah pandang subjek.
+- **Hierarki:** subjek > pendukung > lingkungan tengah > lingkungan jauh > latar, dibangun lewat ukuran, kontras, saturasi, dan detail.
+- **Sudut kamera bermakna:**
+  - sejajar mata untuk empati;
+  - dari atas untuk peta dan sistem;
+  - dari bawah untuk skala besar dan ancaman;
+  - potongan (cutaway) untuk isi dalam.
+- **Zona aman:** label dan benda penting di atas y 860 pada 16:9 (pita caption) dan di sepertiga tengah pada 9:16. Tepi 5% kosong dari teks.
+- **Vertikal (9:16):** subjek ditumpuk tegak. Jangan memotong tengah 16:9 bila subjek atau label jadi keluar bingkai (cara reframe di PIPELINE.md).
 
 ## 6. Adaptasi per jenis subjek
 
 | Jenis | Bentuk | Warna | Gerak | Komposisi | Hindari |
 | --- | --- | --- | --- | --- | --- |
-| Biologi (sel, organ, organisme) | Organik, struktur dalam terlihat lewat potongan atau membran tembus | Sesuai pewarnaan yang dikenali (darah merah, membran ungu-merah muda boleh stilisasi) dengan latar cairan gelap-toska | Lunak, berdenyut, deformasi, gerak acak kecil (Brown) | Potongan, perbandingan skala, lingkungan cairan | Sel bulat polos tanpa struktur; semua sel sama; bakteri bola berduri generik |
+| Biologi (sel, organ, organisme) | Organik, struktur dalam terlihat lewat potongan atau membran tembus (material translucent/membran) | Sesuai pewarnaan yang dikenali, distilisasi jenuh, latar cairan gelap | Lunak, berdenyut, deformasi, gerak acak kecil (Brown) | Potongan, perbandingan skala, lingkungan cairan | Sel bulat polos tanpa struktur; semua sel sama; bakteri bola berduri generik |
 | Mekanik dan infrastruktur | Geometris, sambungan dan bagian yang benar | Material terbaca (logam, beton, plastik) | Mekanis: berputar, bergeser, katup membuka; awalan dan susulan kecil | Potongan teknis, isometrik, alur | Mesin tanpa logika gerak; pipa yang tidak tersambung |
 | Abstrak (ekonomi, hukum, waktu) | Metafora benda konkret, ditandai sebagai metafora | Palet track, warna bermakna | Simbolis tapi tetap fisik (berat, mengalir, menumpuk) | Satu metafora besar sebagai jangkar | Ikon datar; metafora yang menggantikan penjelasan |
 | Finansial dan bisnis | Diagram terstruktur, benda uang dan dokumen sebagai aktor | Palet track, aksen untuk arus uang | Arus, penumpukan, pemotongan | Editorial, alur kiri ke kanan, panel perbandingan | Grafik saham generik, uang beterbangan tanpa arah |
@@ -181,7 +252,10 @@ Kode: 2D di `produksi/remotion/src/r3/cast/T02.tsx` (Komo, Sepuh, Pak Aturan, Ci
 | Reproduksi teknik referensi (label di kata, iris, wipe, blur kedalaman) | `produksi/render/_eksperimen/banding-asd.mp4`, `banding-asddd.mp4` |
 | Lembar pemeran T02 | `produksi/render/_eksperimen/T02-pemeran-lembar.png` |
 | Scene R3 lengkap per kalimat | `produksi/contoh-r3/T02-001-s06/` (render ke `produksi/render/_contoh/`) |
-| Prototipe sistem ini (tetes air di kota) | `produksi/contoh-r3/P01-tetes-air/` (Fase 3, menunggu) |
+| Prototipe pertama (sebelum standar ini; contoh jebakan primitif) | `produksi/contoh-r3/P01-tetes-air/` |
+| Benchmark standar ini (s01 tetes di atas kota) | `produksi/contoh-r3/P01b-s01-benchmark/` (Fase 3.5) |
 
-## 11. Status aturan "lebih mulus"
-Aturan halus di bagian 2.2 (tanpa garis keras, bayangan melebur, gerak dengan awalan dan susulan) berasal dari penilaian kreator atas T02-001 versi 3D dan dipindahkan ke sini dari `hasil/learnings-global.md`. Persetujuan visualnya lewat 3 sampai 5 still dan satu klip 10 sampai 20 detik (prototipe P01). Garis putih tegas pada iris/wipe tetap berlaku sampai kreator memutuskan lain.
+## 11. Status
+- **Fase 3.5 (2026-11-26):** bagian 1 sampai 5 ditulis ulang setelah audit visual P01 (`hasil/review/2026-11-26-audit-visual-P01.md`) dan analisis still referensi dari kreator (`REFERENSI-GAYA.md`). Versi sebelumnya (gradien dua nilai, satu bayangan, satu kilap) terbukti menghasilkan ikon datar.
+- **Persetujuan visual:** standar ini diuji di benchmark s01 (`produksi/contoh-r3/P01b-s01-benchmark/`) lewat still dulu, animasi kemudian.
+- **Transisi:** garis putih tegas pada iris dan wipe tetap berlaku sampai kreator memutuskan lain.

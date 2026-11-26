@@ -1,0 +1,324 @@
+{
+  "version": 2,
+  "cycle": "P01b",
+  "_catatan": "Spesifikasi benchmark s01 (Fase 3.5). Klaim C01-C04: produksi/contoh-r3/P01-tetes-air/01-riset-viral.md. Resep T1-T13: produksi/REFERENSI-GAYA.md.",
+  "palette": {
+    "bg": [
+      "#160f3a",
+      "#2e2366",
+      "#6a3a86",
+      "#e0785c"
+    ],
+    "families": {
+      "air": [
+        "#0b4f86",
+        "#1484c2",
+        "#3cc3ec",
+        "#a6ecff",
+        "#ffffff"
+      ],
+      "kota_jauh": [
+        "#3b2f74",
+        "#4c3d86"
+      ],
+      "kota_tengah": [
+        "#243a6e",
+        "#2f5288",
+        "#4372a6",
+        "#6b95c4"
+      ],
+      "atap_depan": [
+        "#140d30",
+        "#22174a",
+        "#33245e"
+      ],
+      "jendela": [
+        "#ffb85c",
+        "#ffd98f",
+        "#fff1c9"
+      ]
+    },
+    "accent": "#ffb347",
+    "semantic": {
+      "tolak": "#ff5a6e"
+    },
+    "meaning": "cyan jernih = air hujan bersih (subjek); jingga-kuning = cahaya senja dan lampu kota; indigo-ungu = langit dan bayangan; merah-merah muda = miskonsepsi yang ditolak"
+  },
+  "scenes": {
+    "s01": {
+      "purpose": "Membongkar miskonsepsi bentuk tetes hujan di detik pertama, memperkenalkan tetes sebagai tokoh yang diikuti, dan memperlihatkan kota tempat ia akan mendarat.",
+      "emphasis": [
+        "teardrops",
+        "flatten"
+      ],
+      "pattern": [
+        "P02",
+        "P07",
+        "P13"
+      ],
+      "dimension": "2.5d",
+      "art_refs": [
+        {
+          "ref": "T1",
+          "want": "semua benda L1/L2 memakai 3 sampai 4 nada datar dengan bayangan sabit, bukan gradien lembut"
+        },
+        {
+          "ref": "T9",
+          "want": "air distilisasi: nada cyan bertingkat, sabit putih besar, garis highlight putus"
+        },
+        {
+          "ref": "T10",
+          "want": "tetes sedikit tembus: langit senja terlihat samar di tepi"
+        },
+        {
+          "ref": "T4",
+          "want": "siluet kota berkarakter: atap pelana, menara air, gedung bertingkat dengan puncak bertangga, bukan kotak berulang"
+        },
+        {
+          "ref": "T5",
+          "want": "kedalaman lewat geseran warna ke langit, bukan blur"
+        },
+        {
+          "ref": "T6",
+          "want": "sudut atap gelap di kiri bawah sebagai pembingkai"
+        },
+        {
+          "ref": "T8",
+          "want": "cahaya senja sebagai glow di cakrawala kanan dan rim jingga pada tetes"
+        },
+        {
+          "ref": "T11",
+          "want": "kota hidup: jendela menyala bergiliran, kereta layang lewat, uap dari ventilasi"
+        }
+      ],
+      "light": {
+        "key": "cahaya senja rendah dari kanan bawah (cakrawala), ambient langit dingin dari atas",
+        "key_color": "#ffb36b",
+        "shadow_color": "#2e2366",
+        "fill": "pantulan langit ungu, bayangan tidak lebih gelap dari #160f3a",
+        "rim": {
+          "color": "#ffb36b",
+          "side": "kanan bawah tetes dan tepi kanan gedung tengah"
+        },
+        "sources": [
+          "glow matahari terbenam di balik awan cakrawala kanan",
+          "jendela gedung tengah",
+          "lampu merah di puncak menara air"
+        ],
+        "contact_shadows": [
+          "bayangan atap pada dinding gedung tengah",
+          "bayangan talang pada atap depan"
+        ]
+      },
+      "subjects": [
+        {
+          "id": "tetes-besar",
+          "name": "tetes hujan besar",
+          "treatment": "literal",
+          "detail_level": "L1",
+          "anatomy": "tetes besar tanpa ujung lancip: atas kubah membulat, dasar memipih dan sedikit cekung ke dalam seperti roti burger; air bening cyan dengan pinggiran meniskus, kilap dari langit, dan pantulan kota terbalik di dalamnya",
+          "silhouette": "saat memipih penuh: lebar 1,5 kali tinggi, kubah atas setengah elips agak lebih tinggi di kiri (asimetri halus), dasar rata dengan cekungan dangkal 8% tinggi; saat awal jatuh: hampir bulat (lebar 1,05 kali tinggi). Berbeda jelas dari tetes kecil (bulat) dan siluet air mata (runcing).",
+          "proportions": "tinggi 300 px logis pada frame 16:9 saat fokus; cekungan dasar 8% tinggi; sabit highlight menutupi 35% lebar atas; pita pantulan 30% tinggi di bagian bawah",
+          "scale_ref": "dua kali lebar tetes kecil; sekitar sepertiga lebar menara air di latar tengah (skala ilustratif, bukan skala nyata)",
+          "material": {
+            "type": "liquid",
+            "surface": "permukaan licin tanpa tekstur; satu garis riak tipis melengkung di sepertiga atas mengikuti kubah",
+            "transparency": 0.85,
+            "highlight": "sabit putih besar kiri atas (pantulan langit), dua titik kilap putih kecil di dekatnya, garis highlight putus berwarna rim jingga di tepi kanan bawah",
+            "notes": "4 nada keluarga air: dasar #3cc3ec, bayangan sabit bawah #1484c2, inti bayangan di cekungan #0b4f86, highlight #a6ecff; meniskus = cincin tipis lebih gelap di tepi lalu garis terang tipis di dalamnya; tanpa gradien radial lembut dan tanpa blur"
+          },
+          "details": [
+            "dasar pipih cekung",
+            "sabit highlight putih kiri atas",
+            "pantulan kota terbalik sebagai pita siluet dua nada melengkung mengikuti dasar, dengan 5 sampai 7 titik jendela kuning",
+            "garis rim jingga putus di kanan bawah",
+            "titik kilap",
+            "meniskus tepi"
+          ],
+          "must_show": [
+            "dasar pipih",
+            "pantulan kota terbalik melengkung",
+            "sabit highlight"
+          ],
+          "must_not": [
+            "ujung lancip di atas",
+            "wajah",
+            "garis tinta",
+            "pantulan berupa batang barcode",
+            "gradien radial lembut sebagai shading utama"
+          ],
+          "claims": [
+            "C01",
+            "C02"
+          ]
+        },
+        {
+          "id": "tetes-kecil",
+          "name": "tetes hujan kecil",
+          "treatment": "literal",
+          "detail_level": "L2",
+          "anatomy": "bola bening kecil tetap bulat saat jatuh, dengan bayangan sabit bawah, satu sabit highlight putih kiri atas, dan satu titik kilap",
+          "silhouette": "bulat (lebar 1,0 tinggi), berbeda dari tetes besar yang pipih",
+          "material": {
+            "type": "liquid",
+            "transparency": 0.85,
+            "highlight": "sabit putih + satu titik"
+          },
+          "scale_ref": "setengah lebar tetes besar",
+          "must_not": [
+            "ujung lancip",
+            "wajah"
+          ],
+          "claims": [
+            "C01"
+          ]
+        },
+        {
+          "id": "siluet-air-mata",
+          "name": "siluet air mata (miskonsepsi)",
+          "treatment": "metaphor",
+          "detail_level": "L2",
+          "anatomy": "bentuk tetes klasik runcing di atas dan bulat di bawah, isian merah muda pucat tembus dengan garis tepi putus-putus, dicoret balok merah membulat",
+          "silhouette": "air mata klasik, seukuran tetes besar, menimpa tetes besar",
+          "material": {
+            "type": "glass",
+            "transparency": 0.35,
+            "notes": "sengaja tidak tampak seperti air: tanpa sabit cyan, tanpa pantulan"
+          },
+          "scale_ref": "seukuran tetes besar",
+          "must_not": [
+            "terlihat nyata seperti air"
+          ],
+          "claims": [
+            "C02"
+          ]
+        },
+        {
+          "id": "aliran-udara",
+          "name": "tekanan udara di bawah tetes",
+          "treatment": "simplified",
+          "detail_level": "L2",
+          "anatomy": "tiga garis arus putih-cyan pucat berujung bulat yang naik dari bawah, membelok di sekitar dasar tetes, lalu mengalir ke samping",
+          "silhouette": "lengkung simetris kiri-kanan di bawah dasar tetes",
+          "material": {
+            "type": "atmosphere",
+            "transparency": 0.6
+          },
+          "scale_ref": "lebar arus sedikit lebih lebar dari tetes besar",
+          "claims": [
+            "C02"
+          ]
+        },
+        {
+          "id": "menara-air",
+          "name": "menara air di atap gedung tengah",
+          "treatment": "simplified",
+          "detail_level": "L2",
+          "anatomy": "tangki silinder kayu-baja di atas kaki rangka, atap kerucut rendah, cincin pengikat, tangga kecil, lampu merah di puncak",
+          "silhouette": "tangki lebar di atas kaki ramping, atap kerucut; siluet paling khas di kota sebagai tengara",
+          "material": {
+            "type": "metal",
+            "notes": "3 nada keluarga kota_tengah, rim jingga di tepi kanan"
+          },
+          "scale_ref": "sekitar tiga kali tinggi tetes besar di layar karena lebih jauh"
+        }
+      ],
+      "environment": {
+        "setting": "udara terbuka di atas kota senja yang sedang hujan, sedikit di atas tinggi atap",
+        "landmark": "menara air di atap gedung tengah, siluetnya muncul juga di pantulan tetes",
+        "types": [
+          "blok apartemen dengan balkon dan unit AC",
+          "deret rumah beratap pelana",
+          "gedung kantor dengan puncak bertangga",
+          "jembatan kereta layang"
+        ],
+        "life": [
+          "jendela menyala dan padam bergiliran",
+          "kereta layang dengan jendela terang melintas di lapisan jauh-tengah",
+          "uap tipis dari ventilasi atap"
+        ],
+        "layers": {
+          "bg": "langit gradien indigo ke ungu ke jingga di cakrawala kanan, glow matahari di balik awan gugus lobus",
+          "far": "siluet kota jauh 2 nada digeser 60% ke warna langit, tanpa jendela kecuali beberapa titik",
+          "mid": "3 tipe bangunan + menara air, 3 nada, digeser 20% ke langit, jendela kuning, rim jingga di sisi kanan",
+          "subject": "tetes besar, tetes kecil, siluet air mata, aliran udara",
+          "fg": "sudut atap gelap di kiri bawah dengan talang dan lubang pipa turun (menyiratkan s02), sebagian keluar bingkai; satu dua garis hujan besar dekat kamera",
+          "atmos": "hujan sebagai garis bulat pendek di 3 kedalaman, pita kabut tipis antara lapisan jauh dan tengah, kilau kecil dekat lampu"
+        },
+        "palette": "lihat palette tingkat atas",
+        "lighting": "lihat light"
+      },
+      "behavior": [
+        {
+          "subject": "tetes-besar",
+          "action": "jatuh dengan latar bergeser naik; dasarnya ditekan udara dari bawah hingga memipih, lalu bergoyang teredam",
+          "trigger": "hambatan udara di dasar tetes",
+          "result": "bola berubah menjadi roti burger",
+          "treatment": "simplified",
+          "claims": [
+            "C02",
+            "C04"
+          ]
+        },
+        {
+          "subject": "siluet-air-mata",
+          "action": "muncul pudar menimpa tetes, dicoret balok merah, lalu menyusut hilang",
+          "trigger": "kata teardrops",
+          "result": "miskonsepsi ditolak",
+          "treatment": "metaphor",
+          "claims": [
+            "C02"
+          ]
+        },
+        {
+          "subject": "aliran-udara",
+          "action": "garis arus naik dan membelok di sekitar dasar tetes",
+          "trigger": "kata flatten",
+          "result": "penyebab pipih terlihat",
+          "treatment": "simplified",
+          "claims": [
+            "C02"
+          ]
+        }
+      ],
+      "composition": {
+        "camera": "sejajar tetes, sedikit di atas atap, menatap sedikit ke bawah ke arah kota",
+        "placement": "tetes besar di sepertiga kiri (x 0,38, y 0,42); tetes kecil kanan atas; menara air di sepertiga kanan lapisan tengah; atap depan kiri bawah",
+        "focal": "tetes besar: paling jenuh dan paling kontras (cyan terang di atas latar ungu-indigo)",
+        "negative_space": "langit di kanan atas untuk label",
+        "support": "cakrawala melengkung tipis; diagonal dari atap depan kiri bawah ke menara air kanan membawa mata ke tetes"
+      },
+      "animation": {
+        "initial": "tetes besar hampir bulat masuk dari atas bingkai, latar hujan dan kota bergeser naik (tetes jatuh)",
+        "sequence": [
+          "siluet air mata pudar muncul menimpa tetes dan dicoret (kata teardrops)",
+          "siluet menyusut hilang; garis arus naik di bawah tetes, dasar memipih dengan goyangan teredam (kata flatten)",
+          "tetes tetap bun; kamera turun pelan memperlihatkan atap dan talang di bawah (kata buns)"
+        ],
+        "camera_move": "dolly masuk 8% dan tilt turun pelan di akhir (reveal tempat tetes akan mendarat); parallax: far 0,25, mid 0,6, subject 1, fg 1,5",
+        "secondary": "pantulan kota di dalam tetes bergeser lambat, kilap berkedip lembut, tetes kecil berayun, jendela menyala bergiliran, kereta layang melintas, uap mengepul",
+        "deformation": "flat 0 ke 1 lewat interpolasi titik kontrol path badan; overshoot 6% lalu goyang teredam 2 siklus (squash-stretch dengan volume terjaga); sabit highlight dan pita pantulan mengikuti bentuk",
+        "transition": "berakhir pada reveal atap dan talang; pada video penuh disambung iris ke s02 dari titik talang",
+        "final": "tetes pipih di tengah kiri, atap dan talang terlihat di bawah"
+      },
+      "simplifications": [
+        "Tetes digambar jatuh tanpa kecepatan nyata; gerak latar menyatakan jatuh.",
+        "Pipih ditunjukkan sebagai perubahan bertahap; aslinya terjadi sepanjang jatuh.",
+        "Ukuran tetes terhadap kota adalah skala ilustratif (tetes jauh lebih kecil dalam kenyataan).",
+        "Garis arus adalah penyederhanaan tekanan udara, bukan simulasi aliran."
+      ],
+      "assets": [
+        "Drop versi 2 (aset tulisan tangan, baru: path kubah + dasar cekung dengan parameter flat, shading bertingkat T1, pantulan pita kota)",
+        "Building bertipe (apartemen, pelana, kantor bertangga) parametrik, baru",
+        "WaterTower (aset tulisan tangan, baru)",
+        "CloudLobes (gugus lobus, baru)",
+        "Rain berlapis (garis bulat ber-seed, baru)",
+        "RoofCorner dengan talang (latar depan, baru)",
+        "ElevatedTrain (siluet L3, baru)"
+      ],
+      "shots": {
+        "1": "satu shot sepanjang kalimat; still dinilai di detik 0,6 (bulat + siluet), 2,7 (pipih + arus), 3,9 (reveal atap)"
+      }
+    }
+  }
+}

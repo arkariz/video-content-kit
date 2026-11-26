@@ -31,7 +31,7 @@ Tahap LLM berjalan lewat `claude -p` bila CLI `claude` ada di PATH. Kalau tidak,
 
 ## Mesin R3 (`shots`): spesifikasi animasi
 
-Bagian ini adalah sumber kebenaran untuk **cara menggerakkan dan merender** di Remotion. Tampilan (bentuk, warna, kedalaman, tipografi) diatur di `produksi/STYLE.md`. Apa yang harus digambar per scene datang dari penulis lewat `shots` (di `03-script.json`) dan `03-visual.json` (`instruksi/referensi/gaya-visual.md`). Penulis tidak menulis kode; lapisan ini memutuskan *bagaimana* sebuah arah visual dianimasikan.
+Bagian ini adalah sumber kebenaran untuk **cara menggerakkan dan merender** di Remotion. Tampilan (bentuk, rendering, material, cahaya, kedalaman, tipografi) diatur di `produksi/STYLE.md`; arsitektur aset dan gate kualitas visual ada di bagian 9 dan 10 di bawah. Apa yang harus digambar per scene datang dari penulis lewat `shots` (di `03-script.json`) dan `03-visual.json` (`instruksi/referensi/gaya-visual.md`). Penulis tidak menulis kode; lapisan ini memutuskan *bagaimana* sebuah arah visual dianimasikan.
 
 Kode bersama ada di `produksi/remotion/src/r3/`:
 
@@ -137,10 +137,10 @@ Aturan:
 | Efek | 2D | 3D | Aturan |
 | --- | --- | --- | --- |
 | Ambient | warna latar `Backdrop` | `SKY.<nama>.amb`, hemisphere light di `World` | sesuai suasana di STYLE.md 3.4 |
-| Kunci + bayangan | `FlatRect` sisi gelap, `Shadow` | directional light + shadow map; `soft()` | satu arah per scene |
+| Kunci + bayangan | shading datar bertingkat dengan `clipPath` (bagian 9), bayangan kontak | directional light + shadow map; `soft()` | satu arah per scene, bayangan memakai hue latar |
 | Rim | `GlowEdge` tipis | `soft(c, glow)` | memisahkan subjek dari latar gelap |
 | Glow | `Glow` (opsional `pulse`) | `glow` pada material | hanya sumber cahaya nyata atau sorotan |
-| Kabut / kedalaman | `Layer opacity` + `Blur` | `fog` di `World`, DOF di `Post` | makin jauh makin pudar |
+| Kabut / kedalaman | geser warna ke langit (`lerpColor`) per lapisan; `Blur` hanya untuk latar depan ekstrem | `fog` di `World`, DOF di `Post` | makin jauh makin dekat ke warna langit (STYLE.md 4.2) |
 | Partikel atmosfer | `Backdrop particles`, `Particles` | `Env` di `soft` | tipis, lambat, tidak menutupi subjek |
 | Langit / matahari / vinyet | `Backdrop`, `Frame vignette` | `Post` (gradien langit, matahari, vinyet) | vinyet 0,4 sampai 0,6 |
 
@@ -219,6 +219,88 @@ Aturan pemilihan:
 - **Komponen baru:**
   - Dibuat dulu di folder siklus atau contoh.
   - Dipindah ke `kit.tsx`/`soft` hanya setelah terbukti dipakai ulang. Jangan membuat modul kosong.
+
+### 9. Arsitektur aset ilustrasi (Fase 3.5)
+Pembagian tanggung jawab:
+
+| Lapisan | Menentukan | Tempat |
+| --- | --- | --- |
+| **Aset ilustrasi** | seperti apa benda terlihat: siluet, bagian, material, keadaan | fungsi React per subjek (`<Drop state flat t />`), di `parts/` siklus atau contoh. Dipromosikan ke `r3/art/` setelah dipakai ulang. |
+| **Scene** | susunan benda, lapisan, kamera | komponen shot di `04-shots.tsx` |
+| **Animasi** | gerak dan deformasi | parameter aset sebagai fungsi `t` (`seg`, `keys`, `pop`), di komponen shot |
+| **Engine** | waktu, label, transisi, render, Shorts | `r3/engine.tsx` (tidak berubah untuk gaya) |
+
+**Alur hibrida pembuatan aset:**
+1. **Aset tulisan tangan (wajib untuk L1).**
+   - Siluet dan bagian ditulis sebagai `path` (bezier) yang dirancang, bukan rakitan lingkaran dan kotak.
+   - Bentuk dikendalikan beberapa parameter keadaan, misalnya `flat` 0..1 atau `open` 0..1, lewat interpolasi titik kontrol.
+   - Boleh dibuat di editor vektor lalu disalin sebagai data path, asalkan semua warnanya diambil dari keluarga palet.
+2. **Aset parametrik (L2, L3).** Satu komponen per tipe (`Building type="pelana"`, `Tree lobes={5}`) dengan variasi ber-seed `R()` dan irama yang terencana.
+3. **3D** (`soft`, `three`) hanya bila nilai penjelasannya nyata (bagian 7). 3D tidak dipakai untuk "menambah detail".
+4. **Raster tidak dipakai** untuk ilustrasi, karena tidak bisa diwarnai ulang, dideformasi, atau dianimasikan per bagian. Pengecualian hanya untuk footage nyata (`broll`).
+
+**Teknik rendering datar bertingkat di SVG** (`produksi/STYLE.md` 2.2, resep `REFERENSI-GAYA.md`):
+
+| Teknik | Cara | Status alat |
+| --- | --- | --- |
+| Bayangan dan highlight bentuk (T1) | `clipPath` dari path badan, lalu di dalamnya salinan badan yang digeser ke arah cahaya, diisi nada dasar di atas isian bayangan | primitif SVG; helper `Shade` diusulkan bila terbukti berulang |
+| Highlight garis (T2) | path yang di-inset dengan `stroke-linecap="round"` + `stroke-dasharray` | primitif SVG |
+| Detail permukaan (T3) | sebaran ber-seed `R()` dalam `clipPath` badan, kepadatan menurut posisi | primitif SVG |
+| Gugus lobus (T4) | beberapa lingkaran dengan isian sama dalam satu `<g>`, ditambah satu lapisan bayangan yang di-clip | primitif SVG |
+| Geser warna kedalaman (T5) | `lerpColor(warna, langit, k)` per lapisan | `kit.tsx` (ada); opsi `haze` pada `Layer` diusulkan |
+| Kaca/air tembus (T9, T10) | `fillOpacity` + latar tembus + T1/T2 | primitif SVG |
+
+**Klasifikasi kemampuan** (bukti di `hasil/review/2026-11-26-audit-visual-P01.md`):
+
+| Kelas | Arti | Kemampuan |
+| --- | --- | --- |
+| A | Sudah ada dan cukup | path kustom, `clipPath`, gradien, opasitas, transform, `Layer`, kamera, `R()` |
+| B | Ada tapi belum dipakai dengan baik | `clipPath` untuk shading bertingkat, `stroke-dasharray`, `lerpColor` untuk kedalaman |
+| C | Butuh komponen ilustrasi reusable | aset per subjek, bangunan bertipe, gugus lobus, helper bayangan kontak |
+| D | Butuh kemampuan engine baru | **belum ada yang terbukti** |
+| E | Lebih baik aset tulisan tangan | siluet dan bagian subjek L1 |
+
+**Perubahan engine hanya berdasarkan bukti.** Setiap usulan perubahan wajib menjawab:
+1. Masalah visual apa yang diselesaikan.
+2. Kenapa kemampuan yang ada tidak cukup, dibuktikan dengan benchmark.
+3. Apakah perubahan itu milik engine atau milik aset.
+4. Dampaknya ke track yang sudah berjalan.
+5. Cara mengujinya.
+
+Engine tetap fokus pada waktu, kamera, dan render; ia tidak menjadi editor ilustrasi.
+
+### 10. Alur still-dulu dan gate kualitas visual
+1. **Spesifikasi lengkap.** Scene lulus gate kesiapan (`gaya-visual.md` bagian 7, termasuk bidang versi 2).
+2. **Still dulu.**
+   - Gambar komposisi utama sebagai satu frame diam, lalu render dengan `--still <scene> --at <detik>`.
+   - Tambahkan close-up subjek L1, detail lingkungan, dan, bila berguna, satu sudut kamera alternatif.
+   - Still harus sudah tampak di-art-direct tanpa bantuan gerak, kamera, atau efek.
+3. **Nilai still** dengan rubrik di bawah, berdampingan dengan acuan (`REFERENSI-GAYA.md`). Minta penilaian manusia (kreator).
+4. **Animasi** hanya setelah still lulus. Gerak menghidupkan ilustrasi yang sudah bagus, bukan menutupi kekurangannya.
+5. **Render video** dan nilai ulang dimensi gerak.
+
+**Rubrik kualitas visual** (skor 1 sampai 5):
+- 5 berarti siap produksi.
+- 3 berarti jalan, tapi masih tampak generik.
+- 1 berarti syarat tidak terpenuhi.
+
+| Dimensi | Pertanyaan | Batas minimum |
+| --- | --- | --- |
+| Siluet | Apakah subjek utama khas dan dirancang? | **4** |
+| Kompleksitas bentuk | Apakah geometri sepadan dengan kerumitan subjek? | |
+| Hierarki detail | Apakah detail penting diutamakan (L1 > L2 > L3)? | |
+| Material | Apakah material bisa dibedakan satu sama lain? | **4** (bersama cahaya) |
+| Cahaya | Apakah cahaya memperlihatkan bentuk dan kedalaman? | **4** (bersama material) |
+| Lingkungan | Apakah scene terasa sebagai satu dunia yang utuh? | **4** (bersama komposisi) |
+| Komposisi | Apakah hierarki fokus jelas? | **4** (bersama lingkungan) |
+| Kedalaman | Apakah latar depan, tengah, dan belakang meyakinkan? | |
+| Gerak | Apakah gerak halus dan bertujuan? (dinilai setelah animasi) | |
+| Kontinuitas | Apakah hubungan ruang terjaga? (dinilai setelah animasi) | |
+| Akurasi fakta | Apakah ciri fisik dan ilmiah benar? | **4** |
+| Polesan | Apakah scene terasa di-art-direct secara profesional? | **4** |
+
+- Penilaian agent dari still adalah perkiraan. Skor lulus final butuh penilaian manusia. Bila alat tidak memungkinkan penilaian objektif, misalnya karena still hanya dilihat sebagai JPEG kecil, tulis keterbatasannya, jangan klaim lulus.
+- Render yang berhasil tidak sama dengan kualitas visual yang berhasil.
 
 ### Menulis `04-shots.tsx`
 ```tsx
