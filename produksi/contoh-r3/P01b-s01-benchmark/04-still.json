@@ -9,11 +9,26 @@
         "produksi/render/_contoh/P01b-s01-benchmark/stills/s01-Master16x9-t3.9.png",
         "produksi/render/_contoh/P01b-s01-benchmark/stills/s01-Short9x16-t2.9.png"
       ],
-      "skor": { "siluet": 4, "kompleksitas": 3, "hierarki": 4, "material": 3, "cahaya": 4, "lingkungan": 4, "komposisi": 4, "kedalaman": 4, "akurasi": 4, "polesan": 3 },
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
       "catatan": "Putaran 6: matahari terlihat di celah kota, cahaya hangat, bayangan kontak atap, jendela memantulkan langit, label pindah ke kiri atas. Masih kurang: material gedung belum dibedakan beton/logam secara tegas, bidang tetes masih agak polos, polesan di bawah referensi.",
-      "lulus": false
+      "lulus": true,
+      "pengecualian_kreator": "Kreator menyetujui still putaran 6 sebagai acuan (2026-11-26) meski material dan polesan dinilai agent 3; tetap tampil sebagai temuan di gate."
     }
   },
-  "kreator": { "disetujui": false },
+  "kreator": {
+    "disetujui": true,
+    "tanggal": "2026-11-26"
+  },
   "dirender": "2026-11-26"
 }

@@ -23,7 +23,7 @@ const FallShot: React.FC = () => {
 
   // kamera: dolly masuk 8%, tilt turun di akhir memperlihatkan atap dan talang (reveal)
   const reveal = seg(t, tFlat + 0.7, D + 0.6, Easing.inOut(Easing.sin));
-  const cam = { x: 960 + Math.sin(t * 0.37) * 8, y: mix(540, 640, reveal) + Math.cos(t * 0.29) * 5, z: mix(1.0, 1.08, seg(t, 0, D + 0.6, Easing.inOut(Easing.sin))) };
+  const cam = { x: 960 + Math.sin(t * 0.37) * 8, y: mix(540, 590, reveal) + Math.cos(t * 0.29) * 5, z: mix(1.0, 1.08, seg(t, 0, D + 0.6, Easing.inOut(Easing.sin))) };
   const fall = t * 34; // dunia naik pelan: tetes jatuh
 
   const hx = vertical ? 760 : 720, hy = (vertical ? 500 : 455) + mix(-160, 0, enter) + hover, R0 = vertical ? 165 : 205;
@@ -109,5 +109,5 @@ const FallShot: React.FC = () => {
 };
 
 export default defineShots({
-  s01: [shot(FallShot, { labels: { "NOT A TEARDROP": [560, 100, "none"], "FLATTENS": [560, 195, "none"] }, labelBg: ["#d8466a", "#1484c2"], drift: false, focus: 760 })],
+  s01: [shot(FallShot, { labels: { "NOT A TEARDROP": [560, 80, "none"], "FLATTENS": [560, 170, "none"] }, labelBg: ["#d8466a", "#1484c2"], drift: false, focus: 760 })],
 });

@@ -113,3 +113,52 @@ Kreator menyatakan puas dengan arah ini dan meminta pustaka aset, galeri acuan, 
 node scripts/produksi/render.mjs --track _contoh --siklus P01 --script produksi/contoh-r3/P01b-s01-benchmark/03-script.json --still s01 --at 0.6,1.5,2.9,3.9
 node scripts/produksi/render.mjs --track _contoh --siklus P01 --script produksi/contoh-r3/P01b-s01-benchmark/03-script.json --still s01 --at 2.9 --comp Short9x16
 ```
+
+## Phase D: animasi (2026-11-26)
+
+Still putaran 6 disetujui kreator sebagai acuan. Animasi dirender dengan engine R3 yang sebenarnya, dan audio serta caption diambil dari P01. Jeda akhir dibuat 2,0 dtk agar durasi masuk target 5 sampai 8 dtk.
+
+| Berkas (`produksi/render/_contoh/P01b-s01-benchmark/`) | Cek ffprobe |
+| --- | --- |
+| `Master16x9-en.mp4` | 1920×1080, 183 frame, 6,10 dtk |
+| `Short9x16-S1-benchmark-en.mp4` | 1080×1920, 183 frame, 6,10 dtk |
+| `banding-animasi-P01-vs-P01b.mp4` | kiri P01, kanan P01b, 6,1 dtk pertama, audio P01b |
+
+**Urutan gerak:**
+1. Tetes bulat masuk dari atas, sementara kota naik pelan (tetes jatuh). Hujan bergerak di dua kedalaman.
+2. Di kata "teardrops", siluet air mata muncul memantul lalu dicoret.
+3. Di kata "flatten", siluet menyusut, garis arus udara naik, dan tetes memipih dengan overshoot dan goyang teredam. Volume dijaga (`sx·sy ≈ 1`).
+4. Kamera dolly masuk 8% lalu turun pelan, sehingga atap dan talang terlihat (petunjuk ke s02).
+5. Sepanjang shot ada gerak sekunder:
+   - kereta layang lewat;
+   - jendela menyala bergiliran;
+   - uap keluar dari ventilasi;
+   - pohon bergoyang;
+   - lampu dan menara berkedip;
+   - kilap tetes berdenyut;
+   - pantulan kota bergeser.
+
+**Perbaikan setelah lembar frame pertama:** tilt kamera semula 100 px membuat tetes naik sampai tertutup label di detik 4,5 ke atas. Tilt diturunkan jadi 50 px dan label dinaikkan.
+
+**Rubrik gerak (perkiraan agent, dari lembar frame per 0,5 dtk dan frame akhir; video belum ditonton manusia dengan suara):**
+
+| Dimensi | P01 | P01b | Catatan |
+| --- | --- | --- | --- |
+| Gerak (timing, easing) | 3 | 4 | label dan perubahan bentuk terkunci ke kata, easing dengan overshoot |
+| Kamera | 3 | 4 | dolly dan reveal punya tujuan; parallax 6 lapisan |
+| Gerak sekunder | 2 | 4 | dunia hidup tanpa mencuri fokus |
+| Gerak sesuai material | 2 | 4 | air: squash dengan volume terjaga dan goyang teredam; benda kaku tidak berubah bentuk |
+| Transisi | 3 | 3 | benchmark satu shot, berakhir pada reveal; transisi ke s02 belum diuji |
+| Kontinuitas | 3 | 4 | hubungan ruang tetes, kota, dan atap terjaga sepanjang tilt |
+
+**Teknik:**
+- **Deterministik:** dua render video menghasilkan 183 dari 183 frame identik (`framemd5`).
+- **Rasio:** landscape dan vertikal benar.
+- **Sinkron caption:** caption dan waktu kata memakai `produksi/captions/_contoh/P01/en.json` yang sama dengan P01.
+- **Waktu render:** sekitar 11 dtk untuk 6 dtk video.
+
+**Kekurangan:**
+- Kesan "jatuh" masih halus, karena hanya ditunjukkan lewat kota yang naik pelan dan hujan.
+- Saat goyang, bentuk tetes sesaat tampak miring seperti kacang.
+- Transisi ke scene berikutnya belum didemonstrasikan.
+- Material dan polesan still tetap 3 (diterima kreator).

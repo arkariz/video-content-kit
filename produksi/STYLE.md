@@ -256,14 +256,35 @@ Cara memakainya:
 
 | File | Jenis adegan | Yang dicontohkan | Status |
 | --- | --- | --- | --- |
-| `P01b-s01-Master16x9-t2.9.jpg` | subjek L1 di atas lingkungan kota senja | material air (T1, T2, T9, T10), blok kota 3/4, tengara, kedalaman lewat geser warna, cahaya senja | acuan sementara (putaran 6), menunggu persetujuan akhir |
-| `P01b-s01-Master16x9-t1.5.jpg` | miskonsepsi dicoret | metafora ditandai: siluet pucat bergaris putus + coretan | sama |
-| `P01b-s01-closeup-tetes-t2.9.jpg` | close-up subjek L1 | 4 nada datar, sabit putih, rim jingga putus, pantulan siluet kecil | sama |
-| `P01b-s01-detail-lingkungan-t2.9.jpg` | detail lingkungan L2 | menara air, perabot atap dengan bayangan kontak, balkon, jendela kaca memantulkan langit | sama |
-| `P01b-s01-Short9x16-t2.9.jpg` | tata letak vertikal | subjek di tengah, label di atas, caption di sepertiga bawah | sama |
-| `P01b-banding-P01-vs-P01b-s01.jpg` | sebelum dan sesudah | kiri: jebakan primitif (P01); kanan: standar ini | sama |
+| `P01b-s01-Master16x9-t2.9.jpg` | subjek L1 di atas lingkungan kota senja | material air (T1, T2, T9, T10), blok kota 3/4, tengara, kedalaman lewat geser warna, cahaya senja | **disetujui kreator 2026-11-26** |
+| `P01b-s01-Master16x9-t1.5.jpg` | miskonsepsi dicoret | metafora ditandai: siluet pucat bergaris putus + coretan | disetujui |
+| `P01b-s01-closeup-tetes-t2.9.jpg` | close-up subjek L1 | 4 nada datar, sabit putih, rim jingga putus, pantulan siluet kecil | disetujui |
+| `P01b-s01-detail-lingkungan-t2.9.jpg` | detail lingkungan L2 | menara air, perabot atap dengan bayangan kontak, balkon, jendela kaca memantulkan langit | disetujui |
+| `P01b-s01-Short9x16-t2.9.jpg` | tata letak vertikal | subjek di tengah, label di atas, caption di sepertiga bawah | disetujui |
+| `P01b-banding-P01-vs-P01b-s01.jpg` | sebelum dan sesudah | kiri: jebakan primitif (P01); kanan: standar ini | disetujui |
 
-### 10.2 Contoh visual lain
+### 10.2 Acuan eksternal dari kreator (lokal, tidak di-commit)
+
+Ada 11 still pihak ketiga yang dikirim kreator pada 2026-11-26 sebagai acuan tingkat kematangan. Lokasinya `produksi/acuan-visual/eksternal/R01`–`R11` (`.webp`).
+
+- **Folder ini diabaikan git (`.gitignore`).** Hak cipta gambar milik pemiliknya dan repo ini tersambung ke GitHub. Agent di mesin lain (cloud, clone baru) tidak punya folder ini. Di sana, pakai resep tertulis `produksi/REFERENSI-GAYA.md` (T1–T13) dan galeri 10.1.
+- **Pemakaian:** hanya untuk membandingkan tingkat polesan, kepadatan detail, cara shading, warna, dan kedalaman, sesuai resep T1–T13. **Dilarang** menyalin tokoh, komposisi, bentuk aset, atau palet persisnya, dan dilarang menampilkannya di video atau thumbnail.
+
+| File | Isi | Teknik yang paling terlihat |
+| --- | --- | --- |
+| `R01-lanskap-prasejarah-air-terjun.webp` | lanskap prasejarah dengan air terjun | T4 gugus lobus, T5 geser warna, T6 pembingkai, T9 air |
+| `R02-pembuluh-sel-imun.webp` | pembuluh dan sel imun (tegak) | T1 nada bertingkat, T3 detail konfeti, T10 tembus |
+| `R03-koloni-planet-senja.webp` | koloni planet saat senja | T10 kaca/kubah, T12 horizon melengkung |
+| `R04-penyelam-bakteri.webp` | penyelam di antara bakteri | T5 blur hanya dekat kamera, T13 garis dalam |
+| `R05-membran-lipid.webp` | membran lipid dan molekul air | T3 pola berulang bervariasi, T2 kilap |
+| `R06-sel-imun-mengepung.webp` | sel imun mengepung sel terinfeksi | T1, T7 warna jenuh di latar gelap, T10 |
+| `R07-kota-di-atas-awan.webp` | kota di atas awan | T11 dunia hidup, T4 bangunan berkarakter, T8 kilau |
+| `R08-lapisan-bintang.webp` | lapisan bintang yang dibelah | T3 bintik halus, potongan (P04) |
+| `R09-garis-waktu-spiral.webp` | garis waktu spiral dinosaurus | P08 garis waktu, T12 jalur spiral |
+| `R10-gua-cahaya.webp` | gua cahaya | T5 lapisan berpita, T13 |
+| `R11-observatorium-malam.webp` | observatorium malam | T1, T8 lampu dengan glow |
+
+### 10.3 Contoh visual lain
 
 | Yang diperlihatkan | File |
 | --- | --- |
