@@ -31,7 +31,7 @@ Tahap LLM berjalan lewat `claude -p` bila CLI `claude` ada di PATH. Kalau tidak,
 
 ## Mesin R3 (`shots`)
 
-Kode bersama: `produksi/remotion/src/r3/` (`kit.tsx` primitif, `count.tsx` penghitung, `engine.tsx` waktu dan transisi, `registry.ts`, `cast/` pemeran per track). Logika waktu dan validasi di Node: `scripts/produksi/r3.mjs` (dipakai `build-visual.mjs`, `render.mjs`, dan `scripts/pipeline/qa-r3.mjs`). Contoh lengkap: `produksi/contoh-r3/T02-001-s06/` (s06 naskah T02-001 ditulis ulang; tidak mengubah render T02-001).
+Kode bersama: `produksi/remotion/src/r3/` (`kit.tsx` primitif, `count.tsx` penghitung, `engine.tsx` waktu dan transisi, `three/` lapisan 3D, `registry.ts`, `cast/` pemeran per track). Logika waktu dan validasi di Node: `scripts/produksi/r3.mjs` (dipakai `build-visual.mjs`, `render.mjs`, dan `scripts/pipeline/qa-r3.mjs`). Contoh lengkap: `produksi/contoh-r3/T02-001-s06/` (s06 naskah T02-001 ditulis ulang; tidak mengubah render T02-001).
 
 ### Alur per siklus
 1. Naskah: `anchor`, `cast`, dan `shots` per scene di `03-script.json` (kontrak di `produksi/CONTRACT.md`).
@@ -82,8 +82,18 @@ node scripts/pipeline/qa-r3.mjs --track T02 --siklus 002 [--scene s06]          
 ```
 Naskah di luar siklus (contoh): tambah `--script produksi/contoh-r3/<nama>/03-script.json`; hasil ke `produksi/render/_contoh/<nama>/`. Registri hanya memindai `hasil/tracks/**/04-shots.tsx` dan `produksi/contoh-r3/**/04-shots.tsx`.
 
+### Lapisan 3D (`r3/three`, 2026-11-26)
+Adegan 3D berkedalaman (kamera orbit perspektif, cahaya dan bayangan kartun, kabut jarak, blur kedalaman) untuk shot R3. Opsional: hanya siklus yang `04-shots.tsx`-nya mengimpor `@r3/three`; `render.mjs` lalu menambahkan `--gl=angle`. Contoh lengkap: T02 siklus 001.
+- Satu shot: `s3({ env, cam: [dari, ke], items: (a) => <>…</>, labels: [[teks, [x,y,z], penunjuk, warna]], vx, vd })`. `a.t` detik shot, `a.w("kata", cadangan)` detik kata.
+- Koordinat: x kanan, y atas (tanah 0), z ke kamera; bidang utama kira-kira x -10..10. Kamera: `{ at, d, yaw, pitch, fov }`.
+- `env`: jkt, hot, jktDay, jktGrey, tokyo, yard, yardDusk, yardNight, paper, grey, night, dusk, sea, map, mapStudio.
+- Benda: `props.tsx` (kereta, rel, kapal, pabrik, angka yang bisa dihitung), `map.tsx` (peta jangkar), pemeran `cast/T02.tsx`.
+- Shorts: `vx` = titik dunia di tengah, `vd` = pengali jarak kamera (default 1,75), jadi tidak sekadar dipotong.
+- Thumbnail: `stage: { "engine": "r3", "module": "<path 04-shots.tsx>", "scene": "thumbA" }`.
+- Cek tata letak memakai `render.mjs --still <scene>` (tambah `--comp Short9x16` untuk tegak).
+
 ### Belum ada
-Lapisan 3D (`@remotion/three`), musik latar terus-menerus, dan komposisi khusus Shorts (sekarang Shorts memotong bagian tengah 16:9 di titik `focus`).
+Musik latar terus-menerus. Shorts versi 2D masih memotong bagian tengah 16:9 di titik `focus`.
 
 ## Publish (Upload-Post)
 
