@@ -19,7 +19,7 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | Kirim Short A2, naskah 002 | 5,5 | 2026-11-25: master 001 tayang |
-| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | 001 tayang di YouTube, Facebook, Instagram; analitik mulai 2026-12-03 | 6 | 2026-11-26: video 001 tayang di YouTube dan Facebook |
+| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (belum dinamai) | 001 tayang di semua platform; analitik mulai 2026-12-03 | 6 | 2026-11-26: video 001 tayang di YouTube dan Facebook |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
 | T05 | Indonesia dan Asia Tenggara dari dalam | Nusantara before the maps | usulan | Channel Asia Tenggara | Cadangan | - | 2026-11-24: cadangan |
@@ -70,3 +70,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: T02-001 tayang di YouTube (master dan 2 Shorts, unggah manual). Analitik mulai 2026-12-03.
 - 2026-11-26: T02-001 (master dan 2 Shorts) juga tayang di Facebook, unggah manual.
 - 2026-11-26: Shorts T02-001 juga tayang di Instagram Reels, unggah manual.
+- 2026-11-26: T02-001 juga tayang di TikTok (master dan 2 Shorts), unggah manual.

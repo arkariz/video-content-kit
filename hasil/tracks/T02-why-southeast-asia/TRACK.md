@@ -8,7 +8,7 @@ channel: "Channel Asia Tenggara (nama belum ditentukan)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "001-jakarta-refused-tokyo-trains"
-langkah_berikutnya: "siklus 001 tayang di YouTube, Facebook, dan Instagram (Shorts) 2026-11-26: tarik analitik mulai 2026-12-03 (instruksi/08-analitik-dan-loop.md); kirim tautan TikTok bila diunggah. Siklus 002: uji gaya mulus (learnings-global.md) sebelum render penuh"
+langkah_berikutnya: "siklus 001 tayang di YouTube, Facebook, TikTok, dan Instagram (Shorts) 2026-11-26: tarik analitik mulai 2026-12-03 (instruksi/08-analitik-dan-loop.md). Siklus 002: uji gaya mulus (learnings-global.md) sebelum render penuh"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
 menunggu_keputusan: null
@@ -51,7 +51,7 @@ Skor niche 79. "why indonesia" punya 11 video di atas 10 ribu view dalam 90 hari
 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
-| 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | tayang | 2026-11-26 | uji-V2, variasi A; YouTube + Facebook + Instagram manual; tanpa QA anti-slop manual |
+| 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | tayang | 2026-11-26 | uji-V2, variasi A; YouTube + Facebook + Instagram + TikTok manual; tanpa QA anti-slop manual |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -93,3 +93,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Siklus 001 tayang di YouTube (unggah manual kreator): master https://youtu.be/XC3g2ZL9lPE, Short A1 https://youtube.com/shorts/6r6uGB9LA_4, Short A2 https://youtube.com/shorts/DPSRC4Ef_8w. Jam tayang belum dicatat; platform lain belum dilaporkan. 05-qa.md tidak dibuat sebelum publish.
 - 2026-11-26: Siklus 001 juga tayang di Facebook (manual): master https://www.facebook.com/share/v/1QqcwTdNX4/, A1 https://www.facebook.com/share/r/1CZcFPZtcG/, A2 https://www.facebook.com/share/r/1MghokmAqm/.
 - 2026-11-26: Kedua Shorts siklus 001 juga tayang di Instagram Reels (manual): A1 https://www.instagram.com/reel/DgMeilctoqF/, A2 https://www.instagram.com/reel/DgMevlyBmuQ/.
+- 2026-11-26: Siklus 001 juga tayang di TikTok @equator.logic (manual): master https://www.tiktok.com/@equator.logic/video/7712368324813835521, A1 https://www.tiktok.com/@equator.logic/video/7712368173294669062, A2 https://www.tiktok.com/@equator.logic/video/7712368551411092788.

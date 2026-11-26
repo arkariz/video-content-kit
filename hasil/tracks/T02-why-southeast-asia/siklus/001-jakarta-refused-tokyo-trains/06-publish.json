@@ -95,7 +95,8 @@
       "cara": "manual",
       "platforms": [
         "youtube",
-        "facebook"
+        "facebook",
+        "tiktok"
       ],
       "urls": [
         {
@@ -105,6 +106,10 @@
         {
           "platform": "facebook",
           "url": "https://www.facebook.com/share/v/1QqcwTdNX4/"
+        },
+        {
+          "platform": "tiktok",
+          "url": "https://www.tiktok.com/@equator.logic/video/7712368324813835521"
         }
       ],
       "tayang": "2026-11-26"
@@ -115,7 +120,8 @@
       "platforms": [
         "youtube",
         "facebook",
-        "instagram"
+        "instagram",
+        "tiktok"
       ],
       "urls": [
         {
@@ -129,6 +135,10 @@
         {
           "platform": "instagram",
           "url": "https://www.instagram.com/reel/DgMeilctoqF/"
+        },
+        {
+          "platform": "tiktok",
+          "url": "https://www.tiktok.com/@equator.logic/video/7712368173294669062"
         }
       ],
       "tayang": "2026-11-26"
@@ -139,7 +149,8 @@
       "platforms": [
         "youtube",
         "facebook",
-        "instagram"
+        "instagram",
+        "tiktok"
       ],
       "urls": [
         {
@@ -153,6 +164,10 @@
         {
           "platform": "instagram",
           "url": "https://www.instagram.com/reel/DgMevlyBmuQ/"
+        },
+        {
+          "platform": "tiktok",
+          "url": "https://www.tiktok.com/@equator.logic/video/7712368551411092788"
         }
       ],
       "tayang": "2026-11-26"

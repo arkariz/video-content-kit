@@ -12,4 +12,7 @@ Diunggah manual oleh kreator (2026-11-26). Lihat `06-publish-manual.md`.
 - A2-too-old-to-import: Facebook https://www.facebook.com/share/r/1MghokmAqm/ (manual, dilaporkan 2026-11-26)
 - A1-why-tokyo-trains-fit: Instagram https://www.instagram.com/reel/DgMeilctoqF/ (manual, dilaporkan 2026-11-26)
 - A2-too-old-to-import: Instagram https://www.instagram.com/reel/DgMevlyBmuQ/ (manual, dilaporkan 2026-11-26)
-- TikTok: belum dilaporkan; master di Instagram tidak dilaporkan
+- master: TikTok https://www.tiktok.com/@equator.logic/video/7712368324813835521 (manual, dilaporkan 2026-11-26)
+- A1-why-tokyo-trains-fit: TikTok https://www.tiktok.com/@equator.logic/video/7712368173294669062 (manual, dilaporkan 2026-11-26)
+- A2-too-old-to-import: TikTok https://www.tiktok.com/@equator.logic/video/7712368551411092788 (manual, dilaporkan 2026-11-26)
+- Master di Instagram: tidak dilaporkan
