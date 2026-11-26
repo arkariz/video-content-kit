@@ -8,10 +8,10 @@ channel: "Equator Logic (channel Asia Tenggara; TikTok @equator.logic)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "002-gta6-download-9-hours"
-langkah_berikutnya: "002 (GTA 6), target tayang 2026-12-01: 11-27 verifikasi angka, brief, naskah (gate naskah); 11-28 uji gaya mulus (gate gaya) dan cek awal analitik 001; 11-29 s.d. 11-30 audio, adegan, render; 11-30 s.d. 12-01 QA anti-slop dan publish (gate). Jadwal lengkap di bagian Jadwal konten"
+langkah_berikutnya: "002: kreator menyetujui naskah (dan cek klaim bertanda di 03-naskah.md); 11-28 uji gaya mulus (gate gaya) dan cek awal analitik 001; 11-29 s.d. 11-30 audio, 04-shots.tsx, render; 11-30 s.d. 12-01 QA anti-slop dan publish (gate), target tayang 2026-12-01"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: null
+menunggu_keputusan: "Setujui naskah siklus 002 (34 scene, siklus/002-gta6-download-9-hours/03-naskah.md)? Klaim survei APJII 2026 (s23) dan ATSI (s28) baru dari ringkasan pencarian"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -70,7 +70,7 @@ Catatan: 002 tayang sebelum jendela V2 (2026-12-07) dan menggantikan judul Jawa;
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
 | 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | tayang | 2026-11-26 | uji-V2, variasi A; tayang di semua platform (YouTube, Facebook, TikTok: master + 2 Shorts; Instagram: 2 Shorts), unggah manual; tanpa QA anti-slop manual |
-| 002-gta6-download-9-hours | GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9. | brief | target 2026-12-01 | uji-V2, variasi B (menggantikan judul Jawa); 1 long-form + 2 Shorts |
+| 002-gta6-download-9-hours | GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9. | naskah | target 2026-12-01 | uji-V2, variasi B (menggantikan judul Jawa); 1 long-form + 2 Shorts; draf naskah menunggu persetujuan |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -119,3 +119,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Atas permintaan kreator, siklus 002 menumpang hype GTA VI (rilis 2026-11-19). Riset viral: 7 sinyal, 3 pola, 3 sudut. Kreator memilih sudut A (download 212 GB: Singapura sekitar 1 jam, Indonesia sekitar 9 jam). Mengisi slot long-form B tanpa mengubah variasi atau ambang V2; judul Jawa pindah ke backlog (penyimpangan isi, bukan kriteria). Outlier 3x median belum dihitung (tanpa YouTube API). Usulan tukar jadwal (002 tayang 2026-12-07, 001 ke 2026-12-14) belum diputuskan. Status brief.
 - 2026-11-26: Rebase ke T02 setelah 001 tayang. Usulan tukar jadwal 002/001 gugur; tanggal tayang 002 belum diputuskan.
 - 2026-11-26: Kreator menyetujui jadwal konten setelah siklus 001: GTA (002) tayang 2026-12-01 s.d. 12-03, Shorts C 12-10 dan 12-14, Jawa (003) 2027-01-05. Belum ada brief atau naskah 002.
+- 2026-11-26: Siklus 002 brief + naskah draf selesai (34 scene, 1.399 kata EN, 99 shot, 2 Shorts, anti-slop EN 39/ID 38 dinilai sendiri). Angka diperbarui ke Ookla September 2026 (ID 52,62, SG 476,02 Mbps; 8 jam 57 menit vs 59 menit). check_kit lolos, QA R3 G1-G5 lolos, G6 menunggu 04-shots.tsx (produksi). Belum terverifikasi dari halaman asli: survei APJII 2026, argumen ATSI, Palapa Ring, hibah 10G Singapura. speedtest.net dan Bisnis menolak akses otomatis; cek outlier YouTube belum dilakukan.
