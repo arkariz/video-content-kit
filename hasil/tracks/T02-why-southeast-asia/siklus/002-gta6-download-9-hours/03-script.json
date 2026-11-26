@@ -76,7 +76,10 @@
           "url": "https://vandal.elespanol.com/en/grand-theft-auto-6/how-long-to-download.html",
           "claim": "212 GB pada 476,02 Mbps sekitar 59 menit"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8452
+      }
     },
     {
       "id": "s02",
@@ -143,7 +146,10 @@
           "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
           "claim": "52,62 Mbps; 212 GB = sekitar 8 jam 57 menit (hitungan sendiri, kecepatan konstan); seluler 70,77 Mbps"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 16300
+      }
     },
     {
       "id": "s03",
@@ -200,7 +206,10 @@
             "as": "split"
           }
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11331
+      }
     },
     {
       "id": "s04",
@@ -269,7 +278,10 @@
             }
           ]
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 18437
+      }
     },
     {
       "id": "s05",
@@ -315,7 +327,10 @@
           "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
           "claim": "Speedtest Global Index Ookla memakai median kecepatan unduh"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11099
+      }
     },
     {
       "id": "s06",
@@ -397,7 +412,10 @@
           "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
           "claim": "September 2026: ID 52,62 Mbps peringkat 112, SG 476,02 Mbps; ID urutan 9 dari 10 negara Asia Tenggara, di atas Myanmar 23,46"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 22245
+      }
     },
     {
       "id": "s07",
@@ -472,7 +490,10 @@
           "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
           "claim": "212 GB; waktu unduh adalah hitungan sendiri dari median"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 15604
+      }
     },
     {
       "id": "s08",
@@ -530,7 +551,10 @@
           "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
           "claim": "September 2026: median seluler Indonesia 70,77 Mbps (212 GB = sekitar 6 jam 39 menit, hitungan sendiri)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 15557
+      }
     },
     {
       "id": "s09",
@@ -597,7 +621,10 @@
           "url": "https://en.wikipedia.org/wiki/Indonesia",
           "claim": "Luas total Indonesia 1.904.569 km²; lebih dari 17.000 pulau"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11889
+      }
     },
     {
       "id": "s10",
@@ -647,7 +674,10 @@
           "url": "https://en.wikipedia.org/wiki/Indonesia",
           "claim": "1.904.569 km² (rasio sekitar 2.560, hitungan sendiri)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9892
+      }
     },
     {
       "id": "s11",
@@ -712,7 +742,10 @@
           "url": "https://www.cnbcindonesia.com/tech/20191015185411-37-107253/tol-langit-palapa-ring-diresmikan-bye-bye-internet-lemot",
           "claim": "Palapa Ring diresmikan 14 Oktober 2019"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 17415
+      }
     },
     {
       "id": "s12",
@@ -756,7 +789,10 @@
           "transition": "cut",
           "mood": "cool"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9288
+      }
     },
     {
       "id": "s13",
@@ -826,7 +862,10 @@
           "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
           "claim": "212 GB; 70,08 Mbps = sekitar 6 jam 43 menit (hitungan sendiri)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 17508
+      }
     },
     {
       "id": "s14",
@@ -881,7 +920,10 @@
           "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6aa8fddbf05bb/indonesian-cities-with-the-fastest-fixed-internet-download-speeds-in-h1-2026",
           "claim": "H1 2026: kota dalam daftar 48,53 sampai 70,08 Mbps (212 GB = sekitar 6 jam 43 sampai 9 jam 42, hitungan sendiri)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 12678
+      }
     },
     {
       "id": "s15",
@@ -944,7 +986,10 @@
           "url": "https://blogs.worldbank.org/en/eastasiapacific/how-can-indonesia-improve-quality-its-internet-services-and-universalize-access",
           "claim": "Blog Bank Dunia, 3 Juni 2022: 70-80% biaya fixed broadband biasanya terkait infrastruktur pasif"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 18715
+      }
     },
     {
       "id": "s16",
@@ -1007,7 +1052,10 @@
           "url": "https://berita.fokus.co.id/2026/05/apjii-banten-kabel-fiber.html",
           "claim": "Fokus, 23 Mei 2026: Ketua APJII Banten menyebut penanaman kabel bawah tanah sekitar Rp75 ribu per meter; dengan satu saluran untuk 3-4 kabel bisa sekitar Rp22 ribu"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 18622
+      }
     },
     {
       "id": "s17",
@@ -1074,7 +1122,10 @@
           "url": "https://en.wikipedia.org/wiki/Internet_in_Singapore",
           "claim": "Next Gen NBN: NetCo (NetLink Trust) infrastruktur pasif, OpCo (Nucleus Connect) aktif, banyak penyedia ritel"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 15743
+      }
     },
     {
       "id": "s18",
@@ -1145,7 +1196,10 @@
           "url": "https://imda.gov.sg/how-we-can-help/10g-nbn-grant",
           "claim": "Februari 2024: sampai S$100 juta untuk upgrade NBN ke 10 Gbps"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 16533
+      }
     },
     {
       "id": "s19",
@@ -1202,7 +1256,10 @@
           "url": "https://blogs.worldbank.org/en/eastasiapacific/how-can-indonesia-improve-quality-its-internet-services-and-universalize-access",
           "claim": "Berbagi infrastruktur lazim di jaringan seluler tetapi tidak di pasar fixed broadband (2022)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11749
+      }
     },
     {
       "id": "s20",
@@ -1252,7 +1309,10 @@
           ],
           "mood": "cool"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11517
+      }
     },
     {
       "id": "s21",
@@ -1309,7 +1369,10 @@
             }
           ]
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 13886
+      }
     },
     {
       "id": "s22",
@@ -1366,7 +1429,10 @@
           "url": "https://pewarta.co.id/2026/11/kapan-internet-rumah-100-mbps-harga-di-bawah-rp200-ribu-bisa-dinikmati-ini-target-komdigi.html",
           "claim": "Komdigi: penetrasi fixed broadband sekitar 22 persen (basis berbeda)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11796
+      }
     },
     {
       "id": "s23",
@@ -1429,7 +1495,10 @@
           "url": "https://periskop.id/teknologi/20261125/internet-indonesia-mahal-komdigi-target-fixed-broadband-50-persen",
           "claim": "Survei APJII 2026: alasan belum berlangganan fixed broadband, 47,2% cukup dengan seluler, 32,9% terlalu mahal"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 12910
+      }
     },
     {
       "id": "s24",
@@ -1482,7 +1551,10 @@
           "url": "https://tabloidpulsa.id/internet-rakyat-wifi-rumah-5g-unlimited-100-mbps",
           "claim": "Biaya internet tetap 4,86% dari GNI per kapita; patokan internasional 2%"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 12121
+      }
     },
     {
       "id": "s25",
@@ -1535,7 +1607,10 @@
           "url": "https://blogs.worldbank.org/en/eastasiapacific/how-can-indonesia-improve-quality-its-internet-services-and-universalize-access",
           "claim": "2022: hanya 26% rumah dengan akses penyedia fixed broadband yang berlangganan; 44% rumah tangga menyebut biaya tinggi sebagai alasan utama tidak berlangganan"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 15464
+      }
     },
     {
       "id": "s26",
@@ -1611,7 +1686,10 @@
           "url": "https://www.medcom.id/nasional/peristiwa/9K5yoQ0K-hari-internet-2026-ini-posisi-kecepatan-internet-indonesia-di-asia-tenggara",
           "claim": "median fixed 52,62 Mbps (mencerminkan hasil tes pengguna)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 21687
+      }
     },
     {
       "id": "s27",
@@ -1665,7 +1743,10 @@
           "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
           "claim": "212 GB: pada 50 Mbps sekitar 9 jam 25 menit, pada 300 Mbps sekitar 1 jam 34 menit (hitungan sendiri; Vice menulis 1 jam 34 pada 300 Mbps)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 12725
+      }
     },
     {
       "id": "s28",
@@ -1729,7 +1810,10 @@
           "url": "https://en.wikipedia.org/wiki/Indonesia",
           "claim": "Indonesia membentang di tiga zona waktu"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 15186
+      }
     },
     {
       "id": "s29",
@@ -1778,7 +1862,10 @@
           "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
           "claim": "ukuran 212 GB"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 14443
+      }
     },
     {
       "id": "s30",
@@ -1835,7 +1922,10 @@
           "url": "https://tabloidpulsa.id/internet-rakyat-wifi-rumah-5g-unlimited-100-mbps",
           "claim": "Internet Rakyat (anak usaha SURGE): Rp100.000/bulan, hingga 100 Mbps; sekitar 900.000 pelanggan per 30 Sep 2026"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 16579
+      }
     },
     {
       "id": "s31",
@@ -1894,7 +1984,10 @@
           "url": "https://www.vice.com/en/article/gta-6-us-canada-launch-ps5-download-size-game-sharing/",
           "claim": "212 GB pada 100 Mbps sekitar 4 jam 43 menit"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 15790
+      }
     },
     {
       "id": "s32",
@@ -1942,7 +2035,10 @@
             "as": "items"
           }
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 14861
+      }
     },
     {
       "id": "s33",
@@ -1986,7 +2082,10 @@
           "url": "https://en.wikipedia.org/wiki/Internet_in_Singapore",
           "claim": "NGNBN diluncurkan 2010"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 10077
+      }
     },
     {
       "id": "s34",
@@ -2030,7 +2129,10 @@
             }
           ]
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 17322
+      }
     }
   ],
   "shorts_cuts": [
@@ -2041,7 +2143,26 @@
         "s07",
         "s33"
       ],
-      "hook_override": "Singapore is playing GTA 6. You are not."
+      "hook_override": "Singapore is playing GTA 6. You are not.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "1 HOUR",
+            "size": 190,
+            "color": "#ffd23f"
+          },
+          {
+            "text": "VS 9?!",
+            "size": 190,
+            "color": "#ffffff"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T02-why-southeast-asia/siklus/002-gta6-download-9-hours/04-shots.tsx",
+          "scene": "thumbS1"
+        }
+      }
     },
     {
       "name": "B2-phone-beats-home-wifi",
@@ -2049,7 +2170,26 @@
         "s08",
         "s21"
       ],
-      "hook_override": "Your phone could beat your Wi-Fi to GTA 6."
+      "hook_override": "Your phone could beat your Wi-Fi to GTA 6.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "PHONE",
+            "size": 170,
+            "color": "#ffffff"
+          },
+          {
+            "text": "BEATS WIFI?",
+            "size": 130,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T02-why-southeast-asia/siklus/002-gta6-download-9-hours/04-shots.tsx",
+          "scene": "thumbS2"
+        }
+      }
     }
   ],
   "anti_slop": {

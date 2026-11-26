@@ -1,2712 +1,2941 @@
 {
- "cycle": "002-fee-split",
- "title_options": [
-  "You Pay $100. Here's Who Takes a Cut.",
-  "Every Card Tap Pays 4 Companies. Here's the Split.",
-  "Where $2.75 Goes When You Tap a Card"
- ],
- "thumbnail_text": [
-  "$100 → $97.25",
-  "WHO TOOK $2.75?"
- ],
- "promise": "After watching, you know where $2.75 of a $100 card purchase goes in one worked US example, who takes it, and who ends up paying.",
- "creator_evidence": [
-  {
-   "what": "Klip tangan kreator tap kartu di terminal (±8 detik, tanpa wajah, nomor kartu tidak terlihat)",
-   "scene_id": "s02",
-   "source_path": "produksi/footage-own/T01/tap-01.mp4"
-  },
-  {
-   "what": "Klip tangan kreator bayar QRIS di warung (±10 detik, tanpa wajah, nama toko dan saldo tidak terlihat)",
-   "scene_id": "s42",
-   "source_path": "produksi/footage-own/T01/qris-01.mp4"
-  }
- ],
- "pronunciations": [
-  {
-   "term": "QRIS",
-   "say_as": "KYOO-ris"
-  },
-  {
-   "term": "rupiah",
-   "say_as": "roo-PEE-ah"
-  }
- ],
- "anchor": {
-  "kind": "map",
-  "desc": "satu peta kota: jalan tol antara bank kamu (kiri) dan bank toko (kanan) dengan gerobak berisi 100 koin; muncul di fondasi (s04-s06), tengah (s12, s23, s33), dan penutup (s47-s48)"
- },
- "cast": [
-  "you",
-  "owner",
-  "bank",
-  "network",
-  "terminal",
-  "cash"
- ],
- "scenes": [
-  {
-   "id": "s01",
-   "role": "hook",
-   "narration": {
-    "en": "You tap your card for a hundred-dollar pair of shoes, and four companies get paid. The shop keeps ninety-seven dollars and twenty-five cents.",
-    "id": "Kamu tap kartu untuk sepatu seharga seratus dolar, dan empat perusahaan dibayar. Toko hanya mendapat sembilan puluh tujuh dolar dua puluh lima sen."
-   },
-   "shots": [
+  "cycle": "002-fee-split",
+  "title_options": [
+    "You Pay $100. Here's Who Takes a Cut.",
+    "Every Card Tap Pays 4 Companies. Here's the Split.",
+    "Where $2.75 Goes When You Tap a Card"
+  ],
+  "thumbnail_text": [
+    "$100 → $97.25",
+    "WHO TOOK $2.75?"
+  ],
+  "promise": "After watching, you know where $2.75 of a $100 card purchase goes in one worked US example, who takes it, and who ends up paying.",
+  "creator_evidence": [
     {
-     "sentence": 1,
-     "show": "close-up tangan 'you' menempelkan kartu ke terminal; empat bayangan bangunan muncul di belakang terminal",
-     "scale": "object",
-     "motion": "kartu menyentuh terminal, gelombang NFC melebar, empat bangunan menyala satu per satu",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "$100",
-       "word": "hundred-dollar"
+      "what": "BELUM ADA di render ini: klip tangan kreator (tap kartu s02, bayar QRIS s42) diganti ilustrasi atas keputusan kreator 2026-11-26",
+      "scene_id": "s02"
+    }
+  ],
+  "pronunciations": [
+    {
+      "term": "QRIS",
+      "say_as": "kris"
+    },
+    {
+      "term": "rupiah",
+      "say_as": "roo-PEE-ah"
+    }
+  ],
+  "anchor": {
+    "kind": "map",
+    "desc": "satu peta kota: jalan tol antara bank kamu (kiri) dan bank toko (kanan) dengan gerobak berisi 100 koin; muncul di fondasi (s04-s06), tengah (s12, s23, s33), dan penutup (s47-s48)"
+  },
+  "cast": [
+    "you",
+    "owner",
+    "bank",
+    "network",
+    "terminal",
+    "cash"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "role": "hook",
+      "narration": {
+        "en": "You tap your card for a hundred-dollar pair of shoes, and four companies get paid. The shop keeps ninety-seven dollars and twenty-five cents.",
+        "id": "Kamu tap kartu untuk sepatu seharga seratus dolar, dan empat perusahaan dibayar. Toko hanya mendapat sembilan puluh tujuh dolar dua puluh lima sen."
       },
-      {
-       "text": "4 companies",
-       "word": "four"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "close-up tangan 'you' menempelkan kartu ke terminal; empat bayangan bangunan muncul di belakang terminal",
+          "scale": "object",
+          "motion": "kartu menyentuh terminal, gelombang NFC melebar, empat bangunan menyala satu per satu",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "$100",
+              "word": "hundred-dollar"
+            },
+            {
+              "text": "4 companies",
+              "word": "four"
+            }
+          ],
+          "count": {
+            "value": 4,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "tumpukan koin di atas kasir terbelah: tumpukan besar ke toko, remah kecil melayang pergi",
+          "scale": "object",
+          "motion": "remah koin lepas dan terbang, tumpukan besar meluncur ke laci toko",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "$97.25",
+              "word": "ninety-seven"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 7198
       }
-     ],
-     "count": {
-      "value": 4,
-      "as": "items"
-     }
     },
     {
-     "sentence": 2,
-     "show": "tumpukan koin di atas kasir terbelah: tumpukan besar ke toko, remah kecil melayang pergi",
-     "scale": "object",
-     "motion": "remah koin lepas dan terbang, tumpukan besar meluncur ke laci toko",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "$97.25",
-       "word": "ninety-seven"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s02",
-   "role": "body",
-   "narration": {
-    "en": "It's noon. You hold a premium rewards card, the terminal beeps, and for a second nothing else seems to happen.",
-    "id": "Siang hari. Kamu memegang kartu premium berhadiah, mesinnya berbunyi, dan selama sedetik sepertinya tidak terjadi apa-apa."
-   },
-   "broll": {
-    "own": "tap-01.mp4"
-   }
-  },
-  {
-   "id": "s03",
-   "role": "rehook",
-   "narration": {
-    "en": "Behind that one tap, two seventy-five leaves the sale. Two dollars twenty heads to your bank, and sixteen cents heads to Visa. The last thirty-nine cents goes to the company running the card machine and the shop's bank.",
-    "id": "Di balik satu tap itu, dua dolar tujuh puluh lima sen keluar dari penjualan. Dua dolar dua puluh menuju bankmu, dan enam belas sen menuju Visa. Sisa tiga puluh sembilan sen untuk perusahaan mesin kartu dan bank milik toko."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "terminal membeku, segenggam koin melompat keluar dari tumpukan seratus",
-     "scale": "object",
-     "motion": "koin terangkat dan berputar",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "$2.75",
-       "word": "seventy-five"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "koin terbelah dua aliran: besar ke gedung bank 'you', kecil ke menara gerbang",
-     "scale": "map",
-     "motion": "dua aliran koin melengkung ke tujuan, bank membesar saat menerima",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "$2.20",
-       "word": "twenty"
+      "id": "s02",
+      "role": "body",
+      "narration": {
+        "en": "It's noon. You hold a premium rewards card, the terminal beeps, and for a second nothing else seems to happen.",
+        "id": "Siang hari. Kamu memegang kartu premium berhadiah, mesinnya berbunyi, dan selama sedetik sepertinya tidak terjadi apa-apa."
       },
-      {
-       "text": "16¢",
-       "word": "sixteen"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "jam dinding menunjuk siang, tangan 'you' memegang kartu premium di depan terminal",
+          "scale": "object",
+          "motion": "jarum berputar ke dua belas, kartu berkilau naik",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "NOON",
+              "word": "noon"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "kartu menyentuh terminal, gelombang melebar, lalu semua diam sedetik",
+          "scale": "object",
+          "motion": "kartu menempel, mesin berbunyi, gelombang memudar",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "BEEP",
+              "word": "beeps"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 6687
       }
-     ]
     },
     {
-     "sentence": 3,
-     "show": "dua gedung kecil di samping toko: server perusahaan terminal dan bank toko",
-     "scale": "place",
-     "motion": "sisa koin bergulir ke server lalu sebagian lanjut ke bank toko",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "39¢",
-       "word": "thirty-nine"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-    },
-    {
-     "url": "https://wellsfargo.com/merchantpassthroughfees",
-     "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-    },
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s04",
-   "role": "body",
-   "narration": {
-    "en": "Here is the trip those coins take, on one map. Your money starts here, at your bank.",
-    "id": "Ini perjalanan koin-koin itu dalam satu peta. Uangmu berangkat dari sini, dari bankmu."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "peta kota dari atas: bank di kiri, toko di tengah, bank toko di kanan, bukit di belakang",
-     "scale": "map",
-     "motion": "kamera mundur tinggi, bangunan muncul satu per satu",
-     "transition": "iris"
-    },
-    {
-     "sentence": 2,
-     "show": "bank 'you' dengan pintu brankas berwajah ramah",
-     "scale": "place",
-     "motion": "pintu brankas terbuka, koin berbaris keluar",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "YOUR BANK",
-       "word": "bank"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "s05",
-   "role": "body",
-   "narration": {
-    "en": "It ends over there, at the shop's bank. Card money doesn't drop into the till. It reaches the shop's account later, often a day or more after the tap.",
-    "id": "Ujungnya di sana, di bank milik toko. Uang kartu tidak jatuh ke laci kasir. Uang itu sampai di rekening toko belakangan, sering sehari atau lebih setelah tap."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "jalan panjang tergambar dari bank kiri ke bank toko di kanan",
-     "scale": "map",
-     "motion": "garis jalan memanjang sampai bank toko menyala",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "SHOP'S BANK",
-       "word": "bank"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "laci kasir toko terbuka dan kosong, owner mengintip",
-     "scale": "place",
-     "motion": "laci meluncur keluar, debu kecil terbang, owner mengangkat alis",
-     "transition": "cut"
-    },
-    {
-     "sentence": 3,
-     "show": "matahari tenggelam dan terbit lagi di atas jalan, koin baru tiba di bank toko",
-     "scale": "map",
-     "motion": "siang jadi malam jadi pagi, koin masuk pintu bank toko",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "LATER",
-       "word": "later"
-      }
-     ],
-     "count": {
-      "value": 1,
-      "as": "timeline"
-     }
-    }
-   ]
-  },
-  {
-   "id": "s06",
-   "role": "body",
-   "narration": {
-    "en": "Picture your payment as a cart carrying one hundred coins down a toll road between those two banks. Each gate on that road keeps a few.",
-    "id": "Bayangkan pembayaranmu sebagai gerobak berisi seratus koin yang melaju di jalan tol antara dua bank itu. Setiap gerbang di jalan itu menahan beberapa koin."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "gerobak kayu berisi grid seratus koin berangkat dari bank",
-     "scale": "object",
-     "motion": "koin jatuh masuk gerobak sampai grid penuh, gerobak mulai menggelinding",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "100 coins",
-       "word": "hundred"
-      }
-     ],
-     "count": {
-      "value": 100,
-      "as": "dots"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "tiga gerbang tol berdiri di sepanjang jalan antara dua bank",
-     "scale": "map",
-     "motion": "palang gerbang turun naik berurutan, tiap gerbang berkedip",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "GATES",
-       "word": "gate"
-      }
-     ],
-     "count": {
-      "value": 3,
-      "as": "items"
-     }
-    }
-   ]
-  },
-  {
-   "id": "s07",
-   "role": "body",
-   "narration": {
-    "en": "The company that runs the road is the card network, such as Visa or Mastercard. Together those two carry more than eighty percent of American credit card spending.",
-    "id": "Perusahaan pengelola jalannya adalah jaringan kartu, misalnya Visa atau Mastercard. Berdua, mereka mengangkut lebih dari delapan puluh persen belanja kartu kredit di Amerika."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "menara pengawas di bukit dengan lampu sorot menyapu jalan",
-     "scale": "place",
-     "motion": "menara menyala, sorot menyusuri jalan",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "CARD NETWORK",
-       "word": "network"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "sepuluh gerobak di jalan, delapan lebih berubah warna sama",
-     "scale": "map",
-     "motion": "gerobak lewat bergantian, delapan menyala",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": ">80%",
-       "word": "eighty"
-      }
-     ],
-     "count": {
-      "value": 80,
-      "as": "dots"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://fool.com/money/research/average-credit-card-processing-fees-costs-america",
-     "claim": "Visa + Mastercard lebih dari 80% volume transaksi kartu kredit AS"
-    }
-   ]
-  },
-  {
-   "id": "s08",
-   "role": "body",
-   "narration": {
-    "en": "The network sets the toll prices and passes every message between the banks. Your coins stay in the hands of the banks at each end.",
-    "id": "Jaringan itu menetapkan banyak tarif tol dan meneruskan setiap pesan antar bank. Koinmu sendiri tetap dipegang bank di kedua ujung."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "gerbang tol memegang daftar harga gulung, amplop pesan melintas di atasnya",
-     "scale": "place",
-     "motion": "amplop terbang bolak-balik, menara mencapnya",
-     "transition": "cut"
-    },
-    {
-     "sentence": 2,
-     "show": "gerobak aman di antara dua bank yang mengulurkan tangan",
-     "scale": "map",
-     "motion": "kedua bank menarik dan menerima gerobak, menara hanya mengawasi",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "BANKS",
-       "word": "banks"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "s09",
-   "role": "body",
-   "narration": {
-    "en": "In a normal sale, the tolls come out of the cart, so your statement still says a hundred dollars. The shop is the one who receives less.",
-    "id": "Di penjualan biasa, tolnya diambil dari gerobak, jadi di tagihanmu tetap tertulis seratus dolar. Toko yang menerima lebih sedikit."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "tangan gerbang mengambil koin dari gerobak sementara 'you' memeluk dompet dan lembar tagihan",
-     "scale": "object",
-     "motion": "koin terangkat dari gerobak, dompet tidak tersentuh, tagihan menetap",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "FROM CART",
-       "word": "cart"
+      "id": "s03",
+      "role": "rehook",
+      "narration": {
+        "en": "Behind that one tap, two seventy-five leaves the sale. Two dollars twenty heads to your bank, and sixteen cents heads to Visa. The last thirty-nine cents goes to the company running the card machine and the shop's bank.",
+        "id": "Di balik satu tap itu, dua dolar tujuh puluh lima sen keluar dari penjualan. Dua dolar dua puluh menuju bankmu, dan enam belas sen menuju Visa. Sisa tiga puluh sembilan sen untuk perusahaan mesin kartu dan bank milik toko."
       },
-      {
-       "text": "$100",
-       "word": "hundred"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "terminal membeku, segenggam koin melompat keluar dari tumpukan seratus",
+          "scale": "object",
+          "motion": "koin terangkat dan berputar",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "$2.75",
+              "word": "seventy-five"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "koin terbelah dua aliran: besar ke gedung bank 'you', kecil ke menara gerbang",
+          "scale": "map",
+          "motion": "dua aliran koin melengkung ke tujuan, bank membesar saat menerima",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "$2.20",
+              "word": "twenty"
+            },
+            {
+              "text": "16¢",
+              "word": "sixteen"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "dua gedung kecil di samping toko: server perusahaan terminal dan bank toko",
+          "scale": "place",
+          "motion": "sisa koin bergulir ke server lalu sebagian lanjut ke bank toko",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "39¢",
+              "word": "thirty-nine"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        },
+        {
+          "url": "https://wellsfargo.com/merchantpassthroughfees",
+          "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 13003
       }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "dua panel: lembar tagihan 'you' dan tangan owner dengan koin lebih sedikit",
-     "scale": "place",
-     "motion": "tumpukan owner menyusut",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "LESS",
-       "word": "less"
-      }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
-    }
-   ]
-  },
-  {
-   "id": "s10",
-   "role": "body",
-   "narration": {
-    "en": "The shop agreed to that deal the day it put a card sticker on its door.",
-    "id": "Toko menyetujui aturan itu sejak hari ia menempel stiker kartu di pintunya."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "owner menempelkan stiker kartu polos di pintu toko",
-     "scale": "place",
-     "motion": "stiker ditekan, kilap menyapu pintu, gerbang kecil muncul di kejauhan",
-     "transition": "iris"
-    }
-   ]
-  },
-  {
-   "id": "s11",
-   "role": "body",
-   "narration": {
-    "en": "One more stop sits right next to the shop. This business runs the card machine and talks to the road for the shop. Call it the terminal company.",
-    "id": "Masih ada satu pemberhentian di sebelah toko. Usaha ini mengurus mesin kartu dan bicara ke jalan tol atas nama toko. Sebut saja perusahaan terminal."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "peta: titik baru menyala di samping toko",
-     "scale": "map",
-     "motion": "pin jatuh di samping toko",
-     "transition": "cut"
-    },
-    {
-     "sentence": 2,
-     "show": "gedung server bertokoh dengan headset, kabel ke mesin kartu toko dan ke jalan",
-     "scale": "place",
-     "motion": "pesan kecil berlari lewat kabel dari mesin ke jalan",
-     "transition": "iris"
-    },
-    {
-     "sentence": 3,
-     "show": "server mengangkat papan nama kosong lalu label menempel",
-     "scale": "object",
-     "motion": "server mengangguk",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "TERMINAL CO",
-       "word": "terminal"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "s12",
-   "role": "rehook",
-   "narration": {
-    "en": "So four hands wait for coins from your cart. Many people would guess that Visa grabs the most. Of the slices we can price, Visa's is the smallest, and your own bank takes the biggest.",
-    "id": "Jadi ada empat tangan yang menunggu koin dari gerobakmu. Banyak orang mungkin menebak Visa mengambil paling banyak. Dari potongan yang bisa dihitung, bagian Visa paling kecil, dan bankmu sendiri mengambil paling besar."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "empat tangan terulur di sepanjang jalan",
-     "scale": "map",
-     "motion": "tangan muncul satu per satu saat gerobak mendekat",
-     "transition": "wipe",
-     "count": {
-      "value": 4,
-      "as": "items"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "panel tebakan: menara membawa karung raksasa, warnanya pudar",
-     "scale": "place",
-     "motion": "karung membengkak lalu diberi garis coret",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "GUESS",
-       "word": "guess"
-      }
-     ]
-    },
-    {
-     "sentence": 3,
-     "show": "panel benar: karung menara menciut, karung bank 'you' membesar",
-     "scale": "map",
-     "motion": "kamera berayun dari menara ke bank",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "SMALLEST",
-       "word": "smallest"
+      "id": "s04",
+      "role": "body",
+      "narration": {
+        "en": "Here is the trip those coins take, on one map. Your money starts here, at your bank.",
+        "id": "Ini perjalanan koin-koin itu dalam satu peta. Uangmu berangkat dari sini, dari bankmu."
       },
-      {
-       "text": "BIGGEST",
-       "word": "biggest"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta kota dari atas: bank di kiri, toko di tengah, bank toko di kanan, bukit di belakang",
+          "scale": "map",
+          "motion": "kamera mundur tinggi, bangunan muncul satu per satu",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "bank 'you' dengan pintu brankas berwajah ramah",
+          "scale": "place",
+          "motion": "pintu brankas terbuka, koin berbaris keluar",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "YOUR BANK",
+              "word": "bank"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 5201
       }
-     ],
-     "count": {
-      "value": 3,
-      "as": "split"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
     },
     {
-     "url": "https://wellsfargo.com/merchantpassthroughfees",
-     "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-    },
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s13",
-   "role": "body",
-   "narration": {
-    "en": "The first coins never leave your side of town. When your bank pays toward the shop, it sends ninety-seven dollars and eighty cents. Two dollars twenty stays behind.",
-    "id": "Koin pertama tidak pernah keluar dari ujung jalanmu. Saat bankmu membayar ke arah toko, yang dikirim sembilan puluh tujuh dolar delapan puluh sen. Dua dolar dua puluh tertinggal."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "gerobak masih di halaman bank, beberapa koin menempel ke dinding bank",
-     "scale": "place",
-     "motion": "koin bergetar ditarik magnet bank",
-     "transition": "iris"
-    },
-    {
-     "sentence": 2,
-     "show": "gerobak berangkat dengan grid koin yang sedikit berkurang",
-     "scale": "object",
-     "motion": "gerobak menggelinding keluar halaman",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "$97.80",
-       "word": "ninety-seven"
-      }
-     ]
-    },
-    {
-     "sentence": 3,
-     "show": "dua koin lebih masuk brankas bank 'you'",
-     "scale": "place",
-     "motion": "koin meloncat ke brankas, pintu menutup puas",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "$2.20",
-       "word": "twenty"
-      }
-     ],
-     "faces": {
-      "bank": "smug"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-    }
-   ]
-  },
-  {
-   "id": "s14",
-   "role": "body",
-   "narration": {
-    "en": "That cut is called interchange: a fee the shop's side pays your bank whenever its card is used. On a sale like this one, it is by far the largest slice.",
-    "id": "Potongan itu namanya interchange: biaya yang dibayar pihak toko ke bankmu setiap kali kartunya dipakai. Di penjualan seperti ini, itulah potongan yang jauh paling besar."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "tumpukan 2.20 di tangan bank, panah dari sisi toko ke bank",
-     "scale": "object",
-     "motion": "koin mengalir dari arah toko ke tangan bank",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "INTERCHANGE",
-       "word": "interchange"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "tiga tumpukan berdampingan: bank paling tinggi",
-     "scale": "object",
-     "motion": "tumpukan tumbuh, yang bank menjulang",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "LARGEST",
-       "word": "largest"
-      }
-     ],
-     "count": {
-      "value": 3,
-      "as": "split"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://nav.com/blog/credit-card-processing-fees",
-     "claim": "Interchange porsi terbesar biaya kartu"
-    },
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-    }
-   ]
-  },
-  {
-   "id": "s15",
-   "role": "body",
-   "narration": {
-    "en": "The price is public. Visa prints it in a long table, sorted by card type, by kind of shop, and by whether the card was tapped or typed in.",
-    "id": "Tarifnya terbuka. Visa memuatnya di tabel panjang, diurutkan menurut jenis kartu, jenis toko, dan apakah kartunya di-tap atau nomornya diketik."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "menara membuka gulungan kertas raksasa",
-     "scale": "place",
-     "motion": "gulungan meluncur turun dari bukit",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "PUBLIC",
-       "word": "public"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "baris-baris tabel sebagai pita warna dengan ikon kartu, toko, dan jari",
-     "scale": "object",
-     "motion": "kaca pembesar turun, pita disorot saat disebut",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "CARD",
-       "word": "card"
+      "id": "s05",
+      "role": "body",
+      "narration": {
+        "en": "It ends over there, at the shop's bank. Card money doesn't drop into the till. It reaches the shop's account later, often a day or more after the tap.",
+        "id": "Ujungnya di sana, di bank milik toko. Uang kartu tidak jatuh ke laci kasir. Uang itu sampai di rekening toko belakangan, sering sehari atau lebih setelah tap."
       },
-      {
-       "text": "SHOP",
-       "word": "shop"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "jalan panjang tergambar dari bank kiri ke bank toko di kanan",
+          "scale": "map",
+          "motion": "garis jalan memanjang sampai bank toko menyala",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "SHOP'S BANK",
+              "word": "bank"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "laci kasir toko terbuka dan kosong, owner mengintip",
+          "scale": "place",
+          "motion": "laci meluncur keluar, debu kecil terbang, owner mengangkat alis",
+          "transition": "cut"
+        },
+        {
+          "sentence": 3,
+          "show": "matahari tenggelam dan terbit lagi di atas jalan, koin baru tiba di bank toko",
+          "scale": "map",
+          "motion": "siang jadi malam jadi pagi, koin masuk pintu bank toko",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "LATER",
+              "word": "later"
+            }
+          ],
+          "count": {
+            "value": 1,
+            "as": "timeline"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 9520
+      }
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": {
+        "en": "Picture your payment as a cart carrying one hundred coins down a toll road between those two banks. Each gate on that road keeps a few.",
+        "id": "Bayangkan pembayaranmu sebagai gerobak berisi seratus koin yang melaju di jalan tol antara dua bank itu. Setiap gerbang di jalan itu menahan beberapa koin."
       },
-      {
-       "text": "TAPPED",
-       "word": "tapped"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gerobak kayu berisi grid seratus koin berangkat dari bank",
+          "scale": "object",
+          "motion": "koin jatuh masuk gerobak sampai grid penuh, gerobak mulai menggelinding",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "100 coins",
+              "word": "hundred"
+            }
+          ],
+          "count": {
+            "value": 100,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "tiga gerbang tol berdiri di sepanjang jalan antara dua bank",
+          "scale": "map",
+          "motion": "palang gerbang turun naik berurutan, tiap gerbang berkedip",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "GATES",
+              "word": "gate"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "items"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 7338
       }
-     ]
-    }
-   ],
-   "sources": [
+    },
     {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-    }
-   ]
-  },
-  {
-   "id": "s16",
-   "role": "body",
-   "narration": {
-    "en": "At the standard store rate, a basic credit card costs one point five one percent plus ten cents. On your shoes, that is a dollar sixty-one.",
-    "id": "Di tarif toko standar, kartu kredit biasa dikenai 1,51 persen plus sepuluh sen. Untuk sepatumu, itu satu dolar enam puluh satu sen."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "kartu polos di timbangan, sekeping persen dan sekeping koin jatuh",
-     "scale": "object",
-     "motion": "keping persen lalu koin 10 sen mendarat",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "1.51%",
-       "word": "percent"
+      "id": "s07",
+      "role": "body",
+      "narration": {
+        "en": "The company that runs the road is the card network, such as Visa or Mastercard. Together those two carry more than eighty percent of American credit card spending.",
+        "id": "Perusahaan pengelola jalannya adalah jaringan kartu, misalnya Visa atau Mastercard. Berdua, mereka mengangkut lebih dari delapan puluh persen belanja kartu kredit di Amerika."
       },
-      {
-       "text": "+10¢",
-       "word": "ten"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "menara pengawas di bukit dengan lampu sorot menyapu jalan",
+          "scale": "place",
+          "motion": "menara menyala, sorot menyusuri jalan",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "CARD NETWORK",
+              "word": "network"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "sepuluh gerobak di jalan, delapan lebih berubah warna sama",
+          "scale": "map",
+          "motion": "gerobak lewat bergantian, delapan menyala",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": ">80%",
+              "word": "eighty"
+            }
+          ],
+          "count": {
+            "value": 80,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://fool.com/money/research/average-credit-card-processing-fees-costs-america",
+          "claim": "Visa + Mastercard lebih dari 80% volume transaksi kartu kredit AS"
+        }
+      ],
+      "duration_ms": {
+        "en": 9845
       }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "gerobak A di samping sepatu, tumpukan kecil dipisahkan",
-     "scale": "object",
-     "motion": "koin keluar dari gerobak A dan ditumpuk",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "$1.61",
-       "word": "sixty-one"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-    }
-   ]
-  },
-  {
-   "id": "s17",
-   "role": "body",
-   "narration": {
-    "en": "Swap in your premium rewards card, and the rate becomes two point one percent plus ten cents. Same shoes, same shop, and now the toll is two dollars twenty. Some small businesses qualify for cheaper rows, but our shoe store pays the standard one.",
-    "id": "Ganti dengan kartu premium berhadiah milikmu, tarifnya jadi 2,1 persen plus sepuluh sen. Sepatunya sama, tokonya sama, dan tolnya jadi dua dolar dua puluh. Sebagian usaha kecil dapat tarif lebih murah, tetapi toko sepatu kita membayar tarif standar."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "kartu berkilau menggantikan kartu polos di timbangan",
-     "scale": "object",
-     "motion": "kartu berputar masuk, jarum timbangan naik",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "2.10%",
-       "word": "percent"
+      "id": "s08",
+      "role": "body",
+      "narration": {
+        "en": "The network sets the toll prices and passes every message between the banks. Your coins stay in the hands of the banks at each end.",
+        "id": "Jaringan itu menetapkan banyak tarif tol dan meneruskan setiap pesan antar bank. Koinmu sendiri tetap dipegang bank di kedua ujung."
       },
-      {
-       "text": "+10¢",
-       "word": "ten"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gerbang tol memegang daftar harga gulung, amplop pesan melintas di atasnya",
+          "scale": "place",
+          "motion": "amplop terbang bolak-balik, menara mencapnya",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "gerobak aman di antara dua bank yang mengulurkan tangan",
+          "scale": "map",
+          "motion": "kedua bank menarik dan menerima gerobak, menara hanya mengawasi",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "BANKS",
+              "word": "banks"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 7198
       }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "gerobak A dan B berdampingan, tumpukan B lebih tinggi",
-     "scale": "object",
-     "motion": "tumpukan B tumbuh melewati A",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "$1.61",
-       "word": "shoes"
+      "id": "s09",
+      "role": "body",
+      "narration": {
+        "en": "In a normal sale, the tolls come out of the cart, so your statement still says a hundred dollars. The shop is the one who receives less.",
+        "id": "Di penjualan biasa, tolnya diambil dari gerobak, jadi di tagihanmu tetap tertulis seratus dolar. Toko yang menerima lebih sedikit."
       },
-      {
-       "text": "$2.20",
-       "word": "twenty"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tangan gerbang mengambil koin dari gerobak sementara 'you' memeluk dompet dan lembar tagihan",
+          "scale": "object",
+          "motion": "koin terangkat dari gerobak, dompet tidak tersentuh, tagihan menetap",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "FROM CART",
+              "word": "cart"
+            },
+            {
+              "text": "$100",
+              "word": "hundred"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "dua panel: lembar tagihan 'you' dan tangan owner dengan koin lebih sedikit",
+          "scale": "place",
+          "motion": "tumpukan owner menyusut",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "LESS",
+              "word": "less"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 7570
       }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
     },
     {
-     "sentence": 3,
-     "show": "toko kecil dengan harga rendah di sebelah toko sepatu dengan harga standar",
-     "scale": "place",
-     "motion": "lampu pindah dari toko kecil ke toko sepatu",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "STANDARD",
-       "word": "standard"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-    },
-    {
-     "url": "https://www.helcim.com/visa-usa-interchange-rates/",
-     "claim": "Merchant kecil yang memenuhi syarat punya baris tarif lebih rendah"
-    }
-   ]
-  },
-  {
-   "id": "s18",
-   "role": "rehook",
-   "narration": {
-    "en": "Why would your bank like the shop to pay more? You need to know something about how your bank earns.",
-    "id": "Kenapa bankmu senang kalau toko membayar lebih mahal? Kamu perlu tahu satu hal soal cara bankmu mencari uang."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "bank 'you' berwajah menatap toko sambil menggosok tangan",
-     "scale": "place",
-     "motion": "kamera mendekat, mata bank melirik tumpukan toko",
-     "transition": "push",
-     "faces": {
-      "bank": "smug"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "masuk ke dalam brankas: dua pipa pemasukan, satu bunga satu tap",
-     "scale": "inside",
-     "motion": "pintu terbuka, dua pipa menyala bergantian",
-     "transition": "push"
-    }
-   ]
-  },
-  {
-   "id": "s19",
-   "role": "body",
-   "narration": {
-    "en": "Say you pay your card off in full every month. Then your bank collects no interest on your shopping. For customers like that, the fee on each tap is one of the main ways the bank gets paid.",
-    "id": "Misalnya tagihan kartumu selalu kamu lunasi penuh tiap bulan. Maka bank tidak memungut bunga dari belanjamu. Untuk nasabah seperti itu, biaya tiap tap adalah salah satu sumber utama pemasukan bank."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "kalender dengan cap lunas di tiap bulan",
-     "scale": "object",
-     "motion": "cap menghantam bulan demi bulan",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "PAID OFF",
-       "word": "full"
-      }
-     ],
-     "count": {
-      "value": 3,
-      "as": "timeline"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "pipa bunga kering, keran berkarat",
-     "scale": "inside",
-     "motion": "setetes terakhir jatuh lalu berhenti, bank cemberut",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "NO INTEREST",
-       "word": "interest"
-      }
-     ],
-     "faces": {
-      "bank": "sad"
-     }
-    },
-    {
-     "sentence": 3,
-     "show": "pipa tap mengalirkan koin deras",
-     "scale": "inside",
-     "motion": "koin mengucur setiap ada bunyi tap, bank tersenyum",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "TAP FEE",
-       "word": "fee"
-      }
-     ],
-     "faces": {
-      "bank": "happy"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://staxpayments.com/blog/visa-interchange-rates/",
-     "claim": "Rewards didanai sebagian oleh interchange"
-    }
-   ]
-  },
-  {
-   "id": "s20",
-   "role": "body",
-   "narration": {
-    "en": "So banks fight for the top spot in your wallet, and that same fee helps pay for the fight. Points, miles, cashback. A premium card promises more of them, and it carries a higher toll.",
-    "id": "Jadi bank berebut tempat teratas di dompetmu, dan biaya yang sama ikut membiayai perebutan itu. Poin, miles, cashback. Kartu premium menjanjikan lebih banyak, dan tolnya lebih tinggi."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "dompet terbuka, beberapa kartu berwajah saling sikut untuk slot teratas",
-     "scale": "object",
-     "motion": "kartu melompat berebut posisi, koin kecil mengisi bahan bakar mereka",
-     "transition": "iris",
-     "labels": [
-      {
-       "text": "WALLET",
-       "word": "wallet"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "hadiah kecil meletus dari kartu: bintang, pesawat kertas, koin balik",
-     "scale": "object",
-     "motion": "tiap hadiah muncul di katanya",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "POINTS",
-       "word": "Points"
+      "id": "s10",
+      "role": "body",
+      "narration": {
+        "en": "The shop agreed to that deal the day it put a card sticker on its door.",
+        "id": "Toko menyetujui aturan itu sejak hari ia menempel stiker kartu di pintunya."
       },
-      {
-       "text": "MILES",
-       "word": "miles"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "owner menempelkan stiker kartu polos di pintu toko",
+          "scale": "place",
+          "motion": "stiker ditekan, kilap menyapu pintu, gerbang kecil muncul di kejauhan",
+          "transition": "iris"
+        }
+      ],
+      "duration_ms": {
+        "en": 3529
+      }
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": {
+        "en": "One more stop sits right next to the shop. This business runs the card machine and talks to the road for the shop. Call it the terminal company.",
+        "id": "Masih ada satu pemberhentian di sebelah toko. Usaha ini mengurus mesin kartu dan bicara ke jalan tol atas nama toko. Sebut saja perusahaan terminal."
       },
-      {
-       "text": "CASHBACK",
-       "word": "cashback"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta: titik baru menyala di samping toko",
+          "scale": "map",
+          "motion": "pin jatuh di samping toko",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "gedung server bertokoh dengan headset, kabel ke mesin kartu toko dan ke jalan",
+          "scale": "place",
+          "motion": "pesan kecil berlari lewat kabel dari mesin ke jalan",
+          "transition": "iris"
+        },
+        {
+          "sentence": 3,
+          "show": "server mengangkat papan nama kosong lalu label menempel",
+          "scale": "object",
+          "motion": "server mengangguk",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "TERMINAL CO",
+              "word": "terminal"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 8034
       }
-     ],
-     "count": {
-      "value": 3,
-      "as": "items"
-     }
     },
     {
-     "sentence": 3,
-     "show": "kartu premium besar membawa karung hadiah, di belakangnya palang tol lebih tinggi",
-     "scale": "object",
-     "motion": "karung dan palang naik bersamaan",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "PREMIUM",
-       "word": "premium"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://staxpayments.com/blog/visa-interchange-rates/",
-     "claim": "Rewards didanai sebagian oleh interchange"
-    }
-   ]
-  },
-  {
-   "id": "s21",
-   "role": "body",
-   "narration": {
-    "en": "Say your card pays one and a half percent back. A dollar fifty of that two-twenty rolls home to you as rewards. Your bank holds on to seventy cents.",
-    "id": "Misalnya kartumu memberi cashback satu setengah persen. Satu dolar lima puluh dari dua dolar dua puluh tadi kembali ke kamu sebagai hadiah. Bankmu menyimpan tujuh puluh sen."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "kartu 'you' dengan roda cashback kecil",
-     "scale": "object",
-     "motion": "roda berputar dan berhenti di satu setengah",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "1.5% BACK",
-       "word": "percent"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "tumpukan 2.20 di bank terbelah, sebagian besar menggelinding ke 'you'",
-     "scale": "place",
-     "motion": "koin bergulir kembali ke dompet 'you'",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "$1.50",
-       "word": "fifty"
-      }
-     ],
-     "faces": {
-      "you": "happy"
-     }
-    },
-    {
-     "sentence": 3,
-     "show": "sisa koin kecil dipeluk bank",
-     "scale": "object",
-     "motion": "bank menarik sisa ke brankas",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "70¢",
-       "word": "seventy"
-      }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
-    }
-   ]
-  },
-  {
-   "id": "s22",
-   "role": "body",
-   "narration": {
-    "en": "Look where those rewards started. They came out of the cart that was headed for the shop.",
-    "id": "Lihat dari mana hadiah itu berawal. Asalnya dari gerobak yang sedang menuju toko."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "peta dengan jejak koin hadiah menyala mundur",
-     "scale": "map",
-     "motion": "jejak diputar balik dari dompet 'you'",
-     "transition": "wipe"
-    },
-    {
-     "sentence": 2,
-     "show": "jejak berakhir di gerobak, owner menatap koin yang pergi",
-     "scale": "object",
-     "motion": "koin hantu keluar dari gerobak, owner mengikuti dengan mata",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "SHOP'S CART",
-       "word": "cart"
-      }
-     ],
-     "faces": {
-      "owner": "sad"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://staxpayments.com/blog/visa-interchange-rates/",
-     "claim": "Rewards didanai sebagian oleh interchange"
-    }
-   ]
-  },
-  {
-   "id": "s23",
-   "role": "body",
-   "narration": {
-    "en": "Now the cart reaches the middle gate. Visa bills the shop's side point one four percent of the sale, plus about two cents for handling the approval request. Together, that is sixteen cents.",
-    "id": "Sekarang gerobak sampai di gerbang tengah. Visa menagih pihak toko 0,14 persen dari nilai belanja, ditambah sekitar dua sen untuk mengurus permintaan persetujuan. Totalnya enam belas sen."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "gerobak melambat di gerbang menara",
-     "scale": "map",
-     "motion": "gerobak berhenti, palang turun",
-     "transition": "cut"
-    },
-    {
-     "sentence": 2,
-     "show": "dua keping jatuh ke kotak tol: keping persen dan dua sen, amplop persetujuan melintas",
-     "scale": "object",
-     "motion": "keping jatuh di katanya, amplop dicap",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "0.14%",
-       "word": "percent"
+      "id": "s12",
+      "role": "rehook",
+      "narration": {
+        "en": "So four hands wait for coins from your cart. Many people would guess that Visa grabs the most. Of the slices we can price, Visa's is the smallest, and your own bank takes the biggest.",
+        "id": "Jadi ada empat tangan yang menunggu koin dari gerobakmu. Banyak orang mungkin menebak Visa mengambil paling banyak. Dari potongan yang bisa dihitung, bagian Visa paling kecil, dan bankmu sendiri mengambil paling besar."
       },
-      {
-       "text": "+2¢",
-       "word": "cents"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "empat tangan terulur di sepanjang jalan",
+          "scale": "map",
+          "motion": "tangan muncul satu per satu saat gerobak mendekat",
+          "transition": "wipe",
+          "count": {
+            "value": 4,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "panel tebakan: menara membawa karung raksasa, warnanya pudar",
+          "scale": "place",
+          "motion": "karung membengkak lalu diberi garis coret",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "GUESS",
+              "word": "guess"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "panel benar: karung menara menciut, karung bank 'you' membesar",
+          "scale": "map",
+          "motion": "kamera berayun dari menara ke bank",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "SMALLEST",
+              "word": "smallest"
+            },
+            {
+              "text": "BIGGEST",
+              "word": "biggest"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        },
+        {
+          "url": "https://wellsfargo.com/merchantpassthroughfees",
+          "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 10449
       }
-     ]
     },
     {
-     "sentence": 3,
-     "show": "dua keping menyatu jadi satu tumpukan kecil",
-     "scale": "object",
-     "motion": "keping melebur, palang naik",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "16¢",
-       "word": "sixteen"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://wellsfargo.com/merchantpassthroughfees",
-     "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-    }
-   ]
-  },
-  {
-   "id": "s24",
-   "role": "rehook",
-   "narration": {
-    "en": "Sixteen cents looks tiny, so zoom all the way out. In 2025, Visa and Mastercard cards issued in America carried almost ten trillion dollars of purchases.",
-    "id": "Enam belas sen terlihat kecil, jadi coba lihat dari jauh. Pada 2025, kartu Visa dan Mastercard terbitan Amerika membawa belanja hampir sepuluh triliun dolar."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "satu keping 16 sen mengecil saat kamera mundur",
-     "scale": "object",
-     "motion": "kamera mundur cepat, keping jadi titik",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "16¢",
-       "word": "Sixteen"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "seluruh negeri penuh jalan tol bercahaya, ribuan gerobak",
-     "scale": "map",
-     "motion": "gerobak membanjiri jalan, penghitung naik",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "~$10 TRILLION",
-       "word": "ten"
-      }
-     ],
-     "count": {
-      "value": 10,
-      "as": "items"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://nilsonreport.com/articles/mastercard-and-visa-cards-in-the-us-2025/",
-     "claim": "Kartu Visa dan Mastercard terbitan AS: $9,986 triliun volume belanja 2025 (kredit, debit, prepaid)"
-    }
-   ]
-  },
-  {
-   "id": "s25",
-   "role": "body",
-   "narration": {
-    "en": "The last stop is beside the shop. Many small shops never deal with each party on this road. They pay the terminal company one flat price, and it settles up with everyone else.",
-    "id": "Pemberhentian terakhir ada di sebelah toko. Banyak toko kecil tidak pernah berurusan dengan tiap pihak di jalan ini. Mereka membayar satu tarif rata ke perusahaan terminal, lalu perusahaan itu yang membereskan sisanya."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "gerobak tiba di gedung server dekat toko",
-     "scale": "map",
-     "motion": "gerobak parkir, lampu server menyala",
-     "transition": "iris"
-    },
-    {
-     "sentence": 2,
-     "show": "owner dikelilingi pintu bank dan menara yang tertutup, ia berjalan melewatinya",
-     "scale": "place",
-     "motion": "owner melenggang lewat tanpa mengetuk",
-     "transition": "cut"
-    },
-    {
-     "sentence": 3,
-     "show": "owner menyerahkan satu amplop ke server, server membaginya",
-     "scale": "place",
-     "motion": "satu amplop masuk, beberapa keluar",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "FLAT PRICE",
-       "word": "flat"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s26",
-   "role": "body",
-   "narration": {
-    "en": "Stripe, one such company, lists two point seven percent plus five cents for an in-person card. On your hundred dollars, that is two seventy-five. The shop sees one clean price.",
-    "id": "Stripe, salah satu perusahaan seperti itu, memasang tarif 2,7 persen plus lima sen untuk kartu yang dipakai langsung di toko. Dari seratus dolarmu, itu dua dolar tujuh puluh lima sen. Toko hanya melihat satu harga."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "server memajang satu tag harga besar",
-     "scale": "object",
-     "motion": "tag berayun turun",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "2.7%",
-       "word": "percent"
+      "id": "s13",
+      "role": "body",
+      "narration": {
+        "en": "The first coins never leave your side of town. When your bank pays toward the shop, it sends ninety-seven dollars and eighty cents. Two dollars twenty stays behind.",
+        "id": "Koin pertama tidak pernah keluar dari ujung jalanmu. Saat bankmu membayar ke arah toko, yang dikirim sembilan puluh tujuh dolar delapan puluh sen. Dua dolar dua puluh tertinggal."
       },
-      {
-       "text": "+5¢",
-       "word": "five"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gerobak masih di halaman bank, beberapa koin menempel ke dinding bank",
+          "scale": "place",
+          "motion": "koin bergetar ditarik magnet bank",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "gerobak berangkat dengan grid koin yang sedikit berkurang",
+          "scale": "object",
+          "motion": "gerobak menggelinding keluar halaman",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "$97.80",
+              "word": "ninety-seven"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "dua koin lebih masuk brankas bank 'you'",
+          "scale": "place",
+          "motion": "koin meloncat ke brankas, pintu menutup puas",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "$2.20",
+              "word": "twenty"
+            }
+          ],
+          "faces": {
+            "bank": "smug"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        }
+      ],
+      "duration_ms": {
+        "en": 8963
       }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "koin dari gerobak membentuk satu tumpukan di tag",
-     "scale": "object",
-     "motion": "tumpukan terkumpul",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "$2.75",
-       "word": "seventy-five"
-      }
-     ]
-    },
-    {
-     "sentence": 3,
-     "show": "owner menatap satu amplop tunggal",
-     "scale": "place",
-     "motion": "amplop mendarat di meja owner",
-     "transition": "wipe"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s27",
-   "role": "body",
-   "narration": {
-    "en": "Out of that, your bank's two-twenty and Visa's sixteen cents get paid.",
-    "id": "Dari situ, bagian dua dolar dua puluh untuk bankmu dan enam belas sen untuk Visa dibayarkan."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "tumpukan di server pecah jadi dua aliran ke bank dan menara",
-     "scale": "map",
-     "motion": "dua aliran koin berjalan menyusuri jalan",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "$2.20",
-       "word": "two-twenty"
+      "id": "s14",
+      "role": "body",
+      "narration": {
+        "en": "That cut is called interchange: a fee the shop's side pays your bank whenever its card is used. On a sale like this one, it is by far the largest slice.",
+        "id": "Potongan itu namanya interchange: biaya yang dibayar pihak toko ke bankmu setiap kali kartunya dipakai. Di penjualan seperti ini, itulah potongan yang jauh paling besar."
       },
-      {
-       "text": "16¢",
-       "word": "sixteen"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tumpukan 2.20 di tangan bank, panah dari sisi toko ke bank",
+          "scale": "object",
+          "motion": "koin mengalir dari arah toko ke tangan bank",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "INTERCHANGE",
+              "word": "interchange"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "tiga tumpukan berdampingan: bank paling tinggi",
+          "scale": "object",
+          "motion": "tumpukan tumbuh, yang bank menjulang",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "LARGEST",
+              "word": "largest"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://nav.com/blog/credit-card-processing-fees",
+          "claim": "Interchange porsi terbesar biaya kartu"
+        },
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        }
+      ],
+      "duration_ms": {
+        "en": 9660
       }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
     },
     {
-     "url": "https://wellsfargo.com/merchantpassthroughfees",
-     "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-    }
-   ]
-  },
-  {
-   "id": "s28",
-   "role": "body",
-   "narration": {
-    "en": "The thirty-nine cents left over is the markup, the price the shop's side charges for its own work. The terminal company and the shop's bank share it, and their split isn't on the price tag. This is the part that shopping around or bargaining can move.",
-    "id": "Sisa tiga puluh sembilan sen adalah markup, harga yang diminta pihak toko untuk jasanya sendiri. Perusahaan terminal dan bank toko berbagi bagian itu, dan pembagiannya tidak tertulis di label harga. Bagian inilah yang bisa digeser lewat membandingkan atau menawar."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "sisa koin kecil di meja server",
-     "scale": "object",
-     "motion": "server menyisihkan sisa ke piringnya",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "39¢",
-       "word": "thirty-nine"
+      "id": "s15",
+      "role": "body",
+      "narration": {
+        "en": "The price is public. Visa prints it in a long table, sorted by card type, by kind of shop, and by whether the card was tapped or typed in.",
+        "id": "Tarifnya terbuka. Visa memuatnya di tabel panjang, diurutkan menurut jenis kartu, jenis toko, dan apakah kartunya di-tap atau nomornya diketik."
       },
-      {
-       "text": "MARKUP",
-       "word": "markup"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "menara membuka gulungan kertas raksasa",
+          "scale": "place",
+          "motion": "gulungan meluncur turun dari bukit",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "PUBLIC",
+              "word": "public"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "baris-baris tabel sebagai pita warna dengan ikon kartu, toko, dan jari",
+          "scale": "object",
+          "motion": "kaca pembesar turun, pita disorot saat disebut",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "CARD",
+              "word": "card"
+            },
+            {
+              "text": "SHOP",
+              "word": "shop"
+            },
+            {
+              "text": "TAPPED",
+              "word": "tapped"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        }
+      ],
+      "duration_ms": {
+        "en": 8731
       }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "server dan bank toko membagi koin di balik tirai",
-     "scale": "place",
-     "motion": "tirai menutup, bayangan koin berpindah",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "PRIVATE",
-       "word": "split"
-      }
-     ]
-    },
-    {
-     "sentence": 3,
-     "show": "owner dan server tarik-menarik satu koin",
-     "scale": "object",
-     "motion": "koin tertarik ke kiri dan kanan",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "NEGOTIABLE",
-       "word": "bargaining"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.spark.money/glossary/assessment-fee",
-     "claim": "Markup processor bagian yang bisa dinegosiasi"
-    },
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s29",
-   "role": "body",
-   "narration": {
-    "en": "Now swap the basic card back in. The shop still pays two seventy-five, but your bank's slice drops. The shop's side keeps ninety-eight cents instead of thirty-nine.",
-    "id": "Sekarang pasang lagi kartu biasa. Toko tetap membayar dua dolar tujuh puluh lima sen, tetapi bagian bankmu turun. Pihak toko menyimpan sembilan puluh delapan sen, bukan tiga puluh sembilan."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "kartu polos masuk lagi ke terminal",
-     "scale": "object",
-     "motion": "kartu berkilau ditukar kartu polos",
-     "transition": "wipe"
-    },
-    {
-     "sentence": 2,
-     "show": "label toko tetap, karung bank menyusut",
-     "scale": "map",
-     "motion": "tag harga diam, karung bank mengecil",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "$2.75",
-       "word": "seventy-five"
-      }
-     ]
-    },
-    {
-     "sentence": 3,
-     "show": "piring server membesar, dua panel premium dan biasa",
-     "scale": "object",
-     "motion": "koin pindah ke piring server",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "39¢",
-       "word": "thirty-nine"
+      "id": "s16",
+      "role": "body",
+      "narration": {
+        "en": "At the standard store rate, a basic credit card costs one point five one percent plus ten cents. On your shoes, that is a dollar sixty-one.",
+        "id": "Di tarif toko standar, kartu kredit biasa dikenai 1,51 persen plus sepuluh sen. Untuk sepatumu, itu satu dolar enam puluh satu sen."
       },
-      {
-       "text": "98¢",
-       "word": "ninety-eight"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kartu polos di timbangan, sekeping persen dan sekeping koin jatuh",
+          "scale": "object",
+          "motion": "keping persen lalu koin 10 sen mendarat",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "1.51%",
+              "word": "percent"
+            },
+            {
+              "text": "+10¢",
+              "word": "ten"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "gerobak A di samping sepatu, tumpukan kecil dipisahkan",
+          "scale": "object",
+          "motion": "koin keluar dari gerobak A dan ditumpuk",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "$1.61",
+              "word": "sixty-one"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        }
+      ],
+      "duration_ms": {
+        "en": 8916
       }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
     },
     {
-     "url": "https://wellsfargo.com/merchantpassthroughfees",
-     "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-    },
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s30",
-   "role": "rehook",
-   "narration": {
-    "en": "A flat price can even backfire on the company charging it. Sell a five-dollar pair of socks to your premium card, and watch the ten cents.",
-    "id": "Tarif rata bahkan bisa merugikan perusahaan yang memasangnya. Jual kaus kaki lima dolar ke kartu premiummu, lalu perhatikan sepuluh sen itu."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "server terpeleset di atas tumpukan kaus kaki",
-     "scale": "place",
-     "motion": "server oleng, koin berhamburan",
-     "transition": "cut",
-     "faces": {
-      "terminal": "shock"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "kaus kaki di kasir, satu koin 10 sen berukuran besar di samping koin kecil lain",
-     "scale": "object",
-     "motion": "koin 10 sen membesar saat disebut",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "$5",
-       "word": "five-dollar"
+      "id": "s17",
+      "role": "body",
+      "narration": {
+        "en": "Swap in your premium rewards card, and the rate becomes two point one percent plus ten cents. Same shoes, same shop, and now the toll is two dollars twenty. Some small businesses qualify for cheaper rows, but our shoe store pays the standard one.",
+        "id": "Ganti dengan kartu premium berhadiah milikmu, tarifnya jadi 2,1 persen plus sepuluh sen. Sepatunya sama, tokonya sama, dan tolnya jadi dua dolar dua puluh. Sebagian usaha kecil dapat tarif lebih murah, tetapi toko sepatu kita membayar tarif standar."
       },
-      {
-       "text": "10¢",
-       "word": "ten"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kartu berkilau menggantikan kartu polos di timbangan",
+          "scale": "object",
+          "motion": "kartu berputar masuk, jarum timbangan naik",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "2.10%",
+              "word": "percent"
+            },
+            {
+              "text": "+10¢",
+              "word": "ten"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "gerobak A dan B berdampingan, tumpukan B lebih tinggi",
+          "scale": "object",
+          "motion": "tumpukan B tumbuh melewati A",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "$1.61",
+              "word": "shoes"
+            },
+            {
+              "text": "$2.20",
+              "word": "twenty"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "toko kecil dengan harga rendah di sebelah toko sepatu dengan harga standar",
+          "scale": "place",
+          "motion": "lampu pindah dari toko kecil ke toko sepatu",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "STANDARD",
+              "word": "standard"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        },
+        {
+          "url": "https://www.helcim.com/visa-usa-interchange-rates/",
+          "claim": "Merchant kecil yang memenuhi syarat punya baris tarif lebih rendah"
+        }
+      ],
+      "duration_ms": {
+        "en": 15743
       }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-    }
-   ]
-  },
-  {
-   "id": "s31",
-   "role": "body",
-   "narration": {
-    "en": "The terminal company charges the shop eighteen and a half cents. Your bank's interchange alone is twenty and a half. Add Visa's share, and the terminal company ends up about five cents short.",
-    "id": "Perusahaan terminal menagih toko delapan belas setengah sen. Interchange untuk bankmu saja sudah dua puluh setengah sen. Tambah bagian Visa, perusahaan terminal tekor sekitar lima sen."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "timbangan kiri: koin yang diterima server",
-     "scale": "object",
-     "motion": "koin jatuh ke panci kiri",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "18.5¢",
-       "word": "eighteen"
-      }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "timbangan kanan: koin untuk bank lebih berat",
-     "scale": "object",
-     "motion": "panci kanan turun",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "20.5¢",
-       "word": "twenty"
-      }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
-    },
-    {
-     "sentence": 3,
-     "show": "server merogoh kantong sendiri untuk menutup selisih",
-     "scale": "place",
-     "motion": "server menaruh koin dari sakunya",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "−5¢",
-       "word": "five"
-      }
-     ],
-     "faces": {
-      "terminal": "sad"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-    },
-    {
-     "url": "https://wellsfargo.com/merchantpassthroughfees",
-     "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-    },
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s32",
-   "role": "body",
-   "narration": {
-    "en": "A flat price is a bet that bigger sales will cover the small ones. For the shop, those socks cost almost four percent, because the fixed cents bite harder on a tiny sale.",
-    "id": "Tarif rata adalah taruhan bahwa penjualan besar akan menutup yang kecil. Bagi toko, kaus kaki itu kena hampir empat persen, karena potongan sen yang tetap terasa lebih berat di transaksi kecil."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "jungkat-jungkit: sepatu besar mengangkat kaus kaki kecil",
-     "scale": "object",
-     "motion": "sepatu turun, kaus kaki terangkat",
-     "transition": "wipe"
-    },
-    {
-     "sentence": 2,
-     "show": "dua grid: sepatu 2,75 dari 100 titik, kaus kaki hampir 4 dari 100 titik",
-     "scale": "object",
-     "motion": "titik menyala di tiap grid",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "3.7%",
-       "word": "four"
-      }
-     ],
-     "count": {
-      "value": 4,
-      "as": "dots"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s33",
-   "role": "payoff",
-   "narration": {
-    "en": "So your shoe cart arrives. You were charged one hundred dollars, and the shop's account receives ninety-seven twenty-five. Sell a thousand pairs that way, and the missing money equals the price of twenty-seven pairs.",
-    "id": "Akhirnya gerobak sepatumu sampai. Kamu ditagih seratus dolar, dan rekening toko menerima sembilan puluh tujuh dolar dua puluh lima sen. Jual seribu pasang seperti itu, uang yang hilang setara harga dua puluh tujuh pasang."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "gerobak masuk halaman bank toko",
-     "scale": "map",
-     "motion": "gerobak berhenti, pintu bank terbuka",
-     "transition": "iris"
-    },
-    {
-     "sentence": 2,
-     "show": "peta lebar dengan semua tumpukan di tiap pemberhentian",
-     "scale": "map",
-     "motion": "tumpukan menyala bergantian",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "$100",
-       "word": "hundred"
+      "id": "s18",
+      "role": "rehook",
+      "narration": {
+        "en": "Why would your bank like the shop to pay more? You need to know something about how your bank earns.",
+        "id": "Kenapa bankmu senang kalau toko membayar lebih mahal? Kamu perlu tahu satu hal soal cara bankmu mencari uang."
       },
-      {
-       "text": "$97.25",
-       "word": "ninety-seven"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "bank 'you' berwajah menatap toko sambil menggosok tangan",
+          "scale": "place",
+          "motion": "kamera mendekat, mata bank melirik tumpukan toko",
+          "transition": "push",
+          "faces": {
+            "bank": "smug"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "masuk ke dalam brankas: dua pipa pemasukan, satu bunga satu tap",
+          "scale": "inside",
+          "motion": "pintu terbuka, dua pipa menyala bergantian",
+          "transition": "push"
+        }
+      ],
+      "duration_ms": {
+        "en": 5062
       }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
     },
     {
-     "sentence": 3,
-     "show": "gudang toko berisi tumpukan kotak sepatu, 27 kotak terbang ke jalan tol",
-     "scale": "place",
-     "motion": "kotak melayang satu per satu, penghitung naik",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "27 PAIRS",
-       "word": "twenty-seven"
-      }
-     ],
-     "count": {
-      "value": 27,
-      "as": "items"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s34",
-   "role": "rehook",
-   "narration": {
-    "en": "That is the whole trip. Yet someone on this map helps pay for it without using a credit card at all.",
-    "id": "Itulah seluruh perjalanannya. Tetapi ada orang di peta ini yang ikut membayar tanpa pernah memakai kartu kredit."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "peta berubah senja, jalan meredup",
-     "scale": "map",
-     "motion": "langit bergeser ke senja",
-     "transition": "wipe",
-     "mood": "dusk"
-    },
-    {
-     "sentence": 2,
-     "show": "antrean kasir: di belakang 'you' ada pembayar tunai dengan lembaran uang",
-     "scale": "place",
-     "motion": "sorot pindah dari 'you' ke pembayar tunai",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "PAYS CASH",
-       "word": "without"
-      }
-     ],
-     "mood": "dusk"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.mymoney.gov/node/82113",
-     "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-    }
-   ]
-  },
-  {
-   "id": "s35",
-   "role": "body",
-   "narration": {
-    "en": "Shops often don't charge less for cash. So the card toll gets built into the price on the tag.",
-    "id": "Toko sering tidak memberi harga lebih murah untuk tunai. Jadi tol kartu ikut dimasukkan ke harga di label."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "dua label harga sama persis untuk kartu dan tunai",
-     "scale": "object",
-     "motion": "label kembar berayun bersamaan",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "SAME PRICE",
-       "word": "cash"
-      }
-     ],
-     "mood": "dusk"
-    },
-    {
-     "sentence": 2,
-     "show": "irisan label harga sepatu, koin tol kecil tertanam di dalamnya",
-     "scale": "inside",
-     "motion": "label terbuka, koin tol menyelinap masuk",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "TOLL INSIDE",
-       "word": "toll"
-      }
-     ],
-     "mood": "dusk"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.mymoney.gov/node/82113",
-     "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-    }
-   ]
-  },
-  {
-   "id": "s36",
-   "role": "body",
-   "narration": {
-    "en": "The man behind you hands over cash for the same shoes. He sends no cart down the road. He still covers part of the toll through the price, and no points come back to him.",
-    "id": "Pria di belakangmu membayar sepatu yang sama dengan tunai. Dia tidak mengirim gerobak ke jalan tol. Dia tetap menanggung sebagian tol lewat harga, tanpa poin yang kembali."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "pembayar tunai menyerahkan uang kertas untuk sepatu yang sama",
-     "scale": "place",
-     "motion": "uang berpindah ke owner",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "CASH",
-       "word": "cash"
-      }
-     ],
-     "mood": "dusk"
-    },
-    {
-     "sentence": 2,
-     "show": "jalan tol di belakangnya kosong",
-     "scale": "map",
-     "motion": "gerbang diam, daun lewat",
-     "transition": "wipe",
-     "mood": "dusk"
-    },
-    {
-     "sentence": 3,
-     "show": "satu koin bayangan lepas dari belanjanya dan melayang ke tumpukan hadiah 'you'",
-     "scale": "place",
-     "motion": "koin hantu terbang, tangan pembayar tunai tetap kosong",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "NO POINTS",
-       "word": "points"
-      }
-     ],
-     "mood": "dusk",
-     "faces": {
-      "cash": "sad",
-      "you": "neutral"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.mymoney.gov/node/82113",
-     "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-    }
-   ]
-  },
-  {
-   "id": "s37",
-   "role": "body",
-   "narration": {
-    "en": "In 2010, economists at the Boston Fed estimated the size of that handover. On average, a household that skipped credit cards passed about a hundred and fifty dollars a year to households that used them.",
-    "id": "Pada 2010, ekonom di Federal Reserve Boston memperkirakan besarnya perpindahan itu. Rata-rata, satu rumah tangga yang tidak memakai kartu kredit menyalurkan sekitar seratus lima puluh dolar per tahun ke rumah tangga pemakainya."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "garis waktu dengan penanda 2010 dan kaca pembesar di atas rumah-rumah",
-     "scale": "object",
-     "motion": "penanda bergeser ke 2010",
-     "transition": "iris",
-     "labels": [
-      {
-       "text": "2010",
-       "word": "2010"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "dua rumah bersebelahan, amplop berpindah dari rumah tunai ke rumah kartu sepanjang kalender",
-     "scale": "place",
-     "motion": "amplop terisi 12 bulan lalu terbang",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "≈$150 / YEAR",
-       "word": "fifty"
-      }
-     ],
-     "count": {
-      "value": 12,
-      "as": "timeline"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.mymoney.gov/node/82113",
-     "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-    }
-   ]
-  },
-  {
-   "id": "s38",
-   "role": "body",
-   "narration": {
-    "en": "Card spending and rewards tend to rise with income. So even after counting rewards, the study found money moving from lower-income households to higher-income ones.",
-    "id": "Belanja kartu dan hadiahnya cenderung naik seiring pendapatan. Jadi setelah hadiah ikut dihitung pun, studi itu menemukan uang bergeser dari rumah tangga berpendapatan rendah ke yang tinggi."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "deretan rumah dari kecil ke besar, kartu bertambah di rumah besar",
-     "scale": "map",
-     "motion": "rumah tumbuh berurutan bersama tumpukan kartu",
-     "transition": "cut"
-    },
-    {
-     "sentence": 2,
-     "show": "aliran koin tipis mengalir dari rumah kecil ke rumah besar",
-     "scale": "map",
-     "motion": "aliran bergerak ke kanan",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "LOWER",
-       "word": "lower-income"
+      "id": "s19",
+      "role": "body",
+      "narration": {
+        "en": "Say you pay your card off in full every month. Then your bank collects no interest on your shopping. For customers like that, the fee on each tap is one of the main ways the bank gets paid.",
+        "id": "Misalnya tagihan kartumu selalu kamu lunasi penuh tiap bulan. Maka bank tidak memungut bunga dari belanjamu. Untuk nasabah seperti itu, biaya tiap tap adalah salah satu sumber utama pemasukan bank."
       },
-      {
-       "text": "HIGHER",
-       "word": "higher-income"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kalender dengan cap lunas di tiap bulan",
+          "scale": "object",
+          "motion": "cap menghantam bulan demi bulan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "PAID OFF",
+              "word": "full"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "timeline"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "pipa bunga kering, keran berkarat",
+          "scale": "inside",
+          "motion": "setetes terakhir jatuh lalu berhenti, bank cemberut",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "NO INTEREST",
+              "word": "interest"
+            }
+          ],
+          "faces": {
+            "bank": "sad"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "pipa tap mengalirkan koin deras",
+          "scale": "inside",
+          "motion": "koin mengucur setiap ada bunyi tap, bank tersenyum",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "TAP FEE",
+              "word": "fee"
+            }
+          ],
+          "faces": {
+            "bank": "happy"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://staxpayments.com/blog/visa-interchange-rates/",
+          "claim": "Rewards didanai sebagian oleh interchange"
+        }
+      ],
+      "duration_ms": {
+        "en": 11146
       }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.mymoney.gov/node/82113",
-     "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-    }
-   ]
-  },
-  {
-   "id": "s39",
-   "role": "body",
-   "narration": {
-    "en": "To be fair to the road, the toll buys something real. The approval from our last video was a promise from your bank, so the shop can sell to a stranger. The shop also has less cash to count and less change to run out of.",
-    "id": "Supaya adil pada jalan tol ini, tolnya membeli sesuatu yang nyata. Approval di video sebelumnya adalah janji dari bankmu, sehingga toko bisa berjualan ke orang asing. Toko juga lebih sedikit menghitung uang tunai dan lebih jarang kehabisan kembalian."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "suasana kembali hangat, gerbang memperbaiki jalan",
-     "scale": "map",
-     "motion": "lampu jalan menyala, gerbang tampak berguna",
-     "transition": "wipe",
-     "mood": "warm"
     },
     {
-     "sentence": 2,
-     "show": "bank 'you' mengulurkan segel janji ke owner di depan pembeli asing",
-     "scale": "place",
-     "motion": "segel berpindah, owner menyerahkan kotak sepatu",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "PROMISE",
-       "word": "promise"
-      }
-     ],
-     "mood": "warm",
-     "faces": {
-      "owner": "happy"
-     }
-    },
-    {
-     "sentence": 3,
-     "show": "laci kasir rapi, tumpukan receh menyusut",
-     "scale": "object",
-     "motion": "receh berkurang, owner santai",
-     "transition": "cut",
-     "mood": "warm"
-    }
-   ]
-  },
-  {
-   "id": "s40",
-   "role": "rehook",
-   "narration": {
-    "en": "So how low can a toll like this go? In Indonesia, part of the answer is zero.",
-    "id": "Lalu, seberapa murah tol seperti ini bisa? Di Indonesia, sebagian jawabannya adalah nol."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "palang tol turun perlahan, penunjuk tarif mencari angka terendah",
-     "scale": "map",
-     "motion": "jarum bergerak turun",
-     "transition": "cut"
-    },
-    {
-     "sentence": 2,
-     "show": "kamera terbang menyeberang laut ke pulau, palang di sana terbuka",
-     "scale": "map",
-     "motion": "terbang di atas laut, palang terangkat",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "0%",
-       "word": "zero"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-    }
-   ]
-  },
-  {
-   "id": "s41",
-   "role": "body",
-   "narration": {
-    "en": "Small shops there often show a printed square called QRIS. It is a national QR code standard that bank apps and e-wallets can scan.",
-    "id": "Toko kecil di sana sering memajang kotak cetak bernama QRIS. Itu standar kode QR nasional yang bisa dipindai aplikasi bank dan e-wallet."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "warung dengan stiker kotak QR di meja",
-     "scale": "place",
-     "motion": "stiker berkilau, kucing lewat",
-     "transition": "iris",
-     "labels": [
-      {
-       "text": "QRIS",
-       "word": "QRIS"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "beberapa ponsel berbeda warna memindai satu kotak yang sama",
-     "scale": "object",
-     "motion": "ponsel bergantian memindai, centang muncul",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "ONE CODE",
-       "word": "code"
-      }
-     ],
-     "count": {
-      "value": 3,
-      "as": "items"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-    }
-   ]
-  },
-  {
-   "id": "s42",
-   "role": "body",
-   "narration": {
-    "en": "Here the central bank, Bank Indonesia, sets the toll. Under its rules the shop pays it and may not add it to your bill.",
-    "id": "Di sini, tarif tolnya ditetapkan bank sentral, Bank Indonesia. Menurut aturannya, toko yang menanggung dan tidak boleh menambahkannya ke tagihanmu."
-   },
-   "broll": {
-    "own": "qris-01.mp4"
-   },
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-    }
-   ]
-  },
-  {
-   "id": "s43",
-   "role": "body",
-   "narration": {
-    "en": "Since October 2026, a QRIS payment up to a hundred thousand rupiah has cost shops no fee, whatever their size. The tiniest businesses keep that zero up to five hundred thousand.",
-    "id": "Sejak Oktober 2026, pembayaran QRIS sampai seratus ribu rupiah tidak dikenai biaya bagi toko, besar maupun kecil. Usaha mikro tetap nol sampai lima ratus ribu."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "warung dan toko besar berdampingan, palang tol keduanya terbuka",
-     "scale": "object",
-     "motion": "koin lewat utuh di dua toko",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "0%",
-       "word": "fee"
+      "id": "s20",
+      "role": "body",
+      "narration": {
+        "en": "So banks fight for the top spot in your wallet, and that same fee helps pay for the fight. Points, miles, cashback. A premium card promises more of them, and it carries a higher toll.",
+        "id": "Jadi bank berebut tempat teratas di dompetmu, dan biaya yang sama ikut membiayai perebutan itu. Poin, miles, cashback. Kartu premium menjanjikan lebih banyak, dan tolnya lebih tinggi."
       },
-      {
-       "text": "≤Rp100K",
-       "word": "hundred"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dompet terbuka, beberapa kartu berwajah saling sikut untuk slot teratas",
+          "scale": "object",
+          "motion": "kartu melompat berebut posisi, koin kecil mengisi bahan bakar mereka",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "WALLET",
+              "word": "wallet"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "hadiah kecil meletus dari kartu: bintang, pesawat kertas, koin balik",
+          "scale": "object",
+          "motion": "tiap hadiah muncul di katanya",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "POINTS",
+              "word": "Points"
+            },
+            {
+              "text": "MILES",
+              "word": "miles"
+            },
+            {
+              "text": "CASHBACK",
+              "word": "cashback"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "kartu premium besar membawa karung hadiah, di belakangnya palang tol lebih tinggi",
+          "scale": "object",
+          "motion": "karung dan palang naik bersamaan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "PREMIUM",
+              "word": "premium"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://staxpayments.com/blog/visa-interchange-rates/",
+          "claim": "Rewards didanai sebagian oleh interchange"
+        }
+      ],
+      "duration_ms": {
+        "en": 13096
       }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
     },
     {
-     "sentence": 2,
-     "show": "lapak mikro dengan batas lebih tinggi pada pengukur",
-     "scale": "place",
-     "motion": "pengukur naik sampai batas baru",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "≤Rp500K",
-       "word": "five"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-    }
-   ]
-  },
-  {
-   "id": "s44",
-   "role": "body",
-   "narration": {
-    "en": "Above a hundred thousand, a regular small, medium or large business pays zero point seven percent. On a bill of one million rupiah, that is seven thousand.",
-    "id": "Di atas seratus ribu, usaha kecil, menengah, atau besar kategori reguler membayar 0,7 persen. Untuk tagihan satu juta rupiah, itu tujuh ribu."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "pengukur melewati batas, palang kecil turun",
-     "scale": "object",
-     "motion": "palang turun setengah",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "0.7%",
-       "word": "percent"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "lembaran satu juta rupiah dengan irisan sangat tipis terpisah",
-     "scale": "object",
-     "motion": "irisan tipis dipotong dan digeser",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "Rp7,000",
-       "word": "seven"
-      }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-    }
-   ]
-  },
-  {
-   "id": "s45",
-   "role": "body",
-   "narration": {
-    "en": "Put that rate on a hundred-dollar sale, and you get seventy cents. On the card road, the shop gave up two seventy-five.",
-    "id": "Pasang tarif itu di penjualan seratus dolar, hasilnya tujuh puluh sen. Di jalan tol kartu tadi, toko melepas dua dolar tujuh puluh lima sen."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "tumpukan kecil dari gerobak versi pulau",
-     "scale": "object",
-     "motion": "tumpukan kecil terbentuk",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "70¢",
-       "word": "seventy"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "dua tumpukan berdampingan, tumpukan kartu hampir empat kali lebih tinggi",
-     "scale": "object",
-     "motion": "tumpukan kartu tumbuh melewati tumpukan QR",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "$2.75",
-       "word": "seventy-five"
-      }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-    },
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s46",
-   "role": "body",
-   "narration": {
-    "en": "The comparison isn't perfect. A toll this low leaves less room for rich rewards, and a central bank writes the price list.",
-    "id": "Perbandingannya tidak sempurna. Tol serendah ini menyisakan ruang lebih sempit untuk hadiah besar, dan daftar tarifnya ditulis bank sentral."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "dua jalan, kota dan pulau, dengan medan berbeda",
-     "scale": "map",
-     "motion": "timbangan di antara keduanya bergoyang",
-     "transition": "wipe"
-    },
-    {
-     "sentence": 2,
-     "show": "karung hadiah kecil di jalan pulau, bank sentral memegang daftar tarif",
-     "scale": "map",
-     "motion": "daftar tarif dibuka, karung tetap kecil",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "CENTRAL BANK",
-       "word": "central"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-    }
-   ]
-  },
-  {
-   "id": "s47",
-   "role": "payoff",
-   "narration": {
-    "en": "So your two seventy-five never vanished. Two dollars twenty went to your bank, and some rolled back to you as rewards. Sixteen cents went to the road's owner, and thirty-nine stayed on the shop's side.",
-    "id": "Jadi dua dolar tujuh puluh lima sen tadi tidak lenyap. Dua dolar dua puluh ke bankmu, dan sebagian bergulir kembali padamu sebagai hadiah. Enam belas sen ke pemilik jalan, dan tiga puluh sembilan sen tinggal di pihak toko."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "peta kota malam, semua jalan menyala",
-     "scale": "map",
-     "motion": "kamera naik melihat seluruh peta",
-     "transition": "iris",
-     "labels": [
-      {
-       "text": "$2.75",
-       "word": "seventy-five"
-      }
-     ],
-     "mood": "night"
-    },
-    {
-     "sentence": 2,
-     "show": "bank 'you' menyala, jejak hadiah kembali ke dompet",
-     "scale": "map",
-     "motion": "koin mengalir ke bank lalu sebagian balik",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "$2.20",
-       "word": "twenty"
-      }
-     ],
-     "mood": "night"
-    },
-    {
-     "sentence": 3,
-     "show": "menara dan gedung server menyala berurutan",
-     "scale": "map",
-     "motion": "dua tumpukan mendarat di katanya",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "16¢",
-       "word": "Sixteen"
+      "id": "s21",
+      "role": "body",
+      "narration": {
+        "en": "Say your card pays one and a half percent back. A dollar fifty of that two-twenty rolls home to you as rewards. Your bank holds on to seventy cents.",
+        "id": "Misalnya kartumu memberi cashback satu setengah persen. Satu dolar lima puluh dari dua dolar dua puluh tadi kembali ke kamu sebagai hadiah. Bankmu menyimpan tujuh puluh sen."
       },
-      {
-       "text": "39¢",
-       "word": "thirty-nine"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kartu 'you' dengan roda cashback kecil",
+          "scale": "object",
+          "motion": "roda berputar dan berhenti di satu setengah",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "1.5% BACK",
+              "word": "percent"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "tumpukan 2.20 di bank terbelah, sebagian besar menggelinding ke 'you'",
+          "scale": "place",
+          "motion": "koin bergulir kembali ke dompet 'you'",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "$1.50",
+              "word": "fifty"
+            }
+          ],
+          "faces": {
+            "you": "happy"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "sisa koin kecil dipeluk bank",
+          "scale": "object",
+          "motion": "bank menarik sisa ke brankas",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "70¢",
+              "word": "seventy"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "duration_ms": {
+        "en": 8916
       }
-     ],
-     "mood": "night",
-     "count": {
-      "value": 3,
-      "as": "split"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-     "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
     },
     {
-     "url": "https://wellsfargo.com/merchantpassthroughfees",
-     "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-    },
-    {
-     "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-     "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-    }
-   ]
-  },
-  {
-   "id": "s48",
-   "role": "payoff",
-   "narration": {
-    "en": "And the tag may have carried the toll before you ever tapped. So next time a shop offers a cash discount, look at it as a way around the toll road.",
-    "id": "Dan label harga mungkin sudah memuat tol itu sebelum kamu tap. Jadi lain kali toko menawarkan diskon tunai, lihat itu sebagai jalan memutar dari jalan tol."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "label sepatu dengan koin tol di dalam, kartu belum menyentuh terminal",
-     "scale": "object",
-     "motion": "label membuka memperlihatkan koin",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "ALREADY INSIDE",
-       "word": "toll"
+      "id": "s22",
+      "role": "body",
+      "narration": {
+        "en": "Look where those rewards started. They came out of the cart that was headed for the shop.",
+        "id": "Lihat dari mana hadiah itu berawal. Asalnya dari gerobak yang sedang menuju toko."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta dengan jejak koin hadiah menyala mundur",
+          "scale": "map",
+          "motion": "jejak diputar balik dari dompet 'you'",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 2,
+          "show": "jejak berakhir di gerobak, owner menatap koin yang pergi",
+          "scale": "object",
+          "motion": "koin hantu keluar dari gerobak, owner mengikuti dengan mata",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "SHOP'S CART",
+              "word": "cart"
+            }
+          ],
+          "faces": {
+            "owner": "sad"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://staxpayments.com/blog/visa-interchange-rates/",
+          "claim": "Rewards didanai sebagian oleh interchange"
+        }
+      ],
+      "duration_ms": {
+        "en": 4087
       }
-     ],
-     "mood": "night"
     },
     {
-     "sentence": 2,
-     "show": "pintu toko dengan gantungan kecil cash discount, gerobak berbelok lewat jalan setapak di samping gerbang",
-     "scale": "place",
-     "motion": "gerbang meredup, jalan setapak menyala",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "CASH DISCOUNT",
-       "word": "discount"
+      "id": "s23",
+      "role": "body",
+      "narration": {
+        "en": "Now the cart reaches the middle gate. Visa bills the shop's side point one four percent of the sale, plus about two cents for handling the approval request. Together, that is sixteen cents.",
+        "id": "Sekarang gerobak sampai di gerbang tengah. Visa menagih pihak toko 0,14 persen dari nilai belanja, ditambah sekitar dua sen untuk mengurus permintaan persetujuan. Totalnya enam belas sen."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gerobak melambat di gerbang menara",
+          "scale": "map",
+          "motion": "gerobak berhenti, palang turun",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "dua keping jatuh ke kotak tol: keping persen dan dua sen, amplop persetujuan melintas",
+          "scale": "object",
+          "motion": "keping jatuh di katanya, amplop dicap",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "0.14%",
+              "word": "percent"
+            },
+            {
+              "text": "+2¢",
+              "word": "cents"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "dua keping menyatu jadi satu tumpukan kecil",
+          "scale": "object",
+          "motion": "keping melebur, palang naik",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "16¢",
+              "word": "sixteen"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://wellsfargo.com/merchantpassthroughfees",
+          "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+        }
+      ],
+      "duration_ms": {
+        "en": 11424
       }
-     ],
-     "mood": "night"
-    }
-   ]
-  },
-  {
-   "id": "s49",
-   "role": "cta",
-   "narration": {
-    "en": "Next, a short one about a forgotten wallet, the story that launched a famous card. The man who promoted it later wrote that he invented it.",
-    "id": "Berikutnya, video pendek soal dompet tertinggal, cerita yang melambungkan sebuah kartu terkenal. Orang yang mempromosikannya belakangan menulis bahwa dialah yang mengarangnya."
-   },
-   "shots": [
+    },
     {
-     "sentence": 1,
-     "show": "meja restoran lama dengan dompet tertinggal di ambang pintu",
-     "scale": "object",
-     "motion": "lampu meja berayun, dompet disorot",
-     "transition": "iris",
-     "labels": [
-      {
-       "text": "NEXT",
-       "word": "Next"
+      "id": "s24",
+      "role": "rehook",
+      "narration": {
+        "en": "Sixteen cents looks tiny, so zoom all the way out. In 2025, Visa and Mastercard cards issued in America carried almost ten trillion dollars of purchases.",
+        "id": "Enam belas sen terlihat kecil, jadi coba lihat dari jauh. Pada 2025, kartu Visa dan Mastercard terbitan Amerika membawa belanja hampir sepuluh triliun dolar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "satu keping 16 sen mengecil saat kamera mundur",
+          "scale": "object",
+          "motion": "kamera mundur cepat, keping jadi titik",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "16¢",
+              "word": "Sixteen"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "seluruh negeri penuh jalan tol bercahaya, ribuan gerobak",
+          "scale": "map",
+          "motion": "gerobak membanjiri jalan, penghitung naik",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "~$10 TRILLION",
+              "word": "ten"
+            }
+          ],
+          "count": {
+            "value": 10,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://nilsonreport.com/articles/mastercard-and-visa-cards-in-the-us-2025/",
+          "claim": "Kartu Visa dan Mastercard terbitan AS: $9,986 triliun volume belanja 2025 (kredit, debit, prepaid)"
+        }
+      ],
+      "duration_ms": {
+        "en": 10495
       }
-     ],
-     "mood": "night"
     },
     {
-     "sentence": 2,
-     "show": "tangan humas dengan pena di atas naskah cerita dompet",
-     "scale": "object",
-     "motion": "pena menulis, dompet memudar jadi gambar kertas",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "INVENTED",
-       "word": "invented"
+      "id": "s25",
+      "role": "body",
+      "narration": {
+        "en": "The last stop is beside the shop. Many small shops never deal with each party on this road. They pay the terminal company one flat price, and it settles up with everyone else.",
+        "id": "Pemberhentian terakhir ada di sebelah toko. Banyak toko kecil tidak pernah berurusan dengan tiap pihak di jalan ini. Mereka membayar satu tarif rata ke perusahaan terminal, lalu perusahaan itu yang membereskan sisanya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gerobak tiba di gedung server dekat toko",
+          "scale": "map",
+          "motion": "gerobak parkir, lampu server menyala",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "owner dikelilingi pintu bank dan menara yang tertutup, ia berjalan melewatinya",
+          "scale": "place",
+          "motion": "owner melenggang lewat tanpa mengetuk",
+          "transition": "cut"
+        },
+        {
+          "sentence": 3,
+          "show": "owner menyerahkan satu amplop ke server, server membaginya",
+          "scale": "place",
+          "motion": "satu amplop masuk, beberapa keluar",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "FLAT PRICE",
+              "word": "flat"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 10449
       }
-     ],
-     "mood": "night"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.nerdwallet.com/blog/credit-cards/matty-simmons-interview",
-     "claim": "Matty Simmons menulis bahwa ia mengarang cerita McNamara kekurangan uang saat makan malam untuk publisitas"
-    }
-   ]
-  }
- ],
- "shorts_cuts": [
-  {
-   "name": "B1-100-dollar-split",
-   "scene_ids": [
-    "s01",
-    "s03",
-    "s35"
-   ],
-   "hook_override": "You pay $100. The shop gets $97.25."
-  },
-  {
-   "name": "B2-cash-pays-too",
-   "scene_ids": [
-    "s36",
-    "s37",
-    "s48"
-   ],
-   "hook_override": "The man paying cash behind you helps pay the card toll."
-  }
- ],
- "chapters": [
-  {
-   "scene": "s01",
-   "title": "The tap"
-  },
-  {
-   "scene": "s04",
-   "title": "The toll road"
-  },
-  {
-   "scene": "s13",
-   "title": "Gate one: your bank"
-  },
-  {
-   "scene": "s23",
-   "title": "Gate two: the network"
-  },
-  {
-   "scene": "s25",
-   "title": "Gate three: the shop's side"
-  },
-  {
-   "scene": "s34",
-   "title": "Who helps pay"
-  },
-  {
-   "scene": "s40",
-   "title": "Another road"
-  },
-  {
-   "scene": "s47",
-   "title": "Where it all went"
-  }
- ],
- "tags": [
-  "credit card fees",
-  "interchange",
-  "swipe fees",
-  "how payments work",
-  "Visa",
-  "Mastercard",
-  "QRIS",
-  "money"
- ],
- "thumbnails": [
-  {
-   "lines": [
-    {
-     "text": "$100 →",
-     "color": "#ffffff",
-     "size": 170
     },
     {
-     "text": "$97.25",
-     "color": "#ffd23f",
-     "size": 190
-    }
-   ],
-   "stage": {
-    "engine": "r3",
-    "module": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-shots.tsx",
-    "scene": "thumbA"
-   }
-  },
-  {
-   "lines": [
-    {
-     "text": "WHO TOOK",
-     "color": "#ffffff",
-     "size": 150
+      "id": "s26",
+      "role": "body",
+      "narration": {
+        "en": "Stripe, one such company, lists two point seven percent plus five cents for an in-person card. On your hundred dollars, that is two seventy-five. The shop sees one clean price.",
+        "id": "Stripe, salah satu perusahaan seperti itu, memasang tarif 2,7 persen plus lima sen untuk kartu yang dipakai langsung di toko. Dari seratus dolarmu, itu dua dolar tujuh puluh lima sen. Toko hanya melihat satu harga."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "server memajang satu tag harga besar",
+          "scale": "object",
+          "motion": "tag berayun turun",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "2.7%",
+              "word": "percent"
+            },
+            {
+              "text": "+5¢",
+              "word": "five"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "koin dari gerobak membentuk satu tumpukan di tag",
+          "scale": "object",
+          "motion": "tumpukan terkumpul",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "$2.75",
+              "word": "seventy-five"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "owner menatap satu amplop tunggal",
+          "scale": "place",
+          "motion": "amplop mendarat di meja owner",
+          "transition": "wipe"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 11656
+      }
     },
     {
-     "text": "$2.75?",
-     "color": "#ffd23f",
-     "size": 200
+      "id": "s27",
+      "role": "body",
+      "narration": {
+        "en": "Out of that, your bank's two-twenty and Visa's sixteen cents get paid.",
+        "id": "Dari situ, bagian dua dolar dua puluh untuk bankmu dan enam belas sen untuk Visa dibayarkan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tumpukan di server pecah jadi dua aliran ke bank dan menara",
+          "scale": "map",
+          "motion": "dua aliran koin berjalan menyusuri jalan",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "$2.20",
+              "word": "two-twenty"
+            },
+            {
+              "text": "16¢",
+              "word": "sixteen"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        },
+        {
+          "url": "https://wellsfargo.com/merchantpassthroughfees",
+          "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+        }
+      ],
+      "duration_ms": {
+        "en": 3762
+      }
+    },
+    {
+      "id": "s28",
+      "role": "body",
+      "narration": {
+        "en": "The thirty-nine cents left over is the markup, the price the shop's side charges for its own work. The terminal company and the shop's bank share it, and their split isn't on the price tag. This is the part that shopping around or bargaining can move.",
+        "id": "Sisa tiga puluh sembilan sen adalah markup, harga yang diminta pihak toko untuk jasanya sendiri. Perusahaan terminal dan bank toko berbagi bagian itu, dan pembagiannya tidak tertulis di label harga. Bagian inilah yang bisa digeser lewat membandingkan atau menawar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "sisa koin kecil di meja server",
+          "scale": "object",
+          "motion": "server menyisihkan sisa ke piringnya",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "39¢",
+              "word": "thirty-nine"
+            },
+            {
+              "text": "MARKUP",
+              "word": "markup"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "server dan bank toko membagi koin di balik tirai",
+          "scale": "place",
+          "motion": "tirai menutup, bayangan koin berpindah",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "PRIVATE",
+              "word": "split"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "owner dan server tarik-menarik satu koin",
+          "scale": "object",
+          "motion": "koin tertarik ke kiri dan kanan",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "NEGOTIABLE",
+              "word": "bargaining"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.spark.money/glossary/assessment-fee",
+          "claim": "Markup processor bagian yang bisa dinegosiasi"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 14907
+      }
+    },
+    {
+      "id": "s29",
+      "role": "body",
+      "narration": {
+        "en": "Now swap the basic card back in. The shop still pays two seventy-five, but your bank's slice drops. The shop's side keeps ninety-eight cents instead of thirty-nine.",
+        "id": "Sekarang pasang lagi kartu biasa. Toko tetap membayar dua dolar tujuh puluh lima sen, tetapi bagian bankmu turun. Pihak toko menyimpan sembilan puluh delapan sen, bukan tiga puluh sembilan."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "kartu polos masuk lagi ke terminal",
+          "scale": "object",
+          "motion": "kartu berkilau ditukar kartu polos",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 2,
+          "show": "label toko tetap, karung bank menyusut",
+          "scale": "map",
+          "motion": "tag harga diam, karung bank mengecil",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "$2.75",
+              "word": "seventy-five"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "piring server membesar, dua panel premium dan biasa",
+          "scale": "object",
+          "motion": "koin pindah ke piring server",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "39¢",
+              "word": "thirty-nine"
+            },
+            {
+              "text": "98¢",
+              "word": "ninety-eight"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        },
+        {
+          "url": "https://wellsfargo.com/merchantpassthroughfees",
+          "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 9520
+      }
+    },
+    {
+      "id": "s30",
+      "role": "rehook",
+      "narration": {
+        "en": "A flat price can even backfire on the company charging it. Sell a five-dollar pair of socks to your premium card, and watch the ten cents.",
+        "id": "Tarif rata bahkan bisa merugikan perusahaan yang memasangnya. Jual kaus kaki lima dolar ke kartu premiummu, lalu perhatikan sepuluh sen itu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "server terpeleset di atas tumpukan kaus kaki",
+          "scale": "place",
+          "motion": "server oleng, koin berhamburan",
+          "transition": "cut",
+          "faces": {
+            "terminal": "shock"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "kaus kaki di kasir, satu koin 10 sen berukuran besar di samping koin kecil lain",
+          "scale": "object",
+          "motion": "koin 10 sen membesar saat disebut",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "$5",
+              "word": "five-dollar"
+            },
+            {
+              "text": "10¢",
+              "word": "ten"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        }
+      ],
+      "duration_ms": {
+        "en": 8127
+      }
+    },
+    {
+      "id": "s31",
+      "role": "body",
+      "narration": {
+        "en": "The terminal company charges the shop eighteen and a half cents. Your bank's interchange alone is twenty and a half. Add Visa's share, and the terminal company ends up about five cents short.",
+        "id": "Perusahaan terminal menagih toko delapan belas setengah sen. Interchange untuk bankmu saja sudah dua puluh setengah sen. Tambah bagian Visa, perusahaan terminal tekor sekitar lima sen."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "timbangan kiri: koin yang diterima server",
+          "scale": "object",
+          "motion": "koin jatuh ke panci kiri",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "18.5¢",
+              "word": "eighteen"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "timbangan kanan: koin untuk bank lebih berat",
+          "scale": "object",
+          "motion": "panci kanan turun",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "20.5¢",
+              "word": "twenty"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "server merogoh kantong sendiri untuk menutup selisih",
+          "scale": "place",
+          "motion": "server menaruh koin dari sakunya",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "−5¢",
+              "word": "five"
+            }
+          ],
+          "faces": {
+            "terminal": "sad"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        },
+        {
+          "url": "https://wellsfargo.com/merchantpassthroughfees",
+          "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 11006
+      }
+    },
+    {
+      "id": "s32",
+      "role": "body",
+      "narration": {
+        "en": "A flat price is a bet that bigger sales will cover the small ones. For the shop, those socks cost almost four percent, because the fixed cents bite harder on a tiny sale.",
+        "id": "Tarif rata adalah taruhan bahwa penjualan besar akan menutup yang kecil. Bagi toko, kaus kaki itu kena hampir empat persen, karena potongan sen yang tetap terasa lebih berat di transaksi kecil."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "jungkat-jungkit: sepatu besar mengangkat kaus kaki kecil",
+          "scale": "object",
+          "motion": "sepatu turun, kaus kaki terangkat",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 2,
+          "show": "dua grid: sepatu 2,75 dari 100 titik, kaus kaki hampir 4 dari 100 titik",
+          "scale": "object",
+          "motion": "titik menyala di tiap grid",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "3.7%",
+              "word": "four"
+            }
+          ],
+          "count": {
+            "value": 4,
+            "as": "dots"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 10077
+      }
+    },
+    {
+      "id": "s33",
+      "role": "payoff",
+      "narration": {
+        "en": "So your shoe cart arrives. You were charged one hundred dollars, and the shop's account receives ninety-seven twenty-five. Sell a thousand pairs that way, and the missing money equals the price of twenty-seven pairs.",
+        "id": "Akhirnya gerobak sepatumu sampai. Kamu ditagih seratus dolar, dan rekening toko menerima sembilan puluh tujuh dolar dua puluh lima sen. Jual seribu pasang seperti itu, uang yang hilang setara harga dua puluh tujuh pasang."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gerobak masuk halaman bank toko",
+          "scale": "map",
+          "motion": "gerobak berhenti, pintu bank terbuka",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "peta lebar dengan semua tumpukan di tiap pemberhentian",
+          "scale": "map",
+          "motion": "tumpukan menyala bergantian",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "$100",
+              "word": "hundred"
+            },
+            {
+              "text": "$97.25",
+              "word": "ninety-seven"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "gudang toko berisi tumpukan kotak sepatu, 27 kotak terbang ke jalan tol",
+          "scale": "place",
+          "motion": "kotak melayang satu per satu, penghitung naik",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "27 PAIRS",
+              "word": "twenty-seven"
+            }
+          ],
+          "count": {
+            "value": 27,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 13050
+      }
+    },
+    {
+      "id": "s34",
+      "role": "rehook",
+      "narration": {
+        "en": "That is the whole trip. Yet someone on this map helps pay for it without using a credit card at all.",
+        "id": "Itulah seluruh perjalanannya. Tetapi ada orang di peta ini yang ikut membayar tanpa pernah memakai kartu kredit."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta berubah senja, jalan meredup",
+          "scale": "map",
+          "motion": "langit bergeser ke senja",
+          "transition": "wipe",
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "antrean kasir: di belakang 'you' ada pembayar tunai dengan lembaran uang",
+          "scale": "place",
+          "motion": "sorot pindah dari 'you' ke pembayar tunai",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "PAYS CASH",
+              "word": "without"
+            }
+          ],
+          "mood": "dusk"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mymoney.gov/node/82113",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+        }
+      ],
+      "duration_ms": {
+        "en": 5898
+      }
+    },
+    {
+      "id": "s35",
+      "role": "body",
+      "narration": {
+        "en": "Shops often don't charge less for cash. So the card toll gets built into the price on the tag.",
+        "id": "Toko sering tidak memberi harga lebih murah untuk tunai. Jadi tol kartu ikut dimasukkan ke harga di label."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua label harga sama persis untuk kartu dan tunai",
+          "scale": "object",
+          "motion": "label kembar berayun bersamaan",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "SAME PRICE",
+              "word": "cash"
+            }
+          ],
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "irisan label harga sepatu, koin tol kecil tertanam di dalamnya",
+          "scale": "inside",
+          "motion": "label terbuka, koin tol menyelinap masuk",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "TOLL INSIDE",
+              "word": "toll"
+            }
+          ],
+          "mood": "dusk"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mymoney.gov/node/82113",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+        }
+      ],
+      "duration_ms": {
+        "en": 5712
+      }
+    },
+    {
+      "id": "s36",
+      "role": "body",
+      "narration": {
+        "en": "The man behind you hands over cash for the same shoes. He sends no cart down the road. He still covers part of the toll through the price, and no points come back to him.",
+        "id": "Pria di belakangmu membayar sepatu yang sama dengan tunai. Dia tidak mengirim gerobak ke jalan tol. Dia tetap menanggung sebagian tol lewat harga, tanpa poin yang kembali."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "pembayar tunai menyerahkan uang kertas untuk sepatu yang sama",
+          "scale": "place",
+          "motion": "uang berpindah ke owner",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "CASH",
+              "word": "cash"
+            }
+          ],
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "jalan tol di belakangnya kosong",
+          "scale": "map",
+          "motion": "gerbang diam, daun lewat",
+          "transition": "wipe",
+          "mood": "dusk"
+        },
+        {
+          "sentence": 3,
+          "show": "satu koin bayangan lepas dari belanjanya dan melayang ke tumpukan hadiah 'you'",
+          "scale": "place",
+          "motion": "koin hantu terbang, tangan pembayar tunai tetap kosong",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "NO POINTS",
+              "word": "points"
+            }
+          ],
+          "mood": "dusk",
+          "faces": {
+            "cash": "sad",
+            "you": "neutral"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mymoney.gov/node/82113",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+        }
+      ],
+      "duration_ms": {
+        "en": 9706
+      }
+    },
+    {
+      "id": "s37",
+      "role": "body",
+      "narration": {
+        "en": "In 2010, economists at the Boston Fed estimated the size of that handover. On average, a household that skipped credit cards passed about a hundred and fifty dollars a year to households that used them.",
+        "id": "Pada 2010, ekonom di Federal Reserve Boston memperkirakan besarnya perpindahan itu. Rata-rata, satu rumah tangga yang tidak memakai kartu kredit menyalurkan sekitar seratus lima puluh dolar per tahun ke rumah tangga pemakainya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "garis waktu dengan penanda 2010 dan kaca pembesar di atas rumah-rumah",
+          "scale": "object",
+          "motion": "penanda bergeser ke 2010",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "2010",
+              "word": "2010"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "dua rumah bersebelahan, amplop berpindah dari rumah tunai ke rumah kartu sepanjang kalender",
+          "scale": "place",
+          "motion": "amplop terisi 12 bulan lalu terbang",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "≈$150 / YEAR",
+              "word": "fifty"
+            }
+          ],
+          "count": {
+            "value": 12,
+            "as": "timeline"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mymoney.gov/node/82113",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+        }
+      ],
+      "duration_ms": {
+        "en": 11656
+      }
+    },
+    {
+      "id": "s38",
+      "role": "body",
+      "narration": {
+        "en": "Card spending and rewards tend to rise with income. So even after counting rewards, the study found money moving from lower-income households to higher-income ones.",
+        "id": "Belanja kartu dan hadiahnya cenderung naik seiring pendapatan. Jadi setelah hadiah ikut dihitung pun, studi itu menemukan uang bergeser dari rumah tangga berpendapatan rendah ke yang tinggi."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "deretan rumah dari kecil ke besar, kartu bertambah di rumah besar",
+          "scale": "map",
+          "motion": "rumah tumbuh berurutan bersama tumpukan kartu",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "aliran koin tipis mengalir dari rumah kecil ke rumah besar",
+          "scale": "map",
+          "motion": "aliran bergerak ke kanan",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "LOWER",
+              "word": "lower-income"
+            },
+            {
+              "text": "HIGHER",
+              "word": "higher-income"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.mymoney.gov/node/82113",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+        }
+      ],
+      "duration_ms": {
+        "en": 8870
+      }
+    },
+    {
+      "id": "s39",
+      "role": "body",
+      "narration": {
+        "en": "To be fair to the road, the toll buys something real. The approval from our last video was a promise from your bank, so the shop can sell to a stranger. The shop also has less cash to count and less change to run out of.",
+        "id": "Supaya adil pada jalan tol ini, tolnya membeli sesuatu yang nyata. Approval di video sebelumnya adalah janji dari bankmu, sehingga toko bisa berjualan ke orang asing. Toko juga lebih sedikit menghitung uang tunai dan lebih jarang kehabisan kembalian."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "suasana kembali hangat, gerbang memperbaiki jalan",
+          "scale": "map",
+          "motion": "lampu jalan menyala, gerbang tampak berguna",
+          "transition": "wipe",
+          "mood": "warm"
+        },
+        {
+          "sentence": 2,
+          "show": "bank 'you' mengulurkan segel janji ke owner di depan pembeli asing",
+          "scale": "place",
+          "motion": "segel berpindah, owner menyerahkan kotak sepatu",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "PROMISE",
+              "word": "promise"
+            }
+          ],
+          "mood": "warm",
+          "faces": {
+            "owner": "happy"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "laci kasir rapi, tumpukan receh menyusut",
+          "scale": "object",
+          "motion": "receh berkurang, owner santai",
+          "transition": "cut",
+          "mood": "warm"
+        }
+      ],
+      "duration_ms": {
+        "en": 12864
+      }
+    },
+    {
+      "id": "s40",
+      "role": "rehook",
+      "narration": {
+        "en": "So how low can a toll like this go? In Indonesia, part of the answer is zero.",
+        "id": "Lalu, seberapa murah tol seperti ini bisa? Di Indonesia, sebagian jawabannya adalah nol."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "palang tol turun perlahan, penunjuk tarif mencari angka terendah",
+          "scale": "map",
+          "motion": "jarum bergerak turun",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "kamera terbang menyeberang laut ke pulau, palang di sana terbuka",
+          "scale": "map",
+          "motion": "terbang di atas laut, palang terangkat",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "0%",
+              "word": "zero"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+        }
+      ],
+      "duration_ms": {
+        "en": 5248
+      }
+    },
+    {
+      "id": "s41",
+      "role": "body",
+      "narration": {
+        "en": "Small shops there often show a printed square called QRIS. It is a national QR code standard that bank apps and e-wallets can scan.",
+        "id": "Toko kecil di sana sering memajang kotak cetak bernama QRIS. Itu standar kode QR nasional yang bisa dipindai aplikasi bank dan e-wallet."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "warung dengan stiker kotak QR di meja",
+          "scale": "place",
+          "motion": "stiker berkilau, kucing lewat",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "QRIS",
+              "word": "QRIS"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "beberapa ponsel berbeda warna memindai satu kotak yang sama",
+          "scale": "object",
+          "motion": "ponsel bergantian memindai, centang muncul",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "ONE CODE",
+              "word": "code"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+        }
+      ],
+      "duration_ms": {
+        "en": 8220
+      }
+    },
+    {
+      "id": "s42",
+      "role": "body",
+      "narration": {
+        "en": "Here the central bank, Bank Indonesia, sets the toll. Under its rules the shop pays it and may not add it to your bill.",
+        "id": "Di sini, tarif tolnya ditetapkan bank sentral, Bank Indonesia. Menurut aturannya, toko yang menanggung dan tidak boleh menambahkannya ke tagihanmu."
+      },
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+        }
+      ],
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "gedung bank sentral memegang palang tol di pulau",
+          "scale": "place",
+          "motion": "bank sentral mengangkat daftar tarif, palang bergerak",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "BANK INDONESIA",
+              "word": "Indonesia"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "warung menerima koin tol dari kasirnya, tagihan pembeli tetap sama",
+          "scale": "object",
+          "motion": "koin keluar dari laci warung, lembar tagihan tidak berubah",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "SHOP PAYS",
+              "word": "pays"
+            }
+          ]
+        }
+      ],
+      "duration_ms": {
+        "en": 7848
+      }
+    },
+    {
+      "id": "s43",
+      "role": "body",
+      "narration": {
+        "en": "Since October 2026, a QRIS payment up to a hundred thousand rupiah has cost shops no fee, whatever their size. The tiniest businesses keep that zero up to five hundred thousand.",
+        "id": "Sejak Oktober 2026, pembayaran QRIS sampai seratus ribu rupiah tidak dikenai biaya bagi toko, besar maupun kecil. Usaha mikro tetap nol sampai lima ratus ribu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "warung dan toko besar berdampingan, palang tol keduanya terbuka",
+          "scale": "object",
+          "motion": "koin lewat utuh di dua toko",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "0%",
+              "word": "fee"
+            },
+            {
+              "text": "≤Rp100K",
+              "word": "hundred"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "lapak mikro dengan batas lebih tinggi pada pengukur",
+          "scale": "place",
+          "motion": "pengukur naik sampai batas baru",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "≤Rp500K",
+              "word": "five"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+        }
+      ],
+      "duration_ms": {
+        "en": 12167
+      }
+    },
+    {
+      "id": "s44",
+      "role": "body",
+      "narration": {
+        "en": "Above a hundred thousand, a regular small, medium or large business pays zero point seven percent. On a bill of one million rupiah, that is seven thousand.",
+        "id": "Di atas seratus ribu, usaha kecil, menengah, atau besar kategori reguler membayar 0,7 persen. Untuk tagihan satu juta rupiah, itu tujuh ribu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "pengukur melewati batas, palang kecil turun",
+          "scale": "object",
+          "motion": "palang turun setengah",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "0.7%",
+              "word": "percent"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "lembaran satu juta rupiah dengan irisan sangat tipis terpisah",
+          "scale": "object",
+          "motion": "irisan tipis dipotong dan digeser",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "Rp7,000",
+              "word": "seven"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+        }
+      ],
+      "duration_ms": {
+        "en": 10403
+      }
+    },
+    {
+      "id": "s45",
+      "role": "body",
+      "narration": {
+        "en": "Put that rate on a hundred-dollar sale, and you get seventy cents. On the card road, the shop gave up two seventy-five.",
+        "id": "Pasang tarif itu di penjualan seratus dolar, hasilnya tujuh puluh sen. Di jalan tol kartu tadi, toko melepas dua dolar tujuh puluh lima sen."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "tumpukan kecil dari gerobak versi pulau",
+          "scale": "object",
+          "motion": "tumpukan kecil terbentuk",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "70¢",
+              "word": "seventy"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "dua tumpukan berdampingan, tumpukan kartu hampir empat kali lebih tinggi",
+          "scale": "object",
+          "motion": "tumpukan kartu tumbuh melewati tumpukan QR",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "$2.75",
+              "word": "seventy-five"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 7477
+      }
+    },
+    {
+      "id": "s46",
+      "role": "body",
+      "narration": {
+        "en": "The comparison isn't perfect. A toll this low leaves less room for rich rewards, and a central bank writes the price list.",
+        "id": "Perbandingannya tidak sempurna. Tol serendah ini menyisakan ruang lebih sempit untuk hadiah besar, dan daftar tarifnya ditulis bank sentral."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dua jalan, kota dan pulau, dengan medan berbeda",
+          "scale": "map",
+          "motion": "timbangan di antara keduanya bergoyang",
+          "transition": "wipe"
+        },
+        {
+          "sentence": 2,
+          "show": "karung hadiah kecil di jalan pulau, bank sentral memegang daftar tarif",
+          "scale": "map",
+          "motion": "daftar tarif dibuka, karung tetap kecil",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "CENTRAL BANK",
+              "word": "central"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+        }
+      ],
+      "duration_ms": {
+        "en": 6966
+      }
+    },
+    {
+      "id": "s47",
+      "role": "payoff",
+      "narration": {
+        "en": "So your two seventy-five never vanished. Two dollars twenty went to your bank, and some rolled back to you as rewards. Sixteen cents went to the road's owner, and thirty-nine stayed on the shop's side.",
+        "id": "Jadi dua dolar tujuh puluh lima sen tadi tidak lenyap. Dua dolar dua puluh ke bankmu, dan sebagian bergulir kembali padamu sebagai hadiah. Enam belas sen ke pemilik jalan, dan tiga puluh sembilan sen tinggal di pihak toko."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "peta kota malam, semua jalan menyala",
+          "scale": "map",
+          "motion": "kamera naik melihat seluruh peta",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "$2.75",
+              "word": "seventy-five"
+            }
+          ],
+          "mood": "night"
+        },
+        {
+          "sentence": 2,
+          "show": "bank 'you' menyala, jejak hadiah kembali ke dompet",
+          "scale": "map",
+          "motion": "koin mengalir ke bank lalu sebagian balik",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "$2.20",
+              "word": "twenty"
+            }
+          ],
+          "mood": "night"
+        },
+        {
+          "sentence": 3,
+          "show": "menara dan gedung server menyala berurutan",
+          "scale": "map",
+          "motion": "dua tumpukan mendarat di katanya",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "16¢",
+              "word": "Sixteen"
+            },
+            {
+              "text": "39¢",
+              "word": "thirty-nine"
+            }
+          ],
+          "mood": "night",
+          "count": {
+            "value": 3,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+        },
+        {
+          "url": "https://wellsfargo.com/merchantpassthroughfees",
+          "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+        },
+        {
+          "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+          "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        }
+      ],
+      "duration_ms": {
+        "en": 11331
+      }
+    },
+    {
+      "id": "s48",
+      "role": "payoff",
+      "narration": {
+        "en": "And the tag may have carried the toll before you ever tapped. So next time a shop offers a cash discount, look at it as a way around the toll road.",
+        "id": "Dan label harga mungkin sudah memuat tol itu sebelum kamu tap. Jadi lain kali toko menawarkan diskon tunai, lihat itu sebagai jalan memutar dari jalan tol."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "label sepatu dengan koin tol di dalam, kartu belum menyentuh terminal",
+          "scale": "object",
+          "motion": "label membuka memperlihatkan koin",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "ALREADY INSIDE",
+              "word": "toll"
+            }
+          ],
+          "mood": "night"
+        },
+        {
+          "sentence": 2,
+          "show": "pintu toko dengan gantungan kecil cash discount, gerobak berbelok lewat jalan setapak di samping gerbang",
+          "scale": "place",
+          "motion": "gerbang meredup, jalan setapak menyala",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "CASH DISCOUNT",
+              "word": "discount"
+            }
+          ],
+          "mood": "night"
+        }
+      ],
+      "duration_ms": {
+        "en": 8870
+      }
+    },
+    {
+      "id": "s49",
+      "role": "cta",
+      "narration": {
+        "en": "Next, a short one about a forgotten wallet, the story that launched a famous card. The man who promoted it later wrote that he invented it.",
+        "id": "Berikutnya, video pendek soal dompet tertinggal, cerita yang melambungkan sebuah kartu terkenal. Orang yang mempromosikannya belakangan menulis bahwa dialah yang mengarangnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "meja restoran lama dengan dompet tertinggal di ambang pintu",
+          "scale": "object",
+          "motion": "lampu meja berayun, dompet disorot",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "NEXT",
+              "word": "Next"
+            }
+          ],
+          "mood": "night"
+        },
+        {
+          "sentence": 2,
+          "show": "tangan humas dengan pena di atas naskah cerita dompet",
+          "scale": "object",
+          "motion": "pena menulis, dompet memudar jadi gambar kertas",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "INVENTED",
+              "word": "invented"
+            }
+          ],
+          "mood": "night"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.nerdwallet.com/blog/credit-cards/matty-simmons-interview",
+          "claim": "Matty Simmons menulis bahwa ia mengarang cerita McNamara kekurangan uang saat makan malam untuk publisitas"
+        }
+      ],
+      "duration_ms": {
+        "en": 8127
+      }
     }
-   ],
-   "stage": {
-    "engine": "r3",
-    "module": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-shots.tsx",
-    "scene": "thumbB"
-   }
-  }
- ],
- "anti_slop": {
-  "text_score_en": 40,
-  "text_score_id": 38
- },
- "sources": [
-  {
-   "scene": "s01",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+  ],
+  "shorts_cuts": [
+    {
+      "name": "B1-100-dollar-split",
+      "scene_ids": [
+        "s01",
+        "s03",
+        "s35"
+      ],
+      "hook_override": "You pay $100. The shop gets $97.25.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "PAY $100",
+            "size": 170,
+            "color": "#ffffff"
+          },
+          {
+            "text": "SHOP: $97.25",
+            "size": 130,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-shots.tsx",
+          "scene": "thumbS1"
+        }
+      }
+    },
+    {
+      "name": "B2-cash-pays-too",
+      "scene_ids": [
+        "s36",
+        "s37",
+        "s48"
+      ],
+      "hook_override": "The man paying cash behind you helps pay the card toll.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "CASH PAYS",
+            "size": 150,
+            "color": "#ffffff"
+          },
+          {
+            "text": "TOO?!",
+            "size": 190,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-shots.tsx",
+          "scene": "thumbS2"
+        }
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "scene": "s01",
+      "title": "The tap"
+    },
+    {
+      "scene": "s04",
+      "title": "The toll road"
+    },
+    {
+      "scene": "s13",
+      "title": "Gate one: your bank"
+    },
+    {
+      "scene": "s23",
+      "title": "Gate two: the network"
+    },
+    {
+      "scene": "s25",
+      "title": "Gate three: the shop's side"
+    },
+    {
+      "scene": "s34",
+      "title": "Who helps pay"
+    },
+    {
+      "scene": "s40",
+      "title": "Another road"
+    },
+    {
+      "scene": "s47",
+      "title": "Where it all went"
+    }
+  ],
+  "tags": [
+    "credit card fees",
+    "interchange",
+    "swipe fees",
+    "how payments work",
+    "Visa",
+    "Mastercard",
+    "QRIS",
+    "money"
+  ],
+  "thumbnails": [
+    {
+      "lines": [
+        {
+          "text": "$100 →",
+          "color": "#ffffff",
+          "size": 170
+        },
+        {
+          "text": "$97.25",
+          "color": "#ffd23f",
+          "size": 190
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-shots.tsx",
+        "scene": "thumbA"
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "WHO TOOK",
+          "color": "#ffffff",
+          "size": 150
+        },
+        {
+          "text": "$2.75?",
+          "color": "#ffd23f",
+          "size": 200
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-shots.tsx",
+        "scene": "thumbB"
+      }
+    }
+  ],
+  "anti_slop": {
+    "text_score_en": 40,
+    "text_score_id": 38
   },
-  {
-   "scene": "s03",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s03",
-   "url": "https://wellsfargo.com/merchantpassthroughfees",
-   "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-  },
-  {
-   "scene": "s03",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s07",
-   "url": "https://fool.com/money/research/average-credit-card-processing-fees-costs-america",
-   "claim": "Visa + Mastercard lebih dari 80% volume transaksi kartu kredit AS"
-  },
-  {
-   "scene": "s12",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s12",
-   "url": "https://wellsfargo.com/merchantpassthroughfees",
-   "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-  },
-  {
-   "scene": "s12",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s13",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s14",
-   "url": "https://nav.com/blog/credit-card-processing-fees",
-   "claim": "Interchange porsi terbesar biaya kartu"
-  },
-  {
-   "scene": "s14",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s15",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s16",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s17",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s17",
-   "url": "https://www.helcim.com/visa-usa-interchange-rates/",
-   "claim": "Merchant kecil yang memenuhi syarat punya baris tarif lebih rendah"
-  },
-  {
-   "scene": "s19",
-   "url": "https://staxpayments.com/blog/visa-interchange-rates/",
-   "claim": "Rewards didanai sebagian oleh interchange"
-  },
-  {
-   "scene": "s20",
-   "url": "https://staxpayments.com/blog/visa-interchange-rates/",
-   "claim": "Rewards didanai sebagian oleh interchange"
-  },
-  {
-   "scene": "s22",
-   "url": "https://staxpayments.com/blog/visa-interchange-rates/",
-   "claim": "Rewards didanai sebagian oleh interchange"
-  },
-  {
-   "scene": "s23",
-   "url": "https://wellsfargo.com/merchantpassthroughfees",
-   "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-  },
-  {
-   "scene": "s24",
-   "url": "https://nilsonreport.com/articles/mastercard-and-visa-cards-in-the-us-2025/",
-   "claim": "Kartu Visa dan Mastercard terbitan AS: $9,986 triliun volume belanja 2025 (kredit, debit, prepaid)"
-  },
-  {
-   "scene": "s25",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s26",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s27",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s27",
-   "url": "https://wellsfargo.com/merchantpassthroughfees",
-   "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-  },
-  {
-   "scene": "s28",
-   "url": "https://www.spark.money/glossary/assessment-fee",
-   "claim": "Markup processor bagian yang bisa dinegosiasi"
-  },
-  {
-   "scene": "s28",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s29",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s29",
-   "url": "https://wellsfargo.com/merchantpassthroughfees",
-   "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-  },
-  {
-   "scene": "s29",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s30",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s31",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s31",
-   "url": "https://wellsfargo.com/merchantpassthroughfees",
-   "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-  },
-  {
-   "scene": "s31",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s32",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s33",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s34",
-   "url": "https://www.mymoney.gov/node/82113",
-   "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-  },
-  {
-   "scene": "s35",
-   "url": "https://www.mymoney.gov/node/82113",
-   "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-  },
-  {
-   "scene": "s36",
-   "url": "https://www.mymoney.gov/node/82113",
-   "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-  },
-  {
-   "scene": "s37",
-   "url": "https://www.mymoney.gov/node/82113",
-   "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-  },
-  {
-   "scene": "s38",
-   "url": "https://www.mymoney.gov/node/82113",
-   "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
-  },
-  {
-   "scene": "s40",
-   "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-   "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-  },
-  {
-   "scene": "s41",
-   "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-   "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-  },
-  {
-   "scene": "s42",
-   "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-   "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-  },
-  {
-   "scene": "s43",
-   "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-   "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-  },
-  {
-   "scene": "s44",
-   "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-   "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-  },
-  {
-   "scene": "s45",
-   "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-   "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-  },
-  {
-   "scene": "s45",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s46",
-   "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-   "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
-  },
-  {
-   "scene": "s47",
-   "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-   "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
-  },
-  {
-   "scene": "s47",
-   "url": "https://wellsfargo.com/merchantpassthroughfees",
-   "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
-  },
-  {
-   "scene": "s47",
-   "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
-   "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
-  },
-  {
-   "scene": "s49",
-   "url": "https://www.nerdwallet.com/blog/credit-cards/matty-simmons-interview",
-   "claim": "Matty Simmons menulis bahwa ia mengarang cerita McNamara kekurangan uang saat makan malam untuk publisitas"
-  }
- ]
+  "sources": [
+    {
+      "scene": "s01",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s03",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s03",
+      "url": "https://wellsfargo.com/merchantpassthroughfees",
+      "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+    },
+    {
+      "scene": "s03",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s07",
+      "url": "https://fool.com/money/research/average-credit-card-processing-fees-costs-america",
+      "claim": "Visa + Mastercard lebih dari 80% volume transaksi kartu kredit AS"
+    },
+    {
+      "scene": "s12",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s12",
+      "url": "https://wellsfargo.com/merchantpassthroughfees",
+      "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+    },
+    {
+      "scene": "s12",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s13",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s14",
+      "url": "https://nav.com/blog/credit-card-processing-fees",
+      "claim": "Interchange porsi terbesar biaya kartu"
+    },
+    {
+      "scene": "s14",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s15",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s16",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s17",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s17",
+      "url": "https://www.helcim.com/visa-usa-interchange-rates/",
+      "claim": "Merchant kecil yang memenuhi syarat punya baris tarif lebih rendah"
+    },
+    {
+      "scene": "s19",
+      "url": "https://staxpayments.com/blog/visa-interchange-rates/",
+      "claim": "Rewards didanai sebagian oleh interchange"
+    },
+    {
+      "scene": "s20",
+      "url": "https://staxpayments.com/blog/visa-interchange-rates/",
+      "claim": "Rewards didanai sebagian oleh interchange"
+    },
+    {
+      "scene": "s22",
+      "url": "https://staxpayments.com/blog/visa-interchange-rates/",
+      "claim": "Rewards didanai sebagian oleh interchange"
+    },
+    {
+      "scene": "s23",
+      "url": "https://wellsfargo.com/merchantpassthroughfees",
+      "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+    },
+    {
+      "scene": "s24",
+      "url": "https://nilsonreport.com/articles/mastercard-and-visa-cards-in-the-us-2025/",
+      "claim": "Kartu Visa dan Mastercard terbitan AS: $9,986 triliun volume belanja 2025 (kredit, debit, prepaid)"
+    },
+    {
+      "scene": "s25",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s26",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s27",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s27",
+      "url": "https://wellsfargo.com/merchantpassthroughfees",
+      "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+    },
+    {
+      "scene": "s28",
+      "url": "https://www.spark.money/glossary/assessment-fee",
+      "claim": "Markup processor bagian yang bisa dinegosiasi"
+    },
+    {
+      "scene": "s28",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s29",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s29",
+      "url": "https://wellsfargo.com/merchantpassthroughfees",
+      "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+    },
+    {
+      "scene": "s29",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s30",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s31",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s31",
+      "url": "https://wellsfargo.com/merchantpassthroughfees",
+      "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+    },
+    {
+      "scene": "s31",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s32",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s33",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s34",
+      "url": "https://www.mymoney.gov/node/82113",
+      "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+    },
+    {
+      "scene": "s35",
+      "url": "https://www.mymoney.gov/node/82113",
+      "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+    },
+    {
+      "scene": "s36",
+      "url": "https://www.mymoney.gov/node/82113",
+      "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+    },
+    {
+      "scene": "s37",
+      "url": "https://www.mymoney.gov/node/82113",
+      "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+    },
+    {
+      "scene": "s38",
+      "url": "https://www.mymoney.gov/node/82113",
+      "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+    },
+    {
+      "scene": "s40",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+    },
+    {
+      "scene": "s41",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+    },
+    {
+      "scene": "s42",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+    },
+    {
+      "scene": "s43",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+    },
+    {
+      "scene": "s44",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+    },
+    {
+      "scene": "s45",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+    },
+    {
+      "scene": "s45",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s46",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+    },
+    {
+      "scene": "s47",
+      "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+      "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+    },
+    {
+      "scene": "s47",
+      "url": "https://wellsfargo.com/merchantpassthroughfees",
+      "claim": "Visa credit assessment 0.14%; authorization processing fee $0.0195"
+    },
+    {
+      "scene": "s47",
+      "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
+      "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+    },
+    {
+      "scene": "s49",
+      "url": "https://www.nerdwallet.com/blog/credit-cards/matty-simmons-interview",
+      "claim": "Matty Simmons menulis bahwa ia mengarang cerita McNamara kekurangan uang saat makan malam untuk publisitas"
+    }
+  ]
 }

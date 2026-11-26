@@ -35,3 +35,16 @@ Palet referensi R3 yang terukur (sel, neuron, membran) ada di `produksi/REFERENS
 | T01 | belum ada | dirancang ulang dengan bahasa bentuk di atas | - |
 
 Kode pemeran dipakai bersama mesin R3: `produksi/remotion/src/r3/cast/T02.tsx` (Komo, Sepuh, Pak Aturan, Cicak, figuran `Warga`, dan benda T02 seperti `Gerbong`). Lembar karakter: render `produksi/remotion/src/experiment/castIndex.tsx`, hasil di `produksi/render/_eksperimen/T02-pemeran-lembar.png`.
+
+## Pemeran T01 (disetujui bersama naskah 002, 2026-11-26)
+Digambar dengan `produksi/remotion/src/r3/soft/kit.tsx` di `04-shots.tsx` siklus.
+| id | Peran | Bentuk |
+| --- | --- | --- |
+| you | pembeli | badan kacang koral, syal biru |
+| owner | pemilik toko sepatu | badan bulat toska, celemek |
+| bank | bank pembeli | gedung berwajah beratap hijau uang |
+| network | jaringan kartu | menara pengawas berlampu sorot, tanpa logo |
+| terminal | perusahaan terminal | server berheadset |
+| cash | pembayar tunai | badan bulat ungu, topi pet, uang kertas |
+
+Palet T01: krem #fff4da, hijau uang #2f8f6b, koin #ffd23f, biru malam #172447, koral #e4572e.

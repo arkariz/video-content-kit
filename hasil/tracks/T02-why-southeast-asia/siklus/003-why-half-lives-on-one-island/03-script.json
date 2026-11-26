@@ -113,7 +113,10 @@
           "url": "https://www.britannica.com/summary/England",
           "claim": "Luas England 130.278 km²"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 5480
+      }
     },
     {
       "id": "s02",
@@ -171,7 +174,10 @@
           "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
           "claim": "55,65% penduduk di Jawa (SUPAS 2025)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 6827
+      }
     },
     {
       "id": "s03",
@@ -238,7 +244,10 @@
           "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
           "claim": "Jawa sekitar 158 juta jiwa pada 2025"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8406
+      }
     },
     {
       "id": "s04",
@@ -288,7 +297,10 @@
           "url": "https://www.bps.go.id/id/pressrelease/2026/02/05/2546/ekonomi-indonesia-tahun-2025-tumbuh-5-11-persen",
           "claim": "Jawa menyumbang 56,93% PDB Indonesia 2025"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8777
+      }
     },
     {
       "id": "s05",
@@ -335,7 +347,10 @@
           "url": "https://en.wikipedia.org/wiki/Java",
           "claim": "Jawa pulau terbesar kelima di Indonesia"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 7523
+      }
     },
     {
       "id": "s06",
@@ -393,7 +408,10 @@
           "url": "https://en.wikipedia.org/wiki/Java",
           "claim": "Kepadatan Jawa sekitar 1.190 jiwa/km²"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11471
+      }
     },
     {
       "id": "s07",
@@ -454,7 +472,10 @@
           "url": "https://kids.britannica.com/students/article/Java/327496",
           "claim": "Jawa punya 112 gunung api, 35 di antaranya aktif"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9567
+      }
     },
     {
       "id": "s08",
@@ -483,7 +504,10 @@
           "url": "https://journal.ugm.ac.id/jae/article/download/82362/37573",
           "claim": "Warga mengungsi saat erupsi dan kembali setelah bahaya lewat"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9706
+      }
     },
     {
       "id": "s09",
@@ -542,7 +566,10 @@
           "url": "https://www.britannica.com/place/Indonesia/Soils",
           "claim": "Batuan Jawa sebagian besar andesit vulkanik; tanah dari material andesit termasuk yang paling subur"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 10217
+      }
     },
     {
       "id": "s10",
@@ -580,7 +607,10 @@
           ],
           "bubble": "Self-service, volcanic edition"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8638
+      }
     },
     {
       "id": "s11",
@@ -632,7 +662,10 @@
           "url": "https://www.britannica.com/place/Indonesia/Soils",
           "claim": "Suhu tinggi dan hujan lebat menyebabkan pencucian mineral yang menghasilkan tanah miskin; Kalimantan didominasi granit dan endapan"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 10588
+      }
     },
     {
       "id": "s12",
@@ -690,7 +723,10 @@
           "url": "https://www.britannica.com/place/Indonesia/Soils",
           "claim": "Batuan Jawa sebagian besar andesit; tanah andesit termasuk yang paling subur"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 16765
+      }
     },
     {
       "id": "s13",
@@ -734,7 +770,10 @@
             }
           ]
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8359
+      }
     },
     {
       "id": "s14",
@@ -759,7 +798,10 @@
           "url": "https://en.wikipedia.org/wiki/Agricultural_Involution",
           "claim": "Sawah (padi beririgasi) adalah bentuk pertanian dominan di Jawa dan Bali"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9009
+      }
     },
     {
       "id": "s15",
@@ -813,7 +855,10 @@
           "url": "https://muse.jhu.edu/article/367736",
           "claim": "Sawah merespons setiap tambahan tenaga kerja dan menjadi sistem yang stabil (Geertz 1963)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 7012
+      }
     },
     {
       "id": "s16",
@@ -857,7 +902,10 @@
           "url": "https://muse.jhu.edu/article/367736",
           "claim": "Sawah responsif terhadap setiap tambahan input tenaga kerja (Geertz 1963)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 5991
+      }
     },
     {
       "id": "s17",
@@ -904,7 +952,10 @@
           "url": "https://muse.jhu.edu/article/367736",
           "claim": "Sawah yang menyerap tambahan tenaga kerja mendorong sistem kepemilikan dan keluarga yang makin rapat"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 13793
+      }
     },
     {
       "id": "s18",
@@ -958,7 +1009,10 @@
           "url": "https://en.wikipedia.org/wiki/Agricultural_Involution",
           "claim": "Dua bentuk pertanian dominan: ladang berpindah (swidden) dan sawah; ladang berpindah lebih umum di luar Jawa dan Bali"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 14675
+      }
     },
     {
       "id": "s19",
@@ -996,7 +1050,10 @@
             }
           ]
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 7709
+      }
     },
     {
       "id": "s20",
@@ -1059,7 +1116,10 @@
           "url": "https://kyoto-seas.org/pdf/28/4/280404.pdf",
           "claim": "Angka Raffles kemungkinan terlalu rendah"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 13189
+      }
     },
     {
       "id": "s21",
@@ -1092,7 +1152,10 @@
           "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
           "claim": "Sistem Tanam Paksa (Cultuurstelsel) diperkenalkan Belanda di Jawa, 1830"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 6966
+      }
     },
     {
       "id": "s22",
@@ -1141,7 +1204,10 @@
           "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
           "claim": "Desa menyisihkan seperlima tanah garapan untuk tanaman ekspor; tebu dan nila lalu kopi dan lainnya"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9474
+      }
     },
     {
       "id": "s23",
@@ -1188,7 +1254,10 @@
           "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
           "claim": "1840–1880 penjualannya rata-rata 18 juta gulden per tahun, sekitar sepertiga anggaran Belanda"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8313
+      }
     },
     {
       "id": "s24",
@@ -1231,7 +1300,10 @@
           "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
           "claim": "Tanam Paksa memperluas produksi desa di Jawa"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8127
+      }
     },
     {
       "id": "s25",
@@ -1287,7 +1359,10 @@
           "url": "https://www.britannica.com:443/place/Indonesia/The-Culture-System",
           "claim": "Penduduk Jawa naik dari 6 juta ke 9,5 juta selama Tanam Paksa berjalan penuh"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8266
+      }
     },
     {
       "id": "s26",
@@ -1320,7 +1395,10 @@
           "url": "https://informahealthcare.com/doi/abs/10.1080/00324728.1970.10406113",
           "claim": "4,5 juta (1815) ke 28,5 juta (1900)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 3762
+      }
     },
     {
       "id": "s27",
@@ -1372,7 +1450,10 @@
           "url": "https://dare.uva.nl/id/a580592c-eb8b-48c8-b247-414dafaef637",
           "claim": "Tesis involusi Geertz diperdebatkan sejarawan Jawa"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 7709
+      }
     },
     {
       "id": "s28",
@@ -1412,7 +1493,10 @@
             "aturan": "neutral"
           }
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9288
+      }
     },
     {
       "id": "s29",
@@ -1450,7 +1534,10 @@
           "url": "https://www.detik.com/bali/berita/d-8238991/nusron-minta-warga-bali-ke-luar-pulau-ini-riwayat-transmigrasi-di-indonesia",
           "claim": "November 1905: 155 KK dari Karanganyar, Kebumen, Purworejo, Kedu dipindahkan ke Gedong Tataan, Lampung"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 7848
+      }
     },
     {
       "id": "s30",
@@ -1500,7 +1587,10 @@
           "url": "https://jkp.ejournal.unri.ac.id/index.php/JKP/article/download/8157/6888",
           "claim": "Transmigrasi resmi dimulai 12 Desember 1950: 25 KK (98 orang) ke Lampung"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11378
+      }
     },
     {
       "id": "s31",
@@ -1534,7 +1624,10 @@
           "url": "https://jurnal.fkip.unmul.ac.id/index.php/yupa/article/download/3803/2249/22100",
           "claim": "Transmigran diberi lahan untuk bercocok tanam dan dukungan keuangan selama satu tahun"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 4040
+      }
     },
     {
       "id": "s32",
@@ -1589,7 +1682,10 @@
           "url": "https://en.wikipedia.org/wiki/1961_Indonesian_census",
           "claim": "Sensus 1961 adalah sensus pertama setelah merdeka"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8916
+      }
     },
     {
       "id": "s33",
@@ -1626,7 +1722,10 @@
           "url": "https://jkp.ejournal.unri.ac.id/index.php/JKP/article/download/8157/6888",
           "claim": "Angka lain: 7,8 juta jiwa (Kemendes PDTT 2019)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 6594
+      }
     },
     {
       "id": "s34",
@@ -1691,7 +1790,10 @@
           "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
           "claim": "9,2 juta jiwa dipindahkan sejak 1950"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9102
+      }
     },
     {
       "id": "s35",
@@ -1732,7 +1834,10 @@
           "url": "https://en.wikipedia.org/wiki/Lampung",
           "claim": "Tiga perempat penduduk Lampung keturunan pendatang Jawa, Madura, dan Bali"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9660
+      }
     },
     {
       "id": "s36",
@@ -1779,7 +1884,10 @@
           "url": "https://jkp.ejournal.unri.ac.id/index.php/JKP/article/download/8157/6888",
           "claim": "Transmigrasi membentuk 1.183 desa definitif, 385 kecamatan, 104 kota/kabupaten, 2 ibu kota provinsi"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 5480
+      }
     },
     {
       "id": "s37",
@@ -1834,7 +1942,10 @@
           "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
           "claim": "2025: 55,65% di Jawa"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 10124
+      }
     },
     {
       "id": "s38",
@@ -1889,7 +2000,10 @@
           "url": "https://databoks.katadata.co.id/en/demographics/statistics/e30b7b2cff9a7d8/indonesias-birth-rate-continues-to-decline",
           "claim": "TFR 1971: 5,61"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 7941
+      }
     },
     {
       "id": "s39",
@@ -1954,7 +2068,10 @@
           "url": "https://discmaster.textfiles.com/view/12548/abacus-multimedia-mania.iso/dp/0020/00209.txt",
           "claim": "1971–80: pertumbuhan penduduk Jawa 1,7% per tahun, pulau lain 2,6%"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11842
+      }
     },
     {
       "id": "s40",
@@ -2033,7 +2150,10 @@
           "url": "https://timesindonesia.co.id/liputan-khusus/570490/tak-harus-ke-luar-negeri-transmigrasi-tawarkan-peluang-ekonomi-baru",
           "claim": "9,2 juta jiwa dipindahkan"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 17136
+      }
     },
     {
       "id": "s41",
@@ -2108,7 +2228,10 @@
           "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
           "claim": "Laju pertumbuhan penduduk 1,08% per tahun"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 12585
+      }
     },
     {
       "id": "s42",
@@ -2155,7 +2278,10 @@
           "url": "https://katadata.co.id/berita/nasional/6a7c54e7b6ccc/pemerintah-ubah-pola-transmigrasi-warga-dapat-jaminan-rp-3-6-juta-per-bulan",
           "claim": "2026: fokus dari 154 kawasan dipersempit ke 53 kawasan prioritas, terutama Indonesia timur; jaminan hidup Rp3,6 juta per bulan"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11146
+      }
     },
     {
       "id": "s43",
@@ -2201,7 +2327,10 @@
             "komo": "neutral"
           }
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9102
+      }
     },
     {
       "id": "s44",
@@ -2227,7 +2356,10 @@
           "url": "https://www.bps.go.id/id/pressrelease/2026/02/05/2546/ekonomi-indonesia-tahun-2025-tumbuh-5-11-persen",
           "claim": "Kontribusi Jawa terhadap PDB 2025: 56,93% (BPS)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 6037
+      }
     },
     {
       "id": "s45",
@@ -2271,7 +2403,10 @@
           "url": "https://www.thejakartapost.com/news/2021/05/23/indonesia-remains-java-centric-despite-jokowis-infrastructure-campaign.html",
           "claim": "Indonesia tetap berpusat di Jawa meskipun kampanye infrastruktur"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 9149
+      }
     },
     {
       "id": "s46",
@@ -2312,7 +2447,10 @@
           "url": "https://www.idntimes.com/business/economy/lebih-dari-separuh-penduduk-miskin-indonesia-terkonsentrasi-di-jawa-00-gshdq-r7kydq",
           "claim": "Maret 2026: 52,42% penduduk miskin Indonesia di Jawa"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8220
+      }
     },
     {
       "id": "s47",
@@ -2361,7 +2499,10 @@
           ],
           "mood": "warm"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8313
+      }
     },
     {
       "id": "s48",
@@ -2407,7 +2548,10 @@
           ],
           "mood": "night"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 8406
+      }
     },
     {
       "id": "s49",
@@ -2466,7 +2610,10 @@
           "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
           "claim": "Kerumunan di Jawa (konteks)"
         }
-      ]
+      ],
+      "duration_ms": {
+        "en": 11610
+      }
     }
   ],
   "shorts_cuts": [

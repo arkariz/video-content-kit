@@ -9,7 +9,7 @@ export const ANCHOR_KINDS = ["map", "silhouette", "object"];
 export const MOODS = ["warm", "cool", "bright", "dark", "faded", "night", "dusk", "day", "danger", "calm"];
 export const EXPR = ["neutral", "happy", "sad", "shock", "tired", "angry", "smug"];
 // Pemeran per track (produksi/STYLE.md). Tambah di sini DAN di produksi/remotion/src/r3/cast/ saat menambah tokoh.
-export const CAST = { T02: ["komo", "sepuh", "aturan", "cicak"] };
+export const CAST = { T01: ["you", "owner", "bank", "network", "terminal", "cash"], T02: ["komo", "sepuh", "aturan", "cicak"] };
 // Waktu transisi (detik) dari gaya-visual.md bagian 3. Komposisi (src/r3/engine.tsx) memakai angka yang sama.
 export const TRANS_S = { iris: 0.45, wipe: 0.4, push: 0.3, cut: 0, hold: 0 };
 const BANNED_SHOW = [/\btokoh berdiri\b/i, /^\s*ikon\b/i, /^\s*teks\b/i, /\bicon\b/i, /\btext on screen\b/i];

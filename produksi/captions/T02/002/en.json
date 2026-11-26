@@ -1,0 +1,7190 @@
+{
+  "s01": [
+    {
+      "text": "One",
+      "startMs": 80,
+      "endMs": 304
+    },
+    {
+      "text": "hour",
+      "startMs": 304,
+      "endMs": 584
+    },
+    {
+      "text": "in,",
+      "startMs": 584,
+      "endMs": 808
+    },
+    {
+      "text": "your",
+      "startMs": 808,
+      "endMs": 1088
+    },
+    {
+      "text": "friend",
+      "startMs": 1088,
+      "endMs": 1480
+    },
+    {
+      "text": "in",
+      "startMs": 1480,
+      "endMs": 1648
+    },
+    {
+      "text": "Singapore",
+      "startMs": 1648,
+      "endMs": 2208
+    },
+    {
+      "text": "is",
+      "startMs": 2208,
+      "endMs": 2376
+    },
+    {
+      "text": "already",
+      "startMs": 2376,
+      "endMs": 2824
+    },
+    {
+      "text": "playing",
+      "startMs": 2824,
+      "endMs": 3272
+    },
+    {
+      "text": "GTA",
+      "startMs": 3272,
+      "endMs": 3496
+    },
+    {
+      "text": "6.",
+      "startMs": 3496,
+      "endMs": 3664
+    },
+    {
+      "text": "You,",
+      "startMs": 3664,
+      "endMs": 3944
+    },
+    {
+      "text": "in",
+      "startMs": 3944,
+      "endMs": 4112
+    },
+    {
+      "text": "Indonesia,",
+      "startMs": 4112,
+      "endMs": 4728
+    },
+    {
+      "text": "started",
+      "startMs": 4728,
+      "endMs": 5176
+    },
+    {
+      "text": "at",
+      "startMs": 5176,
+      "endMs": 5344
+    },
+    {
+      "text": "the",
+      "startMs": 5344,
+      "endMs": 5568
+    },
+    {
+      "text": "same",
+      "startMs": 5568,
+      "endMs": 5848
+    },
+    {
+      "text": "second",
+      "startMs": 5848,
+      "endMs": 6240
+    },
+    {
+      "text": "and",
+      "startMs": 6240,
+      "endMs": 6464
+    },
+    {
+      "text": "still",
+      "startMs": 6464,
+      "endMs": 6800
+    },
+    {
+      "text": "have",
+      "startMs": 6800,
+      "endMs": 7080
+    },
+    {
+      "text": "eight",
+      "startMs": 7080,
+      "endMs": 7416
+    },
+    {
+      "text": "hours",
+      "startMs": 7416,
+      "endMs": 7752
+    },
+    {
+      "text": "to",
+      "startMs": 7752,
+      "endMs": 7920
+    },
+    {
+      "text": "go.",
+      "startMs": 7920,
+      "endMs": 8140
+    }
+  ],
+  "s02": [
+    {
+      "text": "GTA",
+      "startMs": 120,
+      "endMs": 345
+    },
+    {
+      "text": "6",
+      "startMs": 345,
+      "endMs": 457
+    },
+    {
+      "text": "landed",
+      "startMs": 457,
+      "endMs": 850
+    },
+    {
+      "text": "on",
+      "startMs": 850,
+      "endMs": 1019
+    },
+    {
+      "text": "November",
+      "startMs": 1019,
+      "endMs": 1525
+    },
+    {
+      "text": "nineteenth",
+      "startMs": 1525,
+      "endMs": 2143
+    },
+    {
+      "text": "at",
+      "startMs": 2143,
+      "endMs": 2312
+    },
+    {
+      "text": "up",
+      "startMs": 2312,
+      "endMs": 2481
+    },
+    {
+      "text": "to",
+      "startMs": 2481,
+      "endMs": 2650
+    },
+    {
+      "text": "two",
+      "startMs": 2650,
+      "endMs": 2875
+    },
+    {
+      "text": "hundred",
+      "startMs": 2875,
+      "endMs": 3324
+    },
+    {
+      "text": "and",
+      "startMs": 3324,
+      "endMs": 3549
+    },
+    {
+      "text": "twelve",
+      "startMs": 3549,
+      "endMs": 3942
+    },
+    {
+      "text": "gigabytes.",
+      "startMs": 3942,
+      "endMs": 4560
+    },
+    {
+      "text": "Divide",
+      "startMs": 4560,
+      "endMs": 4953
+    },
+    {
+      "text": "that",
+      "startMs": 4953,
+      "endMs": 5234
+    },
+    {
+      "text": "by",
+      "startMs": 5234,
+      "endMs": 5403
+    },
+    {
+      "text": "the",
+      "startMs": 5403,
+      "endMs": 5628
+    },
+    {
+      "text": "middle",
+      "startMs": 5628,
+      "endMs": 6021
+    },
+    {
+      "text": "speed",
+      "startMs": 6021,
+      "endMs": 6358
+    },
+    {
+      "text": "of",
+      "startMs": 6358,
+      "endMs": 6527
+    },
+    {
+      "text": "Indonesian",
+      "startMs": 6527,
+      "endMs": 7145
+    },
+    {
+      "text": "homes,",
+      "startMs": 7145,
+      "endMs": 7538
+    },
+    {
+      "text": "assume",
+      "startMs": 7538,
+      "endMs": 7931
+    },
+    {
+      "text": "it",
+      "startMs": 7931,
+      "endMs": 8100
+    },
+    {
+      "text": "never",
+      "startMs": 8100,
+      "endMs": 8437
+    },
+    {
+      "text": "drops,",
+      "startMs": 8437,
+      "endMs": 8830
+    },
+    {
+      "text": "and",
+      "startMs": 8830,
+      "endMs": 9055
+    },
+    {
+      "text": "you",
+      "startMs": 9055,
+      "endMs": 9280
+    },
+    {
+      "text": "get",
+      "startMs": 9280,
+      "endMs": 9505
+    },
+    {
+      "text": "nine",
+      "startMs": 9505,
+      "endMs": 9786
+    },
+    {
+      "text": "hours",
+      "startMs": 9786,
+      "endMs": 10123
+    },
+    {
+      "text": "in",
+      "startMs": 10123,
+      "endMs": 10292
+    },
+    {
+      "text": "total.",
+      "startMs": 10292,
+      "endMs": 10685
+    },
+    {
+      "text": "The",
+      "startMs": 10685,
+      "endMs": 10910
+    },
+    {
+      "text": "ocean",
+      "startMs": 10910,
+      "endMs": 11247
+    },
+    {
+      "text": "explains",
+      "startMs": 11247,
+      "endMs": 11753
+    },
+    {
+      "text": "only",
+      "startMs": 11753,
+      "endMs": 12034
+    },
+    {
+      "text": "part",
+      "startMs": 12034,
+      "endMs": 12315
+    },
+    {
+      "text": "of",
+      "startMs": 12315,
+      "endMs": 12484
+    },
+    {
+      "text": "it,",
+      "startMs": 12484,
+      "endMs": 12709
+    },
+    {
+      "text": "and",
+      "startMs": 12709,
+      "endMs": 12934
+    },
+    {
+      "text": "your",
+      "startMs": 12934,
+      "endMs": 13215
+    },
+    {
+      "text": "own",
+      "startMs": 13215,
+      "endMs": 13440
+    },
+    {
+      "text": "phone",
+      "startMs": 13440,
+      "endMs": 13777
+    },
+    {
+      "text": "is",
+      "startMs": 13777,
+      "endMs": 13946
+    },
+    {
+      "text": "about",
+      "startMs": 13946,
+      "endMs": 14283
+    },
+    {
+      "text": "to",
+      "startMs": 14283,
+      "endMs": 14452
+    },
+    {
+      "text": "embarrass",
+      "startMs": 14452,
+      "endMs": 15014
+    },
+    {
+      "text": "your",
+      "startMs": 15014,
+      "endMs": 15295
+    },
+    {
+      "text": "home",
+      "startMs": 15295,
+      "endMs": 15576
+    },
+    {
+      "text": "cable.",
+      "startMs": 15576,
+      "endMs": 15960
+    }
+  ],
+  "s03": [
+    {
+      "text": "Think",
+      "startMs": 100,
+      "endMs": 260
+    },
+    {
+      "text": "of",
+      "startMs": 300,
+      "endMs": 360
+    },
+    {
+      "text": "the",
+      "startMs": 400,
+      "endMs": 460
+    },
+    {
+      "text": "internet",
+      "startMs": 540,
+      "endMs": 860
+    },
+    {
+      "text": "as",
+      "startMs": 900,
+      "endMs": 1000
+    },
+    {
+      "text": "water.",
+      "startMs": 1160,
+      "endMs": 1440
+    },
+    {
+      "text": "The",
+      "startMs": 2200,
+      "endMs": 2320
+    },
+    {
+      "text": "file",
+      "startMs": 2360,
+      "endMs": 2640
+    },
+    {
+      "text": "is",
+      "startMs": 2680,
+      "endMs": 2760
+    },
+    {
+      "text": "a",
+      "startMs": 2800,
+      "endMs": 2860
+    },
+    {
+      "text": "full",
+      "startMs": 2920,
+      "endMs": 3100
+    },
+    {
+      "text": "tank",
+      "startMs": 3180,
+      "endMs": 3420
+    },
+    {
+      "text": "that",
+      "startMs": 3460,
+      "endMs": 3580
+    },
+    {
+      "text": "has",
+      "startMs": 3640,
+      "endMs": 3800
+    },
+    {
+      "text": "to",
+      "startMs": 3840,
+      "endMs": 3940
+    },
+    {
+      "text": "reach",
+      "startMs": 3980,
+      "endMs": 4180
+    },
+    {
+      "text": "your",
+      "startMs": 4220,
+      "endMs": 4320
+    },
+    {
+      "text": "house,",
+      "startMs": 4380,
+      "endMs": 4660
+    },
+    {
+      "text": "and",
+      "startMs": 5160,
+      "endMs": 5240
+    },
+    {
+      "text": "your",
+      "startMs": 5280,
+      "endMs": 5440
+    },
+    {
+      "text": "speed",
+      "startMs": 5500,
+      "endMs": 5740
+    },
+    {
+      "text": "is",
+      "startMs": 5780,
+      "endMs": 5860
+    },
+    {
+      "text": "how",
+      "startMs": 5900,
+      "endMs": 6080
+    },
+    {
+      "text": "hard",
+      "startMs": 6160,
+      "endMs": 6440
+    },
+    {
+      "text": "your",
+      "startMs": 6480,
+      "endMs": 6580
+    },
+    {
+      "text": "pipe",
+      "startMs": 6640,
+      "endMs": 6860
+    },
+    {
+      "text": "flows.",
+      "startMs": 6940,
+      "endMs": 7280
+    },
+    {
+      "text": "A",
+      "startMs": 8180,
+      "endMs": 8300
+    },
+    {
+      "text": "thin",
+      "startMs": 8380,
+      "endMs": 8620
+    },
+    {
+      "text": "pipe",
+      "startMs": 8680,
+      "endMs": 8900
+    },
+    {
+      "text": "fills",
+      "startMs": 8980,
+      "endMs": 9220
+    },
+    {
+      "text": "the",
+      "startMs": 9260,
+      "endMs": 9340
+    },
+    {
+      "text": "same",
+      "startMs": 9420,
+      "endMs": 9680
+    },
+    {
+      "text": "tank,",
+      "startMs": 9740,
+      "endMs": 10020
+    },
+    {
+      "text": "only",
+      "startMs": 10400,
+      "endMs": 10620
+    },
+    {
+      "text": "later.",
+      "startMs": 10680,
+      "endMs": 10940
+    }
+  ],
+  "s04": [
+    {
+      "text": "Follow",
+      "startMs": 100,
+      "endMs": 513
+    },
+    {
+      "text": "that",
+      "startMs": 513,
+      "endMs": 808
+    },
+    {
+      "text": "pipe",
+      "startMs": 808,
+      "endMs": 1103
+    },
+    {
+      "text": "from",
+      "startMs": 1103,
+      "endMs": 1398
+    },
+    {
+      "text": "the",
+      "startMs": 1398,
+      "endMs": 1634
+    },
+    {
+      "text": "sea",
+      "startMs": 1634,
+      "endMs": 1870
+    },
+    {
+      "text": "to",
+      "startMs": 1870,
+      "endMs": 2047
+    },
+    {
+      "text": "your",
+      "startMs": 2047,
+      "endMs": 2342
+    },
+    {
+      "text": "door.",
+      "startMs": 2342,
+      "endMs": 2696
+    },
+    {
+      "text": "It",
+      "startMs": 2696,
+      "endMs": 2873
+    },
+    {
+      "text": "has",
+      "startMs": 2873,
+      "endMs": 3109
+    },
+    {
+      "text": "three",
+      "startMs": 3109,
+      "endMs": 3463
+    },
+    {
+      "text": "parts:",
+      "startMs": 3463,
+      "endMs": 3876
+    },
+    {
+      "text": "the",
+      "startMs": 3876,
+      "endMs": 4112
+    },
+    {
+      "text": "main",
+      "startMs": 4112,
+      "endMs": 4407
+    },
+    {
+      "text": "pipe",
+      "startMs": 4407,
+      "endMs": 4702
+    },
+    {
+      "text": "between",
+      "startMs": 4702,
+      "endMs": 5174
+    },
+    {
+      "text": "cities",
+      "startMs": 5174,
+      "endMs": 5587
+    },
+    {
+      "text": "and",
+      "startMs": 5587,
+      "endMs": 5823
+    },
+    {
+      "text": "islands,",
+      "startMs": 5823,
+      "endMs": 6354
+    },
+    {
+      "text": "the",
+      "startMs": 6354,
+      "endMs": 6590
+    },
+    {
+      "text": "street",
+      "startMs": 6590,
+      "endMs": 7003
+    },
+    {
+      "text": "pipe",
+      "startMs": 7003,
+      "endMs": 7298
+    },
+    {
+      "text": "past",
+      "startMs": 7298,
+      "endMs": 7593
+    },
+    {
+      "text": "your",
+      "startMs": 7593,
+      "endMs": 7888
+    },
+    {
+      "text": "neighbourhood,",
+      "startMs": 7888,
+      "endMs": 8772
+    },
+    {
+      "text": "and",
+      "startMs": 8772,
+      "endMs": 9008
+    },
+    {
+      "text": "the",
+      "startMs": 9008,
+      "endMs": 9244
+    },
+    {
+      "text": "last",
+      "startMs": 9244,
+      "endMs": 9539
+    },
+    {
+      "text": "hose",
+      "startMs": 9539,
+      "endMs": 9834
+    },
+    {
+      "text": "into",
+      "startMs": 9834,
+      "endMs": 10129
+    },
+    {
+      "text": "one",
+      "startMs": 10129,
+      "endMs": 10365
+    },
+    {
+      "text": "house.",
+      "startMs": 10365,
+      "endMs": 10778
+    },
+    {
+      "text": "Three",
+      "startMs": 10778,
+      "endMs": 11132
+    },
+    {
+      "text": "players",
+      "startMs": 11132,
+      "endMs": 11604
+    },
+    {
+      "text": "matter",
+      "startMs": 11604,
+      "endMs": 12017
+    },
+    {
+      "text": "too:",
+      "startMs": 12017,
+      "endMs": 12312
+    },
+    {
+      "text": "the",
+      "startMs": 12312,
+      "endMs": 12548
+    },
+    {
+      "text": "state,",
+      "startMs": 12548,
+      "endMs": 12961
+    },
+    {
+      "text": "which",
+      "startMs": 12961,
+      "endMs": 13315
+    },
+    {
+      "text": "laid",
+      "startMs": 13315,
+      "endMs": 13610
+    },
+    {
+      "text": "part",
+      "startMs": 13610,
+      "endMs": 13905
+    },
+    {
+      "text": "of",
+      "startMs": 13905,
+      "endMs": 14082
+    },
+    {
+      "text": "the",
+      "startMs": 14082,
+      "endMs": 14318
+    },
+    {
+      "text": "main",
+      "startMs": 14318,
+      "endMs": 14613
+    },
+    {
+      "text": "pipe,",
+      "startMs": 14613,
+      "endMs": 14967
+    },
+    {
+      "text": "the",
+      "startMs": 14967,
+      "endMs": 15203
+    },
+    {
+      "text": "companies",
+      "startMs": 15203,
+      "endMs": 15793
+    },
+    {
+      "text": "that",
+      "startMs": 15793,
+      "endMs": 16088
+    },
+    {
+      "text": "sell",
+      "startMs": 16088,
+      "endMs": 16383
+    },
+    {
+      "text": "the",
+      "startMs": 16383,
+      "endMs": 16619
+    },
+    {
+      "text": "water,",
+      "startMs": 16619,
+      "endMs": 17032
+    },
+    {
+      "text": "and",
+      "startMs": 17032,
+      "endMs": 17268
+    },
+    {
+      "text": "you,",
+      "startMs": 17268,
+      "endMs": 17563
+    },
+    {
+      "text": "who",
+      "startMs": 17563,
+      "endMs": 17799
+    },
+    {
+      "text": "pays.",
+      "startMs": 17799,
+      "endMs": 18140
+    }
+  ],
+  "s05": [
+    {
+      "text": "Speed",
+      "startMs": 100,
+      "endMs": 360
+    },
+    {
+      "text": "is",
+      "startMs": 420,
+      "endMs": 520
+    },
+    {
+      "text": "counted",
+      "startMs": 580,
+      "endMs": 860
+    },
+    {
+      "text": "in",
+      "startMs": 900,
+      "endMs": 1000
+    },
+    {
+      "text": "megabits",
+      "startMs": 1080,
+      "endMs": 1560
+    },
+    {
+      "text": "per",
+      "startMs": 1600,
+      "endMs": 1720
+    },
+    {
+      "text": "second,",
+      "startMs": 1840,
+      "endMs": 2180
+    },
+    {
+      "text": "which",
+      "startMs": 2660,
+      "endMs": 2760
+    },
+    {
+      "text": "is",
+      "startMs": 2800,
+      "endMs": 2880
+    },
+    {
+      "text": "how",
+      "startMs": 2920,
+      "endMs": 3040
+    },
+    {
+      "text": "much",
+      "startMs": 3080,
+      "endMs": 3260
+    },
+    {
+      "text": "water",
+      "startMs": 3320,
+      "endMs": 3500
+    },
+    {
+      "text": "passes",
+      "startMs": 3580,
+      "endMs": 3880
+    },
+    {
+      "text": "each",
+      "startMs": 3920,
+      "endMs": 4100
+    },
+    {
+      "text": "second.",
+      "startMs": 4160,
+      "endMs": 4480
+    },
+    {
+      "text": "The",
+      "startMs": 5280,
+      "endMs": 5340
+    },
+    {
+      "text": "numbers",
+      "startMs": 5400,
+      "endMs": 5680
+    },
+    {
+      "text": "here",
+      "startMs": 5740,
+      "endMs": 5900
+    },
+    {
+      "text": "are",
+      "startMs": 5940,
+      "endMs": 6060
+    },
+    {
+      "text": "medians,",
+      "startMs": 6140,
+      "endMs": 6620
+    },
+    {
+      "text": "the",
+      "startMs": 7140,
+      "endMs": 7200
+    },
+    {
+      "text": "middle",
+      "startMs": 7260,
+      "endMs": 7440
+    },
+    {
+      "text": "result",
+      "startMs": 7480,
+      "endMs": 7820
+    },
+    {
+      "text": "when",
+      "startMs": 7860,
+      "endMs": 7980
+    },
+    {
+      "text": "every",
+      "startMs": 8020,
+      "endMs": 8200
+    },
+    {
+      "text": "speed",
+      "startMs": 8340,
+      "endMs": 8540
+    },
+    {
+      "text": "test",
+      "startMs": 8580,
+      "endMs": 8800
+    },
+    {
+      "text": "is",
+      "startMs": 8840,
+      "endMs": 8960
+    },
+    {
+      "text": "lined",
+      "startMs": 9020,
+      "endMs": 9280
+    },
+    {
+      "text": "up",
+      "startMs": 9320,
+      "endMs": 9420
+    },
+    {
+      "text": "from",
+      "startMs": 9460,
+      "endMs": 9600
+    },
+    {
+      "text": "slowest",
+      "startMs": 9680,
+      "endMs": 10040
+    },
+    {
+      "text": "to",
+      "startMs": 10100,
+      "endMs": 10180
+    },
+    {
+      "text": "fastest.",
+      "startMs": 10240,
+      "endMs": 10760
+    }
+  ],
+  "s06": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 286
+    },
+    {
+      "text": "when",
+      "startMs": 286,
+      "endMs": 596
+    },
+    {
+      "text": "do",
+      "startMs": 596,
+      "endMs": 782
+    },
+    {
+      "text": "you",
+      "startMs": 782,
+      "endMs": 1030
+    },
+    {
+      "text": "actually",
+      "startMs": 1030,
+      "endMs": 1587
+    },
+    {
+      "text": "get",
+      "startMs": 1587,
+      "endMs": 1835
+    },
+    {
+      "text": "to",
+      "startMs": 1835,
+      "endMs": 2021
+    },
+    {
+      "text": "play?",
+      "startMs": 2021,
+      "endMs": 2393
+    },
+    {
+      "text": "For",
+      "startMs": 2393,
+      "endMs": 2641
+    },
+    {
+      "text": "home",
+      "startMs": 2641,
+      "endMs": 2951
+    },
+    {
+      "text": "internet,",
+      "startMs": 2951,
+      "endMs": 3570
+    },
+    {
+      "text": "called",
+      "startMs": 3570,
+      "endMs": 4004
+    },
+    {
+      "text": "fixed",
+      "startMs": 4004,
+      "endMs": 4376
+    },
+    {
+      "text": "broadband,",
+      "startMs": 4376,
+      "endMs": 5057
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 5057,
+      "endMs": 5800
+    },
+    {
+      "text": "median",
+      "startMs": 5800,
+      "endMs": 6234
+    },
+    {
+      "text": "in",
+      "startMs": 6234,
+      "endMs": 6420
+    },
+    {
+      "text": "September",
+      "startMs": 6420,
+      "endMs": 7039
+    },
+    {
+      "text": "was",
+      "startMs": 7039,
+      "endMs": 7287
+    },
+    {
+      "text": "about",
+      "startMs": 7287,
+      "endMs": 7659
+    },
+    {
+      "text": "fifty-three",
+      "startMs": 7659,
+      "endMs": 8402
+    },
+    {
+      "text": "megabits",
+      "startMs": 8402,
+      "endMs": 8959
+    },
+    {
+      "text": "per",
+      "startMs": 8959,
+      "endMs": 9207
+    },
+    {
+      "text": "second.",
+      "startMs": 9207,
+      "endMs": 9702
+    },
+    {
+      "text": "Singapore's",
+      "startMs": 9702,
+      "endMs": 10445
+    },
+    {
+      "text": "was",
+      "startMs": 10445,
+      "endMs": 10693
+    },
+    {
+      "text": "four",
+      "startMs": 10693,
+      "endMs": 11003
+    },
+    {
+      "text": "hundred",
+      "startMs": 11003,
+      "endMs": 11498
+    },
+    {
+      "text": "and",
+      "startMs": 11498,
+      "endMs": 11746
+    },
+    {
+      "text": "seventy-six,",
+      "startMs": 11746,
+      "endMs": 12551
+    },
+    {
+      "text": "roughly",
+      "startMs": 12551,
+      "endMs": 13046
+    },
+    {
+      "text": "nine",
+      "startMs": 13046,
+      "endMs": 13356
+    },
+    {
+      "text": "times",
+      "startMs": 13356,
+      "endMs": 13728
+    },
+    {
+      "text": "the",
+      "startMs": 13728,
+      "endMs": 13976
+    },
+    {
+      "text": "flow.",
+      "startMs": 13976,
+      "endMs": 14348
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 14348,
+      "endMs": 14967
+    },
+    {
+      "text": "ranked",
+      "startMs": 14967,
+      "endMs": 15401
+    },
+    {
+      "text": "one",
+      "startMs": 15401,
+      "endMs": 15649
+    },
+    {
+      "text": "hundred",
+      "startMs": 15649,
+      "endMs": 16144
+    },
+    {
+      "text": "and",
+      "startMs": 16144,
+      "endMs": 16392
+    },
+    {
+      "text": "twelfth",
+      "startMs": 16392,
+      "endMs": 16887
+    },
+    {
+      "text": "in",
+      "startMs": 16887,
+      "endMs": 17073
+    },
+    {
+      "text": "the",
+      "startMs": 17073,
+      "endMs": 17321
+    },
+    {
+      "text": "world,",
+      "startMs": 17321,
+      "endMs": 17755
+    },
+    {
+      "text": "and",
+      "startMs": 17755,
+      "endMs": 18003
+    },
+    {
+      "text": "ninth",
+      "startMs": 18003,
+      "endMs": 18375
+    },
+    {
+      "text": "of",
+      "startMs": 18375,
+      "endMs": 18561
+    },
+    {
+      "text": "ten",
+      "startMs": 18561,
+      "endMs": 18809
+    },
+    {
+      "text": "on",
+      "startMs": 18809,
+      "endMs": 18995
+    },
+    {
+      "text": "a",
+      "startMs": 18995,
+      "endMs": 19119
+    },
+    {
+      "text": "Southeast",
+      "startMs": 19119,
+      "endMs": 19738
+    },
+    {
+      "text": "Asian",
+      "startMs": 19738,
+      "endMs": 20110
+    },
+    {
+      "text": "list,",
+      "startMs": 20110,
+      "endMs": 20482
+    },
+    {
+      "text": "ahead",
+      "startMs": 20482,
+      "endMs": 20854
+    },
+    {
+      "text": "of",
+      "startMs": 20854,
+      "endMs": 21040
+    },
+    {
+      "text": "only",
+      "startMs": 21040,
+      "endMs": 21350
+    },
+    {
+      "text": "Myanmar.",
+      "startMs": 21350,
+      "endMs": 21900
+    }
+  ],
+  "s07": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 348
+    },
+    {
+      "text": "neighbours",
+      "startMs": 348,
+      "endMs": 1030
+    },
+    {
+      "text": "wait",
+      "startMs": 1030,
+      "endMs": 1340
+    },
+    {
+      "text": "far",
+      "startMs": 1340,
+      "endMs": 1588
+    },
+    {
+      "text": "less.",
+      "startMs": 1588,
+      "endMs": 1960
+    },
+    {
+      "text": "The",
+      "startMs": 1960,
+      "endMs": 2208
+    },
+    {
+      "text": "same",
+      "startMs": 2208,
+      "endMs": 2518
+    },
+    {
+      "text": "file",
+      "startMs": 2518,
+      "endMs": 2828
+    },
+    {
+      "text": "takes",
+      "startMs": 2828,
+      "endMs": 3200
+    },
+    {
+      "text": "about",
+      "startMs": 3200,
+      "endMs": 3572
+    },
+    {
+      "text": "an",
+      "startMs": 3572,
+      "endMs": 3758
+    },
+    {
+      "text": "hour",
+      "startMs": 3758,
+      "endMs": 4068
+    },
+    {
+      "text": "and",
+      "startMs": 4068,
+      "endMs": 4316
+    },
+    {
+      "text": "a",
+      "startMs": 4316,
+      "endMs": 4440
+    },
+    {
+      "text": "half",
+      "startMs": 4440,
+      "endMs": 4750
+    },
+    {
+      "text": "at",
+      "startMs": 4750,
+      "endMs": 4936
+    },
+    {
+      "text": "Thailand's",
+      "startMs": 4936,
+      "endMs": 5618
+    },
+    {
+      "text": "or",
+      "startMs": 5618,
+      "endMs": 5804
+    },
+    {
+      "text": "Vietnam's",
+      "startMs": 5804,
+      "endMs": 6424
+    },
+    {
+      "text": "median,",
+      "startMs": 6424,
+      "endMs": 6920
+    },
+    {
+      "text": "and",
+      "startMs": 6920,
+      "endMs": 7168
+    },
+    {
+      "text": "about",
+      "startMs": 7168,
+      "endMs": 7540
+    },
+    {
+      "text": "two",
+      "startMs": 7540,
+      "endMs": 7788
+    },
+    {
+      "text": "and",
+      "startMs": 7788,
+      "endMs": 8036
+    },
+    {
+      "text": "a",
+      "startMs": 8036,
+      "endMs": 8160
+    },
+    {
+      "text": "half",
+      "startMs": 8160,
+      "endMs": 8470
+    },
+    {
+      "text": "hours",
+      "startMs": 8470,
+      "endMs": 8842
+    },
+    {
+      "text": "at",
+      "startMs": 8842,
+      "endMs": 9028
+    },
+    {
+      "text": "Malaysia's.",
+      "startMs": 9028,
+      "endMs": 9772
+    },
+    {
+      "text": "Singapore",
+      "startMs": 9772,
+      "endMs": 10392
+    },
+    {
+      "text": "takes",
+      "startMs": 10392,
+      "endMs": 10764
+    },
+    {
+      "text": "fifty-nine",
+      "startMs": 10764,
+      "endMs": 11446
+    },
+    {
+      "text": "minutes.",
+      "startMs": 11446,
+      "endMs": 12004
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 12004,
+      "endMs": 12624
+    },
+    {
+      "text": "takes",
+      "startMs": 12624,
+      "endMs": 12996
+    },
+    {
+      "text": "eight",
+      "startMs": 12996,
+      "endMs": 13368
+    },
+    {
+      "text": "hours",
+      "startMs": 13368,
+      "endMs": 13740
+    },
+    {
+      "text": "and",
+      "startMs": 13740,
+      "endMs": 13988
+    },
+    {
+      "text": "fifty-seven",
+      "startMs": 13988,
+      "endMs": 14732
+    },
+    {
+      "text": "minutes.",
+      "startMs": 14732,
+      "endMs": 15290
+    }
+  ],
+  "s08": [
+    {
+      "text": "Then",
+      "startMs": 120,
+      "endMs": 408
+    },
+    {
+      "text": "your",
+      "startMs": 408,
+      "endMs": 696
+    },
+    {
+      "text": "phone",
+      "startMs": 696,
+      "endMs": 1041
+    },
+    {
+      "text": "offers",
+      "startMs": 1041,
+      "endMs": 1444
+    },
+    {
+      "text": "a",
+      "startMs": 1444,
+      "endMs": 1559
+    },
+    {
+      "text": "shortcut",
+      "startMs": 1559,
+      "endMs": 2077
+    },
+    {
+      "text": "into",
+      "startMs": 2077,
+      "endMs": 2365
+    },
+    {
+      "text": "GTA",
+      "startMs": 2365,
+      "endMs": 2595
+    },
+    {
+      "text": "6.",
+      "startMs": 2595,
+      "endMs": 2768
+    },
+    {
+      "text": "In",
+      "startMs": 2768,
+      "endMs": 2941
+    },
+    {
+      "text": "September's",
+      "startMs": 2941,
+      "endMs": 3632
+    },
+    {
+      "text": "speed",
+      "startMs": 3632,
+      "endMs": 3977
+    },
+    {
+      "text": "rankings,",
+      "startMs": 3977,
+      "endMs": 4553
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 4553,
+      "endMs": 5244
+    },
+    {
+      "text": "mobile",
+      "startMs": 5244,
+      "endMs": 5647
+    },
+    {
+      "text": "networks",
+      "startMs": 5647,
+      "endMs": 6165
+    },
+    {
+      "text": "reached",
+      "startMs": 6165,
+      "endMs": 6625
+    },
+    {
+      "text": "about",
+      "startMs": 6625,
+      "endMs": 6970
+    },
+    {
+      "text": "seventy-one",
+      "startMs": 6970,
+      "endMs": 7661
+    },
+    {
+      "text": "megabits",
+      "startMs": 7661,
+      "endMs": 8179
+    },
+    {
+      "text": "per",
+      "startMs": 8179,
+      "endMs": 8409
+    },
+    {
+      "text": "second,",
+      "startMs": 8409,
+      "endMs": 8869
+    },
+    {
+      "text": "faster",
+      "startMs": 8869,
+      "endMs": 9272
+    },
+    {
+      "text": "than",
+      "startMs": 9272,
+      "endMs": 9560
+    },
+    {
+      "text": "its",
+      "startMs": 9560,
+      "endMs": 9790
+    },
+    {
+      "text": "home",
+      "startMs": 9790,
+      "endMs": 10078
+    },
+    {
+      "text": "internet.",
+      "startMs": 10078,
+      "endMs": 10654
+    },
+    {
+      "text": "At",
+      "startMs": 10654,
+      "endMs": 10827
+    },
+    {
+      "text": "that",
+      "startMs": 10827,
+      "endMs": 11115
+    },
+    {
+      "text": "median,",
+      "startMs": 11115,
+      "endMs": 11575
+    },
+    {
+      "text": "your",
+      "startMs": 11575,
+      "endMs": 11863
+    },
+    {
+      "text": "phone",
+      "startMs": 11863,
+      "endMs": 12208
+    },
+    {
+      "text": "would",
+      "startMs": 12208,
+      "endMs": 12553
+    },
+    {
+      "text": "finish",
+      "startMs": 12553,
+      "endMs": 12956
+    },
+    {
+      "text": "more",
+      "startMs": 12956,
+      "endMs": 13244
+    },
+    {
+      "text": "than",
+      "startMs": 13244,
+      "endMs": 13532
+    },
+    {
+      "text": "two",
+      "startMs": 13532,
+      "endMs": 13762
+    },
+    {
+      "text": "hours",
+      "startMs": 13762,
+      "endMs": 14107
+    },
+    {
+      "text": "before",
+      "startMs": 14107,
+      "endMs": 14510
+    },
+    {
+      "text": "your",
+      "startMs": 14510,
+      "endMs": 14798
+    },
+    {
+      "text": "cable.",
+      "startMs": 14798,
+      "endMs": 15200
+    }
+  ],
+  "s09": [
+    {
+      "text": "The",
+      "startMs": 120,
+      "endMs": 349
+    },
+    {
+      "text": "obvious",
+      "startMs": 349,
+      "endMs": 807
+    },
+    {
+      "text": "suspect",
+      "startMs": 807,
+      "endMs": 1265
+    },
+    {
+      "text": "is",
+      "startMs": 1265,
+      "endMs": 1437
+    },
+    {
+      "text": "the",
+      "startMs": 1437,
+      "endMs": 1666
+    },
+    {
+      "text": "sea.",
+      "startMs": 1666,
+      "endMs": 1953
+    },
+    {
+      "text": "Singapore",
+      "startMs": 1953,
+      "endMs": 2526
+    },
+    {
+      "text": "covers",
+      "startMs": 2526,
+      "endMs": 2927
+    },
+    {
+      "text": "about",
+      "startMs": 2927,
+      "endMs": 3271
+    },
+    {
+      "text": "seven",
+      "startMs": 3271,
+      "endMs": 3615
+    },
+    {
+      "text": "hundred",
+      "startMs": 3615,
+      "endMs": 4073
+    },
+    {
+      "text": "and",
+      "startMs": 4073,
+      "endMs": 4302
+    },
+    {
+      "text": "forty-four",
+      "startMs": 4302,
+      "endMs": 4932
+    },
+    {
+      "text": "square",
+      "startMs": 4932,
+      "endMs": 5333
+    },
+    {
+      "text": "kilometres.",
+      "startMs": 5333,
+      "endMs": 6021
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 6021,
+      "endMs": 6594
+    },
+    {
+      "text": "covers",
+      "startMs": 6594,
+      "endMs": 6995
+    },
+    {
+      "text": "about",
+      "startMs": 6995,
+      "endMs": 7339
+    },
+    {
+      "text": "one",
+      "startMs": 7339,
+      "endMs": 7568
+    },
+    {
+      "text": "point",
+      "startMs": 7568,
+      "endMs": 7912
+    },
+    {
+      "text": "nine",
+      "startMs": 7912,
+      "endMs": 8199
+    },
+    {
+      "text": "million,",
+      "startMs": 8199,
+      "endMs": 8715
+    },
+    {
+      "text": "spread",
+      "startMs": 8715,
+      "endMs": 9116
+    },
+    {
+      "text": "over",
+      "startMs": 9116,
+      "endMs": 9403
+    },
+    {
+      "text": "more",
+      "startMs": 9403,
+      "endMs": 9690
+    },
+    {
+      "text": "than",
+      "startMs": 9690,
+      "endMs": 9977
+    },
+    {
+      "text": "seventeen",
+      "startMs": 9977,
+      "endMs": 10550
+    },
+    {
+      "text": "thousand",
+      "startMs": 10550,
+      "endMs": 11066
+    },
+    {
+      "text": "islands.",
+      "startMs": 11066,
+      "endMs": 11580
+    }
+  ],
+  "s10": [
+    {
+      "text": "For",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "every",
+      "startMs": 260,
+      "endMs": 460
+    },
+    {
+      "text": "one",
+      "startMs": 560,
+      "endMs": 680
+    },
+    {
+      "text": "patch",
+      "startMs": 780,
+      "endMs": 960
+    },
+    {
+      "text": "of",
+      "startMs": 1000,
+      "endMs": 1080
+    },
+    {
+      "text": "ground",
+      "startMs": 1140,
+      "endMs": 1420
+    },
+    {
+      "text": "Singapore",
+      "startMs": 1480,
+      "endMs": 1900
+    },
+    {
+      "text": "has",
+      "startMs": 1960,
+      "endMs": 2120
+    },
+    {
+      "text": "to",
+      "startMs": 2160,
+      "endMs": 2260
+    },
+    {
+      "text": "serve,",
+      "startMs": 2320,
+      "endMs": 2600
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 2960,
+      "endMs": 3540
+    },
+    {
+      "text": "has",
+      "startMs": 3740,
+      "endMs": 3840
+    },
+    {
+      "text": "about",
+      "startMs": 3900,
+      "endMs": 4100
+    },
+    {
+      "text": "two",
+      "startMs": 4160,
+      "endMs": 4280
+    },
+    {
+      "text": "and",
+      "startMs": 4300,
+      "endMs": 4360
+    },
+    {
+      "text": "a",
+      "startMs": 4380,
+      "endMs": 4420
+    },
+    {
+      "text": "half",
+      "startMs": 4460,
+      "endMs": 4620
+    },
+    {
+      "text": "thousand,",
+      "startMs": 4680,
+      "endMs": 5100
+    },
+    {
+      "text": "and",
+      "startMs": 5960,
+      "endMs": 6040
+    },
+    {
+      "text": "between",
+      "startMs": 6080,
+      "endMs": 6460
+    },
+    {
+      "text": "many",
+      "startMs": 6540,
+      "endMs": 6740
+    },
+    {
+      "text": "of",
+      "startMs": 6780,
+      "endMs": 6860
+    },
+    {
+      "text": "them",
+      "startMs": 6900,
+      "endMs": 7040
+    },
+    {
+      "text": "is",
+      "startMs": 7100,
+      "endMs": 7220
+    },
+    {
+      "text": "water",
+      "startMs": 7300,
+      "endMs": 7580
+    },
+    {
+      "text": "with",
+      "startMs": 7920,
+      "endMs": 8000
+    },
+    {
+      "text": "a",
+      "startMs": 8039,
+      "endMs": 8100
+    },
+    {
+      "text": "seabed",
+      "startMs": 8180,
+      "endMs": 8700
+    },
+    {
+      "text": "that",
+      "startMs": 8760,
+      "endMs": 8860
+    },
+    {
+      "text": "needs",
+      "startMs": 8900,
+      "endMs": 9060
+    },
+    {
+      "text": "a",
+      "startMs": 9100,
+      "endMs": 9140
+    },
+    {
+      "text": "cable.",
+      "startMs": 9200,
+      "endMs": 9540
+    }
+  ],
+  "s11": [
+    {
+      "text": "Indonesia",
+      "startMs": 80,
+      "endMs": 707
+    },
+    {
+      "text": "did",
+      "startMs": 707,
+      "endMs": 958
+    },
+    {
+      "text": "lay",
+      "startMs": 958,
+      "endMs": 1209
+    },
+    {
+      "text": "that",
+      "startMs": 1209,
+      "endMs": 1523
+    },
+    {
+      "text": "pipe.",
+      "startMs": 1523,
+      "endMs": 1899
+    },
+    {
+      "text": "A",
+      "startMs": 1899,
+      "endMs": 2024
+    },
+    {
+      "text": "state",
+      "startMs": 2024,
+      "endMs": 2400
+    },
+    {
+      "text": "project",
+      "startMs": 2400,
+      "endMs": 2902
+    },
+    {
+      "text": "called",
+      "startMs": 2902,
+      "endMs": 3341
+    },
+    {
+      "text": "the",
+      "startMs": 3341,
+      "endMs": 3592
+    },
+    {
+      "text": "Palapa",
+      "startMs": 3592,
+      "endMs": 4031
+    },
+    {
+      "text": "Ring",
+      "startMs": 4031,
+      "endMs": 4345
+    },
+    {
+      "text": "carried",
+      "startMs": 4345,
+      "endMs": 4847
+    },
+    {
+      "text": "the",
+      "startMs": 4847,
+      "endMs": 5098
+    },
+    {
+      "text": "fibre",
+      "startMs": 5098,
+      "endMs": 5474
+    },
+    {
+      "text": "backbone,",
+      "startMs": 5474,
+      "endMs": 6101
+    },
+    {
+      "text": "the",
+      "startMs": 6101,
+      "endMs": 6352
+    },
+    {
+      "text": "main",
+      "startMs": 6352,
+      "endMs": 6666
+    },
+    {
+      "text": "pipe,",
+      "startMs": 6666,
+      "endMs": 7042
+    },
+    {
+      "text": "out",
+      "startMs": 7042,
+      "endMs": 7293
+    },
+    {
+      "text": "to",
+      "startMs": 7293,
+      "endMs": 7481
+    },
+    {
+      "text": "remote",
+      "startMs": 7481,
+      "endMs": 7920
+    },
+    {
+      "text": "parts",
+      "startMs": 7920,
+      "endMs": 8296
+    },
+    {
+      "text": "of",
+      "startMs": 8296,
+      "endMs": 8484
+    },
+    {
+      "text": "the",
+      "startMs": 8484,
+      "endMs": 8735
+    },
+    {
+      "text": "country.",
+      "startMs": 8735,
+      "endMs": 9299
+    },
+    {
+      "text": "The",
+      "startMs": 9299,
+      "endMs": 9550
+    },
+    {
+      "text": "eastern",
+      "startMs": 9550,
+      "endMs": 10052
+    },
+    {
+      "text": "section",
+      "startMs": 10052,
+      "endMs": 10554
+    },
+    {
+      "text": "alone",
+      "startMs": 10554,
+      "endMs": 10930
+    },
+    {
+      "text": "has",
+      "startMs": 10930,
+      "endMs": 11181
+    },
+    {
+      "text": "more",
+      "startMs": 11181,
+      "endMs": 11495
+    },
+    {
+      "text": "than",
+      "startMs": 11495,
+      "endMs": 11809
+    },
+    {
+      "text": "four",
+      "startMs": 11809,
+      "endMs": 12123
+    },
+    {
+      "text": "thousand",
+      "startMs": 12123,
+      "endMs": 12687
+    },
+    {
+      "text": "kilometres",
+      "startMs": 12687,
+      "endMs": 13377
+    },
+    {
+      "text": "of",
+      "startMs": 13377,
+      "endMs": 13565
+    },
+    {
+      "text": "undersea",
+      "startMs": 13565,
+      "endMs": 14129
+    },
+    {
+      "text": "cable,",
+      "startMs": 14129,
+      "endMs": 14568
+    },
+    {
+      "text": "and",
+      "startMs": 14568,
+      "endMs": 14819
+    },
+    {
+      "text": "the",
+      "startMs": 14819,
+      "endMs": 15070
+    },
+    {
+      "text": "project",
+      "startMs": 15070,
+      "endMs": 15572
+    },
+    {
+      "text": "was",
+      "startMs": 15572,
+      "endMs": 15823
+    },
+    {
+      "text": "inaugurated",
+      "startMs": 15823,
+      "endMs": 16576
+    },
+    {
+      "text": "in",
+      "startMs": 16576,
+      "endMs": 16764
+    },
+    {
+      "text": "2019.",
+      "startMs": 16764,
+      "endMs": 17140
+    }
+  ],
+  "s12": [
+    {
+      "text": "That",
+      "startMs": 120,
+      "endMs": 260
+    },
+    {
+      "text": "main",
+      "startMs": 320,
+      "endMs": 500
+    },
+    {
+      "text": "pipe",
+      "startMs": 540,
+      "endMs": 740
+    },
+    {
+      "text": "matters,",
+      "startMs": 800,
+      "endMs": 1180
+    },
+    {
+      "text": "and",
+      "startMs": 1520,
+      "endMs": 1580
+    },
+    {
+      "text": "on",
+      "startMs": 1640,
+      "endMs": 1720
+    },
+    {
+      "text": "remote",
+      "startMs": 1760,
+      "endMs": 2040
+    },
+    {
+      "text": "islands,",
+      "startMs": 2120,
+      "endMs": 2400
+    },
+    {
+      "text": "it",
+      "startMs": 2460,
+      "endMs": 2520
+    },
+    {
+      "text": "can",
+      "startMs": 2560,
+      "endMs": 2680
+    },
+    {
+      "text": "still",
+      "startMs": 2740,
+      "endMs": 2900
+    },
+    {
+      "text": "be",
+      "startMs": 2940,
+      "endMs": 3020
+    },
+    {
+      "text": "the",
+      "startMs": 3060,
+      "endMs": 3120
+    },
+    {
+      "text": "weak",
+      "startMs": 3160,
+      "endMs": 3300
+    },
+    {
+      "text": "point.",
+      "startMs": 3380,
+      "endMs": 3620
+    },
+    {
+      "text": "But",
+      "startMs": 4340,
+      "endMs": 4400
+    },
+    {
+      "text": "a",
+      "startMs": 4440,
+      "endMs": 4480
+    },
+    {
+      "text": "main",
+      "startMs": 4520,
+      "endMs": 4720
+    },
+    {
+      "text": "pipe",
+      "startMs": 4780,
+      "endMs": 4980
+    },
+    {
+      "text": "only",
+      "startMs": 5060,
+      "endMs": 5240
+    },
+    {
+      "text": "brings",
+      "startMs": 5280,
+      "endMs": 5540
+    },
+    {
+      "text": "water",
+      "startMs": 5600,
+      "endMs": 5840
+    },
+    {
+      "text": "as",
+      "startMs": 5880,
+      "endMs": 6000
+    },
+    {
+      "text": "far",
+      "startMs": 6060,
+      "endMs": 6200
+    },
+    {
+      "text": "as",
+      "startMs": 6240,
+      "endMs": 6340
+    },
+    {
+      "text": "town.",
+      "startMs": 6420,
+      "endMs": 6720
+    },
+    {
+      "text": "It",
+      "startMs": 7500,
+      "endMs": 7560
+    },
+    {
+      "text": "has",
+      "startMs": 7580,
+      "endMs": 7680
+    },
+    {
+      "text": "not",
+      "startMs": 7740,
+      "endMs": 7880
+    },
+    {
+      "text": "entered",
+      "startMs": 7940,
+      "endMs": 8140
+    },
+    {
+      "text": "a",
+      "startMs": 8180,
+      "endMs": 8240
+    },
+    {
+      "text": "single",
+      "startMs": 8320,
+      "endMs": 8580
+    },
+    {
+      "text": "house.",
+      "startMs": 8640,
+      "endMs": 8940
+    }
+  ],
+  "s13": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 311
+    },
+    {
+      "text": "go",
+      "startMs": 311,
+      "endMs": 522
+    },
+    {
+      "text": "somewhere",
+      "startMs": 522,
+      "endMs": 1224
+    },
+    {
+      "text": "with",
+      "startMs": 1224,
+      "endMs": 1575
+    },
+    {
+      "text": "no",
+      "startMs": 1575,
+      "endMs": 1786
+    },
+    {
+      "text": "sea",
+      "startMs": 1786,
+      "endMs": 2067
+    },
+    {
+      "text": "in",
+      "startMs": 2067,
+      "endMs": 2278
+    },
+    {
+      "text": "the",
+      "startMs": 2278,
+      "endMs": 2559
+    },
+    {
+      "text": "way:",
+      "startMs": 2559,
+      "endMs": 2910
+    },
+    {
+      "text": "West",
+      "startMs": 2910,
+      "endMs": 3261
+    },
+    {
+      "text": "Jakarta,",
+      "startMs": 3261,
+      "endMs": 3893
+    },
+    {
+      "text": "on",
+      "startMs": 3893,
+      "endMs": 4104
+    },
+    {
+      "text": "Java.",
+      "startMs": 4104,
+      "endMs": 4525
+    },
+    {
+      "text": "In",
+      "startMs": 4525,
+      "endMs": 4736
+    },
+    {
+      "text": "the",
+      "startMs": 4736,
+      "endMs": 5017
+    },
+    {
+      "text": "first",
+      "startMs": 5017,
+      "endMs": 5438
+    },
+    {
+      "text": "half",
+      "startMs": 5438,
+      "endMs": 5789
+    },
+    {
+      "text": "of",
+      "startMs": 5789,
+      "endMs": 6000
+    },
+    {
+      "text": "2026",
+      "startMs": 6000,
+      "endMs": 6351
+    },
+    {
+      "text": "its",
+      "startMs": 6351,
+      "endMs": 6632
+    },
+    {
+      "text": "median",
+      "startMs": 6632,
+      "endMs": 7123
+    },
+    {
+      "text": "was",
+      "startMs": 7123,
+      "endMs": 7404
+    },
+    {
+      "text": "about",
+      "startMs": 7404,
+      "endMs": 7825
+    },
+    {
+      "text": "seventy",
+      "startMs": 7825,
+      "endMs": 8387
+    },
+    {
+      "text": "megabits",
+      "startMs": 8387,
+      "endMs": 9019
+    },
+    {
+      "text": "per",
+      "startMs": 9019,
+      "endMs": 9300
+    },
+    {
+      "text": "second,",
+      "startMs": 9300,
+      "endMs": 9862
+    },
+    {
+      "text": "the",
+      "startMs": 9862,
+      "endMs": 10143
+    },
+    {
+      "text": "highest",
+      "startMs": 10143,
+      "endMs": 10705
+    },
+    {
+      "text": "of",
+      "startMs": 10705,
+      "endMs": 10916
+    },
+    {
+      "text": "any",
+      "startMs": 10916,
+      "endMs": 11197
+    },
+    {
+      "text": "Indonesian",
+      "startMs": 11197,
+      "endMs": 11969
+    },
+    {
+      "text": "city",
+      "startMs": 11969,
+      "endMs": 12320
+    },
+    {
+      "text": "in",
+      "startMs": 12320,
+      "endMs": 12531
+    },
+    {
+      "text": "that",
+      "startMs": 12531,
+      "endMs": 12882
+    },
+    {
+      "text": "report.",
+      "startMs": 12882,
+      "endMs": 13444
+    },
+    {
+      "text": "That",
+      "startMs": 13444,
+      "endMs": 13795
+    },
+    {
+      "text": "is",
+      "startMs": 13795,
+      "endMs": 14006
+    },
+    {
+      "text": "still",
+      "startMs": 14006,
+      "endMs": 14427
+    },
+    {
+      "text": "almost",
+      "startMs": 14427,
+      "endMs": 14918
+    },
+    {
+      "text": "seven",
+      "startMs": 14918,
+      "endMs": 15339
+    },
+    {
+      "text": "hours",
+      "startMs": 15339,
+      "endMs": 15760
+    },
+    {
+      "text": "before",
+      "startMs": 15760,
+      "endMs": 16251
+    },
+    {
+      "text": "GTA",
+      "startMs": 16251,
+      "endMs": 16532
+    },
+    {
+      "text": "6",
+      "startMs": 16532,
+      "endMs": 16672
+    },
+    {
+      "text": "opens.",
+      "startMs": 16672,
+      "endMs": 17160
+    }
+  ],
+  "s14": [
+    {
+      "text": "Bandung,",
+      "startMs": 100,
+      "endMs": 679
+    },
+    {
+      "text": "a",
+      "startMs": 679,
+      "endMs": 808
+    },
+    {
+      "text": "major",
+      "startMs": 808,
+      "endMs": 1194
+    },
+    {
+      "text": "city",
+      "startMs": 1194,
+      "endMs": 1515
+    },
+    {
+      "text": "on",
+      "startMs": 1515,
+      "endMs": 1708
+    },
+    {
+      "text": "the",
+      "startMs": 1708,
+      "endMs": 1965
+    },
+    {
+      "text": "same",
+      "startMs": 1965,
+      "endMs": 2286
+    },
+    {
+      "text": "island,",
+      "startMs": 2286,
+      "endMs": 2800
+    },
+    {
+      "text": "had",
+      "startMs": 2800,
+      "endMs": 3057
+    },
+    {
+      "text": "about",
+      "startMs": 3057,
+      "endMs": 3443
+    },
+    {
+      "text": "forty-nine.",
+      "startMs": 3443,
+      "endMs": 4215
+    },
+    {
+      "text": "The",
+      "startMs": 4215,
+      "endMs": 4472
+    },
+    {
+      "text": "sea",
+      "startMs": 4472,
+      "endMs": 4729
+    },
+    {
+      "text": "explains",
+      "startMs": 4729,
+      "endMs": 5308
+    },
+    {
+      "text": "part",
+      "startMs": 5308,
+      "endMs": 5629
+    },
+    {
+      "text": "of",
+      "startMs": 5629,
+      "endMs": 5822
+    },
+    {
+      "text": "the",
+      "startMs": 5822,
+      "endMs": 6079
+    },
+    {
+      "text": "gap.",
+      "startMs": 6079,
+      "endMs": 6400
+    },
+    {
+      "text": "It",
+      "startMs": 6400,
+      "endMs": 6593
+    },
+    {
+      "text": "cannot",
+      "startMs": 6593,
+      "endMs": 7043
+    },
+    {
+      "text": "explain",
+      "startMs": 7043,
+      "endMs": 7557
+    },
+    {
+      "text": "why",
+      "startMs": 7557,
+      "endMs": 7814
+    },
+    {
+      "text": "cities",
+      "startMs": 7814,
+      "endMs": 8264
+    },
+    {
+      "text": "on",
+      "startMs": 8264,
+      "endMs": 8457
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 8457,
+      "endMs": 9229
+    },
+    {
+      "text": "most",
+      "startMs": 9229,
+      "endMs": 9550
+    },
+    {
+      "text": "crowded",
+      "startMs": 9550,
+      "endMs": 10064
+    },
+    {
+      "text": "island",
+      "startMs": 10064,
+      "endMs": 10514
+    },
+    {
+      "text": "still",
+      "startMs": 10514,
+      "endMs": 10900
+    },
+    {
+      "text": "wait",
+      "startMs": 10900,
+      "endMs": 11221
+    },
+    {
+      "text": "six",
+      "startMs": 11221,
+      "endMs": 11478
+    },
+    {
+      "text": "to",
+      "startMs": 11478,
+      "endMs": 11671
+    },
+    {
+      "text": "ten",
+      "startMs": 11671,
+      "endMs": 11928
+    },
+    {
+      "text": "hours.",
+      "startMs": 11928,
+      "endMs": 12378
+    }
+  ],
+  "s15": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 339
+    },
+    {
+      "text": "trouble",
+      "startMs": 339,
+      "endMs": 818
+    },
+    {
+      "text": "moves",
+      "startMs": 818,
+      "endMs": 1177
+    },
+    {
+      "text": "to",
+      "startMs": 1177,
+      "endMs": 1357
+    },
+    {
+      "text": "the",
+      "startMs": 1357,
+      "endMs": 1596
+    },
+    {
+      "text": "last",
+      "startMs": 1596,
+      "endMs": 1895
+    },
+    {
+      "text": "hose,",
+      "startMs": 1895,
+      "endMs": 2254
+    },
+    {
+      "text": "the",
+      "startMs": 2254,
+      "endMs": 2493
+    },
+    {
+      "text": "stretch",
+      "startMs": 2493,
+      "endMs": 2972
+    },
+    {
+      "text": "from",
+      "startMs": 2972,
+      "endMs": 3271
+    },
+    {
+      "text": "the",
+      "startMs": 3271,
+      "endMs": 3510
+    },
+    {
+      "text": "street",
+      "startMs": 3510,
+      "endMs": 3929
+    },
+    {
+      "text": "into",
+      "startMs": 3929,
+      "endMs": 4228
+    },
+    {
+      "text": "your",
+      "startMs": 4228,
+      "endMs": 4527
+    },
+    {
+      "text": "home.",
+      "startMs": 4527,
+      "endMs": 4886
+    },
+    {
+      "text": "Here",
+      "startMs": 4886,
+      "endMs": 5185
+    },
+    {
+      "text": "every",
+      "startMs": 5185,
+      "endMs": 5544
+    },
+    {
+      "text": "metre",
+      "startMs": 5544,
+      "endMs": 5903
+    },
+    {
+      "text": "has",
+      "startMs": 5903,
+      "endMs": 6142
+    },
+    {
+      "text": "to",
+      "startMs": 6142,
+      "endMs": 6322
+    },
+    {
+      "text": "be",
+      "startMs": 6322,
+      "endMs": 6502
+    },
+    {
+      "text": "paid",
+      "startMs": 6502,
+      "endMs": 6801
+    },
+    {
+      "text": "for,",
+      "startMs": 6801,
+      "endMs": 7100
+    },
+    {
+      "text": "dug",
+      "startMs": 7100,
+      "endMs": 7339
+    },
+    {
+      "text": "in",
+      "startMs": 7339,
+      "endMs": 7519
+    },
+    {
+      "text": "or",
+      "startMs": 7519,
+      "endMs": 7699
+    },
+    {
+      "text": "strung",
+      "startMs": 7699,
+      "endMs": 8118
+    },
+    {
+      "text": "up,",
+      "startMs": 8118,
+      "endMs": 8357
+    },
+    {
+      "text": "and",
+      "startMs": 8357,
+      "endMs": 8596
+    },
+    {
+      "text": "then",
+      "startMs": 8596,
+      "endMs": 8895
+    },
+    {
+      "text": "looked",
+      "startMs": 8895,
+      "endMs": 9314
+    },
+    {
+      "text": "after.",
+      "startMs": 9314,
+      "endMs": 9733
+    },
+    {
+      "text": "A",
+      "startMs": 9733,
+      "endMs": 9853
+    },
+    {
+      "text": "World",
+      "startMs": 9853,
+      "endMs": 10212
+    },
+    {
+      "text": "Bank",
+      "startMs": 10212,
+      "endMs": 10511
+    },
+    {
+      "text": "team",
+      "startMs": 10511,
+      "endMs": 10810
+    },
+    {
+      "text": "estimated",
+      "startMs": 10810,
+      "endMs": 11409
+    },
+    {
+      "text": "in",
+      "startMs": 11409,
+      "endMs": 11589
+    },
+    {
+      "text": "2022",
+      "startMs": 11589,
+      "endMs": 11888
+    },
+    {
+      "text": "that",
+      "startMs": 11888,
+      "endMs": 12187
+    },
+    {
+      "text": "seventy",
+      "startMs": 12187,
+      "endMs": 12666
+    },
+    {
+      "text": "to",
+      "startMs": 12666,
+      "endMs": 12846
+    },
+    {
+      "text": "eighty",
+      "startMs": 12846,
+      "endMs": 13265
+    },
+    {
+      "text": "percent",
+      "startMs": 13265,
+      "endMs": 13744
+    },
+    {
+      "text": "of",
+      "startMs": 13744,
+      "endMs": 13924
+    },
+    {
+      "text": "home",
+      "startMs": 13924,
+      "endMs": 14223
+    },
+    {
+      "text": "broadband",
+      "startMs": 14223,
+      "endMs": 14822
+    },
+    {
+      "text": "costs",
+      "startMs": 14822,
+      "endMs": 15181
+    },
+    {
+      "text": "usually",
+      "startMs": 15181,
+      "endMs": 15660
+    },
+    {
+      "text": "sit",
+      "startMs": 15660,
+      "endMs": 15899
+    },
+    {
+      "text": "in",
+      "startMs": 15899,
+      "endMs": 16079
+    },
+    {
+      "text": "poles,",
+      "startMs": 16079,
+      "endMs": 16498
+    },
+    {
+      "text": "ducts",
+      "startMs": 16498,
+      "endMs": 16857
+    },
+    {
+      "text": "and",
+      "startMs": 16857,
+      "endMs": 17096
+    },
+    {
+      "text": "cables",
+      "startMs": 17096,
+      "endMs": 17515
+    },
+    {
+      "text": "like",
+      "startMs": 17515,
+      "endMs": 17814
+    },
+    {
+      "text": "these.",
+      "startMs": 17814,
+      "endMs": 18233
+    }
+  ],
+  "s16": [
+    {
+      "text": "One",
+      "startMs": 60,
+      "endMs": 308
+    },
+    {
+      "text": "price",
+      "startMs": 308,
+      "endMs": 680
+    },
+    {
+      "text": "comes",
+      "startMs": 680,
+      "endMs": 1052
+    },
+    {
+      "text": "from",
+      "startMs": 1052,
+      "endMs": 1362
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 1362,
+      "endMs": 2107
+    },
+    {
+      "text": "internet",
+      "startMs": 2107,
+      "endMs": 2665
+    },
+    {
+      "text": "provider",
+      "startMs": 2665,
+      "endMs": 3223
+    },
+    {
+      "text": "association,",
+      "startMs": 3223,
+      "endMs": 4030
+    },
+    {
+      "text": "talking",
+      "startMs": 4030,
+      "endMs": 4526
+    },
+    {
+      "text": "about",
+      "startMs": 4526,
+      "endMs": 4898
+    },
+    {
+      "text": "Tangerang,",
+      "startMs": 4898,
+      "endMs": 5581
+    },
+    {
+      "text": "next",
+      "startMs": 5581,
+      "endMs": 5891
+    },
+    {
+      "text": "to",
+      "startMs": 5891,
+      "endMs": 6077
+    },
+    {
+      "text": "Jakarta.",
+      "startMs": 6077,
+      "endMs": 6635
+    },
+    {
+      "text": "In",
+      "startMs": 6635,
+      "endMs": 6821
+    },
+    {
+      "text": "May,",
+      "startMs": 6821,
+      "endMs": 7131
+    },
+    {
+      "text": "its",
+      "startMs": 7131,
+      "endMs": 7379
+    },
+    {
+      "text": "regional",
+      "startMs": 7379,
+      "endMs": 7937
+    },
+    {
+      "text": "chair",
+      "startMs": 7937,
+      "endMs": 8309
+    },
+    {
+      "text": "put",
+      "startMs": 8309,
+      "endMs": 8557
+    },
+    {
+      "text": "burying",
+      "startMs": 8557,
+      "endMs": 9053
+    },
+    {
+      "text": "cable",
+      "startMs": 9053,
+      "endMs": 9425
+    },
+    {
+      "text": "at",
+      "startMs": 9425,
+      "endMs": 9611
+    },
+    {
+      "text": "about",
+      "startMs": 9611,
+      "endMs": 9983
+    },
+    {
+      "text": "seventy-five",
+      "startMs": 9983,
+      "endMs": 10790
+    },
+    {
+      "text": "thousand",
+      "startMs": 10790,
+      "endMs": 11348
+    },
+    {
+      "text": "rupiah",
+      "startMs": 11348,
+      "endMs": 11782
+    },
+    {
+      "text": "per",
+      "startMs": 11782,
+      "endMs": 12030
+    },
+    {
+      "text": "metre.",
+      "startMs": 12030,
+      "endMs": 12464
+    },
+    {
+      "text": "If",
+      "startMs": 12464,
+      "endMs": 12650
+    },
+    {
+      "text": "three",
+      "startMs": 12650,
+      "endMs": 13022
+    },
+    {
+      "text": "or",
+      "startMs": 13022,
+      "endMs": 13208
+    },
+    {
+      "text": "four",
+      "startMs": 13208,
+      "endMs": 13518
+    },
+    {
+      "text": "cables",
+      "startMs": 13518,
+      "endMs": 13952
+    },
+    {
+      "text": "share",
+      "startMs": 13952,
+      "endMs": 14324
+    },
+    {
+      "text": "one",
+      "startMs": 14324,
+      "endMs": 14572
+    },
+    {
+      "text": "duct,",
+      "startMs": 14572,
+      "endMs": 14944
+    },
+    {
+      "text": "he",
+      "startMs": 14944,
+      "endMs": 15130
+    },
+    {
+      "text": "said,",
+      "startMs": 15130,
+      "endMs": 15502
+    },
+    {
+      "text": "it",
+      "startMs": 15502,
+      "endMs": 15688
+    },
+    {
+      "text": "could",
+      "startMs": 15688,
+      "endMs": 16060
+    },
+    {
+      "text": "drop",
+      "startMs": 16060,
+      "endMs": 16370
+    },
+    {
+      "text": "to",
+      "startMs": 16370,
+      "endMs": 16556
+    },
+    {
+      "text": "about",
+      "startMs": 16556,
+      "endMs": 16928
+    },
+    {
+      "text": "twenty-two",
+      "startMs": 16928,
+      "endMs": 17611
+    },
+    {
+      "text": "thousand.",
+      "startMs": 17611,
+      "endMs": 18231
+    }
+  ],
+  "s17": [
+    {
+      "text": "Singapore",
+      "startMs": 80,
+      "endMs": 686
+    },
+    {
+      "text": "built",
+      "startMs": 686,
+      "endMs": 1049
+    },
+    {
+      "text": "its",
+      "startMs": 1049,
+      "endMs": 1291
+    },
+    {
+      "text": "last",
+      "startMs": 1291,
+      "endMs": 1594
+    },
+    {
+      "text": "hose",
+      "startMs": 1594,
+      "endMs": 1897
+    },
+    {
+      "text": "as",
+      "startMs": 1897,
+      "endMs": 2079
+    },
+    {
+      "text": "one",
+      "startMs": 2079,
+      "endMs": 2321
+    },
+    {
+      "text": "network,",
+      "startMs": 2321,
+      "endMs": 2866
+    },
+    {
+      "text": "with",
+      "startMs": 2866,
+      "endMs": 3169
+    },
+    {
+      "text": "a",
+      "startMs": 3169,
+      "endMs": 3290
+    },
+    {
+      "text": "clear",
+      "startMs": 3290,
+      "endMs": 3653
+    },
+    {
+      "text": "answer",
+      "startMs": 3653,
+      "endMs": 4077
+    },
+    {
+      "text": "to",
+      "startMs": 4077,
+      "endMs": 4259
+    },
+    {
+      "text": "who",
+      "startMs": 4259,
+      "endMs": 4501
+    },
+    {
+      "text": "owns",
+      "startMs": 4501,
+      "endMs": 4804
+    },
+    {
+      "text": "the",
+      "startMs": 4804,
+      "endMs": 5046
+    },
+    {
+      "text": "pipe.",
+      "startMs": 5046,
+      "endMs": 5409
+    },
+    {
+      "text": "Its",
+      "startMs": 5409,
+      "endMs": 5651
+    },
+    {
+      "text": "fibre",
+      "startMs": 5651,
+      "endMs": 6014
+    },
+    {
+      "text": "network",
+      "startMs": 6014,
+      "endMs": 6498
+    },
+    {
+      "text": "was",
+      "startMs": 6498,
+      "endMs": 6740
+    },
+    {
+      "text": "split",
+      "startMs": 6740,
+      "endMs": 7103
+    },
+    {
+      "text": "into",
+      "startMs": 7103,
+      "endMs": 7406
+    },
+    {
+      "text": "three",
+      "startMs": 7406,
+      "endMs": 7769
+    },
+    {
+      "text": "layers.",
+      "startMs": 7769,
+      "endMs": 8253
+    },
+    {
+      "text": "One",
+      "startMs": 8253,
+      "endMs": 8495
+    },
+    {
+      "text": "company",
+      "startMs": 8495,
+      "endMs": 8979
+    },
+    {
+      "text": "holds",
+      "startMs": 8979,
+      "endMs": 9342
+    },
+    {
+      "text": "the",
+      "startMs": 9342,
+      "endMs": 9584
+    },
+    {
+      "text": "cables",
+      "startMs": 9584,
+      "endMs": 10008
+    },
+    {
+      "text": "and",
+      "startMs": 10008,
+      "endMs": 10250
+    },
+    {
+      "text": "ducts,",
+      "startMs": 10250,
+      "endMs": 10674
+    },
+    {
+      "text": "another",
+      "startMs": 10674,
+      "endMs": 11158
+    },
+    {
+      "text": "runs",
+      "startMs": 11158,
+      "endMs": 11461
+    },
+    {
+      "text": "the",
+      "startMs": 11461,
+      "endMs": 11703
+    },
+    {
+      "text": "equipment,",
+      "startMs": 11703,
+      "endMs": 12369
+    },
+    {
+      "text": "and",
+      "startMs": 12369,
+      "endMs": 12611
+    },
+    {
+      "text": "many",
+      "startMs": 12611,
+      "endMs": 12914
+    },
+    {
+      "text": "retailers",
+      "startMs": 12914,
+      "endMs": 13520
+    },
+    {
+      "text": "sell",
+      "startMs": 13520,
+      "endMs": 13823
+    },
+    {
+      "text": "plans",
+      "startMs": 13823,
+      "endMs": 14186
+    },
+    {
+      "text": "over",
+      "startMs": 14186,
+      "endMs": 14489
+    },
+    {
+      "text": "the",
+      "startMs": 14489,
+      "endMs": 14731
+    },
+    {
+      "text": "same",
+      "startMs": 14731,
+      "endMs": 15034
+    },
+    {
+      "text": "pipe.",
+      "startMs": 15034,
+      "endMs": 15397
+    }
+  ],
+  "s18": [
+    {
+      "text": "Plans",
+      "startMs": 100,
+      "endMs": 477
+    },
+    {
+      "text": "went",
+      "startMs": 477,
+      "endMs": 791
+    },
+    {
+      "text": "on",
+      "startMs": 791,
+      "endMs": 980
+    },
+    {
+      "text": "sale",
+      "startMs": 980,
+      "endMs": 1294
+    },
+    {
+      "text": "in",
+      "startMs": 1294,
+      "endMs": 1483
+    },
+    {
+      "text": "2010",
+      "startMs": 1483,
+      "endMs": 1797
+    },
+    {
+      "text": "with",
+      "startMs": 1797,
+      "endMs": 2111
+    },
+    {
+      "text": "speeds",
+      "startMs": 2111,
+      "endMs": 2551
+    },
+    {
+      "text": "up",
+      "startMs": 2551,
+      "endMs": 2740
+    },
+    {
+      "text": "to",
+      "startMs": 2740,
+      "endMs": 2929
+    },
+    {
+      "text": "one",
+      "startMs": 2929,
+      "endMs": 3181
+    },
+    {
+      "text": "gigabit",
+      "startMs": 3181,
+      "endMs": 3684
+    },
+    {
+      "text": "per",
+      "startMs": 3684,
+      "endMs": 3936
+    },
+    {
+      "text": "second.",
+      "startMs": 3936,
+      "endMs": 4439
+    },
+    {
+      "text": "By",
+      "startMs": 4439,
+      "endMs": 4628
+    },
+    {
+      "text": "mid",
+      "startMs": 4628,
+      "endMs": 4880
+    },
+    {
+      "text": "2013,",
+      "startMs": 4880,
+      "endMs": 5257
+    },
+    {
+      "text": "it",
+      "startMs": 5257,
+      "endMs": 5446
+    },
+    {
+      "text": "reached",
+      "startMs": 5446,
+      "endMs": 5949
+    },
+    {
+      "text": "more",
+      "startMs": 5949,
+      "endMs": 6263
+    },
+    {
+      "text": "than",
+      "startMs": 6263,
+      "endMs": 6577
+    },
+    {
+      "text": "ninety-five",
+      "startMs": 6577,
+      "endMs": 7332
+    },
+    {
+      "text": "percent",
+      "startMs": 7332,
+      "endMs": 7835
+    },
+    {
+      "text": "of",
+      "startMs": 7835,
+      "endMs": 8024
+    },
+    {
+      "text": "homes",
+      "startMs": 8024,
+      "endMs": 8401
+    },
+    {
+      "text": "and",
+      "startMs": 8401,
+      "endMs": 8653
+    },
+    {
+      "text": "businesses.",
+      "startMs": 8653,
+      "endMs": 9408
+    },
+    {
+      "text": "In",
+      "startMs": 9408,
+      "endMs": 9597
+    },
+    {
+      "text": "2024,",
+      "startMs": 9597,
+      "endMs": 9974
+    },
+    {
+      "text": "the",
+      "startMs": 9974,
+      "endMs": 10226
+    },
+    {
+      "text": "government",
+      "startMs": 10226,
+      "endMs": 10918
+    },
+    {
+      "text": "set",
+      "startMs": 10918,
+      "endMs": 11170
+    },
+    {
+      "text": "aside",
+      "startMs": 11170,
+      "endMs": 11547
+    },
+    {
+      "text": "up",
+      "startMs": 11547,
+      "endMs": 11736
+    },
+    {
+      "text": "to",
+      "startMs": 11736,
+      "endMs": 11925
+    },
+    {
+      "text": "a",
+      "startMs": 11925,
+      "endMs": 12051
+    },
+    {
+      "text": "hundred",
+      "startMs": 12051,
+      "endMs": 12554
+    },
+    {
+      "text": "million",
+      "startMs": 12554,
+      "endMs": 13057
+    },
+    {
+      "text": "Singapore",
+      "startMs": 13057,
+      "endMs": 13686
+    },
+    {
+      "text": "dollars",
+      "startMs": 13686,
+      "endMs": 14189
+    },
+    {
+      "text": "to",
+      "startMs": 14189,
+      "endMs": 14378
+    },
+    {
+      "text": "push",
+      "startMs": 14378,
+      "endMs": 14692
+    },
+    {
+      "text": "it",
+      "startMs": 14692,
+      "endMs": 14881
+    },
+    {
+      "text": "toward",
+      "startMs": 14881,
+      "endMs": 15321
+    },
+    {
+      "text": "ten",
+      "startMs": 15321,
+      "endMs": 15573
+    },
+    {
+      "text": "gigabits.",
+      "startMs": 15573,
+      "endMs": 16200
+    }
+  ],
+  "s19": [
+    {
+      "text": "Indonesia",
+      "startMs": 80,
+      "endMs": 580
+    },
+    {
+      "text": "grew",
+      "startMs": 660,
+      "endMs": 820
+    },
+    {
+      "text": "differently.",
+      "startMs": 900,
+      "endMs": 1380
+    },
+    {
+      "text": "The",
+      "startMs": 2280,
+      "endMs": 2340
+    },
+    {
+      "text": "World",
+      "startMs": 2400,
+      "endMs": 2620
+    },
+    {
+      "text": "Bank",
+      "startMs": 2700,
+      "endMs": 2920
+    },
+    {
+      "text": "wrote",
+      "startMs": 2960,
+      "endMs": 3160
+    },
+    {
+      "text": "that",
+      "startMs": 3200,
+      "endMs": 3340
+    },
+    {
+      "text": "sharing",
+      "startMs": 3400,
+      "endMs": 3740
+    },
+    {
+      "text": "infrastructure",
+      "startMs": 3800,
+      "endMs": 4380
+    },
+    {
+      "text": "was",
+      "startMs": 4440,
+      "endMs": 4560
+    },
+    {
+      "text": "common",
+      "startMs": 4620,
+      "endMs": 4880
+    },
+    {
+      "text": "among",
+      "startMs": 4940,
+      "endMs": 5180
+    },
+    {
+      "text": "mobile",
+      "startMs": 5240,
+      "endMs": 5500
+    },
+    {
+      "text": "networks,",
+      "startMs": 5560,
+      "endMs": 6000
+    },
+    {
+      "text": "but",
+      "startMs": 6480,
+      "endMs": 6600
+    },
+    {
+      "text": "not",
+      "startMs": 6660,
+      "endMs": 6820
+    },
+    {
+      "text": "in",
+      "startMs": 6860,
+      "endMs": 6960
+    },
+    {
+      "text": "home",
+      "startMs": 7020,
+      "endMs": 7200
+    },
+    {
+      "text": "broadband.",
+      "startMs": 7240,
+      "endMs": 7820
+    },
+    {
+      "text": "So",
+      "startMs": 8700,
+      "endMs": 8840
+    },
+    {
+      "text": "each",
+      "startMs": 8880,
+      "endMs": 9040
+    },
+    {
+      "text": "provider",
+      "startMs": 9080,
+      "endMs": 9420
+    },
+    {
+      "text": "tends",
+      "startMs": 9500,
+      "endMs": 9700
+    },
+    {
+      "text": "to",
+      "startMs": 9740,
+      "endMs": 9800
+    },
+    {
+      "text": "carry",
+      "startMs": 9860,
+      "endMs": 10080
+    },
+    {
+      "text": "its",
+      "startMs": 10120,
+      "endMs": 10300
+    },
+    {
+      "text": "own",
+      "startMs": 10360,
+      "endMs": 10540
+    },
+    {
+      "text": "poles",
+      "startMs": 10600,
+      "endMs": 10840
+    },
+    {
+      "text": "and",
+      "startMs": 10860,
+      "endMs": 10940
+    },
+    {
+      "text": "cables.",
+      "startMs": 11020,
+      "endMs": 11420
+    }
+  ],
+  "s20": [
+    {
+      "text": "Whoever",
+      "startMs": 80,
+      "endMs": 400
+    },
+    {
+      "text": "lays",
+      "startMs": 480,
+      "endMs": 680
+    },
+    {
+      "text": "your",
+      "startMs": 740,
+      "endMs": 840
+    },
+    {
+      "text": "cable",
+      "startMs": 900,
+      "endMs": 1180
+    },
+    {
+      "text": "has",
+      "startMs": 1240,
+      "endMs": 1440
+    },
+    {
+      "text": "one",
+      "startMs": 1540,
+      "endMs": 1680
+    },
+    {
+      "text": "problem.",
+      "startMs": 1760,
+      "endMs": 2160
+    },
+    {
+      "text": "Each",
+      "startMs": 2740,
+      "endMs": 2920
+    },
+    {
+      "text": "hose",
+      "startMs": 2980,
+      "endMs": 3240
+    },
+    {
+      "text": "has",
+      "startMs": 3280,
+      "endMs": 3400
+    },
+    {
+      "text": "to",
+      "startMs": 3440,
+      "endMs": 3540
+    },
+    {
+      "text": "earn",
+      "startMs": 3580,
+      "endMs": 3700
+    },
+    {
+      "text": "its",
+      "startMs": 3740,
+      "endMs": 3900
+    },
+    {
+      "text": "money",
+      "startMs": 3960,
+      "endMs": 4140
+    },
+    {
+      "text": "back",
+      "startMs": 4260,
+      "endMs": 4460
+    },
+    {
+      "text": "from",
+      "startMs": 4500,
+      "endMs": 4620
+    },
+    {
+      "text": "the",
+      "startMs": 4660,
+      "endMs": 4740
+    },
+    {
+      "text": "house",
+      "startMs": 4780,
+      "endMs": 5040
+    },
+    {
+      "text": "at",
+      "startMs": 5080,
+      "endMs": 5160
+    },
+    {
+      "text": "the",
+      "startMs": 5200,
+      "endMs": 5260
+    },
+    {
+      "text": "end",
+      "startMs": 5300,
+      "endMs": 5420
+    },
+    {
+      "text": "of",
+      "startMs": 5460,
+      "endMs": 5520
+    },
+    {
+      "text": "it.",
+      "startMs": 5560,
+      "endMs": 5680
+    },
+    {
+      "text": "A",
+      "startMs": 6580,
+      "endMs": 6640
+    },
+    {
+      "text": "dense",
+      "startMs": 6700,
+      "endMs": 6940
+    },
+    {
+      "text": "street",
+      "startMs": 7020,
+      "endMs": 7260
+    },
+    {
+      "text": "that",
+      "startMs": 7320,
+      "endMs": 7420
+    },
+    {
+      "text": "can",
+      "startMs": 7480,
+      "endMs": 7600
+    },
+    {
+      "text": "pay",
+      "startMs": 7660,
+      "endMs": 7840
+    },
+    {
+      "text": "gets",
+      "startMs": 7900,
+      "endMs": 8100
+    },
+    {
+      "text": "the",
+      "startMs": 8140,
+      "endMs": 8200
+    },
+    {
+      "text": "cable",
+      "startMs": 8260,
+      "endMs": 8540
+    },
+    {
+      "text": "first.",
+      "startMs": 8620,
+      "endMs": 8960
+    },
+    {
+      "text": "A",
+      "startMs": 9780,
+      "endMs": 9860
+    },
+    {
+      "text": "thin",
+      "startMs": 9900,
+      "endMs": 10080
+    },
+    {
+      "text": "or",
+      "startMs": 10120,
+      "endMs": 10200
+    },
+    {
+      "text": "tight",
+      "startMs": 10260,
+      "endMs": 10460
+    },
+    {
+      "text": "street",
+      "startMs": 10540,
+      "endMs": 10760
+    },
+    {
+      "text": "waits.",
+      "startMs": 10820,
+      "endMs": 11160
+    }
+  ],
+  "s21": [
+    {
+      "text": "A",
+      "startMs": 60,
+      "endMs": 170
+    },
+    {
+      "text": "phone",
+      "startMs": 170,
+      "endMs": 501
+    },
+    {
+      "text": "tower",
+      "startMs": 501,
+      "endMs": 832
+    },
+    {
+      "text": "works",
+      "startMs": 832,
+      "endMs": 1163
+    },
+    {
+      "text": "on",
+      "startMs": 1163,
+      "endMs": 1328
+    },
+    {
+      "text": "different",
+      "startMs": 1328,
+      "endMs": 1879
+    },
+    {
+      "text": "arithmetic.",
+      "startMs": 1879,
+      "endMs": 2540
+    },
+    {
+      "text": "One",
+      "startMs": 2540,
+      "endMs": 2760
+    },
+    {
+      "text": "tower",
+      "startMs": 2760,
+      "endMs": 3091
+    },
+    {
+      "text": "covers",
+      "startMs": 3091,
+      "endMs": 3477
+    },
+    {
+      "text": "a",
+      "startMs": 3477,
+      "endMs": 3587
+    },
+    {
+      "text": "whole",
+      "startMs": 3587,
+      "endMs": 3918
+    },
+    {
+      "text": "neighbourhood",
+      "startMs": 3918,
+      "endMs": 4689
+    },
+    {
+      "text": "with",
+      "startMs": 4689,
+      "endMs": 4965
+    },
+    {
+      "text": "no",
+      "startMs": 4965,
+      "endMs": 5130
+    },
+    {
+      "text": "trench",
+      "startMs": 5130,
+      "endMs": 5516
+    },
+    {
+      "text": "to",
+      "startMs": 5516,
+      "endMs": 5681
+    },
+    {
+      "text": "each",
+      "startMs": 5681,
+      "endMs": 5957
+    },
+    {
+      "text": "door,",
+      "startMs": 5957,
+      "endMs": 6288
+    },
+    {
+      "text": "and",
+      "startMs": 6288,
+      "endMs": 6508
+    },
+    {
+      "text": "its",
+      "startMs": 6508,
+      "endMs": 6728
+    },
+    {
+      "text": "customers",
+      "startMs": 6728,
+      "endMs": 7279
+    },
+    {
+      "text": "already",
+      "startMs": 7279,
+      "endMs": 7720
+    },
+    {
+      "text": "carry",
+      "startMs": 7720,
+      "endMs": 8051
+    },
+    {
+      "text": "the",
+      "startMs": 8051,
+      "endMs": 8271
+    },
+    {
+      "text": "receiver",
+      "startMs": 8271,
+      "endMs": 8767
+    },
+    {
+      "text": "in",
+      "startMs": 8767,
+      "endMs": 8932
+    },
+    {
+      "text": "their",
+      "startMs": 8932,
+      "endMs": 9263
+    },
+    {
+      "text": "pockets.",
+      "startMs": 9263,
+      "endMs": 9759
+    },
+    {
+      "text": "For",
+      "startMs": 9759,
+      "endMs": 9979
+    },
+    {
+      "text": "an",
+      "startMs": 9979,
+      "endMs": 10144
+    },
+    {
+      "text": "operator,",
+      "startMs": 10144,
+      "endMs": 10695
+    },
+    {
+      "text": "that",
+      "startMs": 10695,
+      "endMs": 10971
+    },
+    {
+      "text": "is",
+      "startMs": 10971,
+      "endMs": 11136
+    },
+    {
+      "text": "a",
+      "startMs": 11136,
+      "endMs": 11246
+    },
+    {
+      "text": "quicker",
+      "startMs": 11246,
+      "endMs": 11687
+    },
+    {
+      "text": "way",
+      "startMs": 11687,
+      "endMs": 11907
+    },
+    {
+      "text": "to",
+      "startMs": 11907,
+      "endMs": 12072
+    },
+    {
+      "text": "sell",
+      "startMs": 12072,
+      "endMs": 12348
+    },
+    {
+      "text": "water",
+      "startMs": 12348,
+      "endMs": 12679
+    },
+    {
+      "text": "to",
+      "startMs": 12679,
+      "endMs": 12844
+    },
+    {
+      "text": "many",
+      "startMs": 12844,
+      "endMs": 13120
+    },
+    {
+      "text": "people.",
+      "startMs": 13120,
+      "endMs": 13560
+    }
+  ],
+  "s22": [
+    {
+      "text": "Now",
+      "startMs": 100,
+      "endMs": 260
+    },
+    {
+      "text": "look",
+      "startMs": 320,
+      "endMs": 440
+    },
+    {
+      "text": "at",
+      "startMs": 460,
+      "endMs": 520
+    },
+    {
+      "text": "it",
+      "startMs": 540,
+      "endMs": 620
+    },
+    {
+      "text": "from",
+      "startMs": 660,
+      "endMs": 780
+    },
+    {
+      "text": "the",
+      "startMs": 820,
+      "endMs": 880
+    },
+    {
+      "text": "living",
+      "startMs": 940,
+      "endMs": 1160
+    },
+    {
+      "text": "room.",
+      "startMs": 1220,
+      "endMs": 1400
+    },
+    {
+      "text": "By",
+      "startMs": 2420,
+      "endMs": 2540
+    },
+    {
+      "text": "the",
+      "startMs": 2580,
+      "endMs": 2660
+    },
+    {
+      "text": "Communications",
+      "startMs": 2700,
+      "endMs": 3320
+    },
+    {
+      "text": "Ministry's",
+      "startMs": 3420,
+      "endMs": 3840
+    },
+    {
+      "text": "figure,",
+      "startMs": 3940,
+      "endMs": 4240
+    },
+    {
+      "text": "only",
+      "startMs": 4820,
+      "endMs": 5000
+    },
+    {
+      "text": "about",
+      "startMs": 5040,
+      "endMs": 5300
+    },
+    {
+      "text": "one",
+      "startMs": 5360,
+      "endMs": 5520
+    },
+    {
+      "text": "household",
+      "startMs": 5600,
+      "endMs": 6040
+    },
+    {
+      "text": "in",
+      "startMs": 6100,
+      "endMs": 6240
+    },
+    {
+      "text": "five",
+      "startMs": 6300,
+      "endMs": 6560
+    },
+    {
+      "text": "subscribes",
+      "startMs": 6620,
+      "endMs": 7120
+    },
+    {
+      "text": "to",
+      "startMs": 7180,
+      "endMs": 7300
+    },
+    {
+      "text": "fixed",
+      "startMs": 7360,
+      "endMs": 7600
+    },
+    {
+      "text": "home",
+      "startMs": 7660,
+      "endMs": 7840
+    },
+    {
+      "text": "internet.",
+      "startMs": 7900,
+      "endMs": 8260
+    },
+    {
+      "text": "Many",
+      "startMs": 9120,
+      "endMs": 9300
+    },
+    {
+      "text": "of",
+      "startMs": 9340,
+      "endMs": 9400
+    },
+    {
+      "text": "the",
+      "startMs": 9440,
+      "endMs": 9500
+    },
+    {
+      "text": "others",
+      "startMs": 9560,
+      "endMs": 9800
+    },
+    {
+      "text": "are",
+      "startMs": 9840,
+      "endMs": 9980
+    },
+    {
+      "text": "already",
+      "startMs": 10060,
+      "endMs": 10320
+    },
+    {
+      "text": "online",
+      "startMs": 10380,
+      "endMs": 10820
+    },
+    {
+      "text": "through",
+      "startMs": 10860,
+      "endMs": 11000
+    },
+    {
+      "text": "a",
+      "startMs": 11040,
+      "endMs": 11100
+    },
+    {
+      "text": "phone.",
+      "startMs": 11140,
+      "endMs": 11460
+    }
+  ],
+  "s23": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 338
+    },
+    {
+      "text": "providers'",
+      "startMs": 338,
+      "endMs": 992
+    },
+    {
+      "text": "association",
+      "startMs": 992,
+      "endMs": 1705
+    },
+    {
+      "text": "asked",
+      "startMs": 1705,
+      "endMs": 2062
+    },
+    {
+      "text": "why",
+      "startMs": 2062,
+      "endMs": 2300
+    },
+    {
+      "text": "in",
+      "startMs": 2300,
+      "endMs": 2478
+    },
+    {
+      "text": "its",
+      "startMs": 2478,
+      "endMs": 2716
+    },
+    {
+      "text": "2026",
+      "startMs": 2716,
+      "endMs": 3013
+    },
+    {
+      "text": "survey.",
+      "startMs": 3013,
+      "endMs": 3488
+    },
+    {
+      "text": "About",
+      "startMs": 3488,
+      "endMs": 3845
+    },
+    {
+      "text": "forty-seven",
+      "startMs": 3845,
+      "endMs": 4558
+    },
+    {
+      "text": "percent",
+      "startMs": 4558,
+      "endMs": 5033
+    },
+    {
+      "text": "of",
+      "startMs": 5033,
+      "endMs": 5211
+    },
+    {
+      "text": "those",
+      "startMs": 5211,
+      "endMs": 5568
+    },
+    {
+      "text": "without",
+      "startMs": 5568,
+      "endMs": 6043
+    },
+    {
+      "text": "it",
+      "startMs": 6043,
+      "endMs": 6221
+    },
+    {
+      "text": "said",
+      "startMs": 6221,
+      "endMs": 6518
+    },
+    {
+      "text": "mobile",
+      "startMs": 6518,
+      "endMs": 6934
+    },
+    {
+      "text": "data",
+      "startMs": 6934,
+      "endMs": 7231
+    },
+    {
+      "text": "already",
+      "startMs": 7231,
+      "endMs": 7706
+    },
+    {
+      "text": "covers",
+      "startMs": 7706,
+      "endMs": 8122
+    },
+    {
+      "text": "their",
+      "startMs": 8122,
+      "endMs": 8479
+    },
+    {
+      "text": "needs.",
+      "startMs": 8479,
+      "endMs": 8895
+    },
+    {
+      "text": "About",
+      "startMs": 8895,
+      "endMs": 9252
+    },
+    {
+      "text": "thirty-three",
+      "startMs": 9252,
+      "endMs": 10025
+    },
+    {
+      "text": "percent",
+      "startMs": 10025,
+      "endMs": 10500
+    },
+    {
+      "text": "said",
+      "startMs": 10500,
+      "endMs": 10797
+    },
+    {
+      "text": "home",
+      "startMs": 10797,
+      "endMs": 11094
+    },
+    {
+      "text": "internet",
+      "startMs": 11094,
+      "endMs": 11629
+    },
+    {
+      "text": "costs",
+      "startMs": 11629,
+      "endMs": 11986
+    },
+    {
+      "text": "too",
+      "startMs": 11986,
+      "endMs": 12224
+    },
+    {
+      "text": "much.",
+      "startMs": 12224,
+      "endMs": 12580
+    }
+  ],
+  "s24": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 332
+    },
+    {
+      "text": "price",
+      "startMs": 332,
+      "endMs": 680
+    },
+    {
+      "text": "complaint",
+      "startMs": 680,
+      "endMs": 1259
+    },
+    {
+      "text": "has",
+      "startMs": 1259,
+      "endMs": 1491
+    },
+    {
+      "text": "a",
+      "startMs": 1491,
+      "endMs": 1607
+    },
+    {
+      "text": "basis.",
+      "startMs": 1607,
+      "endMs": 2012
+    },
+    {
+      "text": "A",
+      "startMs": 2012,
+      "endMs": 2128
+    },
+    {
+      "text": "figure",
+      "startMs": 2128,
+      "endMs": 2533
+    },
+    {
+      "text": "reported",
+      "startMs": 2533,
+      "endMs": 3054
+    },
+    {
+      "text": "in",
+      "startMs": 3054,
+      "endMs": 3228
+    },
+    {
+      "text": "November",
+      "startMs": 3228,
+      "endMs": 3749
+    },
+    {
+      "text": "puts",
+      "startMs": 3749,
+      "endMs": 4039
+    },
+    {
+      "text": "fixed",
+      "startMs": 4039,
+      "endMs": 4387
+    },
+    {
+      "text": "internet",
+      "startMs": 4387,
+      "endMs": 4908
+    },
+    {
+      "text": "at",
+      "startMs": 4908,
+      "endMs": 5082
+    },
+    {
+      "text": "about",
+      "startMs": 5082,
+      "endMs": 5430
+    },
+    {
+      "text": "four",
+      "startMs": 5430,
+      "endMs": 5720
+    },
+    {
+      "text": "point",
+      "startMs": 5720,
+      "endMs": 6068
+    },
+    {
+      "text": "nine",
+      "startMs": 6068,
+      "endMs": 6358
+    },
+    {
+      "text": "percent",
+      "startMs": 6358,
+      "endMs": 6821
+    },
+    {
+      "text": "of",
+      "startMs": 6821,
+      "endMs": 6995
+    },
+    {
+      "text": "national",
+      "startMs": 6995,
+      "endMs": 7516
+    },
+    {
+      "text": "income",
+      "startMs": 7516,
+      "endMs": 7921
+    },
+    {
+      "text": "per",
+      "startMs": 7921,
+      "endMs": 8153
+    },
+    {
+      "text": "person.",
+      "startMs": 8153,
+      "endMs": 8616
+    },
+    {
+      "text": "The",
+      "startMs": 8616,
+      "endMs": 8848
+    },
+    {
+      "text": "international",
+      "startMs": 8848,
+      "endMs": 9659
+    },
+    {
+      "text": "affordability",
+      "startMs": 9659,
+      "endMs": 10470
+    },
+    {
+      "text": "target",
+      "startMs": 10470,
+      "endMs": 10875
+    },
+    {
+      "text": "is",
+      "startMs": 10875,
+      "endMs": 11049
+    },
+    {
+      "text": "two",
+      "startMs": 11049,
+      "endMs": 11281
+    },
+    {
+      "text": "percent.",
+      "startMs": 11281,
+      "endMs": 11800
+    }
+  ],
+  "s25": [
+    {
+      "text": "Even",
+      "startMs": 80,
+      "endMs": 379
+    },
+    {
+      "text": "where",
+      "startMs": 379,
+      "endMs": 738
+    },
+    {
+      "text": "the",
+      "startMs": 738,
+      "endMs": 977
+    },
+    {
+      "text": "cable",
+      "startMs": 977,
+      "endMs": 1336
+    },
+    {
+      "text": "is",
+      "startMs": 1336,
+      "endMs": 1516
+    },
+    {
+      "text": "on",
+      "startMs": 1516,
+      "endMs": 1696
+    },
+    {
+      "text": "offer,",
+      "startMs": 1696,
+      "endMs": 2115
+    },
+    {
+      "text": "people",
+      "startMs": 2115,
+      "endMs": 2534
+    },
+    {
+      "text": "do",
+      "startMs": 2534,
+      "endMs": 2714
+    },
+    {
+      "text": "not",
+      "startMs": 2714,
+      "endMs": 2953
+    },
+    {
+      "text": "automatically",
+      "startMs": 2953,
+      "endMs": 3791
+    },
+    {
+      "text": "take",
+      "startMs": 3791,
+      "endMs": 4090
+    },
+    {
+      "text": "it.",
+      "startMs": 4090,
+      "endMs": 4329
+    },
+    {
+      "text": "A",
+      "startMs": 4329,
+      "endMs": 4449
+    },
+    {
+      "text": "2022",
+      "startMs": 4449,
+      "endMs": 4748
+    },
+    {
+      "text": "World",
+      "startMs": 4748,
+      "endMs": 5107
+    },
+    {
+      "text": "Bank",
+      "startMs": 5107,
+      "endMs": 5406
+    },
+    {
+      "text": "study",
+      "startMs": 5406,
+      "endMs": 5765
+    },
+    {
+      "text": "found",
+      "startMs": 5765,
+      "endMs": 6124
+    },
+    {
+      "text": "that",
+      "startMs": 6124,
+      "endMs": 6423
+    },
+    {
+      "text": "only",
+      "startMs": 6423,
+      "endMs": 6722
+    },
+    {
+      "text": "twenty-six",
+      "startMs": 6722,
+      "endMs": 7380
+    },
+    {
+      "text": "percent",
+      "startMs": 7380,
+      "endMs": 7859
+    },
+    {
+      "text": "of",
+      "startMs": 7859,
+      "endMs": 8039
+    },
+    {
+      "text": "homes",
+      "startMs": 8039,
+      "endMs": 8398
+    },
+    {
+      "text": "with",
+      "startMs": 8398,
+      "endMs": 8697
+    },
+    {
+      "text": "access",
+      "startMs": 8697,
+      "endMs": 9116
+    },
+    {
+      "text": "to",
+      "startMs": 9116,
+      "endMs": 9296
+    },
+    {
+      "text": "a",
+      "startMs": 9296,
+      "endMs": 9416
+    },
+    {
+      "text": "provider",
+      "startMs": 9416,
+      "endMs": 9955
+    },
+    {
+      "text": "subscribed.",
+      "startMs": 9955,
+      "endMs": 10673
+    },
+    {
+      "text": "High",
+      "startMs": 10673,
+      "endMs": 10972
+    },
+    {
+      "text": "cost",
+      "startMs": 10972,
+      "endMs": 11271
+    },
+    {
+      "text": "was",
+      "startMs": 11271,
+      "endMs": 11510
+    },
+    {
+      "text": "the",
+      "startMs": 11510,
+      "endMs": 11749
+    },
+    {
+      "text": "main",
+      "startMs": 11749,
+      "endMs": 12048
+    },
+    {
+      "text": "reason",
+      "startMs": 12048,
+      "endMs": 12467
+    },
+    {
+      "text": "named,",
+      "startMs": 12467,
+      "endMs": 12886
+    },
+    {
+      "text": "by",
+      "startMs": 12886,
+      "endMs": 13066
+    },
+    {
+      "text": "forty-four",
+      "startMs": 13066,
+      "endMs": 13724
+    },
+    {
+      "text": "percent",
+      "startMs": 13724,
+      "endMs": 14203
+    },
+    {
+      "text": "of",
+      "startMs": 14203,
+      "endMs": 14383
+    },
+    {
+      "text": "households.",
+      "startMs": 14383,
+      "endMs": 15100
+    }
+  ],
+  "s26": [
+    {
+      "text": "Put",
+      "startMs": 100,
+      "endMs": 351
+    },
+    {
+      "text": "those",
+      "startMs": 351,
+      "endMs": 727
+    },
+    {
+      "text": "pieces",
+      "startMs": 727,
+      "endMs": 1166
+    },
+    {
+      "text": "together",
+      "startMs": 1166,
+      "endMs": 1730
+    },
+    {
+      "text": "and",
+      "startMs": 1730,
+      "endMs": 1981
+    },
+    {
+      "text": "a",
+      "startMs": 1981,
+      "endMs": 2106
+    },
+    {
+      "text": "likely",
+      "startMs": 2106,
+      "endMs": 2545
+    },
+    {
+      "text": "loop",
+      "startMs": 2545,
+      "endMs": 2859
+    },
+    {
+      "text": "appears.",
+      "startMs": 2859,
+      "endMs": 3423
+    },
+    {
+      "text": "Few",
+      "startMs": 3423,
+      "endMs": 3674
+    },
+    {
+      "text": "homes",
+      "startMs": 3674,
+      "endMs": 4050
+    },
+    {
+      "text": "sign",
+      "startMs": 4050,
+      "endMs": 4364
+    },
+    {
+      "text": "up,",
+      "startMs": 4364,
+      "endMs": 4615
+    },
+    {
+      "text": "so",
+      "startMs": 4615,
+      "endMs": 4803
+    },
+    {
+      "text": "the",
+      "startMs": 4803,
+      "endMs": 5054
+    },
+    {
+      "text": "cost",
+      "startMs": 5054,
+      "endMs": 5368
+    },
+    {
+      "text": "of",
+      "startMs": 5368,
+      "endMs": 5556
+    },
+    {
+      "text": "each",
+      "startMs": 5556,
+      "endMs": 5870
+    },
+    {
+      "text": "cable",
+      "startMs": 5870,
+      "endMs": 6246
+    },
+    {
+      "text": "is",
+      "startMs": 6246,
+      "endMs": 6434
+    },
+    {
+      "text": "split",
+      "startMs": 6434,
+      "endMs": 6810
+    },
+    {
+      "text": "among",
+      "startMs": 6810,
+      "endMs": 7186
+    },
+    {
+      "text": "few",
+      "startMs": 7186,
+      "endMs": 7437
+    },
+    {
+      "text": "people.",
+      "startMs": 7437,
+      "endMs": 7939
+    },
+    {
+      "text": "The",
+      "startMs": 7939,
+      "endMs": 8190
+    },
+    {
+      "text": "price",
+      "startMs": 8190,
+      "endMs": 8566
+    },
+    {
+      "text": "per",
+      "startMs": 8566,
+      "endMs": 8817
+    },
+    {
+      "text": "home",
+      "startMs": 8817,
+      "endMs": 9131
+    },
+    {
+      "text": "stays",
+      "startMs": 9131,
+      "endMs": 9507
+    },
+    {
+      "text": "hard",
+      "startMs": 9507,
+      "endMs": 9821
+    },
+    {
+      "text": "to",
+      "startMs": 9821,
+      "endMs": 10009
+    },
+    {
+      "text": "cut,",
+      "startMs": 10009,
+      "endMs": 10323
+    },
+    {
+      "text": "many",
+      "startMs": 10323,
+      "endMs": 10637
+    },
+    {
+      "text": "stay",
+      "startMs": 10637,
+      "endMs": 10951
+    },
+    {
+      "text": "on",
+      "startMs": 10951,
+      "endMs": 11139
+    },
+    {
+      "text": "phones,",
+      "startMs": 11139,
+      "endMs": 11641
+    },
+    {
+      "text": "and",
+      "startMs": 11641,
+      "endMs": 11892
+    },
+    {
+      "text": "subscribers",
+      "startMs": 11892,
+      "endMs": 12645
+    },
+    {
+      "text": "often",
+      "startMs": 12645,
+      "endMs": 13021
+    },
+    {
+      "text": "pick",
+      "startMs": 13021,
+      "endMs": 13335
+    },
+    {
+      "text": "small",
+      "startMs": 13335,
+      "endMs": 13711
+    },
+    {
+      "text": "plans.",
+      "startMs": 13711,
+      "endMs": 14150
+    },
+    {
+      "text": "A",
+      "startMs": 14150,
+      "endMs": 14275
+    },
+    {
+      "text": "median",
+      "startMs": 14275,
+      "endMs": 14714
+    },
+    {
+      "text": "measures",
+      "startMs": 14714,
+      "endMs": 15278
+    },
+    {
+      "text": "what",
+      "startMs": 15278,
+      "endMs": 15592
+    },
+    {
+      "text": "people",
+      "startMs": 15592,
+      "endMs": 16031
+    },
+    {
+      "text": "actually",
+      "startMs": 16031,
+      "endMs": 16595
+    },
+    {
+      "text": "get,",
+      "startMs": 16595,
+      "endMs": 16909
+    },
+    {
+      "text": "including",
+      "startMs": 16909,
+      "endMs": 17536
+    },
+    {
+      "text": "what",
+      "startMs": 17536,
+      "endMs": 17850
+    },
+    {
+      "text": "they",
+      "startMs": 17850,
+      "endMs": 18164
+    },
+    {
+      "text": "choose",
+      "startMs": 18164,
+      "endMs": 18603
+    },
+    {
+      "text": "to",
+      "startMs": 18603,
+      "endMs": 18791
+    },
+    {
+      "text": "buy,",
+      "startMs": 18791,
+      "endMs": 19105
+    },
+    {
+      "text": "and",
+      "startMs": 19105,
+      "endMs": 19356
+    },
+    {
+      "text": "fibre",
+      "startMs": 19356,
+      "endMs": 19732
+    },
+    {
+      "text": "itself",
+      "startMs": 19732,
+      "endMs": 20171
+    },
+    {
+      "text": "can",
+      "startMs": 20171,
+      "endMs": 20422
+    },
+    {
+      "text": "go",
+      "startMs": 20422,
+      "endMs": 20610
+    },
+    {
+      "text": "far",
+      "startMs": 20610,
+      "endMs": 20861
+    },
+    {
+      "text": "faster.",
+      "startMs": 20861,
+      "endMs": 21360
+    }
+  ],
+  "s27": [
+    {
+      "text": "On",
+      "startMs": 80,
+      "endMs": 262
+    },
+    {
+      "text": "a",
+      "startMs": 262,
+      "endMs": 383
+    },
+    {
+      "text": "fifty",
+      "startMs": 383,
+      "endMs": 747
+    },
+    {
+      "text": "megabit",
+      "startMs": 747,
+      "endMs": 1233
+    },
+    {
+      "text": "home",
+      "startMs": 1233,
+      "endMs": 1536
+    },
+    {
+      "text": "plan,",
+      "startMs": 1536,
+      "endMs": 1900
+    },
+    {
+      "text": "GTA",
+      "startMs": 1900,
+      "endMs": 2143
+    },
+    {
+      "text": "6",
+      "startMs": 2143,
+      "endMs": 2264
+    },
+    {
+      "text": "cannot",
+      "startMs": 2264,
+      "endMs": 2689
+    },
+    {
+      "text": "arrive",
+      "startMs": 2689,
+      "endMs": 3114
+    },
+    {
+      "text": "in",
+      "startMs": 3114,
+      "endMs": 3296
+    },
+    {
+      "text": "less",
+      "startMs": 3296,
+      "endMs": 3599
+    },
+    {
+      "text": "than",
+      "startMs": 3599,
+      "endMs": 3902
+    },
+    {
+      "text": "roughly",
+      "startMs": 3902,
+      "endMs": 4388
+    },
+    {
+      "text": "nine",
+      "startMs": 4388,
+      "endMs": 4691
+    },
+    {
+      "text": "and",
+      "startMs": 4691,
+      "endMs": 4934
+    },
+    {
+      "text": "a",
+      "startMs": 4934,
+      "endMs": 5055
+    },
+    {
+      "text": "half",
+      "startMs": 5055,
+      "endMs": 5358
+    },
+    {
+      "text": "hours,",
+      "startMs": 5358,
+      "endMs": 5783
+    },
+    {
+      "text": "however",
+      "startMs": 5783,
+      "endMs": 6269
+    },
+    {
+      "text": "good",
+      "startMs": 6269,
+      "endMs": 6572
+    },
+    {
+      "text": "the",
+      "startMs": 6572,
+      "endMs": 6815
+    },
+    {
+      "text": "cable",
+      "startMs": 6815,
+      "endMs": 7179
+    },
+    {
+      "text": "is.",
+      "startMs": 7179,
+      "endMs": 7422
+    },
+    {
+      "text": "On",
+      "startMs": 7422,
+      "endMs": 7604
+    },
+    {
+      "text": "a",
+      "startMs": 7604,
+      "endMs": 7725
+    },
+    {
+      "text": "three",
+      "startMs": 7725,
+      "endMs": 8089
+    },
+    {
+      "text": "hundred",
+      "startMs": 8089,
+      "endMs": 8575
+    },
+    {
+      "text": "megabit",
+      "startMs": 8575,
+      "endMs": 9061
+    },
+    {
+      "text": "plan,",
+      "startMs": 9061,
+      "endMs": 9425
+    },
+    {
+      "text": "the",
+      "startMs": 9425,
+      "endMs": 9668
+    },
+    {
+      "text": "same",
+      "startMs": 9668,
+      "endMs": 9971
+    },
+    {
+      "text": "sum",
+      "startMs": 9971,
+      "endMs": 10214
+    },
+    {
+      "text": "falls",
+      "startMs": 10214,
+      "endMs": 10578
+    },
+    {
+      "text": "to",
+      "startMs": 10578,
+      "endMs": 10760
+    },
+    {
+      "text": "about",
+      "startMs": 10760,
+      "endMs": 11124
+    },
+    {
+      "text": "an",
+      "startMs": 11124,
+      "endMs": 11306
+    },
+    {
+      "text": "hour",
+      "startMs": 11306,
+      "endMs": 11609
+    },
+    {
+      "text": "and",
+      "startMs": 11609,
+      "endMs": 11852
+    },
+    {
+      "text": "a",
+      "startMs": 11852,
+      "endMs": 11973
+    },
+    {
+      "text": "half.",
+      "startMs": 11973,
+      "endMs": 12337
+    }
+  ],
+  "s28": [
+    {
+      "text": "To",
+      "startMs": 100,
+      "endMs": 272
+    },
+    {
+      "text": "be",
+      "startMs": 272,
+      "endMs": 444
+    },
+    {
+      "text": "fair,",
+      "startMs": 444,
+      "endMs": 788
+    },
+    {
+      "text": "Singapore",
+      "startMs": 788,
+      "endMs": 1361
+    },
+    {
+      "text": "is",
+      "startMs": 1361,
+      "endMs": 1533
+    },
+    {
+      "text": "a",
+      "startMs": 1533,
+      "endMs": 1648
+    },
+    {
+      "text": "lopsided",
+      "startMs": 1648,
+      "endMs": 2164
+    },
+    {
+      "text": "opponent.",
+      "startMs": 2164,
+      "endMs": 2737
+    },
+    {
+      "text": "It",
+      "startMs": 2737,
+      "endMs": 2909
+    },
+    {
+      "text": "is",
+      "startMs": 2909,
+      "endMs": 3081
+    },
+    {
+      "text": "one",
+      "startMs": 3081,
+      "endMs": 3310
+    },
+    {
+      "text": "city",
+      "startMs": 3310,
+      "endMs": 3596
+    },
+    {
+      "text": "island",
+      "startMs": 3596,
+      "endMs": 3997
+    },
+    {
+      "text": "against",
+      "startMs": 3997,
+      "endMs": 4455
+    },
+    {
+      "text": "a",
+      "startMs": 4455,
+      "endMs": 4570
+    },
+    {
+      "text": "country",
+      "startMs": 4570,
+      "endMs": 5028
+    },
+    {
+      "text": "stretched",
+      "startMs": 5028,
+      "endMs": 5601
+    },
+    {
+      "text": "across",
+      "startMs": 5601,
+      "endMs": 6002
+    },
+    {
+      "text": "three",
+      "startMs": 6002,
+      "endMs": 6346
+    },
+    {
+      "text": "time",
+      "startMs": 6346,
+      "endMs": 6632
+    },
+    {
+      "text": "zones.",
+      "startMs": 6632,
+      "endMs": 7033
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 7033,
+      "endMs": 7720
+    },
+    {
+      "text": "mobile",
+      "startMs": 7720,
+      "endMs": 8121
+    },
+    {
+      "text": "operators",
+      "startMs": 8121,
+      "endMs": 8694
+    },
+    {
+      "text": "have",
+      "startMs": 8694,
+      "endMs": 8980
+    },
+    {
+      "text": "also",
+      "startMs": 8980,
+      "endMs": 9266
+    },
+    {
+      "text": "asked",
+      "startMs": 9266,
+      "endMs": 9610
+    },
+    {
+      "text": "that",
+      "startMs": 9610,
+      "endMs": 9896
+    },
+    {
+      "text": "mobile",
+      "startMs": 9896,
+      "endMs": 10297
+    },
+    {
+      "text": "speed",
+      "startMs": 10297,
+      "endMs": 10641
+    },
+    {
+      "text": "comparisons",
+      "startMs": 10641,
+      "endMs": 11328
+    },
+    {
+      "text": "account",
+      "startMs": 11328,
+      "endMs": 11786
+    },
+    {
+      "text": "for",
+      "startMs": 11786,
+      "endMs": 12015
+    },
+    {
+      "text": "when",
+      "startMs": 12015,
+      "endMs": 12301
+    },
+    {
+      "text": "five",
+      "startMs": 12301,
+      "endMs": 12587
+    },
+    {
+      "text": "G",
+      "startMs": 12587,
+      "endMs": 12702
+    },
+    {
+      "text": "arrived",
+      "startMs": 12702,
+      "endMs": 13160
+    },
+    {
+      "text": "and",
+      "startMs": 13160,
+      "endMs": 13389
+    },
+    {
+      "text": "which",
+      "startMs": 13389,
+      "endMs": 13733
+    },
+    {
+      "text": "frequencies",
+      "startMs": 13733,
+      "endMs": 14420
+    },
+    {
+      "text": "it",
+      "startMs": 14420,
+      "endMs": 14592
+    },
+    {
+      "text": "got.",
+      "startMs": 14592,
+      "endMs": 14878
+    }
+  ],
+  "s29": [
+    {
+      "text": "And",
+      "startMs": 80,
+      "endMs": 180
+    },
+    {
+      "text": "a",
+      "startMs": 220,
+      "endMs": 300
+    },
+    {
+      "text": "small",
+      "startMs": 380,
+      "endMs": 640
+    },
+    {
+      "text": "cheap",
+      "startMs": 700,
+      "endMs": 920
+    },
+    {
+      "text": "plan",
+      "startMs": 980,
+      "endMs": 1300
+    },
+    {
+      "text": "or",
+      "startMs": 1720,
+      "endMs": 1860
+    },
+    {
+      "text": "phone",
+      "startMs": 1960,
+      "endMs": 2180
+    },
+    {
+      "text": "data",
+      "startMs": 2240,
+      "endMs": 2480
+    },
+    {
+      "text": "alone",
+      "startMs": 2560,
+      "endMs": 2880
+    },
+    {
+      "text": "can",
+      "startMs": 3320,
+      "endMs": 3420
+    },
+    {
+      "text": "be",
+      "startMs": 3460,
+      "endMs": 3520
+    },
+    {
+      "text": "a",
+      "startMs": 3580,
+      "endMs": 3640
+    },
+    {
+      "text": "sensible",
+      "startMs": 3700,
+      "endMs": 4059
+    },
+    {
+      "text": "choice.",
+      "startMs": 4160,
+      "endMs": 4520
+    },
+    {
+      "text": "For",
+      "startMs": 5440,
+      "endMs": 5540
+    },
+    {
+      "text": "a",
+      "startMs": 5600,
+      "endMs": 5660
+    },
+    {
+      "text": "family",
+      "startMs": 5720,
+      "endMs": 6000
+    },
+    {
+      "text": "that",
+      "startMs": 6060,
+      "endMs": 6180
+    },
+    {
+      "text": "mostly",
+      "startMs": 6240,
+      "endMs": 6600
+    },
+    {
+      "text": "chats",
+      "startMs": 6660,
+      "endMs": 6960
+    },
+    {
+      "text": "and",
+      "startMs": 7000,
+      "endMs": 7120
+    },
+    {
+      "text": "watches",
+      "startMs": 7200,
+      "endMs": 7520
+    },
+    {
+      "text": "short",
+      "startMs": 7580,
+      "endMs": 7800
+    },
+    {
+      "text": "videos,",
+      "startMs": 7860,
+      "endMs": 8200
+    },
+    {
+      "text": "paying",
+      "startMs": 8660,
+      "endMs": 8900
+    },
+    {
+      "text": "for",
+      "startMs": 8940,
+      "endMs": 9020
+    },
+    {
+      "text": "a",
+      "startMs": 9060,
+      "endMs": 9140
+    },
+    {
+      "text": "giant",
+      "startMs": 9200,
+      "endMs": 9480
+    },
+    {
+      "text": "pipe",
+      "startMs": 9580,
+      "endMs": 9820
+    },
+    {
+      "text": "adds",
+      "startMs": 9960,
+      "endMs": 10180
+    },
+    {
+      "text": "little.",
+      "startMs": 10240,
+      "endMs": 10480
+    },
+    {
+      "text": "GTA",
+      "startMs": 11400,
+      "endMs": 11940
+    },
+    {
+      "text": "6",
+      "startMs": 12000,
+      "endMs": 12200
+    },
+    {
+      "text": "launch",
+      "startMs": 12300,
+      "endMs": 12540
+    },
+    {
+      "text": "week",
+      "startMs": 12620,
+      "endMs": 12780
+    },
+    {
+      "text": "is",
+      "startMs": 12840,
+      "endMs": 12940
+    },
+    {
+      "text": "not",
+      "startMs": 13000,
+      "endMs": 13140
+    },
+    {
+      "text": "an",
+      "startMs": 13180,
+      "endMs": 13280
+    },
+    {
+      "text": "ordinary",
+      "startMs": 13360,
+      "endMs": 13800
+    },
+    {
+      "text": "week.",
+      "startMs": 13900,
+      "endMs": 14100
+    }
+  ],
+  "s30": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 328
+    },
+    {
+      "text": "last",
+      "startMs": 328,
+      "endMs": 613
+    },
+    {
+      "text": "hose",
+      "startMs": 613,
+      "endMs": 898
+    },
+    {
+      "text": "is",
+      "startMs": 898,
+      "endMs": 1069
+    },
+    {
+      "text": "also",
+      "startMs": 1069,
+      "endMs": 1354
+    },
+    {
+      "text": "being",
+      "startMs": 1354,
+      "endMs": 1696
+    },
+    {
+      "text": "tried",
+      "startMs": 1696,
+      "endMs": 2038
+    },
+    {
+      "text": "without",
+      "startMs": 2038,
+      "endMs": 2494
+    },
+    {
+      "text": "a",
+      "startMs": 2494,
+      "endMs": 2608
+    },
+    {
+      "text": "trench.",
+      "startMs": 2608,
+      "endMs": 3064
+    },
+    {
+      "text": "Fixed",
+      "startMs": 3064,
+      "endMs": 3406
+    },
+    {
+      "text": "wireless",
+      "startMs": 3406,
+      "endMs": 3919
+    },
+    {
+      "text": "uses",
+      "startMs": 3919,
+      "endMs": 4204
+    },
+    {
+      "text": "a",
+      "startMs": 4204,
+      "endMs": 4318
+    },
+    {
+      "text": "tower",
+      "startMs": 4318,
+      "endMs": 4660
+    },
+    {
+      "text": "to",
+      "startMs": 4660,
+      "endMs": 4831
+    },
+    {
+      "text": "send",
+      "startMs": 4831,
+      "endMs": 5116
+    },
+    {
+      "text": "internet",
+      "startMs": 5116,
+      "endMs": 5629
+    },
+    {
+      "text": "to",
+      "startMs": 5629,
+      "endMs": 5800
+    },
+    {
+      "text": "a",
+      "startMs": 5800,
+      "endMs": 5914
+    },
+    {
+      "text": "box",
+      "startMs": 5914,
+      "endMs": 6142
+    },
+    {
+      "text": "in",
+      "startMs": 6142,
+      "endMs": 6313
+    },
+    {
+      "text": "your",
+      "startMs": 6313,
+      "endMs": 6598
+    },
+    {
+      "text": "home.",
+      "startMs": 6598,
+      "endMs": 6940
+    },
+    {
+      "text": "One",
+      "startMs": 6940,
+      "endMs": 7168
+    },
+    {
+      "text": "operator",
+      "startMs": 7168,
+      "endMs": 7681
+    },
+    {
+      "text": "offers",
+      "startMs": 7681,
+      "endMs": 8080
+    },
+    {
+      "text": "it",
+      "startMs": 8080,
+      "endMs": 8251
+    },
+    {
+      "text": "for",
+      "startMs": 8251,
+      "endMs": 8479
+    },
+    {
+      "text": "about",
+      "startMs": 8479,
+      "endMs": 8821
+    },
+    {
+      "text": "a",
+      "startMs": 8821,
+      "endMs": 8935
+    },
+    {
+      "text": "hundred",
+      "startMs": 8935,
+      "endMs": 9391
+    },
+    {
+      "text": "thousand",
+      "startMs": 9391,
+      "endMs": 9904
+    },
+    {
+      "text": "rupiah",
+      "startMs": 9904,
+      "endMs": 10303
+    },
+    {
+      "text": "a",
+      "startMs": 10303,
+      "endMs": 10417
+    },
+    {
+      "text": "month",
+      "startMs": 10417,
+      "endMs": 10759
+    },
+    {
+      "text": "at",
+      "startMs": 10759,
+      "endMs": 10930
+    },
+    {
+      "text": "up",
+      "startMs": 10930,
+      "endMs": 11101
+    },
+    {
+      "text": "to",
+      "startMs": 11101,
+      "endMs": 11272
+    },
+    {
+      "text": "a",
+      "startMs": 11272,
+      "endMs": 11386
+    },
+    {
+      "text": "hundred",
+      "startMs": 11386,
+      "endMs": 11842
+    },
+    {
+      "text": "megabits,",
+      "startMs": 11842,
+      "endMs": 12412
+    },
+    {
+      "text": "and",
+      "startMs": 12412,
+      "endMs": 12640
+    },
+    {
+      "text": "reported",
+      "startMs": 12640,
+      "endMs": 13153
+    },
+    {
+      "text": "around",
+      "startMs": 13153,
+      "endMs": 13552
+    },
+    {
+      "text": "nine",
+      "startMs": 13552,
+      "endMs": 13837
+    },
+    {
+      "text": "hundred",
+      "startMs": 13837,
+      "endMs": 14293
+    },
+    {
+      "text": "thousand",
+      "startMs": 14293,
+      "endMs": 14806
+    },
+    {
+      "text": "customers",
+      "startMs": 14806,
+      "endMs": 15376
+    },
+    {
+      "text": "by",
+      "startMs": 15376,
+      "endMs": 15547
+    },
+    {
+      "text": "September.",
+      "startMs": 15547,
+      "endMs": 16174
+    }
+  ],
+  "s31": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 358
+    },
+    {
+      "text": "communications",
+      "startMs": 358,
+      "endMs": 1326
+    },
+    {
+      "text": "ministry",
+      "startMs": 1326,
+      "endMs": 1907
+    },
+    {
+      "text": "has",
+      "startMs": 1907,
+      "endMs": 2165
+    },
+    {
+      "text": "also",
+      "startMs": 2165,
+      "endMs": 2488
+    },
+    {
+      "text": "floated",
+      "startMs": 2488,
+      "endMs": 3004
+    },
+    {
+      "text": "a",
+      "startMs": 3004,
+      "endMs": 3133
+    },
+    {
+      "text": "goal:",
+      "startMs": 3133,
+      "endMs": 3520
+    },
+    {
+      "text": "a",
+      "startMs": 3520,
+      "endMs": 3649
+    },
+    {
+      "text": "hundred",
+      "startMs": 3649,
+      "endMs": 4165
+    },
+    {
+      "text": "megabit",
+      "startMs": 4165,
+      "endMs": 4681
+    },
+    {
+      "text": "home",
+      "startMs": 4681,
+      "endMs": 5004
+    },
+    {
+      "text": "plan",
+      "startMs": 5004,
+      "endMs": 5327
+    },
+    {
+      "text": "for",
+      "startMs": 5327,
+      "endMs": 5585
+    },
+    {
+      "text": "under",
+      "startMs": 5585,
+      "endMs": 5972
+    },
+    {
+      "text": "two",
+      "startMs": 5972,
+      "endMs": 6230
+    },
+    {
+      "text": "hundred",
+      "startMs": 6230,
+      "endMs": 6746
+    },
+    {
+      "text": "thousand",
+      "startMs": 6746,
+      "endMs": 7327
+    },
+    {
+      "text": "rupiah.",
+      "startMs": 7327,
+      "endMs": 7843
+    },
+    {
+      "text": "For",
+      "startMs": 7843,
+      "endMs": 8101
+    },
+    {
+      "text": "now",
+      "startMs": 8101,
+      "endMs": 8359
+    },
+    {
+      "text": "that",
+      "startMs": 8359,
+      "endMs": 8682
+    },
+    {
+      "text": "is",
+      "startMs": 8682,
+      "endMs": 8876
+    },
+    {
+      "text": "a",
+      "startMs": 8876,
+      "endMs": 9005
+    },
+    {
+      "text": "goal,",
+      "startMs": 9005,
+      "endMs": 9392
+    },
+    {
+      "text": "and",
+      "startMs": 9392,
+      "endMs": 9650
+    },
+    {
+      "text": "no",
+      "startMs": 9650,
+      "endMs": 9844
+    },
+    {
+      "text": "national",
+      "startMs": 9844,
+      "endMs": 10425
+    },
+    {
+      "text": "package",
+      "startMs": 10425,
+      "endMs": 10941
+    },
+    {
+      "text": "has",
+      "startMs": 10941,
+      "endMs": 11199
+    },
+    {
+      "text": "a",
+      "startMs": 11199,
+      "endMs": 11328
+    },
+    {
+      "text": "date.",
+      "startMs": 11328,
+      "endMs": 11715
+    },
+    {
+      "text": "Even",
+      "startMs": 11715,
+      "endMs": 12038
+    },
+    {
+      "text": "at",
+      "startMs": 12038,
+      "endMs": 12232
+    },
+    {
+      "text": "that",
+      "startMs": 12232,
+      "endMs": 12555
+    },
+    {
+      "text": "speed,",
+      "startMs": 12555,
+      "endMs": 13007
+    },
+    {
+      "text": "GTA",
+      "startMs": 13007,
+      "endMs": 13265
+    },
+    {
+      "text": "6",
+      "startMs": 13265,
+      "endMs": 13394
+    },
+    {
+      "text": "would",
+      "startMs": 13394,
+      "endMs": 13781
+    },
+    {
+      "text": "need",
+      "startMs": 13781,
+      "endMs": 14104
+    },
+    {
+      "text": "close",
+      "startMs": 14104,
+      "endMs": 14491
+    },
+    {
+      "text": "to",
+      "startMs": 14491,
+      "endMs": 14685
+    },
+    {
+      "text": "five",
+      "startMs": 14685,
+      "endMs": 15008
+    },
+    {
+      "text": "hours.",
+      "startMs": 15008,
+      "endMs": 15460
+    }
+  ],
+  "s32": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "your",
+      "startMs": 240,
+      "endMs": 320
+    },
+    {
+      "text": "nine-hour",
+      "startMs": 380,
+      "endMs": 840
+    },
+    {
+      "text": "wait",
+      "startMs": 940,
+      "endMs": 1120
+    },
+    {
+      "text": "for",
+      "startMs": 1180,
+      "endMs": 1300
+    },
+    {
+      "text": "GTA",
+      "startMs": 1360,
+      "endMs": 1760
+    },
+    {
+      "text": "6",
+      "startMs": 1880,
+      "endMs": 2120
+    },
+    {
+      "text": "has",
+      "startMs": 2160,
+      "endMs": 2320
+    },
+    {
+      "text": "no",
+      "startMs": 2400,
+      "endMs": 2560
+    },
+    {
+      "text": "single",
+      "startMs": 2700,
+      "endMs": 2920
+    },
+    {
+      "text": "broken",
+      "startMs": 2980,
+      "endMs": 3260
+    },
+    {
+      "text": "cable",
+      "startMs": 3340,
+      "endMs": 3560
+    },
+    {
+      "text": "behind",
+      "startMs": 3600,
+      "endMs": 3900
+    },
+    {
+      "text": "it.",
+      "startMs": 3940,
+      "endMs": 4059
+    },
+    {
+      "text": "The",
+      "startMs": 4960,
+      "endMs": 5060
+    },
+    {
+      "text": "sea",
+      "startMs": 5120,
+      "endMs": 5260
+    },
+    {
+      "text": "is",
+      "startMs": 5320,
+      "endMs": 5440
+    },
+    {
+      "text": "real,",
+      "startMs": 5520,
+      "endMs": 5780
+    },
+    {
+      "text": "but",
+      "startMs": 6240,
+      "endMs": 6320
+    },
+    {
+      "text": "in",
+      "startMs": 6360,
+      "endMs": 6460
+    },
+    {
+      "text": "Java's",
+      "startMs": 6520,
+      "endMs": 6840
+    },
+    {
+      "text": "cities,",
+      "startMs": 6880,
+      "endMs": 7140
+    },
+    {
+      "text": "the",
+      "startMs": 7200,
+      "endMs": 7320
+    },
+    {
+      "text": "explanation",
+      "startMs": 7380,
+      "endMs": 7900
+    },
+    {
+      "text": "sits",
+      "startMs": 8000,
+      "endMs": 8220
+    },
+    {
+      "text": "closer.",
+      "startMs": 8280,
+      "endMs": 8700
+    },
+    {
+      "text": "The",
+      "startMs": 9480,
+      "endMs": 9580
+    },
+    {
+      "text": "price",
+      "startMs": 9620,
+      "endMs": 9880
+    },
+    {
+      "text": "of",
+      "startMs": 9940,
+      "endMs": 10000
+    },
+    {
+      "text": "the",
+      "startMs": 10040,
+      "endMs": 10100
+    },
+    {
+      "text": "last",
+      "startMs": 10160,
+      "endMs": 10440
+    },
+    {
+      "text": "hose,",
+      "startMs": 10520,
+      "endMs": 10840
+    },
+    {
+      "text": "who",
+      "startMs": 11300,
+      "endMs": 11420
+    },
+    {
+      "text": "shares",
+      "startMs": 11460,
+      "endMs": 11720
+    },
+    {
+      "text": "the",
+      "startMs": 11760,
+      "endMs": 11840
+    },
+    {
+      "text": "pipe,",
+      "startMs": 11900,
+      "endMs": 12160
+    },
+    {
+      "text": "and",
+      "startMs": 12700,
+      "endMs": 12800
+    },
+    {
+      "text": "what",
+      "startMs": 12840,
+      "endMs": 12940
+    },
+    {
+      "text": "makes",
+      "startMs": 12980,
+      "endMs": 13180
+    },
+    {
+      "text": "sense",
+      "startMs": 13240,
+      "endMs": 13440
+    },
+    {
+      "text": "for",
+      "startMs": 13480,
+      "endMs": 13560
+    },
+    {
+      "text": "a",
+      "startMs": 13620,
+      "endMs": 13660
+    },
+    {
+      "text": "household",
+      "startMs": 13700,
+      "endMs": 14080
+    },
+    {
+      "text": "to",
+      "startMs": 14100,
+      "endMs": 14180
+    },
+    {
+      "text": "buy.",
+      "startMs": 14240,
+      "endMs": 14500
+    }
+  ],
+  "s33": [
+    {
+      "text": "Think",
+      "startMs": 80,
+      "endMs": 240
+    },
+    {
+      "text": "about",
+      "startMs": 280,
+      "endMs": 460
+    },
+    {
+      "text": "your",
+      "startMs": 500,
+      "endMs": 580
+    },
+    {
+      "text": "friend",
+      "startMs": 640,
+      "endMs": 820
+    },
+    {
+      "text": "in",
+      "startMs": 840,
+      "endMs": 960
+    },
+    {
+      "text": "Singapore",
+      "startMs": 1020,
+      "endMs": 1380
+    },
+    {
+      "text": "again.",
+      "startMs": 1440,
+      "endMs": 1740
+    },
+    {
+      "text": "Your",
+      "startMs": 2360,
+      "endMs": 2480
+    },
+    {
+      "text": "friend",
+      "startMs": 2520,
+      "endMs": 2700
+    },
+    {
+      "text": "did",
+      "startMs": 2740,
+      "endMs": 2860
+    },
+    {
+      "text": "nothing",
+      "startMs": 2900,
+      "endMs": 3140
+    },
+    {
+      "text": "clever.",
+      "startMs": 3200,
+      "endMs": 3520
+    },
+    {
+      "text": "The",
+      "startMs": 4380,
+      "endMs": 4440
+    },
+    {
+      "text": "pipe",
+      "startMs": 4500,
+      "endMs": 4680
+    },
+    {
+      "text": "to",
+      "startMs": 4720,
+      "endMs": 4780
+    },
+    {
+      "text": "that",
+      "startMs": 4840,
+      "endMs": 5000
+    },
+    {
+      "text": "door",
+      "startMs": 5040,
+      "endMs": 5240
+    },
+    {
+      "text": "was",
+      "startMs": 5300,
+      "endMs": 5400
+    },
+    {
+      "text": "laid",
+      "startMs": 5460,
+      "endMs": 5600
+    },
+    {
+      "text": "as",
+      "startMs": 5660,
+      "endMs": 5840
+    },
+    {
+      "text": "one",
+      "startMs": 5940,
+      "endMs": 6080
+    },
+    {
+      "text": "shared",
+      "startMs": 6180,
+      "endMs": 6440
+    },
+    {
+      "text": "network",
+      "startMs": 6500,
+      "endMs": 6880
+    },
+    {
+      "text": "years",
+      "startMs": 7220,
+      "endMs": 7420
+    },
+    {
+      "text": "before",
+      "startMs": 7460,
+      "endMs": 7740
+    },
+    {
+      "text": "anyone",
+      "startMs": 7800,
+      "endMs": 8119
+    },
+    {
+      "text": "needed",
+      "startMs": 8180,
+      "endMs": 8360
+    },
+    {
+      "text": "to",
+      "startMs": 8380,
+      "endMs": 8480
+    },
+    {
+      "text": "pull",
+      "startMs": 8520,
+      "endMs": 8680
+    },
+    {
+      "text": "something",
+      "startMs": 8740,
+      "endMs": 9000
+    },
+    {
+      "text": "this",
+      "startMs": 9040,
+      "endMs": 9180
+    },
+    {
+      "text": "big",
+      "startMs": 9220,
+      "endMs": 9360
+    },
+    {
+      "text": "through",
+      "startMs": 9380,
+      "endMs": 9560
+    },
+    {
+      "text": "it.",
+      "startMs": 9600,
+      "endMs": 9720
+    }
+  ],
+  "s34": [
+    {
+      "text": "Back",
+      "startMs": 100,
+      "endMs": 280
+    },
+    {
+      "text": "in",
+      "startMs": 320,
+      "endMs": 400
+    },
+    {
+      "text": "Jakarta,",
+      "startMs": 440,
+      "endMs": 920
+    },
+    {
+      "text": "your",
+      "startMs": 1440,
+      "endMs": 1600
+    },
+    {
+      "text": "quicker",
+      "startMs": 1660,
+      "endMs": 1900
+    },
+    {
+      "text": "route",
+      "startMs": 1980,
+      "endMs": 2160
+    },
+    {
+      "text": "may",
+      "startMs": 2220,
+      "endMs": 2340
+    },
+    {
+      "text": "be",
+      "startMs": 2400,
+      "endMs": 2480
+    },
+    {
+      "text": "in",
+      "startMs": 2540,
+      "endMs": 2620
+    },
+    {
+      "text": "your",
+      "startMs": 2660,
+      "endMs": 2800
+    },
+    {
+      "text": "pocket,",
+      "startMs": 2860,
+      "endMs": 3240
+    },
+    {
+      "text": "though",
+      "startMs": 3680,
+      "endMs": 3840
+    },
+    {
+      "text": "your",
+      "startMs": 3900,
+      "endMs": 4019
+    },
+    {
+      "text": "data",
+      "startMs": 4059,
+      "endMs": 4260
+    },
+    {
+      "text": "quota",
+      "startMs": 4320,
+      "endMs": 4560
+    },
+    {
+      "text": "would",
+      "startMs": 4600,
+      "endMs": 4700
+    },
+    {
+      "text": "like",
+      "startMs": 4760,
+      "endMs": 4900
+    },
+    {
+      "text": "a",
+      "startMs": 4940,
+      "endMs": 5000
+    },
+    {
+      "text": "word.",
+      "startMs": 5040,
+      "endMs": 5320
+    },
+    {
+      "text": "The",
+      "startMs": 6260,
+      "endMs": 6360
+    },
+    {
+      "text": "pipe",
+      "startMs": 6420,
+      "endMs": 6640
+    },
+    {
+      "text": "to",
+      "startMs": 6700,
+      "endMs": 6780
+    },
+    {
+      "text": "your",
+      "startMs": 6840,
+      "endMs": 6980
+    },
+    {
+      "text": "door",
+      "startMs": 7020,
+      "endMs": 7200
+    },
+    {
+      "text": "still",
+      "startMs": 7340,
+      "endMs": 7520
+    },
+    {
+      "text": "matters,",
+      "startMs": 7580,
+      "endMs": 7940
+    },
+    {
+      "text": "and",
+      "startMs": 8360,
+      "endMs": 8460
+    },
+    {
+      "text": "for",
+      "startMs": 8520,
+      "endMs": 8620
+    },
+    {
+      "text": "many",
+      "startMs": 8680,
+      "endMs": 8840
+    },
+    {
+      "text": "doors,",
+      "startMs": 8920,
+      "endMs": 9240
+    },
+    {
+      "text": "it",
+      "startMs": 9300,
+      "endMs": 9360
+    },
+    {
+      "text": "has",
+      "startMs": 9420,
+      "endMs": 9600
+    },
+    {
+      "text": "yet",
+      "startMs": 9660,
+      "endMs": 9800
+    },
+    {
+      "text": "to",
+      "startMs": 9840,
+      "endMs": 9920
+    },
+    {
+      "text": "arrive",
+      "startMs": 9980,
+      "endMs": 10240
+    },
+    {
+      "text": "at",
+      "startMs": 10260,
+      "endMs": 10320
+    },
+    {
+      "text": "a",
+      "startMs": 10360,
+      "endMs": 10420
+    },
+    {
+      "text": "price",
+      "startMs": 10460,
+      "endMs": 10740
+    },
+    {
+      "text": "that",
+      "startMs": 10780,
+      "endMs": 10940
+    },
+    {
+      "text": "fits.",
+      "startMs": 11000,
+      "endMs": 11380
+    },
+    {
+      "text": "Next",
+      "startMs": 12300,
+      "endMs": 12560
+    },
+    {
+      "text": "long",
+      "startMs": 12620,
+      "endMs": 12820
+    },
+    {
+      "text": "video:",
+      "startMs": 12900,
+      "endMs": 13240
+    },
+    {
+      "text": "Why",
+      "startMs": 13980,
+      "endMs": 14140
+    },
+    {
+      "text": "more",
+      "startMs": 14220,
+      "endMs": 14380
+    },
+    {
+      "text": "than",
+      "startMs": 14420,
+      "endMs": 14560
+    },
+    {
+      "text": "half",
+      "startMs": 14660,
+      "endMs": 14880
+    },
+    {
+      "text": "of",
+      "startMs": 14920,
+      "endMs": 15040
+    },
+    {
+      "text": "Indonesians",
+      "startMs": 15100,
+      "endMs": 15660
+    },
+    {
+      "text": "live",
+      "startMs": 15740,
+      "endMs": 15900
+    },
+    {
+      "text": "on",
+      "startMs": 15920,
+      "endMs": 16000
+    },
+    {
+      "text": "a",
+      "startMs": 16040,
+      "endMs": 16140
+    },
+    {
+      "text": "single",
+      "startMs": 16219,
+      "endMs": 16480
+    },
+    {
+      "text": "island.",
+      "startMs": 16600,
+      "endMs": 16960
+    }
+  ]
+}
