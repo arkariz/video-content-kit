@@ -33,10 +33,22 @@ const noLic = assets.footage.filter((f) => !f.catalog_key); if (noLic.length) ad
 // stage/spec lengkap
 for (const s of sc) { if (!stage[s.id]) add("Visual", "kritis", "V6", `scene ${s.id} tanpa adegan`, "isi 04-stage.json"); else if (stage[s.id].insert && !vspec[s.id]) add("Visual", "kritis", "V6", `scene ${s.id} insert tanpa spec`, "isi 04-visual-spec.json"); }
 
-// gaya wajib: diorama 2.5D (produksi/DIORAMA.md). Pengecualian hanya siklus yang sudah tayang sebelum aturan ini.
-const sebelumAturan = o.track === "T01" && o.siklus === "001";
-const dio = sc.filter((s) => stage[s.id]?.engine === "diorama" || stage[s.id]?.footage).length / sc.length;
-if (!sebelumAturan && (!script.world || dio < 0.7)) add("Visual", "kritis", "G1", `gaya wajib diorama 2.5D: world ${script.world ? "ada" : "tidak ada"}, scene diorama/footage ${(dio * 100).toFixed(0)}% (minimal 70%)`, "tulis world dan stage engine diorama sesuai produksi/DIORAMA.md");
+// gaya wajib: ilustrasi gerak penjelas R3 (instruksi/referensi/gaya-visual.md, sejak 2026-11-26).
+// Siklus yang dirender sebelum aturan ini memakai mesin lama: T01-001 kartun datar, T02-001 diorama.
+const mesinLama = { T01: ["001"], T02: ["001"] }[o.track]?.includes(o.siklus);
+if (!mesinLama) {
+  const kalimat = (x) => (x.match(/[^.!?]+[.!?]+/g) || [x]).filter((k) => k.trim().split(/\s+/).length >= 4).length;
+  const daftar = (a) => a.slice(0, 6).join(", ") + (a.length > 6 ? "…" : "");
+  const tanpa = sc.filter((s) => !fset.has(s.id) && !(Array.isArray(s.shots) && s.shots.length)).map((s) => s.id);
+  if (tanpa.length) add("Visual", "kritis", "G1", `gaya wajib R3: ${tanpa.length} scene tanpa shots (${daftar(tanpa)})`, "tulis shots satu per kalimat sesuai instruksi/referensi/gaya-visual.md");
+  const kurang = sc.filter((s) => Array.isArray(s.shots) && s.shots.length && s.shots.length < kalimat(s.narration.en)).map((s) => s.id);
+  if (kurang.length) add("Visual", "sedang", "G2", `${kurang.length} scene punya shot lebih sedikit dari kalimatnya (${daftar(kurang)})`, "satu shot per kalimat; kalimat di bawah 4 kata boleh berbagi");
+  const diam = sc.flatMap((s) => (s.shots || []).filter((x) => !x.motion || !x.show).map((x) => `${s.id}#${x.sentence ?? "?"}`));
+  if (diam.length) add("Visual", "sedang", "G3", `${diam.length} shot tanpa show atau motion (${daftar(diam)})`, "isi apa yang terlihat dan apa yang bergerak");
+  const labelSalah = sc.flatMap((s) => (s.shots || []).flatMap((x) => (x.labels || []).filter((l) => !norm(s.narration.en).includes(norm(l.word || "")[0])).map(() => s.id)));
+  if (labelSalah.length) add("Visual", "kecil", "G4", `${labelSalah.length} label dengan word yang tidak ada di narasi (${daftar(labelSalah)})`, "word harus kata yang diucapkan di scene itu");
+  if (!script.anchor) add("Visual", "sedang", "G5", "tanpa anchor (jangkar visual) di tingkat atas", "tulis anchor sesuai gaya-visual.md bagian 6");
+}
 
 // teks: pola
 for (const l of ["en", "id"]) for (const s of sc) { const x = s.narration[l]; if (/—|–/.test(x)) add("Teks " + l.toUpperCase(), "sedang", "T-em", `${s.id}: em dash`, "ganti titik/koma"); if (l === "en" && /\b(it.s|it is|this is) not\b[^.]*\b(it.s|but)\b|\bnot just\b/i.test(x)) add("Teks EN", "sedang", "T-neg", `${s.id}: kontras "bukan X tapi Y"`, "tulis langsung hal yang benar"); }

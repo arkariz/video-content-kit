@@ -10,7 +10,7 @@ node --env-file=.env scripts/pipeline/approve.mjs --track T01 --siklus 001    # 
 node scripts/pipeline/approve.mjs --track T01 --siklus 001 --revisi "catatan" # minta revisi
 ```
 
-Gaya wajib: diorama 2.5D (`instruksi/referensi/gaya-diorama.md`); QA menandai kritis bila kurang dari 70% scene diorama atau footage.
+Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); QA menandai kritis bila scene siklus baru tidak punya `shots` (kecuali scene footage). Mesin render `shots` belum dibangun, jadi siklus baru berhenti di QA sampai mesin itu ada. T01-001 (kartun) dan T02-001 (diorama) tetap dirender dengan mesin lama.
 
 ## Tahap
 

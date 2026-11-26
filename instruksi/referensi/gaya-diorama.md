@@ -1,4 +1,6 @@
-# Gaya video wajib: diorama 2.5D
+# Gaya diorama 2.5D (tidak berlaku lagi untuk siklus baru)
+
+> **Digantikan oleh `instruksi/referensi/gaya-visual.md` sejak 2026-11-26** atas keputusan kreator. Dokumen ini hanya acuan untuk T02 siklus 001 yang sudah dirender dengan diorama.
 
 **Berlaku untuk semua track dan semua siklus sejak 2026-11-25, bagi agent chat maupun agent di repo.** Dipilih kreator. Satu-satunya pengecualian: T01 siklus 001 (sudah tayang). QA otomatis menandai **kritis** bila `world` tidak ada atau scene diorama dan footage kurang dari 70%.
 

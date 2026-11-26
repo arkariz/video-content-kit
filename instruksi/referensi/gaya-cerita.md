@@ -1,6 +1,6 @@
 # Gaya cerita wajib (acuan utama naskah)
 
-**Berlaku untuk semua track dan semua siklus sejak 2026-11-26, bagi agent chat maupun agent di repo.** Dipilih kreator. Dipakai bersama `instruksi/referensi/gaya-diorama.md` dan `hasil/learnings-global.md`. Status: arahan kreator, belum terbukti dengan data; dinilai ulang di review portfolio setelah ada analitik siklus yang memakainya (pertama: T01-002).
+**Berlaku untuk semua track dan semua siklus sejak 2026-11-26, bagi agent chat maupun agent di repo.** Dipilih kreator. Dipakai bersama `instruksi/referensi/gaya-visual.md` dan `hasil/learnings-global.md`. Status: arahan kreator, belum terbukti dengan data; dinilai ulang di review portfolio setelah ada analitik siklus yang memakainya (pertama: T01-002).
 
 Sumber yang dipelajari: Kurzgesagt "Why It Takes So LONG for Your Body to Die", Kurzgesagt "Dear Alcohol...", OverSimplified "The First Punic War (Part 1)". **Yang ditiru hanya teknik.** Kalimat, tokoh, lelucon, dan struktur bab mereka tidak disalin.
 
@@ -29,7 +29,7 @@ Sumber yang dipelajari: Kurzgesagt "Why It Takes So LONG for Your Body to Die", 
 
 ## Adaptasi ke kit (wajib)
 - Satu narator TTS. Dialog banyak tokoh hanya bila kreator menyetujui suara tambahan.
-- Diorama tanpa bubble dan papan teks: metafora besar = `world`; tahap dan penanda = gerakan kamera, `mood`, dan `callouts`.
+- Visual mengikuti `gaya-visual.md`: metafora besar = `anchor`, tahap dan penanda = garis waktu atau skala kamera di `shots`, tanpa papan teks; bubble hanya untuk sikap atau lelucon (lihat bagian 5 di sana).
 - Humor kering di pilihan kata, bukan punchline yang bergantung intonasi.
 - Topik uang, kesehatan, hukum: steelman wajib, tanpa nasihat.
 - Narator tidak mengaku sebagai orang tertentu ("I", "saya" sebagai persona) kecuali suara milik kreator. Kehadiran kreator lewat footage nyata.

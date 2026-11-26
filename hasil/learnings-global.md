@@ -19,7 +19,7 @@ Penilaian kreator atas hasil jadi: isi terlalu kompleks, penjelasan hampir hanya
 7. **Bubble boleh menjelaskan** dengan bahasa awam, tidak hanya bercanda.
 8. **Jangan menambah konsep demi durasi.** Tambah contoh atau ulangi lewat analogi; bila tetap kurang, kreator yang memutuskan.
 
-**Gaya wajib:** diorama 2.5D (`instruksi/referensi/gaya-diorama.md`). Poin 7 (bubble) tidak berlaku di diorama karena tidak ada bubble.
+**Gaya wajib:** ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`, sejak 2026-11-26). Untuk poin 7, penjelasan dibawa label pil pada benda dan gambarnya sendiri; bubble di gaya ini hanya untuk sikap atau lelucon. Poin 4 dan 5 dipenuhi lewat `shots` (satu kalimat satu gambar, wajib ada `motion`) dan `anchor`.
 
 Referensi gaya dari kreator (latar kaya, banyak aset, banyak gerakan): `produksi/REFERENSI-GAYA.md`.
 

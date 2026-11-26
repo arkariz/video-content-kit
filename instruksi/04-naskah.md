@@ -2,7 +2,7 @@
 
 Tujuan: satu naskah yang ditulis untuk didengar, dengan satu ide per scene dan bukti milik kreator, lulus gate anti-slop sebelum diproduksi.
 
-**Wajib dibaca dulu:** `instruksi/referensi/gaya-cerita.md` (acuan utama cerita), `instruksi/referensi/gaya-diorama.md`, dan `hasil/learnings-global.md`. Naskah ditulis bersama `world` dan `stage` diorama.
+**Wajib dibaca dulu:** `instruksi/referensi/gaya-cerita.md` (acuan utama cerita), `instruksi/referensi/gaya-visual.md`, dan `hasil/learnings-global.md`. Naskah ditulis bersama `shots`: satu shot per kalimat yang menggambarkan isi kalimat itu.
 
 ## 2a. Brief
 

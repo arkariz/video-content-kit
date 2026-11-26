@@ -1,4 +1,4 @@
-WAJIB: baca instruksi/referensi/gaya-diorama.md dan hasil/learnings-global.md. Visual ditulis sebagai `world` + `stage.engine: "diorama"` di 03-script.json; aturan gaya kartun datar di bawah ini tidak berlaku bila bertentangan.
+WAJIB: baca instruksi/referensi/gaya-visual.md, instruksi/referensi/gaya-cerita.md, dan hasil/learnings-global.md. Visual ditulis sebagai `anchor`, `cast`, dan `shots` (satu shot per kalimat, tiap shot punya `motion`) di 03-script.json; aturan kartun datar dan diorama di bawah ini tidak berlaku bila bertentangan.
 
 Baca produksi/CONTRACT.md. Tulis visual langsung ke 03-script.json (bidang `visual.spec`, `stage`, `broll`, `sources` per scene), lalu jalankan `node scripts/produksi/build-visual.mjs --track {{track}} --siklus {{siklus}}` sampai valid. Jangan menulis 04-*.json dengan tangan.
 

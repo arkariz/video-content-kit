@@ -52,15 +52,15 @@ riset niche ─► usulan track ─► validasi (V1 riset, V2 pasar) ─► akti
 
 Saat validasi V2, track menjalankan langkah riset viral sampai analitik dengan paket uji yang lebih ringan (lihat `02-validasi-niche.md`). Setelah track `aktif`, loop riset viral → analitik berulang setiap minggu sampai review portfolio memutuskan lain.
 
-## Gaya visual wajib: diorama 2.5D
+## Gaya visual wajib: ilustrasi gerak penjelas (R3)
 
-Berlaku untuk **semua track dan semua siklus**, untuk agent chat maupun agent di repo (keputusan kreator 2026-11-25). Sebelum menulis brief, naskah, spec visual, atau produksi, **baca dan terapkan**:
+Berlaku untuk **semua track dan semua siklus**, untuk agent chat maupun agent di repo (keputusan kreator 2026-11-26, menggantikan diorama 2.5D). Sebelum menulis brief, naskah, spec visual, atau produksi, **baca dan terapkan**:
 
-1. `instruksi/referensi/gaya-diorama.md`: kontrak `world` dan `stage` diorama.
+1. `instruksi/referensi/gaya-visual.md`: satu kalimat satu gambar, gerak dan transisi, kontrak `shots`.
 2. `hasil/learnings-global.md`: aturan agar isi tidak padat dan prosesnya terlihat.
 3. `instruksi/referensi/gaya-cerita.md`: acuan utama cerita untuk semua naskah (keputusan kreator 2026-11-26).
 
-Naskah tanpa `world` dan adegan diorama tidak boleh lanjut ke produksi; QA otomatis menandainya kritis. Gaya kartun datar (`produksi/STYLE.md`) hanya dipertahankan untuk T01 siklus 001 dan untuk thumbnail. Aset yang belum ada ditambahkan oleh agent repo di sesi terpisah.
+Naskah siklus baru tanpa `shots` per kalimat tidak boleh lanjut ke produksi; QA otomatis menandainya kritis. Diorama 2.5D hanya untuk T02 siklus 001 dan kartun datar (`produksi/STYLE.md` bagian mesin lama) hanya untuk T01 siklus 001 dan thumbnail. Lapisan 3D (`@remotion/three`) sudah disetujui kreator untuk kamera yang berputar di ruang 3D, tetapi belum dibangun. Mesin untuk merender `shots` dibangun agent repo di sesi terpisah.
 
 ## Mode gate
 

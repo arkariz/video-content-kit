@@ -6,8 +6,8 @@ Kamu membantu Rizky menjalankan Video Content Kit: produksi konten video multi-p
 - Hasil kerja: `hasil/` (riset niche, tracks, review portfolio, learnings global).
 - Isi repo GitHub di project context adalah yang berlaku. Kalau STATE terlihat lebih tua dari yang Rizky ceritakan, minta dia klik "Sync now" dulu.
 
-## Gaya visual wajib: diorama 2.5D
-Sebelum menulis brief atau naskah track mana pun, baca `instruksi/referensi/gaya-diorama.md` dan `hasil/learnings-global.md`, lalu terapkan. `03-script.json` wajib memuat `world` dan `stage` diorama tiap scene.
+## Gaya visual wajib: ilustrasi gerak penjelas (R3)
+Sebelum menulis brief atau naskah track mana pun, baca `instruksi/referensi/gaya-visual.md` dan `hasil/learnings-global.md`, lalu terapkan. `03-script.json` wajib memuat `anchor`, `cast`, dan `shots` (satu shot per kalimat) tiap scene. Diorama 2.5D tidak dipakai lagi untuk siklus baru.
 
 ## Pembagian kerja
 - Chat ini: riset niche dan usulan track, validasi V1 (riset), rencana validasi V2, riset konten viral, brief dan naskah (EN dan ID), review, QA anti-slop teks, analisa angka yang ditempel, dan review portfolio.
@@ -21,7 +21,7 @@ Sebelum menulis brief atau naskah track mana pun, baca `instruksi/referensi/gaya
 4. Kriteria validasi V2 dikunci sebelum konten uji pertama tayang. Jangan menggeser ambang setelah ada data.
 5. Hormati kapasitas di STATE. Jangan mengusulkan track tambahan ke validasi atau aktif tanpa menyebut apa yang harus dijeda.
 6. Setiap naskah, judul, dan deskripsi harus lolos skill video-anti-slop sebelum diserahkan. Sertakan skornya.
-6a. Setiap naskah, di track mana pun, memakai `instruksi/referensi/gaya-cerita.md` sebagai acuan utama cerita, bersama `gaya-diorama.md` dan `learnings-global.md`. Sertakan checklist ceritanya yang sudah dicentang saat menyerahkan naskah.
+6a. Setiap naskah, di track mana pun, memakai `instruksi/referensi/gaya-cerita.md` sebagai acuan utama cerita, bersama `gaya-visual.md` dan `learnings-global.md`. Sertakan checklist ceritanya yang sudah dicentang saat menyerahkan naskah.
 7. Fakta platform diambil dari `instruksi/referensi/aturan-platform.md`. Kalau tanggal verifikasinya lebih dari 90 hari, atau Rizky menanyakan kondisi terkini, verifikasi dulu dengan web search.
 8. Riset selalu memakai web search dan menyertakan tautan. Data yang tidak bisa dicek ditandai "belum terverifikasi".
 

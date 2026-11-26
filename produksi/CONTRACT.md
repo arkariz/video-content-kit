@@ -1,10 +1,26 @@
 # Kontrak visual di `03-script.json` (untuk Claude Project dan agent mana pun)
 
-> **Gaya wajib sekarang diorama 2.5D** (`instruksi/referensi/gaya-diorama.md`). Bagian `stage` kartun datar di bawah hanya untuk T01 siklus 001 dan thumbnail; bidang `sources`, `broll`, `chapters`, dan `thumbnails` tetap berlaku.
+> **Gaya wajib sekarang R3, ilustrasi gerak penjelas** (`instruksi/referensi/gaya-visual.md`, sejak 2026-11-26). Visual siklus baru ditulis sebagai `anchor`, `cast`, dan `shots` per kalimat (format lengkap di bagian 6 dokumen itu). Bagian `stage` di bawah hanya untuk siklus lama (T01-001 kartun datar, T02-001 diorama) dan thumbnail; bidang `sources`, `broll`, `chapters`, dan `thumbnails` tetap berlaku.
 
 Naskah (instruksi 04) menulis juga visualnya, sehingga tahap 05 sampai 07 berjalan tanpa LLM. Tambahkan bidang berikut. Bidang lama tidak berubah.
 
-## Per scene
+## Per scene (gaya wajib)
+```json
+{
+  "id": "s06", "role": "body",
+  "narration": { "en": "They were the first air-conditioned electric trains in Indonesia. At the time, crowded riders hung out of open doors or sat on the roof.", "id": "..." },
+  "shots": [
+    { "sentence": 1, "show": "potongan gerbong: udara dingin di dalam, terik di luar, percikan di pantograf", "scale": "inside", "motion": "hembusan dingin mengalir, wajah penumpang berubah dari gerah ke lega", "transition": "push", "labels": [{ "text": "FIRST AC TRAIN", "word": "air-conditioned" }] },
+    { "sentence": 2, "show": "kereta ekonomi di peron mulai berjalan, penumpang bergelantungan di pintu dan duduk di atap", "scale": "place", "motion": "kereta berangkat makin cepat, kamera dekati pintu lalu naik ke atap", "transition": "wipe" }
+  ],
+  "broll": null,
+  "sources": [{ "url": "https://...", "claim": "..." }]
+}
+```
+- Satu shot per kalimat narasi Inggris; aturan isi tiap bidang di `instruksi/referensi/gaya-visual.md` bagian 6.
+- Mesin render `shots` belum dibangun. Sampai ada, `build-visual.mjs` dan `render.mjs` hanya melayani format lama di bawah.
+
+## Per scene (mesin lama: kartun datar dan diorama)
 ```json
 {
   "id": "s09", "role": "body",
@@ -43,8 +59,8 @@ Naskah (instruksi 04) menulis juga visualnya, sehingga tahap 05 sampai 07 berjal
 Dua varian (A dan B), maksimal 4 kata, tanpa label atau bubble. Teks di kiri, tokoh di kanan (x 0,6 ke atas). Hasil: `render.mjs --thumb`.
 
 ## Aturan komposisi (QA otomatis memeriksanya)
-1. **Satu ide per scene**: satu aksi, paling banyak dua bubble, satu efek.
-2. **Bubble** adalah candaan atau reaksi tokoh, bukan pengulang narasi. Maksimal 44 huruf, tanpa klaim fakta baru, tanda seru hemat.
+1. **Satu kalimat, satu shot** (gaya wajib): setiap kalimat narasi digambar sesuai isinya, pergantian shot di batas kalimat. Di mesin lama: satu ide per scene, satu aksi, satu efek.
+2. **Bubble** hanya sikap atau lelucon, jarang (sekitar satu per menit), bukan pengulang narasi. Maksimal 6 kata, tanpa klaim fakta baru, tanda seru hemat.
 3. **Footage nyata (`broll`)**: sekitar 20 sampai 30% durasi, tersebar merata, maksimal 2 scene berurutan, tidak pernah lebih dari sepertiga. Hook (2 detik pertama) sebaiknya visual yang langsung menjelaskan janji.
 4. **Variasi**: ganti `bg` dan susunan pembuka antar siklus, jangan sama tiga video berturut-turut. Cam otomatis bergantian.
 5. **Re-hook** tiap 60 sampai 90 detik (`role: "rehook"`). Jeda otomatis lebih panjang sebelum re-hook, payoff, dan CTA.
