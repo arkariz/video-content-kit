@@ -100,3 +100,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-27: Page Facebook T01 terhubung ke alat rilis; uji Reel draf berhasil (subtitle dan sampul). Privacy Policy dan Terms dibuat di hasil/legal/, belum dipublikasikan; aplikasi Meta belum di-Go live.
 - 2026-11-27: Aplikasi Meta dipublikasikan (Go live) oleh kreator. Visibilitas publik unggahan alat belum diuji.
 - 2026-11-27: Uji Facebook T01: unggah, jadwal, subtitle, sampul berhasil; komentar ditolak karena token Page tidak memiliki pages_manage_engagement.
+- 2026-11-27: Uji Facebook T01 berhasil sampai komentar terposting (token baru dengan pages_manage_engagement). Video uji sudah dihapus kreator.

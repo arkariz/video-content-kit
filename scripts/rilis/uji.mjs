@@ -275,6 +275,8 @@ try {
     inti.setujui(c, "SETUJU", "uji"); await F.kirim(c, diam);
     const n = fbt.panggilan.filter((x) => x.startsWith("POST")).length; const baris = []; await periksa(c, { log: (v) => baris.push(v) });
     assert.equal(fbt.panggilan.filter((x) => x.startsWith("POST")).length, n, "hanya membaca"); assert.ok(baris.some((v) => v.startsWith("✓ S1 (Facebook): masih terjadwal")), baris.join("\n"));
+    const hilang = []; const simpanan = { ...fbt.video }; for (const k of Object.keys(fbt.video)) delete fbt.video[k]; await periksa(c, { log: (v) => hilang.push(v) });
+    assert.ok(hilang.some((v) => v.startsWith("✗ master (Facebook): video tidak ditemukan")), hilang.join("\n")); Object.assign(fbt.video, simpanan);
     kunci(c); await assert.rejects(F.kirim(c, diam), /disetujui|setujui/); assert.throws(() => bukaKunci(c, "buka"), /ketik BUKA/);
     bukaKunci(c, "BUKA"); const r = inti.muat(c); assert.equal(r.kunci_manual, null); assert.equal(r.persetujuan, null); assert.ok(r.kunci_dibuka);
   });

@@ -13,7 +13,8 @@ export function periksa(c, { log = console.log, kini = Date.now() } = {}) {
     const baca = async (nama, hal, fn) => { try { return await fn(); } catch (e) { cek(nama, `${hal} tidak terbaca`, null, e.message); return undefined; } };
     for (const i of r.items) {
       const h = r.hasil[i.nama]?.facebook; if (!h?.videoId) { cek(i.nama, "belum ada video yang diunggah alat", null); continue; }
-      const ada = await baca(i.nama, "video", () => fb.get(h.videoId, { fields: "id" })); if (!ada) continue;
+      try { await fb.get(h.videoId, { fields: "id" }); }
+      catch (e) { cek(i.nama, e.code === 100 ? "video tidak ditemukan (terhapus, atau tidak bisa diakses)" : "video tidak terbaca", e.code === 100 ? false : null, e.code === 100 ? h.url : e.message); continue; }
       cek(i.nama, "video ada", true, h.url);
       const jadwal = h.publishAt ? new Date(h.publishAt) : null; const waktunya = !jadwal || jadwal <= kini;
       const s = (await baca(i.nama, "status", () => fb.get(h.videoId, { fields: "status" })))?.status;
