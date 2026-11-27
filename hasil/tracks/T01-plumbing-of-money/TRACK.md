@@ -151,3 +151,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Status 005 disamakan dengan hasil di dashboard rilis: siap-publish (2026-11-29).
 - 2026-11-27: Atas permintaan kreator, dibuat opsi thumbnail dan judul baru 004 bergaya ilustrasi 005 dengan GTA VI ditonjolkan (4 master, 3 per Short; siklus/004-gta6-who-got-paid/thumbnail-v2/opsi.md). Belum dipilih; di platform belum diubah.
 - 2026-11-27: Kreator memilih judul dan thumbnail baru 004: master opsi 1 ("GTA 6: Where Your $80 Actually Goes"), Short S1 A, Short S2 A. Penggantian di platform oleh kreator, belum dilakukan.
+- 2026-11-27: Kreator memilih konsep identitas "bawah tanah" untuk channel. Foto profil dan banner dibuat (channel/: 3 profil, 2 banner). Belum dipilih; belum diunggah.
