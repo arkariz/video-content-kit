@@ -11,7 +11,7 @@ siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "005: kreator menonton penuh master + 2 Short (pemeriksaan manual), cek rencana publish 06-publish.md, lalu unggah manual (06-publish-manual.md); 002: unggah manual 2026-11-28 (06-publish-manual.md); 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: []                 # syarat bukti kreator di layar dihapus untuk semua konten (2026-11-27)
-menunggu_keputusan: "002: QA anti-slop manual (05-qa.md) belum ada, jalankan sebelum unggah 11-28; 005: unggah manual 29 Nov"
+menunggu_keputusan: "005: unggah manual 29 Nov"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -53,7 +53,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
 | 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | tayang | 2026-11-25 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33); 2026-11-26 master dan 2 Shorts tayang di semua platform |
-| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | qa | 2026-11-28 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum |
+| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | siap-publish | 2026-11-28 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
 | 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | siap-publish | target ≤ 2026-12-03 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov |
 | 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | qa | 2026-11-29 | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 disetujui 2026-11-27 |
@@ -141,3 +141,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Paket unggah manual 005 dibuat untuk YouTube, Facebook, Instagram, TikTok (06-publish-manual.md, subtitle EN dan ID di publish/). Publish lewat Upload-Post tidak dipakai. Belum ada yang dikirim.
 - 2026-11-27: Kreator memajukan 002 ke 2026-11-28 (rencana V2 terkunci menjadwalkan sprint mulai 12-07; rencana.md tidak diubah, penyimpangan dicatat). Paket unggah manual 002 dilengkapi semua platform dan subtitle. QA otomatis dijalankan ulang: GAGAL (1 kritis A2 s41), 05-qa.md belum ada. Belum ada yang diunggah. Rujukan "card video" di 005 terpenuhi bila 002 tayang lebih dulu.
 - 2026-11-27: Kreator menerima ucapan "QRIS" 002 s41; dicatat di 04-assets.json. QA otomatis 002 dijalankan ulang. 05-qa.md (anti-slop manual) masih belum ada.
+- 2026-11-27: Kreator melewati QA anti-slop manual 002 (05-qa.md: dilewati, bukan LULUS). Status siap-publish; unggah manual 2026-11-28. Belum ada yang diunggah.
