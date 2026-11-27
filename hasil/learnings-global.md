@@ -37,6 +37,17 @@ Terjemahan ke produksi sekarang ada di `produksi/STYLE.md` (bagian 2.2 dan 11) d
 
 Semua naskah memakai `instruksi/referensi/gaya-cerita.md` sebagai acuan utama dan mencentang checklist ceritanya. Sumber: teknik dari 3 transkrip (Kurzgesagt x2, OverSimplified) yang dipilih kreator. Dinilai ulang di review portfolio setelah analitik T01-002.
 
+### Aturan uji: Short menjawab janjinya sejak awal (2026-11-27, dari T02 siklus 001)
+
+Dimasukkan atas permintaan kreator sebagai **aturan uji**, belum terbukti: buktinya baru satu video di satu track. Berlaku saat menulis dan memotong Short yang belum diproduksi; Short yang sudah jadi (termasuk T02 siklus 003) tidak diubah.
+
+1. Kalimat pertama bisa dipahami tanpa konteks: tidak diawali "So" atau "Then", dan tidak menyebut orang, benda, atau pihak yang belum dikenalkan di Short itu.
+2. Jawaban atas janji hook atau judul mulai di kalimat kedua, paling lambat detik 6. Konteks menyusul.
+
+**Bukti awal:** T02 001 Short A1 (data 2026-11-25 sampai 11-26, 1 video): retensi sekitar 100% di detik 4,7, turun ke 43% di detik 15 saat narasi membahas konteks, lalu 43% ke 22% dalam 35 detik setelah jawaban mulai. Viewed vs swiped 57,4%; rata-rata tonton 0:27 dari 0:51. Rincian di `tracks/T02-why-southeast-asia/analitik/`. Poin 1 belum punya data retensi pembanding.
+
+**Cara mengukur:** retensi detik 15 (A1: 43%) dan viewed vs swiped (A1: 57,4%), dicatat per track di `learnings.md`. Dinilai pada review portfolio setelah data dari minimal 2 Short berikutnya dan satu track lain; bila tidak didukung, dicabut.
+
 ## Format dan struktur
 
 ## Hook dan judul
