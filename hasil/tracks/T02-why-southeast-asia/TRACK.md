@@ -137,3 +137,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Status disesuaikan dengan YouTube atas permintaan kreator: 002 tayang 2026-11-27 (target semula 12-01), 003 terjadwal 2026-11-28 (target semula 2027-01-05). Keduanya uji-V2 dan jatuh sebelum periode tayang terkunci mulai 2026-12-07; validasi/rencana.md tidak diubah, penyimpangan dicatat.
 - 2026-11-27: Rencana rilis 004 dibuat atas permintaan kreator (subtitle EN dan ID, komentar, terjemahan Indonesia). Jadwal kosong, belum disetujui, belum dikirim.
 - 2026-11-27: Kreator meminta QA anti-slop 004 dicatat LULUS tanpa pemeriksaan (05-qa.md). Status siap-publish; jadwal belum ditentukan; cek fakta belum dilakukan.
+- 2026-11-27: Narasi dan subtitle ID s38 siklus 004 disamakan dengan EN (sekitar 42 triliun). s28 dan s31 dicek ke sumber dan tidak diubah.

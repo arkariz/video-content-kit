@@ -189,7 +189,7 @@ Sumber: https://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-1
 
 ## s38 · body
 EN: The Supreme Court later raised the sentence to sixteen years. It also cut the money he must repay to about two point two trillion rupiah, from roughly forty-two trillion.
-ID: Mahkamah Agung kemudian menaikkan hukumannya menjadi 16 tahun, tetapi memangkas uang pengganti menjadi sekitar 2,2 triliun rupiah, dari puluhan triliun di pengadilan pertama.
+ID: Mahkamah Agung kemudian menaikkan hukumannya menjadi 16 tahun, tetapi memangkas uang pengganti menjadi sekitar 2,2 triliun rupiah, dari sekitar 42 triliun.
 Sumber: https://katadata.co.id/amp/berita/nasional/650a5a1f81b74/ma-ubah-vonis-surya-darmadi-jadi-16-tahun-batal-bayar-denda-rp-41-9-t; https://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/
 
 ## s39 · body
