@@ -1,4 +1,5 @@
 // Dashboard rilis, hanya bisa dibuka dari Mac ini.
+// Buka dengan klik dua kali "Rilis.command" di akar repo, atau:
 //   node --env-file=.env scripts/rilis/dashboard.mjs [--port 4747]
 // Tanpa --env-file dashboard tetap jalan (rencana, checklist, URL); tombol kirim menolak karena kredensial kosong.
 import fs from "node:fs"; import path from "node:path"; import http from "node:http"; import crypto from "node:crypto";
@@ -6,7 +7,9 @@ import { pathToFileURL } from "node:url";
 import { readJson } from "../produksi/lib.mjs";
 import * as inti from "./inti.mjs";
 import { kirim, lupakanTerhapus, pascaTayang, periksa, publishVar } from "./youtube.mjs";
-import { antrean, filePlist, fileStatus, SELANG } from "./jadwal.mjs";
+import { antrean, fileStatus } from "./jadwal.mjs";
+import { PORT, SELANG, copot, pasang, terpasang } from "./layanan.mjs";
+import * as hubungkan from "./hubungkan.mjs";
 import { buatSkenario, hapusSkenario, jadwalUlang } from "./skenario.mjs";
 
 const UI = path.join(import.meta.dirname, "ui.html");
@@ -47,7 +50,35 @@ function rinci(c) {
 
 function penjadwal() {
   const s = readJson(fileStatus(), null);
-  return { terpasang: fs.existsSync(filePlist()), terakhir: s?.terakhir ?? null, basi: !s || Date.now() - new Date(s.terakhir) > SELANG * 3000, catatan: s?.catatan.slice(-8) ?? [] };
+  return { terpasang: terpasang("penjadwal"), terakhir: s?.terakhir ?? null, basi: !s || Date.now() - new Date(s.terakhir) > SELANG * 3000, catatan: s?.catatan.slice(-8) ?? [] };
+}
+
+const sistem = () => ({ penjadwal: penjadwal(), dashboard: { otomatis: terpasang("dashboard"), layanan: process.env.RILIS_LAYANAN === "dashboard" }, hubungkan: hubungkan.status() });
+
+/** Tombol yang tidak terikat siklus. `keluar` mengakhiri server agar launchd menggantinya. */
+function aksiSistem(b, keluar) {
+  const bebas = () => { if (inti.daftarSiklus().some(inti.sibuk)) throw new Error("masih ada pengiriman yang berjalan; tunggu selesai"); };
+  const layanan = process.env.RILIS_LAYANAN === "dashboard";
+  switch (b.aksi) {
+    case "penjadwal": b.pasang ? pasang("penjadwal") : copot("penjadwal"); break;
+    case "dashboard-otomatis":
+      bebas();
+      if (b.pasang) {
+        // Server dari peluncur mengosongkan port; layanan launchd mengambil alih.
+        if (layanan) break;
+        keluar(() => pasang("dashboard"));
+      } else if (layanan) keluar(() => copot("dashboard"));
+      else copot("dashboard");
+      break;
+    case "mulai-ulang":
+      bebas(); if (!layanan) throw new Error("hanya tersedia bila dashboard berjalan otomatis");
+      keluar(); break;
+    case "hubungkan": hubungkan.mulai(String(b.track)); break;
+    case "hubungkan-ya": hubungkan.setujuiChannel(); break;
+    case "hubungkan-batal": hubungkan.batal(); break;
+    default: return null;
+  }
+  return sistem();
 }
 
 /** Pekerjaan panjang berjalan di latar; kemajuannya dibaca lewat log. */
@@ -94,7 +125,17 @@ function media(req, res, q) {
   fs.createReadStream(file, { start: a, end: z }).on("error", () => res.destroy()).pipe(res);
 }
 
-export function buatServer() {
+/** Tutup server setelah balasan terkirim, jalankan langkah penutup, lalu akhiri proses. */
+function keluarSetelahBalas(server, lalu) {
+  setTimeout(() => {
+    server.closeAllConnections(); server.close(() => {
+      try { lalu?.(); } catch (e) { console.error("GAGAL:", e.message); process.exit(1); }
+      process.exit(0);
+    });
+  }, 300);
+}
+
+export function buatServer({ keluar = keluarSetelahBalas } = {}) {
   const token = crypto.randomBytes(24).toString("base64url");
   const server = http.createServer((req, res) => {
     const kirimJson = (kode, v) => res.writeHead(kode, { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" }).end(JSON.stringify(v));
@@ -106,7 +147,7 @@ export function buatServer() {
       if (req.method === "GET") {
         if (u.pathname === "/") { res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "X-Frame-Options": "DENY", "Content-Security-Policy": "default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; frame-ancestors 'none'" }).end(fs.readFileSync(UI, "utf8").replace("__TOKEN__", token)); return; }
         if (u.pathname === "/api/ringkasan") return void kirimJson(200, ringkasan());
-        if (u.pathname === "/api/penjadwal") return void kirimJson(200, penjadwal());
+        if (u.pathname === "/api/sistem") return void kirimJson(200, sistem());
         if (u.pathname === "/api/siklus") return void kirimJson(200, rinci(inti.cari(u.searchParams.get("t"), u.searchParams.get("s"))));
         if (u.pathname === "/media") return void media(req, res, u.searchParams);
       }
@@ -114,7 +155,7 @@ export function buatServer() {
         if (req.headers["x-token"] !== token) return void kirimJson(403, { galat: "token halaman tidak cocok; muat ulang halaman" });
         let isi = "";
         req.on("data", (d) => { isi += d; if (isi.length > 1e5) req.destroy(); });
-        req.on("end", () => { try { kirimJson(200, aksi(JSON.parse(isi))); } catch (e) { kirimJson(400, { galat: e.message }); } });
+        req.on("end", () => { try { const b = JSON.parse(isi); kirimJson(200, aksiSistem(b, (lalu) => keluar(server, lalu)) ?? aksi(b)); } catch (e) { kirimJson(400, { galat: e.message }); } });
         return;
       }
       res.writeHead(404).end();
@@ -124,6 +165,6 @@ export function buatServer() {
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const k = process.argv.indexOf("--port"); const port = k > 0 ? Number(process.argv[k + 1]) : Number(process.env.PORT) || 4747;
+  const k = process.argv.indexOf("--port"); const port = k > 0 ? Number(process.argv[k + 1]) : Number(process.env.PORT) || PORT;
   buatServer().listen(port, "127.0.0.1", () => console.log(`Dashboard rilis: http://127.0.0.1:${port}  (Ctrl+C untuk berhenti)`));
 }

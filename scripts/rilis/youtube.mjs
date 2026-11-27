@@ -21,7 +21,7 @@ async function galat(res) {
 
 /** Klien untuk channel milik satu track. Menolak bila token menunjuk channel lain. */
 export async function klien(track) {
-  if (!process.env[publishVar(track)]) throw new Error(`Env ${publishVar(track)} kosong. Jalankan: node --env-file=.env scripts/youtube/auth.mjs --track ${track} --tulis`);
+  if (!process.env[publishVar(track)]) throw new Error(`Env ${publishVar(track)} kosong. Klik "Hubungkan channel" di dashboard, langkah Setujui dan kirim`);
   const channel = process.env[channelVar(track)]; if (!channel) throw new Error(`Env ${channelVar(track)} kosong; jalankan auth.mjs untuk track ini`);
   const { access_token } = await tokenRequest({ ...oauthClient(track), refresh_token: process.env[publishVar(track)], grant_type: "refresh_token" });
   const auth = { Authorization: `Bearer ${access_token}` };

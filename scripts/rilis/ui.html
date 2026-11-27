@@ -103,18 +103,42 @@ async function aksi(d, b) {
 }
 
 // ---------- Pantau ----------
-function kartuPenjadwal(j, dengan) {
+/** Tombol sistem: kirim aksi, lalu gambar ulang. */
+async function sistem(b) { try { bersih(); await post(b); await tampil(); } catch (e) { galat(e.message); } }
+/** Layanan dashboard diganti launchd: tunggu server baru menjawab, lalu muat ulang (token halaman berubah). */
+async function gantiServer(b) {
+  try { bersih(); await post(b); } catch (e) { return galat(e.message); }
+  clearTimeout(pewaktu); isi.replaceChildren(h("section", { class: "kartu" }, "Menunggu dashboard hidup kembali…"));
+  await new Promise((r) => setTimeout(r, 2500));
+  for (let n = 0; n < 40; n++) { try { await ambil("/api/sistem"); return location.reload(); } catch { await new Promise((r) => setTimeout(r, 1000)); } }
+  isi.replaceChildren(h("section", { class: "kartu" }, "Dashboard tidak menjawab. Klik dua kali Rilis.command di folder proyek, lalu muat ulang."));
+}
+function kartuSistem(sis, dengan) {
+  const j = sis.penjadwal, d = sis.dashboard;
   const A = dengan.flatMap((s) => s.antrean.map((a) => ({ ...a, s })));
   const menunggu = A.filter((a) => a.keadaan === "menunggu"), belum = A.filter((a) => a.keadaan !== "terlewat" && !a.s.disetujui);
-  const [teks, jenis] = !j.terpasang ? ["belum dipasang", "warn"] : j.basi ? ["tidak berjalan lebih dari 15 menit", "gagal"] : ["aktif", "ok"];
+  const [teks, jenis] = !j.terpasang ? ["mati", "warn"] : j.basi ? ["tidak berjalan lebih dari 15 menit", "gagal"] : ["aktif", "ok"];
   return h("section", { class: "kartu" }, h("div", { class: "baris" }, h("h2", { style: "margin:0" }, "Penjadwal"), cip(teks, jenis), j.terakhir ? h("span", { class: "redup kecil-teks" }, `putaran terakhir ${new Date(j.terakhir).toLocaleTimeString("id-ID")}`) : null),
-    j.terpasang ? null : h("p", {}, "Pasang sekali di terminal: ", h("code", {}, "node scripts/rilis/jadwal.mjs pasang")),
     h("p", { class: "redup kecil-teks" }, "Memposting komentar pertama dan melengkapi thumbnail untuk siklus yang sudah disetujui. Mac harus menyala dan tidak tidur; komentar yang terlambat lebih dari 60 menit menunggu keputusanmu."),
+    h("div", { class: "baris" }, j.terpasang ? h("button", { onclick: () => confirm("Matikan penjadwal? Komentar tidak lagi diposting otomatis.") && sistem({ aksi: "penjadwal", pasang: false }) }, "Matikan penjadwal")
+      : h("button", { class: "utama", onclick: () => confirm("Aktifkan penjadwal? Komentar pertama pada siklus yang sudah disetujui akan diposting otomatis tiap video tayang.") && sistem({ aksi: "penjadwal", pasang: true }) }, "Aktifkan penjadwal")),
     menunggu.map((a) => h("div", {}, `${a.s.track}-${a.s.siklus} ${a.nama}: komentar ${new Date(a.saat).toLocaleString("id-ID")}`)),
     belum.length ? h("div", { class: "catatan" }, `Tidak akan dijalankan sebelum disetujui: ${[...new Set(belum.map((a) => `${a.s.track}-${a.s.siklus}`))].join(", ")}`) : null,
-    j.catatan.length ? h("details", {}, h("summary", {}, "Catatan penjadwal"), h("pre", {}, j.catatan.join("\n"))) : null);
+    j.catatan.length ? h("details", {}, h("summary", {}, "Catatan penjadwal"), h("pre", {}, j.catatan.join("\n"))) : null,
+    h("div", { class: "baris", style: "margin-top:14px; border-top:1px solid var(--garis); padding-top:12px" }, h("b", {}, "Dashboard"), cip(d.otomatis ? "hidup otomatis saat login" : "dibuka manual", d.otomatis ? "ok" : ""),
+      d.otomatis ? [d.layanan ? h("button", { title: "Dipakai setelah kode alat diperbarui", onclick: () => gantiServer({ aksi: "mulai-ulang" }) }, "Mulai ulang") : null, h("button", { onclick: () => confirm("Matikan jalan otomatis? Berikutnya buka lewat Rilis.command.") && (d.layanan ? post({ aksi: "dashboard-otomatis", pasang: false }).then(() => isi.replaceChildren(h("section", { class: "kartu" }, "Dashboard dimatikan. Buka lagi dengan klik dua kali Rilis.command."))).catch((e) => galat(e.message)) : sistem({ aksi: "dashboard-otomatis", pasang: false })) }, "Matikan otomatis")]
+        : h("button", { onclick: () => confirm("Jalankan dashboard otomatis setiap kali login? Setelah itu cukup buka alamat ini di browser.") && gantiServer({ aksi: "dashboard-otomatis", pasang: true }) }, "Jalankan otomatis saat login")));
 }
-function halamanPantau(semua, jadwal) {
+function panelHubungkan(d, k) {
+  const tombol = (teks, utama) => h("button", { class: utama ? "utama" : "", onclick: () => sistem({ aksi: "hubungkan", track: d.track }) }, teks);
+  const batal = h("button", { onclick: () => sistem({ aksi: "hubungkan-batal" }) }, "Batal");
+  if (!k || k.track !== d.track || k.tahap === "selesai") return d.kredensial ? h("details", {}, h("summary", { class: "kecil-teks" }, "Hubungkan ulang channel"), tombol("Hubungkan ulang")) : h("div", { class: "catatan" }, h("div", {}, "Izin tulis YouTube belum ada."), tombol(`Hubungkan channel ${d.track}`, true));
+  if (k.tahap === "gagal") return h("div", { class: "catatan gagal" }, h("div", {}, k.pesan), tombol("Coba lagi"));
+  if (k.tahap === "izin") return h("div", { class: "catatan" }, h("div", {}, `Buka halaman izin Google, pilih channel milik ${d.track} (${d.channel}), dan centang semua izin.`), h("div", { class: "baris" }, luar(k.url, "Buka halaman izin Google ↗"), batal));
+  if (k.tahap === "konfirmasi") return h("div", { class: "catatan" }, h("div", {}, `Tersambung ke channel ${k.channel}. Simpan untuk ${d.track}?`), k.pesan ? h("div", {}, k.pesan) : null, h("div", { class: "baris" }, h("button", { class: "utama", onclick: () => sistem({ aksi: "hubungkan-ya" }) }, "Ya, simpan"), batal));
+  return h("div", { class: "catatan" }, "Menghubungkan…", batal);
+}
+function halamanPantau(semua, sis) {
   const dengan = semua.filter((s) => s.adaRencana), tanpa = semua.filter((s) => !s.adaRencana).reverse();
   const tugas = dengan.flatMap((s) => s.tugas); const n = hitung(tugas);
   const gagal = dengan.flatMap((s) => s.items.flatMap((i) => [...i.galat, ...s.antrean.filter((a) => a.nama === i.nama && a.keadaan === "terlewat").map(() => "komentar terlewat; jalankan pasca-tayang bila masih mau")].map((g) => ({ s, i, g }))));
@@ -129,7 +153,7 @@ function halamanPantau(semua, jadwal) {
       angka("Bisa dikerjakan sekarang", n.sekarang, `${n.tunggu} menunggu · ${n.selesai} selesai`),
       angka("Kegagalan", gagal.length, gagal.length ? "lihat di bawah" : "tidak ada", gagal.length ? "gagal" : "ok")),
     gagal.length ? h("section", { class: "kartu" }, h("h2", {}, "Perlu diperbaiki"), gagal.map(({ s, i, g }) => h("div", { class: "catatan gagal" }, h("a", { href: `#/${s.track}/${s.siklus}/kirim` }, `${s.track}-${s.siklus} ${i.nama}`), `: ${g}`))) : null,
-    kartuPenjadwal(jadwal, dengan),
+    kartuSistem(sis, dengan),
     h("section", { class: "kartu" }, h("h2", {}, "Agenda"),
       agenda.length ? agenda.map(({ s, i, sisa }) => {
         const siap = sisa.filter((t) => !t.tunggu).length;
@@ -224,7 +248,7 @@ function halamanIsi(d) {
 }
 
 // ---------- Langkah 2: setujui dan kirim ----------
-function halamanKirim(d) {
+function halamanKirim(d, sis) {
   const r = d.rencana; const sudah = r.items.some((i) => r.hasil[i.nama]?.youtube?.videoId);
   const buka = (nama) => () => { pilihanItem[`${d.track}/${d.siklus}`] = nama; location.hash = `#/${d.track}/${d.siklus}/isi`; };
   const kata = h("input", { placeholder: "ketik SETUJU", style: "width:180px", autocomplete: "off", "aria-label": "ketik SETUJU" });
@@ -261,7 +285,7 @@ function halamanKirim(d) {
         : [h("p", {}, r.persetujuan ? "Isi berubah sejak disetujui; setujui ulang." : "Setujui setelah menonton, mendengarkan, dan memeriksa fakta."), h("div", { class: "baris" }, kata, setuju)]),
     h("section", { class: "kartu" }, h("h2", {}, "Kirim ke YouTube"),
       r.kunci_manual ? h("div", { class: "catatan" }, `Unggah dikunci: ${r.kunci_manual}. Catat URL tayang di langkah 3; komentar pertama tetap bisa diposting lewat pasca-tayang.`) : null,
-      d.kredensial ? null : h("div", { class: "catatan" }, "Izin tulis YouTube belum ada. Jalankan di terminal, lalu mulai ulang dashboard: ", h("code", {}, `node --env-file=.env scripts/youtube/auth.mjs --track ${d.track} --tulis`)),
+      panelHubungkan(d, sis.hubungkan),
       h("div", { class: "baris" }, tombol("kirim", "Kirim ke YouTube", `Unggah ke YouTube channel ${d.track}:\n${daftar}`, mKirim, true), tombol("pasca", "Jalankan pasca-tayang", "Posting komentar pertama pada video yang sudah publik?", mPasca), tombol("uji", "Unggah uji (privat)", "Unggah satu Short sebagai PRIVAT untuk uji? Hapus videonya di Studio setelah diperiksa.", mUji), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: alasan(umum, !sudah && "belum ada video YouTube"), onclick: () => aksi(d, { aksi: "periksa" }) }, "Periksa di YouTube"), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: "Untuk video yang sudah kamu hapus di Studio: catatannya dilupakan agar bisa diunggah ulang", onclick: () => confirm("Lupakan catatan unggah untuk video yang sudah terhapus di YouTube? Persetujuan akan dibatalkan.") && aksi(d, { aksi: "reset" }) }, "Reset yang terhapus")),
       mKirim ? h("div", { class: "redup kecil-teks" }, `Tombol kirim nonaktif: ${mKirim}.`) : null,
       d.log.length ? h("pre", { "aria-live": "polite" }, d.log.join("\n")) : null),
@@ -306,7 +330,7 @@ async function tampil() {
     const semua = await ambil("/api/ringkasan");
     pilih.replaceChildren(h("option", { value: "" }, "Buka siklus…"), ...semua.map((x) => h("option", { value: `${x.track}/${x.siklus}` }, `${x.track}-${x.nama}`)));
     pilih.value = t && s ? `${t}/${s}` : "";
-    if (!t || !s) { if (nomor !== nomorTampil) return; isi.replaceChildren(...halamanPantau(semua, await ambil("/api/penjadwal")).filter(Boolean)); return jadwalkan(30000); }
+    if (!t || !s) { if (nomor !== nomorTampil) return; isi.replaceChildren(...halamanPantau(semua, await ambil("/api/sistem")).filter(Boolean)); return jadwalkan(30000); }
     const d = await ambil(`/api/siklus?t=${encodeURIComponent(t)}&s=${encodeURIComponent(s)}`);
     if (nomor !== nomorTampil) return;
     if (!d.rencana) { isi.replaceChildren(h("h1", {}, `${d.track}-${d.nama}`), h("section", { class: "kartu" }, h("p", {}, `Belum ada rencana rilis. Rencana disusun dari naskah dan hasil render${d.panduan ? ", teksnya diambil dari panduan unggah" : ""}. Belum ada yang dikirim.`), h("button", { class: "utama", onclick: () => aksi(d, { aksi: "plan" }) }, "Buat rencana"))); return; }
@@ -314,12 +338,14 @@ async function tampil() {
     const gulir = scrollY, dulu = isi.dataset.halaman, kini = `${t}/${s}/${langkah}`; isi.dataset.halaman = kini;
     // Gambar ulang di halaman yang sama tidak boleh membuang fokus atau ketikan yang belum dikirim.
     const f = dulu === kini && isi.contains(document.activeElement) ? document.activeElement : null; const label = f?.getAttribute("aria-label"), ketikan = f && f.type !== "checkbox" && f.value !== f.defaultValue ? f.value : null;
-    const badan = { isi: halamanIsi, kirim: halamanKirim, tugas: halamanTugas }[langkah](d);
+    const sis = langkah === "kirim" ? await ambil("/api/sistem") : null;
+    if (nomor !== nomorTampil) return;
+    const badan = { isi: halamanIsi, kirim: halamanKirim, tugas: halamanTugas }[langkah](d, sis);
     isi.replaceChildren(kepala(d, langkah), ...[badan].flat(Infinity).filter(Boolean));
     scrollTo(0, dulu === kini ? gulir : 0);
     const pengganti = label && isi.querySelector(`[aria-label="${CSS.escape(label)}"]`);
     if (pengganti) { if (ketikan !== null) pengganti.value = ketikan; pengganti.focus({ preventScroll: true }); }
-    if (d.sibuk) jadwalkan(2000); else if (langkah === "tugas") jadwalkan(30000);
+    if (d.sibuk || (sis?.hubungkan && !["selesai", "gagal"].includes(sis.hubungkan.tahap))) jadwalkan(2000); else if (langkah === "tugas") jadwalkan(30000);
   } catch (e) { galat(e.message); }
 }
 /** Segarkan berkala; ditunda selama pengguna sedang mengetik. */

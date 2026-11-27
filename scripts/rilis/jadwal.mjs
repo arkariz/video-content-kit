@@ -1,23 +1,21 @@
 // Penjadwal Mac: tiap 5 menit memposting komentar pertama dan melengkapi thumbnail/subtitle yang tertunda,
 // hanya untuk siklus yang sudah disetujui kreator. Tidak mengunggah video (jadwal tayang dipegang YouTube).
-//   node scripts/rilis/jadwal.mjs pasang                      (pasang launchd untuk akun ini)
+//   node scripts/rilis/jadwal.mjs pasang                      (sama dengan tombol "Aktifkan" di dashboard)
 //   node scripts/rilis/jadwal.mjs status
 //   node scripts/rilis/jadwal.mjs copot
 //   node --env-file=.env scripts/rilis/jadwal.mjs jalan       (satu putaran; dipanggil launchd)
 // Komentar yang terlambat lebih dari 60 menit (Mac tidur/mati) tidak diposting; menunggu keputusan kreator.
-import fs from "node:fs"; import os from "node:os"; import path from "node:path"; import { execFileSync } from "node:child_process";
+import path from "node:path"; import { execFileSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
 import { readJson, writeJson } from "../produksi/lib.mjs";
 import { ROOT, daftarSiklus, disetujui, muat, sibuk, ubah, waktu } from "./inti.mjs";
 import { pascaTayang } from "./youtube.mjs";
+import { SELANG, copot, filePlist, pasang, termuat } from "./layanan.mjs";
 
-export const SELANG = 300; // detik antar putaran
 export const BATAS = 60 * 60e3; // keterlambatan komentar yang masih boleh diposting
 const MAKS = 5; // percobaan gagal sebelum berhenti mencoba
 const UMUR = 24 * 3600e3; // lama melengkapi thumbnail/subtitle setelah unggah
-const LABEL = "com.video-content-kit.rilis";
 export const fileStatus = () => path.join(ROOT, ".rilis-penjadwal.json");
-export const filePlist = () => path.join(os.homedir(), "Library/LaunchAgents", `${LABEL}.plist`);
 
 /** Pekerjaan satu siklus, dihitung dari catatan lokal (tanpa memanggil API).
  *  keadaan: menunggu | siap | terlewat | gagal. */
@@ -79,46 +77,15 @@ export async function putaran({ log = console.log, beri = notifikasi, kini = Dat
   return catatan;
 }
 
-const xml = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-export function plist({ node, root, logFile }) {
-  const argumen = [node, `--env-file=${path.join(root, ".env")}`, path.join(root, "scripts/rilis/jadwal.mjs"), "jalan"];
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0"><dict>
-  <key>Label</key><string>${LABEL}</string>
-  <key>ProgramArguments</key><array>${argumen.map((a) => `<string>${xml(a)}</string>`).join("")}</array>
-  <key>WorkingDirectory</key><string>${xml(root)}</string>
-  <key>StartInterval</key><integer>${SELANG}</integer>
-  <key>RunAtLoad</key><true/>
-  <key>StandardOutPath</key><string>${xml(logFile)}</string>
-  <key>StandardErrorPath</key><string>${xml(logFile)}</string>
-</dict></plist>
-`;
-}
-
-const launchctl = (...a) => execFileSync("launchctl", a, { stdio: "pipe" }).toString();
-const domain = () => `gui/${process.getuid()}`;
-const termuat = () => { try { launchctl("print", `${domain()}/${LABEL}`); return true; } catch { return false; } };
-
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const cmd = process.argv[2];
   try {
     if (cmd === "jalan") await putaran();
-    else if (cmd === "pasang") {
-      if (!fs.existsSync(path.join(ROOT, ".env"))) throw new Error(".env tidak ada di akar repo");
-      if (/\.claude\/worktrees\//.test(ROOT)) throw new Error("jalankan dari folder repo utama, bukan worktree");
-      const node = ["/opt/homebrew/bin/node", "/usr/local/bin/node"].find((p) => fs.existsSync(p)) ?? process.execPath;
-      const logFile = path.join(os.homedir(), "Library/Logs", `${LABEL}.log`);
-      fs.mkdirSync(path.dirname(filePlist()), { recursive: true }); fs.writeFileSync(filePlist(), plist({ node, root: ROOT, logFile }));
-      if (termuat()) launchctl("bootout", `${domain()}/${LABEL}`);
-      launchctl("bootstrap", domain(), filePlist());
-      console.log(`Terpasang: berjalan tiap ${SELANG / 60} menit selama kamu login.\nPlist: ${filePlist()}\nLog: ${logFile}\nCopot: node scripts/rilis/jadwal.mjs copot`);
-    } else if (cmd === "copot") {
-      if (termuat()) launchctl("bootout", `${domain()}/${LABEL}`);
-      fs.rmSync(filePlist(), { force: true }); console.log("Penjadwal dicopot.");
-    } else if (cmd === "status") {
+    else if (cmd === "pasang") { pasang("penjadwal"); console.log(`Terpasang: berjalan tiap ${SELANG / 60} menit selama kamu login.\nPlist: ${filePlist("penjadwal")}`); }
+    else if (cmd === "copot") { copot("penjadwal"); console.log("Penjadwal dicopot."); }
+    else if (cmd === "status") {
       const s = readJson(fileStatus(), null);
-      console.log(`Terpasang: ${termuat() ? "ya" : "tidak"}\nPutaran terakhir: ${s ? new Date(s.terakhir).toLocaleString("id-ID") : "belum pernah"}`);
+      console.log(`Terpasang: ${termuat("penjadwal") ? "ya" : "tidak"}\nPutaran terakhir: ${s ? new Date(s.terakhir).toLocaleString("id-ID") : "belum pernah"}`);
       for (const b of s?.catatan.slice(-10) ?? []) console.log(" ", b);
       for (const c of daftarSiklus()) { const r = muat(c); if (r) for (const a of antrean(r)) console.log(`  ${c.track}-${c.siklus} ${a.nama}: ${a.jenis} ${a.keadaan}${disetujui(r) ? "" : " (belum disetujui)"}`); }
     } else throw new Error("perintah: pasang | status | copot | jalan");

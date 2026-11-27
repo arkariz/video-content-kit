@@ -137,7 +137,7 @@ try {
     const h = inti.muat(c).hasil; assert.equal(yt.thumbnail.length, 2); assert.ok(h.S1.youtube.selesai.thumbnail);
   });
   await uji("penjadwal: komentar saat tayang, sekali; terlambat dan belum disetujui dilewati", async () => {
-    const { antrean, putaran, plist, BATAS } = await import("./jadwal.mjs");
+    const { antrean, putaran, BATAS } = await import("./jadwal.mjs"); const { plist } = await import("./layanan.mjs");
     const pesan = [], opsi = { log: () => {}, beri: (v) => pesan.push(v) };
     const tayang = new Date(Date.now() + 3600e3);
     inti.ubah(c, (x) => { x.items[1].komentar = "S1?"; x.hasil = Object.fromEntries(x.items.map((i, n) => { const id = `jdw0000000${n}`; yt.video[id] = { id, publik: true, body: { snippet: {}, status: { privacyStatus: "private" } } }; return [i.nama, { youtube: { sumber: "alat", videoId: id, publishAt: tayang.toISOString(), diunggah: new Date().toISOString(), selesai: { playlist: 1, "subtitle-en": 1, thumbnail: 1 } } }]; })); });
@@ -150,12 +150,37 @@ try {
     inti.ubah(c, (x) => delete x.hasil.S1.youtube.komentar); yt.komentar.length = 0; pesan.length = 0;
     const telat = tayang.getTime() + BATAS + 60e3; await putaran({ ...opsi, kini: telat }); await putaran({ ...opsi, kini: telat + 3e5 });
     assert.equal(yt.komentar.length, 0); assert.equal(pesan.length, 1); assert.equal(antrean(inti.muat(c), telat).find((a) => a.nama === "S1").keadaan, "terlewat");
-    assert.match(plist({ node: "/n", root: "/a & b", logFile: "/l" }), /<string>--env-file=\/a &amp; b\/\.env<\/string>/);
+    const p = plist("penjadwal", { node: "/n", root: "/a & b", logFile: "/l" }); assert.match(p, /<string>--env-file-if-exists=\/a &amp; b\/\.env<\/string>/); assert.match(p, /StartInterval/); assert.match(plist("dashboard", { node: "/n", root: "/r", logFile: "/l" }), /KeepAlive/);
   });
   await uji("reset hanya melupakan video yang sudah terhapus", async () => {
     const { lupakanTerhapus } = await import("./youtube.mjs"); delete yt.video.jdw00000001;
     await lupakanTerhapus(c, { log: () => {} }); const r = inti.muat(c);
     assert.ok(r.hasil.master.youtube); assert.equal(r.hasil.S1, undefined); assert.equal(r.persetujuan, null);
+  });
+  await uji("tombol sistem: pasang dan copot layanan (launchctl tiruan), dashboard diganti launchd", async () => {
+    const L = await import("./layanan.mjs"); const asliAda = fs.existsSync(path.join((await import("../produksi/lib.mjs")).ROOT, ".env"));
+    Object.assign(process.env, { RILIS_AGENTS_DIR: path.join(R, "agen"), RILIS_LAUNCHCTL: "/usr/bin/true" });
+    const keluar = []; const s = buatServer({ keluar: (_, lalu) => keluar.push(lalu) }); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const base = `http://127.0.0.1:${s.address().port}`;
+    try {
+      const token = (await (await fetch(base)).text()).match(/const TOKEN = "([\w-]+)"/)[1];
+      const post = async (b) => { const r = await fetch(`${base}/api/aksi`, { method: "POST", headers: { "X-Token": token }, body: JSON.stringify(b) }); return [r.status, await r.json()]; };
+      if (asliAda) {
+        let [kode, v] = await post({ aksi: "penjadwal", pasang: true }); assert.equal(kode, 200, v.galat); assert.ok(v.penjadwal.terpasang && L.terpasang("penjadwal"));
+        [kode, v] = await post({ aksi: "penjadwal", pasang: false }); assert.equal(v.penjadwal.terpasang, false);
+        await post({ aksi: "dashboard-otomatis", pasang: true }); assert.equal(L.terpasang("dashboard"), false, "baru dipasang setelah port dikosongkan"); keluar.pop()(); assert.ok(L.terpasang("dashboard"));
+        await post({ aksi: "dashboard-otomatis", pasang: false }); assert.equal(L.terpasang("dashboard"), false);
+      }
+      const [kode] = await post({ aksi: "mulai-ulang" }); assert.equal(kode, 400);
+    } finally { s.close(); delete process.env.RILIS_AGENTS_DIR; delete process.env.RILIS_LAUNCHCTL; }
+  });
+  await uji("hubungkan channel: tautan, konfirmasi, simpan", async () => {
+    const H = await import("./hubungkan.mjs"); let dimuat = 0;
+    const tiruan = `process.stdout.write("Buka:\\nhttps://accounts.google.com/o/oauth2/v2/auth?x=1\\n"); setTimeout(()=>process.stdout.write('Tersambung ke channel "Uji" (@uji).\\nSimpan? Ketik ya: '),150); process.stdin.on("data",(d)=>process.exit(String(d).trim()==="ya"?0:1));`;
+    const tunggu = async (tahap) => { for (let n = 0; n < 100 && H.status()?.tahap !== tahap; n++) await new Promise((r) => setTimeout(r, 20)); assert.equal(H.status().tahap, tahap); };
+    H.mulai("T09", { perintah: [process.execPath, "-e", tiruan], selesai: () => dimuat++ });
+    assert.throws(() => H.setujuiChannel(), /belum ada channel/); await tunggu("izin"); assert.match(H.status().url, /accounts\.google\.com/);
+    await tunggu("konfirmasi"); assert.equal(H.status().channel, "Uji (@uji)"); H.setujuiChannel(); await tunggu("selesai"); assert.equal(dimuat, 1);
+    H.batal(); assert.equal(H.status(), null);
   });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;
