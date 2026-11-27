@@ -133,3 +133,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Produksi malam: 002 dan 003 dirender (long-form, 2 Shorts, thumbnail) dengan adegan 3D halus (r3/soft). Scene footage 003 diganti ilustrasi.
 - 2026-11-26: Siklus 004 (karhutla) dibuat atas permintaan kreator, di luar paket V2 dan menyimpang dari "Tidak akan dibahas" (isu berjalan). Riset fakta, naskah, audio, render otomatis; naskah belum dibaca kreator. Dugaan disebut dugaan; nama pejabat aktif tidak disebut.
 - 2026-11-27: Analitik awal Short 001 A1 dari ekspor Studio: viewed 57,4%, rata-rata tonton 0:27 dari 0:51; penurunan terbesar detik 5 sampai 15. Satu aturan uji ditambahkan ke learnings.md; belum ada keputusan.
+- 2026-11-27: Kreator memutuskan dua Short siklus 003 ditayangkan apa adanya (tanpa susun ulang); dipakai sebagai pembanding aturan uji hook. Catatan terbuka: angka "satu dipindahkan, Java bertambah sepuluh" memakai rentang 1950 dan 1961.
