@@ -147,3 +147,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator memilih judul dan thumbnail baru 002: master 1, Short B1 A, Short B2 A. Penggantian di platform belum dilakukan.
 - 2026-11-27: Opsi judul dan thumbnail baru 003 dibuat atas permintaan kreator (thumbnail-v2/opsi.md). Belum dipilih; platform dan rencana rilis tidak diubah.
 - 2026-11-27: Opsi judul dan thumbnail baru 004 dibuat atas permintaan kreator (thumbnail-v2/opsi.md). Belum dipilih; platform tidak diubah. Video terjadwal 29 Nov masih memuat s25 dan s30 yang ditandai cek fakta.
+- 2026-11-27: Foto profil dan banner v2 gaya R3 dibuat atas permintaan kreator (channel/v2: 3 profil, 2 banner; maskot Komo, garis khatulistiwa). Belum dipilih; belum diunggah ke platform.

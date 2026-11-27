@@ -13,6 +13,21 @@ Status: **Equator Logic dipakai** (TikTok @equator.logic, tayang 2026-11-26). Ha
 
 Sudah dipakai: Monsoon Atlas, Tropic Logic, Tropic Atlas, Local Atlas, Archipelago Explained. Instagram, TikTok, Facebook belum dicek.
 
+## Aset v2, gaya R3 (2026-11-27, menunggu pilihan kreator)
+
+Di `v2/`. Maskot Komo, tanda garis khatulistiwa emas, palet senja T02. Belum diunggah ke platform mana pun; aset lama di bawah masih yang terpasang.
+
+| File | Isi |
+| --- | --- |
+| `profil-A-komo-cincin.png` (1080×1080, **rekomendasi**) | Komo dekat dengan cincin khatulistiwa |
+| `profil-B-komo-globe.png` | Komo memeluk bola dunia |
+| `profil-C-tanda.png` | tanpa maskot: gunung, matahari, laut, khatulistiwa |
+| `banner-A.png` (2560×1440, **rekomendasi**) | Komo menunjuk nama, satu baris |
+| `banner-B.png` | nama dua baris, Komo di kanan |
+| `pratinjau.png` | potongan bulat (270, 98, 32 px) dan potongan banner di HP |
+
+Render ulang: `node hasil/tracks/T02-why-southeast-asia/channel/v2/render.mjs`, lalu `python3 hasil/tracks/T02-why-southeast-asia/channel/v2/pratinjau.py`.
+
 ## Aset
 
 - `profil-equator-logic-emblem.png` (1000×1000, **dipakai**): emblem bulat. Cincin krem bertuliskan EQUATOR LOGIC / WHY SOUTHEAST ASIA WORKS; di dalam, Guide dengan matahari sebagai lingkaran cahaya di belakang kepala, gunung api, kapal kontainer, laut, dan garis khatulistiwa merah sebagai cakrawala. Generator: `make_profile_badge.py`.
