@@ -38,7 +38,7 @@ export function plan({ track, siklus }) {
   let t = 0; const start = {}; script.scenes.forEach((s, i) => { start[s.id] = t; t += (s.duration_ms?.en || 0) / 1000 + pauseSec(script.scenes[i + 1]); });
   const chapters = (script.chapters || []).filter((c) => start[c.scene] !== undefined);
   const voiceClone = assets.voice?.type === "clone-kreator"; const label = !voiceClone; // konservatif: suara sintetis non-kreator diberi label
-  const sources = (script.sources || []).map((s) => `- ${s.url}`);
+  const sources = [...new Set((script.sources || []).map((s) => s.url).filter((u) => /^https?:\/\//.test(u)))].map((u) => `- ${u}`);
   const title = script.publish_title || script.title_options[0];
   const description = [script.promise, "", chapters.length >= 3 ? chapters.map((c) => `${fmtT(start[c.scene])} ${c.title}`).join("\n") : "", "", sources.length ? `Sources:\n${sources.join("\n")}` : "Sources: (not filled in yet, see QA T-src)", "", label ? "The narration uses a synthetic voice and cartoon animation. Real footage is licensed for commercial use (Pexels/Pixabay)." : "Real footage is licensed for commercial use (Pexels/Pixabay)."].filter((x, i, a) => !(x === "" && a[i - 1] === "")).join("\n");
   const tags = script.tags || ["how payments work", "credit card", "authorization", "clearing", "settlement", "ISO 8583", "fintech explained"];

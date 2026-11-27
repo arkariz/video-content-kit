@@ -452,6 +452,7 @@ Status uji (2026-11-27): riset, login T02, dan `analitik.mjs` jalan dengan akun 
 
 ## Gate yang tidak bisa dilewati otomatis
 - Rencana validasi terkunci, jadwal tayang, dan batas kapasitas dibaca dari file, tidak diubah.
+- Salah ucap (A2) yang sudah didengar dan diterima kreator dicatat per siklus di `04-assets.json` `ucapan_diterima` (`tanggal`, `scenes`); QA menurunkannya ke sedang dan tetap menampilkannya. Hanya diisi atas jawaban kreator.
 - QA kritis menghentikan pipeline (kode 2). QA otomatis tidak pernah menyatakan LULUS final; ada pemeriksaan manual (dengar audio, tonton, cek fakta, thumbnail).
 - Publish hanya setelah kreator mengetik `SETUJU` untuk siklus itu. Alat publish: Upload-Post (lihat bagian Publish).
 - Pengecualian QA dari kreator dicatat di TRACK.md (`pengecualian_qa`) dan tetap tampil sebagai temuan.

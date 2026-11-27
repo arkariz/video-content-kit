@@ -4,7 +4,7 @@
   "tanggal": "2026-11-27",
   "durasi": "8:07",
   "footage_pct": 0,
-  "verdict": "GAGAL",
+  "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
   "temuan": [
     {
       "layer": "Struktur",
@@ -15,80 +15,80 @@
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s18: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s18: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s20: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s20: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s27: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s27: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s29: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s29: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s32: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s32: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s33: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s33: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s35: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s35: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s45: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s45: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s13: transkrip balik tidak memuat \"rupiah\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s13: transkrip balik tidak memuat \"rupiah\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s18: transkrip balik tidak memuat \"rupiah\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s18: transkrip balik tidak memuat \"rupiah\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s29: transkrip balik tidak memuat \"Europay\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s29: transkrip balik tidak memuat \"Europay\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",

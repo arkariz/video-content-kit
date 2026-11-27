@@ -64,5 +64,21 @@
     "en": "ELEVENLABS_VOICE_ID (.env)",
     "id": "R86jddkroI9bJwXFfjsr",
     "dibuat": "2026-11-27"
+  },
+  "ucapan_diterima": {
+    "tanggal": "2026-11-27",
+    "oleh": "kreator",
+    "scenes": [
+      "s13",
+      "s18",
+      "s20",
+      "s27",
+      "s29",
+      "s32",
+      "s33",
+      "s35",
+      "s45"
+    ],
+    "catatan": "Temuan A2 (QRIS, rupiah, Europay) dari transkrip balik; kreator menjawab \"Ucapan diterima\"."
   }
 }
