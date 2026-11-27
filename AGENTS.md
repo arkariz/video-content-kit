@@ -44,8 +44,8 @@ riset niche ─► usulan track ─► validasi (V1 riset, V2 pasar) ─► akti
 | Validasi niche (V1 riset, V2 pasar) | Track | `instruksi/02-validasi-niche.md` | `video-portfolio` | `tracks/<ID>/validasi/` | Lulus/gagal sesuai kriteria terkunci |
 | Riset konten viral | Track | `instruksi/03-riset-konten-viral.md` | `video-content-cycle` | `siklus/NNN-*/01-riset-viral.md` | Memilih sudut video |
 | Naskah | Track | `instruksi/04-naskah.md` | `video-content-cycle`, `video-anti-slop` | `02-brief.md`, `03-script.json`, `03-naskah.md` | Menyetujui naskah |
-| Produksi | Track | `instruksi/05-produksi.md`, dijalankan lewat pipeline (bagian Produksi otomatis) | `video-content-cycle` | `04-assets.json`, render | Menyetujui klip footage |
-| QA anti-slop | Track | `instruksi/06-qa-anti-slop.md` | `video-anti-slop` | `05-qa.md` | Harus `LULUS` |
+| QA anti-slop (sebelum render penuh) | Track | `instruksi/06-qa-anti-slop.md` | `video-anti-slop` | `05-qa.md` | Harus `LULUS` sebelum render |
+| Produksi (render) | Track | `instruksi/05-produksi.md`, dijalankan lewat pipeline (bagian Produksi otomatis) | `video-content-cycle` | `04-assets.json`, render | Menyetujui klip footage |
 | Publish | Track | `instruksi/07-publish.md` | `video-content-cycle` | `06-publish.md` | Selalu minta persetujuan |
 | Analitik + loop | Track | `instruksi/08-analitik-dan-loop.md` | `video-content-cycle` | `tracks/<ID>/analitik/`, `learnings.md` | Tidak ada (keputusan besar lewat review) |
 | Review portfolio | Portfolio | `instruksi/09-review-portfolio.md` | `video-portfolio` | `hasil/review/` | Kreator memutuskan per track |
@@ -80,6 +80,7 @@ node --env-file=.env scripts/pipeline/run.mjs --track <ID> --siklus <NNN> [--dry
 
 - Syarat input: `01-riset-viral.md`, `02-brief.md`, `03-script.json` (dengan bidang visual sesuai `produksi/CONTRACT.md`), `03-naskah.md`. Pipeline memvalidasi kontrak, lalu TTS, caption, footage, render, QA otomatis, dan paket review di `hasil/review/`.
 - Dokumentasi: `produksi/PIPELINE.md` (tahap, gate, kebutuhan), `produksi/CONTRACT.md` (kontrak visual), `produksi/STYLE.md` (bahasa bentuk, palet, pemeran).
+- **QA anti-slop dijalankan sebelum render penuh** (keputusan kreator 2026-11-27, mengganti urutan di `instruksi/05` dan `06`): setelah audio, caption, dan still; `run.mjs` tidak merender sebelum `05-qa.md` `LULUS` untuk isi yang sekarang. Gerak, irama, dan campuran musik tidak diperiksa gate ini; kreator mengeceknya manual setelah render.
 - Pipeline berhenti pada QA kritis (kode 2), pada tahap LLM yang file-nya belum ada (kode 3), dan menunggu kreator. **QA otomatis tidak pernah menyatakan LULUS final**; pemeriksaan manual tetap wajib. Perbaikan mekanis: `scripts/pipeline/autofix.mjs`.
 - Publish hanya lewat dua jalur, masing-masing setelah kreator mengetik SETUJU untuk siklus itu: `scripts/pipeline/approve.mjs` (Upload-Post) atau alat rilis `scripts/rilis/` (dashboard atau `rilis.mjs setuju`, saat ini YouTube; lihat `produksi/PIPELINE.md` bagian "Alat rilis"). Agent tidak boleh mengetik atau mengisi SETUJU. Satu siklus hanya memakai satu jalur. Jangan memanggil API platform dengan jalur lain.
 - Mesin visual dipakai bersama semua track: ubah komponen bersama (`produksi/remotion/src`) hanya di sesi terpisah dan jangan merusak track lain.

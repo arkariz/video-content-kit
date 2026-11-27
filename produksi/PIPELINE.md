@@ -24,6 +24,8 @@ Gaya wajib: ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`); 
 | still | skrip + gate | `scripts/pipeline/still.mjs`: still per scene R3 → `04-still.json` dinilai rubrik (agent) lalu disetujui kreator. Hanya naskah `visual_spec` versi 2; berhenti kode 3 sampai lulus. Berlaku juga di mode `otomatis`. | ya |
 | footage | skrip | pilih otomatis footage nyata berlisensi (skor tag + durasi, tanpa duplikat), unduh, catat lisensi | ya |
 | adegan | skrip | scene footage jadi latar nyata | ya |
+| qa-pra | skrip | `qa.mjs --pra`: `05-qa.pra.json/.md` tanpa pemeriksaan hasil render; **kritis = berhenti** | sampai master dirender |
+| qa-anti-slop | agen (prompt `qa-pra`) | `05-qa.md` dengan keputusan dan `Sidik isi:`; **harus LULUS sebelum render** | sampai laporan LULUS untuk isi sekarang |
 | render | skrip | Master16x9 + semua Shorts di `shorts_cuts` | ya |
 | qa | skrip | `05-qa.auto.json/.md`; **kritis = berhenti** | selalu jalan |
 | paket-review | skrip | `hasil/review/<ID>-<siklus>/index.html` | selalu jalan |
@@ -511,6 +513,10 @@ Status uji (2026-11-27): riset, login T02, dan `analitik.mjs` jalan dengan akun 
 - QA kritis menghentikan pipeline (kode 2). QA otomatis tidak pernah menyatakan LULUS final; ada pemeriksaan manual (dengar audio, tonton, cek fakta, thumbnail).
 - Publish hanya setelah kreator mengetik `SETUJU` untuk siklus itu. Alat publish: alat rilis (YouTube, lihat bagian Alat rilis) atau Upload-Post (lihat bagian Publish).
 - Pengecualian QA dari kreator dicatat di TRACK.md (`pengecualian_qa`) dan tetap tampil sebagai temuan.
+
+## Gate QA sebelum render
+
+Keputusan kreator 2026-11-27: QA anti-slop pindah ke sebelum render penuh agar kegagalan tidak memaksa render ulang. `qa-gate.mjs` membaca baris `Keputusan:` (`LULUS`, `GAGAL`, atau `DILEWATI` atas permintaan kreator) dan `Sidik isi:` di `05-qa.md`. Sidik dihitung dari naskah (tanpa durasi) dan semua `.tsx` siklus; mengubah salah satunya membuat laporan kedaluwarsa. `GAGAL` menghentikan pipeline (kode 2), belum diperiksa berhenti dengan kode 3. Tahap `render` memeriksa gate lagi, juga untuk `--only` dan `--from`; memanggil `render.mjs` langsung tidak diperiksa dan tidak boleh dipakai untuk render penuh sebelum gate lulus. Lapisan visual memakai still; gerak, irama, dan campuran musik dicek manual kreator. Siklus yang sudah punya master tidak terkena gate. QA otomatis sesudah render tetap jalan.
 
 ## Yang dicek QA otomatis
 Durasi ≥ 8:00 (jeda variabel: 0,65 dtk, 1,4 dtk sebelum re-hook/payoff/CTA), jarak re-hook, gaya R3 (G1 scene tanpa shots, G2 shot kurang dari kalimat, G3 shot tanpa show/motion, G4 label tidak di kalimatnya, G5 tanpa anchor, G6 kontrak atau komponen adegan bermasalah, G7 arah visual `03-visual.json` belum siap), footage ≤ ⅓ dan tidak lebih dari 2 scene berurutan, file dan lisensi footage, kelengkapan adegan, pola slop (em dash, kontras palsu, pembuka basa-basi, frasa slop ID), bubble yang mengulang narasi, jumlah sumber, salah ucap lewat transkrip balik, catatan suara, musik latar (berbeda tiap konten, musik mood), thumbnail. Kemasan (lapisan "Kemasan", selalu saran, tidak pernah kritis; `scripts/pipeline/kemasan.mjs`): pasangan judul dan teks thumbnail dilint dengan `title.py` (youtube-agent-skill, MIT, `scripts/vendor/`): terpotong di 40/60 karakter, kata kabur, thumbnail mengulang judul. Chapter dicek terhadap aturan YouTube: mulai 00:00, minimal 3, masing-masing minimal 10 dtk. Analitik retensi setelah tayang: `scripts/pipeline/retensi.mjs` (`instruksi/08`).

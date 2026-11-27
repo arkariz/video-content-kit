@@ -1,10 +1,12 @@
 // Penggerak produksi satu siklus. Pemakaian: node --env-file=.env scripts/pipeline/run.mjs --track T01 --siklus 001 [--from tahap] [--only tahap] [--dry]
 // Tiap tahap idempotent dan bisa dilanjutkan. Tahap LLM butuh CLI `claude` atau agen di sesi Claude Code (kode keluar 3).
 import fs from "node:fs"; import path from "node:path"; import { spawnSync } from "node:child_process";
-import { ROOT, args, resolveCycle, readJson, writeJson } from "../produksi/lib.mjs"; import { runPrompt } from "./llm.mjs"; import { stillBerlaku, stillStatus } from "./still.mjs";
+import { ROOT, args, resolveCycle, readJson, writeJson } from "../produksi/lib.mjs"; import { runPrompt } from "./llm.mjs"; import { stillBerlaku, stillStatus } from "./still.mjs"; import { statusGate } from "./qa-gate.mjs";
 const o = args(); const { dir, cycleId } = resolveCycle(o.track, o.siklus); const trackdir = path.basename(path.dirname(path.dirname(dir)));
 const E = (f) => fs.existsSync(path.join(dir, f)); const node = (s, extra = []) => spawnSync("node", ["--env-file=.env", `scripts/${s}`, "--track", o.track, "--siklus", o.siklus, ...extra], { cwd: ROOT, stdio: "inherit" }).status;
 const script = () => readJson(path.join(dir, "03-script.json"), { scenes: [] });
+const sudahRender = () => fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Master16x9-en.mp4"));
+const gate = () => { const s = statusGate(dir); console.log(`  ${s.pesan}`); return s.kode; };
 const allDur = () => script().scenes.length > 0 && script().scenes.every((s) => s.duration_ms?.en);
 const stages = [
   { id: "riset-brief", llm: "riset-brief", done: () => E("01-riset-viral.md") && E("02-brief.md") },
@@ -17,7 +19,10 @@ const stages = [
   { id: "still", done: () => !stillBerlaku(dir, script()) || stillStatus(dir, script()).ok, run: () => node("pipeline/still.mjs") },
   { id: "footage", done: () => readJson(path.join(dir, "04-assets.json"), { footage: [] }).footage.length > 0, run: () => node("produksi/footage.mjs", ["plan"]) || node("produksi/footage.mjs", ["download"]) },
   { id: "adegan", done: () => E("04-stage.json"), run: () => node("produksi/apply-footage.mjs") },
-  { id: "render", done: () => fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Master16x9-en.mp4")), run: () => { let st = node("produksi/render.mjs", ["--comp", "Master16x9", "--lang", "en"]); for (const c of script().shorts_cuts || []) st = st || node("produksi/render.mjs", ["--comp", "Short9x16", "--lang", "en", "--cut", c.name]); return st; } },
+  // gate sebelum render penuh (keputusan kreator 2026-11-27): pemeriksaan otomatis, lalu laporan anti-slop agen
+  { id: "qa-pra", done: sudahRender, run: () => node("pipeline/qa.mjs", ["--pra"]) },
+  { id: "qa-anti-slop", done: () => sudahRender() || statusGate(dir).kode === 0, run: () => { const k = gate(); if (k !== 3) return k; return runPrompt("qa-pra", { track: o.track, siklus: o.siklus, trackdir }) || gate(); } },
+  { id: "render", done: sudahRender, run: () => { const k = gate(); if (k) return k; /* juga berlaku untuk --only dan --from */ let st = node("produksi/render.mjs", ["--comp", "Master16x9", "--lang", "en"]); for (const c of script().shorts_cuts || []) st = st || node("produksi/render.mjs", ["--comp", "Short9x16", "--lang", "en", "--cut", c.name]); return st; } },
   // musik latar + efek suara (pustaka produksi/sfx/el); selalu diulang dari *.raw.mp4 sehingga aman
   { id: "campur-audio", done: () => !E("04-audio.json"), run: () => node("produksi/mix.mjs") },
   { id: "thumbnail", done: () => ["Thumbnail-A.png", ...(script().shorts_cuts || []).map((c) => `Thumbnail-Short-${c.name}.png`)].every((f) => fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, f))), run: () => node("produksi/render.mjs", ["--thumb"]) },
@@ -39,7 +44,8 @@ for (const s of stages) {
   console.log(`▶ ${s.id}`); const t0 = Date.now();
   const code = s.build?.() ? node("produksi/build-visual.mjs") : s.llm ? runPrompt(s.llm, { track: o.track, siklus: o.siklus, trackdir }) : s.run();
   state.log.push({ tahap: s.id, kode: code, detik: Math.round((Date.now() - t0) / 1000), waktu: new Date().toISOString() }); writeJson(path.join(dir, ".pipeline.json"), state);
-  if (s.id === "qa" && code === 2) { console.log("■ QA GAGAL: berhenti (gate wajib). Lihat 05-qa.auto.md."); process.exit(2); }
+  const lapQA = { qa: "05-qa.auto.md", "qa-pra": "05-qa.pra.md", "qa-anti-slop": "05-qa.md", render: "05-qa.md" }[s.id];
+  if (lapQA && code === 2) { console.log(`■ QA GAGAL: berhenti (gate wajib). Lihat ${lapQA}.`); process.exit(2); }
   if (code === 3 && s.id === "still") { console.log(`■ still menunggu penilaian rubrik dan persetujuan kreator (04-still.json). Cek: node scripts/pipeline/still.mjs --track ${o.track} --siklus ${o.siklus} --cek`); process.exit(3); }
   if (code === 3) { console.log(`■ ${s.id} butuh agen LLM. Jalankan "lanjut ${o.track}" di sesi Claude Code, lalu ulangi.`); process.exit(3); }
   if (code) { console.log(`■ ${s.id} gagal (kode ${code})`); process.exit(1); }

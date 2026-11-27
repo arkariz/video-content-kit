@@ -1,8 +1,9 @@
 // QA otomatis (bagian terprogram dari instruksi/06-qa-anti-slop.md). Menulis 05-qa.auto.json dan 05-qa.auto.md.
 // Satu temuan kritis = GAGAL. Item yang butuh manusia ditandai "manual", tidak pernah dianggap lulus.
+// --pra: sebelum render penuh; pemeriksaan hasil render dilewati dan hasilnya ditulis ke 05-qa.pra.*.
 import fs from "node:fs"; import path from "node:path";
 import { ROOT, args, resolveCycle, readJson, pauseSec } from "../produksi/lib.mjs"; import { cekR3 } from "./qa-r3.mjs"; import { cekKemasan } from "./kemasan.mjs";
-const o = args(); const { dir, scriptPath, assetsPath } = resolveCycle(o.track, o.siklus);
+const o = args(); const pra = !!o.pra; const akhiran = pra ? "pra" : "auto"; const { dir, scriptPath, assetsPath } = resolveCycle(o.track, o.siklus);
 const script = readJson(scriptPath), stage = readJson(path.join(dir, "04-stage.json"), {}), vspec = readJson(path.join(dir, "04-visual-spec.json"), {}), assets = readJson(assetsPath, { footage: [] });
 const trackDir = path.dirname(path.dirname(dir)); const trackMd = fs.readFileSync(path.join(trackDir, "TRACK.md"), "utf8");
 const exceptions = (trackMd.match(/^pengecualian_qa:\s*\[(.*)\]/m)?.[1] || "").split(",").map((s) => s.replace(/["'\s]/g, "")).filter(Boolean);
@@ -68,12 +69,12 @@ if (!assets.voice?.type) add("Audio", "sedang", "A3", "jenis/lisensi suara belum
       if (sama.length) add("Audio", "sedang", "A4", `musik utama sama dengan ${sama.join(", ")}`, "buat musik baru untuk konten ini"); }
   } }
 // thumbnail
-if (!fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Thumbnail-A.png"))) add("Visual", "sedang", "V7", "thumbnail belum dibuat", "render Thumbnail varian A dan B");
+if (!pra && !fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Thumbnail-A.png"))) add("Visual", "sedang", "V7", "thumbnail belum dibuat", "render Thumbnail varian A dan B");
 // thumbnail Shorts dan caption per kalimat: wajib untuk semua siklus selain siklus lama (caption_mode "word")
 { const lama = script.caption_mode === "word";
   for (const c of script.shorts_cuts || []) {
     if (!c.thumbnail && !lama) add("Visual", "kritis", "V8", `Short ${c.name} tanpa "thumbnail" di shorts_cuts`, "tulis thumbnail tegak untuk tiap Short");
-    else if (c.thumbnail && !fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, `Thumbnail-Short-${c.name}.png`))) add("Visual", "sedang", "V8", `thumbnail Short ${c.name} belum dirender`, "render.mjs --thumb");
+    else if (!pra && c.thumbnail && !fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, `Thumbnail-Short-${c.name}.png`))) add("Visual", "sedang", "V8", `thumbnail Short ${c.name} belum dirender`, "render.mjs --thumb");
   } }
 // manual
 // kemasan: lint judul + thumbnail (title.py, saran) dan aturan chapter YouTube
@@ -82,9 +83,9 @@ const manual = ["Dengarkan audio: nada, artefak TTS, pengucapan istilah (kemuncu
 
 const crit = F.filter((f) => f.level === "kritis"); const verdict = crit.length ? "GAGAL" : "LULUS-OTOMATIS (menunggu pemeriksaan manual)";
 const out = { track: o.track, siklus: o.siklus, tanggal: new Date().toISOString().slice(0, 10), durasi: mm(total), footage_pct: +(share * 100).toFixed(1), verdict, temuan: F, manual };
-fs.writeFileSync(path.join(dir, "05-qa.auto.json"), JSON.stringify(out, null, 2) + "\n");
+fs.writeFileSync(path.join(dir, `05-qa.${akhiran}.json`), JSON.stringify(out, null, 2) + "\n");
 const md = `# QA otomatis: siklus ${o.siklus}\n\nTanggal: ${out.tanggal} · Durasi ${out.durasi} · Footage ${out.footage_pct}%\n\n## Keputusan otomatis: ${verdict}\n\nQA otomatis tidak pernah menyatakan LULUS final. Item manual di bawah wajib dicek kreator.\n\n| # | Lapisan | Tingkat | Temuan | Perbaikan |\n| --- | --- | --- | --- | --- |\n${F.map((f) => `| ${f.id} | ${f.layer} | ${f.level} | ${f.msg} | ${f.fix} |`).join("\n") || "| - | - | - | tidak ada | - |"}\n\n## Pemeriksaan manual\n\n${manual.map((m) => `- [ ] ${m}`).join("\n")}\n`;
-fs.writeFileSync(path.join(dir, "05-qa.auto.md"), md);
-console.log(`QA otomatis ${o.track}/${o.siklus}: ${verdict} | durasi ${out.durasi} | footage ${out.footage_pct}% | temuan: kritis ${crit.length}, sedang ${F.filter((f) => f.level === "sedang").length}, kecil ${F.filter((f) => f.level === "kecil").length}`);
+fs.writeFileSync(path.join(dir, `05-qa.${akhiran}.md`), md);
+console.log(`QA otomatis${pra ? " pra-render" : ""} ${o.track}/${o.siklus}: ${verdict} | durasi ${out.durasi} | footage ${out.footage_pct}% | temuan: kritis ${crit.length}, sedang ${F.filter((f) => f.level === "sedang").length}, kecil ${F.filter((f) => f.level === "kecil").length}`);
 for (const f of F) console.log(` [${f.level}] ${f.id} ${f.layer}: ${f.msg}`);
 process.exit(crit.length ? 2 : 0);
