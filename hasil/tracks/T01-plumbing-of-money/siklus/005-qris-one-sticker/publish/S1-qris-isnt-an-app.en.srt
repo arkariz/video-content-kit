@@ -1,0 +1,27 @@
+1
+00:00:00,100 --> 00:00:03,335
+Many people think Indonesia's QRIS
+code is an app you download.
+
+2
+00:00:03,335 --> 00:00:07,075
+It's a rulebook for how the code is
+written and how the companies on each
+
+3
+00:00:07,075 --> 00:00:07,780
+side connect.
+
+4
+00:00:08,900 --> 00:00:12,800
+From 2020, payment codes at
+Indonesian shops had to follow it.
+
+5
+00:00:13,680 --> 00:00:17,840
+A shop now signs up with one provider,
+and any provider's app can pay it.
+
+6
+00:00:18,740 --> 00:00:20,760
+The printed sticker itself is free.

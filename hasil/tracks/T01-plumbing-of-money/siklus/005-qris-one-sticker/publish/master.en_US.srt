@@ -1,0 +1,694 @@
+1
+00:00:00,120 --> 00:00:02,480
+You scan a paper square at a
+noodle stall in Bali,
+
+2
+00:00:03,020 --> 00:00:04,900
+and your bank app has
+never met this stall.
+
+3
+00:00:05,700 --> 00:00:07,640
+Two seconds later, the
+noodles are paid for.
+
+4
+00:00:08,833 --> 00:00:13,909
+That square is called QRIS, and almost
+seventy-two million people in Indonesia
+
+5
+00:00:13,909 --> 00:00:14,744
+pay with it.
+
+6
+00:00:14,744 --> 00:00:16,992
+Fifty-one million shops accept it.
+
+7
+00:00:16,992 --> 00:00:21,613
+In October, transactions were up
+seventy-one percent on a year earlier.
+
+8
+00:00:23,500 --> 00:00:25,640
+So how does one sticker
+work with every app?
+
+9
+00:00:26,200 --> 00:00:28,400
+And how did paying this way
+start working in Bangkok,
+
+10
+00:00:28,500 --> 00:00:29,260
+Tokyo, and Seoul?
+
+11
+00:00:30,400 --> 00:00:31,408
+Go back to 2019.
+
+12
+00:00:31,408 --> 00:00:35,261
+Bank Indonesia counted twenty-six
+companies running QR payments,
+
+13
+00:00:35,261 --> 00:00:36,800
+each with its own format.
+
+14
+00:00:37,880 --> 00:00:41,100
+A shop that wanted every customer had
+to put up a code for each one.
+
+15
+00:00:42,060 --> 00:00:44,500
+Scan with the wrong app, and
+the code meant nothing.
+
+16
+00:00:45,613 --> 00:00:49,233
+Think of each app as a plug and
+each shop's code as a socket.
+
+17
+00:00:50,133 --> 00:00:53,753
+Every app had its own plug shape, so
+every shop needed a wall of different
+
+18
+00:00:53,853 --> 00:00:54,293
+sockets.
+
+19
+00:00:55,413 --> 00:00:58,835
+On August seventeenth, 2019,
+Indonesia's Independence Day,
+
+20
+00:00:58,835 --> 00:01:03,011
+the central bank and the payment
+industry launched one socket shape for
+
+21
+00:01:03,011 --> 00:01:03,591
+everyone.
+
+22
+00:01:03,591 --> 00:01:04,809
+They called it QRIS.
+
+23
+00:01:05,967 --> 00:01:09,202
+Many people think Indonesia's QRIS
+code is an app you download.
+
+24
+00:01:09,202 --> 00:01:12,942
+It's a rulebook for how the code is
+written and how the companies on each
+
+25
+00:01:12,942 --> 00:01:13,647
+side connect.
+
+26
+00:01:14,767 --> 00:01:18,667
+From 2020, payment codes at
+Indonesian shops had to follow it.
+
+27
+00:01:19,547 --> 00:01:23,707
+A shop now signs up with one provider,
+and any provider's app can pay it.
+
+28
+00:01:24,607 --> 00:01:26,627
+The printed sticker itself is free.
+
+29
+00:01:28,433 --> 00:01:30,340
+Now follow one scan, on one map.
+
+30
+00:01:30,340 --> 00:01:33,691
+Your app sits on the left, the
+stall's bank on the right,
+
+31
+00:01:33,691 --> 00:01:35,771
+and in the middle there's a switch.
+
+32
+00:01:36,913 --> 00:01:38,933
+A switch is the wiring behind the wall.
+
+33
+00:01:39,533 --> 00:01:42,973
+It's a company that passes payment
+messages between providers that aren't
+
+34
+00:01:43,053 --> 00:01:44,353
+wired to each other directly.
+
+35
+00:01:45,487 --> 00:01:48,407
+When your camera reads the
+square, it reads plain text.
+
+36
+00:01:49,347 --> 00:01:52,667
+Inside is which shop this is, which
+provider holds its account,
+
+37
+00:01:53,247 --> 00:01:55,047
+and a country code, Indonesia.
+
+38
+00:01:56,387 --> 00:01:59,647
+The amount isn't in there, which is why
+the sticker never has to change.
+
+39
+00:02:00,787 --> 00:02:03,507
+You type fifty thousand
+rupiah and your PIN.
+
+40
+00:02:03,507 --> 00:02:07,497
+Your app checks your balance, then
+sends a message to the switch:
+
+41
+00:02:07,497 --> 00:02:10,761
+take fifty thousand from this
+person, for this stall.
+
+42
+00:02:11,900 --> 00:02:15,720
+The switch reads which provider holds the
+stall's account and forwards the
+
+43
+00:02:15,780 --> 00:02:16,340
+message there.
+
+44
+00:02:17,340 --> 00:02:19,600
+The stall's bank checks the
+account and says yes.
+
+45
+00:02:20,680 --> 00:02:24,240
+A tick appears on your phone, and the
+owner's phone chimes on the counter.
+
+46
+00:02:25,160 --> 00:02:28,220
+The owner sees the amount and the time
+without touching a card machine.
+
+47
+00:02:29,020 --> 00:02:32,460
+Providers build that whole round trip to
+finish while you're still holding
+
+48
+00:02:32,500 --> 00:02:32,960
+your phone.
+
+49
+00:02:34,780 --> 00:02:36,885
+But who pays for those two seconds?
+
+50
+00:02:36,885 --> 00:02:41,560
+In our card video, a hundred-dollar tap cost
+the shop two dollars seventy-five.
+
+51
+00:02:42,733 --> 00:02:45,413
+The fee a shop pays to accept
+a payment has a name,
+
+52
+00:02:45,873 --> 00:02:48,213
+the merchant discount rate, or MDR.
+
+53
+00:02:48,793 --> 00:02:52,353
+It's a small slice taken off each sale
+before the money reaches the shop.
+
+54
+00:02:53,413 --> 00:02:57,900
+Since October 2026, a QRIS payment up to
+a hundred thousand rupiah costs
+
+55
+00:02:57,900 --> 00:02:59,559
+most shops nothing at all.
+
+56
+00:02:59,559 --> 00:03:03,553
+The smallest businesses pay nothing
+up to five hundred thousand.
+
+57
+00:03:04,680 --> 00:03:07,224
+Above that, the fee is still
+under one percent.
+
+58
+00:03:07,224 --> 00:03:09,820
+And the shop isn't allowed
+to pass it on to you.
+
+59
+00:03:10,987 --> 00:03:14,130
+So why would anyone in the
+middle take almost nothing?
+
+60
+00:03:14,130 --> 00:03:16,873
+There's one thing to know
+about Bank Indonesia:
+
+61
+00:03:16,873 --> 00:03:19,673
+it wants small shops inside
+the digital economy,
+
+62
+00:03:19,673 --> 00:03:21,727
+and it treats QRIS as their way in.
+
+63
+00:03:22,813 --> 00:03:26,433
+Every scan also leaves a record of
+what a shop sells and how often.
+
+64
+00:03:27,453 --> 00:03:30,833
+Bank Indonesia wants those records to
+help small shops get loans,
+
+65
+00:03:31,353 --> 00:03:32,733
+even with no credit history.
+
+66
+00:03:33,673 --> 00:03:37,513
+Three years of daily chimes at a noodle
+stall is a sales history a bank
+
+67
+00:03:37,573 --> 00:03:38,013
+can read.
+
+68
+00:03:39,167 --> 00:03:41,007
+For the apps, each scan is a visit.
+
+69
+00:03:41,807 --> 00:03:45,267
+You open them, you see your balance, and
+you might stay for the next thing
+
+70
+00:03:45,307 --> 00:03:45,767
+they sell.
+
+71
+00:03:46,900 --> 00:03:49,438
+So for a
+fifty-thousand-rupiah bowl of noodles,
+
+72
+00:03:49,438 --> 00:03:51,340
+the stall keeps all fifty thousand.
+
+73
+00:03:51,340 --> 00:03:55,565
+With the cut from our card example, the same
+bowl would lose about one thousand
+
+74
+00:03:55,565 --> 00:03:56,675
+four hundred rupiah.
+
+75
+00:03:57,833 --> 00:04:01,110
+That's how a printed square
+reached fifty-one million shops,
+
+76
+00:04:01,110 --> 00:04:03,851
+more than one for every six
+people in the country.
+
+77
+00:04:03,851 --> 00:04:06,053
+Nearly all of them are small businesses.
+
+78
+00:04:07,147 --> 00:04:11,187
+And the switches carrying those messages
+are Indonesian companies licensed
+
+79
+00:04:11,227 --> 00:04:12,027
+by the central bank.
+
+80
+00:04:12,807 --> 00:04:15,267
+Card payments inside Indonesia
+run through them too.
+
+81
+00:04:17,153 --> 00:04:19,673
+That last part is what the
+United States didn't like.
+
+82
+00:04:20,780 --> 00:04:25,413
+In March 2025, the US trade office put
+QRIS in its yearly report on trade
+
+83
+00:04:25,413 --> 00:04:26,039
+barriers.
+
+84
+00:04:26,039 --> 00:04:29,232
+It said foreign companies,
+American ones included,
+
+85
+00:04:29,232 --> 00:04:30,860
+weren't consulted enough.
+
+86
+00:04:31,967 --> 00:04:35,347
+The same report pointed at the rule that
+domestic card payments must go
+
+87
+00:04:35,387 --> 00:04:36,967
+through switches inside Indonesia.
+
+88
+00:04:37,967 --> 00:04:39,967
+Global card networks can't
+run that part there.
+
+89
+00:04:41,067 --> 00:04:43,576
+Look at who designed that socket.
+
+90
+00:04:43,576 --> 00:04:48,890
+The socket shape QRIS uses comes from
+EMVCo, a standards body set up by
+
+91
+00:04:48,890 --> 00:04:51,104
+Europay, Mastercard and Visa.
+
+92
+00:04:52,200 --> 00:04:54,040
+Bank Indonesia's reply was polite.
+
+93
+00:04:54,840 --> 00:04:57,620
+It's open to working with any
+country, the US included.
+
+94
+00:04:58,733 --> 00:05:01,293
+To be fair to the card networks,
+they aren't losing the world.
+
+95
+00:05:02,333 --> 00:05:06,273
+Visa and Mastercard still lead in
+Indonesian credit cards and in payments
+
+96
+00:05:06,313 --> 00:05:07,093
+between countries.
+
+97
+00:05:08,180 --> 00:05:11,222
+Outside a handful of countries,
+your QRIS app doesn't work,
+
+98
+00:05:11,222 --> 00:05:12,539
+and your card still does.
+
+99
+00:05:14,367 --> 00:05:18,009
+Now the second question: how
+does this cross borders?
+
+100
+00:05:18,009 --> 00:05:22,460
+In August 2022, Thailand became the
+first country linked to QRIS,
+
+101
+00:05:22,460 --> 00:05:25,087
+then Malaysia in 2023, then Singapore.
+
+102
+00:05:26,233 --> 00:05:30,913
+Japan joined in August 2025, then
+South Korea and China in 2026.
+
+103
+00:05:31,353 --> 00:05:32,413
+That makes six countries.
+
+104
+00:05:33,520 --> 00:05:36,585
+When a tourist from Thailand pays
+a Bali stall with QRIS,
+
+105
+00:05:36,585 --> 00:05:38,858
+the money is never turned into US dollars.
+
+106
+00:05:38,858 --> 00:05:42,400
+Most people would guess it gets
+converted somewhere in the middle.
+
+107
+00:05:43,467 --> 00:05:46,147
+That tourist walks up to the
+same noodle stall in Bali.
+
+108
+00:05:47,027 --> 00:05:50,407
+The tourist scans the same sticker
+using a Thai banking app.
+
+109
+00:05:51,533 --> 00:05:55,093
+The Thai app sees that the code is Indonesian
+and sends the payment to Thailand's
+
+110
+00:05:55,153 --> 00:05:55,473
+switch.
+
+111
+00:05:56,513 --> 00:05:58,913
+That switch passes it across
+to Indonesia's switch,
+
+112
+00:05:59,293 --> 00:06:02,273
+which takes it to the stall's bank
+down the same road as before.
+
+113
+00:06:03,400 --> 00:06:06,700
+Before typing a PIN, the tourist
+sees the price in baht.
+
+114
+00:06:07,600 --> 00:06:11,180
+Then the baht balance goes down, and
+the stall still receives rupiah.
+
+115
+00:06:12,267 --> 00:06:16,747
+Behind the scenes, a few appointed banks
+in each country swap rupiah and
+
+116
+00:06:16,847 --> 00:06:18,147
+baht with each other directly.
+
+117
+00:06:19,067 --> 00:06:21,627
+That final handover between
+banks is called settlement,
+
+118
+00:06:22,147 --> 00:06:24,347
+and here it happens in the
+two local currencies.
+
+119
+00:06:25,453 --> 00:06:26,233
+That's the adapter.
+
+120
+00:06:27,053 --> 00:06:30,113
+Two countries with different sockets
+joined through their switches,
+
+121
+00:06:30,473 --> 00:06:31,533
+each keeping its own money.
+
+122
+00:06:32,353 --> 00:06:33,393
+It works the other way too.
+
+123
+00:06:34,293 --> 00:06:37,353
+In Bangkok, you scan a Thai code
+with your Indonesian app,
+
+124
+00:06:37,813 --> 00:06:39,573
+and your rupiah balance goes down.
+
+125
+00:06:41,413 --> 00:06:43,426
+And money is mostly flowing in.
+
+126
+00:06:43,426 --> 00:06:47,952
+Up to July 2026, visitors spent five
+point nine trillion rupiah through
+
+127
+00:06:47,952 --> 00:06:52,478
+QRIS in Indonesia, more than three times
+what Indonesians spent with it
+
+128
+00:06:52,478 --> 00:06:52,981
+abroad.
+
+129
+00:06:52,981 --> 00:06:56,565
+Most of those visitors come from
+Malaysia and Singapore,
+
+130
+00:06:56,565 --> 00:06:59,772
+paying from ringgit and
+Singapore dollar accounts.
+
+131
+00:07:00,913 --> 00:07:01,986
+It's still small.
+
+132
+00:07:01,986 --> 00:07:05,623
+When Japan joined, only
+thirty-five shops there accepted it,
+
+133
+00:07:05,623 --> 00:07:10,213
+and only Indonesians could pay that way,
+not Japanese visitors to Indonesia.
+
+134
+00:07:11,333 --> 00:07:15,033
+Next, Bank Indonesia is in talks
+with India, Saudi Arabia,
+
+135
+00:07:15,273 --> 00:07:16,673
+Vietnam, and Australia.
+
+136
+00:07:17,573 --> 00:07:22,053
+In Saudi Arabia, the idea is to let
+Indonesian pilgrims on Hajj and Umrah
+
+137
+00:07:22,153 --> 00:07:22,613
+pay with it.
+
+138
+00:07:23,727 --> 00:07:26,127
+And six central banks,
+Indonesia's among them,
+
+139
+00:07:26,547 --> 00:07:29,187
+are building a shared hub for
+their instant payment systems.
+
+140
+00:07:30,067 --> 00:07:33,267
+It's still being built, but one connection
+there could reach several countries
+
+141
+00:07:33,287 --> 00:07:33,747
+at once.
+
+142
+00:07:35,600 --> 00:07:37,058
+So how powerful is QRIS?
+
+143
+00:07:37,058 --> 00:07:41,374
+At home, it put digital payments in
+fifty-one million shops for the price
+
+144
+00:07:41,374 --> 00:07:42,600
+of a printed square.
+
+145
+00:07:44,480 --> 00:07:47,700
+Abroad, it's an adapter, and still
+a small one next to Visa.
+
+146
+00:07:48,500 --> 00:07:51,700
+Each country plugged in gives the next
+tourist one more place to pay.
+
+147
+00:07:53,567 --> 00:07:56,587
+The stall in Bali still has the same
+paper square on its counter.
+
+148
+00:07:57,727 --> 00:08:01,347
+Now tourists pay it from their own apps,
+and the owner just hears the chime.
+
+149
+00:08:03,200 --> 00:08:07,500
+Next, we follow a bank wire across borders
+the old way and see what it actually
+
+150
+00:08:07,560 --> 00:08:07,900
+sends.

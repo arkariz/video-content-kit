@@ -1,0 +1,33 @@
+1
+00:00:00,000 --> 00:00:03,475
+Banyak orang mengira kode QRIS Indonesia
+itu aplikasi yang bisa diunduh.
+
+2
+00:00:03,525 --> 00:00:05,874
+QRIS adalah buku aturan
+tentang cara kode ditulis
+
+3
+00:00:05,924 --> 00:00:08,077
+dan cara perusahaan di
+kedua sisi tersambung.
+
+4
+00:00:08,800 --> 00:00:12,916
+Sejak 2020, kode pembayaran di
+toko-toko Indonesia wajib mengikutinya.
+
+5
+00:00:12,966 --> 00:00:16,011
+Sekarang toko cukup mendaftar
+ke satu penyelenggara,
+
+6
+00:00:16,061 --> 00:00:19,165
+dan aplikasi penyelenggara mana
+pun bisa membayarnya.
+
+7
+00:00:19,215 --> 00:00:21,010
+Stiker cetaknya sendiri gratis.

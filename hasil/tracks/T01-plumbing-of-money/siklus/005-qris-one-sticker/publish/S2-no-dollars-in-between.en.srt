@@ -1,0 +1,51 @@
+1
+00:00:00,120 --> 00:00:03,185
+When a tourist from Thailand pays
+a Bali stall with QRIS,
+
+2
+00:00:03,185 --> 00:00:05,458
+the money is never turned into US dollars.
+
+3
+00:00:05,458 --> 00:00:09,000
+Most people would guess it gets
+converted somewhere in the middle.
+
+4
+00:00:10,067 --> 00:00:13,627
+The Thai app sees that the code is Indonesian
+and sends the payment to Thailand's
+
+5
+00:00:13,687 --> 00:00:14,007
+switch.
+
+6
+00:00:15,047 --> 00:00:17,447
+That switch passes it across
+to Indonesia's switch,
+
+7
+00:00:17,827 --> 00:00:20,807
+which takes it to the stall's bank
+down the same road as before.
+
+8
+00:00:21,933 --> 00:00:26,413
+Behind the scenes, a few appointed banks
+in each country swap rupiah and
+
+9
+00:00:26,513 --> 00:00:27,813
+baht with each other directly.
+
+10
+00:00:28,733 --> 00:00:31,293
+That final handover between
+banks is called settlement,
+
+11
+00:00:31,813 --> 00:00:34,013
+and here it happens in the
+two local currencies.

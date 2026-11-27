@@ -1,0 +1,53 @@
+1
+00:00:00,000 --> 00:00:02,955
+Saat turis dari Thailand
+membayar warung di Bali dengan
+
+2
+00:00:03,005 --> 00:00:05,468
+QRIS, uangnya tidak pernah
+diubah ke dolar AS.
+
+3
+00:00:05,518 --> 00:00:09,238
+Kebanyakan orang menebak uangnya
+dikonversi di suatu titik di tengah.
+
+4
+00:00:09,967 --> 00:00:12,563
+Aplikasi Thailand melihat
+kodenya dari Indonesia
+
+5
+00:00:12,613 --> 00:00:14,934
+dan mengirim pembayaran ke
+switch Thailand.
+
+6
+00:00:14,984 --> 00:00:18,462
+Switch itu meneruskannya ke switch
+Indonesia, yang membawanya ke
+
+7
+00:00:18,512 --> 00:00:21,109
+bank warung, lewat jalan
+yang sama seperti tadi.
+
+8
+00:00:21,833 --> 00:00:24,876
+Di balik layar, beberapa bank
+yang ditunjuk di tiap
+
+9
+00:00:24,926 --> 00:00:28,151
+negara saling menukar rupiah
+dan baht secara langsung.
+
+10
+00:00:28,201 --> 00:00:31,728
+Serah terima terakhir antarbank
+itu disebut settlement, dan
+
+11
+00:00:31,778 --> 00:00:34,275
+di sini terjadi dalam dua mata uang lokal.
