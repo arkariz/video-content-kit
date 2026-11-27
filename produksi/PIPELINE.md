@@ -429,7 +429,7 @@ node --env-file=.env scripts/youtube/analitik.mjs --track T02 [--hari 28] [--vid
 
 **Riset** (`instruksi/03`): view >= 3x median sampai 10 video terakhir channel, 90 hari. Hasil di folder siklus (`01-outlier-youtube.md`), `validasi/`, atau `00-riset-niche/`. Tiap `--q` memakai satu panggilan `search.list`, yang jatah hariannya terpisah (default 100; panggilan lain 10.000 unit per hari; diperiksa 2026-11-27 di [determine_quota_cost](https://developers.google.com/youtube/v3/determine_quota_cost)).
 
-**Analitik** (`instruksi/08`): hasil di `tracks/<ID>/analitik/youtube-<tanggal>.md`. `--retensi` menulis CSV retensi per video dan mencetak perintah `retensi.mjs`. Pendapatan tidak diminta (scope hanya `youtube.readonly` dan `yt-analytics.readonly`). Format Short ditebak dari durasi (maksimal 3 menit). Viewed vs swiped away tidak diambil; isi dari YouTube Studio.
+**Analitik** (`instruksi/08`): hasil di `tracks/<ID>/analitik/youtube-<tanggal>.md`. `--retensi` menulis CSV retensi per video dan mencetak perintah `retensi.mjs`. Video dicocokkan ke siklus lewat ID hasil publish, lalu judul (`03-script.json`, `06-publish.json`) tanpa hashtag di akhir; judul yang diubah saat unggah tampil sebagai `?`. Pendapatan tidak diminta (scope hanya `youtube.readonly` dan `yt-analytics.readonly`). Format Short ditebak dari durasi (maksimal 3 menit). Viewed vs swiped away tidak diambil; isi dari YouTube Studio.
 
 | Bagian laporan | Sumber |
 | --- | --- |
@@ -440,7 +440,7 @@ node --env-file=.env scripts/youtube/analitik.mjs --track T02 [--hari 28] [--vid
 
 **CTR.** `auth.mjs` atau `analitik.mjs` membuat job laporan sekali per channel. Menurut [dokumentasi](https://developers.google.com/youtube/reporting/v1/reports), laporan pertama muncul dalam sekitar 48 jam, mencakup 30 hari sebelum job dibuat, dan hanya disimpan Google 30 sampai 60 hari. Jalankan `analitik.mjs` minimal sekali sebulan; data diarsipkan di `hasil/youtube-reach/<channelId>.json` (ikut di-commit). Dokumentasi tidak menyebut skala CTR maupun apakah kata kunci pencarian didukung untuk `YT_SEARCH`: cocokkan satu angka CTR dengan Studio, dan bila API menolak sebuah query, laporan tetap dibuat dengan catatan.
 
-Status uji: baru diuji dengan respons API tiruan (2026-11-27), belum dengan akun sungguhan.
+Status uji (2026-11-27): riset, login T02, dan `analitik.mjs` jalan dengan akun sungguhan. Retensi, CTR, trafik, negara, dan kata kunci belum punya data, jadi baru teruji dengan respons API tiruan.
 
 ## Gate yang tidak bisa dilewati otomatis
 - Rencana validasi terkunci, jadwal tayang, dan batas kapasitas dibaca dari file, tidak diubah.

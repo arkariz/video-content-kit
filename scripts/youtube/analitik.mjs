@@ -19,7 +19,8 @@ const harap = process.env[channelVar(track.id)];
 if (harap && harap !== channel.id) throw new Error(`token ${track.id} milik channel ${channel.id}, tetapi ${channelVar(track.id)} = ${harap}; jalankan ulang auth.mjs --track ${track.id}`);
 
 // Peta video -> siklus: ID dari hasil publish, lalu judul persis dari 06-publish.json dan 03-script.json.
-const normal = (s) => String(s ?? "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+// Hashtag di akhir judul (juga "# tag") ditambahkan saat unggah manual, jadi diabaikan saat mencocokkan.
+const normal = (s) => String(s ?? "").replace(/(\s*#\s*[\p{L}\p{N}_]+)+\s*$/u, "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 const perId = new Map(), perJudul = new Map(); const sdir = path.join(track.dir, "siklus");
 for (const d of fs.existsSync(sdir) ? fs.readdirSync(sdir).filter((x) => /^\d{3}/.test(x)).sort() : []) {
   const siklus = d.slice(0, 3); const pub = readJson(path.join(sdir, d, "06-publish.json"), {}); const script = readJson(path.join(sdir, d, "03-script.json"), {});
