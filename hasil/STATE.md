@@ -97,3 +97,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-27: Uji unggah privat YouTube T01 lewat alat rilis berhasil (Short S1 T01-005, video WyvIPQTGoTM): metadata, subtitle en dan id, thumbnail. Jadwal, playlist, komentar, dan master belum teruji. Video uji perlu dihapus kreator di Studio.
 - 2026-11-27: Penjadwal Mac alat rilis teruji sungguhan (komentar otomatis pada skenario uji T01). Persiapan rilis otomatis ditambahkan di akhir pipeline (subtitle, rencana, teks agen).
 - 2026-11-27: Adaptor Facebook alat rilis dibangun (master, Reel, subtitle, sampul, komentar). Baru diuji dengan API tiruan; kreator perlu menyiapkan aplikasi Meta dan menghubungkan Page.
+- 2026-11-27: Page Facebook T01 terhubung ke alat rilis; uji Reel draf berhasil (subtitle dan sampul). Privacy Policy dan Terms dibuat di hasil/legal/, belum dipublikasikan; aplikasi Meta belum di-Go live.

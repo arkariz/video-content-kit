@@ -120,6 +120,26 @@
     }
   ],
   "persetujuan": null,
-  "hasil": {},
-  "checklist": {}
+  "hasil": {
+    "S1-qris-isnt-an-app-uji": {
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "1030012736809049",
+        "selesai": {
+          "subtitle-en": "2026-11-27T08:26:41.424Z",
+          "subtitle-id": "2026-11-27T08:26:43.377Z",
+          "sampul": "2026-11-27T08:26:46.500Z"
+        },
+        "url": "https://www.facebook.com/reel/1030012736809049/",
+        "publishAt": null,
+        "privasi": "private",
+        "diunggah": "2026-11-27T08:26:40.096Z",
+        "galat": []
+      }
+    }
+  },
+  "checklist": {},
+  "facebook": {
+    "aktif": true
+  }
 }

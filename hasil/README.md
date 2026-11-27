@@ -8,6 +8,7 @@ hasil/
 ├── learnings-global.md         # pelajaran yang terbukti berlaku lintas track
 ├── catatan-verifikasi.md       # verifikasi ulang fakta platform (dibuat bila perlu)
 ├── youtube-reach/              # arsip impressions dan CTR per channel, dibuat scripts/youtube/analitik.mjs
+├── legal/                      # privacy policy dan terms aplikasi Meta (diunggah kreator ke web publik)
 ├── 00-riset-niche/
 │   ├── profil-kreator.md
 │   ├── kandidat-niche.md       # 10-15 kandidat + data mentah
