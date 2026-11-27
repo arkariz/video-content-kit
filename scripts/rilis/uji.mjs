@@ -48,7 +48,7 @@ globalThis.fetch = async (url, init = {}) => {
 };
 
 const inti = await import("./inti.mjs"); const { kirim, pascaTayang, CHUNK } = await import("./youtube.mjs"); const { buatServer } = await import("./dashboard.mjs");
-const diam = { log: () => {} }; let lulus = 0;
+const diam = { log: () => {}, tunggu: 0 }; let lulus = 0;
 const uji = async (nama, fn) => { await fn(); lulus++; console.log("✓", nama); };
 try {
   const c = inti.cari("T09", "001"); let r = inti.buatRencana(c);
@@ -76,7 +76,7 @@ try {
     assert.ok(UKURAN > CHUNK); yt.putus = 1; await kirim(c, diam);
     const [m, s] = Object.values(yt.video); assert.equal(m.diterima, UKURAN); assert.equal(s.diterima, UKURAN);
     assert.equal(m.body.status.privacyStatus, "private"); assert.equal(m.body.status.publishAt, `${besok}T03:00:00.000Z`);
-    assert.equal(m.body.status.containsSyntheticMedia, true); assert.equal(m.body.paidProductPlacementDetails.hasPaidProductPlacement, false); assert.equal(m.body.localizations.id.title, "Judul ID");
+    assert.ok(!("containsSyntheticMedia" in m.body.status)); assert.equal(m.body.paidProductPlacementDetails.hasPaidProductPlacement, false); assert.equal(m.body.localizations.id.title, "Judul ID");
     assert.equal(yt.subtitle.length, 1); assert.deepEqual(yt.isiPlaylist, [m.id]); assert.deepEqual(yt.thumbnail, [m.id]); assert.equal(yt.komentar.length, 0);
     assert.ok(!fs.existsSync(path.join(c.dir, ".rilis-sesi.json"))); assert.ok(!fs.existsSync(path.join(c.dir, ".rilis.lock")));
   });
@@ -128,6 +128,12 @@ try {
     assert.ok(yt.params.every((p) => p === "false")); assert.equal(yt.playlist[0].status.privacyStatus, "unlisted");
     const baris = []; await periksa(s, { log: (v) => baris.push(v) }); assert.ok(baris.some((v) => v.startsWith("✓ master: jadwal terpasang")), baris.join("\n"));
     assert.throws(() => hapusSkenario(c), /hanya untuk siklus uji/); hapusSkenario(s); assert.ok(!fs.existsSync(s.dir));
+  });
+  await uji("kirim menunggu pemrosesan lalu memasang thumbnail Short", async () => {
+    inti.ubah(c, (x) => { x.kunci_manual = null; x.hasil = {}; x.items.forEach((i) => (i.jadwal = "")); }); inti.setujui(c, "SETUJU", "uji");
+    yt.proses = "processing"; yt.thumbnail.length = 0; setTimeout(() => (yt.proses = "succeeded"), 60);
+    await kirim(c, { log: () => {}, tunggu: 3000, selang: 10 });
+    const h = inti.muat(c).hasil; assert.equal(yt.thumbnail.length, 2); assert.ok(h.S1.youtube.selesai.thumbnail);
   });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;

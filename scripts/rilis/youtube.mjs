@@ -33,11 +33,12 @@ export async function klien(track) {
   return { auth, channel, panggil, get, post };
 }
 
+// "Penggunaan AI" (containsSyntheticMedia) sengaja tidak dikirim: keputusan kreator 2026-11-27, dibiarkan kosong.
 export function metadata(r, i, uji) {
   const y = r.youtube; const t = i.terjemahan?.judul ? i.terjemahan : null; const terjadwal = !uji && i.jadwal;
   const body = {
     snippet: { title: uji ? `[UJI] ${i.judul}`.slice(0, 100) : i.judul, description: i.deskripsi, tags: i.tag, categoryId: y.kategori, defaultLanguage: y.bahasa, defaultAudioLanguage: y.bahasa },
-    status: { privacyStatus: uji || terjadwal ? "private" : "public", selfDeclaredMadeForKids: y.untuk_anak, containsSyntheticMedia: y.label_ai, embeddable: true, ...(terjadwal && { publishAt: waktu(i.jadwal).toISOString() }) },
+    status: { privacyStatus: uji || terjadwal ? "private" : "public", selfDeclaredMadeForKids: y.untuk_anak, embeddable: true, ...(terjadwal && { publishAt: waktu(i.jadwal).toISOString() }) },
     paidProductPlacementDetails: { hasPaidProductPlacement: y.promosi_berbayar },
     ...(t && { localizations: { id: { title: t.judul, description: t.deskripsi || i.deskripsi } } }),
   };
@@ -113,16 +114,33 @@ async function lengkapi(yt, r, i, h, catat, { uji, log }) {
   for (const s of i.subtitle) await langkah(`subtitle-${s.bahasa}`, `subtitle ${s.bahasa}`, () => subtitle(yt, h.videoId, s.bahasa, path.join(ROOT, s.file)));
   if (i.thumbnail) await langkah("thumbnail", "thumbnail", async () => {
     // thumbnail Shorts hanya diterima setelah pemrosesan selesai
-    if (i.nama !== "master" && !(await diproses(yt, h.videoId))) { log(`${i.nama}: thumbnail menunggu pemrosesan selesai (jalankan pasca-tayang nanti)`); return false; }
+    if (i.nama !== "master" && !(await diproses(yt, h.videoId))) { log(`${i.nama}: thumbnail menunggu pemrosesan selesai`); return false; }
     await thumbnail(yt, h.videoId, path.join(ROOT, i.thumbnail));
   });
   h.galat = galatList; catat(h);
 }
 
+/** Thumbnail Shorts baru diterima setelah pemrosesan selesai: tunggu di sini agar tidak tertinggal memakai frame otomatis. */
+async function thumbnailTertunda(yt, c, r, daftar, { uji, log, tunggu, selang }) {
+  const tertunda = () => daftar.filter(([i, k]) => { const h = muat(c).hasil[k]?.youtube; return i.thumbnail && h?.sumber === "alat" && !h.selesai?.thumbnail && !h.galat?.some((g) => g.startsWith("thumbnail")); });
+  const batas = Date.now() + tunggu; let sisa = tertunda();
+  if (sisa.length && tunggu > 0) log(`menunggu pemrosesan YouTube untuk memasang thumbnail: ${sisa.map(([i]) => i.nama).join(", ")}`);
+  while (sisa.length && Date.now() < batas) {
+    await jeda(selang);
+    for (const [i, k] of sisa) {
+      const h = muat(c).hasil[k].youtube;
+      try { if (!(await diproses(yt, h.videoId))) continue; } catch (e) { log(`${i.nama}: status pemrosesan belum terbaca (${e.message})`); continue; }
+      await lengkapi(yt, r, i, h, (v) => ubah(c, (x) => { x.hasil[k].youtube = v; }), { uji, log: (s) => !s.includes("menunggu pemrosesan") && log(s) });
+    }
+    sisa = tertunda();
+  }
+  if (sisa.length) log(`THUMBNAIL BELUM TERPASANG: ${sisa.map(([i]) => i.nama).join(", ")}. Klik "Jalankan pasca-tayang" beberapa menit lagi.`);
+}
+
 const wajibSetuju = (r) => { if (!disetujui(r)) throw new Error(r.persetujuan ? "isi rencana atau file berubah setelah disetujui; setujui ulang" : "belum disetujui kreator (ketik SETUJU)"); };
 
 /** Unggah semua item yang belum ada di YouTube. uji: satu Short, privat, tanpa jadwal, playlist, atau komentar. */
-export function kirim(c, { uji = false, log = console.log } = {}) {
+export function kirim(c, { uji = false, log = console.log, tunggu = 10 * 60e3, selang = 15e3 } = {}) {
   return terkunci(c, async () => {
     const r = muat(c); if (!r) throw new Error("rencana belum dibuat");
     if (!uji) { wajibSetuju(r); if (r.kunci_manual) throw new Error(`siklus dikunci untuk unggah (${r.kunci_manual}); komentar tetap bisa lewat pasca-tayang`); }
@@ -144,6 +162,7 @@ export function kirim(c, { uji = false, log = console.log } = {}) {
       }
       await lengkapi(yt, r, i, h, catat, { uji, log });
     }
+    await thumbnailTertunda(yt, c, r, items.map((i) => [i, uji ? `${i.nama}-uji` : i.nama]), { uji, log, tunggu, selang });
   });
 }
 

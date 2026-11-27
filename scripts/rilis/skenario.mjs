@@ -44,7 +44,7 @@ export function buatSkenario(track, { potong = potongVideo } = {}) {
   const item = (n, i, x) => ({ nama: n, jadwal: wib(JEDA[i]), tag: ["uji alat"], terjemahan: { judul: "", deskripsi: "" }, playlist: "", ...x });
   writeJson(path.join(dir, "06-rilis.json"), {
     versi: 1, track, siklus: nama, dibuat: new Date().toISOString(), uji_alat: true, kunci_manual: null,
-    youtube: { kategori: "27", bahasa: "en", label_ai: true, untuk_anak: false, promosi_berbayar: false },
+    youtube: { kategori: "27", bahasa: "en", untuk_anak: false, promosi_berbayar: false },
     items: [
       item("master", 0, { file: `${render}/Master16x9-en.mp4`, thumbnail: thumb.master, subtitle: subtitle("master", "master", 45), judul: `[UJI ALAT] Master ${jam}`, deskripsi: "Test upload from the publishing tool. It will be deleted.\n\n0:00 First part\n0:15 Second part\n0:30 Third part", komentar: "Test comment from the publishing tool.", playlist: "UJI alat rilis", terjemahan: { judul: `[UJI ALAT] Master ${jam} (Indonesia)`, deskripsi: "Unggahan uji dari alat rilis. Akan dihapus." } }),
       item("uji", 1, { file: `${render}/Short9x16-uji-en.mp4`, thumbnail: thumb.uji, subtitle: subtitle(s.nama, "uji"), judul: `[UJI ALAT] Short ${jam} #Shorts`, deskripsi: "Test upload from the publishing tool. It will be deleted.", komentar: "Test comment on the test Short." }),

@@ -143,3 +143,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator menerima ucapan "QRIS" 002 s41; dicatat di 04-assets.json. QA otomatis 002 dijalankan ulang. 05-qa.md (anti-slop manual) masih belum ada.
 - 2026-11-27: Kreator melewati QA anti-slop manual 002 (05-qa.md: dilewati, bukan LULUS). Status siap-publish; unggah manual 2026-11-28. Belum ada yang diunggah.
 - 2026-11-27: Kreator membuka siklus 005 untuk unggah YouTube terjadwal lewat alat rilis (sekaligus uji jadwal, playlist, judul Indonesia, komentar, dan unggah master). Kunci unggah manual dibuka; belum disetujui dan belum dikirim.
+- 2026-11-27: Kreator menyetujui dan mengirim 005 lewat dashboard (uji): master, 2 Short, playlist, subtitle, judul Indonesia, jadwal 14.10-14.12 WIB. Pemeriksaan API sebelum jam tayang cocok semua; thumbnail Short dipasang agent setelah pemrosesan. QA anti-slop manual tidak dibuat. Kreator berencana menghapus video uji ini.

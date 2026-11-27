@@ -74,7 +74,7 @@ export function buatRencana(c) {
   // Siklus yang sudah (atau akan) diunggah lewat jalur lain dikunci agar tidak terunggah dua kali.
   const lama = readJson(path.join(c.dir, "06-publish.json"), null);
   const alasan = c.status === "tayang" ? "status siklus di TRACK.md sudah tayang" : lama?.hasil?.length ? "sudah pernah dikirim lewat Upload-Post" : /Jangan jalankan `approve\.mjs`/.test(baca(path.join(c.dir, "06-publish-manual.md"))) ? "catatan 06-publish-manual.md: diunggah manual" : null;
-  const r = { versi: 1, track: c.track, siklus: c.nama, dibuat: new Date().toISOString(), kunci_manual: alasan, youtube: { kategori: "27", bahasa: "en", label_ai: true, untuk_anak: false, promosi_berbayar: false }, items, persetujuan: null, hasil: {}, checklist: {} };
+  const r = { versi: 1, track: c.track, siklus: c.nama, dibuat: new Date().toISOString(), kunci_manual: alasan, youtube: { kategori: "27", bahasa: "en", untuk_anak: false, promosi_berbayar: false }, items, persetujuan: null, hasil: {}, checklist: {} };
   isiPanduan(c, r);
   simpan(c, r); return r;
 }

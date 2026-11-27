@@ -233,8 +233,10 @@ function halamanKirim(d) {
       h("button", { disabled: d.sibuk || r.items.every((i) => r.hasil[i.nama]?.youtube?.videoId), onclick: () => aksi(d, { aksi: "jadwal-uji" }) }, "Jadwalkan ulang dari sekarang"),
       h("button", { disabled: d.sibuk, onclick: async () => { if (!confirm("Hapus file lokal siklus uji ini? Video di YouTube tidak ikut terhapus; hapus di Studio.")) return; try { await post({ track: d.track, siklus: d.siklus, aksi: "hapus-uji" }); location.hash = "#/"; } catch (e) { galat(e.message); } } }, "Hapus siklus uji")),
     h("div", { class: "baris" }, d.rencana.items.map((i) => { const v = d.rencana.hasil[i.nama]?.youtube?.videoId; return v ? luar(`https://studio.youtube.com/video/${v}/edit`, `Studio: ${i.nama} ↗`) : null; }))) : null;
+  const tanpaThumb = r.items.filter((i) => { const y = r.hasil[i.nama]?.youtube; return i.thumbnail && y?.sumber === "alat" && !y.selesai?.thumbnail; }).map((i) => i.nama);
   return [
     panduanUji,
+    tanpaThumb.length && !d.sibuk ? h("div", { class: "catatan" }, `Thumbnail belum terpasang di YouTube: ${tanpaThumb.join(", ")}. Klik "Jalankan pasca-tayang".`) : null,
     h("section", { class: "kartu" }, h("h2", {}, "Periksa"),
       h("div", { class: "gulir" }, h("table", {}, h("tr", {}, ["Konten", "Judul", "Jadwal", "Komentar pertama", ""].map((x) => h("th", {}, x))),
         r.items.map((i) => h("tr", {}, h("td", {}, i.nama), h("td", {}, i.judul || h("span", { class: "gagal" }, "kosong")), h("td", {}, waktu(i.jadwal)), h("td", {}, i.komentar || h("span", { class: "redup" }, "tidak diposting")), h("td", {}, h("button", { class: "kecil", onclick: buka(i.nama) }, "Ubah")))))),
