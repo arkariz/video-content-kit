@@ -11,7 +11,7 @@ siklus_aktif: "002-gta6-download-9-hours"
 langkah_berikutnya: "003: terjadwal YouTube 28 Nov 01.00 WIB; 002 tayang 27 Nov, pin komentar dan video terkait; 004: review dan jadwalkan atau tahan; analitik 001 2026-11-28 dan 12-03"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: "004: cek fakta dan risiko nama perusahaan/orang, lalu jadwal atau tahan"
+menunggu_keputusan: "004: tentukan jadwal atau tahan; cek fakta dan risiko nama perusahaan/orang sebelum tayang"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -72,7 +72,7 @@ Catatan: 002 tayang sebelum jendela V2 (2026-12-07) dan menggantikan judul Jawa;
 | 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | tayang | 2026-11-26 | uji-V2, variasi A; tayang di semua platform (YouTube, Facebook, TikTok: master + 2 Shorts; Instagram: 2 Shorts), unggah manual; tanpa QA anti-slop manual |
 | 002-gta6-download-9-hours | GTA 6: Singapore Is Already Playing. Indonesia Has 8 Hours Left. | tayang | 2026-11-27 | uji-V2, variasi B; master 8:47 + 2 Shorts + thumbnail dirender 2026-11-26; QA otomatis lulus, QA manual belum; master dan 2 Shorts tayang di YouTube (01.00, 03.00, 06.30 WIB), dicatat dari platform; platform lain belum tercatat; 05-qa.md tidak ada |
 | 003-why-half-lives-on-one-island | Why Half of Indonesia Lives on One Island | siap-publish | 2026-11-28 | uji-V2, variasi B; master 8:12 + 2 Shorts + thumbnail dirender 2026-11-26; QA manual belum; master dan 2 Shorts terjadwal di YouTube 28 Nov 01.00, 03.00, 06.30 WIB (dicatat dari platform); 05-qa.md tidak ada |
-| 004-karhutla-who-lit-the-match | Indonesia Is Burning. Who Lit the Match? | qa | belum dijadwalkan | di luar V2; permintaan kreator; topik sensitif, wajib cek fakta sebelum publish |
+| 004-karhutla-who-lit-the-match | Indonesia Is Burning. Who Lit the Match? | siap-publish | belum dijadwalkan | di luar V2; permintaan kreator; topik sensitif, wajib cek fakta sebelum publish; 05-qa.md LULUS atas keputusan kreator 2026-11-27 tanpa pemeriksaan |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -136,3 +136,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator memutuskan dua Short siklus 003 ditayangkan apa adanya (tanpa susun ulang); dipakai sebagai pembanding aturan uji hook. Catatan terbuka: angka "satu dipindahkan, Java bertambah sepuluh" memakai rentang 1950 dan 1961.
 - 2026-11-27: Status disesuaikan dengan YouTube atas permintaan kreator: 002 tayang 2026-11-27 (target semula 12-01), 003 terjadwal 2026-11-28 (target semula 2027-01-05). Keduanya uji-V2 dan jatuh sebelum periode tayang terkunci mulai 2026-12-07; validasi/rencana.md tidak diubah, penyimpangan dicatat.
 - 2026-11-27: Rencana rilis 004 dibuat atas permintaan kreator (subtitle EN dan ID, komentar, terjemahan Indonesia). Jadwal kosong, belum disetujui, belum dikirim.
+- 2026-11-27: Kreator meminta QA anti-slop 004 dicatat LULUS tanpa pemeriksaan (05-qa.md). Status siap-publish; jadwal belum ditentukan; cek fakta belum dilakukan.

@@ -104,3 +104,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-27: Unggahan manual dicatat ke dashboard rilis (35 tautan, T01-001/002/004 dan T02-001/002/003); siklus itu dikunci. Status siklus di TRACK.md belum disesuaikan (T01-004, T02-002, T02-003 sudah ada di YouTube).
 - 2026-11-27: Status siklus disesuaikan dengan platform: T01-004 dan T02-002 tayang 27 Nov, T02-003 terjadwal 28 Nov. T02-002/003 mendahului periode V2 terkunci (mulai 12-07).
 - 2026-11-27: QA anti-slop dipindah ke sebelum render penuh (gate di run.mjs, qa-gate.mjs). Gerak, irama, dan campuran musik dicek manual oleh kreator.
+- 2026-11-27: T02-004 dicatat LULUS QA anti-slop atas keputusan kreator tanpa pemeriksaan; status siap-publish.
