@@ -11,7 +11,7 @@ siklus_aktif: "002-gta6-download-9-hours"
 langkah_berikutnya: "003: terjadwal YouTube 28 Nov 01.00 WIB; 002 tayang 27 Nov, pin komentar dan video terkait; 004: review dan jadwalkan atau tahan; analitik 001 2026-11-28 dan 12-03"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: "004: tentukan jadwal atau tahan; cek fakta dan risiko nama perusahaan/orang sebelum tayang"
+menunggu_keputusan: "004: perbaiki s25 dan s30 (05-cek-fakta.md) lalu render ulang, atau tahan; jadwal belum ditentukan"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -141,3 +141,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Teks rilis 003 dilengkapi atas permintaan kreator (06-teks-rilis.json: komentar dan terjemahan Indonesia). Belum diterapkan di YouTube.
 - 2026-11-27: Teks Facebook 003 dilengkapi atas permintaan kreator. Master YouTube v324n50hfpM tidak ditemukan lagi di channel (dua Short masih terjadwal 28 Nov 03.00 dan 06.30 WIB); jadwal master di rencana diubah kreator menjadi 10.00.
 - 2026-11-27: Dokumen publish 004 dilengkapi atas permintaan kreator: teks Facebook (3 konten), caption Instagram/TikTok untuk 2 Shorts, tautan sumber ganda di terjemahan Indonesia dihapus. Jadwal kosong; belum disetujui atau dikirim; cek fakta belum dilakukan.
+- 2026-11-27: Cek fakta 004 (05-cek-fakta.md): s30 (semua tersangka Jambi perorangan) dan s25 (penulis studi) tidak didukung sumber; beberapa catatan lain. Narasi dan video belum diubah.
