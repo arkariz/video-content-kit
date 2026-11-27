@@ -268,6 +268,15 @@ try {
     await F.kirim(c, { draf: true, ...diam }); assert.equal(Object.values(fbt.video).at(-1).selesai.video_state, "DRAFT"); assert.ok(inti.muat(c).hasil["S1-uji"].facebook);
     for (const k of Object.keys(fbt.video)) delete fbt.video[k]; await F.lupakanTerhapus(c, diam); assert.deepEqual(Object.keys(inti.muat(c).hasil), []);
   });
+  await uji("Periksa di Facebook (baca saja) dan kunci unggah", async () => {
+    const F = await import("./facebook.mjs"); const { periksa } = await import("./facebook-periksa.mjs"); const { bukaKunci, kunci } = await import("./kunci.mjs");
+    inti.ubah(c, (x) => { x.hasil = {}; x.kunci_manual = null; x.items.forEach((i) => (i.jadwal = `${besok}T10:00`)); }); for (const k of Object.keys(fbt.video)) delete fbt.video[k]; fbt.tayang = false;
+    inti.setujui(c, "SETUJU", "uji"); await F.kirim(c, diam);
+    const n = fbt.panggilan.filter((x) => x.startsWith("POST")).length; const baris = []; await periksa(c, { log: (v) => baris.push(v) });
+    assert.equal(fbt.panggilan.filter((x) => x.startsWith("POST")).length, n, "hanya membaca"); assert.ok(baris.some((v) => v.startsWith("✓ S1 (Facebook): masih terjadwal")), baris.join("\n"));
+    kunci(c); await assert.rejects(F.kirim(c, diam), /disetujui|setujui/); assert.throws(() => bukaKunci(c, "buka"), /ketik BUKA/);
+    bukaKunci(c, "BUKA"); const r = inti.muat(c); assert.equal(r.kunci_manual, null); assert.equal(r.persetujuan, null); assert.ok(r.kunci_dibuka);
+  });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;
     try {

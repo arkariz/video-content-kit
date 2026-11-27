@@ -11,6 +11,8 @@ import { antrean, fileStatus } from "./jadwal.mjs";
 import { PORT, SELANG, copot, pasang, terpasang } from "./layanan.mjs";
 import * as hubungkan from "./hubungkan.mjs";
 import * as facebook from "./facebook.mjs";
+import { periksa as periksaFacebook } from "./facebook-periksa.mjs";
+import { bukaKunci, kunci } from "./kunci.mjs";
 import { buatSkenario, hapusSkenario, jadwalUlang } from "./skenario.mjs";
 
 const UI = path.join(import.meta.dirname, "ui.html");
@@ -103,6 +105,9 @@ function aksi(b) {
     case "plan": inti.buatRencana(c); break;
     case "periksa": jalankan(c, "Periksa di YouTube", (log) => periksa(c, { log })); break;
     case "reset": jalankan(c, "Reset catatan video terhapus", async (log) => { if (process.env[publishVar(c.track)]) await lupakanTerhapus(c, { log }); if (Object.values(inti.muat(c).hasil).some((v) => v.facebook?.sumber === "alat")) await facebook.lupakanTerhapus(c, { log }); }); break;
+    case "fb-periksa": jalankan(c, "Periksa di Facebook", (log) => periksaFacebook(c, { log })); break;
+    case "buka-kunci": bebas(); bukaKunci(c, b.kata); break;
+    case "kunci": bebas(); kunci(c); break;
     case "fb-aktif": bebas(); inti.aturFacebook(c, !!b.aktif); break;
     case "fb-kirim": jalankan(c, "Kirim ke Facebook", (log) => facebook.kirim(c, { log })); break;
     case "fb-draf": jalankan(c, "Unggah draf Facebook", (log) => facebook.kirim(c, { draf: true, log })); break;

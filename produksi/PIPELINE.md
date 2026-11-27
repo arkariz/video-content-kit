@@ -441,7 +441,8 @@ node scripts/rilis/uji.mjs                                             # uji den
 - **Penggunaan AI** (`containsSyntheticMedia`) tidak dikirim: keputusan kreator 2026-11-27, bidang itu dibiarkan kosong dan diisi di Studio bila perlu.
 - **Pasca-tayang** melengkapi thumbnail atau subtitle yang tertunda dan memposting komentar pertama sekali saja pada video publik atau unlisted. Dijalankan manual atau oleh penjadwal.
 - **Penjadwal Mac** (`jadwal.mjs`, launchd tiap 5 menit selama kreator login, diaktifkan kreator): menjalankan pasca-tayang hanya untuk siklus yang persetujuannya masih berlaku. Tidak mengunggah video dan tidak mengetik SETUJU. Tanpa pekerjaan jatuh tempo, API tidak dipanggil. Komentar terlambat lebih dari 60 menit ditandai terlewat (notifikasi sekali) dan menunggu kreator. Berhenti mencoba setelah 5 kegagalan; kelengkapan dicoba sampai 24 jam sejak unggah. Mac tidur atau mati menunda putaran. Status di halaman Pantau dan `.rilis-penjadwal.json` (tidak di-commit). Pasang dari folder repo utama; copot bila folder dipindah.
-- **Kunci unggah:** siklus berstatus `tayang`, sudah terkirim lewat Upload-Post, atau berpanduan unggah manual tidak bisa diunggah alat ini. Catat URL tayang di dashboard agar checklist dan komentar bisa dipakai.
+- **Kunci unggah:** siklus berstatus `tayang`, sudah terkirim lewat Upload-Post, atau berpanduan unggah manual tidak bisa diunggah alat ini. Catat URL tayang di dashboard agar checklist dan komentar bisa dipakai. Kreator bisa membuka (ketik `BUKA`; persetujuan batal) atau memasang kunci lewat dashboard; agent tidak mengetik `BUKA`.
+- **Periksa di YouTube / Facebook** (baca saja) mencocokkan keadaan di platform dengan rencana. Visibilitas publik Facebook tetap diperiksa dari jendela tanpa login.
 - **Manual:** pin komentar (YouTube dan Facebook), video terkait, end screen, cards, A/B test, multi audio, mid-roll, serta Instagram dan TikTok (belum ada adaptor).
 
 ### Facebook (`facebook.mjs`)

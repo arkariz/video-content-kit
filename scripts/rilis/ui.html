@@ -271,6 +271,7 @@ function panelFacebook(d, sis) {
     d.kredensialFb ? h("details", {}, h("summary", { class: "kecil-teks" }, "Ganti Page"), formPage(d, sis.facebook)) : formPage(d, sis.facebook),
     h("div", { class: "baris" }, tombol("fb-kirim", "Kirim ke Facebook", `Unggah ke Page ${d.track}: master sebagai video, Short sebagai Reel, ${d.ujiAlat ? "dan TAYANG SEGERA bila jadwalnya kurang dari 11 menit (siklus uji)" : "sesuai jadwal"}?`, alasan(!aktif && "belum dinyalakan", r.kunci_manual && "unggah dikunci", belum, umum), true),
       tombol("fb-pasca", "Pasca-tayang Facebook", "Posting komentar pada video Facebook yang sudah tayang?", alasan(belum, umum, !sudah && "belum ada video Facebook")),
+      h("button", { disabled: !!alasan(umum, !sudah && "belum ada video Facebook"), title: alasan(umum, !sudah && "belum ada video Facebook"), onclick: () => aksi(d, { aksi: "fb-periksa" }) }, "Periksa di Facebook"),
       tombol("fb-draf", "Unggah draf (uji)", "Unggah satu Short sebagai Reel DRAF untuk uji? Hapus drafnya sesudah diperiksa.", umum)));
 }
 
@@ -310,7 +311,9 @@ function halamanKirim(d, sis) {
       d.disetujui ? h("div", { class: "catatan ok" }, `Disetujui ${new Date(r.persetujuan.waktu).toLocaleString("id-ID")}. Perubahan teks atau file membatalkannya.`)
         : [h("p", {}, r.persetujuan ? "Isi berubah sejak disetujui; setujui ulang." : "Setujui setelah menonton, mendengarkan, dan memeriksa fakta."), h("div", { class: "baris" }, kata, setuju)]),
     h("section", { class: "kartu" }, h("h2", {}, "Kirim ke YouTube"), h("p", { class: "redup kecil-teks" }, "Log pengiriman YouTube dan Facebook tampil di bagian ini."),
-      r.kunci_manual ? h("div", { class: "catatan" }, `Unggah dikunci: ${r.kunci_manual}. Catat URL tayang di langkah 3; komentar pertama tetap bisa diposting lewat pasca-tayang.`) : null,
+      r.kunci_manual ? h("div", { class: "catatan" }, h("div", {}, `Unggah dikunci: ${r.kunci_manual}. Catat URL tayang di langkah 3; komentar pertama tetap bisa diposting lewat pasca-tayang.`),
+        h("button", { class: "kecil", disabled: d.sibuk, onclick: () => { const kata = prompt(`Kunci ini mencegah unggahan ganda (YouTube dan Facebook). Pastikan video ${d.track}-${d.siklus} BELUM ada atau terjadwal di channel dan Page, lalu ketik BUKA.`); if (kata !== null) aksi(d, { aksi: "buka-kunci", kata: kata.trim() }); } }, "Buka kunci unggah…"))
+        : h("details", {}, h("summary", { class: "kecil-teks" }, "Diunggah manual saja?"), h("button", { class: "kecil", disabled: d.sibuk, onclick: () => confirm("Kunci unggah siklus ini? Persetujuan dibatalkan.") && aksi(d, { aksi: "kunci" }) }, "Kunci unggah")),
       panelHubungkan(d, sis.hubungkan),
       h("div", { class: "baris" }, tombol("kirim", "Kirim ke YouTube", `Unggah ke YouTube channel ${d.track}:\n${daftar}`, mKirim, true), tombol("pasca", "Jalankan pasca-tayang", "Posting komentar pertama pada video yang sudah publik?", mPasca), tombol("uji", "Unggah uji (privat)", "Unggah satu Short sebagai PRIVAT untuk uji? Hapus videonya di Studio setelah diperiksa.", mUji), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: alasan(umum, !sudah && "belum ada video YouTube"), onclick: () => aksi(d, { aksi: "periksa" }) }, "Periksa di YouTube"), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: "Untuk video yang sudah kamu hapus di Studio: catatannya dilupakan agar bisa diunggah ulang", onclick: () => confirm("Lupakan catatan unggah untuk video yang sudah terhapus di YouTube? Persetujuan akan dibatalkan.") && aksi(d, { aksi: "reset" }) }, "Reset yang terhapus")),
       mKirim ? h("div", { class: "redup kecil-teks" }, `Tombol kirim nonaktif: ${mKirim}.`) : null,
