@@ -11,7 +11,7 @@ siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "005: kreator menonton penuh master + 2 Short (pemeriksaan manual), cek rencana publish 06-publish.md, lalu SETUJU; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: []                 # syarat bukti kreator di layar dihapus untuk semua konten (2026-11-27)
-menunggu_keputusan: "005: pemeriksaan manual dan SETUJU publish (jadwal 29 Nov - 1 Des) (hasil/review/T01-005-qris-one-sticker/index.html); 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
+menunggu_keputusan: "005: pemeriksaan manual dan SETUJU publish (29 Nov: master 10.00, Short 12.00 dan 16.00 WIB) (hasil/review/T01-005-qris-one-sticker/index.html); 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -137,3 +137,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Sumber (71 baris, 24 tautan) dan jenis suara 005 dicatat; temuan T-src dan A3 hilang. Atas keputusan kreator, syarat bukti kreator di layar dihapus untuk semua konten, dan konten selanjutnya wajib punya musik utama baru serta musik mood per rentang scene (mixer, QA A4/A5, PIPELINE.md bagian Suara). QA 005 masih GAGAL (11 kritis salah ucap, 3 sedang: re-hook, A4, A5); musik 005 belum diganti.
 - 2026-11-27: Kreator menerima ucapan 005 (QRIS, rupiah, Europay); dicatat di 04-assets.json ucapan_diterima. QA otomatis LULUS-OTOMATIS (0 kritis, 14 sedang, 4 kecil); rencana publish dan paket review dibuat (daftar sumber di deskripsi dibuat unik, hanya tautan web), belum disetujui dan belum dikirim.
 - 2026-11-27: Kreator menetapkan jadwal 005 mulai 2026-11-29: master 11-29, Short 1 11-30, Short 2 12-01 (19.00 WIB). Belum disetujui dan belum dikirim.
+- 2026-11-27: Jadwal 005 diubah kreator: semua tayang 2026-11-29, master 10.00, Short 1 12.00, Short 2 16.00 WIB (diedit di 06-publish.json; menjalankan publish plan lagi akan menimpanya). Belum disetujui dan belum dikirim.

@@ -45,9 +45,9 @@
         "cross-border payments",
         "Southeast Asia"
       ],
-      "scheduled_date": "2026-11-29T12:00:00Z",
+      "scheduled_date": "2026-11-29T03:00:00Z",
       "timezone": "Asia/Jakarta",
-      "lokal": "2026-11-29 19:00:00"
+      "lokal": "2026-11-29 10:00:00"
     },
     {
       "nama": "S1-qris-isnt-an-app",
@@ -66,9 +66,9 @@
         "QR payments",
         "shorts"
       ],
-      "scheduled_date": "2026-11-30T12:00:00Z",
+      "scheduled_date": "2026-11-29T05:00:00Z",
       "timezone": "Asia/Jakarta",
-      "lokal": "2026-11-30 19:00:00"
+      "lokal": "2026-11-29 12:00:00"
     },
     {
       "nama": "S2-no-dollars-in-between",
@@ -87,9 +87,9 @@
         "QR payments",
         "shorts"
       ],
-      "scheduled_date": "2026-12-01T12:00:00Z",
+      "scheduled_date": "2026-11-29T09:00:00Z",
       "timezone": "Asia/Jakarta",
-      "lokal": "2026-12-01 19:00:00"
+      "lokal": "2026-11-29 16:00:00"
     }
   ],
   "hasil": []

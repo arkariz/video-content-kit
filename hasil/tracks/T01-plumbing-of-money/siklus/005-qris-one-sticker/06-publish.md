@@ -6,9 +6,9 @@ Disetujui kreator: (diisi saat approve)
 
 | Item | File | Platform | Judul | Jadwal (WIB) | Label AI |
 | --- | --- | --- | --- | --- | --- |
-| master | produksi/render/T01/005/Master16x9-en.mp4 | youtube, facebook | Indonesia's QRIS: One Sticker, 72 Million Users | 2026-11-29 19:00:00 | ya |
-| S1-qris-isnt-an-app | produksi/render/T01/005/Short9x16-S1-qris-isnt-an-app-en.mp4 | youtube, instagram, facebook | QRIS isn't an app. It's a rulebook. | 2026-11-30 19:00:00 | ya |
-| S2-no-dollars-in-between | produksi/render/T01/005/Short9x16-S2-no-dollars-in-between-en.mp4 | youtube, instagram, facebook | A Thai tourist pays a Bali stall. No dollars involved. | 2026-12-01 19:00:00 | ya |
+| master | produksi/render/T01/005/Master16x9-en.mp4 | youtube, facebook | Indonesia's QRIS: One Sticker, 72 Million Users | 2026-11-29 10:00:00 | ya |
+| S1-qris-isnt-an-app | produksi/render/T01/005/Short9x16-S1-qris-isnt-an-app-en.mp4 | youtube, instagram, facebook | QRIS isn't an app. It's a rulebook. | 2026-11-29 12:00:00 | ya |
+| S2-no-dollars-in-between | produksi/render/T01/005/Short9x16-S2-no-dollars-in-between-en.mp4 | youtube, instagram, facebook | A Thai tourist pays a Bali stall. No dollars involved. | 2026-11-29 16:00:00 | ya |
 
 Thumbnail master: produksi/render/T01/005/Thumbnail-A.png (ganti ke Thumbnail-B.png di 06-publish.json bila mau)
 
