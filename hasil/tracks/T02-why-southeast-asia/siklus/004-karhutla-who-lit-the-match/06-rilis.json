@@ -13,7 +13,7 @@
   "items": [
     {
       "nama": "master",
-      "jadwal": "",
+      "jadwal": "2026-11-29T10:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -53,7 +53,7 @@
     },
     {
       "nama": "B1-why-peat-burns",
-      "jadwal": "",
+      "jadwal": "2026-11-29T12:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -87,7 +87,7 @@
     },
     {
       "nama": "B2-fines-never-paid",
-      "jadwal": "",
+      "jadwal": "2026-11-29T16:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -120,8 +120,109 @@
       }
     }
   ],
-  "persetujuan": null,
-  "hasil": {},
-  "checklist": {},
-  "teks_sidik": "972604ca4d508c772b7f865f5ac35d9f881470da4e6d964ce9647b72be9004c6"
+  "persetujuan": {
+    "sidik": "899b3b300d08765b0c6986eba726c4211836d126e4bc97d5ad1370b2c4367db1",
+    "waktu": "2026-11-27T11:04:36.550Z",
+    "via": "dashboard",
+    "qa_manual": "Status: LULUS (atas keputusan kreator, 2026-11-27)"
+  },
+  "hasil": {
+    "master": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "QqLj-LiNziU",
+        "url": "https://www.youtube.com/watch?v=QqLj-LiNziU",
+        "privasi": "private",
+        "publishAt": "2026-11-29T03:00:00.000Z",
+        "diunggah": "2026-11-27T11:05:48.318Z",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:05:50.529Z",
+          "subtitle-id": "2026-11-27T11:05:52.565Z",
+          "thumbnail": "2026-11-27T11:05:57.391Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "1153223430897934",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:08:34.806Z",
+          "subtitle-id": "2026-11-27T11:08:37.434Z",
+          "sampul": "2026-11-27T11:08:40.399Z"
+        },
+        "url": "https://www.facebook.com/reel/1153223430897934/",
+        "publishAt": "2026-11-29T03:00:00.000Z",
+        "diunggah": "2026-11-27T11:08:31.490Z",
+        "galat": []
+      }
+    },
+    "B1-why-peat-burns": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "tQ4noeTA51M",
+        "url": "https://www.youtube.com/watch?v=tQ4noeTA51M",
+        "privasi": "private",
+        "publishAt": "2026-11-29T05:00:00.000Z",
+        "diunggah": "2026-11-27T11:06:01.619Z",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:06:03.749Z",
+          "subtitle-id": "2026-11-27T11:06:05.798Z",
+          "thumbnail": "2026-11-27T11:06:48.964Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "1857477501932463",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:08:51.027Z",
+          "subtitle-id": "2026-11-27T11:08:52.892Z",
+          "sampul": "2026-11-27T11:08:55.703Z"
+        },
+        "url": "https://www.facebook.com/reel/1857477501932463/",
+        "publishAt": "2026-11-29T05:00:00.000Z",
+        "diunggah": "2026-11-27T11:08:49.102Z",
+        "galat": []
+      }
+    },
+    "B2-fines-never-paid": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "DU213c29_hE",
+        "url": "https://www.youtube.com/watch?v=DU213c29_hE",
+        "privasi": "private",
+        "publishAt": "2026-11-29T09:00:00.000Z",
+        "diunggah": "2026-11-27T11:06:09.565Z",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:06:11.847Z",
+          "subtitle-id": "2026-11-27T11:06:13.514Z",
+          "thumbnail": "2026-11-27T11:06:53.091Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "1164768566467103",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:09:08.354Z",
+          "subtitle-id": "2026-11-27T11:09:10.504Z",
+          "sampul": "2026-11-27T11:09:13.719Z"
+        },
+        "url": "https://www.facebook.com/reel/1164768566467103/",
+        "publishAt": "2026-11-29T09:00:00.000Z",
+        "diunggah": "2026-11-27T11:09:06.195Z",
+        "galat": []
+      }
+    }
+  },
+  "checklist": {
+    "master:yt-endscreen": "2026-11-27T11:11:07.761Z",
+    "master:yt-cards": "2026-11-27T11:11:10.810Z",
+    "master:yt-ab": "2026-11-27T11:11:11.735Z",
+    "master:yt-midroll": "2026-11-27T11:11:12.501Z"
+  },
+  "teks_sidik": "972604ca4d508c772b7f865f5ac35d9f881470da4e6d964ce9647b72be9004c6",
+  "facebook": {
+    "aktif": true
+  }
 }

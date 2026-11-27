@@ -72,7 +72,7 @@ Catatan: 002 tayang sebelum jendela V2 (2026-12-07) dan menggantikan judul Jawa;
 | 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | tayang | 2026-11-26 | uji-V2, variasi A; tayang di semua platform (YouTube, Facebook, TikTok: master + 2 Shorts; Instagram: 2 Shorts), unggah manual; tanpa QA anti-slop manual |
 | 002-gta6-download-9-hours | GTA 6: Singapore Is Already Playing. Indonesia Has 8 Hours Left. | tayang | 2026-11-27 | uji-V2, variasi B; master 8:47 + 2 Shorts + thumbnail dirender 2026-11-26; QA otomatis lulus, QA manual belum; master dan 2 Shorts tayang di YouTube (01.00, 03.00, 06.30 WIB), dicatat dari platform; platform lain belum tercatat; 05-qa.md tidak ada |
 | 003-why-half-lives-on-one-island | Why Half of Indonesia Lives on One Island | siap-publish | 2026-11-28 | uji-V2, variasi B; master 8:12 + 2 Shorts + thumbnail dirender 2026-11-26; QA manual belum; master dan 2 Shorts terjadwal di YouTube 28 Nov 01.00, 03.00, 06.30 WIB (dicatat dari platform); 05-qa.md tidak ada |
-| 004-karhutla-who-lit-the-match | Indonesia Is Burning. Who Lit the Match? | siap-publish | belum dijadwalkan | di luar V2; permintaan kreator; topik sensitif, wajib cek fakta sebelum publish; 05-qa.md LULUS atas keputusan kreator 2026-11-27 tanpa pemeriksaan |
+| 004-karhutla-who-lit-the-match | Indonesia Is Burning. Who Lit the Match? | siap-publish | 2026-11-29 | di luar V2; permintaan kreator; topik sensitif, wajib cek fakta sebelum publish; 05-qa.md LULUS atas keputusan kreator 2026-11-27 tanpa pemeriksaan |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -142,3 +142,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Teks Facebook 003 dilengkapi atas permintaan kreator. Master YouTube v324n50hfpM tidak ditemukan lagi di channel (dua Short masih terjadwal 28 Nov 03.00 dan 06.30 WIB); jadwal master di rencana diubah kreator menjadi 10.00.
 - 2026-11-27: Dokumen publish 004 dilengkapi atas permintaan kreator: teks Facebook (3 konten), caption Instagram/TikTok untuk 2 Shorts, tautan sumber ganda di terjemahan Indonesia dihapus. Jadwal kosong; belum disetujui atau dikirim; cek fakta belum dilakukan.
 - 2026-11-27: Cek fakta 004 (05-cek-fakta.md): s30 (semua tersangka Jambi perorangan) dan s25 (penulis studi) tidak didukung sumber; beberapa catatan lain. Narasi dan video belum diubah.
+- 2026-11-27: Status 004 disamakan dengan hasil di dashboard rilis: siap-publish (2026-11-29).
