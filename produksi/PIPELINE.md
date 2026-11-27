@@ -436,7 +436,7 @@ node scripts/rilis/uji.mjs                                             # uji den
 - **Pasca-tayang** melengkapi thumbnail atau subtitle yang tertunda dan memposting komentar pertama sekali saja pada video publik atau unlisted. Dijalankan manual (penjadwal Mac belum dibuat).
 - **Kunci unggah:** siklus berstatus `tayang`, sudah terkirim lewat Upload-Post, atau berpanduan unggah manual tidak bisa diunggah alat ini. Catat URL tayang di dashboard agar checklist dan komentar bisa dipakai.
 - **Manual:** pin komentar, video terkait, end screen, cards, A/B test, multi audio, mid-roll, serta Facebook, Instagram, dan TikTok (belum ada adaptor).
-- **Belum diuji ke API sungguhan.** Uji pertama pakai "Unggah uji (privat)", hapus videonya sesudahnya, dan periksa bahasa audio default (`defaultAudioLanguage` tidak tercantum sebagai bidang yang bisa ditulis), subtitle, dan thumbnail Short.
+- **Teruji ke API sungguhan** hanya lewat unggah uji privat (T01, Short, 2026-11-27): judul, deskripsi, tag, kategori, bahasa video dan `defaultAudioLanguage` (diterima walau tidak tercantum bisa ditulis), status bukan untuk anak dan tanpa promosi berbayar, subtitle en dan id, serta thumbnail Short setelah pemrosesan. **Belum teruji:** jadwal `publishAt`, playlist, terjemahan, komentar, unggah master, dan pasca-tayang. Label konten sintetis tidak muncul di balasan API; cek di Studio.
 - Analitik masih mencocokkan video lewat `06-publish.json` atau judul; `06-rilis.json` belum dibaca.
 
 ## Data YouTube (riset dan analitik)
