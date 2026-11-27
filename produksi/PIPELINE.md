@@ -448,10 +448,11 @@ node scripts/rilis/uji.mjs                                             # uji den
 
 Master sebagai video Page, Short sebagai Reel (3–90 detik), dengan jadwal, subtitle `en_US`/`id_ID`, sampul, dan komentar. Komentar Short bawaannya `Full video: {master}` dan baru diposting setelah Short dan master Facebook tayang (juga oleh penjadwal). Dinyalakan per siklus ("Kirim siklus ini ke Facebook lewat alat"), memakai persetujuan yang sama, dan mengikuti kunci unggah. `is_ai_generated` tidak dikirim (bawaan Facebook: tidak), sejalan dengan keputusan "Penggunaan AI dikosongkan". Bila balasan unggah master hilang, alat menolak mengulang sampai Page diperiksa.
 
-**Persiapan di Meta (kreator, sekali).**
-1. Pastikan punya akses penuh ke Page tiap track.
-2. Di developers.facebook.com buat aplikasi tipe **Business**. Menurut dokumentasi Meta, data yang dibuat aplikasi dalam mode *Development* hanya terlihat oleh akun yang punya peran di aplikasi, sedangkan aplikasi Business tidak memakai mode itu. Pastikan ini lewat uji: buka video hasil alat dari jendela tanpa login.
-3. Di Graph API Explorer pilih aplikasi itu, buat **User Access Token** dengan `pages_show_list`, `pages_read_engagement`, `pages_read_user_content`, `pages_manage_posts`, `pages_manage_engagement`, dan pilih Page-nya.
+**Persiapan di Meta (kreator, sekali; dokumentasi Meta dibaca 2026-11-27, tampilan bisa berbeda).**
+1. Pastikan punya akses penuh ke Page tiap track, lalu daftar akun developer (developers.facebook.com).
+2. Buat aplikasi (developers.facebook.com/apps/creation): nama dan email, use case **Manage everything on your Page**, business portfolio boleh "I don't want to connect a business portfolio yet". Di Customize use case tambahkan `pages_manage_posts`, `pages_read_engagement`, `pages_manage_engagement`, `pages_show_list`, dan `pages_read_user_content` bila tersedia.
+3. Di Graph API Explorer pilih aplikasi itu, jenis **User** token, centang izin yang sama, *Generate Access Token*, pilih Page-nya.
+   Aplikasi baru berstatus *Development*: peran admin bisa memakai izin tanpa App Review, tetapi data yang dibuat hanya terlihat oleh pemegang peran. Agar video terlihat publik, aplikasi perlu **Publish / Go live** (meminta antara lain Privacy Policy URL, Terms URL, ikon, kategori). Uji visibilitas dari jendela tanpa login.
 4. Di dashboard, langkah *Setujui dan kirim* → *Kirim ke Facebook*: isi App ID, App Secret, dan token itu, lalu pilih Page. Hanya `FACEBOOK_PAGE_ID_<ID>` dan `FACEBOOK_PAGE_TOKEN_<ID>` yang ditulis ke `.env`.
 
 **Belum teruji ke API sungguhan.** Mulai dengan "Unggah draf (uji)". Yang perlu dipastikan: visibilitas publik, unggah master satu permintaan untuk file besar, subtitle dan sampul pada Reel, izin komentar, dan status tayang video (`published`), yang tidak tercantum di dokumentasi yang dibaca. App Review untuk Page sendiri diperkirakan tidak perlu (akses standar), belum dipastikan.
