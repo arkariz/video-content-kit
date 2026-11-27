@@ -1,8 +1,19 @@
 # Opsi judul dan thumbnail baru: T01 siklus 004 (GTA VI)
 
-Dibuat 2026-11-27 atas permintaan kreator: gaya ilustrasi siklus 005, GTA VI ditonjolkan. **Belum dipilih dan belum diubah di platform.** Video sudah tayang; thumbnail dan judul lama tetap berlaku sampai kreator menggantinya.
+Dibuat 2026-11-27 atas permintaan kreator: gaya ilustrasi siklus 005, GTA VI ditonjolkan. **Dipilih kreator 2026-11-27: master 1, Short S1 A, Short S2 A.** Penggantian di platform dilakukan kreator; belum ada yang diubah saat catatan ini ditulis.
 
 Gambar: `produksi/render/T01/004/thumbnail-v2/`. Render ulang: `node hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/thumbnail-v2/render.mjs`.
+
+## Pilihan: daftar ganti
+| Konten | Judul baru | Thumbnail | Video tayang |
+| --- | --- | --- | --- |
+| Master | GTA 6: Where Your $80 Actually Goes | `Master-1.png` | [YouTube](https://www.youtube.com/watch?v=EzZezpp8Cz4), [Facebook](https://www.facebook.com/reel/1078577511872793/) |
+| Short S1 | GTA 6: You Paid $80. The Publisher Gets $56 | `Short1-A.png` | [YouTube](https://www.youtube.com/watch?v=6o8_mJKmGpY), [Facebook](https://www.facebook.com/reel/1520368323247812/), [Instagram](https://www.instagram.com/reel/DgObvJgCVIF/) |
+| Short S2 | GTA 6: Who Pays the Card Fee on Your $80? | `Short2-A.png` | [YouTube](https://www.youtube.com/watch?v=x94cAT7VkJc), [Facebook](https://www.facebook.com/reel/1942876917089024/), [Instagram](https://www.instagram.com/reel/DgOs5tTiPWH/) |
+
+- [ ] Master diganti
+- [ ] Short S1 diganti
+- [ ] Short S2 diganti
 
 ## Master
 
