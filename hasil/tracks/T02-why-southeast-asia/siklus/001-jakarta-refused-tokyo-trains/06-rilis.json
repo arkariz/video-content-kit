@@ -178,5 +178,22 @@
       }
     }
   },
-  "checklist": {}
+  "checklist": {
+    "master:yt-pin": "2026-11-27T09:53:40.864Z",
+    "master:yt-endscreen": "2026-11-27T09:53:41.331Z",
+    "master:yt-cards": "2026-11-27T09:53:41.676Z",
+    "master:yt-ab": "2026-11-27T09:53:42.039Z",
+    "master:yt-midroll": "2026-11-27T09:53:42.438Z",
+    "A1-why-tokyo-trains-fit:yt-pin": "2026-11-27T09:53:42.963Z",
+    "A1-why-tokyo-trains-fit:yt-terkait": "2026-11-27T09:53:43.205Z",
+    "A1-why-tokyo-trains-fit:fb-komentar": "2026-11-27T09:53:44.155Z",
+    "A1-why-tokyo-trains-fit:ig-komentar": "2026-11-27T09:53:44.746Z",
+    "A1-why-tokyo-trains-fit:ig-story": "2026-11-27T09:53:45.279Z",
+    "A2-too-old-to-import:yt-pin": "2026-11-27T09:53:46.151Z",
+    "A2-too-old-to-import:ig-story": "2026-11-27T09:53:48.122Z",
+    "A2-too-old-to-import:ig-komentar": "2026-11-27T09:53:48.922Z",
+    "A2-too-old-to-import:yt-terkait": "2026-11-27T09:53:49.936Z",
+    "A2-too-old-to-import:fb-komentar": "2026-11-27T09:53:50.392Z"
+  },
+  "arsip": "2026-11-27T09:53:53.079Z"
 }

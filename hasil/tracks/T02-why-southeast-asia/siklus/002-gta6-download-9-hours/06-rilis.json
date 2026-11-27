@@ -117,6 +117,11 @@
         "videoId": "bsPwUmPYK-g",
         "privasi": "public",
         "dicatat": "2026-11-27T09:07:08.093Z"
+      },
+      "facebook": {
+        "sumber": "manual",
+        "url": "https://www.facebook.com/share/v/1CjkuyZgQK/",
+        "dicatat": "2026-11-27T09:55:21.416Z"
       }
     },
     "B1-one-hour-vs-nine": {
@@ -126,6 +131,16 @@
         "videoId": "E07f1440m18",
         "privasi": "public",
         "dicatat": "2026-11-27T09:07:08.093Z"
+      },
+      "facebook": {
+        "sumber": "manual",
+        "url": "https://www.facebook.com/share/r/1KdGT8sP4R/",
+        "dicatat": "2026-11-27T09:55:35.010Z"
+      },
+      "instagram": {
+        "sumber": "manual",
+        "url": "https://www.instagram.com/reel/DgObTM_tp1b/?utm_source=ig_web_copy_link&evlk=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==",
+        "dicatat": "2026-11-27T09:56:02.800Z"
       }
     },
     "B2-phone-beats-home-wifi": {
@@ -135,8 +150,37 @@
         "videoId": "GGR5f-mJUPg",
         "privasi": "public",
         "dicatat": "2026-11-27T09:07:08.093Z"
+      },
+      "facebook": {
+        "sumber": "manual",
+        "url": "https://www.facebook.com/share/r/1HBLVep3z3/",
+        "dicatat": "2026-11-27T09:55:45.543Z"
+      },
+      "instagram": {
+        "sumber": "manual",
+        "url": "https://www.instagram.com/reel/DgOsApZNbbm/?utm_source=ig_web_copy_link&evlk=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==",
+        "dicatat": "2026-11-27T09:56:14.089Z"
       }
     }
   },
-  "checklist": {}
+  "checklist": {
+    "master:yt-pin": "2026-11-27T09:56:17.304Z",
+    "master:yt-endscreen": "2026-11-27T09:56:17.796Z",
+    "master:yt-cards": "2026-11-27T09:56:17.987Z",
+    "master:yt-ab": "2026-11-27T09:56:18.203Z",
+    "master:yt-midroll": "2026-11-27T09:56:18.403Z",
+    "B1-one-hour-vs-nine:yt-pin": "2026-11-27T09:56:18.916Z",
+    "B1-one-hour-vs-nine:yt-terkait": "2026-11-27T09:56:19.284Z",
+    "B1-one-hour-vs-nine:fb-komentar": "2026-11-27T09:56:19.507Z",
+    "B1-one-hour-vs-nine:ig-komentar": "2026-11-27T09:56:19.699Z",
+    "B1-one-hour-vs-nine:ig-story": "2026-11-27T09:56:19.899Z",
+    "B1-one-hour-vs-nine:tt-unggah": "2026-11-27T09:56:20.174Z",
+    "B2-phone-beats-home-wifi:yt-pin": "2026-11-27T09:56:21.173Z",
+    "B2-phone-beats-home-wifi:yt-terkait": "2026-11-27T09:56:21.849Z",
+    "B2-phone-beats-home-wifi:fb-komentar": "2026-11-27T09:56:22.943Z",
+    "B2-phone-beats-home-wifi:ig-komentar": "2026-11-27T09:56:23.513Z",
+    "B2-phone-beats-home-wifi:ig-story": "2026-11-27T09:56:24.412Z",
+    "B2-phone-beats-home-wifi:tt-unggah": "2026-11-27T09:56:24.904Z"
+  },
+  "arsip": "2026-11-27T09:56:26.429Z"
 }
