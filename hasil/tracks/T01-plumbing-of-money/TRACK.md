@@ -11,7 +11,7 @@ siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "005: kreator menonton penuh master + 2 Short (pemeriksaan manual), cek rencana publish 06-publish.md, lalu SETUJU; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: []                 # syarat bukti kreator di layar dihapus untuk semua konten (2026-11-27)
-menunggu_keputusan: "005: pemeriksaan manual dan jadwal publish (hasil/review/T01-005-qris-one-sticker/index.html); 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
+menunggu_keputusan: "005: pemeriksaan manual dan SETUJU publish (jadwal 29 Nov - 1 Des) (hasil/review/T01-005-qris-one-sticker/index.html); 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -56,7 +56,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | qa | 2026-12-14 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
 | 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | siap-publish | target ≤ 2026-12-03 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov |
-| 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | qa | belum dijadwalkan | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 disetujui 2026-11-27 |
+| 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | qa | 2026-11-29 | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 disetujui 2026-11-27 |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -136,3 +136,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator memerintahkan memperbaiki scene lemah dan merender tanpa uji still ulang (dicatat di 04-still.json). s16, s24, s26, s30, s32, s42, s46 diperkaya. Master 8:09 dan 2 Short (22 dtk, 35 dtk) dirender dan dicampur (112 efek suara, sekitar -14 LUFS). QA otomatis GAGAL: kritis 11 (salah ucap menurut transkrip balik), sedang 4, kecil 4; publish tertahan.
 - 2026-11-27: Sumber (71 baris, 24 tautan) dan jenis suara 005 dicatat; temuan T-src dan A3 hilang. Atas keputusan kreator, syarat bukti kreator di layar dihapus untuk semua konten, dan konten selanjutnya wajib punya musik utama baru serta musik mood per rentang scene (mixer, QA A4/A5, PIPELINE.md bagian Suara). QA 005 masih GAGAL (11 kritis salah ucap, 3 sedang: re-hook, A4, A5); musik 005 belum diganti.
 - 2026-11-27: Kreator menerima ucapan 005 (QRIS, rupiah, Europay); dicatat di 04-assets.json ucapan_diterima. QA otomatis LULUS-OTOMATIS (0 kritis, 14 sedang, 4 kecil); rencana publish dan paket review dibuat (daftar sumber di deskripsi dibuat unik, hanya tautan web), belum disetujui dan belum dikirim.
+- 2026-11-27: Kreator menetapkan jadwal 005 mulai 2026-11-29: master 11-29, Short 1 11-30, Short 2 12-01 (19.00 WIB). Belum disetujui dan belum dikirim.
