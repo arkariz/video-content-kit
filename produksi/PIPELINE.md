@@ -412,9 +412,34 @@ node --env-file=.env scripts/pipeline/publish.mjs status --track T01 --siklus 00
 
 Isi `.env` (nama variabel saja): `UPLOADPOST_API_KEY` (`UPLOADPOST_PROFILE` tidak dipakai lagi). Akun, profil, dan koneksi channel dibuat kreator sendiri di Upload-Post. Aktif: YouTube, Instagram, Facebook (`platformAktif`); TikTok mati karena butuh paket berbayar. Master dikirim ke YouTube dan Facebook (video Page, `facebook_media_type: VIDEO`); Shorts ke YouTube, Instagram, dan Facebook (Reels). Master tidak dikirim ke Instagram (16:9, dan file bisa melewati 300 MB). `send` menolak jalan bila siklus belum disetujui. **Mode uji** (`send --test`, lalu `status --uji`) mengirim hanya Short pertama ke YouTube sebagai privat dan ke Facebook sebagai draf, tanpa jadwal dan tanpa Instagram/TikTok, sehingga tidak ada yang tampil publik (Instagram tidak punya mode privat atau draf lewat API ini). Facebook mengembalikan URL Reel walaupun berstatus draf (dikonfirmasi 2026-11-25). Hapus video uji di YouTube Studio dan draf Facebook setelah dicek. Label AI default konservatif (suara sintetis): `containsSyntheticMedia`, `is_aigc`, `is_ai_generated`. Teruji ke API sungguhan hanya lewat mode uji (YouTube privat dan Facebook draf, 2026-11-25); kirim terjadwal dan Instagram belum diuji. Yang tidak terdokumentasi di Upload-Post dan perlu dicek saat uji pertama: penanda Shorts di YouTube (setahu dokumennya tidak ada; Shorts dikenali dari rasio dan durasi), apakah `tags[]` atau `tags` yang diterima, dan nama bidang respons sukses. Track audio Indonesia tetap manual di YouTube Studio.
 
+## Alat rilis (dashboard, YouTube)
+
+Kode di `scripts/rilis/`, tanpa dependensi. Keputusan kreator 2026-11-27: master penuh di YouTube dan Facebook, Short Facebook mengarah ke master Facebook, Instagram hanya Short, penjadwal berjalan di Mac.
+
+```
+node --env-file=.env scripts/rilis/dashboard.mjs                       # http://127.0.0.1:4747 (atau preview "dashboard-rilis")
+node scripts/rilis/rilis.mjs plan   --track T01 --siklus 006           # menulis 06-rilis.json
+node scripts/rilis/rilis.mjs cek    --track T01 --siklus 006           # masalah dan tugas manual
+node scripts/rilis/rilis.mjs setuju --track T01 --siklus 006           # kreator mengetik SETUJU
+node --env-file=.env scripts/rilis/rilis.mjs kirim --track T01 --siklus 006 --uji   # satu Short, privat
+node --env-file=.env scripts/rilis/rilis.mjs kirim --track T01 --siklus 006
+node --env-file=.env scripts/rilis/rilis.mjs pasca --track T01 --siklus 006         # setelah video publik
+node scripts/rilis/uji.mjs                                             # uji dengan API tiruan
+```
+
+**Persiapan (kreator).** Aktifkan Advanced features di tiap channel (untuk thumbnail, pin, video terkait, A/B test, multi audio), ubah OAuth consent screen ke *In production*, lalu `node --env-file=.env scripts/youtube/auth.mjs --track <ID> --tulis` (izin `youtube.upload` dan `youtube.force-ssl`, disimpan sebagai `YOUTUBE_PUBLISH_TOKEN_<ID>`; channel harus sama dengan `YOUTUBE_CHANNEL_ID_<ID>`). Mulai ulang dashboard setelahnya.
+
+- **`06-rilis.json`** (per siklus) memuat rencana, persetujuan, hasil, dan checklist. Persetujuan mengikat teks, jadwal, komentar, dan file; perubahan apa pun membatalkannya. QA otomatis `GAGAL` atau belum ada memblokir persetujuan. Status `05-qa.md` ditampilkan, tidak memblokir.
+- **Kirim** mengunggah video (dapat dilanjutkan bila terputus), playlist, subtitle, dan thumbnail; jadwal memakai `publishAt`. Langkah yang sudah selesai dilewati.
+- **Pasca-tayang** melengkapi thumbnail atau subtitle yang tertunda dan memposting komentar pertama sekali saja pada video publik atau unlisted. Dijalankan manual (penjadwal Mac belum dibuat).
+- **Kunci unggah:** siklus berstatus `tayang`, sudah terkirim lewat Upload-Post, atau berpanduan unggah manual tidak bisa diunggah alat ini. Catat URL tayang di dashboard agar checklist dan komentar bisa dipakai.
+- **Manual:** pin komentar, video terkait, end screen, cards, A/B test, multi audio, mid-roll, serta Facebook, Instagram, dan TikTok (belum ada adaptor).
+- **Belum diuji ke API sungguhan.** Uji pertama pakai "Unggah uji (privat)", hapus videonya sesudahnya, dan periksa bahasa audio default (`defaultAudioLanguage` tidak tercantum sebagai bidang yang bisa ditulis), subtitle, dan thumbnail Short.
+- Analitik masih mencocokkan video lewat `06-publish.json` atau judul; `06-rilis.json` belum dibaca.
+
 ## Data YouTube (riset dan analitik)
 
-Skrip `scripts/youtube/`, tanpa dependensi, hanya membaca. Dijalankan dari root repo.
+Skrip `scripts/youtube/`, tanpa dependensi, hanya membaca (izin tulis hanya diminta `auth.mjs --tulis` untuk alat rilis). Dijalankan dari root repo.
 
 ```
 node --env-file=.env scripts/youtube/riset.mjs --q "why indonesia" --q "jakarta explained" --track T02 --siklus 005
@@ -430,6 +455,7 @@ node --env-file=.env scripts/youtube/analitik.mjs --track T02 [--hari 28] [--vid
 | `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET` | OAuth client tipe Desktop app | bersama |
 | `YOUTUBE_CLIENT_ID_<ID>`, `YOUTUBE_CLIENT_SECRET_<ID>` | OAuth client khusus satu track (harus sepasang) | opsional |
 | `YOUTUBE_REFRESH_TOKEN_<ID>`, `YOUTUBE_CHANNEL_ID_<ID>` | ditulis `auth.mjs` | wajib per track untuk analitik |
+| `YOUTUBE_PUBLISH_TOKEN_<ID>` | ditulis `auth.mjs --tulis` | wajib per track untuk alat rilis |
 
 **Persiapan di Google Cloud (kreator).** Buat project, aktifkan YouTube Data API v3, YouTube Analytics API, dan YouTube Reporting API, buat API key (batasi ke Data API) dan OAuth client ID tipe *Desktop app*. Di OAuth consent screen (user type External) tambahkan akun pemilik channel sebagai test user. Pada status *Testing*, refresh token kedaluwarsa setelah 7 hari; ubah ke *In production*, lalu jalankan ulang `auth.mjs`.
 
@@ -454,7 +480,7 @@ Status uji (2026-11-27): riset, login T02, dan `analitik.mjs` jalan dengan akun 
 - Rencana validasi terkunci, jadwal tayang, dan batas kapasitas dibaca dari file, tidak diubah.
 - Salah ucap (A2) yang sudah didengar dan diterima kreator dicatat per siklus di `04-assets.json` `ucapan_diterima` (`tanggal`, `scenes`); QA menurunkannya ke sedang dan tetap menampilkannya. Hanya diisi atas jawaban kreator.
 - QA kritis menghentikan pipeline (kode 2). QA otomatis tidak pernah menyatakan LULUS final; ada pemeriksaan manual (dengar audio, tonton, cek fakta, thumbnail).
-- Publish hanya setelah kreator mengetik `SETUJU` untuk siklus itu. Alat publish: Upload-Post (lihat bagian Publish).
+- Publish hanya setelah kreator mengetik `SETUJU` untuk siklus itu. Alat publish: alat rilis (YouTube, lihat bagian Alat rilis) atau Upload-Post (lihat bagian Publish).
 - Pengecualian QA dari kreator dicatat di TRACK.md (`pengecualian_qa`) dan tetap tampil sebagai temuan.
 
 ## Yang dicek QA otomatis

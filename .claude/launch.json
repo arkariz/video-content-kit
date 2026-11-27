@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dashboard-rilis",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--env-file-if-exists=.env", "scripts/rilis/dashboard.mjs", "--port", "4747"],
+      "port": 4747
+    }
+  ]
+}

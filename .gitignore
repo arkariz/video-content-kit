@@ -18,3 +18,5 @@ produksi/render/_preview/
 __pycache__/
 *.pyc
 .env.tmp-*
+.rilis.lock
+.rilis-sesi.json

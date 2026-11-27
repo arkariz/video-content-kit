@@ -8,6 +8,8 @@ import fs from "node:fs"; import path from "node:path";
 import { ROOT, need } from "../produksi/lib.mjs";
 
 export const SCOPES = ["https://www.googleapis.com/auth/youtube.readonly", "https://www.googleapis.com/auth/yt-analytics.readonly"];
+// Izin menulis (unggah, subtitle, thumbnail, playlist, komentar) untuk scripts/rilis; tokennya disimpan terpisah.
+export const SCOPES_TULIS = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.force-ssl"];
 const DATA = "https://www.googleapis.com/youtube/v3";
 const REPORTS = "https://youtubeanalytics.googleapis.com/v2/reports";
 export const TOKEN_URL = "https://oauth2.googleapis.com/token";

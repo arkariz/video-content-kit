@@ -1,5 +1,6 @@
 // Menghubungkan channel YouTube milik satu track lewat OAuth 2.0 (hanya baca). Dijalankan kreator sendiri.
 //   node --env-file=.env scripts/youtube/auth.mjs --track T02
+//   node --env-file=.env scripts/youtube/auth.mjs --track T02 --tulis   (izin unggah dan komentar untuk scripts/rilis, token terpisah)
 //   node --env-file=.env scripts/youtube/auth.mjs --cek        (status kredensial dan channel tiap track)
 // Tiap track punya token sendiri, jadi akun/channel boleh berbeda; ulangi perintah pertama per track.
 // Alur loopback + PKCE: buka tautan yang dicetak, pilih akun/channel, setujui, lalu konfirmasi di terminal.
@@ -7,7 +8,8 @@
 import fs from "node:fs"; import path from "node:path"; import http from "node:http"; import crypto from "node:crypto"; import readline from "node:readline/promises";
 import { ROOT } from "../produksi/lib.mjs";
 import { reachJob } from "./reach.mjs";
-import { SCOPES, accessToken, channelVar, data, oauthClient, opts, tokenRequest, tokenVar, trackOf, tracks } from "./lib.mjs";
+import { publishVar } from "../rilis/youtube.mjs";
+import { SCOPES, SCOPES_TULIS, accessToken, channelVar, data, oauthClient, opts, tokenRequest, tokenVar, trackOf, tracks } from "./lib.mjs";
 
 const { o } = opts();
 if (o.cek) {
@@ -23,7 +25,7 @@ if (o.cek) {
   process.exit(0);
 }
 if (typeof o.track !== "string") throw new Error("Wajib: --track T02 (atau --cek)");
-const track = trackOf(o.track); const envFile = path.resolve(ROOT, typeof o.env === "string" ? o.env : ".env");
+const track = trackOf(o.track); const tulis = !!o.tulis; const izin = tulis ? SCOPES_TULIS : SCOPES; const envFile = path.resolve(ROOT, typeof o.env === "string" ? o.env : ".env");
 const { client_id, client_secret } = oauthClient(track.id);
 const verifier = crypto.randomBytes(48).toString("base64url"), state = crypto.randomBytes(16).toString("base64url");
 
@@ -40,17 +42,19 @@ const { code, redirect_uri } = await new Promise((resolve, reject) => {
   const batas = setTimeout(() => { server.close(); reject(new Error("Tidak ada jawaban dalam 5 menit; jalankan ulang")); }, 300_000);
   server.listen(0, "127.0.0.1", () => {
     redirect = `http://127.0.0.1:${server.address().port}`;
-    const q = new URLSearchParams({ client_id, redirect_uri: redirect, response_type: "code", scope: SCOPES.join(" "), access_type: "offline", prompt: "consent select_account", state, code_challenge: crypto.createHash("sha256").update(verifier).digest("base64url"), code_challenge_method: "S256" });
+    const q = new URLSearchParams({ client_id, redirect_uri: redirect, response_type: "code", scope: izin.join(" "), access_type: "offline", prompt: "consent select_account", state, code_challenge: crypto.createHash("sha256").update(verifier).digest("base64url"), code_challenge_method: "S256" });
     console.log(`\nHubungkan channel untuk ${track.id} (TRACK.md: ${track.channel ?? "channel belum diisi"}).\nBuka tautan ini di browser:\n\nhttps://accounts.google.com/o/oauth2/v2/auth?${q}\n\nMenunggu izin...`);
   });
 });
 
 const tok = await tokenRequest({ client_id, client_secret, code, code_verifier: verifier, grant_type: "authorization_code", redirect_uri });
 if (!tok.refresh_token) throw new Error("Google tidak mengirim refresh token; cabut akses aplikasi di myaccount.google.com/permissions lalu ulangi");
-const kurang = SCOPES.filter((s) => !(tok.scope ?? "").split(" ").includes(s));
+const kurang = izin.filter((s) => !(tok.scope ?? "").split(" ").includes(s));
 if (kurang.length) throw new Error(`Izin belum lengkap, centang semua kotak saat menyetujui. Kurang: ${kurang.join(", ")}`);
 const channel = (await data("channels", { part: "snippet", mine: "true" }, { token: tok.access_token })).items?.[0];
 if (!channel) throw new Error("Akun ini tidak punya channel YouTube; ulangi dan pilih channel yang benar");
+
+if (tulis && process.env[channelVar(track.id)] && process.env[channelVar(track.id)] !== channel.id) throw new Error(`Channel "${channel.snippet.title}" berbeda dari channel ${track.id} yang sudah terhubung; pilih channel yang sama`);
 
 const sama = tracks().filter((t) => t.id !== track.id && process.env[channelVar(t.id)] === channel.id);
 if (sama.length) console.log(`\nPERHATIAN: channel ini sudah dipakai ${sama.map((t) => t.id).join(", ")}. Niche berbeda harus channel berbeda; lanjutkan hanya bila track-nya seniche.`);
@@ -60,12 +64,14 @@ if (jawab !== "ya") { console.log("Dibatalkan, tidak ada yang disimpan."); proce
 
 // Ganti baris variabel track ini saja; baris .env lain tidak disentuh.
 let isi = fs.existsSync(envFile) ? fs.readFileSync(envFile, "utf8") : "";
-for (const [nama, nilai] of [[tokenVar(track.id), tok.refresh_token], [channelVar(track.id), channel.id]]) {
+const namaToken = tulis ? publishVar(track.id) : tokenVar(track.id);
+for (const [nama, nilai] of [[namaToken, tok.refresh_token], [channelVar(track.id), channel.id]]) {
   const pola = new RegExp(`^[ \\t]*(export[ \\t]+)?${nama}=.*$`, "m"), baris = `${nama}=${nilai}`;
   isi = pola.test(isi) ? isi.replace(pola, () => baris) : `${isi}${isi && !isi.endsWith("\n") ? "\n" : ""}${baris}\n`;
 }
 const tmp = `${envFile}.tmp-${process.pid}`; fs.writeFileSync(tmp, isi, { mode: 0o600 }); fs.renameSync(tmp, envFile);
-console.log(`Disimpan: ${tokenVar(track.id)} dan ${channelVar(track.id)} di ${path.relative(ROOT, envFile)}.`);
+console.log(`Disimpan: ${namaToken} dan ${channelVar(track.id)} di ${path.relative(ROOT, envFile)}.`);
+if (tulis) process.exit(0);
 // Dipasang sedini mungkin: data CTR hanya tersedia mulai 30 hari sebelum job dibuat.
 try { console.log((await reachJob(tok.access_token)).baru ? "Job laporan CTR dibuat; data pertama sekitar 48 jam lagi." : "Job laporan CTR sudah ada."); }
 catch (e) { console.log(`Job laporan CTR belum bisa dibuat (aktifkan YouTube Reporting API; analitik.mjs akan mencoba lagi): ${e.message}`); }

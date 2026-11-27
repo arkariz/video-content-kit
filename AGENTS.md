@@ -81,7 +81,7 @@ node --env-file=.env scripts/pipeline/run.mjs --track <ID> --siklus <NNN> [--dry
 - Syarat input: `01-riset-viral.md`, `02-brief.md`, `03-script.json` (dengan bidang visual sesuai `produksi/CONTRACT.md`), `03-naskah.md`. Pipeline memvalidasi kontrak, lalu TTS, caption, footage, render, QA otomatis, dan paket review di `hasil/review/`.
 - Dokumentasi: `produksi/PIPELINE.md` (tahap, gate, kebutuhan), `produksi/CONTRACT.md` (kontrak visual), `produksi/STYLE.md` (bahasa bentuk, palet, pemeran).
 - Pipeline berhenti pada QA kritis (kode 2), pada tahap LLM yang file-nya belum ada (kode 3), dan menunggu kreator. **QA otomatis tidak pernah menyatakan LULUS final**; pemeriksaan manual tetap wajib. Perbaikan mekanis: `scripts/pipeline/autofix.mjs`.
-- Publish hanya lewat `scripts/pipeline/approve.mjs` setelah kreator mengetik SETUJU untuk siklus itu. Jangan memanggil API platform dengan jalur lain.
+- Publish hanya lewat dua jalur, masing-masing setelah kreator mengetik SETUJU untuk siklus itu: `scripts/pipeline/approve.mjs` (Upload-Post) atau alat rilis `scripts/rilis/` (dashboard atau `rilis.mjs setuju`, saat ini YouTube; lihat `produksi/PIPELINE.md` bagian "Alat rilis"). Agent tidak boleh mengetik atau mengisi SETUJU. Satu siklus hanya memakai satu jalur. Jangan memanggil API platform dengan jalur lain.
 - Mesin visual dipakai bersama semua track: ubah komponen bersama (`produksi/remotion/src`) hanya di sesi terpisah dan jangan merusak track lain.
 - Pengecualian QA dari kreator ditulis di TRACK.md (`pengecualian_qa`) dan tetap muncul sebagai temuan.
 
