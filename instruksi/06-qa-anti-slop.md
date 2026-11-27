@@ -21,5 +21,4 @@ Jalankan skill `video-anti-slop` pada keempat lapisan, lalu tulis `05-qa.md` den
 ## Uji orisinalitas (wajib dijawab di laporan)
 
 1. Kalau channel lain memberi prompt yang sama ke AI, apakah mereka akan mendapat video yang hampir sama? Kalau ya, GAGAL.
-2. Apa bukti milik kreator di video ini, dan di detik ke berapa muncul?
-3. Apa yang dipelajari penonton di sini yang tidak ada di 5 outlier riset?
+2. Apa yang dipelajari penonton di sini yang tidak ada di 5 outlier riset?

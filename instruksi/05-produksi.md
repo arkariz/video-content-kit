@@ -29,7 +29,7 @@ Tujuan: dari `03-script.json` menghasilkan suara, caption, visual, dan render se
 2. Buat halaman pratinjau sederhana (`produksi/preview/<ID>-<siklus>.html` berisi thumbnail + tautan) untuk kreator.
 3. **Gate:** kreator memilih klip. Di mode `otomatis`, pilih klip yang paling relevan dan tidak generik.
 4. Unduh klip terpilih, lalu catat di `04-assets.json`: URL sumber, ID klip, lisensi, tanggal unduh, dan scene yang memakainya.
-5. Batas: footage stok maksimal sekitar sepertiga dari total durasi. Sisanya visual Remotion dan bukti milik kreator.
+5. Batas: footage stok maksimal sekitar sepertiga dari total durasi. Sisanya visual Remotion.
 
 ## 3d. Visual Remotion
 

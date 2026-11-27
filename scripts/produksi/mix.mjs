@@ -1,4 +1,5 @@
-// Campur musik latar (otomatis mengecil saat narasi) dan efek suara dari 04-audio.json ke video yang sudah dirender.
+// Campur musik latar (otomatis mengecil saat narasi), musik mood per rentang scene (spec.mood_music), dan efek suara
+// dari 04-audio.json ke video yang sudah dirender.
 // Gambar tidak dirender ulang. Hasil render asli disimpan sebagai *.raw.mp4, jadi aman diulang (misalnya setelah efek suara menyusul).
 // Pemakaian: node scripts/produksi/mix.mjs --track T01 --siklus 004     (setelah render.mjs)
 import fs from "node:fs"; import path from "node:path"; import { execFileSync, spawnSync } from "node:child_process";
@@ -12,6 +13,14 @@ const probe = (f, entry) => execFileSync("ffprobe", ["-v", "error", "-show_entri
 const music = path.join(extra, "music.mp3"); if (!fs.existsSync(music)) throw new Error("musik belum ada; jalankan audio-extra.mjs");
 const targets = [{ file: `Master16x9-${lang}.mp4`, ids: script.scenes.map((s) => s.id) }, ...(script.shorts_cuts || []).map((c) => ({ file: `Short9x16-${c.name}-${lang}.mp4`, ids: c.scene_ids }))];
 const missing = new Set(); const report = [];
+// musik mood: [{ name, from, to, volume? }] -> extra/music-<name>.mp3; musik utama mengecil selama rentang itu
+const FADE = 1.2; const order = script.scenes.map((s) => s.id);
+const moods = (spec.mood_music ?? []).map((m) => {
+  const f = path.join(extra, `music-${m.name}.mp3`), a = order.indexOf(m.from), b = order.indexOf(m.to ?? m.from);
+  if (!fs.existsSync(f)) throw new Error(`musik mood "${m.name}" belum ada (${f}); jalankan audio-extra.mjs`);
+  if (a < 0 || b < a) throw new Error(`musik mood "${m.name}": rentang scene ${m.from}..${m.to} tidak valid`);
+  return { ...m, f, ids: new Set(order.slice(a, b + 1)) };
+});
 // encoder AudioToolbox bila ada (encoder aac bawaan ffmpeg pernah menghasilkan lonjakan puncak di master 004)
 const AAC = spawnSync("ffmpeg", ["-hide_banner", "-encoders"], { encoding: "utf8" }).stdout.includes(" aac_at ") ? "aac_at" : "aac";
 const peak = (f) => parseFloat(spawnSync("ffmpeg", ["-nostats", "-i", f, "-vn", "-af", "ebur128=peak=true", "-f", "null", "-"], { encoding: "utf8" }).stderr.match(/Peak:\s+(-?[\d.]+) dBFS/g).at(-1).split(/\s+/)[1]);
@@ -22,7 +31,7 @@ for (const t of targets) {
   if (!probe(final, "format_tags=comment").includes("mixed")) fs.copyFileSync(final, raw); // render baru menjadi sumber
   const dur = parseFloat(probe(raw, "format=duration"));
   // waktu mulai scene sama dengan render.mjs
-  let frames = 0; const cues = [];
+  let frames = 0; const cues = []; const spans = []; const times = [];
   t.ids.forEach((id, i) => {
     const s = script.scenes.find((x) => x.id === id), words = caps[id] || [];
     for (const c of spec.cues.filter((x) => x.scene === id)) {
@@ -32,14 +41,27 @@ for (const t of targets) {
       const own = path.join(extra, `${c.sfx}.mp3`), f = fs.existsSync(own) ? own : path.join(ROOT, "produksi/sfx/el", `${c.sfx}.mp3`); if (fs.existsSync(f)) cues.push({ f, at, vol: c.vol ?? 0.4 }); else missing.add(c.sfx);
     }
     const next = script.scenes.find((x) => x.id === t.ids[i + 1]);
-    frames += Math.ceil((s.duration_ms[lang] / 1000) * FPS) + Math.round(pauseSec(next) * FPS);
+    const from = frames / FPS; frames += Math.ceil((s.duration_ms[lang] / 1000) * FPS) + Math.round(pauseSec(next) * FPS);
+    times.push({ id, from, to: frames / FPS });
   });
+  // gabungkan scene berurutan milik mood yang sama menjadi satu rentang
+  for (const mood of moods) { let cur = null; for (const x of times) { if (!mood.ids.has(x.id)) { cur = null; continue; } if (cur) cur.to = x.to; else spans.push((cur = { mood, from: x.from, to: x.to })); } }
   const musLen = parseFloat(probe(music, "format=duration")); const copies = Math.max(1, Math.ceil((dur - 4) / (musLen - 4)));
-  const inputs = ["-i", raw]; for (let i = 0; i < copies; i++) inputs.push("-i", music); for (const c of cues) inputs.push("-i", c.f);
+  const inputs = ["-i", raw]; for (let i = 0; i < copies; i++) inputs.push("-i", music); for (const c of cues) inputs.push("-i", c.f); for (const x of spans) inputs.push("-stream_loop", "-1", "-i", x.mood.f);
   const flt = []; let bed = "[1:a]";
   for (let i = 1; i < copies; i++) { flt.push(`${bed}[${i + 1}:a]acrossfade=d=4:c1=tri:c2=tri[b${i}]`); bed = `[b${i}]`; }
   flt.push(`[0:a]asplit=2[voice][key]`);
-  flt.push(`${bed}atrim=0:${dur},volume=${spec.music.volume},afade=t=in:d=0.8,afade=t=out:st=${Math.max(0, dur - 2)}:d=2,aresample=48000[mus]`);
+  flt.push(`${bed}atrim=0:${dur},volume=${spec.music.volume},afade=t=in:d=0.8,afade=t=out:st=${Math.max(0, dur - 2)}:d=2,aresample=48000${spans.length ? "[bed0]" : "[mus]"}`);
+  if (spans.length) {
+    // musik utama turun ke nol di tiap rentang mood (bersilang FADE detik), musik mood masuk di tempatnya
+    const dip = spans.map((x) => `clip(min((t-${(x.from - FADE / 2).toFixed(2)})/${FADE},(${(x.to + FADE / 2).toFixed(2)}-t)/${FADE}),0,1)`).join("+");
+    flt.push(`[bed0]volume='max(0,1-(${dip}))':eval=frame[bed1]`);
+    spans.forEach((x, i) => {
+      const a = Math.max(0, x.from - FADE / 2), len = Math.min(dur, x.to + FADE / 2) - a, ms = Math.round(a * 1000);
+      flt.push(`[${1 + copies + cues.length + i}:a]atrim=0:${len.toFixed(2)},volume=${x.mood.volume ?? spec.music.volume},afade=t=in:d=${FADE},afade=t=out:st=${Math.max(0, len - FADE).toFixed(2)}:d=${FADE},aresample=48000,adelay=${ms}|${ms}[m${i}]`);
+    });
+    flt.push(`[bed1]${spans.map((_, i) => `[m${i}]`).join("")}amix=inputs=${spans.length + 1}:duration=first:normalize=0[mus]`);
+  }
   flt.push(`[mus][key]sidechaincompress=threshold=0.03:ratio=4:attack=25:release=500[duck]`);
   cues.forEach((c, i) => { const ms = Math.round(c.at * 1000); flt.push(`[${1 + copies + i}:a]aresample=48000,volume=${c.vol},adelay=${ms}|${ms}[x${i}]`); });
   flt.push(`[voice][duck]${cues.map((_, i) => `[x${i}]`).join("")}amix=inputs=${2 + cues.length}:duration=first:normalize=0,alimiter=limit=0.95[out]`);
@@ -56,9 +78,9 @@ for (const t of targets) {
     fs.rmSync(tmp);
   }
   const puncak = peak(loud); if (puncak > 0) console.log(`  peringatan: puncak audio ${puncak} dBFS di ${t.file}, periksa`);
-  fs.renameSync(loud, final); report.push({ file: t.file, sfx: cues.length, lufs: measured }); console.log("campur", t.file, `${dur.toFixed(1)} dtk, ${cues.length} efek suara, ${measured} LUFS`);
+  fs.renameSync(loud, final); report.push({ file: t.file, sfx: cues.length, mood: spans.map((x) => `${x.mood.name} ${x.from.toFixed(0)}-${x.to.toFixed(0)}`), lufs: measured }); console.log("campur", t.file, `${dur.toFixed(1)} dtk, ${cues.length} efek suara, ${measured} LUFS`);
 }
 if (missing.size) console.log("efek suara BELUM ADA (dilewati):", [...missing].join(", "));
 const assets = readJson(assetsPath, { footage: [], renders: [] });
-assets.audio_extra = { sumber: "ElevenLabs (Music API, Sound Generation)", musik: spec.music.prompt, tercampur: report, sfx_belum_ada: [...missing] };
+assets.audio_extra = { sumber: "ElevenLabs (Music API, Sound Generation)", musik: spec.music.prompt, musik_mood: moods.map((x) => ({ name: x.name, from: x.from, to: x.to ?? x.from, prompt: x.prompt })), tercampur: report, sfx_belum_ada: [...missing] };
 writeJson(assetsPath, assets);

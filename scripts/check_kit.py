@@ -136,13 +136,11 @@ def check_script(path: Path) -> None:
     except Exception as e:  # noqa: BLE001
         err(f"{path}: JSON tidak valid ({e})")
         return
-    for key in ["cycle", "title_options", "promise", "creator_evidence", "scenes", "shorts_cuts"]:
+    for key in ["cycle", "title_options", "promise", "scenes", "shorts_cuts"]:
         if key not in data:
             err(f"{path}: key wajib '{key}' tidak ada")
     if len(data.get("title_options", [])) != 3:
         err(f"{path}: title_options harus 3")
-    if not data.get("creator_evidence"):
-        err(f"{path}: creator_evidence kosong (konten tanpa bukti kreator = slop)")
     scenes = data.get("scenes", [])
     ids = {s.get("id") for s in scenes}
     if scenes and scenes[0].get("role") != "hook":

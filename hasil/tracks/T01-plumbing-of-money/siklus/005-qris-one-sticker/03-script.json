@@ -2598,5 +2598,433 @@
     "Bank Indonesia",
     "cross-border payments",
     "Southeast Asia"
+  ],
+  "sources": [
+    {
+      "scene": "s01",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "Static QRIS: customer scans one printed sticker, enters amount and PIN",
+      "id": "C05"
+    },
+    {
+      "scene": "s01",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "QRIS is processed in real time; buyer and merchant get notified immediately",
+      "id": "C08"
+    },
+    {
+      "scene": "s02",
+      "url": "https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober",
+      "claim": "Oct 2026: QRIS transactions +70.95% yoy, 71.91M users, 51.31M merchants (BI, 18 Nov 2026)",
+      "id": "C09"
+    },
+    {
+      "scene": "s03",
+      "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
+      "claim": "Cross-border QRIS: Thailand 2022, Japan Aug 2025, South Korea Apr 2026",
+      "id": "C19"
+    },
+    {
+      "scene": "s04",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+      "claim": "Mid-August 2019: 26 QR payment providers with differing models and specifications (BI)",
+      "id": "C02"
+    },
+    {
+      "scene": "s05",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+      "claim": "26 QR providers with differing specifications before QRIS",
+      "id": "C02"
+    },
+    {
+      "scene": "s07",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+      "claim": "BI launched QRIS on 17 Aug 2019 with ASPI, based on EMVCo",
+      "id": "C01"
+    },
+    {
+      "scene": "s08",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "Merchant opens account with one QRIS provider; any provider's app can pay",
+      "id": "C04"
+    },
+    {
+      "scene": "s08",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "QRIS = QR spec plus interconnection spec, with PSPs, switching institutions, standard body",
+      "id": "C06"
+    },
+    {
+      "scene": "s09",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+      "claim": "QRIS effective nationally from 1 Jan 2020; transition until 31 Dec 2019",
+      "id": "C03"
+    },
+    {
+      "scene": "s09",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "One provider account, payments from any provider app",
+      "id": "C04"
+    },
+    {
+      "scene": "s09",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "Static QRIS sticker or printout is free",
+      "id": "C05"
+    },
+    {
+      "scene": "s10",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "Parties: payment service providers, switching institutions",
+      "id": "C06"
+    },
+    {
+      "scene": "s10",
+      "url": "https://developers.bri.co.id/en/product/qris",
+      "claim": "Merchant side = acquirer, customer side = issuer",
+      "id": "C07"
+    },
+    {
+      "scene": "s11",
+      "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+      "claim": "Switching institutions forward domestic payment data and run QRIS interconnection",
+      "id": "C37"
+    },
+    {
+      "scene": "s12",
+      "url": "https://mvallim.github.io/emv-qrcode/docs/EMVCo-Merchant-Presented-QR-Specification-v1-1.pdf",
+      "claim": "EMVCo merchant QR payload: merchant account info, country code, merchant name, city",
+      "id": "C32"
+    },
+    {
+      "scene": "s12",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+      "claim": "QRIS built on EMVCo standard",
+      "id": "C01"
+    },
+    {
+      "scene": "s12",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "Static QRIS: customer enters the amount",
+      "id": "C05"
+    },
+    {
+      "scene": "s13",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "Customer scans, enters amount, enters PIN",
+      "id": "C05"
+    },
+    {
+      "scene": "s13",
+      "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+      "claim": "Switching forwards payment data between providers",
+      "id": "C37"
+    },
+    {
+      "scene": "s14",
+      "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+      "claim": "Switch forwards to the provider holding the merchant account",
+      "id": "C37"
+    },
+    {
+      "scene": "s14",
+      "url": "https://developers.bri.co.id/en/product/qris",
+      "claim": "Merchant side = acquirer",
+      "id": "C07"
+    },
+    {
+      "scene": "s15",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "Real-time processing; buyer and merchant notified immediately",
+      "id": "C08"
+    },
+    {
+      "scene": "s16",
+      "url": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/03-script.json",
+      "claim": "Cycle 002 worked example: $2.75 of a $100 US card purchase",
+      "id": "C15"
+    },
+    {
+      "scene": "s17",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "MDR QRIS rules (BI policy)",
+      "id": "C12"
+    },
+    {
+      "scene": "s17",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "MDR QRIS above Rp100k for non-micro: 0.7%",
+      "id": "C13"
+    },
+    {
+      "scene": "s18",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "From 1 Oct 2026: MDR 0% up to Rp100k for small/medium/large; micro 0% up to Rp500k",
+      "id": "C12"
+    },
+    {
+      "scene": "s19",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "MDR 0.7% above Rp100k for non-micro merchants",
+      "id": "C13"
+    },
+    {
+      "scene": "s19",
+      "url": "https://finansial.bisnis.com/read/20240430/11/1761523/biaya-qris-usaha-mikro-03-bi-tegaskan-merchant-tak-tarik-tarif-ke-konsumen",
+      "claim": "Merchants may not charge MDR to consumers",
+      "id": "C14"
+    },
+    {
+      "scene": "s20",
+      "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "BI frames QRIS as UMKM entry point to the digital ecosystem",
+      "id": "C33"
+    },
+    {
+      "scene": "s21",
+      "url": "https://katadata.co.id/finansial/makro/6adf27d2abe9d/bi-ingin-transaksi-qris-jadi-acuan-penilaian-kredit-umkm",
+      "claim": "BI wants QRIS transaction data as a reference for UMKM credit assessment (example of three years is illustrative)",
+      "id": "C36"
+    },
+    {
+      "scene": "s23",
+      "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+      "claim": "MDR 0% up to Rp100k (all merchant sizes)",
+      "id": "C12"
+    },
+    {
+      "scene": "s23",
+      "url": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/03-script.json",
+      "claim": "Cycle 002: 2.75% card cut; 2.75% of Rp50,000 = Rp1,375 (illustrative)",
+      "id": "C15"
+    },
+    {
+      "scene": "s24",
+      "url": "https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober",
+      "claim": "51.31M QRIS merchants, Oct 2026",
+      "id": "C09"
+    },
+    {
+      "scene": "s24",
+      "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+      "claim": "Indonesia population 2025: 284.67M (BPS SUPAS)",
+      "id": "C34"
+    },
+    {
+      "scene": "s24",
+      "url": "https://bali.antaranews.com/berita/411917/qris-dipakai-6577-juta-pengguna-dan-diterima-4486-juta-gerai",
+      "claim": "96.68% of QRIS merchants are UMKM (Jun 2026)",
+      "id": "C38"
+    },
+    {
+      "scene": "s25",
+      "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+      "claim": "GPN switching institutions licensed by BI route domestic transactions",
+      "id": "C37"
+    },
+    {
+      "scene": "s25",
+      "url": "https://www.thejakartapost.com/opinion/2025/05/03/analysis-us-cites-qris-as-trade-barrier-but-us-payment-model-unfit-for-indonesia.html",
+      "claim": "Domestic retail card transactions processed by GPN switches in Indonesia",
+      "id": "C25"
+    },
+    {
+      "scene": "s27",
+      "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
+      "claim": "USTR NTE 2025 named QRIS a trade barrier; foreign stakeholders not consulted",
+      "id": "C24"
+    },
+    {
+      "scene": "s28",
+      "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
+      "claim": "Same report criticised GPN",
+      "id": "C24"
+    },
+    {
+      "scene": "s28",
+      "url": "https://www.thejakartapost.com/opinion/2025/05/03/analysis-us-cites-qris-as-trade-barrier-but-us-payment-model-unfit-for-indonesia.html",
+      "claim": "Domestic card transactions must go through GPN switches located in Indonesia",
+      "id": "C25"
+    },
+    {
+      "scene": "s29",
+      "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
+      "claim": "BI: QRIS is based on EMVCo (Europay, Mastercard, Visa)",
+      "id": "C26"
+    },
+    {
+      "scene": "s29",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+      "claim": "QRIS compiled with ASPI using EMVCo",
+      "id": "C01"
+    },
+    {
+      "scene": "s30",
+      "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
+      "claim": "BI open to cooperation with any country including the US",
+      "id": "C26"
+    },
+    {
+      "scene": "s31",
+      "url": "https://theconversation.com/us-labels-qris-a-trade-barrier-whats-next-for-indonesias-digital-payment-system-257616",
+      "claim": "Visa/Mastercard dominant in Indonesian credit cards and cross-border payments",
+      "id": "C27"
+    },
+    {
+      "scene": "s32",
+      "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
+      "claim": "QRIS cross-border active in six countries (Sep 2026)",
+      "id": "C20"
+    },
+    {
+      "scene": "s33",
+      "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
+      "claim": "Thailand Aug 2022, Malaysia May 2023, Singapore 17 Nov 2023",
+      "id": "C19"
+    },
+    {
+      "scene": "s34",
+      "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
+      "claim": "Japan 17 Aug 2025, South Korea 1 Apr 2026, China 30 Apr 2026",
+      "id": "C19"
+    },
+    {
+      "scene": "s34",
+      "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
+      "claim": "Six partner countries active (Sep 2026)",
+      "id": "C20"
+    },
+    {
+      "scene": "s35",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+      "claim": "Cross-border QRIS settles in local currencies, no third-currency conversion",
+      "id": "C16"
+    },
+    {
+      "scene": "s36",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+      "claim": "Tourists from partner countries scan QRIS with their own app",
+      "id": "C17"
+    },
+    {
+      "scene": "s37",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+      "claim": "Interconnection between payment switchers of the two countries",
+      "id": "C16"
+    },
+    {
+      "scene": "s37",
+      "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+      "claim": "Switching-to-switching model for cross-border QRIS",
+      "id": "C37"
+    },
+    {
+      "scene": "s38",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+      "claim": "Exchange rate auto-converted; payer sees amount in own currency before PIN; own-currency balance debited",
+      "id": "C17"
+    },
+    {
+      "scene": "s39",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+      "claim": "Settlement via appointed cross-currency dealer banks in local currencies (LCT framework)",
+      "id": "C16"
+    },
+    {
+      "scene": "s40",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+      "claim": "Switch-to-switch interconnection, local currency on each side",
+      "id": "C16"
+    },
+    {
+      "scene": "s40",
+      "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
+      "claim": "Indonesians can pay with QRIS in Thailand since 2022",
+      "id": "C19"
+    },
+    {
+      "scene": "s40",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+      "claim": "Own-currency balance debited",
+      "id": "C17"
+    },
+    {
+      "scene": "s41",
+      "url": "https://katadata.co.id/finansial/keuangan/6ab45ea47d41e/turis-asing-dominasi-transaksi-qris-antarnegara-catat-17-8-juta-transaksi",
+      "claim": "Up to Jul 2026: inbound Rp5.9T, outbound Rp1.73T",
+      "id": "C22"
+    },
+    {
+      "scene": "s41",
+      "url": "https://www.cnbcindonesia.com/market/20260619104014-17-743982/transaksi-qris-turis-asing-capai-rp43-t-malaysia-singapura-terbanyak",
+      "claim": "Malaysia and Singapore lead inbound",
+      "id": "C23"
+    },
+    {
+      "scene": "s42",
+      "url": "https://www.thestar.com.my/business/business-news/2025/08/21/qris-launches-in-japan-as-trial-begins-for-expansion-to-china",
+      "claim": "Japan launch: 35 merchants via JPQR Global; initially one-way",
+      "id": "C21"
+    },
+    {
+      "scene": "s43",
+      "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
+      "claim": "BI exploring India, Saudi Arabia, Vietnam, Australia",
+      "id": "C20"
+    },
+    {
+      "scene": "s43",
+      "url": "https://www.arabnews.com/node/2652151/amp",
+      "claim": "Saudi talks tied to Indonesian hajj and umrah pilgrims",
+      "id": "C35"
+    },
+    {
+      "scene": "s44",
+      "url": "https://www.bis.org/project/nexus",
+      "claim": "Central banks of India, Indonesia, Malaysia, Philippines, Singapore, Thailand set up Nexus Global Payments",
+      "id": "C29"
+    },
+    {
+      "scene": "s44",
+      "url": "https://www.bis.org/project/nexus",
+      "claim": "Live date not confirmed",
+      "id": "C30"
+    },
+    {
+      "scene": "s45",
+      "url": "https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober",
+      "claim": "51.31M merchants",
+      "id": "C09"
+    },
+    {
+      "scene": "s45",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+      "claim": "Static QRIS sticker is free",
+      "id": "C05"
+    },
+    {
+      "scene": "s46",
+      "url": "https://theconversation.com/us-labels-qris-a-trade-barrier-whats-next-for-indonesias-digital-payment-system-257616",
+      "claim": "Card networks still dominant cross-border",
+      "id": "C27"
+    },
+    {
+      "scene": "s46",
+      "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
+      "claim": "QRIS links expanding country by country",
+      "id": "C20"
+    },
+    {
+      "scene": "s47",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+      "claim": "Tourists from partner countries pay QRIS merchants with their own apps",
+      "id": "C17"
+    },
+    {
+      "scene": "s47",
+      "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+      "claim": "Merchant receives rupiah",
+      "id": "C16"
+    }
   ]
 }

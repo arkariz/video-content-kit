@@ -14,13 +14,6 @@
       "fix": "ubah satu scene di rentang itu jadi re-hook"
     },
     {
-      "layer": "Teks",
-      "level": "sedang",
-      "id": "T-src",
-      "msg": "sumber di 03-script.json 0, perlu minimal 5 (satu klaim fakta = satu tautan)",
-      "fix": "tambah `sources:[{scene,url,claim}]`"
-    },
-    {
       "layer": "Audio",
       "level": "kritis",
       "id": "A2",
@@ -100,16 +93,16 @@
     {
       "layer": "Audio",
       "level": "sedang",
-      "id": "A3",
-      "msg": "jenis/lisensi suara belum dicatat (assets.voice.type)",
-      "fix": "catat: clone milik kreator atau voice berlisensi komersial, paket berbayar"
+      "id": "A5",
+      "msg": "tidak ada musik mood untuk scene tertentu",
+      "fix": "tambah mood_music di 04-audio.json"
     },
     {
-      "layer": "Visual/Channel",
+      "layer": "Audio",
       "level": "sedang",
-      "id": "K1",
-      "msg": "bukti nyata kreator tidak ada; DIPERBOLEHKAN oleh pengecualian kreator (pengecualian_qa)",
-      "fix": "tetap tercatat di laporan; kreator memikul risiko kebijakan konten AI"
+      "id": "A4",
+      "msg": "musik utama sama dengan T01/002, T01/004, T02/002, T02/003, T02/004",
+      "fix": "buat musik baru untuk konten ini"
     },
     {
       "layer": "Kemasan",

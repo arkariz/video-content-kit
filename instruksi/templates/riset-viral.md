@@ -21,11 +21,11 @@ Tanggal: YYYY-MM-DD · Niche: · Learnings yang dibaca: (ya/tidak)
 
 ## Usulan sudut
 
-| # | Judul kerja | Hook draf | Bukti milik kreator | Kenapa sekarang | Risiko slop |
-| --- | --- | --- | --- | --- | --- |
-| A | | | | | |
-| B | | | | | |
-| C | | | | | |
+| # | Judul kerja | Hook draf | Kenapa sekarang | Risiko slop |
+| --- | --- | --- | --- | --- |
+| A | | | | |
+| B | | | | |
+| C | | | | |
 
 **Rekomendasi:** (A/B/C + alasan)
 

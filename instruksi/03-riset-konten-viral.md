@@ -37,8 +37,8 @@ Tulis `01-riset-viral.md` (template `riset-viral.md`) yang berisi:
 
 1. Tabel outlier dengan tautan.
 2. Tiga pola yang berulang, masing-masing dengan bukti.
-3. **Celah**: apa yang belum dijawab outlier dan bisa dijawab dengan bukti milik kreator.
-4. **Tiga usulan sudut** untuk siklus ini. Setiap sudut berisi judul kerja, hook draf, bukti milik kreator yang dipakai, alasan kenapa sekarang, dan risiko slop.
+3. **Celah**: apa yang belum dijawab outlier dan bisa kita jawab.
+4. **Tiga usulan sudut** untuk siklus ini. Setiap sudut berisi judul kerja, hook draf, alasan kenapa sekarang, dan risiko slop.
 5. Perbarui `hasil/tracks/<ID>/backlog.md` dengan ide baru dari riset.
 
 ## Gate: pilih sudut
@@ -48,5 +48,4 @@ Isi `menunggu_keputusan` dengan tiga sudut + rekomendasimu. Setelah dipilih, gan
 ## Larangan
 
 - Jangan menyalin naskah, struktur kalimat, atau thumbnail outlier.
-- Jangan memilih topik yang tidak punya satu pun bukti milik kreator. Topik seperti itu otomatis jadi slop.
 - Jangan memakai topik keuangan, kesehatan, atau hukum dengan narasi suara AI (lihat `referensi/aturan-platform.md`).

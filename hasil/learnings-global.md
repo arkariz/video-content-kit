@@ -52,6 +52,14 @@ Dimasukkan atas permintaan kreator sebagai **aturan uji**, belum terbukti: bukti
 
 Permintaan kreator: setiap video memakai efek suara berkualitas dari ElevenLabs, mulai T01 siklus 005. Cara pakai dan pustaka bersama: `produksi/PIPELINE.md` bagian "Suara". Siklus baru tidak siap render tanpa `04-audio.json` berisi cues.
 
+### Musik latar bervariasi (2026-11-27)
+
+Permintaan kreator: tiap konten punya musik latar sendiri, dan scene tertentu punya musik mood sendiri. Cara: `produksi/PIPELINE.md` bagian "Suara".
+
+### Bukti kreator di layar tidak lagi disyaratkan (2026-11-27)
+
+Keputusan kreator: syarat bukti nyata kreator di layar dihapus untuk semua konten. Dicabut dari QA, skill anti-slop, instruksi, dan `check_kit.py`.
+
 ## Format dan struktur
 
 ## Hook dan judul

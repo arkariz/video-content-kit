@@ -15,8 +15,7 @@ Tanggal: YYYY-MM-DD · File yang diperiksa:
 ## Uji orisinalitas
 
 1. Video yang hampir sama bisa dibuat channel lain dengan prompt yang sama? (ya/tidak + alasan)
-2. Bukti milik kreator dan detik kemunculannya:
-3. Yang dipelajari penonton di sini dan tidak ada di outlier riset:
+2. Yang dipelajari penonton di sini dan tidak ada di outlier riset:
 
 ## Temuan
 

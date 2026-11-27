@@ -1,6 +1,6 @@
 # Langkah track: Brief dan naskah
 
-Tujuan: satu naskah yang ditulis untuk didengar, dengan satu ide per scene dan bukti milik kreator, lulus gate anti-slop sebelum diproduksi.
+Tujuan: satu naskah yang ditulis untuk didengar, dengan satu ide per scene, lulus gate anti-slop sebelum diproduksi.
 
 **Wajib dibaca dulu:** `instruksi/referensi/gaya-cerita.md` (riset dan cerita), `instruksi/referensi/gaya-visual.md` (spesifikasi visual), `produksi/STYLE.md` (tampilan), dan `hasil/learnings-global.md`.
 
@@ -17,7 +17,6 @@ Tulis `02-brief.md` (template `brief.md`):
 
 - **Janji video** dalam satu kalimat ("Setelah menonton, kamu bisa ...").
 - **Penonton**: siapa, level, dan apa yang sudah mereka tahu.
-- **Bukti milik kreator**: minimal satu (demo kode nyata, angka dari proyek yang boleh dibagi, pengalaman spesifik, screen recording).
 - **Format**: durasi master, jumlah Shorts yang akan dipotong, versi Indonesia.
 - **3 varian judul** dan **2 varian teks thumbnail** (maksimal 4 kata).
 - **Thumbnail tiap Short** (wajib, 1080x1920): isi `shorts_cuts[].thumbnail`, maksimal 5 kata (kontrak di `produksi/CONTRACT.md`).
@@ -55,4 +54,4 @@ Jalankan skill `video-anti-slop` lapisan **Teks** pada narasi Inggris dan Indone
 
 ## Gate: kreator menyetujui naskah
 
-Sajikan ringkasan: janji, hook, struktur scene, bukti milik kreator, skor anti-slop, checklist cerita (`gaya-cerita.md`), hasil gate kesiapan visual (scene yang masih `needs` atau berklaim `belum`), dan 3 judul. Kreator bisa menambah insight atau mengoreksi akurasi teknis. Setelah disetujui, ubah status siklus di `TRACK.md` menjadi `produksi`.
+Sajikan ringkasan: janji, hook, struktur scene, skor anti-slop, checklist cerita (`gaya-cerita.md`), hasil gate kesiapan visual (scene yang masih `needs` atau berklaim `belum`), dan 3 judul. Kreator bisa menambah insight atau mengoreksi akurasi teknis. Setelah disetujui, ubah status siklus di `TRACK.md` menjadi `produksi`.

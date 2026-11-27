@@ -56,7 +56,7 @@ Informasi tidak disalin antar lapisan: narasi hanya di `03-script.json`; klaim h
   - `count` (opsional): `{ "value": 72, "as": "dots|items|timeline|split" }`.
   - `faces`, `mood`, `bubble` (maksimal 6 kata, sikap atau lelucon).
   - `three_d` (opsional): penanda informatif saja; 3D dipilih lewat import di `04-shots.tsx`.
-- `broll` hanya untuk scene dunia nyata yang bisa dicari: `{ "keywords": [...], "avoid": [...] }`, `{ "own": "krl-01.mp4" }` untuk footage milik kreator (di `produksi/footage-own/<ID>/`, dihitung QA sebagai bukti kreator bila muncul sebelum 30% durasi), atau klip berlisensi lewat `lic:`. Jangan untuk konsep abstrak.
+- `broll` hanya untuk scene dunia nyata yang bisa dicari: `{ "keywords": [...], "avoid": [...] }`, `{ "own": "krl-01.mp4" }` untuk footage milik kreator (di `produksi/footage-own/<ID>/`), atau klip berlisensi lewat `lic:`. Jangan untuk konsep abstrak.
 - `sources` untuk setiap scene yang memuat klaim fakta (angka, aturan, tanggal): `[{ "url", "claim", "id"? }]`, dengan `id` = id klaim riset bila ada. URL polos (string) hanya diterima di siklus lama. Klaim tanpa sumber dilunakkan atau dibuang. Daftar tingkat atas `sources: [{ "scene", "url", "claim" }]` boleh sebagai ringkasan (dipakai QA untuk menghitung sumber).
 
 ## Arah visual (`03-visual.json`)

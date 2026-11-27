@@ -22,4 +22,5 @@ async function make(name, url, body, after) {
 // berurutan menurut prioritas di spec: bila kredit habis, efek yang lebih penting sudah jadi
 // --only sfx|music untuk menjalankan salah satu
 if (o.only !== "music") for (const [name, x] of Object.entries(spec.sfx ?? {})) await make(name, "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128", { text: x.prompt, duration_seconds: x.seconds, prompt_influence: 0.45, model_id: "eleven_text_to_sound_v2", ...(x.loop ? { loop: true } : {}) }, (f) => rapikan(f, x.loop));
-if (o.only !== "sfx" && spec.music) await make("music", "https://api.elevenlabs.io/v1/music?output_format=mp3_44100_128", { prompt: spec.music.prompt, music_length_ms: spec.music.length_ms, model_id: "music_v1", force_instrumental: true });
+const musik = (name, m) => make(name, "https://api.elevenlabs.io/v1/music?output_format=mp3_44100_128", { prompt: m.prompt, music_length_ms: m.length_ms, model_id: "music_v1", force_instrumental: true });
+if (o.only !== "sfx" && spec.music) { await musik("music", spec.music); for (const m of spec.mood_music ?? []) await musik(`music-${m.name}`, m); }

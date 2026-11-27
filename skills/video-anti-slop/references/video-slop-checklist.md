@@ -11,7 +11,6 @@ Tandai setiap item: OK / TEMUAN (dengan timestamp) / N/A.
 
 ## Visual
 
-- [ ] Bukti milik kreator muncul di 30% awal (wajib)
 - [ ] Footage stok sekitar sepertiga durasi atau kurang (wajib)
 - [ ] Tidak ada citra AI dengan teks rusak, tangan atau wajah aneh, atau pantulan yang salah (wajib)
 - [ ] Tidak ada B-roll klise teknologi yang tidak relevan (wajib)

@@ -79,7 +79,7 @@ Setelah riset, tulis di `02-brief.md` (template `brief.md`):
 - Visual mengikuti `gaya-visual.md`: metafora besar = `anchor`, tahap dan penanda = garis waktu atau skala kamera di `shots`, tanpa papan teks; bubble hanya untuk sikap atau lelucon (lihat bagian 8 di sana).
 - Humor kering di pilihan kata, bukan punchline yang bergantung intonasi.
 - Topik uang, kesehatan, hukum: steelman wajib, tanpa nasihat.
-- Narator tidak mengaku sebagai orang tertentu ("I", "saya" sebagai persona) kecuali suara milik kreator. Kehadiran kreator lewat footage nyata.
+- Narator tidak mengaku sebagai orang tertentu ("I", "saya" sebagai persona) kecuali suara milik kreator.
 - Anggaran konsep dan fondasi tetap mengikuti `hasil/learnings-global.md`. Teknik cerita tidak boleh menambah istilah.
 
 ## 5. Checklist cerita (wajib dicentang di `03-naskah.md`)

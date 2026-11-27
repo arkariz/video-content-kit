@@ -36,7 +36,7 @@ Prinsipnya: **repo adalah satu-satunya sumber kebenaran.** Chat dipakai untuk be
 4. **Izin sudah disiapkan di `.claude/settings.json`:** perintah validasi, render Remotion, dan git lokal tidak perlu persetujuan berulang. `git push` tetap ditanyakan. `.env` diblokir dari pembacaan, jadi API key tidak pernah masuk ke konteks.
 5. **Skill dimuat sesuai kebutuhan.** Hanya deskripsi skill yang selalu ada di konteks. Isi lengkapnya dimuat saat dipakai, jadi lima skill tidak membebani setiap sesi.
 6. **Commit per langkah.** Riwayat git menjadi log kerja yang bisa di-rollback, dan Sync di Project selalu mendapat versi terbaru.
-7. **Validasi sebelum commit:** `python3 scripts/check_kit.py` menangkap STATE yang rusak dan naskah tanpa bukti kreator sebelum masuk ke produksi.
+7. **Validasi sebelum commit:** `python3 scripts/check_kit.py` menangkap STATE yang rusak dan naskah yang tidak lengkap sebelum masuk ke produksi.
 
 ## Kalau sedang di luar komputer
 

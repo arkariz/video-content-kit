@@ -57,6 +57,16 @@ const rawP = path.join(ROOT, "produksi/captions", o.track, o.siklus, "en.raw.jso
 if (!raw) add("Audio", "kritis", "A1", "caption EN belum ada", "jalankan captions.mjs");
 else for (const p of script.pronunciations || []) { if (!/^[a-z]+$/i.test(p.term)) continue; for (const s of sc) if (new RegExp(`\\b${p.term}\\b`, "i").test(s.narration.en)) { const got = (raw[s.id] || []).map((w) => w.text.toLowerCase().replace(/[^a-z]/g, "")).join(" "); if (!got.includes(p.term.toLowerCase().replace(/[^a-z]/g, ""))) add("Audio", "kritis", "A2", `${s.id}: transkrip balik tidak memuat "${p.term}" (dugaan salah ucap)`, "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"); } }
 if (!assets.voice?.type) add("Audio", "sedang", "A3", "jenis/lisensi suara belum dicatat (assets.voice.type)", "catat: clone milik kreator atau voice berlisensi komersial, paket berbayar");
+// musik latar: tiap konten punya musik utama sendiri dan musik mood untuk scene tertentu (keputusan kreator 2026-11-27)
+{ const audio = readJson(path.join(dir, "04-audio.json"), null); const extraDir = (t, c) => path.join(ROOT, "produksi/audio", t, c, "extra", "music.mp3");
+  const mine = extraDir(o.track, o.siklus);
+  if (!audio) add("Audio", "sedang", "A4", "04-audio.json belum ada (musik dan efek suara)", "tulis sesuai PIPELINE.md bagian Suara");
+  else {
+    if (!(audio.mood_music ?? []).length) add("Audio", "sedang", "A5", "tidak ada musik mood untuk scene tertentu", "tambah mood_music di 04-audio.json");
+    if (fs.existsSync(mine)) { const sama = []; const base = path.join(ROOT, "produksi/audio"); const bytes = fs.readFileSync(mine);
+      for (const t of fs.readdirSync(base)) { if (!fs.statSync(path.join(base, t)).isDirectory()) continue; for (const c of fs.readdirSync(path.join(base, t))) { const f = extraDir(t, c); if (f !== mine && fs.existsSync(f) && bytes.equals(fs.readFileSync(f))) sama.push(`${t}/${c}`); } }
+      if (sama.length) add("Audio", "sedang", "A4", `musik utama sama dengan ${sama.join(", ")}`, "buat musik baru untuk konten ini"); }
+  } }
 // thumbnail
 if (!fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Thumbnail-A.png"))) add("Visual", "sedang", "V7", "thumbnail belum dibuat", "render Thumbnail varian A dan B");
 // thumbnail Shorts dan caption per kalimat: wajib untuk semua siklus selain siklus lama (caption_mode "word")
@@ -65,11 +75,6 @@ if (!fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, "Thumbn
     if (!c.thumbnail && !lama) add("Visual", "kritis", "V8", `Short ${c.name} tanpa "thumbnail" di shorts_cuts`, "tulis thumbnail tegak untuk tiap Short");
     else if (c.thumbnail && !fs.existsSync(path.join(ROOT, "produksi/render", o.track, o.siklus, `Thumbnail-Short-${c.name}.png`))) add("Visual", "sedang", "V8", `thumbnail Short ${c.name} belum dirender`, "render.mjs --thumb");
   } }
-// bukti kreator: footage milik kreator di 30% awal memenuhi syarat
-const ownEarly = assets.footage.filter((f) => f.catalog_key?.startsWith("own:") && start[f.scene_id] !== undefined && start[f.scene_id] <= 0.3 * total);
-if (ownEarly.length) add("Visual/Channel", "kecil", "K1", `bukti kreator: footage milik kreator di ${ownEarly.map((f) => f.scene_id).join(", ")} (sebelum 30% durasi)`, "tidak ada, periksa manual bahwa isinya menjelaskan topik");
-else if (!exceptions.includes("bukti-kreator")) add("Visual/Channel", "kritis", "K1", "tidak ada bukti nyata kreator di layar", "rekam bukti, atau catat pengecualian di TRACK.md (pengecualian_qa)");
-else add("Visual/Channel", "sedang", "K1", "bukti nyata kreator tidak ada; DIPERBOLEHKAN oleh pengecualian kreator (pengecualian_qa)", "tetap tercatat di laporan; kreator memikul risiko kebijakan konten AI");
 // manual
 // kemasan: lint judul + thumbnail (title.py, saran) dan aturan chapter YouTube
 for (const f of cekKemasan(script)) F.push(f);

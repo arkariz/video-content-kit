@@ -7,7 +7,7 @@ description: Quality gate that catches AI slop in video content before publishin
 
 Gate kualitas untuk konten video berbasis AI. Tujuannya dua: penonton tidak merasa sedang menonton konten AI massal, dan channel tidak jatuh ke kategori "inauthentic content" yang tidak bisa dimonetisasi.
 
-Slop bukan soal "dibuat dengan AI". Slop adalah konten yang bisa dibuat siapa saja dengan prompt yang sama: generik, berulang, dan tanpa bukti dari orang yang membuatnya. Pola permukaan (kata, tanda baca) hanya gejala. Perbaiki penyebabnya dulu, baru gejalanya.
+Slop bukan soal "dibuat dengan AI". Slop adalah konten yang bisa dibuat siapa saja dengan prompt yang sama: generik dan berulang. Pola permukaan (kata, tanda baca) hanya gejala. Perbaiki penyebabnya dulu, baru gejalanya.
 
 ## Input
 
@@ -28,7 +28,6 @@ Catatan untuk naskah lisan: beberapa aturan tulisan tidak berlaku. Pengulangan k
 
 Periksa render atau frame per scene dengan `references/video-slop-checklist.md` bagian Visual. Item wajib:
 
-- Bukti milik kreator terlihat di layar (kode nyata, screen recording, data, wajah atau tangan kreator) minimal sekali di 30% awal video.
 - Footage stok maksimal sekitar sepertiga dari total durasi.
 - Tidak ada citra AI dengan teks rusak, anatomi aneh, atau fisika yang mustahil.
 - Tidak ada B-roll klise teknologi (sirkuit menyala, kode Matrix, hacker berkerudung, dan sejenisnya) kecuali kontennya memang membahas itu.
@@ -57,7 +56,7 @@ Tulis laporan dengan format `instruksi/templates/qa-report.md` kalau tersedia. K
 
 1. Keputusan: **LULUS** atau **GAGAL**.
 2. Tabel per lapisan: hasil, skor, catatan.
-3. Uji orisinalitas: 3 jawaban (lihat lapisan 4 dan bukti milik kreator).
+3. Uji orisinalitas: 3 jawaban (lihat lapisan 4).
 4. Tabel temuan: kutipan teks atau timestamp, tingkat (kritis/sedang/kecil), dan perbaikan konkret.
 
 Satu temuan kritis sudah cukup untuk GAGAL. Kalau diminta memperbaiki, tulis ulang bagian yang gagal, jalankan lagi lapisan terkait, lalu tambahkan bagian "Setelah perbaikan".

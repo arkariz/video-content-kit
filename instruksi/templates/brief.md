@@ -2,7 +2,6 @@
 
 - **Janji video:** Setelah menonton, kamu bisa ...
 - **Penonton:**
-- **Bukti milik kreator:** (apa, dan di scene mana)
 - **Format:** master X menit, N Shorts, versi Indonesia (ya/tidak)
 - **Judul (3 varian):**
   1.

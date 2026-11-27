@@ -10,7 +10,7 @@ jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "005: kreator mendengar temuan QA salah ucap (QRIS, rupiah, Europay) dan menonton master + 2 Short; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
-pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
+pengecualian_qa: []                 # syarat bukti kreator di layar dihapus untuk semua konten (2026-11-27)
 menunggu_keputusan: "005: QA otomatis GAGAL (11 temuan salah ucap dari transkrip balik); dengar lalu putuskan terima atau buat ulang audio setelah kredit diisi; 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
@@ -134,3 +134,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Produksi 005 dimulai. Audio EN (7,48 menit tanpa jeda) dan caption EN dibuat; teks caption sama dengan naskah. Scene uji gaya R3 2.5D digambar (s01, s10, s12, thumbnail A) dan klip pendek dirender; 45 scene lain, thumbnail B dan 2 thumbnail Short belum digambar. Menunggu persetujuan gaya dari kreator.
 - 2026-11-27: Kreator menyetujui gaya scene uji 005 dan meminta efek suara ElevenLabs untuk semua konten. Pustaka bersama produksi/sfx/el (19 efek baru + 14 dari 004), 04-audio.json 005 (112 cues, musik dipakai ulang dari 004). Semua 48 scene dan 4 thumbnail digambar; QA R3 G1-G7 lolos. Label s42 "ONE WAY" dipindah ke kata "Indonesians". Menunggu persetujuan still; video belum dirender.
 - 2026-11-27: Kreator memerintahkan memperbaiki scene lemah dan merender tanpa uji still ulang (dicatat di 04-still.json). s16, s24, s26, s30, s32, s42, s46 diperkaya. Master 8:09 dan 2 Short (22 dtk, 35 dtk) dirender dan dicampur (112 efek suara, sekitar -14 LUFS). QA otomatis GAGAL: kritis 11 (salah ucap menurut transkrip balik), sedang 4, kecil 4; publish tertahan.
+- 2026-11-27: Sumber (71 baris, 24 tautan) dan jenis suara 005 dicatat; temuan T-src dan A3 hilang. Atas keputusan kreator, syarat bukti kreator di layar dihapus untuk semua konten, dan konten selanjutnya wajib punya musik utama baru serta musik mood per rentang scene (mixer, QA A4/A5, PIPELINE.md bagian Suara). QA 005 masih GAGAL (11 kritis salah ucap, 3 sedang: re-hook, A4, A5); musik 005 belum diganti.

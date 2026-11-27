@@ -7,7 +7,6 @@
     "cycle",
     "title_options",
     "promise",
-    "creator_evidence",
     "scenes",
     "shorts_cuts"
   ],
@@ -39,7 +38,7 @@
     },
     "creator_evidence": {
       "type": "array",
-      "minItems": 1,
+      "description": "Opsional (tidak lagi disyaratkan sejak 2026-11-27)",
       "items": {
         "type": "object",
         "required": [
