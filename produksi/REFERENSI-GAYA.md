@@ -134,6 +134,18 @@ Prototipe P01 melakukan kebalikannya: gradien lembut dan blur pada bentuk dasar 
 | T12 | **Struktur komposisi** | Horizon melengkung, jalur spiral atau diagonal, tepi gelap; subjek paling jenuh dan paling kontras | Kamera dan tata letak; vinyet nilai, bukan sekadar gelap |
 | T13 | **Garis dalam, bukan tinta** | Garis kontur di dalam bentuk dengan nada lebih terang atau lebih gelap dari isian (pita kubah, pembuluh), ujung bulat. Tidak ada garis luar hitam. | Stroke nada isian ±, `linecap round` |
 
+**Lanjutan analisa (2026-11-27), dari 11 still lokal `produksi/acuan-visual/eksternal/` termasuk potongan diperbesar.** Dipakai pertama kali di `hasil/tracks/T02-why-southeast-asia/channel/v3/`.
+
+| # | Teknik | Yang terlihat di still | Cara di SVG |
+| --- | --- | --- | --- |
+| T14 | **Highlight kapsul + titik** | Pada bola dan kubah, satu kapsul pendek terang ditambah satu titik segaris, miring mengikuti lengkung (R08, R05) | `rr()` membulat penuh + `circle`, diputar 30-55 derajat di sisi cahaya |
+| T15 | **Benda bertebal (lempeng)** | Tanah, jalan, dan platform punya permukaan atas, dinding samping lebih gelap dan beda hue, serta bibir terang tipis di tepi atas (R03, R09) | Path dinding yang diekstrusi ke bawah, lalu permukaan, lalu stroke bibir sebagian |
+| T16 | **Pita warna melingkar bidang** | Silinder dan menara dibelah 2-3 pita warna yang ikut berbayang (R03, R11) | `rect` pita di dalam `clipPath` `Shade` |
+| T17 | **Latar berpita nilai** | Cahaya latar dibangun dari pita datar bergelombang atau cincin konsentris yang makin terang ke fokus, bukan gradien halus (R10) | Beberapa path penuh bertumpuk, satu glow lemah di atasnya |
+| T18 | **Busur dan garis putus berarah** | Langit atau ruang diisi busur konsentris putus dengan tebal beragam yang mengantar mata ke pusat (R08, R11) | `circle` ber-`strokeDasharray` ber-seed, diputar acak |
+| T19 | **Rim sebagian** | Tepi terang hanya pada potongan yang menghadap sumber cahaya, ujung bulat, tidak pernah mengelilingi benda (R10) | Stroke pendek pada sebagian path |
+| T20 | **Kontras fokus** | Latar satu keluarga hue berkontras rendah; subjek memakai komplementer hangat dan putih; ruang kosong tenang di sekitar fokus (R06, R04) | Redupkan lapisan latar dengan geser warna, simpan koral dan emas untuk subjek |
+
 **Untuk tetes air (benchmark s01):**
 - Tetes digambar dengan T1, T2, T9, dan T10:
   - nada cyan bertingkat dengan sabit bawah lebih gelap;

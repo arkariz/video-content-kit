@@ -148,3 +148,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Opsi judul dan thumbnail baru 003 dibuat atas permintaan kreator (thumbnail-v2/opsi.md). Belum dipilih; platform dan rencana rilis tidak diubah.
 - 2026-11-27: Opsi judul dan thumbnail baru 004 dibuat atas permintaan kreator (thumbnail-v2/opsi.md). Belum dipilih; platform tidak diubah. Video terjadwal 29 Nov masih memuat s25 dan s30 yang ditandai cek fakta.
 - 2026-11-27: Foto profil dan banner v2 gaya R3 dibuat atas permintaan kreator (channel/v2: 3 profil, 2 banner; maskot Komo, garis khatulistiwa). Belum dipilih; belum diunggah ke platform.
+- 2026-11-27: Kreator menolak Komo untuk identitas channel dan memilih konsep jalur khatulistiwa. Aset v3 dibuat (channel/v3: 3 profil, 2 banner). Belum dipilih; belum diunggah.

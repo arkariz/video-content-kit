@@ -13,20 +13,21 @@ Status: **Equator Logic dipakai** (TikTok @equator.logic, tayang 2026-11-26). Ha
 
 Sudah dipakai: Monsoon Atlas, Tropic Logic, Tropic Atlas, Local Atlas, Archipelago Explained. Instagram, TikTok, Facebook belum dicek.
 
-## Aset v2, gaya R3 (2026-11-27, menunggu pilihan kreator)
+## Aset v3, "jalur khatulistiwa" (2026-11-27, menunggu pilihan kreator)
 
-Di `v2/`. Maskot Komo, tanda garis khatulistiwa emas, palet senja T02. Belum diunggah ke platform mana pun; aset lama di bawah masih yang terpasang.
+Kreator memilih konsep C (tanpa maskot): jalur emas berbelok dengan stasiun; stasiun merah menandai pertanyaan yang dibahas. Gaya: teknik T1-T20 di `produksi/REFERENSI-GAYA.md`. Di `v3/`. Belum diunggah ke platform.
 
 | File | Isi |
 | --- | --- |
-| `profil-A-komo-cincin.png` (1080×1080, **rekomendasi**) | Komo dekat dengan cincin khatulistiwa |
-| `profil-B-komo-globe.png` | Komo memeluk bola dunia |
-| `profil-C-tanda.png` | tanpa maskot: gunung, matahari, laut, khatulistiwa |
-| `banner-A.png` (2560×1440, **rekomendasi**) | Komo menunjuk nama, satu baris |
-| `banner-B.png` | nama dua baris, Komo di kanan |
-| `pratinjau.png` | potongan bulat (270, 98, 32 px) dan potongan banner di HP |
+| `profil-A-planet.png` (1080×1080, **rekomendasi**) | jalur melintasi bola bumi |
+| `profil-B-tanda.png` | jalur dan stasiun saja, paling jelas di ukuran kecil |
+| `profil-C-pulau.png` | pulau terapung dengan jalur di depannya |
+| `banner-A-senja.png` (2560×1440, **rekomendasi**) | jalur menghubungkan pulau, langit senja |
+| `banner-B-siang.png` | komposisi sama, siang |
 
-Render ulang: `node hasil/tracks/T02-why-southeast-asia/channel/v2/render.mjs`, lalu `python3 hasil/tracks/T02-why-southeast-asia/channel/v2/pratinjau.py`.
+Render ulang: `node hasil/tracks/T02-why-southeast-asia/channel/v3/render.mjs`, lalu `python3 hasil/tracks/T02-why-southeast-asia/channel/v3/pratinjau.py`.
+
+`v2/` (maskot Komo) **ditolak kreator** 2026-11-27; disimpan sebagai arsip.
 
 ## Aset
 
