@@ -1,10 +1,11 @@
-// Kirim ke YouTube lewat Data API v3: unggah resumable, playlist, subtitle, thumbnail, dan komentar pertama.
+// Kirim ke YouTube lewat Data API v3 (menolak judul yang sudah ada di channel): unggah resumable, playlist, subtitle, thumbnail, dan komentar pertama.
 // Env per track: YOUTUBE_PUBLISH_TOKEN_<ID> (ditulis auth.mjs --tulis) dan YOUTUBE_CHANNEL_ID_<ID>.
 // Semua langkah dicatat di 06-rilis.json dan dilewati bila sudah selesai, jadi aman dijalankan ulang.
 // Token dan URL sesi unggah tidak pernah dicetak atau disimpan di file yang di-commit.
 import fs from "node:fs"; import path from "node:path";
 import { readJson, writeJson } from "../produksi/lib.mjs";
 import { oauthClient, tokenRequest, channelVar } from "../youtube/lib.mjs";
+import { kembar, pesanKembar } from "./ganda.mjs";
 import { ROOT, disetujui, minYouTube, muat, terkunci, ubah, waktu } from "./inti.mjs";
 
 const API = "https://www.googleapis.com/youtube/v3";
@@ -145,6 +146,16 @@ async function thumbnailTertunda(yt, c, r, daftar, { uji, log, tunggu, selang })
   if (sisa.length) log(`THUMBNAIL BELUM TERPASANG: ${sisa.map(([i]) => i.nama).join(", ")}. Klik "Jalankan pasca-tayang" beberapa menit lagi.`);
 }
 
+/** Video di channel (publik, tidak terdaftar, terjadwal, maupun draf privat) kecuali video uji. */
+async function videoChannel(yt) {
+  const up = (await yt.get("channels", { part: "contentDetails", mine: "true" })).items?.[0]?.contentDetails?.relatedPlaylists?.uploads; if (!up) return [];
+  const ids = []; let pageToken;
+  do { const r = await yt.get("playlistItems", { part: "contentDetails", playlistId: up, maxResults: "50", ...(pageToken && { pageToken }) }); ids.push(...(r.items ?? []).map((x) => x.contentDetails.videoId)); pageToken = r.nextPageToken; } while (pageToken && ids.length < 200);
+  const out = [];
+  for (let n = 0; n < ids.length; n += 50) for (const v of (await yt.get("videos", { part: "snippet", id: ids.slice(n, n + 50).join(",") })).items ?? []) if (!v.snippet.title.startsWith("[UJI")) out.push({ url: `https://www.youtube.com/watch?v=${v.id}`, judul: v.snippet.title, teks: "" });
+  return out;
+}
+
 const wajibSetuju = (r) => { if (!disetujui(r)) throw new Error(r.persetujuan ? "isi rencana atau file berubah setelah disetujui; setujui ulang" : "belum disetujui kreator (ketik SETUJU)"); };
 
 /** Unggah semua item yang belum ada di YouTube. uji: satu Short, privat, tanpa jadwal, playlist, atau komentar. */
@@ -155,6 +166,12 @@ export function kirim(c, { uji = false, log = console.log, tunggu = 10 * 60e3, s
     const items = uji ? r.items.filter((i) => i.nama !== "master").slice(0, 1) : r.items;
     if (!items.length) throw new Error("tidak ada item untuk dikirim");
     const yt = await klien(c.track);
+    // Diperiksa untuk semua konten sekaligus, sebelum satu pun diunggah. Gagal membaca channel = tidak mengirim.
+    const baru = uji ? [] : items.filter((i) => !muat(c).hasil[i.nama]?.youtube && !sesi(c)[i.nama]);
+    if (baru.length) {
+      const ada = await videoChannel(yt); const sama = baru.map((i) => [i.nama, kembar(i, ada)]).filter(([, v]) => v);
+      if (sama.length) throw new Error(pesanKembar("channel YouTube", sama));
+    }
     for (const i of items) {
       const kunci = uji ? `${i.nama}-uji` : i.nama;
       let h = muat(c).hasil[kunci]?.youtube;

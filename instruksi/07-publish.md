@@ -1,32 +1,31 @@
 # Langkah track: Publish
 
-Tujuan: satu video master dan potongannya tayang di 4 platform dengan metadata yang sesuai masing-masing. **Selalu minta persetujuan eksplisit kreator sebelum mengirim apa pun ke platform**, di mode gate apa pun.
+Tujuan: satu video master dan potongannya tayang dengan metadata yang sesuai tiap platform. **Selalu minta persetujuan eksplisit kreator sebelum mengirim apa pun ke platform**, di mode gate apa pun. Agent tidak pernah mengetik `SETUJU` atau `BUKA`.
 
-## Siapkan metadata (`06-publish.md`, template `publish.md`)
+Alat utama: **alat rilis** (`scripts/rilis/`, dashboard). Cara pakai dan batasannya ada di `produksi/PIPELINE.md` bagian "Alat rilis". Upload-Post (`scripts/pipeline/publish.mjs`) adalah jalur lama; satu siklus hanya memakai satu jalur.
 
-| Platform | File | Judul / caption | Catatan |
+## Pembagian per platform
+
+| Platform | Konten | Cara | Catatan |
 | --- | --- | --- | --- |
-| YouTube | `Master16x9` + track audio ID | Judul terpilih, deskripsi dengan chapter, 3 sampai 5 tag | Upload track audio Indonesia lewat Languages di YouTube Studio |
-| YouTube Shorts | `Short9x16` | Judul singkat + tautan ke master di komentar yang di-pin | Tanpa musik berlisensi YouTube (memotong pool Shorts) |
-| Instagram Reels | `Short9x16` | Caption 1 sampai 2 kalimat + ajakan kirim ke teman | Di bawah 3 menit |
-| TikTok | `ClipID9x16` | Caption dengan kata kunci pencarian | Sebut kata kunci di narasi |
-| Facebook Reels | `ClipID9x16` atau `Short9x16` | Caption singkat | Boleh sama dengan platform lain selama karya sendiri |
+| YouTube | Master dan Shorts | Alat rilis | Video terkait (Short ke master), pin komentar, end screen, cards, A/B test, multi audio, dan mid-roll dikerjakan di Studio |
+| Facebook Page | Master penuh dan Shorts (Reel, 3-90 detik) | Alat rilis | Short berkomentar tautan **master Facebook**; jadwal minimal 10 menit |
+| Instagram Reels | Shorts saja | Manual | Tautan lewat bio atau stiker Story ke master YouTube; maksimal 5 hashtag |
+| TikTok | Shorts saja | Manual | Sebut kata kunci di narasi dan caption |
+
+## Alur
+
+1. **Persiapan** (otomatis di akhir pipeline, atau `node scripts/rilis/siapkan.mjs --track <ID> --siklus <NNN>`): subtitle, `06-rilis.json`, lalu agent menulis `06-teks-rilis.json` (komentar, playlist, terjemahan; format di `scripts/pipeline/prompts/teks-rilis.md`).
+2. **Periksa** di dashboard: tonton video, baca teks, isi jadwal. Jadwal kosong berarti tayang segera.
+3. **Setujui** (kreator mengetik `SETUJU`), lalu **Kirim**. Alat menolak judul yang sudah ada di channel atau Page.
+4. **Pasca-tayang**: penjadwal memposting komentar pertama. Pin dan tugas manual lain ada di checklist.
+5. **Catat**: unggahan manual dicatat lewat "Catat yang sudah tayang"; status siklus disamakan lewat "Samakan status TRACK.md".
 
 ## Label AI
 
-Tentukan per platform dan tulis alasannya di `06-publish.md`:
-
-- Konten realistis yang dibuat atau diubah AI wajib diberi label (YouTube "altered or synthetic", TikTok AIGC, Meta "AI info").
-- Motion graphics, diagram, dan footage asli tidak perlu label.
-- Suara clone milik kreator yang membacakan naskahnya sendiri berisiko rendah. Kalau ragu, beri label. YouTube menyatakan label tidak mengurangi jangkauan atau monetisasi.
-
-## Kirim
-
-- **Lewat API cross-post** (misalnya Upload-Post atau Ayrshare, key di `.env`): kirim setelah kreator menyetujui ringkasan final (file, judul, jadwal, label).
-- **Manual**: siapkan semua file dan teks yang tinggal disalin, kreator yang mengunggah.
-
-Catat URL tayang dan waktu publish di `06-publish.md`. Ubah status siklus di `TRACK.md` menjadi `tayang` dan isi tanggal tayang.
+- Keputusan kreator 2026-11-27: "Penggunaan AI" YouTube dibiarkan kosong (alat tidak mengirimnya) dan `is_ai_generated` Facebook tidak dikirim.
+- Konten realistis yang dibuat atau diubah AI tetap wajib diungkapkan sesuai kebijakan platform; isi di Studio atau Business Suite bila suatu video memuatnya. Motion graphics, diagram, dan footage asli umumnya tidak perlu label.
 
 ## Jadwal default
 
-Master tayang Kamis. Shorts dan clip Indonesia Jumat sampai Minggu, satu per hari.
+Alat mengisi tanggal dari `TRACK.md` dengan jam 10.00 (master), 12.00, dan 16.00 WIB. Ubah di dashboard sebelum menyetujui.

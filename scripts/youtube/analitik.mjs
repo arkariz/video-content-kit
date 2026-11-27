@@ -18,7 +18,7 @@ if (!channel) throw new Error("token tidak punya channel; jalankan ulang auth.mj
 const harap = process.env[channelVar(track.id)];
 if (harap && harap !== channel.id) throw new Error(`token ${track.id} milik channel ${channel.id}, tetapi ${channelVar(track.id)} = ${harap}; jalankan ulang auth.mjs --track ${track.id}`);
 
-// Peta video -> siklus: ID dari hasil publish, lalu judul persis dari 06-publish.json dan 03-script.json.
+// Peta video -> siklus: ID dari 06-rilis.json (dashboard rilis) dan hasil publish, lalu judul persis dari rencana dan 03-script.json.
 // Hashtag di akhir judul (juga "# tag") ditambahkan saat unggah manual, jadi diabaikan saat mencocokkan.
 const normal = (s) => String(s ?? "").replace(/(\s*#\s*[\p{L}\p{N}_]+)+\s*$/u, "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 const perId = new Map(), perJudul = new Map(); const sdir = path.join(track.dir, "siklus");
@@ -26,10 +26,15 @@ for (const d of fs.existsSync(sdir) ? fs.readdirSync(sdir).filter((x) => /^\d{3}
   const siklus = d.slice(0, 3); const pub = readJson(path.join(sdir, d, "06-publish.json"), {}); const script = readJson(path.join(sdir, d, "03-script.json"), {});
   const judul = (t, cut) => t && perJudul.set(normal(t), { siklus, cut });
   const cutOf = (nama) => (nama && nama !== "master" ? nama : null);
+  if (d.endsWith("-uji-alat")) continue;
+  const rilis = readJson(path.join(sdir, d, "06-rilis.json"), {});
   for (const t of [script.publish_title, ...(script.title_options ?? [])]) judul(t, null);
   for (const c of script.shorts_cuts ?? []) judul(String(c.hook_override ?? "").slice(0, 95), c.name);
   for (const i of pub.items ?? []) judul(i.title, cutOf(i.nama));
+  for (const i of rilis.items ?? []) judul(i.judul, cutOf(i.nama));
   for (const h of pub.hasil ?? []) for (const x of h.detail ?? []) if (x.platform === "youtube" && x.platform_post_id) perId.set(x.platform_post_id, { siklus, cut: cutOf(h.nama) });
+  // ID yang dicatat alat rilis (diunggah alat atau dicatat dari platform) adalah bukti terkuat.
+  for (const [nama, h] of Object.entries(rilis.hasil ?? {})) if (h.youtube?.videoId && !nama.endsWith("-uji")) perId.set(h.youtube.videoId, { siklus, cut: cutOf(nama) });
 }
 
 const diminta = typeof o.video === "string" ? o.video.split(",").map((x) => x.trim()).filter(Boolean) : null;

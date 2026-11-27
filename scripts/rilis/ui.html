@@ -208,16 +208,23 @@ function halamanPantau(semua, sis) {
 }
 
 // ---------- Daftar siklus ----------
-async function catatTayang(tombol) {
-  try { bersih(); tombol.disabled = true; tombol.textContent = "Membaca platform…"; laporanCatat = (await post({ aksi: "catat-tayang" })).laporan; await tampil(); }
-  catch (e) { galat(e.message); tombol.disabled = false; tombol.textContent = "Catat yang sudah tayang"; }
+async function laporkan(b, tombol, sementara) {
+  const teks = tombol.textContent;
+  try { bersih(); tombol.disabled = true; tombol.textContent = sementara; laporanCatat = (await post(b)).laporan; await tampil(); }
+  catch (e) { galat(e.message); tombol.disabled = false; tombol.textContent = teks; }
 }
+/** Siklus yang sudah beres: semua kontennya tercatat tayang (bukan terjadwal atau gagal). */
+const sudahTayang = (s) => s.adaRencana && !s.arsip && tahap(s)[0] === "tayang" && s.items.every((i) => Object.keys(i.platform).length);
 function halamanSiklus(semua) {
-  const d = disaring(semua);
+  const d = disaring(semua); const beres = d.filter(sudahTayang);
   const bagian = (judul, daftar, kosong) => (daftar.length || kosong ? h("section", { class: "kartu" }, h("h2", {}, `${judul} (${daftar.length})`), daftar.length ? perTrack(daftar.map((s) => ({ s })).reverse(), barisSiklus) : h("p", { class: "redup" }, kosong)) : null);
   return [
     tabTrack(semua),
-    h("section", { class: "kartu" }, h("div", { class: "baris" }, h("button", { onclick: (e) => catatTayang(e.currentTarget) }, "Catat yang sudah tayang"), h("span", { class: "redup kecil-teks" }, "Mencari unggahan manual di YouTube, Facebook, dan catatan proyek; siklus yang cocok dikunci.")), laporanCatat ? h("pre", {}, laporanCatat.join("\n")) : null),
+    h("section", { class: "kartu" }, h("div", { class: "baris" },
+      h("button", { title: "Mencari unggahan manual di YouTube, Facebook, dan catatan proyek; siklus yang cocok dikunci", onclick: (e) => laporkan({ aksi: "catat-tayang" }, e.currentTarget, "Membaca platform…") }, "Catat yang sudah tayang"),
+      h("button", { title: "Menyamakan status dan tanggal di TRACK.md dengan hasil yang tercatat", onclick: (e) => confirm("Perbarui status siklus di TRACK.md sesuai hasil yang tercatat di dashboard?") && laporkan({ aksi: "sinkron-status" }, e.currentTarget, "Menyamakan…") }, "Samakan status TRACK.md"),
+      beres.length ? h("button", { onclick: (e) => confirm(`Arsipkan ${beres.length} siklus yang sudah tayang? Tugas tersisanya disembunyikan dan penjadwal tidak menyentuhnya lagi:\n${beres.map((s) => `- ${idSiklus(s)} ${judulSiklus(s)}`).join("\n")}`) && laporkan({ aksi: "arsip-banyak", siklus: beres.map((s) => ({ track: s.track, siklus: s.siklus })) }, e.currentTarget, "Mengarsipkan…") }, `Arsipkan yang sudah tayang (${beres.length})`) : null),
+      h("p", { class: "redup kecil-teks" }, "Jalankan \"Catat\" dulu agar unggahan manual ikut terhitung."), laporanCatat ? h("pre", {}, laporanCatat.join("\n")) : null),
     bagian("Berjalan", d.filter((s) => s.adaRencana && !s.arsip), "Belum ada. Buka siklus di bawah lalu buat rencana."),
     bagian("Belum ada rencana", d.filter((s) => !s.adaRencana)),
     bagian("Arsip", d.filter((s) => s.arsip)),

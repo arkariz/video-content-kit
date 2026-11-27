@@ -4,6 +4,7 @@
 // Token hanya dikirim lewat header atau body, tidak pernah dicetak.
 import fs from "node:fs"; import path from "node:path";
 import { ROOT as REPO } from "../produksi/lib.mjs";
+import { kembar, pesanKembar } from "./ganda.mjs";
 import { ROOT, disetujui, muat, teksFacebook, terkunci, ubah, waktu } from "./inti.mjs";
 
 export const VERSI = "v27.0";
@@ -90,6 +91,14 @@ async function lengkapi(fb, i, h, catat, log) {
   h.galat = galat; catat(h);
 }
 
+/** Video dan postingan terjadwal yang sudah ada di Page. */
+async function videoPageAda(fb) {
+  const url = (u, id) => (u ? new URL(u, "https://www.facebook.com").href : `https://www.facebook.com/${id}`);
+  const video = (await fb.get(`${fb.page}/videos`, { fields: "id,title,description,permalink_url", limit: "100" })).data ?? [];
+  const jadwal = (await fb.get(`${fb.page}/scheduled_posts`, { fields: "id,message,permalink_url", limit: "100" })).data ?? [];
+  return [...video.map((v) => ({ url: url(v.permalink_url, v.id), judul: v.title, teks: v.description })), ...jadwal.map((p) => ({ url: url(p.permalink_url, p.id), teks: p.message }))].filter((v) => !String(v.judul ?? "").startsWith("[UJI"));
+}
+
 const wajibSetuju = (r) => { if (!disetujui(r)) throw new Error(r.persetujuan ? "isi rencana atau file berubah setelah disetujui; setujui ulang" : "belum disetujui kreator (ketik SETUJU)"); };
 export const MIN_JADWAL = 11 * 60e3; // Facebook menolak jadwal kurang dari 10 menit
 
@@ -101,6 +110,12 @@ export function kirim(c, { draf = false, log = console.log } = {}) {
     const items = draf ? r.items.filter((i) => i.nama !== "master").slice(0, 1) : r.items;
     if (!items.length) throw new Error("tidak ada item untuk dikirim");
     const fb = klien(c.track);
+    // Diperiksa sebelum mengunggah apa pun. Gagal membaca Page = tidak mengirim.
+    const baru = draf ? [] : items.filter((i) => !muat(c).hasil[i.nama]?.facebook);
+    if (baru.length) {
+      const ada = await videoPageAda(fb); const sama = baru.map((i) => [i.nama, kembar(i, ada, [teksFacebook(i).deskripsi])]).filter(([, v]) => v);
+      if (sama.length) throw new Error(pesanKembar("Page Facebook", sama));
+    }
     for (const i of items) {
       const kunci = draf ? `${i.nama}-uji` : i.nama; const master = i.nama === "master";
       let h = muat(c).hasil[kunci]?.facebook;

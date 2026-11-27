@@ -2,6 +2,8 @@
 
 Tujuan: memastikan video tidak terasa seperti konten AI massal. Ini penting untuk penonton, dan juga syarat monetisasi, karena YouTube tidak memonetisasi "inauthentic content" (generik, repetitif, atau berbasis template).
 
+**Waktu: sebelum render penuh** (keputusan kreator 2026-11-27), setelah audio, caption, dan still. Gerak, irama, dan campuran musik tidak diperiksa di sini; kreator mengeceknya manual setelah render. `05-qa.md` memuat baris `Sidik isi:` (lihat `produksi/PIPELINE.md` bagian "Gate QA sebelum render"). Pada tabel di bawah, "Render master + Shorts" dibaca sebagai still per scene.
+
 Jalankan skill `video-anti-slop` pada keempat lapisan, lalu tulis `05-qa.md` dengan template `qa-report.md`.
 
 ## Lapisan dan ambang lulus

@@ -14,6 +14,7 @@ import * as facebook from "./facebook.mjs";
 import { periksa as periksaFacebook } from "./facebook-periksa.mjs";
 import { arsip, bukaKunci, kunci } from "./kunci.mjs";
 import { catatTayang } from "./catat-tayang.mjs";
+import { sinkronStatus } from "./status.mjs";
 import { buatSkenario, hapusSkenario, jadwalUlang } from "./skenario.mjs";
 
 const UI = path.join(import.meta.dirname, "ui.html");
@@ -89,6 +90,12 @@ function aksiSistem(b, keluar) {
     case "fb-cari": return facebook.cariPage(b).then(sistem);
     case "fb-pilih": facebook.pilihPage(String(b.page)); break;
     case "fb-batal": facebook.batal(); break;
+    case "sinkron-status": { const laporan = []; sinkronStatus({ log: (s) => laporan.push(s) }); return { ...sistem(), laporan }; }
+    case "arsip-banyak": {
+      const laporan = [];
+      for (const x of b.siklus ?? []) { const c = inti.cari(String(x.track), String(x.siklus)); if (inti.sibuk(c)) { laporan.push(`${c.track}-${c.siklus}: sedang diproses, dilewati`); continue; } arsip(c, true); laporan.push(`${c.track}-${c.siklus}: diarsipkan`); }
+      return { ...sistem(), laporan };
+    }
     case "catat-tayang": { const laporan = []; return catatTayang({ log: (s) => laporan.push(s) }).then(() => ({ ...sistem(), laporan })); }
     default: return null;
   }

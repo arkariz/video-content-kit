@@ -105,3 +105,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-27: Status siklus disesuaikan dengan platform: T01-004 dan T02-002 tayang 27 Nov, T02-003 terjadwal 28 Nov. T02-002/003 mendahului periode V2 terkunci (mulai 12-07).
 - 2026-11-27: QA anti-slop dipindah ke sebelum render penuh (gate di run.mjs, qa-gate.mjs). Gerak, irama, dan campuran musik dicek manual oleh kreator.
 - 2026-11-27: T02-004 dicatat LULUS QA anti-slop atas keputusan kreator tanpa pemeriksaan; status siap-publish.
+- 2026-11-27: Alat rilis dilengkapi pengaman unggah ganda, sinkron status TRACK.md, arsip sekaligus, dan analitik membaca 06-rilis.json; instruksi 06 dan 07 diperbarui atas permintaan kreator.

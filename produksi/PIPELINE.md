@@ -402,6 +402,8 @@ node scripts/pipeline/still.mjs --track T02 --siklus 005 [--cek]                
 
 ## Publish (Upload-Post)
 
+Jalur lama, dipertahankan sebagai cadangan; jalur utama adalah bagian "Alat rilis" di bawah. Satu siklus hanya memakai satu jalur.
+
 Adaptor: `scripts/pipeline/publish.mjs`. Alur: `plan` menulis `06-publish.json` dan `06-publish.md` (judul, deskripsi dengan chapter dari `script.chapters`, tag, jadwal, label AI per platform; edit sebelum approve) → kreator menonton dan mengetik SETUJU di `approve.mjs` → `send` mengunggah terjadwal lewat `POST /api/upload` dengan `Idempotency-Key` sehingga tidak ganda. `status` mengambil status dan URL tayang.
 
 ```
@@ -414,7 +416,7 @@ node --env-file=.env scripts/pipeline/publish.mjs status --track T01 --siklus 00
 
 Isi `.env` (nama variabel saja): `UPLOADPOST_API_KEY` (`UPLOADPOST_PROFILE` tidak dipakai lagi). Akun, profil, dan koneksi channel dibuat kreator sendiri di Upload-Post. Aktif: YouTube, Instagram, Facebook (`platformAktif`); TikTok mati karena butuh paket berbayar. Master dikirim ke YouTube dan Facebook (video Page, `facebook_media_type: VIDEO`); Shorts ke YouTube, Instagram, dan Facebook (Reels). Master tidak dikirim ke Instagram (16:9, dan file bisa melewati 300 MB). `send` menolak jalan bila siklus belum disetujui. **Mode uji** (`send --test`, lalu `status --uji`) mengirim hanya Short pertama ke YouTube sebagai privat dan ke Facebook sebagai draf, tanpa jadwal dan tanpa Instagram/TikTok, sehingga tidak ada yang tampil publik (Instagram tidak punya mode privat atau draf lewat API ini). Facebook mengembalikan URL Reel walaupun berstatus draf (dikonfirmasi 2026-11-25). Hapus video uji di YouTube Studio dan draf Facebook setelah dicek. Label AI default konservatif (suara sintetis): `containsSyntheticMedia`, `is_aigc`, `is_ai_generated`. Teruji ke API sungguhan hanya lewat mode uji (YouTube privat dan Facebook draf, 2026-11-25); kirim terjadwal dan Instagram belum diuji. Yang tidak terdokumentasi di Upload-Post dan perlu dicek saat uji pertama: penanda Shorts di YouTube (setahu dokumennya tidak ada; Shorts dikenali dari rasio dan durasi), apakah `tags[]` atau `tags` yang diterima, dan nama bidang respons sukses. Track audio Indonesia tetap manual di YouTube Studio.
 
-## Alat rilis (dashboard, YouTube)
+## Alat rilis (dashboard, YouTube dan Facebook)
 
 Kode di `scripts/rilis/`, tanpa dependensi.
 
@@ -445,7 +447,9 @@ node scripts/rilis/uji.mjs                                             # uji den
 - **Penjadwal Mac** (`jadwal.mjs`, launchd tiap 5 menit selama kreator login, diaktifkan kreator): menjalankan pasca-tayang hanya untuk siklus yang persetujuannya masih berlaku. Tidak mengunggah video dan tidak mengetik SETUJU. Tanpa pekerjaan jatuh tempo, API tidak dipanggil. Komentar terlambat lebih dari 60 menit ditandai terlewat (notifikasi sekali) dan menunggu kreator. Berhenti mencoba setelah 5 kegagalan; kelengkapan dicoba sampai 24 jam sejak unggah. Mac tidur atau mati menunda putaran. Status di halaman Pantau dan `.rilis-penjadwal.json` (tidak di-commit). Pasang dari folder repo utama; copot bila folder dipindah.
 - **Kunci unggah:** siklus berstatus `tayang`, sudah terkirim lewat Upload-Post, atau berpanduan unggah manual tidak bisa diunggah alat ini. Catat URL tayang di dashboard agar checklist dan komentar bisa dipakai. Kreator bisa membuka (ketik `BUKA`; persetujuan batal) atau memasang kunci lewat dashboard; agent tidak mengetik `BUKA`.
 - **Catat yang sudah tayang** (tombol di halaman Siklus, atau `catat-tayang.mjs [--lihat]`): mencari unggahan manual di channel (token tulis atau token analitik), Page (`videos`, `scheduled_posts`), `06-publish.json`, dan baris `- <item>: URL` di `06-publish.md`; mencocokkan judul, hook, atau kalimat pertama deskripsi serta durasi. Yang cocok dicatat sebagai manual dan siklusnya dikunci; isian yang ada tidak ditimpa. Jalankan sebelum mengirim siklus lama.
-- **Arsipkan siklus** menyembunyikannya dari agenda dan menghentikan penjadwal untuk siklus itu.
+- **Arsipkan siklus** menyembunyikannya dari agenda dan menghentikan penjadwal untuk siklus itu. Halaman Siklus punya "Arsipkan yang sudah tayang" untuk sekaligus.
+- **Pengaman unggah ganda** (`ganda.mjs`): sebelum Kirim, judul (atau kalimat pertama) tiap konten dibandingkan dengan video channel (200 terbaru, termasuk terjadwal dan draf) atau video dan postingan terjadwal Page (100 terbaru). Satu saja sama, tidak ada yang diunggah; gagal membaca platform juga berarti tidak mengirim. Judul yang diubah saat unggah manual bisa lolos.
+- **Samakan status TRACK.md** (halaman Siklus, atau `status.mjs [--lihat]`): menaikkan status dan tanggal siklus menurut master YouTube yang tercatat (`siap-publish` atau `tayang`), tidak pernah menurunkan, dan menambah satu baris log. `STATE.md` tetap diperbarui agent.
 - **Akun:** tiap track punya sambungan sendiri (halaman Pengaturan). Akun Facebook lain harus punya peran di aplikasi Meta.
 - **Periksa di YouTube / Facebook** (baca saja) mencocokkan keadaan di platform dengan rencana. Visibilitas publik Facebook tetap diperiksa dari jendela tanpa login.
 - **Manual:** pin komentar (YouTube dan Facebook), video terkait, end screen, cards, A/B test, multi audio, mid-roll, serta Instagram dan TikTok (belum ada adaptor).
@@ -466,7 +470,7 @@ Naskah Privacy Policy dan Terms ada di `hasil/legal/` (isi email kontak sebelum 
 **Teruji sungguhan (T01, 2026-11-27, aplikasi sudah dipublikasikan):** menghubungkan Page, Reel draf, unggah master dan Short (terjadwal dan segera), tayang otomatis, subtitle en dan id, sampul, komentar lewat pasca-tayang setelah token memuat `pages_manage_engagement`. Master tampil dengan tautan `/reel/`. **Belum teruji:** komentar oleh penjadwal di Facebook, unggah master panjang (sekitar 8 menit), visibilitas tanpa login belum dicatat hasilnya, dan reset video terhapus. App Review untuk Page sendiri tidak diminta selama uji ini.
 - **Skenario uji** (halaman Pengaturan, `skenario.mjs`): membuat `9NN-uji-alat` (tidak di-commit) berisi master 45 detik dan satu Short dari render terbaru track itu, dijadwalkan 5 dan 6 menit lagi (khusus siklus uji batas minimumnya 1 menit). Facebook menolak jadwal di bawah 10 menit, jadi video uji di sana tayang segera. Videonya benar-benar publik pada jadwalnya (tanpa notifikasi subscriber, playlist unlisted); persetujuan tetap perlu SETUJU kreator; video dan playlist dihapus kreator di Studio. Tombol "Periksa di YouTube" (baca saja) mencocokkan channel, judul, bahasa, terjemahan, jadwal, tayang otomatis, subtitle, playlist, thumbnail, dan komentar.
 - **Teruji ke API sungguhan** (T01, 2026-11-27): unggah uji privat, lalu unggah penuh T01-005 lewat dashboard: master dan 2 Short, `publishAt` (ketiganya publik sesuai jadwal), playlist, judul Indonesia, subtitle en dan id, thumbnail (Short setelah pemrosesan), `defaultAudioLanguage`, dan komentar pertama lewat pasca-tayang. Layanan launchd dashboard dan penjadwal terpasang dan berjalan (2026-11-27; satu putaran penjadwal tanpa pekerjaan, keluar 0). Penjadwal sungguhan juga teruji pada skenario uji T01 (2026-11-27): memasang playlist yang tertunda, menunda komentar saat masih privat, lalu memposting komentar master dan Short setelah publik. **Belum teruji:** jalan otomatis setelah login ulang, `Rilis.command`, Hubungkan channel dengan Google, komentar tidak dobel pada pasca-tayang kedua di API sungguhan, melanjutkan unggahan terputus, dan tampilan deskripsi Indonesia (cek di Studio).
-- Analitik masih mencocokkan video lewat `06-publish.json` atau judul; `06-rilis.json` belum dibaca.
+- Analitik (`analitik.mjs`) mencocokkan video ke siklus lewat ID di `06-rilis.json`, lalu hasil publish lama dan judul.
 
 ## Data YouTube (riset dan analitik)
 
@@ -494,7 +498,7 @@ node --env-file=.env scripts/youtube/analitik.mjs --track T02 [--hari 28] [--vid
 
 **Riset** (`instruksi/03`): view >= 3x median sampai 10 video terakhir channel, 90 hari. Hasil di folder siklus (`01-outlier-youtube.md`), `validasi/`, atau `00-riset-niche/`. Tiap `--q` memakai satu panggilan `search.list`, yang jatah hariannya terpisah (default 100; panggilan lain 10.000 unit per hari; diperiksa 2026-11-27 di [determine_quota_cost](https://developers.google.com/youtube/v3/determine_quota_cost)).
 
-**Analitik** (`instruksi/08`): hasil di `tracks/<ID>/analitik/youtube-<tanggal>.md`. `--retensi` menulis CSV retensi per video dan mencetak perintah `retensi.mjs`. Video dicocokkan ke siklus lewat ID hasil publish, lalu judul (`03-script.json`, `06-publish.json`) tanpa hashtag di akhir, juga bila ada tambahan di belakang judul yang cukup panjang; judul yang diubah lebih jauh tampil sebagai `?`. Pendapatan tidak diminta (scope hanya `youtube.readonly` dan `yt-analytics.readonly`). Format Short ditebak dari durasi (maksimal 3 menit). Viewed vs swiped away tidak diambil; isi dari YouTube Studio.
+**Analitik** (`instruksi/08`): hasil di `tracks/<ID>/analitik/youtube-<tanggal>.md`. `--retensi` menulis CSV retensi per video dan mencetak perintah `retensi.mjs`. Video dicocokkan ke siklus lewat ID di `06-rilis.json` dan hasil publish, lalu judul (`03-script.json`, `06-publish.json`) tanpa hashtag di akhir, juga bila ada tambahan di belakang judul yang cukup panjang; judul yang diubah lebih jauh tampil sebagai `?`. Pendapatan tidak diminta (scope hanya `youtube.readonly` dan `yt-analytics.readonly`). Format Short ditebak dari durasi (maksimal 3 menit). Viewed vs swiped away tidak diambil; isi dari YouTube Studio.
 
 | Bagian laporan | Sumber |
 | --- | --- |
@@ -511,7 +515,7 @@ Status uji (2026-11-27): riset, login T02, dan `analitik.mjs` jalan dengan akun 
 - Rencana validasi terkunci, jadwal tayang, dan batas kapasitas dibaca dari file, tidak diubah.
 - Salah ucap (A2) yang sudah didengar dan diterima kreator dicatat per siklus di `04-assets.json` `ucapan_diterima` (`tanggal`, `scenes`); QA menurunkannya ke sedang dan tetap menampilkannya. Hanya diisi atas jawaban kreator.
 - QA kritis menghentikan pipeline (kode 2). QA otomatis tidak pernah menyatakan LULUS final; ada pemeriksaan manual (dengar audio, tonton, cek fakta, thumbnail).
-- Publish hanya setelah kreator mengetik `SETUJU` untuk siklus itu. Alat publish: alat rilis (YouTube, lihat bagian Alat rilis) atau Upload-Post (lihat bagian Publish).
+- Publish hanya setelah kreator mengetik `SETUJU` untuk siklus itu. Alat publish: alat rilis (YouTube dan Facebook, lihat bagian Alat rilis) atau Upload-Post (lihat bagian Publish).
 - Pengecualian QA dari kreator dicatat di TRACK.md (`pengecualian_qa`) dan tetap tampil sebagai temuan.
 
 ## Gate QA sebelum render

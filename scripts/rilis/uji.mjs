@@ -16,7 +16,7 @@ for (const f of ["Master16x9-en.mp4", "Short9x16-S1-en.mp4"]) tulis(`produksi/re
 for (const f of ["Thumbnail-A.png", "Thumbnail-Short-S1.png"]) tulis(`produksi/render/T09/001/${f}`, "png");
 
 // ---- YouTube tiruan ----
-const yt = { video: {}, komentar: [], playlist: [], isiPlaylist: [], subtitle: [], thumbnail: [], putus: 0, channel: "UCuji", proses: "processing", panggilan: [], params: [] };
+const yt = { video: {}, komentar: [], playlist: [], isiPlaylist: [], subtitle: [], thumbnail: [], putus: 0, channel: "UCuji", proses: "processing", panggilan: [], params: [], diChannel: [] };
 const asli = globalThis.fetch;
 const j = (v, status = 200, headers = {}) => new Response(JSON.stringify(v), { status, headers });
 globalThis.fetch = async (url, init = {}) => {
@@ -33,10 +33,12 @@ globalThis.fetch = async (url, init = {}) => {
     return new Response(null, { status: 308, headers: s.diterima ? { range: `bytes=0-${s.diterima - 1}` } : {} });
   }
   const p = u.pathname.replace(/^(\/upload)?\/youtube\/v3\//, "");
+  if (p === "videos" && u.searchParams.get("id")?.startsWith("ada")) return j({ items: yt.diChannel.map((title, n) => ({ id: `ada${n}`, snippet: { title } })) });
   if (p === "videos" && m === "POST") { yt.params.push(u.searchParams.get("notifySubscribers")); const id = `vid${String(Object.keys(yt.video).length).padStart(8, "0")}`; yt.video[id] = { id, body, diterima: 0, total: +init.headers["X-Upload-Content-Length"] }; return new Response(null, { status: 200, headers: { location: `https://sesi.uji/${id}` } }); }
   if (p === "videos" && u.searchParams.get("part") === "id") return j({ items: u.searchParams.get("id").split(",").filter((x) => yt.video[x]).map((id) => ({ id })) });
   if (p === "videos") { const v = yt.video[u.searchParams.get("id")]; return j({ items: v ? [{ snippet: { channelId: yt.channel, ...v.body.snippet }, localizations: v.body.localizations, status: { privacyStatus: v.publik ? "public" : v.body.status.privacyStatus, publishAt: v.body.status.publishAt }, processingDetails: { processingStatus: yt.proses } }] : [] }); }
-  if (p === "channels") return j({ items: [{ id: yt.channel }] });
+  if (p === "channels") return j({ items: [{ id: yt.channel, ...(yt.diChannel.length && { contentDetails: { relatedPlaylists: { uploads: "UU" } } }) }] });
+  if (p === "playlistItems" && u.searchParams.get("playlistId") === "UU") return j({ items: yt.diChannel.map((v, n) => ({ contentDetails: { videoId: `ada${n}` } })) });
   if (p === "playlists" && m === "GET") return j({ items: yt.playlist });
   if (p === "playlists") { yt.playlist.push({ id: "PL1", snippet: body.snippet, status: body.status }); return j({ id: "PL1" }); }
   if (p === "playlistItems" && m === "GET") return j({ items: yt.isiPlaylist.filter((x) => x === u.searchParams.get("videoId")) });
@@ -50,7 +52,7 @@ globalThis.fetch = async (url, init = {}) => {
 };
 
 // ---- Facebook tiruan ----
-const fbt = { video: {}, komentar: [], panggilan: [], captions: [], sampul: [], tayang: false, gagalVideo: null };
+const fbt = { diPage: [], video: {}, komentar: [], panggilan: [], captions: [], sampul: [], tayang: false, gagalVideo: null };
 function facebookTiruan(u, m, init) {
   const p = u.pathname.replace(/^\/(video-upload\/)?v27\.0\//, ""); fbt.panggilan.push(`${m} ${u.hostname} ${p}`);
   const isi = init.body instanceof FormData || init.body instanceof URLSearchParams ? Object.fromEntries(init.body) : {};
@@ -59,6 +61,8 @@ function facebookTiruan(u, m, init) {
   if (p === "me/accounts") return j({ data: [{ id: "900", name: "Page Uji", access_token: "tokenPage", tasks: ["CREATE_CONTENT"] }] });
   assert.ok(!u.search.includes("access_token"), "token tidak boleh ada di URL");
   if (u.hostname === "rupload.facebook.com") { fbt.video[p].diterima = +init.headers.offset + init.body.length; fbt.video[p].total = +init.headers.file_size; return j({ success: true }); }
+  if (p === "900/videos" && m === "GET") return j({ data: fbt.diPage });
+  if (p === "900/scheduled_posts") return j({ data: [] });
   if (p === "900/videos") { if (fbt.gagalVideo) return j({ error: { code: fbt.gagalVideo === 500 ? 1 : 100, message: "gagal" } }, fbt.gagalVideo); fbt.video["501"] = { id: "501", isi }; return j({ id: "501" }); }
   if (p === "900/video_reels" && isi.upload_phase === "start") { const id = `60${Object.keys(fbt.video).length}`; fbt.video[id] = { id, diterima: 0 }; return j({ video_id: id }); }
   if (p === "900/video_reels") { fbt.video[isi.video_id].selesai = isi; return j({ success: true }); }
@@ -296,6 +300,22 @@ try {
       assert.equal(r.hasil.master.youtube.videoId, "abcdefghijk"); assert.equal(r.hasil.S3.instagram.sumber, "manual"); assert.ok(r.kunci_manual); assert.equal(r.hasil.asing, undefined);
       inti.ubah(d, (x) => (x.items[0].komentar = "Q")); inti.setujui(d, "SETUJU", "uji"); arsip(d, true); yt.panggilan.length = 0; await putaran({ log: () => {}, beri: () => {}, kini: Date.now() + 60e3 }); assert.ok(!yt.panggilan.some((x) => x.includes("commentThreads")));
     } finally { Object.assign(process.env, simpan); fs.rmSync(path.join(R, D), { recursive: true }); }
+  });
+  await uji("pengaman unggah ganda: judul yang sudah ada menghentikan semua unggahan", async () => {
+    const F = await import("./facebook.mjs");
+    inti.ubah(c, (x) => { x.hasil = {}; x.kunci_manual = null; x.facebook = { aktif: true }; x.items.forEach((i) => { i.jadwal = ""; i.judul = i.nama === "master" ? "Judul master untuk uji ganda" : "Judul short untuk uji ganda"; i.playlist = ""; i.thumbnail = null; }); }); inti.setujui(c, "SETUJU", "uji");
+    const n = Object.keys(yt.video).length; yt.diChannel = ["Judul Short untuk uji GANDA!"]; await assert.rejects(kirim(c, diam), /unggah ganda dicegah.*S1/); assert.equal(Object.keys(yt.video).length, n);
+    for (const k of Object.keys(fbt.video)) delete fbt.video[k]; fbt.diPage = [{ id: "9", description: "Judul master untuk uji ganda\nlanjutan" }]; await assert.rejects(F.kirim(c, diam), /unggah ganda dicegah.*master/); assert.equal(Object.keys(fbt.video).length, 0);
+    yt.diChannel = ["[UJI] Judul short untuk uji ganda", "lain sama sekali dari rencana"]; fbt.diPage = []; await kirim(c, diam); assert.equal(Object.keys(yt.video).length, n + 2); yt.diChannel = [];
+  });
+  await uji("status TRACK.md hanya naik, mengikuti master", async () => {
+    const { seharusnya, sinkronStatus } = await import("./status.mjs"); const md = path.join(R, "hasil/tracks/T09-uji/TRACK.md"); const baris = () => fs.readFileSync(md, "utf8").split("\n").find((l) => l.startsWith("| 001-contoh"));
+    const lalu = "2026-01-02T03:00:00.000Z", nanti = "2099-01-02T03:00:00.000Z"; const dengan = (h) => inti.ubah(c, (x) => { x.hasil = h ? { master: { youtube: h } } : {}; });
+    assert.equal(seharusnya({ hasil: { master: { youtube: { privasi: "private" } } }, items: [] }), null);
+    dengan({ publishAt: nanti }); sinkronStatus({ log: () => {}, lihat: true }); assert.match(baris(), /siap-publish \| \d{4}-/);
+    sinkronStatus({ log: () => {} }); assert.match(baris(), /siap-publish \| 2099-01-02/);
+    dengan({ publishAt: lalu }); sinkronStatus({ log: () => {} }); assert.match(baris(), /tayang \| 2026-01-02/);
+    dengan({ publishAt: nanti }); assert.equal(sinkronStatus({ log: () => {} }), 0); assert.match(fs.readFileSync(md, "utf8"), /disamakan dengan hasil di dashboard/);
   });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;
