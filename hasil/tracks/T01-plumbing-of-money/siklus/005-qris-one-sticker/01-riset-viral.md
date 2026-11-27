@@ -21,6 +21,14 @@ Data diambil 2026-11-27 dari halaman pencarian dan halaman channel YouTube (brow
 
 Pembanding yang gagal (sinyal pasokan berlebih untuk sudut generik): "Why Asia Skipped Credit Cards for QR Codes" dan lima judul serupa dari channel baru dalam 1 sampai 4 minggu terakhir, semuanya di bawah 300 view.
 
+## Tambahan dari YouTube Data API (2026-11-27, setelah rebase)
+
+`scripts/youtube/riset.mjs` dengan kata kunci "QRIS explained", "Indonesia QR code payment", "QR code payments Asia", dan "UPI explained" menemukan 39 outlier dalam 90 hari (view ≥ 3x median channel). Tabel lengkap ada di [01-outlier-youtube.md](01-outlier-youtube.md). Tiga temuan yang relevan:
+- **Biaya pembayaran QR adalah topik terpanas.** Video berita aturan biaya UPI/MDR India pada September 2026 mendapat 0,8 sampai 5,4 juta view, dengan rasio 17x sampai 44.000x dari channel berita besar. Contohnya [Ashneer Grover on UPI fees](https://www.youtube.com/watch?v=kSDvdoVt_3Y) (5,4 juta, 725x) dan [Indian Express Hindi](https://www.youtube.com/watch?v=UJC4nqC_LYg) (805 ribu, 70x). Ini mendukung blok "siapa yang membayar" (s16 sampai s23). Naskah tidak berubah karena angka biaya UPI belum diverifikasi dan bukan topik T01-005.
+- **Penipuan QRIS palsu juga ramai:** [AWAS Modus Penipuan QRIS Palsu!](https://www.youtube.com/watch?v=mTsETIxI1N8) (Hanif Produktif, 220 ribu subscriber) mendapat 1,54 juta view, 14,8x median. Masuk backlog, tidak dipakai di 005.
+- **Pasokan video QRIS berbahasa Inggris dalam 90 hari tetap tipis.** Tidak ada outlier QRIS berbahasa Inggris di atas 1.000 view yang muncul. Celah sudut A tetap berlaku.
+Banyak hasil lain tidak relevan, misalnya kupon cat Asian Paints dan Bangla QR, dan karena itu diabaikan.
+
 ## Pola yang berulang
 
 1. **Sistem lokal melawan raksasa kartu Amerika.** Bukti: mNMSUvXeKlw, H0vcJkfEol8, pTeLr_hQnHg, ucDoVm4wbWc, 85jfpW_q2eo, F_5EADTwsis. Kata "Visa & Mastercard" ada di judul 6 dari 10 outlier.

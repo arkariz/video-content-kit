@@ -3,9 +3,9 @@
  "track": "T01",
  "di_luar_v2": true,
  "title_options": [
-  "One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run",
-  "How a Paper QR Code Beat 26 Payment Apps, and Then Crossed Borders",
-  "Indonesia's QRIS: What Happens in the 2 Seconds After You Scan"
+  "Indonesia's QRIS: One Sticker, 72 Million Users",
+  "How Indonesia's QRIS Crosses Borders Without Dollars",
+  "QRIS: What Happens 2 Seconds After You Scan"
  ],
  "thumbnail_text": [
   "ONE STICKER. EVERY APP.",
@@ -415,15 +415,15 @@
    "role": "body",
    "chapter": "Before the sticker",
    "narration": {
-    "en": "Many people think QRIS is an app, but there's no QRIS app to download. It's a rulebook for how the code is written and how the companies on each side connect.",
-    "id": "Banyak orang mengira QRIS itu aplikasi, padahal tidak ada aplikasi QRIS untuk diunduh. QRIS adalah buku aturan tentang cara kode ditulis dan cara perusahaan di kedua sisi tersambung."
+    "en": "Many people think Indonesia's QRIS code is an app you download. It's a rulebook for how the code is written and how the companies on each side connect.",
+    "id": "Banyak orang mengira kode QRIS Indonesia itu aplikasi yang bisa diunduh. QRIS adalah buku aturan tentang cara kode ditulis dan cara perusahaan di kedua sisi tersambung."
    },
    "shots": [
     {
      "sentence": 1,
      "show": "two panels: on the left a pale dashed phone app tile named QRIS with a download arrow; a coral stroke crosses it out",
      "scale": "object",
-     "motion": "download arrow spins, then the coral cross slashes in and the tile fades to outline",
+     "motion": "download arrow spins; at the end of the sentence the coral cross slashes in and the tile fades to outline",
      "transition": "cut",
      "labels": [
       {
@@ -1682,29 +1682,35 @@
    "role": "body",
    "chapter": "Crossing borders",
    "narration": {
-    "en": "You might guess that somewhere in the middle, the money gets turned into US dollars. In these links, it doesn't.",
-    "id": "Kamu mungkin menebak bahwa di suatu titik, uangnya diubah dulu ke dolar AS. Dalam sambungan ini, tidak."
+    "en": "When a tourist from Thailand pays a Bali stall with QRIS, the money is never turned into US dollars. Most people would guess it gets converted somewhere in the middle.",
+    "id": "Saat turis dari Thailand membayar warung di Bali dengan QRIS, uangnya tidak pernah diubah ke dolar AS. Kebanyakan orang menebak uangnya dikonversi di suatu titik di tengah."
    },
    "shots": [
     {
      "sentence": 1,
-     "show": "a pale dashed path from a gold rupiah coin to a green dollar coin to a silver baht coin, drawn across the sea",
+     "show": "a silver baht coin on the Thai shore and a gold rupiah coin on the Bali shore, joined by one solid line across the sea; a green dollar coin sits off to the side, unused",
      "scale": "map",
-     "motion": "dashed path draws in, dollar coin wobbles in the middle",
+     "motion": "solid line snaps between the two coins, the dollar coin dims",
      "transition": "cut",
      "labels": [
       {
-       "text": "DOLLARS?",
+       "text": "NO DOLLARS",
        "word": "dollars"
       }
      ]
     },
     {
      "sentence": 2,
-     "show": "a coral cross slashes the dollar coin, which fades; a solid line now joins the rupiah coin straight to the baht coin",
+     "show": "a pale dashed detour appears from the baht coin through the dollar coin to the rupiah coin, then a coral cross slashes the dollar and the detour fades",
      "scale": "map",
-     "motion": "cross strikes, dollar fades out, solid line snaps between the two coins",
-     "transition": "hold"
+     "motion": "dashed detour draws in, dollar wobbles, cross strikes, detour fades and the solid line stays",
+     "transition": "hold",
+     "labels": [
+      {
+       "text": "THE GUESS",
+       "word": "guess"
+      }
+     ]
     }
    ],
    "sources": [
@@ -1720,8 +1726,8 @@
    "role": "body",
    "chapter": "Crossing borders",
    "narration": {
-    "en": "A tourist from Thailand walks up to the same noodle stall in Bali. The tourist scans the same sticker, using a Thai banking app.",
-    "id": "Seorang turis dari Thailand mampir ke warung mi yang sama di Bali. Turis itu memindai stiker yang sama, memakai aplikasi bank Thailand."
+    "en": "That tourist walks up to the same noodle stall in Bali. The tourist scans the same sticker, using a Thai banking app.",
+    "id": "Turis itu mampir ke warung mi yang sama di Bali. Turis itu memindai stiker yang sama, memakai aplikasi bank Thailand."
    },
    "shots": [
     {

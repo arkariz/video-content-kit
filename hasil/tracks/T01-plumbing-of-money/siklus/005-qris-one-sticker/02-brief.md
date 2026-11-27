@@ -22,14 +22,16 @@
   - OPSIONAL (disarankan): klip tangan kreator memindai stiker QRIS di warung, tanpa logo aplikasi dan tanpa wajah, ±4 detik (s01, `broll.own`). Kalau tidak ada, QA mencatat temuan sedang seperti 001 (`pengecualian_qa`).
 - **Format:** master 16:9 EN, 48 scene, 1.294 kata EN (estimasi ±8:28 pada 167 kpm, tempo nyata 001, ditambah jeda 0,9 detik), audio ID sebagai track kedua, 2 Shorts.
 - **Judul (3 varian):**
-  1. One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run
-  2. How a Paper QR Code Beat 26 Payment Apps, and Then Crossed Borders
-  3. Indonesia's QRIS: What Happens in the 2 Seconds After You Scan
+  1. Indonesia's QRIS: One Sticker, 72 Million Users
+  2. How Indonesia's QRIS Crosses Borders Without Dollars
+  3. QRIS: What Happens 2 Seconds After You Scan
+  (Diganti 2026-11-27 setelah lint kemasan `kemasan.mjs`: judul lama 62 sampai 86 karakter, terpotong di 60. Pasangan terbaik menurut title.py: judul 1 + "NO DOLLARS NEEDED", 100/100.)
 - **Teks thumbnail (2 varian, maksimal 4 kata):**
   1. "ONE STICKER. EVERY APP."
   2. "NO DOLLARS NEEDED"
   Visual thumbnail: stiker QRIS putih di dudukan di meja warung, banyak colokan berbeda warna mengarah ke satu stopkontak di stiker. Tanpa logo aplikasi nyata dan tanpa logo resmi QRIS (hanya kata "QRIS" dengan huruf channel).
 - **Thumbnail Short:** S1 "QRIS ISN'T AN APP", S2 "NO DOLLARS IN BETWEEN".
+- **Aturan uji Short** (`learnings-global.md`, 2026-11-27): kalimat pertama berdiri sendiri, jawaban paling lambat kalimat kedua (detik 6). S1 dibuka s08 ("Many people think Indonesia's QRIS code is an app you download."), S2 dibuka s35 dengan jawabannya ("...the money is never turned into US dollars.").
 - **Learnings yang diterapkan** (`learnings.md` T01 dan `learnings-global.md`):
   1. Fondasi dulu: metafora colokan di s06 (±0:49), tiga pemain di s10 (±1:33, sedikit melewati 90 detik karena babak sejarah; diterima karena metafora dan pemain toko-aplikasi sudah muncul di s06).
   2. Anggaran konsep 6: satu standar QR (s07), switch (s11), MDR (s17), EMVCo (s29), settlement (s39), hub instan bersama (s44). Aturan switch domestik (s28) memakai istilah switch yang sudah dikenal. Jarak antarkonsep baru di atas 45 detik.

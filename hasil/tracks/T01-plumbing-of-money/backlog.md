@@ -38,3 +38,5 @@ Skor = permintaan (1-5) + kekuatan bukti milik kreator (1-5) + kesegaran (1-5). 
 | 11 | Pay in Tokyo With Rupiah: How QRIS Crosses Borders Without Dollars (Short atau LF) | 4 | link Korea/China 2026; inbound Rp6,2 T | dua switch + settlement mata uang lokal | riset 005 | sebagian di 005 |
 | 10 | The US Called a QR Sticker a Trade Barrier | 4 | CNA 294K | switching domestik | riset 005 | baru (risiko berita kebijakan) |
 | 10 | Your QRIS History Could Become Your Credit Score | 3 | `belum terverifikasi` | data transaksi dan penilaian kredit (C36 riset 005) | riset 005 | baru |
+| 11 | Fake QRIS Stickers: How the Scam Works and What Your App Actually Checks | 1 | Hanif Produktif 1,54 jt (14,8x, 90 hari) | apa yang dibaca aplikasi dari kode (C32 riset 005) | outlier API 2026-11-27 | baru |
+| 11 | India Wants to Charge for UPI. Who Pays for 'Free' QR Payments? | 3 | berita biaya UPI Sep 2026: 0,8 sampai 5,4 jt view | MDR QRIS 0% sebagai pembanding (005) | outlier API 2026-11-27 | baru (cek fakta kebijakan UPI dulu) |

@@ -1,11 +1,11 @@
 # Naskah: T01 siklus 005-qris-one-sticker (R3, DRAFT menunggu persetujuan kreator)
 
-Judul kerja: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run
+Judul kerja: Indonesia's QRIS: One Sticker, 72 Million Users
 Janji: After watching, you know what happens in the two seconds after you scan one QRIS sticker, why a small shop pays almost nothing for it, and how the same sticker now takes money from other countries without dollars.
-Gaya: R3 (`gaya-visual.md`) + `gaya-cerita.md`. 48 scene, 1294 kata EN, 1171 kata ID. Estimasi ±8:28 pada 167 kata per menit (tempo nyata 001) + jeda 0,9 detik. Durasi pasti setelah TTS.
+Gaya: R3 (`gaya-visual.md`) + `gaya-cerita.md`. 48 scene, 1299 kata EN, 1177 kata ID. Estimasi ±8:29 pada 167 kata per menit (tempo nyata 001) + jeda 0,9 detik. Durasi pasti setelah TTS.
 Shot lengkap (show, motion, label) di `03-script.json`; arah visual per scene di `03-visual.json` (versi 2). Status V2: di luar paket uji (seperti 004).
 
-Re-hook dan payoff (estimasi): s03 0:22 · s10 1:34 · s16 2:45 · s26 4:36 · s33 5:33 · s41 7:00 · s45 7:51 · s46 8:00 · s47 8:10
+Re-hook dan payoff (estimasi): s03 0:22 · s10 1:33 · s16 2:44 · s26 4:35 · s33 5:32 · s41 7:02 · s45 7:53 · s46 8:02 · s47 8:11
 
 ## Checklist cerita
 - [x] Scene 1 "you" di momen kunci, 2 kalimat: s01 (memindai stiker di warung Bali)
@@ -25,7 +25,7 @@ Re-hook dan payoff (estimasi): s03 0:22 · s10 1:34 · s16 2:45 · s26 4:36 · s
 - Anggaran konsep: satu standar QR (s07), switch (s11), MDR (s17), EMVCo (s29), settlement (s39), hub instan bersama (s44). Enam istilah, jarak minimal sekitar 70 detik.
 
 ## Durasi dan risiko
-- Estimasi ±8:26 pada 167 kpm. Bila TTS memberi tempo seperti 002 (±184 kpm), master bisa sekitar 7:40. Kreator memilih: perlambat TTS, tambah jeda, atau tanpa mid-roll. Jangan menambah konsep.
+- Estimasi ±8:29 pada 167 kpm. Bila TTS memberi tempo seperti 002 (±184 kpm), master bisa sekitar 7:40. Kreator memilih: perlambat TTS, tambah jeda, atau tanpa mid-roll. Jangan menambah konsep.
 - Fondasi: metafora di s06 (±0:49), tiga pemain di peta pada s10 (±1:33), sedikit lewat 90 detik karena babak sejarah.
 - Angka BI data Oktober 2026 (RDG 18 Nov 2026); label tanpa bulan, narasi menyebut "In October".
 
@@ -41,6 +41,13 @@ Re-hook dan payoff (estimasi): s03 0:22 · s10 1:34 · s16 2:45 · s26 4:36 · s
 
 Diperbaiki saat pemeriksaan: "Here's the common mistake" dan "Here's the twist" (pembuka basa-basi) diganti kalimat langsung; "Which brings us to the second question" (penyambung meta) diganti pertanyaannya sendiri; kontras "isn't a rival to Visa. It's an adapter" ditulis langsung; adverb "simply" dan "properly" dibuang; satu kalimat pasif diberi pelaku (providers). ID: "Ini salah kaprah yang umum", "Ini twist-nya", "Ini membawa kita ke" diganti; "Agar adil bagi" jadi "Supaya adil untuk".
 Sisa catatan: Authenticity 7 karena narator tidak boleh memakai persona kreator; bukti kreator ada di detail isi kode (s12) dan klip tangan opsional (s01). Durasi ID per scene dicek lewat panjang karakter (semua dalam 0,8 sampai 1,25 kali EN setelah s04 dan s06 dipendekkan); pasti setelah TTS.
+
+## Penyesuaian setelah rebase ke main (2026-11-27)
+- **Aturan uji Short** (`learnings-global.md`, dari T02 001): kalimat pertama berdiri sendiri dan jawaban mulai paling lambat kalimat kedua (detik 6).
+  - S1 (s08, s09): kalimat pertama s08 menyebut "Indonesia's QRIS code" supaya berdiri sendiri; jawaban "It's a rulebook" mulai di kalimat kedua (±4 detik).
+  - S2 (s35, s37, s39): s35 ditulis ulang, jawaban dulu ("the money is never turned into US dollars") lalu tebakannya dicoret. Pembukanya tidak lagi bergantung pada scene sebelumnya; s36 menjadi "That tourist ...".
+- **Lint kemasan** (`kemasan.mjs`, title.py): ketiga judul lama melewati 60 karakter (86, 66, 62). Judul diganti: "Indonesia's QRIS: One Sticker, 72 Million Users" (47), "How Indonesia's QRIS Crosses Borders Without Dollars" (52), "QRIS: What Happens 2 Seconds After You Scan" (43).
+- **Riset outlier via API** (`scripts/youtube/riset.mjs`): `01-outlier-youtube.md` (39 outlier 90 hari). Ringkasan dan dampaknya ada di `01-riset-viral.md`, bagian "Tambahan dari YouTube Data API".
 
 ## The scan
 
@@ -88,8 +95,8 @@ Visual: red-and-white bunting strung above the stall street; the wall of mismatc
 Klaim: C01
 
 ### s08 · body · 2 shot
-EN: Many people think QRIS is an app, but there's no QRIS app to download. It's a rulebook for how the code is written and how the companies on each side connect.
-ID: Banyak orang mengira QRIS itu aplikasi, padahal tidak ada aplikasi QRIS untuk diunduh. QRIS adalah buku aturan tentang cara kode ditulis dan cara perusahaan di kedua sisi tersambung.
+EN: Many people think Indonesia's QRIS code is an app you download. It's a rulebook for how the code is written and how the companies on each side connect.
+ID: Banyak orang mengira kode QRIS Indonesia itu aplikasi yang bisa diunduh. QRIS adalah buku aturan tentang cara kode ditulis dan cara perusahaan di kedua sisi tersambung.
 Visual: two panels: on the left a pale dashed phone app tile named QRIS with a download arrow; a coral stroke crosses it out → a thick ring-bound rulebook opens on the counter; one page shows the socket plate, the next shows wires linking two small buildings
 Klaim: C04, C06
 
@@ -256,14 +263,14 @@ Visual: the timeline continues north: Japan lights, then South Korea and China, 
 Klaim: C19, C20
 
 ### s35 · body · 2 shot
-EN: You might guess that somewhere in the middle, the money gets turned into US dollars. In these links, it doesn't.
-ID: Kamu mungkin menebak bahwa di suatu titik, uangnya diubah dulu ke dolar AS. Dalam sambungan ini, tidak.
-Visual: a pale dashed path from a gold rupiah coin to a green dollar coin to a silver baht coin, drawn across the sea → a coral cross slashes the dollar coin, which fades; a solid line now joins the rupiah coin straight to the baht coin
+EN: When a tourist from Thailand pays a Bali stall with QRIS, the money is never turned into US dollars. Most people would guess it gets converted somewhere in the middle.
+ID: Saat turis dari Thailand membayar warung di Bali dengan QRIS, uangnya tidak pernah diubah ke dolar AS. Kebanyakan orang menebak uangnya dikonversi di suatu titik di tengah.
+Visual: a silver baht coin on the Thai shore and a gold rupiah coin on the Bali shore, joined by one solid line across the sea; a green dollar coin sits off to the side, unused → a pale dashed detour appears from the baht coin through the dollar coin to the rupiah coin, then a coral cross slashes the dollar and the detour fades
 Klaim: C16
 
 ### s36 · body · 2 shot
-EN: A tourist from Thailand walks up to the same noodle stall in Bali. The tourist scans the same sticker, using a Thai banking app.
-ID: Seorang turis dari Thailand mampir ke warung mi yang sama di Bali. Turis itu memindai stiker yang sama, memakai aplikasi bank Thailand.
+EN: That tourist walks up to the same noodle stall in Bali. The tourist scans the same sticker, using a Thai banking app.
+ID: Turis itu mampir ke warung mi yang sama di Bali. Turis itu memindai stiker yang sama, memakai aplikasi bank Thailand.
 Visual: dusk at the Bali stall again; the tourist in a sun hat arrives and sits on the plastic stool → the tourist's phone, in a different app colour, frames the same white stand
 Klaim: C17
 
@@ -342,5 +349,5 @@ Visual: an old-style envelope leaves the Bali stall and drifts off the edge of t
 
 ## Shorts
 
-- **S1-qris-isnt-an-app** (s08, s09), 63 kata, estimasi ±24 detik. Judul: QRIS isn't an app. It's a rulebook.. Thumbnail: QRIS ISN'T AN APP
-- **S2-no-dollars-in-between** (s35, s37, s39), 92 kata, estimasi ±36 detik. Judul: A Thai tourist pays a Bali stall. No dollars involved.. Thumbnail: NO DOLLARS IN BETWEEN
+- **S1-qris-isnt-an-app** (s08, s09), 60 kata, estimasi ±23 detik. Judul: QRIS isn't an app. It's a rulebook.. Thumbnail: QRIS ISN'T AN APP
+- **S2-no-dollars-in-between** (s35, s37, s39), 102 kata, estimasi ±39 detik. Judul: A Thai tourist pays a Bali stall. No dollars involved.. Thumbnail: NO DOLLARS IN BETWEEN

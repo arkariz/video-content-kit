@@ -11,7 +11,7 @@ siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "005: kreator menyetujui naskah dan pemeran usulan, lalu produksi (04-shots.tsx); 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: "005: setujui naskah QRIS (48 scene, judul 1 sampai 3, thumbnail A/B) dan 4 pemeran usulan (switch, yourapp, tourist, centralbank); 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
+menunggu_keputusan: "005: setujui naskah QRIS (48 scene, judul 1 sampai 3, thumbnail A/B) dan 4 pemeran usulan (switch, yourapp, tourist, centralbank); judul baru setelah lint kemasan; 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -128,3 +128,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Nama channel dicatat atas persetujuan kreator: Money Plumbing (@theemoneyplumbing). Channel terhubung ke skrip analitik YouTube (OAuth), 6 video cocok dengan siklus 001 dan 004.
 - 2026-11-27: Siklus 005-qris-one-sticker dibuat atas permintaan kreator (di luar paket V2, `validasi/rencana.md` tidak diubah). Riset viral: 10 outlier (sebagian besar >90 hari; SEA Insider 668 subs 200K, rasio ±500x), 38 klaim (4 berstatus belum, tidak dipakai). Sudut A dipilih agent dalam mode otomatis.
 - 2026-11-27: Brief, 03-script.json (48 scene, 99 shot, R3), 03-visual.json versi 2, dan 03-naskah.md ditulis. EN 1.294 kata, ID 1.171 kata, estimasi ±8:28 pada 167 kpm. Anti-slop EN 40/50, ID 39/50; checklist cerita 9/9; build-visual --check 0 temuan V (04-shots.tsx belum, tahap produksi). Empat pemeran usulan belum di STYLE.md, jadi faces mereka belum ditulis. Proses dijeda di gate persetujuan naskah atas permintaan kreator (ganti model).
+- 2026-11-27: Branch di-rebase ke main. Naskah 005 disesuaikan dengan commit baru: aturan uji Short (s08 dibuka dengan subjeknya, s35 jawaban dulu, s36 "That tourist"), tiga judul dipendekkan setelah lint kemasan (pasangan terbaik 100/100), riset outlier lewat API ditambahkan (01-outlier-youtube.md, 39 outlier; topik biaya UPI dan QRIS palsu masuk backlog). EN 1.299 kata, estimasi ±8:29. build-visual --check tanpa temuan V.

@@ -5939,10 +5939,10 @@
    "assets": []
   },
   "s35": {
-   "purpose": "Tebakan dipatahkan: uang tidak diubah ke dolar AS di tengah.",
+   "purpose": "Tebakan dipatahkan, jawaban dulu (aturan uji Short): turis Thailand membayar warung Bali dan uangnya tidak diubah ke dolar AS; tebakan umum ditampilkan lalu dicoret.",
    "emphasis": [
-    "US dollars",
-    "it doesn't"
+    "never turned into US dollars",
+    "guess"
    ],
    "pattern": [
     "P07"
@@ -6074,8 +6074,8 @@
    "behavior": [
     {
      "subject": "koin_usd",
-     "action": "dicoret koral lalu memudar dan garis lurus menyambung rupiah ke baht",
-     "trigger": "kata doesn't",
+     "action": "meredup di samping, lalu jalan memutarnya dicoret koral dan memudar",
+     "trigger": "kata guess",
      "result": "tidak ada mata uang ketiga",
      "treatment": "metaphor",
      "claims": [
@@ -6090,10 +6090,10 @@
     "negative_space": "laut"
    },
    "animation": {
-    "initial": "jalur putus tiga koin",
+    "initial": "baht dan rupiah di dua pantai",
     "sequence": [
-     "dolar bergoyang",
-     "dicoret, pudar, garis lurus menyambung"
+     "garis lurus menyambung baht ke rupiah, dolar meredup (kalimat 1)",
+     "jalan memutar lewat dolar muncul pucat lalu dicoret dan pudar (kalimat 2)"
     ],
     "camera_move": "diam",
     "secondary": "ombak",
