@@ -8,10 +8,10 @@ channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
+langkah_berikutnya: "005: kreator menyetujui naskah dan pemeran usulan, lalu produksi (04-shots.tsx); 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: "002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
+menunggu_keputusan: "005: setujui naskah QRIS (48 scene, judul 1 sampai 3, thumbnail A/B) dan 4 pemeran usulan (switch, yourapp, tourist, centralbank); 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -56,6 +56,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | qa | 2026-12-14 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
 | 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | siap-publish | target ≤ 2026-12-03 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov |
+| 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | naskah | belum dijadwalkan | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 menunggu persetujuan |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -73,6 +74,7 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-25 | Jadwal 001 dimajukan ke 25-27 Nov (master 11-25, Shorts 11-26 dan 11-27) | Keputusan kreator; penyimpangan dari rencana V2 terkunci (tayang pertama 2026-12-07). rencana.md tidak diubah | siklus/001-approved-not-paid/06-publish.json |
 | 2026-11-26 | Siklus 004 (GTA VI) dibuat di luar paket V2, sudut A "who actually got it" | Hype rilis 19 Nov ($3,79 miliar day one); rencana.md tidak diubah; dikeluarkan dari penilaian 2027-01-03 | siklus/004-gta6-who-got-paid/01-riset-viral.md |
 | 2026-11-26 | Naskah 004 disetujui; judul 1 "Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It."; thumbnail A "$80 → WHO?" | Anti-slop EN 40/50, ID 39/50; checklist cerita 7/7 | siklus/004-gta6-who-got-paid/03-naskah.md |
+| 2026-11-27 | Siklus 005 (QRIS) dibuat di luar paket V2; sudut A dipilih agent (mode_gate otomatis) | Permintaan kreator menyebut topik; A menjawab dua bagian (dalam negeri dan internasional); B dekat berita kebijakan, C terlalu sempit | siklus/005-qris-one-sticker/01-riset-viral.md |
 
 ## Log
 
@@ -124,3 +126,5 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Siklus 004: kreator memutuskan QA dianggap LULUS dari persetujuannya, tanpa pemeriksaan QA (05-qa.md). QA otomatis yang sempat dijalankan GAGAL (durasi < 8:00; dugaan salah ucap "Alinea" di s15) dan diterima apa adanya; master tayang tanpa mid-roll. Status siap-publish; publish manual oleh kreator.
 - 2026-11-26: Siklus 002 diproduksi (audio, adegan 3D r3/soft, master, 2 Shorts, thumbnail). Pemeran T01 dicatat di STYLE.md. Tarif Stripe 2,7% + 5 sen dicek di stripe.com/pricing.
 - 2026-11-27: Nama channel dicatat atas persetujuan kreator: Money Plumbing (@theemoneyplumbing). Channel terhubung ke skrip analitik YouTube (OAuth), 6 video cocok dengan siklus 001 dan 004.
+- 2026-11-27: Siklus 005-qris-one-sticker dibuat atas permintaan kreator (di luar paket V2, `validasi/rencana.md` tidak diubah). Riset viral: 10 outlier (sebagian besar >90 hari; SEA Insider 668 subs 200K, rasio ±500x), 38 klaim (4 berstatus belum, tidak dipakai). Sudut A dipilih agent dalam mode otomatis.
+- 2026-11-27: Brief, 03-script.json (48 scene, 103 shot, R3), 03-visual.json versi 2, dan 03-naskah.md ditulis. EN 1.294 kata, ID 1.171 kata, estimasi ±8:28 pada 167 kpm. Anti-slop EN 40/50, ID 39/50; checklist cerita 9/9; build-visual --check 0 temuan V (04-shots.tsx belum, tahap produksi). Empat pemeran usulan belum di STYLE.md, jadi faces mereka belum ditulis. Proses dijeda di gate persetujuan naskah atas permintaan kreator (ganti model).

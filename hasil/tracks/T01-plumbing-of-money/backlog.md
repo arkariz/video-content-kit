@@ -34,3 +34,7 @@ Skor = permintaan (1-5) + kekuatan bukti milik kreator (1-5) + kesegaran (1-5). 
 | 14 | Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. | 3 | 5 video GTA 6 $3,79B dalam 5 hari (view belum terverifikasi) | merchant of record, settlement, payout | riset 004 | dipakai:004 |
 | 10 | 32 Million Preorders: When Does Your Card Actually Get Charged? | 1 | preorder rekor 32,5 juta | authorization hold, refund | riset 004 | baru |
 | 9 | In GTA, Crime Runs on Cash. Real Banks Are Watching Every Transfer. (Shorts) | 1 | tema game ramai | pemantauan transaksi dari sisi sistem | riset 004 | baru |
+| 14 | One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run | 1,4 | SEA Insider (668 subs) 200K; Tuan Peniru 180K; CNA 294K (semua >90 hari) | jalur satu scan dari sisi engineer aplikasi pembayaran Indonesia | riset 005 | dipakai:005 |
+| 11 | Pay in Tokyo With Rupiah: How QRIS Crosses Borders Without Dollars (Short atau LF) | 4 | link Korea/China 2026; inbound Rp6,2 T | dua switch + settlement mata uang lokal | riset 005 | sebagian di 005 |
+| 10 | The US Called a QR Sticker a Trade Barrier | 4 | CNA 294K | switching domestik | riset 005 | baru (risiko berita kebijakan) |
+| 10 | Your QRIS History Could Become Your Credit Score | 3 | `belum terverifikasi` | data transaksi dan penilaian kredit (C36 riset 005) | riset 005 | baru |
