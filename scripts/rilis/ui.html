@@ -103,10 +103,21 @@ async function aksi(d, b) {
 }
 
 // ---------- Pantau ----------
-function halamanPantau(semua) {
+function kartuPenjadwal(j, dengan) {
+  const A = dengan.flatMap((s) => s.antrean.map((a) => ({ ...a, s })));
+  const menunggu = A.filter((a) => a.keadaan === "menunggu"), belum = A.filter((a) => a.keadaan !== "terlewat" && !a.s.disetujui);
+  const [teks, jenis] = !j.terpasang ? ["belum dipasang", "warn"] : j.basi ? ["tidak berjalan lebih dari 15 menit", "gagal"] : ["aktif", "ok"];
+  return h("section", { class: "kartu" }, h("div", { class: "baris" }, h("h2", { style: "margin:0" }, "Penjadwal"), cip(teks, jenis), j.terakhir ? h("span", { class: "redup kecil-teks" }, `putaran terakhir ${new Date(j.terakhir).toLocaleTimeString("id-ID")}`) : null),
+    j.terpasang ? null : h("p", {}, "Pasang sekali di terminal: ", h("code", {}, "node scripts/rilis/jadwal.mjs pasang")),
+    h("p", { class: "redup kecil-teks" }, "Memposting komentar pertama dan melengkapi thumbnail untuk siklus yang sudah disetujui. Mac harus menyala dan tidak tidur; komentar yang terlambat lebih dari 60 menit menunggu keputusanmu."),
+    menunggu.map((a) => h("div", {}, `${a.s.track}-${a.s.siklus} ${a.nama}: komentar ${new Date(a.saat).toLocaleString("id-ID")}`)),
+    belum.length ? h("div", { class: "catatan" }, `Tidak akan dijalankan sebelum disetujui: ${[...new Set(belum.map((a) => `${a.s.track}-${a.s.siklus}`))].join(", ")}`) : null,
+    j.catatan.length ? h("details", {}, h("summary", {}, "Catatan penjadwal"), h("pre", {}, j.catatan.join("\n"))) : null);
+}
+function halamanPantau(semua, jadwal) {
   const dengan = semua.filter((s) => s.adaRencana), tanpa = semua.filter((s) => !s.adaRencana).reverse();
   const tugas = dengan.flatMap((s) => s.tugas); const n = hitung(tugas);
-  const gagal = dengan.flatMap((s) => s.items.flatMap((i) => i.galat.map((g) => ({ s, i, g }))));
+  const gagal = dengan.flatMap((s) => s.items.flatMap((i) => [...i.galat, ...s.antrean.filter((a) => a.nama === i.nama && a.keadaan === "terlewat").map(() => "komentar terlewat; jalankan pasca-tayang bila masih mau")].map((g) => ({ s, i, g }))));
   const konten = dengan.flatMap((s) => s.items.map((i) => ({ s, i, sisa: s.tugas.filter((t) => t.item === i.nama && !t.selesai) })));
   // Yang masih akan tayang, atau sudah lewat jadwal tetapi masih ada tugasnya.
   const agenda = konten.filter((k) => (k.i.jadwal && tgl(k.i.jadwal) > Date.now()) || k.sisa.length).sort((a, b) => (a.i.jadwal || "9").localeCompare(b.i.jadwal || "9"));
@@ -118,6 +129,7 @@ function halamanPantau(semua) {
       angka("Bisa dikerjakan sekarang", n.sekarang, `${n.tunggu} menunggu · ${n.selesai} selesai`),
       angka("Kegagalan", gagal.length, gagal.length ? "lihat di bawah" : "tidak ada", gagal.length ? "gagal" : "ok")),
     gagal.length ? h("section", { class: "kartu" }, h("h2", {}, "Perlu diperbaiki"), gagal.map(({ s, i, g }) => h("div", { class: "catatan gagal" }, h("a", { href: `#/${s.track}/${s.siklus}/kirim` }, `${s.track}-${s.siklus} ${i.nama}`), `: ${g}`))) : null,
+    kartuPenjadwal(jadwal, dengan),
     h("section", { class: "kartu" }, h("h2", {}, "Agenda"),
       agenda.length ? agenda.map(({ s, i, sisa }) => {
         const siap = sisa.filter((t) => !t.tunggu).length;
@@ -250,7 +262,7 @@ function halamanKirim(d) {
     h("section", { class: "kartu" }, h("h2", {}, "Kirim ke YouTube"),
       r.kunci_manual ? h("div", { class: "catatan" }, `Unggah dikunci: ${r.kunci_manual}. Catat URL tayang di langkah 3; komentar pertama tetap bisa diposting lewat pasca-tayang.`) : null,
       d.kredensial ? null : h("div", { class: "catatan" }, "Izin tulis YouTube belum ada. Jalankan di terminal, lalu mulai ulang dashboard: ", h("code", {}, `node --env-file=.env scripts/youtube/auth.mjs --track ${d.track} --tulis`)),
-      h("div", { class: "baris" }, tombol("kirim", "Kirim ke YouTube", `Unggah ke YouTube channel ${d.track}:\n${daftar}`, mKirim, true), tombol("pasca", "Jalankan pasca-tayang", "Posting komentar pertama pada video yang sudah publik?", mPasca), tombol("uji", "Unggah uji (privat)", "Unggah satu Short sebagai PRIVAT untuk uji? Hapus videonya di Studio setelah diperiksa.", mUji), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: alasan(umum, !sudah && "belum ada video YouTube"), onclick: () => aksi(d, { aksi: "periksa" }) }, "Periksa di YouTube")),
+      h("div", { class: "baris" }, tombol("kirim", "Kirim ke YouTube", `Unggah ke YouTube channel ${d.track}:\n${daftar}`, mKirim, true), tombol("pasca", "Jalankan pasca-tayang", "Posting komentar pertama pada video yang sudah publik?", mPasca), tombol("uji", "Unggah uji (privat)", "Unggah satu Short sebagai PRIVAT untuk uji? Hapus videonya di Studio setelah diperiksa.", mUji), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: alasan(umum, !sudah && "belum ada video YouTube"), onclick: () => aksi(d, { aksi: "periksa" }) }, "Periksa di YouTube"), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: "Untuk video yang sudah kamu hapus di Studio: catatannya dilupakan agar bisa diunggah ulang", onclick: () => confirm("Lupakan catatan unggah untuk video yang sudah terhapus di YouTube? Persetujuan akan dibatalkan.") && aksi(d, { aksi: "reset" }) }, "Reset yang terhapus")),
       mKirim ? h("div", { class: "redup kecil-teks" }, `Tombol kirim nonaktif: ${mKirim}.`) : null,
       d.log.length ? h("pre", { "aria-live": "polite" }, d.log.join("\n")) : null),
   ];
@@ -294,7 +306,7 @@ async function tampil() {
     const semua = await ambil("/api/ringkasan");
     pilih.replaceChildren(h("option", { value: "" }, "Buka siklus…"), ...semua.map((x) => h("option", { value: `${x.track}/${x.siklus}` }, `${x.track}-${x.nama}`)));
     pilih.value = t && s ? `${t}/${s}` : "";
-    if (!t || !s) { if (nomor !== nomorTampil) return; isi.replaceChildren(...halamanPantau(semua).filter(Boolean)); return jadwalkan(30000); }
+    if (!t || !s) { if (nomor !== nomorTampil) return; isi.replaceChildren(...halamanPantau(semua, await ambil("/api/penjadwal")).filter(Boolean)); return jadwalkan(30000); }
     const d = await ambil(`/api/siklus?t=${encodeURIComponent(t)}&s=${encodeURIComponent(s)}`);
     if (nomor !== nomorTampil) return;
     if (!d.rencana) { isi.replaceChildren(h("h1", {}, `${d.track}-${d.nama}`), h("section", { class: "kartu" }, h("p", {}, `Belum ada rencana rilis. Rencana disusun dari naskah dan hasil render${d.panduan ? ", teksnya diambil dari panduan unggah" : ""}. Belum ada yang dikirim.`), h("button", { class: "utama", onclick: () => aksi(d, { aksi: "plan" }) }, "Buat rencana"))); return; }

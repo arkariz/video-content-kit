@@ -33,6 +33,7 @@ globalThis.fetch = async (url, init = {}) => {
   }
   const p = u.pathname.replace(/^(\/upload)?\/youtube\/v3\//, "");
   if (p === "videos" && m === "POST") { yt.params.push(u.searchParams.get("notifySubscribers")); const id = `vid${String(Object.keys(yt.video).length).padStart(8, "0")}`; yt.video[id] = { id, body, diterima: 0, total: +init.headers["X-Upload-Content-Length"] }; return new Response(null, { status: 200, headers: { location: `https://sesi.uji/${id}` } }); }
+  if (p === "videos" && u.searchParams.get("part") === "id") return j({ items: u.searchParams.get("id").split(",").filter((x) => yt.video[x]).map((id) => ({ id })) });
   if (p === "videos") { const v = yt.video[u.searchParams.get("id")]; return j({ items: v ? [{ snippet: { channelId: yt.channel, ...v.body.snippet }, localizations: v.body.localizations, status: { privacyStatus: v.publik ? "public" : v.body.status.privacyStatus, publishAt: v.body.status.publishAt }, processingDetails: { processingStatus: yt.proses } }] : [] }); }
   if (p === "channels") return j({ items: [{ id: yt.channel }] });
   if (p === "playlists" && m === "GET") return j({ items: yt.playlist });
@@ -134,6 +135,27 @@ try {
     yt.proses = "processing"; yt.thumbnail.length = 0; setTimeout(() => (yt.proses = "succeeded"), 60);
     await kirim(c, { log: () => {}, tunggu: 3000, selang: 10 });
     const h = inti.muat(c).hasil; assert.equal(yt.thumbnail.length, 2); assert.ok(h.S1.youtube.selesai.thumbnail);
+  });
+  await uji("penjadwal: komentar saat tayang, sekali; terlambat dan belum disetujui dilewati", async () => {
+    const { antrean, putaran, plist, BATAS } = await import("./jadwal.mjs");
+    const pesan = [], opsi = { log: () => {}, beri: (v) => pesan.push(v) };
+    const tayang = new Date(Date.now() + 3600e3);
+    inti.ubah(c, (x) => { x.items[1].komentar = "S1?"; x.hasil = Object.fromEntries(x.items.map((i, n) => { const id = `jdw0000000${n}`; yt.video[id] = { id, publik: true, body: { snippet: {}, status: { privacyStatus: "private" } } }; return [i.nama, { youtube: { sumber: "alat", videoId: id, publishAt: tayang.toISOString(), diunggah: new Date().toISOString(), selesai: { playlist: 1, "subtitle-en": 1, thumbnail: 1 } } }]; })); });
+    inti.setujui(c, "SETUJU", "uji"); yt.komentar.length = 0; yt.panggilan.length = 0; yt.proses = "succeeded";
+    await putaran(opsi); assert.equal(yt.panggilan.length, 0, "belum waktunya: tanpa panggilan API");
+    const saat = tayang.getTime() + 60e3;
+    inti.sunting(c, "S1", { komentar: "S1 berubah?" }); await putaran({ ...opsi, kini: saat }); assert.equal(yt.komentar.length, 0, "berubah setelah disetujui");
+    inti.setujui(c, "SETUJU", "uji"); await putaran({ ...opsi, kini: saat }); await putaran({ ...opsi, kini: saat + 3e5 });
+    assert.equal(yt.komentar.length, 2); assert.equal(pesan.filter((v) => v.includes("pin sekarang")).length, 2);
+    inti.ubah(c, (x) => delete x.hasil.S1.youtube.komentar); yt.komentar.length = 0; pesan.length = 0;
+    const telat = tayang.getTime() + BATAS + 60e3; await putaran({ ...opsi, kini: telat }); await putaran({ ...opsi, kini: telat + 3e5 });
+    assert.equal(yt.komentar.length, 0); assert.equal(pesan.length, 1); assert.equal(antrean(inti.muat(c), telat).find((a) => a.nama === "S1").keadaan, "terlewat");
+    assert.match(plist({ node: "/n", root: "/a & b", logFile: "/l" }), /<string>--env-file=\/a &amp; b\/\.env<\/string>/);
+  });
+  await uji("reset hanya melupakan video yang sudah terhapus", async () => {
+    const { lupakanTerhapus } = await import("./youtube.mjs"); delete yt.video.jdw00000001;
+    await lupakanTerhapus(c, { log: () => {} }); const r = inti.muat(c);
+    assert.ok(r.hasil.master.youtube); assert.equal(r.hasil.S1, undefined); assert.equal(r.persetujuan, null);
   });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;

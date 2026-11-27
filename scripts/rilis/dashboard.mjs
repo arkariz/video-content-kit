@@ -5,7 +5,8 @@ import fs from "node:fs"; import path from "node:path"; import http from "node:h
 import { pathToFileURL } from "node:url";
 import { readJson } from "../produksi/lib.mjs";
 import * as inti from "./inti.mjs";
-import { kirim, pascaTayang, periksa, publishVar } from "./youtube.mjs";
+import { kirim, lupakanTerhapus, pascaTayang, periksa, publishVar } from "./youtube.mjs";
+import { antrean, filePlist, fileStatus, SELANG } from "./jadwal.mjs";
 import { buatSkenario, hapusSkenario, jadwalUlang } from "./skenario.mjs";
 
 const UI = path.join(import.meta.dirname, "ui.html");
@@ -28,7 +29,7 @@ function sel(c, r) {
 function ringkasan() {
   return inti.daftarSiklus().map((c) => {
     const r = inti.muat(c); const qa = readJson(path.join(c.dir, "05-qa.auto.json"), null);
-    return { track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, status: c.status, tanggal: c.tanggal, adaRencana: !!r, qa: qa?.verdict ?? null, disetujui: !!r && inti.disetujui(r), kunci: r?.kunci_manual ?? null, items: sel(c, r), tugas: r ? inti.checklist(c, r) : [], masalah: r ? inti.masalah(c, r).length : 0 };
+    return { track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, status: c.status, tanggal: c.tanggal, adaRencana: !!r, qa: qa?.verdict ?? null, disetujui: !!r && inti.disetujui(r), kunci: r?.kunci_manual ?? null, items: sel(c, r), tugas: r ? inti.checklist(c, r) : [], masalah: r ? inti.masalah(c, r).length : 0, antrean: r ? antrean(r) : [] };
   });
 }
 
@@ -42,6 +43,11 @@ function rinci(c) {
     berkas: fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /\.(mp4|png|jpg)$/.test(f)) : [],
     kredensial: !!process.env[publishVar(c.track)],
   };
+}
+
+function penjadwal() {
+  const s = readJson(fileStatus(), null);
+  return { terpasang: fs.existsSync(filePlist()), terakhir: s?.terakhir ?? null, basi: !s || Date.now() - new Date(s.terakhir) > SELANG * 3000, catatan: s?.catatan.slice(-8) ?? [] };
 }
 
 /** Pekerjaan panjang berjalan di latar; kemajuannya dibaca lewat log. */
@@ -60,6 +66,7 @@ function aksi(b) {
   switch (b.aksi) {
     case "plan": inti.buatRencana(c); break;
     case "periksa": jalankan(c, "Periksa di YouTube", (log) => periksa(c, { log })); break;
+    case "reset": jalankan(c, "Reset catatan video terhapus", (log) => lupakanTerhapus(c, { log })); break;
     case "jadwal-uji": bebas(); jadwalUlang(c); break;
     case "hapus-uji": bebas(); hapusSkenario(c); logs.delete(kunciLog(c)); return { dihapus: true };
     case "impor": bebas(); inti.impor(c); break;
@@ -99,6 +106,7 @@ export function buatServer() {
       if (req.method === "GET") {
         if (u.pathname === "/") { res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "X-Frame-Options": "DENY", "Content-Security-Policy": "default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; frame-ancestors 'none'" }).end(fs.readFileSync(UI, "utf8").replace("__TOKEN__", token)); return; }
         if (u.pathname === "/api/ringkasan") return void kirimJson(200, ringkasan());
+        if (u.pathname === "/api/penjadwal") return void kirimJson(200, penjadwal());
         if (u.pathname === "/api/siklus") return void kirimJson(200, rinci(inti.cari(u.searchParams.get("t"), u.searchParams.get("s"))));
         if (u.pathname === "/media") return void media(req, res, u.searchParams);
       }

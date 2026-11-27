@@ -424,6 +424,8 @@ node scripts/rilis/rilis.mjs setuju --track T01 --siklus 006           # kreator
 node --env-file=.env scripts/rilis/rilis.mjs kirim --track T01 --siklus 006 --uji   # satu Short, privat
 node --env-file=.env scripts/rilis/rilis.mjs kirim --track T01 --siklus 006
 node --env-file=.env scripts/rilis/rilis.mjs pasca --track T01 --siklus 006         # setelah video publik
+node --env-file=.env scripts/rilis/rilis.mjs reset --track T01 --siklus 006         # lupakan video yang sudah dihapus di Studio
+node scripts/rilis/jadwal.mjs pasang | status | copot                   # penjadwal Mac (launchd)
 node scripts/rilis/uji.mjs                                             # uji dengan API tiruan
 ```
 
@@ -434,7 +436,8 @@ node scripts/rilis/uji.mjs                                             # uji den
 - **`06-rilis.json`** (per siklus) memuat rencana, persetujuan, hasil, dan checklist. Persetujuan mengikat teks, jadwal, komentar, dan file; perubahan apa pun membatalkannya. QA otomatis `GAGAL` atau belum ada memblokir persetujuan. Status `05-qa.md` ditampilkan, tidak memblokir.
 - **Kirim** mengunggah video (dapat dilanjutkan bila terputus), playlist, subtitle, dan thumbnail; jadwal memakai `publishAt`. Thumbnail Shorts menunggu pemrosesan YouTube (sampai 10 menit) lalu dipasang otomatis. Langkah yang sudah selesai dilewati.
 - **Penggunaan AI** (`containsSyntheticMedia`) tidak dikirim: keputusan kreator 2026-11-27, bidang itu dibiarkan kosong dan diisi di Studio bila perlu.
-- **Pasca-tayang** melengkapi thumbnail atau subtitle yang tertunda dan memposting komentar pertama sekali saja pada video publik atau unlisted. Dijalankan manual (penjadwal Mac belum dibuat).
+- **Pasca-tayang** melengkapi thumbnail atau subtitle yang tertunda dan memposting komentar pertama sekali saja pada video publik atau unlisted. Dijalankan manual atau oleh penjadwal.
+- **Penjadwal Mac** (`jadwal.mjs`, launchd tiap 5 menit selama kreator login, dipasang kreator): menjalankan pasca-tayang hanya untuk siklus yang persetujuannya masih berlaku. Tidak mengunggah video dan tidak mengetik SETUJU. Tanpa pekerjaan jatuh tempo, API tidak dipanggil. Komentar terlambat lebih dari 60 menit ditandai terlewat (notifikasi sekali) dan menunggu kreator. Berhenti mencoba setelah 5 kegagalan; kelengkapan dicoba sampai 24 jam sejak unggah. Mac tidur atau mati menunda putaran. Status di halaman Pantau dan `.rilis-penjadwal.json` (tidak di-commit). Pasang dari folder repo utama; copot bila folder dipindah.
 - **Kunci unggah:** siklus berstatus `tayang`, sudah terkirim lewat Upload-Post, atau berpanduan unggah manual tidak bisa diunggah alat ini. Catat URL tayang di dashboard agar checklist dan komentar bisa dipakai.
 - **Manual:** pin komentar, video terkait, end screen, cards, A/B test, multi audio, mid-roll, serta Facebook, Instagram, dan TikTok (belum ada adaptor).
 - **Skenario uji** (tombol di halaman Pantau, `skenario.mjs`): membuat `9NN-uji-alat` (tidak di-commit) berisi master 45 detik dan satu Short dari render terbaru track itu, dijadwalkan 12 dan 14 menit lagi. Videonya benar-benar publik pada jadwalnya (tanpa notifikasi subscriber, playlist unlisted); persetujuan tetap perlu SETUJU kreator; video dan playlist dihapus kreator di Studio. Tombol "Periksa di YouTube" (baca saja) mencocokkan channel, judul, bahasa, terjemahan, jadwal, tayang otomatis, subtitle, playlist, thumbnail, dan komentar.

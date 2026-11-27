@@ -167,12 +167,12 @@ export function kirim(c, { uji = false, log = console.log, tunggu = 10 * 60e3, s
 }
 
 /** Setelah tayang: thumbnail/subtitle yang tertunda dan komentar pertama (sekali saja, hanya di video publik atau unlisted). */
-export function pascaTayang(c, { log = console.log } = {}) {
+export function pascaTayang(c, { log = console.log, hanya, bolehKomentar = () => true } = {}) {
   return terkunci(c, async () => {
     const r = muat(c); if (!r) throw new Error("rencana belum dibuat");
     wajibSetuju(r);
     const yt = await klien(c.track);
-    for (const i of r.items) {
+    for (const i of r.items.filter((x) => !hanya || hanya.has(x.nama))) {
       const h = muat(c).hasil[i.nama]?.youtube; if (!h?.videoId) { log(`${i.nama}: belum ada video YouTube, dilewati`); continue; }
       const catat = (v) => ubah(c, (x) => { x.hasil[i.nama].youtube = v; });
       const v = (await yt.get("videos", { part: "snippet,status", id: h.videoId })).items?.[0];
@@ -180,7 +180,7 @@ export function pascaTayang(c, { log = console.log } = {}) {
       if (v.snippet.channelId !== yt.channel) { log(`${i.nama}: video ini milik channel lain, dilewati`); continue; }
       h.privasi = v.status.privacyStatus; catat(h);
       if (h.sumber === "alat") await lengkapi(yt, r, i, h, catat, { uji: false, log });
-      if (!i.komentar.trim() || h.komentar) continue;
+      if (!i.komentar.trim() || h.komentar || !bolehKomentar(i.nama)) continue;
       if (h.privasi === "private") { log(`${i.nama}: masih privat, komentar ditunda`); continue; }
       try {
         const lama = (await yt.get("commentThreads", { part: "snippet", videoId: h.videoId, maxResults: "100", order: "time" })).items?.find((t) => t.snippet.topLevelComment.snippet.authorChannelId?.value === yt.channel);
@@ -221,5 +221,25 @@ export function periksa(c, { log = console.log } = {}) {
       ubah(c, (x) => { x.hasil[i.nama].youtube.privasi = privasi; });
     }
     log(beda ? `${beda} hal tidak cocok` : "tidak ada yang tidak cocok");
+  });
+}
+
+/** Lupakan catatan unggah untuk video yang sudah tidak ada di YouTube, supaya bisa diunggah ulang.
+ *  Video yang masih ada tetap dicatat (mencegah unggahan ganda). Persetujuan ikut dibatalkan. */
+export function lupakanTerhapus(c, { log = console.log } = {}) {
+  return terkunci(c, async () => {
+    const r = muat(c); if (!r) throw new Error("rencana belum dibuat");
+    const catatan = Object.entries(r.hasil).filter(([, v]) => v.youtube?.videoId);
+    if (!catatan.length) return log("tidak ada catatan unggah YouTube");
+    const yt = await klien(c.track);
+    const ada = new Set(((await yt.get("videos", { part: "id", id: catatan.map(([, v]) => v.youtube.videoId).join(",") })).items ?? []).map((v) => v.id));
+    const hilang = catatan.filter(([, v]) => !ada.has(v.youtube.videoId)).map(([n]) => n);
+    for (const [n, v] of catatan) log(`${n}: ${ada.has(v.youtube.videoId) ? `masih ada di YouTube (${v.youtube.url}); catatan dipertahankan` : "sudah terhapus; catatan direset"}`);
+    if (!hilang.length) return;
+    ubah(c, (x) => {
+      for (const n of hilang) { delete x.hasil[n].youtube; if (!Object.keys(x.hasil[n]).length) delete x.hasil[n]; for (const k of Object.keys(x.checklist)) if (k.startsWith(`${n}:yt-`)) delete x.checklist[k]; }
+      x.persetujuan = null;
+    });
+    log("persetujuan dibatalkan; periksa jadwal lalu setujui ulang");
   });
 }
