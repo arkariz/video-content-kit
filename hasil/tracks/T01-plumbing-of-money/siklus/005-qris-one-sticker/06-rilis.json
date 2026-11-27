@@ -147,7 +147,7 @@
         "sumber": "alat",
         "videoId": "4Kn7gPS0bp0",
         "url": "https://www.youtube.com/watch?v=4Kn7gPS0bp0",
-        "privasi": "private",
+        "privasi": "public",
         "publishAt": "2026-11-27T07:10:00.000Z",
         "diunggah": "2026-11-27T07:01:37.063Z",
         "selesai": {
@@ -156,7 +156,13 @@
           "subtitle-id": "2026-11-27T07:01:42.297Z",
           "thumbnail": "2026-11-27T07:01:46.806Z"
         },
-        "galat": []
+        "galat": [],
+        "komentar": {
+          "id": "UgxfFmV9wTKlSBlZ4nB4AaABAg",
+          "url": "https://www.youtube.com/watch?v=4Kn7gPS0bp0&lc=UgxfFmV9wTKlSBlZ4nB4AaABAg",
+          "sudahAda": false,
+          "waktu": "2026-11-27T07:10:58.470Z"
+        }
       }
     },
     "S1-qris-isnt-an-app": {
@@ -164,7 +170,7 @@
         "sumber": "alat",
         "videoId": "44T3jAwt3LU",
         "url": "https://www.youtube.com/watch?v=44T3jAwt3LU",
-        "privasi": "private",
+        "privasi": "public",
         "publishAt": "2026-11-27T07:11:00.000Z",
         "diunggah": "2026-11-27T07:01:51.054Z",
         "selesai": {
@@ -172,7 +178,13 @@
           "subtitle-id": "2026-11-27T07:01:55.385Z",
           "thumbnail": "2026-11-27T07:08:06.278Z"
         },
-        "galat": []
+        "galat": [],
+        "komentar": {
+          "id": "UgyhsVaZQ66QKabYR6h4AaABAg",
+          "url": "https://www.youtube.com/watch?v=44T3jAwt3LU&lc=UgyhsVaZQ66QKabYR6h4AaABAg",
+          "sudahAda": false,
+          "waktu": "2026-11-27T07:12:06.304Z"
+        }
       }
     },
     "S2-no-dollars-in-between": {
@@ -180,7 +192,7 @@
         "sumber": "alat",
         "videoId": "JNfhyzNmC04",
         "url": "https://www.youtube.com/watch?v=JNfhyzNmC04",
-        "privasi": "private",
+        "privasi": "public",
         "publishAt": "2026-11-27T07:12:00.000Z",
         "diunggah": "2026-11-27T07:01:59.688Z",
         "selesai": {
@@ -188,9 +200,19 @@
           "subtitle-id": "2026-11-27T07:02:04.005Z",
           "thumbnail": "2026-11-27T07:08:11.110Z"
         },
-        "galat": []
+        "galat": [],
+        "komentar": {
+          "id": "UgwBMcQfGqDJqYcdDMR4AaABAg",
+          "url": "https://www.youtube.com/watch?v=JNfhyzNmC04&lc=UgwBMcQfGqDJqYcdDMR4AaABAg",
+          "sudahAda": false,
+          "waktu": "2026-11-27T07:12:46.758Z"
+        }
       }
     }
   },
-  "checklist": {}
+  "checklist": {
+    "master:yt-pin": "2026-11-27T07:11:38.862Z",
+    "S1-qris-isnt-an-app:yt-pin": "2026-11-27T07:13:27.668Z",
+    "S2-no-dollars-in-between:yt-pin": "2026-11-27T07:13:31.644Z"
+  }
 }
