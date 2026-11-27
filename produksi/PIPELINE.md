@@ -404,6 +404,35 @@ node --env-file=.env scripts/pipeline/publish.mjs status --track T01 --siklus 00
 
 Isi `.env` (nama variabel saja): `UPLOADPOST_API_KEY` (`UPLOADPOST_PROFILE` tidak dipakai lagi). Akun, profil, dan koneksi channel dibuat kreator sendiri di Upload-Post. Aktif: YouTube, Instagram, Facebook (`platformAktif`); TikTok mati karena butuh paket berbayar. Master dikirim ke YouTube dan Facebook (video Page, `facebook_media_type: VIDEO`); Shorts ke YouTube, Instagram, dan Facebook (Reels). Master tidak dikirim ke Instagram (16:9, dan file bisa melewati 300 MB). `send` menolak jalan bila siklus belum disetujui. **Mode uji** (`send --test`, lalu `status --uji`) mengirim hanya Short pertama ke YouTube sebagai privat dan ke Facebook sebagai draf, tanpa jadwal dan tanpa Instagram/TikTok, sehingga tidak ada yang tampil publik (Instagram tidak punya mode privat atau draf lewat API ini). Facebook mengembalikan URL Reel walaupun berstatus draf (dikonfirmasi 2026-11-25). Hapus video uji di YouTube Studio dan draf Facebook setelah dicek. Label AI default konservatif (suara sintetis): `containsSyntheticMedia`, `is_aigc`, `is_ai_generated`. Teruji ke API sungguhan hanya lewat mode uji (YouTube privat dan Facebook draf, 2026-11-25); kirim terjadwal dan Instagram belum diuji. Yang tidak terdokumentasi di Upload-Post dan perlu dicek saat uji pertama: penanda Shorts di YouTube (setahu dokumennya tidak ada; Shorts dikenali dari rasio dan durasi), apakah `tags[]` atau `tags` yang diterima, dan nama bidang respons sukses. Track audio Indonesia tetap manual di YouTube Studio.
 
+## Data YouTube (riset dan analitik)
+
+Skrip `scripts/youtube/`, tanpa dependensi, hanya membaca. Dijalankan dari root repo.
+
+```
+node --env-file=.env scripts/youtube/riset.mjs --q "why indonesia" --q "jakarta explained" --track T02 --siklus 005
+node --env-file=.env scripts/youtube/auth.mjs --track T02            # sekali per track, oleh kreator
+node --env-file=.env scripts/youtube/auth.mjs --cek                  # kredensial dan channel tiap track
+node --env-file=.env scripts/youtube/analitik.mjs --track T02 [--hari 28] [--video ID1,ID2] [--retensi]
+```
+
+| Variabel `.env` | Isi | Cakupan |
+| --- | --- | --- |
+| `YOUTUBE_API_KEY` | API key (riset) | bersama |
+| `YOUTUBE_API_KEY_<ID>` | API key khusus satu track | opsional, menggantikan yang bersama |
+| `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET` | OAuth client tipe Desktop app | bersama |
+| `YOUTUBE_CLIENT_ID_<ID>`, `YOUTUBE_CLIENT_SECRET_<ID>` | OAuth client khusus satu track (harus sepasang) | opsional |
+| `YOUTUBE_REFRESH_TOKEN_<ID>`, `YOUTUBE_CHANNEL_ID_<ID>` | ditulis `auth.mjs` | wajib per track untuk analitik |
+
+**Persiapan di Google Cloud (kreator).** Buat project, aktifkan YouTube Data API v3 dan YouTube Analytics API, buat API key (batasi ke Data API) dan OAuth client ID tipe *Desktop app*. Di OAuth consent screen (user type External) tambahkan akun pemilik channel sebagai test user. Pada status *Testing*, refresh token kedaluwarsa setelah 7 hari; ubah ke *In production*, lalu jalankan ulang `auth.mjs`.
+
+**Banyak track, banyak akun.** Satu OAuth client cukup untuk semua akun; yang membedakan adalah token per track. Jalankan `auth.mjs --track <ID>` untuk tiap track dan pilih akun atau channel (termasuk Brand Account) milik track itu. Tidak ada token default. Skrip menampilkan nama channel sebelum menyimpan, memperingatkan bila channel itu sudah dipakai track lain, dan `analitik.mjs` hanya memasukkan video yang cocok ke siklus track bila channelnya dipakai bersama.
+
+**Riset** (`instruksi/03`): view >= 3x median sampai 10 video terakhir channel, 90 hari. Hasil di folder siklus (`01-outlier-youtube.md`), `validasi/`, atau `00-riset-niche/`. Tiap `--q` memakai satu panggilan `search.list`, yang jatah hariannya terpisah (default 100; panggilan lain 10.000 unit per hari; diperiksa 2026-11-27 di [determine_quota_cost](https://developers.google.com/youtube/v3/determine_quota_cost)).
+
+**Analitik** (`instruksi/08`): hasil di `tracks/<ID>/analitik/youtube-<tanggal>.md`. `--retensi` menulis CSV retensi per video dan mencetak perintah `retensi.mjs`. Impressions CTR thumbnail dan viewed vs swiped away tidak diambil skrip (tidak ditemukan di dokumentasi metrik Analytics API); isi dari YouTube Studio. Pendapatan tidak diminta (scope hanya `youtube.readonly` dan `yt-analytics.readonly`). Format Short ditebak dari durasi (maksimal 3 menit).
+
+Status uji: baru diuji dengan respons API tiruan (2026-11-27), belum dengan akun sungguhan.
+
 ## Gate yang tidak bisa dilewati otomatis
 - Rencana validasi terkunci, jadwal tayang, dan batas kapasitas dibaca dari file, tidak diubah.
 - QA kritis menghentikan pipeline (kode 2). QA otomatis tidak pernah menyatakan LULUS final; ada pemeriksaan manual (dengar audio, tonton, cek fakta, thumbnail).
@@ -416,6 +445,6 @@ Durasi ≥ 8:00 (jeda variabel: 0,65 dtk, 1,4 dtk sebelum re-hook/payoff/CTA), j
 ## Kebutuhan agar benar-benar tanpa tangan
 1. CLI `claude` terpasang (tahap LLM), atau tetap pakai sesi Claude Code.
 2. `PEXELS_API_KEY` (gratis). Pencarian Pixabay saja kurang relevan, sehingga footage baru 11% dari durasi dan 3 scene harus tetap kartun.
-3. `YOUTUBE_API_KEY` untuk angka outlier dan analitik.
+3. `YOUTUBE_API_KEY` untuk angka outlier, dan OAuth per track untuk analitik (bagian Data YouTube).
 4. Paket ElevenLabs berbayar, dan catatan jenis suara di `04-assets.json` (`voice.type`).
 5. Penjadwalan mingguan (launchd/cron atau scheduled task) yang memanggil `run.mjs` sesuai jadwal di `validasi/rencana.md`.
