@@ -1,2458 +1,2602 @@
 {
- "cycle": "005-qris-one-sticker",
- "track": "T01",
- "di_luar_v2": true,
- "title_options": [
-  "Indonesia's QRIS: One Sticker, 72 Million Users",
-  "How Indonesia's QRIS Crosses Borders Without Dollars",
-  "QRIS: What Happens 2 Seconds After You Scan"
- ],
- "thumbnail_text": [
-  "ONE STICKER. EVERY APP.",
-  "NO DOLLARS NEEDED"
- ],
- "promise": "After watching, you know what happens in the two seconds after you scan one QRIS sticker, why a small shop pays almost nothing for it, and how the same sticker now takes money from other countries without dollars.",
- "creator_evidence": [
-  {
-   "what": "Path of one scan explained from the side of someone who builds payment apps in Indonesia: what the code contains, the message to the switch, notifications on both sides (narrated without credential claims, no employer named)",
-   "scene_id": "s12"
-  },
-  {
-   "what": "Callback to the channel's own fee explainer (cycle 002, $2.75 of $100)",
-   "scene_id": "s16"
-  },
-  {
-   "what": "OPTIONAL: creator hand clip scanning a QRIS sticker at a warung (no app logos, no faces)",
-   "scene_id": "s01"
-  }
- ],
- "pronunciations": [
-  {
-   "term": "QRIS",
-   "say_as": "kris"
-  },
-  {
-   "term": "EMVCo",
-   "say_as": "E M V co"
-  },
-  {
-   "term": "MDR",
-   "say_as": "M D R"
-  },
-  {
-   "term": "rupiah",
-   "say_as": "roo-PEE-ah"
-  },
-  {
-   "term": "umrah",
-   "say_as": "OOM-rah"
-  },
-  {
-   "term": "Europay",
-   "say_as": "YOOR-oh-pay"
-  }
- ],
- "anchor": {
-  "kind": "object",
-  "desc": "the Bali noodle stall counter with one white QRIS stand, which turns into a wall socket (plug-and-socket metaphor) and later a travel adapter; fixed map of three buildings (your app tower, round switch station, green-roofed bank) and an Asia map where partner countries light up"
- },
- "cast": [
-  "you",
-  "owner",
-  "bank",
-  "network",
-  "switch",
-  "yourapp",
-  "tourist",
-  "centralbank"
- ],
- "ip_rules": "No official QRIS logo, no bank, e-wallet, Visa or Mastercard logos or brand colours, no real app screens, no real scannable QR codes, no official Bank Indonesia or US government buildings or seals. 'QRIS', 'Visa', 'Mastercard' only in narration and plain channel lettering.",
- "visual_spec": "03-visual.json",
- "scenes": [
-  {
-   "id": "s01",
-   "role": "hook",
-   "chapter": "The scan",
-   "narration": {
-    "en": "You scan a paper square at a noodle stall in Bali, and your bank app has never met this stall. Two seconds later, the noodles are paid for.",
-    "id": "Kamu memindai selembar kotak kertas di warung mi di Bali, padahal aplikasi bankmu belum pernah kenal warung ini. Dua detik kemudian, mi itu sudah terbayar."
-   },
-   "shots": [
+  "cycle": "005-qris-one-sticker",
+  "track": "T01",
+  "di_luar_v2": true,
+  "title_options": [
+    "Indonesia's QRIS: One Sticker, 72 Million Users",
+    "How Indonesia's QRIS Crosses Borders Without Dollars",
+    "QRIS: What Happens 2 Seconds After You Scan"
+  ],
+  "thumbnail_text": [
+    "ONE STICKER. EVERY APP.",
+    "NO DOLLARS NEEDED"
+  ],
+  "promise": "After watching, you know what happens in the two seconds after you scan one QRIS sticker, why a small shop pays almost nothing for it, and how the same sticker now takes money from other countries without dollars.",
+  "creator_evidence": [
     {
-     "sentence": 1,
-     "show": "close-up over your shoulder: your phone camera frames a white QRIS stand on a wooden noodle counter, steam rising from a pot behind it, penjor bamboo arch blurred at dusk",
-     "scale": "object",
-     "motion": "phone slides in from the right, four scan-frame corners snap onto the printed code, steam curls past",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "QRIS",
-       "word": "square"
-      }
-     ],
-     "faces": {
-      "you": "neutral"
-     },
-     "mood": "dusk"
+      "what": "Path of one scan explained from the side of someone who builds payment apps in Indonesia: what the code contains, the message to the switch, notifications on both sides (narrated without credential claims, no employer named)",
+      "scene_id": "s12"
     },
     {
-     "sentence": 2,
-     "show": "your phone screen flips to a green tick while the owner's phone on the counter lights up and chimes; a small wall clock hand moves two ticks",
-     "scale": "object",
-     "motion": "tick pops with a bounce, chime rings spread from the owner's phone, clock hand ticks twice",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "2 SECONDS",
-       "word": "seconds"
-      }
-     ],
-     "faces": {
-      "you": "happy",
-      "owner": "happy"
-     }
+      "what": "Callback to the channel's own fee explainer (cycle 002, $2.75 of $100)",
+      "scene_id": "s16"
+    },
+    {
+      "what": "OPTIONAL: creator hand clip scanning a QRIS sticker at a warung (no app logos, no faces)",
+      "scene_id": "s01"
     }
-   ],
-   "broll": {
-    "own": "OPSIONAL: klip tangan kreator memindai stiker QRIS di warung (tanpa logo aplikasi, tanpa wajah), ±4 detik"
-   },
-   "sources": [
+  ],
+  "pronunciations": [
     {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "Static QRIS: customer scans one printed sticker, enters amount and PIN",
-     "id": "C05"
+      "term": "QRIS",
+      "say_as": "kris"
     },
     {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "QRIS is processed in real time; buyer and merchant get notified immediately",
-     "id": "C08"
+      "term": "EMVCo",
+      "say_as": "E M V co"
+    },
+    {
+      "term": "MDR",
+      "say_as": "M D R"
+    },
+    {
+      "term": "rupiah",
+      "say_as": "roo-PEE-ah"
+    },
+    {
+      "term": "umrah",
+      "say_as": "OOM-rah"
+    },
+    {
+      "term": "Europay",
+      "say_as": "YOOR-oh-pay"
     }
-   ]
+  ],
+  "anchor": {
+    "kind": "object",
+    "desc": "the Bali noodle stall counter with one white QRIS stand, which turns into a wall socket (plug-and-socket metaphor) and later a travel adapter; fixed map of three buildings (your app tower, round switch station, green-roofed bank) and an Asia map where partner countries light up"
   },
-  {
-   "id": "s02",
-   "role": "context",
-   "chapter": "The scan",
-   "narration": {
-    "en": "That square is called QRIS, and almost seventy-two million people in Indonesia pay with it. Fifty-one million shops accept it. In October, transactions were up seventy-one percent on a year earlier.",
-    "id": "Kotak itu bernama QRIS, dan hampir tujuh puluh dua juta orang di Indonesia membayar dengannya. Lima puluh satu juta toko menerimanya. Pada Oktober, jumlah transaksinya naik tujuh puluh satu persen dibanding setahun sebelumnya."
-   },
-   "shots": [
+  "cast": [
+    "you",
+    "owner",
+    "bank",
+    "network",
+    "switch",
+    "yourapp",
+    "tourist",
+    "centralbank"
+  ],
+  "ip_rules": "No official QRIS logo, no bank, e-wallet, Visa or Mastercard logos or brand colours, no real app screens, no real scannable QR codes, no official Bank Indonesia or US government buildings or seals. 'QRIS', 'Visa', 'Mastercard' only in narration and plain channel lettering.",
+  "visual_spec": "03-visual.json",
+  "scenes": [
     {
-     "sentence": 1,
-     "show": "camera pulls up from the stall to a night map of Indonesia; tiny phone glows light up island by island",
-     "scale": "map",
-     "motion": "glows spread from Bali outward across Java, Sumatra, Kalimantan, Sulawesi and Papua while a counter climbs",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "71.9M PEOPLE",
-       "word": "million"
-      }
-     ],
-     "count": {
-      "value": 71910000,
-      "as": "items"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "shop roofs pop up as small markers among the glowing phones, each with a tiny white square",
-     "scale": "map",
-     "motion": "shop markers rise in waves, denser on Java",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "51.3M SHOPS",
-       "word": "shops"
-      }
-     ],
-     "count": {
-      "value": 51310000,
-      "as": "items"
-     }
-    },
-    {
-     "sentence": 3,
-     "show": "a stack of transaction coins beside the map grows from last October's height to this October's height",
-     "scale": "object",
-     "motion": "stack climbs past a faint marker of last year's height",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "+71%",
-       "word": "percent"
-      }
-     ],
-     "count": {
-      "value": 71,
-      "as": "split"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober",
-     "claim": "Oct 2026: QRIS transactions +70.95% yoy, 71.91M users, 51.31M merchants (BI, 18 Nov 2026)",
-     "id": "C09"
-    }
-   ]
-  },
-  {
-   "id": "s03",
-   "role": "rehook",
-   "chapter": "The scan",
-   "narration": {
-    "en": "So how does one sticker work with every app? And how did paying this way start working in Bangkok, Tokyo and Seoul?",
-    "id": "Jadi bagaimana satu stiker bisa dipakai semua aplikasi? Dan bagaimana cara bayar ini mulai berfungsi di Bangkok, Tokyo, dan Seoul?"
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "a ring of phones in six different app colours closes in around one white sticker on the counter",
-     "scale": "object",
-     "motion": "phones orbit and all point their cameras at the same sticker, which glows once",
-     "transition": "cut"
-    },
-    {
-     "sentence": 2,
-     "show": "the sticker's outline lifts off and flies over a dark map of Asia, landing three times on city dots",
-     "scale": "map",
-     "motion": "outline hops north: Bangkok, Tokyo, Seoul; each dot lights as it lands",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "BANGKOK",
-       "word": "bangkok"
+      "id": "s01",
+      "role": "hook",
+      "chapter": "The scan",
+      "narration": {
+        "en": "You scan a paper square at a noodle stall in Bali, and your bank app has never met this stall. Two seconds later, the noodles are paid for.",
+        "id": "Kamu memindai selembar kotak kertas di warung mi di Bali, padahal aplikasi bankmu belum pernah kenal warung ini. Dua detik kemudian, mi itu sudah terbayar."
       },
-      {
-       "text": "TOKYO",
-       "word": "tokyo"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "close-up over your shoulder: your phone camera frames a white QRIS stand on a wooden noodle counter, steam rising from a pot behind it, penjor bamboo arch blurred at dusk",
+          "scale": "object",
+          "motion": "phone slides in from the right, four scan-frame corners snap onto the printed code, steam curls past",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "QRIS",
+              "word": "square"
+            }
+          ],
+          "faces": {
+            "you": "neutral"
+          },
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "your phone screen flips to a green tick while the owner's phone on the counter lights up and chimes; a small wall clock hand moves two ticks",
+          "scale": "object",
+          "motion": "tick pops with a bounce, chime rings spread from the owner's phone, clock hand ticks twice",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "2 SECONDS",
+              "word": "seconds"
+            }
+          ],
+          "faces": {
+            "you": "happy",
+            "owner": "happy"
+          }
+        }
+      ],
+      "broll": {
+        "own": "OPSIONAL: klip tangan kreator memindai stiker QRIS di warung (tanpa logo aplikasi, tanpa wajah), ±4 detik"
       },
-      {
-       "text": "SEOUL",
-       "word": "seoul"
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "Static QRIS: customer scans one printed sticker, enters amount and PIN",
+          "id": "C05"
+        },
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "QRIS is processed in real time; buyer and merchant get notified immediately",
+          "id": "C08"
+        }
+      ],
+      "duration_ms": {
+        "en": 8034
       }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
-     "claim": "Cross-border QRIS: Thailand 2022, Japan Aug 2025, South Korea Apr 2026",
-     "id": "C19"
-    }
-   ]
-  },
-  {
-   "id": "s04",
-   "role": "body",
-   "chapter": "Before the sticker",
-   "narration": {
-    "en": "Go back to 2019. Bank Indonesia counted twenty-six companies running QR payments, each with its own format.",
-    "id": "Mundur ke 2019. Bank Indonesia mencatat dua puluh enam perusahaan pembayaran QR, masing-masing dengan format sendiri."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the same stall in daylight, a wall calendar on the post flips its pages backwards until it stops",
-     "scale": "place",
-     "motion": "calendar pages flutter backwards, light shifts from dusk to day",
-     "transition": "iris",
-     "labels": [
-      {
-       "text": "2019",
-       "word": "2019"
-      }
-     ],
-     "count": {
-      "value": 2019,
-      "as": "timeline"
-     }
     },
     {
-     "sentence": 2,
-     "show": "twenty-six QR codes pop into a grid above the counter, each with a different frame colour and corner shape",
-     "scale": "object",
-     "motion": "codes appear one by one with a counter; no two frames match",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "26 FORMATS",
-       "word": "twenty-six"
-      }
-     ],
-     "count": {
-      "value": 26,
-      "as": "items"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
-     "claim": "Mid-August 2019: 26 QR payment providers with differing models and specifications (BI)",
-     "id": "C02"
-    }
-   ]
-  },
-  {
-   "id": "s05",
-   "role": "body",
-   "chapter": "Before the sticker",
-   "narration": {
-    "en": "A shop that wanted every customer had to put up a code for each one. Scan with the wrong app, and the code meant nothing.",
-    "id": "Toko yang ingin melayani semua pembeli harus memasang kode untuk masing-masing. Pindai dengan aplikasi yang salah, dan kodenya tidak berarti apa-apa."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the stall's glass display case covered in overlapping QR stickers of different colours; the owner presses on one more",
-     "scale": "object",
-     "motion": "owner smooths a new sticker over older ones, a corner of another peels and flaps",
-     "transition": "cut",
-     "faces": {
-      "owner": "tired"
-     },
-     "bubble": "Which one is yours?"
-    },
-    {
-     "sentence": 2,
-     "show": "you scan one of the stickers; your phone shows a red cross and buzzes",
-     "scale": "object",
-     "motion": "phone shakes, red cross pulses, you lower the phone and look along the row of stickers",
-     "transition": "hold",
-     "faces": {
-      "you": "sad"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
-     "claim": "26 QR providers with differing specifications before QRIS",
-     "id": "C02"
-    }
-   ]
-  },
-  {
-   "id": "s06",
-   "role": "body",
-   "chapter": "Before the sticker",
-   "narration": {
-    "en": "Think of each app as a plug, and each shop's code as a socket. Every app had its own plug shape, so every shop needed a wall of different sockets.",
-    "id": "Bayangkan aplikasi sebagai colokan, dan kode toko sebagai stopkontak. Tiap aplikasi punya bentuk colokan sendiri, jadi tiap toko butuh satu dinding penuh stopkontak berbeda."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "your phone morphs into a coral plug with two flat prongs; the sticker on the counter morphs into a matching wall socket",
-     "scale": "object",
-     "motion": "phone stretches into the plug shape, sticker folds into a socket plate, both settle facing each other",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "PLUG",
-       "word": "plug"
+      "id": "s02",
+      "role": "context",
+      "chapter": "The scan",
+      "narration": {
+        "en": "That square is called QRIS, and almost seventy-two million people in Indonesia pay with it. Fifty-one million shops accept it. In October, transactions were up seventy-one percent on a year earlier.",
+        "id": "Kotak itu bernama QRIS, dan hampir tujuh puluh dua juta orang di Indonesia membayar dengannya. Lima puluh satu juta toko menerimanya. Pada Oktober, jumlah transaksinya naik tujuh puluh satu persen dibanding setahun sebelumnya."
       },
-      {
-       "text": "SOCKET",
-       "word": "socket"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "camera pulls up from the stall to a night map of Indonesia; tiny phone glows light up island by island",
+          "scale": "map",
+          "motion": "glows spread from Bali outward across Java, Sumatra, Kalimantan, Sulawesi and Papua while a counter climbs",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "71.9M PEOPLE",
+              "word": "million"
+            }
+          ],
+          "count": {
+            "value": 71910000,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "shop roofs pop up as small markers among the glowing phones, each with a tiny white square",
+          "scale": "map",
+          "motion": "shop markers rise in waves, denser on Java",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "51.3M SHOPS",
+              "word": "shops"
+            }
+          ],
+          "count": {
+            "value": 51310000,
+            "as": "items"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "a stack of transaction coins beside the map grows from last October's height to this October's height",
+          "scale": "object",
+          "motion": "stack climbs past a faint marker of last year's height",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "+71%",
+              "word": "percent"
+            }
+          ],
+          "count": {
+            "value": 71,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober",
+          "claim": "Oct 2026: QRIS transactions +70.95% yoy, 71.91M users, 51.31M merchants (BI, 18 Nov 2026)",
+          "id": "C09"
+        }
+      ],
+      "duration_ms": {
+        "en": 13235
       }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "the wall behind the stall fills with sockets of six different shapes; a round-pin plug drifts from socket to socket and fits only one",
-     "scale": "place",
-     "motion": "sockets pop onto the wall in rows, the plug bumps against wrong ones and bounces off",
-     "transition": "hold"
-    }
-   ]
-  },
-  {
-   "id": "s07",
-   "role": "body",
-   "chapter": "Before the sticker",
-   "narration": {
-    "en": "On August seventeenth, 2019, Indonesia's Independence Day, the central bank and the payment industry launched one socket shape for everyone. They called it QRIS.",
-    "id": "Pada tujuh belas Agustus 2019, hari kemerdekaan Indonesia, bank sentral dan asosiasi industri pembayaran meluncurkan satu bentuk stopkontak untuk semua. Namanya QRIS."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "red-and-white bunting strung above the stall street; the wall of mismatched sockets slides together and merges into one socket plate",
-     "scale": "place",
-     "motion": "bunting sways, sockets slide inward like tiles and fuse into a single white plate",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "17 AUG 2019",
-       "word": "august"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "the single socket plate gets a label; plugs of all six colours line up and click into it one after another",
-     "scale": "object",
-     "motion": "each plug clicks in and lights green, then makes room for the next",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "QRIS",
-       "word": "qris"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
-     "claim": "BI launched QRIS on 17 Aug 2019 with ASPI, based on EMVCo",
-     "id": "C01"
-    }
-   ]
-  },
-  {
-   "id": "s08",
-   "role": "body",
-   "chapter": "Before the sticker",
-   "narration": {
-    "en": "Many people think Indonesia's QRIS code is an app you download. It's a rulebook for how the code is written and how the companies on each side connect.",
-    "id": "Banyak orang mengira kode QRIS Indonesia itu aplikasi yang bisa diunduh. QRIS adalah buku aturan tentang cara kode ditulis dan cara perusahaan di kedua sisi tersambung."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "two panels: on the left a pale dashed phone app tile named QRIS with a download arrow; a coral stroke crosses it out",
-     "scale": "object",
-     "motion": "download arrow spins; at the end of the sentence the coral cross slashes in and the tile fades to outline",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "NOT AN APP",
-       "word": "app"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "a thick ring-bound rulebook opens on the counter; one page shows the socket plate, the next shows wires linking two small buildings",
-     "scale": "object",
-     "motion": "pages flip, the drawn wires light up from one building to the other",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "RULEBOOK",
-       "word": "rulebook"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "Merchant opens account with one QRIS provider; any provider's app can pay",
-     "id": "C04"
-    },
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "QRIS = QR spec plus interconnection spec, with PSPs, switching institutions, standard body",
-     "id": "C06"
-    }
-   ]
-  },
-  {
-   "id": "s09",
-   "role": "body",
-   "chapter": "Before the sticker",
-   "narration": {
-    "en": "From 2020, payment codes at Indonesian shops had to follow it. A shop now signs up with one provider, and any provider's app can pay it. The printed sticker itself is free.",
-    "id": "Sejak 2020, kode pembayaran di toko-toko Indonesia wajib mengikutinya. Sekarang toko cukup mendaftar ke satu penyelenggara, dan aplikasi penyelenggara mana pun bisa membayarnya. Stiker cetaknya sendiri gratis."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the old stickers peel off the glass case one by one and curl away, leaving a single white QRIS stand on the counter",
-     "scale": "object",
-     "motion": "stickers peel from the corners and drift out of frame on the breeze",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "2020",
-       "word": "2020"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "the owner shakes hands with one small green-roofed bank; behind them phones in six colours each scan the one stand and get a green tick",
-     "scale": "place",
-     "motion": "handshake, then six ticks pop in a quick chain",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "ONE PROVIDER",
-       "word": "provider"
-      }
-     ],
-     "faces": {
-      "owner": "happy",
-      "bank": "happy"
-     }
-    },
-    {
-     "sentence": 3,
-     "show": "the bank slides a freshly printed white stand across its counter to the owner, no price tag on it",
-     "scale": "object",
-     "motion": "stand slides over, owner picks it up and sets it on the stall counter",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "FREE",
-       "word": "free"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
-     "claim": "QRIS effective nationally from 1 Jan 2020; transition until 31 Dec 2019",
-     "id": "C03"
-    },
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "One provider account, payments from any provider app",
-     "id": "C04"
-    },
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "Static QRIS sticker or printout is free",
-     "id": "C05"
-    }
-   ]
-  },
-  {
-   "id": "s10",
-   "role": "rehook",
-   "chapter": "Two seconds",
-   "narration": {
-    "en": "Now follow one scan, on one map. Your app sits on the left, the stall's bank on the right, and in the middle there's a switch.",
-    "id": "Sekarang ikuti satu scan, di satu peta. Aplikasimu di kiri, bank warung di kanan, dan di tengah ada switch."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "camera rises from the stall to a top-down town map at night: three buildings joined by two glowing roads",
-     "scale": "map",
-     "motion": "camera tilts down onto the map, roads draw themselves from left to right",
-     "transition": "iris"
-    },
-    {
-     "sentence": 2,
-     "show": "left: a tall phone-shaped tower; right: the green-roofed bank; centre: a round station with cable spools on its roof",
-     "scale": "map",
-     "motion": "each building lights as it is named, the centre station last with a soft pulse",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "YOUR APP",
-       "word": "app"
+      "id": "s03",
+      "role": "rehook",
+      "chapter": "The scan",
+      "narration": {
+        "en": "So how does one sticker work with every app? And how did paying this way start working in Bangkok, Tokyo and Seoul?",
+        "id": "Jadi bagaimana satu stiker bisa dipakai semua aplikasi? Dan bagaimana cara bayar ini mulai berfungsi di Bangkok, Tokyo, dan Seoul?"
       },
-      {
-       "text": "BANK",
-       "word": "bank"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a ring of phones in six different app colours closes in around one white sticker on the counter",
+          "scale": "object",
+          "motion": "phones orbit and all point their cameras at the same sticker, which glows once",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "the sticker's outline lifts off and flies over a dark map of Asia, landing three times on city dots",
+          "scale": "map",
+          "motion": "outline hops north: Bangkok, Tokyo, Seoul; each dot lights as it lands",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "BANGKOK",
+              "word": "bangkok"
+            },
+            {
+              "text": "TOKYO",
+              "word": "tokyo"
+            },
+            {
+              "text": "SEOUL",
+              "word": "seoul"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
+          "claim": "Cross-border QRIS: Thailand 2022, Japan Aug 2025, South Korea Apr 2026",
+          "id": "C19"
+        }
+      ],
+      "duration_ms": {
+        "en": 6223
+      }
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "chapter": "Before the sticker",
+      "narration": {
+        "en": "Go back to 2019. Bank Indonesia counted twenty-six companies running QR payments, each with its own format.",
+        "id": "Mundur ke 2019. Bank Indonesia mencatat dua puluh enam perusahaan pembayaran QR, masing-masing dengan format sendiri."
       },
-      {
-       "text": "SWITCH",
-       "word": "switch"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the same stall in daylight, a wall calendar on the post flips its pages backwards until it stops",
+          "scale": "place",
+          "motion": "calendar pages flutter backwards, light shifts from dusk to day",
+          "transition": "iris",
+          "labels": [
+            {
+              "text": "2019",
+              "word": "2019"
+            }
+          ],
+          "count": {
+            "value": 2019,
+            "as": "timeline"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "twenty-six QR codes pop into a grid above the counter, each with a different frame colour and corner shape",
+          "scale": "object",
+          "motion": "codes appear one by one with a counter; no two frames match",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "26 FORMATS",
+              "word": "twenty-six"
+            }
+          ],
+          "count": {
+            "value": 26,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+          "claim": "Mid-August 2019: 26 QR payment providers with differing models and specifications (BI)",
+          "id": "C02"
+        }
+      ],
+      "duration_ms": {
+        "en": 6827
       }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "Parties: payment service providers, switching institutions",
-     "id": "C06"
     },
     {
-     "url": "https://developers.bri.co.id/en/product/qris",
-     "claim": "Merchant side = acquirer, customer side = issuer",
-     "id": "C07"
-    }
-   ]
-  },
-  {
-   "id": "s11",
-   "role": "body",
-   "chapter": "Two seconds",
-   "narration": {
-    "en": "A switch is the wiring behind the wall. It's a company that passes payment messages between providers that aren't wired to each other directly.",
-    "id": "Switch adalah kabel di balik dinding. Ia perusahaan yang meneruskan pesan pembayaran antarpenyelenggara yang tidak tersambung langsung satu sama lain."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "cutaway behind the socket plate: bundled wires run down inside the wall and under the street toward the round station",
-     "scale": "inside",
-     "motion": "wall slides open, a pulse of light runs along the wires to the station",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "WIRING",
-       "word": "wiring"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "back on the map: no road joins the phone tower to the bank directly; a small envelope rolls from the tower into the station and out toward the bank",
-     "scale": "map",
-     "motion": "envelope rolls along the roads, pauses in the station, then rolls on",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "MESSAGES",
-       "word": "messages"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
-     "claim": "Switching institutions forward domestic payment data and run QRIS interconnection",
-     "id": "C37"
-    }
-   ]
-  },
-  {
-   "id": "s12",
-   "role": "body",
-   "chapter": "Two seconds",
-   "narration": {
-    "en": "When your camera reads the square, it reads plain text. Inside is which shop this is, which provider holds its account, and a country code: Indonesia. The amount isn't in there, which is why the sticker never has to change.",
-    "id": "Saat kamera membaca kotak itu, yang terbaca adalah teks biasa. Isinya: toko mana ini, penyelenggara mana yang memegang rekeningnya, dan kode negara: Indonesia. Nominalnya tidak ada di situ, karena itu stikernya tidak perlu diganti."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "macro dive into the printed QR: black modules flip over like tiles and become short lines of text",
-     "scale": "inside",
-     "motion": "camera pushes through the modules, tiles flip in a wave from the corner",
-     "transition": "iris"
-    },
-    {
-     "sentence": 2,
-     "show": "three tags float out of the text: a shop tag, a provider tag, and a country tag",
-     "scale": "inside",
-     "motion": "tags pop out one per spoken phrase and line up in front of the camera",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "SHOP",
-       "word": "shop"
+      "id": "s05",
+      "role": "body",
+      "chapter": "Before the sticker",
+      "narration": {
+        "en": "A shop that wanted every customer had to put up a code for each one. Scan with the wrong app, and the code meant nothing.",
+        "id": "Toko yang ingin melayani semua pembeli harus memasang kode untuk masing-masing. Pindai dengan aplikasi yang salah, dan kodenya tidak berarti apa-apa."
       },
-      {
-       "text": "PROVIDER",
-       "word": "provider"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the stall's glass display case covered in overlapping QR stickers of different colours; the owner presses on one more",
+          "scale": "object",
+          "motion": "owner smooths a new sticker over older ones, a corner of another peels and flaps",
+          "transition": "cut",
+          "faces": {
+            "owner": "tired"
+          },
+          "bubble": "Which one is yours?"
+        },
+        {
+          "sentence": 2,
+          "show": "you scan one of the stickers; your phone shows a red cross and buzzes",
+          "scale": "object",
+          "motion": "phone shakes, red cross pulses, you lower the phone and look along the row of stickers",
+          "transition": "hold",
+          "faces": {
+            "you": "sad"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+          "claim": "26 QR providers with differing specifications before QRIS",
+          "id": "C02"
+        }
+      ],
+      "duration_ms": {
+        "en": 7059
+      }
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "chapter": "Before the sticker",
+      "narration": {
+        "en": "Think of each app as a plug, and each shop's code as a socket. Every app had its own plug shape, so every shop needed a wall of different sockets.",
+        "id": "Bayangkan aplikasi sebagai colokan, dan kode toko sebagai stopkontak. Tiap aplikasi punya bentuk colokan sendiri, jadi tiap toko butuh satu dinding penuh stopkontak berbeda."
       },
-      {
-       "text": "ID",
-       "word": "indonesia"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "your phone morphs into a coral plug with two flat prongs; the sticker on the counter morphs into a matching wall socket",
+          "scale": "object",
+          "motion": "phone stretches into the plug shape, sticker folds into a socket plate, both settle facing each other",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "PLUG",
+              "word": "plug"
+            },
+            {
+              "text": "SOCKET",
+              "word": "socket"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "the wall behind the stall fills with sockets of six different shapes; a round-pin plug drifts from socket to socket and fits only one",
+          "scale": "place",
+          "motion": "sockets pop onto the wall in rows, the plug bumps against wrong ones and bounces off",
+          "transition": "hold"
+        }
+      ],
+      "duration_ms": {
+        "en": 9102
       }
-     ]
     },
     {
-     "sentence": 3,
-     "show": "the three tags slide back into the code; an empty amount slot on the side of the code stays blank and the printed stand looks unchanged",
-     "scale": "inside",
-     "motion": "tags tuck back in, camera pulls out of the modules to the same stand on the counter",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "NO AMOUNT",
-       "word": "amount"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://mvallim.github.io/emv-qrcode/docs/EMVCo-Merchant-Presented-QR-Specification-v1-1.pdf",
-     "claim": "EMVCo merchant QR payload: merchant account info, country code, merchant name, city",
-     "id": "C32"
-    },
-    {
-     "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
-     "claim": "QRIS built on EMVCo standard",
-     "id": "C01"
-    },
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "Static QRIS: customer enters the amount",
-     "id": "C05"
-    }
-   ]
-  },
-  {
-   "id": "s13",
-   "role": "body",
-   "chapter": "Two seconds",
-   "narration": {
-    "en": "You type fifty thousand rupiah and your PIN. Your app checks your balance, then sends a message to the switch: take fifty thousand from this person, for this stall.",
-    "id": "Kamu mengetik lima puluh ribu rupiah dan PIN-mu. Aplikasimu memeriksa saldo, lalu mengirim pesan ke switch: ambil lima puluh ribu dari orang ini, untuk warung ini."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "close on your phone keypad: digits type in, then six dots for the PIN",
-     "scale": "object",
-     "motion": "digits roll in, PIN dots fill one by one",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "Rp50,000",
-       "word": "fifty"
-      }
-     ],
-     "faces": {
-      "you": "neutral"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "on the map the phone tower's balance gauge dips by one notch, and a sealed envelope with a gold coin stamp leaves along the left road",
-     "scale": "map",
-     "motion": "gauge needle dips, envelope pops out of the tower door and rolls toward the station",
-     "transition": "push"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "Customer scans, enters amount, enters PIN",
-     "id": "C05"
-    },
-    {
-     "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
-     "claim": "Switching forwards payment data between providers",
-     "id": "C37"
-    }
-   ]
-  },
-  {
-   "id": "s14",
-   "role": "body",
-   "chapter": "Two seconds",
-   "narration": {
-    "en": "The switch reads which provider holds the stall's account, and forwards the message there. The stall's bank checks the account and says yes.",
-    "id": "Switch membaca penyelenggara mana yang memegang rekening warung, lalu meneruskan pesan ke sana. Bank warung memeriksa rekening itu dan menjawab ya."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "inside the round station: the envelope sits on a turntable that rotates until its arrow points at the right-hand road",
-     "scale": "inside",
-     "motion": "turntable clicks round three notches, envelope slides off onto the right road",
-     "transition": "push",
-     "faces": {
-      "switch": "neutral"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "the green-roofed bank catches the envelope, stamps it green and sends a tick back down the road",
-     "scale": "place",
-     "motion": "stamp thumps, green tick bounces back toward the station",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "YES",
-       "word": "yes"
-      }
-     ],
-     "faces": {
-      "bank": "happy"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
-     "claim": "Switch forwards to the provider holding the merchant account",
-     "id": "C37"
-    },
-    {
-     "url": "https://developers.bri.co.id/en/product/qris",
-     "claim": "Merchant side = acquirer",
-     "id": "C07"
-    }
-   ]
-  },
-  {
-   "id": "s15",
-   "role": "body",
-   "chapter": "Two seconds",
-   "narration": {
-    "en": "A tick appears on your phone, and the owner's phone chimes on the counter. The owner sees the amount and the time without touching a card machine. Providers build that whole round trip to finish while you're still holding your phone.",
-    "id": "Tanda centang muncul di ponselmu, dan ponsel pemilik warung berbunyi di meja. Pemilik melihat nominal dan waktunya tanpa menyentuh mesin kartu. Seluruh perjalanan bolak-balik itu dirancang selesai selagi ponsel masih di tanganmu."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "split close-up at the counter: your phone shows a green tick; the owner's phone lights with chime rings",
-     "scale": "object",
-     "motion": "both screens light together, chime rings ripple out",
-     "transition": "cut",
-     "faces": {
-      "you": "happy",
-      "owner": "happy"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "over the owner's shoulder: the phone shows the amount and time; a dusty card machine sits unused at the back of the shelf",
-     "scale": "object",
-     "motion": "owner glances at the phone and goes back to stirring the pot, the card machine stays dark",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "AMOUNT",
-       "word": "amount"
-      }
-     ]
-    },
-    {
-     "sentence": 3,
-     "show": "the town map again: the envelope's whole path traced as one glowing loop from tower to station to bank and back",
-     "scale": "map",
-     "motion": "loop draws itself in one sweep while a tiny timer counts to two",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "ROUND TRIP",
-       "word": "round"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "Real-time processing; buyer and merchant notified immediately",
-     "id": "C08"
-    }
-   ]
-  },
-  {
-   "id": "s16",
-   "role": "rehook",
-   "chapter": "Who pays",
-   "narration": {
-    "en": "But who pays for those two seconds? In our card video, a hundred-dollar tap cost the shop two dollars seventy-five.",
-    "id": "Tapi siapa yang membayar dua detik itu? Di video kartu kami, satu tap seratus dolar membuat toko kehilangan dua dolar tujuh puluh lima sen."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the glowing loop freezes; a single gold coin hovers above the station with a small question tilt",
-     "scale": "map",
-     "motion": "loop dims, coin spins slowly and tilts",
-     "transition": "cut"
-    },
-    {
-     "sentence": 2,
-     "show": "callback: a wooden cart of one hundred coins rolls down a toll road and a small handful of coins hop off at the gates",
-     "scale": "place",
-     "motion": "cart rolls, coins hop off in three small groups",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "$2.75",
-       "word": "seventy-five"
-      }
-     ],
-     "count": {
-      "value": 2.75,
-      "as": "items"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/03-script.json",
-     "claim": "Cycle 002 worked example: $2.75 of a $100 US card purchase",
-     "id": "C15"
-    }
-   ]
-  },
-  {
-   "id": "s17",
-   "role": "body",
-   "chapter": "Who pays",
-   "narration": {
-    "en": "The fee a shop pays to accept a payment has a name: the merchant discount rate, or MDR. It's a small slice taken off each sale before the money reaches the shop.",
-    "id": "Biaya yang dibayar toko untuk menerima pembayaran punya nama: merchant discount rate, atau MDR. Itu potongan kecil dari setiap penjualan sebelum uangnya sampai ke toko."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "a short stack of gold coins on the counter; a thin wedge-shaped slice lifts out of the top coin",
-     "scale": "object",
-     "motion": "slice lifts and glows coral",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "MDR",
-       "word": "mdr"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "the coral slice drifts away toward the bank while the rest of the stack slides into the owner's tin",
-     "scale": "place",
-     "motion": "slice floats right, stack slides left into the tin",
-     "transition": "hold",
-     "faces": {
-      "owner": "neutral"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "MDR QRIS rules (BI policy)",
-     "id": "C12"
-    },
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "MDR QRIS above Rp100k for non-micro: 0.7%",
-     "id": "C13"
-    }
-   ]
-  },
-  {
-   "id": "s18",
-   "role": "body",
-   "chapter": "Who pays",
-   "narration": {
-    "en": "Since October 2026, a QRIS payment up to a hundred thousand rupiah costs most shops nothing at all. The smallest businesses pay nothing up to five hundred thousand.",
-    "id": "Sejak Oktober 2026, pembayaran QRIS sampai seratus ribu rupiah tidak memotong apa pun bagi sebagian besar toko. Usaha paling kecil tidak dipotong sampai lima ratus ribu."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "a horizontal price bar in front of the stall from zero to one hundred thousand turns green, and the coral slice vanishes",
-     "scale": "object",
-     "motion": "bar fills green left to right, slice pops like a bubble",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "0% TO 100K",
-       "word": "hundred"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "a tiny pushcart stall beside the warung gets a longer green bar stretching to five hundred thousand",
-     "scale": "object",
-     "motion": "bar extends past the first one with a springy overshoot",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "0% TO 500K",
-       "word": "five"
-      }
-     ],
-     "faces": {
-      "owner": "happy"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "From 1 Oct 2026: MDR 0% up to Rp100k for small/medium/large; micro 0% up to Rp500k",
-     "id": "C12"
-    }
-   ]
-  },
-  {
-   "id": "s19",
-   "role": "body",
-   "chapter": "Who pays",
-   "narration": {
-    "en": "Above that, the fee is still under one percent. And the shop isn't allowed to pass it on to you.",
-    "id": "Di atas itu, biayanya tetap di bawah satu persen. Dan toko tidak boleh membebankannya kepadamu."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "past the green part of the bar, a sliver-thin coral slice reappears on a large coin",
-     "scale": "object",
-     "motion": "slice grows to a hair-thin wedge and stops",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "UNDER 1%",
-       "word": "percent"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "the owner nudges a small extra coin onto your bill; a round rule stamp drops and blocks it",
-     "scale": "object",
-     "motion": "coin slides, stamp lands with a thump, coin slides back",
-     "transition": "hold",
-     "faces": {
-      "owner": "smug",
-      "you": "neutral"
-     },
-     "bubble": "Worth a try."
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "MDR 0.7% above Rp100k for non-micro merchants",
-     "id": "C13"
-    },
-    {
-     "url": "https://finansial.bisnis.com/read/20240430/11/1761523/biaya-qris-usaha-mikro-03-bi-tegaskan-merchant-tak-tarik-tarif-ke-konsumen",
-     "claim": "Merchants may not charge MDR to consumers",
-     "id": "C14"
-    }
-   ]
-  },
-  {
-   "id": "s20",
-   "role": "body",
-   "chapter": "Who pays",
-   "narration": {
-    "en": "So why would anyone in the middle take almost nothing? There's one thing to know about Bank Indonesia: it wants small shops inside the digital economy, and it treats QRIS as their way in.",
-    "id": "Jadi kenapa pihak di tengah mau menerima hampir nol? Ada satu hal yang perlu kamu tahu soal Bank Indonesia: ia ingin toko kecil masuk ke ekonomi digital, dan menjadikan QRIS pintu masuknya."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "on the town map the phone tower, the station and the bank all look down at one nearly empty coin tray",
-     "scale": "map",
-     "motion": "the three buildings lean in, the tray rattles with one small coin",
-     "transition": "cut",
-     "faces": {
-      "switch": "tired",
-      "bank": "neutral"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "a domed central bank building at the edge of the map opens a tall door shaped like the socket plate; small stalls and carts roll through into a lit city",
-     "scale": "place",
-     "motion": "door swings open, stalls trundle through in a line, lights come on behind them",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "WAY IN",
-       "word": "way"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "BI frames QRIS as UMKM entry point to the digital ecosystem",
-     "id": "C33"
-    }
-   ]
-  },
-  {
-   "id": "s21",
-   "role": "body",
-   "chapter": "Who pays",
-   "narration": {
-    "en": "Every scan also leaves a record of what a shop sells and how often. Bank Indonesia wants those records to help small shops get loans, even with no credit history. Three years of daily chimes at a noodle stall is a sales history a bank can read.",
-    "id": "Setiap scan juga meninggalkan catatan tentang apa yang dijual toko dan seberapa sering. Bank Indonesia ingin catatan itu membantu toko kecil mendapat pinjaman, meski belum punya riwayat kredit. Tiga tahun bunyi notifikasi setiap hari di warung mi adalah riwayat penjualan yang bisa dibaca bank."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "beside the stall each chime drops a small paper slip into a growing stack, day after day",
-     "scale": "object",
-     "motion": "slips flutter down, stack rises, sun passes overhead quickly",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "RECORD",
-       "word": "record"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "the owner carries the stack to the green-roofed bank's counter; a small coin bag slides back across",
-     "scale": "place",
-     "motion": "stack set down, bank weighs it, bag slides over",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "LOAN",
-       "word": "loans"
-      }
-     ],
-     "faces": {
-      "owner": "happy",
-      "bank": "happy"
-     }
-    },
-    {
-     "sentence": 3,
-     "show": "the slips fan out into a long ribbon behind the stall, one fold per day, running back three seasons of rain and sun",
-     "scale": "object",
-     "motion": "ribbon unrolls backwards past rain and sun icons on the ground",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "3 YEARS",
-       "word": "three"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://katadata.co.id/finansial/makro/6adf27d2abe9d/bi-ingin-transaksi-qris-jadi-acuan-penilaian-kredit-umkm",
-     "claim": "BI wants QRIS transaction data as a reference for UMKM credit assessment (example of three years is illustrative)",
-     "id": "C36"
-    }
-   ]
-  },
-  {
-   "id": "s22",
-   "role": "body",
-   "chapter": "Who pays",
-   "narration": {
-    "en": "For the apps, each scan is a visit. You open them, you see your balance, and you might stay for the next thing they sell.",
-    "id": "Bagi aplikasi, setiap scan adalah kunjungan. Kamu membukanya, melihat saldomu, dan mungkin bertahan untuk produk berikutnya yang mereka jual."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the phone-shaped tower opens its front like a shop door and you step inside",
-     "scale": "place",
-     "motion": "door slides up, you walk in, a bell above the door swings",
-     "transition": "cut",
-     "faces": {
-      "yourapp": "happy",
-      "you": "neutral"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "inside, shelves of glowing boxes light up one after another as you pass: a top-up box, a bill box, a ticket box",
-     "scale": "inside",
-     "motion": "shelves light in sequence, you slow down at the last one",
-     "transition": "hold",
-     "faces": {
-      "yourapp": "smug"
-     },
-     "bubble": "Stay a while."
-    }
-   ]
-  },
-  {
-   "id": "s23",
-   "role": "body",
-   "chapter": "Who pays",
-   "narration": {
-    "en": "So for a fifty-thousand-rupiah bowl of noodles, the stall keeps all fifty thousand. With the cut from our card example, the same bowl would lose about one thousand four hundred rupiah.",
-    "id": "Jadi untuk semangkuk mi lima puluh ribu rupiah, warung menerima utuh lima puluh ribu. Dengan potongan seperti contoh kartu kita, mangkuk yang sama akan kehilangan sekitar seribu empat ratus rupiah."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "a steaming bowl of noodles set on the counter; gold coins stream into the owner's tin and none split off",
-     "scale": "object",
-     "motion": "bowl slides in, coins pour into the tin, no slice appears",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "Rp50,000",
-       "word": "fifty"
-      }
-     ],
-     "count": {
-      "value": 50000,
-      "as": "items"
-     },
-     "faces": {
-      "owner": "happy"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "a ghost version of the same tin beside it, pale and dashed, where a small slice of coins breaks off and floats away",
-     "scale": "object",
-     "motion": "ghost slice drifts off, then the ghost tin fades and the real tin stays full",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "Rp1,400",
-       "word": "four"
-      }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-     "claim": "MDR 0% up to Rp100k (all merchant sizes)",
-     "id": "C12"
-    },
-    {
-     "url": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/03-script.json",
-     "claim": "Cycle 002: 2.75% card cut; 2.75% of Rp50,000 = Rp1,375 (illustrative)",
-     "id": "C15"
-    }
-   ]
-  },
-  {
-   "id": "s24",
-   "role": "body",
-   "chapter": "Seventy-two million",
-   "narration": {
-    "en": "That's how a printed square reached fifty-one million shops, more than one for every six people in the country. Nearly all of them are small businesses.",
-    "id": "Begitulah selembar kotak cetak sampai ke lima puluh satu juta toko, lebih dari satu untuk setiap enam orang di negeri ini. Hampir semuanya usaha kecil."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "a row of six small people figures beside one shop marker, repeating outward across the map of Indonesia",
-     "scale": "map",
-     "motion": "groups of six plus one shop tile the islands in waves",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "1 PER 6",
-       "word": "six"
-      }
-     ],
-     "count": {
-      "value": 6,
-      "as": "dots"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "close on the markers: pushcarts, kiosks, a laundry, a phone-credit stand, a market stall, each with a white square",
-     "scale": "place",
-     "motion": "markers bob up one at a time as the camera pans along a street",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "SMALL SHOPS",
-       "word": "small"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober",
-     "claim": "51.31M QRIS merchants, Oct 2026",
-     "id": "C09"
-    },
-    {
-     "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
-     "claim": "Indonesia population 2025: 284.67M (BPS SUPAS)",
-     "id": "C34"
-    },
-    {
-     "url": "https://bali.antaranews.com/berita/411917/qris-dipakai-6577-juta-pengguna-dan-diterima-4486-juta-gerai",
-     "claim": "96.68% of QRIS merchants are UMKM (Jun 2026)",
-     "id": "C38"
-    }
-   ]
-  },
-  {
-   "id": "s25",
-   "role": "body",
-   "chapter": "Seventy-two million",
-   "narration": {
-    "en": "And the switches carrying those messages are Indonesian companies, licensed by the central bank. Card payments inside Indonesia run through them too.",
-    "id": "Dan switch yang membawa pesan-pesan itu adalah perusahaan Indonesia yang berizin bank sentral. Pembayaran kartu di dalam Indonesia juga lewat mereka."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the town map: the round switch station gets a small licence plaque from the domed central bank",
-     "scale": "map",
-     "motion": "plaque flies over from the dome and clicks onto the station's door",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "LICENSED",
-       "word": "licensed"
-      }
-     ],
-     "faces": {
-      "switch": "happy"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "a plain plastic card's message rolls along the same roads and through the same station as the QR envelope",
-     "scale": "map",
-     "motion": "card-shaped token follows the envelope's path, both pass the turntable",
-     "transition": "hold"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
-     "claim": "GPN switching institutions licensed by BI route domestic transactions",
-     "id": "C37"
-    },
-    {
-     "url": "https://www.thejakartapost.com/opinion/2025/05/03/analysis-us-cites-qris-as-trade-barrier-but-us-payment-model-unfit-for-indonesia.html",
-     "claim": "Domestic retail card transactions processed by GPN switches in Indonesia",
-     "id": "C25"
-    }
-   ]
-  },
-  {
-   "id": "s26",
-   "role": "rehook",
-   "chapter": "Seventy-two million",
-   "narration": {
-    "en": "That last part is what the United States didn't like.",
-    "id": "Bagian terakhir itulah yang tidak disukai Amerika Serikat."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the camera pulls far back from the town map, across a dark ocean, to a distant columned office on another shore with its lights on",
-     "scale": "map",
-     "motion": "big dolly out over water, a single window in the far office switches on",
-     "transition": "push",
-     "mood": "cool"
-    }
-   ]
-  },
-  {
-   "id": "s27",
-   "role": "body",
-   "chapter": "Seventy-two million",
-   "narration": {
-    "en": "In March 2025, the US trade office put QRIS in its yearly report on trade barriers. It said foreign companies, American ones included, weren't consulted enough.",
-    "id": "Pada Maret 2025, kantor perdagangan AS memasukkan QRIS ke laporan tahunannya tentang hambatan perdagangan. Laporan itu menyebut perusahaan asing, termasuk dari Amerika, tidak cukup diajak berunding."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "inside the columned office: a thick report thumps onto a desk; a small white QRIS stand is clipped to one page",
-     "scale": "object",
-     "motion": "report lands, pages fan, clip snaps onto the page",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "TRADE BARRIERS",
-       "word": "barriers"
+      "id": "s07",
+      "role": "body",
+      "chapter": "Before the sticker",
+      "narration": {
+        "en": "On August seventeenth, 2019, Indonesia's Independence Day, the central bank and the payment industry launched one socket shape for everyone. They called it QRIS.",
+        "id": "Pada tujuh belas Agustus 2019, hari kemerdekaan Indonesia, bank sentral dan asosiasi industri pembayaran meluncurkan satu bentuk stopkontak untuk semua. Namanya QRIS."
       },
-      {
-       "text": "2025",
-       "word": "2025"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "red-and-white bunting strung above the stall street; the wall of mismatched sockets slides together and merges into one socket plate",
+          "scale": "place",
+          "motion": "bunting sways, sockets slide inward like tiles and fuse into a single white plate",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "17 AUG 2019",
+              "word": "august"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "the single socket plate gets a label; plugs of all six colours line up and click into it one after another",
+          "scale": "object",
+          "motion": "each plug clicks in and lights green, then makes room for the next",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "QRIS",
+              "word": "qris"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+          "claim": "BI launched QRIS on 17 Aug 2019 with ASPI, based on EMVCo",
+          "id": "C01"
+        }
+      ],
+      "duration_ms": {
+        "en": 9845
       }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "a round meeting table with empty chairs; an invitation envelope travels toward them and never arrives",
-     "scale": "place",
-     "motion": "envelope circles above the table and drifts away, chairs stay empty",
-     "transition": "hold"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
-     "claim": "USTR NTE 2025 named QRIS a trade barrier; foreign stakeholders not consulted",
-     "id": "C24"
-    }
-   ]
-  },
-  {
-   "id": "s28",
-   "role": "body",
-   "chapter": "Seventy-two million",
-   "narration": {
-    "en": "The same report pointed at the rule that domestic card payments must go through switches inside Indonesia. Global card networks can't run that part there.",
-    "id": "Laporan yang sama menyorot aturan bahwa pembayaran kartu domestik wajib lewat switch di dalam Indonesia. Jaringan kartu global tidak bisa menjalankan bagian itu di sana."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "on the map a card message starts to fly overseas but curves back down into the Indonesian switch station",
-     "scale": "map",
-     "motion": "card token lifts, arcs, then dips back to the station like a boomerang",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "DOMESTIC RULE",
-       "word": "rule"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "on a distant hill the card network watchtower sweeps its searchlight toward Indonesia; the beam stops at the coastline",
-     "scale": "place",
-     "motion": "beam sweeps, hits the coast and fades",
-     "transition": "hold",
-     "faces": {
-      "network": "tired"
-     },
-     "bubble": "Not my road, then."
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
-     "claim": "Same report criticised GPN",
-     "id": "C24"
-    },
-    {
-     "url": "https://www.thejakartapost.com/opinion/2025/05/03/analysis-us-cites-qris-as-trade-barrier-but-us-payment-model-unfit-for-indonesia.html",
-     "claim": "Domestic card transactions must go through GPN switches located in Indonesia",
-     "id": "C25"
-    }
-   ]
-  },
-  {
-   "id": "s29",
-   "role": "body",
-   "chapter": "Seventy-two million",
-   "narration": {
-    "en": "Look at who designed that socket. The socket shape QRIS uses comes from EMVCo, a standards body set up by Europay, Mastercard and Visa.",
-    "id": "Lihat siapa yang merancang stopkontak itu. Bentuk stopkontak yang dipakai QRIS berasal dari EMVCo, lembaga standar yang didirikan Europay, Mastercard, dan Visa."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "back at the stall wall: the single QRIS socket plate glows",
-     "scale": "object",
-     "motion": "plate pulses once, camera pushes in",
-     "transition": "cut"
-    },
-    {
-     "sentence": 2,
-     "show": "the socket plate swings open like a hatch and shows a stamped maker's plate on its back, with three plain silhouettes of founders behind it",
-     "scale": "object",
-     "motion": "hatch swings, maker's plate catches the light, silhouettes fade in",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "EMVCO",
-       "word": "emvco"
-      }
-     ],
-     "faces": {
-      "network": "shock"
-     },
-     "bubble": "Wait. That one's ours?"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
-     "claim": "BI: QRIS is based on EMVCo (Europay, Mastercard, Visa)",
-     "id": "C26"
-    },
-    {
-     "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
-     "claim": "QRIS compiled with ASPI using EMVCo",
-     "id": "C01"
-    }
-   ]
-  },
-  {
-   "id": "s30",
-   "role": "body",
-   "chapter": "Seventy-two million",
-   "narration": {
-    "en": "Bank Indonesia's reply was polite: it's open to working with any country, the US included.",
-    "id": "Jawaban Bank Indonesia sopan: ia terbuka bekerja sama dengan negara mana pun, termasuk AS."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the domed central bank holds its door open; a plank bridge unrolls from its steps across the ocean toward the far office",
-     "scale": "map",
-     "motion": "bridge unrolls plank by plank over the water",
-     "transition": "wipe",
-     "faces": {
-      "centralbank": "calm"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
-     "claim": "BI open to cooperation with any country including the US",
-     "id": "C26"
-    }
-   ]
-  },
-  {
-   "id": "s31",
-   "role": "body",
-   "chapter": "Seventy-two million",
-   "narration": {
-    "en": "To be fair to the card networks, they aren't losing the world. Visa and Mastercard still lead in Indonesian credit cards and in payments between countries.",
-    "id": "Supaya adil untuk jaringan kartu, mereka tidak sedang kehilangan dunia. Visa dan Mastercard masih memimpin kartu kredit di Indonesia dan pembayaran antarnegara."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "mood shifts to cool daylight; the card network watchtower stands tall on its hill, searchlight sweeping a globe",
-     "scale": "place",
-     "motion": "light sweeps a full circle over the globe",
-     "transition": "wipe",
-     "faces": {
-      "network": "calm"
-     },
-     "mood": "day"
-    },
-    {
-     "sentence": 2,
-     "show": "arcs of plastic cards fly between continents on the globe, each passing through the tower's beam",
-     "scale": "map",
-     "motion": "card arcs streak across, tower beam tracks them",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "CROSS-BORDER",
-       "word": "countries"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://theconversation.com/us-labels-qris-a-trade-barrier-whats-next-for-indonesias-digital-payment-system-257616",
-     "claim": "Visa/Mastercard dominant in Indonesian credit cards and cross-border payments",
-     "id": "C27"
-    }
-   ]
-  },
-  {
-   "id": "s32",
-   "role": "body",
-   "chapter": "Seventy-two million",
-   "narration": {
-    "en": "Outside a handful of countries, your QRIS app doesn't work, and your card still does.",
-    "id": "Di luar segelintir negara, aplikasi QRIS-mu tidak bisa dipakai, sementara kartumu tetap bisa."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "two panels at a café counter far from Asia: on the left your phone shows a red cross at a card terminal; on the right your card taps and gets a green tick",
-     "scale": "object",
-     "motion": "phone buzzes red, card taps green, the red panel dims",
-     "transition": "cut",
-     "count": {
-      "value": 2,
-      "as": "split"
-     },
-     "faces": {
-      "you": "neutral"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
-     "claim": "QRIS cross-border active in six countries (Sep 2026)",
-     "id": "C20"
-    }
-   ]
-  },
-  {
-   "id": "s33",
-   "role": "rehook",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "Now the second question: how does this cross borders? In August 2022, Thailand became the first country linked to QRIS, then Malaysia in 2023, then Singapore.",
-    "id": "Sekarang pertanyaan kedua: bagaimana ini menyeberang negara? Pada Agustus 2022, Thailand menjadi negara pertama yang tersambung ke QRIS, lalu Malaysia pada 2023, lalu Singapura."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the dark Asia map returns with Indonesia lit at the bottom and the rest in shadow",
-     "scale": "map",
-     "motion": "map fades up, Indonesia's islands glow",
-     "transition": "iris"
-    },
-    {
-     "sentence": 2,
-     "show": "a timeline along the bottom ticks forward; Thailand, Malaysia and Singapore light up one by one with a cable drawn to Indonesia",
-     "scale": "map",
-     "motion": "timeline marker slides, each country lights as its year is spoken",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "2022",
-       "word": "2022"
+      "id": "s08",
+      "role": "body",
+      "chapter": "Before the sticker",
+      "narration": {
+        "en": "Many people think Indonesia's QRIS code is an app you download. It's a rulebook for how the code is written and how the companies on each side connect.",
+        "id": "Banyak orang mengira kode QRIS Indonesia itu aplikasi yang bisa diunduh. QRIS adalah buku aturan tentang cara kode ditulis dan cara perusahaan di kedua sisi tersambung."
       },
-      {
-       "text": "2023",
-       "word": "2023"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "two panels: on the left a pale dashed phone app tile named QRIS with a download arrow; a coral stroke crosses it out",
+          "scale": "object",
+          "motion": "download arrow spins; at the end of the sentence the coral cross slashes in and the tile fades to outline",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NOT AN APP",
+              "word": "app"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "a thick ring-bound rulebook opens on the counter; one page shows the socket plate, the next shows wires linking two small buildings",
+          "scale": "object",
+          "motion": "pages flip, the drawn wires light up from one building to the other",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "RULEBOOK",
+              "word": "rulebook"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "Merchant opens account with one QRIS provider; any provider's app can pay",
+          "id": "C04"
+        },
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "QRIS = QR spec plus interconnection spec, with PSPs, switching institutions, standard body",
+          "id": "C06"
+        }
+      ],
+      "duration_ms": {
+        "en": 8127
       }
-     ],
-     "count": {
-      "value": 3,
-      "as": "timeline"
-     }
-    }
-   ],
-   "sources": [
+    },
     {
-     "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
-     "claim": "Thailand Aug 2022, Malaysia May 2023, Singapore 17 Nov 2023",
-     "id": "C19"
-    }
-   ]
-  },
-  {
-   "id": "s34",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "Japan joined in August 2025, then South Korea and China in 2026. That makes six countries.",
-    "id": "Jepang bergabung pada Agustus 2025, lalu Korea Selatan dan China pada 2026. Totalnya enam negara."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the timeline continues north: Japan lights, then South Korea and China, each with its own cable",
-     "scale": "map",
-     "motion": "cables draw north in sequence, each with a small spark on arrival",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "2025",
-       "word": "2025"
+      "id": "s09",
+      "role": "body",
+      "chapter": "Before the sticker",
+      "narration": {
+        "en": "From 2020, payment codes at Indonesian shops had to follow it. A shop now signs up with one provider, and any provider's app can pay it. The printed sticker itself is free.",
+        "id": "Sejak 2020, kode pembayaran di toko-toko Indonesia wajib mengikutinya. Sekarang toko cukup mendaftar ke satu penyelenggara, dan aplikasi penyelenggara mana pun bisa membayarnya. Stiker cetaknya sendiri gratis."
       },
-      {
-       "text": "2026",
-       "word": "2026"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the old stickers peel off the glass case one by one and curl away, leaving a single white QRIS stand on the counter",
+          "scale": "object",
+          "motion": "stickers peel from the corners and drift out of frame on the breeze",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "2020",
+              "word": "2020"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "the owner shakes hands with one small green-roofed bank; behind them phones in six colours each scan the one stand and get a green tick",
+          "scale": "place",
+          "motion": "handshake, then six ticks pop in a quick chain",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "ONE PROVIDER",
+              "word": "provider"
+            }
+          ],
+          "faces": {
+            "owner": "happy",
+            "bank": "happy"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "the bank slides a freshly printed white stand across its counter to the owner, no price tag on it",
+          "scale": "object",
+          "motion": "stand slides over, owner picks it up and sets it on the stall counter",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "FREE",
+              "word": "free"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+          "claim": "QRIS effective nationally from 1 Jan 2020; transition until 31 Dec 2019",
+          "id": "C03"
+        },
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "One provider account, payments from any provider app",
+          "id": "C04"
+        },
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "Static QRIS sticker or printout is free",
+          "id": "C05"
+        }
+      ],
+      "duration_ms": {
+        "en": 12260
       }
-     ],
-     "count": {
-      "value": 6,
-      "as": "timeline"
-     }
     },
     {
-     "sentence": 2,
-     "show": "six lit countries around Indonesia, a counter settles on six",
-     "scale": "map",
-     "motion": "camera pulls back, all six cables pulse together",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "6 COUNTRIES",
-       "word": "six"
-      }
-     ],
-     "count": {
-      "value": 6,
-      "as": "items"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
-     "claim": "Japan 17 Aug 2025, South Korea 1 Apr 2026, China 30 Apr 2026",
-     "id": "C19"
-    },
-    {
-     "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
-     "claim": "Six partner countries active (Sep 2026)",
-     "id": "C20"
-    }
-   ]
-  },
-  {
-   "id": "s35",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "When a tourist from Thailand pays a Bali stall with QRIS, the money is never turned into US dollars. Most people would guess it gets converted somewhere in the middle.",
-    "id": "Saat turis dari Thailand membayar warung di Bali dengan QRIS, uangnya tidak pernah diubah ke dolar AS. Kebanyakan orang menebak uangnya dikonversi di suatu titik di tengah."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "a silver baht coin on the Thai shore and a gold rupiah coin on the Bali shore, joined by one solid line across the sea; a green dollar coin sits off to the side, unused",
-     "scale": "map",
-     "motion": "solid line snaps between the two coins, the dollar coin dims",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "NO DOLLARS",
-       "word": "dollars"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "a pale dashed detour appears from the baht coin through the dollar coin to the rupiah coin, then a coral cross slashes the dollar and the detour fades",
-     "scale": "map",
-     "motion": "dashed detour draws in, dollar wobbles, cross strikes, detour fades and the solid line stays",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "THE GUESS",
-       "word": "guess"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
-     "claim": "Cross-border QRIS settles in local currencies, no third-currency conversion",
-     "id": "C16"
-    }
-   ]
-  },
-  {
-   "id": "s36",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "That tourist walks up to the same noodle stall in Bali. The tourist scans the same sticker, using a Thai banking app.",
-    "id": "Turis itu mampir ke warung mi yang sama di Bali. Turis itu memindai stiker yang sama, memakai aplikasi bank Thailand."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "dusk at the Bali stall again; the tourist in a sun hat arrives and sits on the plastic stool",
-     "scale": "place",
-     "motion": "tourist walks in from the left, owner waves, steam drifts",
-     "transition": "wipe",
-     "faces": {
-      "tourist": "happy",
-      "owner": "happy"
-     },
-     "mood": "dusk"
-    },
-    {
-     "sentence": 2,
-     "show": "the tourist's phone, in a different app colour, frames the same white stand",
-     "scale": "object",
-     "motion": "scan corners snap onto the same code as in the first shot",
-     "transition": "cut"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
-     "claim": "Tourists from partner countries scan QRIS with their own app",
-     "id": "C17"
-    }
-   ]
-  },
-  {
-   "id": "s37",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "The Thai app sees that the code is Indonesian and sends the payment to Thailand's switch. That switch passes it across to Indonesia's switch, which takes it to the stall's bank, down the same road as before.",
-    "id": "Aplikasi Thailand melihat kodenya dari Indonesia dan mengirim pembayaran ke switch Thailand. Switch itu meneruskannya ke switch Indonesia, yang membawanya ke bank warung, lewat jalan yang sama seperti tadi."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the town map grows a second shore across a strait: a Thai app tower and a Thai switch station on the far side; an envelope with a silver coin stamp rolls from the tower to the Thai station",
-     "scale": "map",
-     "motion": "map extends, envelope leaves the Thai tower and enters the Thai station",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "THAI SWITCH",
-       "word": "thailand"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "a cable bridge links the two stations; the envelope crosses to the Indonesian station, turns on its turntable and rolls down the old road to the green-roofed bank",
-     "scale": "map",
-     "motion": "envelope slides across the bridge, turntable clicks, envelope rolls on",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "SAME ROAD",
-       "word": "road"
-      }
-     ],
-     "faces": {
-      "switch": "happy"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
-     "claim": "Interconnection between payment switchers of the two countries",
-     "id": "C16"
-    },
-    {
-     "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
-     "claim": "Switching-to-switching model for cross-border QRIS",
-     "id": "C37"
-    }
-   ]
-  },
-  {
-   "id": "s38",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "Before typing a PIN, the tourist sees the price in baht. Then the baht balance goes down, and the stall still receives rupiah.",
-    "id": "Sebelum mengetik PIN, turis itu melihat harganya dalam baht. Lalu saldo baht-nya berkurang, dan warung tetap menerima rupiah."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "close on the tourist's phone: the price shows in baht with a small rupiah line underneath",
-     "scale": "object",
-     "motion": "the baht figure rolls in, the rupiah line fades in below",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "BAHT",
-       "word": "baht"
-      }
-     ],
-     "faces": {
-      "tourist": "neutral"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "two panels: silver baht coins leave the tourist's phone; gold rupiah coins land in the owner's tin",
-     "scale": "object",
-     "motion": "silver coins hop out on the left as gold coins drop in on the right, in step",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "RUPIAH",
-       "word": "rupiah"
-      }
-     ],
-     "count": {
-      "value": 2,
-      "as": "split"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
-     "claim": "Exchange rate auto-converted; payer sees amount in own currency before PIN; own-currency balance debited",
-     "id": "C17"
-    }
-   ]
-  },
-  {
-   "id": "s39",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "Behind the scenes, a few appointed banks in each country swap rupiah and baht with each other directly. That final handover between banks is called settlement, and here it happens in the two local currencies.",
-    "id": "Di balik layar, beberapa bank yang ditunjuk di tiap negara saling menukar rupiah dan baht secara langsung. Serah terima terakhir antarbank itu disebut settlement, dan di sini terjadi dalam dua mata uang lokal."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "two small bank buildings on either side of the strait, each on its own dock, push crates of coins onto a ferry: gold crates from one side, silver from the other",
-     "scale": "place",
-     "motion": "crates slide onto the ferry, ferry crosses and swaps them",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "APPOINTED BANKS",
-       "word": "banks"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "the ferry docks; gold crates stack on the Indonesian side, silver on the Thai side; a lone dollar crate waits on a third pier and nobody touches it",
-     "scale": "place",
-     "motion": "crates stack with a thump, the dollar pier stays dark",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "SETTLEMENT",
-       "word": "settlement"
-      }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
-     "claim": "Settlement via appointed cross-currency dealer banks in local currencies (LCT framework)",
-     "id": "C16"
-    }
-   ]
-  },
-  {
-   "id": "s40",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "That's the adapter. Two countries with different sockets, joined through their switches, each keeping its own money. It works the other way too: in Bangkok, you scan a Thai code with your Indonesian app, and your rupiah balance goes down.",
-    "id": "Itulah adaptornya. Dua negara dengan stopkontak berbeda, tersambung lewat switch masing-masing, dan masing-masing tetap memakai uangnya sendiri. Arah sebaliknya juga bisa: di Bangkok, kamu memindai kode Thailand dengan aplikasi Indonesiamu, dan saldo rupiahmu yang berkurang."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "a Thai plug and the Indonesian socket plate float apart; a travel adapter clicks in between them",
-     "scale": "object",
-     "motion": "adapter slides in, both sides click, a small spark of light",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "ADAPTER",
-       "word": "adapter"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "the adapter turns see-through: inside, two wires lead to the two switch stations, gold coins on one side, silver on the other",
-     "scale": "inside",
-     "motion": "adapter shell fades, wires light from each end to the middle",
-     "transition": "hold"
-    },
-    {
-     "sentence": 3,
-     "show": "a Bangkok street-food cart under a tangle of overhead cables; you scan its Thai code and your phone balance in rupiah ticks down",
-     "scale": "place",
-     "motion": "scan corners snap, gold coins hop out of your phone toward the cart, the cart owner gets silver",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "BANGKOK",
-       "word": "bangkok"
-      }
-     ],
-     "faces": {
-      "you": "happy"
-     }
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
-     "claim": "Switch-to-switch interconnection, local currency on each side",
-     "id": "C16"
-    },
-    {
-     "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
-     "claim": "Indonesians can pay with QRIS in Thailand since 2022",
-     "id": "C19"
-    },
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
-     "claim": "Own-currency balance debited",
-     "id": "C17"
-    }
-   ]
-  },
-  {
-   "id": "s41",
-   "role": "rehook",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "And money is mostly flowing in. Up to July 2026, visitors spent five point nine trillion rupiah through QRIS in Indonesia, more than three times what Indonesians spent with it abroad. Most of those visitors come from Malaysia and Singapore, paying from ringgit and Singapore dollar accounts.",
-    "id": "Dan uangnya kebanyakan mengalir masuk. Sampai Juli 2026, pengunjung asing membelanjakan lima koma sembilan triliun rupiah lewat QRIS di Indonesia, lebih dari tiga kali lipat belanja orang Indonesia dengan QRIS di luar negeri. Kebanyakan pengunjung itu datang dari Malaysia dan Singapura, membayar dari rekening ringgit dan dolar Singapura."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "on the Asia map, thick gold arrows flow into Indonesia from the partner countries while thin arrows flow out",
-     "scale": "map",
-     "motion": "inbound arrows thicken, outbound arrows stay thin",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "INBOUND",
-       "word": "flowing"
-      }
-     ]
-    },
-    {
-     "sentence": 2,
-     "show": "two panels: a tall stack of gold coins for visitors' spending and a stack less than a third its height for Indonesians abroad",
-     "scale": "object",
-     "motion": "both stacks grow, the left one keeps going",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "Rp5.9T",
-       "word": "trillion"
+      "id": "s10",
+      "role": "rehook",
+      "chapter": "Two seconds",
+      "narration": {
+        "en": "Now follow one scan, on one map. Your app sits on the left, the stall's bank on the right, and in the middle there's a switch.",
+        "id": "Sekarang ikuti satu scan, di satu peta. Aplikasimu di kiri, bank warung di kanan, dan di tengah ada switch."
       },
-      {
-       "text": "3X",
-       "word": "three"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "camera rises from the stall to a top-down town map at night: three buildings joined by two glowing roads",
+          "scale": "map",
+          "motion": "camera tilts down onto the map, roads draw themselves from left to right",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "left: a tall phone-shaped tower; right: the green-roofed bank; centre: a round station with cable spools on its roof",
+          "scale": "map",
+          "motion": "each building lights as it is named, the centre station last with a soft pulse",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "YOUR APP",
+              "word": "app"
+            },
+            {
+              "text": "BANK",
+              "word": "bank"
+            },
+            {
+              "text": "SWITCH",
+              "word": "switch"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "Parties: payment service providers, switching institutions",
+          "id": "C06"
+        },
+        {
+          "url": "https://developers.bri.co.id/en/product/qris",
+          "claim": "Merchant side = acquirer, customer side = issuer",
+          "id": "C07"
+        }
+      ],
+      "duration_ms": {
+        "en": 7802
       }
-     ],
-     "count": {
-      "value": 5.9,
-      "as": "split"
-     }
     },
     {
-     "sentence": 3,
-     "show": "on the map the two thickest gold arrows glow brighter, from Malaysia and Singapore, each carrying its own coin colour that turns gold on landing",
-     "scale": "map",
-     "motion": "two arrows pulse, coins change colour as they touch Indonesia",
-     "transition": "cut",
-     "labels": [
-      {
-       "text": "MALAYSIA",
-       "word": "malaysia"
+      "id": "s11",
+      "role": "body",
+      "chapter": "Two seconds",
+      "narration": {
+        "en": "A switch is the wiring behind the wall. It's a company that passes payment messages between providers that aren't wired to each other directly.",
+        "id": "Switch adalah kabel di balik dinding. Ia perusahaan yang meneruskan pesan pembayaran antarpenyelenggara yang tidak tersambung langsung satu sama lain."
       },
-      {
-       "text": "SINGAPORE",
-       "word": "singapore"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "cutaway behind the socket plate: bundled wires run down inside the wall and under the street toward the round station",
+          "scale": "inside",
+          "motion": "wall slides open, a pulse of light runs along the wires to the station",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "WIRING",
+              "word": "wiring"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "back on the map: no road joins the phone tower to the bank directly; a small envelope rolls from the tower into the station and out toward the bank",
+          "scale": "map",
+          "motion": "envelope rolls along the roads, pauses in the station, then rolls on",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MESSAGES",
+              "word": "messages"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+          "claim": "Switching institutions forward domestic payment data and run QRIS interconnection",
+          "id": "C37"
+        }
+      ],
+      "duration_ms": {
+        "en": 7848
       }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://katadata.co.id/finansial/keuangan/6ab45ea47d41e/turis-asing-dominasi-transaksi-qris-antarnegara-catat-17-8-juta-transaksi",
-     "claim": "Up to Jul 2026: inbound Rp5.9T, outbound Rp1.73T",
-     "id": "C22"
     },
     {
-     "url": "https://www.cnbcindonesia.com/market/20260619104014-17-743982/transaksi-qris-turis-asing-capai-rp43-t-malaysia-singapura-terbanyak",
-     "claim": "Malaysia and Singapore lead inbound",
-     "id": "C23"
-    }
-   ]
-  },
-  {
-   "id": "s42",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "It's still small. When Japan joined, only thirty-five shops there accepted it, and only Indonesians could pay that way, not Japanese visitors to Indonesia.",
-    "id": "Skalanya masih kecil. Saat Jepang bergabung, hanya tiga puluh lima toko di sana yang menerimanya, dan hanya orang Indonesia yang bisa membayar dengan cara itu, bukan turis Jepang di Indonesia."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "honest tone: cool light; the Asia map dims and the six lit cables look thin against the dark continent",
-     "scale": "map",
-     "motion": "camera pulls back until the cables become thin threads",
-     "transition": "cut",
-     "mood": "cool"
-    },
-    {
-     "sentence": 2,
-     "show": "a Japanese shopping street at night where only a few shop signs light up, then a one-way arrow from Indonesia to Japan with a closed gate on the return lane",
-     "scale": "place",
-     "motion": "a few signs flick on while many stay dark; arrow flows north, return gate swings shut",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "35 SHOPS",
-       "word": "thirty-five"
+      "id": "s12",
+      "role": "body",
+      "chapter": "Two seconds",
+      "narration": {
+        "en": "When your camera reads the square, it reads plain text. Inside is which shop this is, which provider holds its account, and a country code: Indonesia. The amount isn't in there, which is why the sticker never has to change.",
+        "id": "Saat kamera membaca kotak itu, yang terbaca adalah teks biasa. Isinya: toko mana ini, penyelenggara mana yang memegang rekeningnya, dan kode negara: Indonesia. Nominalnya tidak ada di situ, karena itu stikernya tidak perlu diganti."
       },
-      {
-       "text": "ONE WAY",
-       "word": "only"
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "macro dive into the printed QR: black modules flip over like tiles and become short lines of text",
+          "scale": "inside",
+          "motion": "camera pushes through the modules, tiles flip in a wave from the corner",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "three tags float out of the text: a shop tag, a provider tag, and a country tag",
+          "scale": "inside",
+          "motion": "tags pop out one per spoken phrase and line up in front of the camera",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "SHOP",
+              "word": "shop"
+            },
+            {
+              "text": "PROVIDER",
+              "word": "provider"
+            },
+            {
+              "text": "ID",
+              "word": "indonesia"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "the three tags slide back into the code; an empty amount slot on the side of the code stays blank and the printed stand looks unchanged",
+          "scale": "inside",
+          "motion": "tags tuck back in, camera pulls out of the modules to the same stand on the counter",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "NO AMOUNT",
+              "word": "amount"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://mvallim.github.io/emv-qrcode/docs/EMVCo-Merchant-Presented-QR-Specification-v1-1.pdf",
+          "claim": "EMVCo merchant QR payload: merchant account info, country code, merchant name, city",
+          "id": "C32"
+        },
+        {
+          "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+          "claim": "QRIS built on EMVCo standard",
+          "id": "C01"
+        },
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "Static QRIS: customer enters the amount",
+          "id": "C05"
+        }
+      ],
+      "duration_ms": {
+        "en": 14629
       }
-     ],
-     "count": {
-      "value": 35,
-      "as": "items"
-     }
-    }
-   ],
-   "sources": [
+    },
     {
-     "url": "https://www.thestar.com.my/business/business-news/2025/08/21/qris-launches-in-japan-as-trial-begins-for-expansion-to-china",
-     "claim": "Japan launch: 35 merchants via JPQR Global; initially one-way",
-     "id": "C21"
-    }
-   ]
-  },
-  {
-   "id": "s43",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "Next, Bank Indonesia is in talks with India, Saudi Arabia, Vietnam and Australia. In Saudi Arabia, the idea is to let Indonesian pilgrims on hajj and umrah pay with it.",
-    "id": "Berikutnya, Bank Indonesia sedang berunding dengan India, Arab Saudi, Vietnam, dan Australia. Di Arab Saudi, idenya agar jemaah haji dan umrah Indonesia bisa membayar dengannya."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the map widens: India, Saudi Arabia, Vietnam and Australia appear with dashed outlines and dashed cables",
-     "scale": "map",
-     "motion": "dashed cables draw out from Indonesia one by one",
-     "transition": "wipe",
-     "labels": [
-      {
-       "text": "IN TALKS",
-       "word": "talks"
+      "id": "s13",
+      "role": "body",
+      "chapter": "Two seconds",
+      "narration": {
+        "en": "You type fifty thousand rupiah and your PIN. Your app checks your balance, then sends a message to the switch: take fifty thousand from this person, for this stall.",
+        "id": "Kamu mengetik lima puluh ribu rupiah dan PIN-mu. Aplikasimu memeriksa saldo, lalu mengirim pesan ke switch: ambil lima puluh ribu dari orang ini, untuk warung ini."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "close on your phone keypad: digits type in, then six dots for the PIN",
+          "scale": "object",
+          "motion": "digits roll in, PIN dots fill one by one",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "Rp50,000",
+              "word": "fifty"
+            }
+          ],
+          "faces": {
+            "you": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "on the map the phone tower's balance gauge dips by one notch, and a sealed envelope with a gold coin stamp leaves along the left road",
+          "scale": "map",
+          "motion": "gauge needle dips, envelope pops out of the tower door and rolls toward the station",
+          "transition": "push"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "Customer scans, enters amount, enters PIN",
+          "id": "C05"
+        },
+        {
+          "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+          "claim": "Switching forwards payment data between providers",
+          "id": "C37"
+        }
+      ],
+      "duration_ms": {
+        "en": 10449
       }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "a generic market street with awnings in warm sun; pilgrims in plain white clothes scan a white stand at a date-fruit stall",
-     "scale": "place",
-     "motion": "a pilgrim's phone scans, the stall owner nods",
-     "transition": "cut"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
-     "claim": "BI exploring India, Saudi Arabia, Vietnam, Australia",
-     "id": "C20"
-    },
-    {
-     "url": "https://www.arabnews.com/node/2652151/amp",
-     "claim": "Saudi talks tied to Indonesian hajj and umrah pilgrims",
-     "id": "C35"
-    }
-   ]
-  },
-  {
-   "id": "s44",
-   "role": "body",
-   "chapter": "Crossing borders",
-   "narration": {
-    "en": "And six central banks, Indonesia's among them, are building a shared hub for their instant payment systems. It's still being built, but one connection there could reach several countries at once.",
-    "id": "Lalu enam bank sentral, termasuk Indonesia, sedang membangun satu hub bersama untuk sistem pembayaran instan mereka. Hub itu masih dibangun, tapi satu sambungan ke sana bisa menjangkau beberapa negara sekaligus."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "in the sea between six countries, a round hub station rises inside scaffolding, cranes swinging",
-     "scale": "map",
-     "motion": "hub rises, scaffolding bolts click on, cranes turn",
-     "transition": "push",
-     "labels": [
-      {
-       "text": "SHARED HUB",
-       "word": "hub"
+      "id": "s14",
+      "role": "body",
+      "chapter": "Two seconds",
+      "narration": {
+        "en": "The switch reads which provider holds the stall's account, and forwards the message there. The stall's bank checks the account and says yes.",
+        "id": "Switch membaca penyelenggara mana yang memegang rekening warung, lalu meneruskan pesan ke sana. Bank warung memeriksa rekening itu dan menjawab ya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "inside the round station: the envelope sits on a turntable that rotates until its arrow points at the right-hand road",
+          "scale": "inside",
+          "motion": "turntable clicks round three notches, envelope slides off onto the right road",
+          "transition": "push",
+          "faces": {
+            "switch": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "the green-roofed bank catches the envelope, stamps it green and sends a tick back down the road",
+          "scale": "place",
+          "motion": "stamp thumps, green tick bounces back toward the station",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "YES",
+              "word": "yes"
+            }
+          ],
+          "faces": {
+            "bank": "happy"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+          "claim": "Switch forwards to the provider holding the merchant account",
+          "id": "C37"
+        },
+        {
+          "url": "https://developers.bri.co.id/en/product/qris",
+          "claim": "Merchant side = acquirer",
+          "id": "C07"
+        }
+      ],
+      "duration_ms": {
+        "en": 8127
       }
-     ]
     },
     {
-     "sentence": 2,
-     "show": "one cable runs from Indonesia to the hub, and five more cables light up from the hub to the other countries",
-     "scale": "map",
-     "motion": "single cable lights, then the hub fans the light out to five cables",
-     "transition": "hold"
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bis.org/project/nexus",
-     "claim": "Central banks of India, Indonesia, Malaysia, Philippines, Singapore, Thailand set up Nexus Global Payments",
-     "id": "C29"
-    },
-    {
-     "url": "https://www.bis.org/project/nexus",
-     "claim": "Live date not confirmed",
-     "id": "C30"
-    }
-   ]
-  },
-  {
-   "id": "s45",
-   "role": "payoff",
-   "chapter": "Back at the stall",
-   "narration": {
-    "en": "So how powerful is QRIS? At home, it put digital payments in fifty-one million shops for the price of a printed square.",
-    "id": "Jadi seberapa kuat QRIS? Di dalam negeri, ia membawa pembayaran digital ke lima puluh satu juta toko dengan modal selembar kotak cetak."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "back at the Bali stall at dusk, the same white stand on the counter, steam rising",
-     "scale": "object",
-     "motion": "camera drifts in to the stand, bunting sways",
-     "transition": "iris",
-     "mood": "dusk"
-    },
-    {
-     "sentence": 2,
-     "show": "the camera lifts away until thousands of stall lights spread across the islands, each one a small white square",
-     "scale": "map",
-     "motion": "lights bloom outward from Bali as the camera rises",
-     "transition": "hold",
-     "labels": [
-      {
-       "text": "51M SHOPS",
-       "word": "shops"
+      "id": "s15",
+      "role": "body",
+      "chapter": "Two seconds",
+      "narration": {
+        "en": "A tick appears on your phone, and the owner's phone chimes on the counter. The owner sees the amount and the time without touching a card machine. Providers build that whole round trip to finish while you're still holding your phone.",
+        "id": "Tanda centang muncul di ponselmu, dan ponsel pemilik warung berbunyi di meja. Pemilik melihat nominal dan waktunya tanpa menyentuh mesin kartu. Seluruh perjalanan bolak-balik itu dirancang selesai selagi ponsel masih di tanganmu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "split close-up at the counter: your phone shows a green tick; the owner's phone lights with chime rings",
+          "scale": "object",
+          "motion": "both screens light together, chime rings ripple out",
+          "transition": "cut",
+          "faces": {
+            "you": "happy",
+            "owner": "happy"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "over the owner's shoulder: the phone shows the amount and time; a dusty card machine sits unused at the back of the shelf",
+          "scale": "object",
+          "motion": "owner glances at the phone and goes back to stirring the pot, the card machine stays dark",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "AMOUNT",
+              "word": "amount"
+            }
+          ]
+        },
+        {
+          "sentence": 3,
+          "show": "the town map again: the envelope's whole path traced as one glowing loop from tower to station to bank and back",
+          "scale": "map",
+          "motion": "loop draws itself in one sweep while a tiny timer counts to two",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "ROUND TRIP",
+              "word": "round"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "Real-time processing; buyer and merchant notified immediately",
+          "id": "C08"
+        }
+      ],
+      "duration_ms": {
+        "en": 12678
       }
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober",
-     "claim": "51.31M merchants",
-     "id": "C09"
     },
     {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
-     "claim": "Static QRIS sticker is free",
-     "id": "C05"
+      "id": "s16",
+      "role": "rehook",
+      "chapter": "Who pays",
+      "narration": {
+        "en": "But who pays for those two seconds? In our card video, a hundred-dollar tap cost the shop two dollars seventy-five.",
+        "id": "Tapi siapa yang membayar dua detik itu? Di video kartu kami, satu tap seratus dolar membuat toko kehilangan dua dolar tujuh puluh lima sen."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the glowing loop freezes; a single gold coin hovers above the station with a small question tilt",
+          "scale": "map",
+          "motion": "loop dims, coin spins slowly and tilts",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "callback: a wooden cart of one hundred coins rolls down a toll road and a small handful of coins hop off at the gates",
+          "scale": "place",
+          "motion": "cart rolls, coins hop off in three small groups",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "$2.75",
+              "word": "seventy-five"
+            }
+          ],
+          "count": {
+            "value": 2.75,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/03-script.json",
+          "claim": "Cycle 002 worked example: $2.75 of a $100 US card purchase",
+          "id": "C15"
+        }
+      ],
+      "duration_ms": {
+        "en": 7245
+      }
+    },
+    {
+      "id": "s17",
+      "role": "body",
+      "chapter": "Who pays",
+      "narration": {
+        "en": "The fee a shop pays to accept a payment has a name: the merchant discount rate, or MDR. It's a small slice taken off each sale before the money reaches the shop.",
+        "id": "Biaya yang dibayar toko untuk menerima pembayaran punya nama: merchant discount rate, atau MDR. Itu potongan kecil dari setiap penjualan sebelum uangnya sampai ke toko."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a short stack of gold coins on the counter; a thin wedge-shaped slice lifts out of the top coin",
+          "scale": "object",
+          "motion": "slice lifts and glows coral",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MDR",
+              "word": "mdr"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "the coral slice drifts away toward the bank while the rest of the stack slides into the owner's tin",
+          "scale": "place",
+          "motion": "slice floats right, stack slides left into the tin",
+          "transition": "hold",
+          "faces": {
+            "owner": "neutral"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "MDR QRIS rules (BI policy)",
+          "id": "C12"
+        },
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "MDR QRIS above Rp100k for non-micro: 0.7%",
+          "id": "C13"
+        }
+      ],
+      "duration_ms": {
+        "en": 10031
+      }
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "chapter": "Who pays",
+      "narration": {
+        "en": "Since October 2026, a QRIS payment up to a hundred thousand rupiah costs most shops nothing at all. The smallest businesses pay nothing up to five hundred thousand.",
+        "id": "Sejak Oktober 2026, pembayaran QRIS sampai seratus ribu rupiah tidak memotong apa pun bagi sebagian besar toko. Usaha paling kecil tidak dipotong sampai lima ratus ribu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a horizontal price bar in front of the stall from zero to one hundred thousand turns green, and the coral slice vanishes",
+          "scale": "object",
+          "motion": "bar fills green left to right, slice pops like a bubble",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "0% TO 100K",
+              "word": "hundred"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "a tiny pushcart stall beside the warung gets a longer green bar stretching to five hundred thousand",
+          "scale": "object",
+          "motion": "bar extends past the first one with a springy overshoot",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "0% TO 500K",
+              "word": "five"
+            }
+          ],
+          "faces": {
+            "owner": "happy"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "From 1 Oct 2026: MDR 0% up to Rp100k for small/medium/large; micro 0% up to Rp500k",
+          "id": "C12"
+        }
+      ],
+      "duration_ms": {
+        "en": 10588
+      }
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "chapter": "Who pays",
+      "narration": {
+        "en": "Above that, the fee is still under one percent. And the shop isn't allowed to pass it on to you.",
+        "id": "Di atas itu, biayanya tetap di bawah satu persen. Dan toko tidak boleh membebankannya kepadamu."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "past the green part of the bar, a sliver-thin coral slice reappears on a large coin",
+          "scale": "object",
+          "motion": "slice grows to a hair-thin wedge and stops",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "UNDER 1%",
+              "word": "percent"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "the owner nudges a small extra coin onto your bill; a round rule stamp drops and blocks it",
+          "scale": "object",
+          "motion": "coin slides, stamp lands with a thump, coin slides back",
+          "transition": "hold",
+          "faces": {
+            "owner": "smug",
+            "you": "neutral"
+          },
+          "bubble": "Worth a try."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "MDR 0.7% above Rp100k for non-micro merchants",
+          "id": "C13"
+        },
+        {
+          "url": "https://finansial.bisnis.com/read/20240430/11/1761523/biaya-qris-usaha-mikro-03-bi-tegaskan-merchant-tak-tarik-tarif-ke-konsumen",
+          "claim": "Merchants may not charge MDR to consumers",
+          "id": "C14"
+        }
+      ],
+      "duration_ms": {
+        "en": 5573
+      }
+    },
+    {
+      "id": "s20",
+      "role": "body",
+      "chapter": "Who pays",
+      "narration": {
+        "en": "So why would anyone in the middle take almost nothing? There's one thing to know about Bank Indonesia: it wants small shops inside the digital economy, and it treats QRIS as their way in.",
+        "id": "Jadi kenapa pihak di tengah mau menerima hampir nol? Ada satu hal yang perlu kamu tahu soal Bank Indonesia: ia ingin toko kecil masuk ke ekonomi digital, dan menjadikan QRIS pintu masuknya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "on the town map the phone tower, the station and the bank all look down at one nearly empty coin tray",
+          "scale": "map",
+          "motion": "the three buildings lean in, the tray rattles with one small coin",
+          "transition": "cut",
+          "faces": {
+            "switch": "tired",
+            "bank": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a domed central bank building at the edge of the map opens a tall door shaped like the socket plate; small stalls and carts roll through into a lit city",
+          "scale": "place",
+          "motion": "door swings open, stalls trundle through in a line, lights come on behind them",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "WAY IN",
+              "word": "way"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "BI frames QRIS as UMKM entry point to the digital ecosystem",
+          "id": "C33"
+        }
+      ],
+      "duration_ms": {
+        "en": 11192
+      }
+    },
+    {
+      "id": "s21",
+      "role": "body",
+      "chapter": "Who pays",
+      "narration": {
+        "en": "Every scan also leaves a record of what a shop sells and how often. Bank Indonesia wants those records to help small shops get loans, even with no credit history. Three years of daily chimes at a noodle stall is a sales history a bank can read.",
+        "id": "Setiap scan juga meninggalkan catatan tentang apa yang dijual toko dan seberapa sering. Bank Indonesia ingin catatan itu membantu toko kecil mendapat pinjaman, meski belum punya riwayat kredit. Tiga tahun bunyi notifikasi setiap hari di warung mi adalah riwayat penjualan yang bisa dibaca bank."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "beside the stall each chime drops a small paper slip into a growing stack, day after day",
+          "scale": "object",
+          "motion": "slips flutter down, stack rises, sun passes overhead quickly",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "RECORD",
+              "word": "record"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "the owner carries the stack to the green-roofed bank's counter; a small coin bag slides back across",
+          "scale": "place",
+          "motion": "stack set down, bank weighs it, bag slides over",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "LOAN",
+              "word": "loans"
+            }
+          ],
+          "faces": {
+            "owner": "happy",
+            "bank": "happy"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "the slips fan out into a long ribbon behind the stall, one fold per day, running back three seasons of rain and sun",
+          "scale": "object",
+          "motion": "ribbon unrolls backwards past rain and sun icons on the ground",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "3 YEARS",
+              "word": "three"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://katadata.co.id/finansial/makro/6adf27d2abe9d/bi-ingin-transaksi-qris-jadi-acuan-penilaian-kredit-umkm",
+          "claim": "BI wants QRIS transaction data as a reference for UMKM credit assessment (example of three years is illustrative)",
+          "id": "C36"
+        }
+      ],
+      "duration_ms": {
+        "en": 15650
+      }
+    },
+    {
+      "id": "s22",
+      "role": "body",
+      "chapter": "Who pays",
+      "narration": {
+        "en": "For the apps, each scan is a visit. You open them, you see your balance, and you might stay for the next thing they sell.",
+        "id": "Bagi aplikasi, setiap scan adalah kunjungan. Kamu membukanya, melihat saldomu, dan mungkin bertahan untuk produk berikutnya yang mereka jual."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the phone-shaped tower opens its front like a shop door and you step inside",
+          "scale": "place",
+          "motion": "door slides up, you walk in, a bell above the door swings",
+          "transition": "cut",
+          "faces": {
+            "yourapp": "happy",
+            "you": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "inside, shelves of glowing boxes light up one after another as you pass: a top-up box, a bill box, a ticket box",
+          "scale": "inside",
+          "motion": "shelves light in sequence, you slow down at the last one",
+          "transition": "hold",
+          "faces": {
+            "yourapp": "smug"
+          },
+          "bubble": "Stay a while."
+        }
+      ],
+      "duration_ms": {
+        "en": 7059
+      }
+    },
+    {
+      "id": "s23",
+      "role": "body",
+      "chapter": "Who pays",
+      "narration": {
+        "en": "So for a fifty-thousand-rupiah bowl of noodles, the stall keeps all fifty thousand. With the cut from our card example, the same bowl would lose about one thousand four hundred rupiah.",
+        "id": "Jadi untuk semangkuk mi lima puluh ribu rupiah, warung menerima utuh lima puluh ribu. Dengan potongan seperti contoh kartu kita, mangkuk yang sama akan kehilangan sekitar seribu empat ratus rupiah."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a steaming bowl of noodles set on the counter; gold coins stream into the owner's tin and none split off",
+          "scale": "object",
+          "motion": "bowl slides in, coins pour into the tin, no slice appears",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "Rp50,000",
+              "word": "fifty"
+            }
+          ],
+          "count": {
+            "value": 50000,
+            "as": "items"
+          },
+          "faces": {
+            "owner": "happy"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a ghost version of the same tin beside it, pale and dashed, where a small slice of coins breaks off and floats away",
+          "scale": "object",
+          "motion": "ghost slice drifts off, then the ghost tin fades and the real tin stays full",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "Rp1,400",
+              "word": "four"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
+          "claim": "MDR 0% up to Rp100k (all merchant sizes)",
+          "id": "C12"
+        },
+        {
+          "url": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/03-script.json",
+          "claim": "Cycle 002: 2.75% card cut; 2.75% of Rp50,000 = Rp1,375 (illustrative)",
+          "id": "C15"
+        }
+      ],
+      "duration_ms": {
+        "en": 10263
+      }
+    },
+    {
+      "id": "s24",
+      "role": "body",
+      "chapter": "Seventy-two million",
+      "narration": {
+        "en": "That's how a printed square reached fifty-one million shops, more than one for every six people in the country. Nearly all of them are small businesses.",
+        "id": "Begitulah selembar kotak cetak sampai ke lima puluh satu juta toko, lebih dari satu untuk setiap enam orang di negeri ini. Hampir semuanya usaha kecil."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a row of six small people figures beside one shop marker, repeating outward across the map of Indonesia",
+          "scale": "map",
+          "motion": "groups of six plus one shop tile the islands in waves",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "1 PER 6",
+              "word": "six"
+            }
+          ],
+          "count": {
+            "value": 6,
+            "as": "dots"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "close on the markers: pushcarts, kiosks, a laundry, a phone-credit stand, a market stall, each with a white square",
+          "scale": "place",
+          "motion": "markers bob up one at a time as the camera pans along a street",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "SMALL SHOPS",
+              "word": "small"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober",
+          "claim": "51.31M QRIS merchants, Oct 2026",
+          "id": "C09"
+        },
+        {
+          "url": "https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat",
+          "claim": "Indonesia population 2025: 284.67M (BPS SUPAS)",
+          "id": "C34"
+        },
+        {
+          "url": "https://bali.antaranews.com/berita/411917/qris-dipakai-6577-juta-pengguna-dan-diterima-4486-juta-gerai",
+          "claim": "96.68% of QRIS merchants are UMKM (Jun 2026)",
+          "id": "C38"
+        }
+      ],
+      "duration_ms": {
+        "en": 8638
+      }
+    },
+    {
+      "id": "s25",
+      "role": "body",
+      "chapter": "Seventy-two million",
+      "narration": {
+        "en": "And the switches carrying those messages are Indonesian companies, licensed by the central bank. Card payments inside Indonesia run through them too.",
+        "id": "Dan switch yang membawa pesan-pesan itu adalah perusahaan Indonesia yang berizin bank sentral. Pembayaran kartu di dalam Indonesia juga lewat mereka."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the town map: the round switch station gets a small licence plaque from the domed central bank",
+          "scale": "map",
+          "motion": "plaque flies over from the dome and clicks onto the station's door",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "LICENSED",
+              "word": "licensed"
+            }
+          ],
+          "faces": {
+            "switch": "happy"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "a plain plastic card's message rolls along the same roads and through the same station as the QR envelope",
+          "scale": "map",
+          "motion": "card-shaped token follows the envelope's path, both pass the turntable",
+          "transition": "hold"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+          "claim": "GPN switching institutions licensed by BI route domestic transactions",
+          "id": "C37"
+        },
+        {
+          "url": "https://www.thejakartapost.com/opinion/2025/05/03/analysis-us-cites-qris-as-trade-barrier-but-us-payment-model-unfit-for-indonesia.html",
+          "claim": "Domestic retail card transactions processed by GPN switches in Indonesia",
+          "id": "C25"
+        }
+      ],
+      "duration_ms": {
+        "en": 8545
+      }
+    },
+    {
+      "id": "s26",
+      "role": "rehook",
+      "chapter": "Seventy-two million",
+      "narration": {
+        "en": "That last part is what the United States didn't like.",
+        "id": "Bagian terakhir itulah yang tidak disukai Amerika Serikat."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the camera pulls far back from the town map, across a dark ocean, to a distant columned office on another shore with its lights on",
+          "scale": "map",
+          "motion": "big dolly out over water, a single window in the far office switches on",
+          "transition": "push",
+          "mood": "cool"
+        }
+      ],
+      "duration_ms": {
+        "en": 2972
+      }
+    },
+    {
+      "id": "s27",
+      "role": "body",
+      "chapter": "Seventy-two million",
+      "narration": {
+        "en": "In March 2025, the US trade office put QRIS in its yearly report on trade barriers. It said foreign companies, American ones included, weren't consulted enough.",
+        "id": "Pada Maret 2025, kantor perdagangan AS memasukkan QRIS ke laporan tahunannya tentang hambatan perdagangan. Laporan itu menyebut perusahaan asing, termasuk dari Amerika, tidak cukup diajak berunding."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "inside the columned office: a thick report thumps onto a desk; a small white QRIS stand is clipped to one page",
+          "scale": "object",
+          "motion": "report lands, pages fan, clip snaps onto the page",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "TRADE BARRIERS",
+              "word": "barriers"
+            },
+            {
+              "text": "2025",
+              "word": "2025"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "a round meeting table with empty chairs; an invitation envelope travels toward them and never arrives",
+          "scale": "place",
+          "motion": "envelope circles above the table and drifts away, chairs stay empty",
+          "transition": "hold"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
+          "claim": "USTR NTE 2025 named QRIS a trade barrier; foreign stakeholders not consulted",
+          "id": "C24"
+        }
+      ],
+      "duration_ms": {
+        "en": 10495
+      }
+    },
+    {
+      "id": "s28",
+      "role": "body",
+      "chapter": "Seventy-two million",
+      "narration": {
+        "en": "The same report pointed at the rule that domestic card payments must go through switches inside Indonesia. Global card networks can't run that part there.",
+        "id": "Laporan yang sama menyorot aturan bahwa pembayaran kartu domestik wajib lewat switch di dalam Indonesia. Jaringan kartu global tidak bisa menjalankan bagian itu di sana."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "on the map a card message starts to fly overseas but curves back down into the Indonesian switch station",
+          "scale": "map",
+          "motion": "card token lifts, arcs, then dips back to the station like a boomerang",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "DOMESTIC RULE",
+              "word": "rule"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "on a distant hill the card network watchtower sweeps its searchlight toward Indonesia; the beam stops at the coastline",
+          "scale": "place",
+          "motion": "beam sweeps, hits the coast and fades",
+          "transition": "hold",
+          "faces": {
+            "network": "tired"
+          },
+          "bubble": "Not my road, then."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
+          "claim": "Same report criticised GPN",
+          "id": "C24"
+        },
+        {
+          "url": "https://www.thejakartapost.com/opinion/2025/05/03/analysis-us-cites-qris-as-trade-barrier-but-us-payment-model-unfit-for-indonesia.html",
+          "claim": "Domestic card transactions must go through GPN switches located in Indonesia",
+          "id": "C25"
+        }
+      ],
+      "duration_ms": {
+        "en": 8406
+      }
+    },
+    {
+      "id": "s29",
+      "role": "body",
+      "chapter": "Seventy-two million",
+      "narration": {
+        "en": "Look at who designed that socket. The socket shape QRIS uses comes from EMVCo, a standards body set up by Europay, Mastercard and Visa.",
+        "id": "Lihat siapa yang merancang stopkontak itu. Bentuk stopkontak yang dipakai QRIS berasal dari EMVCo, lembaga standar yang didirikan Europay, Mastercard, dan Visa."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "back at the stall wall: the single QRIS socket plate glows",
+          "scale": "object",
+          "motion": "plate pulses once, camera pushes in",
+          "transition": "cut"
+        },
+        {
+          "sentence": 2,
+          "show": "the socket plate swings open like a hatch and shows a stamped maker's plate on its back, with three plain silhouettes of founders behind it",
+          "scale": "object",
+          "motion": "hatch swings, maker's plate catches the light, silhouettes fade in",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "EMVCO",
+              "word": "emvco"
+            }
+          ],
+          "faces": {
+            "network": "shock"
+          },
+          "bubble": "Wait. That one's ours?"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
+          "claim": "BI: QRIS is based on EMVCo (Europay, Mastercard, Visa)",
+          "id": "C26"
+        },
+        {
+          "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx",
+          "claim": "QRIS compiled with ASPI using EMVCo",
+          "id": "C01"
+        }
+      ],
+      "duration_ms": {
+        "en": 10449
+      }
+    },
+    {
+      "id": "s30",
+      "role": "body",
+      "chapter": "Seventy-two million",
+      "narration": {
+        "en": "Bank Indonesia's reply was polite: it's open to working with any country, the US included.",
+        "id": "Jawaban Bank Indonesia sopan: ia terbuka bekerja sama dengan negara mana pun, termasuk AS."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the domed central bank holds its door open; a plank bridge unrolls from its steps across the ocean toward the far office",
+          "scale": "map",
+          "motion": "bridge unrolls plank by plank over the water",
+          "transition": "wipe",
+          "faces": {
+            "centralbank": "calm"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html",
+          "claim": "BI open to cooperation with any country including the US",
+          "id": "C26"
+        }
+      ],
+      "duration_ms": {
+        "en": 5851
+      }
+    },
+    {
+      "id": "s31",
+      "role": "body",
+      "chapter": "Seventy-two million",
+      "narration": {
+        "en": "To be fair to the card networks, they aren't losing the world. Visa and Mastercard still lead in Indonesian credit cards and in payments between countries.",
+        "id": "Supaya adil untuk jaringan kartu, mereka tidak sedang kehilangan dunia. Visa dan Mastercard masih memimpin kartu kredit di Indonesia dan pembayaran antarnegara."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "mood shifts to cool daylight; the card network watchtower stands tall on its hill, searchlight sweeping a globe",
+          "scale": "place",
+          "motion": "light sweeps a full circle over the globe",
+          "transition": "wipe",
+          "faces": {
+            "network": "calm"
+          },
+          "mood": "day"
+        },
+        {
+          "sentence": 2,
+          "show": "arcs of plastic cards fly between continents on the globe, each passing through the tower's beam",
+          "scale": "map",
+          "motion": "card arcs streak across, tower beam tracks them",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "CROSS-BORDER",
+              "word": "countries"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://theconversation.com/us-labels-qris-a-trade-barrier-whats-next-for-indonesias-digital-payment-system-257616",
+          "claim": "Visa/Mastercard dominant in Indonesian credit cards and cross-border payments",
+          "id": "C27"
+        }
+      ],
+      "duration_ms": {
+        "en": 8777
+      }
+    },
+    {
+      "id": "s32",
+      "role": "body",
+      "chapter": "Seventy-two million",
+      "narration": {
+        "en": "Outside a handful of countries, your QRIS app doesn't work, and your card still does.",
+        "id": "Di luar segelintir negara, aplikasi QRIS-mu tidak bisa dipakai, sementara kartumu tetap bisa."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "two panels at a café counter far from Asia: on the left your phone shows a red cross at a card terminal; on the right your card taps and gets a green tick",
+          "scale": "object",
+          "motion": "phone buzzes red, card taps green, the red panel dims",
+          "transition": "cut",
+          "count": {
+            "value": 2,
+            "as": "split"
+          },
+          "faces": {
+            "you": "neutral"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
+          "claim": "QRIS cross-border active in six countries (Sep 2026)",
+          "id": "C20"
+        }
+      ],
+      "duration_ms": {
+        "en": 4737
+      }
+    },
+    {
+      "id": "s33",
+      "role": "rehook",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "Now the second question: how does this cross borders? In August 2022, Thailand became the first country linked to QRIS, then Malaysia in 2023, then Singapore.",
+        "id": "Sekarang pertanyaan kedua: bagaimana ini menyeberang negara? Pada Agustus 2022, Thailand menjadi negara pertama yang tersambung ke QRIS, lalu Malaysia pada 2023, lalu Singapura."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the dark Asia map returns with Indonesia lit at the bottom and the rest in shadow",
+          "scale": "map",
+          "motion": "map fades up, Indonesia's islands glow",
+          "transition": "iris"
+        },
+        {
+          "sentence": 2,
+          "show": "a timeline along the bottom ticks forward; Thailand, Malaysia and Singapore light up one by one with a cable drawn to Indonesia",
+          "scale": "map",
+          "motion": "timeline marker slides, each country lights as its year is spoken",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "2022",
+              "word": "2022"
+            },
+            {
+              "text": "2023",
+              "word": "2023"
+            }
+          ],
+          "count": {
+            "value": 3,
+            "as": "timeline"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
+          "claim": "Thailand Aug 2022, Malaysia May 2023, Singapore 17 Nov 2023",
+          "id": "C19"
+        }
+      ],
+      "duration_ms": {
+        "en": 11192
+      }
+    },
+    {
+      "id": "s34",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "Japan joined in August 2025, then South Korea and China in 2026. That makes six countries.",
+        "id": "Jepang bergabung pada Agustus 2025, lalu Korea Selatan dan China pada 2026. Totalnya enam negara."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the timeline continues north: Japan lights, then South Korea and China, each with its own cable",
+          "scale": "map",
+          "motion": "cables draw north in sequence, each with a small spark on arrival",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "2025",
+              "word": "2025"
+            },
+            {
+              "text": "2026",
+              "word": "2026"
+            }
+          ],
+          "count": {
+            "value": 6,
+            "as": "timeline"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "six lit countries around Indonesia, a counter settles on six",
+          "scale": "map",
+          "motion": "camera pulls back, all six cables pulse together",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "6 COUNTRIES",
+              "word": "six"
+            }
+          ],
+          "count": {
+            "value": 6,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
+          "claim": "Japan 17 Aug 2025, South Korea 1 Apr 2026, China 30 Apr 2026",
+          "id": "C19"
+        },
+        {
+          "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
+          "claim": "Six partner countries active (Sep 2026)",
+          "id": "C20"
+        }
+      ],
+      "duration_ms": {
+        "en": 6594
+      }
+    },
+    {
+      "id": "s35",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "When a tourist from Thailand pays a Bali stall with QRIS, the money is never turned into US dollars. Most people would guess it gets converted somewhere in the middle.",
+        "id": "Saat turis dari Thailand membayar warung di Bali dengan QRIS, uangnya tidak pernah diubah ke dolar AS. Kebanyakan orang menebak uangnya dikonversi di suatu titik di tengah."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a silver baht coin on the Thai shore and a gold rupiah coin on the Bali shore, joined by one solid line across the sea; a green dollar coin sits off to the side, unused",
+          "scale": "map",
+          "motion": "solid line snaps between the two coins, the dollar coin dims",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "NO DOLLARS",
+              "word": "dollars"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "a pale dashed detour appears from the baht coin through the dollar coin to the rupiah coin, then a coral cross slashes the dollar and the detour fades",
+          "scale": "map",
+          "motion": "dashed detour draws in, dollar wobbles, cross strikes, detour fades and the solid line stays",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "THE GUESS",
+              "word": "guess"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+          "claim": "Cross-border QRIS settles in local currencies, no third-currency conversion",
+          "id": "C16"
+        }
+      ],
+      "duration_ms": {
+        "en": 9288
+      }
+    },
+    {
+      "id": "s36",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "That tourist walks up to the same noodle stall in Bali. The tourist scans the same sticker, using a Thai banking app.",
+        "id": "Turis itu mampir ke warung mi yang sama di Bali. Turis itu memindai stiker yang sama, memakai aplikasi bank Thailand."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "dusk at the Bali stall again; the tourist in a sun hat arrives and sits on the plastic stool",
+          "scale": "place",
+          "motion": "tourist walks in from the left, owner waves, steam drifts",
+          "transition": "wipe",
+          "faces": {
+            "tourist": "happy",
+            "owner": "happy"
+          },
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "the tourist's phone, in a different app colour, frames the same white stand",
+          "scale": "object",
+          "motion": "scan corners snap onto the same code as in the first shot",
+          "transition": "cut"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+          "claim": "Tourists from partner countries scan QRIS with their own app",
+          "id": "C17"
+        }
+      ],
+      "duration_ms": {
+        "en": 7384
+      }
+    },
+    {
+      "id": "s37",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "The Thai app sees that the code is Indonesian and sends the payment to Thailand's switch. That switch passes it across to Indonesia's switch, which takes it to the stall's bank, down the same road as before.",
+        "id": "Aplikasi Thailand melihat kodenya dari Indonesia dan mengirim pembayaran ke switch Thailand. Switch itu meneruskannya ke switch Indonesia, yang membawanya ke bank warung, lewat jalan yang sama seperti tadi."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the town map grows a second shore across a strait: a Thai app tower and a Thai switch station on the far side; an envelope with a silver coin stamp rolls from the tower to the Thai station",
+          "scale": "map",
+          "motion": "map extends, envelope leaves the Thai tower and enters the Thai station",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "THAI SWITCH",
+              "word": "thailand"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "a cable bridge links the two stations; the envelope crosses to the Indonesian station, turns on its turntable and rolls down the old road to the green-roofed bank",
+          "scale": "map",
+          "motion": "envelope slides across the bridge, turntable clicks, envelope rolls on",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "SAME ROAD",
+              "word": "road"
+            }
+          ],
+          "faces": {
+            "switch": "happy"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+          "claim": "Interconnection between payment switchers of the two countries",
+          "id": "C16"
+        },
+        {
+          "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx",
+          "claim": "Switching-to-switching model for cross-border QRIS",
+          "id": "C37"
+        }
+      ],
+      "duration_ms": {
+        "en": 11192
+      }
+    },
+    {
+      "id": "s38",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "Before typing a PIN, the tourist sees the price in baht. Then the baht balance goes down, and the stall still receives rupiah.",
+        "id": "Sebelum mengetik PIN, turis itu melihat harganya dalam baht. Lalu saldo baht-nya berkurang, dan warung tetap menerima rupiah."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "close on the tourist's phone: the price shows in baht with a small rupiah line underneath",
+          "scale": "object",
+          "motion": "the baht figure rolls in, the rupiah line fades in below",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "BAHT",
+              "word": "baht"
+            }
+          ],
+          "faces": {
+            "tourist": "neutral"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "two panels: silver baht coins leave the tourist's phone; gold rupiah coins land in the owner's tin",
+          "scale": "object",
+          "motion": "silver coins hop out on the left as gold coins drop in on the right, in step",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "RUPIAH",
+              "word": "rupiah"
+            }
+          ],
+          "count": {
+            "value": 2,
+            "as": "split"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+          "claim": "Exchange rate auto-converted; payer sees amount in own currency before PIN; own-currency balance debited",
+          "id": "C17"
+        }
+      ],
+      "duration_ms": {
+        "en": 8173
+      }
+    },
+    {
+      "id": "s39",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "Behind the scenes, a few appointed banks in each country swap rupiah and baht with each other directly. That final handover between banks is called settlement, and here it happens in the two local currencies.",
+        "id": "Di balik layar, beberapa bank yang ditunjuk di tiap negara saling menukar rupiah dan baht secara langsung. Serah terima terakhir antarbank itu disebut settlement, dan di sini terjadi dalam dua mata uang lokal."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "two small bank buildings on either side of the strait, each on its own dock, push crates of coins onto a ferry: gold crates from one side, silver from the other",
+          "scale": "place",
+          "motion": "crates slide onto the ferry, ferry crosses and swaps them",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "APPOINTED BANKS",
+              "word": "banks"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "the ferry docks; gold crates stack on the Indonesian side, silver on the Thai side; a lone dollar crate waits on a third pier and nobody touches it",
+          "scale": "place",
+          "motion": "crates stack with a thump, the dollar pier stays dark",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "SETTLEMENT",
+              "word": "settlement"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+          "claim": "Settlement via appointed cross-currency dealer banks in local currencies (LCT framework)",
+          "id": "C16"
+        }
+      ],
+      "duration_ms": {
+        "en": 12492
+      }
+    },
+    {
+      "id": "s40",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "That's the adapter. Two countries with different sockets, joined through their switches, each keeping its own money. It works the other way too: in Bangkok, you scan a Thai code with your Indonesian app, and your rupiah balance goes down.",
+        "id": "Itulah adaptornya. Dua negara dengan stopkontak berbeda, tersambung lewat switch masing-masing, dan masing-masing tetap memakai uangnya sendiri. Arah sebaliknya juga bisa: di Bangkok, kamu memindai kode Thailand dengan aplikasi Indonesiamu, dan saldo rupiahmu yang berkurang."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "a Thai plug and the Indonesian socket plate float apart; a travel adapter clicks in between them",
+          "scale": "object",
+          "motion": "adapter slides in, both sides click, a small spark of light",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "ADAPTER",
+              "word": "adapter"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "the adapter turns see-through: inside, two wires lead to the two switch stations, gold coins on one side, silver on the other",
+          "scale": "inside",
+          "motion": "adapter shell fades, wires light from each end to the middle",
+          "transition": "hold"
+        },
+        {
+          "sentence": 3,
+          "show": "a Bangkok street-food cart under a tangle of overhead cables; you scan its Thai code and your phone balance in rupiah ticks down",
+          "scale": "place",
+          "motion": "scan corners snap, gold coins hop out of your phone toward the cart, the cart owner gets silver",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "BANGKOK",
+              "word": "bangkok"
+            }
+          ],
+          "faces": {
+            "you": "happy"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+          "claim": "Switch-to-switch interconnection, local currency on each side",
+          "id": "C16"
+        },
+        {
+          "url": "https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris",
+          "claim": "Indonesians can pay with QRIS in Thailand since 2022",
+          "id": "C19"
+        },
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+          "claim": "Own-currency balance debited",
+          "id": "C17"
+        }
+      ],
+      "duration_ms": {
+        "en": 14582
+      }
+    },
+    {
+      "id": "s41",
+      "role": "rehook",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "And money is mostly flowing in. Up to July 2026, visitors spent five point nine trillion rupiah through QRIS in Indonesia, more than three times what Indonesians spent with it abroad. Most of those visitors come from Malaysia and Singapore, paying from ringgit and Singapore dollar accounts.",
+        "id": "Dan uangnya kebanyakan mengalir masuk. Sampai Juli 2026, pengunjung asing membelanjakan lima koma sembilan triliun rupiah lewat QRIS di Indonesia, lebih dari tiga kali lipat belanja orang Indonesia dengan QRIS di luar negeri. Kebanyakan pengunjung itu datang dari Malaysia dan Singapura, membayar dari rekening ringgit dan dolar Singapura."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "on the Asia map, thick gold arrows flow into Indonesia from the partner countries while thin arrows flow out",
+          "scale": "map",
+          "motion": "inbound arrows thicken, outbound arrows stay thin",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "INBOUND",
+              "word": "flowing"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "two panels: a tall stack of gold coins for visitors' spending and a stack less than a third its height for Indonesians abroad",
+          "scale": "object",
+          "motion": "both stacks grow, the left one keeps going",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "Rp5.9T",
+              "word": "trillion"
+            },
+            {
+              "text": "3X",
+              "word": "three"
+            }
+          ],
+          "count": {
+            "value": 5.9,
+            "as": "split"
+          }
+        },
+        {
+          "sentence": 3,
+          "show": "on the map the two thickest gold arrows glow brighter, from Malaysia and Singapore, each carrying its own coin colour that turns gold on landing",
+          "scale": "map",
+          "motion": "two arrows pulse, coins change colour as they touch Indonesia",
+          "transition": "cut",
+          "labels": [
+            {
+              "text": "MALAYSIA",
+              "word": "malaysia"
+            },
+            {
+              "text": "SINGAPORE",
+              "word": "singapore"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://katadata.co.id/finansial/keuangan/6ab45ea47d41e/turis-asing-dominasi-transaksi-qris-antarnegara-catat-17-8-juta-transaksi",
+          "claim": "Up to Jul 2026: inbound Rp5.9T, outbound Rp1.73T",
+          "id": "C22"
+        },
+        {
+          "url": "https://www.cnbcindonesia.com/market/20260619104014-17-743982/transaksi-qris-turis-asing-capai-rp43-t-malaysia-singapura-terbanyak",
+          "claim": "Malaysia and Singapore lead inbound",
+          "id": "C23"
+        }
+      ],
+      "duration_ms": {
+        "en": 18808
+      }
+    },
+    {
+      "id": "s42",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "It's still small. When Japan joined, only thirty-five shops there accepted it, and only Indonesians could pay that way, not Japanese visitors to Indonesia.",
+        "id": "Skalanya masih kecil. Saat Jepang bergabung, hanya tiga puluh lima toko di sana yang menerimanya, dan hanya orang Indonesia yang bisa membayar dengan cara itu, bukan turis Jepang di Indonesia."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "honest tone: cool light; the Asia map dims and the six lit cables look thin against the dark continent",
+          "scale": "map",
+          "motion": "camera pulls back until the cables become thin threads",
+          "transition": "cut",
+          "mood": "cool"
+        },
+        {
+          "sentence": 2,
+          "show": "a Japanese shopping street at night where only a few shop signs light up, then a one-way arrow from Indonesia to Japan with a closed gate on the return lane",
+          "scale": "place",
+          "motion": "a few signs flick on while many stay dark; arrow flows north, return gate swings shut",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "35 SHOPS",
+              "word": "thirty-five"
+            },
+            {
+              "text": "ONE WAY",
+              "word": "only"
+            }
+          ],
+          "count": {
+            "value": 35,
+            "as": "items"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thestar.com.my/business/business-news/2025/08/21/qris-launches-in-japan-as-trial-begins-for-expansion-to-china",
+          "claim": "Japan launch: 35 merchants via JPQR Global; initially one-way",
+          "id": "C21"
+        }
+      ],
+      "duration_ms": {
+        "en": 9706
+      }
+    },
+    {
+      "id": "s43",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "Next, Bank Indonesia is in talks with India, Saudi Arabia, Vietnam and Australia. In Saudi Arabia, the idea is to let Indonesian pilgrims on hajj and umrah pay with it.",
+        "id": "Berikutnya, Bank Indonesia sedang berunding dengan India, Arab Saudi, Vietnam, dan Australia. Di Arab Saudi, idenya agar jemaah haji dan umrah Indonesia bisa membayar dengannya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the map widens: India, Saudi Arabia, Vietnam and Australia appear with dashed outlines and dashed cables",
+          "scale": "map",
+          "motion": "dashed cables draw out from Indonesia one by one",
+          "transition": "wipe",
+          "labels": [
+            {
+              "text": "IN TALKS",
+              "word": "talks"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "a generic market street with awnings in warm sun; pilgrims in plain white clothes scan a white stand at a date-fruit stall",
+          "scale": "place",
+          "motion": "a pilgrim's phone scans, the stall owner nods",
+          "transition": "cut"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
+          "claim": "BI exploring India, Saudi Arabia, Vietnam, Australia",
+          "id": "C20"
+        },
+        {
+          "url": "https://www.arabnews.com/node/2652151/amp",
+          "claim": "Saudi talks tied to Indonesian hajj and umrah pilgrims",
+          "id": "C35"
+        }
+      ],
+      "duration_ms": {
+        "en": 11749
+      }
+    },
+    {
+      "id": "s44",
+      "role": "body",
+      "chapter": "Crossing borders",
+      "narration": {
+        "en": "And six central banks, Indonesia's among them, are building a shared hub for their instant payment systems. It's still being built, but one connection there could reach several countries at once.",
+        "id": "Lalu enam bank sentral, termasuk Indonesia, sedang membangun satu hub bersama untuk sistem pembayaran instan mereka. Hub itu masih dibangun, tapi satu sambungan ke sana bisa menjangkau beberapa negara sekaligus."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "in the sea between six countries, a round hub station rises inside scaffolding, cranes swinging",
+          "scale": "map",
+          "motion": "hub rises, scaffolding bolts click on, cranes turn",
+          "transition": "push",
+          "labels": [
+            {
+              "text": "SHARED HUB",
+              "word": "hub"
+            }
+          ]
+        },
+        {
+          "sentence": 2,
+          "show": "one cable runs from Indonesia to the hub, and five more cables light up from the hub to the other countries",
+          "scale": "map",
+          "motion": "single cable lights, then the hub fans the light out to five cables",
+          "transition": "hold"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bis.org/project/nexus",
+          "claim": "Central banks of India, Indonesia, Malaysia, Philippines, Singapore, Thailand set up Nexus Global Payments",
+          "id": "C29"
+        },
+        {
+          "url": "https://www.bis.org/project/nexus",
+          "claim": "Live date not confirmed",
+          "id": "C30"
+        }
+      ],
+      "duration_ms": {
+        "en": 10403
+      }
+    },
+    {
+      "id": "s45",
+      "role": "payoff",
+      "chapter": "Back at the stall",
+      "narration": {
+        "en": "So how powerful is QRIS? At home, it put digital payments in fifty-one million shops for the price of a printed square.",
+        "id": "Jadi seberapa kuat QRIS? Di dalam negeri, ia membawa pembayaran digital ke lima puluh satu juta toko dengan modal selembar kotak cetak."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "back at the Bali stall at dusk, the same white stand on the counter, steam rising",
+          "scale": "object",
+          "motion": "camera drifts in to the stand, bunting sways",
+          "transition": "iris",
+          "mood": "dusk"
+        },
+        {
+          "sentence": 2,
+          "show": "the camera lifts away until thousands of stall lights spread across the islands, each one a small white square",
+          "scale": "map",
+          "motion": "lights bloom outward from Bali as the camera rises",
+          "transition": "hold",
+          "labels": [
+            {
+              "text": "51M SHOPS",
+              "word": "shops"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober",
+          "claim": "51.31M merchants",
+          "id": "C09"
+        },
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "claim": "Static QRIS sticker is free",
+          "id": "C05"
+        }
+      ],
+      "duration_ms": {
+        "en": 7477
+      }
+    },
+    {
+      "id": "s46",
+      "role": "payoff",
+      "chapter": "Back at the stall",
+      "narration": {
+        "en": "Abroad, it's an adapter, and still a small one next to Visa. Each country plugged in gives the next tourist one more place to pay.",
+        "id": "Di luar negeri, ia sebuah adaptor, dan masih kecil di samping Visa. Setiap negara yang tersambung memberi turis berikutnya satu tempat lagi untuk membayar."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the card network watchtower on its hill beside the small travel adapter on the beach, very different in size",
+          "scale": "place",
+          "motion": "tower's beam sweeps over, adapter blinks its small light",
+          "transition": "cut",
+          "faces": {
+            "network": "calm"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "on the Asia map the adapter clicks into one more socket and a new country lights up",
+          "scale": "map",
+          "motion": "adapter plugs in, the dashed outline of a new country turns solid",
+          "transition": "hold"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://theconversation.com/us-labels-qris-a-trade-barrier-whats-next-for-indonesias-digital-payment-system-257616",
+          "claim": "Card networks still dominant cross-border",
+          "id": "C27"
+        },
+        {
+          "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
+          "claim": "QRIS links expanding country by country",
+          "id": "C20"
+        }
+      ],
+      "duration_ms": {
+        "en": 7663
+      }
+    },
+    {
+      "id": "s47",
+      "role": "payoff",
+      "chapter": "Back at the stall",
+      "narration": {
+        "en": "The stall in Bali still has the same paper square on its counter. Now tourists pay it from their own apps, and the owner just hears the chime.",
+        "id": "Warung di Bali itu masih memasang kotak kertas yang sama di mejanya. Kini turis membayarnya dari aplikasi mereka sendiri, dan pemiliknya cukup mendengar bunyi notifikasi."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "the same stall, same angle as the opening shot; you and the tourist sit side by side with bowls",
+          "scale": "object",
+          "motion": "both lift phones toward the stand at once",
+          "transition": "cut",
+          "faces": {
+            "you": "happy",
+            "tourist": "happy"
+          }
+        },
+        {
+          "sentence": 2,
+          "show": "the owner's phone chimes twice; gold coins drop into the tin, all the same colour",
+          "scale": "object",
+          "motion": "two chimes, coins drop, the owner smiles and keeps cooking",
+          "transition": "hold",
+          "faces": {
+            "owner": "happy"
+          },
+          "bubble": "Same sticker. New customers."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+          "claim": "Tourists from partner countries pay QRIS merchants with their own apps",
+          "id": "C17"
+        },
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
+          "claim": "Merchant receives rupiah",
+          "id": "C16"
+        }
+      ],
+      "duration_ms": {
+        "en": 8220
+      }
+    },
+    {
+      "id": "s48",
+      "role": "cta",
+      "chapter": "Back at the stall",
+      "narration": {
+        "en": "Next, we follow a bank wire across borders the old way, and see what it actually sends.",
+        "id": "Berikutnya, kita ikuti transfer bank antarnegara dengan cara lama, dan lihat apa yang sebenarnya dikirimnya."
+      },
+      "shots": [
+        {
+          "sentence": 1,
+          "show": "an old-style envelope leaves the Bali stall and drifts off the edge of the map toward a far, old stone bank",
+          "scale": "map",
+          "motion": "envelope floats away, camera follows, the map edge curls",
+          "transition": "wipe"
+        }
+      ],
+      "duration_ms": {
+        "en": 5108
+      }
     }
-   ]
+  ],
+  "shorts_cuts": [
+    {
+      "name": "S1-qris-isnt-an-app",
+      "scene_ids": [
+        "s08",
+        "s09"
+      ],
+      "hook_override": "QRIS isn't an app. It's a rulebook.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "QRIS ISN'T",
+            "size": 150,
+            "color": "#ffffff"
+          },
+          {
+            "text": "AN APP",
+            "size": 170,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/04-shots.tsx",
+          "scene": "thumbS1"
+        }
+      }
+    },
+    {
+      "name": "S2-no-dollars-in-between",
+      "scene_ids": [
+        "s35",
+        "s37",
+        "s39"
+      ],
+      "hook_override": "A Thai tourist pays a Bali stall. No dollars involved.",
+      "thumbnail": {
+        "lines": [
+          {
+            "text": "NO DOLLARS",
+            "size": 150,
+            "color": "#ffffff"
+          },
+          {
+            "text": "IN BETWEEN",
+            "size": 140,
+            "color": "#ffd23f"
+          }
+        ],
+        "stage": {
+          "engine": "r3",
+          "module": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/04-shots.tsx",
+          "scene": "thumbS2"
+        }
+      }
+    }
+  ],
+  "anti_slop": {
+    "text_score_en": 40,
+    "text_score_id": 39
   },
-  {
-   "id": "s46",
-   "role": "payoff",
-   "chapter": "Back at the stall",
-   "narration": {
-    "en": "Abroad, it's an adapter, and still a small one next to Visa. Each country plugged in gives the next tourist one more place to pay.",
-    "id": "Di luar negeri, ia sebuah adaptor, dan masih kecil di samping Visa. Setiap negara yang tersambung memberi turis berikutnya satu tempat lagi untuk membayar."
-   },
-   "shots": [
+  "thumbnails": [
     {
-     "sentence": 1,
-     "show": "the card network watchtower on its hill beside the small travel adapter on the beach, very different in size",
-     "scale": "place",
-     "motion": "tower's beam sweeps over, adapter blinks its small light",
-     "transition": "cut",
-     "faces": {
-      "network": "calm"
-     }
+      "lines": [
+        {
+          "text": "ONE STICKER.",
+          "color": "#ffffff",
+          "size": 150
+        },
+        {
+          "text": "EVERY APP.",
+          "color": "#ffd23f",
+          "size": 170
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/04-shots.tsx",
+        "scene": "thumbA"
+      }
     },
     {
-     "sentence": 2,
-     "show": "on the Asia map the adapter clicks into one more socket and a new country lights up",
-     "scale": "map",
-     "motion": "adapter plugs in, the dashed outline of a new country turns solid",
-     "transition": "hold"
+      "lines": [
+        {
+          "text": "NO DOLLARS",
+          "color": "#ffffff",
+          "size": 160
+        },
+        {
+          "text": "NEEDED",
+          "color": "#ffd23f",
+          "size": 210
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/04-shots.tsx",
+        "scene": "thumbB"
+      }
     }
-   ],
-   "sources": [
-    {
-     "url": "https://theconversation.com/us-labels-qris-a-trade-barrier-whats-next-for-indonesias-digital-payment-system-257616",
-     "claim": "Card networks still dominant cross-border",
-     "id": "C27"
-    },
-    {
-     "url": "https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia",
-     "claim": "QRIS links expanding country by country",
-     "id": "C20"
-    }
-   ]
-  },
-  {
-   "id": "s47",
-   "role": "payoff",
-   "chapter": "Back at the stall",
-   "narration": {
-    "en": "The stall in Bali still has the same paper square on its counter. Now tourists pay it from their own apps, and the owner just hears the chime.",
-    "id": "Warung di Bali itu masih memasang kotak kertas yang sama di mejanya. Kini turis membayarnya dari aplikasi mereka sendiri, dan pemiliknya cukup mendengar bunyi notifikasi."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "the same stall, same angle as the opening shot; you and the tourist sit side by side with bowls",
-     "scale": "object",
-     "motion": "both lift phones toward the stand at once",
-     "transition": "cut",
-     "faces": {
-      "you": "happy",
-      "tourist": "happy"
-     }
-    },
-    {
-     "sentence": 2,
-     "show": "the owner's phone chimes twice; gold coins drop into the tin, all the same colour",
-     "scale": "object",
-     "motion": "two chimes, coins drop, the owner smiles and keeps cooking",
-     "transition": "hold",
-     "faces": {
-      "owner": "happy"
-     },
-     "bubble": "Same sticker. New customers."
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
-     "claim": "Tourists from partner countries pay QRIS merchants with their own apps",
-     "id": "C17"
-    },
-    {
-     "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx",
-     "claim": "Merchant receives rupiah",
-     "id": "C16"
-    }
-   ]
-  },
-  {
-   "id": "s48",
-   "role": "cta",
-   "chapter": "Back at the stall",
-   "narration": {
-    "en": "Next, we follow a bank wire across borders the old way, and see what it actually sends.",
-    "id": "Berikutnya, kita ikuti transfer bank antarnegara dengan cara lama, dan lihat apa yang sebenarnya dikirimnya."
-   },
-   "shots": [
-    {
-     "sentence": 1,
-     "show": "an old-style envelope leaves the Bali stall and drifts off the edge of the map toward a far, old stone bank",
-     "scale": "map",
-     "motion": "envelope floats away, camera follows, the map edge curls",
-     "transition": "wipe"
-    }
-   ]
-  }
- ],
- "shorts_cuts": [
-  {
-   "name": "S1-qris-isnt-an-app",
-   "scene_ids": [
-    "s08",
-    "s09"
-   ],
-   "hook_override": "QRIS isn't an app. It's a rulebook.",
-   "thumbnail": {
-    "lines": [
-     {
-      "text": "QRIS ISN'T",
-      "size": 150,
-      "color": "#ffffff"
-     },
-     {
-      "text": "AN APP",
-      "size": 170,
-      "color": "#ffd23f"
-     }
-    ],
-    "stage": {
-     "engine": "r3",
-     "module": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/04-shots.tsx",
-     "scene": "thumbS1"
-    }
-   }
-  },
-  {
-   "name": "S2-no-dollars-in-between",
-   "scene_ids": [
-    "s35",
-    "s37",
-    "s39"
-   ],
-   "hook_override": "A Thai tourist pays a Bali stall. No dollars involved.",
-   "thumbnail": {
-    "lines": [
-     {
-      "text": "NO DOLLARS",
-      "size": 150,
-      "color": "#ffffff"
-     },
-     {
-      "text": "IN BETWEEN",
-      "size": 140,
-      "color": "#ffd23f"
-     }
-    ],
-    "stage": {
-     "engine": "r3",
-     "module": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/04-shots.tsx",
-     "scene": "thumbS2"
-    }
-   }
-  }
- ],
- "anti_slop": {
-  "text_score_en": 40,
-  "text_score_id": 39
- },
- "thumbnails": [
-  {
-   "lines": [
-    {
-     "text": "ONE STICKER.",
-     "color": "#ffffff",
-     "size": 150
-    },
-    {
-     "text": "EVERY APP.",
-     "color": "#ffd23f",
-     "size": 170
-    }
-   ],
-   "stage": {
-    "engine": "r3",
-    "module": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/04-shots.tsx",
-    "scene": "thumbA"
-   }
-  },
-  {
-   "lines": [
-    {
-     "text": "NO DOLLARS",
-     "color": "#ffffff",
-     "size": 160
-    },
-    {
-     "text": "NEEDED",
-     "color": "#ffd23f",
-     "size": 210
-    }
-   ],
-   "stage": {
-    "engine": "r3",
-    "module": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/04-shots.tsx",
-    "scene": "thumbB"
-   }
-  }
- ],
- "title_chosen": "Indonesia's QRIS: One Sticker, 72 Million Users",
- "thumbnail_chosen": "ONE STICKER. EVERY APP.",
- "approved": "2026-11-27",
- "tags": [
-  "QRIS",
-  "Indonesia",
-  "QR payments",
-  "how payments work",
-  "Bank Indonesia",
-  "cross-border payments",
-  "Southeast Asia"
- ]
+  ],
+  "title_chosen": "Indonesia's QRIS: One Sticker, 72 Million Users",
+  "thumbnail_chosen": "ONE STICKER. EVERY APP.",
+  "approved": "2026-11-27",
+  "tags": [
+    "QRIS",
+    "Indonesia",
+    "QR payments",
+    "how payments work",
+    "Bank Indonesia",
+    "cross-border payments",
+    "Southeast Asia"
+  ]
 }

@@ -8,10 +8,10 @@ channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "005: produksi (TTS, caption, 04-shots.tsx, still, render) lewat pipeline; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
+langkah_berikutnya: "005: kreator menilai gaya scene uji (s01, s10, s12, thumbnail A), lalu 45 scene sisanya, gate still, render; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: "002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
+menunggu_keputusan: "005: setujui gaya scene uji (produksi/render/T01/005: klip s01-s10-s12, stills, Thumbnail-A) sebelum scene lain digambar; 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -131,3 +131,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Brief, 03-script.json (48 scene, 99 shot, R3), 03-visual.json versi 2, dan 03-naskah.md ditulis. EN 1.294 kata, ID 1.171 kata, estimasi ±8:28 pada 167 kpm. Anti-slop EN 40/50, ID 39/50; checklist cerita 9/9; build-visual --check 0 temuan V (04-shots.tsx belum, tahap produksi). Empat pemeran usulan belum di STYLE.md, jadi faces mereka belum ditulis. Proses dijeda di gate persetujuan naskah atas permintaan kreator (ganti model).
 - 2026-11-27: Branch di-rebase ke main. Naskah 005 disesuaikan dengan commit baru: aturan uji Short (s08 dibuka dengan subjeknya, s35 jawaban dulu, s36 "That tourist"), tiga judul dipendekkan setelah lint kemasan (pasangan terbaik 100/100), riset outlier lewat API ditambahkan (01-outlier-youtube.md, 39 outlier; topik biaya UPI dan QRIS palsu masuk backlog). EN 1.299 kata, estimasi ±8:29. build-visual --check tanpa temuan V.
 - 2026-11-27: Kreator menyetujui naskah 005. Status produksi. Pemeran baru dicatat di produksi/STYLE.md 9.2 dan CAST T01 di scripts/produksi/r3.mjs (registri saja, mesin tidak diubah); faces mereka ditulis di shots. Klip tangan kreator s01 tetap opsional.
+- 2026-11-27: Produksi 005 dimulai. Audio EN (7,48 menit tanpa jeda) dan caption EN dibuat; teks caption sama dengan naskah. Scene uji gaya R3 2.5D digambar (s01, s10, s12, thumbnail A) dan klip pendek dirender; 45 scene lain, thumbnail B dan 2 thumbnail Short belum digambar. Menunggu persetujuan gaya dari kreator.

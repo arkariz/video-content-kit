@@ -1,0 +1,21 @@
+{
+  "footage": [],
+  "renders": [
+    {
+      "file": "render/T01/005/Thumbnail-A.png",
+      "comp": "Thumbnail"
+    },
+    {
+      "file": "render/T01/005/Thumbnail-B.png",
+      "comp": "Thumbnail"
+    },
+    {
+      "file": "render/T01/005/Thumbnail-Short-S1-qris-isnt-an-app.png",
+      "comp": "ThumbnailShort"
+    },
+    {
+      "file": "render/T01/005/Thumbnail-Short-S2-no-dollars-in-between.png",
+      "comp": "ThumbnailShort"
+    }
+  ]
+}

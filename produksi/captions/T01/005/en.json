@@ -1,0 +1,6593 @@
+{
+  "s01": [
+    {
+      "text": "You",
+      "startMs": 120,
+      "endMs": 200
+    },
+    {
+      "text": "scan",
+      "startMs": 280,
+      "endMs": 500
+    },
+    {
+      "text": "a",
+      "startMs": 540,
+      "endMs": 580
+    },
+    {
+      "text": "paper",
+      "startMs": 640,
+      "endMs": 860
+    },
+    {
+      "text": "square",
+      "startMs": 960,
+      "endMs": 1220
+    },
+    {
+      "text": "at",
+      "startMs": 1240,
+      "endMs": 1300
+    },
+    {
+      "text": "a",
+      "startMs": 1360,
+      "endMs": 1400
+    },
+    {
+      "text": "noodle",
+      "startMs": 1440,
+      "endMs": 1640
+    },
+    {
+      "text": "stall",
+      "startMs": 1740,
+      "endMs": 1940
+    },
+    {
+      "text": "in",
+      "startMs": 1980,
+      "endMs": 2060
+    },
+    {
+      "text": "Bali,",
+      "startMs": 2140,
+      "endMs": 2480
+    },
+    {
+      "text": "and",
+      "startMs": 3020,
+      "endMs": 3120
+    },
+    {
+      "text": "your",
+      "startMs": 3180,
+      "endMs": 3300
+    },
+    {
+      "text": "bank",
+      "startMs": 3380,
+      "endMs": 3600
+    },
+    {
+      "text": "app",
+      "startMs": 3640,
+      "endMs": 3780
+    },
+    {
+      "text": "has",
+      "startMs": 3820,
+      "endMs": 3940
+    },
+    {
+      "text": "never",
+      "startMs": 4000,
+      "endMs": 4200
+    },
+    {
+      "text": "met",
+      "startMs": 4240,
+      "endMs": 4380
+    },
+    {
+      "text": "this",
+      "startMs": 4420,
+      "endMs": 4540
+    },
+    {
+      "text": "stall.",
+      "startMs": 4600,
+      "endMs": 4900
+    },
+    {
+      "text": "Two",
+      "startMs": 5700,
+      "endMs": 5820
+    },
+    {
+      "text": "seconds",
+      "startMs": 5900,
+      "endMs": 6200
+    },
+    {
+      "text": "later,",
+      "startMs": 6280,
+      "endMs": 6480
+    },
+    {
+      "text": "the",
+      "startMs": 6560,
+      "endMs": 6640
+    },
+    {
+      "text": "noodles",
+      "startMs": 6700,
+      "endMs": 6980
+    },
+    {
+      "text": "are",
+      "startMs": 7020,
+      "endMs": 7120
+    },
+    {
+      "text": "paid",
+      "startMs": 7160,
+      "endMs": 7380
+    },
+    {
+      "text": "for.",
+      "startMs": 7440,
+      "endMs": 7640
+    }
+  ],
+  "s02": [
+    {
+      "text": "That",
+      "startMs": 100,
+      "endMs": 421
+    },
+    {
+      "text": "square",
+      "startMs": 421,
+      "endMs": 871
+    },
+    {
+      "text": "is",
+      "startMs": 871,
+      "endMs": 1064
+    },
+    {
+      "text": "called",
+      "startMs": 1064,
+      "endMs": 1514
+    },
+    {
+      "text": "QRIS,",
+      "startMs": 1514,
+      "endMs": 1899
+    },
+    {
+      "text": "and",
+      "startMs": 1899,
+      "endMs": 2156
+    },
+    {
+      "text": "almost",
+      "startMs": 2156,
+      "endMs": 2606
+    },
+    {
+      "text": "seventy-two",
+      "startMs": 2606,
+      "endMs": 3377
+    },
+    {
+      "text": "million",
+      "startMs": 3377,
+      "endMs": 3891
+    },
+    {
+      "text": "people",
+      "startMs": 3891,
+      "endMs": 4341
+    },
+    {
+      "text": "in",
+      "startMs": 4341,
+      "endMs": 4534
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 4534,
+      "endMs": 5176
+    },
+    {
+      "text": "pay",
+      "startMs": 5176,
+      "endMs": 5433
+    },
+    {
+      "text": "with",
+      "startMs": 5433,
+      "endMs": 5754
+    },
+    {
+      "text": "it.",
+      "startMs": 5754,
+      "endMs": 6011
+    },
+    {
+      "text": "Fifty-one",
+      "startMs": 6011,
+      "endMs": 6653
+    },
+    {
+      "text": "million",
+      "startMs": 6653,
+      "endMs": 7167
+    },
+    {
+      "text": "shops",
+      "startMs": 7167,
+      "endMs": 7552
+    },
+    {
+      "text": "accept",
+      "startMs": 7552,
+      "endMs": 8002
+    },
+    {
+      "text": "it.",
+      "startMs": 8002,
+      "endMs": 8259
+    },
+    {
+      "text": "In",
+      "startMs": 8259,
+      "endMs": 8452
+    },
+    {
+      "text": "October,",
+      "startMs": 8452,
+      "endMs": 9030
+    },
+    {
+      "text": "transactions",
+      "startMs": 9030,
+      "endMs": 9865
+    },
+    {
+      "text": "were",
+      "startMs": 9865,
+      "endMs": 10186
+    },
+    {
+      "text": "up",
+      "startMs": 10186,
+      "endMs": 10379
+    },
+    {
+      "text": "seventy-one",
+      "startMs": 10379,
+      "endMs": 11150
+    },
+    {
+      "text": "percent",
+      "startMs": 11150,
+      "endMs": 11664
+    },
+    {
+      "text": "on",
+      "startMs": 11664,
+      "endMs": 11857
+    },
+    {
+      "text": "a",
+      "startMs": 11857,
+      "endMs": 11985
+    },
+    {
+      "text": "year",
+      "startMs": 11985,
+      "endMs": 12306
+    },
+    {
+      "text": "earlier.",
+      "startMs": 12306,
+      "endMs": 12880
+    }
+  ],
+  "s03": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 220
+    },
+    {
+      "text": "how",
+      "startMs": 260,
+      "endMs": 380
+    },
+    {
+      "text": "does",
+      "startMs": 400,
+      "endMs": 540
+    },
+    {
+      "text": "one",
+      "startMs": 600,
+      "endMs": 740
+    },
+    {
+      "text": "sticker",
+      "startMs": 880,
+      "endMs": 1160
+    },
+    {
+      "text": "work",
+      "startMs": 1280,
+      "endMs": 1480
+    },
+    {
+      "text": "with",
+      "startMs": 1500,
+      "endMs": 1660
+    },
+    {
+      "text": "every",
+      "startMs": 1720,
+      "endMs": 1940
+    },
+    {
+      "text": "app?",
+      "startMs": 2000,
+      "endMs": 2240
+    },
+    {
+      "text": "And",
+      "startMs": 2800,
+      "endMs": 2880
+    },
+    {
+      "text": "how",
+      "startMs": 2920,
+      "endMs": 3020
+    },
+    {
+      "text": "did",
+      "startMs": 3040,
+      "endMs": 3180
+    },
+    {
+      "text": "paying",
+      "startMs": 3240,
+      "endMs": 3440
+    },
+    {
+      "text": "this",
+      "startMs": 3480,
+      "endMs": 3620
+    },
+    {
+      "text": "way",
+      "startMs": 3660,
+      "endMs": 3800
+    },
+    {
+      "text": "start",
+      "startMs": 3860,
+      "endMs": 4040
+    },
+    {
+      "text": "working",
+      "startMs": 4080,
+      "endMs": 4320
+    },
+    {
+      "text": "in",
+      "startMs": 4360,
+      "endMs": 4460
+    },
+    {
+      "text": "Bangkok,",
+      "startMs": 4540,
+      "endMs": 5000
+    },
+    {
+      "text": "Tokyo,",
+      "startMs": 5100,
+      "endMs": 5420
+    },
+    {
+      "text": "and",
+      "startMs": 5480,
+      "endMs": 5540
+    },
+    {
+      "text": "Seoul?",
+      "startMs": 5640,
+      "endMs": 5860
+    }
+  ],
+  "s04": [
+    {
+      "text": "Go",
+      "startMs": 100,
+      "endMs": 278
+    },
+    {
+      "text": "back",
+      "startMs": 278,
+      "endMs": 574
+    },
+    {
+      "text": "to",
+      "startMs": 574,
+      "endMs": 752
+    },
+    {
+      "text": "2019.",
+      "startMs": 752,
+      "endMs": 1108
+    },
+    {
+      "text": "Bank",
+      "startMs": 1108,
+      "endMs": 1404
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 1404,
+      "endMs": 1997
+    },
+    {
+      "text": "counted",
+      "startMs": 1997,
+      "endMs": 2471
+    },
+    {
+      "text": "twenty-six",
+      "startMs": 2471,
+      "endMs": 3123
+    },
+    {
+      "text": "companies",
+      "startMs": 3123,
+      "endMs": 3716
+    },
+    {
+      "text": "running",
+      "startMs": 3716,
+      "endMs": 4190
+    },
+    {
+      "text": "QR",
+      "startMs": 4190,
+      "endMs": 4368
+    },
+    {
+      "text": "payments,",
+      "startMs": 4368,
+      "endMs": 4961
+    },
+    {
+      "text": "each",
+      "startMs": 4961,
+      "endMs": 5257
+    },
+    {
+      "text": "with",
+      "startMs": 5257,
+      "endMs": 5553
+    },
+    {
+      "text": "its",
+      "startMs": 5553,
+      "endMs": 5790
+    },
+    {
+      "text": "own",
+      "startMs": 5790,
+      "endMs": 6027
+    },
+    {
+      "text": "format.",
+      "startMs": 6027,
+      "endMs": 6500
+    }
+  ],
+  "s05": [
+    {
+      "text": "A",
+      "startMs": 80,
+      "endMs": 140
+    },
+    {
+      "text": "shop",
+      "startMs": 180,
+      "endMs": 400
+    },
+    {
+      "text": "that",
+      "startMs": 440,
+      "endMs": 560
+    },
+    {
+      "text": "wanted",
+      "startMs": 620,
+      "endMs": 920
+    },
+    {
+      "text": "every",
+      "startMs": 980,
+      "endMs": 1160
+    },
+    {
+      "text": "customer",
+      "startMs": 1260,
+      "endMs": 1640
+    },
+    {
+      "text": "had",
+      "startMs": 1700,
+      "endMs": 1800
+    },
+    {
+      "text": "to",
+      "startMs": 1840,
+      "endMs": 1920
+    },
+    {
+      "text": "put",
+      "startMs": 1960,
+      "endMs": 2060
+    },
+    {
+      "text": "up",
+      "startMs": 2100,
+      "endMs": 2180
+    },
+    {
+      "text": "a",
+      "startMs": 2220,
+      "endMs": 2260
+    },
+    {
+      "text": "code",
+      "startMs": 2340,
+      "endMs": 2600
+    },
+    {
+      "text": "for",
+      "startMs": 2640,
+      "endMs": 2760
+    },
+    {
+      "text": "each",
+      "startMs": 2820,
+      "endMs": 3000
+    },
+    {
+      "text": "one.",
+      "startMs": 3120,
+      "endMs": 3300
+    },
+    {
+      "text": "Scan",
+      "startMs": 4260,
+      "endMs": 4480
+    },
+    {
+      "text": "with",
+      "startMs": 4520,
+      "endMs": 4600
+    },
+    {
+      "text": "the",
+      "startMs": 4640,
+      "endMs": 4700
+    },
+    {
+      "text": "wrong",
+      "startMs": 4740,
+      "endMs": 5020
+    },
+    {
+      "text": "app,",
+      "startMs": 5100,
+      "endMs": 5300
+    },
+    {
+      "text": "and",
+      "startMs": 5660,
+      "endMs": 5740
+    },
+    {
+      "text": "the",
+      "startMs": 5760,
+      "endMs": 5840
+    },
+    {
+      "text": "code",
+      "startMs": 5900,
+      "endMs": 6100
+    },
+    {
+      "text": "meant",
+      "startMs": 6160,
+      "endMs": 6320
+    },
+    {
+      "text": "nothing.",
+      "startMs": 6360,
+      "endMs": 6700
+    }
+  ],
+  "s06": [
+    {
+      "text": "Think",
+      "startMs": 80,
+      "endMs": 260
+    },
+    {
+      "text": "of",
+      "startMs": 300,
+      "endMs": 420
+    },
+    {
+      "text": "each",
+      "startMs": 480,
+      "endMs": 700
+    },
+    {
+      "text": "app",
+      "startMs": 760,
+      "endMs": 920
+    },
+    {
+      "text": "as",
+      "startMs": 960,
+      "endMs": 1020
+    },
+    {
+      "text": "a",
+      "startMs": 1080,
+      "endMs": 1120
+    },
+    {
+      "text": "plug",
+      "startMs": 1180,
+      "endMs": 1480
+    },
+    {
+      "text": "and",
+      "startMs": 1920,
+      "endMs": 2060
+    },
+    {
+      "text": "each",
+      "startMs": 2120,
+      "endMs": 2280
+    },
+    {
+      "text": "shop's",
+      "startMs": 2340,
+      "endMs": 2640
+    },
+    {
+      "text": "code",
+      "startMs": 2700,
+      "endMs": 3020
+    },
+    {
+      "text": "as",
+      "startMs": 3080,
+      "endMs": 3160
+    },
+    {
+      "text": "a",
+      "startMs": 3200,
+      "endMs": 3240
+    },
+    {
+      "text": "socket.",
+      "startMs": 3300,
+      "endMs": 3700
+    },
+    {
+      "text": "Every",
+      "startMs": 4600,
+      "endMs": 4800
+    },
+    {
+      "text": "app",
+      "startMs": 4940,
+      "endMs": 5100
+    },
+    {
+      "text": "had",
+      "startMs": 5160,
+      "endMs": 5240
+    },
+    {
+      "text": "its",
+      "startMs": 5280,
+      "endMs": 5440
+    },
+    {
+      "text": "own",
+      "startMs": 5520,
+      "endMs": 5700
+    },
+    {
+      "text": "plug",
+      "startMs": 5740,
+      "endMs": 5940
+    },
+    {
+      "text": "shape,",
+      "startMs": 6000,
+      "endMs": 6220
+    },
+    {
+      "text": "so",
+      "startMs": 6560,
+      "endMs": 6680
+    },
+    {
+      "text": "every",
+      "startMs": 6740,
+      "endMs": 6900
+    },
+    {
+      "text": "shop",
+      "startMs": 6960,
+      "endMs": 7180
+    },
+    {
+      "text": "needed",
+      "startMs": 7240,
+      "endMs": 7420
+    },
+    {
+      "text": "a",
+      "startMs": 7460,
+      "endMs": 7540
+    },
+    {
+      "text": "wall",
+      "startMs": 7600,
+      "endMs": 7800
+    },
+    {
+      "text": "of",
+      "startMs": 7840,
+      "endMs": 7940
+    },
+    {
+      "text": "different",
+      "startMs": 7980,
+      "endMs": 8220
+    },
+    {
+      "text": "sockets.",
+      "startMs": 8320,
+      "endMs": 8760
+    }
+  ],
+  "s07": [
+    {
+      "text": "On",
+      "startMs": 80,
+      "endMs": 254
+    },
+    {
+      "text": "August",
+      "startMs": 254,
+      "endMs": 660
+    },
+    {
+      "text": "seventeenth,",
+      "startMs": 660,
+      "endMs": 1414
+    },
+    {
+      "text": "2019,",
+      "startMs": 1414,
+      "endMs": 1762
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 1762,
+      "endMs": 2458
+    },
+    {
+      "text": "Independence",
+      "startMs": 2458,
+      "endMs": 3212
+    },
+    {
+      "text": "Day,",
+      "startMs": 3212,
+      "endMs": 3502
+    },
+    {
+      "text": "the",
+      "startMs": 3502,
+      "endMs": 3734
+    },
+    {
+      "text": "central",
+      "startMs": 3734,
+      "endMs": 4198
+    },
+    {
+      "text": "bank",
+      "startMs": 4198,
+      "endMs": 4488
+    },
+    {
+      "text": "and",
+      "startMs": 4488,
+      "endMs": 4720
+    },
+    {
+      "text": "the",
+      "startMs": 4720,
+      "endMs": 4952
+    },
+    {
+      "text": "payment",
+      "startMs": 4952,
+      "endMs": 5416
+    },
+    {
+      "text": "industry",
+      "startMs": 5416,
+      "endMs": 5938
+    },
+    {
+      "text": "launched",
+      "startMs": 5938,
+      "endMs": 6460
+    },
+    {
+      "text": "one",
+      "startMs": 6460,
+      "endMs": 6692
+    },
+    {
+      "text": "socket",
+      "startMs": 6692,
+      "endMs": 7098
+    },
+    {
+      "text": "shape",
+      "startMs": 7098,
+      "endMs": 7446
+    },
+    {
+      "text": "for",
+      "startMs": 7446,
+      "endMs": 7678
+    },
+    {
+      "text": "everyone.",
+      "startMs": 7678,
+      "endMs": 8258
+    },
+    {
+      "text": "They",
+      "startMs": 8258,
+      "endMs": 8548
+    },
+    {
+      "text": "called",
+      "startMs": 8548,
+      "endMs": 8954
+    },
+    {
+      "text": "it",
+      "startMs": 8954,
+      "endMs": 9128
+    },
+    {
+      "text": "QRIS.",
+      "startMs": 9128,
+      "endMs": 9476
+    }
+  ],
+  "s08": [
+    {
+      "text": "Many",
+      "startMs": 100,
+      "endMs": 353
+    },
+    {
+      "text": "people",
+      "startMs": 353,
+      "endMs": 707
+    },
+    {
+      "text": "think",
+      "startMs": 707,
+      "endMs": 1010
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 1010,
+      "endMs": 1616
+    },
+    {
+      "text": "QRIS",
+      "startMs": 1616,
+      "endMs": 1869
+    },
+    {
+      "text": "code",
+      "startMs": 1869,
+      "endMs": 2122
+    },
+    {
+      "text": "is",
+      "startMs": 2122,
+      "endMs": 2274
+    },
+    {
+      "text": "an",
+      "startMs": 2274,
+      "endMs": 2426
+    },
+    {
+      "text": "app",
+      "startMs": 2426,
+      "endMs": 2628
+    },
+    {
+      "text": "you",
+      "startMs": 2628,
+      "endMs": 2830
+    },
+    {
+      "text": "download.",
+      "startMs": 2830,
+      "endMs": 3335
+    },
+    {
+      "text": "It's",
+      "startMs": 3335,
+      "endMs": 3588
+    },
+    {
+      "text": "a",
+      "startMs": 3588,
+      "endMs": 3689
+    },
+    {
+      "text": "rulebook",
+      "startMs": 3689,
+      "endMs": 4144
+    },
+    {
+      "text": "for",
+      "startMs": 4144,
+      "endMs": 4346
+    },
+    {
+      "text": "how",
+      "startMs": 4346,
+      "endMs": 4548
+    },
+    {
+      "text": "the",
+      "startMs": 4548,
+      "endMs": 4750
+    },
+    {
+      "text": "code",
+      "startMs": 4750,
+      "endMs": 5003
+    },
+    {
+      "text": "is",
+      "startMs": 5003,
+      "endMs": 5155
+    },
+    {
+      "text": "written",
+      "startMs": 5155,
+      "endMs": 5559
+    },
+    {
+      "text": "and",
+      "startMs": 5559,
+      "endMs": 5761
+    },
+    {
+      "text": "how",
+      "startMs": 5761,
+      "endMs": 5963
+    },
+    {
+      "text": "the",
+      "startMs": 5963,
+      "endMs": 6165
+    },
+    {
+      "text": "companies",
+      "startMs": 6165,
+      "endMs": 6670
+    },
+    {
+      "text": "on",
+      "startMs": 6670,
+      "endMs": 6822
+    },
+    {
+      "text": "each",
+      "startMs": 6822,
+      "endMs": 7075
+    },
+    {
+      "text": "side",
+      "startMs": 7075,
+      "endMs": 7328
+    },
+    {
+      "text": "connect.",
+      "startMs": 7328,
+      "endMs": 7780
+    }
+  ],
+  "s09": [
+    {
+      "text": "From",
+      "startMs": 100,
+      "endMs": 260
+    },
+    {
+      "text": "2020,",
+      "startMs": 440,
+      "endMs": 1080
+    },
+    {
+      "text": "payment",
+      "startMs": 1480,
+      "endMs": 1740
+    },
+    {
+      "text": "codes",
+      "startMs": 1840,
+      "endMs": 2100
+    },
+    {
+      "text": "at",
+      "startMs": 2140,
+      "endMs": 2260
+    },
+    {
+      "text": "Indonesian",
+      "startMs": 2300,
+      "endMs": 2760
+    },
+    {
+      "text": "shops",
+      "startMs": 2840,
+      "endMs": 3120
+    },
+    {
+      "text": "had",
+      "startMs": 3200,
+      "endMs": 3360
+    },
+    {
+      "text": "to",
+      "startMs": 3400,
+      "endMs": 3520
+    },
+    {
+      "text": "follow",
+      "startMs": 3560,
+      "endMs": 3840
+    },
+    {
+      "text": "it.",
+      "startMs": 3880,
+      "endMs": 4000
+    },
+    {
+      "text": "A",
+      "startMs": 4880,
+      "endMs": 4960
+    },
+    {
+      "text": "shop",
+      "startMs": 5020,
+      "endMs": 5260
+    },
+    {
+      "text": "now",
+      "startMs": 5320,
+      "endMs": 5520
+    },
+    {
+      "text": "signs",
+      "startMs": 5580,
+      "endMs": 5860
+    },
+    {
+      "text": "up",
+      "startMs": 5940,
+      "endMs": 6040
+    },
+    {
+      "text": "with",
+      "startMs": 6080,
+      "endMs": 6220
+    },
+    {
+      "text": "one",
+      "startMs": 6340,
+      "endMs": 6460
+    },
+    {
+      "text": "provider,",
+      "startMs": 6520,
+      "endMs": 6960
+    },
+    {
+      "text": "and",
+      "startMs": 7400,
+      "endMs": 7520
+    },
+    {
+      "text": "any",
+      "startMs": 7560,
+      "endMs": 7700
+    },
+    {
+      "text": "provider's",
+      "startMs": 7760,
+      "endMs": 8240
+    },
+    {
+      "text": "app",
+      "startMs": 8320,
+      "endMs": 8500
+    },
+    {
+      "text": "can",
+      "startMs": 8540,
+      "endMs": 8680
+    },
+    {
+      "text": "pay",
+      "startMs": 8720,
+      "endMs": 8880
+    },
+    {
+      "text": "it.",
+      "startMs": 8920,
+      "endMs": 9040
+    },
+    {
+      "text": "The",
+      "startMs": 9940,
+      "endMs": 10040
+    },
+    {
+      "text": "printed",
+      "startMs": 10080,
+      "endMs": 10340
+    },
+    {
+      "text": "sticker",
+      "startMs": 10420,
+      "endMs": 10680
+    },
+    {
+      "text": "itself",
+      "startMs": 10720,
+      "endMs": 11240
+    },
+    {
+      "text": "is",
+      "startMs": 11480,
+      "endMs": 11620
+    },
+    {
+      "text": "free.",
+      "startMs": 11680,
+      "endMs": 11960
+    }
+  ],
+  "s10": [
+    {
+      "text": "Now",
+      "startMs": 100,
+      "endMs": 331
+    },
+    {
+      "text": "follow",
+      "startMs": 331,
+      "endMs": 736
+    },
+    {
+      "text": "one",
+      "startMs": 736,
+      "endMs": 967
+    },
+    {
+      "text": "scan,",
+      "startMs": 967,
+      "endMs": 1314
+    },
+    {
+      "text": "on",
+      "startMs": 1314,
+      "endMs": 1487
+    },
+    {
+      "text": "one",
+      "startMs": 1487,
+      "endMs": 1718
+    },
+    {
+      "text": "map.",
+      "startMs": 1718,
+      "endMs": 2007
+    },
+    {
+      "text": "Your",
+      "startMs": 2007,
+      "endMs": 2296
+    },
+    {
+      "text": "app",
+      "startMs": 2296,
+      "endMs": 2527
+    },
+    {
+      "text": "sits",
+      "startMs": 2527,
+      "endMs": 2816
+    },
+    {
+      "text": "on",
+      "startMs": 2816,
+      "endMs": 2989
+    },
+    {
+      "text": "the",
+      "startMs": 2989,
+      "endMs": 3220
+    },
+    {
+      "text": "left,",
+      "startMs": 3220,
+      "endMs": 3567
+    },
+    {
+      "text": "the",
+      "startMs": 3567,
+      "endMs": 3798
+    },
+    {
+      "text": "stall's",
+      "startMs": 3798,
+      "endMs": 4260
+    },
+    {
+      "text": "bank",
+      "startMs": 4260,
+      "endMs": 4549
+    },
+    {
+      "text": "on",
+      "startMs": 4549,
+      "endMs": 4722
+    },
+    {
+      "text": "the",
+      "startMs": 4722,
+      "endMs": 4953
+    },
+    {
+      "text": "right,",
+      "startMs": 4953,
+      "endMs": 5358
+    },
+    {
+      "text": "and",
+      "startMs": 5358,
+      "endMs": 5589
+    },
+    {
+      "text": "in",
+      "startMs": 5589,
+      "endMs": 5762
+    },
+    {
+      "text": "the",
+      "startMs": 5762,
+      "endMs": 5993
+    },
+    {
+      "text": "middle",
+      "startMs": 5993,
+      "endMs": 6398
+    },
+    {
+      "text": "there's",
+      "startMs": 6398,
+      "endMs": 6860
+    },
+    {
+      "text": "a",
+      "startMs": 6860,
+      "endMs": 6976
+    },
+    {
+      "text": "switch.",
+      "startMs": 6976,
+      "endMs": 7438
+    }
+  ],
+  "s11": [
+    {
+      "text": "A",
+      "startMs": 80,
+      "endMs": 140
+    },
+    {
+      "text": "switch",
+      "startMs": 260,
+      "endMs": 600
+    },
+    {
+      "text": "is",
+      "startMs": 660,
+      "endMs": 740
+    },
+    {
+      "text": "the",
+      "startMs": 800,
+      "endMs": 900
+    },
+    {
+      "text": "wiring",
+      "startMs": 960,
+      "endMs": 1300
+    },
+    {
+      "text": "behind",
+      "startMs": 1360,
+      "endMs": 1700
+    },
+    {
+      "text": "the",
+      "startMs": 1740,
+      "endMs": 1820
+    },
+    {
+      "text": "wall.",
+      "startMs": 1880,
+      "endMs": 2100
+    },
+    {
+      "text": "It's",
+      "startMs": 2700,
+      "endMs": 2820
+    },
+    {
+      "text": "a",
+      "startMs": 2840,
+      "endMs": 2900
+    },
+    {
+      "text": "company",
+      "startMs": 2940,
+      "endMs": 3260
+    },
+    {
+      "text": "that",
+      "startMs": 3320,
+      "endMs": 3440
+    },
+    {
+      "text": "passes",
+      "startMs": 3500,
+      "endMs": 3840
+    },
+    {
+      "text": "payment",
+      "startMs": 3940,
+      "endMs": 4240
+    },
+    {
+      "text": "messages",
+      "startMs": 4280,
+      "endMs": 4720
+    },
+    {
+      "text": "between",
+      "startMs": 4780,
+      "endMs": 5080
+    },
+    {
+      "text": "providers",
+      "startMs": 5100,
+      "endMs": 5660
+    },
+    {
+      "text": "that",
+      "startMs": 5700,
+      "endMs": 5860
+    },
+    {
+      "text": "aren't",
+      "startMs": 5920,
+      "endMs": 6140
+    },
+    {
+      "text": "wired",
+      "startMs": 6220,
+      "endMs": 6500
+    },
+    {
+      "text": "to",
+      "startMs": 6540,
+      "endMs": 6620
+    },
+    {
+      "text": "each",
+      "startMs": 6660,
+      "endMs": 6780
+    },
+    {
+      "text": "other",
+      "startMs": 6840,
+      "endMs": 6980
+    },
+    {
+      "text": "directly.",
+      "startMs": 7040,
+      "endMs": 7520
+    }
+  ],
+  "s12": [
+    {
+      "text": "When",
+      "startMs": 120,
+      "endMs": 220
+    },
+    {
+      "text": "your",
+      "startMs": 260,
+      "endMs": 340
+    },
+    {
+      "text": "camera",
+      "startMs": 460,
+      "endMs": 760
+    },
+    {
+      "text": "reads",
+      "startMs": 820,
+      "endMs": 1040
+    },
+    {
+      "text": "the",
+      "startMs": 1080,
+      "endMs": 1180
+    },
+    {
+      "text": "square,",
+      "startMs": 1240,
+      "endMs": 1600
+    },
+    {
+      "text": "it",
+      "startMs": 1940,
+      "endMs": 2020
+    },
+    {
+      "text": "reads",
+      "startMs": 2080,
+      "endMs": 2340
+    },
+    {
+      "text": "plain",
+      "startMs": 2380,
+      "endMs": 2620
+    },
+    {
+      "text": "text.",
+      "startMs": 2680,
+      "endMs": 3040
+    },
+    {
+      "text": "Inside",
+      "startMs": 3980,
+      "endMs": 4380
+    },
+    {
+      "text": "is",
+      "startMs": 4420,
+      "endMs": 4500
+    },
+    {
+      "text": "which",
+      "startMs": 4540,
+      "endMs": 4700
+    },
+    {
+      "text": "shop",
+      "startMs": 4740,
+      "endMs": 4980
+    },
+    {
+      "text": "this",
+      "startMs": 5040,
+      "endMs": 5200
+    },
+    {
+      "text": "is,",
+      "startMs": 5280,
+      "endMs": 5460
+    },
+    {
+      "text": "which",
+      "startMs": 6040,
+      "endMs": 6180
+    },
+    {
+      "text": "provider",
+      "startMs": 6220,
+      "endMs": 6560
+    },
+    {
+      "text": "holds",
+      "startMs": 6600,
+      "endMs": 6780
+    },
+    {
+      "text": "its",
+      "startMs": 6820,
+      "endMs": 6920
+    },
+    {
+      "text": "account,",
+      "startMs": 6960,
+      "endMs": 7300
+    },
+    {
+      "text": "and",
+      "startMs": 7880,
+      "endMs": 7940
+    },
+    {
+      "text": "a",
+      "startMs": 7980,
+      "endMs": 8020
+    },
+    {
+      "text": "country",
+      "startMs": 8080,
+      "endMs": 8360
+    },
+    {
+      "text": "code,",
+      "startMs": 8440,
+      "endMs": 8680
+    },
+    {
+      "text": "Indonesia.",
+      "startMs": 9140,
+      "endMs": 9680
+    },
+    {
+      "text": "The",
+      "startMs": 11020,
+      "endMs": 11080
+    },
+    {
+      "text": "amount",
+      "startMs": 11140,
+      "endMs": 11480
+    },
+    {
+      "text": "isn't",
+      "startMs": 11560,
+      "endMs": 11760
+    },
+    {
+      "text": "in",
+      "startMs": 11820,
+      "endMs": 11920
+    },
+    {
+      "text": "there,",
+      "startMs": 11980,
+      "endMs": 12140
+    },
+    {
+      "text": "which",
+      "startMs": 12220,
+      "endMs": 12380
+    },
+    {
+      "text": "is",
+      "startMs": 12440,
+      "endMs": 12540
+    },
+    {
+      "text": "why",
+      "startMs": 12600,
+      "endMs": 12780
+    },
+    {
+      "text": "the",
+      "startMs": 12820,
+      "endMs": 12880
+    },
+    {
+      "text": "sticker",
+      "startMs": 12960,
+      "endMs": 13240
+    },
+    {
+      "text": "never",
+      "startMs": 13320,
+      "endMs": 13540
+    },
+    {
+      "text": "has",
+      "startMs": 13580,
+      "endMs": 13740
+    },
+    {
+      "text": "to",
+      "startMs": 13780,
+      "endMs": 13860
+    },
+    {
+      "text": "change.",
+      "startMs": 13920,
+      "endMs": 14280
+    }
+  ],
+  "s13": [
+    {
+      "text": "You",
+      "startMs": 120,
+      "endMs": 362
+    },
+    {
+      "text": "type",
+      "startMs": 362,
+      "endMs": 664
+    },
+    {
+      "text": "fifty",
+      "startMs": 664,
+      "endMs": 1027
+    },
+    {
+      "text": "thousand",
+      "startMs": 1027,
+      "endMs": 1571
+    },
+    {
+      "text": "rupiah",
+      "startMs": 1571,
+      "endMs": 1994
+    },
+    {
+      "text": "and",
+      "startMs": 1994,
+      "endMs": 2236
+    },
+    {
+      "text": "your",
+      "startMs": 2236,
+      "endMs": 2538
+    },
+    {
+      "text": "PIN.",
+      "startMs": 2538,
+      "endMs": 2840
+    },
+    {
+      "text": "Your",
+      "startMs": 2840,
+      "endMs": 3142
+    },
+    {
+      "text": "app",
+      "startMs": 3142,
+      "endMs": 3384
+    },
+    {
+      "text": "checks",
+      "startMs": 3384,
+      "endMs": 3807
+    },
+    {
+      "text": "your",
+      "startMs": 3807,
+      "endMs": 4109
+    },
+    {
+      "text": "balance,",
+      "startMs": 4109,
+      "endMs": 4653
+    },
+    {
+      "text": "then",
+      "startMs": 4653,
+      "endMs": 4955
+    },
+    {
+      "text": "sends",
+      "startMs": 4955,
+      "endMs": 5318
+    },
+    {
+      "text": "a",
+      "startMs": 5318,
+      "endMs": 5439
+    },
+    {
+      "text": "message",
+      "startMs": 5439,
+      "endMs": 5923
+    },
+    {
+      "text": "to",
+      "startMs": 5923,
+      "endMs": 6104
+    },
+    {
+      "text": "the",
+      "startMs": 6104,
+      "endMs": 6346
+    },
+    {
+      "text": "switch:",
+      "startMs": 6346,
+      "endMs": 6830
+    },
+    {
+      "text": "take",
+      "startMs": 6830,
+      "endMs": 7132
+    },
+    {
+      "text": "fifty",
+      "startMs": 7132,
+      "endMs": 7495
+    },
+    {
+      "text": "thousand",
+      "startMs": 7495,
+      "endMs": 8039
+    },
+    {
+      "text": "from",
+      "startMs": 8039,
+      "endMs": 8341
+    },
+    {
+      "text": "this",
+      "startMs": 8341,
+      "endMs": 8643
+    },
+    {
+      "text": "person,",
+      "startMs": 8643,
+      "endMs": 9127
+    },
+    {
+      "text": "for",
+      "startMs": 9127,
+      "endMs": 9369
+    },
+    {
+      "text": "this",
+      "startMs": 9369,
+      "endMs": 9671
+    },
+    {
+      "text": "stall.",
+      "startMs": 9671,
+      "endMs": 10094
+    }
+  ],
+  "s14": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "switch",
+      "startMs": 260,
+      "endMs": 520
+    },
+    {
+      "text": "reads",
+      "startMs": 600,
+      "endMs": 880
+    },
+    {
+      "text": "which",
+      "startMs": 1340,
+      "endMs": 1520
+    },
+    {
+      "text": "provider",
+      "startMs": 1540,
+      "endMs": 1900
+    },
+    {
+      "text": "holds",
+      "startMs": 1960,
+      "endMs": 2200
+    },
+    {
+      "text": "the",
+      "startMs": 2240,
+      "endMs": 2300
+    },
+    {
+      "text": "stall's",
+      "startMs": 2360,
+      "endMs": 2620
+    },
+    {
+      "text": "account",
+      "startMs": 2680,
+      "endMs": 3040
+    },
+    {
+      "text": "and",
+      "startMs": 3320,
+      "endMs": 3440
+    },
+    {
+      "text": "forwards",
+      "startMs": 3520,
+      "endMs": 3820
+    },
+    {
+      "text": "the",
+      "startMs": 3860,
+      "endMs": 3920
+    },
+    {
+      "text": "message",
+      "startMs": 3980,
+      "endMs": 4300
+    },
+    {
+      "text": "there.",
+      "startMs": 4360,
+      "endMs": 4540
+    },
+    {
+      "text": "The",
+      "startMs": 5540,
+      "endMs": 5640
+    },
+    {
+      "text": "stall's",
+      "startMs": 5700,
+      "endMs": 6020
+    },
+    {
+      "text": "bank",
+      "startMs": 6060,
+      "endMs": 6280
+    },
+    {
+      "text": "checks",
+      "startMs": 6340,
+      "endMs": 6560
+    },
+    {
+      "text": "the",
+      "startMs": 6600,
+      "endMs": 6660
+    },
+    {
+      "text": "account",
+      "startMs": 6700,
+      "endMs": 7040
+    },
+    {
+      "text": "and",
+      "startMs": 7060,
+      "endMs": 7140
+    },
+    {
+      "text": "says",
+      "startMs": 7220,
+      "endMs": 7420
+    },
+    {
+      "text": "yes.",
+      "startMs": 7500,
+      "endMs": 7800
+    }
+  ],
+  "s15": [
+    {
+      "text": "A",
+      "startMs": 80,
+      "endMs": 160
+    },
+    {
+      "text": "tick",
+      "startMs": 200,
+      "endMs": 360
+    },
+    {
+      "text": "appears",
+      "startMs": 400,
+      "endMs": 740
+    },
+    {
+      "text": "on",
+      "startMs": 780,
+      "endMs": 860
+    },
+    {
+      "text": "your",
+      "startMs": 900,
+      "endMs": 980
+    },
+    {
+      "text": "phone,",
+      "startMs": 1060,
+      "endMs": 1340
+    },
+    {
+      "text": "and",
+      "startMs": 1840,
+      "endMs": 1920
+    },
+    {
+      "text": "the",
+      "startMs": 1960,
+      "endMs": 2060
+    },
+    {
+      "text": "owner's",
+      "startMs": 2120,
+      "endMs": 2400
+    },
+    {
+      "text": "phone",
+      "startMs": 2440,
+      "endMs": 2700
+    },
+    {
+      "text": "chimes",
+      "startMs": 2780,
+      "endMs": 3080
+    },
+    {
+      "text": "on",
+      "startMs": 3100,
+      "endMs": 3160
+    },
+    {
+      "text": "the",
+      "startMs": 3200,
+      "endMs": 3260
+    },
+    {
+      "text": "counter.",
+      "startMs": 3320,
+      "endMs": 3640
+    },
+    {
+      "text": "The",
+      "startMs": 4560,
+      "endMs": 4660
+    },
+    {
+      "text": "owner",
+      "startMs": 4720,
+      "endMs": 4940
+    },
+    {
+      "text": "sees",
+      "startMs": 5040,
+      "endMs": 5240
+    },
+    {
+      "text": "the",
+      "startMs": 5280,
+      "endMs": 5340
+    },
+    {
+      "text": "amount",
+      "startMs": 5400,
+      "endMs": 5680
+    },
+    {
+      "text": "and",
+      "startMs": 5740,
+      "endMs": 5860
+    },
+    {
+      "text": "the",
+      "startMs": 5880,
+      "endMs": 5960
+    },
+    {
+      "text": "time",
+      "startMs": 6020,
+      "endMs": 6280
+    },
+    {
+      "text": "without",
+      "startMs": 6300,
+      "endMs": 6540
+    },
+    {
+      "text": "touching",
+      "startMs": 6580,
+      "endMs": 6840
+    },
+    {
+      "text": "a",
+      "startMs": 6880,
+      "endMs": 6940
+    },
+    {
+      "text": "card",
+      "startMs": 7000,
+      "endMs": 7200
+    },
+    {
+      "text": "machine.",
+      "startMs": 7240,
+      "endMs": 7620
+    },
+    {
+      "text": "Providers",
+      "startMs": 8420,
+      "endMs": 8860
+    },
+    {
+      "text": "build",
+      "startMs": 8960,
+      "endMs": 9160
+    },
+    {
+      "text": "that",
+      "startMs": 9220,
+      "endMs": 9360
+    },
+    {
+      "text": "whole",
+      "startMs": 9440,
+      "endMs": 9640
+    },
+    {
+      "text": "round",
+      "startMs": 9700,
+      "endMs": 9900
+    },
+    {
+      "text": "trip",
+      "startMs": 9940,
+      "endMs": 10100
+    },
+    {
+      "text": "to",
+      "startMs": 10140,
+      "endMs": 10240
+    },
+    {
+      "text": "finish",
+      "startMs": 10300,
+      "endMs": 10620
+    },
+    {
+      "text": "while",
+      "startMs": 10900,
+      "endMs": 11080
+    },
+    {
+      "text": "you're",
+      "startMs": 11140,
+      "endMs": 11280
+    },
+    {
+      "text": "still",
+      "startMs": 11340,
+      "endMs": 11540
+    },
+    {
+      "text": "holding",
+      "startMs": 11600,
+      "endMs": 11860
+    },
+    {
+      "text": "your",
+      "startMs": 11900,
+      "endMs": 11980
+    },
+    {
+      "text": "phone.",
+      "startMs": 12040,
+      "endMs": 12360
+    }
+  ],
+  "s16": [
+    {
+      "text": "But",
+      "startMs": 80,
+      "endMs": 314
+    },
+    {
+      "text": "who",
+      "startMs": 314,
+      "endMs": 548
+    },
+    {
+      "text": "pays",
+      "startMs": 548,
+      "endMs": 840
+    },
+    {
+      "text": "for",
+      "startMs": 840,
+      "endMs": 1074
+    },
+    {
+      "text": "those",
+      "startMs": 1074,
+      "endMs": 1425
+    },
+    {
+      "text": "two",
+      "startMs": 1425,
+      "endMs": 1659
+    },
+    {
+      "text": "seconds?",
+      "startMs": 1659,
+      "endMs": 2185
+    },
+    {
+      "text": "In",
+      "startMs": 2185,
+      "endMs": 2360
+    },
+    {
+      "text": "our",
+      "startMs": 2360,
+      "endMs": 2594
+    },
+    {
+      "text": "card",
+      "startMs": 2594,
+      "endMs": 2886
+    },
+    {
+      "text": "video,",
+      "startMs": 2886,
+      "endMs": 3295
+    },
+    {
+      "text": "a",
+      "startMs": 3295,
+      "endMs": 3412
+    },
+    {
+      "text": "hundred-dollar",
+      "startMs": 3412,
+      "endMs": 4289
+    },
+    {
+      "text": "tap",
+      "startMs": 4289,
+      "endMs": 4523
+    },
+    {
+      "text": "cost",
+      "startMs": 4523,
+      "endMs": 4815
+    },
+    {
+      "text": "the",
+      "startMs": 4815,
+      "endMs": 5049
+    },
+    {
+      "text": "shop",
+      "startMs": 5049,
+      "endMs": 5341
+    },
+    {
+      "text": "two",
+      "startMs": 5341,
+      "endMs": 5575
+    },
+    {
+      "text": "dollars",
+      "startMs": 5575,
+      "endMs": 6043
+    },
+    {
+      "text": "seventy-five.",
+      "startMs": 6043,
+      "endMs": 6860
+    }
+  ],
+  "s17": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 220
+    },
+    {
+      "text": "fee",
+      "startMs": 280,
+      "endMs": 400
+    },
+    {
+      "text": "a",
+      "startMs": 460,
+      "endMs": 520
+    },
+    {
+      "text": "shop",
+      "startMs": 580,
+      "endMs": 820
+    },
+    {
+      "text": "pays",
+      "startMs": 940,
+      "endMs": 1220
+    },
+    {
+      "text": "to",
+      "startMs": 1280,
+      "endMs": 1360
+    },
+    {
+      "text": "accept",
+      "startMs": 1420,
+      "endMs": 1720
+    },
+    {
+      "text": "a",
+      "startMs": 1760,
+      "endMs": 1820
+    },
+    {
+      "text": "payment",
+      "startMs": 1880,
+      "endMs": 2200
+    },
+    {
+      "text": "has",
+      "startMs": 2260,
+      "endMs": 2380
+    },
+    {
+      "text": "a",
+      "startMs": 2420,
+      "endMs": 2460
+    },
+    {
+      "text": "name,",
+      "startMs": 2540,
+      "endMs": 2780
+    },
+    {
+      "text": "the",
+      "startMs": 3240,
+      "endMs": 3320
+    },
+    {
+      "text": "merchant",
+      "startMs": 3380,
+      "endMs": 3680
+    },
+    {
+      "text": "discount",
+      "startMs": 3720,
+      "endMs": 4100
+    },
+    {
+      "text": "rate,",
+      "startMs": 4140,
+      "endMs": 4320
+    },
+    {
+      "text": "or",
+      "startMs": 4720,
+      "endMs": 4920
+    },
+    {
+      "text": "MDR.",
+      "startMs": 5020,
+      "endMs": 5580
+    },
+    {
+      "text": "It's",
+      "startMs": 6160,
+      "endMs": 6260
+    },
+    {
+      "text": "a",
+      "startMs": 6320,
+      "endMs": 6380
+    },
+    {
+      "text": "small",
+      "startMs": 6460,
+      "endMs": 6700
+    },
+    {
+      "text": "slice",
+      "startMs": 6820,
+      "endMs": 7100
+    },
+    {
+      "text": "taken",
+      "startMs": 7160,
+      "endMs": 7400
+    },
+    {
+      "text": "off",
+      "startMs": 7440,
+      "endMs": 7640
+    },
+    {
+      "text": "each",
+      "startMs": 7700,
+      "endMs": 7880
+    },
+    {
+      "text": "sale",
+      "startMs": 7960,
+      "endMs": 8180
+    },
+    {
+      "text": "before",
+      "startMs": 8220,
+      "endMs": 8460
+    },
+    {
+      "text": "the",
+      "startMs": 8500,
+      "endMs": 8580
+    },
+    {
+      "text": "money",
+      "startMs": 8660,
+      "endMs": 8840
+    },
+    {
+      "text": "reaches",
+      "startMs": 8940,
+      "endMs": 9220
+    },
+    {
+      "text": "the",
+      "startMs": 9260,
+      "endMs": 9340
+    },
+    {
+      "text": "shop.",
+      "startMs": 9400,
+      "endMs": 9720
+    }
+  ],
+  "s18": [
+    {
+      "text": "Since",
+      "startMs": 80,
+      "endMs": 449
+    },
+    {
+      "text": "October",
+      "startMs": 449,
+      "endMs": 941
+    },
+    {
+      "text": "2026,",
+      "startMs": 941,
+      "endMs": 1310
+    },
+    {
+      "text": "a",
+      "startMs": 1310,
+      "endMs": 1433
+    },
+    {
+      "text": "QRIS",
+      "startMs": 1433,
+      "endMs": 1740
+    },
+    {
+      "text": "payment",
+      "startMs": 1740,
+      "endMs": 2232
+    },
+    {
+      "text": "up",
+      "startMs": 2232,
+      "endMs": 2416
+    },
+    {
+      "text": "to",
+      "startMs": 2416,
+      "endMs": 2600
+    },
+    {
+      "text": "a",
+      "startMs": 2600,
+      "endMs": 2723
+    },
+    {
+      "text": "hundred",
+      "startMs": 2723,
+      "endMs": 3215
+    },
+    {
+      "text": "thousand",
+      "startMs": 3215,
+      "endMs": 3768
+    },
+    {
+      "text": "rupiah",
+      "startMs": 3768,
+      "endMs": 4198
+    },
+    {
+      "text": "costs",
+      "startMs": 4198,
+      "endMs": 4567
+    },
+    {
+      "text": "most",
+      "startMs": 4567,
+      "endMs": 4874
+    },
+    {
+      "text": "shops",
+      "startMs": 4874,
+      "endMs": 5243
+    },
+    {
+      "text": "nothing",
+      "startMs": 5243,
+      "endMs": 5735
+    },
+    {
+      "text": "at",
+      "startMs": 5735,
+      "endMs": 5919
+    },
+    {
+      "text": "all.",
+      "startMs": 5919,
+      "endMs": 6226
+    },
+    {
+      "text": "The",
+      "startMs": 6226,
+      "endMs": 6472
+    },
+    {
+      "text": "smallest",
+      "startMs": 6472,
+      "endMs": 7025
+    },
+    {
+      "text": "businesses",
+      "startMs": 7025,
+      "endMs": 7701
+    },
+    {
+      "text": "pay",
+      "startMs": 7701,
+      "endMs": 7947
+    },
+    {
+      "text": "nothing",
+      "startMs": 7947,
+      "endMs": 8439
+    },
+    {
+      "text": "up",
+      "startMs": 8439,
+      "endMs": 8623
+    },
+    {
+      "text": "to",
+      "startMs": 8623,
+      "endMs": 8807
+    },
+    {
+      "text": "five",
+      "startMs": 8807,
+      "endMs": 9114
+    },
+    {
+      "text": "hundred",
+      "startMs": 9114,
+      "endMs": 9606
+    },
+    {
+      "text": "thousand.",
+      "startMs": 9606,
+      "endMs": 10220
+    }
+  ],
+  "s19": [
+    {
+      "text": "Above",
+      "startMs": 80,
+      "endMs": 398
+    },
+    {
+      "text": "that,",
+      "startMs": 398,
+      "endMs": 716
+    },
+    {
+      "text": "the",
+      "startMs": 716,
+      "endMs": 928
+    },
+    {
+      "text": "fee",
+      "startMs": 928,
+      "endMs": 1140
+    },
+    {
+      "text": "is",
+      "startMs": 1140,
+      "endMs": 1299
+    },
+    {
+      "text": "still",
+      "startMs": 1299,
+      "endMs": 1617
+    },
+    {
+      "text": "under",
+      "startMs": 1617,
+      "endMs": 1935
+    },
+    {
+      "text": "one",
+      "startMs": 1935,
+      "endMs": 2147
+    },
+    {
+      "text": "percent.",
+      "startMs": 2147,
+      "endMs": 2624
+    },
+    {
+      "text": "And",
+      "startMs": 2624,
+      "endMs": 2836
+    },
+    {
+      "text": "the",
+      "startMs": 2836,
+      "endMs": 3048
+    },
+    {
+      "text": "shop",
+      "startMs": 3048,
+      "endMs": 3313
+    },
+    {
+      "text": "isn't",
+      "startMs": 3313,
+      "endMs": 3631
+    },
+    {
+      "text": "allowed",
+      "startMs": 3631,
+      "endMs": 4055
+    },
+    {
+      "text": "to",
+      "startMs": 4055,
+      "endMs": 4214
+    },
+    {
+      "text": "pass",
+      "startMs": 4214,
+      "endMs": 4479
+    },
+    {
+      "text": "it",
+      "startMs": 4479,
+      "endMs": 4638
+    },
+    {
+      "text": "on",
+      "startMs": 4638,
+      "endMs": 4797
+    },
+    {
+      "text": "to",
+      "startMs": 4797,
+      "endMs": 4956
+    },
+    {
+      "text": "you.",
+      "startMs": 4956,
+      "endMs": 5220
+    }
+  ],
+  "s20": [
+    {
+      "text": "So",
+      "startMs": 120,
+      "endMs": 291
+    },
+    {
+      "text": "why",
+      "startMs": 291,
+      "endMs": 520
+    },
+    {
+      "text": "would",
+      "startMs": 520,
+      "endMs": 863
+    },
+    {
+      "text": "anyone",
+      "startMs": 863,
+      "endMs": 1263
+    },
+    {
+      "text": "in",
+      "startMs": 1263,
+      "endMs": 1434
+    },
+    {
+      "text": "the",
+      "startMs": 1434,
+      "endMs": 1663
+    },
+    {
+      "text": "middle",
+      "startMs": 1663,
+      "endMs": 2063
+    },
+    {
+      "text": "take",
+      "startMs": 2063,
+      "endMs": 2349
+    },
+    {
+      "text": "almost",
+      "startMs": 2349,
+      "endMs": 2749
+    },
+    {
+      "text": "nothing?",
+      "startMs": 2749,
+      "endMs": 3263
+    },
+    {
+      "text": "There's",
+      "startMs": 3263,
+      "endMs": 3720
+    },
+    {
+      "text": "one",
+      "startMs": 3720,
+      "endMs": 3949
+    },
+    {
+      "text": "thing",
+      "startMs": 3949,
+      "endMs": 4292
+    },
+    {
+      "text": "to",
+      "startMs": 4292,
+      "endMs": 4463
+    },
+    {
+      "text": "know",
+      "startMs": 4463,
+      "endMs": 4749
+    },
+    {
+      "text": "about",
+      "startMs": 4749,
+      "endMs": 5092
+    },
+    {
+      "text": "Bank",
+      "startMs": 5092,
+      "endMs": 5378
+    },
+    {
+      "text": "Indonesia:",
+      "startMs": 5378,
+      "endMs": 6006
+    },
+    {
+      "text": "it",
+      "startMs": 6006,
+      "endMs": 6177
+    },
+    {
+      "text": "wants",
+      "startMs": 6177,
+      "endMs": 6520
+    },
+    {
+      "text": "small",
+      "startMs": 6520,
+      "endMs": 6863
+    },
+    {
+      "text": "shops",
+      "startMs": 6863,
+      "endMs": 7206
+    },
+    {
+      "text": "inside",
+      "startMs": 7206,
+      "endMs": 7606
+    },
+    {
+      "text": "the",
+      "startMs": 7606,
+      "endMs": 7835
+    },
+    {
+      "text": "digital",
+      "startMs": 7835,
+      "endMs": 8292
+    },
+    {
+      "text": "economy,",
+      "startMs": 8292,
+      "endMs": 8806
+    },
+    {
+      "text": "and",
+      "startMs": 8806,
+      "endMs": 9035
+    },
+    {
+      "text": "it",
+      "startMs": 9035,
+      "endMs": 9206
+    },
+    {
+      "text": "treats",
+      "startMs": 9206,
+      "endMs": 9606
+    },
+    {
+      "text": "QRIS",
+      "startMs": 9606,
+      "endMs": 9892
+    },
+    {
+      "text": "as",
+      "startMs": 9892,
+      "endMs": 10063
+    },
+    {
+      "text": "their",
+      "startMs": 10063,
+      "endMs": 10406
+    },
+    {
+      "text": "way",
+      "startMs": 10406,
+      "endMs": 10635
+    },
+    {
+      "text": "in.",
+      "startMs": 10635,
+      "endMs": 10860
+    }
+  ],
+  "s21": [
+    {
+      "text": "Every",
+      "startMs": 80,
+      "endMs": 280
+    },
+    {
+      "text": "scan",
+      "startMs": 420,
+      "endMs": 720
+    },
+    {
+      "text": "also",
+      "startMs": 800,
+      "endMs": 1060
+    },
+    {
+      "text": "leaves",
+      "startMs": 1120,
+      "endMs": 1300
+    },
+    {
+      "text": "a",
+      "startMs": 1360,
+      "endMs": 1400
+    },
+    {
+      "text": "record",
+      "startMs": 1460,
+      "endMs": 1680
+    },
+    {
+      "text": "of",
+      "startMs": 1720,
+      "endMs": 1800
+    },
+    {
+      "text": "what",
+      "startMs": 1820,
+      "endMs": 1920
+    },
+    {
+      "text": "a",
+      "startMs": 1960,
+      "endMs": 2020
+    },
+    {
+      "text": "shop",
+      "startMs": 2060,
+      "endMs": 2300
+    },
+    {
+      "text": "sells",
+      "startMs": 2380,
+      "endMs": 2640
+    },
+    {
+      "text": "and",
+      "startMs": 2920,
+      "endMs": 3020
+    },
+    {
+      "text": "how",
+      "startMs": 3080,
+      "endMs": 3260
+    },
+    {
+      "text": "often.",
+      "startMs": 3360,
+      "endMs": 3700
+    },
+    {
+      "text": "Bank",
+      "startMs": 4720,
+      "endMs": 4960
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 5020,
+      "endMs": 5540
+    },
+    {
+      "text": "wants",
+      "startMs": 5640,
+      "endMs": 5860
+    },
+    {
+      "text": "those",
+      "startMs": 5900,
+      "endMs": 6100
+    },
+    {
+      "text": "records",
+      "startMs": 6160,
+      "endMs": 6500
+    },
+    {
+      "text": "to",
+      "startMs": 6540,
+      "endMs": 6600
+    },
+    {
+      "text": "help",
+      "startMs": 6640,
+      "endMs": 6840
+    },
+    {
+      "text": "small",
+      "startMs": 6940,
+      "endMs": 7160
+    },
+    {
+      "text": "shops",
+      "startMs": 7240,
+      "endMs": 7520
+    },
+    {
+      "text": "get",
+      "startMs": 7560,
+      "endMs": 7700
+    },
+    {
+      "text": "loans,",
+      "startMs": 7760,
+      "endMs": 8100
+    },
+    {
+      "text": "even",
+      "startMs": 8620,
+      "endMs": 8820
+    },
+    {
+      "text": "with",
+      "startMs": 8880,
+      "endMs": 9020
+    },
+    {
+      "text": "no",
+      "startMs": 9080,
+      "endMs": 9200
+    },
+    {
+      "text": "credit",
+      "startMs": 9300,
+      "endMs": 9540
+    },
+    {
+      "text": "history.",
+      "startMs": 9580,
+      "endMs": 10000
+    },
+    {
+      "text": "Three",
+      "startMs": 10940,
+      "endMs": 11140
+    },
+    {
+      "text": "years",
+      "startMs": 11240,
+      "endMs": 11480
+    },
+    {
+      "text": "of",
+      "startMs": 11520,
+      "endMs": 11660
+    },
+    {
+      "text": "daily",
+      "startMs": 11720,
+      "endMs": 12000
+    },
+    {
+      "text": "chimes",
+      "startMs": 12080,
+      "endMs": 12420
+    },
+    {
+      "text": "at",
+      "startMs": 12440,
+      "endMs": 12500
+    },
+    {
+      "text": "a",
+      "startMs": 12560,
+      "endMs": 12600
+    },
+    {
+      "text": "noodle",
+      "startMs": 12640,
+      "endMs": 12840
+    },
+    {
+      "text": "stall",
+      "startMs": 12960,
+      "endMs": 13260
+    },
+    {
+      "text": "is",
+      "startMs": 13320,
+      "endMs": 13400
+    },
+    {
+      "text": "a",
+      "startMs": 13440,
+      "endMs": 13520
+    },
+    {
+      "text": "sales",
+      "startMs": 13600,
+      "endMs": 13900
+    },
+    {
+      "text": "history",
+      "startMs": 13940,
+      "endMs": 14340
+    },
+    {
+      "text": "a",
+      "startMs": 14400,
+      "endMs": 14460
+    },
+    {
+      "text": "bank",
+      "startMs": 14540,
+      "endMs": 14780
+    },
+    {
+      "text": "can",
+      "startMs": 14840,
+      "endMs": 14980
+    },
+    {
+      "text": "read.",
+      "startMs": 15020,
+      "endMs": 15280
+    }
+  ],
+  "s22": [
+    {
+      "text": "For",
+      "startMs": 100,
+      "endMs": 200
+    },
+    {
+      "text": "the",
+      "startMs": 240,
+      "endMs": 340
+    },
+    {
+      "text": "apps,",
+      "startMs": 420,
+      "endMs": 700
+    },
+    {
+      "text": "each",
+      "startMs": 880,
+      "endMs": 1060
+    },
+    {
+      "text": "scan",
+      "startMs": 1140,
+      "endMs": 1380
+    },
+    {
+      "text": "is",
+      "startMs": 1420,
+      "endMs": 1500
+    },
+    {
+      "text": "a",
+      "startMs": 1540,
+      "endMs": 1600
+    },
+    {
+      "text": "visit.",
+      "startMs": 1640,
+      "endMs": 1940
+    },
+    {
+      "text": "You",
+      "startMs": 2740,
+      "endMs": 2820
+    },
+    {
+      "text": "open",
+      "startMs": 2900,
+      "endMs": 3100
+    },
+    {
+      "text": "them,",
+      "startMs": 3140,
+      "endMs": 3280
+    },
+    {
+      "text": "you",
+      "startMs": 3540,
+      "endMs": 3660
+    },
+    {
+      "text": "see",
+      "startMs": 3720,
+      "endMs": 3840
+    },
+    {
+      "text": "your",
+      "startMs": 3880,
+      "endMs": 4000
+    },
+    {
+      "text": "balance,",
+      "startMs": 4040,
+      "endMs": 4400
+    },
+    {
+      "text": "and",
+      "startMs": 4860,
+      "endMs": 4940
+    },
+    {
+      "text": "you",
+      "startMs": 4980,
+      "endMs": 5040
+    },
+    {
+      "text": "might",
+      "startMs": 5080,
+      "endMs": 5260
+    },
+    {
+      "text": "stay",
+      "startMs": 5320,
+      "endMs": 5500
+    },
+    {
+      "text": "for",
+      "startMs": 5560,
+      "endMs": 5620
+    },
+    {
+      "text": "the",
+      "startMs": 5660,
+      "endMs": 5740
+    },
+    {
+      "text": "next",
+      "startMs": 5800,
+      "endMs": 6020
+    },
+    {
+      "text": "thing",
+      "startMs": 6060,
+      "endMs": 6200
+    },
+    {
+      "text": "they",
+      "startMs": 6240,
+      "endMs": 6380
+    },
+    {
+      "text": "sell.",
+      "startMs": 6460,
+      "endMs": 6700
+    }
+  ],
+  "s23": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 259
+    },
+    {
+      "text": "for",
+      "startMs": 259,
+      "endMs": 470
+    },
+    {
+      "text": "a",
+      "startMs": 470,
+      "endMs": 576
+    },
+    {
+      "text": "fifty-thousand-rupiah",
+      "startMs": 576,
+      "endMs": 1739
+    },
+    {
+      "text": "bowl",
+      "startMs": 1739,
+      "endMs": 2003
+    },
+    {
+      "text": "of",
+      "startMs": 2003,
+      "endMs": 2162
+    },
+    {
+      "text": "noodles,",
+      "startMs": 2162,
+      "endMs": 2638
+    },
+    {
+      "text": "the",
+      "startMs": 2638,
+      "endMs": 2849
+    },
+    {
+      "text": "stall",
+      "startMs": 2849,
+      "endMs": 3166
+    },
+    {
+      "text": "keeps",
+      "startMs": 3166,
+      "endMs": 3483
+    },
+    {
+      "text": "all",
+      "startMs": 3483,
+      "endMs": 3694
+    },
+    {
+      "text": "fifty",
+      "startMs": 3694,
+      "endMs": 4011
+    },
+    {
+      "text": "thousand.",
+      "startMs": 4011,
+      "endMs": 4540
+    },
+    {
+      "text": "With",
+      "startMs": 4540,
+      "endMs": 4804
+    },
+    {
+      "text": "the",
+      "startMs": 4804,
+      "endMs": 5015
+    },
+    {
+      "text": "cut",
+      "startMs": 5015,
+      "endMs": 5226
+    },
+    {
+      "text": "from",
+      "startMs": 5226,
+      "endMs": 5490
+    },
+    {
+      "text": "our",
+      "startMs": 5490,
+      "endMs": 5701
+    },
+    {
+      "text": "card",
+      "startMs": 5701,
+      "endMs": 5965
+    },
+    {
+      "text": "example,",
+      "startMs": 5965,
+      "endMs": 6441
+    },
+    {
+      "text": "the",
+      "startMs": 6441,
+      "endMs": 6652
+    },
+    {
+      "text": "same",
+      "startMs": 6652,
+      "endMs": 6916
+    },
+    {
+      "text": "bowl",
+      "startMs": 6916,
+      "endMs": 7180
+    },
+    {
+      "text": "would",
+      "startMs": 7180,
+      "endMs": 7497
+    },
+    {
+      "text": "lose",
+      "startMs": 7497,
+      "endMs": 7761
+    },
+    {
+      "text": "about",
+      "startMs": 7761,
+      "endMs": 8078
+    },
+    {
+      "text": "one",
+      "startMs": 8078,
+      "endMs": 8289
+    },
+    {
+      "text": "thousand",
+      "startMs": 8289,
+      "endMs": 8765
+    },
+    {
+      "text": "four",
+      "startMs": 8765,
+      "endMs": 9029
+    },
+    {
+      "text": "hundred",
+      "startMs": 9029,
+      "endMs": 9452
+    },
+    {
+      "text": "rupiah.",
+      "startMs": 9452,
+      "endMs": 9875
+    }
+  ],
+  "s24": [
+    {
+      "text": "That's",
+      "startMs": 100,
+      "endMs": 476
+    },
+    {
+      "text": "how",
+      "startMs": 476,
+      "endMs": 691
+    },
+    {
+      "text": "a",
+      "startMs": 691,
+      "endMs": 798
+    },
+    {
+      "text": "printed",
+      "startMs": 798,
+      "endMs": 1228
+    },
+    {
+      "text": "square",
+      "startMs": 1228,
+      "endMs": 1604
+    },
+    {
+      "text": "reached",
+      "startMs": 1604,
+      "endMs": 2034
+    },
+    {
+      "text": "fifty-one",
+      "startMs": 2034,
+      "endMs": 2571
+    },
+    {
+      "text": "million",
+      "startMs": 2571,
+      "endMs": 3001
+    },
+    {
+      "text": "shops,",
+      "startMs": 3001,
+      "endMs": 3377
+    },
+    {
+      "text": "more",
+      "startMs": 3377,
+      "endMs": 3646
+    },
+    {
+      "text": "than",
+      "startMs": 3646,
+      "endMs": 3915
+    },
+    {
+      "text": "one",
+      "startMs": 3915,
+      "endMs": 4130
+    },
+    {
+      "text": "for",
+      "startMs": 4130,
+      "endMs": 4345
+    },
+    {
+      "text": "every",
+      "startMs": 4345,
+      "endMs": 4667
+    },
+    {
+      "text": "six",
+      "startMs": 4667,
+      "endMs": 4882
+    },
+    {
+      "text": "people",
+      "startMs": 4882,
+      "endMs": 5258
+    },
+    {
+      "text": "in",
+      "startMs": 5258,
+      "endMs": 5419
+    },
+    {
+      "text": "the",
+      "startMs": 5419,
+      "endMs": 5634
+    },
+    {
+      "text": "country.",
+      "startMs": 5634,
+      "endMs": 6118
+    },
+    {
+      "text": "Nearly",
+      "startMs": 6118,
+      "endMs": 6494
+    },
+    {
+      "text": "all",
+      "startMs": 6494,
+      "endMs": 6709
+    },
+    {
+      "text": "of",
+      "startMs": 6709,
+      "endMs": 6870
+    },
+    {
+      "text": "them",
+      "startMs": 6870,
+      "endMs": 7139
+    },
+    {
+      "text": "are",
+      "startMs": 7139,
+      "endMs": 7354
+    },
+    {
+      "text": "small",
+      "startMs": 7354,
+      "endMs": 7676
+    },
+    {
+      "text": "businesses.",
+      "startMs": 7676,
+      "endMs": 8320
+    }
+  ],
+  "s25": [
+    {
+      "text": "And",
+      "startMs": 80,
+      "endMs": 160
+    },
+    {
+      "text": "the",
+      "startMs": 200,
+      "endMs": 300
+    },
+    {
+      "text": "switches",
+      "startMs": 360,
+      "endMs": 700
+    },
+    {
+      "text": "carrying",
+      "startMs": 800,
+      "endMs": 1140
+    },
+    {
+      "text": "those",
+      "startMs": 1200,
+      "endMs": 1400
+    },
+    {
+      "text": "messages",
+      "startMs": 1460,
+      "endMs": 1980
+    },
+    {
+      "text": "are",
+      "startMs": 2040,
+      "endMs": 2220
+    },
+    {
+      "text": "Indonesian",
+      "startMs": 2280,
+      "endMs": 2740
+    },
+    {
+      "text": "companies",
+      "startMs": 2820,
+      "endMs": 3200
+    },
+    {
+      "text": "licensed",
+      "startMs": 3700,
+      "endMs": 4120
+    },
+    {
+      "text": "by",
+      "startMs": 4160,
+      "endMs": 4260
+    },
+    {
+      "text": "the",
+      "startMs": 4300,
+      "endMs": 4360
+    },
+    {
+      "text": "central",
+      "startMs": 4400,
+      "endMs": 4680
+    },
+    {
+      "text": "bank.",
+      "startMs": 4740,
+      "endMs": 4960
+    },
+    {
+      "text": "Card",
+      "startMs": 5740,
+      "endMs": 5940
+    },
+    {
+      "text": "payments",
+      "startMs": 6020,
+      "endMs": 6360
+    },
+    {
+      "text": "inside",
+      "startMs": 6420,
+      "endMs": 6780
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 6840,
+      "endMs": 7340
+    },
+    {
+      "text": "run",
+      "startMs": 7420,
+      "endMs": 7560
+    },
+    {
+      "text": "through",
+      "startMs": 7580,
+      "endMs": 7720
+    },
+    {
+      "text": "them",
+      "startMs": 7780,
+      "endMs": 7920
+    },
+    {
+      "text": "too.",
+      "startMs": 7980,
+      "endMs": 8200
+    }
+  ],
+  "s26": [
+    {
+      "text": "That",
+      "startMs": 120,
+      "endMs": 280
+    },
+    {
+      "text": "last",
+      "startMs": 340,
+      "endMs": 600
+    },
+    {
+      "text": "part",
+      "startMs": 680,
+      "endMs": 860
+    },
+    {
+      "text": "is",
+      "startMs": 900,
+      "endMs": 980
+    },
+    {
+      "text": "what",
+      "startMs": 1000,
+      "endMs": 1100
+    },
+    {
+      "text": "the",
+      "startMs": 1160,
+      "endMs": 1220
+    },
+    {
+      "text": "United",
+      "startMs": 1280,
+      "endMs": 1580
+    },
+    {
+      "text": "States",
+      "startMs": 1660,
+      "endMs": 1920
+    },
+    {
+      "text": "didn't",
+      "startMs": 2060,
+      "endMs": 2320
+    },
+    {
+      "text": "like.",
+      "startMs": 2400,
+      "endMs": 2640
+    }
+  ],
+  "s27": [
+    {
+      "text": "In",
+      "startMs": 80,
+      "endMs": 268
+    },
+    {
+      "text": "March",
+      "startMs": 268,
+      "endMs": 644
+    },
+    {
+      "text": "2025,",
+      "startMs": 644,
+      "endMs": 1020
+    },
+    {
+      "text": "the",
+      "startMs": 1020,
+      "endMs": 1270
+    },
+    {
+      "text": "US",
+      "startMs": 1270,
+      "endMs": 1458
+    },
+    {
+      "text": "trade",
+      "startMs": 1458,
+      "endMs": 1834
+    },
+    {
+      "text": "office",
+      "startMs": 1834,
+      "endMs": 2272
+    },
+    {
+      "text": "put",
+      "startMs": 2272,
+      "endMs": 2522
+    },
+    {
+      "text": "QRIS",
+      "startMs": 2522,
+      "endMs": 2835
+    },
+    {
+      "text": "in",
+      "startMs": 2835,
+      "endMs": 3023
+    },
+    {
+      "text": "its",
+      "startMs": 3023,
+      "endMs": 3273
+    },
+    {
+      "text": "yearly",
+      "startMs": 3273,
+      "endMs": 3711
+    },
+    {
+      "text": "report",
+      "startMs": 3711,
+      "endMs": 4149
+    },
+    {
+      "text": "on",
+      "startMs": 4149,
+      "endMs": 4337
+    },
+    {
+      "text": "trade",
+      "startMs": 4337,
+      "endMs": 4713
+    },
+    {
+      "text": "barriers.",
+      "startMs": 4713,
+      "endMs": 5339
+    },
+    {
+      "text": "It",
+      "startMs": 5339,
+      "endMs": 5527
+    },
+    {
+      "text": "said",
+      "startMs": 5527,
+      "endMs": 5840
+    },
+    {
+      "text": "foreign",
+      "startMs": 5840,
+      "endMs": 6341
+    },
+    {
+      "text": "companies,",
+      "startMs": 6341,
+      "endMs": 7030
+    },
+    {
+      "text": "American",
+      "startMs": 7030,
+      "endMs": 7593
+    },
+    {
+      "text": "ones",
+      "startMs": 7593,
+      "endMs": 7906
+    },
+    {
+      "text": "included,",
+      "startMs": 7906,
+      "endMs": 8532
+    },
+    {
+      "text": "weren't",
+      "startMs": 8532,
+      "endMs": 9033
+    },
+    {
+      "text": "consulted",
+      "startMs": 9033,
+      "endMs": 9659
+    },
+    {
+      "text": "enough.",
+      "startMs": 9659,
+      "endMs": 10160
+    }
+  ],
+  "s28": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "same",
+      "startMs": 220,
+      "endMs": 400
+    },
+    {
+      "text": "report",
+      "startMs": 420,
+      "endMs": 780
+    },
+    {
+      "text": "pointed",
+      "startMs": 840,
+      "endMs": 1180
+    },
+    {
+      "text": "at",
+      "startMs": 1220,
+      "endMs": 1300
+    },
+    {
+      "text": "the",
+      "startMs": 1340,
+      "endMs": 1420
+    },
+    {
+      "text": "rule",
+      "startMs": 1460,
+      "endMs": 1660
+    },
+    {
+      "text": "that",
+      "startMs": 1700,
+      "endMs": 1840
+    },
+    {
+      "text": "domestic",
+      "startMs": 1880,
+      "endMs": 2360
+    },
+    {
+      "text": "card",
+      "startMs": 2420,
+      "endMs": 2640
+    },
+    {
+      "text": "payments",
+      "startMs": 2700,
+      "endMs": 3040
+    },
+    {
+      "text": "must",
+      "startMs": 3120,
+      "endMs": 3300
+    },
+    {
+      "text": "go",
+      "startMs": 3340,
+      "endMs": 3480
+    },
+    {
+      "text": "through",
+      "startMs": 3520,
+      "endMs": 3700
+    },
+    {
+      "text": "switches",
+      "startMs": 3760,
+      "endMs": 4120
+    },
+    {
+      "text": "inside",
+      "startMs": 4180,
+      "endMs": 4540
+    },
+    {
+      "text": "Indonesia.",
+      "startMs": 4580,
+      "endMs": 5100
+    },
+    {
+      "text": "Global",
+      "startMs": 6100,
+      "endMs": 6340
+    },
+    {
+      "text": "card",
+      "startMs": 6420,
+      "endMs": 6620
+    },
+    {
+      "text": "networks",
+      "startMs": 6660,
+      "endMs": 7020
+    },
+    {
+      "text": "can't",
+      "startMs": 7080,
+      "endMs": 7260
+    },
+    {
+      "text": "run",
+      "startMs": 7300,
+      "endMs": 7420
+    },
+    {
+      "text": "that",
+      "startMs": 7480,
+      "endMs": 7600
+    },
+    {
+      "text": "part",
+      "startMs": 7660,
+      "endMs": 7840
+    },
+    {
+      "text": "there.",
+      "startMs": 7900,
+      "endMs": 8100
+    }
+  ],
+  "s29": [
+    {
+      "text": "Look",
+      "startMs": 100,
+      "endMs": 469
+    },
+    {
+      "text": "at",
+      "startMs": 469,
+      "endMs": 690
+    },
+    {
+      "text": "who",
+      "startMs": 690,
+      "endMs": 985
+    },
+    {
+      "text": "designed",
+      "startMs": 985,
+      "endMs": 1649
+    },
+    {
+      "text": "that",
+      "startMs": 1649,
+      "endMs": 2018
+    },
+    {
+      "text": "socket.",
+      "startMs": 2018,
+      "endMs": 2609
+    },
+    {
+      "text": "The",
+      "startMs": 2609,
+      "endMs": 2904
+    },
+    {
+      "text": "socket",
+      "startMs": 2904,
+      "endMs": 3421
+    },
+    {
+      "text": "shape",
+      "startMs": 3421,
+      "endMs": 3864
+    },
+    {
+      "text": "QRIS",
+      "startMs": 3864,
+      "endMs": 4233
+    },
+    {
+      "text": "uses",
+      "startMs": 4233,
+      "endMs": 4602
+    },
+    {
+      "text": "comes",
+      "startMs": 4602,
+      "endMs": 5045
+    },
+    {
+      "text": "from",
+      "startMs": 5045,
+      "endMs": 5414
+    },
+    {
+      "text": "EMVCo,",
+      "startMs": 5414,
+      "endMs": 5931
+    },
+    {
+      "text": "a",
+      "startMs": 5931,
+      "endMs": 6079
+    },
+    {
+      "text": "standards",
+      "startMs": 6079,
+      "endMs": 6817
+    },
+    {
+      "text": "body",
+      "startMs": 6817,
+      "endMs": 7186
+    },
+    {
+      "text": "set",
+      "startMs": 7186,
+      "endMs": 7481
+    },
+    {
+      "text": "up",
+      "startMs": 7481,
+      "endMs": 7702
+    },
+    {
+      "text": "by",
+      "startMs": 7702,
+      "endMs": 7923
+    },
+    {
+      "text": "Europay,",
+      "startMs": 7923,
+      "endMs": 8587
+    },
+    {
+      "text": "Mastercard",
+      "startMs": 8587,
+      "endMs": 9399
+    },
+    {
+      "text": "and",
+      "startMs": 9399,
+      "endMs": 9694
+    },
+    {
+      "text": "Visa.",
+      "startMs": 9694,
+      "endMs": 10137
+    }
+  ],
+  "s30": [
+    {
+      "text": "Bank",
+      "startMs": 100,
+      "endMs": 320
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 380,
+      "endMs": 940
+    },
+    {
+      "text": "reply",
+      "startMs": 980,
+      "endMs": 1340
+    },
+    {
+      "text": "was",
+      "startMs": 1400,
+      "endMs": 1520
+    },
+    {
+      "text": "polite.",
+      "startMs": 1560,
+      "endMs": 1940
+    },
+    {
+      "text": "It's",
+      "startMs": 2740,
+      "endMs": 2900
+    },
+    {
+      "text": "open",
+      "startMs": 2960,
+      "endMs": 3160
+    },
+    {
+      "text": "to",
+      "startMs": 3220,
+      "endMs": 3320
+    },
+    {
+      "text": "working",
+      "startMs": 3360,
+      "endMs": 3640
+    },
+    {
+      "text": "with",
+      "startMs": 3680,
+      "endMs": 3820
+    },
+    {
+      "text": "any",
+      "startMs": 3880,
+      "endMs": 4019
+    },
+    {
+      "text": "country,",
+      "startMs": 4120,
+      "endMs": 4460
+    },
+    {
+      "text": "the",
+      "startMs": 4540,
+      "endMs": 4620
+    },
+    {
+      "text": "US",
+      "startMs": 4680,
+      "endMs": 4960
+    },
+    {
+      "text": "included.",
+      "startMs": 5020,
+      "endMs": 5520
+    }
+  ],
+  "s31": [
+    {
+      "text": "To",
+      "startMs": 100,
+      "endMs": 140
+    },
+    {
+      "text": "be",
+      "startMs": 200,
+      "endMs": 260
+    },
+    {
+      "text": "fair",
+      "startMs": 360,
+      "endMs": 500
+    },
+    {
+      "text": "to",
+      "startMs": 540,
+      "endMs": 600
+    },
+    {
+      "text": "the",
+      "startMs": 620,
+      "endMs": 700
+    },
+    {
+      "text": "card",
+      "startMs": 760,
+      "endMs": 960
+    },
+    {
+      "text": "networks,",
+      "startMs": 1000,
+      "endMs": 1380
+    },
+    {
+      "text": "they",
+      "startMs": 1460,
+      "endMs": 1620
+    },
+    {
+      "text": "aren't",
+      "startMs": 1680,
+      "endMs": 1860
+    },
+    {
+      "text": "losing",
+      "startMs": 1900,
+      "endMs": 2180
+    },
+    {
+      "text": "the",
+      "startMs": 2220,
+      "endMs": 2300
+    },
+    {
+      "text": "world.",
+      "startMs": 2360,
+      "endMs": 2660
+    },
+    {
+      "text": "Visa",
+      "startMs": 3700,
+      "endMs": 4019
+    },
+    {
+      "text": "and",
+      "startMs": 4120,
+      "endMs": 4240
+    },
+    {
+      "text": "Mastercard",
+      "startMs": 4300,
+      "endMs": 4860
+    },
+    {
+      "text": "still",
+      "startMs": 4960,
+      "endMs": 5140
+    },
+    {
+      "text": "lead",
+      "startMs": 5180,
+      "endMs": 5320
+    },
+    {
+      "text": "in",
+      "startMs": 5360,
+      "endMs": 5500
+    },
+    {
+      "text": "Indonesian",
+      "startMs": 5560,
+      "endMs": 6020
+    },
+    {
+      "text": "credit",
+      "startMs": 6080,
+      "endMs": 6280
+    },
+    {
+      "text": "cards",
+      "startMs": 6340,
+      "endMs": 6620
+    },
+    {
+      "text": "and",
+      "startMs": 7000,
+      "endMs": 7120
+    },
+    {
+      "text": "in",
+      "startMs": 7160,
+      "endMs": 7260
+    },
+    {
+      "text": "payments",
+      "startMs": 7320,
+      "endMs": 7640
+    },
+    {
+      "text": "between",
+      "startMs": 7680,
+      "endMs": 7940
+    },
+    {
+      "text": "countries.",
+      "startMs": 8000,
+      "endMs": 8460
+    }
+  ],
+  "s32": [
+    {
+      "text": "Outside",
+      "startMs": 80,
+      "endMs": 486
+    },
+    {
+      "text": "a",
+      "startMs": 486,
+      "endMs": 587
+    },
+    {
+      "text": "handful",
+      "startMs": 587,
+      "endMs": 993
+    },
+    {
+      "text": "of",
+      "startMs": 993,
+      "endMs": 1145
+    },
+    {
+      "text": "countries,",
+      "startMs": 1145,
+      "endMs": 1703
+    },
+    {
+      "text": "your",
+      "startMs": 1703,
+      "endMs": 1956
+    },
+    {
+      "text": "QRIS",
+      "startMs": 1956,
+      "endMs": 2209
+    },
+    {
+      "text": "app",
+      "startMs": 2209,
+      "endMs": 2412
+    },
+    {
+      "text": "doesn't",
+      "startMs": 2412,
+      "endMs": 2818
+    },
+    {
+      "text": "work,",
+      "startMs": 2818,
+      "endMs": 3122
+    },
+    {
+      "text": "and",
+      "startMs": 3122,
+      "endMs": 3325
+    },
+    {
+      "text": "your",
+      "startMs": 3325,
+      "endMs": 3578
+    },
+    {
+      "text": "card",
+      "startMs": 3578,
+      "endMs": 3831
+    },
+    {
+      "text": "still",
+      "startMs": 3831,
+      "endMs": 4135
+    },
+    {
+      "text": "does.",
+      "startMs": 4135,
+      "endMs": 4439
+    }
+  ],
+  "s33": [
+    {
+      "text": "Now",
+      "startMs": 100,
+      "endMs": 370
+    },
+    {
+      "text": "the",
+      "startMs": 370,
+      "endMs": 640
+    },
+    {
+      "text": "second",
+      "startMs": 640,
+      "endMs": 1112
+    },
+    {
+      "text": "question:",
+      "startMs": 1112,
+      "endMs": 1786
+    },
+    {
+      "text": "how",
+      "startMs": 1786,
+      "endMs": 2056
+    },
+    {
+      "text": "does",
+      "startMs": 2056,
+      "endMs": 2393
+    },
+    {
+      "text": "this",
+      "startMs": 2393,
+      "endMs": 2730
+    },
+    {
+      "text": "cross",
+      "startMs": 2730,
+      "endMs": 3135
+    },
+    {
+      "text": "borders?",
+      "startMs": 3135,
+      "endMs": 3742
+    },
+    {
+      "text": "In",
+      "startMs": 3742,
+      "endMs": 3944
+    },
+    {
+      "text": "August",
+      "startMs": 3944,
+      "endMs": 4416
+    },
+    {
+      "text": "2022,",
+      "startMs": 4416,
+      "endMs": 4821
+    },
+    {
+      "text": "Thailand",
+      "startMs": 4821,
+      "endMs": 5428
+    },
+    {
+      "text": "became",
+      "startMs": 5428,
+      "endMs": 5900
+    },
+    {
+      "text": "the",
+      "startMs": 5900,
+      "endMs": 6170
+    },
+    {
+      "text": "first",
+      "startMs": 6170,
+      "endMs": 6575
+    },
+    {
+      "text": "country",
+      "startMs": 6575,
+      "endMs": 7114
+    },
+    {
+      "text": "linked",
+      "startMs": 7114,
+      "endMs": 7586
+    },
+    {
+      "text": "to",
+      "startMs": 7586,
+      "endMs": 7788
+    },
+    {
+      "text": "QRIS,",
+      "startMs": 7788,
+      "endMs": 8193
+    },
+    {
+      "text": "then",
+      "startMs": 8193,
+      "endMs": 8530
+    },
+    {
+      "text": "Malaysia",
+      "startMs": 8530,
+      "endMs": 9137
+    },
+    {
+      "text": "in",
+      "startMs": 9137,
+      "endMs": 9339
+    },
+    {
+      "text": "2023,",
+      "startMs": 9339,
+      "endMs": 9744
+    },
+    {
+      "text": "then",
+      "startMs": 9744,
+      "endMs": 10081
+    },
+    {
+      "text": "Singapore.",
+      "startMs": 10081,
+      "endMs": 10820
+    }
+  ],
+  "s34": [
+    {
+      "text": "Japan",
+      "startMs": 100,
+      "endMs": 400
+    },
+    {
+      "text": "joined",
+      "startMs": 480,
+      "endMs": 700
+    },
+    {
+      "text": "in",
+      "startMs": 740,
+      "endMs": 840
+    },
+    {
+      "text": "August",
+      "startMs": 900,
+      "endMs": 1160
+    },
+    {
+      "text": "2025,",
+      "startMs": 1300,
+      "endMs": 2020
+    },
+    {
+      "text": "then",
+      "startMs": 2400,
+      "endMs": 2520
+    },
+    {
+      "text": "South",
+      "startMs": 2640,
+      "endMs": 2840
+    },
+    {
+      "text": "Korea",
+      "startMs": 2900,
+      "endMs": 3200
+    },
+    {
+      "text": "and",
+      "startMs": 3260,
+      "endMs": 3360
+    },
+    {
+      "text": "China",
+      "startMs": 3440,
+      "endMs": 3780
+    },
+    {
+      "text": "in",
+      "startMs": 3820,
+      "endMs": 3920
+    },
+    {
+      "text": "2026.",
+      "startMs": 4040,
+      "endMs": 4780
+    },
+    {
+      "text": "That",
+      "startMs": 5220,
+      "endMs": 5360
+    },
+    {
+      "text": "makes",
+      "startMs": 5400,
+      "endMs": 5580
+    },
+    {
+      "text": "six",
+      "startMs": 5620,
+      "endMs": 5800
+    },
+    {
+      "text": "countries.",
+      "startMs": 5860,
+      "endMs": 6280
+    }
+  ],
+  "s35": [
+    {
+      "text": "When",
+      "startMs": 120,
+      "endMs": 384
+    },
+    {
+      "text": "a",
+      "startMs": 384,
+      "endMs": 490
+    },
+    {
+      "text": "tourist",
+      "startMs": 490,
+      "endMs": 913
+    },
+    {
+      "text": "from",
+      "startMs": 913,
+      "endMs": 1177
+    },
+    {
+      "text": "Thailand",
+      "startMs": 1177,
+      "endMs": 1653
+    },
+    {
+      "text": "pays",
+      "startMs": 1653,
+      "endMs": 1917
+    },
+    {
+      "text": "a",
+      "startMs": 1917,
+      "endMs": 2023
+    },
+    {
+      "text": "Bali",
+      "startMs": 2023,
+      "endMs": 2287
+    },
+    {
+      "text": "stall",
+      "startMs": 2287,
+      "endMs": 2604
+    },
+    {
+      "text": "with",
+      "startMs": 2604,
+      "endMs": 2868
+    },
+    {
+      "text": "QRIS,",
+      "startMs": 2868,
+      "endMs": 3185
+    },
+    {
+      "text": "the",
+      "startMs": 3185,
+      "endMs": 3396
+    },
+    {
+      "text": "money",
+      "startMs": 3396,
+      "endMs": 3713
+    },
+    {
+      "text": "is",
+      "startMs": 3713,
+      "endMs": 3872
+    },
+    {
+      "text": "never",
+      "startMs": 3872,
+      "endMs": 4189
+    },
+    {
+      "text": "turned",
+      "startMs": 4189,
+      "endMs": 4559
+    },
+    {
+      "text": "into",
+      "startMs": 4559,
+      "endMs": 4823
+    },
+    {
+      "text": "US",
+      "startMs": 4823,
+      "endMs": 4982
+    },
+    {
+      "text": "dollars.",
+      "startMs": 4982,
+      "endMs": 5458
+    },
+    {
+      "text": "Most",
+      "startMs": 5458,
+      "endMs": 5722
+    },
+    {
+      "text": "people",
+      "startMs": 5722,
+      "endMs": 6092
+    },
+    {
+      "text": "would",
+      "startMs": 6092,
+      "endMs": 6409
+    },
+    {
+      "text": "guess",
+      "startMs": 6409,
+      "endMs": 6726
+    },
+    {
+      "text": "it",
+      "startMs": 6726,
+      "endMs": 6885
+    },
+    {
+      "text": "gets",
+      "startMs": 6885,
+      "endMs": 7149
+    },
+    {
+      "text": "converted",
+      "startMs": 7149,
+      "endMs": 7678
+    },
+    {
+      "text": "somewhere",
+      "startMs": 7678,
+      "endMs": 8207
+    },
+    {
+      "text": "in",
+      "startMs": 8207,
+      "endMs": 8366
+    },
+    {
+      "text": "the",
+      "startMs": 8366,
+      "endMs": 8577
+    },
+    {
+      "text": "middle.",
+      "startMs": 8577,
+      "endMs": 9000
+    }
+  ],
+  "s36": [
+    {
+      "text": "That",
+      "startMs": 100,
+      "endMs": 260
+    },
+    {
+      "text": "tourist",
+      "startMs": 320,
+      "endMs": 700
+    },
+    {
+      "text": "walks",
+      "startMs": 760,
+      "endMs": 1000
+    },
+    {
+      "text": "up",
+      "startMs": 1060,
+      "endMs": 1140
+    },
+    {
+      "text": "to",
+      "startMs": 1180,
+      "endMs": 1240
+    },
+    {
+      "text": "the",
+      "startMs": 1280,
+      "endMs": 1380
+    },
+    {
+      "text": "same",
+      "startMs": 1440,
+      "endMs": 1700
+    },
+    {
+      "text": "noodle",
+      "startMs": 1740,
+      "endMs": 1960
+    },
+    {
+      "text": "stall",
+      "startMs": 2060,
+      "endMs": 2240
+    },
+    {
+      "text": "in",
+      "startMs": 2260,
+      "endMs": 2360
+    },
+    {
+      "text": "Bali.",
+      "startMs": 2400,
+      "endMs": 2780
+    },
+    {
+      "text": "The",
+      "startMs": 3660,
+      "endMs": 3740
+    },
+    {
+      "text": "tourist",
+      "startMs": 3800,
+      "endMs": 4120
+    },
+    {
+      "text": "scans",
+      "startMs": 4180,
+      "endMs": 4480
+    },
+    {
+      "text": "the",
+      "startMs": 4540,
+      "endMs": 4620
+    },
+    {
+      "text": "same",
+      "startMs": 4680,
+      "endMs": 4900
+    },
+    {
+      "text": "sticker",
+      "startMs": 4980,
+      "endMs": 5320
+    },
+    {
+      "text": "using",
+      "startMs": 5720,
+      "endMs": 5920
+    },
+    {
+      "text": "a",
+      "startMs": 5980,
+      "endMs": 6060
+    },
+    {
+      "text": "Thai",
+      "startMs": 6120,
+      "endMs": 6360
+    },
+    {
+      "text": "banking",
+      "startMs": 6460,
+      "endMs": 6800
+    },
+    {
+      "text": "app.",
+      "startMs": 6880,
+      "endMs": 7040
+    }
+  ],
+  "s37": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "Thai",
+      "startMs": 240,
+      "endMs": 440
+    },
+    {
+      "text": "app",
+      "startMs": 580,
+      "endMs": 740
+    },
+    {
+      "text": "sees",
+      "startMs": 820,
+      "endMs": 1020
+    },
+    {
+      "text": "that",
+      "startMs": 1060,
+      "endMs": 1140
+    },
+    {
+      "text": "the",
+      "startMs": 1160,
+      "endMs": 1260
+    },
+    {
+      "text": "code",
+      "startMs": 1300,
+      "endMs": 1500
+    },
+    {
+      "text": "is",
+      "startMs": 1540,
+      "endMs": 1660
+    },
+    {
+      "text": "Indonesian",
+      "startMs": 1700,
+      "endMs": 2220
+    },
+    {
+      "text": "and",
+      "startMs": 2240,
+      "endMs": 2320
+    },
+    {
+      "text": "sends",
+      "startMs": 2420,
+      "endMs": 2640
+    },
+    {
+      "text": "the",
+      "startMs": 2680,
+      "endMs": 2760
+    },
+    {
+      "text": "payment",
+      "startMs": 2800,
+      "endMs": 3040
+    },
+    {
+      "text": "to",
+      "startMs": 3080,
+      "endMs": 3160
+    },
+    {
+      "text": "Thailand's",
+      "startMs": 3220,
+      "endMs": 3660
+    },
+    {
+      "text": "switch.",
+      "startMs": 3720,
+      "endMs": 4040
+    },
+    {
+      "text": "That",
+      "startMs": 5080,
+      "endMs": 5220
+    },
+    {
+      "text": "switch",
+      "startMs": 5300,
+      "endMs": 5540
+    },
+    {
+      "text": "passes",
+      "startMs": 5620,
+      "endMs": 5940
+    },
+    {
+      "text": "it",
+      "startMs": 5980,
+      "endMs": 6040
+    },
+    {
+      "text": "across",
+      "startMs": 6080,
+      "endMs": 6420
+    },
+    {
+      "text": "to",
+      "startMs": 6460,
+      "endMs": 6580
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 6640,
+      "endMs": 7160
+    },
+    {
+      "text": "switch,",
+      "startMs": 7220,
+      "endMs": 7480
+    },
+    {
+      "text": "which",
+      "startMs": 7860,
+      "endMs": 8020
+    },
+    {
+      "text": "takes",
+      "startMs": 8060,
+      "endMs": 8240
+    },
+    {
+      "text": "it",
+      "startMs": 8280,
+      "endMs": 8340
+    },
+    {
+      "text": "to",
+      "startMs": 8380,
+      "endMs": 8440
+    },
+    {
+      "text": "the",
+      "startMs": 8480,
+      "endMs": 8540
+    },
+    {
+      "text": "stall's",
+      "startMs": 8600,
+      "endMs": 8900
+    },
+    {
+      "text": "bank",
+      "startMs": 8960,
+      "endMs": 9200
+    },
+    {
+      "text": "down",
+      "startMs": 9540,
+      "endMs": 9680
+    },
+    {
+      "text": "the",
+      "startMs": 9720,
+      "endMs": 9800
+    },
+    {
+      "text": "same",
+      "startMs": 9880,
+      "endMs": 10080
+    },
+    {
+      "text": "road",
+      "startMs": 10120,
+      "endMs": 10280
+    },
+    {
+      "text": "as",
+      "startMs": 10320,
+      "endMs": 10420
+    },
+    {
+      "text": "before.",
+      "startMs": 10460,
+      "endMs": 10840
+    }
+  ],
+  "s38": [
+    {
+      "text": "Before",
+      "startMs": 100,
+      "endMs": 380
+    },
+    {
+      "text": "typing",
+      "startMs": 460,
+      "endMs": 780
+    },
+    {
+      "text": "a",
+      "startMs": 840,
+      "endMs": 920
+    },
+    {
+      "text": "PIN,",
+      "startMs": 980,
+      "endMs": 1280
+    },
+    {
+      "text": "the",
+      "startMs": 1740,
+      "endMs": 1840
+    },
+    {
+      "text": "tourist",
+      "startMs": 1900,
+      "endMs": 2260
+    },
+    {
+      "text": "sees",
+      "startMs": 2400,
+      "endMs": 2580
+    },
+    {
+      "text": "the",
+      "startMs": 2620,
+      "endMs": 2700
+    },
+    {
+      "text": "price",
+      "startMs": 2740,
+      "endMs": 2980
+    },
+    {
+      "text": "in",
+      "startMs": 3000,
+      "endMs": 3100
+    },
+    {
+      "text": "baht.",
+      "startMs": 3160,
+      "endMs": 3400
+    },
+    {
+      "text": "Then",
+      "startMs": 4300,
+      "endMs": 4440
+    },
+    {
+      "text": "the",
+      "startMs": 4480,
+      "endMs": 4540
+    },
+    {
+      "text": "baht",
+      "startMs": 4620,
+      "endMs": 4800
+    },
+    {
+      "text": "balance",
+      "startMs": 4860,
+      "endMs": 5140
+    },
+    {
+      "text": "goes",
+      "startMs": 5180,
+      "endMs": 5400
+    },
+    {
+      "text": "down,",
+      "startMs": 5440,
+      "endMs": 5660
+    },
+    {
+      "text": "and",
+      "startMs": 6000,
+      "endMs": 6080
+    },
+    {
+      "text": "the",
+      "startMs": 6100,
+      "endMs": 6180
+    },
+    {
+      "text": "stall",
+      "startMs": 6260,
+      "endMs": 6520
+    },
+    {
+      "text": "still",
+      "startMs": 6620,
+      "endMs": 6800
+    },
+    {
+      "text": "receives",
+      "startMs": 6840,
+      "endMs": 7260
+    },
+    {
+      "text": "rupiah.",
+      "startMs": 7360,
+      "endMs": 7880
+    }
+  ],
+  "s39": [
+    {
+      "text": "Behind",
+      "startMs": 100,
+      "endMs": 400
+    },
+    {
+      "text": "the",
+      "startMs": 420,
+      "endMs": 520
+    },
+    {
+      "text": "scenes,",
+      "startMs": 580,
+      "endMs": 920
+    },
+    {
+      "text": "a",
+      "startMs": 1480,
+      "endMs": 1520
+    },
+    {
+      "text": "few",
+      "startMs": 1580,
+      "endMs": 1740
+    },
+    {
+      "text": "appointed",
+      "startMs": 1780,
+      "endMs": 2120
+    },
+    {
+      "text": "banks",
+      "startMs": 2200,
+      "endMs": 2460
+    },
+    {
+      "text": "in",
+      "startMs": 2500,
+      "endMs": 2580
+    },
+    {
+      "text": "each",
+      "startMs": 2620,
+      "endMs": 2800
+    },
+    {
+      "text": "country",
+      "startMs": 2860,
+      "endMs": 3180
+    },
+    {
+      "text": "swap",
+      "startMs": 3300,
+      "endMs": 3560
+    },
+    {
+      "text": "rupiah",
+      "startMs": 3720,
+      "endMs": 4300
+    },
+    {
+      "text": "and",
+      "startMs": 4480,
+      "endMs": 4580
+    },
+    {
+      "text": "baht",
+      "startMs": 4680,
+      "endMs": 4900
+    },
+    {
+      "text": "with",
+      "startMs": 4940,
+      "endMs": 5060
+    },
+    {
+      "text": "each",
+      "startMs": 5100,
+      "endMs": 5240
+    },
+    {
+      "text": "other",
+      "startMs": 5300,
+      "endMs": 5440
+    },
+    {
+      "text": "directly.",
+      "startMs": 5500,
+      "endMs": 5980
+    },
+    {
+      "text": "That",
+      "startMs": 6900,
+      "endMs": 7040
+    },
+    {
+      "text": "final",
+      "startMs": 7160,
+      "endMs": 7420
+    },
+    {
+      "text": "handover",
+      "startMs": 7480,
+      "endMs": 7900
+    },
+    {
+      "text": "between",
+      "startMs": 7940,
+      "endMs": 8220
+    },
+    {
+      "text": "banks",
+      "startMs": 8300,
+      "endMs": 8560
+    },
+    {
+      "text": "is",
+      "startMs": 8620,
+      "endMs": 8720
+    },
+    {
+      "text": "called",
+      "startMs": 8760,
+      "endMs": 8980
+    },
+    {
+      "text": "settlement,",
+      "startMs": 9040,
+      "endMs": 9460
+    },
+    {
+      "text": "and",
+      "startMs": 9980,
+      "endMs": 10060
+    },
+    {
+      "text": "here",
+      "startMs": 10120,
+      "endMs": 10220
+    },
+    {
+      "text": "it",
+      "startMs": 10260,
+      "endMs": 10340
+    },
+    {
+      "text": "happens",
+      "startMs": 10400,
+      "endMs": 10760
+    },
+    {
+      "text": "in",
+      "startMs": 10800,
+      "endMs": 10860
+    },
+    {
+      "text": "the",
+      "startMs": 10900,
+      "endMs": 11000
+    },
+    {
+      "text": "two",
+      "startMs": 11060,
+      "endMs": 11220
+    },
+    {
+      "text": "local",
+      "startMs": 11300,
+      "endMs": 11540
+    },
+    {
+      "text": "currencies.",
+      "startMs": 11640,
+      "endMs": 12180
+    }
+  ],
+  "s40": [
+    {
+      "text": "That's",
+      "startMs": 120,
+      "endMs": 300
+    },
+    {
+      "text": "the",
+      "startMs": 340,
+      "endMs": 420
+    },
+    {
+      "text": "adapter.",
+      "startMs": 460,
+      "endMs": 900
+    },
+    {
+      "text": "Two",
+      "startMs": 1720,
+      "endMs": 1820
+    },
+    {
+      "text": "countries",
+      "startMs": 1900,
+      "endMs": 2260
+    },
+    {
+      "text": "with",
+      "startMs": 2300,
+      "endMs": 2440
+    },
+    {
+      "text": "different",
+      "startMs": 2480,
+      "endMs": 2740
+    },
+    {
+      "text": "sockets",
+      "startMs": 2840,
+      "endMs": 3300
+    },
+    {
+      "text": "joined",
+      "startMs": 3700,
+      "endMs": 3960
+    },
+    {
+      "text": "through",
+      "startMs": 3980,
+      "endMs": 4140
+    },
+    {
+      "text": "their",
+      "startMs": 4180,
+      "endMs": 4280
+    },
+    {
+      "text": "switches,",
+      "startMs": 4380,
+      "endMs": 4780
+    },
+    {
+      "text": "each",
+      "startMs": 5140,
+      "endMs": 5320
+    },
+    {
+      "text": "keeping",
+      "startMs": 5360,
+      "endMs": 5600
+    },
+    {
+      "text": "its",
+      "startMs": 5640,
+      "endMs": 5740
+    },
+    {
+      "text": "own",
+      "startMs": 5780,
+      "endMs": 5920
+    },
+    {
+      "text": "money.",
+      "startMs": 5960,
+      "endMs": 6200
+    },
+    {
+      "text": "It",
+      "startMs": 7020,
+      "endMs": 7100
+    },
+    {
+      "text": "works",
+      "startMs": 7140,
+      "endMs": 7340
+    },
+    {
+      "text": "the",
+      "startMs": 7380,
+      "endMs": 7440
+    },
+    {
+      "text": "other",
+      "startMs": 7480,
+      "endMs": 7600
+    },
+    {
+      "text": "way",
+      "startMs": 7640,
+      "endMs": 7780
+    },
+    {
+      "text": "too.",
+      "startMs": 7840,
+      "endMs": 8060
+    },
+    {
+      "text": "In",
+      "startMs": 8960,
+      "endMs": 9060
+    },
+    {
+      "text": "Bangkok,",
+      "startMs": 9120,
+      "endMs": 9620
+    },
+    {
+      "text": "you",
+      "startMs": 9960,
+      "endMs": 10060
+    },
+    {
+      "text": "scan",
+      "startMs": 10140,
+      "endMs": 10320
+    },
+    {
+      "text": "a",
+      "startMs": 10360,
+      "endMs": 10420
+    },
+    {
+      "text": "Thai",
+      "startMs": 10460,
+      "endMs": 10660
+    },
+    {
+      "text": "code",
+      "startMs": 10760,
+      "endMs": 10960
+    },
+    {
+      "text": "with",
+      "startMs": 11000,
+      "endMs": 11100
+    },
+    {
+      "text": "your",
+      "startMs": 11120,
+      "endMs": 11200
+    },
+    {
+      "text": "Indonesian",
+      "startMs": 11260,
+      "endMs": 11680
+    },
+    {
+      "text": "app,",
+      "startMs": 11840,
+      "endMs": 12020
+    },
+    {
+      "text": "and",
+      "startMs": 12480,
+      "endMs": 12580
+    },
+    {
+      "text": "your",
+      "startMs": 12620,
+      "endMs": 12760
+    },
+    {
+      "text": "rupiah",
+      "startMs": 12820,
+      "endMs": 13260
+    },
+    {
+      "text": "balance",
+      "startMs": 13340,
+      "endMs": 13660
+    },
+    {
+      "text": "goes",
+      "startMs": 13720,
+      "endMs": 13920
+    },
+    {
+      "text": "down.",
+      "startMs": 13980,
+      "endMs": 14240
+    }
+  ],
+  "s41": [
+    {
+      "text": "And",
+      "startMs": 80,
+      "endMs": 332
+    },
+    {
+      "text": "money",
+      "startMs": 332,
+      "endMs": 709
+    },
+    {
+      "text": "is",
+      "startMs": 709,
+      "endMs": 898
+    },
+    {
+      "text": "mostly",
+      "startMs": 898,
+      "endMs": 1338
+    },
+    {
+      "text": "flowing",
+      "startMs": 1338,
+      "endMs": 1841
+    },
+    {
+      "text": "in.",
+      "startMs": 1841,
+      "endMs": 2093
+    },
+    {
+      "text": "Up",
+      "startMs": 2093,
+      "endMs": 2282
+    },
+    {
+      "text": "to",
+      "startMs": 2282,
+      "endMs": 2471
+    },
+    {
+      "text": "July",
+      "startMs": 2471,
+      "endMs": 2785
+    },
+    {
+      "text": "2026,",
+      "startMs": 2785,
+      "endMs": 3162
+    },
+    {
+      "text": "visitors",
+      "startMs": 3162,
+      "endMs": 3728
+    },
+    {
+      "text": "spent",
+      "startMs": 3728,
+      "endMs": 4105
+    },
+    {
+      "text": "five",
+      "startMs": 4105,
+      "endMs": 4419
+    },
+    {
+      "text": "point",
+      "startMs": 4419,
+      "endMs": 4796
+    },
+    {
+      "text": "nine",
+      "startMs": 4796,
+      "endMs": 5110
+    },
+    {
+      "text": "trillion",
+      "startMs": 5110,
+      "endMs": 5676
+    },
+    {
+      "text": "rupiah",
+      "startMs": 5676,
+      "endMs": 6116
+    },
+    {
+      "text": "through",
+      "startMs": 6116,
+      "endMs": 6619
+    },
+    {
+      "text": "QRIS",
+      "startMs": 6619,
+      "endMs": 6933
+    },
+    {
+      "text": "in",
+      "startMs": 6933,
+      "endMs": 7122
+    },
+    {
+      "text": "Indonesia,",
+      "startMs": 7122,
+      "endMs": 7814
+    },
+    {
+      "text": "more",
+      "startMs": 7814,
+      "endMs": 8128
+    },
+    {
+      "text": "than",
+      "startMs": 8128,
+      "endMs": 8442
+    },
+    {
+      "text": "three",
+      "startMs": 8442,
+      "endMs": 8819
+    },
+    {
+      "text": "times",
+      "startMs": 8819,
+      "endMs": 9196
+    },
+    {
+      "text": "what",
+      "startMs": 9196,
+      "endMs": 9510
+    },
+    {
+      "text": "Indonesians",
+      "startMs": 9510,
+      "endMs": 10265
+    },
+    {
+      "text": "spent",
+      "startMs": 10265,
+      "endMs": 10642
+    },
+    {
+      "text": "with",
+      "startMs": 10642,
+      "endMs": 10956
+    },
+    {
+      "text": "it",
+      "startMs": 10956,
+      "endMs": 11145
+    },
+    {
+      "text": "abroad.",
+      "startMs": 11145,
+      "endMs": 11648
+    },
+    {
+      "text": "Most",
+      "startMs": 11648,
+      "endMs": 11962
+    },
+    {
+      "text": "of",
+      "startMs": 11962,
+      "endMs": 12151
+    },
+    {
+      "text": "those",
+      "startMs": 12151,
+      "endMs": 12528
+    },
+    {
+      "text": "visitors",
+      "startMs": 12528,
+      "endMs": 13094
+    },
+    {
+      "text": "come",
+      "startMs": 13094,
+      "endMs": 13408
+    },
+    {
+      "text": "from",
+      "startMs": 13408,
+      "endMs": 13722
+    },
+    {
+      "text": "Malaysia",
+      "startMs": 13722,
+      "endMs": 14288
+    },
+    {
+      "text": "and",
+      "startMs": 14288,
+      "endMs": 14540
+    },
+    {
+      "text": "Singapore,",
+      "startMs": 14540,
+      "endMs": 15232
+    },
+    {
+      "text": "paying",
+      "startMs": 15232,
+      "endMs": 15672
+    },
+    {
+      "text": "from",
+      "startMs": 15672,
+      "endMs": 15986
+    },
+    {
+      "text": "ringgit",
+      "startMs": 15986,
+      "endMs": 16489
+    },
+    {
+      "text": "and",
+      "startMs": 16489,
+      "endMs": 16741
+    },
+    {
+      "text": "Singapore",
+      "startMs": 16741,
+      "endMs": 17370
+    },
+    {
+      "text": "dollar",
+      "startMs": 17370,
+      "endMs": 17810
+    },
+    {
+      "text": "accounts.",
+      "startMs": 17810,
+      "endMs": 18439
+    }
+  ],
+  "s42": [
+    {
+      "text": "It's",
+      "startMs": 80,
+      "endMs": 378
+    },
+    {
+      "text": "still",
+      "startMs": 378,
+      "endMs": 736
+    },
+    {
+      "text": "small.",
+      "startMs": 736,
+      "endMs": 1153
+    },
+    {
+      "text": "When",
+      "startMs": 1153,
+      "endMs": 1451
+    },
+    {
+      "text": "Japan",
+      "startMs": 1451,
+      "endMs": 1809
+    },
+    {
+      "text": "joined,",
+      "startMs": 1809,
+      "endMs": 2286
+    },
+    {
+      "text": "only",
+      "startMs": 2286,
+      "endMs": 2584
+    },
+    {
+      "text": "thirty-five",
+      "startMs": 2584,
+      "endMs": 3299
+    },
+    {
+      "text": "shops",
+      "startMs": 3299,
+      "endMs": 3657
+    },
+    {
+      "text": "there",
+      "startMs": 3657,
+      "endMs": 4015
+    },
+    {
+      "text": "accepted",
+      "startMs": 4015,
+      "endMs": 4552
+    },
+    {
+      "text": "it,",
+      "startMs": 4552,
+      "endMs": 4790
+    },
+    {
+      "text": "and",
+      "startMs": 4790,
+      "endMs": 5028
+    },
+    {
+      "text": "only",
+      "startMs": 5028,
+      "endMs": 5326
+    },
+    {
+      "text": "Indonesians",
+      "startMs": 5326,
+      "endMs": 6041
+    },
+    {
+      "text": "could",
+      "startMs": 6041,
+      "endMs": 6399
+    },
+    {
+      "text": "pay",
+      "startMs": 6399,
+      "endMs": 6637
+    },
+    {
+      "text": "that",
+      "startMs": 6637,
+      "endMs": 6935
+    },
+    {
+      "text": "way,",
+      "startMs": 6935,
+      "endMs": 7233
+    },
+    {
+      "text": "not",
+      "startMs": 7233,
+      "endMs": 7471
+    },
+    {
+      "text": "Japanese",
+      "startMs": 7471,
+      "endMs": 8008
+    },
+    {
+      "text": "visitors",
+      "startMs": 8008,
+      "endMs": 8545
+    },
+    {
+      "text": "to",
+      "startMs": 8545,
+      "endMs": 8724
+    },
+    {
+      "text": "Indonesia.",
+      "startMs": 8724,
+      "endMs": 9380
+    }
+  ],
+  "s43": [
+    {
+      "text": "Next,",
+      "startMs": 100,
+      "endMs": 380
+    },
+    {
+      "text": "Bank",
+      "startMs": 860,
+      "endMs": 1060
+    },
+    {
+      "text": "Indonesia",
+      "startMs": 1120,
+      "endMs": 1620
+    },
+    {
+      "text": "is",
+      "startMs": 1700,
+      "endMs": 1780
+    },
+    {
+      "text": "in",
+      "startMs": 1820,
+      "endMs": 1900
+    },
+    {
+      "text": "talks",
+      "startMs": 1960,
+      "endMs": 2200
+    },
+    {
+      "text": "with",
+      "startMs": 2240,
+      "endMs": 2400
+    },
+    {
+      "text": "India,",
+      "startMs": 2460,
+      "endMs": 2820
+    },
+    {
+      "text": "Saudi",
+      "startMs": 3080,
+      "endMs": 3320
+    },
+    {
+      "text": "Arabia,",
+      "startMs": 3380,
+      "endMs": 3800
+    },
+    {
+      "text": "Vietnam,",
+      "startMs": 4040,
+      "endMs": 4540
+    },
+    {
+      "text": "and",
+      "startMs": 4720,
+      "endMs": 4860
+    },
+    {
+      "text": "Australia.",
+      "startMs": 4900,
+      "endMs": 5440
+    },
+    {
+      "text": "In",
+      "startMs": 6340,
+      "endMs": 6460
+    },
+    {
+      "text": "Saudi",
+      "startMs": 6520,
+      "endMs": 6760
+    },
+    {
+      "text": "Arabia,",
+      "startMs": 6820,
+      "endMs": 7200
+    },
+    {
+      "text": "the",
+      "startMs": 7280,
+      "endMs": 7380
+    },
+    {
+      "text": "idea",
+      "startMs": 7460,
+      "endMs": 7760
+    },
+    {
+      "text": "is",
+      "startMs": 7840,
+      "endMs": 7920
+    },
+    {
+      "text": "to",
+      "startMs": 7960,
+      "endMs": 8020
+    },
+    {
+      "text": "let",
+      "startMs": 8060,
+      "endMs": 8260
+    },
+    {
+      "text": "Indonesian",
+      "startMs": 8300,
+      "endMs": 8760
+    },
+    {
+      "text": "pilgrims",
+      "startMs": 8860,
+      "endMs": 9260
+    },
+    {
+      "text": "on",
+      "startMs": 9320,
+      "endMs": 9440
+    },
+    {
+      "text": "Hajj",
+      "startMs": 9500,
+      "endMs": 9840
+    },
+    {
+      "text": "and",
+      "startMs": 10180,
+      "endMs": 10280
+    },
+    {
+      "text": "Umrah",
+      "startMs": 10440,
+      "endMs": 10820
+    },
+    {
+      "text": "pay",
+      "startMs": 10920,
+      "endMs": 11060
+    },
+    {
+      "text": "with",
+      "startMs": 11100,
+      "endMs": 11220
+    },
+    {
+      "text": "it.",
+      "startMs": 11260,
+      "endMs": 11380
+    }
+  ],
+  "s44": [
+    {
+      "text": "And",
+      "startMs": 60,
+      "endMs": 160
+    },
+    {
+      "text": "six",
+      "startMs": 280,
+      "endMs": 480
+    },
+    {
+      "text": "central",
+      "startMs": 540,
+      "endMs": 820
+    },
+    {
+      "text": "banks,",
+      "startMs": 920,
+      "endMs": 1240
+    },
+    {
+      "text": "Indonesia's",
+      "startMs": 1520,
+      "endMs": 2020
+    },
+    {
+      "text": "among",
+      "startMs": 2060,
+      "endMs": 2280
+    },
+    {
+      "text": "them,",
+      "startMs": 2320,
+      "endMs": 2460
+    },
+    {
+      "text": "are",
+      "startMs": 2880,
+      "endMs": 2980
+    },
+    {
+      "text": "building",
+      "startMs": 3020,
+      "endMs": 3280
+    },
+    {
+      "text": "a",
+      "startMs": 3320,
+      "endMs": 3400
+    },
+    {
+      "text": "shared",
+      "startMs": 3460,
+      "endMs": 3740
+    },
+    {
+      "text": "hub",
+      "startMs": 3820,
+      "endMs": 4019
+    },
+    {
+      "text": "for",
+      "startMs": 4059,
+      "endMs": 4140
+    },
+    {
+      "text": "their",
+      "startMs": 4180,
+      "endMs": 4360
+    },
+    {
+      "text": "instant",
+      "startMs": 4400,
+      "endMs": 4720
+    },
+    {
+      "text": "payment",
+      "startMs": 4780,
+      "endMs": 5040
+    },
+    {
+      "text": "systems.",
+      "startMs": 5100,
+      "endMs": 5520
+    },
+    {
+      "text": "It's",
+      "startMs": 6400,
+      "endMs": 6520
+    },
+    {
+      "text": "still",
+      "startMs": 6580,
+      "endMs": 6780
+    },
+    {
+      "text": "being",
+      "startMs": 6840,
+      "endMs": 7040
+    },
+    {
+      "text": "built,",
+      "startMs": 7100,
+      "endMs": 7300
+    },
+    {
+      "text": "but",
+      "startMs": 7700,
+      "endMs": 7820
+    },
+    {
+      "text": "one",
+      "startMs": 7880,
+      "endMs": 8000
+    },
+    {
+      "text": "connection",
+      "startMs": 8039,
+      "endMs": 8400
+    },
+    {
+      "text": "there",
+      "startMs": 8460,
+      "endMs": 8580
+    },
+    {
+      "text": "could",
+      "startMs": 8620,
+      "endMs": 8720
+    },
+    {
+      "text": "reach",
+      "startMs": 8760,
+      "endMs": 8940
+    },
+    {
+      "text": "several",
+      "startMs": 8980,
+      "endMs": 9200
+    },
+    {
+      "text": "countries",
+      "startMs": 9280,
+      "endMs": 9600
+    },
+    {
+      "text": "at",
+      "startMs": 9620,
+      "endMs": 9720
+    },
+    {
+      "text": "once.",
+      "startMs": 9820,
+      "endMs": 10080
+    }
+  ],
+  "s45": [
+    {
+      "text": "So",
+      "startMs": 100,
+      "endMs": 275
+    },
+    {
+      "text": "how",
+      "startMs": 275,
+      "endMs": 508
+    },
+    {
+      "text": "powerful",
+      "startMs": 508,
+      "endMs": 1033
+    },
+    {
+      "text": "is",
+      "startMs": 1033,
+      "endMs": 1208
+    },
+    {
+      "text": "QRIS?",
+      "startMs": 1208,
+      "endMs": 1558
+    },
+    {
+      "text": "At",
+      "startMs": 1558,
+      "endMs": 1733
+    },
+    {
+      "text": "home,",
+      "startMs": 1733,
+      "endMs": 2083
+    },
+    {
+      "text": "it",
+      "startMs": 2083,
+      "endMs": 2258
+    },
+    {
+      "text": "put",
+      "startMs": 2258,
+      "endMs": 2491
+    },
+    {
+      "text": "digital",
+      "startMs": 2491,
+      "endMs": 2958
+    },
+    {
+      "text": "payments",
+      "startMs": 2958,
+      "endMs": 3483
+    },
+    {
+      "text": "in",
+      "startMs": 3483,
+      "endMs": 3658
+    },
+    {
+      "text": "fifty-one",
+      "startMs": 3658,
+      "endMs": 4241
+    },
+    {
+      "text": "million",
+      "startMs": 4241,
+      "endMs": 4708
+    },
+    {
+      "text": "shops",
+      "startMs": 4708,
+      "endMs": 5058
+    },
+    {
+      "text": "for",
+      "startMs": 5058,
+      "endMs": 5291
+    },
+    {
+      "text": "the",
+      "startMs": 5291,
+      "endMs": 5524
+    },
+    {
+      "text": "price",
+      "startMs": 5524,
+      "endMs": 5874
+    },
+    {
+      "text": "of",
+      "startMs": 5874,
+      "endMs": 6049
+    },
+    {
+      "text": "a",
+      "startMs": 6049,
+      "endMs": 6166
+    },
+    {
+      "text": "printed",
+      "startMs": 6166,
+      "endMs": 6633
+    },
+    {
+      "text": "square.",
+      "startMs": 6633,
+      "endMs": 7100
+    }
+  ],
+  "s46": [
+    {
+      "text": "Abroad,",
+      "startMs": 80,
+      "endMs": 480
+    },
+    {
+      "text": "it's",
+      "startMs": 600,
+      "endMs": 700
+    },
+    {
+      "text": "an",
+      "startMs": 740,
+      "endMs": 800
+    },
+    {
+      "text": "adapter,",
+      "startMs": 840,
+      "endMs": 1280
+    },
+    {
+      "text": "and",
+      "startMs": 1680,
+      "endMs": 1760
+    },
+    {
+      "text": "still",
+      "startMs": 1860,
+      "endMs": 2020
+    },
+    {
+      "text": "a",
+      "startMs": 2060,
+      "endMs": 2120
+    },
+    {
+      "text": "small",
+      "startMs": 2200,
+      "endMs": 2420
+    },
+    {
+      "text": "one",
+      "startMs": 2460,
+      "endMs": 2560
+    },
+    {
+      "text": "next",
+      "startMs": 2620,
+      "endMs": 2780
+    },
+    {
+      "text": "to",
+      "startMs": 2820,
+      "endMs": 2900
+    },
+    {
+      "text": "Visa.",
+      "startMs": 2940,
+      "endMs": 3300
+    },
+    {
+      "text": "Each",
+      "startMs": 4100,
+      "endMs": 4260
+    },
+    {
+      "text": "country",
+      "startMs": 4320,
+      "endMs": 4580
+    },
+    {
+      "text": "plugged",
+      "startMs": 4680,
+      "endMs": 4940
+    },
+    {
+      "text": "in",
+      "startMs": 4980,
+      "endMs": 5100
+    },
+    {
+      "text": "gives",
+      "startMs": 5160,
+      "endMs": 5320
+    },
+    {
+      "text": "the",
+      "startMs": 5360,
+      "endMs": 5440
+    },
+    {
+      "text": "next",
+      "startMs": 5520,
+      "endMs": 5720
+    },
+    {
+      "text": "tourist",
+      "startMs": 5780,
+      "endMs": 6080
+    },
+    {
+      "text": "one",
+      "startMs": 6280,
+      "endMs": 6400
+    },
+    {
+      "text": "more",
+      "startMs": 6460,
+      "endMs": 6620
+    },
+    {
+      "text": "place",
+      "startMs": 6660,
+      "endMs": 6880
+    },
+    {
+      "text": "to",
+      "startMs": 6920,
+      "endMs": 7000
+    },
+    {
+      "text": "pay.",
+      "startMs": 7060,
+      "endMs": 7300
+    }
+  ],
+  "s47": [
+    {
+      "text": "The",
+      "startMs": 100,
+      "endMs": 180
+    },
+    {
+      "text": "stall",
+      "startMs": 240,
+      "endMs": 460
+    },
+    {
+      "text": "in",
+      "startMs": 500,
+      "endMs": 580
+    },
+    {
+      "text": "Bali",
+      "startMs": 640,
+      "endMs": 880
+    },
+    {
+      "text": "still",
+      "startMs": 1000,
+      "endMs": 1200
+    },
+    {
+      "text": "has",
+      "startMs": 1240,
+      "endMs": 1380
+    },
+    {
+      "text": "the",
+      "startMs": 1440,
+      "endMs": 1520
+    },
+    {
+      "text": "same",
+      "startMs": 1580,
+      "endMs": 1820
+    },
+    {
+      "text": "paper",
+      "startMs": 1880,
+      "endMs": 2120
+    },
+    {
+      "text": "square",
+      "startMs": 2200,
+      "endMs": 2460
+    },
+    {
+      "text": "on",
+      "startMs": 2500,
+      "endMs": 2560
+    },
+    {
+      "text": "its",
+      "startMs": 2600,
+      "endMs": 2740
+    },
+    {
+      "text": "counter.",
+      "startMs": 2800,
+      "endMs": 3120
+    },
+    {
+      "text": "Now",
+      "startMs": 4260,
+      "endMs": 4480
+    },
+    {
+      "text": "tourists",
+      "startMs": 4540,
+      "endMs": 4920
+    },
+    {
+      "text": "pay",
+      "startMs": 4980,
+      "endMs": 5080
+    },
+    {
+      "text": "it",
+      "startMs": 5100,
+      "endMs": 5160
+    },
+    {
+      "text": "from",
+      "startMs": 5200,
+      "endMs": 5320
+    },
+    {
+      "text": "their",
+      "startMs": 5360,
+      "endMs": 5480
+    },
+    {
+      "text": "own",
+      "startMs": 5540,
+      "endMs": 5700
+    },
+    {
+      "text": "apps,",
+      "startMs": 5800,
+      "endMs": 6040
+    },
+    {
+      "text": "and",
+      "startMs": 6540,
+      "endMs": 6600
+    },
+    {
+      "text": "the",
+      "startMs": 6640,
+      "endMs": 6700
+    },
+    {
+      "text": "owner",
+      "startMs": 6760,
+      "endMs": 6960
+    },
+    {
+      "text": "just",
+      "startMs": 7020,
+      "endMs": 7160
+    },
+    {
+      "text": "hears",
+      "startMs": 7200,
+      "endMs": 7400
+    },
+    {
+      "text": "the",
+      "startMs": 7440,
+      "endMs": 7500
+    },
+    {
+      "text": "chime.",
+      "startMs": 7560,
+      "endMs": 7880
+    }
+  ],
+  "s48": [
+    {
+      "text": "Next,",
+      "startMs": 100,
+      "endMs": 380
+    },
+    {
+      "text": "we",
+      "startMs": 800,
+      "endMs": 920
+    },
+    {
+      "text": "follow",
+      "startMs": 960,
+      "endMs": 1180
+    },
+    {
+      "text": "a",
+      "startMs": 1220,
+      "endMs": 1260
+    },
+    {
+      "text": "bank",
+      "startMs": 1340,
+      "endMs": 1540
+    },
+    {
+      "text": "wire",
+      "startMs": 1580,
+      "endMs": 1800
+    },
+    {
+      "text": "across",
+      "startMs": 1840,
+      "endMs": 2160
+    },
+    {
+      "text": "borders",
+      "startMs": 2220,
+      "endMs": 2500
+    },
+    {
+      "text": "the",
+      "startMs": 2560,
+      "endMs": 2620
+    },
+    {
+      "text": "old",
+      "startMs": 2660,
+      "endMs": 2820
+    },
+    {
+      "text": "way",
+      "startMs": 2860,
+      "endMs": 3020
+    },
+    {
+      "text": "and",
+      "startMs": 3360,
+      "endMs": 3480
+    },
+    {
+      "text": "see",
+      "startMs": 3540,
+      "endMs": 3680
+    },
+    {
+      "text": "what",
+      "startMs": 3720,
+      "endMs": 3800
+    },
+    {
+      "text": "it",
+      "startMs": 3840,
+      "endMs": 3920
+    },
+    {
+      "text": "actually",
+      "startMs": 4019,
+      "endMs": 4400
+    },
+    {
+      "text": "sends.",
+      "startMs": 4460,
+      "endMs": 4800
+    }
+  ]
+}
