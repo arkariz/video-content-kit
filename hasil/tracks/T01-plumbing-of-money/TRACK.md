@@ -11,7 +11,7 @@ siklus_aktif: 001-approved-not-paid
 langkah_berikutnya: "005: produksi (TTS, caption, 04-shots.tsx, still, render) lewat pipeline; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: "judul baru setelah lint kemasan; 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
+menunggu_keputusan: "002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
