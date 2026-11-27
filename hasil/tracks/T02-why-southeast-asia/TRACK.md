@@ -8,10 +8,10 @@ channel: "Equator Logic (channel Asia Tenggara; TikTok @equator.logic)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "002-gta6-download-9-hours"
-langkah_berikutnya: "Kreator menonton 002, 003, 004 dan mengecek hasil/review/rencana-produksi-2026-11-26.md; 002: cek klaim bertanda lalu publish (target 2026-12-01); analitik 001 2026-11-28 dan 12-03"
+langkah_berikutnya: "003: terjadwal YouTube 28 Nov 01.00 WIB; 002 tayang 27 Nov, pin komentar dan video terkait; 004: review dan jadwalkan atau tahan; analitik 001 2026-11-28 dan 12-03"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
-menunggu_keputusan: "Review video 002, 003, 004 sebelum publish; 004: cek fakta dan risiko nama perusahaan/orang, lalu jadwal atau tahan"
+menunggu_keputusan: "004: cek fakta dan risiko nama perusahaan/orang, lalu jadwal atau tahan"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U1-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -70,8 +70,8 @@ Catatan: 002 tayang sebelum jendela V2 (2026-12-07) dan menggantikan judul Jawa;
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
 | 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | tayang | 2026-11-26 | uji-V2, variasi A; tayang di semua platform (YouTube, Facebook, TikTok: master + 2 Shorts; Instagram: 2 Shorts), unggah manual; tanpa QA anti-slop manual |
-| 002-gta6-download-9-hours | GTA 6: Singapore Is Already Playing. Indonesia Has 8 Hours Left. | qa | target 2026-12-01 | uji-V2, variasi B; master 8:47 + 2 Shorts + thumbnail dirender 2026-11-26; QA otomatis lulus, QA manual belum |
-| 003-why-half-lives-on-one-island | Why Half of Indonesia Lives on One Island | qa | target 2027-01-05 | uji-V2, variasi B; master 8:12 + 2 Shorts + thumbnail dirender 2026-11-26; QA manual belum |
+| 002-gta6-download-9-hours | GTA 6: Singapore Is Already Playing. Indonesia Has 8 Hours Left. | tayang | 2026-11-27 | uji-V2, variasi B; master 8:47 + 2 Shorts + thumbnail dirender 2026-11-26; QA otomatis lulus, QA manual belum; master dan 2 Shorts tayang di YouTube (01.00, 03.00, 06.30 WIB), dicatat dari platform; platform lain belum tercatat; 05-qa.md tidak ada |
+| 003-why-half-lives-on-one-island | Why Half of Indonesia Lives on One Island | siap-publish | 2026-11-28 | uji-V2, variasi B; master 8:12 + 2 Shorts + thumbnail dirender 2026-11-26; QA manual belum; master dan 2 Shorts terjadwal di YouTube 28 Nov 01.00, 03.00, 06.30 WIB (dicatat dari platform); 05-qa.md tidak ada |
 | 004-karhutla-who-lit-the-match | Indonesia Is Burning. Who Lit the Match? | qa | belum dijadwalkan | di luar V2; permintaan kreator; topik sensitif, wajib cek fakta sebelum publish |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
@@ -134,3 +134,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Siklus 004 (karhutla) dibuat atas permintaan kreator, di luar paket V2 dan menyimpang dari "Tidak akan dibahas" (isu berjalan). Riset fakta, naskah, audio, render otomatis; naskah belum dibaca kreator. Dugaan disebut dugaan; nama pejabat aktif tidak disebut.
 - 2026-11-27: Analitik awal Short 001 A1 dari ekspor Studio: viewed 57,4%, rata-rata tonton 0:27 dari 0:51; penurunan terbesar detik 5 sampai 15. Satu aturan uji ditambahkan ke learnings.md; belum ada keputusan.
 - 2026-11-27: Kreator memutuskan dua Short siklus 003 ditayangkan apa adanya (tanpa susun ulang); dipakai sebagai pembanding aturan uji hook. Catatan terbuka: angka "satu dipindahkan, Java bertambah sepuluh" memakai rentang 1950 dan 1961.
+- 2026-11-27: Status disesuaikan dengan YouTube atas permintaan kreator: 002 tayang 2026-11-27 (target semula 12-01), 003 terjadwal 2026-11-28 (target semula 2027-01-05). Keduanya uji-V2 dan jatuh sebelum periode tayang terkunci mulai 2026-12-07; validasi/rencana.md tidak diubah, penyimpangan dicatat.

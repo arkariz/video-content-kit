@@ -4,7 +4,7 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "Review video T01-002 dan T02-002/003/004 (hasil/review/rencana-produksi-2026-11-26.md), lalu publish sesuai jadwal; analitik 001 T02 11-28, T01 12-02"
+langkah_berikutnya: "T01: pin dan video terkait 002 setelah tayang 28 Nov, setujui 005 (29 Nov); T02: cek jadwal 003 (28 Nov), putuskan 004; analitik 001 T02 11-28, T01 12-02"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-27
@@ -18,8 +18,8 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Money Plumbing | 002 menunggu review; 004 siap publish; analitik 001 mulai 12-02 | 5,5 | 2026-11-26: 002 dirender |
-| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (@equator.logic di TikTok) | Review 002, 003, 004; publish 002 target 12-01 | 6 | 2026-11-26: 002, 003, 004 dirender |
+| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Money Plumbing | 002 terjadwal 28 Nov; 004 tayang; 005 menunggu SETUJU; analitik 001 mulai 12-02 | 5,5 | 2026-11-27: 004 tayang |
+| T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (@equator.logic di TikTok) | 003 terjadwal 28 Nov; 004 menunggu keputusan; analitik 001 | 6 | 2026-11-27: 002 tayang, 003 terjadwal |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
 | T05 | Indonesia dan Asia Tenggara dari dalam | Nusantara before the maps | usulan | Channel Asia Tenggara | Cadangan | - | 2026-11-24: cadangan |
@@ -102,3 +102,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-27: Uji Facebook T01: unggah, jadwal, subtitle, sampul berhasil; komentar ditolak karena token Page tidak memiliki pages_manage_engagement.
 - 2026-11-27: Uji Facebook T01 berhasil sampai komentar terposting (token baru dengan pages_manage_engagement). Video uji sudah dihapus kreator.
 - 2026-11-27: Unggahan manual dicatat ke dashboard rilis (35 tautan, T01-001/002/004 dan T02-001/002/003); siklus itu dikunci. Status siklus di TRACK.md belum disesuaikan (T01-004, T02-002, T02-003 sudah ada di YouTube).
+- 2026-11-27: Status siklus disesuaikan dengan platform: T01-004 dan T02-002 tayang 27 Nov, T02-003 terjadwal 28 Nov. T02-002/003 mendahului periode V2 terkunci (mulai 12-07).
