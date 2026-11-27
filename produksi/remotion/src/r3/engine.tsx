@@ -148,15 +148,15 @@ export const R3Scene: React.FC<{ s: SceneProps; prev?: SceneProps; vertical: boo
   // efek suara: pop di label, whoosh di transisi
   const sfx: { at: number; name: string; v: number }[] = [];
   segs.forEach((x) => {
-    if (x.transition !== "cut" && (x.k > 0 || chained)) sfx.push({ at: Math.max(0, Math.round(x.enterA * fps)), name: "whoosh", v: 0.28 });
-    x.labels.forEach((l) => sfx.push({ at: Math.max(0, Math.round((x.start + l.at) * fps)), name: "pop", v: 0.2 }));
+    if (x.transition !== "cut" && (x.k > 0 || chained)) sfx.push({ at: Math.max(0, Math.round(x.enterA * fps)), name: "whoosh", v: 0.22 });
+    x.labels.forEach((l) => sfx.push({ at: Math.max(0, Math.round((x.start + l.at) * fps)), name: "pop", v: 0.16 }));
   });
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <div style={{ position: "absolute", left: (width - W * scale) / 2, top: (height - H * scale) / 2, width: W, height: H, transform: `scale(${scale})`, transformOrigin: "0 0" }}>
         {layers}
       </div>
-      {sfx.map((x, i) => <Sequence key={i} from={x.at} durationInFrames={30}><Audio src={staticFile(`sfx/${x.name}.wav`)} volume={x.v} /></Sequence>)}
+      {sfx.map((x, i) => <Sequence key={i} from={x.at} durationInFrames={30}><Audio src={staticFile(`sfx/el/${x.name}.mp3`)} volume={x.v} /></Sequence>)}
     </AbsoluteFill>
   );
 };

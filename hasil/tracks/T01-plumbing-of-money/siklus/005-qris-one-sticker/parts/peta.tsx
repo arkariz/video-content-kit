@@ -70,7 +70,7 @@ export const BankHouse: React.FC<{ x: number; y: number; s?: number; lit?: numbe
 
 export const MAPX = { app: 400, sw: 960, bank: 1510, y: 720 };
 export const ROAD_A = "M400 735C520 850 760 850 960 750", ROAD_B = "M960 750C1160 850 1390 850 1510 735";
-const Road: React.FC<{ d: string; p: number; t: number }> = ({ d, p, t }) => p <= 0 ? null : (
+export const Road: React.FC<{ d: string; p: number; t: number }> = ({ d, p, t }) => p <= 0 ? null : (
   <g>
     <path d={d} pathLength={100} strokeDasharray={`${p * 100} 100`} stroke="#ffb03a" strokeWidth={64} opacity={0.2} fill="none" strokeLinecap="round" />
     <path d={d} pathLength={100} strokeDasharray={`${p * 100} 100`} stroke="#8a5a52" strokeWidth={44} fill="none" strokeLinecap="round" />

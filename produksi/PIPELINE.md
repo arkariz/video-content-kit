@@ -132,7 +132,7 @@ Transisi dipilih menurut makna naratif (kolom `transition` di `shots`, rincianny
 
 Aturan:
 - Transisi shot pertama scene hanya berlaku bila scene sebelumnya juga R3; selain itu potong langsung.
-- Efek suara otomatis: `pop` di setiap label, `whoosh` di setiap transisi.
+- Efek suara otomatis: `pop` di setiap label, `whoosh` di setiap transisi (dari pustaka ElevenLabs, bagian "Suara" di bawah).
 - Transisi "dalam shot" ditulis di komponen. Kontrak `transition` tidak berubah.
 
 ### 5. Cahaya dan atmosfer
@@ -384,8 +384,13 @@ node scripts/pipeline/still.mjs --track T02 --siklus 005 [--cek]                
   - Thumbnail Shorts wajib ditulis di `shorts_cuts[].thumbnail`, satu per Short (lihat CONTRACT.md).
   - Caption siklus baru tampil per kalimat (`src/lib/SentenceCaptions.tsx`).
 
+### Suara: efek ElevenLabs (wajib untuk semua konten, keputusan kreator 2026-11-27)
+- **Pustaka bersama** `produksi/sfx/el/<nama>.mp3`, daftar dan prompt di `produksi/sfx/el.json`. Pakai ulang dulu; efek sintesis `produksi/sfx/*.wav` hanya untuk mesin lama.
+- **Menambah efek:** tulis entri di `el.json` (urutan = prioritas, 40 kredit per detik, minimal 0,5 dtk), lalu `node --env-file=.env scripts/produksi/audio-extra.mjs --library`. Hening awal dibuang dan puncak disamakan ke -3 dBFS.
+- **Per siklus** (`04-audio.json`, wajib): `music` (file `produksi/audio/<ID>/<NNN>/extra/music.mp3`, boleh disalin dari siklus lain) dan `cues` = `{ "scene", "word"?, "offset"?, "sfx", "vol" }`. Efek dipasang di kejadian yang terlihat (pindai, berhasil, ditolak, kirim, buka/tutup) dan ambience di adegan tempat. `pop` dan `whoosh` sudah otomatis, jangan diulang di cues.
+- **Campur:** tahap `campur-audio` (`scripts/produksi/mix.mjs`) setelah render; mencari efek di `extra/` siklus dulu, lalu pustaka.
+
 ### Belum ada
-- Musik latar terus-menerus.
 - Shorts versi 2D masih memotong bagian tengah 16:9 di titik `focus`.
 - `dissolve` belum menjadi jenis transisi kontrak.
 - Animasi benchmark P01b (Phase D) belum dibuat; pustaka `@r3/art` baru teruji di still.

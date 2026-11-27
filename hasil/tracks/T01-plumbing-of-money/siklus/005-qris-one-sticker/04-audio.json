@@ -1,0 +1,786 @@
+{
+ "music": {
+  "prompt": "dipakai ulang dari T01/004",
+  "volume": 0.18
+ },
+ "sfx": {},
+ "cues": [
+  {
+   "scene": "s01",
+   "offset": 0,
+   "sfx": "warung",
+   "vol": 0.16
+  },
+  {
+   "scene": "s01",
+   "offset": 5.6,
+   "sfx": "warung",
+   "vol": 0.13
+  },
+  {
+   "scene": "s47",
+   "offset": 0,
+   "sfx": "warung",
+   "vol": 0.16
+  },
+  {
+   "scene": "s47",
+   "offset": 5.6,
+   "sfx": "warung",
+   "vol": 0.13
+  },
+  {
+   "scene": "s45",
+   "offset": 0,
+   "sfx": "warung",
+   "vol": 0.15
+  },
+  {
+   "scene": "s01",
+   "word": "square",
+   "offset": -0.1,
+   "sfx": "scan",
+   "vol": 0.4
+  },
+  {
+   "scene": "s01",
+   "word": "paid",
+   "offset": 0,
+   "sfx": "paid",
+   "vol": 0.45
+  },
+  {
+   "scene": "s01",
+   "word": "seconds",
+   "offset": -0.3,
+   "sfx": "tick",
+   "vol": 0.15
+  },
+  {
+   "scene": "s02",
+   "word": "million",
+   "offset": -1.2,
+   "sfx": "counter",
+   "vol": 0.3
+  },
+  {
+   "scene": "s02",
+   "word": "shops",
+   "offset": -0.9,
+   "sfx": "counter",
+   "vol": 0.25
+  },
+  {
+   "scene": "s02",
+   "word": "percent",
+   "offset": -0.8,
+   "sfx": "coins",
+   "vol": 0.28
+  },
+  {
+   "scene": "s03",
+   "word": "Bangkok",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s03",
+   "word": "Tokyo",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s03",
+   "word": "Seoul",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s04",
+   "word": "2019",
+   "offset": -0.8,
+   "sfx": "paper",
+   "vol": 0.9
+  },
+  {
+   "scene": "s04",
+   "word": "twenty-six",
+   "offset": -0.2,
+   "sfx": "counter",
+   "vol": 0.3
+  },
+  {
+   "scene": "s05",
+   "word": "put",
+   "offset": 0,
+   "sfx": "paper",
+   "vol": 0.8
+  },
+  {
+   "scene": "s05",
+   "word": "meant",
+   "offset": -0.1,
+   "sfx": "denied",
+   "vol": 0.35
+  },
+  {
+   "scene": "s06",
+   "word": "plug",
+   "offset": 0,
+   "sfx": "plug",
+   "vol": 0.7
+  },
+  {
+   "scene": "s06",
+   "word": "socket",
+   "offset": 0,
+   "sfx": "plug",
+   "vol": 0.7
+  },
+  {
+   "scene": "s06",
+   "word": "shop",
+   "offset": 0,
+   "sfx": "thud",
+   "vol": 0.35
+  },
+  {
+   "scene": "s07",
+   "word": "launched",
+   "offset": 0.1,
+   "sfx": "magic",
+   "vol": 0.3
+  },
+  {
+   "scene": "s07",
+   "word": "QRIS",
+   "offset": 0.5,
+   "sfx": "plug",
+   "vol": 0.7
+  },
+  {
+   "scene": "s07",
+   "word": "QRIS",
+   "offset": 1.0,
+   "sfx": "plug",
+   "vol": 0.7
+  },
+  {
+   "scene": "s08",
+   "word": "app",
+   "offset": 0,
+   "sfx": "denied",
+   "vol": 0.28
+  },
+  {
+   "scene": "s08",
+   "word": "rulebook",
+   "offset": -0.2,
+   "sfx": "paper",
+   "vol": 0.8
+  },
+  {
+   "scene": "s09",
+   "word": "2020",
+   "offset": 0.1,
+   "sfx": "paper",
+   "vol": 0.8
+  },
+  {
+   "scene": "s09",
+   "word": "any",
+   "offset": 0.4,
+   "sfx": "chime",
+   "vol": 0.3
+  },
+  {
+   "scene": "s09",
+   "word": "free",
+   "offset": 0.2,
+   "sfx": "thud",
+   "vol": 0.35
+  },
+  {
+   "scene": "s10",
+   "word": "app",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.28
+  },
+  {
+   "scene": "s10",
+   "word": "bank",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.28
+  },
+  {
+   "scene": "s10",
+   "word": "switch",
+   "offset": 0,
+   "sfx": "switch",
+   "vol": 0.45
+  },
+  {
+   "scene": "s11",
+   "word": "passes",
+   "offset": 0,
+   "sfx": "send",
+   "vol": 0.35
+  },
+  {
+   "scene": "s12",
+   "word": "reads",
+   "offset": 0,
+   "sfx": "flip",
+   "vol": 0.9
+  },
+  {
+   "scene": "s12",
+   "word": "reads",
+   "offset": -0.5,
+   "sfx": "scan",
+   "vol": 0.25
+  },
+  {
+   "scene": "s13",
+   "word": "fifty",
+   "offset": -0.5,
+   "sfx": "keytap",
+   "vol": 0.4
+  },
+  {
+   "scene": "s13",
+   "word": "fifty",
+   "offset": 0.1,
+   "sfx": "keytap",
+   "vol": 0.4
+  },
+  {
+   "scene": "s13",
+   "word": "PIN",
+   "offset": -0.2,
+   "sfx": "keytap",
+   "vol": 0.4
+  },
+  {
+   "scene": "s13",
+   "word": "sends",
+   "offset": 0,
+   "sfx": "send",
+   "vol": 0.35
+  },
+  {
+   "scene": "s14",
+   "word": "reads",
+   "offset": 0.2,
+   "sfx": "switch",
+   "vol": 0.5
+  },
+  {
+   "scene": "s14",
+   "word": "forwards",
+   "offset": 0,
+   "sfx": "send",
+   "vol": 0.3
+  },
+  {
+   "scene": "s14",
+   "word": "yes",
+   "offset": -0.15,
+   "sfx": "stamp",
+   "vol": 0.35
+  },
+  {
+   "scene": "s15",
+   "word": "tick",
+   "offset": 0,
+   "sfx": "paid",
+   "vol": 0.35
+  },
+  {
+   "scene": "s15",
+   "word": "chimes",
+   "offset": 0,
+   "sfx": "notify",
+   "vol": 0.28
+  },
+  {
+   "scene": "s15",
+   "word": "round",
+   "offset": 0,
+   "sfx": "tick",
+   "vol": 0.15
+  },
+  {
+   "scene": "s16",
+   "word": "who",
+   "offset": 0,
+   "sfx": "magic",
+   "vol": 0.22
+  },
+  {
+   "scene": "s16",
+   "word": "cost",
+   "offset": 0.2,
+   "sfx": "coins",
+   "vol": 0.25
+  },
+  {
+   "scene": "s17",
+   "word": "slice",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.35
+  },
+  {
+   "scene": "s18",
+   "word": "nothing",
+   "offset": 0,
+   "sfx": "magic",
+   "vol": 0.25
+  },
+  {
+   "scene": "s18",
+   "word": "five",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.25
+  },
+  {
+   "scene": "s19",
+   "word": "you",
+   "offset": -0.1,
+   "sfx": "thud",
+   "vol": 0.3
+  },
+  {
+   "scene": "s19",
+   "word": "you",
+   "offset": -0.35,
+   "sfx": "stamp",
+   "vol": 0.45
+  },
+  {
+   "scene": "s20",
+   "word": "almost",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s20",
+   "word": "wants",
+   "offset": -0.3,
+   "sfx": "shutter",
+   "vol": 0.2
+  },
+  {
+   "scene": "s21",
+   "word": "record",
+   "offset": -0.5,
+   "sfx": "paper",
+   "vol": 0.8
+  },
+  {
+   "scene": "s21",
+   "word": "loans",
+   "offset": -0.2,
+   "sfx": "coins",
+   "vol": 0.25
+  },
+  {
+   "scene": "s22",
+   "word": "open",
+   "offset": -0.2,
+   "sfx": "shutter",
+   "vol": 0.25
+  },
+  {
+   "scene": "s22",
+   "word": "stay",
+   "offset": 0,
+   "sfx": "magic",
+   "vol": 0.18
+  },
+  {
+   "scene": "s23",
+   "word": "keeps",
+   "offset": -0.6,
+   "sfx": "coins",
+   "vol": 0.3
+  },
+  {
+   "scene": "s23",
+   "word": "lose",
+   "offset": 0,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s25",
+   "word": "licensed",
+   "offset": 0,
+   "sfx": "stamp",
+   "vol": 0.35
+  },
+  {
+   "scene": "s25",
+   "word": "Card",
+   "offset": 0,
+   "sfx": "send",
+   "vol": 0.3
+  },
+  {
+   "scene": "s26",
+   "offset": 0,
+   "sfx": "riser",
+   "vol": 0.25
+  },
+  {
+   "scene": "s27",
+   "word": "report",
+   "offset": -1.6,
+   "sfx": "thud",
+   "vol": 0.5
+  },
+  {
+   "scene": "s27",
+   "word": "report",
+   "offset": 0,
+   "sfx": "paper",
+   "vol": 0.8
+  },
+  {
+   "scene": "s28",
+   "word": "domestic",
+   "offset": 0,
+   "sfx": "send",
+   "vol": 0.3
+  },
+  {
+   "scene": "s29",
+   "offset": 0.2,
+   "sfx": "riser",
+   "vol": 0.2
+  },
+  {
+   "scene": "s29",
+   "word": "EMVCo",
+   "offset": -0.6,
+   "sfx": "switch",
+   "vol": 0.3
+  },
+  {
+   "scene": "s30",
+   "word": "open",
+   "offset": -0.2,
+   "sfx": "flip",
+   "vol": 0.8
+  },
+  {
+   "scene": "s31",
+   "word": "countries",
+   "offset": -0.8,
+   "sfx": "plane",
+   "vol": 0.2
+  },
+  {
+   "scene": "s32",
+   "word": "doesn't",
+   "offset": -0.1,
+   "sfx": "denied",
+   "vol": 0.3
+  },
+  {
+   "scene": "s32",
+   "word": "card",
+   "offset": 0.1,
+   "sfx": "paid",
+   "vol": 0.28
+  },
+  {
+   "scene": "s33",
+   "word": "Thailand",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s33",
+   "word": "Malaysia",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s33",
+   "word": "Singapore",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s34",
+   "word": "Japan",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s34",
+   "word": "Korea",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s34",
+   "word": "China",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s35",
+   "word": "dollars",
+   "offset": -0.5,
+   "sfx": "plug",
+   "vol": 0.5
+  },
+  {
+   "scene": "s35",
+   "word": "middle",
+   "offset": -0.2,
+   "sfx": "denied",
+   "vol": 0.25
+  },
+  {
+   "scene": "s36",
+   "offset": 0,
+   "sfx": "moto",
+   "vol": 0.18
+  },
+  {
+   "scene": "s36",
+   "word": "scans",
+   "offset": 0.2,
+   "sfx": "scan",
+   "vol": 0.4
+  },
+  {
+   "scene": "s37",
+   "word": "sends",
+   "offset": -0.2,
+   "sfx": "send",
+   "vol": 0.35
+  },
+  {
+   "scene": "s37",
+   "word": "across",
+   "offset": -0.4,
+   "sfx": "send",
+   "vol": 0.3
+  },
+  {
+   "scene": "s37",
+   "word": "takes",
+   "offset": -0.8,
+   "sfx": "switch",
+   "vol": 0.35
+  },
+  {
+   "scene": "s38",
+   "word": "baht",
+   "offset": 0.8,
+   "sfx": "keytap",
+   "vol": 0.3
+  },
+  {
+   "scene": "s38",
+   "word": "goes",
+   "offset": 0,
+   "sfx": "coins",
+   "vol": 0.22
+  },
+  {
+   "scene": "s39",
+   "word": "swap",
+   "offset": 0,
+   "sfx": "moto",
+   "vol": 0.1
+  },
+  {
+   "scene": "s39",
+   "word": "settlement",
+   "offset": -0.6,
+   "sfx": "thud",
+   "vol": 0.35
+  },
+  {
+   "scene": "s40",
+   "word": "adapter",
+   "offset": -0.1,
+   "sfx": "plug",
+   "vol": 0.8
+  },
+  {
+   "scene": "s40",
+   "word": "scan",
+   "offset": 0,
+   "sfx": "scan",
+   "vol": 0.3
+  },
+  {
+   "scene": "s40",
+   "word": "down",
+   "offset": -1.0,
+   "sfx": "coins",
+   "vol": 0.22
+  },
+  {
+   "scene": "s41",
+   "word": "trillion",
+   "offset": -1.0,
+   "sfx": "coins",
+   "vol": 0.22
+  },
+  {
+   "scene": "s41",
+   "word": "Malaysia",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.3
+  },
+  {
+   "scene": "s41",
+   "word": "Singapore",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.3
+  },
+  {
+   "scene": "s42",
+   "word": "only",
+   "offset": 0.9,
+   "sfx": "shutter",
+   "vol": 0.25
+  },
+  {
+   "scene": "s43",
+   "word": "India",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.28
+  },
+  {
+   "scene": "s43",
+   "word": "Saudi",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.28
+  },
+  {
+   "scene": "s43",
+   "word": "Vietnam",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.28
+  },
+  {
+   "scene": "s43",
+   "word": "Australia",
+   "offset": 0,
+   "sfx": "ping",
+   "vol": 0.28
+  },
+  {
+   "scene": "s43",
+   "word": "pilgrims",
+   "offset": 0,
+   "sfx": "scan",
+   "vol": 0.3
+  },
+  {
+   "scene": "s43",
+   "word": "pay",
+   "offset": 0,
+   "sfx": "paid",
+   "vol": 0.25
+  },
+  {
+   "scene": "s44",
+   "word": "hub",
+   "offset": 0,
+   "sfx": "thud",
+   "vol": 0.35
+  },
+  {
+   "scene": "s44",
+   "word": "one",
+   "offset": 0,
+   "sfx": "switch",
+   "vol": 0.25
+  },
+  {
+   "scene": "s45",
+   "word": "shops",
+   "offset": 0,
+   "sfx": "magic",
+   "vol": 0.18
+  },
+  {
+   "scene": "s46",
+   "word": "plugged",
+   "offset": 0.2,
+   "sfx": "plug",
+   "vol": 0.6
+  },
+  {
+   "scene": "s46",
+   "word": "one",
+   "offset": 0,
+   "sfx": "chime",
+   "vol": 0.22
+  },
+  {
+   "scene": "s47",
+   "word": "chime",
+   "offset": 0,
+   "sfx": "paid",
+   "vol": 0.3
+  },
+  {
+   "scene": "s47",
+   "word": "chime",
+   "offset": 0.5,
+   "sfx": "notify",
+   "vol": 0.22
+  },
+  {
+   "scene": "s47",
+   "word": "chime",
+   "offset": 0.4,
+   "sfx": "coin",
+   "vol": 0.25
+  },
+  {
+   "scene": "s48",
+   "word": "wire",
+   "offset": -0.5,
+   "sfx": "plane",
+   "vol": 0.15
+  },
+  {
+   "scene": "s48",
+   "word": "wire",
+   "offset": -1.0,
+   "sfx": "paper",
+   "vol": 0.7
+  }
+ ],
+ "target_lufs": -14
+}

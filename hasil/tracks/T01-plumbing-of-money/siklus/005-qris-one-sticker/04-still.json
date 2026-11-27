@@ -1,0 +1,973 @@
+{
+  "_catatan": "Gate still (PIPELINE.md Mesin R3 10). Agent mengisi skor 1-5 per dimensi dan lulus; kreator mengisi kreator.disetujui setelah melihat still.",
+  "scenes": {
+    "s01": {
+      "still": [
+        "produksi/render/T01/005/stills/s01-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s01-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s02": {
+      "still": [
+        "produksi/render/T01/005/stills/s02-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s02-Master16x9-shot2.png",
+        "produksi/render/T01/005/stills/s02-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s03": {
+      "still": [
+        "produksi/render/T01/005/stills/s03-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s03-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s04": {
+      "still": [
+        "produksi/render/T01/005/stills/s04-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s04-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s05": {
+      "still": [
+        "produksi/render/T01/005/stills/s05-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s05-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s06": {
+      "still": [
+        "produksi/render/T01/005/stills/s06-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s06-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s07": {
+      "still": [
+        "produksi/render/T01/005/stills/s07-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s07-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s08": {
+      "still": [
+        "produksi/render/T01/005/stills/s08-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s08-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s09": {
+      "still": [
+        "produksi/render/T01/005/stills/s09-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s09-Master16x9-shot2.png",
+        "produksi/render/T01/005/stills/s09-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s10": {
+      "still": [
+        "produksi/render/T01/005/stills/s10-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s10-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s11": {
+      "still": [
+        "produksi/render/T01/005/stills/s11-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s11-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s12": {
+      "still": [
+        "produksi/render/T01/005/stills/s12-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s12-Master16x9-shot2.png",
+        "produksi/render/T01/005/stills/s12-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s13": {
+      "still": [
+        "produksi/render/T01/005/stills/s13-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s13-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s14": {
+      "still": [
+        "produksi/render/T01/005/stills/s14-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s14-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s15": {
+      "still": [
+        "produksi/render/T01/005/stills/s15-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s15-Master16x9-shot2.png",
+        "produksi/render/T01/005/stills/s15-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s16": {
+      "still": [
+        "produksi/render/T01/005/stills/s16-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s16-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "PERKIRAAN, lemah: shot 2: jalan gerbang tampak kosong",
+      "lulus": false
+    },
+    "s17": {
+      "still": [
+        "produksi/render/T01/005/stills/s17-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s17-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s18": {
+      "still": [
+        "produksi/render/T01/005/stills/s18-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s18-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s19": {
+      "still": [
+        "produksi/render/T01/005/stills/s19-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s19-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s20": {
+      "still": [
+        "produksi/render/T01/005/stills/s20-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s20-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s21": {
+      "still": [
+        "produksi/render/T01/005/stills/s21-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s21-Master16x9-shot2.png",
+        "produksi/render/T01/005/stills/s21-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s22": {
+      "still": [
+        "produksi/render/T01/005/stills/s22-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s22-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s23": {
+      "still": [
+        "produksi/render/T01/005/stills/s23-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s23-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s24": {
+      "still": [
+        "produksi/render/T01/005/stills/s24-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s24-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "PERKIRAAN, lemah: shot 2: deretan toko datar dan berulang",
+      "lulus": false
+    },
+    "s25": {
+      "still": [
+        "produksi/render/T01/005/stills/s25-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s25-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s26": {
+      "still": [
+        "produksi/render/T01/005/stills/s26-Master16x9-shot1.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "PERKIRAAN, lemah: komposisi kosong di tengah",
+      "lulus": false
+    },
+    "s27": {
+      "still": [
+        "produksi/render/T01/005/stills/s27-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s27-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s28": {
+      "still": [
+        "produksi/render/T01/005/stills/s28-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s28-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s29": {
+      "still": [
+        "produksi/render/T01/005/stills/s29-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s29-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s30": {
+      "still": [
+        "produksi/render/T01/005/stills/s30-Master16x9-shot1.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "PERKIRAAN, lemah: lautan polos, detail sedikit",
+      "lulus": false
+    },
+    "s31": {
+      "still": [
+        "produksi/render/T01/005/stills/s31-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s31-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s32": {
+      "still": [
+        "produksi/render/T01/005/stills/s32-Master16x9-shot1.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "PERKIRAAN, lemah: kafe datar, terasa generik",
+      "lulus": false
+    },
+    "s33": {
+      "still": [
+        "produksi/render/T01/005/stills/s33-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s33-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s34": {
+      "still": [
+        "produksi/render/T01/005/stills/s34-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s34-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s35": {
+      "still": [
+        "produksi/render/T01/005/stills/s35-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s35-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s36": {
+      "still": [
+        "produksi/render/T01/005/stills/s36-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s36-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s37": {
+      "still": [
+        "produksi/render/T01/005/stills/s37-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s37-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s38": {
+      "still": [
+        "produksi/render/T01/005/stills/s38-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s38-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s39": {
+      "still": [
+        "produksi/render/T01/005/stills/s39-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s39-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s40": {
+      "still": [
+        "produksi/render/T01/005/stills/s40-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s40-Master16x9-shot2.png",
+        "produksi/render/T01/005/stills/s40-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s41": {
+      "still": [
+        "produksi/render/T01/005/stills/s41-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s41-Master16x9-shot2.png",
+        "produksi/render/T01/005/stills/s41-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s42": {
+      "still": [
+        "produksi/render/T01/005/stills/s42-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s42-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "PERKIRAAN, lemah: shot 2: jalan Tokyo kotak berulang",
+      "lulus": false
+    },
+    "s43": {
+      "still": [
+        "produksi/render/T01/005/stills/s43-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s43-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s44": {
+      "still": [
+        "produksi/render/T01/005/stills/s44-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s44-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s45": {
+      "still": [
+        "produksi/render/T01/005/stills/s45-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s45-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s46": {
+      "still": [
+        "produksi/render/T01/005/stills/s46-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s46-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "PERKIRAAN, lemah: shot 1: bukit dan pantai polos",
+      "lulus": false
+    },
+    "s47": {
+      "still": [
+        "produksi/render/T01/005/stills/s47-Master16x9-shot1.png",
+        "produksi/render/T01/005/stills/s47-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    },
+    "s48": {
+      "still": [
+        "produksi/render/T01/005/stills/s48-Master16x9-shot1.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 4,
+        "hierarki": 4,
+        "material": 4,
+        "cahaya": 4,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 4
+      },
+      "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
+      "lulus": false
+    }
+  },
+  "kreator": {
+    "disetujui": false
+  },
+  "dirender": "2026-11-27T03:29:44.601Z",
+  "_keterbatasan": "Skor agent dari still yang diperkecil, bukan penilaian final. Gerak belum dinilai. lulus diisi setelah penilaian kreator."
+}

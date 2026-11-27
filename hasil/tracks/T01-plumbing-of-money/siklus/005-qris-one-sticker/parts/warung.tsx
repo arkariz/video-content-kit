@@ -7,7 +7,7 @@ import { BLUE, CORAL, CREAM, Contact, DARK, GOLD, GREEN, Glow2, Hose, LR, Owner,
 
 const LEAF: [string, string, string, string] = ["#08202a", "#0d3238", "#154a46", "#2f7458"];
 
-const Palm: React.FC<{ x: number; base: number; h: number; t: number; seed: number; c: string }> = ({ x, base, h, t, seed, c }) => {
+export const Palm: React.FC<{ x: number; base: number; h: number; t: number; seed: number; c: string }> = ({ x, base, h, t, seed, c }) => {
   const sw = Math.sin(t * 0.9 + seed) * 6, tx = x + h * 0.14 + sw, ty = base - h;
   return (
     <g>
@@ -21,7 +21,7 @@ const Palm: React.FC<{ x: number; base: number; h: number; t: number; seed: numb
   );
 };
 /** gerbang bata terbelah di ujung jalan (siluet generik, bukan tempat nyata) */
-const Gate: React.FC<{ x: number; base: number }> = ({ x, base }) => (
+export const Gate: React.FC<{ x: number; base: number }> = ({ x, base }) => (
   <g>{[-1, 1].map((s) => (
     <g key={s} transform={`translate(${x} ${base}) scale(${s} 1)`}>
       <Shade d="M24 0V-200H38V-232H52V-262H66V-228H88V-198H104V-168H122V-130H112V0Z" tones={["#4a2458", "#6e3258", "#98485a", "#e08662"]} L={LR} s={[4, 10, 5]} />
@@ -29,7 +29,7 @@ const Gate: React.FC<{ x: number; base: number }> = ({ x, base }) => (
     </g>
   ))}</g>
 );
-const Penjor: React.FC<{ x: number; t: number }> = ({ x, t }) => {
+export const Penjor: React.FC<{ x: number; t: number }> = ({ x, t }) => {
   const sw = Math.sin(t * 1.1) * 7, tip: [number, number] = [x - 250 + sw, 292 + sw];
   const d = `M${x} 860C${x + 8} 520 ${x + 4} 190 ${x - 90} 150C${x - 170} 122 ${x - 232 + sw} 200 ${tip[0]} ${tip[1]}`;
   return (
@@ -40,7 +40,7 @@ const Penjor: React.FC<{ x: number; t: number }> = ({ x, t }) => {
     </g>
   );
 };
-const Thatch: React.FC<{ t: number }> = ({ t }) => (
+export const Thatch: React.FC<{ t: number }> = ({ t }) => (
   <g>
     <Shade d={`M-80 -80H760Q720 50 650 96${Array.from({ length: 13 }, (_, i) => `L${620 - i * 56} ${88 + (i % 2) * 40 + i * 2}`).join("")}L-80 190Z`} tones={["#3a1c44", "#5e2e48", "#8a4a46", "#d8884e"]} L={LR} s={[6, 18, 8]}>
       {Array.from({ length: 34 }, (_, i) => <path key={i} d={`M${i * 24 - 70} ${-40 + R(i, 2) * 30}q${-8 - R(i, 3) * 14} 70 ${-26} ${130 + R(i, 4) * 40}`} stroke="#5e2e48" strokeWidth={5} fill="none" strokeLinecap="round" />)}
@@ -48,7 +48,7 @@ const Thatch: React.FC<{ t: number }> = ({ t }) => (
     {line("M-60 30Q280 76 640 20", "#c9743e", 9, 0.9)}
   </g>
 );
-const Shop: React.FC<{ x: number; t: number }> = ({ x, t }) => (
+export const Shop: React.FC<{ x: number; t: number }> = ({ x, t }) => (
   <g transform={`translate(${x} 0)`}>
     <Shade d={rr(0, 520, 300, 250, 10)} tones={["#33205c", "#4a2f74", "#6a4488", "#c07a88"]} L={LR} s={[5, 14, 7]} />
     <Shade d="M-30 540L40 452H290L340 540Z" tones={["#2b2860", "#40428a", "#5a64ac", "#e09a86"]} L={LR} s={[4, 12, 7]}>{Array.from({ length: 12 }, (_, i) => <path key={i} d={`M${i * 32 - 4} 545L${i * 28 + 24} 450`} stroke="#40428a" strokeWidth={5} />)}</Shade>
@@ -57,14 +57,14 @@ const Shop: React.FC<{ x: number; t: number }> = ({ x, t }) => (
     <path d={rr(214, 600, 58, 170, 8)} fill="#33205c" />
   </g>
 );
-const Moto: React.FC<{ x: number; y: number }> = ({ x, y }) => (
+export const Moto: React.FC<{ x: number; y: number }> = ({ x, y }) => (
   <g transform={`translate(${x} ${y})`}>
     <Glow2 x={104} y={-30} r={110} c="#ffe9a0" o={0.7} />
     {[-52, 62].map((a) => <g key={a}><circle cx={a} r={23} fill="#1a1038" /><circle cx={a} r={9} fill="#8a78b4" /></g>)}
     <path d="M-72 -22Q-60 -52 -6 -46L30 -34L60 -58L86 -44L64 -12H-46Z" fill="#2b1a52" /><circle cx={-8} cy={-92} r={22} fill="#3d2768" /><path d="M-26 -74Q8 -86 20 -44L-30 -42Z" fill="#3d2768" /><circle cx={92} cy={-38} r={8} fill="#fff3b8" />
   </g>
 );
-const Dog: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => {
+export const Dog: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => {
   const k = 1 + Math.sin(t * 1.7) * 0.03;
   const tones: [string, string, string, string] = ["#5a2c44", "#8a4a44", "#bc7448", "#f0ac64"];
   return (
@@ -77,7 +77,7 @@ const Dog: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => {
     </g>
   );
 };
-const Steam: React.FC<{ x: number; y: number; t: number; s?: number }> = ({ x, y, t, s = 1 }) => (
+export const Steam: React.FC<{ x: number; y: number; t: number; s?: number }> = ({ x, y, t, s = 1 }) => (
   <g transform={`translate(${x} ${y}) scale(${s})`}>
     {Array.from({ length: 9 }, (_, i) => {
       const u = ((t * 0.22 + i / 9) % 1), cx = Math.sin(u * 5 + i * 2) * 30 * (0.4 + u) - u * 40, cy = -u * 240, r = 16 + u * 38;
@@ -85,7 +85,7 @@ const Steam: React.FC<{ x: number; y: number; t: number; s?: number }> = ({ x, y
     })}
   </g>
 );
-const Pot: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => (
+export const Pot: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => (
   <g transform={`translate(${x} ${y})`}>
     <Contact x={0} y={2} w={150} />
     <Shade d={rr(-104, -36, 208, 36, 8)} tones={DARK} L={LR} s={[3, 8, 5]} />
@@ -104,10 +104,10 @@ export const Bowl: React.FC<{ x: number; y: number; s?: number; noodles?: boolea
     {noodles && <g>{[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M${-58 + i * 14} -74q22 ${-26 - (i % 2) * 8} 44 0`} stroke="#ffdc7a" strokeWidth={8} fill="none" strokeLinecap="round" />)}<circle cx={26} cy={-86} r={17} fill="#fff4da" /><circle cx={26} cy={-86} r={8} fill="#ffb02a" /><path d="M-52 -84q16 -22 34 -8q-14 18 -34 8Z" fill="#3fa05a" /><Steam x={0} y={-92} t={t + 2} s={0.55} /></g>}
   </g>
 );
-const Bottle: React.FC<{ x: number; y: number; c: [string, string, string, string]; h?: number }> = ({ x, y, c, h = 130 }) => (
+export const Bottle: React.FC<{ x: number; y: number; c: [string, string, string, string]; h?: number }> = ({ x, y, c, h = 130 }) => (
   <g transform={`translate(${x} ${y})`}><Contact x={0} y={2} w={40} /><Shade d={`M-28 0V${-h * 0.66}Q-28 ${-h * 0.8} -13 ${-h * 0.84}V${-h}H13V${-h * 0.84}Q28 ${-h * 0.8} 28 ${-h * 0.66}V0Z`} tones={c} L={LR} s={[3, 10, 6]} /><path d={rr(-16, -h - 16, 32, 18, 5)} fill={P.green} />{line("M-16 -14V-70", "#fff", 5, 0.55)}</g>
 );
-const Bulb: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => {
+export const Bulb: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => {
   const a = Math.sin(t * 1.4) * 3.5;
   return (
     <g transform={`translate(${x} -60) rotate(${a})`}>
@@ -116,7 +116,7 @@ const Bulb: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => {
     </g>
   );
 };
-const Table: React.FC<{ y: number }> = ({ y }) => (
+export const Table: React.FC<{ y: number }> = ({ y }) => (
   <g>
     <Shade d={rr(300, y + 70, 60, 320, 10)} tones={WOOD} L={LR} s={[4, 12, 6]} /><Shade d={rr(1620, y + 70, 60, 320, 10)} tones={WOOD} L={LR} s={[4, 12, 6]} />
     <path d={`M230 ${y - 34}H1790L1830 ${y + 20}H190Z`} fill="#d98a56" />
@@ -126,7 +126,7 @@ const Table: React.FC<{ y: number }> = ({ y }) => (
     {[0, 1, 2, 3, 4, 5, 6].map((i) => <path key={i} d={`M${440 + i * 190} ${y + 100}V${y + 390}`} stroke="#42225c" strokeWidth={8} />)}
   </g>
 );
-const BananaLeaf: React.FC<{ x: number; y: number; rot: number; s: number; t: number }> = ({ x, y, rot, s, t }) => (
+export const BananaLeaf: React.FC<{ x: number; y: number; rot: number; s: number; t: number }> = ({ x, y, rot, s, t }) => (
   <g transform={`translate(${x} ${y}) rotate(${rot + Math.sin(t * 1.2 + x) * 1.6}) scale(${s})`}>
     <Shade d="M0 0C-90 -90 -110 -270 -20 -430C-6 -400 8 -404 4 -372C96 -270 108 -120 26 -6Z" tones={LEAF} L={LR} s={[8, 22, 8]} />
     {line("M6 4C0 -130 -6 -280 -20 -420", "#2f7458", 9)}{[0, 1, 2, 3, 4, 5].map((i) => <path key={i} d={`M${2 - i * 3} ${-60 - i * 56}q30 -18 ${52 - i * 4} -46M${-2 - i * 3} ${-74 - i * 56}q-30 -18 ${-56 + i * 4} -44`} stroke="#2f7458" strokeWidth={4} fill="none" strokeLinecap="round" />)}
@@ -134,9 +134,9 @@ const BananaLeaf: React.FC<{ x: number; y: number; rot: number; s: number; t: nu
 );
 
 /** latar warung lengkap sampai meja; isi meja diberikan sebagai children. */
-export const WarungSet: React.FC<{ t: number; cam: { x: number; y: number; z: number }; vertical?: boolean; mid?: React.ReactNode; children?: React.ReactNode; fg?: React.ReactNode }> = ({ t, cam, mid, children, fg }) => (
+export const WarungSet: React.FC<{ t: number; cam: { x: number; y: number; z: number }; vertical?: boolean; day?: number; mid?: React.ReactNode; children?: React.ReactNode; fg?: React.ReactNode }> = ({ t, cam, mid, children, fg, day = 0 }) => (
   <>
-    <Layer cam={cam} d={0}><Sky t={t} /></Layer>
+    <Layer cam={cam} d={0}><Sky t={t} />{day > 0 && <g opacity={day}><defs><linearGradient id="t5day" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#3f8fd8" /><stop offset="0.55" stopColor="#8fd0ee" /><stop offset="1" stopColor="#ffe6bc" /></linearGradient></defs><rect x={-600} y={-700} width={3200} height={2600} fill="url(#t5day)" /></g>}</Layer>
     <Layer cam={cam} d={0.08}><Cloud x={420 + t * 5} y={330} s={120} seed={7} base="#a4528e" lit="#ffc99a" shadow="#8a4690" op={0.85} /><Cloud x={1640 - t * 3} y={200} s={110} seed={19} base="#6e46a0" lit="#f2a89a" shadow="#5e3c96" op={0.8} /></Layer>
     <Layer cam={cam} d={0.22}>
       {[[150, 150], [330, 200], [620, 130], [1580, 220], [1780, 170], [1930, 240]].map(([x, h], i) => <Palm key={i} x={x} base={745} h={h * 1.25} t={t} seed={i * 3} c="#6c3c82" />)}

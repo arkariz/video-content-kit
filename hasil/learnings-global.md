@@ -48,6 +48,10 @@ Dimasukkan atas permintaan kreator sebagai **aturan uji**, belum terbukti: bukti
 
 **Cara mengukur:** retensi detik 15 (A1: 43%) dan viewed vs swiped (A1: 57,4%), dicatat per track di `learnings.md`. Dinilai pada review portfolio setelah data dari minimal 2 Short berikutnya dan satu track lain; bila tidak didukung, dicabut.
 
+### Efek suara ElevenLabs di semua konten (2026-11-27)
+
+Permintaan kreator: setiap video memakai efek suara berkualitas dari ElevenLabs, mulai T01 siklus 005. Cara pakai dan pustaka bersama: `produksi/PIPELINE.md` bagian "Suara". Siklus baru tidak siap render tanpa `04-audio.json` berisi cues.
+
 ## Format dan struktur
 
 ## Hook dan judul

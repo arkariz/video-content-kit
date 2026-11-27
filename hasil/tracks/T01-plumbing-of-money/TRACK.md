@@ -8,10 +8,10 @@ channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "005: kreator menilai gaya scene uji (s01, s10, s12, thumbnail A), lalu 45 scene sisanya, gate still, render; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
+langkah_berikutnya: "005: kreator menyetujui still (hasil/review/T01-005-still), lalu render master + 2 Short, campur audio, QA; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: "005: setujui gaya scene uji (produksi/render/T01/005: klip s01-s10-s12, stills, Thumbnail-A) sebelum scene lain digambar; 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
+menunggu_keputusan: "005: setujui still semua scene (hasil/review/T01-005-still/index.html) sebelum render; 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -132,3 +132,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Branch di-rebase ke main. Naskah 005 disesuaikan dengan commit baru: aturan uji Short (s08 dibuka dengan subjeknya, s35 jawaban dulu, s36 "That tourist"), tiga judul dipendekkan setelah lint kemasan (pasangan terbaik 100/100), riset outlier lewat API ditambahkan (01-outlier-youtube.md, 39 outlier; topik biaya UPI dan QRIS palsu masuk backlog). EN 1.299 kata, estimasi ±8:29. build-visual --check tanpa temuan V.
 - 2026-11-27: Kreator menyetujui naskah 005. Status produksi. Pemeran baru dicatat di produksi/STYLE.md 9.2 dan CAST T01 di scripts/produksi/r3.mjs (registri saja, mesin tidak diubah); faces mereka ditulis di shots. Klip tangan kreator s01 tetap opsional.
 - 2026-11-27: Produksi 005 dimulai. Audio EN (7,48 menit tanpa jeda) dan caption EN dibuat; teks caption sama dengan naskah. Scene uji gaya R3 2.5D digambar (s01, s10, s12, thumbnail A) dan klip pendek dirender; 45 scene lain, thumbnail B dan 2 thumbnail Short belum digambar. Menunggu persetujuan gaya dari kreator.
+- 2026-11-27: Kreator menyetujui gaya scene uji 005 dan meminta efek suara ElevenLabs untuk semua konten. Pustaka bersama produksi/sfx/el (19 efek baru + 14 dari 004), 04-audio.json 005 (112 cues, musik dipakai ulang dari 004). Semua 48 scene dan 4 thumbnail digambar; QA R3 G1-G7 lolos. Label s42 "ONE WAY" dipindah ke kata "Indonesians". Menunggu persetujuan still; video belum dirender.

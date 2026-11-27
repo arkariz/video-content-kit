@@ -1,0 +1,138 @@
+{
+ "_catatan": "Pustaka efek suara bersama (ElevenLabs Sound Generation), semua track. File di produksi/sfx/el/<nama>.mp3. Buat yang belum ada: node --env-file=.env scripts/produksi/audio-extra.mjs --library",
+ "sfx": {
+  "pop": {
+   "seconds": 0.5,
+   "prompt": "single soft rounded UI pop, bright bubble tap, very short, clean, no reverb"
+  },
+  "whoosh": {
+   "seconds": 0.7,
+   "prompt": "short smooth airy transition whoosh, soft and clean, no impact"
+  },
+  "scan": {
+   "seconds": 0.6,
+   "prompt": "phone camera QR scan locking on, two quick soft electronic beeps"
+  },
+  "paid": {
+   "seconds": 1.2,
+   "prompt": "warm bright mobile payment success chime, two rising bell notes, friendly"
+  },
+  "keytap": {
+   "seconds": 0.5,
+   "prompt": "single soft smartphone keypad tap, clean, dry"
+  },
+  "denied": {
+   "seconds": 0.7,
+   "prompt": "gentle low error buzz, two short muted tones, not harsh"
+  },
+  "switch": {
+   "seconds": 1.0,
+   "prompt": "small mechanical turntable rotating and clunking into place, satisfying, dry"
+  },
+  "send": {
+   "seconds": 0.8,
+   "prompt": "fast paper envelope zipping along a wire, light digital swish"
+  },
+  "plug": {
+   "seconds": 0.7,
+   "prompt": "electric plug clicking firmly into a wall socket, short satisfying snap"
+  },
+  "flip": {
+   "seconds": 1.5,
+   "prompt": "cascade of small wooden tiles flipping one after another, light clicks"
+  },
+  "warung": {
+   "seconds": 6.0,
+   "prompt": "quiet evening at an Indonesian street food stall, soft simmering pot, distant scooters, crickets, calm ambience, no voices, no music",
+   "loop": true
+  },
+  "ping": {
+   "seconds": 0.6,
+   "prompt": "soft map marker ping, single clear sonar blip"
+  },
+  "counter": {
+   "seconds": 1.5,
+   "prompt": "rapid soft counting ticks accelerating then a tiny bell, odometer style"
+  },
+  "shutter": {
+   "seconds": 1.2,
+   "prompt": "metal roller shutter pulling down and shutting, short"
+  },
+  "riser": {
+   "seconds": 2.0,
+   "prompt": "subtle suspense riser, low soft tension swell, cinematic, no impact"
+  },
+  "thud": {
+   "seconds": 0.5,
+   "prompt": "soft rounded cartoon thud of a small object landing on wood"
+  },
+  "notify": {
+   "seconds": 0.8,
+   "prompt": "phone notification ding with short vibration on a wooden table"
+  },
+  "moto": {
+   "seconds": 2.0,
+   "prompt": "small scooter passing by left to right on a quiet street"
+  },
+  "click": {
+   "seconds": 0.6,
+   "prompt": "single crisp plastic game controller button press, close, dry"
+  },
+  "coins": {
+   "seconds": 1.8,
+   "prompt": "many small gold coins pouring and clinking onto a felt table, bright, short"
+  },
+  "coin": {
+   "seconds": 0.8,
+   "prompt": "two coins clinking once, soft and bright"
+  },
+  "bag": {
+   "seconds": 0.8,
+   "prompt": "heavy cloth money bag dropping on a wooden table, soft thud with coin jingle"
+  },
+  "crack": {
+   "seconds": 1.0,
+   "prompt": "glass pane cracking, short sharp crack, no shatter"
+  },
+  "tick": {
+   "seconds": 2.0,
+   "prompt": "mechanical wall clock ticking quickly, four ticks, dry"
+  },
+  "seat": {
+   "seconds": 0.7,
+   "prompt": "soft cartoon landing thump of someone sitting on a chair"
+  },
+  "magic": {
+   "seconds": 1.2,
+   "prompt": "short soft sparkle transformation swoosh, light chimes"
+  },
+  "stamp": {
+   "seconds": 0.7,
+   "prompt": "heavy rubber stamp slamming on paper on a desk"
+  },
+  "paper": {
+   "seconds": 1.0,
+   "prompt": "paper sheet sliding and unfolding, soft rustle"
+  },
+  "gavel": {
+   "seconds": 1.2,
+   "prompt": "wooden judge gavel hitting twice in a quiet courtroom"
+  },
+  "register": {
+   "seconds": 1.2,
+   "prompt": "old cash register drawer opening with a bell ding"
+  },
+  "truck": {
+   "seconds": 3.0,
+   "prompt": "small delivery truck engine passing by, gentle, cartoon friendly"
+  },
+  "chime": {
+   "seconds": 1.2,
+   "prompt": "warm short success chime, soft bells"
+  },
+  "plane": {
+   "seconds": 1.4,
+   "prompt": "small airplane flying past overhead, soft airy swoosh with gentle engine hum"
+  }
+ }
+}

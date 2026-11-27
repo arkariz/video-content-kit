@@ -29,7 +29,7 @@ for (const t of targets) {
       const k = c.word ? findWord(words, c.word) : -1;
       if (c.word && k < 0) console.log(`  peringatan: ${id} kata "${c.word}" tidak ada di caption`);
       const at = Math.max(0, frames / FPS + (k >= 0 ? words[k].startMs / 1000 : 0) + (c.offset ?? 0));
-      const f = path.join(extra, `${c.sfx}.mp3`); if (fs.existsSync(f)) cues.push({ f, at, vol: c.vol ?? 0.4 }); else missing.add(c.sfx);
+      const own = path.join(extra, `${c.sfx}.mp3`), f = fs.existsSync(own) ? own : path.join(ROOT, "produksi/sfx/el", `${c.sfx}.mp3`); if (fs.existsSync(f)) cues.push({ f, at, vol: c.vol ?? 0.4 }); else missing.add(c.sfx);
     }
     const next = script.scenes.find((x) => x.id === t.ids[i + 1]);
     frames += Math.ceil((s.duration_ms[lang] / 1000) * FPS) + Math.round(pauseSec(next) * FPS);
