@@ -82,12 +82,20 @@ async function unggah(yt, c, kunci, file, body, log, diam) {
   } finally { fs.closeSync(fd); }
 }
 
+// Playlist yang baru dibuat belum langsung dikenali YouTube (404 playlistNotFound), jadi dicoba ulang.
+export const tunda = { playlist: 3000 };
 async function playlist(yt, judul, videoId, privasi) {
   let id, pageToken;
   do { const r = await yt.get("playlists", { part: "snippet", mine: "true", maxResults: "50", ...(pageToken && { pageToken }) }); id = r.items?.find((p) => p.snippet.title === judul)?.id; pageToken = r.nextPageToken; } while (!id && pageToken);
+  const baru = !id;
   id ||= (await yt.post("playlists", { part: "snippet,status" }, { snippet: { title: judul }, status: { privacyStatus: privasi } })).id;
-  const sudah = (await yt.get("playlistItems", { part: "id", playlistId: id, videoId })).items?.length;
-  if (!sudah) await yt.post("playlistItems", { part: "snippet" }, { snippet: { playlistId: id, resourceId: { kind: "youtube#video", videoId } } });
+  for (let ke = 1; ; ke++) {
+    try {
+      const sudah = !baru && (await yt.get("playlistItems", { part: "id", playlistId: id, videoId })).items?.length;
+      if (!sudah) await yt.post("playlistItems", { part: "snippet" }, { snippet: { playlistId: id, resourceId: { kind: "youtube#video", videoId } } });
+      return;
+    } catch (e) { if (e.reason !== "playlistNotFound" || ke >= 5) throw e; await jeda(ke * tunda.playlist); }
+  }
 }
 
 async function subtitle(yt, videoId, bahasa, file) {

@@ -39,7 +39,7 @@ globalThis.fetch = async (url, init = {}) => {
   if (p === "playlists" && m === "GET") return j({ items: yt.playlist });
   if (p === "playlists") { yt.playlist.push({ id: "PL1", snippet: body.snippet, status: body.status }); return j({ id: "PL1" }); }
   if (p === "playlistItems" && m === "GET") return j({ items: yt.isiPlaylist.filter((x) => x === u.searchParams.get("videoId")) });
-  if (p === "playlistItems") { yt.isiPlaylist.push(body.snippet.resourceId.videoId); return j({}); }
+  if (p === "playlistItems") { if (yt.belumDikenal-- > 0) return j({ error: { message: "tidak ditemukan", errors: [{ reason: "playlistNotFound" }] } }, 404); yt.isiPlaylist.push(body.snippet.resourceId.videoId); return j({}); }
   if (p === "captions" && m === "GET") return j({ items: [] });
   if (p === "captions") { yt.subtitle.push(init.body.toString()); return j({ id: "cap" }); }
   if (p === "thumbnails/set") { yt.thumbnail.push(u.searchParams.get("videoId")); return j({}); }
@@ -181,6 +181,12 @@ try {
     assert.throws(() => H.setujuiChannel(), /belum ada channel/); await tunggu("izin"); assert.match(H.status().url, /accounts\.google\.com/);
     await tunggu("konfirmasi"); assert.equal(H.status().channel, "Uji (@uji)"); H.setujuiChannel(); await tunggu("selesai"); assert.equal(dimuat, 1);
     H.batal(); assert.equal(H.status(), null);
+  });
+  await uji("playlist baru yang belum dikenali dicoba ulang", async () => {
+    const y = await import("./youtube.mjs"); y.tunda.playlist = 1;
+    inti.ubah(c, (x) => { x.hasil = {}; x.items.forEach((i) => { i.playlist = ""; i.thumbnail = null; }); x.items[0].playlist = "Baru"; }); inti.setujui(c, "SETUJU", "uji");
+    yt.playlist.length = 0; yt.isiPlaylist.length = 0; yt.belumDikenal = 2; await kirim(c, diam);
+    const h = inti.muat(c).hasil.master.youtube; assert.ok(h.selesai.playlist, String(h.galat)); assert.equal(yt.playlist.length, 1); assert.equal(yt.isiPlaylist.length, 1);
   });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;
