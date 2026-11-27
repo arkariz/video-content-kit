@@ -423,13 +423,22 @@ node --env-file=.env scripts/youtube/analitik.mjs --track T02 [--hari 28] [--vid
 | `YOUTUBE_CLIENT_ID_<ID>`, `YOUTUBE_CLIENT_SECRET_<ID>` | OAuth client khusus satu track (harus sepasang) | opsional |
 | `YOUTUBE_REFRESH_TOKEN_<ID>`, `YOUTUBE_CHANNEL_ID_<ID>` | ditulis `auth.mjs` | wajib per track untuk analitik |
 
-**Persiapan di Google Cloud (kreator).** Buat project, aktifkan YouTube Data API v3 dan YouTube Analytics API, buat API key (batasi ke Data API) dan OAuth client ID tipe *Desktop app*. Di OAuth consent screen (user type External) tambahkan akun pemilik channel sebagai test user. Pada status *Testing*, refresh token kedaluwarsa setelah 7 hari; ubah ke *In production*, lalu jalankan ulang `auth.mjs`.
+**Persiapan di Google Cloud (kreator).** Buat project, aktifkan YouTube Data API v3, YouTube Analytics API, dan YouTube Reporting API, buat API key (batasi ke Data API) dan OAuth client ID tipe *Desktop app*. Di OAuth consent screen (user type External) tambahkan akun pemilik channel sebagai test user. Pada status *Testing*, refresh token kedaluwarsa setelah 7 hari; ubah ke *In production*, lalu jalankan ulang `auth.mjs`.
 
 **Banyak track, banyak akun.** Satu OAuth client cukup untuk semua akun; yang membedakan adalah token per track. Jalankan `auth.mjs --track <ID>` untuk tiap track dan pilih akun atau channel (termasuk Brand Account) milik track itu. Tidak ada token default. Skrip menampilkan nama channel sebelum menyimpan, memperingatkan bila channel itu sudah dipakai track lain, dan `analitik.mjs` hanya memasukkan video yang cocok ke siklus track bila channelnya dipakai bersama.
 
 **Riset** (`instruksi/03`): view >= 3x median sampai 10 video terakhir channel, 90 hari. Hasil di folder siklus (`01-outlier-youtube.md`), `validasi/`, atau `00-riset-niche/`. Tiap `--q` memakai satu panggilan `search.list`, yang jatah hariannya terpisah (default 100; panggilan lain 10.000 unit per hari; diperiksa 2026-11-27 di [determine_quota_cost](https://developers.google.com/youtube/v3/determine_quota_cost)).
 
-**Analitik** (`instruksi/08`): hasil di `tracks/<ID>/analitik/youtube-<tanggal>.md`. `--retensi` menulis CSV retensi per video dan mencetak perintah `retensi.mjs`. Impressions CTR thumbnail dan viewed vs swiped away tidak diambil skrip (tidak ditemukan di dokumentasi metrik Analytics API); isi dari YouTube Studio. Pendapatan tidak diminta (scope hanya `youtube.readonly` dan `yt-analytics.readonly`). Format Short ditebak dari durasi (maksimal 3 menit).
+**Analitik** (`instruksi/08`): hasil di `tracks/<ID>/analitik/youtube-<tanggal>.md`. `--retensi` menulis CSV retensi per video dan mencetak perintah `retensi.mjs`. Pendapatan tidak diminta (scope hanya `youtube.readonly` dan `yt-analytics.readonly`). Format Short ditebak dari durasi (maksimal 3 menit). Viewed vs swiped away tidak diambil; isi dari YouTube Studio.
+
+| Bagian laporan | Sumber |
+| --- | --- |
+| Angka terkini (view, like, komentar; untuk cek 48 jam) | Data API |
+| View, engaged views, retensi rata-rata, durasi, share, subscriber | Analytics API (tertinggal 2 sampai 3 hari) |
+| Impressions dan CTR thumbnail | Reporting API, `channel_reach_basic_a1` |
+| Sumber trafik, kata kunci pencarian, negara, subscriber vs bukan | Analytics API |
+
+**CTR.** `auth.mjs` atau `analitik.mjs` membuat job laporan sekali per channel. Menurut [dokumentasi](https://developers.google.com/youtube/reporting/v1/reports), laporan pertama muncul dalam sekitar 48 jam, mencakup 30 hari sebelum job dibuat, dan hanya disimpan Google 30 sampai 60 hari. Jalankan `analitik.mjs` minimal sekali sebulan; data diarsipkan di `hasil/youtube-reach/<channelId>.json` (ikut di-commit). Dokumentasi tidak menyebut skala CTR maupun apakah kata kunci pencarian didukung untuk `YT_SEARCH`: cocokkan satu angka CTR dengan Studio, dan bila API menolak sebuah query, laporan tetap dibuat dengan catatan.
 
 Status uji: baru diuji dengan respons API tiruan (2026-11-27), belum dengan akun sungguhan.
 

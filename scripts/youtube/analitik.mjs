@@ -1,9 +1,12 @@
 // Analitik channel milik satu track (instruksi/08) lewat YouTube Analytics API. Butuh OAuth: jalankan auth.mjs dulu.
 //   node --env-file=.env scripts/youtube/analitik.mjs --track T02 [--hari 28] [--video ID1,ID2] [--retensi]
 // Tanpa --hari, angka tiap video dihitung sejak tayang. --retensi juga menulis CSV retensi untuk retensi.mjs.
-// Keluaran: hasil/tracks/<ID>/analitik/youtube-<tanggal>.md. CTR thumbnail dan "viewed vs swiped away" tetap dari YouTube Studio.
+// Isi laporan: angka terkini (Data API, tanpa jeda), metrik per video, impressions + CTR thumbnail (reach.mjs),
+// sumber trafik, kata kunci pencarian, negara, status subscriber.
+// Keluaran: hasil/tracks/<ID>/analitik/youtube-<tanggal>.md. "Viewed vs swiped away" tetap dari YouTube Studio.
 import fs from "node:fs"; import path from "node:path";
 import { ROOT, readJson } from "../produksi/lib.mjs";
+import { sinkronReach } from "./reach.mjs";
 import { accessToken, byIds, channelVar, data, detik, menit, opts, report, sel, tanggal, trackOf, tracks, tulisBaru, uploads } from "./lib.mjs";
 
 const { o } = opts(); if (typeof o.track !== "string") throw new Error("Wajib: --track T02");
@@ -30,7 +33,7 @@ for (const d of fs.existsSync(sdir) ? fs.readdirSync(sdir).filter((x) => /^\d{3}
 
 const diminta = typeof o.video === "string" ? o.video.split(",").map((x) => x.trim()).filter(Boolean) : null;
 const ids = diminta ?? await uploads(channel.contentDetails.relatedPlaylists.uploads, 200, auth);
-let videos = (await byIds("videos", ids, "snippet,contentDetails,status", auth)).filter((v) => v.snippet.liveBroadcastContent !== "upcoming");
+let videos = (await byIds("videos", ids, "snippet,contentDetails,status,statistics", auth)).filter((v) => v.snippet.liveBroadcastContent !== "upcoming");
 const asing = videos.filter((v) => v.snippet.channelId !== channel.id);
 if (asing.length) throw new Error(`video bukan milik channel ${channel.snippet.title}: ${asing.map((v) => v.id).join(", ")}`);
 const cocok = (v) => perId.get(v.id) ?? perJudul.get(normal(v.snippet.title));
@@ -47,7 +50,21 @@ async function metrik(q) {
   catch (e) { if (e.status !== 400) throw e; return (await report(token, { ...q, metrics: METRIK.filter((m) => m !== "engagedViews").join(",") }))[0]; }
 }
 
-const baris = [], sumber = [], retensi = [], catatan = [];
+const baris = [], terkini = [], sumber = [], cari = [], negara = [], subs = [], retensi = [], catatan = [];
+let reach = null;
+try {
+  reach = await sinkronReach(token, channel.id);
+  if (reach.job.baru) catatan.push("Job laporan CTR baru dibuat. Data pertama muncul sekitar 48 jam lagi; jalankan ulang setelahnya.");
+  else if (!reach.dari) catatan.push("Laporan CTR belum tersedia dari YouTube.");
+  else catatan.push(`Arsip CTR mencakup ${reach.dari} sampai ${reach.sampai} (${reach.file}). Tanda * berarti video tayang sebelum arsip mulai, jadi angkanya sebagian. Cocokkan satu angka CTR dengan YouTube Studio saat pertama kali dipakai.`);
+} catch (e) { catatan.push(`CTR tidak terambil: ${sel(e.message)}`); }
+const ditolak = new Set();
+/** Query tambahan: bila API menolak, laporan tetap jadi dan penolakannya dicatat sekali. */
+async function opsional(nama, q) {
+  try { return await report(token, q); }
+  catch (e) { if (e.status !== 400) throw e; if (!ditolak.has(nama)) { ditolak.add(nama); catatan.push(`${nama} ditolak API: ${sel(e.message)}`); } return []; }
+}
+const persen = (x) => `${x.toFixed(1)}%`;
 for (const v of videos.sort((a, b) => a.snippet.publishedAt.localeCompare(b.snippet.publishedAt))) {
   const m = cocok(v); const dur = detik(v.contentDetails.duration); const pendek = dur <= 180; // perkiraan: Shorts maksimal 3 menit
   const mulai = hari === null ? pacific(new Date(v.snippet.publishedAt)) : pacific(new Date(Date.now() - hari * 86_400_000));
@@ -55,11 +72,23 @@ for (const v of videos.sort((a, b) => a.snippet.publishedAt.localeCompare(b.snip
   const d = await metrik(q); const siklus = m ? `${m.siklus}${m.cut ? ` ${m.cut}` : ""}` : "?";
   const link = `[${sel(v.snippet.title)}](https://www.youtube.com/watch?v=${v.id})${v.status.privacyStatus === "public" ? "" : ` (${v.status.privacyStatus})`}`;
   const format = pendek ? "Short" : "long-form";
-  if (!d || !d.views) { baris.push(`| ${siklus} | ${link} | ${format} | ${tanggal(new Date(v.snippet.publishedAt))} | belum ada data |  |  |  |  |  |  |  |  |`); continue; }
-  const target = pendek ? "-" : d.averageViewPercentage >= 35 ? "retensi tercapai" : "retensi di bawah 35%";
-  baris.push(`| ${siklus} | ${link} | ${format} | ${tanggal(new Date(v.snippet.publishedAt))} | ${d.views} | ${d.engagedViews ?? "-"} | ${d.averageViewPercentage.toFixed(1)}% | ${menit(d.averageViewDuration)} / ${menit(dur)} | ${d.estimatedMinutesWatched} | ${d.shares} | +${d.subscribersGained} / -${d.subscribersLost} | ${d.likes} / ${d.comments} | ${target} |`);
+  const umur = (Date.now() - new Date(v.snippet.publishedAt)) / 3_600_000; const s = v.statistics ?? {};
+  terkini.push(`| ${siklus} | ${link} | ${umur < 72 ? `${Math.floor(umur)} jam` : `${Math.floor(umur / 24)} hari`} | ${s.viewCount ?? "-"} | ${s.likeCount ?? "-"} | ${s.commentCount ?? "-"} |`);
+  const r0 = reach?.video(v.id, mulai); const sebagian = r0 && hari === null && reach.dari > mulai ? "*" : "";
+  const imp = r0 ? `${r0.imp}${sebagian}` : "belum tersedia", ctr = r0 ? `${persen(r0.ctr)}${sebagian}` : "belum tersedia";
+  if (!d || !d.views) { baris.push(`| ${siklus} | ${link} | ${format} | ${tanggal(new Date(v.snippet.publishedAt))} | belum ada data |  | ${imp} | ${ctr} |  |  |  |  |  |  |  |`); continue; }
+  const target = pendek ? "-" : [r0 && `CTR ${r0.ctr >= 4 ? "tercapai" : r0.ctr >= 3 ? "wajar untuk channel baru" : "di bawah 3%"}`, `retensi ${d.averageViewPercentage >= 35 ? "tercapai" : "di bawah 35%"}`].filter(Boolean).join(", ");
+  baris.push(`| ${siklus} | ${link} | ${format} | ${tanggal(new Date(v.snippet.publishedAt))} | ${d.views} | ${d.engagedViews ?? "-"} | ${imp} | ${ctr} | ${persen(d.averageViewPercentage)} | ${menit(d.averageViewDuration)} / ${menit(dur)} | ${d.estimatedMinutesWatched} | ${d.shares} | +${d.subscribersGained} / -${d.subscribersLost} | ${d.likes} / ${d.comments} | ${target} |`);
   const asal = await report(token, { ...q, dimensions: "insightTrafficSourceType", metrics: "views", sort: "-views" });
   sumber.push(`| ${siklus} | ${link} | ${asal.slice(0, 4).map((r) => `${r.insightTrafficSourceType} ${r.views}`).join(", ") || "-"} |`);
+  const kata = await opsional("Kata kunci pencarian", { ...q, filters: `${q.filters};insightTrafficSourceType==YT_SEARCH`, dimensions: "insightTrafficSourceDetail", metrics: "views", sort: "-views", maxResults: 10 });
+  cari.push(`| ${siklus} | ${link} | ${kata.map((r) => `${sel(r.insightTrafficSourceDetail)} (${r.views})`).join(", ") || "-"} |`);
+  const geo = (await opsional("Negara", { ...q, dimensions: "country", metrics: "views,averageViewPercentage" })).sort((a, b) => b.views - a.views);
+  const total = geo.reduce((n, r) => n + r.views, 0);
+  negara.push(`| ${siklus} | ${link} | ${geo.slice(0, 5).map((r) => `${r.country} ${r.views} (${persen((r.views / total) * 100)}; ditonton ${persen(r.averageViewPercentage)})`).join(", ") || "-"} |`);
+  const status = await opsional("Status subscriber", { ...q, dimensions: "subscribedStatus", metrics: "views,averageViewPercentage" });
+  const per = (k) => { const r = status.find((x) => x.subscribedStatus === k); return r ? `${r.views} view, ditonton ${persen(r.averageViewPercentage)}` : "-"; };
+  subs.push(`| ${siklus} | ${link} | ${per("SUBSCRIBED")} | ${per("UNSUBSCRIBED")} |`);
   if (o.retensi) {
     const r = await report(token, { ...q, dimensions: "elapsedVideoTimeRatio", metrics: "audienceWatchRatio" });
     if (r.length < 8) { catatan.push(`Retensi ${v.id}: data belum cukup (${r.length} titik).`); continue; }
@@ -74,12 +103,18 @@ if (berbagi.length) catatan.push(`Channel ini juga dipakai atau direncanakan dip
 const md = `# Data YouTube ${track.id}, ${tanggal()}
 
 Sumber data: API (YouTube Analytics API), channel "${sel(channel.snippet.title)}". Rentang: ${hari === null ? "sejak tayang" : `${hari} hari terakhir`} sampai ${sampai} (Pacific Time). Data Analytics biasanya tertinggal 2 sampai 3 hari.
-Isi manual dari YouTube Studio: impressions CTR (target 4% atau lebih) dan, untuk Shorts, viewed vs swiped away (target 70%). Siklus "?" berarti belum cocok lewat ID atau judul.
+Isi manual dari YouTube Studio untuk Shorts: viewed vs swiped away (target 70%). Target CTR long-form 4% atau lebih. Siklus "?" berarti belum cocok lewat ID atau judul. Kata kunci pencarian adalah data pihak ketiga.
+
+## Angka terkini (Data API, tanpa jeda; untuk cek 48 jam)
+
+| Siklus | Video | Umur | View | Like | Komentar |
+| --- | --- | --- | --- | --- | --- |
+${terkini.join("\n")}
 
 ## Per video
 
-| Siklus | Video | Format | Tayang | View | Engaged | Avg % viewed | Avg durasi | Menit ditonton | Share | Subscriber | Like / komentar | vs target |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Siklus | Video | Format | Tayang | View | Engaged | Impressions | CTR | Avg % viewed | Avg durasi | Menit ditonton | Share | Subscriber | Like / komentar | vs target |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 ${baris.join("\n")}
 
 ## Sumber trafik (4 teratas, view)
@@ -87,6 +122,24 @@ ${baris.join("\n")}
 | Siklus | Video | Sumber |
 | --- | --- | --- |
 ${sumber.join("\n")}
+
+## Kata kunci pencarian YouTube (10 teratas, view)
+
+| Siklus | Video | Kata kunci |
+| --- | --- | --- |
+${cari.join("\n")}
+
+## Negara (5 teratas)
+
+| Siklus | Video | Negara (view, porsi, rata-rata ditonton) |
+| --- | --- | --- |
+${negara.join("\n")}
+
+## Subscriber vs bukan
+
+| Siklus | Video | Subscriber | Bukan subscriber |
+| --- | --- | --- | --- |
+${subs.join("\n")}
 ${retensi.length ? `\n## Analisa retensi\n\n\`\`\`\n${retensi.join("\n")}\n\`\`\`\n` : ""}${catatan.length ? `\n## Catatan\n\n${catatan.map((c) => `- ${c}`).join("\n")}\n` : ""}`;
 const file = tulisBaru(path.join(track.dir, "analitik", `youtube-${tanggal()}.md`), md);
 console.log(`channel "${channel.snippet.title}": ${videos.length} video.${retensi.length ? `\n${retensi.join("\n")}` : ""}\nditulis: ${path.relative(ROOT, file)}`);

@@ -26,7 +26,7 @@ export function opts(argv = process.argv.slice(2)) {
   return { o, semua };
 }
 
-async function request(url, init) {
+export async function request(url, init) {
   const res = await fetch(url, init); const body = await res.json().catch(() => ({}));
   if (res.ok) return body;
   const e = body.error; const reason = e?.errors?.[0]?.reason ?? (typeof e === "string" ? e : e?.status);

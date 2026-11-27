@@ -6,6 +6,7 @@
 // Refresh token disimpan ke .env sebagai YOUTUBE_REFRESH_TOKEN_<ID> (tidak pernah dicetak), bersama YOUTUBE_CHANNEL_ID_<ID>.
 import fs from "node:fs"; import path from "node:path"; import http from "node:http"; import crypto from "node:crypto"; import readline from "node:readline/promises";
 import { ROOT } from "../produksi/lib.mjs";
+import { reachJob } from "./reach.mjs";
 import { SCOPES, accessToken, channelVar, data, oauthClient, opts, tokenRequest, tokenVar, trackOf, tracks } from "./lib.mjs";
 
 const { o } = opts();
@@ -65,3 +66,6 @@ for (const [nama, nilai] of [[tokenVar(track.id), tok.refresh_token], [channelVa
 }
 const tmp = `${envFile}.tmp-${process.pid}`; fs.writeFileSync(tmp, isi, { mode: 0o600 }); fs.renameSync(tmp, envFile);
 console.log(`Disimpan: ${tokenVar(track.id)} dan ${channelVar(track.id)} di ${path.relative(ROOT, envFile)}.`);
+// Dipasang sedini mungkin: data CTR hanya tersedia mulai 30 hari sebelum job dibuat.
+try { console.log((await reachJob(tok.access_token)).baru ? "Job laporan CTR dibuat; data pertama sekitar 48 jam lagi." : "Job laporan CTR sudah ada."); }
+catch (e) { console.log(`Job laporan CTR belum bisa dibuat (aktifkan YouTube Reporting API; analitik.mjs akan mencoba lagi): ${e.message}`); }
