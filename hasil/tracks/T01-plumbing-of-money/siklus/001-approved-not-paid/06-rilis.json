@@ -125,6 +125,11 @@
         "videoId": "QIzhCb_nGPo",
         "privasi": "public",
         "dicatat": "2026-11-27T09:07:08.049Z"
+      },
+      "instagram": {
+        "sumber": "manual",
+        "url": "https://www.instagram.com/reel/DgMnebyS1_6/?utm_source=ig_web_copy_link&evlk=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==",
+        "dicatat": "2026-11-27T09:47:18.328Z"
       }
     },
     "A2-pending-to-posted": {
@@ -139,8 +144,35 @@
         "videoId": "ED9VHiw1nnU",
         "privasi": "public",
         "dicatat": "2026-11-27T09:07:08.049Z"
+      },
+      "instagram": {
+        "sumber": "manual",
+        "url": "https://www.instagram.com/reel/DgMnebyS1_6/?utm_source=ig_web_copy_link&evlk=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==",
+        "dicatat": "2026-11-27T09:47:23.418Z"
       }
     }
   },
-  "checklist": {}
+  "checklist": {
+    "master:yt-pin": "2026-11-27T09:45:55.284Z",
+    "master:yt-endscreen": "2026-11-27T09:45:55.781Z",
+    "master:yt-cards": "2026-11-27T09:45:57.814Z",
+    "master:yt-ab": "2026-11-27T09:45:59.215Z",
+    "master:yt-audio": "2026-11-27T09:46:04.615Z",
+    "master:yt-midroll": "2026-11-27T09:46:05.690Z",
+    "A1-zero-dollars-moved:yt-pin": "2026-11-27T09:46:07.074Z",
+    "A1-zero-dollars-moved:yt-terkait": "2026-11-27T09:46:07.414Z",
+    "A1-zero-dollars-moved:fb-komentar": "2026-11-27T09:46:07.748Z",
+    "A1-zero-dollars-moved:ig-unggah": "2026-11-27T09:46:08.064Z",
+    "A1-zero-dollars-moved:tt-unggah": "2026-11-27T09:46:09.197Z",
+    "A2-pending-to-posted:yt-pin": "2026-11-27T09:46:10.631Z",
+    "A2-pending-to-posted:yt-terkait": "2026-11-27T09:46:11.422Z",
+    "A2-pending-to-posted:tt-unggah": "2026-11-27T09:46:12.523Z",
+    "A2-pending-to-posted:ig-unggah": "2026-11-27T09:46:13.215Z",
+    "A2-pending-to-posted:fb-komentar": "2026-11-27T09:46:13.865Z",
+    "A1-zero-dollars-moved:ig-komentar": "2026-11-27T09:47:27.426Z",
+    "A1-zero-dollars-moved:ig-story": "2026-11-27T09:47:28.066Z",
+    "A2-pending-to-posted:ig-komentar": "2026-11-27T09:47:29.077Z",
+    "A2-pending-to-posted:ig-story": "2026-11-27T09:47:29.543Z"
+  },
+  "arsip": "2026-11-27T09:46:28.743Z"
 }

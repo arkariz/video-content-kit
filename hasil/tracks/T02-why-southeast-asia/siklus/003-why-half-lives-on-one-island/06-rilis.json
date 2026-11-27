@@ -3,7 +3,7 @@
   "track": "T02",
   "siklus": "003-why-half-lives-on-one-island",
   "dibuat": "2026-11-27T09:07:08.103Z",
-  "kunci_manual": "sudah tayang atau terjadwal manual (dicatat dari platform)",
+  "kunci_manual": null,
   "youtube": {
     "kategori": "27",
     "bahasa": "en",
@@ -53,7 +53,7 @@
     },
     {
       "nama": "B1-moved-9-million-grew-95",
-      "jadwal": "2026-11-28T03:00",
+      "jadwal": "2026-11-28T12:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -87,7 +87,7 @@
     },
     {
       "nama": "B2-island-the-size-of-england",
-      "jadwal": "2026-11-28T06:30",
+      "jadwal": "2026-11-28T16:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -120,26 +120,35 @@
       }
     }
   ],
-  "persetujuan": null,
+  "persetujuan": {
+    "sidik": "30d15423bb6730d61cb7a7c3991b19e59908fe20e0a1426287d83345c1a1ec57",
+    "waktu": "2026-11-27T10:04:50.446Z",
+    "via": "dashboard",
+    "qa_manual": "belum ada 05-qa.md"
+  },
   "hasil": {
-    "master": {
-      "youtube": {
-        "sumber": "manual",
-        "url": "https://www.youtube.com/watch?v=v324n50hfpM",
-        "videoId": "v324n50hfpM",
-        "publishAt": "2026-11-27T18:00:00Z",
-        "privasi": "private",
-        "dicatat": "2026-11-27T09:07:08.105Z"
-      }
-    },
     "B1-moved-9-million-grew-95": {
       "youtube": {
         "sumber": "manual",
         "url": "https://www.youtube.com/watch?v=6OSnOogjAkg",
         "videoId": "6OSnOogjAkg",
-        "publishAt": "2026-11-27T20:00:00Z",
+        "publishAt": "2026-11-28T05:00:00.000Z",
         "privasi": "private",
-        "dicatat": "2026-11-27T09:07:08.105Z"
+        "dicatat": "2026-11-27T09:07:08.105Z",
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "4971231386437788",
+        "selesai": {
+          "subtitle-en": "2026-11-27T10:08:05.550Z",
+          "subtitle-id": "2026-11-27T10:08:07.229Z",
+          "sampul": "2026-11-27T10:08:09.744Z"
+        },
+        "url": "https://www.facebook.com/reel/4971231386437788/",
+        "publishAt": "2026-11-28T05:00:00.000Z",
+        "diunggah": "2026-11-27T10:08:03.853Z",
+        "galat": []
       }
     },
     "B2-island-the-size-of-england": {
@@ -147,12 +156,62 @@
         "sumber": "manual",
         "url": "https://www.youtube.com/watch?v=GR_Nde1kEt0",
         "videoId": "GR_Nde1kEt0",
-        "publishAt": "2026-11-27T23:30:00Z",
+        "publishAt": "2026-11-28T09:00:00.000Z",
         "privasi": "private",
-        "dicatat": "2026-11-27T09:07:08.105Z"
+        "dicatat": "2026-11-27T09:07:08.105Z",
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "2959968504364254",
+        "selesai": {
+          "subtitle-en": "2026-11-27T10:08:20.753Z",
+          "subtitle-id": "2026-11-27T10:08:22.501Z",
+          "sampul": "2026-11-27T10:08:25.463Z"
+        },
+        "url": "https://www.facebook.com/reel/2959968504364254/",
+        "publishAt": "2026-11-28T09:00:00.000Z",
+        "diunggah": "2026-11-27T10:08:18.786Z",
+        "galat": []
+      }
+    },
+    "master": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "LohmmdFnuik",
+        "url": "https://www.youtube.com/watch?v=LohmmdFnuik",
+        "privasi": "private",
+        "publishAt": "2026-11-28T03:00:00.000Z",
+        "diunggah": "2026-11-27T10:05:23.200Z",
+        "selesai": {
+          "subtitle-en": "2026-11-27T10:05:25.392Z",
+          "subtitle-id": "2026-11-27T10:05:27.123Z",
+          "thumbnail": "2026-11-27T10:05:32.356Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "1670835964511594",
+        "selesai": {
+          "subtitle-en": "2026-11-27T10:15:07.027Z",
+          "subtitle-id": "2026-11-27T10:15:08.717Z",
+          "sampul": "2026-11-27T10:15:12.248Z"
+        },
+        "url": "https://www.facebook.com/reel/1670835964511594/",
+        "publishAt": "2026-11-28T03:00:00.000Z",
+        "diunggah": "2026-11-27T10:15:05.183Z",
+        "galat": []
       }
     }
   },
   "checklist": {},
-  "teks_sidik": "596a64c9061701a1c46c6a579f708b88c2ed17581c63cc04f6926b5420025e06"
+  "teks_sidik": "596a64c9061701a1c46c6a579f708b88c2ed17581c63cc04f6926b5420025e06",
+  "kunci_dibuka": {
+    "alasan": "sudah tayang atau terjadwal manual (dicatat dari platform)",
+    "waktu": "2026-11-27T10:02:36.986Z"
+  },
+  "facebook": {
+    "aktif": true
+  }
 }

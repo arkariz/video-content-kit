@@ -136,6 +136,11 @@
         "videoId": "6o8_mJKmGpY",
         "privasi": "public",
         "dicatat": "2026-11-27T09:07:08.072Z"
+      },
+      "instagram": {
+        "sumber": "manual",
+        "url": "https://www.instagram.com/reel/DgObvJgCVIF/?utm_source=ig_web_copy_link&evlk=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==",
+        "dicatat": "2026-11-27T09:48:04.324Z"
       }
     },
     "S2-who-pays-card-fee": {
@@ -150,8 +155,32 @@
         "videoId": "x94cAT7VkJc",
         "privasi": "public",
         "dicatat": "2026-11-27T09:07:08.073Z"
+      },
+      "instagram": {
+        "sumber": "manual",
+        "url": "https://www.instagram.com/reel/DgOs5tTiPWH/?utm_source=ig_web_copy_link&cnvx=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA==",
+        "dicatat": "2026-11-27T09:48:17.025Z"
       }
     }
   },
-  "checklist": {}
+  "checklist": {
+    "master:yt-pin": "2026-11-27T09:48:22.021Z",
+    "master:yt-endscreen": "2026-11-27T09:48:22.520Z",
+    "master:yt-cards": "2026-11-27T09:48:22.786Z",
+    "master:yt-ab": "2026-11-27T09:48:23.027Z",
+    "master:yt-midroll": "2026-11-27T09:48:23.257Z",
+    "S1-not-rockstars-money:yt-pin": "2026-11-27T09:48:23.498Z",
+    "S1-not-rockstars-money:yt-terkait": "2026-11-27T09:48:23.789Z",
+    "S1-not-rockstars-money:fb-komentar": "2026-11-27T09:48:23.991Z",
+    "S1-not-rockstars-money:ig-komentar": "2026-11-27T09:48:24.206Z",
+    "S1-not-rockstars-money:ig-story": "2026-11-27T09:48:24.408Z",
+    "S1-not-rockstars-money:tt-unggah": "2026-11-27T09:48:24.632Z",
+    "S2-who-pays-card-fee:yt-pin": "2026-11-27T09:48:26.186Z",
+    "S2-who-pays-card-fee:yt-terkait": "2026-11-27T09:48:28.556Z",
+    "S2-who-pays-card-fee:fb-komentar": "2026-11-27T09:48:29.190Z",
+    "S2-who-pays-card-fee:ig-komentar": "2026-11-27T09:48:30.224Z",
+    "S2-who-pays-card-fee:ig-story": "2026-11-27T09:48:30.988Z",
+    "S2-who-pays-card-fee:tt-unggah": "2026-11-27T09:48:31.457Z"
+  },
+  "arsip": "2026-11-27T09:48:43.933Z"
 }
