@@ -8,10 +8,10 @@ channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "005: kreator menyetujui still (hasil/review/T01-005-still), lalu render master + 2 Short, campur audio, QA; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
+langkah_berikutnya: "005: kreator mendengar temuan QA salah ucap (QRIS, rupiah, Europay) dan menonton master + 2 Short; 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-24: footage stok nyata sebagai pengganti; QA tetap mencatat sebagai temuan sedang
-menunggu_keputusan: "005: setujui still semua scene (hasil/review/T01-005-still/index.html) sebelum render; 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
+menunggu_keputusan: "005: QA otomatis GAGAL (11 temuan salah ucap dari transkrip balik); dengar lalu putuskan terima atau buat ulang audio setelah kredit diisi; 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -56,7 +56,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | qa | 2026-12-14 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
 | 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | siap-publish | target ≤ 2026-12-03 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov |
-| 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | produksi | belum dijadwalkan | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 disetujui 2026-11-27 |
+| 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | qa | belum dijadwalkan | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 disetujui 2026-11-27 |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -133,3 +133,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator menyetujui naskah 005. Status produksi. Pemeran baru dicatat di produksi/STYLE.md 9.2 dan CAST T01 di scripts/produksi/r3.mjs (registri saja, mesin tidak diubah); faces mereka ditulis di shots. Klip tangan kreator s01 tetap opsional.
 - 2026-11-27: Produksi 005 dimulai. Audio EN (7,48 menit tanpa jeda) dan caption EN dibuat; teks caption sama dengan naskah. Scene uji gaya R3 2.5D digambar (s01, s10, s12, thumbnail A) dan klip pendek dirender; 45 scene lain, thumbnail B dan 2 thumbnail Short belum digambar. Menunggu persetujuan gaya dari kreator.
 - 2026-11-27: Kreator menyetujui gaya scene uji 005 dan meminta efek suara ElevenLabs untuk semua konten. Pustaka bersama produksi/sfx/el (19 efek baru + 14 dari 004), 04-audio.json 005 (112 cues, musik dipakai ulang dari 004). Semua 48 scene dan 4 thumbnail digambar; QA R3 G1-G7 lolos. Label s42 "ONE WAY" dipindah ke kata "Indonesians". Menunggu persetujuan still; video belum dirender.
+- 2026-11-27: Kreator memerintahkan memperbaiki scene lemah dan merender tanpa uji still ulang (dicatat di 04-still.json). s16, s24, s26, s30, s32, s42, s46 diperkaya. Master 8:09 dan 2 Short (22 dtk, 35 dtk) dirender dan dicampur (112 efek suara, sekitar -14 LUFS). QA otomatis GAGAL: kritis 11 (salah ucap menurut transkrip balik), sedang 4, kecil 4; publish tertahan.

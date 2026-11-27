@@ -2,8 +2,9 @@
 import React from "react";
 import { Easing } from "remotion";
 import { Frame, Layer, Pill, R, clamp, mix, pop, seg, useShot, useLabel } from "@r3";
-import { Shade, rr } from "@r3/art";
+import { FarCity, Gables, Lamp, Shade, Tree, rr } from "@r3/art";
 import { BLUE, CORAL, CREAM, Contact, GOLD, GREEN, Glow2, LR, P, QrGrid, STEEL, Sticker, TEALB, Tick, circ, ell, line, tw } from "./kit";
+import { Birds, Lights, Puff, Shrub, Walker } from "./dekor";
 import { Adapter, Back, Coin, Cross, Plug, Socket, Stack, Txt, bump, drift } from "./benda";
 
 type V = [number, number];
@@ -159,15 +160,21 @@ export const StreetShot: React.FC = () => {
   return (
     <Frame vignette={0.45}>
       <Back id="t5st" stops={["#1c1450", "#5c2c7c", "#e88a64"]} />
-      <Layer cam={cam} d={0.4}>{Array.from({ length: 18 }, (_, i) => <path key={i} d={rr(-300 + i * 150, 470 - R(i, 5) * 200, 130, 500, 30, 0)} fill="#4a2670" />)}</Layer>
+      <Layer cam={cam} d={0.15}><Glow2 x={1200} y={620} r={620} c="#ffb35a" o={0.55} /><Puff x={300 + t * 9} y={230} c="#c06c9c" o={0.7} /><Puff x={1500 + t * 6} y={300} s={0.8} c="#f09a90" o={0.65} /><Birds x={800} y={330} t={t} /></Layer>
+      <Layer cam={cam} d={0.3}><FarCity x0={-600} x1={2900} base={640} seed={31} fill="#6a3888" hi="#f0a08a" t={t} lights={0.1} /></Layer>
+      <Layer cam={cam} d={0.55}>{Array.from({ length: 12 }, (_, i) => <g key={i}><Gables x={-420 + i * 280} base={700 + (i % 2) * 20} n={2} w={110} h={130 + (i % 3) * 40} seed={i * 3} t={t} />{i % 2 === 0 && <Tree x={-300 + i * 280} base={760} s={1.3} seed={i} t={t} />}</g>)}</Layer>
       <Layer cam={cam} d={1}>
-        <path d="M-500 790H2900V1200H-500Z" fill="#2c1850" />
+        <path d="M-500 790H2900V1200H-500Z" fill="#2c1850" /><path d="M-500 790H2900V822H-500Z" fill="#6a4080" /><path d="M-500 900H2900V1010H-500Z" fill="#3c2464" />{Array.from({ length: 22 }, (_, i) => <path key={i} d={rr(-460 + i * 160, 950, 74, 9, 4)} fill="#ffd27a" opacity={0.7} />)}
         {kinds.map((k, i) => { const x = -60 + i * 390, c = [BLUE, TEALB, CORAL, GREEN, GOLD, TEALB, CORAL][i], p = bump(t, tS - 0.4 + i * 0.3, 0.5); return (
           <g key={i} transform={`translate(${x} ${790 - p * 34})`}><Contact x={0} y={p * 34} w={180} />
             {k === "cart" ? <g><Shade d={rr(-130, -180, 260, 130, 20)} tones={c} L={LR} s={[5, 15, 8]} /><path d="M-160 -300Q0 -380 160 -300Z" fill={P.coral} />{line("M-110 -300V-180M110 -300V-180", "#c0d6f0", 11)}{[-80, 80].map((a) => <circle key={a} cx={a} cy={-32} r={32} fill="#160a30" />)}</g>
               : <g><Shade d={rr(-160, -270, 320, 270, 16)} tones={c} L={LR} s={[7, 20, 10]} /><path d={`M-180 -270H180L160 -330H-160Z`} fill={i % 2 ? P.cream : P.coral} />{k === "laundry" ? <g><circle cx={-60} cy={-120} r={56} fill="#fff4da" /><circle cx={-60} cy={-120} r={36} fill="#74c0e8" /><path d={`M-86 -120q26 ${-24 + Math.sin(t * 6) * 8} 52 0`} stroke="#fff" strokeWidth={8} fill="none" /></g> : k === "phone" ? <path d={rr(-95, -180, 80, 140, 18)} fill="#bfe6ff" /> : <g>{[0, 1, 2].map((j) => <circle key={j} cx={-90 + j * 55} cy={-70} r={26} fill={["#ffd23f", "#e4572e", "#66c795"][j]} />)}<rect x={-130} y={-48} width={180} height={20} rx={8} fill="#6a3340" /></g>}<path d={rr(50, -170, 80, 170, 14, 2)} fill="#201040" /></g>}
             <g transform="translate(90 -215)"><path d={rr(-34, -42, 68, 86, 10)} fill="#fffdf4" /><QrGrid x={-24} y={-22} size={48} seed={i * 9} /></g>
           </g>); })}
+        {[130, 910, 1690].map((x, n) => <Lamp key={x} x={x} base={800} s={2.1} t={t + n} />)}
+        <Lights x0={-300} x1={640} y={330} t={t} /><Lights x0={640} x1={1580} y={330} t={t + 1} /><Lights x0={1580} x1={2520} y={330} t={t + 2} />
+        {[0, 1, 2, 3].map((n) => <Walker key={n} x={((n * 640 + (n % 2 ? -1 : 1) * t * 90 + 2900) % 2900) - 400} y={880 + (n % 2) * 40} s={0.95} t={t} seed={n * 2} c={["#2c1650", "#4a2058", "#183a5a", "#5a2448"][n]} />)}
+        {[330, 1110, 1500, 2060].map((x, n) => <Shrub key={x} x={x} y={812} s={0.75} flower={n % 2 ? "#ff9a68" : "#ffd23f"} />)}
       </Layer>
     </Frame>
   );

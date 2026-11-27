@@ -1,0 +1,149 @@
+{
+  "track": "T01",
+  "siklus": "005",
+  "tanggal": "2026-11-27",
+  "durasi": "8:07",
+  "footage_pct": 0,
+  "verdict": "GAGAL",
+  "temuan": [
+    {
+      "layer": "Struktur",
+      "level": "sedang",
+      "id": "S2",
+      "msg": "jarak re-hook terpanjang 102 dtk mulai 2:34 (target 60-90)",
+      "fix": "ubah satu scene di rentang itu jadi re-hook"
+    },
+    {
+      "layer": "Teks",
+      "level": "sedang",
+      "id": "T-src",
+      "msg": "sumber di 03-script.json 0, perlu minimal 5 (satu klaim fakta = satu tautan)",
+      "fix": "tambah `sources:[{scene,url,claim}]`"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s18: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s20: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s27: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s29: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s32: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s33: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s35: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s45: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s13: transkrip balik tidak memuat \"rupiah\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s18: transkrip balik tidak memuat \"rupiah\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "kritis",
+      "id": "A2",
+      "msg": "s29: transkrip balik tidak memuat \"Europay\" (dugaan salah ucap)",
+      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+    },
+    {
+      "layer": "Audio",
+      "level": "sedang",
+      "id": "A3",
+      "msg": "jenis/lisensi suara belum dicatat (assets.voice.type)",
+      "fix": "catat: clone milik kreator atau voice berlisensi komersial, paket berbayar"
+    },
+    {
+      "layer": "Visual/Channel",
+      "level": "sedang",
+      "id": "K1",
+      "msg": "bukti nyata kreator tidak ada; DIPERBOLEHKAN oleh pengecualian kreator (pengecualian_qa)",
+      "fix": "tetap tercatat di laporan; kreator memikul risiko kebijakan konten AI"
+    },
+    {
+      "layer": "Kemasan",
+      "level": "kecil",
+      "id": "P1",
+      "msg": "pasangan terbaik 100/100: \"Indonesia's QRIS: One Sticker, 72 Million Users\" + \"NO DOLLARS NEEDED\" (mobile)",
+      "fix": "pakai pasangan ini atau perbaiki temuannya; skor adalah saran, bukan gate"
+    },
+    {
+      "layer": "Kemasan",
+      "level": "kecil",
+      "id": "P2",
+      "msg": "judul \"Indonesia's QRIS: One Sticker, 72 Million Users\": mobile (a mobile feed shows about \"Indonesia's QRIS: One Sticker, 72...\" - check the subject survives)",
+      "fix": "subjek harus terbaca di 40 karakter pertama (feed mobile)"
+    },
+    {
+      "layer": "Kemasan",
+      "level": "kecil",
+      "id": "P2",
+      "msg": "judul \"How Indonesia's QRIS Crosses Borders Without Dollars\": mobile (a mobile feed shows about \"How Indonesia's QRIS Crosses Borders...\" - check the subject survives)",
+      "fix": "subjek harus terbaca di 40 karakter pertama (feed mobile)"
+    },
+    {
+      "layer": "Kemasan",
+      "level": "kecil",
+      "id": "P2",
+      "msg": "judul \"QRIS: What Happens 2 Seconds After You Scan\": mobile (a mobile feed shows about \"QRIS: What Happens 2 Seconds After You...\" - check the subject survives)",
+      "fix": "subjek harus terbaca di 40 karakter pertama (feed mobile)"
+    }
+  ],
+  "manual": [
+    "Dengarkan audio: nada, artefak TTS, pengucapan istilah (kemunculan pertama)",
+    "Tonton master dan Shorts: irama, kecepatan animasi, bubble tidak menutup isi",
+    "Periksa fakta tiap klaim terhadap sumber",
+    "Setujui thumbnail dan judul"
+  ]
+}

@@ -2,9 +2,10 @@
 import React from "react";
 import { Easing } from "remotion";
 import { Frame, Layer, R, clamp, mix, pop, seg, useShot } from "@r3";
-import { Shade, rr } from "@r3/art";
+import { FarCity, Lamp, Shade, Tree, rr } from "@r3/art";
 import { BLUE, CORAL, CREAM, Contact, DARK, GOLD, GREEN, Glow2, Hose, LL, LR, P, Phone, STEEL, TEALB, Tick, You, circ, ell, line, tw, COPPER } from "./kit";
 import { AppTower, BankHouse, MAPX, ROAD_A, ROAD_B, Road, SwitchStation, TownBoard } from "./peta";
+import { Birds, Flag, Puff, Shrub } from "./dekor";
 import { Back, BankChar, BFace, CentralBank, Coin, Envelope, NetTower, Socket, Txt, bump, drift } from "./benda";
 
 type V = [number, number];
@@ -154,10 +155,14 @@ export const CartShot: React.FC = () => {
   return (
     <Frame vignette={0.45}>
       <Back id="t5cart" stops={["#241458", "#5c3084", "#e0806c"]} />
-      <Layer cam={drift(t, 1.02, 1.06, D)} d={0.5}>{Array.from({ length: 16 }, (_, i) => <path key={i} d={`M${i * 150 - 150} 720Q${i * 150 - 90} ${520 - (i % 3) * 70} ${i * 150 + 30} 720Z`} fill="#5a3078" />)}</Layer>
+      <Layer cam={drift(t, 1.02, 1.06, D)} d={0.15}><Glow2 x={1450} y={560} r={520} c="#ffb35a" o={0.6} /><circle cx={1450} cy={560} r={70} fill="#ffe2b0" /><Puff x={260 + t * 8} y={250} c="#d07aa0" o={0.7} /><Puff x={1100 + t * 5} y={150} s={0.8} c="#a45c9c" o={0.7} /><Puff x={1760 + t * 6} y={330} s={0.9} c="#f09a90" o={0.7} /><Birds x={420} y={300} t={t} /></Layer>
+      <Layer cam={drift(t, 1.02, 1.06, D)} d={0.3}><FarCity x0={-300} x1={2300} base={640} seed={9} fill="#7a4090" hi="#f0a08a" t={t} lights={0.08} /></Layer>
+      <Layer cam={drift(t, 1.02, 1.06, D)} d={0.5}>{Array.from({ length: 16 }, (_, i) => <path key={i} d={`M${i * 150 - 150} 720Q${i * 150 - 90} ${520 - (i % 3) * 70} ${i * 150 + 30} 720Z`} fill="#5a3078" />)}{[120, 360, 800, 1130, 1480, 1800].map((x, i) => <Tree key={x} x={x} base={712} s={0.9 + (i % 3) * 0.2} seed={i * 5} t={t} />)}</Layer>
       <Layer cam={drift(t, 1.02, 1.06, D)} d={1}>
         <path d="M-300 700H2220V1200H-300Z" fill="#2c1c52" /><path d="M-300 742H2220V830H-300Z" fill="#46305c" />{Array.from({ length: 16 }, (_, i) => <path key={i} d={rr(-260 + i * 170, 782, 80, 9, 4)} fill="#ffd27a" />)}
-        {gates.map((g, i) => <g key={g}><Shade d={rr(g - 28, 360, 56, 380, 14)} tones={STEEL} L={LR} s={[4, 12, 7]} /><Shade d={rr(g - 90, 320, 180, 74, 22)} tones={[BLUE, CORAL, GREEN][i]} L={LR} s={[4, 12, 7]} /><circle cx={g} cy={357} r={16} fill="#fff4da" /></g>)}
+        {[210, 1700].map((x, i) => <Lamp key={x} x={x} base={700} s={2} t={t + i} />)}{[100, 340, 780, 1130, 1500, 1840].map((x, i) => <Shrub key={x} x={x} y={900} s={0.8 + (i % 2) * 0.35} flower={i % 2 ? "#ffd23f" : undefined} />)}
+        {line("M-300 700H2220", "#c0d6f0", 10, 0.7)}{Array.from({ length: 22 }, (_, i) => <path key={i} d={`M${i * 110 - 200} 700V736`} stroke="#8aa0c4" strokeWidth={9} />)}
+        {gates.map((g, i) => <g key={g}><Contact x={g} y={742} w={120} /><Shade d={rr(g + 36, 590, 90, 150, 18)} tones={CREAM} L={LR} s={[4, 12, 7]} /><path d={rr(g + 52, 612, 58, 44, 8)} fill="#ffd27a" /><path d={`M${g + 22} 598L${g + 81} 558L${g + 140} 598Z`} fill={[BLUE, CORAL, GREEN][i][2]} /><g transform={`rotate(${x > g - 170 && x < g + 190 ? -62 : 0} ${g + 20} 640)`}>{line(`M${g + 20} 640H${g - 110}`, "#fff4da", 14)}{line(`M${g - 20} 640h-26M${g - 76} 640h-26`, P.coral, 14)}</g><Flag x={g} y={322} t={t + i} c={[BLUE, CORAL, GREEN][i][3]} /><Shade d={rr(g - 28, 360, 56, 380, 14)} tones={STEEL} L={LR} s={[4, 12, 7]} /><Shade d={rr(g - 90, 320, 180, 74, 22)} tones={[BLUE, CORAL, GREEN][i]} L={LR} s={[4, 12, 7]} /><circle cx={g} cy={357} r={16} fill="#fff4da" /></g>)}
         <g transform={`translate(${x} 700)`}>
           <Contact x={0} y={86} w={210} />
           {Array.from({ length: 24 - lost * 2 }, (_, i) => <Coin key={i} x={-130 + (i % 8) * 37 + (Math.floor(i / 8) % 2) * 15} y={-55 - Math.floor(i / 8) * 34} r={26} label={false} />)}

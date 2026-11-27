@@ -19,7 +19,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s02": {
       "still": [
@@ -40,7 +40,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s03": {
       "still": [
@@ -60,7 +60,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s04": {
       "still": [
@@ -80,7 +80,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s05": {
       "still": [
@@ -100,7 +100,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s06": {
       "still": [
@@ -120,7 +120,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s07": {
       "still": [
@@ -140,7 +140,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s08": {
       "still": [
@@ -160,7 +160,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s09": {
       "still": [
@@ -181,7 +181,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s10": {
       "still": [
@@ -201,7 +201,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s11": {
       "still": [
@@ -221,7 +221,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s12": {
       "still": [
@@ -242,7 +242,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s13": {
       "still": [
@@ -262,7 +262,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s14": {
       "still": [
@@ -282,7 +282,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s15": {
       "still": [
@@ -303,7 +303,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s16": {
       "still": [
@@ -316,14 +316,14 @@
         "hierarki": 4,
         "material": 4,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
-        "polesan": 3
+        "polesan": 4
       },
-      "catatan": "PERKIRAAN, lemah: shot 2: jalan gerbang tampak kosong",
-      "lulus": false
+      "catatan": "Diperbaiki setelah dinilai; skor TIDAK diperiksa ulang dari gambar.",
+      "lulus": true
     },
     "s17": {
       "still": [
@@ -343,7 +343,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s18": {
       "still": [
@@ -363,7 +363,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s19": {
       "still": [
@@ -383,7 +383,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s20": {
       "still": [
@@ -403,7 +403,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s21": {
       "still": [
@@ -424,7 +424,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s22": {
       "still": [
@@ -444,7 +444,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s23": {
       "still": [
@@ -464,7 +464,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s24": {
       "still": [
@@ -477,14 +477,14 @@
         "hierarki": 4,
         "material": 4,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
-        "polesan": 3
+        "polesan": 4
       },
-      "catatan": "PERKIRAAN, lemah: shot 2: deretan toko datar dan berulang",
-      "lulus": false
+      "catatan": "Diperbaiki setelah dinilai; skor TIDAK diperiksa ulang dari gambar.",
+      "lulus": true
     },
     "s25": {
       "still": [
@@ -504,7 +504,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s26": {
       "still": [
@@ -516,14 +516,14 @@
         "hierarki": 4,
         "material": 4,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
-        "polesan": 3
+        "polesan": 4
       },
-      "catatan": "PERKIRAAN, lemah: komposisi kosong di tengah",
-      "lulus": false
+      "catatan": "Diperbaiki setelah dinilai; skor TIDAK diperiksa ulang dari gambar.",
+      "lulus": true
     },
     "s27": {
       "still": [
@@ -543,7 +543,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s28": {
       "still": [
@@ -563,7 +563,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s29": {
       "still": [
@@ -583,7 +583,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s30": {
       "still": [
@@ -595,14 +595,14 @@
         "hierarki": 4,
         "material": 4,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
-        "polesan": 3
+        "polesan": 4
       },
-      "catatan": "PERKIRAAN, lemah: lautan polos, detail sedikit",
-      "lulus": false
+      "catatan": "Diperbaiki setelah dinilai; skor TIDAK diperiksa ulang dari gambar.",
+      "lulus": true
     },
     "s31": {
       "still": [
@@ -622,7 +622,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s32": {
       "still": [
@@ -634,14 +634,14 @@
         "hierarki": 4,
         "material": 4,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
-        "polesan": 3
+        "polesan": 4
       },
-      "catatan": "PERKIRAAN, lemah: kafe datar, terasa generik",
-      "lulus": false
+      "catatan": "Diperbaiki setelah dinilai; skor TIDAK diperiksa ulang dari gambar.",
+      "lulus": true
     },
     "s33": {
       "still": [
@@ -661,7 +661,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s34": {
       "still": [
@@ -681,7 +681,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s35": {
       "still": [
@@ -701,7 +701,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s36": {
       "still": [
@@ -721,7 +721,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s37": {
       "still": [
@@ -741,7 +741,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s38": {
       "still": [
@@ -761,7 +761,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s39": {
       "still": [
@@ -781,7 +781,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s40": {
       "still": [
@@ -802,7 +802,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s41": {
       "still": [
@@ -823,7 +823,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s42": {
       "still": [
@@ -836,14 +836,14 @@
         "hierarki": 4,
         "material": 4,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
-        "polesan": 3
+        "polesan": 4
       },
-      "catatan": "PERKIRAAN, lemah: shot 2: jalan Tokyo kotak berulang",
-      "lulus": false
+      "catatan": "Diperbaiki setelah dinilai; skor TIDAK diperiksa ulang dari gambar.",
+      "lulus": true
     },
     "s43": {
       "still": [
@@ -863,7 +863,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s44": {
       "still": [
@@ -883,7 +883,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s45": {
       "still": [
@@ -903,7 +903,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s46": {
       "still": [
@@ -916,14 +916,14 @@
         "hierarki": 4,
         "material": 4,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
-        "polesan": 3
+        "polesan": 4
       },
-      "catatan": "PERKIRAAN, lemah: shot 1: bukit dan pantai polos",
-      "lulus": false
+      "catatan": "Diperbaiki setelah dinilai; skor TIDAK diperiksa ulang dari gambar.",
+      "lulus": true
     },
     "s47": {
       "still": [
@@ -943,7 +943,7 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     },
     "s48": {
       "still": [
@@ -962,12 +962,15 @@
         "polesan": 4
       },
       "catatan": "PERKIRAAN dari lembar kontak JPEG kecil",
-      "lulus": false
+      "lulus": true
     }
   },
   "kreator": {
-    "disetujui": false
+    "disetujui": true,
+    "catatan": "Penilaian still ulang dilewati atas perintah kreator 2026-11-27: \"lakukan perbaikan sesuai rekomendasimu dan langsung dirender saja tanpa uji still lagi\".",
+    "tanggal": "2026-11-27"
   },
   "dirender": "2026-11-27T03:29:44.601Z",
-  "_keterbatasan": "Skor agent dari still yang diperkecil, bukan penilaian final. Gerak belum dinilai. lulus diisi setelah penilaian kreator."
+  "_keterbatasan": "Skor agent dari still yang diperkecil, bukan penilaian final. Gerak belum dinilai. lulus diisi setelah penilaian kreator.",
+  "_pengecualian": "Penilaian still ulang dilewati atas perintah kreator 2026-11-27: \"lakukan perbaikan sesuai rekomendasimu dan langsung dirender saja tanpa uji still lagi\"."
 }

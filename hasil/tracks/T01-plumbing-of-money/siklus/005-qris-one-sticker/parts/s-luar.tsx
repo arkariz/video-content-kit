@@ -2,9 +2,11 @@
 import React from "react";
 import { Easing } from "remotion";
 import { Frame, Layer, R, clamp, mix, pop, seg, useShot } from "@r3";
-import { Shade, rr } from "@r3/art";
+import { FarCity, Shade, Tree, rr } from "@r3/art";
 import { BLUE, CORAL, CREAM, Contact, DARK, GOLD, GREEN, Glow2, Hose, LL, LR, P, Phone, QrGrid, STEEL, ScanFrame, Sticker, TEALB, Tick, WOOD, You, circ, ell, line, tw } from "./kit";
 import { BankHouse, SwitchStation } from "./peta";
+import { Birds, Boat, Cup, Foam, Lantern, Pendant, Puff, Rock, Shrub, Vending, Walker } from "./dekor";
+import { Palm } from "./warung";
 import { Adapter, Back, BankChar, CentralBank, Coin, Cross, Envelope, NetTower, PURPLE, SILVER, Socket, Txt, bump, drift } from "./benda";
 
 const Sea: React.FC<{ t: number; y: number; c?: string; hi?: string }> = ({ t, y, c = "#16295c", hi = "#5a84c8" }) => (
@@ -29,7 +31,11 @@ export const FarOfficeShot: React.FC = () => {
   return (
     <Frame vignette={0.6}>
       <Back id="t5far" stops={["#080c28", "#16224e", "#463a7c"]} stars={80} t={t} />
+      <Layer cam={cam} d={0.5}><Glow2 x={760} y={260} r={280} c="#9fb8ff" o={0.55} /><circle cx={760} cy={260} r={62} fill="#e8f0ff" /><circle cx={786} cy={242} r={52} fill="#7a8ac8" opacity={0.35} /><Puff x={420 + t * 14} y={330} c="#3c4884" o={0.8} /><Puff x={1240 + t * 10} y={200} s={1.3} c="#34407a" o={0.8} /><FarCity x0={1050} x1={2300} base={645} seed={17} fill="#2a3468" hi="#8090d0" t={t} lights={0.14} /><FarCity x0={-400} x1={520} base={645} seed={3} fill="#2a3468" hi="#8090d0" t={t} lights={0.16} /></Layer>
       <Layer cam={cam} d={1}><Sea t={t} y={640} />
+        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <path key={i} d={`M${760 - 60 + Math.sin(t * 2 + i) * 18 - i * 6} ${668 + i * 34}h${120 + i * 14}`} stroke="#c8d8ff" strokeWidth={8} strokeLinecap="round" opacity={0.5 - i * 0.045} />)}
+        <Boat x={700 + t * 20} y={760} s={0.9} t={t} /><Boat x={1180 - t * 12} y={690} s={0.45} t={t + 2} sail="#c8d8ff" />
+        <Shrub x={90} y={668} s={0.8} c={["#14303c", "#1f4a50", "#3c7a74"]} /><Shrub x={400} y={690} s={0.6} c={["#14303c", "#1f4a50", "#3c7a74"]} />
         <path d="M-300 640Q100 590 520 660Q600 720 460 760H-300Z" fill="#22386a" /><SwitchStation x={200} y={690} s={0.55} t={t} />
         <Office x={1520} y={630} s={0.8} lit={t > D * 0.55 ? 1 : 0} t={t} />
       </Layer>
@@ -115,10 +121,15 @@ export const BridgeShot: React.FC = () => {
     <Frame vignette={0.45}>
       <Back id="t5brg" stops={["#241a5c", "#7a4488", "#f0a070"]} />
       <Layer cam={{ x: mix(860, 1060, p), y: 540, z: 1.04 }} d={1}>
+        <Glow2 x={1080} y={660} r={520} c="#ffc08a" o={0.65} /><circle cx={1080} cy={668} r={80} fill="#ffe2b0" />
+        <Puff x={330 + t * 10} y={230} c="#c87c9c" o={0.75} /><Puff x={1000 + t * 6} y={330} s={1.2} c="#f0a490" o={0.7} /><Puff x={1640 + t * 8} y={180} s={0.9} c="#9c649c" o={0.75} /><Birds x={760} y={250} t={t} n={7} />
+        <path d="M-300 705Q120 560 480 700ZM700 705Q860 640 1020 705ZM1240 705Q1560 590 1900 705Z" fill="#5c3c84" />
         <Sea t={t} y={700} c="#2c4686" hi="#f0b898" />
+        <Boat x={1180 - t * 18} y={760} s={0.55} t={t} /><Boat x={120 + t * 14} y={930} s={1.05} t={t + 3} />
         <Office x={1620} y={680} s={0.62} lit={1} t={t} />
         {Array.from({ length: 18 }, (_, i) => { const at = i / 18, s = clamp((p - at) * 12); if (s <= 0) return null; const x = 640 + i * 44, y = 790 - Math.sin((i / 17) * Math.PI) * 130 - (i / 17) * 80; return <g key={i} transform={`translate(${x} ${y}) rotate(${(1 - s) * -80}) scale(${s})`}><Shade d={rr(-20, -14, 40, 46, 8)} tones={WOOD} L={LR} s={[3, 8, 5]} />{i % 4 === 0 && line("M0 -14V-80", "#98523e", 8)}</g>; })}
         <path d="M-300 790Q200 720 640 800Q640 900 400 940H-300Z" fill="#45286a" />
+        {[60, 640].map((x, i) => <Palm key={x} x={x} base={805} h={300 - i * 110} t={t} seed={i * 4 + 2} c="#3c2060" />)}<Shrub x={610} y={820} s={0.8} flower="#ffd23f" /><Shrub x={100} y={850} s={1.1} flower="#ff9a68" />
         <CentralBank x={360} y={800} s={0.95} t={t} open={seg(t, 0.2, tOpen)} mood="calm" />
       </Layer>
     </Frame>
@@ -161,10 +172,12 @@ export const CafeShot: React.FC = () => {
   return (
     <Frame vignette={0.5}>
       <Back id="t5caf" stops={["#2a5a88", "#7ab0c0", "#f4dcb4"]} />
-      <Layer cam={drift(t, 1.0, 1.05, Math.max(4, dur))} d={0.5}>{[120, 520, 1150, 1580].map((x, i) => <g key={x}><path d={rr(x, 120, 260, 460, 130, 10)} fill="#e8f4f4" opacity={0.75} /><path d={`M${x + 130} 130V576M${x} 340H${x + 260}`} stroke="#4a7a90" strokeWidth={14} /></g>)}</Layer>
+      <Layer cam={drift(t, 1.0, 1.05, Math.max(4, dur))} d={0.35}>{[120, 520, 1150, 1580].map((x, i) => <g key={x}><clipPath id={`t5win${i}`}><path d={rr(x, 120, 260, 460, 130, 10)} /></clipPath><path d={rr(x - 18, 102, 296, 496, 148, 16)} fill="#8a5a4a" /><g clipPath={`url(#t5win${i})`}><rect x={x} y={120} width={260} height={460} fill="#cfeaf4" /><Puff x={x + 60 + ((t * 12 + i * 60) % 220)} y={230} s={0.6} /><FarCity x0={x - 40} x1={x + 300} base={540} seed={i * 11 + 2} fill="#7aa0bc" hi="#e8f4f4" t={t} lights={0.05} /><Tree x={x + 60 + i * 30} base={590} s={1.1} seed={i} t={t} /></g><path d={`M${x + 130} 120V580M${x} 340H${x + 260}`} stroke="#8a5a4a" strokeWidth={14} /><path d={rr(x - 30, 576, 320, 30, 10)} fill="#b87c58" /></g>)}</Layer>
+      <Layer cam={drift(t, 1.0, 1.05, Math.max(4, dur))} d={0.65}><path d="M-300 640H2220V800H-300Z" fill="#6a4458" />{Array.from({ length: 22 }, (_, i) => <path key={i} d={`M${-260 + i * 120} 650V800`} stroke="#54344c" strokeWidth={8} />)}<Shrub x={70} y={720} s={1.5} /><Shrub x={1860} y={720} s={1.4} /></Layer>
       <Layer cam={drift(t, 1.0, 1.05, Math.max(4, dur))} d={1}>
         <Shade d={rr(-200, 770, 2320, 80, 20)} tones={WOOD} L={LR} s={[4, 14, 8]} /><path d="M-200 848H2120V1300H-200Z" fill="#4a2c48" />
-        {line("M960 160V850", "#fff4da", 12)}
+        <Pendant x={250} len={150} t={t} /><Pendant x={760} len={110} t={t} c={CORAL} /><Pendant x={1170} len={110} t={t} c={CORAL} /><Pendant x={1700} len={150} t={t} />
+        {line("M960 160V850", "#fff4da", 12)}<Cup x={830} y={778} t={t} /><Cup x={1080} y={782} s={0.85} t={t + 1} c={CORAL} /><Cup x={1790} y={778} t={t + 2} c={GOLD} />
         <g opacity={1 - seg(t, tCard + 0.6, tCard + 1.1) * 0.45}><Term x={lx + 150} state={red} c={P.coral} /><Phone x={lx - 130 + (t > tNot && t < tNot + 0.6 ? Math.sin(t * 60) * 12 : 0)} y={520} s={0.9} rot={8} bg={red > 0.5 ? "#4a1c3a" : "#5a3a80"} screen={red > 0.5 ? <Cross x={0} y={-10} r={70} p={red} /> : <QrGrid x={-70} y={-80} size={140} />} /></g>
         <Term x={rx - 130} state={ok} c={P.green} />
         <g transform={`translate(${mix(1800, rx - 30, tap)} ${mix(300, 520, tap)}) rotate(${-14 - bump(t, tCard, 0.4) * 8})`}><Shade d={rr(-130, -82, 260, 164, 22)} tones={BLUE} L={LR} s={[5, 15, 9]} /><rect x={-96} y={-30} width={56} height={44} rx={9} fill={P.coin} />{line("M-96 44H90", "#fff", 10)}</g>
@@ -237,6 +250,17 @@ export const TokyoShot: React.FC = () => {
       <Layer cam={drift(t, 1.02, 1.1, D)} d={1}>
         {Array.from({ length: 16 }, (_, i) => { const row = i < 8 ? 0 : 1, x = 130 + (i % 8) * 238 + row * 40, base = row ? 630 : 420, h = row ? 230 : 210, isOn = on.slice(0, lit).includes(i); return <g key={i}><Shade d={rr(x - 105, base - h - (i % 3) * 26, 210, h + (i % 3) * 26, 14, 4)} tones={["#161c46", "#252e66", "#36428a", "#6a7ac0"]} L={LL} s={[5, 15, 8]} /><path d={rr(x - 72, base - 108, 144, 108, 10, 2)} fill={isOn ? "#ffd27a" : "#10163a"} />{isOn && <Glow2 x={x} y={base - 60} r={170} c="#ffd27a" o={0.55} />}<path d={`M${x - 90} ${base - 108}H${x + 90}L${x + 76} ${base - 140}H${x - 76}Z`} fill={isOn ? P.coral : "#2c2c5c"} />{isOn && <rect x={x + 28} y={base - 84} width={30} height={36} rx={5} fill="#fff" />}</g>; })}
         <path d="M-300 630H2220V1200H-300Z" fill="#161638" />
+        {Array.from({ length: 16 }, (_, i) => { const row = i < 8 ? 0 : 1, x = 130 + (i % 8) * 238 + row * 40, base = row ? 630 : 420, h = (row ? 230 : 210) + (i % 3) * 26, top = base - h, isOn = on.slice(0, lit).includes(i); return <g key={i}>
+          {i % 3 === 0 ? <path d={`M${x - 128} ${top + 10}Q${x - 60} ${top - 6} ${x} ${top - 52}Q${x + 60} ${top - 6} ${x + 128} ${top + 10}Z`} fill="#44306c" /> : i % 3 === 1 ? <g><path d={rr(x - 60, top - 34, 70, 40, 8)} fill="#2c3674" />{line(`M${x + 46} ${top}V${top - 66}M${x + 30} ${top - 50}H${x + 62}`, "#6a7ac0", 6)}</g> : <path d={rr(x - 116, top - 12, 232, 20, 8)} fill="#5462a8" />}
+          {[-52, 8].map((a, k) => <rect key={a} x={x + a} y={top + 24} width={44} height={30} rx={6} fill={R(i * 5 + k, 2) > 0.55 ? "#f4c878" : "#10163a"} />)}
+          <path d={rr(x + 74, top + 62, 22, 66, 7)} fill={isOn ? "#8ce8d0" : "#2c3466"} />
+          {isOn && [-40, 0, 40].map((a) => <path key={a} d={`M${x + a - 17} ${base - 108}h34v${30 + Math.sin(t * 2 + a) * 3}h-34Z`} fill="#e4572e" />)}
+          <Lantern x={x - 88} y={base - 104} t={t} on={isOn} />
+        </g>; })}
+        {[250, 930, 1640].map((x) => <g key={x}>{line(`M${x} 650V150M${x - 50} 180H${x + 50}M${x - 36} 214H${x + 36}`, "#0c0c28", 12)}</g>)}{line("M-300 190Q-20 240 250 180Q590 262 930 180Q1290 266 1640 180Q1930 240 2220 190", "#0c0c28", 4)}
+        <Vending x={72} y={640} t={t} /><Vending x={1870} y={640} t={t + 1} />
+        <circle cx={620} cy={90} r={40} fill="#e8f0ff" opacity={0.9} /><Glow2 x={620} y={90} r={200} c="#9fb8ff" o={0.4} />
+        {[0, 1, 2].map((i) => <Walker key={i} x={((i * 760 + (i % 2 ? -1 : 1) * t * 60 + 2200) % 2200) - 140} y={650} s={0.62} t={t} seed={i * 3} c={["#4a4a8a", "#7a3a6a", "#2c6a7a"][i]} />)}
         {way > 0 && <g opacity={way}>
           <path d="M360 720H1560" stroke="#7dffd0" strokeWidth={30} strokeLinecap="round" /><path d="M360 720H1560" stroke="#fff" strokeWidth={8} strokeDasharray="30 50" strokeDashoffset={-t * 90} /><path d="M1550 674L1620 720L1550 766Z" fill="#7dffd0" />
           <path d="M360 820H1560" stroke="#8a8ab0" strokeWidth={30} strokeLinecap="round" opacity={0.5} />
@@ -285,6 +309,11 @@ export const SizeShot: React.FC = () => {
       <Hill t={t} day>
         <Layer cam={{ x: mix(860, 1030, p), y: 540, z: 1.02 + p * 0.06 }} d={1}>
           <path d="M-300 780Q420 500 1050 860V1200H-300Z" fill="#3f8a68" /><path d="M900 860Q1400 740 2220 800V1200H900Z" fill="#f0d49c" />
+          <Foam d="M1000 862Q1420 752 2220 808" t={t} /><Boat x={1250 + t * 16} y={730} s={0.55} t={t} /><Boat x={1780 - t * 10} y={690} s={0.35} t={t + 2} /><Birds x={900} y={260} t={t} />
+          {[1780, 1935].map((x, i) => <Palm key={x} x={x} base={900 + i * 30} h={380 - i * 90} t={t} seed={i * 6 + 1} c="#2c6a50" />)}
+          {[[90, 770, 1], [230, 720, 0.7], [780, 740, 0.85], [920, 810, 0.65], [150, 900, 1.2], [700, 870, 1]].map(([x, y, s], i) => <Shrub key={i} x={x} y={y} s={s} flower={i % 2 ? "#fff4da" : "#ffd23f"} />)}
+          <Rock x={1090} y={880} s={1.1} /><Rock x={1180} y={902} s={0.6} /><Rock x={1650} y={940} s={0.9} />{Array.from({ length: 30 }, (_, i) => <circle key={i} cx={1200 + R(i, 2) * 900} cy={880 + R(i, 3) * 190} r={4 + R(i, 4) * 6} fill="#d8ac74" />)}
+          {line("M520 700C640 790 520 860 620 1100", "#f0d49c", 42, 0.85)}
           <NetTower x={480} y={700} s={1.22} t={t} mood="calm" />
           <Contact x={1470} y={882} w={120} /><Adapter x={1470} y={820} s={0.52} t={t} />
         </Layer>
