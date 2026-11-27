@@ -149,7 +149,7 @@ try {
     const { buatSkenario, jadwalUlang, hapusSkenario, potongSrt } = await import("./skenario.mjs"); const { periksa } = await import("./youtube.mjs");
     assert.equal(potongSrt("1\n00:00:01,000 --> 00:00:02,000\na\n\n2\n00:01:00,000 --> 00:01:02,000\nb\n", 45).includes("b"), false);
     const s = buatSkenario("T09", { potong: (a, b) => fs.copyFileSync(a, b) }); let x = inti.muat(s);
-    assert.equal(s.siklus, "900"); assert.equal(x.items.length, 2); const menit = (inti.waktu(x.items[0].jadwal) - Date.now()) / 60000; assert.ok(menit > 11 && menit <= 13, String(menit));
+    assert.equal(s.siklus, "900"); assert.equal(x.items.length, 2); const menit = (inti.waktu(x.items[0].jadwal) - Date.now()) / 60000; assert.ok(menit > 19 && menit <= 21, String(menit));
     inti.ubah(s, (v) => (v.items[0].jadwal = "2020-01-01T00:00")); jadwalUlang(s); assert.ok(inti.waktu(inti.muat(s).items[0].jadwal) > Date.now());
     inti.setujui(s, "SETUJU", "uji"); yt.playlist.length = 0; yt.params.length = 0; await kirim(s, diam);
     assert.ok(yt.params.every((p) => p === "false")); assert.equal(yt.playlist[0].status.privacyStatus, "unlisted");
