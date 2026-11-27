@@ -2,6 +2,8 @@
 
 Semua tayang **29 November 2026 (WIB)**: master 10.00, Short 1 12.00, Short 2 16.00. Isi kolom URL setelah tayang, lalu kirim ke agent untuk dicatat.
 
+**Diubah 2026-11-27 atas keputusan kreator: YouTube (master dan 2 Short) diunggah terjadwal lewat alat rilis (`06-rilis.json`). Jangan unggah YouTube secara manual.** Facebook, Instagram, dan TikTok tetap manual.
+
 **Jangan jalankan `approve.mjs` / `publish.mjs send` untuk siklus ini**, supaya tidak terunggah dua kali.
 
 ## Sebelum mengunggah

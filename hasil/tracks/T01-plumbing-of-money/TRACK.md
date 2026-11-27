@@ -8,10 +8,10 @@ channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "005: kreator menonton penuh master + 2 Short (pemeriksaan manual), cek rencana publish 06-publish.md, lalu unggah manual (06-publish-manual.md); 002: unggah manual 2026-11-28 (06-publish-manual.md); 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
+langkah_berikutnya: "005: kreator menonton penuh master + 2 Short, ketik SETUJU di alat rilis, lalu unggah YouTube terjadwal (06-rilis.json); platform lain manual; 002: unggah manual 2026-11-28 (06-publish-manual.md); 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: []                 # syarat bukti kreator di layar dihapus untuk semua konten (2026-11-27)
-menunggu_keputusan: "005: unggah manual 29 Nov"
+menunggu_keputusan: "005: SETUJU di alat rilis untuk unggah YouTube terjadwal 29 Nov"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -142,3 +142,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator memajukan 002 ke 2026-11-28 (rencana V2 terkunci menjadwalkan sprint mulai 12-07; rencana.md tidak diubah, penyimpangan dicatat). Paket unggah manual 002 dilengkapi semua platform dan subtitle. QA otomatis dijalankan ulang: GAGAL (1 kritis A2 s41), 05-qa.md belum ada. Belum ada yang diunggah. Rujukan "card video" di 005 terpenuhi bila 002 tayang lebih dulu.
 - 2026-11-27: Kreator menerima ucapan "QRIS" 002 s41; dicatat di 04-assets.json. QA otomatis 002 dijalankan ulang. 05-qa.md (anti-slop manual) masih belum ada.
 - 2026-11-27: Kreator melewati QA anti-slop manual 002 (05-qa.md: dilewati, bukan LULUS). Status siap-publish; unggah manual 2026-11-28. Belum ada yang diunggah.
+- 2026-11-27: Kreator membuka siklus 005 untuk unggah YouTube terjadwal lewat alat rilis (sekaligus uji jadwal, playlist, judul Indonesia, komentar, dan unggah master). Kunci unggah manual dibuka; belum disetujui dan belum dikirim.
