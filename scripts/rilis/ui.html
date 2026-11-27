@@ -219,6 +219,7 @@ function halamanIsi(d) {
     return h("div", { class: "bidang" }, h("label", {}, h("div", { class: "judul" }, label, ukur), el), bantu?.(el), petunjuk ? h("div", { class: "redup kecil-teks" }, petunjuk) : null);
   };
   const tj = { judul: i.terjemahan?.judul ?? "", deskripsi: i.terjemahan?.deskripsi ?? "" };
+  const fb = { deskripsi: i.facebook?.deskripsi ?? "", komentar: i.facebook?.komentar ?? (i.nama === "master" ? "" : "Full video: {master}") };
   const video = i.file.split("/").pop(), thumb = i.thumbnail?.split("/").pop();
   const terunggah = r.hasil[i.nama]?.youtube?.sumber === "alat";
   const jamCepat = (el) => (i.jadwal ? h("div", { class: "baris" }, ["10:00", "12:00", "16:00", "19:00"].map((j) => h("button", { class: "kecil", onclick: () => { el.value = `${el.value.slice(0, 10)}T${j}`; el.dispatchEvent(new Event("change")); } }, j.replace(":", ".")))) : null);
@@ -239,6 +240,9 @@ function halamanIsi(d) {
         bidang("Jadwal tayang (WIB)", i.jadwal, (v) => ({ jadwal: v }), { tipe: "datetime-local", bantu: jamCepat, petunjuk: "Kosongkan untuk tayang segera saat dikirim." }),
         bidang("Tag", i.tag.join(", "), (v) => ({ tag: v }), { petunjuk: "Pisahkan dengan koma." }),
         bidang("Playlist", i.playlist, (v) => ({ playlist: v }), { placeholder: "kosong = tanpa playlist" }),
+        h("details", {}, h("summary", {}, "Facebook"),
+          bidang("Teks postingan Facebook", i.facebook?.deskripsi ?? "", (v) => ({ facebook: Object.assign(fb, { deskripsi: v }) }), { baris: 4, placeholder: "kosong = pakai deskripsi YouTube" }),
+          bidang("Komentar Facebook", fb.komentar, (v) => ({ facebook: Object.assign(fb, { komentar: v }) }), { baris: 2, petunjuk: "{master} diganti tautan master di Facebook. Kosong = tidak diposting." })),
         h("details", { open: !!tj.judul }, h("summary", {}, "Terjemahan Indonesia"),
           bidang("Judul Indonesia", tj.judul, (v) => ({ terjemahan: Object.assign(tj, { judul: v }) }), { maks: 100 }),
           bidang("Deskripsi Indonesia", tj.deskripsi, (v) => ({ terjemahan: Object.assign(tj, { deskripsi: v }) }), { baris: 4, maks: 5000, byte: true, placeholder: "kosong = pakai deskripsi Inggris" })))),
@@ -248,6 +252,28 @@ function halamanIsi(d) {
 }
 
 // ---------- Langkah 2: setujui dan kirim ----------
+/** Menghubungkan Page: isian sekali pakai, tidak disimpan di browser; hanya token Page yang ditulis ke .env. */
+function formPage(d, pilihanPage) {
+  if (pilihanPage?.track === d.track) return h("div", { class: "catatan" }, h("div", {}, `Pilih Page untuk ${d.track} (${d.channel}):`),
+    h("div", { class: "baris" }, pilihanPage.pages.map((p) => h("button", { onclick: () => confirm(`Simpan Page "${p.nama}" untuk ${d.track}?`) && sistem({ aksi: "fb-pilih", page: p.id }) }, p.nama)), h("button", { onclick: () => sistem({ aksi: "fb-batal" }) }, "Batal")));
+  const isian = (label, tipe) => h("input", { type: tipe, placeholder: label, "aria-label": label, autocomplete: "off", spellcheck: "false" });
+  const id = isian("App ID", "text"), rahasia = isian("App Secret", "password"), token = isian("User Access Token (dari Graph API Explorer)", "password");
+  return h("div", { class: "bidang" }, h("p", { class: "redup kecil-teks" }, "Persiapan di Meta: lihat PIPELINE.md bagian Alat rilis. App Secret dan token pengguna dipakai sekali dan tidak disimpan."), [id, rahasia, token].map((e) => h("div", { style: "margin-bottom:8px" }, e)),
+    h("button", { class: "utama", onclick: () => sistem({ aksi: "fb-cari", track: d.track, appId: id.value, appSecret: rahasia.value, token: token.value }) }, "Ambil daftar Page"));
+}
+function panelFacebook(d, sis) {
+  const r = d.rencana; const aktif = !!r.facebook?.aktif; const sudah = r.items.some((i) => r.hasil[i.nama]?.facebook?.videoId);
+  const alasan = (...x) => x.find(Boolean) || "";
+  const umum = alasan(d.sibuk && "sedang mengirim", !d.kredensialFb && "Page belum dihubungkan"), belum = !d.disetujui && "belum disetujui";
+  const tombol = (a, teks, tanya, mati, utama) => h("button", { class: utama ? "utama" : "", disabled: !!mati, title: mati || "", onclick: () => confirm(tanya) && aksi(d, { aksi: a }) }, teks);
+  return h("section", { class: "kartu" }, h("div", { class: "baris" }, h("h2", { style: "margin:0" }, "Kirim ke Facebook"), cip(d.kredensialFb ? "Page terhubung" : "belum terhubung", d.kredensialFb ? "ok" : "warn")),
+    h("label", { class: "baris", style: "margin:8px 0" }, h("input", { type: "checkbox", checked: aktif, "aria-label": "Kirim siklus ini ke Facebook lewat alat", onchange: (e) => aksi(d, { aksi: "fb-aktif", aktif: e.target.checked }) }), "Kirim siklus ini ke Facebook lewat alat (mengubah ini membatalkan persetujuan)"),
+    d.kredensialFb ? h("details", {}, h("summary", { class: "kecil-teks" }, "Ganti Page"), formPage(d, sis.facebook)) : formPage(d, sis.facebook),
+    h("div", { class: "baris" }, tombol("fb-kirim", "Kirim ke Facebook", `Unggah ke Page ${d.track}: master sebagai video, Short sebagai Reel, sesuai jadwal?`, alasan(!aktif && "belum dinyalakan", r.kunci_manual && "unggah dikunci", belum, umum), true),
+      tombol("fb-pasca", "Pasca-tayang Facebook", "Posting komentar pada video Facebook yang sudah tayang?", alasan(belum, umum, !sudah && "belum ada video Facebook")),
+      tombol("fb-draf", "Unggah draf (uji)", "Unggah satu Short sebagai Reel DRAF untuk uji? Hapus drafnya sesudah diperiksa.", umum)));
+}
+
 function halamanKirim(d, sis) {
   const r = d.rencana; const sudah = r.items.some((i) => r.hasil[i.nama]?.youtube?.videoId);
   const buka = (nama) => () => { pilihanItem[`${d.track}/${d.siklus}`] = nama; location.hash = `#/${d.track}/${d.siklus}/isi`; };
@@ -283,12 +309,13 @@ function halamanKirim(d, sis) {
       d.masalah.length ? h("div", { class: "catatan gagal" }, h("b", {}, "Perbaiki dulu:"), d.masalah.map((m) => h("div", {}, m))) : null,
       d.disetujui ? h("div", { class: "catatan ok" }, `Disetujui ${new Date(r.persetujuan.waktu).toLocaleString("id-ID")}. Perubahan teks atau file membatalkannya.`)
         : [h("p", {}, r.persetujuan ? "Isi berubah sejak disetujui; setujui ulang." : "Setujui setelah menonton, mendengarkan, dan memeriksa fakta."), h("div", { class: "baris" }, kata, setuju)]),
-    h("section", { class: "kartu" }, h("h2", {}, "Kirim ke YouTube"),
+    h("section", { class: "kartu" }, h("h2", {}, "Kirim ke YouTube"), h("p", { class: "redup kecil-teks" }, "Log pengiriman YouTube dan Facebook tampil di bagian ini."),
       r.kunci_manual ? h("div", { class: "catatan" }, `Unggah dikunci: ${r.kunci_manual}. Catat URL tayang di langkah 3; komentar pertama tetap bisa diposting lewat pasca-tayang.`) : null,
       panelHubungkan(d, sis.hubungkan),
       h("div", { class: "baris" }, tombol("kirim", "Kirim ke YouTube", `Unggah ke YouTube channel ${d.track}:\n${daftar}`, mKirim, true), tombol("pasca", "Jalankan pasca-tayang", "Posting komentar pertama pada video yang sudah publik?", mPasca), tombol("uji", "Unggah uji (privat)", "Unggah satu Short sebagai PRIVAT untuk uji? Hapus videonya di Studio setelah diperiksa.", mUji), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: alasan(umum, !sudah && "belum ada video YouTube"), onclick: () => aksi(d, { aksi: "periksa" }) }, "Periksa di YouTube"), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: "Untuk video yang sudah kamu hapus di Studio: catatannya dilupakan agar bisa diunggah ulang", onclick: () => confirm("Lupakan catatan unggah untuk video yang sudah terhapus di YouTube? Persetujuan akan dibatalkan.") && aksi(d, { aksi: "reset" }) }, "Reset yang terhapus")),
       mKirim ? h("div", { class: "redup kecil-teks" }, `Tombol kirim nonaktif: ${mKirim}.`) : null,
       d.log.length ? h("pre", { "aria-live": "polite" }, d.log.join("\n")) : null),
+    panelFacebook(d, sis),
   ];
 }
 

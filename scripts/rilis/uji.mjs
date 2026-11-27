@@ -23,6 +23,7 @@ globalThis.fetch = async (url, init = {}) => {
   const u = new URL(url); if (u.hostname === "127.0.0.1") return asli(url, init);
   const m = init.method ?? "GET"; yt.panggilan.push(`${m} ${u.pathname}`);
   const body = typeof init.body === "string" && init.body.startsWith("{") ? JSON.parse(init.body) : null;
+  if (u.hostname.endsWith("facebook.com")) return facebookTiruan(u, m, init);
   if (u.hostname === "oauth2.googleapis.com") return j({ access_token: "akses" });
   if (u.hostname === "sesi.uji") {
     const s = yt.video[u.pathname.slice(1)]; const range = init.headers["Content-Range"];
@@ -47,6 +48,31 @@ globalThis.fetch = async (url, init = {}) => {
   if (p === "commentThreads") { const id = `kom${yt.komentar.length}`; yt.komentar.push({ id, videoId: body.snippet.videoId, teks: body.snippet.topLevelComment.snippet.textOriginal }); return j({ id }); }
   throw new Error(`panggilan tak terduga: ${m} ${url}`);
 };
+
+// ---- Facebook tiruan ----
+const fbt = { video: {}, komentar: [], panggilan: [], captions: [], sampul: [], tayang: false, gagalVideo: null };
+function facebookTiruan(u, m, init) {
+  const p = u.pathname.replace(/^\/(video-upload\/)?v27\.0\//, ""); fbt.panggilan.push(`${m} ${u.hostname} ${p}`);
+  const isi = init.body instanceof FormData || init.body instanceof URLSearchParams ? Object.fromEntries(init.body) : {};
+  if (p === "oauth/access_token") return j({ access_token: "panjang" });
+  if (p === "me/accounts") return j({ data: [{ id: "900", name: "Page Uji", access_token: "tokenPage", tasks: ["CREATE_CONTENT"] }] });
+  assert.ok(!u.search.includes("access_token"), "token tidak boleh ada di URL");
+  if (u.hostname === "rupload.facebook.com") { fbt.video[p].diterima = +init.headers.offset + init.body.length; fbt.video[p].total = +init.headers.file_size; return j({ success: true }); }
+  if (p === "900/videos") { if (fbt.gagalVideo) return j({ error: { code: fbt.gagalVideo === 500 ? 1 : 100, message: "gagal" } }, fbt.gagalVideo); fbt.video["501"] = { id: "501", isi }; return j({ id: "501" }); }
+  if (p === "900/video_reels" && isi.upload_phase === "start") { const id = `60${Object.keys(fbt.video).length}`; fbt.video[id] = { id, diterima: 0 }; return j({ video_id: id }); }
+  if (p === "900/video_reels") { fbt.video[isi.video_id].selesai = isi; return j({ success: true }); }
+  const [id, tepi] = p.split("/"); const v = fbt.video[id];
+  if (!v) return j({ error: { code: 100, message: "tidak ada" } }, 400);
+  if (tepi === "captions") { fbt.captions.push(isi.captions_file.name); return j({ success: true }); }
+  if (tepi === "thumbnails") { fbt.sampul.push(id); return j({ success: true }); }
+  if (tepi === "comments" && m === "GET") return j({ data: fbt.komentar.filter((k) => k.id_video === id).map((k) => ({ id: k.id, from: { id: "900" } })) });
+  if (tepi === "comments") { const k = { id: `k${fbt.komentar.length}`, id_video: id, teks: isi.message }; fbt.komentar.push(k); return j({ id: k.id }); }
+  const f = u.searchParams.get("fields");
+  if (f === "permalink_url") return j({ permalink_url: `/watch/${id}` });
+  if (f === "published") return j({ published: fbt.tayang });
+  if (f === "status") return j({ status: { uploading_phase: { status: v.diterima && v.diterima === v.total ? "complete" : "not_started", bytes_transfered: v.diterima }, publishing_phase: { publish_status: !v.selesai ? undefined : fbt.tayang ? "published" : v.selesai.video_state === "DRAFT" ? "draft" : "scheduled" } } });
+  return j({ id });
+}
 
 const inti = await import("./inti.mjs"); const { kirim, pascaTayang, CHUNK } = await import("./youtube.mjs"); const { buatServer } = await import("./dashboard.mjs");
 const diam = { log: () => {}, tunggu: 0 }; let lulus = 0;
@@ -204,6 +230,39 @@ try {
     inti.sunting(d, "master", { komentar: "Suntingan" }); inti.terapkanTeksBaru(d); assert.equal(inti.muat(d).items[0].komentar, "Suntingan");
     inti.ubah(d, (r) => (r.persetujuan = { sidik: "x" })); tulis(`${D}/06-teks-rilis.json`, JSON.stringify({ master: { komentar: "Lain" } })); assert.match(inti.terapkanTeksBaru(d), /tidak diubah/);
     fs.rmSync(path.join(R, D), { recursive: true });
+  });
+  await uji("Facebook: hubungkan Page tanpa menyimpan App Secret", async () => {
+    const F = await import("./facebook.mjs"); const env = path.join(R, "env-uji"); fs.writeFileSync(env, "LAIN=1\n");
+    await assert.rejects(F.cariPage({ track: "T09", appId: "abc", appSecret: "r", token: "t" }), /App ID/);
+    const v = await F.cariPage({ track: "T09", appId: "123", appSecret: "rahasia", token: "pendek" }); assert.deepEqual(v.pages, [{ id: "900", nama: "Page Uji" }]);
+    F.pilihPage("900", env); const isi = fs.readFileSync(env, "utf8"); assert.match(isi, /LAIN=1\nFACEBOOK_PAGE_ID_T09=900\nFACEBOOK_PAGE_TOKEN_T09=tokenPage/); assert.ok(!/rahasia|pendek|panjang/.test(isi)); assert.equal(F.pilihan(), null);
+  });
+  await uji("Facebook: jadwal, unggah master dan Reel, subtitle, sekali saja", async () => {
+    const F = await import("./facebook.mjs"); F.tunda.proses = 1;
+    inti.ubah(c, (x) => { x.hasil = {}; x.checklist = {}; x.kunci_manual = null; x.items[0].thumbnail = "produksi/render/T09/001/Thumbnail-A.png"; x.items.forEach((i) => { i.jadwal = `${besok}T10:00`; i.facebook = undefined; i.komentar = "Q?"; }); });
+    inti.setujui(c, "SETUJU", "uji"); await assert.rejects(F.kirim(c, diam), /belum dinyalakan/);
+    inti.aturFacebook(c, true); await assert.rejects(F.kirim(c, diam), /setujui ulang/); inti.setujui(c, "SETUJU", "uji");
+    await F.kirim(c, diam); await F.kirim(c, diam);
+    const [m, s] = Object.values(fbt.video); assert.equal(Object.keys(fbt.video).length, 2);
+    assert.equal(m.isi.published, "false"); assert.equal(m.isi.scheduled_publish_time, String(new Date(`${besok}T10:00:00+07:00`) / 1000)); assert.ok(m.isi.thumb);
+    assert.equal(s.selesai.video_state, "SCHEDULED"); assert.equal(s.diterima, UKURAN); assert.ok(!("is_ai_generated" in s.selesai));
+    assert.deepEqual(fbt.captions, ["master.en_US.srt"]); assert.equal(inti.muat(c).hasil.master.facebook.url, "https://www.facebook.com/watch/501");
+  });
+  await uji("Facebook: komentar menunggu tayang, tautan master terisi, sekali; penjadwal ikut", async () => {
+    const F = await import("./facebook.mjs"); const { antrean, putaran } = await import("./jadwal.mjs");
+    await F.pascaTayang(c, diam); assert.equal(fbt.komentar.length, 0);
+    const saat = new Date(`${besok}T10:00:00+07:00`).getTime() + 60e3;
+    assert.deepEqual(antrean(inti.muat(c), saat).filter((a) => a.platform === "facebook").map((a) => [a.nama, a.jenis, a.keadaan]), [["S1", "komentar", "siap"]]);
+    fbt.tayang = true; await putaran({ log: () => {}, beri: () => {}, kini: saat }); await putaran({ log: () => {}, beri: () => {}, kini: saat });
+    assert.equal(fbt.komentar.length, 1); assert.equal(fbt.komentar[0].teks, "Full video: https://www.facebook.com/watch/501");
+  });
+  await uji("Facebook: hasil unggah tidak jelas tidak diulang; ditolak boleh diulang; draf; reset", async () => {
+    const F = await import("./facebook.mjs"); inti.ubah(c, (x) => { x.hasil = {}; }); for (const k of Object.keys(fbt.video)) delete fbt.video[k];
+    fbt.gagalVideo = 400; await F.kirim(c, diam); assert.equal(inti.muat(c).hasil.master?.facebook, undefined);
+    inti.ubah(c, (x) => { x.hasil = {}; }); fbt.gagalVideo = 500; await F.kirim(c, diam); assert.ok(inti.muat(c).hasil.master.facebook.mengunggah);
+    fbt.gagalVideo = null; const n = fbt.panggilan.filter((x) => x.includes("900/videos")).length; await F.kirim(c, diam); assert.equal(fbt.panggilan.filter((x) => x.includes("900/videos")).length, n);
+    await F.kirim(c, { draf: true, ...diam }); assert.equal(Object.values(fbt.video).at(-1).selesai.video_state, "DRAFT"); assert.ok(inti.muat(c).hasil["S1-uji"].facebook);
+    for (const k of Object.keys(fbt.video)) delete fbt.video[k]; await F.lupakanTerhapus(c, diam); assert.deepEqual(Object.keys(inti.muat(c).hasil), []);
   });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;

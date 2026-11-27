@@ -10,6 +10,7 @@ import { kirim, lupakanTerhapus, pascaTayang, periksa, publishVar } from "./yout
 import { antrean, fileStatus } from "./jadwal.mjs";
 import { PORT, SELANG, copot, pasang, terpasang } from "./layanan.mjs";
 import * as hubungkan from "./hubungkan.mjs";
+import * as facebook from "./facebook.mjs";
 import { buatSkenario, hapusSkenario, jadwalUlang } from "./skenario.mjs";
 
 const UI = path.join(import.meta.dirname, "ui.html");
@@ -25,7 +26,7 @@ function sel(c, r) {
       else if (lama?.hasil?.some((x) => x.nama === i.nama && x.platforms?.includes(n))) p[n] = { status: "upload-post" };
     }
     const thumb = i.thumbnail && fs.existsSync(path.join(inti.ROOT, i.thumbnail)) ? path.basename(i.thumbnail) : null;
-    return { nama: i.nama, judul: i.judul, jadwal: i.jadwal, thumb, platform: p, galat: r.hasil[i.nama]?.youtube?.galat ?? [] };
+    return { nama: i.nama, judul: i.judul, jadwal: i.jadwal, thumb, platform: p, galat: [...(r.hasil[i.nama]?.youtube?.galat ?? []), ...(r.hasil[i.nama]?.facebook?.galat ?? []).map((g) => `Facebook ${g}`)] };
   });
 }
 
@@ -44,7 +45,7 @@ function rinci(c) {
     rencana: r, masalah: r ? inti.masalah(c, r) : [], disetujui: !!r && inti.disetujui(r), qa, qaManual: inti.qaManual(c), ujiAlat: !!r?.uji_alat, panduan: inti.adaPanduan(c),
     tugas: r ? inti.checklist(c, r) : [], items: sel(c, r), sibuk: inti.sibuk(c), log: logs.get(kunciLog(c)) ?? [],
     berkas: fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /\.(mp4|png|jpg)$/.test(f)) : [],
-    kredensial: !!process.env[publishVar(c.track)],
+    kredensial: !!process.env[publishVar(c.track)], kredensialFb: !!process.env[facebook.tokenVar(c.track)],
   };
 }
 
@@ -53,7 +54,7 @@ function penjadwal() {
   return { terpasang: terpasang("penjadwal"), terakhir: s?.terakhir ?? null, basi: !s || Date.now() - new Date(s.terakhir) > SELANG * 3000, catatan: s?.catatan.slice(-8) ?? [] };
 }
 
-const sistem = () => ({ penjadwal: penjadwal(), dashboard: { otomatis: terpasang("dashboard"), layanan: process.env.RILIS_LAYANAN === "dashboard" }, hubungkan: hubungkan.status() });
+const sistem = () => ({ penjadwal: penjadwal(), dashboard: { otomatis: terpasang("dashboard"), layanan: process.env.RILIS_LAYANAN === "dashboard" }, hubungkan: hubungkan.status(), facebook: facebook.pilihan() });
 
 /** Tombol yang tidak terikat siklus. `keluar` mengakhiri server agar launchd menggantinya. */
 function aksiSistem(b, keluar) {
@@ -76,6 +77,10 @@ function aksiSistem(b, keluar) {
     case "hubungkan": hubungkan.mulai(String(b.track)); break;
     case "hubungkan-ya": hubungkan.setujuiChannel(); break;
     case "hubungkan-batal": hubungkan.batal(); break;
+    // Facebook: pencarian Page memanggil Graph API, jadi balasannya menyusul.
+    case "fb-cari": return facebook.cariPage(b).then(sistem);
+    case "fb-pilih": facebook.pilihPage(String(b.page)); break;
+    case "fb-batal": facebook.batal(); break;
     default: return null;
   }
   return sistem();
@@ -97,7 +102,11 @@ function aksi(b) {
   switch (b.aksi) {
     case "plan": inti.buatRencana(c); break;
     case "periksa": jalankan(c, "Periksa di YouTube", (log) => periksa(c, { log })); break;
-    case "reset": jalankan(c, "Reset catatan video terhapus", (log) => lupakanTerhapus(c, { log })); break;
+    case "reset": jalankan(c, "Reset catatan video terhapus", async (log) => { if (process.env[publishVar(c.track)]) await lupakanTerhapus(c, { log }); if (Object.values(inti.muat(c).hasil).some((v) => v.facebook?.sumber === "alat")) await facebook.lupakanTerhapus(c, { log }); }); break;
+    case "fb-aktif": bebas(); inti.aturFacebook(c, !!b.aktif); break;
+    case "fb-kirim": jalankan(c, "Kirim ke Facebook", (log) => facebook.kirim(c, { log })); break;
+    case "fb-draf": jalankan(c, "Unggah draf Facebook", (log) => facebook.kirim(c, { draf: true, log })); break;
+    case "fb-pasca": jalankan(c, "Pasca-tayang Facebook", (log) => facebook.pascaTayang(c, { log })); break;
     case "jadwal-uji": bebas(); jadwalUlang(c); break;
     case "hapus-uji": bebas(); hapusSkenario(c); logs.delete(kunciLog(c)); return { dihapus: true };
     case "impor": bebas(); inti.impor(c); break;
@@ -155,7 +164,7 @@ export function buatServer({ keluar = keluarSetelahBalas } = {}) {
         if (req.headers["x-token"] !== token) return void kirimJson(403, { galat: "token halaman tidak cocok; muat ulang halaman" });
         let isi = "";
         req.on("data", (d) => { isi += d; if (isi.length > 1e5) req.destroy(); });
-        req.on("end", () => { try { const b = JSON.parse(isi); kirimJson(200, aksiSistem(b, (lalu) => keluar(server, lalu)) ?? aksi(b)); } catch (e) { kirimJson(400, { galat: e.message }); } });
+        req.on("end", async () => { try { const b = JSON.parse(isi); kirimJson(200, (await aksiSistem(b, (lalu) => keluar(server, lalu))) ?? aksi(b)); } catch (e) { kirimJson(400, { galat: e.message }); } });
         return;
       }
       res.writeHead(404).end();

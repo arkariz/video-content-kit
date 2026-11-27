@@ -114,6 +114,9 @@ export function terapkanTeksBaru(c) {
   return baru ? "Teks dari 06-teks-rilis.json diterapkan." : "Rencana sudah ada; tidak ada teks baru.";
 }
 
+/** Teks Facebook sebuah konten; bawaan: deskripsi YouTube, dan komentar Short menaut ke master Facebook. */
+export const teksFacebook = (i) => ({ deskripsi: i.facebook?.deskripsi || i.deskripsi, komentar: i.facebook?.komentar ?? (i.nama === "master" ? "" : "Full video: {master}") });
+
 export const waktu = (jadwal) => (jadwal ? new Date(`${jadwal}:00+07:00`) : null);
 
 /** Hal yang membuat rencana tidak boleh disetujui. */
@@ -135,6 +138,12 @@ export function masalah(c, r) {
     }
     if (i.tag.join(",").length > 500) p("tag lebih dari 500 karakter");
     for (const f of [i.thumbnail, ...i.subtitle.map((s) => s.file)].filter(Boolean)) if (!ada(f)) p(`file tidak ada (${f})`);
+    if (r.facebook?.aktif && !r.kunci_manual && !r.hasil[i.nama]?.facebook) {
+      if (!ada(i.file)) p(`file video tidak ada (${i.file})`);
+      const d = waktu(i.jadwal);
+      if (d && !(d - Date.now() > 11 * 60e3)) p("jadwal Facebook harus lebih dari 10 menit lagi (atau kosong)");
+      if (d && i.nama !== "master" && d - Date.now() > 29 * 864e5) p("jadwal Reel Facebook maksimal 29 hari ke depan");
+    }
   }
   return m;
 }
@@ -148,7 +157,7 @@ export function qaManual(c) {
 /** Sidik isi yang disetujui: teks, jadwal, setelan, dan ukuran+waktu ubah setiap file. */
 export function sidik(r) {
   const berkas = (f) => { try { const s = fs.statSync(path.join(ROOT, f)); return [f, s.size, Math.round(s.mtimeMs)]; } catch { return [f, null]; } };
-  const isi = { y: r.youtube, kunci: r.kunci_manual, items: r.items.map((i) => ({ ...i, berkas: [i.file, i.thumbnail, ...i.subtitle.map((s) => s.file)].filter(Boolean).map(berkas) })) };
+  const isi = { y: r.youtube, f: r.facebook, kunci: r.kunci_manual, items: r.items.map((i) => ({ ...i, berkas: [i.file, i.thumbnail, ...i.subtitle.map((s) => s.file)].filter(Boolean).map(berkas) })) };
   return crypto.createHash("sha256").update(JSON.stringify(isi)).digest("hex");
 }
 export const disetujui = (r) => !!r.persetujuan && r.persetujuan.sidik === sidik(r);
@@ -161,7 +170,7 @@ export function setujui(c, kata, via) {
   });
 }
 
-const BIDANG = ["judul", "deskripsi", "komentar", "jadwal", "playlist", "tag", "terjemahan"];
+const BIDANG = ["judul", "deskripsi", "komentar", "jadwal", "playlist", "tag", "terjemahan", "facebook"];
 /** Suntingan dari dashboard. Perubahan apa pun membatalkan persetujuan (sidik berbeda). */
 export function sunting(c, nama, data) {
   return ubah(c, (r) => {
@@ -170,10 +179,14 @@ export function sunting(c, nama, data) {
       if (k === "tag") i.tag = String(data.tag).split(",").map((s) => s.trim()).filter(Boolean);
       else if (k === "terjemahan") i.terjemahan = { judul: String(data.terjemahan.judul ?? ""), deskripsi: String(data.terjemahan.deskripsi ?? "") };
       else if (k === "jadwal") { if (data.jadwal && !/^\d{4}-\d\d-\d\dT\d\d:\d\d$/.test(data.jadwal)) throw new Error("format jadwal: 2026-11-28T10:00"); i.jadwal = data.jadwal; }
+      else if (k === "facebook") i.facebook = { deskripsi: String(data.facebook.deskripsi ?? ""), komentar: String(data.facebook.komentar ?? "") };
       else i[k] = String(data[k]);
     }
   });
 }
+
+/** Menyalakan pengiriman Facebook oleh alat untuk satu siklus. Membatalkan persetujuan. */
+export const aturFacebook = (c, aktif) => ubah(c, (r) => { if (aktif) r.facebook = { aktif: true }; else delete r.facebook; });
 
 export const idYouTube = (url) => String(url).match(/(?:youtu\.be\/|[?&]v=|\/shorts\/|\/video\/)([\w-]{11})(?![\w-])/)?.[1] ?? null;
 export const PLATFORM = ["youtube", "facebook", "instagram", "tiktok"];
@@ -205,6 +218,9 @@ export function checklist(c, r) {
     T.push({ id, item, platform, label, ...x, selesai: r.checklist[id] ?? (otomatis ? otomatis.dicatat ?? otomatis.diunggah : null) });
   };
   const dub = fs.existsSync(path.join(ROOT, c.render)) ? fs.readdirSync(path.join(ROOT, c.render)).filter((f) => /-audio-[a-z]+\.m4a$/.test(f)) : [];
+  const fbAlat = !!r.facebook?.aktif;
+  const fbPin = (n, tunggu) => { const h = r.hasil[n]?.facebook; const t = teksFacebook(r.items.find((x) => x.nama === n)).komentar; if (!t && !h?.komentar) return;
+    tambah(n, "facebook", "fb-komentar", h?.komentar ? "Pin komentar" : "Posting komentar, lalu pin", { tautan: url(n, "facebook"), salin: h?.komentar ? "" : t.replaceAll("{master}", url("master", "facebook")), tunggu: !url(n, "facebook") ? `menunggu ${n} ada di Facebook` : h?.publishAt && new Date(h.publishAt) > new Date() ? `menunggu ${n} tayang` : tunggu ?? "" }); };
   for (const i of r.items) {
     const n = i.nama, master = n === "master", hy = r.hasil[n]?.youtube;
     if (r.kunci_manual) tambah(n, "youtube", "yt-unggah", "Unggah ke YouTube", { catatUrl: true, tautan: "https://studio.youtube.com" });
@@ -216,11 +232,12 @@ export function checklist(c, r) {
       y("yt-ab", "A/B test judul dan thumbnail (maks. 3)");
       if (dub.length) y("yt-audio", `Multi audio: ${dub.filter((f) => f.startsWith("Master")).join(", ") || dub.join(", ")}`);
       y("yt-midroll", "Mid-roll di jeda antar bab (bila monetisasi aktif)");
-      tambah(n, "facebook", "fb-unggah", "Unggah master penuh sebagai video Page, dengan subtitle publish/master.en_US.srt", { catatUrl: true, salin: `${i.judul}\n\n${i.deskripsi}` });
+      tambah(n, "facebook", "fb-unggah", fbAlat ? "Kirim master ke Facebook (tombol di langkah 2)" : "Unggah master penuh sebagai video Page, dengan subtitle publish/master.en_US.srt", { catatUrl: true, salin: fbAlat ? "" : `${i.judul}\n\n${teksFacebook(i).deskripsi}` });
+      fbPin(n);
     } else {
       tambah(n, "youtube", "yt-terkait", "Pasang video terkait: master", { tautan: studio(n), salin: url("master", "youtube"), tunggu: belumAda(n) || belumTayang("master") });
-      tambah(n, "facebook", "fb-unggah", "Unggah Reel", { catatUrl: true, salin: i.deskripsi });
-      tambah(n, "facebook", "fb-komentar", "Komentar berisi tautan master Facebook, lalu pin", { tautan: url(n, "facebook"), salin: url("master", "facebook") ? `Full video: ${url("master", "facebook")}` : "", tunggu: !url(n, "facebook") ? `catat dulu URL Facebook ${n}` : url("master", "facebook") ? "" : "catat dulu URL Facebook master" });
+      tambah(n, "facebook", "fb-unggah", fbAlat ? "Kirim Reel ke Facebook (tombol di langkah 2)" : "Unggah Reel", { catatUrl: true, salin: fbAlat ? "" : teksFacebook(i).deskripsi });
+      fbPin(n, teksFacebook(i).komentar.includes("{master}") && !url("master", "facebook") ? "catat dulu URL Facebook master" : "");
       tambah(n, "instagram", "ig-unggah", "Unggah Reel (label AI nyala)", { catatUrl: true, salin: i.deskripsi });
       tambah(n, "instagram", "ig-komentar", "Komentar pertama, lalu pin", { tautan: url(n, "instagram"), tunggu: url(n, "instagram") ? "" : `catat dulu URL Instagram ${n}` });
       tambah(n, "instagram", "ig-story", "Story: bagikan Reel dengan stiker tautan ke master YouTube", { salin: url("master", "youtube"), tunggu: !url(n, "instagram") ? `catat dulu URL Instagram ${n}` : belumTayang("master") });

@@ -9,7 +9,7 @@ export const status = () => (kini ? { track: kini.track, tahap: kini.tahap, url:
 /** Baca ulang variabel YouTube dari .env agar token baru langsung terpakai tanpa mulai ulang. */
 export function muatEnv(file = path.join(ROOT, ".env")) {
   if (!fs.existsSync(file)) return;
-  for (const [k, v] of Object.entries(parseEnv(fs.readFileSync(file, "utf8")))) if (k.startsWith("YOUTUBE_")) process.env[k] = v;
+  for (const [k, v] of Object.entries(parseEnv(fs.readFileSync(file, "utf8")))) if (/^(YOUTUBE|FACEBOOK)_/.test(k)) process.env[k] = v;
 }
 
 export function mulai(track, { perintah = [process.execPath, `--env-file-if-exists=${path.join(ROOT, ".env")}`, path.join(ROOT, "scripts/youtube/auth.mjs"), "--track", track, "--tulis"], selesai = muatEnv } = {}) {
