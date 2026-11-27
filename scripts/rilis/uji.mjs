@@ -149,11 +149,15 @@ try {
     const { buatSkenario, jadwalUlang, hapusSkenario, potongSrt } = await import("./skenario.mjs"); const { periksa } = await import("./youtube.mjs");
     assert.equal(potongSrt("1\n00:00:01,000 --> 00:00:02,000\na\n\n2\n00:01:00,000 --> 00:01:02,000\nb\n", 45).includes("b"), false);
     const s = buatSkenario("T09", { potong: (a, b) => fs.copyFileSync(a, b) }); let x = inti.muat(s);
-    assert.equal(s.siklus, "900"); assert.equal(x.items.length, 2); const menit = (inti.waktu(x.items[0].jadwal) - Date.now()) / 60000; assert.ok(menit > 19 && menit <= 21, String(menit));
+    assert.equal(s.siklus, "900"); assert.equal(x.items.length, 2); const menit = (inti.waktu(x.items[0].jadwal) - Date.now()) / 60000; assert.ok(menit > 4 && menit <= 6, String(menit));
     inti.ubah(s, (v) => (v.items[0].jadwal = "2020-01-01T00:00")); jadwalUlang(s); assert.ok(inti.waktu(inti.muat(s).items[0].jadwal) > Date.now());
     inti.setujui(s, "SETUJU", "uji"); yt.playlist.length = 0; yt.params.length = 0; await kirim(s, diam);
     assert.ok(yt.params.every((p) => p === "false")); assert.equal(yt.playlist[0].status.privacyStatus, "unlisted");
     const baris = []; await periksa(s, { log: (v) => baris.push(v) }); assert.ok(baris.some((v) => v.startsWith("✓ master: jadwal terpasang")), baris.join("\n"));
+    const F = await import("./facebook.mjs"); Object.assign(process.env, { FACEBOOK_PAGE_ID_T09: "900", FACEBOOK_PAGE_TOKEN_T09: "tokenPage" });
+    for (const k of Object.keys(fbt.video)) delete fbt.video[k]; inti.aturFacebook(s, true); inti.setujui(s, "SETUJU", "uji"); const log = []; await F.kirim(s, { log: (v) => log.push(v) });
+    assert.ok(log.some((v) => v.includes("SEGERA")), log.join("\n")); assert.equal(Object.values(fbt.video)[0].isi.published, "true"); assert.equal(Object.values(fbt.video)[1].selesai.video_state, "PUBLISHED");
+    for (const k of Object.keys(fbt.video)) delete fbt.video[k]; fbt.captions.length = 0; fbt.sampul.length = 0;
     assert.throws(() => hapusSkenario(c), /hanya untuk siklus uji/); hapusSkenario(s); assert.ok(!fs.existsSync(s.dir));
   });
   await uji("kirim menunggu pemrosesan lalu memasang thumbnail Short", async () => {

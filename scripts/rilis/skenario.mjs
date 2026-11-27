@@ -5,7 +5,7 @@ import fs from "node:fs"; import path from "node:path"; import { execFileSync } 
 import { writeJson } from "../produksi/lib.mjs";
 import { ROOT, cari, muat, ubah, daftarSiklus } from "./inti.mjs";
 
-export const JEDA = [20, 22]; // menit dari sekarang: master, Short (Facebook menolak jadwal kurang dari 10 menit)
+export const JEDA = [5, 6]; // menit dari sekarang: master, Short. Facebook tidak menerima jadwal sedekat ini: video uji ditayangkan segera di sana.
 const wib = (menit) => new Date(Math.ceil((Date.now() + menit * 60e3) / 60e3) * 60e3).toLocaleString("sv-SE", { timeZone: "Asia/Jakarta" }).slice(0, 16).replace(" ", "T");
 
 /** Subtitle SRT yang dipotong pada detik tertentu. */

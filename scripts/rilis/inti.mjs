@@ -119,6 +119,9 @@ export const teksFacebook = (i) => ({ deskripsi: i.facebook?.deskripsi || i.desk
 
 export const waktu = (jadwal) => (jadwal ? new Date(`${jadwal}:00+07:00`) : null);
 
+/** Jarak minimum jadwal YouTube dari sekarang; siklus uji boleh lebih dekat. */
+export const minYouTube = (r) => (r.uji_alat ? 60e3 : 5 * 60e3);
+
 /** Hal yang membuat rencana tidak boleh disetujui. */
 export function masalah(c, r) {
   const m = [];
@@ -129,7 +132,7 @@ export function masalah(c, r) {
     if (!sudah && !r.kunci_manual) {
       if (!ada(i.file)) p(`file video tidak ada (${i.file})`);
       if (!i.judul.trim()) p("judul kosong");
-      if (i.jadwal && !(waktu(i.jadwal) > Date.now() + 5 * 60e3)) p("jadwal sudah lewat atau kurang dari 5 menit lagi (ubah, atau kosongkan untuk tayang segera)");
+      if (i.jadwal && !(waktu(i.jadwal) > Date.now() + minYouTube(r))) p(`jadwal sudah lewat atau kurang dari ${minYouTube(r) / 60e3} menit lagi (ubah, atau kosongkan untuk tayang segera)`);
     }
     for (const [label, judul, desk] of [["", i.judul, i.deskripsi], [" terjemahan", i.terjemahan?.judul ?? "", i.terjemahan?.deskripsi ?? ""]]) {
       if (judul.length > 100) p(`judul${label} lebih dari 100 karakter`);
@@ -141,7 +144,7 @@ export function masalah(c, r) {
     if (r.facebook?.aktif && !r.kunci_manual && !r.hasil[i.nama]?.facebook) {
       if (!ada(i.file)) p(`file video tidak ada (${i.file})`);
       const d = waktu(i.jadwal);
-      if (d && !(d - Date.now() > 11 * 60e3)) p("jadwal Facebook harus lebih dari 10 menit lagi (atau kosong)");
+      if (d && !r.uji_alat && !(d - Date.now() > 11 * 60e3)) p("jadwal Facebook harus lebih dari 10 menit lagi (atau kosong)");
       if (d && i.nama !== "master" && d - Date.now() > 29 * 864e5) p("jadwal Reel Facebook maksimal 29 hari ke depan");
     }
   }

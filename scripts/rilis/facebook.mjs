@@ -109,7 +109,8 @@ export function kirim(c, { draf = false, log = console.log } = {}) {
         if (h?.sumber === "manual") { log(`${i.nama}: sudah diunggah manual, dilewati`); continue; }
         if (!h?.url) {
           if (h?.mengunggah) throw new Error("unggahan sebelumnya tidak jelas hasilnya. Periksa Page; bila videonya ada, hapus di Facebook lalu klik \"Reset yang terhapus\"");
-          const jadwal = draf ? null : waktu(i.jadwal);
+          let jadwal = draf ? null : waktu(i.jadwal);
+          if (jadwal && r.uji_alat && !(jadwal - Date.now() > MIN_JADWAL)) { jadwal = null; log(`${i.nama}: Facebook menolak jadwal kurang dari 10 menit; video uji ditayangkan SEGERA`); }
           if (jadwal && !(jadwal - Date.now() > MIN_JADWAL)) throw new Error("jadwal Facebook harus lebih dari 10 menit lagi; ubah lalu setujui ulang");
           log(`${i.nama}: mulai unggah ke Facebook`);
           const t = teksFacebook(i);

@@ -5,7 +5,7 @@
 import fs from "node:fs"; import path from "node:path";
 import { readJson, writeJson } from "../produksi/lib.mjs";
 import { oauthClient, tokenRequest, channelVar } from "../youtube/lib.mjs";
-import { ROOT, disetujui, muat, terkunci, ubah, waktu } from "./inti.mjs";
+import { ROOT, disetujui, minYouTube, muat, terkunci, ubah, waktu } from "./inti.mjs";
 
 const API = "https://www.googleapis.com/youtube/v3";
 const UP = "https://www.googleapis.com/upload/youtube/v3";
@@ -161,7 +161,7 @@ export function kirim(c, { uji = false, log = console.log, tunggu = 10 * 60e3, s
       const catat = (v) => ubah(c, (x) => { (x.hasil[kunci] ||= {}).youtube = v; });
       if (h?.sumber === "manual") { log(`${i.nama}: sudah diunggah manual, dilewati`); continue; }
       if (!h?.videoId) {
-        if (!uji && i.jadwal && !(waktu(i.jadwal) > Date.now() + 5 * 60e3)) throw new Error(`${i.nama}: jadwal sudah lewat; ubah lalu setujui ulang`);
+        if (!uji && i.jadwal && !(waktu(i.jadwal) > Date.now() + minYouTube(r))) throw new Error(`${i.nama}: jadwal sudah lewat; ubah lalu setujui ulang`);
         const body = metadata(r, i, uji); log(`${i.nama}: mulai unggah`);
         const v = await unggah(yt, c, kunci, path.join(ROOT, i.file), body, (s) => log(`${i.nama}: ${s}`), r.uji_alat);
         if (!v.id) throw new Error(`${i.nama}: unggahan selesai tanpa ID video; periksa YouTube Studio`);
