@@ -20,3 +20,4 @@ __pycache__/
 .env.tmp-*
 .rilis.lock
 .rilis-sesi.json
+hasil/tracks/*/siklus/9[0-9][0-9]-uji-alat/

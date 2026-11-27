@@ -49,7 +49,7 @@ const fileSesi = (c) => path.join(c.dir, ".rilis-sesi.json");
 const sesi = (c) => readJson(fileSesi(c), {});
 const aturSesi = (c, k, v) => { const s = sesi(c); if (v) s[k] = v; else delete s[k]; if (Object.keys(s).length) writeJson(fileSesi(c), s); else fs.rmSync(fileSesi(c), { force: true }); };
 
-async function unggah(yt, c, kunci, file, body, log) {
+async function unggah(yt, c, kunci, file, body, log, diam) {
   const total = fs.statSync(file).size; let url = sesi(c)[kunci]?.url; let offset = 0;
   const kirim = (headers, data) => fetch(url, { method: "PUT", redirect: "manual", headers: { ...yt.auth, ...headers }, body: data });
   const posisi = (res) => { const m = res.headers.get("range")?.match(/-(\d+)$/); return m ? +m[1] + 1 : 0; };
@@ -60,7 +60,7 @@ async function unggah(yt, c, kunci, file, body, log) {
     if (res.status !== 308) throw new Error(`sesi unggah lama tidak bisa dilanjutkan (HTTP ${res.status}). Periksa YouTube Studio apakah videonya sudah masuk; bila belum, hapus ${path.basename(fileSesi(c))} lalu ulangi`);
     offset = posisi(res); log(`melanjutkan unggahan dari ${Math.round((offset / total) * 100)}%`);
   } else {
-    const res = await fetch(`${UP}/videos?${new URLSearchParams({ uploadType: "resumable", part: Object.keys(body).join(",") })}`, { method: "POST", headers: { ...yt.auth, "Content-Type": "application/json; charset=UTF-8", "X-Upload-Content-Length": String(total), "X-Upload-Content-Type": "video/mp4" }, body: JSON.stringify(body) });
+    const res = await fetch(`${UP}/videos?${new URLSearchParams({ uploadType: "resumable", part: Object.keys(body).join(","), ...(diam && { notifySubscribers: "false" }) })}`, { method: "POST", headers: { ...yt.auth, "Content-Type": "application/json; charset=UTF-8", "X-Upload-Content-Length": String(total), "X-Upload-Content-Type": "video/mp4" }, body: JSON.stringify(body) });
     if (!res.ok) throw await galat(res);
     url = res.headers.get("location"); if (!url) throw new Error("YouTube tidak memberi alamat unggah");
     aturSesi(c, kunci, { url, ukuran: total });
@@ -81,10 +81,10 @@ async function unggah(yt, c, kunci, file, body, log) {
   } finally { fs.closeSync(fd); }
 }
 
-async function playlist(yt, judul, videoId) {
+async function playlist(yt, judul, videoId, privasi) {
   let id, pageToken;
   do { const r = await yt.get("playlists", { part: "snippet", mine: "true", maxResults: "50", ...(pageToken && { pageToken }) }); id = r.items?.find((p) => p.snippet.title === judul)?.id; pageToken = r.nextPageToken; } while (!id && pageToken);
-  id ||= (await yt.post("playlists", { part: "snippet,status" }, { snippet: { title: judul }, status: { privacyStatus: "public" } })).id;
+  id ||= (await yt.post("playlists", { part: "snippet,status" }, { snippet: { title: judul }, status: { privacyStatus: privasi } })).id;
   const sudah = (await yt.get("playlistItems", { part: "id", playlistId: id, videoId })).items?.length;
   if (!sudah) await yt.post("playlistItems", { part: "snippet" }, { snippet: { playlistId: id, resourceId: { kind: "youtube#video", videoId } } });
 }
@@ -109,7 +109,7 @@ async function lengkapi(yt, r, i, h, catat, { uji, log }) {
     catch (e) { galatList.push(`${label}: ${e.message}`); log(`${i.nama}: ${label} GAGAL: ${e.message}`); }
     catat(h);
   };
-  if (i.playlist && !uji) await langkah("playlist", "playlist", () => playlist(yt, i.playlist, h.videoId));
+  if (i.playlist && !uji) await langkah("playlist", "playlist", () => playlist(yt, i.playlist, h.videoId, r.uji_alat ? "unlisted" : "public"));
   for (const s of i.subtitle) await langkah(`subtitle-${s.bahasa}`, `subtitle ${s.bahasa}`, () => subtitle(yt, h.videoId, s.bahasa, path.join(ROOT, s.file)));
   if (i.thumbnail) await langkah("thumbnail", "thumbnail", async () => {
     // thumbnail Shorts hanya diterima setelah pemrosesan selesai
@@ -137,7 +137,7 @@ export function kirim(c, { uji = false, log = console.log } = {}) {
       if (!h?.videoId) {
         if (!uji && i.jadwal && !(waktu(i.jadwal) > Date.now() + 5 * 60e3)) throw new Error(`${i.nama}: jadwal sudah lewat; ubah lalu setujui ulang`);
         const body = metadata(r, i, uji); log(`${i.nama}: mulai unggah`);
-        const v = await unggah(yt, c, kunci, path.join(ROOT, i.file), body, (s) => log(`${i.nama}: ${s}`));
+        const v = await unggah(yt, c, kunci, path.join(ROOT, i.file), body, (s) => log(`${i.nama}: ${s}`), r.uji_alat);
         if (!v.id) throw new Error(`${i.nama}: unggahan selesai tanpa ID video; periksa YouTube Studio`);
         h = { sumber: "alat", videoId: v.id, url: `https://www.youtube.com/watch?v=${v.id}`, privasi: v.status?.privacyStatus ?? body.status.privacyStatus, publishAt: body.status.publishAt ?? null, diunggah: new Date().toISOString() };
         catat(h); aturSesi(c, kunci, null); log(`${i.nama}: terunggah ${h.url}`);
@@ -170,5 +170,37 @@ export function pascaTayang(c, { log = console.log } = {}) {
         log(`${i.nama}: ${lama ? "komentar channel sudah ada, tidak memposting lagi" : "komentar diposting"}; pin di ${h.komentar.url}`);
       } catch (e) { h.galat = [...(h.galat || []).filter((x) => !x.startsWith("komentar")), `komentar: ${e.message}`]; catat(h); log(`${i.nama}: komentar GAGAL: ${e.message}`); }
     }
+  });
+}
+
+/** Baca saja: cocokkan keadaan di YouTube dengan rencana, satu baris per hal yang diperiksa. */
+export function periksa(c, { log = console.log } = {}) {
+  return terkunci(c, async () => {
+    const r = muat(c); if (!r) throw new Error("rencana belum dibuat");
+    const yt = await klien(c.track); let beda = 0;
+    const cek = (nama, hal, ok, nyata) => { if (ok === false) beda++; log(`${ok === null ? "…" : ok ? "✓" : "✗"} ${nama}: ${hal}${nyata ? ` (${nyata})` : ""}`); };
+    for (const i of r.items) {
+      const h = muat(c).hasil[i.nama]?.youtube; if (!h?.videoId) { cek(i.nama, "belum ada video YouTube", null); continue; }
+      const v = (await yt.get("videos", { part: "snippet,status,localizations,processingDetails", id: h.videoId })).items?.[0];
+      if (!v) { cek(i.nama, "video tidak ditemukan", false, h.videoId); continue; }
+      const privasi = v.status.privacyStatus; const tayang = h.publishAt ? new Date(h.publishAt) : null; const sudahWaktunya = !tayang || tayang < Date.now();
+      cek(i.nama, "channel", v.snippet.channelId === yt.channel);
+      if (h.sumber === "alat") {
+        cek(i.nama, "judul", v.snippet.title === i.judul, v.snippet.title);
+        cek(i.nama, "label bahasa", v.snippet.defaultLanguage === r.youtube.bahasa && v.snippet.defaultAudioLanguage === r.youtube.bahasa, `${v.snippet.defaultLanguage} / audio ${v.snippet.defaultAudioLanguage}`);
+        if (i.terjemahan?.judul) cek(i.nama, "judul Indonesia", v.localizations?.id?.title === i.terjemahan.judul, v.localizations?.id?.title ?? "tidak ada");
+      }
+      if (tayang && !sudahWaktunya) cek(i.nama, "jadwal terpasang", privasi === "private" && new Date(v.status.publishAt).getTime() === tayang.getTime(), `${privasi}, tayang ${tayang.toLocaleTimeString("sv-SE", { timeZone: "Asia/Jakarta" })} WIB`);
+      else if (tayang) cek(i.nama, "tayang otomatis sesuai jadwal", privasi === "public" ? true : Date.now() - tayang < 3 * 60e3 ? null : false, privasi);
+      else cek(i.nama, "visibilitas", privasi !== "private", privasi);
+      cek(i.nama, "pemrosesan", v.processingDetails?.processingStatus === "succeeded" ? true : null, v.processingDetails?.processingStatus);
+      const sub = (await yt.get("captions", { part: "snippet", videoId: h.videoId })).items ?? [];
+      for (const s of i.subtitle) cek(i.nama, `subtitle ${s.bahasa}`, sub.some((x) => x.snippet.language === s.bahasa));
+      if (i.playlist) cek(i.nama, `playlist "${i.playlist}"`, !!h.selesai?.playlist);
+      if (i.thumbnail) cek(i.nama, "thumbnail", h.selesai?.thumbnail ? true : null, h.selesai?.thumbnail ? "terpasang" : "belum; jalankan pasca-tayang");
+      if (i.komentar.trim()) cek(i.nama, "komentar pertama", h.komentar ? true : null, h.komentar ? "ada" : sudahWaktunya ? "belum; jalankan pasca-tayang" : "setelah tayang");
+      ubah(c, (x) => { x.hasil[i.nama].youtube.privasi = privasi; });
+    }
+    log(beda ? `${beda} hal tidak cocok` : "tidak ada yang tidak cocok");
   });
 }

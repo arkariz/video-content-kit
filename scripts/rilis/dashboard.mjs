@@ -5,7 +5,8 @@ import fs from "node:fs"; import path from "node:path"; import http from "node:h
 import { pathToFileURL } from "node:url";
 import { readJson } from "../produksi/lib.mjs";
 import * as inti from "./inti.mjs";
-import { kirim, pascaTayang, publishVar } from "./youtube.mjs";
+import { kirim, pascaTayang, periksa, publishVar } from "./youtube.mjs";
+import { buatSkenario, hapusSkenario, jadwalUlang } from "./skenario.mjs";
 
 const UI = path.join(import.meta.dirname, "ui.html");
 const logs = new Map(); const kunciLog = (c) => `${c.track}/${c.siklus}`;
@@ -36,7 +37,7 @@ function rinci(c) {
   const qa = readJson(path.join(c.dir, "05-qa.auto.json"), null);
   return {
     track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, rel: c.rel,
-    rencana: r, masalah: r ? inti.masalah(c, r) : [], disetujui: !!r && inti.disetujui(r), qa, qaManual: inti.qaManual(c), panduan: inti.adaPanduan(c),
+    rencana: r, masalah: r ? inti.masalah(c, r) : [], disetujui: !!r && inti.disetujui(r), qa, qaManual: inti.qaManual(c), ujiAlat: !!r?.uji_alat, panduan: inti.adaPanduan(c),
     tugas: r ? inti.checklist(c, r) : [], items: sel(c, r), sibuk: inti.sibuk(c), log: logs.get(kunciLog(c)) ?? [],
     berkas: fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /\.(mp4|png|jpg)$/.test(f)) : [],
     kredensial: !!process.env[publishVar(c.track)],
@@ -53,10 +54,14 @@ function jalankan(c, label, fn) {
 }
 
 function aksi(b) {
+  if (b.aksi === "skenario") return rinci(buatSkenario(b.track));
   const c = inti.cari(b.track, b.siklus);
   const bebas = () => { if (inti.sibuk(c)) throw new Error("siklus ini sedang diproses; tunggu selesai"); };
   switch (b.aksi) {
     case "plan": inti.buatRencana(c); break;
+    case "periksa": jalankan(c, "Periksa di YouTube", (log) => periksa(c, { log })); break;
+    case "jadwal-uji": bebas(); jadwalUlang(c); break;
+    case "hapus-uji": bebas(); hapusSkenario(c); logs.delete(kunciLog(c)); return { dihapus: true };
     case "impor": bebas(); inti.impor(c); break;
     case "sunting": bebas(); inti.sunting(c, b.item, b.data ?? {}); break;
     case "setujui": bebas(); inti.setujui(c, b.kata, "dashboard"); break;
