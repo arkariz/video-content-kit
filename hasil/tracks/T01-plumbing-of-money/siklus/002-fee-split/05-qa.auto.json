@@ -1,7 +1,7 @@
 {
   "track": "T01",
   "siklus": "002",
-  "tanggal": "2026-11-26",
+  "tanggal": "2026-11-27",
   "durasi": "8:05",
   "footage_pct": 0,
   "verdict": "GAGAL",
@@ -14,11 +14,32 @@
       "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
     },
     {
-      "layer": "Visual/Channel",
+      "layer": "Audio",
       "level": "sedang",
-      "id": "K1",
-      "msg": "bukti nyata kreator tidak ada; DIPERBOLEHKAN oleh pengecualian kreator (pengecualian_qa)",
-      "fix": "tetap tercatat di laporan; kreator memikul risiko kebijakan konten AI"
+      "id": "A5",
+      "msg": "tidak ada musik mood untuk scene tertentu",
+      "fix": "tambah mood_music di 04-audio.json"
+    },
+    {
+      "layer": "Audio",
+      "level": "sedang",
+      "id": "A4",
+      "msg": "musik utama sama dengan T01/004, T01/005, T02/002, T02/003, T02/004",
+      "fix": "buat musik baru untuk konten ini"
+    },
+    {
+      "layer": "Kemasan",
+      "level": "kecil",
+      "id": "P1",
+      "msg": "pasangan terbaik 100/100: \"Where $2.75 Goes When You Tap a Card\" + \"$100 → $97.25\" (bersih)",
+      "fix": "pakai pasangan ini atau perbaiki temuannya; skor adalah saran, bukan gate"
+    },
+    {
+      "layer": "Kemasan",
+      "level": "kecil",
+      "id": "P2",
+      "msg": "judul \"Every Card Tap Pays 4 Companies. Here's the Split.\": mobile (a mobile feed shows about \"Every Card Tap Pays 4 Companies. Here's...\" - check the subject survives)",
+      "fix": "subjek harus terbaca di 40 karakter pertama (feed mobile)"
     }
   ],
   "manual": [

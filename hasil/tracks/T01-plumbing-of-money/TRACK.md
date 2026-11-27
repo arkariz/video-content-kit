@@ -8,10 +8,10 @@ channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "005: kreator menonton penuh master + 2 Short (pemeriksaan manual), cek rencana publish 06-publish.md, lalu unggah manual (06-publish-manual.md); 002: kreator menonton dan QA manual, publish sesuai jadwal 2026-12-14; 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
+langkah_berikutnya: "005: kreator menonton penuh master + 2 Short (pemeriksaan manual), cek rencana publish 06-publish.md, lalu unggah manual (06-publish-manual.md); 002: dengar s41/s43, unggah manual 2026-11-28 (06-publish-manual.md); 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: []                 # syarat bukti kreator di layar dihapus untuk semua konten (2026-11-27)
-menunggu_keputusan: "005: unggah manual 29 Nov (06-publish-manual.md); putuskan rujukan "card video" ke 002 yang belum tayang (hasil/review/T01-005-qris-one-sticker/index.html); 002: review video sebelum publish (dengar s41/s43 QRIS; cek angka biaya)"
+menunggu_keputusan: "002: QA GAGAL (s41 QRIS), dengar lalu terima atau tolak sebelum unggah 11-28; 005: unggah manual 29 Nov"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -53,7 +53,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
 | 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | tayang | 2026-11-25 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33); 2026-11-26 master dan 2 Shorts tayang di semua platform |
-| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | qa | 2026-12-14 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum |
+| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | qa | 2026-11-28 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
 | 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | siap-publish | target ≤ 2026-12-03 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov |
 | 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | qa | 2026-11-29 | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 disetujui 2026-11-27 |
@@ -139,3 +139,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator menetapkan jadwal 005 mulai 2026-11-29: master 11-29, Short 1 11-30, Short 2 12-01 (19.00 WIB). Belum disetujui dan belum dikirim.
 - 2026-11-27: Jadwal 005 diubah kreator: semua tayang 2026-11-29, master 10.00, Short 1 12.00, Short 2 16.00 WIB (diedit di 06-publish.json; menjalankan publish plan lagi akan menimpanya). Belum disetujui dan belum dikirim.
 - 2026-11-27: Paket unggah manual 005 dibuat untuk YouTube, Facebook, Instagram, TikTok (06-publish-manual.md, subtitle EN dan ID di publish/). Publish lewat Upload-Post tidak dipakai. Belum ada yang dikirim.
+- 2026-11-27: Kreator memajukan 002 ke 2026-11-28 (rencana V2 terkunci menjadwalkan sprint mulai 12-07; rencana.md tidak diubah, penyimpangan dicatat). Paket unggah manual 002 dilengkapi semua platform dan subtitle. QA otomatis dijalankan ulang: GAGAL (1 kritis A2 s41), 05-qa.md belum ada. Belum ada yang diunggah. Rujukan "card video" di 005 terpenuhi bila 002 tayang lebih dulu.

@@ -1,0 +1,41 @@
+1
+00:00:00,120 --> 00:00:02,669
+You tap your card for a
+hundred-dollar pair of shoes,
+
+2
+00:00:02,669 --> 00:00:04,038
+and four companies get paid.
+
+3
+00:00:04,038 --> 00:00:06,820
+The shop keeps ninety-seven
+dollars and twenty-five cents.
+
+4
+00:00:08,680 --> 00:00:11,819
+Behind that one tap, two
+seventy-five leaves the sale.
+
+5
+00:00:11,819 --> 00:00:15,931
+Two dollars twenty heads to your bank,
+and sixteen cents heads to Visa.
+
+6
+00:00:15,931 --> 00:00:20,040
+The last thirty-nine cents goes to the
+company running the card machine
+
+7
+00:00:20,040 --> 00:00:21,239
+and the shop's bank.
+
+8
+00:00:22,380 --> 00:00:26,680
+Shops often don't charge less for cash,
+so the card toll gets built into
+
+9
+00:00:26,720 --> 00:00:27,660
+the price on the tag.

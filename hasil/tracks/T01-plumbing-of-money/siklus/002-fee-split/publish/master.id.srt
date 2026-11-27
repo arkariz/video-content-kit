@@ -1,0 +1,698 @@
+1
+00:00:00,000 --> 00:00:03,894
+Kamu tap kartu untuk sepatu seharga seratus
+dolar, dan empat perusahaan dibayar.
+
+2
+00:00:03,944 --> 00:00:07,148
+Toko hanya mendapat sembilan puluh
+tujuh dolar dua puluh lima sen.
+
+3
+00:00:07,867 --> 00:00:08,430
+Siang hari.
+
+4
+00:00:08,480 --> 00:00:11,606
+Kamu memegang kartu premium
+berhadiah, mesinnya berbunyi,
+
+5
+00:00:11,656 --> 00:00:14,504
+dan selama sedetik sepertinya
+tidak terjadi apa-apa.
+
+6
+00:00:15,967 --> 00:00:20,409
+Di balik satu tap itu, dua dolar tujuh
+puluh lima sen keluar dari penjualan.
+
+7
+00:00:20,459 --> 00:00:24,310
+Dua dolar dua puluh menuju bankmu,
+dan enam belas sen menuju Visa.
+
+8
+00:00:24,360 --> 00:00:28,920
+Sisa tiga puluh sembilan sen untuk
+perusahaan mesin kartu dan bank milik toko.
+
+9
+00:00:29,667 --> 00:00:32,370
+Ini perjalanan koin-koin
+itu dalam satu peta.
+
+10
+00:00:32,420 --> 00:00:34,818
+Uangmu berangkat dari sini, dari bankmu.
+
+11
+00:00:35,567 --> 00:00:37,775
+Ujungnya di sana, di bank milik toko.
+
+12
+00:00:37,825 --> 00:00:40,033
+Uang kartu tidak jatuh ke laci kasir.
+
+13
+00:00:40,083 --> 00:00:45,037
+Uang itu sampai di rekening toko belakangan,
+sering sehari atau lebih setelah tap.
+
+14
+00:00:45,767 --> 00:00:48,738
+Bayangkan pembayaranmu sebagai
+gerobak berisi seratus koin yang
+
+15
+00:00:48,788 --> 00:00:50,657
+melaju di jalan tol antara dua bank itu.
+
+16
+00:00:50,707 --> 00:00:53,055
+Setiap gerbang di jalan itu
+menahan beberapa koin.
+
+17
+00:00:53,800 --> 00:00:58,501
+Perusahaan pengelola jalannya adalah jaringan
+kartu, misalnya Visa atau Mastercard.
+
+18
+00:00:58,551 --> 00:01:01,363
+Berdua, mereka mengangkut
+lebih dari delapan puluh
+
+19
+00:01:01,413 --> 00:01:03,595
+persen belanja kartu kredit di Amerika.
+
+20
+00:01:04,333 --> 00:01:08,713
+Jaringan itu menetapkan banyak tarif tol dan
+meneruskan setiap pesan antar bank.
+
+21
+00:01:08,763 --> 00:01:11,481
+Koinmu sendiri tetap dipegang
+bank di kedua ujung.
+
+22
+00:01:12,200 --> 00:01:14,989
+Di penjualan biasa, tolnya
+diambil dari gerobak,
+
+23
+00:01:15,039 --> 00:01:17,768
+jadi di tagihanmu tetap
+tertulis seratus dolar.
+
+24
+00:01:17,818 --> 00:01:19,720
+Toko yang menerima lebih sedikit.
+
+25
+00:01:20,467 --> 00:01:23,946
+Toko menyetujui aturan itu sejak hari ia
+menempel stiker kartu di pintunya.
+
+26
+00:01:24,667 --> 00:01:27,093
+Masih ada satu
+pemberhentian di sebelah toko.
+
+27
+00:01:27,143 --> 00:01:30,945
+Usaha ini mengurus mesin kartu dan
+bicara ke jalan tol atas nama toko.
+
+28
+00:01:30,995 --> 00:01:32,651
+Sebut saja perusahaan terminal.
+
+29
+00:01:34,133 --> 00:01:36,805
+Jadi ada empat tangan yang
+menunggu koin dari gerobakmu.
+
+30
+00:01:36,855 --> 00:01:39,624
+Banyak orang mungkin menebak Visa
+mengambil paling banyak.
+
+31
+00:01:39,674 --> 00:01:42,151
+Dari potongan yang bisa
+dihitung, bagian Visa paling
+
+32
+00:01:42,201 --> 00:01:44,532
+kecil, dan bankmu sendiri
+mengambil paling besar.
+
+33
+00:01:45,267 --> 00:01:47,880
+Koin pertama tidak pernah
+keluar dari ujung jalanmu.
+
+34
+00:01:47,930 --> 00:01:50,287
+Saat bankmu membayar ke arah
+toko, yang dikirim
+
+35
+00:01:50,337 --> 00:01:52,592
+sembilan puluh tujuh dolar
+delapan puluh sen.
+
+36
+00:01:52,642 --> 00:01:54,180
+Dua dolar dua puluh tertinggal.
+
+37
+00:01:54,900 --> 00:01:58,205
+Potongan itu namanya interchange:
+biaya yang dibayar pihak
+
+38
+00:01:58,255 --> 00:02:00,750
+toko ke bankmu setiap kali
+kartunya dipakai.
+
+39
+00:02:00,800 --> 00:02:04,510
+Di penjualan seperti ini, itulah
+potongan yang jauh paling besar.
+
+40
+00:02:05,233 --> 00:02:06,236
+Tarifnya terbuka.
+
+41
+00:02:06,286 --> 00:02:10,137
+Visa memuatnya di tabel panjang,
+diurutkan menurut jenis kartu,
+
+42
+00:02:10,187 --> 00:02:13,914
+jenis toko, dan apakah kartunya
+di-tap atau nomornya diketik.
+
+43
+00:02:14,633 --> 00:02:20,002
+Di tarif toko standar, kartu kredit biasa
+dikenai 1,51 persen plus sepuluh sen.
+
+44
+00:02:20,052 --> 00:02:23,499
+Untuk sepatumu, itu satu dolar
+enam puluh satu sen.
+
+45
+00:02:24,233 --> 00:02:27,653
+Ganti dengan kartu premium
+berhadiah milikmu, tarifnya
+
+46
+00:02:27,703 --> 00:02:29,774
+jadi 2,1 persen plus sepuluh sen.
+
+47
+00:02:29,824 --> 00:02:34,015
+Sepatunya sama, tokonya sama, dan
+tolnya jadi dua dolar dua puluh.
+
+48
+00:02:34,065 --> 00:02:36,906
+Sebagian usaha kecil dapat
+tarif lebih murah,
+
+49
+00:02:36,956 --> 00:02:39,926
+tetapi toko sepatu kita
+membayar tarif standar.
+
+50
+00:02:41,400 --> 00:02:43,834
+Kenapa bankmu senang kalau toko
+membayar lebih mahal?
+
+51
+00:02:43,884 --> 00:02:46,412
+Kamu perlu tahu satu hal soal
+cara bankmu mencari uang.
+
+52
+00:02:47,133 --> 00:02:50,588
+Misalnya tagihan kartumu selalu
+kamu lunasi penuh tiap bulan.
+
+53
+00:02:50,638 --> 00:02:53,231
+Maka bank tidak memungut
+bunga dari belanjamu.
+
+54
+00:02:53,281 --> 00:02:55,586
+Untuk nasabah seperti itu, biaya tiap tap
+
+55
+00:02:55,636 --> 00:02:58,229
+adalah salah satu sumber
+utama pemasukan bank.
+
+56
+00:02:58,967 --> 00:03:02,482
+Jadi bank berebut tempat
+teratas di dompetmu, dan
+
+57
+00:03:02,532 --> 00:03:05,756
+biaya yang sama ikut
+membiayai perebutan itu.
+
+58
+00:03:05,806 --> 00:03:07,356
+Poin, miles, cashback.
+
+59
+00:03:07,406 --> 00:03:12,013
+Kartu premium menjanjikan lebih
+banyak, dan tolnya lebih tinggi.
+
+60
+00:03:12,733 --> 00:03:15,551
+Misalnya kartumu memberi
+cashback satu setengah persen.
+
+61
+00:03:15,601 --> 00:03:19,879
+Satu dolar lima puluh dari dua dolar dua puluh
+tadi kembali ke kamu sebagai hadiah.
+
+62
+00:03:19,929 --> 00:03:21,599
+Bankmu menyimpan tujuh puluh sen.
+
+63
+00:03:22,333 --> 00:03:24,071
+Lihat dari mana hadiah itu berawal.
+
+64
+00:03:24,121 --> 00:03:26,370
+Asalnya dari gerobak yang
+sedang menuju toko.
+
+65
+00:03:27,100 --> 00:03:29,658
+Sekarang gerobak sampai di gerbang tengah.
+
+66
+00:03:29,708 --> 00:03:33,072
+Visa menagih pihak toko 0,14
+persen dari nilai belanja,
+
+67
+00:03:33,122 --> 00:03:36,984
+ditambah sekitar dua sen untuk
+mengurus permintaan persetujuan.
+
+68
+00:03:37,034 --> 00:03:38,474
+Totalnya enam belas sen.
+
+69
+00:03:39,933 --> 00:03:43,743
+Enam belas sen terlihat kecil,
+jadi coba lihat dari jauh.
+
+70
+00:03:43,793 --> 00:03:46,790
+Pada 2025, kartu Visa dan
+Mastercard terbitan
+
+71
+00:03:46,840 --> 00:03:50,378
+Amerika membawa belanja hampir
+sepuluh triliun dolar.
+
+72
+00:03:51,100 --> 00:03:53,140
+Pemberhentian terakhir ada
+di sebelah toko.
+
+73
+00:03:53,190 --> 00:03:56,639
+Banyak toko kecil tidak pernah berurusan
+dengan tiap pihak di jalan ini.
+
+74
+00:03:56,689 --> 00:03:58,826
+Mereka membayar satu tarif
+rata ke perusahaan
+
+75
+00:03:58,876 --> 00:04:01,499
+terminal, lalu perusahaan itu
+yang membereskan sisanya.
+
+76
+00:04:02,233 --> 00:04:05,940
+Stripe, salah satu perusahaan seperti
+itu, memasang tarif 2,7 persen
+
+77
+00:04:05,990 --> 00:04:09,033
+plus lima sen untuk kartu yang
+dipakai langsung di toko.
+
+78
+00:04:09,083 --> 00:04:12,182
+Dari seratus dolarmu, itu dua
+dolar tujuh puluh lima sen.
+
+79
+00:04:12,232 --> 00:04:13,839
+Toko hanya melihat satu harga.
+
+80
+00:04:14,567 --> 00:04:16,294
+Dari situ, bagian dua
+dolar dua puluh untuk
+
+81
+00:04:16,344 --> 00:04:18,279
+bankmu dan enam belas sen
+untuk Visa dibayarkan.
+
+82
+00:04:19,000 --> 00:04:21,759
+Sisa tiga puluh sembilan sen
+adalah markup, harga
+
+83
+00:04:21,809 --> 00:04:24,397
+yang diminta pihak toko
+untuk jasanya sendiri.
+
+84
+00:04:24,447 --> 00:04:27,436
+Perusahaan terminal dan bank
+toko berbagi bagian itu,
+
+85
+00:04:27,486 --> 00:04:30,130
+dan pembagiannya tidak
+tertulis di label harga.
+
+86
+00:04:30,180 --> 00:04:33,857
+Bagian inilah yang bisa digeser lewat
+membandingkan atau menawar.
+
+87
+00:04:34,600 --> 00:04:36,230
+Sekarang pasang lagi kartu biasa.
+
+88
+00:04:36,280 --> 00:04:40,252
+Toko tetap membayar dua dolar tujuh puluh
+lima sen, tetapi bagian bankmu turun.
+
+89
+00:04:40,302 --> 00:04:44,070
+Pihak toko menyimpan sembilan puluh
+delapan sen, bukan tiga puluh sembilan.
+
+90
+00:04:45,533 --> 00:04:49,050
+Tarif rata bahkan bisa merugikan
+perusahaan yang memasangnya.
+
+91
+00:04:49,100 --> 00:04:53,610
+Jual kaus kaki lima dolar ke kartu
+premiummu, lalu perhatikan sepuluh sen itu.
+
+92
+00:04:54,333 --> 00:04:57,912
+Perusahaan terminal menagih toko
+delapan belas setengah sen.
+
+93
+00:04:57,962 --> 00:05:01,480
+Interchange untuk bankmu saja
+sudah dua puluh setengah sen.
+
+94
+00:05:01,530 --> 00:05:05,289
+Tambah bagian Visa, perusahaan
+terminal tekor sekitar lima sen.
+
+95
+00:05:06,033 --> 00:05:09,782
+Tarif rata adalah taruhan bahwa
+penjualan besar akan menutup yang kecil.
+
+96
+00:05:09,832 --> 00:05:12,789
+Bagi toko, kaus kaki itu kena
+hampir empat persen, karena
+
+97
+00:05:12,839 --> 00:05:16,060
+potongan sen yang tetap terasa
+lebih berat di transaksi kecil.
+
+98
+00:05:17,533 --> 00:05:19,468
+Akhirnya gerobak sepatumu sampai.
+
+99
+00:05:19,518 --> 00:05:22,715
+Kamu ditagih seratus dolar, dan
+rekening toko menerima
+
+100
+00:05:22,765 --> 00:05:25,482
+sembilan puluh tujuh dolar
+dua puluh lima sen.
+
+101
+00:05:25,532 --> 00:05:27,947
+Jual seribu pasang seperti itu, uang yang
+
+102
+00:05:27,997 --> 00:05:30,533
+hilang setara harga dua
+puluh tujuh pasang.
+
+103
+00:05:32,000 --> 00:05:33,491
+Itulah seluruh perjalanannya.
+
+104
+00:05:33,541 --> 00:05:37,848
+Tetapi ada orang di peta ini yang ikut
+membayar tanpa pernah memakai kartu kredit.
+
+105
+00:05:38,567 --> 00:05:41,563
+Toko sering tidak memberi harga
+lebih murah untuk tunai.
+
+106
+00:05:41,613 --> 00:05:44,229
+Jadi tol kartu ikut
+dimasukkan ke harga di label.
+
+107
+00:05:44,967 --> 00:05:48,248
+Pria di belakangmu membayar
+sepatu yang sama dengan tunai.
+
+108
+00:05:48,298 --> 00:05:50,545
+Dia tidak mengirim gerobak ke jalan tol.
+
+109
+00:05:50,595 --> 00:05:54,623
+Dia tetap menanggung sebagian tol lewat
+harga, tanpa poin yang kembali.
+
+110
+00:05:55,367 --> 00:05:59,616
+Pada 2010, ekonom di Federal Reserve Boston
+memperkirakan besarnya perpindahan itu.
+
+111
+00:05:59,666 --> 00:06:03,761
+Rata-rata, satu rumah tangga yang tidak
+memakai kartu kredit menyalurkan sekitar
+
+112
+00:06:03,811 --> 00:06:06,973
+seratus lima puluh dolar per tahun
+ke rumah tangga pemakainya.
+
+113
+00:06:07,700 --> 00:06:10,575
+Belanja kartu dan hadiahnya
+cenderung naik seiring pendapatan.
+
+114
+00:06:10,625 --> 00:06:13,548
+Jadi setelah hadiah ikut dihitung
+pun, studi itu menemukan uang
+
+115
+00:06:13,598 --> 00:06:16,520
+bergeser dari rumah tangga
+berpendapatan rendah ke yang tinggi.
+
+116
+00:06:17,267 --> 00:06:20,654
+Supaya adil pada jalan tol ini,
+tolnya membeli sesuatu yang nyata.
+
+117
+00:06:20,704 --> 00:06:23,466
+Approval di video sebelumnya
+adalah janji dari bankmu,
+
+118
+00:06:23,516 --> 00:06:25,758
+sehingga toko bisa
+berjualan ke orang asing.
+
+119
+00:06:25,808 --> 00:06:30,081
+Toko juga lebih sedikit menghitung uang tunai
+dan lebih jarang kehabisan kembalian.
+
+120
+00:06:31,533 --> 00:06:34,017
+Lalu, seberapa murah tol seperti ini bisa?
+
+121
+00:06:34,067 --> 00:06:36,731
+Di Indonesia, sebagian
+jawabannya adalah nol.
+
+122
+00:06:37,467 --> 00:06:41,070
+Toko kecil di sana sering memajang
+kotak cetak bernama QRIS.
+
+123
+00:06:41,120 --> 00:06:45,637
+Itu standar kode QR nasional yang bisa
+dipindai aplikasi bank dan e-wallet.
+
+124
+00:06:46,367 --> 00:06:49,649
+Di sini, tarif tolnya ditetapkan
+bank sentral, Bank Indonesia.
+
+125
+00:06:49,699 --> 00:06:54,165
+Menurut aturannya, toko yang menanggung dan
+tidak boleh menambahkannya ke tagihanmu.
+
+126
+00:06:54,900 --> 00:06:59,472
+Sejak Oktober 2026, pembayaran QRIS
+sampai seratus ribu rupiah
+
+127
+00:06:59,522 --> 00:07:03,199
+tidak dikenai biaya bagi
+toko, besar maupun kecil.
+
+128
+00:07:03,249 --> 00:07:06,553
+Usaha mikro tetap nol
+sampai lima ratus ribu.
+
+129
+00:07:07,300 --> 00:07:10,543
+Di atas seratus ribu,
+usaha kecil, menengah,
+
+130
+00:07:10,593 --> 00:07:14,135
+atau besar kategori reguler
+membayar 0,7 persen.
+
+131
+00:07:14,185 --> 00:07:17,653
+Untuk tagihan satu juta
+rupiah, itu tujuh ribu.
+
+132
+00:07:18,400 --> 00:07:22,115
+Pasang tarif itu di penjualan seratus
+dolar, hasilnya tujuh puluh sen.
+
+133
+00:07:22,165 --> 00:07:25,827
+Di jalan tol kartu tadi, toko melepas
+dua dolar tujuh puluh lima sen.
+
+134
+00:07:26,567 --> 00:07:28,081
+Perbandingannya tidak sempurna.
+
+135
+00:07:28,131 --> 00:07:30,706
+Tol serendah ini menyisakan
+ruang lebih sempit untuk
+
+136
+00:07:30,756 --> 00:07:33,483
+hadiah besar, dan daftar
+tarifnya ditulis bank sentral.
+
+137
+00:07:34,933 --> 00:07:37,665
+Jadi dua dolar tujuh puluh lima
+sen tadi tidak lenyap.
+
+138
+00:07:37,715 --> 00:07:41,939
+Dua dolar dua puluh ke bankmu, dan sebagian
+bergulir kembali padamu sebagai hadiah.
+
+139
+00:07:41,989 --> 00:07:46,214
+Enam belas sen ke pemilik jalan, dan tiga
+puluh sembilan sen tinggal di pihak toko.
+
+140
+00:07:47,667 --> 00:07:51,211
+Dan label harga mungkin sudah
+memuat tol itu sebelum kamu tap.
+
+141
+00:07:51,261 --> 00:07:54,110
+Jadi lain kali toko
+menawarkan diskon tunai, lihat
+
+142
+00:07:54,160 --> 00:07:56,487
+itu sebagai jalan memutar dari jalan tol.
+
+143
+00:07:57,967 --> 00:08:00,172
+Berikutnya, video pendek
+soal dompet tertinggal,
+
+144
+00:08:00,222 --> 00:08:02,379
+cerita yang melambungkan
+sebuah kartu terkenal.
+
+145
+00:08:02,429 --> 00:08:06,044
+Orang yang mempromosikannya belakangan
+menulis bahwa dialah yang mengarangnya.

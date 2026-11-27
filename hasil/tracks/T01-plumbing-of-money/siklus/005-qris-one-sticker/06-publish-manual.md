@@ -6,7 +6,7 @@ Semua tayang **29 November 2026 (WIB)**: master 10.00, Short 1 12.00, Short 2 16
 
 ## Sebelum mengunggah
 - [ ] Tonton master dan kedua Short penuh dengan suara; baca ulang angka terhadap sumber.
-- [ ] **s16 (sekitar 2:35) menyebut "In our card video" dan $2.75 dari $100.** Video itu (002) belum tayang (dijadwalkan 14 Desember). Putuskan: tayangkan 002 lebih dulu, atau terima rujukan ke video yang belum ada.
+- [ ] s16 (sekitar 2:35) merujuk video 002 ($2.75 dari $100). 002 dijadwalkan 28 November; pastikan sudah tayang, lalu tautkan di card dan komentar pin.
 - [ ] Cek ketentuan ElevenLabs untuk pemakaian komersial suara, musik, dan efek.
 
 ## Setelan semua platform

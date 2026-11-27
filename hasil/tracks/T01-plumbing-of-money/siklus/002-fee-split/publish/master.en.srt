@@ -1,0 +1,702 @@
+1
+00:00:00,120 --> 00:00:02,669
+You tap your card for a
+hundred-dollar pair of shoes,
+
+2
+00:00:02,669 --> 00:00:04,038
+and four companies get paid.
+
+3
+00:00:04,038 --> 00:00:06,820
+The shop keeps ninety-seven
+dollars and twenty-five cents.
+
+4
+00:00:07,947 --> 00:00:08,487
+It's noon.
+
+5
+00:00:09,187 --> 00:00:11,847
+You hold a premium rewards
+card, the terminal beeps,
+
+6
+00:00:12,307 --> 00:00:14,227
+and for a second, nothing
+else seems to happen.
+
+7
+00:00:16,047 --> 00:00:19,186
+Behind that one tap, two
+seventy-five leaves the sale.
+
+8
+00:00:19,186 --> 00:00:23,298
+Two dollars twenty heads to your bank,
+and sixteen cents heads to Visa.
+
+9
+00:00:23,298 --> 00:00:27,407
+The last thirty-nine cents goes to the
+company running the card machine
+
+10
+00:00:27,407 --> 00:00:28,606
+and the shop's bank.
+
+11
+00:00:29,767 --> 00:00:32,207
+Here is the trip those
+coins take on one map.
+
+12
+00:00:32,787 --> 00:00:34,507
+Your money starts here at your bank.
+
+13
+00:00:35,647 --> 00:00:37,667
+It ends over there, at the shop's bank.
+
+14
+00:00:38,567 --> 00:00:40,167
+Card money doesn't drop into the till.
+
+15
+00:00:41,087 --> 00:00:44,747
+It reaches the shop's account later,
+often a day or more after the tap.
+
+16
+00:00:45,867 --> 00:00:49,673
+Picture your payment as a cart carrying
+one hundred coins down a toll road
+
+17
+00:00:49,673 --> 00:00:50,941
+between those two banks.
+
+18
+00:00:50,941 --> 00:00:52,767
+Each gate on that road keeps a few.
+
+19
+00:00:53,900 --> 00:00:56,882
+The company that runs the road
+is the card network,
+
+20
+00:00:56,882 --> 00:00:58,488
+such as Visa or Mastercard.
+
+21
+00:00:58,488 --> 00:01:02,731
+Together those two carry more than eighty
+percent of American credit card
+
+22
+00:01:02,731 --> 00:01:03,300
+spending.
+
+23
+00:01:04,453 --> 00:01:08,113
+The network sets the toll prices and
+passes every message between the banks.
+
+24
+00:01:08,913 --> 00:01:11,213
+Your coins stay in the hands of
+the banks at each end.
+
+25
+00:01:12,300 --> 00:01:14,905
+In a normal sale, the tolls
+come out of the cart,
+
+26
+00:01:14,905 --> 00:01:17,407
+so your statement still says
+a hundred dollars.
+
+27
+00:01:17,407 --> 00:01:19,438
+The shop is the one who receives less.
+
+28
+00:01:20,567 --> 00:01:23,687
+The shop agreed to that deal the day it
+put a card sticker on its door.
+
+29
+00:01:24,747 --> 00:01:26,687
+One more stop sits right next to the shop.
+
+30
+00:01:27,347 --> 00:01:30,387
+This business runs the card machine and
+talks to the road for the shop.
+
+31
+00:01:31,087 --> 00:01:32,327
+Call it the terminal company.
+
+32
+00:01:34,233 --> 00:01:36,293
+So four hands wait for
+coins from your cart.
+
+33
+00:01:37,173 --> 00:01:39,273
+Many people would guess that
+Visa grabs the most.
+
+34
+00:01:39,953 --> 00:01:42,553
+Of the slices we can price,
+Visa's is the smallest,
+
+35
+00:01:42,873 --> 00:01:44,293
+and your own bank takes the biggest.
+
+36
+00:01:45,367 --> 00:01:47,789
+The first coins never leave
+your side of town.
+
+37
+00:01:47,789 --> 00:01:51,810
+When your bank pays toward the shop, it
+sends ninety-seven dollars and eighty
+
+38
+00:01:51,810 --> 00:01:52,171
+cents.
+
+39
+00:01:52,171 --> 00:01:53,867
+Two dollars twenty stays behind.
+
+40
+00:01:55,020 --> 00:01:59,700
+That cut is called interchange: a fee the
+shop's side pays your bank whenever
+
+41
+00:01:59,700 --> 00:02:00,780
+its card is used.
+
+42
+00:02:00,780 --> 00:02:04,200
+On a sale like this one, it is
+by far the largest slice.
+
+43
+00:02:05,333 --> 00:02:06,293
+The price is public.
+
+44
+00:02:06,853 --> 00:02:09,793
+Visa prints it in a long
+table, sorted by card type,
+
+45
+00:02:10,193 --> 00:02:13,673
+by kind of shop, and by whether the
+card was tapped or typed in.
+
+46
+00:02:14,713 --> 00:02:19,127
+At the standard store rate, a basic
+credit card costs one point five one
+
+47
+00:02:19,127 --> 00:02:20,577
+percent plus ten cents.
+
+48
+00:02:20,577 --> 00:02:23,173
+On your shoes, that is a dollar sixty-one.
+
+49
+00:02:24,333 --> 00:02:29,156
+Swap in your premium rewards card, and the
+rate becomes two point one percent
+
+50
+00:02:29,156 --> 00:02:30,145
+plus ten cents.
+
+51
+00:02:30,145 --> 00:02:34,040
+Same shoes, same shop, and now the
+toll is two dollars twenty.
+
+52
+00:02:34,040 --> 00:02:37,008
+Some small businesses
+qualify for cheaper rows,
+
+53
+00:02:37,008 --> 00:02:39,604
+but our shoe store pays the standard one.
+
+54
+00:02:41,520 --> 00:02:43,480
+Why would your bank like
+the shop to pay more?
+
+55
+00:02:43,980 --> 00:02:46,140
+You need to know something
+about how your bank earns.
+
+56
+00:02:47,233 --> 00:02:49,333
+Say you pay your card off
+in full every month,
+
+57
+00:02:50,193 --> 00:02:52,293
+then your bank collects no
+interest on your shopping.
+
+58
+00:02:53,093 --> 00:02:57,193
+For customers like that, the fee on each
+tap is one of the main ways the
+
+59
+00:02:57,233 --> 00:02:57,993
+bank gets paid.
+
+60
+00:02:59,067 --> 00:03:01,347
+So banks fight for the top
+spot in your wallet,
+
+61
+00:03:01,867 --> 00:03:03,687
+and that same fee helps pay for the fight.
+
+62
+00:03:04,567 --> 00:03:06,727
+Points, miles, cashback.
+
+63
+00:03:07,907 --> 00:03:11,767
+A premium card promises more of them,
+and it carries a higher toll.
+
+64
+00:03:12,833 --> 00:03:15,559
+Say your card pays one and a
+half percent back.
+
+65
+00:03:15,559 --> 00:03:19,193
+A dollar fifty of that two-twenty
+rolls home to you as rewards.
+
+66
+00:03:19,193 --> 00:03:21,293
+Your bank holds on to seventy cents.
+
+67
+00:03:22,433 --> 00:03:23,633
+Look where those rewards started.
+
+68
+00:03:24,173 --> 00:03:26,133
+They came out of the cart that
+was headed for the shop.
+
+69
+00:03:27,200 --> 00:03:29,392
+Now the cart reaches the middle gate.
+
+70
+00:03:29,392 --> 00:03:33,025
+Visa bills the shop's side point
+one four percent of the sale,
+
+71
+00:03:33,025 --> 00:03:36,255
+plus about two cents for
+handling the approval request.
+
+72
+00:03:36,255 --> 00:03:38,158
+Together, that is sixteen cents.
+
+73
+00:03:40,013 --> 00:03:43,365
+Sixteen cents looks tiny, so
+zoom all the way out.
+
+74
+00:03:43,365 --> 00:03:48,097
+In 2025, Visa and Mastercard cards
+issued in America carried almost ten
+
+75
+00:03:48,097 --> 00:03:50,133
+trillion dollars of purchases.
+
+76
+00:03:51,200 --> 00:03:52,840
+The last stop is beside the shop.
+
+77
+00:03:53,700 --> 00:03:56,300
+Many small shops never deal with
+each party on this road.
+
+78
+00:03:56,920 --> 00:04:00,880
+They pay the terminal company one flat
+price, and it settles up with everyone
+
+79
+00:04:00,940 --> 00:04:01,180
+else.
+
+80
+00:04:02,373 --> 00:04:06,909
+Stripe, one such company, lists two
+point seven percent plus five cents
+
+81
+00:04:06,909 --> 00:04:08,359
+for an in-person card.
+
+82
+00:04:08,359 --> 00:04:11,573
+On your hundred dollars, that
+is two seventy-five.
+
+83
+00:04:11,573 --> 00:04:13,526
+The shop sees one clean price.
+
+84
+00:04:14,627 --> 00:04:18,007
+Out of that, your bank's two-twenty and
+Visa's sixteen cents get paid.
+
+85
+00:04:19,100 --> 00:04:21,798
+The thirty-nine cents left
+over is the markup,
+
+86
+00:04:21,798 --> 00:04:24,784
+the price the shop's side
+charges for its own work.
+
+87
+00:04:24,784 --> 00:04:27,712
+The terminal company and the
+shop's bank share it,
+
+88
+00:04:27,712 --> 00:04:30,007
+and their split isn't on the price tag.
+
+89
+00:04:30,007 --> 00:04:33,560
+This is the part that shopping
+around or bargaining can move.
+
+90
+00:04:34,700 --> 00:04:36,508
+Now swap the basic card back in.
+
+91
+00:04:36,508 --> 00:04:40,180
+The shop still pays two seventy-five,
+but your bank's slice drops.
+
+92
+00:04:40,180 --> 00:04:43,740
+The shop's side keeps ninety-eight
+cents instead of thirty-nine.
+
+93
+00:04:45,613 --> 00:04:48,883
+A flat price can even backfire on
+the company charging it.
+
+94
+00:04:48,883 --> 00:04:51,929
+Sell a five-dollar pair of
+socks to your premium card,
+
+95
+00:04:51,929 --> 00:04:53,313
+and watch the ten cents.
+
+96
+00:04:54,433 --> 00:04:58,015
+The terminal company charges the
+shop eighteen and a half cents.
+
+97
+00:04:58,015 --> 00:05:00,881
+Your bank's interchange alone
+is twenty and a half.
+
+98
+00:05:00,881 --> 00:05:05,013
+Add Visa's share, and the terminal
+company ends up about five cents short.
+
+99
+00:05:06,113 --> 00:05:09,876
+A flat price is a bet that bigger
+sales will cover the small ones.
+
+100
+00:05:09,876 --> 00:05:12,797
+For the shop, those socks cost
+almost four percent,
+
+101
+00:05:12,797 --> 00:05:15,713
+because the fixed cents bite
+harder on a tiny sale.
+
+102
+00:05:17,633 --> 00:05:19,200
+So your shoe cart arrives.
+
+103
+00:05:19,200 --> 00:05:24,020
+You were charged one hundred dollars, and the
+shop's account receives ninety-seven
+
+104
+00:05:24,020 --> 00:05:24,775
+twenty-five.
+
+105
+00:05:24,775 --> 00:05:29,069
+Sell a thousand pairs that way, and the
+missing money equals the price of
+
+106
+00:05:29,069 --> 00:05:30,230
+twenty-seven pairs.
+
+107
+00:05:32,100 --> 00:05:32,960
+That is the whole trip.
+
+108
+00:05:34,120 --> 00:05:37,320
+Yet someone on this map helps pay for it
+without using a credit card at
+
+109
+00:05:37,400 --> 00:05:37,560
+all.
+
+110
+00:05:38,647 --> 00:05:42,947
+Shops often don't charge less for cash,
+so the card toll gets built into
+
+111
+00:05:42,987 --> 00:05:43,927
+the price on the tag.
+
+112
+00:05:45,067 --> 00:05:47,727
+The man behind you hands over
+cash for the same shoes.
+
+113
+00:05:48,207 --> 00:05:49,667
+He sends no cart down the road.
+
+114
+00:05:50,547 --> 00:05:52,587
+He still covers part of the
+toll through the price,
+
+115
+00:05:52,987 --> 00:05:54,347
+and no points come back to him.
+
+116
+00:05:55,447 --> 00:05:59,593
+In 2010, economists at the Boston Fed
+estimated the size of that handover.
+
+117
+00:05:59,593 --> 00:06:03,629
+On average, a household that skipped
+credit cards passed about a hundred
+
+118
+00:06:03,629 --> 00:06:06,667
+and fifty dollars a year to
+households that used them.
+
+119
+00:06:07,800 --> 00:06:10,380
+Card spending and rewards tend
+to rise with income.
+
+120
+00:06:10,940 --> 00:06:14,560
+So even after counting rewards, the study
+found money moving from lower-income
+
+121
+00:06:14,620 --> 00:06:16,300
+households to higher-income ones.
+
+122
+00:06:17,347 --> 00:06:19,627
+To be fair to the road, the
+toll buys something real.
+
+123
+00:06:20,587 --> 00:06:23,227
+The approval from our last video
+was a promise from your bank,
+
+124
+00:06:23,767 --> 00:06:25,367
+so the shop can sell to a stranger.
+
+125
+00:06:26,287 --> 00:06:29,787
+The shop also has less cash to count
+and less change to run out of.
+
+126
+00:06:31,633 --> 00:06:33,393
+So how low can a toll like this go?
+
+127
+00:06:34,213 --> 00:06:36,413
+In Indonesia, part of the answer is zero.
+
+128
+00:06:37,567 --> 00:06:41,056
+Small shops there often show a
+printed square called QRIS.
+
+129
+00:06:41,056 --> 00:06:45,367
+It is a national QR code standard that
+bank apps and e-wallets can scan.
+
+130
+00:06:46,467 --> 00:06:49,507
+Here, the central bank, Bank
+Indonesia, sets the toll.
+
+131
+00:06:50,487 --> 00:06:53,887
+Under its rules, the shop pays it and
+may not add it to your bill.
+
+132
+00:06:55,000 --> 00:06:59,788
+Since October 2026, a QRIS payment up to a
+hundred thousand rupiah has cost
+
+133
+00:06:59,788 --> 00:07:01,993
+shops no fee, whatever their size.
+
+134
+00:07:01,993 --> 00:07:06,214
+The tiniest businesses keep that zero
+up to five hundred thousand.
+
+135
+00:07:07,380 --> 00:07:12,042
+Above a hundred thousand, a regular
+small, medium or large business pays
+
+136
+00:07:12,042 --> 00:07:13,702
+zero point seven percent.
+
+137
+00:07:13,702 --> 00:07:17,340
+On a bill of one million rupiah,
+that is seven thousand.
+
+138
+00:07:18,480 --> 00:07:22,422
+Put that rate on a hundred-dollar
+sale, and you get seventy cents.
+
+139
+00:07:22,422 --> 00:07:25,540
+On the card road, the shop
+gave up two seventy-five.
+
+140
+00:07:26,667 --> 00:07:28,067
+The comparison isn't perfect.
+
+141
+00:07:28,607 --> 00:07:31,047
+A toll this low leaves less
+room for rich rewards,
+
+142
+00:07:31,387 --> 00:07:33,207
+and a central bank writes the price list.
+
+143
+00:07:35,033 --> 00:07:37,241
+So your two seventy-five never vanished.
+
+144
+00:07:37,241 --> 00:07:41,441
+Two dollars twenty went to your bank, and
+some rolled back to you as rewards.
+
+145
+00:07:41,441 --> 00:07:45,587
+Sixteen cents went to the road's owner,
+and thirty-nine stayed on the shop's
+
+146
+00:07:45,587 --> 00:07:45,910
+side.
+
+147
+00:07:47,747 --> 00:07:50,467
+And the tag may have carried the
+toll before you ever tapped.
+
+148
+00:07:51,367 --> 00:07:55,627
+So next time a shop offers a cash
+discount, look at it as a way around the
+
+149
+00:07:55,687 --> 00:07:56,207
+toll road.
+
+150
+00:07:58,067 --> 00:08:02,026
+Next, a short one about a forgotten
+wallet, the story that launched a famous
+
+151
+00:08:02,087 --> 00:08:02,407
+card.
+
+152
+00:08:03,307 --> 00:08:05,747
+The man who promoted it later
+wrote that he invented it.
