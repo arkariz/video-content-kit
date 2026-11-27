@@ -140,3 +140,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Narasi dan subtitle ID s38 siklus 004 disamakan dengan EN (sekitar 42 triliun). s28 dan s31 dicek ke sumber dan tidak diubah.
 - 2026-11-27: Teks rilis 003 dilengkapi atas permintaan kreator (06-teks-rilis.json: komentar dan terjemahan Indonesia). Belum diterapkan di YouTube.
 - 2026-11-27: Teks Facebook 003 dilengkapi atas permintaan kreator. Master YouTube v324n50hfpM tidak ditemukan lagi di channel (dua Short masih terjadwal 28 Nov 03.00 dan 06.30 WIB); jadwal master di rencana diubah kreator menjadi 10.00.
+- 2026-11-27: Dokumen publish 004 dilengkapi atas permintaan kreator: teks Facebook (3 konten), caption Instagram/TikTok untuk 2 Shorts, tautan sumber ganda di terjemahan Indonesia dihapus. Jadwal kosong; belum disetujui atau dikirim; cek fakta belum dilakukan.

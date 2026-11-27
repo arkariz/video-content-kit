@@ -1,6 +1,6 @@
 # Unggah manual: T02 siklus 004
 
-Dibuat otomatis 2026-11-26. **Belum ada yang dikirim ke platform.** QA anti-slop manual belum dijalankan.
+Dibuat otomatis 2026-11-26. **Belum ada yang dikirim ke platform.** `05-qa.md` mencatat LULUS atas keputusan kreator (2026-11-27) tanpa pemeriksaan; QA anti-slop manual dan cek fakta belum dilakukan.
 
 ## Cek sebelum mengunggah
 - [ ] Tonton master dan Shorts penuh dengan suara.
@@ -9,7 +9,7 @@ Dibuat otomatis 2026-11-26. **Belum ada yang dikirim ke platform.** QA anti-slop
 - [ ] Cek ulang status terbaru: tersangka korporasi, sanggahan perusahaan, dan putusan sebelum tayang.
 - [ ] Di luar paket uji V2 dan menyentuh isu berjalan (TRACK.md "Tidak akan dibahas").
 - [ ] Dengar pengucapan nama: Bumitama, Surya Darmadi, Jambi, Riau, Sawit Watch, PT MAS.
-- [ ] Label konten sintetis: ya (suara dan musik AI).
+- [ ] Suara dan musik buatan AI. Sesuai keputusan 2026-11-27, alat rilis tidak mengirim label AI; nilai perlu tidaknya diisi di Studio atau Business Suite.
 - [ ] Musik latar dipakai ulang dari T01 siklus 004 (ElevenLabs Music); cek ketentuan komersialnya.
 
 ## Long-form
@@ -66,3 +66,40 @@ Tag: Indonesia fires, karhutla, haze, peatland, palm oil, Borneo, Sumatra, defor
 - Judul: Courts ruled. Did anyone pay?
 - URL tayang:
 
+## Instagram Reels dan TikTok (manual, Shorts saja)
+
+Tautan ke video lengkap lewat bio atau stiker Story; URL tidak ditulis di caption.
+
+### Caption B1
+
+Berkas `Short9x16-B1-why-peat-burns-en.mp4`.
+
+```text
+Wet peat is hard to light. Canals pull the water out, and the peat dries from the top down. A 2025 study of Sumatra and Borneo found up to thirteen times more fire hotspots per square kilometre on drained peat.
+
+Narration uses a synthetic voice.
+
+#Indonesiafires #karhutla #haze #peatland #Indonesia
+
+Is there drained peatland near where you live? What happens to it in the dry season?
+```
+
+- URL Instagram:
+- URL TikTok:
+
+### Caption B2
+
+Berkas `Short9x16-B2-fines-never-paid-en.mp4`.
+
+```text
+As of 2021, more than 3.4 trillion rupiah in final court awards against fire-linked firms had not reached the treasury.
+
+Narration uses a synthetic voice.
+
+#Indonesiafires #karhutla #haze #Indonesia
+
+What do you think it would take for court-ordered fire fines to actually get paid?
+```
+
+- URL Instagram:
+- URL TikTok:
