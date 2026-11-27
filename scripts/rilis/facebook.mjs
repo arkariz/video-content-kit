@@ -173,7 +173,8 @@ export function lupakanTerhapus(c, { log = console.log } = {}) {
 
 // ---------- Menghubungkan Page (dipicu kreator dari dashboard) ----------
 let calon = null; // token Page sementara di memori sampai kreator memilih
-export const pilihan = () => (calon ? { track: calon.track, pages: calon.pages.map((p) => ({ id: p.id, nama: p.name })) } : null);
+export const IZIN_WAJIB = ["pages_show_list", "pages_read_engagement", "pages_manage_posts", "pages_manage_engagement"]; // terakhir: komentar
+export const pilihan = () => (calon ? { track: calon.track, kurang: calon.kurang, pages: calon.pages.map((p) => ({ id: p.id, nama: p.name })) } : null);
 export async function cariPage({ track, appId, appSecret, token }) {
   if (!/^T\d\d$/.test(track)) throw new Error("track tidak sah");
   if (!/^\d+$/.test(String(appId ?? "").trim()) || !appSecret || !token) throw new Error("isi App ID (angka), App Secret, dan User Access Token");
@@ -182,7 +183,10 @@ export async function cariPage({ track, appId, appSecret, token }) {
   const pages = (await minta(`${GRAPH}/me/accounts?${new URLSearchParams({ fields: "id,name,access_token,tasks", limit: "100" })}`, { headers: { Authorization: `Bearer ${panjang}` } })).data ?? [];
   const bisa = pages.filter((p) => p.access_token && (!p.tasks || p.tasks.includes("CREATE_CONTENT")));
   if (!bisa.length) throw new Error("tidak ada Page yang bisa kamu isi kontennya; pastikan Page dipilih dan semua izin dicentang saat membuat token");
-  calon = { track, pages: bisa };
+  // Izin yang tidak dicentang baru ketahuan saat dipakai, jadi diperiksa sekarang.
+  const izin = (await minta(`${GRAPH}/me/permissions`, { headers: { Authorization: `Bearer ${panjang}` } })).data ?? [];
+  const kurang = IZIN_WAJIB.filter((n) => !izin.some((x) => x.permission === n && x.status === "granted"));
+  calon = { track, pages: bisa, kurang };
   return pilihan();
 }
 /** Tulis variabel ke .env tanpa menyentuh baris lain. */

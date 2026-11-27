@@ -55,6 +55,7 @@ function facebookTiruan(u, m, init) {
   const p = u.pathname.replace(/^\/(video-upload\/)?v27\.0\//, ""); fbt.panggilan.push(`${m} ${u.hostname} ${p}`);
   const isi = init.body instanceof FormData || init.body instanceof URLSearchParams ? Object.fromEntries(init.body) : {};
   if (p === "oauth/access_token") return j({ access_token: "panjang" });
+  if (p === "me/permissions") return j({ data: ["pages_show_list", "pages_read_engagement", "pages_manage_posts"].map((permission) => ({ permission, status: "granted" })) });
   if (p === "me/accounts") return j({ data: [{ id: "900", name: "Page Uji", access_token: "tokenPage", tasks: ["CREATE_CONTENT"] }] });
   assert.ok(!u.search.includes("access_token"), "token tidak boleh ada di URL");
   if (u.hostname === "rupload.facebook.com") { fbt.video[p].diterima = +init.headers.offset + init.body.length; fbt.video[p].total = +init.headers.file_size; return j({ success: true }); }
@@ -238,7 +239,7 @@ try {
   await uji("Facebook: hubungkan Page tanpa menyimpan App Secret", async () => {
     const F = await import("./facebook.mjs"); const env = path.join(R, "env-uji"); fs.writeFileSync(env, "LAIN=1\n");
     await assert.rejects(F.cariPage({ track: "T09", appId: "abc", appSecret: "r", token: "t" }), /App ID/);
-    const v = await F.cariPage({ track: "T09", appId: "123", appSecret: "rahasia", token: "pendek" }); assert.deepEqual(v.pages, [{ id: "900", nama: "Page Uji" }]);
+    const v = await F.cariPage({ track: "T09", appId: "123", appSecret: "rahasia", token: "pendek" }); assert.deepEqual(v.pages, [{ id: "900", nama: "Page Uji" }]); assert.deepEqual(v.kurang, ["pages_manage_engagement"]);
     F.pilihPage("900", env); const isi = fs.readFileSync(env, "utf8"); assert.match(isi, /LAIN=1\nFACEBOOK_PAGE_ID_T09=900\nFACEBOOK_PAGE_TOKEN_T09=tokenPage/); assert.ok(!/rahasia|pendek|panjang/.test(isi)); assert.equal(F.pilihan(), null);
   });
   await uji("Facebook: jadwal, unggah master dan Reel, subtitle, sekali saja", async () => {

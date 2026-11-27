@@ -255,6 +255,7 @@ function halamanIsi(d) {
 /** Menghubungkan Page: isian sekali pakai, tidak disimpan di browser; hanya token Page yang ditulis ke .env. */
 function formPage(d, pilihanPage) {
   if (pilihanPage?.track === d.track) return h("div", { class: "catatan" }, h("div", {}, `Pilih Page untuk ${d.track} (${d.channel}):`),
+    pilihanPage.kurang?.length ? h("div", { class: "catatan gagal" }, `Token ini tidak punya izin: ${pilihanPage.kurang.join(", ")}. Sebagian tombol akan gagal. Tambahkan izinnya di use case aplikasi, buat token baru, lalu ulangi.`) : null,
     h("div", { class: "baris" }, pilihanPage.pages.map((p) => h("button", { onclick: () => confirm(`Simpan Page "${p.nama}" untuk ${d.track}?`) && sistem({ aksi: "fb-pilih", page: p.id }) }, p.nama)), h("button", { onclick: () => sistem({ aksi: "fb-batal" }) }, "Batal")));
   const isian = (label, tipe) => h("input", { type: tipe, placeholder: label, "aria-label": label, autocomplete: "off", spellcheck: "false" });
   const id = isian("App ID", "text"), rahasia = isian("App Secret", "password"), token = isian("User Access Token (dari Graph API Explorer)", "password");
