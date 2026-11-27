@@ -147,3 +147,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Uji penuh alat rilis pada 005 berhasil: 3 video tayang sesuai jadwal (14.10-14.12 WIB) dan komentar pertama terposting. Video uji akan dihapus kreator; setelah itu catatan unggah di 06-rilis.json perlu direset.
 - 2026-11-27: Semua video uji 005 dihapus kreator di Studio; catatan unggah dan persetujuan direset, jadwal dikembalikan ke 29 November 10.00, 12.00, 16.00 WIB. Belum disetujui ulang.
 - 2026-11-27: Status disesuaikan dengan platform atas permintaan kreator: 004 tayang 2026-11-27 (di luar V2); 002 terjadwal 28 Nov.
+- 2026-11-27: Dokumen rilis 005 dilengkapi: 06-teks-rilis.json (teks Facebook tanpa tautan YouTube, komentar Short menaut ke master Facebook) diterapkan ke 06-rilis.json; panduan unggah disesuaikan (Facebook dinyalakan di alat rilis, label AI diisi manual, 05-qa.md belum ada). Belum disetujui dan belum dikirim.

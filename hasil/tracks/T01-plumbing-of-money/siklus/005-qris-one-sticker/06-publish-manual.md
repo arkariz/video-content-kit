@@ -2,17 +2,19 @@
 
 Semua tayang **29 November 2026 (WIB)**: master 10.00, Short 1 12.00, Short 2 16.00. Isi kolom URL setelah tayang, lalu kirim ke agent untuk dicatat.
 
-**Diubah 2026-11-27 atas keputusan kreator: YouTube (master dan 2 Short) diunggah terjadwal lewat alat rilis (`06-rilis.json`). Jangan unggah YouTube secara manual.** Facebook, Instagram, dan TikTok tetap manual.
+**Diubah 2026-11-27 atas keputusan kreator: YouTube (master dan 2 Short) diunggah terjadwal lewat alat rilis (`06-rilis.json`). Jangan unggah YouTube secara manual.** Facebook juga dinyalakan di alat rilis untuk siklus ini (`facebook.aktif`): kirim lewat tombol di dashboard dan jangan unggah dobel. Bagian Facebook di bawah dipakai bila Facebook dimatikan lalu diunggah manual. Instagram dan TikTok tetap manual.
 
 **Jangan jalankan `approve.mjs` / `publish.mjs send` untuk siklus ini**, supaya tidak terunggah dua kali.
 
 ## Sebelum mengunggah
+`05-qa.md` (QA anti-slop manual) belum ada untuk siklus ini. QA otomatis: LULUS-OTOMATIS, bukan LULUS final.
+
 - [ ] Tonton master dan kedua Short penuh dengan suara; baca ulang angka terhadap sumber.
 - [ ] s16 (sekitar 2:35) merujuk video 002 ($2.75 dari $100). 002 dijadwalkan 28 November; pastikan sudah tayang, lalu tautkan di card dan komentar pin.
 - [ ] Cek ketentuan ElevenLabs untuk pemakaian komersial suara, musik, dan efek.
 
 ## Setelan semua platform
-- Label konten AI: **nyalakan** (YouTube "Altered or synthetic content", Instagram/Facebook "AI info", TikTok "AI-generated content"). Pilihan konservatif karena narasinya suara sintetis.
+- Label konten AI: **nyalakan** (YouTube "Altered or synthetic content", Instagram/Facebook "AI info", TikTok "AI-generated content"). Pilihan konservatif karena narasinya suara sintetis. Alat rilis tidak mengirim label ini (keputusan 2026-11-27): untuk YouTube dan Facebook, isi di Studio atau Business Suite.
 - Tanpa tambahan musik dari pustaka platform. Tanpa logo QRIS, bank, atau aplikasi di sampul dan komentar.
 - Hashtag: pakai persis yang tertulis (Instagram maksimal 5).
 - Short diunggah langsung ke tiap platform dari file asli (tanpa watermark platform lain).
@@ -117,9 +119,42 @@ Indonesia's QRIS: One Sticker, 72 Million Users
 - Teks:
 
 ```text
-You scan a paper square at a noodle stall in Bali. Two seconds later, it's paid. Here's what happens in between, why small shops pay almost nothing, and how the same sticker takes money from other countries.
+You scan a paper square at a noodle stall in Bali. Two seconds later, it's paid. Here's what happens in between, why small shops pay almost nothing, and how the same sticker takes money from other countries without dollars.
+
+Narration, music and sound effects are AI-generated. Visuals are original animation. Not affiliated with Bank Indonesia or any payment company.
+
+Sources:
+https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx
+https://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober
+https://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris
+https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx
+https://developers.bri.co.id/en/product/qris
+https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx
+https://mvallim.github.io/emv-qrcode/docs/EMVCo-Merchant-Presented-QR-Specification-v1-1.pdf
+https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm
+https://finansial.bisnis.com/read/20240430/11/1761523/biaya-qris-usaha-mikro-03-bi-tegaskan-merchant-tak-tarik-tarif-ke-konsumen
+https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx
+https://katadata.co.id/finansial/makro/6adf27d2abe9d/bi-ingin-transaksi-qris-jadi-acuan-penilaian-kredit-umkm
+https://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat
+https://bali.antaranews.com/berita/411917/qris-dipakai-6577-juta-pengguna-dan-diterima-4486-juta-gerai
+https://www.thejakartapost.com/opinion/2025/05/03/analysis-us-cites-qris-as-trade-barrier-but-us-payment-model-unfit-for-indonesia.html
+https://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html
+https://theconversation.com/us-labels-qris-a-trade-barrier-whats-next-for-indonesias-digital-payment-system-257616
+https://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia
+https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx
+https://katadata.co.id/finansial/keuangan/6ab45ea47d41e/turis-asing-dominasi-transaksi-qris-antarnegara-catat-17-8-juta-transaksi
+https://www.cnbcindonesia.com/market/20260619104014-17-743982/transaksi-qris-turis-asing-capai-rp43-t-malaysia-singapura-terbanyak
+https://www.thestar.com.my/business/business-news/2025/08/21/qris-launches-in-japan-as-trial-begins-for-expansion-to-china
+https://www.arabnews.com/node/2652151/amp
+https://www.bis.org/project/nexus
 
 #QRIS #Indonesia #Fintech
+```
+
+- Komentar pin:
+
+```text
+One scan, four players: your app, the switch, the stall's bank, and the central bank's rulebook. Which step surprised you?
 ```
 - URL Facebook: 
 
@@ -180,7 +215,15 @@ QRIS isn't an app. It's a rulebook.
 
 QRIS isn't something you download. It's the rulebook for how Indonesia's payment code is written and how providers connect.
 
+Narration and animation made with AI tools.
+
 #QRIS #Indonesia #Fintech
+```
+
+Komentar pin (ganti `{master}` dengan URL master di Facebook):
+
+```text
+Is there one QR code like this where you live? Full video: {master}
 ```
 
 ### TikTok
@@ -255,7 +298,15 @@ A Thai tourist pays a Bali stall. No dollars involved.
 
 A Thai tourist scans an Indonesian QRIS code in Bali. The money goes from baht to rupiah without being turned into US dollars.
 
+Narration and animation made with AI tools.
+
 #QRIS #Bali #Thailand
+```
+
+Komentar pin (ganti `{master}` dengan URL master di Facebook):
+
+```text
+Have you paid abroad with your home banking app? Full video: {master}
 ```
 
 ### TikTok
