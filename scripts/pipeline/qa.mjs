@@ -1,7 +1,7 @@
 // QA otomatis (bagian terprogram dari instruksi/06-qa-anti-slop.md). Menulis 05-qa.auto.json dan 05-qa.auto.md.
 // Satu temuan kritis = GAGAL. Item yang butuh manusia ditandai "manual", tidak pernah dianggap lulus.
 import fs from "node:fs"; import path from "node:path";
-import { ROOT, args, resolveCycle, readJson, pauseSec } from "../produksi/lib.mjs"; import { cekR3 } from "./qa-r3.mjs";
+import { ROOT, args, resolveCycle, readJson, pauseSec } from "../produksi/lib.mjs"; import { cekR3 } from "./qa-r3.mjs"; import { cekKemasan } from "./kemasan.mjs";
 const o = args(); const { dir, scriptPath, assetsPath } = resolveCycle(o.track, o.siklus);
 const script = readJson(scriptPath), stage = readJson(path.join(dir, "04-stage.json"), {}), vspec = readJson(path.join(dir, "04-visual-spec.json"), {}), assets = readJson(assetsPath, { footage: [] });
 const trackDir = path.dirname(path.dirname(dir)); const trackMd = fs.readFileSync(path.join(trackDir, "TRACK.md"), "utf8");
@@ -71,6 +71,8 @@ if (ownEarly.length) add("Visual/Channel", "kecil", "K1", `bukti kreator: footag
 else if (!exceptions.includes("bukti-kreator")) add("Visual/Channel", "kritis", "K1", "tidak ada bukti nyata kreator di layar", "rekam bukti, atau catat pengecualian di TRACK.md (pengecualian_qa)");
 else add("Visual/Channel", "sedang", "K1", "bukti nyata kreator tidak ada; DIPERBOLEHKAN oleh pengecualian kreator (pengecualian_qa)", "tetap tercatat di laporan; kreator memikul risiko kebijakan konten AI");
 // manual
+// kemasan: lint judul + thumbnail (title.py, saran) dan aturan chapter YouTube
+for (const f of cekKemasan(script)) F.push(f);
 const manual = ["Dengarkan audio: nada, artefak TTS, pengucapan istilah (kemunculan pertama)", "Tonton master dan Shorts: irama, kecepatan animasi, bubble tidak menutup isi", "Periksa fakta tiap klaim terhadap sumber", "Setujui thumbnail dan judul"];
 
 const crit = F.filter((f) => f.level === "kritis"); const verdict = crit.length ? "GAGAL" : "LULUS-OTOMATIS (menunggu pemeriksaan manual)";

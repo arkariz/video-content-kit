@@ -23,7 +23,26 @@ Urutan prioritas: YouTube Analytics API kalau tersedia, lalu export CSV dari You
 | Watch time, sends per reach | Instagram Reels | Tren naik |
 | Subscriber dari video | YouTube | Dicatat |
 
-## Tulis pelajaran
+### Grafik retensi (long-form dan Shorts)
+
+Langkahnya:
+1. Ekspor data dari YouTube Studio: Analytics → video → Engagement → grafik Audience retention → ikon unduh → "Audience retention" (CSV).
+2. Jalankan:
+
+```
+node scripts/pipeline/retensi.mjs --track <ID> --siklus <NNN> --csv <file.csv> [--cut <nama Short>]
+```
+
+Hasilnya `analitik/retensi-<siklus>-<tanggal>.md`, berisi:
+- **hook leak:** berapa persen penonton hilang di pembukaan;
+- **cliff:** titik penonton jatuh tajam, lengkap dengan kalimat narasi yang sedang diucapkan (diambil dari caption kita);
+- **slide:** laju penurunan di bagian tengah.
+
+Alat bawaannya adalah `retention.py` dari youtube-agent-skill (MIT, `scripts/vendor/`).
+
+Tulis satu aturan yang bisa diuji di bagian akhir laporan itu, lalu bawa ke `learnings.md`. Ini menggantikan pencatatan titik drop secara manual pada tabel di atas.
+
+
 
 1. Bandingkan dengan target dan dengan 3 video sebelumnya.
 2. Hubungkan angka ke keputusan di naskah: hook yang dipakai, struktur, durasi, judul.
