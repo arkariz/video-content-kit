@@ -234,6 +234,10 @@ Digambar dengan `produksi/remotion/src/r3/soft/kit.tsx` di `04-shots.tsx` siklus
 | network | jaringan kartu | menara pengawas berlampu sorot, tanpa logo |
 | terminal | perusahaan terminal | server berheadset |
 | cash | pembayar tunai | badan bulat ungu, topi pet, uang kertas |
+| switch | lembaga switch (penerus pesan pembayaran) | stasiun bundar logam biru malam, tiga kumparan kabel tembaga di atap, meja putar berpanah di dalam (disetujui bersama naskah 005, 2026-11-27) |
+| yourapp | aplikasi pembayaran pembeli | menara tinggi berbentuk ponsel, fasad layar bercahaya, jarum ukur saldo di atap, pintu tirai toko (005) |
+| tourist | turis dari negara mitra | badan kapsul biru muda, topi pantai lebar krem, tas selempang, ponsel kuning (005) |
+| centralbank | bank sentral | gedung krem berkubah bertiang, pintu tinggi berbentuk pelat stopkontak, tanpa lambang lembaga nyata (005) |
 
 ### 9.3 Pemeran T02
 | Tokoh | Peran | Status |

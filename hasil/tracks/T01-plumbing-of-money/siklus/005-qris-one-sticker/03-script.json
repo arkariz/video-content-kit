@@ -60,7 +60,11 @@
   "you",
   "owner",
   "bank",
-  "network"
+  "network",
+  "switch",
+  "yourapp",
+  "tourist",
+  "centralbank"
  ],
  "ip_rules": "No official QRIS logo, no bank, e-wallet, Visa or Mastercard logos or brand colours, no real app screens, no real scannable QR codes, no official Bank Indonesia or US government buildings or seals. 'QRIS', 'Visa', 'Mastercard' only in narration and plain channel lettering.",
  "visual_spec": "03-visual.json",
@@ -754,7 +758,10 @@
      "show": "inside the round station: the envelope sits on a turntable that rotates until its arrow points at the right-hand road",
      "scale": "inside",
      "motion": "turntable clicks round three notches, envelope slides off onto the right road",
-     "transition": "push"
+     "transition": "push",
+     "faces": {
+      "switch": "neutral"
+     }
     },
     {
      "sentence": 2,
@@ -1040,6 +1047,7 @@
      "motion": "the three buildings lean in, the tray rattles with one small coin",
      "transition": "cut",
      "faces": {
+      "switch": "tired",
       "bank": "neutral"
      }
     },
@@ -1142,6 +1150,7 @@
      "motion": "door slides up, you walk in, a bell above the door swings",
      "transition": "cut",
      "faces": {
+      "yourapp": "happy",
       "you": "neutral"
      }
     },
@@ -1151,6 +1160,9 @@
      "scale": "inside",
      "motion": "shelves light in sequence, you slow down at the last one",
      "transition": "hold",
+     "faces": {
+      "yourapp": "smug"
+     },
      "bubble": "Stay a while."
     }
    ]
@@ -1293,7 +1305,10 @@
        "text": "LICENSED",
        "word": "licensed"
       }
-     ]
+     ],
+     "faces": {
+      "switch": "happy"
+     }
     },
     {
      "sentence": 2,
@@ -1485,7 +1500,10 @@
      "show": "the domed central bank holds its door open; a plank bridge unrolls from its steps across the ocean toward the far office",
      "scale": "map",
      "motion": "bridge unrolls plank by plank over the water",
-     "transition": "wipe"
+     "transition": "wipe",
+     "faces": {
+      "centralbank": "calm"
+     }
     }
    ],
    "sources": [
@@ -1737,6 +1755,7 @@
      "motion": "tourist walks in from the left, owner waves, steam drifts",
      "transition": "wipe",
      "faces": {
+      "tourist": "happy",
       "owner": "happy"
      },
      "mood": "dusk"
@@ -1790,7 +1809,10 @@
        "text": "SAME ROAD",
        "word": "road"
       }
-     ]
+     ],
+     "faces": {
+      "switch": "happy"
+     }
     }
    ],
    "sources": [
@@ -1826,7 +1848,10 @@
        "text": "BAHT",
        "word": "baht"
       }
-     ]
+     ],
+     "faces": {
+      "tourist": "neutral"
+     }
     },
     {
      "sentence": 2,
@@ -2269,7 +2294,8 @@
      "motion": "both lift phones toward the stand at once",
      "transition": "cut",
      "faces": {
-      "you": "happy"
+      "you": "happy",
+      "tourist": "happy"
      }
     },
     {
@@ -2417,6 +2443,9 @@
    }
   }
  ],
+ "title_chosen": "Indonesia's QRIS: One Sticker, 72 Million Users",
+ "thumbnail_chosen": "ONE STICKER. EVERY APP.",
+ "approved": "2026-11-27",
  "tags": [
   "QRIS",
   "Indonesia",

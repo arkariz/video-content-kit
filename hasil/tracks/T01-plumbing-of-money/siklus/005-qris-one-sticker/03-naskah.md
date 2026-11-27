@@ -1,4 +1,4 @@
-# Naskah: T01 siklus 005-qris-one-sticker (R3, DRAFT menunggu persetujuan kreator)
+# Naskah: T01 siklus 005-qris-one-sticker (R3, DISETUJUI kreator 2026-11-27)
 
 Judul kerja: Indonesia's QRIS: One Sticker, 72 Million Users
 Janji: After watching, you know what happens in the two seconds after you scan one QRIS sticker, why a small shop pays almost nothing for it, and how the same sticker now takes money from other countries without dollars.
@@ -21,7 +21,7 @@ Re-hook dan payoff (estimasi): s03 0:22 · s10 1:33 · s16 2:44 · s26 4:35 · s
 ## Gate kesiapan visual (`gaya-visual.md` bagian 7)
 - `build-visual.mjs --check`: 0 temuan V-1 sampai V-14. Sisa kontrak: `04-shots.tsx` belum ada (ditulis di tahap produksi). Peringatan porsi broll 2% (mesin R3 mengabaikan broll di scene ber-shots; klip kreator s01 opsional).
 - Tidak ada scene dengan `needs`. Semua subjek L1 punya siluet, proporsi, material, dan detail; semua scene punya `light`, `art_refs`, tengara, tipe benda, dan kejadian kecil.
-- Pemeran baru diusulkan, belum di `produksi/STYLE.md` 9.2, jadi `faces` untuk mereka belum ditulis di `shots`: `switch` (stasiun bundar berkumparan kabel), `yourapp` (menara berbentuk ponsel), `tourist` (turis Thailand, kapsul biru muda bertopi pantai), `centralbank` (gedung berkubah dengan pintu berbentuk stopkontak). Setelah disetujui: catat di STYLE.md 9.2 lalu tambahkan ke `cast` dan `faces` (scene s14, s20, s22, s25, s30, s36, s37, s38, s47).
+- Pemeran baru (disetujui kreator 2026-11-27, dicatat di `produksi/STYLE.md` 9.2 dan `CAST` di `scripts/produksi/r3.mjs`; `faces` sudah ditulis): `switch` (stasiun bundar berkumparan kabel), `yourapp` (menara berbentuk ponsel), `tourist` (turis Thailand, kapsul biru muda bertopi pantai), `centralbank` (gedung berkubah dengan pintu berbentuk stopkontak).
 - Anggaran konsep: satu standar QR (s07), switch (s11), MDR (s17), EMVCo (s29), settlement (s39), hub instan bersama (s44). Enam istilah, jarak minimal sekitar 70 detik.
 
 ## Durasi dan risiko
