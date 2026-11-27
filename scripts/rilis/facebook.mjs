@@ -13,12 +13,13 @@ const VIDEO = `https://graph-video.facebook.com/${VERSI}`;
 const RUPLOAD = `https://rupload.facebook.com/video-upload/${VERSI}`;
 export const pageVar = (t) => `FACEBOOK_PAGE_ID_${t}`;
 export const tokenVar = (t) => `FACEBOOK_PAGE_TOKEN_${t}`;
-export const tunda = { proses: 10_000, batas: 10 * 60e3 };
+export const tunda = { proses: 10_000, batas: 10 * 60e3, ulang: 2000 };
 const jeda = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function minta(url, init) {
   const res = await fetch(url, init); const b = await res.json().catch(() => ({}));
   if (res.ok && !b.error) return b;
+  if (res.status === 413) throw Object.assign(new Error("Facebook 413: kiriman terlalu besar untuk satu permintaan"), { status: 413 });
   const e = b.error ?? b.debug_info ?? {};
   const saran = e.code === 190 ? " (token tidak berlaku; hubungkan ulang Page)" : e.code === 200 || e.code === 10 ? " (izin kurang; hubungkan ulang dengan semua izin)" : "";
   throw Object.assign(new Error(`Facebook ${res.status}${e.code ? ` kode ${e.code}` : ""}: ${e.error_user_msg ?? e.message ?? res.statusText}${saran}`), { status: res.status, code: e.code });
@@ -44,13 +45,38 @@ async function tautan(fb, id, reel) {
   try { const u = (await fb.get(id, { fields: "permalink_url" })).permalink_url; return u ? new URL(u, "https://www.facebook.com").href : cadangan; } catch { return cadangan; }
 }
 
-/** Video Page (master). Permintaan tunggal; penanda "mengunggah" mencegah unggahan ganda bila balasan hilang. */
-async function videoPage(fb, i, t, jadwal, catat) {
-  catat({ sumber: "alat", mengunggah: new Date().toISOString() });
-  const badan = form({ title: i.judul, description: t.deskripsi, source: await berkas(i.file), thumb: i.thumbnail ? await berkas(i.thumbnail) : undefined, ...(jadwal ? { published: false, scheduled_publish_time: detik(jadwal) } : { published: true }) });
-  let v; try { v = await fb.post(`${fb.page}/videos`, badan, VIDEO); }
-  catch (e) { if (e.status && e.status < 500) catat(null); throw e; } // ditolak Facebook: aman dicoba lagi
-  return { videoId: v.id, selesai: i.thumbnail ? { sampul: new Date().toISOString() } : {} };
+/** Video Page (master), diunggah bertahap (start, transfer, finish): satu permintaan ditolak dengan HTTP 413
+ *  untuk file besar. Sesi dicatat sehingga unggahan terputus dilanjutkan; penanda "mengunggah" dipasang sebelum
+ *  tahap akhir agar video tidak terbit dua kali bila balasannya hilang. */
+async function videoPage(fb, i, t, jadwal, h, catat, log) {
+  const tepi = `${fb.page}/videos`; const file = path.join(ROOT, i.file); const ukuran = fs.statSync(file).size;
+  let u = h?.unggahan;
+  if (u && u.ukuran !== ukuran) u = null; // file dirender ulang: mulai dari awal
+  if (!u) {
+    const m = await fb.post(tepi, { upload_phase: "start", file_size: String(ukuran) }, VIDEO);
+    if (!m.upload_session_id || !m.video_id) throw new Error("Facebook tidak memberi sesi unggah");
+    u = { sesi: String(m.upload_session_id), videoId: String(m.video_id), ukuran, awal: Number(m.start_offset), akhir: Number(m.end_offset) };
+  }
+  const simpan = () => catat({ sumber: "alat", unggahan: u });
+  simpan();
+  const isi = await fs.openAsBlob(file);
+  for (let gagal = 0; u.awal < u.akhir;) {
+    try {
+      const m = await fb.post(tepi, form({ upload_phase: "transfer", upload_session_id: u.sesi, start_offset: u.awal, video_file_chunk: [isi.slice(u.awal, u.akhir), path.basename(file)] }), VIDEO);
+      u = { ...u, awal: Number(m.start_offset), akhir: Number(m.end_offset) }; gagal = 0; simpan();
+      log(`${i.nama}: unggah ${Math.round((Math.min(u.awal, ukuran) / ukuran) * 100)}%`);
+    } catch (e) {
+      if (e.status && e.status < 500) { catat(null); throw e; } // sesi ditolak: belum ada yang terbit, percobaan berikutnya mulai baru
+      if (++gagal > 3) throw new Error(`unggahan terputus (${e.message}); klik kirim lagi untuk melanjutkan`);
+      await jeda(gagal * tunda.ulang);
+    }
+  }
+  catat({ sumber: "alat", unggahan: u, mengunggah: new Date().toISOString() });
+  try {
+    const m = await fb.post(tepi, form({ upload_phase: "finish", upload_session_id: u.sesi, title: i.judul, description: t.deskripsi, ...(jadwal ? { published: false, scheduled_publish_time: detik(jadwal) } : { published: true }) }), VIDEO);
+    if (m.success === false) throw new Error("Facebook menolak tahap akhir");
+  } catch (e) { if (e.status && e.status < 500) catat(null); throw e; }
+  return { videoId: u.videoId, selesai: {} };
 }
 
 /** Reel tiga tahap. ID dicatat sejak tahap pertama sehingga tahap yang terputus dilanjutkan. */
@@ -129,7 +155,7 @@ export function kirim(c, { draf = false, log = console.log } = {}) {
           if (jadwal && !(jadwal - Date.now() > MIN_JADWAL)) throw new Error("jadwal Facebook harus lebih dari 10 menit lagi; ubah lalu setujui ulang");
           log(`${i.nama}: mulai unggah ke Facebook`);
           const t = teksFacebook(i);
-          const v = master ? await videoPage(fb, i, t, jadwal, catat) : await reel(fb, i, t, jadwal, h, catat, { draf, log });
+          const v = master ? await videoPage(fb, i, t, jadwal, h, catat, (s) => log(s)) : await reel(fb, i, t, jadwal, h, catat, { draf, log });
           h = { sumber: "alat", ...v, url: await tautan(fb, v.videoId, !master), publishAt: jadwal?.toISOString() ?? null, ...(draf && { privasi: "private" }), diunggah: new Date().toISOString() };
           catat(h); log(`${i.nama}: ${draf ? "tersimpan sebagai draf" : jadwal ? "terjadwal" : "terkirim"} ${h.url}`);
         }

@@ -53,7 +53,7 @@ globalThis.fetch = async (url, init = {}) => {
 };
 
 // ---- Facebook tiruan ----
-const fbt = { diPage: [], video: {}, komentar: [], panggilan: [], captions: [], sampul: [], tayang: false, gagalVideo: null };
+const fbt = { putus: 0, diPage: [], video: {}, komentar: [], panggilan: [], captions: [], sampul: [], tayang: false, gagalVideo: null };
 function facebookTiruan(u, m, init) {
   const p = u.pathname.replace(/^\/(video-upload\/)?v27\.0\//, ""); fbt.panggilan.push(`${m} ${u.hostname} ${p}`);
   const isi = init.body instanceof FormData || init.body instanceof URLSearchParams ? Object.fromEntries(init.body) : {};
@@ -64,7 +64,13 @@ function facebookTiruan(u, m, init) {
   if (u.hostname === "rupload.facebook.com") { fbt.video[p].diterima = +init.headers.offset + init.body.length; fbt.video[p].total = +init.headers.file_size; return j({ success: true }); }
   if (p === "900/videos" && m === "GET") return j({ data: fbt.diPage });
   if (p === "900/scheduled_posts") return j({ data: [] });
-  if (p === "900/videos") { if (fbt.gagalVideo) return j({ error: { code: fbt.gagalVideo === 500 ? 1 : 100, message: "gagal" } }, fbt.gagalVideo); fbt.video["501"] = { id: "501", isi }; return j({ id: "501" }); }
+  if (p === "900/videos") {
+    const potong = 4 * 1024 * 1024;
+    if (isi.upload_phase === "start") { fbt.sesi = { ukuran: +isi.file_size, diterima: 0 }; return j({ upload_session_id: "s1", video_id: "501", start_offset: "0", end_offset: String(Math.min(potong, +isi.file_size)) }); }
+    if (isi.upload_phase === "transfer") { if (fbt.putus-- > 0) return j({ error: { message: "sementara" } }, 500); assert.equal(+isi.start_offset, fbt.sesi.diterima); fbt.sesi.diterima += isi.video_file_chunk.size; const a = fbt.sesi.diterima; return j({ start_offset: String(a), end_offset: String(Math.min(a + potong, fbt.sesi.ukuran)) }); }
+    assert.equal(isi.upload_phase, "finish"); assert.equal(fbt.sesi.diterima, fbt.sesi.ukuran);
+    if (fbt.gagalVideo) return j({ error: { code: fbt.gagalVideo === 500 ? 1 : 100, message: "gagal" } }, fbt.gagalVideo); fbt.video["501"] = { id: "501", isi }; return j({ success: true });
+  }
   if (p === "900/video_reels" && isi.upload_phase === "start") { const id = `60${Object.keys(fbt.video).length}`; fbt.video[id] = { id, diterima: 0 }; return j({ video_id: id }); }
   if (p === "900/video_reels") { fbt.video[isi.video_id].selesai = isi; return j({ success: true }); }
   const [id, tepi] = p.split("/"); const v = fbt.video[id];
@@ -254,7 +260,7 @@ try {
     inti.aturFacebook(c, true); await assert.rejects(F.kirim(c, diam), /setujui ulang/); inti.setujui(c, "SETUJU", "uji");
     await F.kirim(c, diam); await F.kirim(c, diam);
     const [m, s] = Object.values(fbt.video); assert.equal(Object.keys(fbt.video).length, 2);
-    assert.equal(m.isi.published, "false"); assert.equal(m.isi.scheduled_publish_time, String(new Date(`${besok}T10:00:00+07:00`) / 1000)); assert.ok(m.isi.thumb);
+    assert.equal(m.isi.published, "false"); assert.equal(m.isi.scheduled_publish_time, String(new Date(`${besok}T10:00:00+07:00`) / 1000)); assert.ok(fbt.sampul.includes("501")); assert.equal(fbt.sesi.diterima, UKURAN);
     assert.equal(s.selesai.video_state, "SCHEDULED"); assert.equal(s.diterima, UKURAN); assert.ok(!("is_ai_generated" in s.selesai));
     assert.deepEqual(fbt.captions, ["master.en_US.srt"]); assert.equal(inti.muat(c).hasil.master.facebook.url, "https://www.facebook.com/watch/501");
   });
@@ -328,6 +334,13 @@ try {
     assert.equal(yt.ubahan.length, 1); assert.deepEqual(yt.ubahan[0], { id: "man00000001", status: { privacyStatus: "private", publishAt: `${besok}T09:00:00.000Z`, embeddable: true, license: "youtube" } });
     const h = inti.muat(c).hasil; assert.equal(h.master.youtube.publishAt, `${besok}T09:00:00.000Z`); assert.match(h.S1.youtube.galat[0], /tidak diubah/); assert.ok(inti.disetujui(inti.muat(c)));
     assert.deepEqual(inti.jadwalBeda(inti.muat(c)).map((x) => x.nama), ["S1"]);
+  });
+  await uji("Facebook: master bertahap pulih dari gangguan dan melanjutkan sesi lama", async () => {
+    const F = await import("./facebook.mjs"); F.tunda.ulang = 1;
+    inti.ubah(c, (x) => { x.hasil = {}; x.kunci_manual = null; x.facebook = { aktif: true }; x.items.forEach((i) => (i.jadwal = "")); }); inti.setujui(c, "SETUJU", "uji"); for (const k of Object.keys(fbt.video)) delete fbt.video[k];
+    fbt.putus = 99; await F.kirim(c, diam); const h = inti.muat(c).hasil.master.facebook; assert.ok(h.unggahan && !h.url && !h.mengunggah, JSON.stringify(h));
+    const mulai = fbt.panggilan.length; fbt.putus = 2; await F.kirim(c, diam); assert.ok(inti.muat(c).hasil.master.facebook.url); assert.equal(fbt.sesi.diterima, UKURAN);
+    assert.equal(fbt.panggilan.slice(mulai).filter((x) => x.includes("900/videos")).length, 6, "tanpa start baru: 2 gagal, 3 potongan, 1 finish");
   });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;

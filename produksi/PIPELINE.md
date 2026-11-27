@@ -457,7 +457,7 @@ node scripts/rilis/uji.mjs                                             # uji den
 
 ### Facebook (`facebook.mjs`)
 
-Master sebagai video Page, Short sebagai Reel (3–90 detik), dengan jadwal, subtitle `en_US`/`id_ID`, sampul, dan komentar. Komentar Short bawaannya `Full video: {master}` dan baru diposting setelah Short dan master Facebook tayang (juga oleh penjadwal). Dinyalakan per siklus ("Kirim siklus ini ke Facebook lewat alat"), memakai persetujuan yang sama, dan mengikuti kunci unggah. `is_ai_generated` tidak dikirim (bawaan Facebook: tidak), sejalan dengan keputusan "Penggunaan AI dikosongkan". Bila balasan unggah master hilang, alat menolak mengulang sampai Page diperiksa.
+Master sebagai video Page, Short sebagai Reel (3–90 detik), dengan jadwal, subtitle `en_US`/`id_ID`, sampul, dan komentar. Komentar Short bawaannya `Full video: {master}` dan baru diposting setelah Short dan master Facebook tayang (juga oleh penjadwal). Dinyalakan per siklus ("Kirim siklus ini ke Facebook lewat alat"), memakai persetujuan yang sama, dan mengikuti kunci unggah. `is_ai_generated` tidak dikirim (bawaan Facebook: tidak), sejalan dengan keputusan "Penggunaan AI dikosongkan". Master diunggah bertahap (`upload_phase` start, transfer, finish) karena satu permintaan ditolak HTTP 413 untuk file sekitar 120 MB (2026-11-27); sesi dicatat dan dilanjutkan bila terputus. Parameter tahap ini ada di referensi Meta, tetapi urutannya tidak diberi contoh. Bila balasan tahap akhir hilang, alat menolak mengulang sampai Page diperiksa.
 
 **Persiapan di Meta (kreator, sekali; dokumentasi Meta dibaca 2026-11-27, tampilan bisa berbeda).**
 1. Pastikan punya akses penuh ke Page tiap track, lalu daftar akun developer (developers.facebook.com).
