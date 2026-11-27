@@ -37,7 +37,9 @@ const ids = diminta ?? await uploads(channel.contentDetails.relatedPlaylists.upl
 let videos = (await byIds("videos", ids, "snippet,contentDetails,status,statistics", auth)).filter((v) => v.snippet.liveBroadcastContent !== "upcoming");
 const asing = videos.filter((v) => v.snippet.channelId !== channel.id);
 if (asing.length) throw new Error(`video bukan milik channel ${channel.snippet.title}: ${asing.map((v) => v.id).join(", ")}`);
-const cocok = (v) => perId.get(v.id) ?? perJudul.get(normal(v.snippet.title));
+// Cadangan: judul siklus yang cukup panjang diikuti tambahan saat unggah (mis. nama game); ambil yang terpanjang.
+const awalan = (j) => perJudul.get([...perJudul.keys()].filter((k) => k.length >= 25 && j.startsWith(`${k} `)).sort((a, b) => b.length - a.length)[0]);
+const cocok = (v) => perId.get(v.id) ?? perJudul.get(normal(v.snippet.title)) ?? awalan(normal(v.snippet.title));
 // Channel yang dipakai beberapa track: hanya video yang terbukti milik siklus track ini (analitik selalu per track).
 const berbagi = tracks().filter((t) => t.id !== track.id && ((t.channel && t.channel === track.channel) || process.env[channelVar(t.id)] === channel.id));
 let dilewati = 0;
@@ -63,7 +65,7 @@ const ditolak = new Set();
 /** Query tambahan: bila API menolak, laporan tetap jadi dan penolakannya dicatat sekali. */
 async function opsional(nama, q) {
   try { return await report(token, q); }
-  catch (e) { if (e.status !== 400) throw e; if (!ditolak.has(nama)) { ditolak.add(nama); catatan.push(`${nama} ditolak API: ${sel(e.message)}`); } return []; }
+  catch (e) { if (e.status !== 400 && !(e.status >= 500)) throw e; if (!ditolak.has(nama)) { ditolak.add(nama); catatan.push(`${nama} gagal (sebagian atau semua video): ${sel(e.message)}`); } return []; }
 }
 const persen = (x) => `${x.toFixed(1)}%`;
 for (const v of videos.sort((a, b) => a.snippet.publishedAt.localeCompare(b.snippet.publishedAt))) {

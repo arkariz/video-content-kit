@@ -27,7 +27,14 @@ export function opts(argv = process.argv.slice(2)) {
 }
 
 export async function request(url, init) {
-  const res = await fetch(url, init); const body = await res.json().catch(() => ({}));
+  let res;
+  // Gangguan sisi Google (5xx) pada permintaan baca dicoba lagi dua kali.
+  for (let ke = 1; ; ke++) {
+    res = await fetch(url, init);
+    if (res.status < 500 || (init?.method ?? "GET") !== "GET" || ke === 3) break;
+    await new Promise((r) => setTimeout(r, ke * 1500));
+  }
+  const body = await res.json().catch(() => ({}));
   if (res.ok) return body;
   const e = body.error; const reason = e?.errors?.[0]?.reason ?? (typeof e === "string" ? e : e?.status);
   const msg = e?.message ?? body.error_description ?? res.statusText;
