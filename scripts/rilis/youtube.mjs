@@ -6,7 +6,7 @@ import fs from "node:fs"; import path from "node:path";
 import { readJson, writeJson } from "../produksi/lib.mjs";
 import { oauthClient, tokenRequest, channelVar } from "../youtube/lib.mjs";
 import { kembar, pesanKembar } from "./ganda.mjs";
-import { ROOT, disetujui, minYouTube, muat, terkunci, ubah, waktu } from "./inti.mjs";
+import { ROOT, disetujui, jadwalBeda, minYouTube, muat, terkunci, ubah, waktu } from "./inti.mjs";
 
 const API = "https://www.googleapis.com/youtube/v3";
 const UP = "https://www.googleapis.com/upload/youtube/v3";
@@ -156,6 +156,35 @@ async function videoChannel(yt) {
   return out;
 }
 
+/** Terapkan jadwal rencana ke video yang sudah terjadwal di YouTube (hasil alat maupun unggahan manual). */
+async function geserJadwal(yt, c, log) {
+  const daftar = jadwalBeda(muat(c)); const jam = (t) => new Date(t).toLocaleString("sv-SE", { timeZone: "Asia/Jakarta" }).slice(0, 16);
+  for (const { nama, baru } of daftar) {
+    const h = muat(c).hasil[nama].youtube;
+    try {
+      if (!(new Date(baru) - Date.now() > minYouTube(muat(c)))) throw new Error("jadwal baru sudah lewat atau terlalu dekat");
+      const v = (await yt.get("videos", { part: "snippet,status", id: h.videoId })).items?.[0];
+      if (!v) throw new Error("video tidak ditemukan; klik \"Reset yang terhapus\"");
+      if (v.snippet.channelId !== yt.channel) throw new Error("video milik channel lain");
+      // publishAt hanya berlaku untuk video privat yang belum pernah tayang; yang sudah publik tidak disentuh.
+      if (v.status.privacyStatus !== "private" || !v.status.publishAt) throw new Error(`video berstatus ${v.status.privacyStatus} tanpa jadwal di YouTube; tidak diubah`);
+      // videos.update menghapus bidang status yang tidak dikirim, jadi nilai yang ada disertakan lagi.
+      const { embeddable, license, publicStatsViewable, selfDeclaredMadeForKids, containsSyntheticMedia } = v.status;
+      await yt.panggil(`${API}/videos?part=status`, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: h.videoId, status: { privacyStatus: "private", publishAt: baru, embeddable, license, publicStatsViewable, selfDeclaredMadeForKids, containsSyntheticMedia } }) });
+      ubah(c, (x) => { const k = x.hasil[nama].youtube; k.publishAt = baru; delete k.terlewatDiberitahu; k.galat = (k.galat || []).filter((g) => !g.startsWith("jadwal")); });
+      log(`${nama}: jadwal YouTube diubah ke ${jam(baru)} WIB`);
+    } catch (e) { ubah(c, (x) => { const k = x.hasil[nama].youtube; k.galat = [...(k.galat || []).filter((g) => !g.startsWith("jadwal")), `jadwal: ${e.message}`]; }); log(`${nama}: jadwal GAGAL diubah: ${e.message}`); }
+  }
+  return daftar.length;
+}
+export function terapkanJadwal(c, { log = console.log } = {}) {
+  return terkunci(c, async () => {
+    const r = muat(c); if (!r) throw new Error("rencana belum dibuat");
+    wajibSetuju(r);
+    if (!(await geserJadwal(await klien(c.track), c, log))) log("tidak ada jadwal yang berbeda");
+  });
+}
+
 const wajibSetuju = (r) => { if (!disetujui(r)) throw new Error(r.persetujuan ? "isi rencana atau file berubah setelah disetujui; setujui ulang" : "belum disetujui kreator (ketik SETUJU)"); };
 
 /** Unggah semua item yang belum ada di YouTube. uji: satu Short, privat, tanpa jadwal, playlist, atau komentar. */
@@ -187,6 +216,7 @@ export function kirim(c, { uji = false, log = console.log, tunggu = 10 * 60e3, s
       }
       await lengkapi(yt, r, i, h, catat, { uji, log });
     }
+    if (!uji) await geserJadwal(yt, c, log);
     await thumbnailTertunda(yt, c, r, items.map((i) => [i, uji ? `${i.nama}-uji` : i.nama]), { uji, log, tunggu, selang });
   });
 }

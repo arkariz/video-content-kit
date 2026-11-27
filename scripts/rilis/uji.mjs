@@ -16,7 +16,7 @@ for (const f of ["Master16x9-en.mp4", "Short9x16-S1-en.mp4"]) tulis(`produksi/re
 for (const f of ["Thumbnail-A.png", "Thumbnail-Short-S1.png"]) tulis(`produksi/render/T09/001/${f}`, "png");
 
 // ---- YouTube tiruan ----
-const yt = { video: {}, komentar: [], playlist: [], isiPlaylist: [], subtitle: [], thumbnail: [], putus: 0, channel: "UCuji", proses: "processing", panggilan: [], params: [], diChannel: [] };
+const yt = { video: {}, komentar: [], playlist: [], isiPlaylist: [], subtitle: [], thumbnail: [], putus: 0, channel: "UCuji", proses: "processing", panggilan: [], params: [], diChannel: [], ubahan: [] };
 const asli = globalThis.fetch;
 const j = (v, status = 200, headers = {}) => new Response(JSON.stringify(v), { status, headers });
 globalThis.fetch = async (url, init = {}) => {
@@ -34,9 +34,10 @@ globalThis.fetch = async (url, init = {}) => {
   }
   const p = u.pathname.replace(/^(\/upload)?\/youtube\/v3\//, "");
   if (p === "videos" && u.searchParams.get("id")?.startsWith("ada")) return j({ items: yt.diChannel.map((title, n) => ({ id: `ada${n}`, snippet: { title } })) });
+  if (p === "videos" && m === "PUT") { yt.ubahan.push(body); return j(body); }
   if (p === "videos" && m === "POST") { yt.params.push(u.searchParams.get("notifySubscribers")); const id = `vid${String(Object.keys(yt.video).length).padStart(8, "0")}`; yt.video[id] = { id, body, diterima: 0, total: +init.headers["X-Upload-Content-Length"] }; return new Response(null, { status: 200, headers: { location: `https://sesi.uji/${id}` } }); }
   if (p === "videos" && u.searchParams.get("part") === "id") return j({ items: u.searchParams.get("id").split(",").filter((x) => yt.video[x]).map((id) => ({ id })) });
-  if (p === "videos") { const v = yt.video[u.searchParams.get("id")]; return j({ items: v ? [{ snippet: { channelId: yt.channel, ...v.body.snippet }, localizations: v.body.localizations, status: { privacyStatus: v.publik ? "public" : v.body.status.privacyStatus, publishAt: v.body.status.publishAt }, processingDetails: { processingStatus: yt.proses } }] : [] }); }
+  if (p === "videos") { const v = yt.video[u.searchParams.get("id")]; return j({ items: v ? [{ snippet: { channelId: yt.channel, ...v.body.snippet }, localizations: v.body.localizations, status: { ...(p === "videos" && u.searchParams.get("part") === "snippet,status" && v.body.status), privacyStatus: v.publik ? "public" : v.body.status.privacyStatus, publishAt: v.body.status.publishAt }, processingDetails: { processingStatus: yt.proses } }] : [] }); }
   if (p === "channels") return j({ items: [{ id: yt.channel, ...(yt.diChannel.length && { contentDetails: { relatedPlaylists: { uploads: "UU" } } }) }] });
   if (p === "playlistItems" && u.searchParams.get("playlistId") === "UU") return j({ items: yt.diChannel.map((v, n) => ({ contentDetails: { videoId: `ada${n}` } })) });
   if (p === "playlists" && m === "GET") return j({ items: yt.playlist });
@@ -316,6 +317,17 @@ try {
     sinkronStatus({ log: () => {} }); assert.match(baris(), /siap-publish \| 2099-01-02/);
     dengan({ publishAt: lalu }); sinkronStatus({ log: () => {} }); assert.match(baris(), /tayang \| 2026-01-02/);
     dengan({ publishAt: nanti }); assert.equal(sinkronStatus({ log: () => {} }), 0); assert.match(fs.readFileSync(md, "utf8"), /disamakan dengan hasil di dashboard/);
+  });
+  await uji("jadwal baru diterapkan ke video terjadwal (juga unggahan manual), hanya setelah disetujui", async () => {
+    const { terapkanJadwal } = await import("./youtube.mjs"); const lama = `${besok}T03:00:00.000Z`;
+    yt.video.man00000001 = { id: "man00000001", body: { snippet: { channelId: "UCuji" }, status: { privacyStatus: "private", publishAt: lama, embeddable: true, license: "youtube" } } };
+    yt.video.pub00000001 = { id: "pub00000001", publik: true, body: { snippet: {}, status: { privacyStatus: "public", publishAt: lama } } }; yt.ubahan.length = 0;
+    inti.ubah(c, (x) => { x.kunci_manual = "manual"; x.items.forEach((i) => (i.jadwal = `${besok}T16:00`)); x.hasil = { master: { youtube: { sumber: "manual", videoId: "man00000001", publishAt: lama } }, S1: { youtube: { sumber: "manual", videoId: "pub00000001", publishAt: lama } } }; x.persetujuan = null; });
+    assert.equal(inti.jadwalBeda(inti.muat(c)).length, 2); await assert.rejects(terapkanJadwal(c, diam), /belum disetujui/); assert.equal(yt.ubahan.length, 0);
+    inti.setujui(c, "SETUJU", "uji"); await terapkanJadwal(c, diam);
+    assert.equal(yt.ubahan.length, 1); assert.deepEqual(yt.ubahan[0], { id: "man00000001", status: { privacyStatus: "private", publishAt: `${besok}T09:00:00.000Z`, embeddable: true, license: "youtube" } });
+    const h = inti.muat(c).hasil; assert.equal(h.master.youtube.publishAt, `${besok}T09:00:00.000Z`); assert.match(h.S1.youtube.galat[0], /tidak diubah/); assert.ok(inti.disetujui(inti.muat(c)));
+    assert.deepEqual(inti.jadwalBeda(inti.muat(c)).map((x) => x.nama), ["S1"]);
   });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;

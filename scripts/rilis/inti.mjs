@@ -118,6 +118,14 @@ export function terapkanTeksBaru(c) {
 /** Teks Facebook sebuah konten; bawaan: deskripsi YouTube, dan komentar Short menaut ke master Facebook. */
 export const teksFacebook = (i) => ({ deskripsi: i.facebook?.deskripsi || i.deskripsi, komentar: i.facebook?.komentar ?? (i.nama === "master" ? "" : "Full video: {master}") });
 
+/** Konten terjadwal di YouTube yang jadwal rencananya berbeda: [{ nama, lama, baru }]. */
+export function jadwalBeda(r, kini = Date.now()) {
+  return r.items.flatMap((i) => {
+    const h = r.hasil[i.nama]?.youtube; const lama = h?.publishAt && new Date(h.publishAt); const baru = waktu(i.jadwal);
+    return h?.videoId && lama > kini && baru && baru.getTime() !== lama.getTime() ? [{ nama: i.nama, lama: lama.toISOString(), baru: baru.toISOString() }] : [];
+  });
+}
+
 export const waktu = (jadwal) => (jadwal ? new Date(`${jadwal}:00+07:00`) : null);
 
 /** Jarak minimum jadwal YouTube dari sekarang; siklus uji boleh lebih dekat. */

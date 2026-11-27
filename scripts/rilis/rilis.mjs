@@ -8,7 +8,7 @@
 import readline from "node:readline/promises";
 import { args } from "../produksi/lib.mjs";
 import { buatRencana, cari, checklist, disetujui, masalah, muat, qaManual, setujui } from "./inti.mjs";
-import { kirim, lupakanTerhapus, pascaTayang } from "./youtube.mjs";
+import { kirim, lupakanTerhapus, pascaTayang, terapkanJadwal } from "./youtube.mjs";
 
 try {
   const o = args(); const c = cari(o.track, o.siklus); const cmd = o._[0];
@@ -32,6 +32,7 @@ try {
     } else if (cmd === "kirim") await kirim(c, { uji: !!o.uji });
     else if (cmd === "pasca") await pascaTayang(c);
     else if (cmd === "reset") await lupakanTerhapus(c);
-    else throw new Error("perintah: plan | cek | setuju | kirim | pasca | reset");
+    else if (cmd === "jadwal") await terapkanJadwal(c);
+    else throw new Error("perintah: plan | cek | setuju | kirim | pasca | jadwal | reset");
   }
 } catch (e) { console.error("GAGAL:", e.message); process.exit(1); }

@@ -6,7 +6,7 @@ import fs from "node:fs"; import path from "node:path"; import http from "node:h
 import { pathToFileURL } from "node:url";
 import { readJson } from "../produksi/lib.mjs";
 import * as inti from "./inti.mjs";
-import { kirim, lupakanTerhapus, pascaTayang, periksa, publishVar } from "./youtube.mjs";
+import { kirim, lupakanTerhapus, pascaTayang, periksa, publishVar, terapkanJadwal } from "./youtube.mjs";
 import { antrean, fileStatus } from "./jadwal.mjs";
 import { PORT, SELANG, copot, pasang, terpasang } from "./layanan.mjs";
 import * as hubungkan from "./hubungkan.mjs";
@@ -46,7 +46,7 @@ function rinci(c) {
   const qa = readJson(path.join(c.dir, "05-qa.auto.json"), null);
   return {
     track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, rel: c.rel,
-    rencana: r, masalah: r ? inti.masalah(c, r) : [], disetujui: !!r && inti.disetujui(r), qa, qaManual: inti.qaManual(c), arsip: r?.arsip ?? null, ujiAlat: !!r?.uji_alat, panduan: inti.adaPanduan(c),
+    rencana: r, masalah: r ? inti.masalah(c, r) : [], disetujui: !!r && inti.disetujui(r), qa, qaManual: inti.qaManual(c), jadwalBeda: r ? inti.jadwalBeda(r) : [], arsip: r?.arsip ?? null, ujiAlat: !!r?.uji_alat, panduan: inti.adaPanduan(c),
     tugas: r ? inti.checklist(c, r) : [], items: sel(c, r), sibuk: inti.sibuk(c), log: logs.get(kunciLog(c)) ?? [],
     berkas: fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /\.(mp4|png|jpg)$/.test(f)) : [],
     kredensial: !!process.env[publishVar(c.track)], kredensialFb: !!process.env[facebook.tokenVar(c.track)],
@@ -117,6 +117,7 @@ function aksi(b) {
   const bebas = () => { if (inti.sibuk(c)) throw new Error("siklus ini sedang diproses; tunggu selesai"); };
   switch (b.aksi) {
     case "plan": inti.buatRencana(c); break;
+    case "jadwal-yt": jalankan(c, "Terapkan jadwal ke YouTube", (log) => terapkanJadwal(c, { log })); break;
     case "periksa": jalankan(c, "Periksa di YouTube", (log) => periksa(c, { log })); break;
     case "reset": jalankan(c, "Reset catatan video terhapus", async (log) => { if (process.env[publishVar(c.track)]) await lupakanTerhapus(c, { log }); if (Object.values(inti.muat(c).hasil).some((v) => v.facebook?.sumber === "alat")) await facebook.lupakanTerhapus(c, { log }); }); break;
     case "fb-periksa": jalankan(c, "Periksa di Facebook", (log) => periksaFacebook(c, { log })); break;

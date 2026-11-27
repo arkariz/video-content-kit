@@ -328,13 +328,13 @@ function halamanIsi(d) {
   const tj = { judul: i.terjemahan?.judul ?? "", deskripsi: i.terjemahan?.deskripsi ?? "" };
   const fb = { deskripsi: i.facebook?.deskripsi ?? "", komentar: i.facebook?.komentar ?? (i.nama === "master" ? "" : "Full video: {master}") };
   const video = i.file.split("/").pop(), thumb = i.thumbnail?.split("/").pop();
-  const terunggah = r.hasil[i.nama]?.youtube?.sumber === "alat";
+  const terunggah = !!r.hasil[i.nama]?.youtube;
   const jamCepat = (el) => (i.jadwal ? h("div", { class: "baris" }, ["10:00", "12:00", "16:00", "19:00"].map((j) => h("button", { class: "kecil", onclick: () => { el.value = `${el.value.slice(0, 10)}T${j}`; el.dispatchEvent(new Event("change")); } }, j.replace(":", ".")))) : null);
 
   wadah.append(
     h("div", { class: "baris antara" }, pil, d.panduan ? h("button", { title: "Menimpa teks di semua konten dengan isi panduan unggah dan 06-teks-rilis.json", onclick: () => { if (confirm("Timpa teks dengan isi panduan unggah dan 06-teks-rilis.json? Suntinganmu pada bidang yang ada di file itu akan hilang.")) aksi(d, { aksi: "impor" }); } }, "Isi ulang teks dari produksi") : null),
     peringatan,
-    terunggah ? h("div", { class: "catatan" }, "Video ini sudah terunggah. Perubahan judul, deskripsi, dan jadwal di sini tidak dikirim ulang; ubah di YouTube Studio.") : "",
+    terunggah ? h("div", { class: "catatan" }, "Video ini sudah ada di YouTube. Judul dan deskripsi di sini tidak dikirim ulang (ubah di Studio). Jadwal video yang belum tayang bisa diterapkan lewat langkah 2 setelah disetujui.") : "",
     h("div", { class: "dua" },
       h("div", { class: "media kartu" },
         d.berkas.includes(video) ? h("video", { controls: true, preload: "metadata", src: media(d.track, d.siklus, video), poster: thumb && d.berkas.includes(thumb) ? media(d.track, d.siklus, thumb) : null }) : h("div", { class: "catatan" }, `Video belum ada: ${i.file}`),
@@ -407,6 +407,10 @@ function halamanKirim(d, sis) {
   const tanpaThumb = r.items.filter((i) => { const y = r.hasil[i.nama]?.youtube; return i.thumbnail && y?.sumber === "alat" && !y.selesai?.thumbnail; }).map((i) => i.nama);
   return [
     panduanUji,
+    d.jadwalBeda.length ? h("div", { class: "catatan gagal" }, h("b", {}, "Jadwal di YouTube belum sama dengan rencana:"),
+      d.jadwalBeda.map((x) => h("div", {}, `${x.nama}: di YouTube ${new Date(x.lama).toLocaleString("id-ID", { timeZone: "Asia/Jakarta" })} → rencana ${new Date(x.baru).toLocaleString("id-ID", { timeZone: "Asia/Jakarta" })}`)),
+      h("button", { class: "utama", disabled: !d.disetujui || !d.kredensial || d.sibuk, title: !d.disetujui ? "setujui dulu" : "", onclick: () => confirm("Ubah jadwal tayang video di atas pada YouTube?") && aksi(d, { aksi: "jadwal-yt" }) }, "Terapkan jadwal ke YouTube"),
+      d.disetujui ? null : h("div", { class: "kecil-teks" }, "Setujui rencana lebih dulu.")) : null,
     tanpaThumb.length && !d.sibuk ? h("div", { class: "catatan" }, `Thumbnail belum terpasang di YouTube: ${tanpaThumb.join(", ")}. Klik "Jalankan pasca-tayang".`) : null,
     h("section", { class: "kartu" }, h("h2", {}, "Periksa"),
       h("div", { class: "gulir" }, h("table", {}, h("tr", {}, ["Konten", "Judul", "Jadwal", "Komentar pertama", ""].map((x) => h("th", {}, x))),
