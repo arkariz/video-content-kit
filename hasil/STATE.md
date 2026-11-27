@@ -5,9 +5,9 @@ batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
 langkah_berikutnya: "Review video T01-002 dan T02-002/003/004 (hasil/review/rencana-produksi-2026-11-26.md), lalu publish sesuai jadwal; analitik 001 T02 11-28, T01 12-02"
-menunggu_keputusan: "Persetujuan animasi benchmark s01 (produksi/render/_contoh/P01b-s01-benchmark/*.mp4, EVALUASI.md Phase D) sebelum memakai sistem untuk siklus produksi berikutnya"
+menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
-terakhir_diperbarui: 2026-11-26
+terakhir_diperbarui: 2026-11-27
 ---
 
 # STATE portfolio
@@ -92,3 +92,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-26: Fase 3.5 Phase C (Opus atas permintaan kreator): still benchmark s01 dirender (5 iterasi), aset lokal parts/art.tsx (Shade, Drop2, Block 3/4, WaterTower, FarCity, Cloud, Tree). Deterministik. Penilaian agent: siluet dan akurasi 4, material/cahaya/polesan 3; belum lulus gate. Engine tidak diubah.
 - 2026-11-26: Fase 3.5 putaran still 6 (matahari, cahaya hangat, bayangan kontak, material kaca; material dan polesan masih 3) lalu Phase E atas permintaan kreator: pustaka aset bersama produksi/remotion/src/r3/art (@r3/art), galeri acuan produksi/acuan-visual/ (indeks STYLE.md 10.1), validateVisualSpec V-1..V-14 (build-visual + QA G7), tahap still wajib di run.mjs (scripts/pipeline/still.mjs, 04-still.json, hanya visual_spec versi 2). Perbaikan kecil: peringatan 3D basi dihapus, deteksi GL memindai parts/, EXPR + soft, cast [] boleh tanpa faces. Regresi: hash still contoh identik, build-visual 7 siklus identik, check_kit OK. Catatan: T01-004 kini terdeteksi 3D (--gl=angle) saat dirender ulang.
 - 2026-11-26: Kreator menyetujui galeri acuan P01b; 11 still referensi kreator disimpan lokal di produksi/acuan-visual/eksternal/ (diabaikan git karena hak cipta pihak ketiga, indeks STYLE.md 10.2). Phase D: animasi benchmark s01 6,1 dtk dirender (16:9 dan 9:16), deterministik 183/183 frame, video perbandingan P01 vs P01b.
+- 2026-11-27: Kreator menyetujui animasi benchmark s01 (P01b Phase D). Sistem visual (still dulu, @r3/art, G7) dipakai untuk siklus produksi berikutnya, mulai T01-005.

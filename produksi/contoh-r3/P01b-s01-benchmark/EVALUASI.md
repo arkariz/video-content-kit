@@ -162,3 +162,7 @@ Still putaran 6 disetujui kreator sebagai acuan. Animasi dirender dengan engine 
 - Saat goyang, bentuk tetes sesaat tampak miring seperti kacang.
 - Transisi ke scene berikutnya belum didemonstrasikan.
 - Material dan polesan still tetap 3 (diterima kreator).
+
+## Keputusan kreator
+
+2026-11-27: animasi benchmark s01 (Phase D) disetujui. Sistem dipakai untuk siklus produksi berikutnya.
