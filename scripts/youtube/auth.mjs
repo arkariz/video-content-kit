@@ -20,7 +20,7 @@ if (o.cek) {
       try { const c = (await data("channels", { part: "snippet", mine: "true" }, { token: await accessToken(t.id) })).items?.[0]; status = c ? `channel "${c.snippet.title}" (${c.snippet.customUrl ?? c.id})` : "token tanpa channel"; }
       catch (e) { status = `GAGAL: ${e.message}`; }
     }
-    console.log(`${t.id}  API key: ${sumber("YOUTUBE_API_KEY", t.id)} | OAuth client: ${sumber("YOUTUBE_CLIENT_ID", t.id)} | ${status} | TRACK.md: ${t.channel ?? "-"}`);
+    console.log(`${t.id}  API key: ${sumber("YOUTUBE_API_KEY", t.id)} | OAuth client: ${sumber("YOUTUBE_CLIENT_ID", t.id)} | ${status} | izin tulis: ${process.env[publishVar(t.id)] ? "ada" : "belum"} | TRACK.md: ${t.channel ?? "-"}`);
   }
   process.exit(0);
 }

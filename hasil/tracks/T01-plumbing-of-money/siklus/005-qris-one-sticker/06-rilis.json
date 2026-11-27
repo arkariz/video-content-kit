@@ -1,0 +1,125 @@
+{
+  "versi": 1,
+  "track": "T01",
+  "siklus": "005-qris-one-sticker",
+  "dibuat": "2026-11-27T06:30:12.229Z",
+  "kunci_manual": "catatan 06-publish-manual.md: diunggah manual",
+  "youtube": {
+    "kategori": "27",
+    "bahasa": "en",
+    "label_ai": true,
+    "untuk_anak": false,
+    "promosi_berbayar": false
+  },
+  "items": [
+    {
+      "nama": "master",
+      "jadwal": "2026-11-29T10:00",
+      "subtitle": [
+        {
+          "bahasa": "en",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/publish/master.en.srt"
+        },
+        {
+          "bahasa": "id",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/publish/master.id.srt"
+        }
+      ],
+      "playlist": "How Money Moves",
+      "terjemahan": {
+        "judul": "QRIS Indonesia: Satu Stiker, 72 Juta Pengguna",
+        "deskripsi": ""
+      },
+      "file": "produksi/render/T01/005/Master16x9-en.mp4",
+      "thumbnail": "produksi/render/T01/005/Thumbnail-A.png",
+      "judul": "Indonesia's QRIS: One Sticker, 72 Million Users",
+      "deskripsi": "After watching, you know what happens in the two seconds after you scan one QRIS sticker, why a small shop pays almost nothing for it, and how the same sticker now takes money from other countries without dollars.\n\nQRIS is Indonesia's national QR code payment standard, used by shops across Indonesia.\n\n0:00 The scan\n0:30 Before the sticker\n1:28 Two seconds\n2:34 Who pays\n3:57 Seventy-two million\n5:14 Crossing borders\n7:35 Back at the stall\n\nNarration, music and sound effects are AI-generated. Visuals are original animation. Not affiliated with Bank Indonesia or any payment company.\n\nSources:\nhttps://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx\nhttps://www.cnnindonesia.com/ekonomi/20261118171615-78-1428647/pengguna-qris-tembus-719-juta-transaksi-naik-709-persen-per-oktober\nhttps://katadata.co.id/finansial/keuangan/6a02a2838bbd3/thailand-makin-ramah-untuk-pembayaran-dengan-qris\nhttps://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/SP_216219.aspx\nhttps://developers.bri.co.id/en/product/qris\nhttps://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/infrastruktur/default.aspx\nhttps://mvallim.github.io/emv-qrcode/docs/EMVCo-Merchant-Presented-QR-Specification-v1-1.pdf\nhttps://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm\nhttps://finansial.bisnis.com/read/20240430/11/1761523/biaya-qris-usaha-mikro-03-bi-tegaskan-merchant-tak-tarik-tarif-ke-konsumen\nhttps://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx\nhttps://katadata.co.id/finansial/makro/6adf27d2abe9d/bi-ingin-transaksi-qris-jadi-acuan-penilaian-kredit-umkm\nhttps://kabar24.bisnis.com/read/20260505/15/1971460/sensus-bps-jumlah-penduduk-ri-capai-28467-juta-jiwa-2025-tumbuh-melambat\nhttps://bali.antaranews.com/berita/411917/qris-dipakai-6577-juta-pengguna-dan-diterima-4486-juta-gerai\nhttps://www.thejakartapost.com/opinion/2025/05/03/analysis-us-cites-qris-as-trade-barrier-but-us-payment-model-unfit-for-indonesia.html\nhttps://www.thejakartapost.com/business/2025/04/22/bi-takes-diplomatic-route-on-us-gripe-over-qris.html\nhttps://theconversation.com/us-labels-qris-a-trade-barrier-whats-next-for-indonesias-digital-payment-system-257616\nhttps://en.antaranews.com/news/431576/bi-eyes-qris-expansion-to-saudi-arabia-india-vietnam-and-australia\nhttps://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/QRIS-Antarnegara/default.aspx\nhttps://katadata.co.id/finansial/keuangan/6ab45ea47d41e/turis-asing-dominasi-transaksi-qris-antarnegara-catat-17-8-juta-transaksi\nhttps://www.cnbcindonesia.com/market/20260619104014-17-743982/transaksi-qris-turis-asing-capai-rp43-t-malaysia-singapura-terbanyak\nhttps://www.thestar.com.my/business/business-news/2025/08/21/qris-launches-in-japan-as-trial-begins-for-expansion-to-china\nhttps://www.arabnews.com/node/2652151/amp\nhttps://www.bis.org/project/nexus\n\n#QRIS #Indonesia #Fintech",
+      "tag": [
+        "QRIS",
+        "QRIS explained",
+        "Indonesia QRIS",
+        "QR code payment",
+        "how QR payments work",
+        "Bank Indonesia",
+        "cross-border payments",
+        "QRIS Thailand",
+        "QRIS Japan",
+        "Indonesia fintech",
+        "Southeast Asia payments",
+        "payment switch",
+        "merchant discount rate",
+        "EMVCo QR",
+        "how payments work"
+      ],
+      "komentar": "One scan, four players: your app, the switch, the stall's bank, and the central bank's rulebook. Which step surprised you?\n\nWhy a card's \"approved\" doesn't mean the shop is paid: https://www.youtube.com/watch?v=z3M5k4pXXhw"
+    },
+    {
+      "nama": "S1-qris-isnt-an-app",
+      "jadwal": "2026-11-29T12:00",
+      "subtitle": [
+        {
+          "bahasa": "en",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/publish/S1-qris-isnt-an-app.en.srt"
+        },
+        {
+          "bahasa": "id",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/publish/S1-qris-isnt-an-app.id.srt"
+        }
+      ],
+      "playlist": "",
+      "terjemahan": {
+        "judul": "",
+        "deskripsi": ""
+      },
+      "file": "produksi/render/T01/005/Short9x16-S1-qris-isnt-an-app-en.mp4",
+      "thumbnail": "produksi/render/T01/005/Thumbnail-Short-S1-qris-isnt-an-app.png",
+      "judul": "QRIS isn't an app. It's a rulebook.",
+      "deskripsi": "QRIS isn't something you download. It's the rulebook for how Indonesia's payment code is written and how providers connect.\n\nFull video on the channel.\nNarration and animation made with AI tools.\n\n#QRIS #Indonesia #Fintech #Shorts",
+      "tag": [
+        "QRIS",
+        "QRIS explained",
+        "QR code payment",
+        "Indonesia",
+        "fintech",
+        "shorts"
+      ],
+      "komentar": "Is there one QR code like this where you live? Full story in the long video on this channel."
+    },
+    {
+      "nama": "S2-no-dollars-in-between",
+      "jadwal": "2026-11-29T16:00",
+      "subtitle": [
+        {
+          "bahasa": "en",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/publish/S2-no-dollars-in-between.en.srt"
+        },
+        {
+          "bahasa": "id",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/005-qris-one-sticker/publish/S2-no-dollars-in-between.id.srt"
+        }
+      ],
+      "playlist": "",
+      "terjemahan": {
+        "judul": "",
+        "deskripsi": ""
+      },
+      "file": "produksi/render/T01/005/Short9x16-S2-no-dollars-in-between-en.mp4",
+      "thumbnail": "produksi/render/T01/005/Thumbnail-Short-S2-no-dollars-in-between.png",
+      "judul": "A Thai tourist pays a Bali stall. No dollars involved.",
+      "deskripsi": "A Thai tourist scans an Indonesian QRIS code in Bali. The money goes from baht to rupiah without being turned into US dollars.\n\nFull video on the channel.\nNarration and animation made with AI tools.\n\n#QRIS #Bali #Thailand #Shorts",
+      "tag": [
+        "QRIS",
+        "cross-border payments",
+        "Bali",
+        "Thailand",
+        "baht",
+        "rupiah",
+        "shorts"
+      ],
+      "komentar": "Have you paid abroad with your home banking app? Full story in the long video on this channel."
+    }
+  ],
+  "persetujuan": null,
+  "hasil": {},
+  "checklist": {}
+}
