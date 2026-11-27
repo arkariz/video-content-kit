@@ -5,7 +5,7 @@ Semua tayang **28 November 2026 (WIB)**: master 10.00, Short 1 12.00, Short 2 16
 **Jangan jalankan `approve.mjs` / `publish.mjs send` untuk siklus ini**, supaya tidak terunggah dua kali.
 
 ## Sebelum mengunggah
-- [ ] **QA otomatis masih GAGAL:** dengar s41 (master sekitar 6:37) dan s43, pengucapan "QRIS". Beri tahu agent hasilnya.
+- [x] QA otomatis lulus (0 kritis); pengucapan "QRIS" di s41 diterima kreator 2026-11-27.
 - [ ] **QA anti-slop manual (`05-qa.md`) belum dijalankan.**
 - [ ] Tonton master dan kedua Short penuh dengan suara.
 - [ ] Angka biaya adalah satu contoh AS; cocokkan tarif Visa (24 Okt 2026) dan assessment di sumbernya. Stripe 2,7% + 5 sen sudah dicek di stripe.com/pricing 2026-11-26.

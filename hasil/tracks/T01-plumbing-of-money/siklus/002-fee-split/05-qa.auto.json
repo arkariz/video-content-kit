@@ -4,14 +4,14 @@
   "tanggal": "2026-11-27",
   "durasi": "8:05",
   "footage_pct": 0,
-  "verdict": "GAGAL",
+  "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
   "temuan": [
     {
       "layer": "Audio",
-      "level": "kritis",
+      "level": "sedang",
       "id": "A2",
-      "msg": "s41: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap)",
-      "fix": "ubah/hapus say_as, buat ulang audio scene ini, dengarkan"
+      "msg": "s41: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
       "layer": "Audio",

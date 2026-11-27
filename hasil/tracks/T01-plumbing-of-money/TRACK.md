@@ -8,10 +8,10 @@ channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "005: kreator menonton penuh master + 2 Short (pemeriksaan manual), cek rencana publish 06-publish.md, lalu unggah manual (06-publish-manual.md); 002: dengar s41/s43, unggah manual 2026-11-28 (06-publish-manual.md); 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
+langkah_berikutnya: "005: kreator menonton penuh master + 2 Short (pemeriksaan manual), cek rencana publish 06-publish.md, lalu unggah manual (06-publish-manual.md); 002: unggah manual 2026-11-28 (06-publish-manual.md); 004: publish manual (siap-publish); 001: analitik mulai 2026-12-02"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: []                 # syarat bukti kreator di layar dihapus untuk semua konten (2026-11-27)
-menunggu_keputusan: "002: QA GAGAL (s41 QRIS), dengar lalu terima atau tolak sebelum unggah 11-28; 005: unggah manual 29 Nov"
+menunggu_keputusan: "002: QA anti-slop manual (05-qa.md) belum ada, jalankan sebelum unggah 11-28; 005: unggah manual 29 Nov"
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -140,3 +140,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Jadwal 005 diubah kreator: semua tayang 2026-11-29, master 10.00, Short 1 12.00, Short 2 16.00 WIB (diedit di 06-publish.json; menjalankan publish plan lagi akan menimpanya). Belum disetujui dan belum dikirim.
 - 2026-11-27: Paket unggah manual 005 dibuat untuk YouTube, Facebook, Instagram, TikTok (06-publish-manual.md, subtitle EN dan ID di publish/). Publish lewat Upload-Post tidak dipakai. Belum ada yang dikirim.
 - 2026-11-27: Kreator memajukan 002 ke 2026-11-28 (rencana V2 terkunci menjadwalkan sprint mulai 12-07; rencana.md tidak diubah, penyimpangan dicatat). Paket unggah manual 002 dilengkapi semua platform dan subtitle. QA otomatis dijalankan ulang: GAGAL (1 kritis A2 s41), 05-qa.md belum ada. Belum ada yang diunggah. Rujukan "card video" di 005 terpenuhi bila 002 tayang lebih dulu.
+- 2026-11-27: Kreator menerima ucapan "QRIS" 002 s41; dicatat di 04-assets.json. QA otomatis 002 dijalankan ulang. 05-qa.md (anti-slop manual) masih belum ada.
