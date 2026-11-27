@@ -4,7 +4,7 @@ slug: plumbing-of-money
 niche: "Sejarah dan cara kerja uang"
 sudut: "The plumbing of money: apa yang terjadi di balik kartu, transfer, QR, dan ATM"
 tahap: validasi
-channel: "Channel uang (nama belum ditentukan)"
+channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
@@ -123,3 +123,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Short S2 004 dirender; master dan kedua Shorts dicampur ke -14,1 LUFS. Kedua Shorts memotong sebagian benda dan label di sisi layar (framing 9:16); kreator memutuskan dipakai apa adanya. Berikutnya QA anti-slop, lalu publish manual (06-publish-manual.md). Belum publish.
 - 2026-11-26: Siklus 004: kreator memutuskan QA dianggap LULUS dari persetujuannya, tanpa pemeriksaan QA (05-qa.md). QA otomatis yang sempat dijalankan GAGAL (durasi < 8:00; dugaan salah ucap "Alinea" di s15) dan diterima apa adanya; master tayang tanpa mid-roll. Status siap-publish; publish manual oleh kreator.
 - 2026-11-26: Siklus 002 diproduksi (audio, adegan 3D r3/soft, master, 2 Shorts, thumbnail). Pemeran T01 dicatat di STYLE.md. Tarif Stripe 2,7% + 5 sen dicek di stripe.com/pricing.
+- 2026-11-27: Nama channel dicatat atas persetujuan kreator: Money Plumbing (@theemoneyplumbing). Channel terhubung ke skrip analitik YouTube (OAuth), 6 video cocok dengan siklus 001 dan 004.

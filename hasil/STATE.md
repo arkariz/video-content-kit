@@ -18,7 +18,7 @@ File ini adalah memori kerja tingkat portfolio. Progres per track ada di `hasil/
 
 | ID | Niche | Sudut | Tahap | Channel | Langkah berikutnya | Jam/minggu | Keputusan terakhir |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Channel uang (belum dinamai) | 002 menunggu review; 004 siap publish; analitik 001 mulai 12-02 | 5,5 | 2026-11-26: 002 dirender |
+| T01 | Sejarah dan cara kerja uang | The plumbing of money | validasi | Money Plumbing | 002 menunggu review; 004 siap publish; analitik 001 mulai 12-02 | 5,5 | 2026-11-26: 002 dirender |
 | T02 | Indonesia dan Asia Tenggara dari dalam | Why Southeast Asia works like this | validasi | Channel Asia Tenggara (@equator.logic di TikTok) | Review 002, 003, 004; publish 002 target 12-01 | 6 | 2026-11-26: 002, 003, 004 dirender |
 | T03 | Sejarah dan cara kerja uang | When money breaks | usulan | Channel uang | Cadangan | - | 2026-11-24: cadangan |
 | T04 | Sejarah dan cara kerja uang | Asian business empires | usulan | Channel uang (atau pilar channel Asia Tenggara) | Cadangan | - | 2026-11-24: cadangan |
