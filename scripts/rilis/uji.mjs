@@ -188,6 +188,23 @@ try {
     yt.playlist.length = 0; yt.isiPlaylist.length = 0; yt.belumDikenal = 2; await kirim(c, diam);
     const h = inti.muat(c).hasil.master.youtube; assert.ok(h.selesai.playlist, String(h.galat)); assert.equal(yt.playlist.length, 1); assert.equal(yt.isiPlaylist.length, 1);
   });
+  await uji("persiapan: subtitle dibuat dari produksi, teks agen diterapkan sekali dan tidak menimpa suntingan", async () => {
+    const { buatSubtitle, awalScene, potongan } = await import("./subtitle.mjs");
+    const D = "hasil/tracks/T09-uji/siklus/002-siap"; const kal = "Satu dua tiga empat lima.";
+    tulis(`${D}/03-script.json`, JSON.stringify({ title_options: ["J"], scenes: [{ id: "s01", duration_ms: { en: 1000 }, narration: { id: kal } }, { id: "s02", duration_ms: { en: 2000 }, narration: { id: kal } }], shorts_cuts: [{ name: "S9", scene_ids: ["s02"] }] }));
+    tulis("produksi/captions/T09/002/en.json", JSON.stringify({ s01: [{ text: "One.", startMs: 100, endMs: 500 }], s02: [{ text: "Two.", startMs: 200, endMs: 900 }] }));
+    const d = inti.cari("T09", "002");
+    assert.equal(Math.round(awalScene(JSON.parse(fs.readFileSync(path.join(d.dir, "03-script.json"))), ["s01", "s02"])[1].mulai), 1667);
+    assert.equal(potongan([{ text: "a." }, { text: "b" }]).length, 2);
+    const x = inti.buatRencana(d); assert.deepEqual(x.items.map((i) => i.subtitle.length), [2, 2]);
+    assert.match(fs.readFileSync(path.join(d.dir, "publish/master.en.srt"), "utf8"), /00:00:01,867 --> 00:00:02,567\nTwo\./);
+    assert.match(fs.readFileSync(path.join(d.dir, "publish/S9.en.srt"), "utf8"), /00:00:00,200/); assert.equal(buatSubtitle(d).dibuat.length, 0);
+    tulis(`${D}/06-teks-rilis.json`, JSON.stringify({ master: { komentar: "Dari agen?", terjemahan: { judul: "J id", deskripsi: "D id" }, file: "/etc/passwd" } }));
+    assert.match(inti.terapkanTeksBaru(d), /diterapkan/); let m = inti.muat(d).items[0]; assert.equal(m.komentar, "Dari agen?"); assert.equal(m.terjemahan.deskripsi, "D id"); assert.match(m.file, /Master16x9/);
+    inti.sunting(d, "master", { komentar: "Suntingan" }); inti.terapkanTeksBaru(d); assert.equal(inti.muat(d).items[0].komentar, "Suntingan");
+    inti.ubah(d, (r) => (r.persetujuan = { sidik: "x" })); tulis(`${D}/06-teks-rilis.json`, JSON.stringify({ master: { komentar: "Lain" } })); assert.match(inti.terapkanTeksBaru(d), /tidak diubah/);
+    fs.rmSync(path.join(R, D), { recursive: true });
+  });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;
     try {

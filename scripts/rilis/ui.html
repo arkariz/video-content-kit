@@ -224,7 +224,7 @@ function halamanIsi(d) {
   const jamCepat = (el) => (i.jadwal ? h("div", { class: "baris" }, ["10:00", "12:00", "16:00", "19:00"].map((j) => h("button", { class: "kecil", onclick: () => { el.value = `${el.value.slice(0, 10)}T${j}`; el.dispatchEvent(new Event("change")); } }, j.replace(":", ".")))) : null);
 
   wadah.append(
-    h("div", { class: "baris antara" }, pil, d.panduan ? h("button", { title: "Menimpa teks di semua konten dengan isi 06-publish-manual.md", onclick: () => { if (confirm("Timpa judul, deskripsi, tag, dan komentar yang ada di panduan unggah (06-publish-manual.md)? Suntinganmu pada bidang itu akan hilang.")) aksi(d, { aksi: "impor" }); } }, "Isi dari panduan unggah") : null),
+    h("div", { class: "baris antara" }, pil, d.panduan ? h("button", { title: "Menimpa teks di semua konten dengan isi panduan unggah dan 06-teks-rilis.json", onclick: () => { if (confirm("Timpa teks dengan isi panduan unggah dan 06-teks-rilis.json? Suntinganmu pada bidang yang ada di file itu akan hilang.")) aksi(d, { aksi: "impor" }); } }, "Isi ulang teks dari produksi") : null),
     peringatan,
     terunggah ? h("div", { class: "catatan" }, "Video ini sudah terunggah. Perubahan judul, deskripsi, dan jadwal di sini tidak dikirim ulang; ubah di YouTube Studio.") : "",
     h("div", { class: "dua" },
@@ -333,7 +333,7 @@ async function tampil() {
     if (!t || !s) { if (nomor !== nomorTampil) return; isi.replaceChildren(...halamanPantau(semua, await ambil("/api/sistem")).filter(Boolean)); return jadwalkan(30000); }
     const d = await ambil(`/api/siklus?t=${encodeURIComponent(t)}&s=${encodeURIComponent(s)}`);
     if (nomor !== nomorTampil) return;
-    if (!d.rencana) { isi.replaceChildren(h("h1", {}, `${d.track}-${d.nama}`), h("section", { class: "kartu" }, h("p", {}, `Belum ada rencana rilis. Rencana disusun dari naskah dan hasil render${d.panduan ? ", teksnya diambil dari panduan unggah" : ""}. Belum ada yang dikirim.`), h("button", { class: "utama", onclick: () => aksi(d, { aksi: "plan" }) }, "Buat rencana"))); return; }
+    if (!d.rencana) { isi.replaceChildren(h("h1", {}, `${d.track}-${d.nama}`), h("section", { class: "kartu" }, h("p", {}, `Belum ada rencana rilis. Rencana disusun dari naskah dan hasil render${d.panduan ? ", teksnya diambil dari hasil produksi" : ""}. Belum ada yang dikirim.`), h("button", { class: "utama", onclick: () => aksi(d, { aksi: "plan" }) }, "Buat rencana"))); return; }
     const langkah = ["isi", "kirim", "tugas"].includes(langkahMinta) ? langkahMinta : d.rencana.kunci_manual ? "tugas" : "isi";
     const gulir = scrollY, dulu = isi.dataset.halaman, kini = `${t}/${s}/${langkah}`; isi.dataset.halaman = kini;
     // Gambar ulang di halaman yang sama tidak boleh membuang fokus atau ketikan yang belum dikirim.

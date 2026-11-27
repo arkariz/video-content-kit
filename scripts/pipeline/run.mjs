@@ -24,6 +24,10 @@ const stages = [
   { id: "qa", done: () => false, run: () => spawnSync("node", ["scripts/pipeline/qa.mjs", "--track", o.track, "--siklus", o.siklus], { cwd: ROOT, stdio: "inherit" }).status },
   { id: "publish-plan", done: () => E("06-publish.json"), run: () => spawnSync("node", ["scripts/pipeline/publish.mjs", "plan", "--track", o.track, "--siklus", o.siklus], { cwd: ROOT, stdio: "inherit" }).status },
   { id: "paket-review", done: () => false, run: () => spawnSync("node", ["scripts/pipeline/review.mjs", "--track", o.track, "--siklus", o.siklus], { cwd: ROOT, stdio: "inherit" }).status },
+  // persiapan alat rilis: subtitle dan rencana, lalu teks (komentar, terjemahan) dari agen, lalu diterapkan
+  { id: "rilis", done: () => E("06-rilis.json"), run: () => node("rilis/siapkan.mjs") },
+  { id: "teks-rilis", llm: "teks-rilis", done: () => E("06-teks-rilis.json") || E("06-publish-manual.md") },
+  { id: "rilis-teks", done: () => false, run: () => node("rilis/siapkan.mjs") },
 ];
 const state = readJson(path.join(dir, ".pipeline.json"), { log: [] });
 console.log(`Pipeline ${o.track}/${cycleId}`);

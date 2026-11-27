@@ -5,6 +5,7 @@ import fs from "node:fs"; import path from "node:path"; import crypto from "node
 import { ROOT as REPO, readJson, writeJson } from "../produksi/lib.mjs";
 import { sceneStarts } from "../pipeline/kemasan.mjs";
 import { bacaPanduan } from "./panduan.mjs";
+import { buatSubtitle } from "./subtitle.mjs";
 
 export const ROOT = process.env.RILIS_ROOT || REPO;
 const ada = (rel) => fs.existsSync(path.join(ROOT, rel));
@@ -57,6 +58,7 @@ const fmtT = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart
 const JAM = ["10:00", "12:00", "16:00", "19:00"];
 
 /** Rencana awal dari naskah dan hasil render. Tidak menimpa rencana yang sudah ada. */
+const hash = (t) => crypto.createHash("sha256").update(t).digest("hex");
 export function buatRencana(c) {
   if (muat(c)) throw new Error("06-rilis.json sudah ada; edit di dashboard atau hapus dulu bila belum ada yang terkirim");
   const script = readJson(path.join(c.dir, "03-script.json"));
@@ -64,35 +66,52 @@ export function buatRencana(c) {
   const chapters = (script.chapters || []).filter((x) => start[x.scene] !== undefined);
   const sumber = [...new Set((script.sources || []).map((s) => s.url).filter((u) => /^https?:\/\//.test(u)))];
   const tags = script.tags || [];
-  const hash = tags.slice(0, 3).map((t) => "#" + t.replace(/[^\p{L}\p{N}]/gu, "")).join(" ");
-  const deskripsi = [script.promise, chapters.length >= 3 ? chapters.map((x) => `${fmtT(start[x.scene])} ${x.title}`).join("\n") : "", "Narration uses a synthetic voice.", sumber.length ? `Sources:\n${sumber.join("\n")}` : "", hash].filter(Boolean).join("\n\n");
-  const srt = (nama, bhs) => { const f = `${c.rel}/publish/${nama}.${bhs}.srt`; return ada(f) ? [{ bahasa: bhs, file: f }] : []; };
+  const tagar = tags.slice(0, 3).map((t) => "#" + t.replace(/[^\p{L}\p{N}]/gu, "")).join(" ");
+  const deskripsi = [script.promise, chapters.length >= 3 ? chapters.map((x) => `${fmtT(start[x.scene])} ${x.title}`).join("\n") : "", "Narration uses a synthetic voice.", sumber.length ? `Sources:\n${sumber.join("\n")}` : "", tagar].filter(Boolean).join("\n\n");
+  buatSubtitle(c);
   const gambar = (f) => (ada(f) ? f : null);
-  const item = (nama, i, x) => ({ nama, jadwal: c.tanggal ? `${c.tanggal}T${JAM[Math.min(i, JAM.length - 1)]}` : "", subtitle: [...srt(nama, "en"), ...srt(nama, "id")], playlist: "", terjemahan: { judul: "", deskripsi: "" }, ...x });
+  const item = (nama, i, x) => ({ nama, jadwal: c.tanggal ? `${c.tanggal}T${JAM[Math.min(i, JAM.length - 1)]}` : "", subtitle: daftarSubtitle(c, nama), playlist: "", terjemahan: { judul: "", deskripsi: "" }, ...x });
   const items = [item("master", 0, { file: `${c.render}/Master16x9-en.mp4`, thumbnail: gambar(`${c.render}/Thumbnail-A.png`), judul: script.publish_title || script.title_options?.[0] || "", deskripsi, tag: tags, komentar: "" })];
-  (script.shorts_cuts || []).forEach((s, i) => items.push(item(s.name, i + 1, { file: `${c.render}/Short9x16-${s.name}-en.mp4`, thumbnail: gambar(`${c.render}/Thumbnail-Short-${s.name}.png`), judul: String(s.hook_override ?? s.name).slice(0, 100), deskripsi: `${s.hook_override ?? ""}\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n${hash} #Shorts`.trim(), tag: [...tags.slice(0, 3), "shorts"], komentar: "" })));
+  (script.shorts_cuts || []).forEach((s, i) => items.push(item(s.name, i + 1, { file: `${c.render}/Short9x16-${s.name}-en.mp4`, thumbnail: gambar(`${c.render}/Thumbnail-Short-${s.name}.png`), judul: String(s.hook_override ?? s.name).slice(0, 100), deskripsi: `${s.hook_override ?? ""}\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n${tagar} #Shorts`.trim(), tag: [...tags.slice(0, 3), "shorts"], komentar: "" })));
   // Siklus yang sudah (atau akan) diunggah lewat jalur lain dikunci agar tidak terunggah dua kali.
   const lama = readJson(path.join(c.dir, "06-publish.json"), null);
   const alasan = c.status === "tayang" ? "status siklus di TRACK.md sudah tayang" : lama?.hasil?.length ? "sudah pernah dikirim lewat Upload-Post" : /Jangan jalankan `approve\.mjs`/.test(baca(path.join(c.dir, "06-publish-manual.md"))) ? "catatan 06-publish-manual.md: diunggah manual" : null;
   const r = { versi: 1, track: c.track, siklus: c.nama, dibuat: new Date().toISOString(), kunci_manual: alasan, youtube: { kategori: "27", bahasa: "en", untuk_anak: false, promosi_berbayar: false }, items, persetujuan: null, hasil: {}, checklist: {} };
-  isiPanduan(c, r);
+  isiTeks(c, r);
   simpan(c, r); return r;
 }
 
-/** Salin teks YouTube dari 06-publish-manual.md ke rencana. Mengembalikan jumlah bidang yang terisi. */
-function isiPanduan(c, r) {
-  const p = bacaPanduan(baca(path.join(c.dir, "06-publish-manual.md")), r.items.map((i) => i.nama)); let n = 0;
-  for (const i of r.items) for (const [k, v] of Object.entries(p[i.nama] ?? {})) {
-    if (k === "tag") i.tag = v.split(",").map((x) => x.trim()).filter(Boolean);
-    else if (k === "terjemahan") i.terjemahan = { ...i.terjemahan, judul: v };
-    else i[k] = v;
+const daftarSubtitle = (c, nama) => ["en", "id"].flatMap((b) => { const f = `${c.rel}/publish/${nama}.${b}.srt`; return ada(f) ? [{ bahasa: b, file: f }] : []; });
+
+/** Teks dari 06-publish-manual.md, lalu ditimpa 06-teks-rilis.json (ditulis agen). Mengembalikan jumlah bidang terisi. */
+function isiTeks(c, r) {
+  const panduan = bacaPanduan(baca(path.join(c.dir, "06-publish-manual.md")), r.items.map((i) => i.nama));
+  const mentah = baca(path.join(c.dir, "06-teks-rilis.json")); let agen = {};
+  if (mentah) { try { agen = JSON.parse(mentah); } catch (e) { throw new Error(`06-teks-rilis.json bukan JSON yang sah: ${e.message}`); } r.teks_sidik = hash(mentah); }
+  let n = 0;
+  for (const i of r.items) for (const sumber of [panduan[i.nama], agen[i.nama]]) for (const [k, v] of Object.entries(sumber ?? {})) {
+    if (k === "terjemahan") { const t = typeof v === "string" ? { judul: v } : v; i.terjemahan = { judul: String(t.judul ?? i.terjemahan.judul), deskripsi: String(t.deskripsi ?? i.terjemahan.deskripsi) }; }
+    else if (k === "tag") i.tag = (Array.isArray(v) ? v : String(v).split(",")).map((x) => String(x).trim()).filter(Boolean);
+    else if (["judul", "deskripsi", "komentar", "playlist"].includes(k)) i[k] = String(v);
+    else continue;
     n++;
   }
   return n;
 }
-export const adaPanduan = (c) => fs.existsSync(path.join(c.dir, "06-publish-manual.md"));
+export const adaPanduan = (c) => ["06-publish-manual.md", "06-teks-rilis.json"].some((f) => fs.existsSync(path.join(c.dir, f)));
 export function impor(c) {
-  return ubah(c, (r) => { if (!isiPanduan(c, r)) throw new Error("tidak ada teks yang bisa dibaca dari 06-publish-manual.md"); });
+  return ubah(c, (r) => { if (!isiTeks(c, r)) throw new Error("tidak ada teks yang bisa dibaca dari panduan unggah atau 06-teks-rilis.json"); });
+}
+/** Dipakai siapkan.mjs pada rencana yang sudah ada: ambil subtitle dan teks agen baru, tanpa menyentuh yang sudah disetujui atau terunggah. */
+export function terapkanTeksBaru(c) {
+  const r = muat(c);
+  if (r.persetujuan || Object.values(r.hasil).some((v) => v.youtube?.videoId)) return "Rencana sudah disetujui atau terunggah; tidak diubah.";
+  const mentah = baca(path.join(c.dir, "06-teks-rilis.json"));
+  for (const i of r.items) for (const s of daftarSubtitle(c, i.nama)) if (!i.subtitle.some((x) => x.bahasa === s.bahasa)) i.subtitle.push(s);
+  const baru = !!mentah && r.teks_sidik !== hash(mentah);
+  if (baru) isiTeks(c, r);
+  simpan(c, r);
+  return baru ? "Teks dari 06-teks-rilis.json diterapkan." : "Rencana sudah ada; tidak ada teks baru.";
 }
 
 export const waktu = (jadwal) => (jadwal ? new Date(`${jadwal}:00+07:00`) : null);
