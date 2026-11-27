@@ -1,8 +1,19 @@
 # Opsi judul dan thumbnail baru: T02 siklus 002 (GTA VI)
 
-Dibuat 2026-11-27 atas permintaan kreator: gaya baru dengan acuan `produksi/acuan-visual/eksternal/` (teknik saja: lapisan kedalaman, warna jenuh, cahaya sebagai bentuk, bingkai latar depan), GTA VI ditonjolkan. **Belum dipilih; belum ada yang diubah di platform.**
+Dibuat 2026-11-27 atas permintaan kreator: gaya baru dengan acuan `produksi/acuan-visual/eksternal/` (teknik saja: lapisan kedalaman, warna jenuh, cahaya sebagai bentuk, bingkai latar depan), GTA VI ditonjolkan. **Dipilih kreator 2026-11-27: master 1, Short B1 A, Short B2 A.** Penggantian di platform dilakukan kreator; belum ada yang diubah saat catatan ini ditulis.
 
 Gambar: `produksi/render/T02/002/thumbnail-v2/`. Render ulang: `node hasil/tracks/T02-why-southeast-asia/siklus/002-gta6-download-9-hours/thumbnail-v2/render.mjs`.
+
+## Pilihan: daftar ganti
+| Konten | Judul baru | Thumbnail | Video tayang |
+| --- | --- | --- | --- |
+| Master | GTA 6: Why Is Indonesia Still Downloading? | `Master-1.png` | [YouTube](https://www.youtube.com/watch?v=bsPwUmPYK-g), [Facebook](https://www.facebook.com/share/v/1CjkuyZgQK/) |
+| Short B1 | GTA 6: Same Start, 8 Hours Behind Singapore | `Short1-A.png` | [YouTube](https://www.youtube.com/watch?v=E07f1440m18), [Facebook](https://www.facebook.com/share/r/1KdGT8sP4R/), [Instagram](https://www.instagram.com/reel/DgObTM_tp1b/) |
+| Short B2 | GTA 6: Your Phone Could Beat Your Home Wi-Fi | `Short2-A.png` | [YouTube](https://www.youtube.com/watch?v=GGR5f-mJUPg), [Facebook](https://www.facebook.com/share/r/1HBLVep3z3/), [Instagram](https://www.instagram.com/reel/DgOsApZNbbm/) |
+
+- [ ] Master diganti
+- [ ] Short B1 diganti
+- [ ] Short B2 diganti
 
 ## Master ([YouTube](https://www.youtube.com/watch?v=bsPwUmPYK-g))
 

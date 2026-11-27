@@ -144,3 +144,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Cek fakta 004 (05-cek-fakta.md): s30 (semua tersangka Jambi perorangan) dan s25 (penulis studi) tidak didukung sumber; beberapa catatan lain. Narasi dan video belum diubah.
 - 2026-11-27: Status 004 disamakan dengan hasil di dashboard rilis: siap-publish (2026-11-29).
 - 2026-11-27: Opsi judul dan thumbnail baru 002 dibuat atas permintaan kreator (thumbnail-v2/opsi.md; acuan teknik dari referensi eksternal). Belum dipilih; platform tidak diubah.
+- 2026-11-27: Kreator memilih judul dan thumbnail baru 002: master 1, Short B1 A, Short B2 A. Penggantian di platform belum dilakukan.
