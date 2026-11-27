@@ -12,7 +12,8 @@ import { PORT, SELANG, copot, pasang, terpasang } from "./layanan.mjs";
 import * as hubungkan from "./hubungkan.mjs";
 import * as facebook from "./facebook.mjs";
 import { periksa as periksaFacebook } from "./facebook-periksa.mjs";
-import { bukaKunci, kunci } from "./kunci.mjs";
+import { arsip, bukaKunci, kunci } from "./kunci.mjs";
+import { catatTayang } from "./catat-tayang.mjs";
 import { buatSkenario, hapusSkenario, jadwalUlang } from "./skenario.mjs";
 
 const UI = path.join(import.meta.dirname, "ui.html");
@@ -35,7 +36,7 @@ function sel(c, r) {
 function ringkasan() {
   return inti.daftarSiklus().map((c) => {
     const r = inti.muat(c); const qa = readJson(path.join(c.dir, "05-qa.auto.json"), null);
-    return { track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, status: c.status, tanggal: c.tanggal, adaRencana: !!r, qa: qa?.verdict ?? null, disetujui: !!r && inti.disetujui(r), kunci: r?.kunci_manual ?? null, items: sel(c, r), tugas: r ? inti.checklist(c, r) : [], masalah: r ? inti.masalah(c, r).length : 0, antrean: r ? antrean(r) : [] };
+    return { track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, status: c.status, tanggal: c.tanggal, adaRencana: !!r, qa: qa?.verdict ?? null, disetujui: !!r && inti.disetujui(r), kunci: r?.kunci_manual ?? null, items: sel(c, r), tugas: r ? inti.checklist(c, r) : [], masalah: r ? inti.masalah(c, r).length : 0, antrean: r && !r.arsip ? antrean(r) : [], arsip: r?.arsip ?? null };
   });
 }
 
@@ -44,7 +45,7 @@ function rinci(c) {
   const qa = readJson(path.join(c.dir, "05-qa.auto.json"), null);
   return {
     track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, rel: c.rel,
-    rencana: r, masalah: r ? inti.masalah(c, r) : [], disetujui: !!r && inti.disetujui(r), qa, qaManual: inti.qaManual(c), ujiAlat: !!r?.uji_alat, panduan: inti.adaPanduan(c),
+    rencana: r, masalah: r ? inti.masalah(c, r) : [], disetujui: !!r && inti.disetujui(r), qa, qaManual: inti.qaManual(c), arsip: r?.arsip ?? null, ujiAlat: !!r?.uji_alat, panduan: inti.adaPanduan(c),
     tugas: r ? inti.checklist(c, r) : [], items: sel(c, r), sibuk: inti.sibuk(c), log: logs.get(kunciLog(c)) ?? [],
     berkas: fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /\.(mp4|png|jpg)$/.test(f)) : [],
     kredensial: !!process.env[publishVar(c.track)], kredensialFb: !!process.env[facebook.tokenVar(c.track)],
@@ -56,7 +57,12 @@ function penjadwal() {
   return { terpasang: terpasang("penjadwal"), terakhir: s?.terakhir ?? null, basi: !s || Date.now() - new Date(s.terakhir) > SELANG * 3000, catatan: s?.catatan.slice(-8) ?? [] };
 }
 
-const sistem = () => ({ penjadwal: penjadwal(), dashboard: { otomatis: terpasang("dashboard"), layanan: process.env.RILIS_LAYANAN === "dashboard" }, hubungkan: hubungkan.status(), facebook: facebook.pilihan() });
+const sistem = () => ({ penjadwal: penjadwal(), dashboard: { otomatis: terpasang("dashboard"), layanan: process.env.RILIS_LAYANAN === "dashboard" }, hubungkan: hubungkan.status(), facebook: facebook.pilihan(), akun: akun() });
+/** Status sambungan tiap track yang sudah punya siklus. */
+function akun() {
+  const unik = new Map(inti.daftarSiklus().map((c) => [c.track, c.channel]));
+  return [...unik].map(([track, channel]) => ({ track, channel, youtube: !!process.env[publishVar(track)], facebook: !!process.env[facebook.tokenVar(track)] }));
+}
 
 /** Tombol yang tidak terikat siklus. `keluar` mengakhiri server agar launchd menggantinya. */
 function aksiSistem(b, keluar) {
@@ -83,6 +89,7 @@ function aksiSistem(b, keluar) {
     case "fb-cari": return facebook.cariPage(b).then(sistem);
     case "fb-pilih": facebook.pilihPage(String(b.page)); break;
     case "fb-batal": facebook.batal(); break;
+    case "catat-tayang": { const laporan = []; return catatTayang({ log: (s) => laporan.push(s) }).then(() => ({ ...sistem(), laporan })); }
     default: return null;
   }
   return sistem();
@@ -106,6 +113,7 @@ function aksi(b) {
     case "periksa": jalankan(c, "Periksa di YouTube", (log) => periksa(c, { log })); break;
     case "reset": jalankan(c, "Reset catatan video terhapus", async (log) => { if (process.env[publishVar(c.track)]) await lupakanTerhapus(c, { log }); if (Object.values(inti.muat(c).hasil).some((v) => v.facebook?.sumber === "alat")) await facebook.lupakanTerhapus(c, { log }); }); break;
     case "fb-periksa": jalankan(c, "Periksa di Facebook", (log) => periksaFacebook(c, { log })); break;
+    case "arsip": bebas(); arsip(c, !!b.ya); break;
     case "buka-kunci": bebas(); bukaKunci(c, b.kata); break;
     case "kunci": bebas(); kunci(c); break;
     case "fb-aktif": bebas(); inti.aturFacebook(c, !!b.aktif); break;

@@ -1,0 +1,50 @@
+1
+00:00:00,000 --> 00:00:01,018
+Mulai dari tap.
+
+2
+00:00:01,068 --> 00:00:06,359
+Kartu atau HP kamu memberi terminal
+nomor kartu dan satu kode sekali pakai.
+
+3
+00:00:07,100 --> 00:00:10,757
+Acquirer mengirimnya ke jaringan
+kartu, Visa atau Mastercard.
+
+4
+00:00:10,807 --> 00:00:14,586
+Jaringan membaca enam sampai
+delapan digit pertama nomor kartu,
+
+5
+00:00:14,636 --> 00:00:17,685
+mencari bank penerbitnya,
+lalu meneruskan pesannya.
+
+6
+00:00:18,433 --> 00:00:22,907
+Kalau semua lolos, issuer membalas
+dengan pesan nol satu satu nol,
+
+7
+00:00:22,957 --> 00:00:25,169
+dan field 39 diisi dua angka nol.
+
+8
+00:00:25,219 --> 00:00:26,882
+Nol nol artinya approved.
+
+9
+00:00:28,333 --> 00:00:31,689
+Kalau disetujui, balasan itulah
+bunyi bip yang kamu dengar.
+
+10
+00:00:31,739 --> 00:00:34,229
+Sekarang hitung uang
+yang pindah antar bank.
+
+11
+00:00:34,279 --> 00:00:34,579
+Nol.

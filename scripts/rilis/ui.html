@@ -60,7 +60,7 @@ const TOKEN = "__TOKEN__";
 const $ = (id) => document.getElementById(id);
 const isi = $("isi"), pilih = $("pilih");
 const P = { youtube: "YouTube", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok" };
-const pilihanItem = {}; let saringan = "sekarang", pewaktu = null, antre = Promise.resolve(), tertunda = 0, nomorTampil = 0;
+const pilihanItem = {}; let laporanCatat = null, akunTerbuka = false; let saringan = "sekarang", pewaktu = null, antre = Promise.resolve(), tertunda = 0, nomorTampil = 0;
 
 function h(tag, attr = {}, ...anak) {
   const e = document.createElement(tag);
@@ -116,7 +116,7 @@ async function gantiServer(b) {
 function kartuSistem(sis, dengan) {
   const j = sis.penjadwal, d = sis.dashboard;
   const A = dengan.flatMap((s) => s.antrean.map((a) => ({ ...a, s })));
-  const menunggu = A.filter((a) => a.keadaan === "menunggu"), belum = A.filter((a) => a.keadaan !== "terlewat" && !a.s.disetujui);
+  const menunggu = A.filter((a) => a.keadaan === "menunggu" && a.s.disetujui), belum = A.filter((a) => a.keadaan !== "terlewat" && !a.s.disetujui);
   const [teks, jenis] = !j.terpasang ? ["mati", "warn"] : j.basi ? ["tidak berjalan lebih dari 15 menit", "gagal"] : ["aktif", "ok"];
   return h("section", { class: "kartu" }, h("div", { class: "baris" }, h("h2", { style: "margin:0" }, "Penjadwal"), cip(teks, jenis), j.terakhir ? h("span", { class: "redup kecil-teks" }, `putaran terakhir ${new Date(j.terakhir).toLocaleTimeString("id-ID")}`) : null),
     h("p", { class: "redup kecil-teks" }, "Memposting komentar pertama dan melengkapi thumbnail untuk siklus yang sudah disetujui. Mac harus menyala dan tidak tidur; komentar yang terlambat lebih dari 60 menit menunggu keputusanmu."),
@@ -138,10 +138,25 @@ function panelHubungkan(d, k) {
   if (k.tahap === "konfirmasi") return h("div", { class: "catatan" }, h("div", {}, `Tersambung ke channel ${k.channel}. Simpan untuk ${d.track}?`), k.pesan ? h("div", {}, k.pesan) : null, h("div", { class: "baris" }, h("button", { class: "utama", onclick: () => sistem({ aksi: "hubungkan-ya" }) }, "Ya, simpan"), batal));
   return h("div", { class: "catatan" }, "Menghubungkan…", batal);
 }
+function kartuAkun(sis) {
+  return h("section", { class: "kartu" }, h("details", { class: "akun", open: akunTerbuka, ontoggle: (e) => (akunTerbuka = e.target.open) },
+    h("summary", {}, "Akun: ", sis.akun.map((a) => `${a.track} YouTube ${a.youtube ? "✓" : "✗"} · Facebook ${a.facebook ? "✓" : "✗"}`).join("   |   ")),
+    h("p", { class: "redup kecil-teks" }, "Tiap track punya channel dan Page sendiri. Akun Google atau Facebook boleh berbeda; pilih akun yang benar di halaman izin."),
+    sis.akun.map((a) => { const d = { track: a.track, channel: a.channel, kredensial: a.youtube }; return h("div", { style: "border-top:1px solid var(--garis); padding:10px 0" },
+      h("b", {}, `${a.track} · ${a.channel || "channel belum diisi"}`),
+      h("div", { class: "baris" }, "YouTube", cip(a.youtube ? "terhubung" : "belum", a.youtube ? "ok" : "warn")), panelHubungkan(d, sis.hubungkan),
+      h("div", { class: "baris" }, "Facebook", cip(a.facebook ? "terhubung" : "belum", a.facebook ? "ok" : "warn")),
+      a.facebook ? h("details", {}, h("summary", { class: "kecil-teks" }, "Ganti Page"), formPage(d, sis.facebook)) : h("details", { open: sis.facebook?.track === a.track }, h("summary", {}, `Hubungkan Page ${a.track}`), formPage(d, sis.facebook))); })));
+}
+async function catatTayang(tombol) {
+  try { bersih(); tombol.disabled = true; tombol.textContent = "Membaca platform…"; laporanCatat = (await post({ aksi: "catat-tayang" })).laporan; await tampil(); }
+  catch (e) { galat(e.message); tombol.disabled = false; tombol.textContent = "Catat yang sudah tayang"; }
+}
 function halamanPantau(semua, sis) {
-  const dengan = semua.filter((s) => s.adaRencana), tanpa = semua.filter((s) => !s.adaRencana).reverse();
+  const diarsip = semua.filter((s) => s.arsip);
+  const dengan = semua.filter((s) => s.adaRencana && !s.arsip), tanpa = semua.filter((s) => !s.adaRencana).reverse();
   const tugas = dengan.flatMap((s) => s.tugas); const n = hitung(tugas);
-  const gagal = dengan.flatMap((s) => s.items.flatMap((i) => [...i.galat, ...s.antrean.filter((a) => a.nama === i.nama && a.keadaan === "terlewat").map(() => "komentar terlewat; jalankan pasca-tayang bila masih mau")].map((g) => ({ s, i, g }))));
+  const gagal = dengan.flatMap((s) => s.items.flatMap((i) => [...i.galat, ...s.antrean.filter((a) => s.disetujui && a.nama === i.nama && a.keadaan === "terlewat").map(() => "komentar terlewat; jalankan pasca-tayang bila masih mau")].map((g) => ({ s, i, g }))));
   const konten = dengan.flatMap((s) => s.items.map((i) => ({ s, i, sisa: s.tugas.filter((t) => t.item === i.nama && !t.selesai) })));
   // Yang masih akan tayang, atau sudah lewat jadwal tetapi masih ada tugasnya.
   const agenda = konten.filter((k) => (k.i.jadwal && tgl(k.i.jadwal) > Date.now()) || k.sisa.length).sort((a, b) => (a.i.jadwal || "9").localeCompare(b.i.jadwal || "9"));
@@ -154,6 +169,8 @@ function halamanPantau(semua, sis) {
       angka("Kegagalan", gagal.length, gagal.length ? "lihat di bawah" : "tidak ada", gagal.length ? "gagal" : "ok")),
     gagal.length ? h("section", { class: "kartu" }, h("h2", {}, "Perlu diperbaiki"), gagal.map(({ s, i, g }) => h("div", { class: "catatan gagal" }, h("a", { href: `#/${s.track}/${s.siklus}/kirim` }, `${s.track}-${s.siklus} ${i.nama}`), `: ${g}`))) : null,
     kartuSistem(sis, dengan),
+    kartuAkun(sis),
+    h("section", { class: "kartu" }, h("div", { class: "baris" }, h("button", { onclick: (e) => catatTayang(e.currentTarget) }, "Catat yang sudah tayang"), h("span", { class: "redup kecil-teks" }, "Mencari unggahan manual di YouTube, Facebook, dan catatan proyek; siklus yang cocok dikunci.")), laporanCatat ? h("pre", {}, laporanCatat.join("\n")) : null),
     h("section", { class: "kartu" }, h("h2", {}, "Agenda"),
       agenda.length ? agenda.map(({ s, i, sisa }) => {
         const siap = sisa.filter((t) => !t.tunggu).length;
@@ -166,8 +183,9 @@ function halamanPantau(semua, sis) {
     dengan.length ? h("section", { class: "kartu" }, h("h2", {}, "Siklus berjalan"), dengan.map((s) => { const k = hitung(s.tugas); return h("div", { class: "agenda" },
       h("div", { class: "tengah" }, h("a", { href: `#/${s.track}/${s.siklus}` }, h("b", {}, `${s.track}-${s.nama}`)), h("div", { class: "baris" }, cip(s.kunci ? "unggah manual" : s.disetujui ? "disetujui" : "belum disetujui", s.disetujui ? "ok" : "warn"), cip(s.qa ? `QA ${s.qa.startsWith("GAGAL") ? "gagal" : "otomatis lulus"}` : "QA belum jalan", s.qa && !s.qa.startsWith("GAGAL") ? "ok" : "gagal"), h("span", { class: "redup kecil-teks" }, s.channel))),
       h("div", { class: "baris", style: "flex:1 1 220px" }, bilah(k.selesai, k.total), h("span", { class: "redup kecil-teks" }, `${k.selesai}/${k.total} tugas`))); })) : null,
-    h("section", { class: "kartu" }, h("h2", {}, "Skenario uji"), h("p", { class: "redup" }, "Membuat siklus uji (master 45 detik dan satu Short) dengan jadwal 5 dan 6 menit dari sekarang (di Facebook langsung tayang). Video uji akan publik pada jadwalnya, tanpa notifikasi subscriber, dan harus kamu hapus di Studio."),
-      h("div", { class: "baris" }, ["T01", "T02"].map((t) => h("button", { onclick: async () => { try { bersih(); const d = await post({ aksi: "skenario", track: t }); location.hash = `#/${d.track}/${d.siklus}/kirim`; } catch (e) { galat(e.message); } } }, `Buat skenario uji ${t}`)))),
+    diarsip.length ? h("section", { class: "kartu" }, h("details", {}, h("summary", {}, `Arsip (${diarsip.length})`), diarsip.map((s) => h("div", { class: "agenda" }, h("div", { class: "tengah" }, h("a", { href: `#/${s.track}/${s.siklus}` }, `${s.track}-${s.nama}`)))))) : null,
+    h("section", { class: "kartu" }, h("details", {}, h("summary", {}, "Alat uji"), h("p", { class: "redup" }, "Membuat siklus uji (master 45 detik dan satu Short) dengan jadwal 5 dan 6 menit dari sekarang (di Facebook langsung tayang). Video uji akan publik pada jadwalnya, tanpa notifikasi subscriber, dan harus kamu hapus di Studio."),
+      h("div", { class: "baris" }, ["T01", "T02"].map((t) => h("button", { onclick: async () => { try { bersih(); const d = await post({ aksi: "skenario", track: t }); location.hash = `#/${d.track}/${d.siklus}/kirim`; } catch (e) { galat(e.message); } } }, `Buat skenario uji ${t}`))))),
     tanpa.length ? h("section", { class: "kartu" }, h("details", { open: !dengan.length }, h("summary", {}, `Siklus tanpa rencana (${tanpa.length})`), h("div", { class: "gulir" }, h("table", {}, tanpa.map((s) => h("tr", {}, h("td", {}, `${s.track}-${s.nama}`), h("td", { class: "redup" }, `${s.status} ${s.tanggal ?? ""}`), h("td", {}, h("a", { href: `#/${s.track}/${s.siklus}` }, "Buka")))))))) : null,
   ];
 }
@@ -180,6 +198,7 @@ function kepala(d, langkah) {
   return h("div", { id: "kepala" },
     h("div", { class: "baris antara" }, h("div", {}, h("h1", {}, `${d.track}-${d.nama}`), h("span", { class: "redup" }, d.channel || "channel belum diisi di TRACK.md")),
       h("div", { class: "baris status" }, cip(d.rencana.kunci_manual ? "unggah manual" : d.disetujui ? "disetujui" : "belum disetujui", d.disetujui ? "ok" : "warn"), d.sibuk ? cip("sedang mengirim…", "biru") : null)),
+    h("div", { class: "baris" }, d.arsip ? cip("diarsipkan") : null, h("button", { class: "kecil", onclick: () => aksi(d, { aksi: "arsip", ya: !d.arsip }) }, d.arsip ? "Keluarkan dari arsip" : "Arsipkan siklus")),
     h("nav", { class: "langkah" }, tab("isi", `1 · Isi konten (${lengkap}/${d.rencana.items.length})`), tab("kirim", `2 · Setujui dan kirim${d.disetujui ? " ✓" : ""}`), tab("tugas", `3 · Tugas dan URL (${k.selesai}/${k.total})`)));
 }
 
@@ -272,8 +291,8 @@ function panelFacebook(d, sis) {
     d.kredensialFb ? h("details", {}, h("summary", { class: "kecil-teks" }, "Ganti Page"), formPage(d, sis.facebook)) : formPage(d, sis.facebook),
     h("div", { class: "baris" }, tombol("fb-kirim", "Kirim ke Facebook", `Unggah ke Page ${d.track}: master sebagai video, Short sebagai Reel, ${d.ujiAlat ? "dan TAYANG SEGERA bila jadwalnya kurang dari 11 menit (siklus uji)" : "sesuai jadwal"}?`, alasan(!aktif && "belum dinyalakan", r.kunci_manual && "unggah dikunci", belum, umum), true),
       tombol("fb-pasca", "Pasca-tayang Facebook", "Posting komentar pada video Facebook yang sudah tayang?", alasan(belum, umum, !sudah && "belum ada video Facebook")),
-      h("button", { disabled: !!alasan(umum, !sudah && "belum ada video Facebook"), title: alasan(umum, !sudah && "belum ada video Facebook"), onclick: () => aksi(d, { aksi: "fb-periksa" }) }, "Periksa di Facebook"),
-      tombol("fb-draf", "Unggah draf (uji)", "Unggah satu Short sebagai Reel DRAF untuk uji? Hapus drafnya sesudah diperiksa.", umum)));
+      h("button", { disabled: !!alasan(umum, !sudah && "belum ada video Facebook"), title: alasan(umum, !sudah && "belum ada video Facebook"), onclick: () => aksi(d, { aksi: "fb-periksa" }) }, "Periksa di Facebook")),
+    h("details", {}, h("summary", { class: "kecil-teks" }, "Alat uji"), tombol("fb-draf", "Unggah draf (uji)", "Unggah satu Short sebagai Reel DRAF untuk uji? Hapus drafnya sesudah diperiksa.", umum)));
 }
 
 function halamanKirim(d, sis) {
@@ -316,8 +335,9 @@ function halamanKirim(d, sis) {
         h("button", { class: "kecil", disabled: d.sibuk, onclick: () => { const kata = prompt(`Kunci ini mencegah unggahan ganda (YouTube dan Facebook). Pastikan video ${d.track}-${d.siklus} BELUM ada atau terjadwal di channel dan Page, lalu ketik BUKA.`); if (kata !== null) aksi(d, { aksi: "buka-kunci", kata: kata.trim() }); } }, "Buka kunci unggah…"))
         : h("details", {}, h("summary", { class: "kecil-teks" }, "Diunggah manual saja?"), h("button", { class: "kecil", disabled: d.sibuk, onclick: () => confirm("Kunci unggah siklus ini? Persetujuan dibatalkan.") && aksi(d, { aksi: "kunci" }) }, "Kunci unggah")),
       panelHubungkan(d, sis.hubungkan),
-      h("div", { class: "baris" }, tombol("kirim", "Kirim ke YouTube", `Unggah ke YouTube channel ${d.track}:\n${daftar}`, mKirim, true), tombol("pasca", "Jalankan pasca-tayang", "Posting komentar pertama pada video yang sudah publik?", mPasca), tombol("uji", "Unggah uji (privat)", "Unggah satu Short sebagai PRIVAT untuk uji? Hapus videonya di Studio setelah diperiksa.", mUji), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: alasan(umum, !sudah && "belum ada video YouTube"), onclick: () => aksi(d, { aksi: "periksa" }) }, "Periksa di YouTube"), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: "Untuk video yang sudah kamu hapus di Studio: catatannya dilupakan agar bisa diunggah ulang", onclick: () => confirm("Lupakan catatan unggah untuk video yang sudah terhapus di YouTube? Persetujuan akan dibatalkan.") && aksi(d, { aksi: "reset" }) }, "Reset yang terhapus")),
+      h("div", { class: "baris" }, tombol("kirim", "Kirim ke YouTube", `Unggah ke YouTube channel ${d.track}:\n${daftar}`, mKirim, true), tombol("pasca", "Jalankan pasca-tayang", "Posting komentar pertama pada video yang sudah publik?", mPasca), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: alasan(umum, !sudah && "belum ada video YouTube"), onclick: () => aksi(d, { aksi: "periksa" }) }, "Periksa di YouTube"), h("button", { disabled: !!alasan(umum, !sudah && "belum ada video YouTube"), title: "Untuk video yang sudah kamu hapus di Studio: catatannya dilupakan agar bisa diunggah ulang", onclick: () => confirm("Lupakan catatan unggah untuk video yang sudah terhapus di YouTube? Persetujuan akan dibatalkan.") && aksi(d, { aksi: "reset" }) }, "Reset yang terhapus")),
       mKirim ? h("div", { class: "redup kecil-teks" }, `Tombol kirim nonaktif: ${mKirim}.`) : null,
+      h("details", {}, h("summary", { class: "kecil-teks" }, "Alat uji"), tombol("uji", "Unggah uji (privat)", "Unggah satu Short sebagai PRIVAT untuk uji? Hapus videonya di Studio setelah diperiksa.", mUji)),
       d.log.length ? h("pre", { "aria-live": "polite" }, d.log.join("\n")) : null),
     panelFacebook(d, sis),
   ];
@@ -361,7 +381,7 @@ async function tampil() {
     const semua = await ambil("/api/ringkasan");
     pilih.replaceChildren(h("option", { value: "" }, "Buka siklus…"), ...semua.map((x) => h("option", { value: `${x.track}/${x.siklus}` }, `${x.track}-${x.nama}`)));
     pilih.value = t && s ? `${t}/${s}` : "";
-    if (!t || !s) { if (nomor !== nomorTampil) return; isi.replaceChildren(...halamanPantau(semua, await ambil("/api/sistem")).filter(Boolean)); return jadwalkan(30000); }
+    if (!t || !s) { const sis = await ambil("/api/sistem"); if (nomor !== nomorTampil) return; isi.replaceChildren(...halamanPantau(semua, sis).filter(Boolean)); return jadwalkan(sis.hubungkan && !["selesai", "gagal"].includes(sis.hubungkan.tahap) ? 2000 : 30000); }
     const d = await ambil(`/api/siklus?t=${encodeURIComponent(t)}&s=${encodeURIComponent(s)}`);
     if (nomor !== nomorTampil) return;
     if (!d.rencana) { isi.replaceChildren(h("h1", {}, `${d.track}-${d.nama}`), h("section", { class: "kartu" }, h("p", {}, `Belum ada rencana rilis. Rencana disusun dari naskah dan hasil render${d.panduan ? ", teksnya diambil dari hasil produksi" : ""}. Belum ada yang dikirim.`), h("button", { class: "utama", onclick: () => aksi(d, { aksi: "plan" }) }, "Buat rencana"))); return; }
@@ -382,7 +402,11 @@ async function tampil() {
 /** Segarkan berkala; ditunda selama pengguna sedang mengetik. */
 function jadwalkan(ms) {
   clearTimeout(pewaktu);
-  pewaktu = setTimeout(() => (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) && document.activeElement.type !== "checkbox" ? jadwalkan(ms) : tampil()), ms);
+  pewaktu = setTimeout(() => {
+    // Isian yang sedang diketik atau sudah diisi (mis. token Page) tidak boleh hilang karena gambar ulang.
+    const sibuk = (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) && document.activeElement.type !== "checkbox") || [...isi.querySelectorAll("input[type=password]")].some((e) => e.value);
+    sibuk ? jadwalkan(ms) : tampil();
+  }, ms);
 }
 
 pilih.addEventListener("change", () => (location.hash = pilih.value ? `#/${pilih.value}` : "#/"));

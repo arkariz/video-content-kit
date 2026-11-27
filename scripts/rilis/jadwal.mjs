@@ -54,10 +54,10 @@ export async function putaran({ log = console.log, beri = notifikasi, kini = Dat
   for (const c of daftarSiklus()) {
     const label = `${c.track}-${c.siklus}`;
     try {
-      const r = muat(c); if (!r) continue;
+      const r = muat(c); if (!r || r.arsip) continue;
       const A = antrean(r, kini); const nama = (x) => `${label} ${x.nama}${x.platform === "facebook" ? " Facebook" : ""}`;
-      // Terlewat: beri tahu sekali saja.
-      for (const t of A.filter((x) => x.keadaan === "terlewat" && !r.hasil[x.nama][x.platform].terlewatDiberitahu)) {
+      // Terlewat: beri tahu sekali saja, dan hanya untuk siklus yang memang disetujui untuk diposting.
+      for (const t of A.filter((x) => disetujui(r) && x.keadaan === "terlewat" && !r.hasil[x.nama][x.platform].terlewatDiberitahu)) {
         ubah(c, (x) => (x.hasil[t.nama][t.platform].terlewatDiberitahu = new Date(kini).toISOString()));
         tulis(`${nama(t)}: komentar TERLEWAT; posting lewat "Jalankan pasca-tayang" bila masih mau`); beri(`${nama(t)}: komentar terlewat, perlu keputusanmu`);
       }

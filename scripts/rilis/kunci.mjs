@@ -10,3 +10,5 @@ export function bukaKunci(c, kata) {
   });
 }
 export const kunci = (c) => ubah(c, (r) => { if (r.kunci_manual) throw new Error("siklus ini sudah terkunci"); r.kunci_manual = "dikunci lewat dashboard: diunggah manual"; r.persetujuan = null; });
+/** Siklus yang diarsipkan tidak muncul di agenda dan tidak disentuh penjadwal. */
+export const arsip = (c, ya) => ubah(c, (r) => { if (ya) r.arsip = new Date().toISOString(); else delete r.arsip; });

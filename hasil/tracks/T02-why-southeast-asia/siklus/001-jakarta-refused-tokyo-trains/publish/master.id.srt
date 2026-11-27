@@ -1,0 +1,854 @@
+1
+00:00:00,000 --> 00:00:04,227
+Kamu naik kereta komuter Jakarta
+yang dulu mulai bekerja di Tokyo,
+
+2
+00:00:04,277 --> 00:00:05,458
+puluhan tahun lalu.
+
+3
+00:00:05,508 --> 00:00:08,309
+November lalu, Jakarta
+menolak membeli lagi.
+
+4
+00:00:09,033 --> 00:00:11,295
+Alasan kereta ini datang
+ke sini sederhana,
+
+5
+00:00:11,345 --> 00:00:13,714
+dan cara kerjanya seperti
+baju bekas turunan.
+
+6
+00:00:13,764 --> 00:00:17,639
+Baju itu hanya cocok kalau ukurannya
+sama, dan hanya berguna selama masih
+
+7
+00:00:17,689 --> 00:00:18,607
+ada umur pakainya.
+
+8
+00:00:18,657 --> 00:00:20,918
+Alasan berhentinya
+adalah aturan soal umur.
+
+9
+00:00:21,667 --> 00:00:24,065
+Ada empat pemain dalam cerita ini.
+
+10
+00:00:24,115 --> 00:00:27,448
+KAI, perusahaan kereta
+api negara di balik KRL.
+
+11
+00:00:27,498 --> 00:00:30,400
+Pemerintah, yang menetapkan aturan impor.
+
+12
+00:00:30,450 --> 00:00:32,848
+INKA, pembuat kereta dalam negeri.
+
+13
+00:00:32,898 --> 00:00:36,016
+Dan CRRC, pembuat kereta
+baru dari Tiongkok.
+
+14
+00:00:36,066 --> 00:00:39,688
+Kita bahas kenapa kereta
+Tokyo cocok untuk Jakarta,
+
+15
+00:00:39,738 --> 00:00:43,504
+kenapa kesepakatan itu
+bertahan dua puluh lima tahun,
+
+16
+00:00:43,554 --> 00:00:45,952
+dan kenapa berakhir November 2026.
+
+17
+00:00:46,700 --> 00:00:48,420
+Semuanya dimulai dari hibah.
+
+18
+00:00:48,470 --> 00:00:53,225
+Mei 2000, badan bantuan Jepang dan
+pemerintah kota Tokyo memberi tujuh puluh
+
+19
+00:00:53,275 --> 00:00:57,145
+dua gerbong kereta bawah tanah
+bekas dari jalur Mita di Tokyo.
+
+20
+00:00:57,867 --> 00:00:59,767
+Gerbong itu dibuat mulai 1968.
+
+21
+00:00:59,817 --> 00:01:03,343
+Tokyo memensiunkannya setelah
+sekitar tiga puluh tahun,
+
+22
+00:01:03,393 --> 00:01:06,269
+dan Jakarta masih
+menjalankannya sampai 2016.
+
+23
+00:01:07,000 --> 00:01:09,779
+Itu kereta listrik ber-AC
+pertama di Indonesia.
+
+24
+00:01:09,829 --> 00:01:13,813
+Waktu itu, penumpang yang berjejal
+bergelantungan di pintu terbuka,
+
+25
+00:01:13,863 --> 00:01:15,077
+bahkan duduk di atap.
+
+26
+00:01:15,800 --> 00:01:17,410
+Lalu Jakarta mulai membeli.
+
+27
+00:01:17,460 --> 00:01:21,714
+Tahun 2014, operatornya bilang satu
+gerbong bekas dari Jepang harganya
+
+28
+00:01:21,764 --> 00:01:24,481
+delapan ratus juta sampai
+satu miliar rupiah.
+
+29
+00:01:25,200 --> 00:01:27,552
+Gerbong baru sepuluh
+sampai dua belas miliar.
+
+30
+00:01:27,602 --> 00:01:30,862
+Kursinya sama, pintunya sama,
+harganya kira-kira sepersepuluh.
+
+31
+00:01:31,600 --> 00:01:35,732
+Pabrik kereta Indonesia sendiri, INKA,
+mematok sekitar satu koma tiga juta
+
+32
+00:01:35,782 --> 00:01:37,484
+dolar per gerbong baru di 2019.
+
+33
+00:01:37,534 --> 00:01:41,722
+Bahkan setelah ongkos kirim, gerbong
+bekas harganya kira-kira sepersembilan
+
+34
+00:01:41,772 --> 00:01:42,231
+dari itu.
+
+35
+00:01:42,967 --> 00:01:44,980
+Untuk Jepang, ini juga untung.
+
+36
+00:01:45,030 --> 00:01:46,768
+Membuang kereta itu mahal.
+
+37
+00:01:46,818 --> 00:01:51,926
+Mengirimnya ke Jakarta lebih murah,
+dan keretanya tetap dipakai orang lain.
+
+38
+00:01:53,400 --> 00:01:55,645
+Tapi harga saja tidak cukup menjelaskan.
+
+39
+00:01:55,695 --> 00:01:59,374
+Di banyak negara, kereta dari
+Tokyo tidak bisa jalan tanpa diubah
+
+40
+00:01:59,424 --> 00:02:00,177
+besar-besaran.
+
+41
+00:02:00,227 --> 00:02:01,152
+Di Jakarta, bisa.
+
+42
+00:02:01,900 --> 00:02:04,538
+Ukuran pertama yang cocok adalah relnya.
+
+43
+00:02:04,588 --> 00:02:09,511
+Jalur kereta biasa di Jepang dan jalur
+di Jawa sama-sama seribu enam puluh
+
+44
+00:02:09,561 --> 00:02:10,586
+tujuh milimeter.
+
+45
+00:02:10,636 --> 00:02:14,014
+Kalau lebar relnya beda,
+roda dan as harus diganti,
+
+46
+00:02:14,064 --> 00:02:15,828
+sering kali keretanya juga.
+
+47
+00:02:16,567 --> 00:02:18,594
+Kesamaan ini ada sejarahnya.
+
+48
+00:02:18,644 --> 00:02:23,268
+Jalur kereta pertama di Jawa,
+tahun 1867, dibangun lebih lebar.
+
+49
+00:02:23,318 --> 00:02:28,462
+Saat pendudukan Jepang tahun 1940-an,
+jalur lebar yang tersisa di Jawa
+
+50
+00:02:28,512 --> 00:02:31,801
+diubah ke lebar rel
+Jepang yang lebih sempit.
+
+51
+00:02:31,851 --> 00:02:35,882
+Itu alasan besar kereta Tokyo
+pas di rel Jawa sekarang.
+
+52
+00:02:36,600 --> 00:02:38,086
+Listriknya juga cocok.
+
+53
+00:02:38,136 --> 00:02:43,183
+Jalur listrik Jakarta dibuka tahun
+1925 dengan seribu lima ratus volt DC,
+
+54
+00:02:43,233 --> 00:02:46,813
+sistem yang sama dengan
+rancangan seri 205 di Tokyo.
+
+55
+00:02:47,533 --> 00:02:49,115
+Rel sama, listrik sama.
+
+56
+00:02:49,165 --> 00:02:53,583
+Kereta Tokyo datang naik kapal,
+diganti tandanya dan diperiksa,
+
+57
+00:02:53,633 --> 00:02:56,632
+lalu langsung dipakai
+tanpa membongkar rel.
+
+58
+00:02:57,367 --> 00:02:59,024
+Jadi Jakarta terus membeli.
+
+59
+00:02:59,074 --> 00:03:03,704
+Tahun 2012, operatornya menargetkan
+seratus empat puluh gerbong tahun itu,
+
+60
+00:03:03,754 --> 00:03:06,930
+dan seribu empat ratus
+empat puluh gerbong di 2019.
+
+61
+00:03:07,667 --> 00:03:10,305
+Gelombang terbesar datang belakangan.
+
+62
+00:03:10,355 --> 00:03:15,827
+Seri 205 milik JR East, kereta komuter
+Tokyo yang pertama dibuat tahun 1985,
+
+63
+00:03:15,877 --> 00:03:18,298
+mulai jalan di Jakarta tahun 2013.
+
+64
+00:03:19,033 --> 00:03:21,766
+Sampai sekarang tulang
+punggungnya masih Jepang.
+
+65
+00:03:21,816 --> 00:03:25,361
+Tujuh ratus delapan puluh gerbong
+dari seri 205 milik JR East,
+
+66
+00:03:25,411 --> 00:03:28,085
+dan seratus dua puluh
+delapan dari Tokyo Metro.
+
+67
+00:03:28,833 --> 00:03:32,220
+Umur gerbong itu tiga puluh empat
+sampai empat puluh satu tahun.
+
+68
+00:03:32,270 --> 00:03:35,656
+Banyak yang mulai bekerja di Tokyo
+sebelum Tembok Berlin runtuh.
+
+69
+00:03:37,133 --> 00:03:41,418
+Armada setua itu harus diganti,
+dan jumlah penumpang terus naik.
+
+70
+00:03:41,468 --> 00:03:46,023
+Upaya pertama menggantinya dengan
+kereta Tokyo lagi terjadi di 2023,
+
+71
+00:03:46,073 --> 00:03:46,835
+dan ditolak.
+
+72
+00:03:47,567 --> 00:03:52,615
+Operatornya minta izin impor tiga
+ratus empat puluh delapan gerbong bekas
+
+73
+00:03:52,665 --> 00:03:56,526
+model Jepang yang lebih baru,
+E217, untuk 2023 dan 2024.
+
+74
+00:03:57,267 --> 00:03:58,460
+Pemerintah menolak.
+
+75
+00:03:58,510 --> 00:04:00,227
+Gerbongnya tetap di Jepang.
+
+76
+00:04:00,277 --> 00:04:04,415
+Sebagai gantinya, kereta lama
+diperbarui dan kereta baru dibeli.
+
+77
+00:04:05,133 --> 00:04:08,185
+Kereta baru datang dari dua tempat.
+
+78
+00:04:08,235 --> 00:04:12,792
+Pabrikan China, CRRC Sifang,
+dan INKA di Jawa Timur.
+
+79
+00:04:13,533 --> 00:04:17,065
+INKA juga mendapat kontrak memperbarui
+sembilan belas rangkaian lama,
+
+80
+00:04:17,115 --> 00:04:19,660
+supaya tetap bisa jalan
+selama kereta baru dibuat.
+
+81
+00:04:20,400 --> 00:04:24,561
+Januari 2024, operatornya meneken
+kontrak tiga rangkaian dari China.
+
+82
+00:04:24,611 --> 00:04:27,904
+Nilainya tujuh ratus delapan
+puluh tiga miliar rupiah,
+
+83
+00:04:27,954 --> 00:04:31,310
+sekitar dua ratus enam puluh
+satu miliar per rangkaian.
+
+84
+00:04:32,033 --> 00:04:33,261
+Kereta barunya lebih panjang.
+
+85
+00:04:33,311 --> 00:04:36,434
+Tiap rangkaian berisi dua belas gerbong
+dan bisa mengangkut sekitar tiga
+
+86
+00:04:36,484 --> 00:04:38,020
+ribu empat ratus orang sekali jalan.
+
+87
+00:04:38,767 --> 00:04:40,190
+Bandingkan dengan cara lama.
+
+88
+00:04:40,240 --> 00:04:43,399
+Dua belas gerbong bekas Jepang
+dulu sekitar dua belas miliar.
+
+89
+00:04:43,449 --> 00:04:47,240
+Satu rangkaian baru berisi dua belas
+gerbong harganya kira-kira dua puluh
+
+90
+00:04:47,290 --> 00:04:47,819
+kali lipat.
+
+91
+00:04:48,567 --> 00:04:51,816
+Kereta baru menyelesaikan
+satu masalah: umur.
+
+92
+00:04:51,866 --> 00:04:55,262
+November 2025, tiga seri
+Jepang tertua pensiun,
+
+93
+00:04:55,312 --> 00:04:58,269
+sebagian umurnya hampir lima puluh tahun.
+
+94
+00:04:59,000 --> 00:05:03,010
+Kabin masinisnya akan dipajang
+permanen di Stasiun Jakarta Kota.
+
+95
+00:05:03,060 --> 00:05:06,752
+Jakarta memberi kereta bekasnya
+upacara pensiun yang layak.
+
+96
+00:05:08,233 --> 00:05:11,635
+Jadi rencananya kereta baru
+dari China dan dari INKA.
+
+97
+00:05:11,685 --> 00:05:13,849
+Titik lemahnya ada di pabrik INKA.
+
+98
+00:05:14,567 --> 00:05:17,028
+Kesebelas rangkaian
+China sudah beroperasi,
+
+99
+00:05:17,078 --> 00:05:19,364
+kebanyakan di lintas Bogor dan Cikarang.
+
+100
+00:05:19,414 --> 00:05:23,745
+Di sini, kereta China di lintas Bogor
+berbagi rel dengan kereta Jepang yang
+
+101
+00:05:23,795 --> 00:05:24,095
+lama.
+
+102
+00:05:24,767 --> 00:05:27,504
+INKA diproyeksikan membuat
+delapan rangkaian setahun.
+
+103
+00:05:27,554 --> 00:05:29,082
+Yang terwujud dua sampai tiga.
+
+104
+00:05:29,800 --> 00:05:33,595
+Sampai September 2026, baru tujuh
+dari enam belas rangkaian INKA yang
+
+105
+00:05:33,645 --> 00:05:34,208
+beroperasi.
+
+106
+00:05:34,258 --> 00:05:37,162
+Artinya masih ada sembilan
+rangkaian yang diandalkan,
+
+107
+00:05:37,212 --> 00:05:38,945
+tapi belum mengangkut siapa pun.
+
+108
+00:05:39,667 --> 00:05:41,465
+Sementara itu kereta makin padat.
+
+109
+00:05:41,515 --> 00:05:45,723
+Jumlah penumpang semester pertama 2026
+naik sekitar sebelas persen dibanding
+
+110
+00:05:45,773 --> 00:05:46,676
+tahun sebelumnya.
+
+111
+00:05:47,400 --> 00:05:50,010
+Itu sekitar satu koma satu
+juta perjalanan per hari.
+
+112
+00:05:50,060 --> 00:05:53,182
+Operatornya merencanakan pertumbuhan
+tiga sampai empat persen,
+
+113
+00:05:53,232 --> 00:05:53,898
+bukan sebelas.
+
+114
+00:05:54,633 --> 00:05:57,843
+Di hari tersibuk, jumlahnya bisa
+mencapai satu koma tiga juta.
+
+115
+00:05:57,893 --> 00:06:00,945
+Itu dua ratus ribu perjalanan
+lebih banyak dari hari biasa.
+
+116
+00:06:01,667 --> 00:06:04,837
+Operatornya menghitung butuh
+seratus lima rangkaian.
+
+117
+00:06:04,887 --> 00:06:06,447
+Yang tersedia seratus dua.
+
+118
+00:06:07,167 --> 00:06:09,143
+Dan kekurangannya akan membesar.
+
+119
+00:06:09,193 --> 00:06:13,386
+Tiga belas rangkaian eks Tokyo
+Metro dijadwalkan pensiun tahun ini.
+
+120
+00:06:14,133 --> 00:06:18,268
+Kereta baru butuh satu sampai dua
+tahun dari pesan sampai datang.
+
+121
+00:06:18,318 --> 00:06:22,582
+Pesanan yang diteken Januari 2026
+paling cepat baru datang di 2027.
+
+122
+00:06:24,033 --> 00:06:27,884
+Maka September 2026, Jakarta
+kembali melirik Tokyo.
+
+123
+00:06:28,633 --> 00:06:34,621
+Tanggal 23 September, pimpinan KAI
+meminta DPR mengizinkan lagi kereta bekas
+
+124
+00:06:34,671 --> 00:06:38,196
+Jepang, sebagai tambalan
+untuk 2026 dan 2027.
+
+125
+00:06:38,933 --> 00:06:40,301
+Komisi VI DPR setuju.
+
+126
+00:06:40,351 --> 00:06:44,485
+Rencananya dua puluh tiga rangkaian
+bekas, dengan satu syarat:
+
+127
+00:06:44,535 --> 00:06:47,521
+industri kereta dalam
+negeri tetap diperkuat.
+
+128
+00:06:48,267 --> 00:06:52,628
+Tekanan di balik pemungutan suara itu
+adalah prakiraan tiga ratus enam puluh
+
+129
+00:06:52,678 --> 00:06:55,241
+sembilan juta perjalanan
+penumpang pada 2026.
+
+130
+00:06:55,291 --> 00:06:58,375
+Setiap kereta yang hilang
+membuat sisanya makin penuh.
+
+131
+00:06:58,425 --> 00:07:01,684
+Setiap pihak di cerita ini
+menginginkan hal yang berbeda.
+
+132
+00:07:01,734 --> 00:07:04,703
+Kereta api menginginkan
+kereta dalam hitungan bulan.
+
+133
+00:07:04,753 --> 00:07:07,721
+DPR ingin industri kereta
+dalam negeri terus tumbuh.
+
+134
+00:07:07,771 --> 00:07:10,566
+Jepang ingin kereta tuanya
+keluar dari pembukuan.
+
+135
+00:07:10,616 --> 00:07:14,223
+Dan Kementerian Perdagangan punya
+batas umur untuk mesin bekas.
+
+136
+00:07:14,967 --> 00:07:16,628
+Jujur saja, argumennya waktu.
+
+137
+00:07:16,678 --> 00:07:19,755
+Kereta bekas bisa datang
+dalam satu sampai dua bulan.
+
+138
+00:07:19,805 --> 00:07:22,115
+Kereta baru butuh satu sampai dua tahun.
+
+139
+00:07:22,833 --> 00:07:24,432
+Lalu rencananya menabrak aturan.
+
+140
+00:07:24,482 --> 00:07:28,142
+Kementerian Perdagangan hanya mengizinkan
+barang modal bekas seperti ini
+
+141
+00:07:28,192 --> 00:07:29,842
+maksimal berumur dua puluh tahun.
+
+142
+00:07:30,567 --> 00:07:34,423
+Kereta yang ditawarkan berumur dua
+puluh lima sampai dua puluh delapan
+
+143
+00:07:34,473 --> 00:07:34,773
+tahun.
+
+144
+00:07:34,807 --> 00:07:37,994
+Rata-rata sudah mengangkut
+penumpang di Jepang sejak 1998.
+
+145
+00:07:38,733 --> 00:07:41,168
+Kementerian Perhubungan
+menambah satu masalah.
+
+146
+00:07:41,218 --> 00:07:43,329
+Barang bekas turunan ada batas pakainya.
+
+147
+00:07:43,379 --> 00:07:47,056
+Kereta yang sudah dipakai dua puluh
+sampai tiga puluh tahun di Jepang
+
+148
+00:07:47,106 --> 00:07:49,379
+mungkin cuma tersisa
+sekitar sepuluh tahun.
+
+149
+00:07:49,429 --> 00:07:51,918
+Setelah itu, Jakarta
+harus belanja kereta lagi.
+
+150
+00:07:52,667 --> 00:07:55,338
+Kereta tua juga makin sulit dirawat.
+
+151
+00:07:55,388 --> 00:08:00,706
+Saat tiga seri Jepang pensiun di
+2025, salah satu alasannya adalah suku
+
+152
+00:08:00,756 --> 00:08:02,369
+cadangnya sudah habis.
+
+153
+00:08:03,100 --> 00:08:07,840
+Tanggal 5 November, direktur
+utama KAI membatalkan rencana itu.
+
+154
+00:08:07,890 --> 00:08:10,805
+Katanya: untuk rakyat, harus yang baru.
+
+155
+00:08:12,267 --> 00:08:14,705
+Mungkin kamu menebak
+Jepang kehabisan kereta.
+
+156
+00:08:14,755 --> 00:08:15,534
+Ternyata tidak.
+
+157
+00:08:15,584 --> 00:08:19,349
+Jepang masih punya kereta untuk
+dijual, tapi terlalu tua untuk aturan
+
+158
+00:08:19,399 --> 00:08:20,344
+Indonesia sendiri.
+
+159
+00:08:21,067 --> 00:08:24,598
+Jepang memakai kereta komuternya
+dua puluh sampai tiga puluh tahun.
+
+160
+00:08:24,648 --> 00:08:28,447
+Saat gerbongnya siap dijual, umurnya
+biasanya sudah lewat batas Jakarta.
+
+161
+00:08:29,167 --> 00:08:32,278
+Jendela yang terbuka tahun 2000
+tertutup dengan sendirinya.
+
+162
+00:08:32,328 --> 00:08:36,351
+Pasokan yang membuat jaringan Jakarta
+murah sekarang keburu tua sebelum bisa
+
+163
+00:08:36,401 --> 00:08:36,780
+dikirim.
+
+164
+00:08:37,500 --> 00:08:39,963
+Jadi penumpang naik apa berikutnya?
+
+165
+00:08:40,013 --> 00:08:43,266
+Operatornya punya tiga
+pilihan: pesan ke INKA,
+
+166
+00:08:43,316 --> 00:08:46,784
+memperpanjang umur kereta
+lama, atau impor bekas.
+
+167
+00:08:47,533 --> 00:08:49,589
+Karena impor dicoret, tinggal dua.
+
+168
+00:08:49,639 --> 00:08:54,233
+Gerbong Jepang lama dipakai lebih lama,
+dan INKA harus membuat lebih cepat.
+
+169
+00:08:54,283 --> 00:08:57,886
+Sebagian gerbong itu umurnya
+sudah lewat empat puluh tahun.
+
+170
+00:08:58,633 --> 00:09:00,043
+Dananya sudah disetujui.
+
+171
+00:09:00,093 --> 00:09:04,420
+Setahun sebelumnya, pemerintah
+menyiapkan lima triliun rupiah untuk tiga
+
+172
+00:09:04,470 --> 00:09:07,825
+puluh rangkaian baru, ditargetkan
+selesai dalam setahun.
+
+173
+00:09:09,300 --> 00:09:13,294
+Rencana jangka panjangnya mengganti
+delapan puluh empat rangkaian Jepang tua
+
+174
+00:09:13,344 --> 00:09:17,338
+dengan buatan INKA, dan menaikkan
+kapasitas dari satu koma satu ke satu koma
+
+175
+00:09:17,388 --> 00:09:19,467
+empat juta penumpang per hari pada 2030.
+
+176
+00:09:20,933 --> 00:09:25,125
+Selama dua puluh lima tahun, kereta tua
+Tokyo membuat Jakarta bisa membangun
+
+177
+00:09:25,175 --> 00:09:27,637
+jaringan kereta yang
+tak sanggup dibeli baru.
+
+178
+00:09:27,687 --> 00:09:30,261
+Lalu baju turunan itu
+terlalu tua untuk aturan,
+
+179
+00:09:30,311 --> 00:09:33,107
+dan kereta berikutnya harus
+dibuat di dalam negeri.
+
+180
+00:09:33,157 --> 00:09:35,842
+Jadi penolakan November
+datang dari lemari Tokyo,
+
+181
+00:09:35,892 --> 00:09:38,019
+yang sudah tidak punya yang cukup muda.
+
+182
+00:09:39,500 --> 00:09:43,274
+Kereta-kereta itu mengangkut orang
+di satu pulau yang dihuni lebih dari
+
+183
+00:09:43,324 --> 00:09:44,728
+separuh penduduk Indonesia.
+
+184
+00:09:44,778 --> 00:09:48,552
+Video berikutnya: kenapa begitu banyak
+orang Indonesia tinggal di Jawa.

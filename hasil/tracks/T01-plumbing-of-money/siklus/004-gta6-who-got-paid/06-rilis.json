@@ -1,0 +1,157 @@
+{
+  "versi": 1,
+  "track": "T01",
+  "siklus": "004-gta6-who-got-paid",
+  "dibuat": "2026-11-27T09:07:08.069Z",
+  "kunci_manual": "sudah tayang atau terjadwal manual (dicatat dari platform)",
+  "youtube": {
+    "kategori": "27",
+    "bahasa": "en",
+    "untuk_anak": false,
+    "promosi_berbayar": false
+  },
+  "items": [
+    {
+      "nama": "master",
+      "jadwal": "2026-11-27T01:00",
+      "subtitle": [
+        {
+          "bahasa": "en",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/publish/master.en.srt"
+        },
+        {
+          "bahasa": "id",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/publish/master.id.srt"
+        }
+      ],
+      "playlist": "",
+      "terjemahan": {
+        "judul": "",
+        "deskripsi": ""
+      },
+      "file": "produksi/render/T01/004/Master16x9-en.mp4",
+      "thumbnail": "produksi/render/T01/004/Thumbnail-A.png",
+      "judul": "Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It.",
+      "deskripsi": "After watching, you know who takes each part of an $80 GTA 6 download, and why none of it lands on launch night.\n\n0:00 The click\n0:37 The table\n1:31 Hand one: the state\n1:57 Hand two: the store\n3:03 Hand three: the card\n3:46 Hand four: the publisher\n4:33 The clock\n5:43 Is thirty percent fair?\n6:28 The split\n\n$3.79 billion is Take-Two's own estimate of day-one retail sales. Platform share figures, budget reports and card fees are estimates or reported figures. Tax depends on where you buy.\n\nSources:\nhttps://basic-tutorials.com/news/gta-6-sales-figures-3-79-billion-on-launch-day/\nhttps://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/\nhttps://www.tweaktown.com/news/94485/epic-may-pay-flat-30-fee-on-playstation-nintendo-and-xbox-with-no-reduced-split-for-fortnite/index.html\nhttps://gonintendo.com/comments/11811\nhttps://finance.yahoo.com/media-advertising/articles/gta-vi-launch-weekend-sales-190418068.html\nhttps://deadline.com/2026/11/gta6-first-day-sales-4-billion-1237230465/\nhttps://www.creativebloq.com/entertainment/gaming/rockstar-could-have-set-gta-6-at-any-price-im-not-mad-at-what-they-just-announced\nhttps://games.gg/news/sony-playstation-store-uk-pricing-lawsuit/\nhttps://www.invenglobal.com/articles/28728/sony-defeats-2bn-uk-playstation-store-class-action\n\nNot affiliated with or endorsed by Rockstar Games, Take-Two or any console maker.\nNarration, music and sound effects are AI-generated. Visuals are original animation.",
+      "tag": [
+        "GTA 6",
+        "GTA 6 sales",
+        "how payments work",
+        "platform fee",
+        "30 percent cut",
+        "merchant of record",
+        "card fees",
+        "Take-Two",
+        "fintech explained"
+      ],
+      "komentar": "Why \"approved\" doesn't mean \"paid\": https://www.youtube.com/watch?v=z3M5k4pXXhw"
+    },
+    {
+      "nama": "S1-not-rockstars-money",
+      "jadwal": "2026-11-27T03:00",
+      "subtitle": [
+        {
+          "bahasa": "en",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/publish/S1-not-rockstars-money.en.srt"
+        },
+        {
+          "bahasa": "id",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/publish/S1-not-rockstars-money.id.srt"
+        }
+      ],
+      "playlist": "",
+      "terjemahan": {
+        "judul": "",
+        "deskripsi": ""
+      },
+      "file": "produksi/render/T01/004/Short9x16-S1-not-rockstars-money-en.mp4",
+      "thumbnail": "produksi/render/T01/004/Thumbnail-Short-S1-not-rockstars-money.png",
+      "judul": "You paid $80. The publisher got $56.",
+      "deskripsi": "You paid $80 for GTA 6. The publisher gets about $56, and not that night.\n\nFull video on the channel.",
+      "tag": [
+        "GTA 6",
+        "how payments work",
+        "platform fee",
+        "shorts"
+      ],
+      "komentar": ""
+    },
+    {
+      "nama": "S2-who-pays-card-fee",
+      "jadwal": "2026-11-27T06:30",
+      "subtitle": [
+        {
+          "bahasa": "en",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/publish/S2-who-pays-card-fee.en.srt"
+        },
+        {
+          "bahasa": "id",
+          "file": "hasil/tracks/T01-plumbing-of-money/siklus/004-gta6-who-got-paid/publish/S2-who-pays-card-fee.id.srt"
+        }
+      ],
+      "playlist": "",
+      "terjemahan": {
+        "judul": "",
+        "deskripsi": ""
+      },
+      "file": "produksi/render/T01/004/Short9x16-S2-who-pays-card-fee-en.mp4",
+      "thumbnail": "produksi/render/T01/004/Thumbnail-Short-S2-who-pays-card-fee.png",
+      "judul": "Rockstar doesn't pay the card fee.",
+      "deskripsi": "Who pays the card fee when you buy GTA 6 from a console store? The seller on your receipt.\n\nFull video on the channel.",
+      "tag": [
+        "GTA 6",
+        "card fees",
+        "merchant of record",
+        "shorts"
+      ],
+      "komentar": ""
+    }
+  ],
+  "persetujuan": null,
+  "hasil": {
+    "master": {
+      "facebook": {
+        "sumber": "manual",
+        "url": "https://www.facebook.com/reel/1078577511872793/",
+        "dicatat": "2026-11-27T09:07:08.072Z"
+      },
+      "youtube": {
+        "sumber": "manual",
+        "url": "https://www.youtube.com/watch?v=EzZezpp8Cz4",
+        "videoId": "EzZezpp8Cz4",
+        "privasi": "public",
+        "dicatat": "2026-11-27T09:07:08.072Z",
+        "terlewatDiberitahu": "2026-11-27T09:07:13.855Z"
+      }
+    },
+    "S1-not-rockstars-money": {
+      "facebook": {
+        "sumber": "manual",
+        "url": "https://www.facebook.com/reel/1520368323247812/",
+        "dicatat": "2026-11-27T09:07:08.072Z"
+      },
+      "youtube": {
+        "sumber": "manual",
+        "url": "https://www.youtube.com/watch?v=6o8_mJKmGpY",
+        "videoId": "6o8_mJKmGpY",
+        "privasi": "public",
+        "dicatat": "2026-11-27T09:07:08.072Z"
+      }
+    },
+    "S2-who-pays-card-fee": {
+      "facebook": {
+        "sumber": "manual",
+        "url": "https://www.facebook.com/reel/1942876917089024/",
+        "dicatat": "2026-11-27T09:07:08.072Z"
+      },
+      "youtube": {
+        "sumber": "manual",
+        "url": "https://www.youtube.com/watch?v=x94cAT7VkJc",
+        "videoId": "x94cAT7VkJc",
+        "privasi": "public",
+        "dicatat": "2026-11-27T09:07:08.073Z"
+      }
+    }
+  },
+  "checklist": {}
+}

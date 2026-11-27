@@ -280,6 +280,23 @@ try {
     kunci(c); await assert.rejects(F.kirim(c, diam), /disetujui|setujui/); assert.throws(() => bukaKunci(c, "buka"), /ketik BUKA/);
     bukaKunci(c, "BUKA"); const r = inti.muat(c); assert.equal(r.kunci_manual, null); assert.equal(r.persetujuan, null); assert.ok(r.kunci_dibuka);
   });
+  await uji("catat yang sudah tayang: cocokkan judul dan durasi, dari catatan, kunci, arsip dilewati penjadwal", async () => {
+    const { cocokkan, kandidat, dariCatatan, catatTayang } = await import("./catat-tayang.mjs"); const { arsip } = await import("./kunci.mjs"); const { antrean, putaran } = await import("./jadwal.mjs");
+    const D = "hasil/tracks/T09-uji/siklus/003-lama";
+    tulis(`${D}/03-script.json`, JSON.stringify({ title_options: ["Judul master yang cukup panjang"], scenes: [], shorts_cuts: [{ name: "S3", hook_override: "Kail Short yang juga cukup panjang" }] }));
+    tulis(`${D}/05-qa.auto.json`, JSON.stringify({ verdict: "LULUS-OTOMATIS" }));
+    tulis(`${D}/06-publish.md`, "- master: YouTube https://youtu.be/abcdefghijk (manual). Facebook https://www.facebook.com/share/v/1/\n- S3: Instagram https://www.instagram.com/reel/x/\n- asing: https://youtu.be/zzzzzzzzzzz\n");
+    const k = kandidat("T09"); assert.equal(cocokkan(k, { judul: "Judul Master yang cukup panjang!", detik: 400 }).nama, "master"); assert.equal(cocokkan(k, { teks: "Kail Short yang juga cukup panjang. Lanjut", detik: 30 }).nama, "S3");
+    assert.equal(cocokkan(k, { judul: "Judul master yang cukup panjang", detik: 30 }), null); assert.equal(cocokkan(k, { judul: "tidak dikenal sama sekali" }), null);
+    const d = inti.cari("T09", "003"); assert.equal(dariCatatan(d).length, 4);
+    const simpan = Object.fromEntries(Object.keys(process.env).filter((n) => /^(YOUTUBE_(PUBLISH|REFRESH)|FACEBOOK_)/.test(n)).map((n) => [n, process.env[n]])); for (const n in simpan) delete process.env[n];
+    try {
+      await catatTayang({ log: () => {}, lihat: true }); assert.equal(inti.muat(d), null);
+      await catatTayang({ log: () => {} }); await catatTayang({ log: () => {} }); const r = inti.muat(d);
+      assert.equal(r.hasil.master.youtube.videoId, "abcdefghijk"); assert.equal(r.hasil.S3.instagram.sumber, "manual"); assert.ok(r.kunci_manual); assert.equal(r.hasil.asing, undefined);
+      inti.ubah(d, (x) => (x.items[0].komentar = "Q")); inti.setujui(d, "SETUJU", "uji"); arsip(d, true); yt.panggilan.length = 0; await putaran({ log: () => {}, beri: () => {}, kini: Date.now() + 60e3 }); assert.ok(!yt.panggilan.some((x) => x.includes("commentThreads")));
+    } finally { Object.assign(process.env, simpan); fs.rmSync(path.join(R, D), { recursive: true }); }
+  });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;
     try {

@@ -1,0 +1,50 @@
+1
+00:00:00,080 --> 00:00:02,260
+Instead, your bank put
+a hold on five dollars.
+
+2
+00:00:02,840 --> 00:00:04,580
+Your available balance went down by five.
+
+3
+00:00:05,100 --> 00:00:06,620
+Your actual balance stayed the same
+
+4
+00:00:07,800 --> 00:00:10,360
+Back on the ground, the coffee
+shop gets paid through clearing.
+
+5
+00:00:11,180 --> 00:00:14,640
+At the end of the day, its terminal
+sends every sale in one batch
+
+6
+00:00:15,787 --> 00:00:17,187
+The amount doesn't have to match.
+
+7
+00:00:17,927 --> 00:00:19,987
+At a restaurant, the card
+is approved for the bill,
+
+8
+00:00:20,347 --> 00:00:22,567
+and the tip gets added
+before the batch goes out
+
+9
+00:00:23,720 --> 00:00:26,980
+When the cleared record reaches your
+bank, the hold turns into a real
+
+10
+00:00:27,040 --> 00:00:27,420
+charge.
+
+11
+00:00:28,300 --> 00:00:31,100
+Pending becomes posted,
+sometimes with a different amount

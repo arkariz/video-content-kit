@@ -1,0 +1,49 @@
+1
+00:00:00,100 --> 00:00:02,848
+So you'd expect Java to slowly empty out.
+
+2
+00:00:02,848 --> 00:00:07,495
+In 1961, the first census after
+independence found sixty-three million
+
+3
+00:00:07,495 --> 00:00:08,540
+people on Java.
+
+4
+00:00:09,700 --> 00:00:13,684
+Since 1950, transmigration has moved
+about nine point two million people,
+
+5
+00:00:13,684 --> 00:00:15,838
+according to the ministry that runs it.
+
+6
+00:00:16,947 --> 00:00:21,031
+Over the same years, Java went from
+sixty-three million to about a hundred
+
+7
+00:00:21,031 --> 00:00:22,393
+and fifty-eight million.
+
+8
+00:00:22,393 --> 00:00:25,606
+For every person the program
+moved, Java gained about ten.
+
+9
+00:00:26,767 --> 00:00:30,342
+Remember those 155 families
+on the boat in 1905?
+
+10
+00:00:30,342 --> 00:00:33,479
+In 2025, the program moved 1,394 families.
+
+11
+00:00:33,479 --> 00:00:38,947
+That's roughly five thousand people,
+about what Java adds in a single day.

@@ -1,0 +1,736 @@
+1
+00:00:00,000 --> 00:00:01,712
+Kartumu baru saja bilang approved.
+
+2
+00:00:01,762 --> 00:00:04,408
+Kedai kopinya belum dibayar,
+dan hari ini pun belum.
+
+3
+00:00:05,133 --> 00:00:06,380
+Approved itu cuma pesan.
+
+4
+00:00:06,430 --> 00:00:10,377
+Uangnya pindah belakangan, lewat dua
+sistem lain yang jarang orang dengar.
+
+5
+00:00:11,100 --> 00:00:15,019
+Di akhir video, kamu bakal tahu
+asal tiap baris di aplikasi bank:
+
+6
+00:00:15,069 --> 00:00:17,644
+pending, posted, dan
+yang tiba-tiba hilang.
+
+7
+00:00:18,367 --> 00:00:19,385
+Mulai dari tap.
+
+8
+00:00:19,435 --> 00:00:24,726
+Kartu atau HP kamu memberi terminal
+nomor kartu dan satu kode sekali pakai.
+
+9
+00:00:25,467 --> 00:00:28,051
+Kode itu cuma berlaku untuk transaksi ini.
+
+10
+00:00:28,101 --> 00:00:31,501
+Disalin lalu dipakai ulang
+besok, bank akan menolaknya.
+
+11
+00:00:32,233 --> 00:00:33,713
+Kode itu disebut cryptogram.
+
+12
+00:00:33,763 --> 00:00:37,592
+Chip, atau ponselmu, menghitungnya
+dari kunci rahasia yang tidak pernah
+
+13
+00:00:37,642 --> 00:00:41,417
+keluar dari perangkat, ditambah nilai
+transaksi dan sebuah penghitung.
+
+14
+00:00:41,467 --> 00:00:45,186
+Bank-mu menyimpan kunci pasangannya,
+jadi bisa memeriksa hitungannya.
+
+15
+00:00:45,933 --> 00:00:49,794
+Kalau bayar pakai HP, terminal bahkan
+tidak pernah melihat nomor kartu
+
+16
+00:00:49,844 --> 00:00:50,185
+aslimu.
+
+17
+00:00:50,235 --> 00:00:53,871
+Yang dikirim token, nomor pengganti
+yang cuma berlaku dari HP itu.
+
+18
+00:00:54,600 --> 00:00:58,418
+Kalau sistem toko dibobol, token yang
+dicuri tidak bisa dipakai di tempat
+
+19
+00:00:58,468 --> 00:00:58,768
+lain.
+
+20
+00:00:59,400 --> 00:01:01,990
+Terminal meneruskan
+semuanya ke bank milik toko,
+
+21
+00:01:02,040 --> 00:01:02,925
+namanya acquirer.
+
+22
+00:01:02,975 --> 00:01:04,355
+Acquirer tidak kenal kamu.
+
+23
+00:01:04,405 --> 00:01:07,105
+Ia cuma tahu ke mana
+pertanyaan ini harus dikirim.
+
+24
+00:01:07,833 --> 00:01:11,490
+Acquirer mengirimnya ke jaringan
+kartu, Visa atau Mastercard.
+
+25
+00:01:11,540 --> 00:01:15,319
+Jaringan membaca enam sampai
+delapan digit pertama nomor kartu,
+
+26
+00:01:15,369 --> 00:01:18,418
+mencari bank penerbitnya,
+lalu meneruskan pesannya.
+
+27
+00:01:19,167 --> 00:01:22,299
+Jaringan kartu tidak menyimpan
+uangmu dan tidak meminjamkan apa pun.
+
+28
+00:01:22,349 --> 00:01:25,201
+Ia mengantar pesan, dan memungut
+biaya kecil untuk tiap pesan.
+
+29
+00:01:26,667 --> 00:01:28,529
+Sekarang buka pesannya.
+
+30
+00:01:28,579 --> 00:01:32,437
+Jaringan kartu memakai
+format bernama ISO 8583,
+
+31
+00:01:32,487 --> 00:01:35,348
+yang pertama dirumuskan tahun 1987.
+
+32
+00:01:36,067 --> 00:01:39,095
+Empat digit pertama
+menyatakan jenis pesan.
+
+33
+00:01:39,145 --> 00:01:42,890
+Nol satu nol nol artinya:
+boleh saya tagih kartu ini?
+
+34
+00:01:43,633 --> 00:01:46,350
+Setelah itu field bernomor.
+
+35
+00:01:46,400 --> 00:01:48,400
+Field 2 nomor kartu.
+
+36
+00:01:48,450 --> 00:01:50,245
+Field 4 jumlahnya.
+
+37
+00:01:50,295 --> 00:01:52,499
+Field 49 mata uangnya.
+
+38
+00:01:53,233 --> 00:01:56,400
+Bank kamu, si issuer, sekarang punya
+waktu kurang dari satu detik untuk
+
+39
+00:01:56,450 --> 00:01:56,898
+memutuskan.
+
+40
+00:01:57,633 --> 00:02:01,520
+Issuer mengecek kartunya asli,
+kode sekali pakainya cocok,
+
+41
+00:02:01,570 --> 00:02:06,407
+transaksinya tidak terlihat seperti
+fraud, dan saldo atau limitmu cukup.
+
+42
+00:02:07,133 --> 00:02:10,443
+Cek fraud membandingkan
+transaksi ini dengan riwayatmu:
+
+43
+00:02:10,493 --> 00:02:13,863
+biasanya belanja di mana, jam
+berapa, dan berapa banyak.
+
+44
+00:02:14,600 --> 00:02:18,284
+Banyak bank mengubah semua
+pemeriksaan itu jadi skor risiko.
+
+45
+00:02:18,334 --> 00:02:20,214
+Skor rendah langsung disetujui.
+
+46
+00:02:20,264 --> 00:02:24,073
+Skor menengah bisa memicu SMS
+yang menanyakan apakah itu kamu.
+
+47
+00:02:24,123 --> 00:02:25,318
+Skor tinggi ditolak.
+
+48
+00:02:25,368 --> 00:02:29,550
+Makanya kartu bisa mendadak mati
+saat kamu bepergian ke luar negeri.
+
+49
+00:02:30,267 --> 00:02:34,740
+Kalau semua lolos, issuer membalas
+dengan pesan nol satu satu nol,
+
+50
+00:02:34,790 --> 00:02:37,002
+dan field 39 diisi dua angka nol.
+
+51
+00:02:37,052 --> 00:02:38,716
+Nol nol artinya approved.
+
+52
+00:02:39,433 --> 00:02:42,255
+Field 38 membawa kode
+approval enam karakter.
+
+53
+00:02:42,305 --> 00:02:43,403
+Toko menyimpannya.
+
+54
+00:02:43,453 --> 00:02:46,210
+Untuk sekarang, cuma
+itu yang dipegang toko.
+
+55
+00:02:46,933 --> 00:02:50,631
+Kalau jawabannya tidak,
+field 39 berisi kode lain.
+
+56
+00:02:50,681 --> 00:02:53,779
+Lima puluh satu artinya saldo tidak cukup.
+
+57
+00:02:53,829 --> 00:02:58,725
+Nol lima artinya do not honor:
+bank menolak tanpa menyebut alasan.
+
+58
+00:02:59,467 --> 00:03:02,806
+Terminal biasanya menampilkan
+satu kata untuk keduanya:
+
+59
+00:03:02,856 --> 00:03:03,360
+declined.
+
+60
+00:03:03,410 --> 00:03:05,764
+Alasan sebenarnya tetap di dalam pesan.
+
+61
+00:03:05,814 --> 00:03:09,030
+Makanya kasir tidak bisa
+memberi tahu apa yang salah.
+
+62
+00:03:10,500 --> 00:03:13,856
+Kalau disetujui, balasan itulah
+bunyi bip yang kamu dengar.
+
+63
+00:03:13,906 --> 00:03:16,396
+Sekarang hitung uang
+yang pindah antar bank.
+
+64
+00:03:16,446 --> 00:03:16,746
+Nol.
+
+65
+00:03:17,367 --> 00:03:20,893
+Yang dilakukan bank kamu
+adalah menahan lima dolar.
+
+66
+00:03:20,943 --> 00:03:22,716
+Saldo tersedia turun lima.
+
+67
+00:03:22,766 --> 00:03:24,329
+Saldo sebenarnya tetap.
+
+68
+00:03:25,067 --> 00:03:27,799
+Hold itu yang muncul sebagai
+baris pending di aplikasimu.
+
+69
+00:03:27,849 --> 00:03:31,265
+Di kebanyakan aplikasi bank, pending
+dan posted berasal dari dua record
+
+70
+00:03:31,315 --> 00:03:31,655
+berbeda.
+
+71
+00:03:31,705 --> 00:03:34,584
+Makanya nama atau jumlahnya
+bisa berubah di antara keduanya.
+
+72
+00:03:35,333 --> 00:03:38,792
+Pom bensin dan hotel sering menahan
+lebih dari yang akan kamu belanjakan,
+
+73
+00:03:38,842 --> 00:03:40,763
+karena mereka belum tahu jumlah akhirnya.
+
+74
+00:03:41,500 --> 00:03:44,425
+Hotel juga bisa menaikkan
+hold selama kamu menginap,
+
+75
+00:03:44,475 --> 00:03:47,171
+dan tagihan akhirnya bisa
+beda dari jumlah awal.
+
+76
+00:03:47,221 --> 00:03:50,604
+Aturan kartu memberi hotel dan
+rental mobil ruang untuk itu,
+
+77
+00:03:50,654 --> 00:03:52,549
+dan restoran bisa menambahkan tip.
+
+78
+00:03:53,267 --> 00:03:56,708
+Kalau toko tidak pernah
+menindaklanjuti, hold-nya kedaluwarsa.
+
+79
+00:03:56,758 --> 00:03:59,579
+Untuk transaksi seperti
+ini biasanya hitungan hari.
+
+80
+00:03:59,629 --> 00:04:02,226
+Itulah transaksi pending
+yang tiba-tiba hilang.
+
+81
+00:04:03,700 --> 00:04:06,018
+Lalu ada transaksi yang muncul dua kali.
+
+82
+00:04:06,767 --> 00:04:10,629
+Kadang permintaan sampai ke bank,
+tapi balasannya hilang di jalan.
+
+83
+00:04:10,679 --> 00:04:13,771
+Terminal tidak tahu kamu
+sudah di-approve atau belum,
+
+84
+00:04:13,821 --> 00:04:15,076
+jadi ia bertanya lagi.
+
+85
+00:04:15,800 --> 00:04:17,924
+Bank kamu menjawab ya dua kali.
+
+86
+00:04:17,974 --> 00:04:19,326
+Dua hold, satu kopi.
+
+87
+00:04:20,067 --> 00:04:23,055
+Untuk membereskannya,
+terminal mengirim reversal,
+
+88
+00:04:23,105 --> 00:04:27,767
+pesan keluarga nol empat ratus, yang
+menyuruh bank membatalkan hold pertama.
+
+89
+00:04:27,817 --> 00:04:31,302
+Sebelum pesan itu sampai,
+transaksinya terlihat dua kali.
+
+90
+00:04:32,767 --> 00:04:36,061
+Kadang bank baru tahu ada transaksi
+itu beberapa jam kemudian.
+
+91
+00:04:36,800 --> 00:04:40,714
+Di penerbangan tanpa koneksi, kartu
+dan terminal bisa menyetujui transaksi
+
+92
+00:04:40,764 --> 00:04:44,088
+secara offline, dalam batas yang
+dipasang di chip dan terminal.
+
+93
+00:04:44,833 --> 00:04:48,645
+Bank baru tahu setelah mendarat, saat
+maskapai mengunggah data penjualan.
+
+94
+00:04:48,695 --> 00:04:52,348
+Kalau kartunya ternyata bermasalah,
+maskapai bisa jadi yang menanggung
+
+95
+00:04:52,398 --> 00:04:52,771
+ruginya.
+
+96
+00:04:53,500 --> 00:04:57,310
+Itu salah satu alasan maskapai bisa
+membatasi nilai belanja di pesawat.
+
+97
+00:04:57,360 --> 00:05:00,137
+Batas lebih tinggi berarti
+potensi rugi lebih besar.
+
+98
+00:05:00,867 --> 00:05:03,950
+Kembali ke darat, kedai
+kopi dibayar lewat clearing.
+
+99
+00:05:04,000 --> 00:05:08,108
+Di akhir hari, terminalnya mengirim
+semua penjualan dalam satu batch.
+
+100
+00:05:08,833 --> 00:05:12,426
+Setiap record membawa kode approval-nya,
+jadi jaringan bisa mencocokkannya
+
+101
+00:05:12,476 --> 00:05:13,706
+dengan approval tadi pagi.
+
+102
+00:05:14,433 --> 00:05:16,070
+Jumlahnya tidak harus sama.
+
+103
+00:05:16,120 --> 00:05:18,943
+Di restoran, kartu
+di-approve sebesar tagihan,
+
+104
+00:05:18,993 --> 00:05:21,628
+lalu tip ditambahkan
+sebelum batch dikirim.
+
+105
+00:05:22,367 --> 00:05:25,453
+Bayar dalam mata uang lain
+dan ada satu langkah lagi.
+
+106
+00:05:25,503 --> 00:05:29,654
+Jumlahnya dikonversi, dan bank-mu
+bisa menambahkan biaya transaksi luar
+
+107
+00:05:29,704 --> 00:05:33,323
+negeri, jadi angka di tagihan
+bisa beda dari hitungan cepatmu.
+
+108
+00:05:34,067 --> 00:05:36,633
+Begitu record clearing
+sampai ke bank kamu,
+
+109
+00:05:36,683 --> 00:05:38,823
+hold berubah jadi tagihan sungguhan.
+
+110
+00:05:38,873 --> 00:05:41,865
+Pending jadi posted, kadang
+dengan jumlah berbeda.
+
+111
+00:05:42,600 --> 00:05:46,568
+Semua tadi adalah jalur dual-message:
+satu pesan untuk approve,
+
+112
+00:05:46,618 --> 00:05:48,545
+satu record lagi untuk menagih.
+
+113
+00:05:48,595 --> 00:05:51,606
+Transaksi kartu kredit
+biasanya lewat jalur ini.
+
+114
+00:05:52,333 --> 00:05:55,512
+Sebagian pembayaran debit
+memakai satu pesan saja.
+
+115
+00:05:55,562 --> 00:05:58,354
+Di Amerika, saat kamu
+mengetik PIN di kasir,
+
+116
+00:05:58,404 --> 00:06:02,035
+pesan nol dua nol nol langsung
+approve sekaligus menagih.
+
+117
+00:06:02,767 --> 00:06:05,308
+Tidak ada record clearing
+terpisah yang perlu ditunggu,
+
+118
+00:06:05,358 --> 00:06:06,957
+jadi tagihannya lebih cepat posted.
+
+119
+00:06:07,007 --> 00:06:09,219
+Tokonya tetap menunggu
+settlement seperti biasa.
+
+120
+00:06:10,700 --> 00:06:12,225
+Kamu sekarang sudah ditagih.
+
+121
+00:06:12,275 --> 00:06:14,362
+Kedai kopinya tetap belum pegang uang.
+
+122
+00:06:14,412 --> 00:06:15,712
+Itu tugas sistem ketiga.
+
+123
+00:06:16,433 --> 00:06:19,378
+Jaringan menjumlahkan semua transaksi
+yang sudah clearing antara setiap
+
+124
+00:06:19,428 --> 00:06:21,445
+pasangan bank, lalu
+menghitung selisih bersihnya.
+
+125
+00:06:22,167 --> 00:06:26,289
+Tanpa netting, setiap transaksi
+jadi transfer sendiri antar bank,
+
+126
+00:06:26,339 --> 00:06:30,012
+padahal Visa saja menangani
+ratusan juta transaksi sehari.
+
+127
+00:06:30,733 --> 00:06:33,518
+Bank kamu mengirim satu
+total untuk jutaan transaksi,
+
+128
+00:06:33,568 --> 00:06:35,978
+dikurangi yang harus
+dibayar bank lain ke dia.
+
+129
+00:06:36,028 --> 00:06:38,438
+Lima dolarmu cuma bagian
+kecil dari angka itu.
+
+130
+00:06:39,167 --> 00:06:42,226
+Total itu diselesaikan antarbank
+di satu tempat bersama,
+
+131
+00:06:42,276 --> 00:06:44,392
+sering berupa rekening di bank sentral.
+
+132
+00:06:44,442 --> 00:06:48,112
+Uang berpindah antar rekening itu
+sekali atau beberapa kali sehari,
+
+133
+00:06:48,162 --> 00:06:49,612
+bukan sekali per pembelian.
+
+134
+00:06:50,333 --> 00:06:54,211
+Lalu acquirer membayar kedai kopi,
+biasanya satu sampai tiga hari kerja
+
+135
+00:06:54,261 --> 00:06:55,206
+setelah transaksi.
+
+136
+00:06:55,933 --> 00:06:57,775
+Settlement berjalan di hari kerja.
+
+137
+00:06:57,825 --> 00:07:01,671
+Belanja Jumat malam sering baru masuk
+ke rekening toko hari Senin atau
+
+138
+00:07:01,721 --> 00:07:02,060
+Selasa.
+
+139
+00:07:02,800 --> 00:07:06,527
+Biaya dipotong sebelum uangnya masuk,
+jadi toko menerima kurang dari lima
+
+140
+00:07:06,577 --> 00:07:06,877
+dolar.
+
+141
+00:07:07,567 --> 00:07:11,137
+Toko biasanya melihatnya sebagai satu
+persentase di laporan bulanan dari
+
+142
+00:07:11,187 --> 00:07:14,204
+acquirer, padahal di dalamnya
+ada beberapa biaya lebih kecil.
+
+143
+00:07:15,667 --> 00:07:17,532
+Bahkan setelah itu, approved belum final.
+
+144
+00:07:17,582 --> 00:07:21,036
+Kalau kamu menyanggah tagihan, uangnya
+bisa berjalan balik berminggu-minggu
+
+145
+00:07:21,086 --> 00:07:22,624
+kemudian lewat jaringan yang sama.
+
+146
+00:07:22,674 --> 00:07:23,512
+Namanya chargeback.
+
+147
+00:07:24,233 --> 00:07:28,977
+Toko diberi waktu untuk membantah,
+pakai struk dan kode approval enam
+
+148
+00:07:29,027 --> 00:07:29,949
+karakter tadi.
+
+149
+00:07:29,999 --> 00:07:32,728
+Kode yang sama, untuk tugas terakhirnya.
+
+150
+00:07:33,467 --> 00:07:35,312
+Refund itu hal yang terpisah.
+
+151
+00:07:35,362 --> 00:07:38,450
+Toko mengirim kredit baru
+lewat jalur yang sama,
+
+152
+00:07:38,500 --> 00:07:43,026
+dengan arah sebaliknya, jadi butuh
+beberapa hari sendiri untuk sampai.
+
+153
+00:07:43,076 --> 00:07:45,445
+Transaksi aslinya biasanya tetap ada.
+
+154
+00:07:46,900 --> 00:07:49,520
+Jadi: approved itu janji
+bank untuk membayar.
+
+155
+00:07:49,570 --> 00:07:50,944
+Clearing itu tagihannya.
+
+156
+00:07:50,994 --> 00:07:55,395
+Settlement itu uangnya, yang datang
+sehari atau lebih setelah kopimu habis.
+
+157
+00:07:56,867 --> 00:08:00,862
+Biaya itu yang menentukan berapa dari
+lima dolarmu yang tersisa untuk toko.
+
+158
+00:08:00,912 --> 00:08:03,289
+Video berikutnya: dari
+belanja seratus dolar,
+
+159
+00:08:03,339 --> 00:08:05,501
+siapa saja yang ambil bagian, dan berapa.

@@ -1,0 +1,53 @@
+1
+00:00:00,120 --> 00:00:01,300
+Start with the tap.
+
+2
+00:00:01,300 --> 00:00:05,666
+Your card, or your phone, hands the
+terminal a card number and a one-time
+
+3
+00:00:05,666 --> 00:00:06,020
+code.
+
+4
+00:00:07,160 --> 00:00:10,320
+It sends it to the card
+network, Visa or Mastercard.
+
+5
+00:00:11,220 --> 00:00:14,160
+The network reads the first six to
+eight digits of the card number,
+
+6
+00:00:14,700 --> 00:00:17,380
+finds the bank that issued
+it, and forwards the message
+
+7
+00:00:18,513 --> 00:00:22,819
+If everything passes, it replies
+with message zero one one zero,
+
+8
+00:00:22,819 --> 00:00:24,873
+and field 39 set to two zeros.
+
+9
+00:00:24,873 --> 00:00:26,593
+Two zeros means approved.
+
+10
+00:00:28,413 --> 00:00:30,573
+On a yes, that reply is the beep you hear.
+
+11
+00:00:31,193 --> 00:00:33,093
+Now count the money that
+moved between banks.
+
+12
+00:00:33,833 --> 00:00:34,133
+Zero

@@ -101,3 +101,4 @@ Tahap: `usulan` → `validasi` → `aktif` ⇄ `jeda` → `drop`. Lihat `instruk
 - 2026-11-27: Aplikasi Meta dipublikasikan (Go live) oleh kreator. Visibilitas publik unggahan alat belum diuji.
 - 2026-11-27: Uji Facebook T01: unggah, jadwal, subtitle, sampul berhasil; komentar ditolak karena token Page tidak memiliki pages_manage_engagement.
 - 2026-11-27: Uji Facebook T01 berhasil sampai komentar terposting (token baru dengan pages_manage_engagement). Video uji sudah dihapus kreator.
+- 2026-11-27: Unggahan manual dicatat ke dashboard rilis (35 tautan, T01-001/002/004 dan T02-001/002/003); siklus itu dikunci. Status siklus di TRACK.md belum disesuaikan (T01-004, T02-002, T02-003 sudah ada di YouTube).

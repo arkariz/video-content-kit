@@ -1,0 +1,820 @@
+1
+00:00:00,120 --> 00:00:03,220
+You step onto a Jakarta commuter
+train that started its working life in
+
+2
+00:00:03,260 --> 00:00:04,700
+Tokyo decades ago.
+
+3
+00:00:05,600 --> 00:00:08,039
+In November, Jakarta
+refused to buy any more.
+
+4
+00:00:09,133 --> 00:00:13,033
+The reason it came here is simple, and
+it works like hand-me-down clothes.
+
+5
+00:00:13,813 --> 00:00:17,253
+They only fit if the size matches,
+and they only help while there's life
+
+6
+00:00:17,313 --> 00:00:17,813
+left in them.
+
+7
+00:00:18,513 --> 00:00:20,593
+The reason it stopped is a rule about age.
+
+8
+00:00:21,767 --> 00:00:23,896
+Four players run this story.
+
+9
+00:00:23,896 --> 00:00:27,640
+KAI, the state railway
+behind the commuter trains.
+
+10
+00:00:27,640 --> 00:00:30,944
+The government, which
+sets the import rules.
+
+11
+00:00:30,944 --> 00:00:33,660
+INKA, Indonesia's own train builder.
+
+12
+00:00:33,660 --> 00:00:36,669
+And CRRC, a Chinese maker of new trains.
+
+13
+00:00:36,669 --> 00:00:39,899
+We'll cover why Tokyo's
+trains fit Jakarta,
+
+14
+00:00:39,899 --> 00:00:45,186
+why the deal worked for twenty-five
+years, and why it ended in November
+
+15
+00:00:45,186 --> 00:00:45,626
+2026.
+
+16
+00:00:46,780 --> 00:00:48,419
+It started with a gift.
+
+17
+00:00:48,419 --> 00:00:53,198
+In May 2000, Japan's aid agency and
+the Tokyo city government donated
+
+18
+00:00:53,198 --> 00:00:56,816
+seventy-two used subway
+cars from Tokyo's Mita Line.
+
+19
+00:00:57,967 --> 00:00:59,986
+Those cars were built from 1968.
+
+20
+00:00:59,986 --> 00:01:03,413
+Tokyo retired them after
+about thirty years of service,
+
+21
+00:01:03,413 --> 00:01:05,984
+and Jakarta kept them running until 2016.
+
+22
+00:01:07,120 --> 00:01:10,120
+They were the first air-conditioned
+electric trains in Indonesia.
+
+23
+00:01:11,019 --> 00:01:14,780
+At the time, crowded riders hung out
+of open doors or sat on the roof.
+
+24
+00:01:15,900 --> 00:01:18,026
+Then Jakarta started buying them.
+
+25
+00:01:18,026 --> 00:01:22,779
+In 2014, the operator said a used car
+from Japan cost eight hundred million
+
+26
+00:01:22,779 --> 00:01:24,217
+to one billion rupiah.
+
+27
+00:01:25,280 --> 00:01:27,463
+A new car cost ten to twelve billion.
+
+28
+00:01:27,463 --> 00:01:30,560
+Same seats, same doors,
+about one tenth of the price.
+
+29
+00:01:31,680 --> 00:01:36,016
+Indonesia's own train maker, INKA,
+quoted about one point three million
+
+30
+00:01:36,016 --> 00:01:37,883
+dollars for a new car in 2019.
+
+31
+00:01:37,883 --> 00:01:41,917
+Even after shipping, a used car
+was about one ninth of that price.
+
+32
+00:01:43,067 --> 00:01:45,364
+For Japan, the deal was just as good.
+
+33
+00:01:45,364 --> 00:01:47,238
+Scrapping a train costs money.
+
+34
+00:01:47,238 --> 00:01:51,647
+Shipping it to Jakarta cost less, and
+somebody else would keep using it.
+
+35
+00:01:53,500 --> 00:01:55,080
+But price alone doesn't explain it.
+
+36
+00:01:55,700 --> 00:01:58,940
+In many countries, a train from Tokyo
+can't run without major changes.
+
+37
+00:01:59,580 --> 00:02:00,880
+In Jakarta, it can.
+
+38
+00:02:02,000 --> 00:02:04,641
+The first size that matches is the rails.
+
+39
+00:02:04,641 --> 00:02:09,484
+Japan's regular lines and Java's lines
+are both one thousand and sixty-seven
+
+40
+00:02:09,484 --> 00:02:10,679
+millimetres apart.
+
+41
+00:02:10,679 --> 00:02:13,635
+Change the rail width
+and you need new wheels,
+
+42
+00:02:13,635 --> 00:02:15,520
+new axles, often a new train.
+
+43
+00:02:16,687 --> 00:02:17,927
+That match has a history.
+
+44
+00:02:19,267 --> 00:02:22,887
+Java's first railway in
+1867 was built wider.
+
+45
+00:02:24,047 --> 00:02:26,707
+During the Japanese
+occupation in the 1940s,
+
+46
+00:02:27,207 --> 00:02:30,987
+the remaining wide lines on Java were
+converted to the narrower Japanese
+
+47
+00:02:31,087 --> 00:02:31,387
+width.
+
+48
+00:02:32,387 --> 00:02:35,607
+That is a big reason a Tokyo
+train fits Java's rails today.
+
+49
+00:02:36,700 --> 00:02:38,244
+The power matches too.
+
+50
+00:02:38,244 --> 00:02:42,808
+Jakarta's electric line opened in
+1925 on fifteen hundred volts DC,
+
+51
+00:02:42,808 --> 00:02:46,498
+the same system the 205
+series was built for in Tokyo.
+
+52
+00:02:47,633 --> 00:02:49,373
+Same rails, same power.
+
+53
+00:02:50,313 --> 00:02:53,553
+A Tokyo train arrives by ship,
+gets new signs and checks,
+
+54
+00:02:53,973 --> 00:02:56,413
+and goes into service with
+no rebuilding of the tracks.
+
+55
+00:02:57,467 --> 00:02:58,853
+So Jakarta kept buying.
+
+56
+00:02:58,853 --> 00:03:03,125
+In 2012, the operator planned to bring
+in one hundred and forty cars that
+
+57
+00:03:03,125 --> 00:03:06,646
+year, and aimed for fourteen
+hundred and forty cars by 2019.
+
+58
+00:03:07,767 --> 00:03:09,087
+The biggest batch came later.
+
+59
+00:03:10,007 --> 00:03:15,127
+JR East's 205 series, a Tokyo
+commuter train first built in 1985,
+
+60
+00:03:15,527 --> 00:03:18,007
+started running in Jakarta in 2013.
+
+61
+00:03:19,133 --> 00:03:21,312
+Today the backbone is still Japanese.
+
+62
+00:03:21,312 --> 00:03:24,867
+Seven hundred and eighty cars
+came from JR East's 205 series,
+
+63
+00:03:24,867 --> 00:03:27,791
+and one hundred and
+twenty-eight from Tokyo Metro.
+
+64
+00:03:28,933 --> 00:03:31,772
+Those cars are thirty-four
+to forty-one years old.
+
+65
+00:03:31,772 --> 00:03:35,333
+Many of them started work in
+Tokyo before the Berlin Wall fell.
+
+66
+00:03:37,213 --> 00:03:40,933
+A fleet that old needs replacing,
+and passenger numbers kept rising.
+
+67
+00:03:41,693 --> 00:03:45,473
+The first attempt to replace it
+with more Tokyo trains came in 2023,
+
+68
+00:03:45,853 --> 00:03:46,573
+and it was blocked.
+
+69
+00:03:47,667 --> 00:03:52,781
+The operator asked to import three
+hundred and forty-eight used cars of a
+
+70
+00:03:52,781 --> 00:03:56,306
+newer Japanese model, the
+E217, for 2023 and 2024.
+
+71
+00:03:57,367 --> 00:03:58,467
+The government said no.
+
+72
+00:03:58,967 --> 00:04:00,367
+The cars stayed in Japan.
+
+73
+00:04:01,027 --> 00:04:04,127
+Officials chose to refit old
+trains and buy new ones instead.
+
+74
+00:04:05,213 --> 00:04:08,653
+New trains came from two
+places, a Chinese maker,
+
+75
+00:04:09,113 --> 00:04:12,513
+CRRC Sifang, and INKA in East Java.
+
+76
+00:04:13,633 --> 00:04:16,592
+INKA also took a contract to
+refit nineteen of the old trains,
+
+77
+00:04:16,592 --> 00:04:19,313
+so they could keep running
+while the new ones were built.
+
+78
+00:04:20,480 --> 00:04:24,211
+In January 2024, the operator
+signed for three Chinese trains.
+
+79
+00:04:24,211 --> 00:04:28,002
+The contract was seven hundred
+and eighty-three billion rupiah,
+
+80
+00:04:28,002 --> 00:04:31,020
+about two hundred and
+sixty-one billion per train.
+
+81
+00:04:32,133 --> 00:04:33,422
+The new trains are longer.
+
+82
+00:04:33,422 --> 00:04:36,903
+Each one has twelve cars and can carry
+about three thousand four hundred
+
+83
+00:04:36,903 --> 00:04:37,713
+people per trip.
+
+84
+00:04:38,847 --> 00:04:40,682
+Compare that with the old deal.
+
+85
+00:04:40,682 --> 00:04:44,123
+Twelve used cars from Japan
+once cost about twelve billion.
+
+86
+00:04:44,123 --> 00:04:47,505
+One new twelve-car train cost
+around twenty times as much.
+
+87
+00:04:48,647 --> 00:04:50,931
+New trains fix one problem: age.
+
+88
+00:04:50,931 --> 00:04:55,291
+In November 2025, three of the
+oldest Japanese series retired,
+
+89
+00:04:55,291 --> 00:04:57,987
+some of them close to fifty years old.
+
+90
+00:04:59,100 --> 00:05:02,975
+Their driver cabins are going on
+display at Jakarta Kota station.
+
+91
+00:05:02,975 --> 00:05:06,440
+Jakarta gave its second-hand
+trains a retirement ceremony.
+
+92
+00:05:08,333 --> 00:05:11,013
+So the plan was new trains
+from China and from INKA.
+
+93
+00:05:11,953 --> 00:05:13,533
+The weak point was INKA's factory.
+
+94
+00:05:14,647 --> 00:05:18,626
+All eleven Chinese trains are running,
+mostly on the Bogor and Cikarang
+
+95
+00:05:18,626 --> 00:05:19,013
+lines.
+
+96
+00:05:19,013 --> 00:05:22,938
+Here, a Chinese train on the Bogor
+line shares the tracks with the old
+
+97
+00:05:22,938 --> 00:05:23,767
+Japanese ones.
+
+98
+00:05:24,867 --> 00:05:27,377
+INKA was expected to
+build eight trains a year.
+
+99
+00:05:27,377 --> 00:05:28,786
+It delivered two to three.
+
+100
+00:05:29,900 --> 00:05:34,013
+By September 2026, seven of the
+sixteen INKA trains were in service.
+
+101
+00:05:34,013 --> 00:05:37,051
+That left nine trains the
+network was counting on,
+
+102
+00:05:37,051 --> 00:05:38,660
+still not carrying anyone.
+
+103
+00:05:39,747 --> 00:05:41,870
+Meanwhile the trains got more crowded.
+
+104
+00:05:41,870 --> 00:05:45,897
+Ridership in the first half of 2026
+was up about eleven percent on a year
+
+105
+00:05:45,897 --> 00:05:46,387
+earlier.
+
+106
+00:05:47,520 --> 00:05:49,973
+That's about one point
+one million trips a day.
+
+107
+00:05:49,973 --> 00:05:52,987
+The operator had planned for
+three to four percent growth,
+
+108
+00:05:52,987 --> 00:05:53,600
+not eleven.
+
+109
+00:05:54,713 --> 00:05:57,813
+On the busiest days, the count
+can reach one point three million.
+
+110
+00:05:57,813 --> 00:06:00,673
+That's two hundred thousand
+more trips than an ordinary day.
+
+111
+00:06:01,767 --> 00:06:04,772
+The operator calculated it needs
+one hundred and five trains.
+
+112
+00:06:04,772 --> 00:06:06,127
+It has one hundred and two.
+
+113
+00:06:07,247 --> 00:06:09,138
+And the gap was about to grow.
+
+114
+00:06:09,138 --> 00:06:13,103
+Thirteen former Tokyo Metro trains
+were due to retire this year.
+
+115
+00:06:14,213 --> 00:06:16,933
+A new train takes one to two
+years from order to delivery.
+
+116
+00:06:17,813 --> 00:06:22,293
+An order signed in January 2026
+would arrive in 2027 at the earliest.
+
+117
+00:06:24,133 --> 00:06:27,573
+So in September 2026,
+Jakarta went back to Tokyo.
+
+118
+00:06:28,693 --> 00:06:33,835
+On September 23, the head of the national
+railway asked parliament to allow
+
+119
+00:06:33,835 --> 00:06:37,893
+used Japanese trains again, as
+a stopgap for 2026 and 2027.
+
+120
+00:06:39,033 --> 00:06:40,815
+Parliament's committee agreed.
+
+121
+00:06:40,815 --> 00:06:43,401
+The order would be
+twenty-three used trains,
+
+122
+00:06:43,401 --> 00:06:47,251
+on one condition: keep building
+up Indonesia's own train industry.
+
+123
+00:06:48,367 --> 00:06:53,090
+The pressure behind that vote was a
+forecast of three hundred and sixty-nine
+
+124
+00:06:53,090 --> 00:06:55,114
+million passenger trips in 2026.
+
+125
+00:06:55,114 --> 00:06:58,365
+Every missing train makes
+the remaining ones fuller.
+
+126
+00:06:58,365 --> 00:07:01,493
+Everyone in this story
+wanted something different.
+
+127
+00:07:01,493 --> 00:07:04,007
+The railway wanted trains within months.
+
+128
+00:07:04,007 --> 00:07:07,442
+Parliament wanted the home
+train industry kept growing.
+
+129
+00:07:07,442 --> 00:07:09,832
+Japan wanted old trains off its books.
+
+130
+00:07:09,832 --> 00:07:13,940
+And the trade ministry had a cap
+on how old a used machine can be.
+
+131
+00:07:15,067 --> 00:07:16,727
+To be fair, the argument was time.
+
+132
+00:07:17,327 --> 00:07:19,487
+A used train could arrive
+in one to two months.
+
+133
+00:07:20,207 --> 00:07:21,807
+A new one takes one to two years.
+
+134
+00:07:22,953 --> 00:07:24,129
+Then it hit a rule.
+
+135
+00:07:24,129 --> 00:07:28,537
+Indonesia's trade ministry only allows
+used capital goods like these up to
+
+136
+00:07:28,537 --> 00:07:29,593
+twenty years old.
+
+137
+00:07:30,667 --> 00:07:34,106
+The trains on offer were twenty-five
+to twenty-eight years old.
+
+138
+00:07:34,106 --> 00:07:37,706
+On average, they had been carrying
+passengers in Japan since 1998.
+
+139
+00:07:38,833 --> 00:07:41,593
+The transport ministry
+added another problem.
+
+140
+00:07:41,593 --> 00:07:43,033
+Hand-me-downs wear out.
+
+141
+00:07:43,033 --> 00:07:47,533
+A train used for twenty to thirty years
+in Japan might have only about ten
+
+142
+00:07:47,533 --> 00:07:48,253
+years left.
+
+143
+00:07:48,253 --> 00:07:51,613
+After that, Jakarta would be
+shopping for trains again.
+
+144
+00:07:52,747 --> 00:07:54,767
+Old trains are also
+harder to keep running.
+
+145
+00:07:56,087 --> 00:07:58,787
+When three Japanese
+series retired in 2025,
+
+146
+00:07:59,387 --> 00:08:02,087
+one stated reason was that
+their spare parts had run out.
+
+147
+00:08:03,180 --> 00:08:07,608
+On November 5, the railway's chief
+executive cancelled the plan.
+
+148
+00:08:07,608 --> 00:08:10,539
+His words: for the public, it must be new.
+
+149
+00:08:12,387 --> 00:08:14,087
+You might guess Japan ran out of trains.
+
+150
+00:08:14,907 --> 00:08:15,327
+It didn't.
+
+151
+00:08:16,147 --> 00:08:19,787
+Japan still has trains to sell, but
+they are too old for Indonesia's own
+
+152
+00:08:19,847 --> 00:08:20,147
+rule.
+
+153
+00:08:21,167 --> 00:08:24,389
+Japan keeps its commuter trains
+for twenty to thirty years.
+
+154
+00:08:24,389 --> 00:08:28,146
+By the time a car is free to sell,
+it's usually past Jakarta's limit.
+
+155
+00:08:29,267 --> 00:08:31,987
+The window that opened in
+2000 closed on its own.
+
+156
+00:08:32,827 --> 00:08:36,147
+The supply that made Jakarta's network
+cheap now ages out before it can be
+
+157
+00:08:36,207 --> 00:08:36,507
+shipped.
+
+158
+00:08:37,600 --> 00:08:39,160
+So what do commuters ride next?
+
+159
+00:08:40,040 --> 00:08:43,180
+The operator had three
+options: order from INKA,
+
+160
+00:08:43,640 --> 00:08:46,500
+keep the old trains running
+longer, or import used ones.
+
+161
+00:08:47,653 --> 00:08:50,443
+With imports off the
+table, that leaves two.
+
+162
+00:08:50,443 --> 00:08:54,907
+Old Japanese cars stay in service
+longer, and INKA has to build faster.
+
+163
+00:08:54,907 --> 00:08:57,573
+Some of those cars are already past forty.
+
+164
+00:08:58,733 --> 00:09:01,479
+The money for new trains
+was already approved.
+
+165
+00:09:01,479 --> 00:09:05,979
+A year earlier, the government set aside
+five trillion rupiah for thirty new
+
+166
+00:09:05,979 --> 00:09:07,553
+trains, due within a year.
+
+167
+00:09:09,400 --> 00:09:13,166
+The longer plan is to replace
+eighty-four old Japanese trains with
+
+168
+00:09:13,166 --> 00:09:17,269
+INKA-built ones, and raise capacity
+from one point one to one point four
+
+169
+00:09:17,269 --> 00:09:19,180
+million passengers a day by 2030.
+
+170
+00:09:21,033 --> 00:09:25,390
+For twenty-five years, Tokyo's old
+trains let Jakarta grow a rail network it
+
+171
+00:09:25,390 --> 00:09:26,974
+couldn't afford to buy new.
+
+172
+00:09:26,974 --> 00:09:29,521
+Then the hand-me-downs
+aged out of the rule,
+
+173
+00:09:29,521 --> 00:09:32,125
+and the next trains have
+to be built at home.
+
+174
+00:09:32,125 --> 00:09:35,125
+So the refusal in November
+came from Tokyo's closet,
+
+175
+00:09:35,125 --> 00:09:37,729
+which had nothing left
+that was young enough.
+
+176
+00:09:39,600 --> 00:09:43,280
+Those trains carry people to and from
+one island that holds more than half
+
+177
+00:09:43,320 --> 00:09:43,980
+of Indonesia.
+
+178
+00:09:44,840 --> 00:09:48,240
+Next video, why so many
+Indonesians live on Java.

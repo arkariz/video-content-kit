@@ -1,0 +1,72 @@
+1
+00:00:00,120 --> 00:00:03,220
+You step onto a Jakarta commuter
+train that started its working life in
+
+2
+00:00:03,260 --> 00:00:04,700
+Tokyo decades ago.
+
+3
+00:00:05,600 --> 00:00:08,039
+In November, Jakarta
+refused to buy any more.
+
+4
+00:00:09,113 --> 00:00:11,296
+A new car cost ten to twelve billion.
+
+5
+00:00:11,296 --> 00:00:14,393
+Same seats, same doors,
+about one tenth of the price.
+
+6
+00:00:15,533 --> 00:00:18,174
+The first size that matches is the rails.
+
+7
+00:00:18,174 --> 00:00:23,017
+Japan's regular lines and Java's lines
+are both one thousand and sixty-seven
+
+8
+00:00:23,017 --> 00:00:24,212
+millimetres apart.
+
+9
+00:00:24,212 --> 00:00:27,168
+Change the rail width
+and you need new wheels,
+
+10
+00:00:27,168 --> 00:00:29,053
+new axles, often a new train.
+
+11
+00:00:30,200 --> 00:00:31,744
+The power matches too.
+
+12
+00:00:31,744 --> 00:00:36,308
+Jakarta's electric line opened in
+1925 on fifteen hundred volts DC,
+
+13
+00:00:36,308 --> 00:00:39,998
+the same system the 205
+series was built for in Tokyo.
+
+14
+00:00:41,133 --> 00:00:42,873
+Same rails, same power.
+
+15
+00:00:43,813 --> 00:00:47,053
+A Tokyo train arrives by ship,
+gets new signs and checks,
+
+16
+00:00:47,473 --> 00:00:49,913
+and goes into service with
+no rebuilding of the tracks.
