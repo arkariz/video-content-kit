@@ -4,6 +4,7 @@
 import fs from "node:fs"; import path from "node:path"; import crypto from "node:crypto";
 import { ROOT as REPO, readJson, writeJson } from "../produksi/lib.mjs";
 import { sceneStarts } from "../pipeline/kemasan.mjs";
+import { bacaPanduan } from "./panduan.mjs";
 
 export const ROOT = process.env.RILIS_ROOT || REPO;
 const ada = (rel) => fs.existsSync(path.join(ROOT, rel));
@@ -74,7 +75,24 @@ export function buatRencana(c) {
   const lama = readJson(path.join(c.dir, "06-publish.json"), null);
   const alasan = c.status === "tayang" ? "status siklus di TRACK.md sudah tayang" : lama?.hasil?.length ? "sudah pernah dikirim lewat Upload-Post" : /Jangan jalankan `approve\.mjs`/.test(baca(path.join(c.dir, "06-publish-manual.md"))) ? "catatan 06-publish-manual.md: diunggah manual" : null;
   const r = { versi: 1, track: c.track, siklus: c.nama, dibuat: new Date().toISOString(), kunci_manual: alasan, youtube: { kategori: "27", bahasa: "en", label_ai: true, untuk_anak: false, promosi_berbayar: false }, items, persetujuan: null, hasil: {}, checklist: {} };
+  isiPanduan(c, r);
   simpan(c, r); return r;
+}
+
+/** Salin teks YouTube dari 06-publish-manual.md ke rencana. Mengembalikan jumlah bidang yang terisi. */
+function isiPanduan(c, r) {
+  const p = bacaPanduan(baca(path.join(c.dir, "06-publish-manual.md")), r.items.map((i) => i.nama)); let n = 0;
+  for (const i of r.items) for (const [k, v] of Object.entries(p[i.nama] ?? {})) {
+    if (k === "tag") i.tag = v.split(",").map((x) => x.trim()).filter(Boolean);
+    else if (k === "terjemahan") i.terjemahan = { ...i.terjemahan, judul: v };
+    else i[k] = v;
+    n++;
+  }
+  return n;
+}
+export const adaPanduan = (c) => fs.existsSync(path.join(c.dir, "06-publish-manual.md"));
+export function impor(c) {
+  return ubah(c, (r) => { if (!isiPanduan(c, r)) throw new Error("tidak ada teks yang bisa dibaca dari 06-publish-manual.md"); });
 }
 
 export const waktu = (jadwal) => (jadwal ? new Date(`${jadwal}:00+07:00`) : null);
@@ -156,33 +174,41 @@ export function catatUrl(c, nama, platform, url) {
   });
 }
 
-/** Tugas yang tidak bisa (atau belum bisa) dikerjakan alat. */
+/** Tugas yang tidak bisa (atau belum bisa) dikerjakan alat. `tunggu` terisi bila belum bisa dikerjakan. */
 export function checklist(c, r) {
   const T = []; const url = (n, p) => r.hasil[n]?.[p]?.url ?? ""; const vid = (n) => r.hasil[n]?.youtube?.videoId;
   const studio = (n) => (vid(n) ? `https://studio.youtube.com/video/${vid(n)}/edit` : "https://studio.youtube.com");
-  const tambah = (item, kunci, label, x = {}) => T.push({ id: `${item}:${kunci}`, item, label, ...x, selesai: r.checklist[`${item}:${kunci}`] ?? null });
-  const dub = fs.existsSync(path.join(ROOT, c.render)) && fs.readdirSync(path.join(ROOT, c.render)).filter((f) => /-audio-[a-z]+\.m4a$/.test(f));
+  /** Alasan video YouTube item belum siap disentuh. */
+  const belumAda = (n) => (vid(n) ? "" : `catat dulu URL YouTube ${n}`);
+  const belumTayang = (n) => { const h = r.hasil[n]?.youtube; return belumAda(n) || (h.publishAt && new Date(h.publishAt) > new Date() ? `menunggu ${n} tayang` : ""); };
+  const tambah = (item, platform, kunci, label, x = {}) => {
+    const id = `${item}:${kunci}`; const otomatis = x.catatUrl && r.hasil[item]?.[platform];
+    T.push({ id, item, platform, label, ...x, selesai: r.checklist[id] ?? (otomatis ? otomatis.dicatat ?? otomatis.diunggah : null) });
+  };
+  const dub = fs.existsSync(path.join(ROOT, c.render)) ? fs.readdirSync(path.join(ROOT, c.render)).filter((f) => /-audio-[a-z]+\.m4a$/.test(f)) : [];
   for (const i of r.items) {
     const n = i.nama, master = n === "master", hy = r.hasil[n]?.youtube;
-    if (!vid(n) && r.kunci_manual) tambah(n, "yt-unggah", "Unggah ke YouTube, lalu catat URL-nya", { tautan: "https://studio.youtube.com" });
-    if (i.komentar || r.kunci_manual) tambah(n, "yt-pin", hy?.komentar ? "Pin komentar di YouTube" : "Komentar pertama dan pin di YouTube", { tautan: hy?.komentar?.url ?? studio(n), salin: hy?.komentar ? "" : i.komentar });
+    if (r.kunci_manual) tambah(n, "youtube", "yt-unggah", "Unggah ke YouTube", { catatUrl: true, tautan: "https://studio.youtube.com" });
+    if (i.komentar || r.kunci_manual) tambah(n, "youtube", "yt-pin", hy?.komentar ? "Pin komentar" : "Posting komentar pertama, lalu pin", { tautan: hy?.komentar?.url ?? studio(n), salin: hy?.komentar ? "" : i.komentar, tunggu: belumTayang(n) });
     if (master) {
-      tambah(n, "yt-endscreen", "End screen: Subscribe dan video berikutnya (5–20 detik terakhir)", { tautan: studio(n) });
-      tambah(n, "yt-cards", "Cards bila naskah merujuk video lain (maks. 5)", { tautan: studio(n) });
-      tambah(n, "yt-ab", "A/B test judul dan thumbnail (maks. 3)", { tautan: studio(n) });
-      if (dub?.length) tambah(n, "yt-audio", `Multi audio: ${dub.filter((f) => f.startsWith("Master")).join(", ") || dub.join(", ")}`, { tautan: studio(n) });
-      tambah(n, "yt-midroll", "Mid-roll di jeda antar bab (bila monetisasi aktif)", { tautan: studio(n) });
-      tambah(n, "fb-unggah", "Facebook: unggah master penuh sebagai video Page, subtitle publish/master.en_US.srt, lalu catat URL", { salin: `${i.judul}\n\n${i.deskripsi}` });
+      const y = (kunci, label) => tambah(n, "youtube", kunci, label, { tautan: studio(n), tunggu: belumAda(n) });
+      y("yt-endscreen", "End screen: Subscribe dan video berikutnya (5–20 detik terakhir)");
+      y("yt-cards", "Cards bila naskah merujuk video lain (maks. 5)");
+      y("yt-ab", "A/B test judul dan thumbnail (maks. 3)");
+      if (dub.length) y("yt-audio", `Multi audio: ${dub.filter((f) => f.startsWith("Master")).join(", ") || dub.join(", ")}`);
+      y("yt-midroll", "Mid-roll di jeda antar bab (bila monetisasi aktif)");
+      tambah(n, "facebook", "fb-unggah", "Unggah master penuh sebagai video Page, dengan subtitle publish/master.en_US.srt", { catatUrl: true, salin: `${i.judul}\n\n${i.deskripsi}` });
     } else {
-      tambah(n, "yt-terkait", "Pasang video terkait: master (master harus sudah publik)", { tautan: studio(n), salin: url("master", "youtube") });
-      tambah(n, "fb-unggah", "Facebook: unggah Reel, lalu catat URL", { salin: i.deskripsi });
-      tambah(n, "fb-komentar", "Facebook: komentar berisi tautan master Facebook, lalu pin", { tautan: url(n, "facebook"), salin: url("master", "facebook") ? `Full video: ${url("master", "facebook")}` : "", catatan: url("master", "facebook") ? "" : "catat dulu URL master Facebook" });
-      tambah(n, "ig-unggah", "Instagram: unggah Reel (label AI nyala), lalu catat URL", { salin: i.deskripsi });
-      tambah(n, "ig-komentar", "Instagram: komentar pertama dan pin", { tautan: url(n, "instagram") });
-      tambah(n, "ig-story", "Instagram Story: bagikan Reel dengan stiker tautan ke master YouTube", { salin: url("master", "youtube") });
-      tambah(n, "tt-unggah", "TikTok: unggah, lalu catat URL", { salin: i.deskripsi });
+      tambah(n, "youtube", "yt-terkait", "Pasang video terkait: master", { tautan: studio(n), salin: url("master", "youtube"), tunggu: belumAda(n) || belumTayang("master") });
+      tambah(n, "facebook", "fb-unggah", "Unggah Reel", { catatUrl: true, salin: i.deskripsi });
+      tambah(n, "facebook", "fb-komentar", "Komentar berisi tautan master Facebook, lalu pin", { tautan: url(n, "facebook"), salin: url("master", "facebook") ? `Full video: ${url("master", "facebook")}` : "", tunggu: !url(n, "facebook") ? `catat dulu URL Facebook ${n}` : url("master", "facebook") ? "" : "catat dulu URL Facebook master" });
+      tambah(n, "instagram", "ig-unggah", "Unggah Reel (label AI nyala)", { catatUrl: true, salin: i.deskripsi });
+      tambah(n, "instagram", "ig-komentar", "Komentar pertama, lalu pin", { tautan: url(n, "instagram"), tunggu: url(n, "instagram") ? "" : `catat dulu URL Instagram ${n}` });
+      tambah(n, "instagram", "ig-story", "Story: bagikan Reel dengan stiker tautan ke master YouTube", { salin: url("master", "youtube"), tunggu: !url(n, "instagram") ? `catat dulu URL Instagram ${n}` : belumTayang("master") });
+      tambah(n, "tiktok", "tt-unggah", "Unggah ke TikTok", { catatUrl: true, salin: i.deskripsi });
     }
   }
+  for (const t of T) if (t.selesai) t.tunggu = "";
   return T;
 }
 export function centang(c, id, selesai) {

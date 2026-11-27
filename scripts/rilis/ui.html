@@ -5,41 +5,62 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Rilis</title>
 <style>
-  :root { --bg:#f6f6f4; --kartu:#fff; --teks:#1d1d1b; --redup:#6b6b66; --garis:#dedcd6; --aksen:#1f6feb; --ok:#1a7f37; --warn:#9a6700; --gagal:#cf222e; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#141413; --kartu:#1e1e1c; --teks:#ecece8; --redup:#9a9a93; --garis:#33332f; --aksen:#58a6ff; --ok:#3fb950; --warn:#d29922; --gagal:#f85149; } }
+  :root { --bg:#f5f5f3; --kartu:#fff; --lekuk:#f0efeb; --teks:#1c1c1a; --redup:#65655f; --garis:#e0ded8; --aksen:#1f6feb; --aksen-lembut:#e7f0fd; --ok:#1a7f37; --ok-lembut:#e3f3e7; --warn:#8a5d00; --warn-lembut:#fbf0d3; --gagal:#c4222d; --gagal-lembut:#fde6e8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#131312; --kartu:#1d1d1b; --lekuk:#262624; --teks:#ecece8; --redup:#9d9d96; --garis:#32322e; --aksen:#4c93f0; --aksen-lembut:#19293f; --ok:#4ac262; --ok-lembut:#17301e; --warn:#dba63a; --warn-lembut:#33290f; --gagal:#f8656e; --gagal-lembut:#3a1a1d; } }
   * { box-sizing:border-box }
   body { margin:0; background:var(--bg); color:var(--teks); font:14px/1.5 system-ui,sans-serif }
-  header, main { max-width:1000px; margin:0 auto; padding:12px 16px }
-  header { display:flex; gap:12px; align-items:center; flex-wrap:wrap }
-  h1 { font-size:20px; margin:0 } h2 { font-size:15px; margin:0 0 8px } h3 { font-size:14px; margin:0 0 6px }
-  section { background:var(--kartu); border:1px solid var(--garis); border-radius:10px; padding:14px; margin-bottom:14px }
-  a { color:var(--aksen) }
-  button, input, textarea, select { font:inherit; color:inherit; background:var(--kartu); border:1px solid var(--garis); border-radius:6px; padding:5px 10px }
-  button { cursor:pointer } button.utama { background:var(--aksen); border-color:var(--aksen); color:#fff } button:disabled { opacity:.45; cursor:default }
-  input, textarea { width:100%; padding:6px 8px } input[type=checkbox] { width:auto } input[type=datetime-local] { width:auto }
-  textarea { resize:vertical; min-height:64px }
-  label { display:block; color:var(--redup); font-size:12px; margin:8px 0 2px }
-  table { width:100%; border-collapse:collapse } th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--garis); vertical-align:top }
-  th { color:var(--redup); font-weight:500; font-size:12px }
-  .gulir { overflow-x:auto }
-  .baris { display:flex; gap:8px; align-items:center; flex-wrap:wrap }
-  .redup { color:var(--redup) } .ok { color:var(--ok) } .warn { color:var(--warn) } .gagal { color:var(--gagal) }
-  .tugas { display:flex; gap:10px; align-items:flex-start; padding:6px 0; border-bottom:1px solid var(--garis) } .tugas > div:nth-child(2) { flex:1; min-width:0 }
-  details > summary { cursor:pointer; font-weight:600; padding:4px 0 }
-  video, img.thumb { max-width:100%; border-radius:8px; border:1px solid var(--garis) }
-  video.tegak { max-width:240px } img.thumb { max-width:320px }
-  pre { white-space:pre-wrap; margin:0; font-size:12px }
-  #pesan { position:sticky; top:0; z-index:2 } #pesan div { background:var(--gagal); color:#fff; padding:8px 16px; cursor:pointer }
+  a { color:var(--aksen); text-decoration:none } a:hover { text-decoration:underline }
+  h1 { font-size:20px; margin:0; line-height:1.3 } h2 { font-size:15px; margin:0 0 10px }
+  button, input, textarea, select { font:inherit; color:inherit; background:var(--kartu); border:1px solid var(--garis); border-radius:8px; padding:6px 12px }
+  button { cursor:pointer } button:hover:not(:disabled) { border-color:var(--aksen) } button:disabled { opacity:.45; cursor:default }
+  button.utama { background:var(--aksen); border-color:var(--aksen); color:#fff; font-weight:600 }
+  button.kecil { padding:2px 10px; font-size:12px }
+  :focus-visible { outline:2px solid var(--aksen); outline-offset:1px }
+  input, textarea { width:100% } input[type=checkbox] { width:18px; height:18px; flex:none; margin:2px 0 0; accent-color:var(--aksen) } input[type=datetime-local] { width:auto }
+  textarea { resize:vertical; field-sizing:content; min-height:70px; max-height:340px }
+  #atas { position:sticky; top:0; z-index:5; background:var(--kartu); border-bottom:1px solid var(--garis) }
+  #atas > div { max-width:1080px; margin:0 auto; padding:10px 16px; display:flex; gap:12px; align-items:center; flex-wrap:wrap }
+  #atas .merek { font-weight:700; font-size:16px; color:var(--teks) } #pilih { max-width:100%; min-width:0 } #simpanan { margin-left:auto; font-size:12px }
+  main { max-width:1080px; margin:0 auto; padding:16px }
+  .kartu { background:var(--kartu); border:1px solid var(--garis); border-radius:12px; padding:16px; margin-bottom:14px }
+  .baris { display:flex; gap:8px; align-items:center; flex-wrap:wrap } .antara { justify-content:space-between }
+  .redup { color:var(--redup) } .kecil-teks { font-size:12px } .ok { color:var(--ok) } .warn { color:var(--warn) } .gagal { color:var(--gagal) }
+  .cip { display:inline-block; font-size:12px; padding:1px 9px; border-radius:99px; background:var(--lekuk); color:var(--redup); white-space:nowrap }
+  .cip.ok { background:var(--ok-lembut); color:var(--ok) } .cip.warn { background:var(--warn-lembut); color:var(--warn) } .cip.gagal { background:var(--gagal-lembut); color:var(--gagal) } .cip.biru { background:var(--aksen-lembut); color:var(--aksen) }
+  a.cip:hover { text-decoration:none; filter:brightness(.95) }
+  .catatan { border-radius:8px; padding:9px 12px; margin:8px 0; background:var(--warn-lembut); color:var(--warn) } .catatan.gagal { background:var(--gagal-lembut); color:var(--gagal) } .catatan.ok { background:var(--ok-lembut); color:var(--ok) }
+  .angka { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-bottom:14px } .angka .kartu { margin:0 } .angka b { display:block; font-size:24px; line-height:1.3 }
+  .agenda { display:flex; gap:12px; padding:10px 0; border-top:1px solid var(--garis); align-items:center; flex-wrap:wrap }
+  .agenda:first-of-type { border-top:0 } .agenda .mini { width:76px; height:48px; object-fit:contain; background:var(--lekuk); border-radius:6px; flex:none } .agenda .tengah { flex:1 1 260px; min-width:0 }
+  .bilah { height:6px; background:var(--lekuk); border-radius:9px; overflow:hidden; flex:1; min-width:80px } .bilah i { display:block; height:100%; background:var(--ok) }
+  nav.langkah { display:flex; gap:4px; border-bottom:1px solid var(--garis); margin:12px 0 14px; overflow-x:auto }
+  nav.langkah a { padding:8px 14px; color:var(--redup); border-bottom:2px solid transparent; white-space:nowrap } nav.langkah a.aktif { color:var(--teks); border-color:var(--aksen); font-weight:600 } nav.langkah a:hover { text-decoration:none; color:var(--teks) }
+  .pil { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px } .pil button.aktif { background:var(--aksen-lembut); border-color:var(--aksen); font-weight:600 }
+  .dua { display:grid; grid-template-columns:minmax(0,360px) minmax(0,1fr); gap:16px; align-items:start }
+  .dua > .media { position:sticky; top:68px } .media video { width:100%; max-height:70vh; border-radius:10px; background:#000 } .media img { max-width:100%; border-radius:10px; border:1px solid var(--garis) }
+  @media (max-width:820px) { .dua { grid-template-columns:1fr } .dua > .media { position:static } .media video { max-height:55vh } }
+  .bidang { margin-bottom:14px } .bidang .judul { display:flex; justify-content:space-between; gap:8px; margin-bottom:4px; font-weight:600; font-size:13px } .bidang .judul span { font-weight:400 }
+  table { width:100%; border-collapse:collapse } th, td { text-align:left; padding:8px; border-bottom:1px solid var(--garis); vertical-align:top } th { color:var(--redup); font-weight:500; font-size:12px }
+  .gulir { overflow-x:auto } td.url { min-width:170px }
+  .tugas { display:flex; gap:10px; padding:10px 0; border-top:1px solid var(--garis); align-items:flex-start }
+  .tugas .tengah { flex:1; min-width:0 } .tugas.selesai .label { text-decoration:line-through; color:var(--redup) } .tugas.tunggu { opacity:.7 }
+  .tugas .urlbaris { display:flex; gap:6px; margin-top:6px }
+  details > summary { cursor:pointer; padding:4px 0; font-weight:600 }
+  pre { white-space:pre-wrap; margin:10px 0 0; font-size:12px; background:var(--lekuk); padding:10px; border-radius:8px }
+  code { background:var(--lekuk); padding:1px 5px; border-radius:4px; font-size:12px; overflow-wrap:anywhere }
+  #pesan { position:fixed; left:50%; bottom:16px; transform:translateX(-50%); z-index:9; width:min(640px,92vw) } #pesan div { background:var(--gagal); color:#fff; padding:12px 16px; border-radius:10px; cursor:pointer; box-shadow:0 6px 24px #0004 }
 </style>
 </head>
 <body>
-<div id="pesan"></div>
-<header><h1>Rilis</h1><button id="beranda">Beranda</button><select id="pilih" aria-label="Pilih siklus"></select><button id="muat">Muat ulang</button></header>
+<div id="atas"><div><a class="merek" href="#/">Rilis</a><a href="#/">Pantau</a><select id="pilih" aria-label="Buka siklus"></select><span id="simpanan" class="redup" role="status"></span></div></div>
 <main id="isi"></main>
+<div id="pesan" role="alert"></div>
 <script>
 const TOKEN = "__TOKEN__";
-const isi = document.getElementById("isi"), pilih = document.getElementById("pilih"), pesan = document.getElementById("pesan");
-let pewaktu = null;
+const $ = (id) => document.getElementById(id);
+const isi = $("isi"), pilih = $("pilih");
+const P = { youtube: "YouTube", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok" };
+const pilihanItem = {}; let saringan = "sekarang", pewaktu = null, antre = Promise.resolve(), tertunda = 0, nomorTampil = 0;
 
 function h(tag, attr = {}, ...anak) {
   const e = document.createElement(tag);
@@ -47,142 +68,244 @@ function h(tag, attr = {}, ...anak) {
     if (v === undefined || v === null || v === false) continue;
     if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else if (k === "value") e.value = v; else e.setAttribute(k, v === true ? "" : v);
   }
-  e.append(...anak.flat().filter((x) => x !== null && x !== undefined && x !== false));
+  e.append(...anak.flat(Infinity).filter((x) => x !== null && x !== undefined && x !== false));
   if (tag === "select" && attr.value !== undefined) e.value = attr.value;
   return e;
 }
-const tautan = (url, teks) => (/^https:\/\//.test(url || "") ? h("a", { href: url, target: "_blank", rel: "noopener noreferrer" }, teks) : null);
-const salin = (teks) => (teks ? h("button", { onclick: async (ev) => { await navigator.clipboard.writeText(teks); ev.target.textContent = "Tersalin"; } }, "Salin teks") : null);
-const galat = (m) => pesan.replaceChildren(h("div", { onclick: () => pesan.replaceChildren(), title: "klik untuk menutup" }, m));
-const waktu = (j) => (j ? j.replace("T", " ") : "segera");
-const WARNA = { tayang: "ok", dicatat: "ok", terjadwal: "warn", privat: "warn", gagal: "gagal", "upload-post": "redup" };
+const luar = (url, teks, kelas) => (/^https:\/\//.test(url || "") ? h("a", { href: url, target: "_blank", rel: "noopener noreferrer", class: kelas }, teks) : null);
+const cip = (teks, jenis = "", url) => luar(url, `${teks} ↗`, `cip ${jenis}`) || h("span", { class: `cip ${jenis}` }, teks);
+const salin = (teks) => (teks ? h("button", { class: "kecil", onclick: async (ev) => { const b = ev.currentTarget; try { await navigator.clipboard.writeText(teks); b.textContent = "Tersalin ✓"; setTimeout(() => (b.textContent = "Salin teks"), 1500); } catch { galat("Browser menolak menyalin; salin dari halaman Isi konten."); } } }, "Salin teks") : null);
+const galat = (m) => $("pesan").replaceChildren(h("div", { onclick: () => $("pesan").replaceChildren(), title: "klik untuk menutup" }, m));
+const bersih = () => $("pesan").replaceChildren();
+
+const tgl = (j) => (j ? new Date(`${j}:00+07:00`) : null);
+const waktu = (j) => (j ? new Intl.DateTimeFormat("id-ID", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Asia/Jakarta" }).format(tgl(j)) + " WIB" : "tayang segera");
+function relatif(j) {
+  if (!j) return ""; const m = Math.round((tgl(j) - Date.now()) / 60000), a = Math.abs(m);
+  const t = a < 60 ? `${a} menit` : a < 48 * 60 ? `${Math.round(a / 60)} jam` : `${Math.round(a / 1440)} hari`;
+  return m >= 0 ? `dalam ${t}` : `${t} lalu`;
+}
+const STATUS = { tayang: ["tayang", "ok"], dicatat: ["URL dicatat", "ok"], terjadwal: ["terjadwal", "biru"], privat: ["privat", "warn"], gagal: ["ada kegagalan", "gagal"], "upload-post": ["lewat Upload-Post", ""] };
+const cipStatus = (p, s) => (s ? cip(`${P[p]}: ${STATUS[s.status][0]}`, STATUS[s.status][1], s.url) : null);
+const hitung = (tugas) => ({ selesai: tugas.filter((t) => t.selesai).length, sekarang: tugas.filter((t) => !t.selesai && !t.tunggu).length, tunggu: tugas.filter((t) => !t.selesai && t.tunggu).length, total: tugas.length });
+const bilah = (n, total) => h("div", { class: "bilah", role: "progressbar", "aria-valuenow": n, "aria-valuemax": total, "aria-label": "Tugas selesai" }, h("i", { style: `width:${total ? (n / total) * 100 : 0}%` }));
+const media = (t, s, f) => `/media?t=${t}&s=${s}&f=${encodeURIComponent(f)}`;
 
 async function ambil(url, opsi) {
   const r = await fetch(url, opsi); const j = await r.json().catch(() => ({ galat: `HTTP ${r.status}` }));
   if (!r.ok) throw new Error(j.galat || `HTTP ${r.status}`); return j;
 }
 const post = (b) => ambil("/api/aksi", { method: "POST", headers: { "Content-Type": "application/json", "X-Token": TOKEN }, body: JSON.stringify(b) });
+/** Aksi tombol: kirim, lalu gambar ulang halaman. */
 async function aksi(d, b) {
-  try { pesan.replaceChildren(); const baru = await post({ track: d.track, siklus: d.siklus, ...b }); tampilSiklus(baru); return true; }
+  try { bersih(); await antre; await post({ track: d.track, siklus: d.siklus, ...b }); await tampil(); return true; }
   catch (e) { galat(e.message); return false; }
 }
 
-function tabelStatus(items) {
-  const P = ["youtube", "facebook", "instagram", "tiktok"];
-  return h("div", { class: "gulir" }, h("table", {},
-    h("tr", {}, ["Konten", "Jadwal (WIB)", "YouTube", "Facebook", "Instagram", "TikTok"].map((x) => h("th", {}, x))),
-    items.map((i) => h("tr", {}, h("td", {}, i.nama), h("td", {}, waktu(i.jadwal)), P.map((p) => {
-      const s = i.platform[p]; if (!s) return h("td", { class: "redup" }, "—");
-      return h("td", { class: WARNA[s.status] }, tautan(s.url, s.status) || s.status);
-    })))));
-}
-
-function baris(t, d, setelah) {
-  return h("div", { class: "tugas" },
-    h("input", { type: "checkbox", checked: !!t.selesai, "aria-label": t.label, onchange: async (ev) => { try { await post({ track: d.track, siklus: d.siklus, aksi: "centang", id: t.id, selesai: ev.target.checked }); setelah(); } catch (e) { galat(e.message); } } }),
-    h("div", {}, h("div", {}, h("span", { class: "redup" }, `${d.label || ""}${t.item} · `), t.label), t.catatan ? h("div", { class: "warn" }, t.catatan) : null),
-    h("div", { class: "baris" }, salin(t.salin), tautan(t.tautan, "Buka")));
-}
-
-async function tampilBeranda() {
-  clearTimeout(pewaktu); pilih.value = "";
-  const semua = await ambil("/api/ringkasan");
-  isiPilihan(semua);
+// ---------- Pantau ----------
+function halamanPantau(semua) {
   const dengan = semua.filter((s) => s.adaRencana), tanpa = semua.filter((s) => !s.adaRencana).reverse();
-  const tugas = dengan.flatMap((s) => s.tugas.map((t) => [t, s]));
-  const gagal = dengan.flatMap((s) => s.items.flatMap((i) => i.galat.map((g) => `${s.track}-${s.siklus} ${i.nama}: ${g}`)));
-  const buka = (s) => h("button", { onclick: () => buka_(s.track, s.siklus) }, "Buka");
-  isi.replaceChildren(...[
-    gagal.length ? h("section", {}, h("h2", { class: "gagal" }, "Kegagalan"), gagal.map((g) => h("div", {}, g))) : null,
-    h("section", {}, h("h2", {}, `Perlu tindakanmu (${tugas.length})`),
-      tugas.length ? dengan.filter((s) => s.tugas.length).map((s) => h("details", {}, h("summary", {}, `${s.track}-${s.nama} (${s.tugas.length})`), s.tugas.map((t) => baris(t, s, tampilBeranda)))) : h("div", { class: "redup" }, dengan.length ? "Tidak ada tugas tersisa." : "Belum ada rencana. Buat dari daftar di bawah.")),
-    ...dengan.map((s) => h("section", {}, h("div", { class: "baris" }, h("h2", {}, `${s.track}-${s.nama}`), buka(s)),
-      h("div", { class: "redup" }, `${s.channel} · QA otomatis: ${s.qa ?? "belum"} · ${s.kunci ? "unggah manual" : s.disetujui ? "disetujui" : "belum disetujui"}`), tabelStatus(s.items))),
-    tanpa.length ? h("section", {}, h("h2", {}, "Siklus tanpa rencana"), h("div", { class: "gulir" }, h("table", {}, tanpa.map((s) => h("tr", {}, h("td", {}, `${s.track}-${s.nama}`), h("td", { class: "redup" }, `${s.status} ${s.tanggal ?? ""}`), h("td", {}, buka(s))))))) : null,
-  ].filter(Boolean));
+  const tugas = dengan.flatMap((s) => s.tugas); const n = hitung(tugas);
+  const gagal = dengan.flatMap((s) => s.items.flatMap((i) => i.galat.map((g) => ({ s, i, g }))));
+  const konten = dengan.flatMap((s) => s.items.map((i) => ({ s, i, sisa: s.tugas.filter((t) => t.item === i.nama && !t.selesai) })));
+  // Yang masih akan tayang, atau sudah lewat jadwal tetapi masih ada tugasnya.
+  const agenda = konten.filter((k) => (k.i.jadwal && tgl(k.i.jadwal) > Date.now()) || k.sisa.length).sort((a, b) => (a.i.jadwal || "9").localeCompare(b.i.jadwal || "9"));
+  const depan = agenda.find((k) => k.i.jadwal && tgl(k.i.jadwal) > Date.now());
+  const angka = (label, nilai, ket, kelas) => h("div", { class: "kartu" }, h("span", { class: "redup" }, label), h("b", { class: kelas }, nilai), h("span", { class: "redup kecil-teks" }, ket));
+  return [
+    h("div", { class: "angka" },
+      angka("Tayang berikutnya", depan ? relatif(depan.i.jadwal) : "—", depan ? `${depan.s.track}-${depan.s.siklus} ${depan.i.nama}` : "tidak ada jadwal mendatang"),
+      angka("Bisa dikerjakan sekarang", n.sekarang, `${n.tunggu} menunggu · ${n.selesai} selesai`),
+      angka("Kegagalan", gagal.length, gagal.length ? "lihat di bawah" : "tidak ada", gagal.length ? "gagal" : "ok")),
+    gagal.length ? h("section", { class: "kartu" }, h("h2", {}, "Perlu diperbaiki"), gagal.map(({ s, i, g }) => h("div", { class: "catatan gagal" }, h("a", { href: `#/${s.track}/${s.siklus}/kirim` }, `${s.track}-${s.siklus} ${i.nama}`), `: ${g}`))) : null,
+    h("section", { class: "kartu" }, h("h2", {}, "Agenda"),
+      agenda.length ? agenda.map(({ s, i, sisa }) => {
+        const siap = sisa.filter((t) => !t.tunggu).length;
+        return h("div", { class: "agenda" },
+          i.thumb ? h("img", { class: "mini", alt: "", src: media(s.track, s.siklus, i.thumb), loading: "lazy" }) : h("div", { class: "mini" }),
+          h("div", { class: "tengah" }, h("div", {}, h("b", {}, i.judul || i.nama)), h("div", { class: "redup kecil-teks" }, `${s.track}-${s.siklus} · ${i.nama} · ${waktu(i.jadwal)}${i.jadwal ? ` (${relatif(i.jadwal)})` : ""}`),
+            h("div", { class: "baris" }, Object.keys(P).map((p) => cipStatus(p, i.platform[p])), Object.keys(i.platform).length ? null : cip("belum tayang di mana pun"))),
+          sisa.length ? h("a", { href: `#/${s.track}/${s.siklus}/tugas`, class: `cip ${siap ? "warn" : ""}` }, siap ? `${siap} tugas siap` : `${sisa.length} menunggu`) : cip("beres", "ok"));
+      }) : h("p", { class: "redup" }, dengan.length ? "Semua beres." : "Belum ada rencana. Buat dari daftar di bawah.")),
+    dengan.length ? h("section", { class: "kartu" }, h("h2", {}, "Siklus berjalan"), dengan.map((s) => { const k = hitung(s.tugas); return h("div", { class: "agenda" },
+      h("div", { class: "tengah" }, h("a", { href: `#/${s.track}/${s.siklus}` }, h("b", {}, `${s.track}-${s.nama}`)), h("div", { class: "baris" }, cip(s.kunci ? "unggah manual" : s.disetujui ? "disetujui" : "belum disetujui", s.disetujui ? "ok" : "warn"), cip(s.qa ? `QA ${s.qa.startsWith("GAGAL") ? "gagal" : "otomatis lulus"}` : "QA belum jalan", s.qa && !s.qa.startsWith("GAGAL") ? "ok" : "gagal"), h("span", { class: "redup kecil-teks" }, s.channel))),
+      h("div", { class: "baris", style: "flex:1 1 220px" }, bilah(k.selesai, k.total), h("span", { class: "redup kecil-teks" }, `${k.selesai}/${k.total} tugas`))); })) : null,
+    tanpa.length ? h("section", { class: "kartu" }, h("details", { open: !dengan.length }, h("summary", {}, `Siklus tanpa rencana (${tanpa.length})`), h("div", { class: "gulir" }, h("table", {}, tanpa.map((s) => h("tr", {}, h("td", {}, `${s.track}-${s.nama}`), h("td", { class: "redup" }, `${s.status} ${s.tanggal ?? ""}`), h("td", {}, h("a", { href: `#/${s.track}/${s.siklus}` }, "Buka")))))))) : null,
+  ];
 }
 
-function isiPilihan(semua) {
-  const v = pilih.value;
-  pilih.replaceChildren(h("option", { value: "" }, "Pilih siklus…"), ...semua.map((s) => h("option", { value: `${s.track} ${s.siklus}` }, `${s.track}-${s.nama}`)));
-  pilih.value = v;
-}
-async function buka_(t, s) {
-  try { clearTimeout(pewaktu); pilih.value = `${t} ${s}`; tampilSiklus(await ambil(`/api/siklus?t=${t}&s=${s}`)); } catch (e) { galat(e.message); }
+// ---------- Siklus: kerangka ----------
+const kurang = (d, i) => [!i.judul.trim() && "judul", !i.deskripsi.trim() && "deskripsi", !i.jadwal && !d.rencana.kunci_manual && "jadwal (kosong = tayang segera)", !i.komentar.trim() && "komentar pertama"].filter(Boolean);
+function kepala(d, langkah) {
+  const k = hitung(d.tugas), lengkap = d.rencana.items.filter((i) => !kurang(d, i).length).length;
+  const tab = (id, teks) => h("a", { href: `#/${d.track}/${d.siklus}/${id}`, class: langkah === id ? "aktif" : "", "aria-current": langkah === id ? "page" : null }, teks);
+  return h("div", { id: "kepala" },
+    h("div", { class: "baris antara" }, h("div", {}, h("h1", {}, `${d.track}-${d.nama}`), h("span", { class: "redup" }, d.channel || "channel belum diisi di TRACK.md")),
+      h("div", { class: "baris status" }, cip(d.rencana.kunci_manual ? "unggah manual" : d.disetujui ? "disetujui" : "belum disetujui", d.disetujui ? "ok" : "warn"), d.sibuk ? cip("sedang mengirim…", "biru") : null)),
+    h("nav", { class: "langkah" }, tab("isi", `1 · Isi konten (${lengkap}/${d.rencana.items.length})`), tab("kirim", `2 · Setujui dan kirim${d.disetujui ? " ✓" : ""}`), tab("tugas", `3 · Tugas dan URL (${k.selesai}/${k.total})`)));
 }
 
-function formItem(d, i) {
-  const r = d.rencana, hy = r.hasil[i.nama]?.youtube;
-  const f = {
-    judul: h("input", { value: i.judul, maxlength: 100 }), deskripsi: h("textarea", { rows: 7, value: i.deskripsi }),
-    tag: h("input", { value: i.tag.join(", ") }), komentar: h("textarea", { rows: 3, value: i.komentar, placeholder: "Komentar pertama (kosong = tidak diposting)" }),
-    jadwal: h("input", { type: "datetime-local", value: i.jadwal }), playlist: h("input", { value: i.playlist, placeholder: "kosong = tanpa playlist" }),
-    tj: h("input", { value: i.terjemahan?.judul ?? "", maxlength: 100 }), td: h("textarea", { rows: 4, value: i.terjemahan?.deskripsi ?? "", placeholder: "kosong = pakai deskripsi Inggris" }),
-  };
-  const video = i.file.split("/").pop(), thumb = i.thumbnail?.split("/").pop();
-  const L = (teks, el) => [h("label", {}, teks, el)];
-  const urlBaris = ["youtube", "facebook", "instagram", "tiktok"].map((p) => {
-    const x = r.hasil[i.nama]?.[p]; const alat = x && x.sumber !== "manual";
-    const masuk = h("input", { value: x?.url ?? "", placeholder: "https://…", readonly: alat });
-    return h("tr", {}, h("td", {}, p), h("td", { style: "width:100%" }, masuk), h("td", {}, alat ? tautan(x.url, "Buka") : h("button", { onclick: () => aksi(d, { aksi: "url", item: i.nama, platform: p, url: masuk.value }) }, "Catat")));
+// ---------- Langkah 1: isi konten ----------
+/** Simpan satu perubahan tanpa menggambar ulang form, agar fokus tidak hilang. */
+function simpan(d, item, data, ref) {
+  tertunda++; $("simpanan").textContent = "Menyimpan…"; $("simpanan").className = "redup";
+  antre = antre.then(async () => {
+    try {
+      const baru = await post({ track: d.track, siklus: d.siklus, aksi: "sunting", item, data });
+      Object.assign(d, baru); bersih(); ref.segar();
+      if (!--tertunda) { $("simpanan").textContent = "Tersimpan ✓"; $("simpanan").className = "ok"; }
+    } catch (e) { tertunda--; $("simpanan").textContent = "Belum tersimpan"; $("simpanan").className = "gagal"; galat(e.message); }
   });
-  return h("details", { "data-item": i.nama },
-    h("summary", {}, `${i.nama} · ${waktu(i.jadwal)}${hy?.videoId ? " · sudah di YouTube" : ""}`),
-    d.berkas.includes(video) ? h("video", { controls: true, preload: "none", class: i.nama === "master" ? "" : "tegak", src: `/media?t=${d.track}&s=${d.siklus}&f=${encodeURIComponent(video)}`, poster: thumb ? `/media?t=${d.track}&s=${d.siklus}&f=${encodeURIComponent(thumb)}` : null }) : h("div", { class: "warn" }, `Video belum ada: ${i.file}`),
-    thumb && d.berkas.includes(thumb) ? h("div", {}, h("img", { class: "thumb", alt: "thumbnail", src: `/media?t=${d.track}&s=${d.siklus}&f=${encodeURIComponent(thumb)}` })) : null,
-    h("div", { class: "redup" }, `Subtitle: ${i.subtitle.map((s) => s.bahasa).join(", ") || "tidak ada"}`),
-    hy?.videoId ? h("div", { class: "warn" }, "Video sudah terunggah: perubahan judul, deskripsi, dan jadwal di sini tidak dikirim ulang. Ubah di YouTube Studio.") : null,
-    L("Judul", f.judul), L("Deskripsi", f.deskripsi), L("Tag (pisahkan dengan koma)", f.tag), L("Komentar pertama", f.komentar), L("Jadwal tayang WIB (kosong = segera) ", f.jadwal), L("Playlist", f.playlist), L("Judul Indonesia", f.tj), L("Deskripsi Indonesia", f.td),
-    h("p", {}, h("button", { class: "utama", onclick: () => aksi(d, { aksi: "sunting", item: i.nama, data: { judul: f.judul.value, deskripsi: f.deskripsi.value, tag: f.tag.value, komentar: f.komentar.value, jadwal: f.jadwal.value, playlist: f.playlist.value, terjemahan: { judul: f.tj.value, deskripsi: f.td.value } } }) }, "Simpan")),
-    h("h3", {}, "URL tayang (isi untuk unggahan manual)"), h("table", {}, urlBaris));
 }
 
-function tampilSiklus(d) {
-  clearTimeout(pewaktu);
-  const terbuka = new Set([...isi.querySelectorAll("details[open][data-item]")].map((e) => `${isi.dataset.siklus}:${e.dataset.item}`));
-  isi.dataset.siklus = `${d.track}-${d.siklus}`;
-  const r = d.rencana;
-  const kepala = h("section", {}, h("h2", {}, `${d.track}-${d.nama}`), h("div", { class: "redup" }, `Channel: ${d.channel || "belum diisi di TRACK.md"}`),
-    h("div", {}, "QA otomatis: ", h("b", { class: !d.qa ? "warn" : d.qa.verdict === "GAGAL" ? "gagal" : "ok" }, d.qa?.verdict ?? "belum dijalankan")),
-    h("div", {}, `QA manual: ${d.qaManual}`),
-    d.qa?.temuan?.length ? h("details", {}, h("summary", {}, `Temuan QA (${d.qa.temuan.length})`), h("div", { class: "gulir" }, h("table", {}, d.qa.temuan.map((t) => h("tr", {}, h("td", {}, t.level), h("td", {}, `${t.id} ${t.msg}`)))))) : null,
-    d.qa?.manual?.length ? h("details", {}, h("summary", {}, "Pemeriksaan manual"), h("ul", {}, d.qa.manual.map((m) => h("li", {}, m)))) : null);
-  if (!r) { isi.replaceChildren(kepala, h("section", {}, h("p", {}, "Belum ada rencana rilis. Rencana disusun dari naskah dan hasil render, dan belum mengirim apa pun."), h("button", { class: "utama", onclick: () => aksi(d, { aksi: "plan" }) }, "Buat rencana"))); return; }
+function halamanIsi(d) {
+  const r = d.rencana; const kunci = `${d.track}/${d.siklus}`;
+  const i = r.items.find((x) => x.nama === pilihanItem[kunci]) ?? r.items[0];
+  const ref = {}; const wadah = h("div");
+  const pil = h("div", { class: "pil" }); const peringatan = h("div");
+  ref.segar = () => {
+    // Diperbarui di tempat: elemen yang sedang diklik tidak boleh diganti saat simpanan selesai.
+    const lama = $("kepala"), baru = kepala(d, "isi");
+    if (lama) { lama.querySelectorAll("nav a").forEach((a, n) => (a.textContent = baru.querySelectorAll("nav a")[n].textContent)); lama.querySelector(".status").replaceChildren(...baru.querySelector(".status").childNodes); }
+    d.rencana.items.forEach((x, n) => { const k = kurang(d, x); const b = pil.children[n]; b.textContent = `${k.length ? "○" : "●"} ${x.nama}`; b.title = k.length ? `Belum diisi: ${k.join(", ")}` : "Lengkap"; });
+    const kini = d.rencana.items.find((x) => x.nama === i.nama); const k = kurang(d, kini); const salah = d.masalah.filter((m) => m.startsWith(`${i.nama}: `));
+    peringatan.replaceChildren(...[salah.length ? h("div", { class: "catatan gagal" }, salah.map((m) => h("div", {}, m.slice(i.nama.length + 2)))) : null, k.length ? h("div", { class: "catatan" }, `Belum diisi: ${k.join(", ")}.`) : null].filter(Boolean));
+  };
+  pil.append(...r.items.map((x) => h("button", { class: x.nama === i.nama ? "aktif" : "", onclick: () => { pilihanItem[kunci] = x.nama; antre.then(tampil); } }, x.nama)));
+  const bidang = (label, nilai, kirim, { baris, maks, byte, petunjuk, tipe, bantu, placeholder } = {}) => {
+    const el = baris ? h("textarea", { rows: baris, placeholder }) : h("input", { type: tipe, placeholder });
+    el.value = nilai; const ukur = h("span", { class: "redup" });
+    const hit = () => { if (!maks) return; const n = byte ? new TextEncoder().encode(el.value).length : el.value.length; ukur.textContent = `${n}/${maks}${byte ? " byte" : ""}`; ukur.className = n > maks ? "gagal" : "redup"; };
+    el.addEventListener("input", () => { hit(); $("simpanan").textContent = "Ada perubahan…"; $("simpanan").className = "warn"; });
+    el.addEventListener("change", () => simpan(d, i.nama, kirim(el.value), ref)); hit();
+    return h("div", { class: "bidang" }, h("label", {}, h("div", { class: "judul" }, label, ukur), el), bantu?.(el), petunjuk ? h("div", { class: "redup kecil-teks" }, petunjuk) : null);
+  };
+  const tj = { judul: i.terjemahan?.judul ?? "", deskripsi: i.terjemahan?.deskripsi ?? "" };
+  const video = i.file.split("/").pop(), thumb = i.thumbnail?.split("/").pop();
+  const terunggah = r.hasil[i.nama]?.youtube?.sumber === "alat";
+  const jamCepat = (el) => (i.jadwal ? h("div", { class: "baris" }, ["10:00", "12:00", "16:00", "19:00"].map((j) => h("button", { class: "kecil", onclick: () => { el.value = `${el.value.slice(0, 10)}T${j}`; el.dispatchEvent(new Event("change")); } }, j.replace(":", ".")))) : null);
 
-  const kata = h("input", { placeholder: "ketik SETUJU", style: "width:160px", autocomplete: "off", "aria-label": "ketik SETUJU" });
-  const sudahVideo = r.items.some((i) => r.hasil[i.nama]?.youtube?.videoId);
-  const jalan = (a, tanya) => () => { if (!tanya || confirm(tanya)) aksi(d, { aksi: a }); };
+  wadah.append(
+    h("div", { class: "baris antara" }, pil, d.panduan ? h("button", { title: "Menimpa teks di semua konten dengan isi 06-publish-manual.md", onclick: () => { if (confirm("Timpa judul, deskripsi, tag, dan komentar yang ada di panduan unggah (06-publish-manual.md)? Suntinganmu pada bidang itu akan hilang.")) aksi(d, { aksi: "impor" }); } }, "Isi dari panduan unggah") : null),
+    peringatan,
+    terunggah ? h("div", { class: "catatan" }, "Video ini sudah terunggah. Perubahan judul, deskripsi, dan jadwal di sini tidak dikirim ulang; ubah di YouTube Studio.") : "",
+    h("div", { class: "dua" },
+      h("div", { class: "media kartu" },
+        d.berkas.includes(video) ? h("video", { controls: true, preload: "metadata", src: media(d.track, d.siklus, video), poster: thumb && d.berkas.includes(thumb) ? media(d.track, d.siklus, thumb) : null }) : h("div", { class: "catatan" }, `Video belum ada: ${i.file}`),
+        thumb && d.berkas.includes(thumb) ? h("details", {}, h("summary", {}, "Thumbnail"), h("img", { alt: "thumbnail", src: media(d.track, d.siklus, thumb) })) : h("div", { class: "redup" }, "Tanpa thumbnail"),
+        h("div", { class: "redup kecil-teks" }, `Subtitle: ${i.subtitle.map((s) => s.bahasa).join(", ") || "tidak ada"}`)),
+      h("div", { class: "kartu" },
+        bidang("Judul", i.judul, (v) => ({ judul: v }), { maks: 100, petunjuk: "Subjeknya harus terbaca di 40 karakter pertama." }),
+        bidang("Deskripsi", i.deskripsi, (v) => ({ deskripsi: v }), { baris: 8, maks: 5000, byte: true }),
+        bidang("Komentar pertama", i.komentar, (v) => ({ komentar: v }), { baris: 3, placeholder: "Satu pertanyaan untuk penonton. Kosong = tidak diposting." }),
+        bidang("Jadwal tayang (WIB)", i.jadwal, (v) => ({ jadwal: v }), { tipe: "datetime-local", bantu: jamCepat, petunjuk: "Kosongkan untuk tayang segera saat dikirim." }),
+        bidang("Tag", i.tag.join(", "), (v) => ({ tag: v }), { petunjuk: "Pisahkan dengan koma." }),
+        bidang("Playlist", i.playlist, (v) => ({ playlist: v }), { placeholder: "kosong = tanpa playlist" }),
+        h("details", { open: !!tj.judul }, h("summary", {}, "Terjemahan Indonesia"),
+          bidang("Judul Indonesia", tj.judul, (v) => ({ terjemahan: Object.assign(tj, { judul: v }) }), { maks: 100 }),
+          bidang("Deskripsi Indonesia", tj.deskripsi, (v) => ({ terjemahan: Object.assign(tj, { deskripsi: v }) }), { baris: 4, maks: 5000, byte: true, placeholder: "kosong = pakai deskripsi Inggris" })))),
+    h("div", { class: "baris antara" }, h("span", { class: "redup kecil-teks" }, "Perubahan tersimpan otomatis saat pindah bidang."), h("a", { href: `#/${d.track}/${d.siklus}/kirim` }, "Lanjut ke persetujuan →")));
+  queueMicrotask(ref.segar);
+  return wadah;
+}
+
+// ---------- Langkah 2: setujui dan kirim ----------
+function halamanKirim(d) {
+  const r = d.rencana; const sudah = r.items.some((i) => r.hasil[i.nama]?.youtube?.videoId);
+  const buka = (nama) => () => { pilihanItem[`${d.track}/${d.siklus}`] = nama; location.hash = `#/${d.track}/${d.siklus}/isi`; };
+  const kata = h("input", { placeholder: "ketik SETUJU", style: "width:180px", autocomplete: "off", "aria-label": "ketik SETUJU" });
+  const setuju = h("button", { class: "utama", disabled: true, onclick: () => aksi(d, { aksi: "setujui", kata: kata.value.trim() }) }, "Setujui");
+  kata.addEventListener("input", () => (setuju.disabled = d.masalah.length > 0 || kata.value.trim() !== "SETUJU"));
+  kata.addEventListener("keydown", (e) => e.key === "Enter" && !setuju.disabled && setuju.click());
   const daftar = r.items.map((i) => `- ${i.nama}: ${waktu(i.jadwal)}`).join("\n");
-  const kirimPanel = h("section", {}, h("h2", {}, "Persetujuan dan kirim"),
-    r.kunci_manual ? h("div", { class: "warn" }, `Unggah dikunci: ${r.kunci_manual}. Komentar pertama tetap bisa diposting lewat pasca-tayang.`) : null,
-    d.masalah.length ? h("ul", { class: "gagal" }, d.masalah.map((m) => h("li", {}, m))) : null,
-    d.disetujui ? h("div", { class: "ok" }, `Disetujui ${new Date(r.persetujuan.waktu).toLocaleString("id-ID")}`)
-      : h("div", {}, h("p", {}, r.persetujuan ? "Isi berubah sejak disetujui; setujui ulang." : "Setujui hanya setelah menonton, mendengarkan, dan memeriksa fakta. Persetujuan mencakup judul, deskripsi, jadwal, file, dan teks komentar."),
-        h("div", { class: "baris" }, kata, h("button", { disabled: d.masalah.length > 0, onclick: () => aksi(d, { aksi: "setujui", kata: kata.value.trim() }) }, "Setujui"))),
-    d.kredensial ? null : h("p", { class: "warn" }, `Izin tulis YouTube belum ada. Jalankan di terminal: node --env-file=.env scripts/youtube/auth.mjs --track ${d.track} --tulis, lalu mulai ulang dashboard dengan --env-file=.env.`),
-    h("p", { class: "baris" },
-      h("button", { class: "utama", disabled: !d.disetujui || !!r.kunci_manual || !d.kredensial || d.sibuk, onclick: jalan("kirim", `Unggah ke YouTube channel ${d.track}:\n${daftar}`) }, "Kirim ke YouTube"),
-      h("button", { disabled: !d.disetujui || !d.kredensial || d.sibuk || !sudahVideo, onclick: jalan("pasca", "Posting komentar pertama pada video yang sudah publik?") }, "Jalankan pasca-tayang"),
-      h("button", { disabled: !d.kredensial || d.sibuk, onclick: jalan("uji", "Unggah satu Short sebagai PRIVAT untuk uji? Hapus videonya di Studio setelah diperiksa.") }, "Unggah uji (privat)")),
-    d.log.length ? h("pre", {}, d.log.join("\n")) : null);
-
-  isi.replaceChildren(kepala,
-    h("section", {}, h("h2", {}, "Status"), tabelStatus(d.items), d.items.flatMap((i) => i.galat.map((g) => h("div", { class: "gagal" }, `${i.nama}: ${g}`)))),
-    h("section", {}, h("h2", {}, "Konten"), r.items.map((i) => formItem(d, i))),
-    kirimPanel,
-    h("section", {}, h("h2", {}, `Checklist manual (${d.tugas.filter((t) => t.selesai).length}/${d.tugas.length})`), d.tugas.map((t) => baris(t, d, () => buka_(d.track, d.siklus)))));
-  for (const e of isi.querySelectorAll("details[data-item]")) e.open = terbuka.has(`${isi.dataset.siklus}:${e.dataset.item}`);
-  // Selama ada pekerjaan, segarkan log; ditunda bila pengguna sedang mengetik.
-  if (d.sibuk || (d.log.length && !/selesai$|GAGAL/.test(d.log.at(-1)))) segarkan(d);
-}
-function segarkan(d) {
-  pewaktu = setTimeout(() => (/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName) ? segarkan(d) : buka_(d.track, d.siklus)), 2000);
+  const tombol = (a, teks, tanya, mati, utama) => h("button", { class: utama ? "utama" : "", disabled: !!mati, title: mati || "", onclick: () => confirm(tanya) && aksi(d, { aksi: a }) }, teks);
+  const alasan = (...x) => x.find(Boolean) || "";
+  const umum = alasan(d.sibuk && "sedang mengirim", !d.kredensial && "izin tulis YouTube belum ada"), belum = !d.disetujui && "belum disetujui";
+  const mKirim = alasan(r.kunci_manual && "unggah dikunci", belum, umum), mPasca = alasan(belum, umum, !sudah && "belum ada video YouTube"), mUji = umum;
+  return [
+    h("section", { class: "kartu" }, h("h2", {}, "Periksa"),
+      h("div", { class: "gulir" }, h("table", {}, h("tr", {}, ["Konten", "Judul", "Jadwal", "Komentar pertama", ""].map((x) => h("th", {}, x))),
+        r.items.map((i) => h("tr", {}, h("td", {}, i.nama), h("td", {}, i.judul || h("span", { class: "gagal" }, "kosong")), h("td", {}, waktu(i.jadwal)), h("td", {}, i.komentar || h("span", { class: "redup" }, "tidak diposting")), h("td", {}, h("button", { class: "kecil", onclick: buka(i.nama) }, "Ubah")))))),
+      h("div", { class: "baris", style: "margin-top:10px" }, "QA otomatis:", cip(d.qa?.verdict ?? "belum dijalankan", !d.qa || d.qa.verdict === "GAGAL" ? "gagal" : "ok"), h("span", { class: "redup" }, `QA manual: ${d.qaManual}`)),
+      d.qa?.temuan?.length ? h("details", {}, h("summary", {}, `Temuan QA (${d.qa.temuan.length})`), h("div", { class: "gulir" }, h("table", {}, d.qa.temuan.map((t) => h("tr", {}, h("td", {}, cip(t.level, t.level === "kritis" ? "gagal" : "")), h("td", {}, `${t.id} ${t.msg}`)))))) : null,
+      d.qa?.manual?.length ? h("details", { open: !d.disetujui }, h("summary", {}, "Yang harus kamu periksa sendiri"), h("ul", {}, d.qa.manual.map((m) => h("li", {}, m)))) : null),
+    h("section", { class: "kartu" }, h("h2", {}, "Persetujuan"),
+      d.masalah.length ? h("div", { class: "catatan gagal" }, h("b", {}, "Perbaiki dulu:"), d.masalah.map((m) => h("div", {}, m))) : null,
+      d.disetujui ? h("div", { class: "catatan ok" }, `Disetujui ${new Date(r.persetujuan.waktu).toLocaleString("id-ID")}. Perubahan teks atau file membatalkannya.`)
+        : [h("p", {}, r.persetujuan ? "Isi berubah sejak disetujui; setujui ulang." : "Setujui setelah menonton, mendengarkan, dan memeriksa fakta."), h("div", { class: "baris" }, kata, setuju)]),
+    h("section", { class: "kartu" }, h("h2", {}, "Kirim ke YouTube"),
+      r.kunci_manual ? h("div", { class: "catatan" }, `Unggah dikunci: ${r.kunci_manual}. Catat URL tayang di langkah 3; komentar pertama tetap bisa diposting lewat pasca-tayang.`) : null,
+      d.kredensial ? null : h("div", { class: "catatan" }, "Izin tulis YouTube belum ada. Jalankan di terminal, lalu mulai ulang dashboard: ", h("code", {}, `node --env-file=.env scripts/youtube/auth.mjs --track ${d.track} --tulis`)),
+      h("div", { class: "baris" }, tombol("kirim", "Kirim ke YouTube", `Unggah ke YouTube channel ${d.track}:\n${daftar}`, mKirim, true), tombol("pasca", "Jalankan pasca-tayang", "Posting komentar pertama pada video yang sudah publik?", mPasca), tombol("uji", "Unggah uji (privat)", "Unggah satu Short sebagai PRIVAT untuk uji? Hapus videonya di Studio setelah diperiksa.", mUji)),
+      mKirim ? h("div", { class: "redup kecil-teks" }, `Tombol kirim nonaktif: ${mKirim}.`) : null,
+      d.log.length ? h("pre", { "aria-live": "polite" }, d.log.join("\n")) : null),
+  ];
 }
 
-document.getElementById("beranda").onclick = () => tampilBeranda().catch((e) => galat(e.message));
-document.getElementById("muat").onclick = () => { const [t, s] = pilih.value.split(" "); t ? buka_(t, s) : tampilBeranda().catch((e) => galat(e.message)); };
-pilih.onchange = () => { const [t, s] = pilih.value.split(" "); t ? buka_(t, s) : tampilBeranda(); };
-tampilBeranda().catch((e) => galat(e.message));
+// ---------- Langkah 3: tugas dan URL ----------
+function isianUrl(d, item, platform) {
+  const x = d.rencana.hasil[item]?.[platform];
+  if (x && x.sumber !== "manual") return luar(x.url, "Buka video ↗");
+  const masuk = h("input", { type: "url", placeholder: `URL ${P[platform]}`, "aria-label": `URL ${P[platform]} untuk ${item}` }); masuk.defaultValue = x?.url ?? "";
+  let terkirim = x?.url ?? "";
+  const catat = () => { const v = masuk.value.trim(); if (!masuk.isConnected || v === terkirim) return; terkirim = v; aksi(d, { aksi: "url", item, platform, url: v }); };
+  // "blur" juga dipakai: ketikan yang dipulihkan setelah gambar ulang tidak memicu "change".
+  masuk.addEventListener("change", catat); masuk.addEventListener("blur", catat);
+  return masuk;
+}
+function halamanTugas(d) {
+  const k = hitung(d.tugas);
+  const cocok = (t) => (saringan === "selesai" ? t.selesai : saringan === "tunggu" ? !t.selesai && t.tunggu : saringan === "sekarang" ? !t.selesai && !t.tunggu : true);
+  const baris = (t) => h("div", { class: `tugas${t.selesai ? " selesai" : t.tunggu ? " tunggu" : ""}` },
+    h("input", { type: "checkbox", checked: !!t.selesai, "aria-label": t.label, disabled: !!(t.catatUrl && d.rencana.hasil[t.item]?.[t.platform]), onchange: (e) => aksi(d, { aksi: "centang", id: t.id, selesai: e.target.checked }) }),
+    h("div", { class: "tengah" }, h("div", { class: "label" }, cip(P[t.platform]), " ", t.label), t.tunggu ? h("div", { class: "warn kecil-teks" }, `Menunggu: ${t.tunggu}`) : null,
+      t.catatUrl && !t.selesai ? h("div", { class: "urlbaris" }, isianUrl(d, t.item, t.platform)) : null),
+    t.selesai ? null : h("div", { class: "baris" }, salin(t.salin), luar(t.tautan, "Buka ↗")));
+  const tombol = (id, teks) => h("button", { class: saringan === id ? "aktif" : "", "aria-pressed": saringan === id, onclick: () => { saringan = id; tampil(); } }, teks);
+  const grup = d.rencana.items.map((i) => [i, d.tugas.filter((t) => t.item === i.nama && cocok(t))]).filter(([, t]) => t.length);
+  return [
+    h("section", { class: "kartu" }, h("h2", {}, "URL tayang"), h("p", { class: "redup kecil-teks" }, "Tempel URL, lalu tekan Tab atau Enter. Tugas unggah tercentang sendiri."),
+      h("div", { class: "gulir" }, h("table", {}, h("tr", {}, h("th", {}, "Konten"), Object.values(P).map((x) => h("th", {}, x))),
+        d.rencana.items.map((i) => h("tr", {}, h("td", {}, i.nama, h("div", { class: "redup kecil-teks" }, waktu(i.jadwal))), Object.keys(P).map((p) => h("td", { class: "url" }, isianUrl(d, i.nama, p), cipStatus(p, d.items.find((x) => x.nama === i.nama).platform[p])))))))),
+    h("div", { class: "pil" }, tombol("sekarang", `Bisa sekarang (${k.sekarang})`), tombol("tunggu", `Menunggu (${k.tunggu})`), tombol("selesai", `Selesai (${k.selesai})`), tombol("semua", `Semua (${k.total})`)),
+    grup.length ? grup.map(([i, t]) => h("section", { class: "kartu" }, h("h2", {}, i.nama, " ", h("span", { class: "redup kecil-teks" }, waktu(i.jadwal))), t.map(baris))) : h("section", { class: "kartu redup" }, "Tidak ada tugas di saringan ini."),
+  ];
+}
+
+// ---------- Rute ----------
+async function tampil() {
+  clearTimeout(pewaktu); const nomor = ++nomorTampil;
+  const [t, s, langkahMinta] = location.hash.replace(/^#\/?/, "").split("/");
+  try {
+    const semua = await ambil("/api/ringkasan");
+    pilih.replaceChildren(h("option", { value: "" }, "Buka siklus…"), ...semua.map((x) => h("option", { value: `${x.track}/${x.siklus}` }, `${x.track}-${x.nama}`)));
+    pilih.value = t && s ? `${t}/${s}` : "";
+    if (!t || !s) { if (nomor !== nomorTampil) return; isi.replaceChildren(...halamanPantau(semua).filter(Boolean)); return jadwalkan(30000); }
+    const d = await ambil(`/api/siklus?t=${encodeURIComponent(t)}&s=${encodeURIComponent(s)}`);
+    if (nomor !== nomorTampil) return;
+    if (!d.rencana) { isi.replaceChildren(h("h1", {}, `${d.track}-${d.nama}`), h("section", { class: "kartu" }, h("p", {}, `Belum ada rencana rilis. Rencana disusun dari naskah dan hasil render${d.panduan ? ", teksnya diambil dari panduan unggah" : ""}. Belum ada yang dikirim.`), h("button", { class: "utama", onclick: () => aksi(d, { aksi: "plan" }) }, "Buat rencana"))); return; }
+    const langkah = ["isi", "kirim", "tugas"].includes(langkahMinta) ? langkahMinta : d.rencana.kunci_manual ? "tugas" : "isi";
+    const gulir = scrollY, dulu = isi.dataset.halaman, kini = `${t}/${s}/${langkah}`; isi.dataset.halaman = kini;
+    // Gambar ulang di halaman yang sama tidak boleh membuang fokus atau ketikan yang belum dikirim.
+    const f = dulu === kini && isi.contains(document.activeElement) ? document.activeElement : null; const label = f?.getAttribute("aria-label"), ketikan = f && f.type !== "checkbox" && f.value !== f.defaultValue ? f.value : null;
+    const badan = { isi: halamanIsi, kirim: halamanKirim, tugas: halamanTugas }[langkah](d);
+    isi.replaceChildren(kepala(d, langkah), ...[badan].flat(Infinity).filter(Boolean));
+    scrollTo(0, dulu === kini ? gulir : 0);
+    const pengganti = label && isi.querySelector(`[aria-label="${CSS.escape(label)}"]`);
+    if (pengganti) { if (ketikan !== null) pengganti.value = ketikan; pengganti.focus({ preventScroll: true }); }
+    if (d.sibuk) jadwalkan(2000); else if (langkah === "tugas") jadwalkan(30000);
+  } catch (e) { galat(e.message); }
+}
+/** Segarkan berkala; ditunda selama pengguna sedang mengetik. */
+function jadwalkan(ms) {
+  clearTimeout(pewaktu);
+  pewaktu = setTimeout(() => (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) && document.activeElement.type !== "checkbox" ? jadwalkan(ms) : tampil()), ms);
+}
+
+pilih.addEventListener("change", () => (location.hash = pilih.value ? `#/${pilih.value}` : "#/"));
+addEventListener("hashchange", () => { bersih(); $("simpanan").textContent = ""; antre.then(tampil); });
+addEventListener("beforeunload", (e) => { if (tertunda || $("simpanan").textContent === "Ada perubahan…") e.preventDefault(); });
+tampil();
 </script>
 </body>
 </html>

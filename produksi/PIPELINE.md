@@ -429,6 +429,8 @@ node scripts/rilis/uji.mjs                                             # uji den
 
 **Persiapan (kreator).** Aktifkan Advanced features di tiap channel (untuk thumbnail, pin, video terkait, A/B test, multi audio), ubah OAuth consent screen ke *In production*, lalu `node --env-file=.env scripts/youtube/auth.mjs --track <ID> --tulis` (izin `youtube.upload` dan `youtube.force-ssl`, disimpan sebagai `YOUTUBE_PUBLISH_TOKEN_<ID>`; channel harus sama dengan `YOUTUBE_CHANNEL_ID_<ID>`). Mulai ulang dashboard setelahnya.
 
+- **Dashboard:** halaman *Pantau* (jadwal berikutnya, agenda, tugas, kegagalan) dan tiga langkah per siklus: *Isi konten* (tersimpan otomatis), *Setujui dan kirim*, *Tugas dan URL*.
+- **Isi otomatis:** rencana baru mengambil judul, deskripsi, tag, komentar pin, playlist, dan judul Indonesia YouTube dari `06-publish-manual.md` bila ada (`panduan.mjs`); tombol "Isi dari panduan unggah" menimpa ulang. Tulis panduan dengan label `Judul:`, `Deskripsi:`, `Tag:`, `Komentar pin:` diikuti blok kode, di bawah `## Master` / `## Short ...`.
 - **`06-rilis.json`** (per siklus) memuat rencana, persetujuan, hasil, dan checklist. Persetujuan mengikat teks, jadwal, komentar, dan file; perubahan apa pun membatalkannya. QA otomatis `GAGAL` atau belum ada memblokir persetujuan. Status `05-qa.md` ditampilkan, tidak memblokir.
 - **Kirim** mengunggah video (dapat dilanjutkan bila terputus), playlist, subtitle, dan thumbnail; jadwal memakai `publishAt`. Langkah yang sudah selesai dilewati.
 - **Pasca-tayang** melengkapi thumbnail atau subtitle yang tertunda dan memposting komentar pertama sekali saja pada video publik atau unlisted. Dijalankan manual (penjadwal Mac belum dibuat).

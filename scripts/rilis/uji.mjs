@@ -109,6 +109,15 @@ try {
     inti.centang(c, "master:yt-cards", true); assert.ok(inti.muat(c).checklist["master:yt-cards"]); assert.throws(() => inti.centang(c, "x:y", true), /tidak dikenal/);
     const n = yt.komentar.length; yt.komentar.length = 0; await pascaTayang(c, diam); assert.equal(yt.komentar.length, 1, `sebelumnya ${n}`);
   });
+  await uji("panduan unggah mengisi rencana; tugas menunggu dan tercentang sendiri", () => {
+    tulis(`${C}/06-publish-manual.md`, "## 10.00: Master di YouTube\n- Judul:\n\n```text\nDari panduan\n```\n\nJudul cadangan:\n\n```text\nCadangan\n```\n- Tag:\n```text\na, b\n```\n- Komentar pin:\n```text\nTanya?\n```\n## Short 1\n- File: `x`\n**Judul** (catatan)\n```\nJudul short\n```\n");
+    const x = inti.impor(c); const [m, s] = x.items;
+    assert.equal(m.judul, "Dari panduan"); assert.deepEqual(m.tag, ["a", "b"]); assert.equal(m.komentar, "Tanya?"); assert.equal(s.judul, "Judul short"); assert.ok(!inti.disetujui(x));
+    inti.ubah(c, (r) => { r.hasil = {}; r.checklist = {}; });
+    const t = () => Object.fromEntries(inti.checklist(c, inti.muat(c)).map((v) => [v.id, v]));
+    assert.match(t()["master:yt-cards"].tunggu, /URL YouTube/); assert.equal(t()["S1:tt-unggah"].selesai, null);
+    inti.catatUrl(c, "S1", "tiktok", "https://www.tiktok.com/@x/video/1"); assert.ok(t()["S1:tt-unggah"].selesai);
+  });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;
     try {

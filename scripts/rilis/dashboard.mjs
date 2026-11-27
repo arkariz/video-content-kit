@@ -19,14 +19,15 @@ function sel(c, r) {
       if (h) p[n] = { status: h.galat?.length ? "gagal" : h.publishAt && new Date(h.publishAt) > new Date() ? "terjadwal" : h.privasi === "private" ? "privat" : h.sumber === "manual" ? "dicatat" : "tayang", url: h.url };
       else if (lama?.hasil?.some((x) => x.nama === i.nama && x.platforms?.includes(n))) p[n] = { status: "upload-post" };
     }
-    return { nama: i.nama, jadwal: i.jadwal, platform: p, galat: r.hasil[i.nama]?.youtube?.galat ?? [] };
+    const thumb = i.thumbnail && fs.existsSync(path.join(inti.ROOT, i.thumbnail)) ? path.basename(i.thumbnail) : null;
+    return { nama: i.nama, judul: i.judul, jadwal: i.jadwal, thumb, platform: p, galat: r.hasil[i.nama]?.youtube?.galat ?? [] };
   });
 }
 
 function ringkasan() {
   return inti.daftarSiklus().map((c) => {
     const r = inti.muat(c); const qa = readJson(path.join(c.dir, "05-qa.auto.json"), null);
-    return { track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, status: c.status, tanggal: c.tanggal, adaRencana: !!r, qa: qa?.verdict ?? null, disetujui: !!r && inti.disetujui(r), kunci: r?.kunci_manual ?? null, items: sel(c, r), tugas: r ? inti.checklist(c, r).filter((t) => !t.selesai) : [] };
+    return { track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, status: c.status, tanggal: c.tanggal, adaRencana: !!r, qa: qa?.verdict ?? null, disetujui: !!r && inti.disetujui(r), kunci: r?.kunci_manual ?? null, items: sel(c, r), tugas: r ? inti.checklist(c, r) : [], masalah: r ? inti.masalah(c, r).length : 0 };
   });
 }
 
@@ -35,7 +36,7 @@ function rinci(c) {
   const qa = readJson(path.join(c.dir, "05-qa.auto.json"), null);
   return {
     track: c.track, siklus: c.siklus, nama: c.nama, channel: c.channel, rel: c.rel,
-    rencana: r, masalah: r ? inti.masalah(c, r) : [], disetujui: !!r && inti.disetujui(r), qa, qaManual: inti.qaManual(c),
+    rencana: r, masalah: r ? inti.masalah(c, r) : [], disetujui: !!r && inti.disetujui(r), qa, qaManual: inti.qaManual(c), panduan: inti.adaPanduan(c),
     tugas: r ? inti.checklist(c, r) : [], items: sel(c, r), sibuk: inti.sibuk(c), log: logs.get(kunciLog(c)) ?? [],
     berkas: fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /\.(mp4|png|jpg)$/.test(f)) : [],
     kredensial: !!process.env[publishVar(c.track)],
@@ -56,6 +57,7 @@ function aksi(b) {
   const bebas = () => { if (inti.sibuk(c)) throw new Error("siklus ini sedang diproses; tunggu selesai"); };
   switch (b.aksi) {
     case "plan": inti.buatRencana(c); break;
+    case "impor": bebas(); inti.impor(c); break;
     case "sunting": bebas(); inti.sunting(c, b.item, b.data ?? {}); break;
     case "setujui": bebas(); inti.setujui(c, b.kata, "dashboard"); break;
     case "url": inti.catatUrl(c, b.item, b.platform, b.url ?? ""); break;
