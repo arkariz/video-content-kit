@@ -56,7 +56,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | siap-publish | 2026-11-28 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum; master dan 2 Shorts terjadwal di YouTube dan Facebook (unggah manual): 28 Nov 10.00, 12.00, 15.00 WIB di YouTube |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
 | 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | tayang | 2026-11-27 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov; master dan 2 Shorts tayang di YouTube (01.00, 03.00, 06.30 WIB) dan Facebook, dicatat dari platform; 05-qa.md LULUS atas keputusan kreator tanpa pemeriksaan, QA otomatis GAGAL |
-| 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | qa | 2026-11-29 | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 disetujui 2026-11-27 |
+| 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | siap-publish | 2026-11-29 | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 disetujui 2026-11-27 |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -148,3 +148,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Semua video uji 005 dihapus kreator di Studio; catatan unggah dan persetujuan direset, jadwal dikembalikan ke 29 November 10.00, 12.00, 16.00 WIB. Belum disetujui ulang.
 - 2026-11-27: Status disesuaikan dengan platform atas permintaan kreator: 004 tayang 2026-11-27 (di luar V2); 002 terjadwal 28 Nov.
 - 2026-11-27: Dokumen rilis 005 dilengkapi: 06-teks-rilis.json (teks Facebook tanpa tautan YouTube, komentar Short menaut ke master Facebook) diterapkan ke 06-rilis.json; panduan unggah disesuaikan (Facebook dinyalakan di alat rilis, label AI diisi manual, 05-qa.md belum ada). Belum disetujui dan belum dikirim.
+- 2026-11-27: Status 005 disamakan dengan hasil di dashboard rilis: siap-publish (2026-11-29).

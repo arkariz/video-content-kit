@@ -131,9 +131,105 @@
       }
     }
   ],
-  "persetujuan": null,
-  "hasil": {},
-  "checklist": {},
+  "persetujuan": {
+    "sidik": "31d7b22b89289ee44849626458dc7c5ea58b1b519a43f8c08c6cb94c2bdcbc42",
+    "waktu": "2026-11-27T11:17:19.560Z",
+    "via": "dashboard",
+    "qa_manual": "belum ada 05-qa.md"
+  },
+  "hasil": {
+    "master": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "WKlJKda_rUI",
+        "url": "https://www.youtube.com/watch?v=WKlJKda_rUI",
+        "privasi": "private",
+        "publishAt": "2026-11-29T03:00:00.000Z",
+        "diunggah": "2026-11-27T11:18:42.199Z",
+        "selesai": {
+          "playlist": "2026-11-27T11:18:43.588Z",
+          "subtitle-en": "2026-11-27T11:18:45.910Z",
+          "subtitle-id": "2026-11-27T11:18:47.666Z",
+          "thumbnail": "2026-11-27T11:18:52.389Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "29759213497101112",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:24:37.035Z",
+          "subtitle-id": "2026-11-27T11:24:38.850Z",
+          "sampul": "2026-11-27T11:24:41.692Z"
+        },
+        "url": "https://www.facebook.com/reel/29759213497101112/",
+        "publishAt": "2026-11-29T03:00:00.000Z",
+        "diunggah": "2026-11-27T11:24:35.146Z",
+        "galat": []
+      }
+    },
+    "S1-qris-isnt-an-app": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "08BzRS5Q5G4",
+        "url": "https://www.youtube.com/watch?v=08BzRS5Q5G4",
+        "privasi": "private",
+        "publishAt": "2026-11-29T05:00:00.000Z",
+        "diunggah": "2026-11-27T11:18:56.975Z",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:18:59.333Z",
+          "subtitle-id": "2026-11-27T11:19:01.357Z",
+          "thumbnail": "2026-11-27T11:19:29.892Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "1939389584136409",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:24:51.015Z",
+          "subtitle-id": "2026-11-27T11:24:52.591Z",
+          "sampul": "2026-11-27T11:24:55.253Z"
+        },
+        "url": "https://www.facebook.com/reel/1939389584136409/",
+        "publishAt": "2026-11-29T05:00:00.000Z",
+        "diunggah": "2026-11-27T11:24:49.416Z",
+        "galat": []
+      }
+    },
+    "S2-no-dollars-in-between": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "_fO908Zt-Iw",
+        "url": "https://www.youtube.com/watch?v=_fO908Zt-Iw",
+        "privasi": "private",
+        "publishAt": "2026-11-29T09:00:00.000Z",
+        "diunggah": "2026-11-27T11:19:05.883Z",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:19:08.116Z",
+          "subtitle-id": "2026-11-27T11:19:10.047Z",
+          "thumbnail": "2026-11-27T11:19:50.982Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "2288738865316972",
+        "selesai": {
+          "subtitle-en": "2026-11-27T11:25:04.265Z",
+          "subtitle-id": "2026-11-27T11:25:05.961Z",
+          "sampul": "2026-11-27T11:25:11.218Z"
+        },
+        "url": "https://www.facebook.com/reel/2288738865316972/",
+        "publishAt": "2026-11-29T09:00:00.000Z",
+        "diunggah": "2026-11-27T11:25:02.691Z",
+        "galat": []
+      }
+    }
+  },
+  "checklist": {
+    "master:yt-endscreen": "2026-11-27T11:23:34.823Z"
+  },
   "facebook": {
     "aktif": true
   },
