@@ -92,6 +92,7 @@ function isiTeks(c, r) {
   for (const i of r.items) for (const sumber of [panduan[i.nama], agen[i.nama]]) for (const [k, v] of Object.entries(sumber ?? {})) {
     if (k === "terjemahan") { const t = typeof v === "string" ? { judul: v } : v; i.terjemahan = { judul: String(t.judul ?? i.terjemahan.judul), deskripsi: String(t.deskripsi ?? i.terjemahan.deskripsi) }; }
     else if (k === "tag") i.tag = (Array.isArray(v) ? v : String(v).split(",")).map((x) => String(x).trim()).filter(Boolean);
+    else if (k === "facebook") i.facebook = { deskripsi: String(v.deskripsi ?? i.facebook?.deskripsi ?? ""), komentar: String(v.komentar ?? teksFacebook(i).komentar) };
     else if (["judul", "deskripsi", "komentar", "playlist"].includes(k)) i[k] = String(v);
     else continue;
     n++;

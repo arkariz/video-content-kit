@@ -234,8 +234,8 @@ try {
     const x = inti.buatRencana(d); assert.deepEqual(x.items.map((i) => i.subtitle.length), [2, 2]);
     assert.match(fs.readFileSync(path.join(d.dir, "publish/master.en.srt"), "utf8"), /00:00:01,867 --> 00:00:02,567\nTwo\./);
     assert.match(fs.readFileSync(path.join(d.dir, "publish/S9.en.srt"), "utf8"), /00:00:00,200/); assert.equal(buatSubtitle(d).dibuat.length, 0);
-    tulis(`${D}/06-teks-rilis.json`, JSON.stringify({ master: { komentar: "Dari agen?", terjemahan: { judul: "J id", deskripsi: "D id" }, file: "/etc/passwd" } }));
-    assert.match(inti.terapkanTeksBaru(d), /diterapkan/); let m = inti.muat(d).items[0]; assert.equal(m.komentar, "Dari agen?"); assert.equal(m.terjemahan.deskripsi, "D id"); assert.match(m.file, /Master16x9/);
+    tulis(`${D}/06-teks-rilis.json`, JSON.stringify({ master: { komentar: "Dari agen?", terjemahan: { judul: "J id", deskripsi: "D id" }, facebook: { deskripsi: "F" }, file: "/etc/passwd" } }));
+    assert.match(inti.terapkanTeksBaru(d), /diterapkan/); let m = inti.muat(d).items[0]; assert.equal(m.komentar, "Dari agen?"); assert.equal(m.terjemahan.deskripsi, "D id"); assert.deepEqual(m.facebook, { deskripsi: "F", komentar: "" }); assert.match(m.file, /Master16x9/);
     inti.sunting(d, "master", { komentar: "Suntingan" }); inti.terapkanTeksBaru(d); assert.equal(inti.muat(d).items[0].komentar, "Suntingan");
     inti.ubah(d, (r) => (r.persetujuan = { sidik: "x" })); tulis(`${D}/06-teks-rilis.json`, JSON.stringify({ master: { komentar: "Lain" } })); assert.match(inti.terapkanTeksBaru(d), /tidak diubah/);
     fs.rmSync(path.join(R, D), { recursive: true });

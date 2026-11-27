@@ -139,3 +139,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator meminta QA anti-slop 004 dicatat LULUS tanpa pemeriksaan (05-qa.md). Status siap-publish; jadwal belum ditentukan; cek fakta belum dilakukan.
 - 2026-11-27: Narasi dan subtitle ID s38 siklus 004 disamakan dengan EN (sekitar 42 triliun). s28 dan s31 dicek ke sumber dan tidak diubah.
 - 2026-11-27: Teks rilis 003 dilengkapi atas permintaan kreator (06-teks-rilis.json: komentar dan terjemahan Indonesia). Belum diterapkan di YouTube.
+- 2026-11-27: Teks Facebook 003 dilengkapi atas permintaan kreator. Master YouTube v324n50hfpM tidak ditemukan lagi di channel (dua Short masih terjadwal 28 Nov 03.00 dan 06.30 WIB); jadwal master di rencana diubah kreator menjadi 10.00.
