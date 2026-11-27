@@ -132,3 +132,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-26: Kreator menyetujui naskah siklus 003 (Jawa) untuk diproduksi malam ini bersama 002.
 - 2026-11-26: Produksi malam: 002 dan 003 dirender (long-form, 2 Shorts, thumbnail) dengan adegan 3D halus (r3/soft). Scene footage 003 diganti ilustrasi.
 - 2026-11-26: Siklus 004 (karhutla) dibuat atas permintaan kreator, di luar paket V2 dan menyimpang dari "Tidak akan dibahas" (isu berjalan). Riset fakta, naskah, audio, render otomatis; naskah belum dibaca kreator. Dugaan disebut dugaan; nama pejabat aktif tidak disebut.
+- 2026-11-27: Analitik awal Short 001 A1 dari ekspor Studio: viewed 57,4%, rata-rata tonton 0:27 dari 0:51; penurunan terbesar detik 5 sampai 15. Satu aturan uji ditambahkan ke learnings.md; belum ada keputusan.

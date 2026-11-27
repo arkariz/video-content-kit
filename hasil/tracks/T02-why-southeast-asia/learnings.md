@@ -15,3 +15,5 @@ Diisi oleh langkah analitik dan hasil validasi track ini. Setiap siklus baru di 
 ## Per platform
 
 ## Aturan yang sedang diuji
+
+- Shorts: jawaban atas janji hook mulai di kalimat kedua (paling lambat detik 6), konteks menyusul. Bukti awal, 1 video (001 A1, 2026-11-26): retensi 100% di detik 4,7 turun ke 43% di detik 15 saat narasi membahas penolakan dan harga; setelah jawaban mulai, turun hanya 43% ke 22% dalam 35 detik. Viewed 57,4%, rata-rata tonton 0:27 dari 0:51. Uji pada 2 Short berikutnya.
