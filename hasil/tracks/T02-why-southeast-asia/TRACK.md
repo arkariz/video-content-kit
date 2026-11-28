@@ -8,7 +8,7 @@ channel: "Equator Logic (channel Asia Tenggara; TikTok @equator.logic)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "002-gta6-download-9-hours"
-langkah_berikutnya: "003: B2 di YouTube masih 28 Nov 16.00, ubah ke 1 Des 16.00; 004: cek jadwal B2 (YouTube 29 Nov, Facebook 4 Des) dan perbaiki s25/s30; analitik lengkap 001 2026-12-03"
+langkah_berikutnya: "003: B2 di YouTube masih 28 Nov 16.00, ubah ke 1 Des 16.00; 004: perbaiki s25/s30 sebelum 2 Des; analitik lengkap 001 2026-12-03"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
 menunggu_keputusan: "004: perbaiki s25 dan s30 (05-cek-fakta.md) lalu render ulang, atau tahan; jadwal belum ditentukan"
@@ -152,3 +152,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-28: Cek awal analitik (analitik/youtube-2026-11-28.md). 001 long-form CTR 5,2% (1.220 impresi), retensi 8,2% (12 view); Shorts A1 43,5% dan A2 61,5% rata-rata ditonton; penonton Shorts di daftar negara hanya ID. Jadwal dari 06-rilis.json: 003 master 29 Nov (Shorts 28 Nov), 004 master 2 Des (B2 29 Nov).
 - 2026-11-28: Koreksi jadwal 003. Cek awal memakai catatan lokal yang belum disegarkan. Dibaca langsung dari YouTube sekitar 09.55 WIB: B1 30 Nov 12.00 (catatan diperbarui); B2 masih 28 Nov 16.00, menurut kreator seharusnya 1 Des 16.00.
 - 2026-11-28: Angka Studio ditempel kreator (analitik/studio-2026-11-28.md). Sementara: tetap menonton Shorts median 35,8% (zona gagal), rata-rata ditonton Shorts 54,5%, CTR long-form 4,2%, retensi long-form 001 35,9% (menggantikan 8,2% dari API).
+- 2026-11-28: Penyegaran dashboard mencatat B2 004 kini 4 Des 16.00 di YouTube, sama dengan Facebook, berjudul baru.
