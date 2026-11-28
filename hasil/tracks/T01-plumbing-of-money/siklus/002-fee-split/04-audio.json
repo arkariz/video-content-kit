@@ -1,45 +1,10 @@
 {
- "_catatan": "Produksi ulang 2026-11-28: musik utama baru, musik mood per rentang scene, efek per kejadian dari pustaka produksi/sfx/el.",
+ "_catatan": "Produksi ulang 2026-11-28: musik lama dari 004 atas keputusan kreator, efek per kejadian dari pustaka produksi/sfx/el, ambience warung di segmen Indonesia.",
  "target_lufs": -14,
  "music": {
-  "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, playful curious explainer score about money moving along a toll road: pizzicato strings, marimba, soft upright bass walking line, light brushed percussion, 104 bpm, G major",
-  "length_ms": 150000,
-  "volume": 0.18
+  "prompt": "dipakai ulang dari T01/004 (keputusan kreator 2026-11-28)",
+  "volume": 0.2
  },
- "mood_music": [
-  {
-   "name": "tebakan",
-   "from": "s12",
-   "to": "s17",
-   "volume": 0.17,
-   "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, sly detective investigation groove: plucked double bass, muted vibraphone, finger snaps, a little suspense, 92 bpm, D minor",
-   "length_ms": 90000
-  },
-  {
-   "name": "kejutan",
-   "from": "s30",
-   "to": "s33",
-   "volume": 0.18,
-   "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, comic twist with a wink: bassoon and clarinet staccato, pizzicato, woodblock, light and mischievous, 110 bpm",
-   "length_ms": 60000
-  },
-  {
-   "name": "jujur",
-   "from": "s34",
-   "to": "s39",
-   "volume": 0.17,
-   "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, reflective honest moment at dusk: felt piano, soft warm strings, sparse, gentle, 76 bpm, A minor resolving to C",
-   "length_ms": 90000
-  },
-  {
-   "name": "pulau",
-   "from": "s40",
-   "to": "s46",
-   "volume": 0.17,
-   "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, bright island morning: Indonesian-inspired bamboo xylophone and soft metallophone with acoustic guitar and hand percussion, optimistic, 96 bpm",
-   "length_ms": 90000
-  }
- ],
  "sfx": {},
  "cues": [
   {
@@ -741,6 +706,72 @@
    "offset": -0.1,
    "sfx": "stamp",
    "vol": 0.45
+  },
+  {
+   "scene": "s41",
+   "offset": 0,
+   "sfx": "warung",
+   "vol": 0.14
+  },
+  {
+   "scene": "s41",
+   "offset": 5.6,
+   "sfx": "warung",
+   "vol": 0.12
+  },
+  {
+   "scene": "s42",
+   "offset": 0,
+   "sfx": "warung",
+   "vol": 0.12
+  },
+  {
+   "scene": "s43",
+   "offset": 0,
+   "sfx": "warung",
+   "vol": 0.11
   }
- ]
+ ],
+ "_rencana_belum_dibuat": {
+  "catatan": "Spec musik baru dan mood; belum dibuat karena kredit ElevenLabs habis (2026-11-28).",
+  "music": {
+   "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, playful curious explainer score about money moving along a toll road: pizzicato strings, marimba, soft upright bass walking line, light brushed percussion, 104 bpm, G major",
+   "length_ms": 150000,
+   "volume": 0.18
+  },
+  "mood_music": [
+   {
+    "name": "tebakan",
+    "from": "s12",
+    "to": "s17",
+    "volume": 0.17,
+    "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, sly detective investigation groove: plucked double bass, muted vibraphone, finger snaps, a little suspense, 92 bpm, D minor",
+    "length_ms": 90000
+   },
+   {
+    "name": "kejutan",
+    "from": "s30",
+    "to": "s33",
+    "volume": 0.18,
+    "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, comic twist with a wink: bassoon and clarinet staccato, pizzicato, woodblock, light and mischievous, 110 bpm",
+    "length_ms": 60000
+   },
+   {
+    "name": "jujur",
+    "from": "s34",
+    "to": "s39",
+    "volume": 0.17,
+    "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, reflective honest moment at dusk: felt piano, soft warm strings, sparse, gentle, 76 bpm, A minor resolving to C",
+    "length_ms": 90000
+   },
+   {
+    "name": "pulau",
+    "from": "s40",
+    "to": "s46",
+    "volume": 0.17,
+    "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, bright island morning: Indonesian-inspired bamboo xylophone and soft metallophone with acoustic guitar and hand percussion, optimistic, 96 bpm",
+    "length_ms": 90000
+   }
+  ]
+ }
 }

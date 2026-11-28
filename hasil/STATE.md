@@ -4,7 +4,7 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "T02: 003 terjadwal 29 Nov-1 Des, perbaiki s25/s30 004, analitik lengkap 001 12-03; T01: 005 tayang 29 Nov-1 Des, analitik 001 12-02"
+langkah_berikutnya: "T02: 003 terjadwal 29 Nov-1 Des, perbaiki s25/s30 004, analitik lengkap 001 12-03; T01: 005 tayang 29 Nov-1 Des, analitik 001 12-02, ganti unggahan 002 dengan versi baru sebelum 2 Des"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
 terakhir_diperbarui: 2026-11-28

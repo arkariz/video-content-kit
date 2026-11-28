@@ -12,3 +12,6 @@ Terjemahan judul (Indonesia): A "Siapa yang Dapat Potongan Saat Kamu Tap Kartu?"
 
 ## Mengganti unggahan lama
 Versi lama (26 Nov) terjadwal 2-4 Des di YouTube dan Facebook; salinannya di `produksi/render/T01/002-v1-2026-11-26/`. Durasi, subtitle, dan chapter tidak berubah karena narasi sama. Komentar pertama otomatis untuk 002 perlu persetujuan ulang di alat rilis karena berkasnya berubah.
+
+## Suara versi ini
+Dicampur 2026-11-28: musik latar dari 004 (keputusan kreator), efek suara per kejadian dari pustaka ElevenLabs, ambience warung di segmen Indonesia. Master dan Short sekitar -14 LUFS.

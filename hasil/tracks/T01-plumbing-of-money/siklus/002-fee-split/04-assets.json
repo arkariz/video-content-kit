@@ -49,21 +49,25 @@
   },
   "audio_extra": {
     "sumber": "ElevenLabs (Music API, Sound Generation)",
-    "musik": "dipakai ulang dari T01/004",
+    "musik": "dipakai ulang dari T01/004 (keputusan kreator 2026-11-28)",
+    "musik_mood": [],
     "tercampur": [
       {
         "file": "Master16x9-en.mp4",
-        "sfx": 0,
+        "sfx": 104,
+        "mood": [],
         "lufs": -14.3
       },
       {
         "file": "Short9x16-B1-100-dollar-split-en.mp4",
-        "sfx": 0,
+        "sfx": 10,
+        "mood": [],
         "lufs": -14.2
       },
       {
         "file": "Short9x16-B2-cash-pays-too-en.mp4",
-        "sfx": 0,
+        "sfx": 6,
+        "mood": [],
         "lufs": -14.3
       }
     ],

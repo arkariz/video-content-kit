@@ -8,7 +8,7 @@ channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "005: tayang terjadwal 29 Nov - 1 Des; 002: terjadwal 2-4 Des, pin komentar dan video terkait setelah tayang; analitik lengkap 001 2026-12-02, 004 2026-12-04"
+langkah_berikutnya: "005: tayang terjadwal 29 Nov - 1 Des; 002: ganti unggahan terjadwal 2-4 Des dengan versi produksi ulang sebelum tayang, lalu pin komentar dan video terkait setelah tayang; analitik lengkap 001 2026-12-02, 004 2026-12-04"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: []                 # syarat bukti kreator di layar dihapus untuk semua konten (2026-11-27)
 menunggu_keputusan: null
@@ -158,3 +158,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-28: Kreator menyetujui cara hitung V2 untuk video yang tayang lebih awal (tabel Keputusan). Jadwal yang sudah ada dibiarkan.
 - 2026-11-28: Atas permintaan kreator, 002 diproduksi ulang (visual 2.5D, tiga paket judul dan thumbnail di 07-paket-master.md, QA anti-slop agent LULUS). Render baru berstatus DRAF: gate still (skor rubrik dan persetujuan kreator) belum dijalankan, STYLE.md baru dibaca setelah gambar dibuat, musik baru gagal dibuat (kredit ElevenLabs habis) sehingga belum dicampur; catatan audio_extra di 04-assets.json masih milik render lama. Render lama di produksi/render/T01/002-v1-2026-11-26 dan tetap yang terjadwal 2-4 Des. Platform tidak diubah.
 - 2026-11-28: Gate still 002 dijalankan manual (naskah tanpa visual_spec v2): 04-still.json 49/49 menurut nilai agent, disetujui kreator; s15, s24, s32, s44, s46 digambar ulang. QA anti-slop diulang (LULUS, dinilai agent). Master 8:07 dan 2 Short dirender ulang; belum dicampur (sekitar -23 LUFS, target -14) karena musik baru belum dibuat (kredit ElevenLabs habis), jadi belum siap unggah. audio_extra di 04-assets.json masih milik render lama. Unggahan terjadwal versi lama tidak diubah.
+- 2026-11-28: Kreator memutuskan 002 memakai musik lama (004), menyimpang dari aturan musik 2026-11-27; temuan A4 dan A5 tetap tercatat. Master dan 2 Short dicampur (sekitar -14 LUFS). File siap diganti oleh kreator di platform; belum diunggah, persetujuan alat rilis perlu diulang.

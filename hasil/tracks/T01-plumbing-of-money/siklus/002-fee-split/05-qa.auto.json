@@ -14,6 +14,20 @@
       "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
     },
     {
+      "layer": "Audio",
+      "level": "sedang",
+      "id": "A5",
+      "msg": "tidak ada musik mood untuk scene tertentu",
+      "fix": "tambah mood_music di 04-audio.json"
+    },
+    {
+      "layer": "Audio",
+      "level": "sedang",
+      "id": "A4",
+      "msg": "musik utama sama dengan T01/004, T01/005, T02/002, T02/003, T02/004",
+      "fix": "buat musik baru untuk konten ini"
+    },
+    {
       "layer": "Kemasan",
       "level": "kecil",
       "id": "P1",
