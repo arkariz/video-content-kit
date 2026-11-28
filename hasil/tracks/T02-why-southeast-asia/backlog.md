@@ -6,6 +6,7 @@ Skor = permintaan (1-5) + kekuatan bukti milik kreator (1-5) + kesegaran (1-5). 
 
 | Skor | Ide (judul kerja) | Pilar | Bukti permintaan | Bukti milik kreator | Sumber | Status |
 | --- | --- | --- | --- | --- | --- | --- |
+| 13 | Why Singapore Buys Water From Malaysia | 4 | Cek 2026-11-28, nilai kuat: AnalysedHQ 86K (30 hari), Solar Paths 45K, Offering Things 43K (14 hari), Red Pen Atlas 13K (30 hari) ([rincian](../../review/permintaan-subjek-2026-11-28.md)) | Peta dan data perjanjian | [AnalysedHQ](https://www.youtube.com/watch?v=lTKlNU7oJq4), [Solar Paths](https://www.youtube.com/watch?v=0EquoerDP-0), [Offering Things](https://www.youtube.com/watch?v=CKjgA2bT9ic), [Red Pen Atlas](https://www.youtube.com/watch?v=ZRs5YUupDso) | **kandidat teratas** di luar V2 (keputusan kreator 2026-11-28); belum riset viral; hindari politik berjalan |
 | 15 | Jakarta Just Refused Tokyo's Old Trains. Here's Why | 1 | Behind Asia 302K (topik dasar); Unix Travels 71K (3,9x, 13 hari) | Footage KRL sendiri; berita pembatalan impor 5 Nov 2026 (sumber ID) | [riset siklus 001](siklus/001-jakarta-refused-tokyo-trains/01-riset-viral.md) | dipakai siklus 001 |
 | 14 | Why Jakarta's Commuter Trains Are Second-Hand From Tokyo | 1 | Behind Asia 302K (10 bulan, sudut hampir sama) | Footage sendiri di stasiun KRL | [Behind Asia](https://www.youtube.com/watch?v=SVDe_tDGxpk) | digabung ke ide skor 15 sebagai babak 1 |
 | 14 | Why Indonesia Is Building a New Capital 1,200 km From Jakarta | 1 | "why indonesia" 11 video baru di atas 10K | Dokumen pemerintah berbahasa Indonesia | (lihat kandidat-niche-nontech.md) | baru |
@@ -17,7 +18,6 @@ Skor = permintaan (1-5) + kekuatan bukti milik kreator (1-5) + kesegaran (1-5). 
 | 12 | Why Jakarta's Traffic Got a Subway Only in 2019 | 1 | `belum terverifikasi` | Footage MRT sendiri | (perlu riset viral) | baru |
 | 12 | Why Indonesia Chose a Chinese High-Speed Train | 1 | The Odd Decision 506K (topik sama, sudut dalam) | Naik Whoosh, footage sendiri | [The Odd Decision](https://www.youtube.com/watch?v=1kPrIwngW3E) | baru (hindari mengulang sudut yang sama) |
 | 11 | The Geography of Java, Explained | 2 | Urban Atlas Sumatra 103K (5,7K subs) | Footage dan data lokal | [Urban Atlas](https://www.youtube.com/watch?v=JJsENNS6vYA) | baru |
-| 11 | Why Singapore Buys Water From Malaysia | 4 | `belum terverifikasi` | Peta dan data perjanjian | (perlu riset viral) | baru |
 | 11 | Why Indonesia Has So Many Volcanoes and Still Lives Next to Them | 2 | Maply 177K (fakta geografi Indonesia) | Footage gunung api | [Maply](https://www.youtube.com/watch?v=vprlAzX6FyY) | baru |
 | 11 | Why Thailand Was Never Colonised | 3 | `belum terverifikasi` | Peta batas kolonial | (perlu riset viral) | baru |
 | 10 | Why Vietnam Is Shaped Like an S | 2 | `belum terverifikasi` | Peta | (perlu riset viral) | baru |

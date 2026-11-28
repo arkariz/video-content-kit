@@ -156,3 +156,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-28: Penyegaran dashboard mencatat B2 004 kini 4 Des 16.00 di YouTube, sama dengan Facebook, berjudul baru.
 - 2026-11-28: Penyegaran dashboard mencatat B2 003 kini 1 Des 16.00 di YouTube, berjudul baru.
 - 2026-11-28: Kreator menyetujui cara hitung V2 untuk video yang tayang lebih awal (tabel Keputusan). Jadwal yang sudah ada dibiarkan.
+- 2026-11-28: Kreator memasukkan "Why Singapore Buys Water From Malaysia" ke backlog sebagai kandidat teratas di luar V2, dari cek permintaan subjek (hasil/review/permintaan-subjek-2026-11-28.md). Jadwal dan paket V2 tidak berubah.
