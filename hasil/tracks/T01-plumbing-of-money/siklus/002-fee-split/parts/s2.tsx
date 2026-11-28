@@ -17,7 +17,7 @@ export const YardShot: React.FC = () => {
       <Highway y={850} t={t} speed={0} />
       <MyBank x={470} y={790} s={1.45} t={t} />
       <Cart x={1180} y={850} s={1.1} t={t} />
-      {[0, 1, 2].map((i) => { const [x, y] = arc([1120 + i * 40, 650], [330 + i * 140, 520 + (i % 2) * 60], clamp(stick * 1.3 - i * 0.12), 190); return <Gold key={i} x={x} y={y} r={36} />; })}
+      {[0, 1, 2].map((i) => { const [x, y] = arc([1120 + i * 40, 650], [690 + (i % 2) * 80, 800 - i * 62], clamp(stick * 1.3 - i * 0.12), 230); return <Gold key={i} x={x} y={y} r={38} />; })}
     </Scene>
   );
 };
@@ -230,6 +230,7 @@ export const DryPipeShot: React.FC = () => {
   return (
     <Scene kind="brankas" from={{ z: 1.35, x: 640, y: 460 }} to={{ z: 1.45, x: 640, y: 470 }}>
       <Pipes t={t} dry={d} flow={0.3} />
+      <MyBank x={840} y={690} s={0.62} t={t} mood={d > 0.6 ? "shock" : "neutral"} />
     </Scene>
   );
 };
@@ -365,7 +366,7 @@ export const TollBoxShot: React.FC = () => {
     <Scene kind="malam" to={{ z: 1.1, y: 540 }}>
       <Highway y={870} t={t} speed={0} />
       <NetTower x={1500} y={820} s={0.95} t={t} mood={b > 0.9 ? "happy" : "calm"} beam={0} />
-      <g transform="translate(960 820)"><Contact x={0} y={4} w={240} /><Shade d={rr(-180, -240, 360, 240, 36)} tones={PURPLE} L={LR} s={[7, 22, 12]} /><path d={rr(-110, -252, 220, 32, 16)} fill="#12062c" /><Txt x={0} y={-96} s={80}>TOLL</Txt></g>
+      <g transform="translate(960 820)"><Contact x={0} y={4} w={240} /><Shade d={rr(-180, -240, 360, 240, 36)} tones={PURPLE} L={LR} s={[7, 22, 12]} /><path d={rr(-110, -252, 220, 32, 16)} fill="#12062c" /><g transform="translate(0 -112)"><path d={rr(-70, -60, 140, 120, 30)} fill="#4c2a86" /><Gold x={0} y={0} r={42} text="¢" /></g></g>
       {drop(a, 420, true)}{drop(b, 520, false)}
       {fly > 0 && fly < 1 && <g transform={`translate(${mix(-150, 2050, fly)} ${220 - Math.sin(fly * Math.PI) * 50})`}><Shade d={rr(-80, -52, 160, 104, 14)} tones={CREAM} L={LR} s={[3, 9, 6]} /><Tick x={0} y={10} r={32} p={1} /></g>}
     </Scene>

@@ -31,7 +31,7 @@ export const TapShot: React.FC = () => {
       <Shoe x={v ? 790 : 540} y={768} s={v ? 0.7 : 1.15} />
       <Terminal x={tx} y={770} s={1.25} t={t} on={on} />
       <Waves x={tx} y={490} t={t} at={tTap} />
-      <You x={v ? 1150 : 1560} y={v ? 1000 : 1090} s={v ? 0.8 : 1.2} t={t} face={on > 0.5 ? "happy" : "neutral"} look={-30} arm={[(hand[0] - (v ? 1150 : 1560)) / (v ? 0.8 : 1.2) + 60, (hand[1] - (v ? 1000 : 1090)) / (v ? 0.8 : 1.2) + 30]} />
+      <You x={v ? 1150 : 1560} y={v ? 1000 : 1030} s={v ? 0.8 : 1.2} t={t} face={on > 0.5 ? "happy" : "neutral"} look={-30} arm={[(hand[0] - (v ? 1150 : 1560)) / (v ? 0.8 : 1.2) + 60, (hand[1] - (v ? 1000 : 1030)) / (v ? 0.8 : 1.2) + 30]} />
       <Card x={hand[0]} y={hand[1]} s={0.85} rot={mix(18, -10, move)} t={t} />
     </Scene>
   );
@@ -353,7 +353,7 @@ export const NameBoardShot: React.FC = () => {
   return (
     <Scene kind="kantor" from={{ z: 1.05 }} to={{ z: 1.12 }}>
       <ServerGuy x={960} y={880} s={1.55} t={t} face="happy" arm={[190, -mix(80, 330, up)]} armL={[-190, -mix(80, 330, up)]} />
-      <g transform={`translate(960 ${mix(760, 305, up)})`}><Shade d={rr(-380, -85, 760, 170, 36)} tones={CREAM} L={LR} s={[5, 16, 9]} />{ink < 1 && <path d={rr(-260, -22, 520 * (1 - ink), 44, 22)} fill="#d8c0b0" />}<Txt x={0} y={26} s={76} c={P.navy} o={ink}>TERMINAL CO</Txt></g>
+      <g transform={`translate(960 ${mix(760, 305, up)})`}><Shade d={rr(-380, -85, 760, 170, 36)} tones={CREAM} L={LR} s={[5, 16, 9]} />{ink < 1 && <path d={rr(-260, -22, 520, 44, 22)} fill="#d8c0b0" opacity={1 - ink} />}<g opacity={ink}><Terminal x={0} y={58} s={0.46} t={t} on={1} />{[-1, 1].map((d) => <g key={d}>{line(`M${d * 100} -24H${d * 300}M${d * 100} 18H${d * 240}`, "#8a6a8a", 15)}</g>)}</g></g>
     </Scene>
   );
 };

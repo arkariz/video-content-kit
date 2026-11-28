@@ -106,15 +106,15 @@ export const LeftoverShot: React.FC = () => {
 export const CurtainShot: React.FC = () => {
   const { t, at } = useW();
   const c = go(t, at("split", 2) - 1.2, 1.1);
-  const Drape: React.FC<{ x: number; dir: number }> = ({ x, dir }) => <g transform={`translate(${x} 0)`}><Shade d={`M0 150H${dir * 520}V800Q${dir * 460} 760 ${dir * 400} 800Q${dir * 330} 760 ${dir * 260} 800Q${dir * 190} 760 ${dir * 130} 800Q${dir * 60} 760 0 800Z`} tones={CORAL} L={LR} s={[6, 24, 12]}>{[130, 260, 400].map((a) => <path key={a} d={`M${dir * a} 150V800`} stroke={CORAL[1]} strokeWidth={22} />)}</Shade></g>;
+  const Drape: React.FC<{ x: number; dir: number }> = ({ x, dir }) => <g transform={`translate(${x} 0) scale(0.5 1)`}><Shade d={`M0 150H${dir * 520}V800Q${dir * 460} 760 ${dir * 400} 800Q${dir * 330} 760 ${dir * 260} 800Q${dir * 190} 760 ${dir * 130} 800Q${dir * 60} 760 0 800Z`} tones={CORAL} L={LR} s={[6, 24, 12]}>{[130, 260, 400].map((a) => <path key={a} d={`M${dir * a} 150V800`} stroke={CORAL[1]} strokeWidth={22} />)}</Shade></g>;
   return (
     <Scene kind="ungu" to={{ z: 1.05 }}>
       <ServerGuy x={620} y={850} s={1.0} t={t} face="happy" look={22} arm={[220, -170]} />
       <ShopBank x={1360} y={850} s={0.9} t={t} />
       <Stack x={960} y={820} n={5} w={60} />
-      <Drape x={mix(-380, 440, c)} dir={1} /><Drape x={mix(2300, 1480, c)} dir={-1} />
+      <Drape x={mix(-380, 700, c)} dir={1} /><Drape x={mix(2300, 1220, c)} dir={-1} />
       {c > 0.9 && <g><circle cx={960} cy={480} r={96} fill="#fff4da" /><Txt x={960} y={528} s={130} c={P.navy}>?</Txt></g>}
-      <path d={rr(380, 120, 1160, 46, 23)} fill={GOLD[2]} />
+      <path d={rr(430, 120, 1060, 46, 23)} fill={GOLD[2]} />
     </Scene>
   );
 };
@@ -229,6 +229,7 @@ export const PocketShot: React.FC = () => {
       <ServerGuy x={720} y={850} s={1.4} t={t} face="shock" arm={pay > 0.05 ? [200 + pay * 80, -220] : [100, -80 + Math.sin(t * 8) * 14 * dig]} />
       {pay > 0.02 && <Gold x={x} y={y} r={56} text="5¢" />}
       <MyBank x={1500} y={850} s={0.9} t={t} hand={[-250, -240]} />
+      {pay > 0.98 && <Gold x={x} y={y} r={56} text="5¢" />}
     </Scene>
   );
 };
@@ -289,7 +290,7 @@ export const PairsShot: React.FC = () => {
     <Scene kind="toko" from={{ z: 1.02 }} to={{ z: 1.0 }}>
       <path d="M-300 830H2220V1300H-300Z" fill="#5a2c52" />
       {Array.from({ length: 60 }, (_, i) => <ShoeBox key={i} x={150 + (i % 10) * 90} y={830 - Math.floor(i / 10) * 88} s={0.62} c={[CORAL, TEALB, GOLD, BLUE, GREEN][(i * 3) % 5]} />)}
-      {Array.from({ length: 27 }, (_, i) => { const u = go(t, f - 1.4 + i * 0.05, 0.8); const [x, y] = arc([600 + (i % 5) * 60, 500], [1220 + (i % 7) * 92, 790 - Math.floor(i / 7) * 88], u, 240); return u > 0 ? <g key={i} transform={`translate(${x} ${y}) rotate(${(1 - u) * 200}) translate(${-x} ${-y})`}><ShoeBox x={x} y={y} s={0.62} c={CREAM} /></g> : null; })}
+      {Array.from({ length: 27 }, (_, i) => { const u = go(t, f - 1.4 + i * 0.05, 0.8); const [x, y] = arc([600 + (i % 5) * 60, 500], [1220 + (i % 7) * 92, 790 - Math.floor(i / 7) * 88], u, 240); return u > 0 ? <g key={i} transform={`translate(${x} ${y}) rotate(${(1 - u) * 200}) translate(${-x} ${-y})`}><ShoeBox x={x} y={y} s={0.62} c={GOLD} /></g> : null; })}
     </Scene>
   );
 };

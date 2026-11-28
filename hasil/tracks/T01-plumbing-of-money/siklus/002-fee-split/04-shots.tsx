@@ -19,7 +19,7 @@ export default defineShots({
   s11: [shot(MapDotShot, { drift: false }), shot(ServerIntroShot, { drift: false }), shot(NameBoardShot, { labels: {"TERMINAL CO": [960, 140]}, drift: false })],
   s12: [shot(FourHandsShot, { drift: false }), shot(GuessShot, { labels: {"GUESS": [600, 200]}, drift: false }), shot(TruthShot, { labels: {"SMALLEST": [290, 220], "BIGGEST": [1500, 170]}, drift: false })],
   s13: [shot(YardShot, { drift: false }), shot(DepartShot, { labels: {"$97.80": [1250, 330]}, drift: false }), shot(IntoVaultShot, { labels: {"$2.20": [1150, 110]}, drift: false })],
-  s14: [shot(InterchangeShot, { labels: {"INTERCHANGE": [960, 120]}, drift: false }), shot(ThreeStacksShot, { labels: {"LARGEST": [840, 240, "left"]}, drift: false })],
+  s14: [shot(InterchangeShot, { labels: {"INTERCHANGE": [960, 120]}, drift: false }), shot(ThreeStacksShot, { labels: {"LARGEST": [680, 230, "left"]}, drift: false })],
   s15: [shot(ScrollShot, { labels: {"PUBLIC": [560, 150]}, drift: false }), shot(TableShot, { labels: {"CARD": [480, 190], "SHOP": [960, 190], "TAPPED": [1440, 190]}, drift: false })],
   s16: [shot(BasicScaleShot, { labels: {"1.51%": [1070, 360], "+10¢": [1210, 490]}, drift: false }), shot(ShoesTollShot, { labels: {"$1.61": [1420, 450]}, drift: false })],
   s17: [shot(PremiumScaleShot, { labels: {"2.10%": [1070, 360], "+10¢": [1220, 490]}, drift: false }), shot(CompareStacksShot, { labels: {"$1.61": [620, 230], "$2.20": [1300, 200]}, drift: false }), shot(StandardRowShot, { labels: {"STANDARD": [1300, 200]}, drift: false })],

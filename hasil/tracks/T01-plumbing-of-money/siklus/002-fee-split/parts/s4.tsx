@@ -55,7 +55,7 @@ export const LowGateShot: React.FC = () => {
     <Scene kind="malam" to={{ z: 1.08 }}>
       <Highway y={850} t={t} speed={0} />
       <TollGate x={560} y={800} s={1.5} t={t} open={mix(0.8, 0, p)} />
-      <g transform="translate(1360 560)"><Shade d={circ(0, 0, 220)} tones={CREAM} L={LR} s={[8, 24, 14]} />{Array.from({ length: 9 }, (_, i) => <path key={i} d="M0 -190V-150" stroke={P.navy} strokeWidth={12} strokeLinecap="round" transform={`rotate(${-80 + i * 20})`} />)}<g transform={`rotate(${a})`}>{line("M0 20V-150", P.coral, 22)}</g><circle r={30} fill={P.navy} /><Txt x={-130} y={110} s={60} c={GREEN[1]}>0</Txt><Txt x={0} y={150} s={48} c="#7a4a60">TOLL</Txt></g>
+      <g transform="translate(1360 560)"><Shade d={circ(0, 0, 220)} tones={CREAM} L={LR} s={[8, 24, 14]} />{Array.from({ length: 9 }, (_, i) => <path key={i} d="M0 -190V-150" stroke={P.navy} strokeWidth={12} strokeLinecap="round" transform={`rotate(${-80 + i * 20})`} />)}<g transform={`rotate(${a})`}>{line("M0 20V-150", P.coral, 22)}</g><circle r={30} fill={P.navy} /><Txt x={-130} y={110} s={60} c={GREEN[1]}>0</Txt><g transform="translate(30 110)"><Gold x={0} y={0} r={40} text="¢" /></g></g>
     </Scene>
   );
 };
@@ -116,7 +116,7 @@ export const ShopPaysShot: React.FC = () => {
       <g transform="translate(1060 850)"><Shade d={rr(-80, -90, 160, 90, 22)} tones={TEALB} L={LR} s={[4, 12, 7]} /><path d={rr(-50, -100, 100, 22, 11)} fill="#0c2030" /></g>
       {pay > 0 && pay < 0.97 && <Coin x={x} y={y} r={44} />}
       <You x={1560} y={860} s={1.05} t={t} face="happy" look={-30} arm={[-180, -260]} />
-      <Paper x={1300} y={380} w={260} h={250} rot={-4}><Txt x={0} y={90} s={44} c={P.navy}>YOUR BILL</Txt><Lines x={-90} y={130} w={180} n={2} /><Tick x={0} y={210} r={30} p={back(t, at("add", 3) - 0.2)} /></Paper>
+      <Paper x={1300} y={380} w={260} h={250} rot={-4}><Lines x={-90} y={44} w={180} n={4} g={34} /><Tick x={0} y={210} r={30} p={back(t, at("add", 3) - 0.2)} /></Paper>
     </Scene>
   );
 };
@@ -281,7 +281,7 @@ export const SidePathShot: React.FC = () => {
       <path d={`M${v ? 700 : 150} 735Q${v ? 960 : 1150} 1000 ${v ? 1230 : 1900} 735`} stroke="#e8c89a" strokeWidth={60} fill="none" strokeLinecap="round" />
       <path d={`M${v ? 700 : 150} 735Q${v ? 960 : 1150} 1000 ${v ? 1230 : 1900} 735`} stroke="#fff6d8" strokeWidth={7} strokeDasharray="24 34" fill="none" />
       <TollGate x={gx} y={690} s={v ? 0.7 : 1.0} t={t} />
-      <g transform={`translate(${sx} 640) scale(${v ? 0.62 : 0.95})`}><Shade d={rr(-190, -380, 380, 380, 20)} tones={CREAM} L={LR} s={[6, 22, 11]} /><Shade d={rr(-90, -250, 180, 250, 30, 4)} tones={TEALB} L={LR} s={[5, 16, 9]} /><Shade d="M-230 -370L-180 -470H180L230 -370Z" tones={CORAL} L={LR} s={[5, 16, 9]} /><g transform={`rotate(${Math.sin(t * 2.4) * 8} 0 -300)`}>{line("M-50 -300L0 -340L50 -300", "#2a1444", 6)}<path d={rr(-100, -300, 200, 80, 20)} fill={GREEN[2]} /><Txt x={0} y={-246} s={46}>CASH −</Txt></g></g>
+      <g transform={`translate(${sx} 640) scale(${v ? 0.62 : 0.95})`}><Shade d={rr(-190, -380, 380, 380, 20)} tones={CREAM} L={LR} s={[6, 22, 11]} /><Shade d={rr(-90, -250, 180, 250, 30, 4)} tones={TEALB} L={LR} s={[5, 16, 9]} /><Shade d="M-230 -370L-180 -470H180L230 -370Z" tones={CORAL} L={LR} s={[5, 16, 9]} /><g transform={`rotate(${Math.sin(t * 2.4) * 8} 0 -300)`}>{line("M-50 -300L0 -340L50 -300", "#2a1444", 6)}<path d={rr(-100, -300, 200, 80, 20)} fill={GREEN[2]} /><g transform="translate(0 -260) scale(0.62)"><Bill x={0} y={0} text="$" /></g></g></g>
       <Cart x={x} y={y + 40} s={v ? 0.45 : 0.7} t={t} rolling={p > 0 && p < 1} />
     </Scene>
   );
@@ -309,7 +309,7 @@ export const PrScriptShot: React.FC = () => {
       <Paper x={960} y={180} w={640} h={680} rot={-2}><Wallet1 x={0} y={150} s={0.55} />{Array.from({ length: Math.floor(w * 7) }, (_, i) => <path key={i} d={rr(-250, 220 + i * 62, 500 * (0.65 + R(i, 7) * 0.35), 18, 9)} fill="#7a5a7a" />)}</Paper>
       {stamp < 0.1 && <g transform={`translate(${px} ${py}) rotate(35)`}><Shade d={rr(-20, -230, 40, 210, 20)} tones={BLUE} L={LR} s={[3, 9, 6]} /><path d="M-20 -22L0 20L20 -22Z" fill={GOLD[2]} /></g>}
       <Hand from={[1750, 1100]} to={[px + 150, py - 90]} tones={BLUE} />
-      {stamp > 0 && <g transform={`translate(1010 640) scale(${2 - clamp(stamp)}) rotate(-14)`} opacity={clamp(stamp * 2)}><path d={rr(-230, -66, 460, 132, 24)} fill="none" stroke={P.coral} strokeWidth={16} /><Txt x={0} y={30} s={86} c={P.coral}>MADE UP</Txt></g>}
+      {stamp > 0 && <g transform={`translate(960 560) scale(${2 - clamp(stamp)})`} opacity={clamp(stamp * 2)}><circle r={190} fill="none" stroke={P.coral} strokeWidth={24} />{line("M-110 -110L110 110M-110 110L110 -110", P.coral, 36)}</g>}
     </Scene>
   );
 };

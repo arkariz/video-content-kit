@@ -8,6 +8,7 @@ import { Cloud, Shade, Sky, Tones, rr } from "@r3/art";
 import { BLUE, COPPER, CORAL, CREAM, Contact, DARK, Eyes, Face, GOLD, GREEN, Glow2, Hose, LL, LR, P, QrGrid, STEEL, TEALB, WOOD, circ, ell, line, tw } from "./kit";
 import { BFace, BankChar, Coin, NetTower, PURPLE, SKYB, SILVER, Stack, Txt } from "./benda";
 import { Shrub } from "./dekor";
+import { Fore, Mid } from "./latar";
 
 export type SetName = "toko" | "jalan" | "malam" | "brankas" | "kantor" | "pulau" | "hijau" | "ungu" | "pagi";
 export type Cam = { x: number; y: number; z: number };
@@ -79,7 +80,7 @@ export const Scene: React.FC<{ kind: SetName; from?: Partial<Cam>; to?: Partial<
   const a = { x: 960, y: 540, z: 1.0, ...from }, b = { x: 960, y: 540, z: 1.06, ...to };
   const p = seg(t, 0, Math.max(1.5, dur + 0.3), Easing.inOut(Easing.sin));
   const cam = { x: mix(a.x, b.x, p) + Math.sin(t * 0.36) * 7, y: mix(a.y, b.y, p) + Math.cos(t * 0.29) * 4, z: mix(a.z, b.z, p) };
-  return (<Frame vignette={vignette}><Back1 kind={kind} t={t} cam={cam} /><Layer cam={cam} d={1}>{children}</Layer></Frame>);
+  return (<Frame vignette={vignette}><Back1 kind={kind} t={t} cam={cam} /><Mid kind={kind} t={t} cam={cam} /><Layer cam={cam} d={1}>{children}</Layer><Fore kind={kind} t={t} cam={cam} /></Frame>);
 };
 
 /* ---------------- benda toko ---------------- */

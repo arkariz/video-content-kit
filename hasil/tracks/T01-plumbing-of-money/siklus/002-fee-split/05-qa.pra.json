@@ -1,0 +1,37 @@
+{
+  "track": "T01",
+  "siklus": "002",
+  "tanggal": "2026-11-28",
+  "durasi": "8:05",
+  "footage_pct": 0,
+  "verdict": "LULUS-OTOMATIS (menunggu pemeriksaan manual)",
+  "temuan": [
+    {
+      "layer": "Audio",
+      "level": "sedang",
+      "id": "A2",
+      "msg": "s41: transkrip balik tidak memuat \"QRIS\" (dugaan salah ucap); DITERIMA kreator 2026-11-27 setelah didengar",
+      "fix": "tetap tercatat; dengar ulang bila audio scene ini dibuat ulang"
+    },
+    {
+      "layer": "Kemasan",
+      "level": "kecil",
+      "id": "P1",
+      "msg": "pasangan terbaik 98/100: \"Who Takes a Cut When You Tap Your Card?\" + \"$100 → $97.25\" (no-number)",
+      "fix": "pakai pasangan ini atau perbaiki temuannya; skor adalah saran, bukan gate"
+    },
+    {
+      "layer": "Kemasan",
+      "level": "kecil",
+      "id": "P2",
+      "msg": "judul \"Guess Who Takes the Most When You Tap Your Card\": mobile (a mobile feed shows about \"Guess Who Takes the Most When You Tap...\" - check the subject survives)",
+      "fix": "subjek harus terbaca di 40 karakter pertama (feed mobile)"
+    }
+  ],
+  "manual": [
+    "Dengarkan audio: nada, artefak TTS, pengucapan istilah (kemunculan pertama)",
+    "Tonton master dan Shorts: irama, kecepatan animasi, bubble tidak menutup isi",
+    "Periksa fakta tiap klaim terhadap sumber",
+    "Setujui thumbnail dan judul"
+  ]
+}
