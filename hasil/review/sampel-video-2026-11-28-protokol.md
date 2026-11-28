@@ -49,3 +49,11 @@ Satu ciri dipakai bila **kedua** syarat terpenuhi:
 2. Dihitung per channel, jumlah channel yang pemenangnya lebih unggul minimal dua kali jumlah channel yang gagalnya lebih unggul.
 
 Selisih 20 poin atau lebih ke arah sebaliknya dicatat sebagai ciri yang melemahkan. Sisanya "tidak terbukti". Dengan 20 lawan 20 video, hasil tetap berupa petunjuk, bukan bukti sebab-akibat.
+
+## Amandemen 1 (2026-11-28, sebelum ada thumbnail atau pembukaan yang dilihat)
+
+Pemindaian pertama (48 channel T01) meloloskan banyak channel berpenonton belasan sampai ratusan, sehingga "pemenang" tidak berarti. Tambahan syarat:
+
+- Rata-rata 2 pemenang minimal 20.000 view dan tiap pemenang minimal 10.000 view.
+- Channel di luar niche (misalnya tutorial membuat video AI) tidak dipakai.
+- Channel yang sudah dilihat di studi pertama (Econ in a Nutshell dan pembanding lain) tidak dipakai, supaya hipotesis diuji pada data baru.
