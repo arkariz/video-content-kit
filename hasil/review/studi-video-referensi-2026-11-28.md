@@ -83,3 +83,7 @@ Tidak mengubah kriteria V2 yang terkunci, dan belum diterapkan.
 | 6 | Rapikan judul Short T02: `#indinesia` (003 B2) dan `# gta6` (002 B2) | Salah ketik dan hashtag putus, terlihat di ekspor analitik 2026-11-28 |
 
 Batas pemeriksaan: thumbnail kita dibandingkan dari spek teks di `03-script.json`, bukan dari gambarnya.
+
+## Koreksi sesudah sampel pemenang vs gagal
+
+Pola 1 sampai 3 di atas diuji pada 40 video (`sampel-video-2026-11-28-hasil.md`) dan tidak terbukti. Usulan uji nomor 1 tidak punya dukungan data.
