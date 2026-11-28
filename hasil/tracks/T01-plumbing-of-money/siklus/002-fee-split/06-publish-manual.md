@@ -8,7 +8,7 @@ Teks YouTube dan Facebook sudah ada di `06-rilis.json`. Urutan:
    - Master: https://www.youtube.com/watch?v=0Mg_mmMzF5g · https://www.facebook.com/reel/2371631973657530/
    - Short 1: https://www.youtube.com/watch?v=OQJxkEL8K58 · https://www.facebook.com/reel/1705005934367306/
    - Short 2: https://www.youtube.com/watch?v=FfuEICU-y2o · https://www.facebook.com/reel/4575236526069035/
-2. Beri tahu agent; catatan lama dibersihkan setelah platform memastikan video hilang.
+2. Selesai 2026-11-28: platform memastikan enam video hilang dan catatan lama sudah dihapus.
 3. Di dashboard (klik dua kali `Rilis.command`, siklus T01 002): **Buka kunci** (ketik BUKA), nyalakan **Kirim siklus ini ke Facebook lewat alat**.
 4. Periksa isi, lalu **Setujui** (ketik SETUJU), **Kirim ke YouTube** dan **Kirim ke Facebook**.
 5. Setelah terkirim, di Studio: nyalakan label konten AI, pasang end screen dan video terkait; pin komentar setelah tayang. Instagram dan TikTok tetap manual.
