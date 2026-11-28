@@ -5,7 +5,7 @@ import { R, clamp, mix, pop, seg } from "@r3";
 import { Shade, Tones, rr } from "@r3/art";
 import { BLUE, COPPER, CORAL, CREAM, Contact, DARK, GOLD, GREEN, Glow2, LR, P, STEEL, TEALB, WOOD, You, Owner, circ, line, Tick } from "./kit";
 import { NetTower, PURPLE, Stack, Txt } from "./benda";
-import { Card, Cart, Gold, Highway, Lines, MyBank, Paper, Plane, Scene, ServerGuy, Shoe, Star, Terminal, TollGate, arc, back, go, useW } from "./dunia";
+import { Card, Cart, Gold, Highway, Lines, MyBank, Paper, Plane, Scene, ServerGuy, Shoe, ShopBank, Star, Terminal, TollGate, arc, back, go, useW } from "./dunia";
 import { MapBase, Pop } from "./s1";
 
 /* s13 */
@@ -67,7 +67,7 @@ export const ThreeStacksShot: React.FC = () => {
   const { t, at } = useW();
   const tl = at("largest", 1.5), p = back(t, tl - 0.7, 0.8);
   return (
-    <Scene kind="ungu" to={{ z: 1.05 }}>
+    <Scene kind="jalan" to={{ z: 1.05 }}>
       <MyBank x={510} y={850} s={0.55} t={t} /><NetTower x={1010} y={850} s={0.4} t={t} beam={0} mood="calm" /><ServerGuy x={1460} y={850} s={0.6} t={t} />
       <Stack x={510} y={630} n={Math.round(3 + p * 17)} w={100} />
       <Stack x={1010} y={630} n={2} w={100} /><Stack x={1460} y={630} n={4} w={100} />
@@ -94,10 +94,12 @@ export const TableShot: React.FC = () => {
   const heads = [0, 1, 2].map((i) => back(t, c[i] - 0.35, 0.5));
   const X = [480, 960, 1440];
   return (
-    <Scene kind="hijau" to={{ z: 1.05 }}>
+    <Scene redup kind="toko" to={{ z: 1.05 }}>
       <Paper x={960} y={170} w={1540} h={690}>
         {Array.from({ length: 6 }, (_, r) => <g key={r}><path d={rr(-710, 270 + r * 66, 1420, 50, 14)} fill={r % 2 ? "#e8d0b4" : "#f4e2c8"} />{[0, 1, 2].map((k) => <path key={k} d={rr(X[k] - 960 - 90, 286 + r * 66, 180 * (0.5 + R(r * 3 + k, 4) * 0.5), 18, 9)} fill={heads[k] > 0.5 ? ["#3b6fd8", "#e4572e", "#2f8f6b"][k] : "#b49cb4"} opacity={0.85} />)}</g>)}
       </Paper>
+      {[158, 868].map((y) => <g key={y}><Shade d={rr(150, y - 28, 1620, 56, 28)} tones={WOOD} L={LR} s={[4, 14, 9]} />{[140, 1780].map((x) => <Shade key={x} d={circ(x, y, 38)} tones={GOLD} L={LR} s={[3, 10, 6]} />)}</g>)}
+      <path d="M190 200Q250 520 190 830L230 830Q280 520 230 200Z" fill="#c9a98c" opacity={0.35} /><path d="M1730 200Q1670 520 1730 830L1690 830Q1640 520 1690 200Z" fill="#fff" opacity={0.5} />
       <Pop x={480} y={310} p={heads[0]}><Card x={480} y={310} s={0.85} t={t} /></Pop>
       <Pop x={960} y={310} p={heads[1]}><g transform="translate(960 380) scale(0.52)"><Shade d={rr(-120, -150, 240, 150, 10)} tones={CREAM} L={LR} s={[5, 16, 9]} /><path d={rr(-40, -92, 80, 92, 28, 4)} fill="#6a3340" /><Shade d="M-150 -142L-110 -214H110L150 -142Z" tones={CORAL} L={LR} s={[4, 12, 7]} /></g></Pop>
       <Pop x={1440} y={310} p={heads[2]}><g><circle cx={1440} cy={310} r={62} fill={TEALB[2]} />{[0, 1, 2].map((i) => <path key={i} d={`M${1420 + i * 22} ${290 - i * 8}q30 ${20 + i * 8} 0 ${40 + i * 16}`} stroke="#fff" strokeWidth={10} fill="none" strokeLinecap="round" />)}</g></Pop>
@@ -112,7 +114,7 @@ export const BasicScaleShot: React.FC = () => {
   const { t, at } = useW();
   const tp = at("percent", 1.5), tc = at("ten", 2.6), a = go(t, tp - 0.6, 0.55), b = go(t, tc - 0.6, 0.55);
   return (
-    <Scene kind="ungu" from={{ z: 1.05 }} to={{ z: 1.1 }}>
+    <Scene redup kind="toko" from={{ z: 1.05 }} to={{ z: 1.1 }}>
       <Scale1 x={960} y={850} t={t} tilt={mix(-3, 3, b)}>
         <Card x={-180} y={-104} s={1.05} t={t} />
         <g transform={`translate(110 ${mix(-620, -70, a)})`} opacity={a > 0 ? 1 : 0}><Gold x={0} y={0} r={62} text="%" /></g>
@@ -130,7 +132,6 @@ export const ShoesTollShot: React.FC = () => {
       <Highway y={850} t={t} speed={0} />
       <Shoe x={340} y={820} s={1.05} />
       <Cart x={760} y={845} s={1.05} t={t} />
-      <Pop x={1150} y={300} p={1}><Txt x={330} y={330} s={92} stroke={P.navy}>A</Txt></Pop>
       <Stack x={x} y={y} n={7} w={72} />
       <TollGate x={1660} y={800} s={1.0} t={t} mood="happy" />
     </Scene>
@@ -140,7 +141,7 @@ export const PremiumScaleShot: React.FC = () => {
   const { t, at } = useW();
   const swap = back(t, at("premium", 0.8) - 0.4, 0.8), a = go(t, at("percent", 2.4) - 0.6, 0.55), b = go(t, at("ten", 3.4) - 0.6, 0.55);
   return (
-    <Scene kind="ungu" from={{ z: 1.08 }} to={{ z: 1.12 }}>
+    <Scene redup kind="toko" from={{ z: 1.08 }} to={{ z: 1.12 }}>
       <Scale1 x={960} y={850} t={t} tilt={mix(3, -6, swap) + b * 3}>
         <Card x={mix(-180, -560, swap)} y={mix(-104, -420, swap)} s={1.05} rot={-30 * swap} t={t} />
         <Card x={mix(-900, -180, swap)} y={-108} s={1.2} premium t={t} />
@@ -159,7 +160,6 @@ export const CompareStacksShot: React.FC = () => {
       <Cart x={620} y={870} s={0.9} t={t} /><Cart x={1300} y={870} s={0.9} t={t} />
       <Stack x={620} y={650} n={Math.round(a * 9)} w={80} /><Stack x={1300} y={650} n={Math.round(b * 15)} w={80} />
       <Card x={290} y={560} s={0.8} rot={-10} t={t} /><Card x={1640} y={520} s={0.9} rot={10} premium t={t} />
-      <Txt x={440} y={800} s={80} stroke={P.navy}>A</Txt><Txt x={1500} y={800} s={80} stroke={P.navy}>B</Txt>
     </Scene>
   );
 };
@@ -251,7 +251,7 @@ export const WalletFightShot: React.FC = () => {
   const { t } = useW();
   const cards = [[620, GOLD], [840, TEALB], [1080, CORAL], [1300, BLUE]] as const;
   return (
-    <Scene kind="ungu" from={{ z: 1.15, y: 560 }} to={{ z: 1.03 }}>
+    <Scene redup kind="toko" from={{ z: 1.15, y: 560 }} to={{ z: 1.03 }}>
       <Shade d={rr(450, 420, 1020, 420, 60)} tones={WOOD} L={LR} s={[8, 26, 14]} />
       {cards.map(([x], i) => { const j = Math.max(0, Math.sin(t * 5 + i * 1.9)); return <Card key={i} x={x + Math.sin(t * 7 + i) * 16} y={500 - j * 110} s={0.95} rot={Math.sin(t * 6 + i * 2) * 12} premium={i % 2 === 0} t={t} face={j > 0.6 ? "shock" : "neutral"} />; })}
       <Shade d={rr(420, 540, 1080, 320, 56)} tones={COPPER} L={LR} s={[8, 26, 14]} />
@@ -264,7 +264,7 @@ export const PerksShot: React.FC = () => {
   const ws = [at("Points", 0.4), at("miles", 1.2), at("cashback", 2.2)];
   const item = (i: number, k: number) => i === 0 ? <Star key={k} x={0} y={0} r={52} rot={t * 60 + k * 40} /> : i === 1 ? <Plane key={k} x={0} y={0} s={0.9} rot={Math.sin(t * 2 + k) * 14} /> : <g key={k}><Gold x={0} y={0} r={46} /></g>;
   return (
-    <Scene kind="hijau" to={{ z: 1.07 }}>
+    <Scene redup kind="toko" to={{ z: 1.07 }}>
       <Card x={960} y={700} s={1.5} premium t={t} face="happy" />
       {[0, 1, 2].map((i) => [0, 1, 2].map((k) => { const p = back(t, ws[i] - 0.25 + k * 0.14, 0.7), tx = 480 + i * 480 + (k - 1) * 120, ty = 420 - (k % 2) * 110 + Math.sin(t * 2 + k + i) * 14; const [x, y] = arc([960, 640], [tx, ty], clamp(p), 120); return p > 0 ? <g key={`${i}${k}`} transform={`translate(${x} ${y}) scale(${p})`}>{item(i, k)}</g> : null; }))}
     </Scene>
@@ -289,7 +289,7 @@ export const WheelShot: React.FC = () => {
   const { t, at } = useW();
   const p = back(t, at("percent", 1.6) - 0.7, 0.7);
   return (
-    <Scene kind="ungu" to={{ z: 1.08 }}>
+    <Scene redup kind="toko" to={{ z: 1.08 }}>
       <Card x={720} y={550} s={2.4} rot={-6} premium t={t} />
       <g transform={`translate(1340 560) scale(${0.3 + p * 0.7}) rotate(${t * 70})`}><Shade d={circ(0, 0, 190)} tones={GOLD} L={LR} s={[8, 24, 14]} />{Array.from({ length: 8 }, (_, i) => <path key={i} d="M0 -176V-60" stroke={GOLD[1]} strokeWidth={14} transform={`rotate(${i * 45})`} />)}<circle r={62} fill={P.cream} /></g>
       <g transform="translate(1340 560)" opacity={p}><Txt x={0} y={22} s={64} c={P.navy}>1.5%</Txt></g>
@@ -313,7 +313,7 @@ export const KeepSmallShot: React.FC = () => {
   const { t, at } = useW();
   const s = at("seventy", 0.9), hug = back(t, s - 0.7, 0.6);
   return (
-    <Scene kind="ungu" from={{ z: 1.12 }} to={{ z: 1.25 }}>
+    <Scene kind="brankas" from={{ z: 1.12 }} to={{ z: 1.25 }}>
       <MyBank x={900} y={820} s={1.5} t={t} mood="calm" hand={[mix(260, 70, hug), -90]} />
       <Stack x={mix(1420, 1040, hug)} y={800} n={5} w={62} />
     </Scene>
@@ -376,7 +376,7 @@ export const MergeCoinsShot: React.FC = () => {
   const { t, at } = useW();
   const s = at("sixteen", 1.2), m = go(t, s - 0.8, 0.8), p = back(t, s - 0.1, 0.5);
   return (
-    <Scene kind="ungu" from={{ z: 1.1 }} to={{ z: 1.2 }}>
+    <Scene kind="malam" from={{ z: 1.1 }} to={{ z: 1.2 }}>
       {m < 0.95 && <g><Gold x={mix(580, 930, m)} y={540} r={90} text="%" /><Gold x={mix(1340, 990, m)} y={540} r={64} text="2¢" /></g>}
       {m >= 0.95 && <g><Stack x={960} y={720} n={Math.round(4 * p)} w={120} /><Waves2 x={960} y={620} t={t} at={s} /></g>}
       <NetTower x={1620} y={850} s={0.75} t={t} mood="happy" beam={0} />
@@ -402,7 +402,8 @@ export const NationShot: React.FC = () => {
   return (
     <Scene kind="malam" from={{ z: 1.5, y: 600 }} to={{ z: 1.0 }}>
       {roads.map((y, k) => { const s = 0.4 + k * 0.12; return <g key={y}><path d={`M-300 ${y}Q960 ${y - 110 + k * 6} 2220 ${y}`} stroke="#ffb03a" strokeWidth={26 * s} opacity={0.25 * lit} fill="none" /><path d={`M-300 ${y}Q960 ${y - 110 + k * 6} 2220 ${y}`} stroke="#ffd27a" strokeWidth={8 * s} opacity={0.4 + 0.6 * lit} fill="none" />
-        {Array.from({ length: 14 }, (_, i) => { const u = (R(k * 20 + i, 3) + t * (0.05 + R(i, k + 2) * 0.05) * (k % 2 ? 1 : -1) + 10) % 1, x = -300 + u * 2520, v = (x + 300) / 2520, yy = (1 - v) * (1 - v) * y + 2 * v * (1 - v) * (y - 110 + k * 6) + v * v * y; return i / 14 < lit ? <g key={i} transform={`translate(${x} ${yy - 6}) scale(${s * 0.7})`}><path d="M-30 -22H30L22 0H-22Z" fill="#d98a56" /><ellipse cy={-24} rx={26} ry={12} fill={P.coin} /><circle cx={-16} cy={4} r={9} fill="#0c1230" /><circle cx={16} cy={4} r={9} fill="#0c1230" /></g> : null; })}</g>; })}
+        {Array.from({ length: 14 }, (_, i) => { const u = (R(k * 20 + i, 3) + t * (0.05 + R(i, k + 2) * 0.05) * (k % 2 ? 1 : -1) + 10) % 1, x = -300 + u * 2520, v = (x + 300) / 2520, yy = (1 - v) * (1 - v) * y + 2 * v * (1 - v) * (y - 110 + k * 6) + v * v * y; return i / 14 < lit ? <g key={i} transform={`translate(${x} ${yy - 8}) scale(${s * 1.15})`}><ellipse cy={10} rx={44} ry={7} fill="#05081c" opacity={0.5} /><ellipse cy={-4} rx={52} ry={26} fill="#ffd23f" opacity={0.16} /><path d="M-32 -22H32L24 0H-24Z" fill="#98523e" /><path d="M4 -22H32L24 0H8Z" fill="#6a3340" /><path d="M-34 -26H34V-19H-34Z" fill="#cc6c34" /><path d="M-26 -26Q-14 -50 2 -40Q16 -52 28 -26Z" fill={P.coin} /><path d="M-16 -34Q-8 -44 2 -38" stroke="#fff0a0" strokeWidth={5} fill="none" strokeLinecap="round" />{[-16, 16].map((w) => <g key={w}><circle cx={w} cy={4} r={9} fill="#1f2b55" /><circle cx={w} cy={4} r={4} fill="#ffd23f" /></g>)}</g> : null; })}</g>; })}
+      <MyBank x={150} y={900} s={0.62} t={t} /><ShopBank x={1780} y={900} s={0.62} t={t} />
     </Scene>
   );
 };

@@ -108,7 +108,7 @@ export const CurtainShot: React.FC = () => {
   const c = go(t, at("split", 2) - 1.2, 1.1);
   const Drape: React.FC<{ x: number; dir: number }> = ({ x, dir }) => <g transform={`translate(${x} 0) scale(0.5 1)`}><Shade d={`M0 150H${dir * 520}V800Q${dir * 460} 760 ${dir * 400} 800Q${dir * 330} 760 ${dir * 260} 800Q${dir * 190} 760 ${dir * 130} 800Q${dir * 60} 760 0 800Z`} tones={CORAL} L={LR} s={[6, 24, 12]}>{[130, 260, 400].map((a) => <path key={a} d={`M${dir * a} 150V800`} stroke={CORAL[1]} strokeWidth={22} />)}</Shade></g>;
   return (
-    <Scene kind="ungu" to={{ z: 1.05 }}>
+    <Scene kind="kantor" to={{ z: 1.05 }}>
       <ServerGuy x={620} y={850} s={1.0} t={t} face="happy" look={22} arm={[220, -170]} />
       <ShopBank x={1360} y={850} s={0.9} t={t} />
       <Stack x={960} y={820} n={5} w={60} />
@@ -148,7 +148,7 @@ export const ShrinkBankShot: React.FC = () => {
   const { t, at } = useW();
   const p = go(t, at("drops", 2) - 0.8, 0.9);
   return (
-    <Scene kind="ungu" to={{ z: 1.05 }}>
+    <Scene redup kind="toko" to={{ z: 1.05 }}>
       <PriceTag x={600} y={420} s={1.3} text="$2.75" sub="shop pays" />
       <Owner x={600} y={870} s={0.95} t={t} look={26} />
       <g transform={`translate(1300 850) scale(${mix(1.75, 1.0, p)})`}><Shade d="M-40 -190Q-140 -120 -128 -52Q-120 4 0 4Q120 4 128 -52Q140 -120 40 -190Z" tones={GOLD} L={LR} s={[7, 22, 12]} />{line("M-50 -190H50", WOOD[2], 14)}<Txt x={0} y={-52} s={72} c={WOOD[2]}>$</Txt></g>
@@ -203,7 +203,7 @@ export const ReceivedScaleShot: React.FC = () => {
   const { t, at } = useW();
   const p = go(t, at("eighteen", 2) - 1.0, 1.0);
   return (
-    <Scene kind="ungu" to={{ z: 1.05 }}>
+    <Scene kind="kantor" to={{ z: 1.05 }}>
       <Balance t={t} tilt={-12 * p} left={Math.round(p * 7)} right={0} />
       <ServerGuy x={170} y={860} s={0.7} t={t} face="happy" look={26} />
     </Scene>
@@ -213,7 +213,7 @@ export const BankHeavierShot: React.FC = () => {
   const { t, at } = useW();
   const p = go(t, at("twenty", 1.6) - 0.8, 0.9);
   return (
-    <Scene kind="ungu" from={{ z: 1.05 }} to={{ z: 1.05 }}>
+    <Scene kind="kantor" from={{ z: 1.05 }} to={{ z: 1.05 }}>
       <Balance t={t} tilt={mix(-12, 11, p) + (p > 0.9 ? Math.sin(t * 9) * 0.8 : 0)} left={7} right={Math.round(p * 9)} />
       <ServerGuy x={170} y={860} s={0.7} t={t} face={p > 0.7 ? "shock" : "happy"} look={26} />
       <MyBank x={1760} y={880} s={0.55} t={t} />
@@ -249,8 +249,8 @@ export const TwoGridsShot: React.FC = () => {
   const { t, at } = useW();
   const f = at("four", 3), a = go(t, 0.3, 1.2), b = go(t, f - 1.0, 1.0);
   return (
-    <Scene kind="ungu" to={{ z: 1.03 }}>
-      <path d={rr(220, 200, 640, 680, 40)} fill="#fff" opacity={0.13} /><path d={rr(1060, 200, 640, 680, 40)} fill="#fff" opacity={0.13} />
+    <Scene redup kind="toko" to={{ z: 1.03 }}>
+      <path d={rr(220, 200, 640, 680, 40)} fill="#2c1250" opacity={0.88} /><path d={rr(1060, 200, 640, 680, 40)} fill="#2c1250" opacity={0.88} />
       <Shoe x={540} y={330} s={0.65} /><Sock x={1370} y={345} s={0.42} />
       <CoinGrid x={540} y={850} r={21} p={a} taken={a > 0.95 ? 3 : 0} />
       <CoinGrid x={1380} y={850} r={21} p={a} taken={Math.round(b * 4)} />
@@ -325,7 +325,7 @@ export const SamePriceShot: React.FC = () => {
   const c = at("cash", 2), a = back(t, 0.2), b = back(t, c - 0.5);
   const A: [number, number] = v ? [960, 330] : [550, 480], B: [number, number] = v ? [960, 660] : [1370, 480], s = v ? 0.85 : 1.25;
   return (
-    <Scene kind="toko" to={{ z: 1.06 }}>
+    <Scene redup kind="toko" to={{ z: 1.06 }}>
       <Pop x={A[0]} y={A[1]} p={a}><PriceTag x={A[0]} y={A[1]} s={s} text="$100" rot={-3} /><Card x={v ? 790 : A[0]} y={v ? 495 : A[1] + 250} s={v ? 0.65 : 0.95} t={t} rot={-6} /></Pop>
       <Pop x={B[0]} y={B[1]} p={b}><PriceTag x={B[0]} y={B[1]} s={s} text="$100" rot={3} /><Bill x={v ? 1130 : B[0]} y={v ? 495 : B[1] + 250} s={v ? 0.8 : 1.25} rot={7} /></Pop>
       {b > 0.8 && !v && <g>{line("M920 460H1000M920 505H1000", "#fff4da", 22)}</g>}
@@ -337,7 +337,7 @@ export const TollInsideShot: React.FC = () => {
   const p = go(t, at("toll", 2) - 1.0, 1.0);
   const s = v ? 1.15 : 2.1;
   return (
-    <Scene kind="ungu" from={{ z: 1.0 }} to={{ z: 1.1 }}>
+    <Scene redup kind="toko" from={{ z: 1.0 }} to={{ z: 1.1 }}>
       <g transform={`translate(960 500) scale(${s})`}>
         <PriceTag x={0} y={0} text="" />
         <g opacity={1 - p}><Txt x={-26} y={30} s={92} c={P.navy}>$100</Txt></g>
@@ -409,7 +409,7 @@ export const HouseTransferShot: React.FC = () => {
   const { t, at, vertical: v } = useW();
   const f = at("fifty", 2.2), A = v ? 810 : 450, B = v ? 1115 : 1470, k = v ? 0.85 : 1.5;
   return (
-    <Scene kind="ungu" to={{ z: v ? 1.0 : 1.05 }}>
+    <Scene kind="pagi" to={{ z: v ? 1.0 : 1.05 }}>
       <MiniHouse x={A} y={820} s={k} c={BLUE} t={t} /><Bill x={A} y={v ? 480 : 300} s={v ? 0.7 : 0.9} text="$" />
       <MiniHouse x={B} y={820} s={k} c={CORAL} cards={3} t={t} />
       {[0, 1, 2].map((i) => { const u = ((t * 0.4 + i / 3) % 1); const [x, y] = arc([v ? A + 40 : 620, 560], [v ? B - 40 : 1300, 560], u, v ? 220 : 280); return t > f - 1.6 + i * 0.2 ? <g key={i} transform={`translate(${x} ${y}) rotate(${Math.sin(u * 6) * 10}) scale(${v ? 0.75 : 1})`}><Env /></g> : null; })}

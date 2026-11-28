@@ -236,9 +236,10 @@ export const EightyShot: React.FC = () => {
   const te = at("eighty", 2);
   return (
     <Scene kind="malam" to={{ z: 1.05 }}>
-      <NetTower x={190} y={800} s={0.75} t={t} beam={0.6} sweep={20 + Math.sin(t) * 20} />
-      <Highway y={520} t={t} /><Highway y={800} t={t} />
-      {Array.from({ length: 10 }, (_, i) => { const x = 520 + (i % 5) * 285, y = i < 5 ? 560 : 840, on = i < 9 ? go(t, te - 0.6 + i * 0.1, 0.3) * (i < 8 ? 1 : 0.35) : 0;
+      <Highway y={560} t={t} /><Highway y={830} t={t} />
+      <path d="M20 880Q60 640 230 640Q400 640 450 880Z" fill="#2a4a6a" /><path d="M80 760Q130 660 230 656" stroke="#5a8ab0" strokeWidth={10} fill="none" strokeLinecap="round" />
+      <NetTower x={230} y={730} s={0.95} t={t} mood="calm" beam={0.55} sweep={14 + Math.sin(t) * 12} />
+      {Array.from({ length: 10 }, (_, i) => { const x = 620 + (i % 5) * 262, y = i < 5 ? 600 : 870, on = i < 9 ? go(t, te - 0.6 + i * 0.1, 0.3) * (i < 8 ? 1 : 0.35) : 0;
         return <g key={i} opacity={i < 9 ? 1 : 0.6}>{on > 0 && <Glow2 x={x} y={y - 80} r={170} c="#7dffb8" o={0.8 * on} />}<Cart x={x} y={y} s={0.55} t={t} />{on > 0.5 && <Tick x={x} y={y - 190} r={34} p={pop(t, te - 0.4 + i * 0.1, 0.3)} />}</g>; })}
     </Scene>
   );
@@ -292,7 +293,7 @@ export const LessShot: React.FC = () => {
   const { t, at } = useW();
   const tl = at("less", 1.2), p = back(t, tl - 0.5, 0.6);
   return (
-    <Scene kind="ungu" to={{ z: 1.06 }}>
+    <Scene redup kind="toko" to={{ z: 1.06 }}>
       <path d={rr(150, 170, 740, 690, 44)} fill="#fff" opacity={0.12} /><path d={rr(1030, 170, 740, 690, 44)} fill="#fff" opacity={0.2} />
       <Paper x={640} y={300} w={300} h={430} rot={-4}><Txt x={0} y={110} s={90} c={P.navy}>$100</Txt><Lines x={-110} y={170} w={220} n={6} /></Paper>
       <You x={330} y={840} s={0.95} t={t} look={20} arm={[150, -220]} />
@@ -373,7 +374,7 @@ export const GuessShot: React.FC = () => {
   const { t, at } = useW();
   const g = at("guess", 1), p = back(t, g - 0.6, 0.8);
   return (
-    <Scene kind="ungu" to={{ z: 1.07 }}>
+    <Scene kind="malam" to={{ z: 1.07 }}>
       <g opacity={0.82}><Pop x={1180} y={780} p={0.4 + 0.6 * p}><Sack x={1180} y={780} s={2.1} c={STEEL} label="?" /></Pop></g>
       <NetTower x={600} y={800} s={0.95} t={t} mood="smug" beam={0} />
       {[0, 1, 2, 3, 4].map((i) => <circle key={i} cx={1180 + Math.cos(i * 1.3 + t * 0.5) * 420} cy={430 + Math.sin(i * 1.9 + t * 0.7) * 220} r={14} fill="#fff" opacity={0.4} />)}
@@ -384,7 +385,7 @@ export const TruthShot: React.FC = () => {
   const { t, at } = useW();
   const s = at("smallest", 1), b = at("biggest", 3), small = go(t, s - 0.5, 0.7), big = back(t, b - 0.5, 0.8);
   return (
-    <Scene kind="hijau" to={{ z: 1.04 }}>
+    <Scene kind="jalan" to={{ z: 1.04 }}>
       <NetTower x={290} y={810} s={0.85} t={t} mood={small > 0.6 ? "shock" : "smug"} beam={0} />
       <Sack x={720} y={810} s={mix(1.5, 0.5, small)} c={STEEL} label="¢" />
       <Sack x={1190} y={810} s={mix(0.7, 2.15, big)} c={GOLD} />

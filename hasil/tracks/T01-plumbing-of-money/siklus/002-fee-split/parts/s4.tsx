@@ -78,7 +78,7 @@ export const WarungQrShot: React.FC = () => {
   return (
     <Scene kind="pulau" from={{ z: 1.05 }} to={{ z: 1.25, y: 580 }}>
       <Stall x={760} y={850} s={1.35} wide><Owner x={-70} y={-88} s={0.55} t={t} face="happy" look={20} /></Stall>
-      <QrStand x={1300} y={850} s={1.0} glow={glow} />
+      <QrStand x={1300} y={850} s={1.0} glow={glow * 0.3} />
       <ScanFrame x={1300} y={626} w={230} p={glow} />
     </Scene>
   );
@@ -88,9 +88,9 @@ export const ManyPhonesShot: React.FC = () => {
   const c = at("scan", 2);
   const ph: [number, number, number, Tones][] = [[360, 640, 24, BLUE], [620, 330, 52, CORAL], [1300, 330, -52, GREEN], [1560, 640, -24, GOLD]];
   return (
-    <Scene kind="hijau" to={{ z: 1.07 }}>
+    <Scene kind="pulau" to={{ z: 1.07 }}>
       <QrStand x={960} y={820} s={1.35} glow={0.6} />
-      {ph.map(([x, y, r, k], i) => { const p = back(t, Math.max(0.2, c - 1.2) + i * 0.25, 0.7); return <g key={i}>{line(`M${x + (960 - x) * 0.22} ${y + (520 - y) * 0.22}L${x + (960 - x) * 0.5} ${y + (520 - y) * 0.5}`, P.coin, 12, p * (0.4 + 0.6 * Math.abs(Math.sin(t * 4 + i))))}<Pop x={x} y={y} p={p}><Phone x={x} y={y + Math.sin(t * 2 + i) * 8} s={0.68} rot={r} body={k} bg="#5a3a80" screen={<g><QrGrid x={-70} y={-70} size={140} /><ScanFrame x={0} y={0} w={170} p={1} /></g>} /></Pop></g>; })}
+      {ph.map(([x, y, r, k], i) => { const p = back(t, 0.15 + i * 0.2, 0.6); return <g key={i}>{line(`M${x + (960 - x) * 0.22} ${y + (520 - y) * 0.22}L${x + (960 - x) * 0.5} ${y + (520 - y) * 0.5}`, P.coin, 12, p * (0.4 + 0.6 * Math.abs(Math.sin(t * 4 + i))))}<Pop x={x} y={y} p={p}><Phone x={x} y={y + Math.sin(t * 2 + i) * 8} s={0.68} rot={r} body={k} bg="#5a3a80" screen={<g><QrGrid x={-70} y={-70} size={140} /><ScanFrame x={0} y={0} w={170} p={1} /></g>} /></Pop></g>; })}
     </Scene>
   );
 };
@@ -160,9 +160,10 @@ export const MillionSliceShot: React.FC = () => {
   const { t, at } = useW();
   const s = at("seven", 2.4), p = back(t, s - 0.9, 0.8);
   return (
-    <Scene kind="hijau" from={{ z: 1.05 }} to={{ z: 1.12 }}>
+    <Scene redup kind="pulau" from={{ z: 1.05 }} to={{ z: 1.12 }}>
       <g transform={`translate(${900 - p * 40} 520) rotate(-3)`}><Shade d={rr(-480, -240, 940, 480, 34)} tones={CORAL} L={LR} s={[6, 20, 10]} /><path d={rr(-440, -200, 860, 400, 24)} fill="none" stroke="#ffd0b0" strokeWidth={10} /><circle cx={-250} cy={0} r={120} fill="#ffd0b0" opacity={0.7} /><Txt x={100} y={30} s={106}>Rp1,000,000</Txt></g>
-      <g transform={`translate(${1380 + p * 230} ${520 + p * 40}) rotate(${p * 12})`}><Shade d={rr(-14, -240, 36, 480, 14)} tones={CORAL} L={LR} s={[3, 9, 6]} /><Glow2 x={0} y={0} r={200} c={P.coin} o={0.7 * clamp(p)} /></g>
+      <g transform={`translate(${1378 + p * 66} ${505 + p * 6}) rotate(${-3 + p * 7})`}><Shade d={rr(-14, -240, 36, 480, 14)} tones={CORAL} L={LR} s={[3, 9, 6]} /><Glow2 x={0} y={0} r={200} c={P.coin} o={0.7 * clamp(p)} /></g>
+      <path d={`M${1372 - p * 6} 236V800`} stroke="#fff4da" strokeWidth={8} strokeDasharray="22 18" opacity={clamp(p)} /><Stack x={1480 + p * 70} y={860} n={Math.round(clamp(p) * 4)} w={74} />
     </Scene>
   );
 };
@@ -184,7 +185,7 @@ export const SideBySideShot: React.FC = () => {
   const { t, at } = useW();
   const a = go(t, 0.2, 0.8), b = back(t, at("seventy-five", 2.6) - 1.0, 0.9);
   return (
-    <Scene kind="ungu" to={{ z: 1.04 }}>
+    <Scene kind="jalan" to={{ z: 1.04 }}>
       <path d={rr(260, 150, 580, 720, 44)} fill="#7dffd0" opacity={0.14} /><path d={rr(1080, 150, 580, 720, 44)} fill="#ffb88a" opacity={0.16} />
       <Stack x={550} y={820} n={Math.round(a * 5)} w={110} />
       <Stack x={1370} y={820} n={Math.round(clamp(b) * 19)} w={110} />
@@ -194,15 +195,23 @@ export const SideBySideShot: React.FC = () => {
 };
 /* s46 */
 export const TwoRoadsShot: React.FC = () => {
-  const { t, vertical } = useW();
+  const { t } = useW();
+  const house = (x: number, y: number, k: number, c: string) => <g key={x} transform={`translate(${x} ${y}) scale(${k})`}><path d={rr(-60, -90, 120, 90, 8)} fill="#fff4da" /><path d="M-82 -82L0 -150L82 -82Z" fill={c} /><path d={rr(-18, -48, 36, 48, 14, 3)} fill="#6a3340" /></g>;
   return (
     <Scene kind="pagi" to={{ z: 1.04 }}>
-      <path d="M960 380H2320V1300H960Z" fill="#1d7ca8" />
-      <path d="M1060 760Q1480 520 1900 760Z" fill="#2f8a6a" /><path d="M-400 700H960V1300H-400Z" fill="#45286a" />
-      {Array.from({ length: 8 }, (_, i) => <path key={i} d={rr(60 + i * 105, 660 - R(i, 8) * 220, 80, 80 + R(i, 8) * 220, 10)} fill="#6c3c82" />)}
-      <Highway y={820} t={t} x0={-400} x1={880} /><Highway y={820} t={t} x0={1040} x1={2320} />
-      <path d="M920 250V900" stroke="#fff4da" strokeWidth={14} strokeDasharray="34 24" />
-      <TollGate x={420} y={780} s={1.0} t={t} /><TollGate x={1380} y={780} s={1.0} t={t} open={1} />
+      <path d="M980 640Q1250 560 1520 610Q1850 540 2320 620V1300H900Z" fill="#1d7ca8" />
+      <path d="M1130 700Q1420 520 1760 640Q1860 690 1880 710Z" fill="#2f8a6a" /><path d="M1500 640L1660 440Q1676 424 1692 440L1850 650Z" fill="#4a8cb0" />
+      {[1230, 1320, 1840].map((x, i) => <g key={x} transform={`translate(${x} 700)`}>{line(`M0 0Q${i % 2 ? 26 : -26} -90 ${Math.sin(t + i) * 6} -170`, "#5a3040", 15)}<g transform={`translate(${Math.sin(t + i) * 6} -172)`}>{[-150, -105, -60, -15, 30, 200].map((r) => <path key={r} transform={`rotate(${r})`} d="M0 0Q46 -28 100 8Q46 -4 0 8Z" fill="#175a48" />)}</g></g>)}
+      {house(1560, 700, 0.9, CORAL[2])}
+      {Array.from({ length: 12 }, (_, i) => <path key={i} d={rr(1080 + R(i, 3) * 800 + Math.sin(t + i) * 16, 905 + R(i, 4) * 90, 90, 9, 4)} fill="#bff0f8" opacity={0.55} />)}
+      <path d="M1130 702Q1440 676 1880 712" stroke="#e8fbff" strokeWidth={12} fill="none" strokeLinecap="round" opacity={0.8} />
+      <path d="M1560 556L1660 440Q1676 424 1692 440L1744 506L1704 492L1672 520L1636 494Z" fill="#cfeaf4" />
+      <path d="M-400 700Q200 620 560 660Q820 640 940 700V1300H-400Z" fill="#45286a" />
+      {Array.from({ length: 7 }, (_, i) => { const h = 90 + R(i, 8) * 200, x = 70 + i * 118; return <g key={i}><path d={rr(x, 690 - h, 86, h + 20, i % 3 ? 8 : 34, 3)} fill="#6c3c82" />{[0, 1, 2].map((k) => <rect key={k} x={x + 16 + (k % 2) * 34} y={712 - h + k * 34} width={18} height={20} rx={5} fill="#ffd27a" opacity={R(i * 3 + k, 5) > 0.4 ? 0.9 : 0.25} />)}</g>; })}
+      <Highway y={830} t={t} x0={-400} x1={900} /><Highway y={830} t={t} x0={1020} x1={2320} />
+      <path d="M960 250V920" stroke="#fff4da" strokeWidth={14} strokeDasharray="34 24" strokeLinecap="round" />
+      <TollGate x={420} y={790} s={1.15} t={t} /><TollGate x={1360} y={790} s={1.15} t={t} open={1} />
+      <Cart x={190 + Math.sin(t) * 20} y={880} s={0.55} t={t} rolling /><Cart x={1700 + t * 40} y={880} s={0.55} t={t} rolling />
     </Scene>
   );
 };
@@ -293,9 +302,13 @@ export const OldTableShot: React.FC = () => {
   const p = go(t, at("forgotten", 2) - 0.8, 1.0);
   return (
     <Scene kind="ungu" from={{ z: 1.2 }} to={{ z: 1.05 }}>
-      <path d="M-200 820H2120V1300H-200Z" fill="#3c1d3e" />
+      <path d="M-300 -200H2220V760H-300Z" fill="#6a2c4a" />{Array.from({ length: 22 }, (_, i) => <path key={i} d={rr(-260 + i * 120, -100, 40, 860, 18)} fill="#7e3858" opacity={0.7} />)}
+      <path d="M-300 760H2220V1300H-300Z" fill="#3c1d3e" />{Array.from({ length: 24 }, (_, i) => <path key={i} d={`M${-300 + i * 110} 790h55l-20 40h-55Z`} fill="#58284a" />)}
+      {[[880, 330], [1640, 300]].map(([x, y]) => <g key={x}><path d={rr(x - 110, y - 130, 220, 250, 100, 12)} fill="#16204a" stroke={WOOD[3]} strokeWidth={14} />{[0, 1, 2, 3].map((k) => <circle key={k} cx={x - 60 + k * 40} cy={y - 40 + (k % 2) * 50} r={6} fill="#ffd27a" />)}<path d={`M${x - 150} ${y - 160}Q${x - 90} ${y} ${x - 140} ${y + 150}L${x - 170} ${y + 150}V${y - 160}Z`} fill={CORAL[1]} /><path d={`M${x + 150} ${y - 160}Q${x + 90} ${y} ${x + 140} ${y + 150}L${x + 170} ${y + 150}V${y - 160}Z`} fill={CORAL[1]} /></g>)}
+      <path d={rr(-300, 560, 2520, 22, 10)} fill={WOOD[2]} />{[620, 1500].map((x, i) => <g key={x}>{line(`M${x} -200V${130 + i * 30}`, "#2a1030", 8)}<Shade d={`M${x - 80} ${215 + i * 30}Q${x} ${80 + i * 30} ${x + 80} ${215 + i * 30}Z`} tones={COPPER} L={LR} s={[4, 12, 7]} /><Glow2 x={x} y={240 + i * 30} r={240} c="#ffd98a" o={0.55} /></g>)}
       <path d={rr(260, 150, 420, 620, 210, 12)} fill="#101a38" opacity={0.75} /><path d={rr(260, 150, 420, 620, 210, 12)} fill="none" stroke={WOOD[2]} strokeWidth={30} />
-      <g transform="translate(1160 840)">{line("M0 -190V0M-120 0H120", WOOD[1], 40)}<ellipse cy={-215} rx={390} ry={64} fill={CREAM[2]} /><ellipse cy={-232} rx={390} ry={54} fill={CREAM[3]} /><ellipse cx={-170} cy={-232} rx={96} ry={22} fill="#c0d6f0" />{line("M180 -250V-370", GOLD[1], 12)}<path d="M180 -420q30 36 0 52q-30 -16 0 -52Z" fill="#ffd98a" /><Glow2 x={180} y={-390} r={190} c="#ffd98a" o={0.7 + Math.sin(t * 7) * 0.1} /></g>
+      <g transform="translate(1160 840)">{line("M0 -190V0M-120 0H120", WOOD[1], 40)}<ellipse cy={-215} rx={390} ry={64} fill={CREAM[2]} /><ellipse cy={-232} rx={390} ry={54} fill={CREAM[3]} /><ellipse cx={-170} cy={-232} rx={96} ry={22} fill="#c0d6f0" /><ellipse cx={-170} cy={-236} rx={62} ry={13} fill="#eef6ff" /><g transform="translate(290 -238)"><Shade d="M-34 -80H34L26 -6Q0 8 -26 -6Z" tones={TEALB} L={LR} s={[3, 10, 6]} />{line("M34 -66Q66 -58 30 -34", TEALB[2], 10)}</g>{line("M-300 -226H-262M-82 -226H-44", "#c0d6f0", 10)}{line("M180 -250V-370", GOLD[1], 12)}<path d="M180 -420q30 36 0 52q-30 -16 0 -52Z" fill="#ffd98a" /><Glow2 x={180} y={-390} r={190} c="#ffd98a" o={0.7 + Math.sin(t * 7) * 0.1} /></g>
+      {[700, 1650].map((x, i) => <g key={x} transform={`translate(${x} 900) scale(${i ? -1 : 1} 1)`}><Contact x={0} y={6} w={120} /><Shade d={rr(-90, -400, 46, 400, 22)} tones={WOOD} L={LR} s={[4, 12, 7]} /><Shade d={rr(-100, -420, 70, 240, 34)} tones={CORAL} L={LR} s={[4, 14, 8]} /><Shade d={rr(-96, -170, 220, 52, 20)} tones={CORAL} L={LR} s={[4, 14, 8]} />{line("M104 -118V0", WOOD[2], 30)}</g>)}
       <g transform={`translate(0 ${(1 - p) * -40})`} opacity={0.3 + 0.7 * p}><Wallet1 x={1130} y={610} /></g>
     </Scene>
   );

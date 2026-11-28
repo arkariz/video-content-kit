@@ -75,12 +75,12 @@ const Back1: React.FC<{ kind: SetName; t: number; cam: Cam }> = ({ kind, t, cam 
 };
 
 /** Panggung satu shot: latar berlapis + isi di lapisan depan. cam = [awal, akhir] zoom/posisi sepanjang shot. */
-export const Scene: React.FC<{ kind: SetName; from?: Partial<Cam>; to?: Partial<Cam>; children: React.ReactNode; vignette?: number }> = ({ kind, from, to, children, vignette = 0.45 }) => {
+export const Scene: React.FC<{ redup?: boolean; kind: SetName; from?: Partial<Cam>; to?: Partial<Cam>; children: React.ReactNode; vignette?: number }> = ({ kind, from, to, children, vignette = 0.45, redup }) => {
   const { t, dur } = useShot();
   const a = { x: 960, y: 540, z: 1.0, ...from }, b = { x: 960, y: 540, z: 1.06, ...to };
   const p = seg(t, 0, Math.max(1.5, dur + 0.3), Easing.inOut(Easing.sin));
   const cam = { x: mix(a.x, b.x, p) + Math.sin(t * 0.36) * 7, y: mix(a.y, b.y, p) + Math.cos(t * 0.29) * 4, z: mix(a.z, b.z, p) };
-  return (<Frame vignette={vignette}><Back1 kind={kind} t={t} cam={cam} /><Mid kind={kind} t={t} cam={cam} /><Layer cam={cam} d={1}>{children}</Layer><Fore kind={kind} t={t} cam={cam} /></Frame>);
+  return (<Frame vignette={vignette}><Back1 kind={kind} t={t} cam={cam} /><Mid kind={kind} t={t} cam={cam} />{redup && <Layer cam={cam} d={0.8}><rect x={-600} y={-700} width={3200} height={2600} fill="#2a0e44" opacity={0.5} /></Layer>}<Layer cam={cam} d={1}>{children}</Layer><Fore kind={kind} t={t} cam={cam} /></Frame>);
 };
 
 /* ---------------- benda toko ---------------- */
