@@ -87,7 +87,7 @@
     },
     {
       "nama": "B2-fines-never-paid",
-      "jadwal": "2026-11-29T16:00",
+      "jadwal": "2026-12-04T16:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -105,7 +105,7 @@
       },
       "file": "produksi/render/T02/004/Short9x16-B2-fines-never-paid-en.mp4",
       "thumbnail": "produksi/render/T02/004/Thumbnail-Short-B2-fines-never-paid.png",
-      "judul": "Courts ruled. Did anyone pay?",
+      "judul": "Indonesia's Fire Fines: Trillions Unpaid as of 2021",
       "deskripsi": "Courts ruled. Did anyone pay?\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n#Indonesiafires #karhutla #haze #Shorts",
       "tag": [
         "Indonesia fires",
@@ -121,7 +121,7 @@
     }
   ],
   "persetujuan": {
-    "sidik": "cd4f7033f9b98e38a34f4bf054bb18ed1e50c3dff3eae09ea553bef802717235",
+    "sidik": "138728938de903dfbd9acfb6f9e4a8c49ac734c1a092945646fb7cb9174f7648",
     "waktu": "2026-11-27T11:04:36.550Z",
     "via": "dashboard",
     "qa_manual": "Status: LULUS (atas keputusan kreator, 2026-11-27)"
@@ -199,7 +199,7 @@
         "videoId": "DU213c29_hE",
         "url": "https://www.youtube.com/watch?v=DU213c29_hE",
         "privasi": "private",
-        "publishAt": "2026-11-29T09:00:00.000Z",
+        "publishAt": "2026-12-04T09:00:00Z",
         "diunggah": "2026-11-27T11:06:09.565Z",
         "selesai": {
           "subtitle-en": "2026-11-27T11:06:11.847Z",
@@ -208,7 +208,7 @@
         },
         "galat": [],
         "dilihat": {
-          "judul": "Courts ruled. Did anyone pay?",
+          "judul": "Indonesia's Fire Fines: Trillions Unpaid as of 2021",
           "deskripsi": "Courts ruled. Did anyone pay?\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n#Indonesiafires #karhutla #haze #Shorts"
         }
       },
