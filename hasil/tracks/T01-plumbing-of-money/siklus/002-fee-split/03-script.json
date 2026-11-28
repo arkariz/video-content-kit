@@ -183,7 +183,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C01"
         },
         {
           "url": "https://wellsfargo.com/merchantpassthroughfees",
@@ -279,7 +280,14 @@
       ],
       "duration_ms": {
         "en": 9520
-      }
+      },
+      "sources": [
+        {
+          "url": "https://stripe.com/en-cy/resources/more/payment-settlement-explained-how-it-works-and-how-long-it-takes",
+          "claim": "Dana kartu sampai ke rekening toko sekitar 1-3 hari kerja",
+          "id": "C11"
+        }
+      ]
     },
     {
       "id": "s06",
@@ -326,7 +334,14 @@
       ],
       "duration_ms": {
         "en": 7338
-      }
+      },
+      "sources": [
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Contoh: seratus koin mewakili $100",
+          "id": "C15"
+        }
+      ]
     },
     {
       "id": "s07",
@@ -370,7 +385,8 @@
       "sources": [
         {
           "url": "https://fool.com/money/research/average-credit-card-processing-fees-costs-america",
-          "claim": "Visa + Mastercard lebih dari 80% volume transaksi kartu kredit AS"
+          "claim": "Visa + Mastercard lebih dari 80% volume transaksi kartu kredit AS",
+          "id": "C06"
         }
       ],
       "duration_ms": {
@@ -455,7 +471,14 @@
       ],
       "duration_ms": {
         "en": 7570
-      }
+      },
+      "sources": [
+        {
+          "url": "https://www.visa.com/en-us/support/business/regulation-fees",
+          "claim": "Biaya diambil di sisi toko; contoh $100",
+          "id": "C08"
+        }
+      ]
     },
     {
       "id": "s10",
@@ -574,7 +597,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C01"
         },
         {
           "url": "https://wellsfargo.com/merchantpassthroughfees",
@@ -637,7 +661,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C02"
         }
       ],
       "duration_ms": {
@@ -686,11 +711,13 @@
       "sources": [
         {
           "url": "https://nav.com/blog/credit-card-processing-fees",
-          "claim": "Interchange porsi terbesar biaya kartu"
+          "claim": "Interchange porsi terbesar biaya kartu",
+          "id": "C10"
         },
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C15"
         }
       ],
       "duration_ms": {
@@ -743,7 +770,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C01"
         }
       ],
       "duration_ms": {
@@ -792,7 +820,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C01"
         }
       ],
       "duration_ms": {
@@ -862,11 +891,13 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C01"
         },
         {
           "url": "https://www.helcim.com/visa-usa-interchange-rates/",
-          "claim": "Merchant kecil yang memenuhi syarat punya baris tarif lebih rendah"
+          "claim": "Merchant kecil yang memenuhi syarat punya baris tarif lebih rendah",
+          "id": "C13"
         }
       ],
       "duration_ms": {
@@ -965,6 +996,11 @@
         {
           "url": "https://staxpayments.com/blog/visa-interchange-rates/",
           "claim": "Rewards didanai sebagian oleh interchange"
+        },
+        {
+          "url": "https://www.federalreserve.gov/econres/notes/feds-notes/credit-card-profitability-20220909.html",
+          "claim": "Interchange sumber pendapatan utama fungsi transaksi",
+          "id": "C14"
         }
       ],
       "duration_ms": {
@@ -1240,7 +1276,8 @@
       "sources": [
         {
           "url": "https://nilsonreport.com/articles/mastercard-and-visa-cards-in-the-us-2025/",
-          "claim": "Kartu Visa dan Mastercard terbitan AS: $9,986 triliun volume belanja 2025 (kredit, debit, prepaid)"
+          "claim": "Kartu Visa dan Mastercard terbitan AS: $9,986 triliun volume belanja 2025 (kredit, debit, prepaid)",
+          "id": "C07"
         }
       ],
       "duration_ms": {
@@ -1378,7 +1415,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C02"
         },
         {
           "url": "https://wellsfargo.com/merchantpassthroughfees",
@@ -1444,7 +1482,8 @@
       "sources": [
         {
           "url": "https://www.spark.money/glossary/assessment-fee",
-          "claim": "Markup processor bagian yang bisa dinegosiasi"
+          "claim": "Markup processor bagian yang bisa dinegosiasi",
+          "id": "C12"
         },
         {
           "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
@@ -1508,7 +1547,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C01"
         },
         {
           "url": "https://wellsfargo.com/merchantpassthroughfees",
@@ -1562,7 +1602,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C02"
         }
       ],
       "duration_ms": {
@@ -1627,7 +1668,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C02"
         },
         {
           "url": "https://wellsfargo.com/merchantpassthroughfees",
@@ -1743,6 +1785,11 @@
         {
           "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
           "claim": "Stripe in-person 2.7% + 5 sen (cocokkan dengan stripe.com/pricing)"
+        },
+        {
+          "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
+          "claim": "Contoh: $97,25 diterima toko; 27 pasang",
+          "id": "C15"
         }
       ],
       "duration_ms": {
@@ -1782,8 +1829,9 @@
       ],
       "sources": [
         {
-          "url": "https://www.mymoney.gov/node/82113",
-          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+          "url": "https://www.bostonfed.org/publications/public-policy-discussion-paper/2010/who-gains-and-who-loses-from-credit-card-payments-theory-and-calibrations.aspx",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif",
+          "id": "C17"
         }
       ],
       "duration_ms": {
@@ -1829,8 +1877,9 @@
       ],
       "sources": [
         {
-          "url": "https://www.mymoney.gov/node/82113",
-          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+          "url": "https://www.bostonfed.org/publications/public-policy-discussion-paper/2010/who-gains-and-who-loses-from-credit-card-payments-theory-and-calibrations.aspx",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif",
+          "id": "C17"
         }
       ],
       "duration_ms": {
@@ -1888,8 +1937,9 @@
       ],
       "sources": [
         {
-          "url": "https://www.mymoney.gov/node/82113",
-          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+          "url": "https://www.bostonfed.org/publications/public-policy-discussion-paper/2010/who-gains-and-who-loses-from-credit-card-payments-theory-and-calibrations.aspx",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif",
+          "id": "C17"
         }
       ],
       "duration_ms": {
@@ -1937,8 +1987,9 @@
       ],
       "sources": [
         {
-          "url": "https://www.mymoney.gov/node/82113",
-          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+          "url": "https://www.bostonfed.org/publications/public-policy-discussion-paper/2010/who-gains-and-who-loses-from-credit-card-payments-theory-and-calibrations.aspx",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif",
+          "id": "C18"
         }
       ],
       "duration_ms": {
@@ -1980,8 +2031,9 @@
       ],
       "sources": [
         {
-          "url": "https://www.mymoney.gov/node/82113",
-          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif"
+          "url": "https://www.bostonfed.org/publications/public-policy-discussion-paper/2010/who-gains-and-who-loses-from-credit-card-payments-theory-and-calibrations.aspx",
+          "claim": "Schuh, Shy, Stavins 2010: rumah tangga non-kartu rata-rata mentransfer $149 per tahun ke pengguna kartu; regresif",
+          "id": "C18"
         }
       ],
       "duration_ms": {
@@ -2066,7 +2118,8 @@
       "sources": [
         {
           "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli",
+          "id": "C20"
         }
       ],
       "duration_ms": {
@@ -2115,7 +2168,8 @@
       "sources": [
         {
           "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli",
+          "id": "C20"
         }
       ],
       "duration_ms": {
@@ -2132,7 +2186,8 @@
       "sources": [
         {
           "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli",
+          "id": "C20"
         }
       ],
       "shots": [
@@ -2213,7 +2268,8 @@
       "sources": [
         {
           "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli",
+          "id": "C20"
         }
       ],
       "duration_ms": {
@@ -2262,7 +2318,8 @@
       "sources": [
         {
           "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli",
+          "id": "C20"
         }
       ],
       "duration_ms": {
@@ -2311,7 +2368,8 @@
       "sources": [
         {
           "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli",
+          "id": "C20"
         },
         {
           "url": "https://www.nerdwallet.com/article/small-business/stripe-fees",
@@ -2354,7 +2412,8 @@
       "sources": [
         {
           "url": "https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm",
-          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli"
+          "claim": "Mulai 1 Okt 2026: MDR 0% s.d. Rp100 ribu; UKE/UME/UBE 0,7% di atasnya; UMI 0% s.d. Rp500 ribu; ditanggung merchant, tidak dibebankan ke pembeli",
+          "id": "C20"
         }
       ],
       "duration_ms": {
@@ -2423,7 +2482,8 @@
       "sources": [
         {
           "url": "https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf",
-          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10"
+          "claim": "Visa USA, berlaku 24 Okt 2026, card present Product 2: All Other 1.51% + $0.10; Signature Preferred 2.10% + $0.10",
+          "id": "C02"
         },
         {
           "url": "https://wellsfargo.com/merchantpassthroughfees",
@@ -2953,5 +3013,6 @@
       "url": "https://www.nerdwallet.com/blog/credit-cards/matty-simmons-interview",
       "claim": "Matty Simmons menulis bahwa ia mengarang cerita McNamara kekurangan uang saat makan malam untuk publisitas"
     }
-  ]
+  ],
+  "visual_spec": "03-visual.json"
 }
