@@ -13,7 +13,7 @@
   "items": [
     {
       "nama": "master",
-      "jadwal": "2026-11-29T10:00",
+      "jadwal": "2026-12-02T10:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -31,7 +31,7 @@
       },
       "file": "produksi/render/T02/004/Master16x9-en.mp4",
       "thumbnail": "produksi/render/T02/004/Thumbnail-A.png",
-      "judul": "Indonesia Is Burning. Who Lit the Match?",
+      "judul": "The Indonesian Fire Disaster You Probably Missed. Who Lit the Match?",
       "deskripsi": "After watching, you can explain why drained peat burns, what is proven and unproven about the 2026 fires, and where enforcement has fallen short.\n\n0:00 Under the smoke\n0:49 Two numbers\n1:10 The soil that burns\n2:00 Who breathes it\n2:21 Why fire\n2:55 Whose land burned\n4:00 The counterpoint\n4:51 The cases\n5:34 Do penalties land?\n6:10 What courts have found\n7:46 Back to the sponge\n\nSources:\nhttp://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/\nhttps://agris.fao.org/search/en/records/690c9d6ee36ca6284360dd89\nhttps://earthobservatory.nasa.gov/features/IndonesianFires/page2.php\nhttps://katadata.co.id/amp/berita/nasional/650a5a1f81b74/ma-ubah-vonis-surya-darmadi-jadi-16-tahun-batal-bayar-denda-rp-41-9-t\nhttps://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/\nhttps://news.detik.com/berita/d-3051823/uu-lingkungan-hidup-izinkan-masyarakat-bakar-lahan\nhttps://news.detik.com/berita/d-8767357/bareskrim-tetapkan-pt-mas-tersangka-korporasi-karhutla-di-riau\nhttps://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/\nhttps://news.mongabay.com/2026/11/indonesia-fires-test-palm-oil-certification-scheme-as-ngos-question-rspo-accountability/\nhttps://openknowledge.worldbank.org/entities/publication/391e19f4-18f7-56c2-8c28-bb89cc9e7d6f\nhttps://regional.kompas.com/read/2026/09/04/193204678/kementerian-lh-klaim-sudah-segel-30-perusahaan-sawit-hingga-tebu-terkait\nhttps://www.palmoilmagazine.com/rspo/2026/11/03/rspo-says-most-indonesia-land-fires-in-2026-occurred-outside-palm-oil-concessions/\nhttps://www.suara.com/news/2026/10/02/070500/luas-karhutla-indonesia-capai-202-ribu-hektare-hingga-juli-2026\nhttps://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows",
       "tag": [
         "Indonesia fires",
@@ -121,7 +121,7 @@
     }
   ],
   "persetujuan": {
-    "sidik": "899b3b300d08765b0c6986eba726c4211836d126e4bc97d5ad1370b2c4367db1",
+    "sidik": "a05286b43392fba1409b7c0f9bbda8b817b7f866bc8c98933e89593e9bd32044",
     "waktu": "2026-11-27T11:04:36.550Z",
     "via": "dashboard",
     "qa_manual": "Status: LULUS (atas keputusan kreator, 2026-11-27)"
@@ -133,14 +133,18 @@
         "videoId": "QqLj-LiNziU",
         "url": "https://www.youtube.com/watch?v=QqLj-LiNziU",
         "privasi": "private",
-        "publishAt": "2026-11-29T03:00:00.000Z",
+        "publishAt": "2026-12-02T03:00:00Z",
         "diunggah": "2026-11-27T11:05:48.318Z",
         "selesai": {
           "subtitle-en": "2026-11-27T11:05:50.529Z",
           "subtitle-id": "2026-11-27T11:05:52.565Z",
           "thumbnail": "2026-11-27T11:05:57.391Z"
         },
-        "galat": []
+        "galat": [],
+        "dilihat": {
+          "judul": "The Indonesian Fire Disaster You Probably Missed. Who Lit the Match?",
+          "deskripsi": "After watching, you can explain why drained peat burns, what is proven and unproven about the 2026 fires, and where enforcement has fallen short.\n\n0:00 Under the smoke\n0:49 Two numbers\n1:10 The soil that burns\n2:00 Who breathes it\n2:21 Why fire\n2:55 Whose land burned\n4:00 The counterpoint\n4:51 The cases\n5:34 Do penalties land?\n6:10 What courts have found\n7:46 Back to the sponge\n\nSources:\nhttp://mongabay.co.id/2026/11/26/jejak-karhutla-pada-area-konsesi-perusahaan-di-jambi/\nhttps://agris.fao.org/search/en/records/690c9d6ee36ca6284360dd89\nhttps://earthobservatory.nasa.gov/features/IndonesianFires/page2.php\nhttps://katadata.co.id/amp/berita/nasional/650a5a1f81b74/ma-ubah-vonis-surya-darmadi-jadi-16-tahun-batal-bayar-denda-rp-41-9-t\nhttps://mongabay.co.id/2021/07/07/sulitnya-eksekusi-kasus-karhutla-walau-sudah-berkekuatan-hukum-tetap-mengapa/\nhttps://news.detik.com/berita/d-3051823/uu-lingkungan-hidup-izinkan-masyarakat-bakar-lahan\nhttps://news.detik.com/berita/d-8767357/bareskrim-tetapkan-pt-mas-tersangka-korporasi-karhutla-di-riau\nhttps://news.mongabay.com/2023/02/indonesian-palm-oil-billionaire-gets-15-years-for-corruption/\nhttps://news.mongabay.com/2026/11/indonesia-fires-test-palm-oil-certification-scheme-as-ngos-question-rspo-accountability/\nhttps://openknowledge.worldbank.org/entities/publication/391e19f4-18f7-56c2-8c28-bb89cc9e7d6f\nhttps://regional.kompas.com/read/2026/09/04/193204678/kementerian-lh-klaim-sudah-segel-30-perusahaan-sawit-hingga-tebu-terkait\nhttps://www.palmoilmagazine.com/rspo/2026/11/03/rspo-says-most-indonesia-land-fires-in-2026-occurred-outside-palm-oil-concessions/\nhttps://www.suara.com/news/2026/10/02/070500/luas-karhutla-indonesia-capai-202-ribu-hektare-hingga-juli-2026\nhttps://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/thousands-of-hectares-burnt-on-land-owned-by-listed-indonesian-firms-study-shows"
+        }
       },
       "facebook": {
         "sumber": "alat",
@@ -151,7 +155,7 @@
           "sampul": "2026-11-27T11:08:40.399Z"
         },
         "url": "https://www.facebook.com/reel/1153223430897934/",
-        "publishAt": "2026-11-29T03:00:00.000Z",
+        "publishAt": "2026-12-02T03:00:00.000Z",
         "diunggah": "2026-11-27T11:08:31.490Z",
         "galat": []
       }
@@ -169,7 +173,11 @@
           "subtitle-id": "2026-11-27T11:06:05.798Z",
           "thumbnail": "2026-11-27T11:06:48.964Z"
         },
-        "galat": []
+        "galat": [],
+        "dilihat": {
+          "judul": "This soil should not burn. Then someone drains it.",
+          "deskripsi": "This soil should not burn. Then someone drains it.\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n#Indonesiafires #karhutla #haze #Shorts"
+        }
       },
       "facebook": {
         "sumber": "alat",
@@ -180,7 +188,7 @@
           "sampul": "2026-11-27T11:08:55.703Z"
         },
         "url": "https://www.facebook.com/reel/1857477501932463/",
-        "publishAt": "2026-11-29T05:00:00.000Z",
+        "publishAt": "2026-12-03T05:00:00.000Z",
         "diunggah": "2026-11-27T11:08:49.102Z",
         "galat": []
       }
@@ -198,7 +206,11 @@
           "subtitle-id": "2026-11-27T11:06:13.514Z",
           "thumbnail": "2026-11-27T11:06:53.091Z"
         },
-        "galat": []
+        "galat": [],
+        "dilihat": {
+          "judul": "Courts ruled. Did anyone pay?",
+          "deskripsi": "Courts ruled. Did anyone pay?\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n#Indonesiafires #karhutla #haze #Shorts"
+        }
       },
       "facebook": {
         "sumber": "alat",
@@ -209,7 +221,7 @@
           "sampul": "2026-11-27T11:09:13.719Z"
         },
         "url": "https://www.facebook.com/reel/1164768566467103/",
-        "publishAt": "2026-11-29T09:00:00.000Z",
+        "publishAt": "2026-12-04T09:00:00.000Z",
         "diunggah": "2026-11-27T11:09:06.195Z",
         "galat": []
       }

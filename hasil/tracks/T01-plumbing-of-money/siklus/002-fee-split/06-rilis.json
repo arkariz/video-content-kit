@@ -13,7 +13,7 @@
   "items": [
     {
       "nama": "master",
-      "jadwal": "2026-11-28T10:00",
+      "jadwal": "2026-12-02T10:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -31,7 +31,7 @@
       },
       "file": "produksi/render/T01/002/Master16x9-en.mp4",
       "thumbnail": "produksi/render/T01/002/Thumbnail-A.png",
-      "judul": "You Pay $100. Here's Who Takes a Cut.",
+      "judul": "You Pay $100. Here's Who Takes a Cut",
       "deskripsi": "After watching, you know where $2.75 of a $100 card purchase goes in one worked US example, who takes it, and who ends up paying.\n\n0:00 The tap\n0:29 The toll road\n1:45 Gate one: your bank\n3:26 Gate two: the network\n3:50 Gate three: the shop's side\n5:31 Who helps pay\n6:31 Another road\n7:34 Where it all went\n\nOne worked US example; fees differ by card, shop and country. This video explains how the fees work and is not financial advice.\nNarration, music and sound effects are AI-generated. Visuals are original animation. Not affiliated with Visa, Mastercard or any bank.\n\nSources:\nhttps://fool.com/money/research/average-credit-card-processing-fees-costs-america\nhttps://nav.com/blog/credit-card-processing-fees\nhttps://nilsonreport.com/articles/mastercard-and-visa-cards-in-the-us-2025/\nhttps://staxpayments.com/blog/visa-interchange-rates/\nhttps://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf\nhttps://wellsfargo.com/merchantpassthroughfees\nhttps://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm\nhttps://www.helcim.com/visa-usa-interchange-rates/\nhttps://www.mymoney.gov/node/82113\nhttps://www.nerdwallet.com/article/small-business/stripe-fees\nhttps://www.nerdwallet.com/blog/credit-cards/matty-simmons-interview\nhttps://www.spark.money/glossary/assessment-fee\n\n#CreditCards #Payments #HowMoneyWorks",
       "tag": [
         "credit card fees",
@@ -54,7 +54,7 @@
     },
     {
       "nama": "B1-100-dollar-split",
-      "jadwal": "2026-11-28T12:00",
+      "jadwal": "2026-12-03T12:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -85,7 +85,7 @@
     },
     {
       "nama": "B2-cash-pays-too",
-      "jadwal": "2026-11-28T15:00",
+      "jadwal": "2026-12-04T15:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -115,54 +115,71 @@
       "komentar": "Do shops near you give a discount for cash? Full story in the long video on this channel."
     }
   ],
-  "persetujuan": null,
+  "persetujuan": {
+    "sidik": "d84d39f4300e91af0be15382dd73cba53cd2a0c8fb27f1a4ee025518d704447a",
+    "waktu": "2026-11-27T13:29:46.865Z",
+    "via": "dashboard",
+    "qa_manual": "Keputusan: DILEWATI atas keputusan kreator 2026-11-27 (bukan LULUS)."
+  },
   "hasil": {
     "master": {
       "facebook": {
         "sumber": "manual",
         "url": "https://www.facebook.com/reel/2371631973657530/",
-        "publishAt": "2026-11-28T03:00:00.000Z",
+        "publishAt": "2026-12-02T03:00:00.000Z",
         "dicatat": "2026-11-27T09:07:08.055Z"
       },
       "youtube": {
         "sumber": "manual",
         "url": "https://www.youtube.com/watch?v=0Mg_mmMzF5g",
         "videoId": "0Mg_mmMzF5g",
-        "publishAt": "2026-11-28T03:00:00Z",
+        "publishAt": "2026-12-02T03:00:00Z",
         "privasi": "private",
-        "dicatat": "2026-11-27T09:07:08.056Z"
+        "dicatat": "2026-11-27T09:07:08.056Z",
+        "dilihat": {
+          "judul": "You Pay $100. Here's Who Takes a Cut",
+          "deskripsi": "After watching, you know where $2.75 of a $100 card purchase goes in one worked US example, who takes it, and who ends up paying.\n\n0:00 The tap\n0:29 The toll road\n1:45 Gate one: your bank\n3:26 Gate two: the network\n3:50 Gate three: the shop's side\n5:31 Who helps pay\n6:31 Another road\n7:34 Where it all went\n\nOne worked US example; fees differ by card, shop and country. This video explains how the fees work and is not financial advice.\nNarration, music and sound effects are AI-generated. Visuals are original animation. Not affiliated with Visa, Mastercard or any bank.\n\nSources:\nhttps://fool.com/money/research/average-credit-card-processing-fees-costs-america\nhttps://nav.com/blog/credit-card-processing-fees\nhttps://nilsonreport.com/articles/mastercard-and-visa-cards-in-the-us-2025/\nhttps://staxpayments.com/blog/visa-interchange-rates/\nhttps://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-reimbursement-fees.pdf\nhttps://wellsfargo.com/merchantpassthroughfees\nhttps://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm\nhttps://www.helcim.com/visa-usa-interchange-rates/\nhttps://www.mymoney.gov/node/82113\nhttps://www.nerdwallet.com/article/small-business/stripe-fees\nhttps://www.nerdwallet.com/blog/credit-cards/matty-simmons-interview\nhttps://www.spark.money/glossary/assessment-fee\n\n#CreditCards #Payments #HowMoneyWorks"
+        }
       }
     },
     "B1-100-dollar-split": {
       "facebook": {
         "sumber": "manual",
         "url": "https://www.facebook.com/reel/1705005934367306/",
-        "publishAt": "2026-11-28T05:00:00.000Z",
+        "publishAt": "2026-12-03T05:00:00.000Z",
         "dicatat": "2026-11-27T09:07:08.055Z"
       },
       "youtube": {
         "sumber": "manual",
         "url": "https://www.youtube.com/watch?v=OQJxkEL8K58",
         "videoId": "OQJxkEL8K58",
-        "publishAt": "2026-11-28T05:00:00Z",
+        "publishAt": "2026-12-03T05:00:00Z",
         "privasi": "private",
-        "dicatat": "2026-11-27T09:07:08.056Z"
+        "dicatat": "2026-11-27T09:07:08.056Z",
+        "dilihat": {
+          "judul": "You pay $100. The shop gets $97.25.",
+          "deskripsi": "In one worked US example of a $100 card payment, $2.20 goes to your bank, 16 cents to Visa, and 39 cents to the card machine company and the shop's bank.\n\nFull video on the channel.\nNarration and animation made with AI tools.\n\n#CreditCards #Payments #MoneyExplained #Shorts"
+        }
       }
     },
     "B2-cash-pays-too": {
       "facebook": {
         "sumber": "manual",
         "url": "https://www.facebook.com/reel/4575236526069035/",
-        "publishAt": "2026-11-28T08:00:00.000Z",
+        "publishAt": "2026-12-04T08:00:00.000Z",
         "dicatat": "2026-11-27T09:07:08.056Z"
       },
       "youtube": {
         "sumber": "manual",
         "url": "https://www.youtube.com/watch?v=FfuEICU-y2o",
         "videoId": "FfuEICU-y2o",
-        "publishAt": "2026-11-28T08:00:00Z",
+        "publishAt": "2026-12-04T08:00:00Z",
         "privasi": "private",
-        "dicatat": "2026-11-27T09:07:08.056Z"
+        "dicatat": "2026-11-27T09:07:08.056Z",
+        "dilihat": {
+          "judul": "The man paying cash behind you helps pay the card toll.",
+          "deskripsi": "Shops often don't charge less for cash, so the card fee gets built into the price on the tag. Cash payers cover part of it and get no points back.\n\nFull video on the channel.\nNarration and animation made with AI tools.\n\n#Cash #CreditCards #MoneyExplained #Shorts"
+        }
       }
     }
   },
