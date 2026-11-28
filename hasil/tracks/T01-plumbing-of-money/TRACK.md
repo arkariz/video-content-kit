@@ -153,3 +153,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator memilih judul dan thumbnail baru 004: master opsi 1 ("GTA 6: Where Your $80 Actually Goes"), Short S1 A, Short S2 A. Penggantian di platform oleh kreator, belum dilakukan.
 - 2026-11-27: Kreator memilih konsep identitas "bawah tanah" untuk channel. Foto profil dan banner dibuat (channel/: 3 profil, 2 banner). Belum dipilih; belum diunggah.
 - 2026-11-28: Cek analitik (analitik/youtube-2026-11-28.md). 001 long-form CTR 4,2% (95 impresi), retensi 50,9% dari 6 view; Shorts belum punya data retensi. Jadwal dari 06-rilis.json: 002 2-4 Des, 005 29 Nov-1 Des.
+- 2026-11-28: Angka Studio ditempel kreator (analitik/studio-2026-11-28.md). Sementara: Short A1 tetap menonton 37,3% dan rata-rata ditonton 38,9% (zona gagal), CTR long-form 001 4,21%; Short lain dan long-form masih bersampel sangat kecil.

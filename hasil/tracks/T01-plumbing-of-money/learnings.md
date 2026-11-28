@@ -40,3 +40,7 @@ Diisi oleh langkah analitik dan hasil validasi track ini. Setiap siklus baru di 
 8. **Jangan menambah konsep demi durasi.** Tambah contoh, perlambat, atau ulangi lewat analogi. Bila tetap di bawah 8:00, kreator memutuskan antara video lebih pendek atau topik lebih luas.
 
 **Cara mengukur:** retensi di titik pengenalan istilah, average percentage viewed dibanding ambang V2 (30%), komentar yang minta penjelasan ulang, dan penilaian kreator sebelum publish (bisakah orang awam menjelaskan ulang tiga tahap setelah menonton?).
+
+### Dari angka Studio 001 (2026-11-28)
+
+- Dugaan, 1 video dengan sampel berarti: Short A1 tetap menonton 37,3% dan rata-rata ditonton 38,9% (245 engaged view). Uji pada Short berikutnya: kalimat pertama berdiri sendiri dan jawaban janji hook paling lambat detik 6; ukur tetap menonton. Aturan yang sama sedang diuji di T02.
