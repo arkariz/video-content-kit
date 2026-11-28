@@ -299,16 +299,16 @@
     "siluet": 4,
     "kompleksitas": 4,
     "hierarki": 4,
-    "material": 3,
+    "material": 4,
     "cahaya": 4,
     "lingkungan": 4,
     "komposisi": 4,
-    "kedalaman": 3,
+    "kedalaman": 4,
     "akurasi": 4,
     "polesan": 4
    },
-   "catatan": "Tabel tarif masih datar: material kertas dan rol minim, kedalaman tipis.",
-   "lulus": false
+   "catatan": "Digambar ulang: gulungan bermaterial di meja, baris tarif berisi kartu, toko, cara bayar.",
+   "lulus": true
   },
   "s16": {
    "still": [
@@ -483,17 +483,17 @@
    "skor": {
     "siluet": 4,
     "kompleksitas": 4,
-    "hierarki": 3,
-    "material": 3,
+    "hierarki": 4,
+    "material": 4,
     "cahaya": 4,
     "lingkungan": 4,
     "komposisi": 4,
     "kedalaman": 4,
     "akurasi": 4,
-    "polesan": 3
+    "polesan": 4
    },
-   "catatan": "Gerobak sekecil titik; ruas jalan berulang rata, terasa generik.",
-   "lulus": false
+   "catatan": "Digambar ulang: empat ruas jalan perspektif dengan bukit dan kota; bank di tepi sedikit tertutup caption.",
+   "lulus": true
   },
   "s25": {
    "still": [
@@ -648,16 +648,16 @@
     "siluet": 4,
     "kompleksitas": 4,
     "hierarki": 4,
-    "material": 3,
+    "material": 4,
     "cahaya": 4,
     "lingkungan": 4,
     "komposisi": 4,
-    "kedalaman": 3,
+    "kedalaman": 4,
     "akurasi": 4,
     "polesan": 4
    },
-   "catatan": "Grid 100 titik terbaca, tetapi panel datar.",
-   "lulus": false
+   "catatan": "Digambar ulang: dua papan kayu berisi 100 koin timbul.",
+   "lulus": true
   },
   "s33": {
    "still": [
@@ -898,16 +898,16 @@
     "siluet": 4,
     "kompleksitas": 4,
     "hierarki": 4,
-    "material": 3,
+    "material": 4,
     "cahaya": 4,
     "lingkungan": 4,
     "komposisi": 4,
     "kedalaman": 4,
     "akurasi": 4,
-    "polesan": 3
+    "polesan": 4
    },
-   "catatan": "Lembar rupiah dan irisan 0,7% masih berupa bidang datar; hubungan irisan kurang jelas.",
-   "lulus": false
+   "catatan": "Digambar ulang: lembar rekaan bermotif, gunting, irisan terpisah dengan koin.",
+   "lulus": true
   },
   "s45": {
    "still": [
@@ -938,16 +938,16 @@
     "siluet": 4,
     "kompleksitas": 4,
     "hierarki": 4,
-    "material": 3,
+    "material": 4,
     "cahaya": 4,
     "lingkungan": 4,
     "komposisi": 4,
     "kedalaman": 4,
     "akurasi": 4,
-    "polesan": 3
+    "polesan": 4
    },
-   "catatan": "Dua dunia dipisah garis; bentuk latar sederhana.",
-   "lulus": false
+   "catatan": "Digambar ulang: kota senja dan pulau dipisah jahitan peta.",
+   "lulus": true
   },
   "s47": {
    "still": [
@@ -1016,5 +1016,5 @@
  "kreator": {
   "disetujui": false
  },
- "dirender": "2026-11-28T06:25:49.586450+00:00"
+ "dirender": "2026-11-28T06:30:36.836401+00:00"
 }

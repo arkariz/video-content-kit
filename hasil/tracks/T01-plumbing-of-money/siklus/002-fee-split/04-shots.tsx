@@ -1,9 +1,11 @@
 // T01-002 fee split: R3 2.5D (produksi ulang 2026-11-28, gaya siklus 005). Aset di parts/. Versi 3D lama ada di riwayat git.
 import { defineShots, shot } from "@r3";
 import { TapShot, SplitCoinsShot, NoonShot, BeepShot, LeapShot, TwoStreamShot, SmallSlicesShot, MapIntroShot, VaultFaceShot, RoadDrawShot, EmptyTillShot, LaterShot, GridCartShot, GatesShot, WatchTowerShot, EightyShot, PriceListShot, BanksHandsShot, FromCartShot, LessShot, StickerShot, MapDotShot, ServerIntroShot, NameBoardShot, FourHandsShot, GuessShot, TruthShot } from "./parts/s1";
-import { YardShot, DepartShot, IntoVaultShot, InterchangeShot, ThreeStacksShot, ScrollShot, TableShot, BasicScaleShot, ShoesTollShot, PremiumScaleShot, CompareStacksShot, StandardRowShot, RubHandsShot, InsideVaultShot, PaidCalendarShot, DryPipeShot, FlowPipeShot, WalletFightShot, PerksShot, HighBarShot, WheelShot, RollHomeShot, KeepSmallShot, TraceShot, FromShopCartShot, AtTowerShot, TollBoxShot, MergeCoinsShot, ZoomOutShot, NationShot } from "./parts/s2";
-import { CartArriveShot, ClosedDoorsShot, OneEnvelopeShot, BigTagShot, StackOnTagShot, SingleBillShot, TwoFlowsShot, LeftoverShot, CurtainShot, TugShot, BasicBackShot, ShrinkBankShot, TwoPlatesShot, SockSlipShot, SockCoinShot, ReceivedScaleShot, BankHeavierShot, PocketShot, SeesawShot, TwoGridsShot, YardArriveShot, WideTallyShot, PairsShot, DuskMapShot, QueueShot, SamePriceShot, TollInsideShot, CashPayShot, EmptyRoadShot, ShadowCoinShot, Study2010Shot, HouseTransferShot, HousesRowShot, LowerToHigherShot } from "./parts/s3";
-import { RepairShot, SealShot, TidyTillShot, LowGateShot, SeaFlightShot, WarungQrShot, ManyPhonesShot, CentralGateShot, ShopPaysShot, NoFeeShot, MicroLimitShot, OverLimitShot, MillionSliceShot, IslandCartShot, SideBySideShot, TwoRoadsShot, SmallRewardShot, NightAllShot, RewardBackShot, TowerServerShot, AlreadyInShot, SidePathShot, OldTableShot, PrScriptShot, ThumbA, ThumbB, ThumbC, ThumbS1, ThumbS2 } from "./parts/s4";
+import { YardShot, DepartShot, IntoVaultShot, InterchangeShot, ThreeStacksShot, ScrollShot, BasicScaleShot, ShoesTollShot, PremiumScaleShot, CompareStacksShot, StandardRowShot, RubHandsShot, InsideVaultShot, PaidCalendarShot, DryPipeShot, FlowPipeShot, WalletFightShot, PerksShot, HighBarShot, WheelShot, RollHomeShot, KeepSmallShot, TraceShot, FromShopCartShot, AtTowerShot, TollBoxShot, MergeCoinsShot, ZoomOutShot } from "./parts/s2";
+import { CartArriveShot, ClosedDoorsShot, OneEnvelopeShot, BigTagShot, StackOnTagShot, SingleBillShot, TwoFlowsShot, LeftoverShot, CurtainShot, TugShot, BasicBackShot, ShrinkBankShot, TwoPlatesShot, SockSlipShot, SockCoinShot, ReceivedScaleShot, BankHeavierShot, PocketShot, SeesawShot, YardArriveShot, WideTallyShot, PairsShot, DuskMapShot, QueueShot, SamePriceShot, TollInsideShot, CashPayShot, EmptyRoadShot, ShadowCoinShot, Study2010Shot, HouseTransferShot, HousesRowShot, LowerToHigherShot } from "./parts/s3";
+import { RepairShot, SealShot, TidyTillShot, LowGateShot, SeaFlightShot, WarungQrShot, ManyPhonesShot, CentralGateShot, ShopPaysShot, NoFeeShot, MicroLimitShot, OverLimitShot, IslandCartShot, SideBySideShot, SmallRewardShot, NightAllShot, RewardBackShot, TowerServerShot, AlreadyInShot, SidePathShot, OldTableShot, PrScriptShot, ThumbA, ThumbB, ThumbC, ThumbS1, ThumbS2 } from "./parts/s4";
+
+import { TableShot2, NationShot2, TwoGridsShot2, MillionSliceShot2, TwoRoadsShot2 } from "./parts/ulang";
 
 export default defineShots({
   s01: [shot(TapShot, { labels: {"$100": [700, 590], "4 companies": [960, 190]}, drift: false }), shot(SplitCoinsShot, { labels: {"$97.25": [820, 330]}, drift: false })],
@@ -20,7 +22,7 @@ export default defineShots({
   s12: [shot(FourHandsShot, { drift: false }), shot(GuessShot, { labels: {"GUESS": [600, 200]}, drift: false }), shot(TruthShot, { labels: {"SMALLEST": [290, 220], "BIGGEST": [1500, 170]}, drift: false })],
   s13: [shot(YardShot, { drift: false }), shot(DepartShot, { labels: {"$97.80": [1250, 330]}, drift: false }), shot(IntoVaultShot, { labels: {"$2.20": [1150, 110]}, drift: false })],
   s14: [shot(InterchangeShot, { labels: {"INTERCHANGE": [960, 120]}, drift: false }), shot(ThreeStacksShot, { labels: {"LARGEST": [680, 230, "left"]}, drift: false })],
-  s15: [shot(ScrollShot, { labels: {"PUBLIC": [560, 150]}, drift: false }), shot(TableShot, { labels: {"CARD": [480, 190], "SHOP": [960, 190], "TAPPED": [1440, 190]}, drift: false })],
+  s15: [shot(ScrollShot, { labels: {"PUBLIC": [560, 150]}, drift: false }), shot(TableShot2, { labels: {"CARD": [480, 190], "SHOP": [960, 190], "TAPPED": [1440, 190]}, drift: false })],
   s16: [shot(BasicScaleShot, { labels: {"1.51%": [1070, 360], "+10¢": [1210, 490]}, drift: false }), shot(ShoesTollShot, { labels: {"$1.61": [1420, 450]}, drift: false })],
   s17: [shot(PremiumScaleShot, { labels: {"2.10%": [1070, 360], "+10¢": [1220, 490]}, drift: false }), shot(CompareStacksShot, { labels: {"$1.61": [620, 230], "$2.20": [1300, 200]}, drift: false }), shot(StandardRowShot, { labels: {"STANDARD": [1300, 200]}, drift: false })],
   s18: [shot(RubHandsShot, { drift: false }), shot(InsideVaultShot, { drift: false })],
@@ -29,7 +31,7 @@ export default defineShots({
   s21: [shot(WheelShot, { labels: {"1.5% BACK": [1340, 260]}, drift: false }), shot(RollHomeShot, { labels: {"$1.50": [1300, 330]}, drift: false }), shot(KeepSmallShot, { labels: {"70¢": [1120, 440]}, drift: false })],
   s22: [shot(TraceShot, { drift: false }), shot(FromShopCartShot, { labels: {"SHOP'S CART": [760, 330]}, drift: false })],
   s23: [shot(AtTowerShot, { drift: false }), shot(TollBoxShot, { labels: {"0.14%": [540, 230], "+2¢": [760, 380]}, drift: false }), shot(MergeCoinsShot, { labels: {"16¢": [960, 290]}, drift: false })],
-  s24: [shot(ZoomOutShot, { labels: {"16¢": [960, 200]}, drift: false }), shot(NationShot, { labels: {"~$10 TRILLION": [960, 230]}, drift: false })],
+  s24: [shot(ZoomOutShot, { labels: {"16¢": [960, 200]}, drift: false }), shot(NationShot2, { labels: {"~$10 TRILLION": [960, 230]}, drift: false })],
   s25: [shot(CartArriveShot, { drift: false }), shot(ClosedDoorsShot, { drift: false }), shot(OneEnvelopeShot, { labels: {"FLAT PRICE": [900, 320]}, drift: false })],
   s26: [shot(BigTagShot, { labels: {"2.7%": [1180, 150], "+5¢": [1500, 780, "up"]}, drift: false }), shot(StackOnTagShot, { labels: {"$2.75": [1300, 220]}, drift: false }), shot(SingleBillShot, { drift: false })],
   s27: [shot(TwoFlowsShot, { labels: {"$2.20": [340, 230], "16¢": [1600, 190]}, drift: false })],
@@ -37,7 +39,7 @@ export default defineShots({
   s29: [shot(BasicBackShot, { drift: false }), shot(ShrinkBankShot, { labels: {"$2.75": [600, 230]}, drift: false }), shot(TwoPlatesShot, { labels: {"39¢": [560, 150], "98¢": [1360, 150]}, drift: false })],
   s30: [shot(SockSlipShot, { drift: false }), shot(SockCoinShot, { labels: {"$5": [560, 320], "10¢": [1320, 260]}, drift: false })],
   s31: [shot(ReceivedScaleShot, { labels: {"18.5¢": [500, 200]}, drift: false }), shot(BankHeavierShot, { labels: {"20.5¢": [1420, 200]}, drift: false }), shot(PocketShot, { labels: {"−5¢": [1080, 330]}, drift: false })],
-  s32: [shot(SeesawShot, { drift: false }), shot(TwoGridsShot, { labels: {"3.7%": [1380, 200]}, drift: false })],
+  s32: [shot(SeesawShot, { drift: false }), shot(TwoGridsShot2, { labels: {"3.7%": [1380, 200]}, drift: false })],
   s33: [shot(YardArriveShot, { drift: false }), shot(WideTallyShot, { labels: {"$100": [360, 180], "$97.25": [1560, 180]}, drift: false }), shot(PairsShot, { labels: {"27 PAIRS": [1450, 330]}, drift: false })],
   s34: [shot(DuskMapShot, { drift: false }), shot(QueueShot, { labels: {"PAYS CASH": [1480, 330]}, drift: false })],
   s35: [shot(SamePriceShot, { labels: {"SAME PRICE": [960, 140]}, drift: false }), shot(TollInsideShot, { labels: {"TOLL INSIDE": [960, 230]}, drift: false })],
@@ -49,9 +51,9 @@ export default defineShots({
   s41: [shot(WarungQrShot, { labels: {"QRIS": [1300, 330]}, drift: false }), shot(ManyPhonesShot, { labels: {"ONE CODE": [960, 230]}, drift: false })],
   s42: [shot(CentralGateShot, { labels: {"BANK INDONESIA": [720, 150]}, drift: false }), shot(ShopPaysShot, { labels: {"SHOP PAYS": [620, 260]}, drift: false })],
   s43: [shot(NoFeeShot, { labels: {"0%": [730, 300], "≤Rp100K": [1500, 260]}, drift: false }), shot(MicroLimitShot, { labels: {"≤Rp500K": [1600, 330]}, drift: false })],
-  s44: [shot(OverLimitShot, { labels: {"0.7%": [1520, 300]}, drift: false }), shot(MillionSliceShot, { labels: {"Rp7,000": [1560, 170]}, drift: false })],
+  s44: [shot(OverLimitShot, { labels: {"0.7%": [1520, 300]}, drift: false }), shot(MillionSliceShot2, { labels: {"Rp7,000": [1560, 170]}, drift: false })],
   s45: [shot(IslandCartShot, { labels: {"70¢": [1330, 500]}, drift: false }), shot(SideBySideShot, { labels: {"$2.75": [1370, 200]}, drift: false })],
-  s46: [shot(TwoRoadsShot, { drift: false }), shot(SmallRewardShot, { labels: {"CENTRAL BANK": [1180, 150]}, drift: false })],
+  s46: [shot(TwoRoadsShot2, { drift: false }), shot(SmallRewardShot, { labels: {"CENTRAL BANK": [1180, 150]}, drift: false })],
   s47: [shot(NightAllShot, { labels: {"$2.75": [960, 230]}, drift: false }), shot(RewardBackShot, { labels: {"$2.20": [900, 200]}, drift: false }), shot(TowerServerShot, { labels: {"16¢": [840, 250], "39¢": [1360, 250]}, drift: false })],
   s48: [shot(AlreadyInShot, { labels: {"ALREADY INSIDE": [960, 160]}, drift: false }), shot(SidePathShot, { labels: {"CASH DISCOUNT": [960, 230]}, drift: false })],
   s49: [shot(OldTableShot, { labels: {"NEXT": [480, 110]}, drift: false }), shot(PrScriptShot, { labels: {"INVENTED": [1560, 260]}, drift: false })],
