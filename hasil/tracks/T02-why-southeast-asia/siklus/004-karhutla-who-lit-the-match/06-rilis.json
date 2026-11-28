@@ -53,7 +53,7 @@
     },
     {
       "nama": "B1-why-peat-burns",
-      "jadwal": "2026-11-29T12:00",
+      "jadwal": "2026-12-03T12:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -71,7 +71,7 @@
       },
       "file": "produksi/render/T02/004/Short9x16-B1-why-peat-burns-en.mp4",
       "thumbnail": "produksi/render/T02/004/Thumbnail-Short-B1-why-peat-burns.png",
-      "judul": "This soil should not burn. Then someone drains it.",
+      "judul": "In Indonesia, Fire Can Burn Underground for Months",
       "deskripsi": "This soil should not burn. Then someone drains it.\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n#Indonesiafires #karhutla #haze #Shorts",
       "tag": [
         "Indonesia fires",
@@ -121,7 +121,7 @@
     }
   ],
   "persetujuan": {
-    "sidik": "a05286b43392fba1409b7c0f9bbda8b817b7f866bc8c98933e89593e9bd32044",
+    "sidik": "cd4f7033f9b98e38a34f4bf054bb18ed1e50c3dff3eae09ea553bef802717235",
     "waktu": "2026-11-27T11:04:36.550Z",
     "via": "dashboard",
     "qa_manual": "Status: LULUS (atas keputusan kreator, 2026-11-27)"
@@ -166,7 +166,7 @@
         "videoId": "tQ4noeTA51M",
         "url": "https://www.youtube.com/watch?v=tQ4noeTA51M",
         "privasi": "private",
-        "publishAt": "2026-11-29T05:00:00.000Z",
+        "publishAt": "2026-12-03T05:00:00Z",
         "diunggah": "2026-11-27T11:06:01.619Z",
         "selesai": {
           "subtitle-en": "2026-11-27T11:06:03.749Z",
@@ -175,7 +175,7 @@
         },
         "galat": [],
         "dilihat": {
-          "judul": "This soil should not burn. Then someone drains it.",
+          "judul": "In Indonesia, Fire Can Burn Underground for Months",
           "deskripsi": "This soil should not burn. Then someone drains it.\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n#Indonesiafires #karhutla #haze #Shorts"
         }
       },

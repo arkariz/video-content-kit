@@ -72,7 +72,7 @@
       "file": "produksi/render/T02/003/Short9x16-B1-moved-9-million-grew-95-en.mp4",
       "thumbnail": "produksi/render/T02/003/Thumbnail-Short-B1-moved-9-million-grew-95.png",
       "judul": "You'd think moving nine million people would empty Java. #java  #indonesia  #populationcensus",
-      "deskripsi": "You'd think moving nine million people would empty Java.\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n#Java #Indonesia #mostpopulatedisland #Shorts",
+      "deskripsi": "#java  #indonesia  #populationcensus",
       "tag": [
         "Java",
         "Indonesia",
@@ -121,7 +121,7 @@
     }
   ],
   "persetujuan": {
-    "sidik": "2b186d0c41b58e1019b462e120950269d0b2aecc5ff890a98ea2e4247e5518e1",
+    "sidik": "b1c09dbc2b04acb6ebdad09d09493370b134186501f83bc5b38b37a81227beb3",
     "waktu": "2026-11-27T10:04:50.446Z",
     "via": "dashboard",
     "qa_manual": "belum ada 05-qa.md"
@@ -132,7 +132,7 @@
         "sumber": "manual",
         "url": "https://www.youtube.com/watch?v=6OSnOogjAkg",
         "videoId": "6OSnOogjAkg",
-        "publishAt": "2026-11-28T05:00:00.000Z",
+        "publishAt": "2026-11-28T05:00:00Z",
         "privasi": "private",
         "dicatat": "2026-11-27T09:07:08.105Z",
         "galat": [],
