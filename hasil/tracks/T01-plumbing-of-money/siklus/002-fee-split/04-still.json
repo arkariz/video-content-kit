@@ -1,1022 +1,3793 @@
 {
- "_catatan": "Gate still manual (PIPELINE.md Mesin R3 10) untuk naskah tanpa visual_spec v2; still.mjs tidak berlaku. Skor = perkiraan agent yang juga menggambar, dilihat dari lembar pratinjau yang diperkecil (sekitar 600 px per still); close-up L1 dan detail lingkungan terpisah tidak dibuat; uji abu-abu hanya pada 6 still. Tidak ada skor 5.",
- "scenes": {
-  "s01": {
-   "still": [
-    "produksi/render/T01/002/stills/s01-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s01-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s01-Short9x16-shot1.png",
-    "produksi/render/T01/002/stills/s01-Short9x16-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
+  "_catatan": "Gate still manual (naskah tanpa visual_spec v2). Putaran sebelum 2026-11-28 sore tidak tercatat (still tidak diarsip). Skor = perkiraan agent.",
+  "scenes": {
+    "s01": {
+      "still": [
+        "produksi/render/T01/002/stills/s01-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s01-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s01-Short9x16-shot1.png",
+        "produksi/render/T01/002/stills/s01-Short9x16-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s01-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s01-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s01-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s01-Short9x16-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s02": {
+      "still": [
+        "produksi/render/T01/002/stills/s02-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s02-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s02-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s02-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s03": {
+      "still": [
+        "produksi/render/T01/002/stills/s03-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s03-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s03-Master16x9-shot3.png",
+        "produksi/render/T01/002/stills/s03-Short9x16-shot1.png",
+        "produksi/render/T01/002/stills/s03-Short9x16-shot2.png",
+        "produksi/render/T01/002/stills/s03-Short9x16-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s03-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s03-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s03-Master16x9-shot3.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s03-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s03-Short9x16-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s03-Short9x16-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s04": {
+      "still": [
+        "produksi/render/T01/002/stills/s04-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s04-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s04-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s04-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s05": {
+      "still": [
+        "produksi/render/T01/002/stills/s05-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s05-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s05-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s05-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s05-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s05-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s06": {
+      "still": [
+        "produksi/render/T01/002/stills/s06-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s06-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s06-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s06-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s07": {
+      "still": [
+        "produksi/render/T01/002/stills/s07-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s07-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s07-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s07-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s08": {
+      "still": [
+        "produksi/render/T01/002/stills/s08-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s08-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s08-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s08-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s09": {
+      "still": [
+        "produksi/render/T01/002/stills/s09-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s09-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s09-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s09-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s10": {
+      "still": [
+        "produksi/render/T01/002/stills/s10-Master16x9-shot1.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s10-Master16x9-shot1.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s11": {
+      "still": [
+        "produksi/render/T01/002/stills/s11-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s11-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s11-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s11-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s11-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s11-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s12": {
+      "still": [
+        "produksi/render/T01/002/stills/s12-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s12-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s12-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s12-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s12-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s12-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s13": {
+      "still": [
+        "produksi/render/T01/002/stills/s13-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s13-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s13-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s13-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s13-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s13-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s14": {
+      "still": [
+        "produksi/render/T01/002/stills/s14-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s14-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s14-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s14-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s15": {
+      "still": [
+        "produksi/render/T01/002/stills/s15-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s15-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s15-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s15-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s16": {
+      "still": [
+        "produksi/render/T01/002/stills/s16-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s16-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s16-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s16-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s17": {
+      "still": [
+        "produksi/render/T01/002/stills/s17-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s17-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s17-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s17-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s17-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s17-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s18": {
+      "still": [
+        "produksi/render/T01/002/stills/s18-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s18-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s18-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s18-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s19": {
+      "still": [
+        "produksi/render/T01/002/stills/s19-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s19-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s19-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s19-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s19-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s19-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s20": {
+      "still": [
+        "produksi/render/T01/002/stills/s20-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s20-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s20-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s20-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s20-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s20-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s21": {
+      "still": [
+        "produksi/render/T01/002/stills/s21-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s21-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s21-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s21-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s21-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s21-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s22": {
+      "still": [
+        "produksi/render/T01/002/stills/s22-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s22-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s22-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s22-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s23": {
+      "still": [
+        "produksi/render/T01/002/stills/s23-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s23-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s23-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s23-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s23-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s23-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s24": {
+      "still": [
+        "produksi/render/T01/002/stills/s24-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s24-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s24-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s24-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s25": {
+      "still": [
+        "produksi/render/T01/002/stills/s25-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s25-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s25-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s25-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s25-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s25-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s26": {
+      "still": [
+        "produksi/render/T01/002/stills/s26-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s26-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s26-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s26-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s26-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s26-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s27": {
+      "still": [
+        "produksi/render/T01/002/stills/s27-Master16x9-shot1.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s27-Master16x9-shot1.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s28": {
+      "still": [
+        "produksi/render/T01/002/stills/s28-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s28-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s28-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s28-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s28-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s28-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s29": {
+      "still": [
+        "produksi/render/T01/002/stills/s29-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s29-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s29-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s29-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s29-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s29-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s30": {
+      "still": [
+        "produksi/render/T01/002/stills/s30-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s30-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s30-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s30-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s31": {
+      "still": [
+        "produksi/render/T01/002/stills/s31-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s31-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s31-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "ruang server dan brankas terasa latar berulang",
+          "penyebab": "rak identik tanpa muka samping atau tengara",
+          "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s31-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s31-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s31-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "ruang server dan brankas terasa latar berulang",
+              "penyebab": "rak identik tanpa muka samping atau tengara",
+              "perbaikan": "rak bermuka samping, kabel, tengara, lantai memantulkan cahaya",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s32": {
+      "still": [
+        "produksi/render/T01/002/stills/s32-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s32-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s32-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s32-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s33": {
+      "still": [
+        "produksi/render/T01/002/stills/s33-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s33-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s33-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s33-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s33-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s33-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s34": {
+      "still": [
+        "produksi/render/T01/002/stills/s34-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s34-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s34-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s34-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s35": {
+      "still": [
+        "produksi/render/T01/002/stills/s35-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s35-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s35-Short9x16-shot1.png",
+        "produksi/render/T01/002/stills/s35-Short9x16-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s35-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s35-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s35-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s35-Short9x16-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s36": {
+      "still": [
+        "produksi/render/T01/002/stills/s36-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s36-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s36-Master16x9-shot3.png",
+        "produksi/render/T01/002/stills/s36-Short9x16-shot1.png",
+        "produksi/render/T01/002/stills/s36-Short9x16-shot2.png",
+        "produksi/render/T01/002/stills/s36-Short9x16-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s36-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s36-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s36-Master16x9-shot3.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s36-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s36-Short9x16-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s36-Short9x16-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s37": {
+      "still": [
+        "produksi/render/T01/002/stills/s37-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s37-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s37-Short9x16-shot1.png",
+        "produksi/render/T01/002/stills/s37-Short9x16-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s37-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s37-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s37-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s37-Short9x16-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s38": {
+      "still": [
+        "produksi/render/T01/002/stills/s38-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s38-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s38-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s38-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s39": {
+      "still": [
+        "produksi/render/T01/002/stills/s39-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s39-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s39-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s39-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s39-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s39-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s40": {
+      "still": [
+        "produksi/render/T01/002/stills/s40-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s40-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+          "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+          "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s40-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s40-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+              "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+              "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s41": {
+      "still": [
+        "produksi/render/T01/002/stills/s41-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s41-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+          "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+          "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s41-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s41-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+              "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+              "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s42": {
+      "still": [
+        "produksi/render/T01/002/stills/s42-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s42-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+          "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+          "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s42-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s42-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+              "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+              "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s43": {
+      "still": [
+        "produksi/render/T01/002/stills/s43-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s43-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+          "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+          "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s43-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s43-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+              "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+              "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s44": {
+      "still": [
+        "produksi/render/T01/002/stills/s44-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s44-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+          "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+          "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s44-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s44-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+              "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+              "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s45": {
+      "still": [
+        "produksi/render/T01/002/stills/s45-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s45-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+          "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+          "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s45-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s45-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+              "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+              "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s46": {
+      "still": [
+        "produksi/render/T01/002/stills/s46-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s46-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+          "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+          "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s46-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s46-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "tanah pulau satu bidang hijau; bentuk datar",
+              "penyebab": "pulau hanya satu path tanpa tekstur, jalan setapak, atau vegetasi lapis tengah",
+              "perbaikan": "pasir, semak berlobus, rumah panggung, buih, geser warna ke langit",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s47": {
+      "still": [
+        "produksi/render/T01/002/stills/s47-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s47-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s47-Master16x9-shot3.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s47-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s47-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s47-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s48": {
+      "still": [
+        "produksi/render/T01/002/stills/s48-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s48-Master16x9-shot2.png",
+        "produksi/render/T01/002/stills/s48-Short9x16-shot1.png",
+        "produksi/render/T01/002/stills/s48-Short9x16-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 3,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+          "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+          "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+          "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+          "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+          "hasil": "dikerjakan di putaran berikutnya"
+        },
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s48-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s48-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s48-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s48-Short9x16-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 3,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "bank, bank toko, menara, dan server terbaca sebagai bidang muka datar, di bawah blok 3/4 contoh P01b",
+              "penyebab": "BankHouse, ShopBank, NetTower, ServerGuy hanya satu muka dengan sabit tipis; tanpa muka samping, jendela kaca, atau pita highlight",
+              "perbaikan": "muka samping gelap, atap terlihat, jendela memantulkan langit, anak tangga dan detail material",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "lingkungan tengah jalan tol kosong; kota jauh satu nada",
+              "penyebab": "Mid hanya FarCity, dua pohon, menara air; tidak ada blok L2, kabut antar-lapisan, atau sapuan cahaya",
+              "perbaikan": "dua lapis kota, blok 3/4 dari @r3/art bertipe, kereta layang, MistBand, sapuan hangat",
+              "hasil": "dikerjakan di putaran berikutnya"
+            },
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    },
+    "s49": {
+      "still": [
+        "produksi/render/T01/002/stills/s49-Master16x9-shot1.png",
+        "produksi/render/T01/002/stills/s49-Master16x9-shot2.png"
+      ],
+      "skor": {
+        "siluet": 4,
+        "kompleksitas": 3,
+        "hierarki": 4,
+        "material": 3,
+        "cahaya": 3,
+        "lingkungan": 4,
+        "komposisi": 4,
+        "kedalaman": 4,
+        "akurasi": 4,
+        "polesan": 3
+      },
+      "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+      "lulus": false,
+      "kritik": [
+        {
+          "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+          "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+          "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+          "hasil": "dikerjakan di putaran berikutnya"
+        }
+      ],
+      "riwayat": [
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s49-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-1/s49-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dinilai ulang terhadap contoh P01b (commit cb42743): skor sebelumnya terlalu longgar.",
+          "kritik": [
+            {
+              "masalah": "dinding toko bidang rata; kayu, kaca, dan kardus tidak terbedakan",
+              "penyebab": "meja tanpa serat, jendela tanpa pantulan, rak tanpa bayangan jatuh, lantai polos",
+              "perbaikan": "serat kayu, bayangan rak, pantulan kaca, lantai papan, cahaya lampu menyapu meja",
+              "hasil": "dikerjakan di putaran berikutnya"
+            }
+          ],
+          "lulus": false
+        }
+      ]
+    }
   },
-  "s02": {
-   "still": [
-    "produksi/render/T01/002/stills/s02-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s02-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
+  "kreator": {
+    "disetujui": false,
+    "catatan": "Persetujuan 2026-11-28 berlaku untuk still putaran 1; putaran baru perlu persetujuan lagi."
   },
-  "s03": {
-   "still": [
-    "produksi/render/T01/002/stills/s03-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s03-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s03-Master16x9-shot3.png",
-    "produksi/render/T01/002/stills/s03-Short9x16-shot1.png",
-    "produksi/render/T01/002/stills/s03-Short9x16-shot2.png",
-    "produksi/render/T01/002/stills/s03-Short9x16-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s04": {
-   "still": [
-    "produksi/render/T01/002/stills/s04-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s04-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s05": {
-   "still": [
-    "produksi/render/T01/002/stills/s05-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s05-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s05-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s06": {
-   "still": [
-    "produksi/render/T01/002/stills/s06-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s06-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "Grid 100 koin di atas gerobak baru terhitung pada ukuran penuh.",
-   "lulus": true
-  },
-  "s07": {
-   "still": [
-    "produksi/render/T01/002/stills/s07-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s07-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s08": {
-   "still": [
-    "produksi/render/T01/002/stills/s08-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s08-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s09": {
-   "still": [
-    "produksi/render/T01/002/stills/s09-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s09-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s10": {
-   "still": [
-    "produksi/render/T01/002/stills/s10-Master16x9-shot1.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s11": {
-   "still": [
-    "produksi/render/T01/002/stills/s11-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s11-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s11-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s12": {
-   "still": [
-    "produksi/render/T01/002/stills/s12-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s12-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s12-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s13": {
-   "still": [
-    "produksi/render/T01/002/stills/s13-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s13-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s13-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s14": {
-   "still": [
-    "produksi/render/T01/002/stills/s14-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s14-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s15": {
-   "still": [
-    "produksi/render/T01/002/stills/s15-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s15-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "Digambar ulang: gulungan bermaterial di meja, baris tarif berisi kartu, toko, cara bayar.",
-   "lulus": true
-  },
-  "s16": {
-   "still": [
-    "produksi/render/T01/002/stills/s16-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s16-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s17": {
-   "still": [
-    "produksi/render/T01/002/stills/s17-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s17-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s17-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s18": {
-   "still": [
-    "produksi/render/T01/002/stills/s18-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s18-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s19": {
-   "still": [
-    "produksi/render/T01/002/stills/s19-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s19-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s19-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s20": {
-   "still": [
-    "produksi/render/T01/002/stills/s20-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s20-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s20-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s21": {
-   "still": [
-    "produksi/render/T01/002/stills/s21-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s21-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s21-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s22": {
-   "still": [
-    "produksi/render/T01/002/stills/s22-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s22-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s23": {
-   "still": [
-    "produksi/render/T01/002/stills/s23-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s23-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s23-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s24": {
-   "still": [
-    "produksi/render/T01/002/stills/s24-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s24-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "Digambar ulang: empat ruas jalan perspektif dengan bukit dan kota; bank di tepi sedikit tertutup caption.",
-   "lulus": true
-  },
-  "s25": {
-   "still": [
-    "produksi/render/T01/002/stills/s25-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s25-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s25-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s26": {
-   "still": [
-    "produksi/render/T01/002/stills/s26-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s26-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s26-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s27": {
-   "still": [
-    "produksi/render/T01/002/stills/s27-Master16x9-shot1.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s28": {
-   "still": [
-    "produksi/render/T01/002/stills/s28-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s28-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s28-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "Tirai sengaja menutupi dua pihak.",
-   "lulus": true
-  },
-  "s29": {
-   "still": [
-    "produksi/render/T01/002/stills/s29-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s29-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s29-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s30": {
-   "still": [
-    "produksi/render/T01/002/stills/s30-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s30-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s31": {
-   "still": [
-    "produksi/render/T01/002/stills/s31-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s31-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s31-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s32": {
-   "still": [
-    "produksi/render/T01/002/stills/s32-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s32-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "Digambar ulang: dua papan kayu berisi 100 koin timbul.",
-   "lulus": true
-  },
-  "s33": {
-   "still": [
-    "produksi/render/T01/002/stills/s33-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s33-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s33-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s34": {
-   "still": [
-    "produksi/render/T01/002/stills/s34-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s34-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s35": {
-   "still": [
-    "produksi/render/T01/002/stills/s35-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s35-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s35-Short9x16-shot1.png",
-    "produksi/render/T01/002/stills/s35-Short9x16-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s36": {
-   "still": [
-    "produksi/render/T01/002/stills/s36-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s36-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s36-Master16x9-shot3.png",
-    "produksi/render/T01/002/stills/s36-Short9x16-shot1.png",
-    "produksi/render/T01/002/stills/s36-Short9x16-shot2.png",
-    "produksi/render/T01/002/stills/s36-Short9x16-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "Di Short, caption menutup sebagian badan tokoh.",
-   "lulus": true
-  },
-  "s37": {
-   "still": [
-    "produksi/render/T01/002/stills/s37-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s37-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s37-Short9x16-shot1.png",
-    "produksi/render/T01/002/stills/s37-Short9x16-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s38": {
-   "still": [
-    "produksi/render/T01/002/stills/s38-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s38-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s39": {
-   "still": [
-    "produksi/render/T01/002/stills/s39-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s39-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s39-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s40": {
-   "still": [
-    "produksi/render/T01/002/stills/s40-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s40-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s41": {
-   "still": [
-    "produksi/render/T01/002/stills/s41-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s41-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s42": {
-   "still": [
-    "produksi/render/T01/002/stills/s42-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s42-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s43": {
-   "still": [
-    "produksi/render/T01/002/stills/s43-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s43-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s44": {
-   "still": [
-    "produksi/render/T01/002/stills/s44-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s44-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "Digambar ulang: lembar rekaan bermotif, gunting, irisan terpisah dengan koin.",
-   "lulus": true
-  },
-  "s45": {
-   "still": [
-    "produksi/render/T01/002/stills/s45-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s45-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s46": {
-   "still": [
-    "produksi/render/T01/002/stills/s46-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s46-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "Digambar ulang: kota senja dan pulau dipisah jahitan peta.",
-   "lulus": true
-  },
-  "s47": {
-   "still": [
-    "produksi/render/T01/002/stills/s47-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s47-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s47-Master16x9-shot3.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  },
-  "s48": {
-   "still": [
-    "produksi/render/T01/002/stills/s48-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s48-Master16x9-shot2.png",
-    "produksi/render/T01/002/stills/s48-Short9x16-shot1.png",
-    "produksi/render/T01/002/stills/s48-Short9x16-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "Di Short, caption dekat benda utama.",
-   "lulus": true
-  },
-  "s49": {
-   "still": [
-    "produksi/render/T01/002/stills/s49-Master16x9-shot1.png",
-    "produksi/render/T01/002/stills/s49-Master16x9-shot2.png"
-   ],
-   "skor": {
-    "siluet": 4,
-    "kompleksitas": 4,
-    "hierarki": 4,
-    "material": 4,
-    "cahaya": 4,
-    "lingkungan": 4,
-    "komposisi": 4,
-    "kedalaman": 4,
-    "akurasi": 4,
-    "polesan": 4
-   },
-   "catatan": "",
-   "lulus": true
-  }
- },
- "kreator": {
-  "disetujui": true,
-  "tanggal": "2026-11-28",
-  "catatan": "Kreator menjawab \"Setujui still\" di sesi 2026-11-28 setelah lembar still dikirim."
- },
- "dirender": "2026-11-28T06:30:36.836401+00:00"
+  "dirender": "2026-11-28T06:30:36.836401+00:00",
+  "putaran": 1
 }
