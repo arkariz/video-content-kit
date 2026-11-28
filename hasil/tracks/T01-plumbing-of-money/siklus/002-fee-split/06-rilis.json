@@ -3,7 +3,7 @@
   "track": "T01",
   "siklus": "002-fee-split",
   "dibuat": "2026-11-27T09:07:08.053Z",
-  "kunci_manual": "catatan 06-publish-manual.md: diunggah manual",
+  "kunci_manual": null,
   "youtube": {
     "kategori": "27",
     "bahasa": "en",
@@ -127,7 +127,108 @@
       }
     }
   ],
-  "persetujuan": null,
-  "hasil": {},
-  "checklist": {}
+  "persetujuan": {
+    "sidik": "9d86aedb5d7a5f0e6a3a8c99ac9ab2232f962a71f53f3eabf2b262aa62dfe8ad",
+    "waktu": "2026-11-28T08:13:39.744Z",
+    "via": "dashboard",
+    "qa_manual": "Keputusan: LULUS"
+  },
+  "hasil": {
+    "master": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "goPbQxIySEk",
+        "url": "https://www.youtube.com/watch?v=goPbQxIySEk",
+        "privasi": "private",
+        "publishAt": "2026-12-02T03:00:00.000Z",
+        "diunggah": "2026-11-28T08:15:25.948Z",
+        "selesai": {
+          "playlist": "2026-11-28T08:15:27.509Z",
+          "subtitle-en": "2026-11-28T08:15:29.535Z",
+          "subtitle-id": "2026-11-28T08:15:31.452Z",
+          "thumbnail": "2026-11-28T08:15:35.827Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "1883252579518013",
+        "selesai": {
+          "subtitle-en": "2026-11-28T08:17:58.909Z",
+          "subtitle-id": "2026-11-28T08:18:01.266Z",
+          "sampul": "2026-11-28T08:18:03.774Z"
+        },
+        "url": "https://www.facebook.com/reel/1883252579518013/",
+        "publishAt": "2026-12-02T03:00:00.000Z",
+        "diunggah": "2026-11-28T08:17:56.999Z",
+        "galat": []
+      }
+    },
+    "B1-100-dollar-split": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "9c3ou4cnO8M",
+        "url": "https://www.youtube.com/watch?v=9c3ou4cnO8M",
+        "privasi": "private",
+        "publishAt": "2026-12-03T05:00:00.000Z",
+        "diunggah": "2026-11-28T08:15:39.906Z",
+        "selesai": {
+          "subtitle-en": "2026-11-28T08:15:41.957Z",
+          "subtitle-id": "2026-11-28T08:15:43.749Z",
+          "thumbnail": "2026-11-28T08:16:13.043Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "1788948582174877",
+        "selesai": {
+          "subtitle-en": "2026-11-28T08:18:14.063Z",
+          "subtitle-id": "2026-11-28T08:18:15.714Z",
+          "sampul": "2026-11-28T08:18:18.263Z"
+        },
+        "url": "https://www.facebook.com/reel/1788948582174877/",
+        "publishAt": "2026-12-03T05:00:00.000Z",
+        "diunggah": "2026-11-28T08:18:12.426Z",
+        "galat": []
+      }
+    },
+    "B2-cash-pays-too": {
+      "youtube": {
+        "sumber": "alat",
+        "videoId": "SEvIeOhzJvg",
+        "url": "https://www.youtube.com/watch?v=SEvIeOhzJvg",
+        "privasi": "private",
+        "publishAt": "2026-12-04T08:00:00.000Z",
+        "diunggah": "2026-11-28T08:15:48.247Z",
+        "selesai": {
+          "subtitle-en": "2026-11-28T08:15:50.601Z",
+          "subtitle-id": "2026-11-28T08:15:52.654Z",
+          "thumbnail": "2026-11-28T08:16:17.916Z"
+        },
+        "galat": []
+      },
+      "facebook": {
+        "sumber": "alat",
+        "videoId": "1483366130434493",
+        "selesai": {
+          "subtitle-en": "2026-11-28T08:18:28.602Z",
+          "subtitle-id": "2026-11-28T08:18:30.285Z",
+          "sampul": "2026-11-28T08:18:33.213Z"
+        },
+        "url": "https://www.facebook.com/reel/1483366130434493/",
+        "publishAt": "2026-12-04T08:00:00.000Z",
+        "diunggah": "2026-11-28T08:18:26.866Z",
+        "galat": []
+      }
+    }
+  },
+  "checklist": {},
+  "kunci_dibuka": {
+    "alasan": "catatan 06-publish-manual.md: diunggah manual",
+    "waktu": "2026-11-28T08:12:25.897Z"
+  },
+  "facebook": {
+    "aktif": true
+  }
 }
