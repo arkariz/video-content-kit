@@ -1,4 +1,38 @@
-# Evaluasi still benchmark s01 (Fase 3.5 Phase C)
+# P01b s01: contoh kerja lengkap produksi visual (wajib dibaca)
+
+**Status:** acuan untuk semua produksi, disetujui kreator (still 2026-11-26, animasi 2026-11-27). Agent mana pun yang menulis brief, naskah, `03-visual.json`, `04-shots.tsx`, atau menilai still **membaca bagian yang relevan dengan tahapnya** sebelum mulai.
+
+## Urutan baca
+
+| # | Tahap | Baca | Pelajari |
+| --- | --- | --- | --- |
+| 1 | Riset fakta | `../P01-tetes-air/01-riset-viral.md`, bagian Riset fakta | Klaim C01-C16: satu baris per klaim, sumber otoritatif, status jujur (`belum` bila tidak ditemukan), miskonsepsi dicatat. |
+| 2 | Brief | `../P01-tetes-air/02-brief.md` | Pertanyaan utama, alur pengungkapan, jangkar. |
+| 3 | Naskah + shots | `03-script.json` | Satu shot per kalimat; label di kata yang diucapkan; `sources` merujuk id klaim; `visual_spec`. |
+| 4 | Arah visual | `03-visual.json` (versi 2) | Tiap subjek memakai `treatment` dan `claims`, sehingga fakta (C01 tetes besar memipih) mengunci bentuk, sedangkan gaya (`silhouette`, `material`, `light`, `art_refs`) hanya menafsirkan. Lihat juga cara `simplifications` mencatat apa yang tidak literal. |
+| 5 | Kode | `04-shots.tsx` + `produksi/remotion/src/r3/art/` | Shot hanya menyusun aset pustaka (`@r3/art`), waktu dari `word()`, kamera dari `Layer`, dan semua gerak berupa fungsi `t`. Aset khusus topik (`parts/ghost.tsx`) tetap lokal. |
+| 6 | Putaran still | `04-still.json` → `scenes.s01.riwayat` (putaran 0-7) + gambarnya di `04-still/putaran-N/` | Cara menulis kritik: **masalah yang terlihat → penyebab di kode → perbaikan → hasil**. Kritik ditulis sebelum kode diubah, satu putaran satu commit. |
+| 7 | Animasi | bagian "Phase D" di bawah | Lembar frame per 0,5 dtk untuk memeriksa gerak, perbaikan tilt kamera, cek determinisme `framemd5`. |
+| 8 | Jejak teknis | `04-proses.jsonl` | Setiap render still dan video tercatat otomatis (perintah, commit, hash kode, hash gambar). |
+
+## Yang ditiru dan yang tidak
+
+- **Ditiru (prosesnya):**
+  - urutan klaim → spesifikasi → kode → still → kritik → perbaikan;
+  - satu fokus L1 yang paling jenuh;
+  - kedalaman lewat geser warna ke langit, bukan blur;
+  - lingkungan yang ikut menjelaskan (talang di latar depan menunjuk ke scene berikutnya);
+  - gerak yang terkunci ke kata.
+- **Jangan disalin ke topik lain (isinya):**
+  - tetes air, kota senja, menara air, palet ungu-jingga, komposisi kiri-atas-label.
+  - Topik baru mengambil komponen pustaka yang cocok, lalu membuat subjek L1 sendiri dengan proses yang sama.
+- **Batasan contoh ini:**
+  - Hanya satu scene berdurasi 6 detik. Belum mencontohkan banyak scene, transisi antar-scene, re-hook, atau Shorts dari video panjang.
+  - Putaran 1-4 hanya rekonstruksi dari catatan (kode dan gambarnya tidak tersimpan). Putaran 0 dan 5-7 punya gambar.
+
+---
+
+## Evaluasi still benchmark s01 (Fase 3.5 Phase C)
 
 Laporan data, bukan dokumen aturan. Dibuat 2026-11-26.
 

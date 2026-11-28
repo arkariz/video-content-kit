@@ -2,7 +2,7 @@
 // Opsi: --still s06[,s07] (gambar diam; scene R3: satu per shot, atau --at 1.2,5) · --scenes s06 (render pendek beberapa scene)
 //       --script <path> (naskah lain, mis. produksi/contoh-r3/...; hasil ke render/_contoh/, 04-assets.json tidak diubah)
 import path from "node:path"; import { execFileSync as ef } from "node:child_process"; import fs from "node:fs"; import { execFileSync } from "node:child_process";
-import { ROOT, args, resolveCycle, readJson, writeJson, pauseSec } from "./lib.mjs"; import { timeShots } from "./r3.mjs";
+import { ROOT, args, resolveCycle, readJson, writeJson, pauseSec } from "./lib.mjs"; import { timeShots } from "./r3.mjs"; import { fileHash, logProses } from "./proses.mjs";
 const o = args(); const lang = o.lang || "en"; const comp = o.comp || "Master16x9"; const cut = o.cut; // --cut A1-zero-dollars-moved
 const cyc = resolveCycle(o.track, o.siklus); const scriptPath = o.script ? path.resolve(ROOT, o.script) : cyc.scriptPath; const { assetsPath } = cyc; const script = readJson(scriptPath);
 const contoh = !!o.script; const outBase = contoh ? `render/_contoh/${path.basename(path.dirname(scriptPath))}` : `render/${o.track}/${o.siklus}`;
@@ -49,18 +49,22 @@ const tag = cut ? "-" + cut : o.scenes ? "-" + ids.join("-") : "";
 const outRel = o.dub ? `${outBase}/${comp}${tag}-audio-${o.dub}.m4a` : `${outBase}/${comp}${tag}-${lang}.mp4`; fs.mkdirSync(path.dirname(path.join(ROOT, "produksi", outRel)), { recursive: true });
 if (o["props-only"]) { console.log("props", path.relative(ROOT, tmp)); process.exit(0); }
 if (o.still) {
+  const dibuat = [];
   for (const id of ids) {
     const one = { ...props, scenes: props.scenes.filter((s) => s.id === id) }; writeJson(tmp, one); const sc = one.scenes[0];
     // scene R3: satu gambar per shot (saat label sudah tampil), atau detik yang diminta lewat --at
     const at = o.at ? String(o.at).split(",").map((x) => [`t${x}`, Math.round(parseFloat(x) * FPS)]) : sc.r3 ? sc.r3.shots.map((x, i) => [`shot${i + 1}`, Math.round(((x.startMs + Math.min(x.endMs - x.startMs - 400, Math.max(1500, ...(x.labels || []).map((l) => l.atMs - x.startMs + 500)))) / 1000) * FPS)]) : [["", Math.max(1, sc.audioFrames - 8)]];
     for (const [name, frame] of at) {
       const out = path.join(ROOT, "produksi", outBase, "stills", `${id}-${comp}${name ? "-" + name : ""}.png`); fs.mkdirSync(path.dirname(out), { recursive: true });
+      dibuat.push(out);
       execFileSync("npx", ["remotion", "still", "src/index.ts", comp, out, `--props=${tmp}`, `--public-dir=${path.join(ROOT, "produksi")}`, `--frame=${Math.min(sc.durationFrames - 1, Math.max(0, frame))}`, ...gl], { cwd: path.join(ROOT, "produksi/remotion"), stdio: "inherit" }); console.log("still", path.relative(ROOT, out));
     }
   }
+  logProses(path.dirname(scriptPath), { jenis: "still", comp, scenes: ids, at: o.at ?? null, still: dibuat.map((f) => ({ file: path.relative(ROOT, f), hash: fileHash(f) })), perintah: process.argv.slice(2).join(" ") });
   process.exit(0);
 }
 execFileSync("npx", ["remotion", "render", "src/index.ts", comp, path.join(ROOT, "produksi", outRel), `--props=${tmp}`, `--public-dir=${path.join(ROOT, "produksi")}`, "--concurrency=50%", "--timeout=120000", ...gl, ...(o.dub ? ["--codec=aac"] : [])], { cwd: path.join(ROOT, "produksi/remotion"), stdio: "inherit" });
 if (!contoh && !o.scenes) { assets.renders = [...assets.renders.filter((r) => r.file !== outRel), { file: outRel, comp, lang: o.dub || lang, cut: cut || null, ...(o.dub ? { dub: true, dipercepat: Object.fromEntries(dubbed) } : {}) }]; writeJson(assetsPath, assets); }
+logProses(path.dirname(scriptPath), { jenis: "video", comp, lang: o.dub || lang, cut: cut || null, scenes: o.scenes ? ids : null, file: `produksi/${outRel}`, hash: fileHash(path.join(ROOT, "produksi", outRel)), perintah: process.argv.slice(2).join(" ") });
 console.log("render", outRel);
 if (o.dub) console.log(`dub ${o.dub}: ${dubbed.length} scene dipercepat`, dubbed.map(([i, r]) => `${i}×${r}`).join(" "));

@@ -2,9 +2,12 @@
 // Merender still per scene R3, lalu menulis/menggabungkan 04-still.json yang harus dinilai agent (rubrik) dan disetujui kreator
 // sebelum render video. Hanya berlaku untuk naskah dengan visual_spec versi 2.
 //   node scripts/pipeline/still.mjs --track T01 --siklus 005 [--scenes s01,s02] [--cek]
+//   node scripts/pipeline/still.mjs --track T01 --siklus 005 --tutup   # tutup putaran: arsip still + skor + kritik ke riwayat
+// Riwayat: tiap scene di 04-still.json punya `riwayat` [{putaran, tanggal, still, skor, kritik, lulus}]; kritik berbentuk
+// [{masalah, penyebab, perbaikan, hasil}] (cara menulis: contoh P01b, produksi/contoh-r3/P01b-s01-benchmark/EVALUASI.md).
 // Kode keluar: 0 = sudah lulus dan disetujui, 3 = menunggu penilaian/persetujuan, 1 = gagal render.
 import fs from "node:fs"; import path from "node:path"; import { spawnSync } from "node:child_process";
-import { ROOT, args, readJson, resolveCycle, writeJson } from "../produksi/lib.mjs";
+import { ROOT, args, readJson, resolveCycle, writeJson } from "../produksi/lib.mjs"; import { arsipStill, logProses } from "../produksi/proses.mjs";
 
 export const RUBRIK = ["siluet", "kompleksitas", "hierarki", "material", "cahaya", "lingkungan", "komposisi", "kedalaman", "akurasi", "polesan"];
 export const MIN4 = ["siluet", "material", "cahaya", "lingkungan", "komposisi", "akurasi", "polesan"];
@@ -31,20 +34,34 @@ export function stillStatus(dir, script) {
   return { ok: !alasan.length, alasan };
 }
 
+/** Pindahkan penilaian sekarang ke riwayat tiap scene dan arsipkan still-nya. Hasil: nomor putaran. */
+export function tutupPutaran(dir, st) {
+  const n = (st.putaran || 0) + 1; const tanggal = new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Jakarta" });
+  for (const [id, x] of Object.entries(st.scenes || {})) {
+    const arsip = arsipStill(dir, x.still || [], n);
+    (x.riwayat ||= []).push({ putaran: n, tanggal, still: arsip, skor: x.skor, catatan: x.catatan || "", kritik: x.kritik || [], lulus: x.lulus === true });
+  }
+  st.putaran = n; logProses(dir, { jenis: "putaran", putaran: n, scenes: Object.keys(st.scenes || {}) });
+  return n;
+}
+
 const isMain = import.meta.url === `file://${process.argv[1]}`;
 if (isMain) {
   const o = args(); const { dir } = resolveCycle(o.track, o.siklus); const script = readJson(path.join(dir, "03-script.json"));
+  if (o.tutup) { const f = path.join(dir, "04-still.json"); const st = readJson(f, null); if (!st) throw new Error("04-still.json belum ada"); const n = tutupPutaran(dir, st); writeJson(f, st); console.log(`still: putaran ${n} ditutup dan diarsip ke 04-still/putaran-${n}/`); process.exit(0); }
   if (!stillBerlaku(dir, script)) { console.log("still: tidak berlaku (naskah tanpa visual_spec versi 2)"); process.exit(0); }
   if (o.cek) { const s = stillStatus(dir, script); console.log(s.ok ? "still: LULUS dan disetujui" : `still: menunggu\n  - ${s.alasan.join("\n  - ")}`); process.exit(s.ok ? 0 : 3); }
   const ids = o.scenes ? String(o.scenes).split(",") : script.scenes.filter((s) => s.shots?.length).map((s) => s.id);
   const r = spawnSync("node", ["scripts/produksi/render.mjs", "--track", o.track, "--siklus", o.siklus, "--still", ids.join(",")], { cwd: ROOT, stdio: "inherit" });
   if (r.status) process.exit(1);
   const sdir = path.join(ROOT, "produksi/render", o.track, o.siklus, "stills");
+  const f0 = path.join(dir, "04-still.json"); const lama0 = readJson(f0, null);
+  if (lama0 && Object.values(lama0.scenes || {}).some((x) => x.skor && Object.values(x.skor).some((v) => v !== null))) { tutupPutaran(dir, lama0); writeJson(f0, lama0); }
   const f = path.join(dir, "04-still.json"); const st = readJson(f, { _catatan: "Gate still (PIPELINE.md Mesin R3 10). Agent mengisi skor 1-5 per dimensi dan lulus; kreator mengisi kreator.disetujui setelah melihat still.", scenes: {}, kreator: { disetujui: false } });
   for (const id of ids) {
     const files = fs.existsSync(sdir) ? fs.readdirSync(sdir).filter((x) => x.startsWith(`${id}-`) && x.endsWith(".png")).map((x) => path.relative(ROOT, path.join(sdir, x))) : [];
     const lama = st.scenes[id] || {};
-    st.scenes[id] = { still: files, skor: lama.skor || Object.fromEntries(RUBRIK.map((k) => [k, null])), catatan: lama.catatan || "", lulus: false };
+    st.scenes[id] = { still: files, skor: Object.fromEntries(RUBRIK.map((k) => [k, null])), catatan: "", kritik: [], lulus: false, riwayat: lama.riwayat || [] };
   }
   st.kreator = { disetujui: false };
   st.dirender = new Date().toISOString();

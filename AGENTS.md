@@ -60,6 +60,7 @@ Berlaku untuk **semua track dan semua siklus**, untuk agent chat maupun agent di
 2. `instruksi/referensi/gaya-visual.md`: satu kalimat satu gambar, spesifikasi scene A-I (`03-visual.json`), pola komposisi, gate kesiapan visual.
 3. `produksi/STYLE.md`: Visual Style Bible (bentuk, warna, kedalaman, tipografi, palet dan pemeran per track). Kamera, gerak, transisi, dan 2D/2.5D/3D di `produksi/PIPELINE.md` bagian "Mesin R3".
 4. `hasil/learnings-global.md`: aturan agar isi tidak padat dan prosesnya terlihat.
+5. **Contoh kerja lengkap `produksi/contoh-r3/P01b-s01-benchmark/EVALUASI.md`** (bagian "Urutan baca"): bagaimana P01b dibuat, mulai dari klaim fakta, naskah, arahan visual, kode, putaran still review, sampai animasi. Baca baris tahap yang sedang dikerjakan **sebelum** mulai, setiap sesi. Tiru prosesnya, jangan isinya.
 
 Naskah siklus baru tanpa `shots` per kalimat tidak boleh lanjut ke produksi; QA otomatis menandainya kritis. T01 siklus 001 (mesin lama) dan T02 siklus 001 (R3 3D, masih terlihat kaku) tidak dijadikan acuan. Lapisan 3D (`@remotion/three`) disetujui kreator dan sudah dibangun di `produksi/remotion/src/r3/three` (opsional per siklus). Scene dengan `shots` dirender mesin R3 (`produksi/remotion/src/r3`); gambar tiap shot ditulis agent repo sebagai komponen di `04-shots.tsx` folder siklus (cara di `produksi/PIPELINE.md`, bagian "Mesin R3").
 

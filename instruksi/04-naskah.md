@@ -4,6 +4,8 @@ Tujuan: satu naskah yang ditulis untuk didengar, dengan satu ide per scene, lulu
 
 **Wajib dibaca dulu:** `instruksi/referensi/gaya-cerita.md` (riset dan cerita), `instruksi/referensi/gaya-visual.md` (spesifikasi visual), `produksi/STYLE.md` (tampilan), dan `hasil/learnings-global.md`.
 
+Contoh kerja lengkap untuk langkah 1-5: `produksi/contoh-r3/P01b-s01-benchmark/EVALUASI.md` (bagian "Urutan baca").
+
 Urutan langkah:
 1. **Riset fakta**: tabel klaim `C01…` di bagian "Riset fakta" `01-riset-viral.md` (`gaya-cerita.md` bagian 1).
 2. **Brief** (2a).

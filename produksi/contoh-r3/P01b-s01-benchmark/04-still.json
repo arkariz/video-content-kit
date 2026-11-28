@@ -1,5 +1,5 @@
 {
-  "_catatan": "Gate still (PIPELINE.md Mesin R3 10). Penilaian agent putaran 6 benchmark P01b, 2026-11-26. Skor perkiraan dari still 1920x1080; lulus final butuh kreator.",
+  "_catatan": "Gate still (PIPELINE.md Mesin R3 10). Contoh kerja lengkap: riwayat putaran 0-7 benchmark P01b. Putaran 1-4 rekonstruksi dari catatan sesi (kode dan still tidak tersimpan); putaran 5-7 dirender ulang dari commit-nya.",
   "scenes": {
     "s01": {
       "still": [
@@ -23,12 +23,276 @@
       },
       "catatan": "Putaran 6: matahari terlihat di celah kota, cahaya hangat, bayangan kontak atap, jendela memantulkan langit, label pindah ke kiri atas. Masih kurang: material gedung belum dibedakan beton/logam secara tegas, bidang tetes masih agak polos, polesan di bawah referensi.",
       "lulus": true,
-      "pengecualian_kreator": "Kreator menyetujui still putaran 6 sebagai acuan (2026-11-26) meski material dan polesan dinilai agent 3; tetap tampil sebagai temuan di gate."
+      "pengecualian_kreator": "Kreator menyetujui still putaran 6 sebagai acuan (2026-11-26) meski material dan polesan dinilai agent 3; tetap tampil sebagai temuan di gate.",
+      "riwayat": [
+        {
+          "putaran": 0,
+          "tanggal": "2026-11-26",
+          "sumber": "P01 asli (Fase 3), sebelum standar Fase 3.5",
+          "still": [
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-0-P01/s01-Master16x9-t3.3.jpg"
+          ],
+          "skor": {
+            "siluet": 2,
+            "kompleksitas": 2,
+            "hierarki": 2,
+            "material": 2,
+            "cahaya": 2,
+            "lingkungan": 2,
+            "komposisi": 3,
+            "kedalaman": 2,
+            "akurasi": 4,
+            "polesan": 2
+          },
+          "kritik": [
+            {
+              "masalah": "tetes terbaca jeli opak, pantulan berupa batang barcode",
+              "penyebab": "gradien radial stopOpacity 0,9-0,96 dan 9 rect berderet (P01 parts/drop.tsx)",
+              "perbaikan": "rendering datar bertingkat (Shade) + pantulan siluet kecil di bawah",
+              "hasil": "lihat putaran 1"
+            },
+            {
+              "masalah": "kota berupa kotak berulang, datar",
+              "penyebab": "FlatRect + jendela acak, dua Skyline sama warna beda",
+              "perbaikan": "blok 3/4 bertipe, tengara, geser warna ke langit",
+              "hasil": "lihat putaran 1-2"
+            }
+          ],
+          "lulus": false
+        },
+        {
+          "putaran": 1,
+          "tanggal": "2026-11-26",
+          "sumber": "rekonstruksi dari catatan sesi; kode dan still tidak tersimpan",
+          "still": [],
+          "skor": null,
+          "kritik": [
+            {
+              "masalah": "tetes seperti kacang merah, pantulan tampak seperti permukaan air di dalam akuarium",
+              "penyebab": "cakrawala pantulan di Hb*0,05 (tengah tetes) + pita jingga terang; cekungan dasar 0,085r dengan inti bayangan",
+              "perbaikan": "cekungan 0,035r, sudut dasar di 0,6W, cakrawala diturunkan, pita dihapus (putaran 3)",
+              "hasil": "dasar rata, pantulan hanya di bawah"
+            },
+            {
+              "masalah": "gedung masih kotak dengan grid jendela (jebakan primitif)",
+              "penyebab": "Apartment = satu rr + grid jendela seragam",
+              "perbaikan": "komponen Block 3/4: muka samping gelap, atap terlihat, perabot atap, balkon berpagar",
+              "hasil": "gedung punya volume"
+            },
+            {
+              "masalah": "langit datar, cahaya senja tidak terlihat",
+              "penyebab": "gradien objectBoundingBox pada rect setinggi 2600 px sehingga jingga jatuh di luar layar",
+              "perbaikan": "gradientUnits userSpaceOnUse y -300..980",
+              "hasil": "cakrawala jingga terlihat"
+            },
+            {
+              "masalah": "garis arus udara terbaca sebagai cipratan",
+              "penyebab": "titik kontrol kurva di dasar tetes mengarah ke luar-bawah",
+              "perbaikan": "arus naik dari bawah lalu membelok di sisi tetes, dua garis saja",
+              "hasil": "penyebab pipih terbaca"
+            }
+          ],
+          "lulus": false
+        },
+        {
+          "putaran": 2,
+          "tanggal": "2026-11-26",
+          "sumber": "rekonstruksi; kode tidak tersimpan",
+          "still": [],
+          "skor": null,
+          "kritik": [
+            {
+              "masalah": "warna kota seragam biru-ungu",
+              "penyebab": "satu keluarga nada MID untuk semua gedung",
+              "perbaikan": "keluarga TEAL dan VIOLET (STYLE.md 3.1)",
+              "hasil": "hue bervariasi"
+            },
+            {
+              "masalah": "matahari tertutup gedung",
+              "penyebab": "matahari di 1120,800 di belakang blok kanan",
+              "perbaikan": "pindah ke 1050,690",
+              "hasil": "glow terlihat sebagian"
+            }
+          ],
+          "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-26",
+          "sumber": "rekonstruksi; kode tidak tersimpan",
+          "still": [],
+          "skor": null,
+          "kritik": [
+            {
+              "masalah": "tetes terlalu lebar (sekitar 1,8:1), terbaca bantal",
+              "penyebab": "W 1+0,24f, Ht 1-0,13f, Hb 1-0,5f",
+              "perbaikan": "W 1+0,2f, Ht 1-0,05f, Hb 1-0,42f (1,57:1, roti burger)",
+              "hasil": "bentuk sesuai C01"
+            },
+            {
+              "masalah": "kiri-tengah kosong, dunia sepi",
+              "penyebab": "hanya gedung, tanpa kejadian kecil",
+              "perbaikan": "Tree gugus lobus, Lamp dengan glow, FarCity lapis kedua",
+              "hasil": "dunia lebih hidup"
+            }
+          ],
+          "lulus": false
+        },
+        {
+          "putaran": 4,
+          "tanggal": "2026-11-26",
+          "sumber": "rekonstruksi; kode tidak tersimpan",
+          "still": [],
+          "skor": null,
+          "kritik": [
+            {
+              "masalah": "isi kota kiri-tengah tertutup pita caption",
+              "penyebab": "pohon, lampu, rumah di y > 860",
+              "perbaikan": "grup kiri-tengah dinaikkan 110 px",
+              "hasil": "terbaca di atas caption"
+            },
+            {
+              "masalah": "langit kurang jenuh dibanding acuan",
+              "penyebab": "SKY lama #160f3a/#6a3a86",
+              "perbaikan": "SKY lebih jenuh #1a0f4a/#7e3a96/#d0587e",
+              "hasil": "warna lebih hidup"
+            }
+          ],
+          "lulus": false
+        },
+        {
+          "putaran": 5,
+          "tanggal": "2026-11-26",
+          "sumber": "commit 58651b2, still dirender ulang dari kode itu (deterministik)",
+          "still": [
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-5/s01-Master16x9-t1.5.jpg",
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-5/s01-Master16x9-t2.9.jpg",
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-5/s01-Short9x16-t2.9.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 3,
+            "lingkungan": 4,
+            "komposisi": 3,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "kritik": [
+            {
+              "masalah": "matahari banyak tertutup siluet kota jauh",
+              "penyebab": "FarCity tanpa celah di depan matahari",
+              "perbaikan": "opsi gap pada FarCity + cahaya hangat radial di atas kota",
+              "hasil": "matahari terlihat di celah"
+            },
+            {
+              "masalah": "perabot atap tampak melayang",
+              "penyebab": "tidak ada bayangan kontak",
+              "perbaikan": "elips gelap di bawah AC, tangki, menara air",
+              "hasil": "benda menapak"
+            },
+            {
+              "masalah": "muka gedung semua sama",
+              "penyebab": "jendela gelap datar",
+              "perbaikan": "garis pantulan langit diagonal di jendela gelap (material kaca)",
+              "hasil": "muka gedung lebih kaya"
+            },
+            {
+              "masalah": "bidang tengah tetes polos, ada garis hujan di depan tetes",
+              "penyebab": "satu nada dasar luas; RainLayer depan di atas subjek",
+              "perbaikan": "lobus nada terang di tengah atas; hujan depan dipindah ke belakang subjek",
+              "hasil": "air lebih hidup"
+            },
+            {
+              "masalah": "kanan atas padat (label + menara)",
+              "penyebab": "label di x 1090",
+              "perbaikan": "label ke ruang negatif kiri atas, awan kiri diperkecil",
+              "hasil": "komposisi lega"
+            }
+          ],
+          "lulus": false
+        },
+        {
+          "putaran": 6,
+          "tanggal": "2026-11-26",
+          "sumber": "commit 837220a; disetujui kreator sebagai acuan galeri",
+          "still": [
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-6/s01-Master16x9-t1.5.jpg",
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-6/s01-Master16x9-t2.9.jpg",
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-6/s01-Short9x16-t2.9.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "kritik": [
+            {
+              "masalah": "material gedung belum dibedakan beton/logam secara tegas; polesan di bawah acuan eksternal",
+              "penyebab": "shading Block sama untuk semua muka",
+              "perbaikan": "(belum diperbaiki; diterima kreator)",
+              "hasil": "pengecualian kreator"
+            }
+          ],
+          "lulus": true
+        },
+        {
+          "putaran": 7,
+          "tanggal": "2026-11-26",
+          "sumber": "commit 647f847, animasi Phase D; still dirender ulang",
+          "still": [
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-7/s01-Master16x9-t1.5.jpg",
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-7/s01-Master16x9-t2.9.jpg",
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-7/s01-Master16x9-t3.9.jpg",
+            "produksi/contoh-r3/P01b-s01-benchmark/04-still/putaran-7/s01-Short9x16-t2.9.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "kritik": [
+            {
+              "masalah": "di detik 4,5 ke atas tetes naik dan tertutup label",
+              "penyebab": "tilt kamera reveal 100 px menggeser subjek ke atas",
+              "perbaikan": "tilt 50 px, label dinaikkan 20 px",
+              "hasil": "akhir adegan bersih (lembar frame per 0,5 dtk)"
+            }
+          ],
+          "lulus": true
+        }
+      ],
+      "kritik": [
+        {
+          "masalah": "di detik 4,5 ke atas tetes naik dan tertutup label",
+          "penyebab": "tilt kamera reveal 100 px menggeser subjek ke atas",
+          "perbaikan": "tilt 50 px, label dinaikkan 20 px",
+          "hasil": "akhir adegan bersih (lembar frame per 0,5 dtk)"
+        }
+      ]
     }
   },
   "kreator": {
     "disetujui": true,
     "tanggal": "2026-11-26"
   },
-  "dirender": "2026-11-26"
+  "dirender": "2026-11-26",
+  "putaran": 7
 }

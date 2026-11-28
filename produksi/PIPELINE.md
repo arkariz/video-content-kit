@@ -315,6 +315,17 @@ Engine tetap fokus pada waktu, kamera, dan render; ia tidak menjadi editor ilust
 - Penilaian agent dari still adalah perkiraan. Skor lulus final butuh penilaian manusia. Bila alat tidak memungkinkan penilaian objektif, misalnya karena still hanya dilihat sebagai JPEG kecil, tulis keterbatasannya, jangan klaim lulus.
 - Render yang berhasil tidak sama dengan kualitas visual yang berhasil.
 
+**Riwayat dan jejak proses (wajib, contoh: `produksi/contoh-r3/P01b-s01-benchmark/EVALUASI.md` baris 6-8):**
+- `render.mjs` otomatis menambah satu baris ke `04-proses.jsonl` di folder siklus setiap kali merender still atau video. Isinya waktu, commit, hash kode adegan, hash gambar, dan perintah lengkap.
+- Satu putaran still berjalan begini:
+  1. render still;
+  2. tulis `skor`, `catatan`, dan `kritik` (`[{masalah, penyebab, perbaikan, hasil}]`) di `04-still.json`, **sebelum** mengubah kode;
+  3. perbaiki kode;
+  4. commit;
+  5. jalankan putaran berikutnya.
+- `still.mjs` menutup putaran sebelumnya secara otomatis saat merender ulang. Bisa juga ditutup manual lewat `--tutup`, yang juga berlaku untuk gate still manual tanpa `visual_spec` versi 2.
+- Saat putaran ditutup, skor dan kritik dipindah ke `scenes.<id>.riwayat`, dan still disalin sebagai JPEG kecil ke `04-still/putaran-N/` supaya ikut di-commit.
+
 **Gate di pipeline:**
 - Tahap `still` di `run.mjs` (setelah caption, sebelum footage dan render) hanya lolos bila `04-still.json` memenuhi semua syarat berikut:
   - setiap scene R3 punya skor minimal 4 pada dimensi wajib;
