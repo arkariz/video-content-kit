@@ -1,12 +1,24 @@
 # Unggah manual: siklus 002 (fee split, uji V2)
 
-Semua tayang **28 November 2026 (WIB)**: master 10.00, Short 1 12.00, Short 2 16.00. Jam mengikuti pola 005; ubah bila mau. Isi kolom URL setelah tayang, lalu kirim ke agent untuk dicatat.
+Versi produksi ulang (2026-11-28). Jadwal mengikuti `06-rilis.json`: master **2 Desember 10.00**, Short 1 **3 Desember 12.00**, Short 2 **4 Desember 15.00** WIB.
+
+## Ganti unggahan lama dulu
+Video versi 26 November masih terjadwal di YouTube dan Facebook. Berkas video tidak bisa ditukar, jadi:
+1. Tonton ketiga video baru dengan suara.
+2. Di YouTube Studio dan Meta Business Suite, **hapus** enam unggahan terjadwal lama (atau batalkan jadwalnya):
+   - Master: https://www.youtube.com/watch?v=0Mg_mmMzF5g · https://www.facebook.com/reel/2371631973657530/
+   - Short 1: https://www.youtube.com/watch?v=OQJxkEL8K58 · https://www.facebook.com/reel/1705005934367306/
+   - Short 2: https://www.youtube.com/watch?v=FfuEICU-y2o · https://www.facebook.com/reel/4575236526069035/
+3. Unggah versi baru manual memakai teks di bawah, dengan jadwal yang sama.
+4. Kirim keenam URL baru ke agent untuk dicatat. Catatan unggah lama di alat rilis diperbarui setelah itu.
+
+Jangan menekan Kirim di alat rilis sebelum catatan lama dibereskan.
 
 **Jangan jalankan `approve.mjs` / `publish.mjs send` untuk siklus ini**, supaya tidak terunggah dua kali.
 
 ## Sebelum mengunggah
 - [x] QA otomatis lulus (0 kritis); pengucapan "QRIS" di s41 diterima kreator 2026-11-27.
-- [x] QA anti-slop manual dilewati atas keputusan kreator 2026-11-27 (`05-qa.md`); bukan LULUS.
+- [x] QA anti-slop versi produksi ulang LULUS, dinilai agent (`05-qa.md`); temuan terbuka: s39 dan s49 belum terbukti sumbernya, musik pinjaman dari 004.
 - [ ] Tonton master dan kedua Short penuh dengan suara.
 - [ ] Angka biaya adalah satu contoh AS; cocokkan tarif Visa (24 Okt 2026) dan assessment di sumbernya. Stripe 2,7% + 5 sen sudah dicek di stripe.com/pricing 2026-11-26.
 - [ ] Naskah menyebut Visa dan Mastercard; pastikan tidak ada logo merek di gambar, sampul, dan komentar.
@@ -18,20 +30,20 @@ Semua tayang **28 November 2026 (WIB)**: master 10.00, Short 1 12.00, Short 2 16
 - Hashtag: pakai persis yang tertulis (Instagram maksimal 5).
 - Short diunggah langsung ke tiap platform dari file asli.
 
-## 10.00: Master di YouTube
+## 2 Des 10.00: Master di YouTube
 - File: `produksi/render/T01/002/Master16x9-en.mp4` (8:07)
-- Thumbnail: `produksi/render/T01/002/Thumbnail-A.png`. Bila "Test & compare" tersedia, unggah juga `Thumbnail-B.png` dan dua judul cadangan.
+- Thumbnail: `produksi/render/T01/002/Thumbnail-A.png`. Bila "Test & compare" tersedia, unggah juga `Thumbnail-B.png` (dengan judul cadangan 1) dan `Thumbnail-C.png` (dengan judul cadangan 2).
 - Judul:
 
 ```text
-You Pay $100. Here's Who Takes a Cut.
+Who Takes a Cut When You Tap Your Card?
 ```
 
 Judul cadangan:
 
 ```text
-Every Card Tap Pays 4 Companies. Here's the Split.
-Where $2.75 Goes When You Tap a Card
+Guess Who Takes the Most When You Tap Your Card
+The Card Fee Hiding Inside the Price Tag
 ```
 
 - Deskripsi:
@@ -60,7 +72,7 @@ https://usa.visa.com/content/dam/VCOM/download/merchants/visa-usa-interchange-re
 https://wellsfargo.com/merchantpassthroughfees
 https://www.antaranews.com/berita/5697901/bi-perluas-kebijakan-mdr-qris-0-persen-untuk-pelaku-umkm
 https://www.helcim.com/visa-usa-interchange-rates/
-https://www.mymoney.gov/node/82113
+https://www.bostonfed.org/publications/public-policy-discussion-paper/2010/who-gains-and-who-loses-from-credit-card-payments-theory-and-calibrations.aspx
 https://www.nerdwallet.com/article/small-business/stripe-fees
 https://www.nerdwallet.com/blog/credit-cards/matty-simmons-interview
 https://www.spark.money/glossary/assessment-fee
@@ -80,7 +92,7 @@ credit card fees, interchange fees, swipe fees, how payments work, where card fe
 - Terjemahan judul (Indonesia):
 
 ```text
-Kamu Bayar $100. Siapa Saja yang Dapat Potongan?
+Siapa yang Dapat Potongan Saat Kamu Tap Kartu?
 ```
 
 - Monetisasi, bila sudah aktif: mid-roll di 3:26 dan 5:31.
@@ -95,12 +107,12 @@ Why "approved" doesn't mean the shop is paid: https://www.youtube.com/watch?v=z3
 
 - URL YouTube: 
 
-## 10.00: Master di Facebook (video Page)
+## 2 Des 10.00: Master di Facebook (video Page)
 - File dan thumbnail sama. Unggah `publish/master.en_US.srt` sebagai caption.
 - Judul:
 
 ```text
-You Pay $100. Here's Who Takes a Cut.
+Who Takes a Cut When You Tap Your Card?
 ```
 
 - Teks:
@@ -113,7 +125,7 @@ You tap a card for a $100 pair of shoes. The shop keeps $97.25. Here's who takes
 - URL Facebook: 
 
 
-## 12.00: Short 1: the $100 split
+## 3 Des 12.00: Short 1: the $100 split
 - File: `produksi/render/T01/002/Short9x16-B1-100-dollar-split-en.mp4`
 - Sampul: `produksi/render/T01/002/Thumbnail-Short-B1-100-dollar-split.png`
 - Subtitle: `hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/publish/B1-100-dollar-split.en.srt` (Indonesia: `B1-100-dollar-split.id.srt`). Caption sudah menempel di video.
@@ -185,7 +197,7 @@ URL Facebook:
 URL TikTok: 
 
 
-## 16.00: Short 2: cash pays too
+## 4 Des 15.00: Short 2: cash pays too
 - File: `produksi/render/T01/002/Short9x16-B2-cash-pays-too-en.mp4`
 - Sampul: `produksi/render/T01/002/Thumbnail-Short-B2-cash-pays-too.png`
 - Subtitle: `hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/publish/B2-cash-pays-too.en.srt` (Indonesia: `B2-cash-pays-too.id.srt`). Caption sudah menempel di video.
