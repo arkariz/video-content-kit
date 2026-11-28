@@ -87,7 +87,7 @@
     },
     {
       "nama": "B2-island-the-size-of-england",
-      "jadwal": "2026-11-28T16:00",
+      "jadwal": "2026-12-01T16:00",
       "subtitle": [
         {
           "bahasa": "en",
@@ -105,8 +105,8 @@
       },
       "file": "produksi/render/T02/003/Short9x16-B2-island-the-size-of-england-en.mp4",
       "thumbnail": "produksi/render/T02/003/Thumbnail-Short-B2-island-the-size-of-england.png",
-      "judul": "You're on an island the size of England, with 158 million people. #java #indinesia #population",
-      "deskripsi": "You're on an island the size of England, with 158 million people.\n\nFull video on the channel.\nNarration uses a synthetic voice.\n\n#Java #Indonesia #mostpopulatedisland #Shorts",
+      "judul": "158 Million People on an Island the Size of England",
+      "deskripsi": "#java #indinesia #population",
       "tag": [
         "Java",
         "Indonesia",
@@ -121,7 +121,7 @@
     }
   ],
   "persetujuan": {
-    "sidik": "33caea39fce8a20e3a4cab0fe752acc909c49eb60a7e608798ce6aebbfd4f1c3",
+    "sidik": "8f5f9ff4b8166bc16fe6ebb98b335711cfaa6bc597d0af95173fd95fca88f108",
     "waktu": "2026-11-27T10:04:50.446Z",
     "via": "dashboard",
     "qa_manual": "belum ada 05-qa.md"
@@ -160,13 +160,13 @@
         "sumber": "manual",
         "url": "https://www.youtube.com/watch?v=GR_Nde1kEt0",
         "videoId": "GR_Nde1kEt0",
-        "publishAt": "2026-11-28T09:00:00.000Z",
+        "publishAt": "2026-12-01T09:00:00Z",
         "privasi": "private",
         "dicatat": "2026-11-27T09:07:08.105Z",
         "galat": [],
         "dilihat": {
-          "judul": "You're on an island the size of England, with 158 million people. #java #indinesia #population",
-          "deskripsi": ""
+          "judul": "158 Million People on an Island the Size of England",
+          "deskripsi": "#java #indinesia #population"
         }
       },
       "facebook": {
