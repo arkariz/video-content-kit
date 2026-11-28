@@ -4,7 +4,7 @@
 // Token dan URL sesi unggah tidak pernah dicetak atau disimpan di file yang di-commit.
 import fs from "node:fs"; import path from "node:path";
 import { readJson, writeJson } from "../produksi/lib.mjs";
-import { oauthClient, tokenRequest, channelVar } from "../youtube/lib.mjs";
+import { ambil, oauthClient, tokenRequest, channelVar } from "../youtube/lib.mjs";
 import { kembar, pesanKembar } from "./ganda.mjs";
 import { ROOT, disetujui, jadwalBeda, minYouTube, muat, terkunci, ubah, waktu } from "./inti.mjs";
 
@@ -26,7 +26,7 @@ export async function klien(track) {
   const channel = process.env[channelVar(track)]; if (!channel) throw new Error(`Env ${channelVar(track)} kosong; jalankan auth.mjs untuk track ini`);
   const { access_token } = await tokenRequest({ ...oauthClient(track), refresh_token: process.env[publishVar(track)], grant_type: "refresh_token" });
   const auth = { Authorization: `Bearer ${access_token}` };
-  const panggil = async (url, init = {}) => { const res = await fetch(url, { ...init, headers: { ...auth, ...init.headers } }); if (!res.ok) throw await galat(res); return res.status === 204 ? {} : res.json().catch(() => ({})); };
+  const panggil = async (url, init = {}) => { const res = await ambil(url, { ...init, headers: { ...auth, ...init.headers } }); if (!res.ok) throw await galat(res); return res.status === 204 ? {} : res.json().catch(() => ({})); };
   const get = (r, q) => panggil(`${API}/${r}?${new URLSearchParams(q)}`);
   const post = (r, q, body) => panggil(`${API}/${r}?${new URLSearchParams(q)}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
   const milik = (await get("channels", { part: "id", mine: "true" })).items?.[0]?.id;

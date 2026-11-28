@@ -369,6 +369,15 @@ try {
     await segarBila(); const a = terakhirSegar(); assert.deepEqual(a.sumber, ["YouTube"]); assert.ok(a.waktu);
     const n = yt.panggilan.length; await segarBila(); assert.equal(yt.panggilan.length, n); await segarBila({ kini: Date.now() + 6 * 60e3 }); assert.ok(yt.panggilan.length > n);
   });
+  await uji("jaringan putus: permintaan baca dicoba lagi, permintaan tulis tidak", async () => {
+    const { ambil, jaringan } = await import("../youtube/lib.mjs"); const lama = globalThis.fetch; jaringan.jeda = 1; let n = 0, gagal = 2;
+    globalThis.fetch = async () => { n++; if (gagal-- > 0) throw Object.assign(new TypeError("fetch failed"), { cause: { code: "UND_ERR_CONNECT_TIMEOUT" } }); return new Response("{}"); };
+    try {
+      assert.equal((await ambil("https://www.googleapis.com/x")).status, 200); assert.equal(n, 3);
+      n = 0; gagal = 9; await assert.rejects(ambil("https://www.googleapis.com/x", { method: "POST" }), /UND_ERR_CONNECT_TIMEOUT/); assert.equal(n, 1);
+      n = 0; await assert.rejects(ambil("https://www.googleapis.com/x"), /jaringan/); assert.equal(n, 4);
+    } finally { globalThis.fetch = lama; }
+  });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;
     try {

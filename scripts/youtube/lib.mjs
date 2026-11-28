@@ -28,11 +28,23 @@ export function opts(argv = process.argv.slice(2)) {
   return { o, semua };
 }
 
+// Gangguan jaringan (mis. connect timeout ke Google) pada permintaan baca atau token dicoba lagi.
+export const jaringan = { coba: 4, jeda: 1500 };
+export async function ambil(url, init) {
+  const aman = (init?.method ?? "GET") === "GET" || String(url).startsWith(TOKEN_URL);
+  for (let ke = 1; ; ke++) {
+    try { return await fetch(url, init); }
+    catch (e) {
+      if (!aman || ke >= jaringan.coba) throw Object.assign(new Error(`jaringan: ${e.cause?.code ?? e.message} (${new URL(url).hostname})`), { cause: e });
+      await new Promise((r) => setTimeout(r, ke * jaringan.jeda));
+    }
+  }
+}
 export async function request(url, init) {
   let res;
   // Gangguan sisi Google (5xx) pada permintaan baca dicoba lagi dua kali.
   for (let ke = 1; ; ke++) {
-    res = await fetch(url, init);
+    res = await ambil(url, init);
     if (res.status < 500 || (init?.method ?? "GET") !== "GET" || ke === 3) break;
     await new Promise((r) => setTimeout(r, ke * 1500));
   }

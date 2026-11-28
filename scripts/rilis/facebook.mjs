@@ -5,6 +5,7 @@
 import fs from "node:fs"; import path from "node:path";
 import { ROOT as REPO } from "../produksi/lib.mjs";
 import { kembar, pesanKembar } from "./ganda.mjs";
+import { ambil } from "../youtube/lib.mjs";
 import { ROOT, disetujui, muat, teksFacebook, terkunci, ubah, waktu } from "./inti.mjs";
 
 export const VERSI = "v27.0";
@@ -17,7 +18,8 @@ export const tunda = { proses: 10_000, batas: 10 * 60e3, ulang: 2000 };
 const jeda = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function minta(url, init) {
-  const res = await fetch(url, init); const b = await res.json().catch(() => ({}));
+  const res = await ambil(url, init); // hanya permintaan baca yang diulang saat jaringan terganggu
+  const b = await res.json().catch(() => ({}));
   if (res.ok && !b.error) return b;
   if (res.status === 413) throw Object.assign(new Error("Facebook 413: kiriman terlalu besar untuk satu permintaan"), { status: 413 });
   const e = b.error ?? b.debug_info ?? {};
