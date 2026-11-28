@@ -1,13 +1,14 @@
 {
   "cycle": "002-fee-split",
   "title_options": [
-    "You Pay $100. Here's Who Takes a Cut.",
-    "Every Card Tap Pays 4 Companies. Here's the Split.",
-    "Where $2.75 Goes When You Tap a Card"
+    "Who Takes a Cut When You Tap Your Card?",
+    "Guess Who Takes the Most When You Tap Your Card",
+    "The Card Fee Hiding Inside the Price Tag"
   ],
   "thumbnail_text": [
     "$100 → $97.25",
-    "WHO TOOK $2.75?"
+    "NOT VISA",
+    "CASH PAYS TOO"
   ],
   "promise": "After watching, you know where $2.75 of a $100 card purchase goes in one worked US example, who takes it, and who ends up paying.",
   "creator_evidence": [
@@ -2634,7 +2635,7 @@
         {
           "text": "$100 →",
           "color": "#ffffff",
-          "size": 170
+          "size": 150
         },
         {
           "text": "$97.25",
@@ -2651,20 +2652,39 @@
     {
       "lines": [
         {
-          "text": "WHO TOOK",
+          "text": "NOT",
           "color": "#ffffff",
-          "size": 150
+          "size": 190
         },
         {
-          "text": "$2.75?",
+          "text": "VISA?!",
           "color": "#ffd23f",
-          "size": 200
+          "size": 190
         }
       ],
       "stage": {
         "engine": "r3",
         "module": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-shots.tsx",
         "scene": "thumbB"
+      }
+    },
+    {
+      "lines": [
+        {
+          "text": "CASH PAYS",
+          "color": "#ffffff",
+          "size": 150
+        },
+        {
+          "text": "TOO",
+          "color": "#ffd23f",
+          "size": 190
+        }
+      ],
+      "stage": {
+        "engine": "r3",
+        "module": "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-shots.tsx",
+        "scene": "thumbC"
       }
     }
   ],

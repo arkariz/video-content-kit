@@ -1,7 +1,746 @@
 {
-  "_catatan": "Musik latar dipakai ulang dari T01 siklus 004 (ElevenLabs Music, akun yang sama) supaya tidak memakai kredit baru. Efek suara label dan transisi dari produksi/sfx.",
-  "target_lufs": -14,
-  "music": { "prompt": "dipakai ulang dari T01/004", "volume": 0.2 },
-  "sfx": {},
-  "cues": []
+ "_catatan": "Produksi ulang 2026-11-28: musik utama baru, musik mood per rentang scene, efek per kejadian dari pustaka produksi/sfx/el.",
+ "target_lufs": -14,
+ "music": {
+  "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, playful curious explainer score about money moving along a toll road: pizzicato strings, marimba, soft upright bass walking line, light brushed percussion, 104 bpm, G major",
+  "length_ms": 150000,
+  "volume": 0.18
+ },
+ "mood_music": [
+  {
+   "name": "tebakan",
+   "from": "s12",
+   "to": "s17",
+   "volume": 0.17,
+   "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, sly detective investigation groove: plucked double bass, muted vibraphone, finger snaps, a little suspense, 92 bpm, D minor",
+   "length_ms": 90000
+  },
+  {
+   "name": "kejutan",
+   "from": "s30",
+   "to": "s33",
+   "volume": 0.18,
+   "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, comic twist with a wink: bassoon and clarinet staccato, pizzicato, woodblock, light and mischievous, 110 bpm",
+   "length_ms": 60000
+  },
+  {
+   "name": "jujur",
+   "from": "s34",
+   "to": "s39",
+   "volume": 0.17,
+   "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, reflective honest moment at dusk: felt piano, soft warm strings, sparse, gentle, 76 bpm, A minor resolving to C",
+   "length_ms": 90000
+  },
+  {
+   "name": "pulau",
+   "from": "s40",
+   "to": "s46",
+   "volume": 0.17,
+   "prompt": "instrumental, no vocals, no drops, steady and unobtrusive under narration, bright island morning: Indonesian-inspired bamboo xylophone and soft metallophone with acoustic guitar and hand percussion, optimistic, 96 bpm",
+   "length_ms": 90000
+  }
+ ],
+ "sfx": {},
+ "cues": [
+  {
+   "scene": "s01",
+   "word": "tap",
+   "offset": -0.1,
+   "sfx": "keytap",
+   "vol": 0.4
+  },
+  {
+   "scene": "s01",
+   "word": "tap",
+   "offset": 0.15,
+   "sfx": "paid",
+   "vol": 0.35
+  },
+  {
+   "scene": "s01",
+   "word": "four",
+   "offset": 0.0,
+   "sfx": "ping",
+   "vol": 0.3
+  },
+  {
+   "scene": "s01",
+   "word": "ninety-seven",
+   "offset": -0.4,
+   "sfx": "coins",
+   "vol": 0.35
+  },
+  {
+   "scene": "s02",
+   "word": "noon",
+   "offset": -0.5,
+   "sfx": "tick",
+   "vol": 0.2
+  },
+  {
+   "scene": "s02",
+   "word": "beeps",
+   "offset": 0.0,
+   "sfx": "scan",
+   "vol": 0.4
+  },
+  {
+   "scene": "s03",
+   "word": "seventy-five",
+   "offset": -0.5,
+   "sfx": "coins",
+   "vol": 0.35
+  },
+  {
+   "scene": "s03",
+   "word": "twenty",
+   "offset": 0.0,
+   "sfx": "coin",
+   "vol": 0.35
+  },
+  {
+   "scene": "s03",
+   "word": "sixteen",
+   "offset": 0.0,
+   "sfx": "coin",
+   "vol": 0.25
+  },
+  {
+   "scene": "s03",
+   "word": "thirty-nine",
+   "offset": 0.0,
+   "sfx": "coin",
+   "vol": 0.22
+  },
+  {
+   "scene": "s05",
+   "word": "ends",
+   "offset": 0.0,
+   "sfx": "send",
+   "vol": 0.3
+  },
+  {
+   "scene": "s05",
+   "word": "till",
+   "offset": -0.6,
+   "sfx": "register",
+   "vol": 0.3
+  },
+  {
+   "scene": "s05",
+   "word": "later",
+   "offset": -1.2,
+   "sfx": "moto",
+   "vol": 0.15
+  },
+  {
+   "scene": "s06",
+   "word": "hundred",
+   "offset": -0.9,
+   "sfx": "counter",
+   "vol": 0.3
+  },
+  {
+   "scene": "s06",
+   "word": "gate",
+   "offset": -0.5,
+   "sfx": "switch",
+   "vol": 0.25
+  },
+  {
+   "scene": "s07",
+   "word": "eighty",
+   "offset": -0.6,
+   "sfx": "flip",
+   "vol": 0.25
+  },
+  {
+   "scene": "s08",
+   "word": "message",
+   "offset": -0.3,
+   "sfx": "send",
+   "vol": 0.25
+  },
+  {
+   "scene": "s08",
+   "word": "toll",
+   "offset": 0.0,
+   "sfx": "paper",
+   "vol": 0.3
+  },
+  {
+   "scene": "s09",
+   "word": "cart",
+   "offset": -0.5,
+   "sfx": "coins",
+   "vol": 0.25
+  },
+  {
+   "scene": "s10",
+   "word": "sticker",
+   "offset": 0.0,
+   "sfx": "stamp",
+   "vol": 0.3
+  },
+  {
+   "scene": "s11",
+   "word": "next",
+   "offset": 0.0,
+   "sfx": "ping",
+   "vol": 0.35
+  },
+  {
+   "scene": "s11",
+   "word": "runs",
+   "offset": -0.2,
+   "sfx": "plug",
+   "vol": 0.3
+  },
+  {
+   "scene": "s11",
+   "word": "terminal",
+   "offset": 0.0,
+   "sfx": "stamp",
+   "vol": 0.22
+  },
+  {
+   "scene": "s12",
+   "word": "four",
+   "offset": -0.3,
+   "sfx": "seat",
+   "vol": 0.25
+  },
+  {
+   "scene": "s12",
+   "word": "guess",
+   "offset": -0.4,
+   "sfx": "riser",
+   "vol": 0.22
+  },
+  {
+   "scene": "s12",
+   "word": "biggest",
+   "offset": -0.4,
+   "sfx": "bag",
+   "vol": 0.4
+  },
+  {
+   "scene": "s13",
+   "word": "twenty",
+   "offset": -0.4,
+   "sfx": "coins",
+   "vol": 0.3
+  },
+  {
+   "scene": "s14",
+   "word": "interchange",
+   "offset": -0.8,
+   "sfx": "send",
+   "vol": 0.3
+  },
+  {
+   "scene": "s14",
+   "word": "largest",
+   "offset": -0.6,
+   "sfx": "counter",
+   "vol": 0.25
+  },
+  {
+   "scene": "s15",
+   "word": "public",
+   "offset": -0.7,
+   "sfx": "paper",
+   "vol": 0.35
+  },
+  {
+   "scene": "s15",
+   "word": "tapped",
+   "offset": -0.2,
+   "sfx": "scan",
+   "vol": 0.3
+  },
+  {
+   "scene": "s16",
+   "word": "percent",
+   "offset": -0.2,
+   "sfx": "coin",
+   "vol": 0.35
+  },
+  {
+   "scene": "s16",
+   "word": "ten",
+   "offset": -0.2,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s16",
+   "word": "sixty-one",
+   "offset": -0.2,
+   "sfx": "thud",
+   "vol": 0.3
+  },
+  {
+   "scene": "s17",
+   "word": "premium",
+   "offset": -0.3,
+   "sfx": "magic",
+   "vol": 0.25
+  },
+  {
+   "scene": "s17",
+   "word": "percent",
+   "offset": -0.2,
+   "sfx": "coin",
+   "vol": 0.35
+  },
+  {
+   "scene": "s17",
+   "word": "twenty",
+   "offset": -0.5,
+   "sfx": "counter",
+   "vol": 0.22
+  },
+  {
+   "scene": "s19",
+   "word": "full",
+   "offset": -1.0,
+   "sfx": "flip",
+   "vol": 0.2
+  },
+  {
+   "scene": "s19",
+   "word": "interest",
+   "offset": -0.8,
+   "sfx": "denied",
+   "vol": 0.2
+  },
+  {
+   "scene": "s19",
+   "word": "fee",
+   "offset": -0.8,
+   "sfx": "coins",
+   "vol": 0.3
+  },
+  {
+   "scene": "s20",
+   "word": "Points",
+   "offset": 0.0,
+   "sfx": "magic",
+   "vol": 0.2
+  },
+  {
+   "scene": "s20",
+   "word": "cashback",
+   "offset": 0.0,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s20",
+   "word": "higher",
+   "offset": -0.4,
+   "sfx": "riser",
+   "vol": 0.18
+  },
+  {
+   "scene": "s21",
+   "word": "percent",
+   "offset": -0.6,
+   "sfx": "switch",
+   "vol": 0.25
+  },
+  {
+   "scene": "s21",
+   "word": "fifty",
+   "offset": -0.5,
+   "sfx": "coins",
+   "vol": 0.3
+  },
+  {
+   "scene": "s22",
+   "word": "rewards",
+   "offset": -0.6,
+   "sfx": "magic",
+   "vol": 0.2
+  },
+  {
+   "scene": "s23",
+   "word": "gate",
+   "offset": -0.6,
+   "sfx": "truck",
+   "vol": 0.12
+  },
+  {
+   "scene": "s23",
+   "word": "percent",
+   "offset": -0.2,
+   "sfx": "coin",
+   "vol": 0.35
+  },
+  {
+   "scene": "s23",
+   "word": "cents",
+   "offset": -0.2,
+   "sfx": "coin",
+   "vol": 0.28
+  },
+  {
+   "scene": "s23",
+   "word": "approval",
+   "offset": 0.0,
+   "sfx": "send",
+   "vol": 0.25
+  },
+  {
+   "scene": "s23",
+   "word": "sixteen",
+   "offset": -0.2,
+   "sfx": "thud",
+   "vol": 0.25
+  },
+  {
+   "scene": "s24",
+   "word": "zoom",
+   "offset": 0.0,
+   "sfx": "whoosh",
+   "vol": 0.3
+  },
+  {
+   "scene": "s24",
+   "word": "ten",
+   "offset": -1.4,
+   "sfx": "counter",
+   "vol": 0.3
+  },
+  {
+   "scene": "s25",
+   "word": "flat",
+   "offset": -0.9,
+   "sfx": "paper",
+   "vol": 0.3
+  },
+  {
+   "scene": "s25",
+   "word": "settles",
+   "offset": 0.0,
+   "sfx": "send",
+   "vol": 0.25
+  },
+  {
+   "scene": "s26",
+   "word": "percent",
+   "offset": -0.5,
+   "sfx": "thud",
+   "vol": 0.3
+  },
+  {
+   "scene": "s26",
+   "word": "seventy-five",
+   "offset": -1.0,
+   "sfx": "coins",
+   "vol": 0.3
+  },
+  {
+   "scene": "s27",
+   "word": "two-twenty",
+   "offset": -0.6,
+   "sfx": "coins",
+   "vol": 0.3
+  },
+  {
+   "scene": "s28",
+   "word": "markup",
+   "offset": -0.4,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s28",
+   "word": "split",
+   "offset": -1.0,
+   "sfx": "shutter",
+   "vol": 0.18
+  },
+  {
+   "scene": "s29",
+   "word": "drops",
+   "offset": -0.6,
+   "sfx": "bag",
+   "vol": 0.25
+  },
+  {
+   "scene": "s29",
+   "word": "ninety-eight",
+   "offset": -0.4,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s30",
+   "word": "backfire",
+   "offset": -0.3,
+   "sfx": "thud",
+   "vol": 0.4
+  },
+  {
+   "scene": "s30",
+   "word": "ten",
+   "offset": -0.2,
+   "sfx": "coin",
+   "vol": 0.45
+  },
+  {
+   "scene": "s31",
+   "word": "eighteen",
+   "offset": -0.6,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s31",
+   "word": "twenty",
+   "offset": -0.5,
+   "sfx": "bag",
+   "vol": 0.3
+  },
+  {
+   "scene": "s31",
+   "word": "five",
+   "offset": -0.5,
+   "sfx": "denied",
+   "vol": 0.2
+  },
+  {
+   "scene": "s32",
+   "word": "bigger",
+   "offset": -0.4,
+   "sfx": "switch",
+   "vol": 0.2
+  },
+  {
+   "scene": "s32",
+   "word": "four",
+   "offset": -0.8,
+   "sfx": "counter",
+   "vol": 0.22
+  },
+  {
+   "scene": "s33",
+   "word": "arrives",
+   "offset": -0.3,
+   "sfx": "chime",
+   "vol": 0.25
+  },
+  {
+   "scene": "s33",
+   "word": "twenty-seven",
+   "offset": -1.0,
+   "sfx": "flip",
+   "vol": 0.3
+  },
+  {
+   "scene": "s35",
+   "word": "cash",
+   "offset": -0.3,
+   "sfx": "paper",
+   "vol": 0.25
+  },
+  {
+   "scene": "s35",
+   "word": "toll",
+   "offset": -0.6,
+   "sfx": "coin",
+   "vol": 0.35
+  },
+  {
+   "scene": "s36",
+   "word": "cash",
+   "offset": -0.6,
+   "sfx": "register",
+   "vol": 0.25
+  },
+  {
+   "scene": "s36",
+   "word": "points",
+   "offset": -0.8,
+   "sfx": "magic",
+   "vol": 0.2
+  },
+  {
+   "scene": "s37",
+   "word": "2010",
+   "offset": 0.0,
+   "sfx": "ping",
+   "vol": 0.25
+  },
+  {
+   "scene": "s37",
+   "word": "fifty",
+   "offset": -1.2,
+   "sfx": "paper",
+   "vol": 0.25
+  },
+  {
+   "scene": "s38",
+   "word": "lower-income",
+   "offset": -0.8,
+   "sfx": "coins",
+   "vol": 0.22
+  },
+  {
+   "scene": "s39",
+   "word": "promise",
+   "offset": -0.4,
+   "sfx": "stamp",
+   "vol": 0.25
+  },
+  {
+   "scene": "s40",
+   "word": "low",
+   "offset": -0.4,
+   "sfx": "switch",
+   "vol": 0.2
+  },
+  {
+   "scene": "s40",
+   "word": "zero",
+   "offset": -0.4,
+   "sfx": "chime",
+   "vol": 0.3
+  },
+  {
+   "scene": "s41",
+   "word": "QRIS",
+   "offset": -0.2,
+   "sfx": "scan",
+   "vol": 0.35
+  },
+  {
+   "scene": "s41",
+   "word": "scan",
+   "offset": 0.0,
+   "sfx": "paid",
+   "vol": 0.3
+  },
+  {
+   "scene": "s42",
+   "word": "Indonesia",
+   "offset": -0.7,
+   "sfx": "thud",
+   "vol": 0.25
+  },
+  {
+   "scene": "s42",
+   "word": "pays",
+   "offset": -0.5,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s43",
+   "word": "fee",
+   "offset": -0.6,
+   "sfx": "switch",
+   "vol": 0.25
+  },
+  {
+   "scene": "s43",
+   "word": "five",
+   "offset": -0.6,
+   "sfx": "riser",
+   "vol": 0.15
+  },
+  {
+   "scene": "s44",
+   "word": "percent",
+   "offset": -0.8,
+   "sfx": "switch",
+   "vol": 0.22
+  },
+  {
+   "scene": "s44",
+   "word": "seven",
+   "offset": -0.6,
+   "sfx": "paper",
+   "vol": 0.3
+  },
+  {
+   "scene": "s45",
+   "word": "seventy",
+   "offset": -0.6,
+   "sfx": "coin",
+   "vol": 0.35
+  },
+  {
+   "scene": "s45",
+   "word": "seventy-five",
+   "offset": -0.8,
+   "sfx": "counter",
+   "vol": 0.25
+  },
+  {
+   "scene": "s46",
+   "word": "central",
+   "offset": -0.6,
+   "sfx": "paper",
+   "vol": 0.25
+  },
+  {
+   "scene": "s47",
+   "word": "seventy-five",
+   "offset": -0.6,
+   "sfx": "coins",
+   "vol": 0.25
+  },
+  {
+   "scene": "s47",
+   "word": "rewards",
+   "offset": -0.5,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s47",
+   "word": "Sixteen",
+   "offset": 0.0,
+   "sfx": "ping",
+   "vol": 0.25
+  },
+  {
+   "scene": "s47",
+   "word": "thirty-nine",
+   "offset": 0.0,
+   "sfx": "ping",
+   "vol": 0.22
+  },
+  {
+   "scene": "s48",
+   "word": "toll",
+   "offset": -0.6,
+   "sfx": "coin",
+   "vol": 0.3
+  },
+  {
+   "scene": "s48",
+   "word": "discount",
+   "offset": -0.2,
+   "sfx": "chime",
+   "vol": 0.25
+  },
+  {
+   "scene": "s49",
+   "word": "forgotten",
+   "offset": -0.4,
+   "sfx": "thud",
+   "vol": 0.25
+  },
+  {
+   "scene": "s49",
+   "word": "invented",
+   "offset": -0.1,
+   "sfx": "stamp",
+   "vol": 0.45
+  }
+ ]
 }
