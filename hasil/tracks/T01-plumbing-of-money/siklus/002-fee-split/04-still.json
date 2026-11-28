@@ -1,5 +1,5 @@
 {
-  "_catatan": "Gate still manual (naskah tanpa visual_spec v2). Putaran 1 = still yang disetujui 2026-11-28; putaran 2 = revisi mengikuti contoh P01b. Skor perkiraan agent dari lembar 480-600 px per still; close-up dan uji abu-abu tidak diulang.",
+  "_catatan": "Gate still 002. Putaran 1 = still yang disetujui 2026-11-28 (manual); 2 = revisi mengikuti P01b; 3 = lewat still.mjs setelah kunci visual versi 2. Skor perkiraan agent dari lembar 360-500 px per still; close-up dan uji abu-abu tidak diulang.",
   "scenes": {
     "s01": {
       "still": [
@@ -20,16 +20,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -94,6 +94,38 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s01-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s01-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s01-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s01-Short9x16-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -114,16 +146,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -184,6 +216,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s02-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s02-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -208,16 +270,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -298,6 +360,40 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s03-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s03-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s03-Master16x9-shot3.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s03-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s03-Short9x16-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s03-Short9x16-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -312,28 +408,28 @@
         "hierarki": 4,
         "material": 3,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
-        "kedalaman": 3,
+        "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "peta kota masih memakai TownBoard lama, kontras bangunan jauh rendah",
-          "penyebab": "MapBase tidak ikut diperbarui",
-          "perbaikan": "blok bertipe dan sapuan cahaya di peta",
-          "hasil": "terbuka"
+          "masalah": "peta kontras rendah dan sepi",
+          "penyebab": "MapBase memakai TownBoard lama",
+          "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -406,6 +502,42 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s04-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s04-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "peta kontras rendah dan sepi",
+              "penyebab": "MapBase memakai TownBoard lama",
+              "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -421,28 +553,28 @@
         "hierarki": 4,
         "material": 3,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
-        "kedalaman": 3,
+        "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "peta kota masih memakai TownBoard lama, kontras bangunan jauh rendah",
-          "penyebab": "MapBase tidak ikut diperbarui",
-          "perbaikan": "blok bertipe dan sapuan cahaya di peta",
-          "hasil": "terbuka"
+          "masalah": "peta kontras rendah dan sepi",
+          "penyebab": "MapBase memakai TownBoard lama",
+          "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -523,6 +655,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s05-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s05-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s05-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "peta kontras rendah dan sepi",
+              "penyebab": "MapBase memakai TownBoard lama",
+              "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -543,16 +712,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -619,6 +788,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s06-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s06-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -639,16 +838,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -715,6 +914,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s07-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s07-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -735,16 +964,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -811,6 +1040,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s08-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s08-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -831,16 +1090,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -913,6 +1172,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s09-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s09-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -932,16 +1221,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1006,6 +1295,35 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s10-Master16x9-shot1.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1021,28 +1339,28 @@
         "hierarki": 4,
         "material": 3,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
-        "kedalaman": 3,
+        "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "peta kota masih memakai TownBoard lama, kontras bangunan jauh rendah",
-          "penyebab": "MapBase tidak ikut diperbarui",
-          "perbaikan": "blok bertipe dan sapuan cahaya di peta",
-          "hasil": "terbuka"
+          "masalah": "peta kontras rendah dan sepi",
+          "penyebab": "MapBase memakai TownBoard lama",
+          "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1123,6 +1441,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s11-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s11-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s11-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "peta kontras rendah dan sepi",
+              "penyebab": "MapBase memakai TownBoard lama",
+              "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1144,16 +1499,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1222,6 +1577,37 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s12-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s12-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s12-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1236,29 +1622,29 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+          "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+          "perbaikan": "pilar inti server dan pintu brankas besar",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1339,6 +1725,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s13-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s13-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s13-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+              "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+              "perbaikan": "pilar inti server dan pintu brankas besar",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1359,16 +1782,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1435,6 +1858,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s14-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s14-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1455,16 +1908,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1537,6 +1990,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s15-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s15-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1557,16 +2040,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1639,6 +2122,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s16-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s16-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1660,16 +2173,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1744,6 +2257,37 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s17-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s17-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s17-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1764,16 +2308,22 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+        },
+        {
+          "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+          "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+          "perbaikan": "pilar inti server dan pintu brankas besar",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1846,6 +2396,42 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s18-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s18-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+              "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+              "perbaikan": "pilar inti server dan pintu brankas besar",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1860,29 +2446,29 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+          "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+          "perbaikan": "pilar inti server dan pintu brankas besar",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -1963,6 +2549,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s19-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s19-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s19-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+              "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+              "perbaikan": "pilar inti server dan pintu brankas besar",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -1984,16 +2607,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -2068,6 +2691,37 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s20-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s20-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s20-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -2082,29 +2736,29 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+          "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+          "perbaikan": "pilar inti server dan pintu brankas besar",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -2191,6 +2845,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s21-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s21-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s21-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+              "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+              "perbaikan": "pilar inti server dan pintu brankas besar",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -2205,28 +2896,28 @@
         "hierarki": 4,
         "material": 3,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
-        "kedalaman": 3,
+        "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "peta kota masih memakai TownBoard lama, kontras bangunan jauh rendah",
-          "penyebab": "MapBase tidak ikut diperbarui",
-          "perbaikan": "blok bertipe dan sapuan cahaya di peta",
-          "hasil": "terbuka"
+          "masalah": "peta kontras rendah dan sepi",
+          "penyebab": "MapBase memakai TownBoard lama",
+          "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -2299,6 +2990,42 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s22-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s22-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "peta kontras rendah dan sepi",
+              "penyebab": "MapBase memakai TownBoard lama",
+              "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -2320,16 +3047,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -2398,6 +3125,37 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s23-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s23-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s23-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -2418,16 +3176,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -2494,6 +3252,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s24-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s24-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -2508,29 +3296,29 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+          "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+          "perbaikan": "pilar inti server dan pintu brankas besar",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -2611,6 +3399,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s25-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s25-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s25-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+              "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+              "perbaikan": "pilar inti server dan pintu brankas besar",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -2625,29 +3450,29 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+          "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+          "perbaikan": "pilar inti server dan pintu brankas besar",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -2722,6 +3547,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s26-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s26-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s26-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+              "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+              "perbaikan": "pilar inti server dan pintu brankas besar",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -2734,29 +3596,29 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+          "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+          "perbaikan": "pilar inti server dan pintu brankas besar",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -2827,6 +3689,41 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s27-Master16x9-shot1.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+              "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+              "perbaikan": "pilar inti server dan pintu brankas besar",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -2841,29 +3738,29 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+          "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+          "perbaikan": "pilar inti server dan pintu brankas besar",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -2932,6 +3829,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s28-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s28-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s28-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+              "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+              "perbaikan": "pilar inti server dan pintu brankas besar",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -2946,29 +3880,23 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
-        },
-        {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -3049,6 +3977,37 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s29-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s29-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s29-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -3062,29 +4021,23 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
-        },
-        {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -3157,6 +4110,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s30-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s30-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -3171,29 +4154,29 @@
         "kompleksitas": 3,
         "hierarki": 4,
         "material": 3,
-        "cahaya": 3,
-        "lingkungan": 3,
+        "cahaya": 4,
+        "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "ruang server dan brankas masih berulang",
-          "penyebab": "tengara dan muka samping rak nyaris tidak terbaca",
-          "perbaikan": "tengara lebih kontras, variasi tipe rak",
-          "hasil": "terbuka"
+          "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+          "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+          "perbaikan": "pilar inti server dan pintu brankas besar",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -3268,6 +4251,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s31-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s31-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s31-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "ruang tanpa tengara yang dikunci spesifikasi",
+              "penyebab": "cincin server samar; brankas hanya dinding berpetak",
+              "perbaikan": "pilar inti server dan pintu brankas besar",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -3288,16 +4308,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -3370,6 +4390,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s32-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s32-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -3385,28 +4435,28 @@
         "hierarki": 4,
         "material": 3,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
-        "kedalaman": 3,
+        "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "peta kota masih memakai TownBoard lama, kontras bangunan jauh rendah",
-          "penyebab": "MapBase tidak ikut diperbarui",
-          "perbaikan": "blok bertipe dan sapuan cahaya di peta",
-          "hasil": "terbuka"
+          "masalah": "peta kontras rendah dan sepi",
+          "penyebab": "MapBase memakai TownBoard lama",
+          "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -3487,6 +4537,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s33-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s33-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s33-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "peta kontras rendah dan sepi",
+              "penyebab": "MapBase memakai TownBoard lama",
+              "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -3501,28 +4588,28 @@
         "hierarki": 4,
         "material": 3,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
-        "kedalaman": 3,
+        "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "peta kota masih memakai TownBoard lama, kontras bangunan jauh rendah",
-          "penyebab": "MapBase tidak ikut diperbarui",
-          "perbaikan": "blok bertipe dan sapuan cahaya di peta",
-          "hasil": "terbuka"
+          "masalah": "peta kontras rendah dan sepi",
+          "penyebab": "MapBase memakai TownBoard lama",
+          "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -3601,6 +4688,42 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s34-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s34-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "peta kontras rendah dan sepi",
+              "penyebab": "MapBase memakai TownBoard lama",
+              "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -3623,16 +4746,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -3697,6 +4820,38 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s35-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s35-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s35-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s35-Short9x16-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -3721,16 +4876,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -3811,6 +4966,40 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s36-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s36-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s36-Master16x9-shot3.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s36-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s36-Short9x16-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s36-Short9x16-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -3833,16 +5022,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -3913,6 +5102,38 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s37-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s37-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s37-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s37-Short9x16-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -3933,16 +5154,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4009,6 +5230,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s38-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s38-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -4027,19 +5278,25 @@
         "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
-        "akurasi": 4,
+        "akurasi": 3,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+        },
+        {
+          "masalah": "gambar dan label menegaskan klaim C23 yang berstatus belum",
+          "penyebab": "narasi tidak didukung sumber",
+          "perbaikan": "lunakkan narasi dan label",
+          "hasil": "dibiarkan atas keputusan kreator 2026-11-28"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4114,6 +5371,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s39-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s39-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s39-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 3,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "gambar dan label menegaskan klaim C23 yang berstatus belum",
+              "penyebab": "narasi tidak didukung sumber",
+              "perbaikan": "lunakkan narasi dan label",
+              "hasil": "dibiarkan atas keputusan kreator 2026-11-28"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -4134,22 +5428,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
-        },
-        {
-          "masalah": "pulau terang pucat di sekitar matahari; tanah masih satu bidang",
-          "penyebab": "glow langit besar dan satu path tanah",
-          "perbaikan": "turunkan glow, tekstur tanah",
-          "hasil": "pasir, rumah panggung, semak ditambahkan; sisanya terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4228,6 +5516,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s40-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s40-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -4248,22 +5566,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
-        },
-        {
-          "masalah": "pulau terang pucat di sekitar matahari; tanah masih satu bidang",
-          "penyebab": "glow langit besar dan satu path tanah",
-          "perbaikan": "turunkan glow, tekstur tanah",
-          "hasil": "pasir, rumah panggung, semak ditambahkan; sisanya terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4330,6 +5642,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s41-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s41-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -4350,22 +5692,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
-        },
-        {
-          "masalah": "pulau terang pucat di sekitar matahari; tanah masih satu bidang",
-          "penyebab": "glow langit besar dan satu path tanah",
-          "perbaikan": "turunkan glow, tekstur tanah",
-          "hasil": "pasir, rumah panggung, semak ditambahkan; sisanya terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4438,6 +5774,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s42-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s42-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -4458,22 +5824,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
-        },
-        {
-          "masalah": "pulau terang pucat di sekitar matahari; tanah masih satu bidang",
-          "penyebab": "glow langit besar dan satu path tanah",
-          "perbaikan": "turunkan glow, tekstur tanah",
-          "hasil": "pasir, rumah panggung, semak ditambahkan; sisanya terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4540,6 +5900,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s43-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s43-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -4560,22 +5950,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
-        },
-        {
-          "masalah": "pulau terang pucat di sekitar matahari; tanah masih satu bidang",
-          "penyebab": "glow langit besar dan satu path tanah",
-          "perbaikan": "turunkan glow, tekstur tanah",
-          "hasil": "pasir, rumah panggung, semak ditambahkan; sisanya terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4642,6 +6026,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s44-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s44-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -4662,28 +6076,22 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "panel perbandingan transparan bertabrakan dengan kota yang kini ramai",
-          "penyebab": "SideBySideShot memakai panel opasitas 0,15",
-          "perbaikan": "panel lebih gelap atau latar diredupkan",
+          "masalah": "panel perbandingan kini terbaca tetapi bagian atasnya kosong dan QR tersisih ke sudut",
+          "penyebab": "panel setinggi 720 px untuk tumpukan pendek",
+          "perbaikan": "panel lebih pendek dan benda pembeda di atas tumpukan",
           "hasil": "terbuka"
-        },
-        {
-          "masalah": "pulau terang pucat di sekitar matahari; tanah masih satu bidang",
-          "penyebab": "glow langit besar dan satu path tanah",
-          "perbaikan": "turunkan glow, tekstur tanah",
-          "hasil": "pasir, rumah panggung, semak ditambahkan; sisanya terbuka"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4768,6 +6176,42 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s45-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s45-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 3,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "panel perbandingan kini terbaca tetapi bagian atasnya kosong dan QR tersisih ke sudut",
+              "penyebab": "panel setinggi 720 px untuk tumpukan pendek",
+              "perbaikan": "panel lebih pendek dan benda pembeda di atas tumpukan",
+              "hasil": "terbuka"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -4788,16 +6232,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4870,6 +6314,36 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s46-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s46-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -4885,28 +6359,28 @@
         "hierarki": 4,
         "material": 3,
         "cahaya": 4,
-        "lingkungan": 3,
+        "lingkungan": 4,
         "komposisi": 4,
-        "kedalaman": 3,
+        "kedalaman": 4,
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "bank, bank toko, dan menara mendapat muka samping dan jendela; jalan mendapat kota berlapis, kereta layang, kabut, sapuan cahaya",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         },
         {
-          "masalah": "peta kota masih memakai TownBoard lama, kontras bangunan jauh rendah",
-          "penyebab": "MapBase tidak ikut diperbarui",
-          "perbaikan": "blok bertipe dan sapuan cahaya di peta",
-          "hasil": "terbuka"
+          "masalah": "peta kontras rendah dan sepi",
+          "penyebab": "MapBase memakai TownBoard lama",
+          "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+          "hasil": "selesai"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -4981,6 +6455,43 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s47-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s47-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s47-Master16x9-shot3.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "peta kontras rendah dan sepi",
+              "penyebab": "MapBase memakai TownBoard lama",
+              "perbaikan": "blok bertipe di belakang, toko bermuka samping, sapuan cahaya",
+              "hasil": "selesai"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -5003,16 +6514,16 @@
         "akurasi": 4,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -5089,6 +6600,38 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s48-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s48-Master16x9-shot2.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s48-Short9x16-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s48-Short9x16-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 4,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            }
+          ],
+          "lulus": false
         }
       ]
     },
@@ -5106,19 +6649,25 @@
         "lingkungan": 4,
         "komposisi": 4,
         "kedalaman": 4,
-        "akurasi": 4,
+        "akurasi": 3,
         "polesan": 3
       },
-      "catatan": "serat kayu, pantulan kaca, bayangan rak, lantai papan ditambahkan",
-      "lulus": false,
+      "catatan": "Dicocokkan dengan 03-visual.json.",
       "kritik": [
         {
-          "masalah": "material belum dibedakan setegas acuan; polesan di bawah contoh P01b",
-          "penyebab": "karakter dan benda masih memakai Shade satu pola; tekstur permukaan sedikit",
-          "perbaikan": "belum diperbaiki",
-          "hasil": "terbuka"
+          "masalah": "material dan polesan masih di bawah acuan",
+          "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+          "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+          "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+        },
+        {
+          "masalah": "gambar dan label menegaskan klaim C24 yang berstatus belum",
+          "penyebab": "narasi tidak didukung sumber",
+          "perbaikan": "lunakkan narasi dan label",
+          "hasil": "dibiarkan atas keputusan kreator 2026-11-28"
         }
       ],
+      "lulus": false,
       "riwayat": [
         {
           "putaran": 1,
@@ -5179,14 +6728,50 @@
             }
           ],
           "lulus": false
+        },
+        {
+          "putaran": 3,
+          "tanggal": "2026-11-28",
+          "still": [
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s49-Master16x9-shot1.jpg",
+            "hasil/tracks/T01-plumbing-of-money/siklus/002-fee-split/04-still/putaran-3/s49-Master16x9-shot2.jpg"
+          ],
+          "skor": {
+            "siluet": 4,
+            "kompleksitas": 3,
+            "hierarki": 4,
+            "material": 3,
+            "cahaya": 4,
+            "lingkungan": 4,
+            "komposisi": 4,
+            "kedalaman": 4,
+            "akurasi": 3,
+            "polesan": 3
+          },
+          "catatan": "Dicocokkan dengan 03-visual.json.",
+          "kritik": [
+            {
+              "masalah": "material dan polesan masih di bawah acuan",
+              "penyebab": "tekstur dan garis cahaya baru ditambahkan pada tokoh, gerobak, jalan, dan dinding; benda lain masih satu pola Shade",
+              "perbaikan": "aset tulisan tangan per benda dengan material berbeda (STYLE.md 2.4)",
+              "hasil": "terbuka; batas yang sama diterima pada contoh P01b"
+            },
+            {
+              "masalah": "gambar dan label menegaskan klaim C24 yang berstatus belum",
+              "penyebab": "narasi tidak didukung sumber",
+              "perbaikan": "lunakkan narasi dan label",
+              "hasil": "dibiarkan atas keputusan kreator 2026-11-28"
+            }
+          ],
+          "lulus": false
         }
       ]
     }
   },
   "kreator": {
     "disetujui": false,
-    "catatan": "Persetujuan 2026-11-28 berlaku untuk still putaran 1; putaran baru perlu persetujuan lagi."
+    "catatan": "Menunggu persetujuan still putaran 3."
   },
-  "dirender": "2026-11-28T07:20:21.305212+00:00",
-  "putaran": 2
+  "dirender": "2026-11-28T07:40:17.224Z",
+  "putaran": 3
 }
