@@ -76,6 +76,7 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-26 | Naskah 004 disetujui; judul 1 "Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It."; thumbnail A "$80 → WHO?" | Anti-slop EN 40/50, ID 39/50; checklist cerita 7/7 | siklus/004-gta6-who-got-paid/03-naskah.md |
 | 2026-11-27 | Siklus 005 (QRIS) dibuat di luar paket V2; sudut A dipilih agent (mode_gate otomatis) | Permintaan kreator menyebut topik; A menjawab dua bagian (dalam negeri dan internasional); B dekat berita kebijakan, C terlalu sempit | siklus/005-qris-one-sticker/01-riset-viral.md |
 | 2026-11-27 | Naskah 005 disetujui beserta 4 pemeran baru (switch, yourapp, tourist, centralbank); judul 1 "Indonesia's QRIS: One Sticker, 72 Million Users", thumbnail A "ONE STICKER. EVERY APP." (default rekomendasi, kreator tidak memilih lain) | Anti-slop EN 40/50, ID 39/50; checklist cerita 9/9; lint kemasan pasangan terbaik 100/100 | siklus/005-qris-one-sticker/03-naskah.md |
+| 2026-11-28 | Cara hitung V2 untuk video yang tayang sebelum 2026-12-07: semua video bertanda uji-V2 dihitung, termasuk yang tayang lebih awal; video di luar V2 tidak dihitung; ambang dan aturan keputusan tetap, `validasi/rencana.md` tidak diubah | Ditetapkan sebelum penilaian 2027-01-03, setelah sebagian angka awal (24 sampai 72 jam) sudah terlihat; penyimpangan periode tayang disebut saat penilaian | sesi 2026-11-28, disetujui kreator |
 
 ## Log
 
@@ -154,3 +155,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Kreator memilih konsep identitas "bawah tanah" untuk channel. Foto profil dan banner dibuat (channel/: 3 profil, 2 banner). Belum dipilih; belum diunggah.
 - 2026-11-28: Cek analitik (analitik/youtube-2026-11-28.md). 001 long-form CTR 4,2% (95 impresi), retensi 50,9% dari 6 view; Shorts belum punya data retensi. Jadwal dari 06-rilis.json: 002 2-4 Des, 005 29 Nov-1 Des.
 - 2026-11-28: Angka Studio ditempel kreator (analitik/studio-2026-11-28.md). Sementara: Short A1 tetap menonton 37,3% dan rata-rata ditonton 38,9% (zona gagal), CTR long-form 001 4,21%; Short lain dan long-form masih bersampel sangat kecil.
+- 2026-11-28: Kreator menyetujui cara hitung V2 untuk video yang tayang lebih awal (tabel Keputusan). Jadwal yang sudah ada dibiarkan.

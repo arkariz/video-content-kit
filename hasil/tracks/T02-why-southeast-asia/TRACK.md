@@ -88,6 +88,7 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 | 2026-11-26 | Naskah versi gaya cerita + R3 dipakai untuk produksi ulang, dengan visual 3D berkedalaman | Kreator memerintahkan produksi baru dengan gaya baru dan bergaya 3D seperti contoh video (dianggap persetujuan naskah); instalasi three.js disetujui | sesi 2026-11-26 |
 | 2026-11-26 | Sudut siklus 002: A (GTA 6 Takes 1 Hour to Download in Singapore. In Indonesia, 9.), mengisi slot long-form B V2 | Momen rilis GTA VI 2026-11-19; celah: tidak ada video Inggris yang menjelaskan kenapa fixed broadband Indonesia (51,40 Mbps) kalah dari selulernya (66,34 Mbps); topik infrastruktur, risiko kebijakan rendah | siklus/002-gta6-download-9-hours/01-riset-viral.md |
 | 2026-11-26 | 002 (GTA) dikerjakan penuh lebih dulu dengan target tayang 2026-12-01; Jawa jadi siklus 003 setelah penilaian V2 | Mengejar hype GTA VI (rilis 2026-11-19 menurut riset); paket uji V2 tetap 2 long-form + 6 Shorts | sesi 2026-11-26 |
+| 2026-11-28 | Cara hitung V2 untuk video yang tayang sebelum 2026-12-07: semua video bertanda uji-V2 dihitung, termasuk yang tayang lebih awal; video di luar V2 tidak dihitung; ambang dan aturan keputusan tetap, `validasi/rencana.md` tidak diubah | Ditetapkan sebelum penilaian 2027-01-03, setelah sebagian angka awal (24 sampai 72 jam) sudah terlihat; penyimpangan periode tayang disebut saat penilaian | sesi 2026-11-28, disetujui kreator |
 
 ## Log
 
@@ -154,3 +155,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-28: Angka Studio ditempel kreator (analitik/studio-2026-11-28.md). Sementara: tetap menonton Shorts median 35,8% (zona gagal), rata-rata ditonton Shorts 54,5%, CTR long-form 4,2%, retensi long-form 001 35,9% (menggantikan 8,2% dari API).
 - 2026-11-28: Penyegaran dashboard mencatat B2 004 kini 4 Des 16.00 di YouTube, sama dengan Facebook, berjudul baru.
 - 2026-11-28: Penyegaran dashboard mencatat B2 003 kini 1 Des 16.00 di YouTube, berjudul baru.
+- 2026-11-28: Kreator menyetujui cara hitung V2 untuk video yang tayang lebih awal (tabel Keputusan). Jadwal yang sudah ada dibiarkan.
