@@ -57,13 +57,23 @@ export const BankHouse: React.FC<{ x: number; y: number; s?: number; lit?: numbe
     <g transform={`translate(${x} ${y}) scale(${s})`}>
       <Contact x={16} y={8} w={215} o={0.55} />
       {lit > 0.05 && <Glow2 x={0} y={-170} r={320} c="#ffd98a" o={0.34 * lit} />}
+      {/* muka samping (jauh dari cahaya) dan atap samping */}
+      <path d="M168 -236L228 -258V-26L168 0Z" fill={dim(CREAM, k)[1]} /><path d="M196 -246L228 -258V-26L196 -14Z" fill={dim(CREAM, k)[0]} />
+      {[-196, -128].map((y) => <g key={y}><path d={`M180 ${y + 4}L214 ${y - 8}V${y + 36}L180 ${y + 48}Z`} fill="#33407a" /><path d={`M184 ${y + 30}L208 ${y + 2}`} stroke="#9fc4ff" strokeWidth={5} opacity={0.7} /></g>)}
+      <path d="M200 -214L262 -244L66 -366L14 -358L214 -230Z" fill={dim(GREEN, k)[0]} />{[0, 1, 2].map((i) => <path key={i} d={`M${70 + i * 46} ${-343 + i * 30}l54 -4`} stroke={dim(GREEN, k)[1]} strokeWidth={6} />)}
       <Shade d={rr(-170, -240, 340, 240, 8)} tones={dim(CREAM, k)} L={LL} s={[6, 24, 10]} />
+      <path d="M-166 -240H166V-214H-166Z" fill={dim(CREAM, k)[0]} opacity={0.45} />
+      {[-30, 0, 30].map((y) => <path key={y} d={`M-160 ${y - 150}H160`} stroke={dim(CREAM, k)[1]} strokeWidth={3} opacity={0.35} />)}
       <Shade d="M-214 -230L-14 -358Q0 -366 14 -358L214 -230Q220 -214 200 -214H-200Q-220 -214 -214 -230Z" tones={dim(GREEN, k)} L={LL} s={[6, 20, 10]}>{[0, 1, 2].map((i) => <path key={i} d={`M-230 ${-248 - i * 34}H230`} stroke={dim(GREEN, k)[1]} strokeWidth={5} />)}</Shade>
       <circle cy={-272} r={30} fill={dim(GOLD, k)[2]} /><circle cy={-272} r={17} fill="none" stroke={dim(GOLD, k)[1]} strokeWidth={6} />
       {[-142, -86, 86, 142].map((a) => <Shade key={a} d={rr(a - 16, -196, 32, 184, 10)} tones={dim(CREAM, k * 1.05)} L={LL} s={[3, 10, 5]} />)}
       <Shade d={circ(0, -92, 58)} tones={dim(STEEL, k)} L={LL} s={[5, 14, 8]} /><circle cy={-92} r={32} fill={dim(STEEL, k)[1]} />
       <g transform={`translate(0 -92) rotate(${t * 8})`}>{line("M-24 0H24M0 -24V24", dim(STEEL, k)[3], 8)}</g>
+      <path d="M-198 -214L-14 -336" stroke={dim(GREEN, k)[3]} strokeWidth={8} strokeLinecap="round" fill="none" />
+      <path d="M196 -16L250 -38V-14L196 12Z" fill={dim(CREAM, k)[0]} />
       <Shade d={rr(-196, -16, 392, 28, 8)} tones={dim(CREAM, k + 0.05)} L={LL} s={[3, 8, 5]} />
+      <Shade d={rr(-222, 6, 444, 22, 8)} tones={dim(STEEL, k)} L={LL} s={[2, 6, 4]} />
+      {[-190, 190].map((x) => <g key={x} transform={`translate(${x} 4)`}><path d={rr(-20, -26, 40, 30, 9)} fill={dim(COPPER, k)[2]} /><g fill={dim(GREEN, k)[1]}><circle cy={-40} r={20} /><circle cx={-15} cy={-30} r={13} /><circle cx={16} cy={-31} r={14} /></g><path d="M-14 -50Q0 -62 14 -50" stroke={dim(GREEN, k)[3]} strokeWidth={5} fill="none" strokeLinecap="round" /></g>)}
     </g>
   );
 };

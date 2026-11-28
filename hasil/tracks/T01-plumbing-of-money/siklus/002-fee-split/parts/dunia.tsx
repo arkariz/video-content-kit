@@ -86,7 +86,7 @@ export const Scene: React.FC<{ redup?: boolean; kind: SetName; from?: Partial<Ca
 /* ---------------- benda toko ---------------- */
 /** meja kasir; y = permukaan atas */
 export const Counter: React.FC<{ y?: number; x?: number; w?: number }> = ({ y = 760, x = 200, w = 1520 }) => (
-  <g><Contact x={x + w / 2} y={y + 330} w={w * 0.55} /><Shade d={rr(x + 30, y + 20, w - 60, 520, 20)} tones={WOOD} L={LR} s={[10, 30, 14]} />{Array.from({ length: Math.floor(w / 250) }, (_, i) => <path key={i} d={rr(x + 80 + i * 250, y + 80, 190, 300, 18)} fill="#7e3c3a" opacity={0.75} />)}<Shade d={rr(x, y - 16, w, 48, 18)} tones={COPPER} L={LR} s={[5, 14, 9]} /></g>
+  <g><Contact x={x + w / 2} y={y + 330} w={w * 0.55} /><Shade d={rr(x + 30, y + 20, w - 60, 520, 20)} tones={WOOD} L={LR} s={[10, 30, 14]} />{Array.from({ length: Math.floor(w / 250) }, (_, i) => <path key={i} d={rr(x + 80 + i * 250, y + 80, 190, 300, 18)} fill="#7e3c3a" opacity={0.75} />)}<Shade d={rr(x, y - 16, w, 48, 18)} tones={COPPER} L={LR} s={[5, 14, 9]} /><path d={`M${x + 18} ${y - 8}H${x + w * 0.3}M${x + w * 0.36} ${y - 8}H${x + w * 0.42}`} stroke="#ffd0a0" strokeWidth={6} strokeLinecap="round" />{Array.from({ length: Math.floor(w / 190) }, (_, i) => <path key={i} d={`M${x + 70 + i * 190} ${y + 12 + (i % 3) * 5}q60 ${i % 2 ? 9 : -7} 120 0`} stroke={COPPER[1]} strokeWidth={4} fill="none" strokeLinecap="round" />)}{Array.from({ length: Math.floor(w / 250) }, (_, i) => <g key={i}><path d={`M${x + 100 + i * 250} ${y + 130}q40 26 150 4M${x + 100 + i * 250} ${y + 220}q60 -20 150 -4`} stroke="#5a2430" strokeWidth={5} fill="none" opacity={0.6} /><path d={`M${x + 96 + i * 250} ${y + 98}h120`} stroke="#d98a56" strokeWidth={5} strokeLinecap="round" opacity={0.7} /></g>)}</g>
 );
 /** sepatu; (x,y) = dasar */
 export const Shoe: React.FC<{ x: number; y: number; s?: number; c?: Tones; rot?: number }> = ({ x, y, s = 1, c = CORAL, rot = 0 }) => (
@@ -228,11 +228,15 @@ export const MyBank: React.FC<{ x: number; y: number; s?: number; t: number; moo
 export const ShopBank: React.FC<{ x: number; y: number; s?: number; t: number; mood?: string }> = ({ x, y, s = 1, t, mood = "calm" }) => (
   <g transform={`translate(${x} ${y}) scale(${s})`}>
     <Contact x={14} y={8} w={215} o={0.5} />
+    <path d="M168 -236L226 -256V-26L168 0Z" fill={SKYB[1]} /><path d="M196 -246L226 -256V-26L196 -14Z" fill={SKYB[0]} />
+    <path d="M200 -298L244 -312V-248L200 -230Z" fill={BLUE[0]} />
+    <path d="M182 -170L214 -182V-112L182 -100Z" fill="#26356e" /><path d="M188 -112L208 -168" stroke="#bfe8ff" strokeWidth={5} opacity={0.7} />
     <Shade d={rr(-170, -240, 340, 240, 8)} tones={SKYB} L={LL} s={[6, 24, 10]} />
+    {[0, 1, 2, 3, 4, 5].map((r) => <path key={r} d={`M-166 ${-60 + (r % 3) * 20}h${r < 3 ? 60 : 0}M${r < 3 ? 100 : -150} ${-200 + (r % 3) * 20}h46`} stroke={SKYB[1]} strokeWidth={4} opacity={0.6} />)}
     <Shade d={rr(-200, -300, 400, 76, 34)} tones={BLUE} L={LL} s={[5, 16, 9]} />
     {Array.from({ length: 7 }, (_, i) => <path key={i} d={`M${-190 + i * 55} -226q27 42 54 0Z`} fill={i % 2 ? "#fff4da" : BLUE[2]} />)}
     <ShoeBox x={0} y={-292} s={0.7} c={CORAL} />
-    {[-120, 120].map((a) => <path key={a} d={rr(a - 28, -160, 56, 70, 18)} fill="#ffd27a" />)}
+    {[-120, 120].map((a) => <g key={a}><path d={rr(a - 34, -166, 68, 82, 22)} fill="#fff4da" /><path d={rr(a - 28, -160, 56, 70, 18)} fill="#ffd27a" /><path d={`M${a - 18} -104L${a + 14} -150M${a - 2} -98L${a + 20} -128`} stroke="#fffbe8" strokeWidth={5} strokeLinecap="round" /><path d={`M${a} -158V-92M${a - 26} -126H${a + 26}`} stroke="#c98a4a" strokeWidth={4} /></g>)}
     <path d={rr(-46, -96, 92, 96, 36, 4)} fill={P.navy} /><BFace x={0} y={-150} s={0.82} mood={mood} t={t} />
     <Shade d={rr(-196, -16, 392, 28, 8)} tones={CREAM} L={LL} s={[3, 8, 5]} />
   </g>

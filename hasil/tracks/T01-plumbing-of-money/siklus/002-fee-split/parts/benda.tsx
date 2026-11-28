@@ -135,7 +135,13 @@ export const NetTower: React.FC<{ x: number; y: number; s?: number; t: number; m
       <Contact x={0} y={4} w={150} />
       {beam > 0 && <g transform={`translate(0 -470) rotate(${a})`} opacity={beam}><defs><linearGradient id="t5beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#fff3b0" stopOpacity={0.75} /><stop offset="1" stopColor="#fff3b0" stopOpacity={0} /></linearGradient></defs><path d="M0 -14L900 -150V150L0 14Z" fill="url(#t5beam)" /></g>}
       <Shade d="M-96 0L-60 -330H60L96 0Z" tones={PURPLE} L={LR} s={[8, 24, 12]}>{[-70, -150, -230].map((b) => <path key={b} d={`M-110 ${b}H110`} stroke={PURPLE[1]} strokeWidth={9} />)}</Shade>
+      <path d="M40 -326L58 -326L90 -4H66Z" fill={PURPLE[0]} opacity={0.8} />
+      <path d="M-52 -318L-80 -20" stroke={PURPLE[3]} strokeWidth={9} strokeLinecap="round" strokeDasharray="90 24 40 24" fill="none" />
+      {[-258, -178, -108].map((b, i) => <g key={b}><path d={rr(-16 + i * 4, b - 22, 30, 40, 14, 3)} fill="#ffd27a" /><path d={`M${-10 + i * 4} ${b + 10}l18 -24`} stroke="#fffbe8" strokeWidth={4} strokeLinecap="round" /></g>)}
+      <path d={rr(-108, -330, 216, 18, 8)} fill={STEEL[1]} />{[-92, -56, -20, 16, 52, 88].map((a) => <path key={a} d={`M${a} -330v-14`} stroke={STEEL[2]} strokeWidth={6} strokeLinecap="round" />)}
+      <path d="M-96 -340H96" stroke={STEEL[3]} strokeWidth={5} strokeLinecap="round" />
       <Shade d={rr(-112, -420, 224, 100, 34)} tones={STEEL} L={LR} s={[6, 18, 10]} />
+      <path d="M-96 -400Q-60 -414 -10 -412" stroke="#eef6ff" strokeWidth={8} strokeLinecap="round" fill="none" />{[-92, 92].map((a) => <circle key={a} cx={a} cy={-340} r={6} fill={STEEL[0]} />)}
       <BFace x={0} y={-378} s={0.92} mood={mood ?? "neutral"} t={t} />
       <Shade d="M-96 -420Q0 -480 96 -420Z" tones={PURPLE} L={LR} s={[4, 12, 7]} />
       <Glow2 x={0} y={-470} r={90} c="#fff3b0" o={0.85} /><circle cy={-470} r={24} fill="#fffbe0" />
