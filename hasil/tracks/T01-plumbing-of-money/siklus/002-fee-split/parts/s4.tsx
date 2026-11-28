@@ -185,8 +185,8 @@ export const SideBySideShot: React.FC = () => {
   const { t, at } = useW();
   const a = go(t, 0.2, 0.8), b = back(t, at("seventy-five", 2.6) - 1.0, 0.9);
   return (
-    <Scene kind="jalan" to={{ z: 1.04 }}>
-      <path d={rr(260, 150, 580, 720, 44)} fill="#7dffd0" opacity={0.14} /><path d={rr(1080, 150, 580, 720, 44)} fill="#ffb88a" opacity={0.16} />
+    <Scene redup kind="pulau" to={{ z: 1.04 }}>
+      <path d={rr(260, 150, 580, 720, 44)} fill="#123c34" opacity={0.9} /><path d={rr(1080, 150, 580, 720, 44)} fill="#3c1c40" opacity={0.9} />
       <Stack x={550} y={820} n={Math.round(a * 5)} w={110} />
       <Stack x={1370} y={820} n={Math.round(clamp(b) * 19)} w={110} />
       <QrStand x={330} y={840} s={0.45} /><Card x={1560} y={780} s={0.65} rot={12} premium t={t} />

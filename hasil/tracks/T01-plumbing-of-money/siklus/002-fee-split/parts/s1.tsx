@@ -5,6 +5,7 @@ import { R, clamp, mix, pop, seg } from "@r3";
 import { Shade, rr } from "@r3/art";
 import { BLUE, CORAL, CREAM, Contact, DARK, GOLD, GREEN, Glow2, LR, P, STEEL, TEALB, WOOD, You, Owner, circ, line, Tick } from "./kit";
 import { NetTower, Stack, Txt, Coin, Cross } from "./benda";
+import { Block, Gables, MID, MistBand, Office, TEAL, VIOLET, WaterTower } from "@r3/art";
 import { BankHouse, TownBoard } from "./peta";
 import { Bill, Card, Cart, CashMan, CoinGrid, Counter, Gold, Hand, Highway, Lines, MyBank, Paper, Sack, Scene, ServerGuy, Shoe, ShopBank, Sticker2, Terminal, TollGate, Waves, arc, back, go, useW } from "./dunia";
 
@@ -127,11 +128,16 @@ export const SmallSlicesShot: React.FC = () => {
 /* s04-s05, s11: peta */
 export const MapBase: React.FC<{ t: number; cam: { x: number; y: number; z: number }; road?: number; me?: number; shop?: number; them?: number; children?: React.ReactNode }> = ({ t, cam, road = 1, me = 1, shop = 1, them = 1, children }) => (
   <TownBoard t={t} cam={cam}>
+    <clipPath id="d2petakota"><rect x={-600} y={-200} width={3200} height={788} /></clipPath>
+    <g opacity={0.9} clipPath="url(#d2petakota)"><Gables x={40} base={590} n={2} w={110} h={100} seed={31} t={t} /><Block x={560} base={585} w={120} h={190} side={26} seed={32} t={t} tones={MID} on={0.45} /><Office x={700} base={580} w={96} h={150} seed={33} t={t} /><Block x={1130} base={585} w={130} h={170} side={26} seed={34} t={t} top="dome" tones={VIOLET} on={0.45} /><Gables x={1300} base={590} n={1} w={110} h={96} seed={35} t={t} /><Block x={1790} base={600} w={140} h={240} side={30} seed={36} t={t} top="step" tones={TEAL} on={0.45} /><WaterTower x={470} base={580} s={0.45} t={t} /></g>
+    <path d="M-300 586Q400 572 960 590T2220 582" stroke="#5a74b8" strokeWidth={9} fill="none" opacity={0.65} strokeLinecap="round" />
+    <path d={rr(-300, 520, 2520, 110, 40)} fill="#4a5aa8" opacity={0.14} />
+    <Glow2 x={960} y={760} r={620} c="#ffb36b" o={0.22} />
     <path d="M400 770Q960 900 1520 770" pathLength={100} strokeDasharray={`${road * 100} 100`} stroke="#8a5a52" strokeWidth={56} fill="none" strokeLinecap="round" />
     <path d="M400 770Q960 900 1520 770" pathLength={100} strokeDasharray={`${road * 100} 100`} stroke="#ffd27a" strokeWidth={34} fill="none" strokeLinecap="round" />
     {road > 0.98 && <path d="M400 770Q960 900 1520 770" stroke="#fff6d8" strokeWidth={7} strokeDasharray="24 48" strokeDashoffset={-t * 80} fill="none" />}
     <MyBank x={360} y={720} s={0.9} t={t} lit={me} mood={me > 0.6 ? "happy" : "neutral"} />
-    <g opacity={0.35 + 0.65 * shop}><g transform="translate(960 640)"><Contact x={0} y={4} w={150} /><Shade d={rr(-120, -150, 240, 150, 10)} tones={CREAM} L={LR} s={[5, 16, 9]} /><path d={rr(-40, -92, 80, 92, 28, 4)} fill="#6a3340" /><Shade d="M-150 -142L-110 -214H110L150 -142Z" tones={CORAL} L={LR} s={[4, 12, 7]} />{[-110, -55, 0, 55, 110].map((a) => <path key={a} d={`M${a - 28} -144q28 36 56 0Z`} fill="#fff4da" />)}</g></g>
+    <g opacity={0.35 + 0.65 * shop}><g transform="translate(960 640)"><Contact x={0} y={4} w={150} /><Shade d={rr(-120, -150, 240, 150, 10)} tones={CREAM} L={LR} s={[5, 16, 9]} /><path d="M118 -146L166 -166V-18L118 0Z" fill={CREAM[1]} /><path d="M148 -214L196 -190L166 -158L112 -214Z" fill={CORAL[0]} /><path d="M128 -112L154 -122V-72L128 -62Z" fill="#26356e" /><path d="M132 -72L150 -112" stroke="#bfe8ff" strokeWidth={5} opacity={0.7} /><path d={rr(-100, -92, 44, 46, 12)} fill="#ffd27a" /><path d={rr(56, -92, 44, 46, 12)} fill="#ffd27a" /><path d="M-92 -54L-66 -86M64 -54L90 -86" stroke="#fffbe8" strokeWidth={5} strokeLinecap="round" /><path d={rr(-40, -92, 80, 92, 28, 4)} fill="#6a3340" /><Shade d="M-150 -142L-110 -214H110L150 -142Z" tones={CORAL} L={LR} s={[4, 12, 7]} />{[-110, -55, 0, 55, 110].map((a) => <path key={a} d={`M${a - 28} -144q28 36 56 0Z`} fill="#fff4da" />)}</g></g>
     <g opacity={0.35 + 0.65 * them}><ShopBank x={1560} y={720} s={0.9} t={t} /></g>
     {children}
   </TownBoard>

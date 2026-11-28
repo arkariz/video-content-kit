@@ -119,6 +119,7 @@ export const You: React.FC<{ x: number; y: number; s?: number; t: number; face?:
       <Hose d="M-48 -40Q-62 -10 -74 0" tones={CORAL} w={30} /><Hose d="M50 -40Q60 -10 78 0" tones={CORAL} w={30} />
       <g transform={`translate(0 ${b})`}>
         <Shade d={body} tones={CORAL} L={LR} s={[8, 24, 14]} />
+        <ellipse cx={-70} cy={-132} rx={9} ry={6} fill="#ff9a68" opacity={0.55} /><ellipse cx={-92} cy={-112} rx={5} ry={4} fill="#ff9a68" opacity={0.55} /><ellipse cx={78} cy={-96} rx={7} ry={5} fill="#ff9a68" opacity={0.55} /><ellipse cx={58} cy={-312} rx={8} ry={5} fill="#ff9a68" opacity={0.55} /><ellipse cx={40} cy={-330} rx={4} ry={3} fill="#ff9a68" opacity={0.55} /><path d="M-78 -296Q-52 -336 -10 -340" stroke="#ffd0b0" strokeWidth={9} strokeLinecap="round" fill="none" /><path d="M112 -92Q104 -50 58 -36" stroke="#ffb36b" strokeWidth={7} strokeLinecap="round" strokeDasharray="34 16" fill="none" />
         <Eyes x={14 + look} y={-268} gap={30} t={t} face={face} />
         <Shade d="M-98 -214Q8 -168 108 -216Q124 -190 112 -170Q8 -124 -100 -168Q-112 -192 -98 -214Z" tones={BLUE} L={LR} s={[4, 10, 6]} />
         <Shade d={`M-82 -176Q-150 -150 ${-190 + Math.sin(t * 2.6) * 12} ${-108 + Math.cos(t * 2.2) * 8}Q-150 -96 -128 -112Q-112 -142 -62 -154Z`} tones={BLUE} L={LR} s={[3, 8, 5]} />
@@ -136,10 +137,11 @@ export const Owner: React.FC<{ x: number; y: number; s?: number; t: number; face
       <Contact x={0} y={4} w={165} />
       <g transform={`translate(0 ${b})`}>
         <Shade d="M0 -330C100 -332 164 -258 164 -168C164 -72 96 -14 0 -14C-96 -14 -164 -72 -164 -168C-164 -258 -100 -328 0 -330Z" tones={TEALB} L={LR} s={[10, 28, 15]} />
+        <ellipse cx={-112} cy={-210} rx={10} ry={7} fill="#6fd8cc" opacity={0.55} /><ellipse cx={-128} cy={-176} rx={5} ry={4} fill="#6fd8cc" opacity={0.55} /><ellipse cx={120} cy={-120} rx={8} ry={6} fill="#6fd8cc" opacity={0.55} /><ellipse cx={-96} cy={-72} rx={6} ry={4} fill="#6fd8cc" opacity={0.55} /><path d="M-118 -266Q-80 -314 -20 -318" stroke="#c8fff4" strokeWidth={9} strokeLinecap="round" fill="none" /><path d="M150 -130Q130 -62 76 -34" stroke="#ffb36b" strokeWidth={7} strokeLinecap="round" strokeDasharray="34 16" fill="none" />
         <Eyes x={8 + look} y={-244} gap={34} t={t} face={face} />
         <Shade d="M-86 -158Q0 -142 86 -158L112 -44Q0 6 -112 -44Z" tones={CREAM} L={LR} s={[6, 16, 8]} />
         {line("M-86 -158Q-110 -190 -132 -196M86 -158Q110 -190 132 -196", CREAM[1], 11)}
-        {line("M-48 -92H48", CREAM[1], 5)}<circle cx={34} cy={-60} r={13} fill="#d99a4a" opacity={0.6} /><circle cx={52} cy={-48} r={6} fill="#d99a4a" opacity={0.6} />
+        {line("M-48 -92H48", CREAM[1], 5)}<path d="M-86 -62Q0 -34 86 -62" stroke={CREAM[0]} strokeWidth={4} strokeDasharray="8 12" strokeLinecap="round" fill="none" /><circle cx={34} cy={-60} r={13} fill="#d99a4a" opacity={0.6} /><circle cx={52} cy={-48} r={6} fill="#d99a4a" opacity={0.6} />
         <Shade d="M-150 -236Q-116 -276 -84 -262Q-96 -212 -112 -150Q-132 -140 -148 -158Q-140 -200 -150 -236Z" tones={CREAM} L={LR} s={[4, 10, 6]} />
         <Hose d="M146 -150Q196 -116 174 -66" tones={TEALB} /><Hose d="M-146 -146Q-196 -112 -172 -66" tones={TEALB} />
       </g>
