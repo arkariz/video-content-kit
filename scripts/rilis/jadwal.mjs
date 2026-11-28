@@ -12,6 +12,7 @@ import { ROOT, daftarSiklus, disetujui, muat, sibuk, teksFacebook, ubah, waktu }
 import { pascaTayang } from "./youtube.mjs";
 import { pascaTayang as pascaFacebook } from "./facebook.mjs";
 import { muatEnv } from "./hubungkan.mjs";
+import { segarBila } from "./segarkan.mjs";
 import { SELANG, copot, filePlist, pasang, termuat } from "./layanan.mjs";
 
 export const BATAS = 60 * 60e3; // keterlambatan komentar yang masih boleh diposting
@@ -24,7 +25,7 @@ export const fileStatus = () => path.join(ROOT, ".rilis-penjadwal.json");
 export function antrean(r, kini = Date.now()) {
   const A = [];
   for (const i of r.items) for (const platform of ["youtube", "facebook"]) {
-    const h = r.hasil[i.nama]?.[platform]; if (!h?.videoId || (platform === "facebook" && !h.url)) continue;
+    const h = r.hasil[i.nama]?.[platform]; if (!h?.videoId || h.hilang || (platform === "facebook" && !h.url)) continue;
     const gagal = h.percobaan ?? {}; const dasar = { nama: i.nama, platform };
     const komentar = platform === "youtube" ? i.komentar : teksFacebook(i).komentar;
     if (komentar.trim() && !h.komentar && h.privasi !== (platform === "facebook" ? "private" : null)) {
@@ -90,7 +91,8 @@ export async function putaran({ log = console.log, beri = notifikasi, kini = Dat
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const cmd = process.argv[2];
   try {
-    if (cmd === "jalan") { muatEnv(); await putaran(); }
+    // Jadwal terbaru dari platform dibaca dulu, supaya komentar tidak memakai jam lama.
+    if (cmd === "jalan") { muatEnv(); await segarBila(); await putaran(); }
     else if (cmd === "pasang") { pasang("penjadwal"); console.log(`Terpasang: berjalan tiap ${SELANG / 60} menit selama kamu login.\nPlist: ${filePlist("penjadwal")}`); }
     else if (cmd === "copot") { copot("penjadwal"); console.log("Penjadwal dicopot."); }
     else if (cmd === "status") {

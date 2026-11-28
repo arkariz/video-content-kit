@@ -122,7 +122,7 @@ export const teksFacebook = (i) => ({ deskripsi: i.facebook?.deskripsi || i.desk
 export function jadwalBeda(r, kini = Date.now()) {
   return r.items.flatMap((i) => {
     const h = r.hasil[i.nama]?.youtube; const lama = h?.publishAt && new Date(h.publishAt); const baru = waktu(i.jadwal);
-    return h?.videoId && lama > kini && baru && baru.getTime() !== lama.getTime() ? [{ nama: i.nama, lama: lama.toISOString(), baru: baru.toISOString() }] : [];
+    return h?.videoId && !h.hilang && lama > kini && baru && baru.getTime() !== lama.getTime() ? [{ nama: i.nama, lama: lama.toISOString(), baru: baru.toISOString() }] : [];
   });
 }
 

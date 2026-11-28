@@ -96,8 +96,10 @@ function relatif(j) {
   const t = a < 60 ? `${a} menit` : a < 48 * 60 ? `${Math.round(a / 60)} jam` : `${Math.round(a / 1440)} hari`;
   return m >= 0 ? `dalam ${t}` : `${t} lalu`;
 }
-const STATUS = { tayang: ["tayang", "ok"], dicatat: ["URL dicatat", "ok"], terjadwal: ["terjadwal", "biru"], privat: ["privat", "warn"], gagal: ["ada kegagalan", "gagal"], "upload-post": ["lewat Upload-Post", ""] };
-const cipStatus = (p, s) => (s ? cip(`${P[p]}: ${STATUS[s.status][0]}`, STATUS[s.status][1], s.url) : null);
+const STATUS = { hilang: ["tidak ditemukan", "gagal"], tayang: ["tayang", "ok"], dicatat: ["URL dicatat", "ok"], terjadwal: ["terjadwal", "biru"], privat: ["privat", "warn"], gagal: ["ada kegagalan", "gagal"], "upload-post": ["lewat Upload-Post", ""] };
+/** Jam tayang platform ditampilkan bila berbeda dari jadwal kontennya. */
+const bedaJam = (s, jadwal) => (s.status === "terjadwal" && s.jadwal && s.jadwal !== jadwal ? ` ${new Intl.DateTimeFormat("id-ID", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Asia/Jakarta" }).format(tgl(s.jadwal))}` : "");
+const cipStatus = (p, s, jadwal) => (s ? cip(`${P[p]}: ${STATUS[s.status][0]}${bedaJam(s, jadwal)}`, STATUS[s.status][1], s.url) : null);
 const hitung = (tugas) => ({ selesai: tugas.filter((t) => t.selesai).length, sekarang: tugas.filter((t) => !t.selesai && !t.tunggu).length, tunggu: tugas.filter((t) => !t.selesai && t.tunggu).length, total: tugas.length });
 const bilah = (n, total) => h("div", { class: "bilah", role: "progressbar", "aria-valuenow": n, "aria-valuemax": total, "aria-label": "Tugas selesai" }, h("i", { style: `width:${total ? (n / total) * 100 : 0}%` }));
 const media = (t, s, f) => `/media?t=${t}&s=${s}&f=${encodeURIComponent(f)}`;
@@ -154,8 +156,8 @@ const perTrack = (daftar, baris) => kelompokTrack(daftar, (milik) => milik.map(b
 
 // ---------- Pantau ----------
 const SINGKAT = { youtube: "YT", facebook: "FB", instagram: "IG", tiktok: "TT" };
-const cipSingkat = (platform) => Object.keys(P).filter((p) => platform[p]).map((p) => {
-  const s = platform[p]; const el = cip(SINGKAT[p], STATUS[s.status][1], s.url); el.title = `${P[p]}: ${STATUS[s.status][0]}`; return el;
+const cipSingkat = (platform, jadwal) => Object.keys(P).filter((p) => platform[p]).map((p) => {
+  const s = platform[p]; const el = cip(`${SINGKAT[p]}${bedaJam(s, jadwal)}`, STATUS[s.status][1], s.url); el.title = `${P[p]}: ${STATUS[s.status][0]}`; return el;
 });
 const hari = (j) => new Intl.DateTimeFormat("id-ID", { weekday: "long", day: "numeric", month: "long", timeZone: "Asia/Jakarta" }).format(tgl(j));
 function barisAgenda({ s, i, sisa }) {
@@ -164,7 +166,7 @@ function barisAgenda({ s, i, sisa }) {
     h("div", { class: "jam" }, i.jadwal ? i.jadwal.slice(11).replace(":", ".") : "—"),
     i.thumb ? h("img", { class: "mini", alt: "", src: media(s.track, s.siklus, i.thumb), loading: "lazy" }) : h("div", { class: "mini" }),
     h("div", { class: "tengah" }, h("a", { class: "judul", href: `#/${s.track}/${s.siklus}` }, i.judul || i.nama),
-      h("div", { class: "baris kecil-teks redup" }, `${idSiklus(s)} · ${i.nama === "master" ? "Master" : "Short"}`, cipSingkat(i.platform), Object.keys(i.platform).length ? null : cip("belum dikirim"))),
+      h("div", { class: "baris kecil-teks redup" }, `${idSiklus(s)} · ${i.nama === "master" ? "Master" : "Short"}`, cipSingkat(i.platform, i.jadwal), Object.keys(i.platform).length ? null : cip("belum dikirim"))),
     sisa.length ? h("a", { href: `#/${s.track}/${s.siklus}/tugas`, class: `cip ${siap ? "warn" : ""}` }, siap ? `${siap} tugas` : "menunggu") : cip("beres", "ok"));
 }
 /** Daftar konten yang dikelompokkan per hari. */
@@ -459,10 +461,17 @@ function halamanTugas(d) {
   return [
     h("section", { class: "kartu" }, h("h2", {}, "URL tayang"), h("p", { class: "redup kecil-teks" }, "Tempel URL, lalu tekan Tab atau Enter. Tugas unggah tercentang sendiri."),
       h("div", { class: "gulir" }, h("table", {}, h("tr", {}, h("th", {}, "Konten"), Object.values(P).map((x) => h("th", {}, x))),
-        d.rencana.items.map((i) => h("tr", {}, h("td", {}, i.nama, h("div", { class: "redup kecil-teks" }, waktu(i.jadwal))), Object.keys(P).map((p) => h("td", { class: "url" }, isianUrl(d, i.nama, p), cipStatus(p, d.items.find((x) => x.nama === i.nama).platform[p])))))))),
+        d.rencana.items.map((i) => h("tr", {}, h("td", {}, i.nama, h("div", { class: "redup kecil-teks" }, waktu(i.jadwal))), Object.keys(P).map((p) => h("td", { class: "url" }, isianUrl(d, i.nama, p), cipStatus(p, d.items.find((x) => x.nama === i.nama).platform[p], i.jadwal)))))))),
     h("div", { class: "pil" }, tombol("sekarang", `Bisa sekarang (${k.sekarang})`), tombol("tunggu", `Menunggu (${k.tunggu})`), tombol("selesai", `Selesai (${k.selesai})`), tombol("semua", `Semua (${k.total})`)),
     grup.length ? grup.map(([i, t]) => h("section", { class: "kartu" }, h("h2", {}, i.nama, " ", h("span", { class: "redup kecil-teks" }, waktu(i.jadwal))), t.map(baris))) : h("section", { class: "kartu redup" }, "Tidak ada tugas di saringan ini."),
   ];
+}
+
+/** Satu baris keterangan: kapan dan dari mana data terakhir diperbarui. */
+async function keteranganSegar() {
+  const s = await ambil("/api/segar").catch(() => null);
+  const teks = s?.waktu ? `Terakhir diperbarui dari ${s.sumber.join(" dan ")}: ${new Intl.DateTimeFormat("id-ID", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Asia/Jakarta" }).format(new Date(s.waktu))} WIB` : "Belum pernah diperbarui dari platform";
+  return h("p", { class: "redup kecil-teks", title: s?.galat?.join("\n") || null }, teks, s?.galat?.length ? h("span", { class: "gagal" }, " · sebagian gagal dibaca") : null);
 }
 
 // ---------- Rute ----------
@@ -475,7 +484,8 @@ async function tampil() {
     if (!t || !s) {
       const semua = await ambil("/api/ringkasan"); const sis = hal === "siklus" ? null : await ambil("/api/sistem"); if (nomor !== nomorTampil) return;
       const badan = hal === "siklus" ? halamanSiklus(semua) : hal === "atur" ? halamanAtur(semua, sis) : halamanPantau(semua, sis);
-      isi.replaceChildren(...[badan].flat(Infinity).filter(Boolean));
+      const segar = hal === "atur" ? null : await keteranganSegar(); if (nomor !== nomorTampil) return;
+      isi.replaceChildren(...[badan, segar].flat(Infinity).filter(Boolean));
       return jadwalkan(sis?.hubungkan && !["selesai", "gagal"].includes(sis.hubungkan.tahap) ? 2000 : 30000);
     }
     const d = await ambil(`/api/siklus?t=${encodeURIComponent(t)}&s=${encodeURIComponent(s)}`);
@@ -488,7 +498,8 @@ async function tampil() {
     const sis = langkah === "kirim" ? await ambil("/api/sistem") : null;
     if (nomor !== nomorTampil) return;
     const badan = { isi: halamanIsi, kirim: halamanKirim, tugas: halamanTugas }[langkah](d, sis);
-    isi.replaceChildren(kepala(d, langkah), ...[badan].flat(Infinity).filter(Boolean));
+    const segar = await keteranganSegar(); if (nomor !== nomorTampil) return;
+    isi.replaceChildren(kepala(d, langkah), ...[badan, segar].flat(Infinity).filter(Boolean));
     scrollTo(0, dulu === kini ? gulir : 0);
     const pengganti = label && isi.querySelector(`[aria-label="${CSS.escape(label)}"]`);
     if (pengganti) { if (ketikan !== null) pengganti.value = ketikan; pengganti.focus({ preventScroll: true }); }

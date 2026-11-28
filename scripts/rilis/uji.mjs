@@ -35,6 +35,7 @@ globalThis.fetch = async (url, init = {}) => {
   const p = u.pathname.replace(/^(\/upload)?\/youtube\/v3\//, "");
   if (p === "videos" && u.searchParams.get("id")?.startsWith("ada")) return j({ items: yt.diChannel.map((title, n) => ({ id: `ada${n}`, snippet: { title } })) });
   if (p === "videos" && m === "PUT") { yt.ubahan.push(body); return j(body); }
+  if (p === "videos" && m === "GET" && u.searchParams.get("part") === "snippet,status") return j({ items: u.searchParams.get("id").split(",").flatMap((id) => { const v = yt.video[id]; return v ? [{ id, snippet: { channelId: yt.channel, ...v.body.snippet }, status: { ...v.body.status, privacyStatus: v.publik ? "public" : v.body.status.privacyStatus } }] : []; }) });
   if (p === "videos" && m === "POST") { yt.params.push(u.searchParams.get("notifySubscribers")); const id = `vid${String(Object.keys(yt.video).length).padStart(8, "0")}`; yt.video[id] = { id, body, diterima: 0, total: +init.headers["X-Upload-Content-Length"] }; return new Response(null, { status: 200, headers: { location: `https://sesi.uji/${id}` } }); }
   if (p === "videos" && u.searchParams.get("part") === "id") return j({ items: u.searchParams.get("id").split(",").filter((x) => yt.video[x]).map((id) => ({ id })) });
   if (p === "videos") { const v = yt.video[u.searchParams.get("id")]; return j({ items: v ? [{ snippet: { channelId: yt.channel, ...v.body.snippet }, localizations: v.body.localizations, status: { ...(p === "videos" && u.searchParams.get("part") === "snippet,status" && v.body.status), privacyStatus: v.publik ? "public" : v.body.status.privacyStatus, publishAt: v.body.status.publishAt }, processingDetails: { processingStatus: yt.proses } }] : [] }); }
@@ -341,6 +342,32 @@ try {
     fbt.putus = 99; await F.kirim(c, diam); const h = inti.muat(c).hasil.master.facebook; assert.ok(h.unggahan && !h.url && !h.mengunggah, JSON.stringify(h));
     const mulai = fbt.panggilan.length; fbt.putus = 2; await F.kirim(c, diam); assert.ok(inti.muat(c).hasil.master.facebook.url); assert.equal(fbt.sesi.diterima, UKURAN);
     assert.equal(fbt.panggilan.slice(mulai).filter((x) => x.includes("900/videos")).length, 6, "tanpa start baru: 2 gagal, 3 potongan, 1 finish");
+  });
+  await uji("segarkan: jadwal dan teks dari Studio diambil, suntingan tertunda dan persetujuan aman, hilang ditandai", async () => {
+    const { segarkan } = await import("./segarkan.mjs"); const lama = `${besok}T03:00:00.000Z`, geser = `${besok}T05:00:00.000Z`; const hanya = { track: "T09", siklus: "001", log: () => {} };
+    yt.video.seg00000001 = { id: "seg00000001", body: { snippet: { channelId: "UCuji", title: "Judul Studio", description: "" }, status: { privacyStatus: "private", publishAt: geser } } };
+    inti.ubah(c, (x) => { x.kunci_manual = "m"; delete x.facebook; x.items.forEach((i) => (i.jadwal = `${besok}T10:00`)); x.items[0].deskripsi = "Teks dashboard"; x.items[0].komentar = "Q"; x.hasil = { master: { youtube: { sumber: "manual", videoId: "seg00000001", publishAt: lama } }, S1: { youtube: { sumber: "manual", videoId: "hilang000001", publishAt: lama } } }; x.persetujuan = null; });
+    inti.setujui(c, "SETUJU", "uji"); const cat = []; const n = await segarkan({ ...hanya, log: (v) => cat.push(v) }); assert.ok(n >= 3, `${n}\n${cat.join("\n")}`); let r = inti.muat(c);
+    assert.equal(r.hasil.master.youtube.publishAt, geser); assert.equal(r.items[0].jadwal, `${besok}T12:00`); assert.equal(r.items[0].judul, "Judul Studio"); assert.equal(r.items[0].deskripsi, "Teks dashboard");
+    assert.ok(r.hasil.S1.youtube.hilang); assert.ok(inti.disetujui(r), "persetujuan dipertahankan"); assert.deepEqual(inti.jadwalBeda(r), []);
+    assert.equal(await segarkan(hanya), 0, "kedua kali tidak ada perubahan");
+    // jadwal diubah di dashboard tetapi belum diterapkan: tidak ditimpa
+    inti.sunting(c, "master", { jadwal: `${besok}T16:00` }); await segarkan(hanya); assert.equal(inti.muat(c).items[0].jadwal, `${besok}T16:00`); assert.equal(inti.jadwalBeda(inti.muat(c)).length, 1); assert.ok(!inti.disetujui(inti.muat(c)), "suntingan tetap butuh persetujuan");
+    // Facebook belum dikirim: teks tidak diambil dan persetujuan batal bila jadwal berubah
+    inti.ubah(c, (x) => { x.facebook = { aktif: true }; x.items[0].jadwal = `${besok}T12:00`; }); inti.setujui(c, "SETUJU", "uji"); yt.video.seg00000001.body.snippet.title = "Judul lain"; yt.video.seg00000001.body.status.publishAt = `${besok}T07:00:00.000Z`;
+    await segarkan(hanya); r = inti.muat(c); assert.equal(r.items[0].judul, "Judul Studio"); assert.equal(r.items[0].jadwal, `${besok}T14:00`); assert.ok(!inti.disetujui(r));
+    // tayang di platform, dan video Facebook dari URL manual
+    yt.video.seg00000001.publik = true; for (const k of Object.keys(fbt.video)) delete fbt.video[k]; fbt.video["777"] = { id: "777", selesai: { video_state: "PUBLISHED" } }; fbt.tayang = true;
+    inti.ubah(c, (x) => (x.hasil.master.facebook = { sumber: "manual", url: "https://www.facebook.com/reel/777/", publishAt: `${besok}T07:00:00.000Z` })); await segarkan(hanya); r = inti.muat(c);
+    assert.equal(r.hasil.master.youtube.privasi, "public"); assert.ok(new Date(r.hasil.master.facebook.publishAt) <= new Date());
+    const { waktuFacebook } = await import("./segarkan.mjs");
+    assert.equal(waktuFacebook("2026-11-30T05:00:00+0000"), "2026-11-30T05:00:00.000Z"); assert.equal(waktuFacebook("1795852800"), new Date(1795852800000).toISOString()); assert.equal(waktuFacebook("aneh"), null); assert.equal(waktuFacebook(undefined), null);
+    delete fbt.video["777"]; await segarkan(hanya); assert.ok(inti.muat(c).hasil.master.facebook.hilang);
+  });
+  await uji("segarkan otomatis: sekali per selang, menyimpan sumber dan waktu", async () => {
+    const { segarBila, terakhirSegar } = await import("./segarkan.mjs"); inti.ubah(c, (x) => { x.hasil = { master: { youtube: { sumber: "manual", videoId: "vid00000000" } } }; });
+    await segarBila(); const a = terakhirSegar(); assert.deepEqual(a.sumber, ["YouTube"]); assert.ok(a.waktu);
+    const n = yt.panggilan.length; await segarBila(); assert.equal(yt.panggilan.length, n); await segarBila({ kini: Date.now() + 6 * 60e3 }); assert.ok(yt.panggilan.length > n);
   });
   await uji("dashboard: token wajib, host asing ditolak, path media dibatasi", async () => {
     const s = buatServer(); await new Promise((ok) => s.listen(0, "127.0.0.1", ok)); const port = s.address().port; const base = `http://127.0.0.1:${port}`;

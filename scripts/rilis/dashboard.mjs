@@ -14,6 +14,7 @@ import * as facebook from "./facebook.mjs";
 import { periksa as periksaFacebook } from "./facebook-periksa.mjs";
 import { arsip, bukaKunci, kunci } from "./kunci.mjs";
 import { catatTayang } from "./catat-tayang.mjs";
+import { segarBila, terakhirSegar } from "./segarkan.mjs";
 import { sinkronStatus } from "./status.mjs";
 import { buatSkenario, hapusSkenario, jadwalUlang } from "./skenario.mjs";
 
@@ -26,7 +27,7 @@ function sel(c, r) {
     const p = {};
     for (const n of inti.PLATFORM) {
       const h = r.hasil[i.nama]?.[n];
-      if (h) p[n] = { status: h.galat?.length ? "gagal" : h.publishAt && new Date(h.publishAt) > new Date() ? "terjadwal" : h.privasi === "private" ? "privat" : h.sumber === "manual" ? "dicatat" : "tayang", url: h.url };
+      if (h) p[n] = { jadwal: h.publishAt ? new Date(h.publishAt).toLocaleString("sv-SE", { timeZone: "Asia/Jakarta" }).slice(0, 16).replace(" ", "T") : null, status: h.hilang ? "hilang" : h.galat?.length ? "gagal" : h.publishAt && new Date(h.publishAt) > new Date() ? "terjadwal" : h.privasi === "private" ? "privat" : h.sumber === "manual" ? "dicatat" : "tayang", url: h.url };
       else if (lama?.hasil?.some((x) => x.nama === i.nama && x.platforms?.includes(n))) p[n] = { status: "upload-post" };
     }
     const thumb = i.thumbnail && fs.existsSync(path.join(inti.ROOT, i.thumbnail)) ? path.basename(i.thumbnail) : null;
@@ -165,7 +166,7 @@ function keluarSetelahBalas(server, lalu) {
   }, 300);
 }
 
-export function buatServer({ keluar = keluarSetelahBalas } = {}) {
+export function buatServer({ keluar = keluarSetelahBalas, segar = null } = {}) {
   const token = crypto.randomBytes(24).toString("base64url");
   const server = http.createServer((req, res) => {
     const kirimJson = (kode, v) => res.writeHead(kode, { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" }).end(JSON.stringify(v));
@@ -175,6 +176,9 @@ export function buatServer({ keluar = keluarSetelahBalas } = {}) {
     const u = new URL(req.url, `http://127.0.0.1:${port}`);
     try {
       if (req.method === "GET") {
+        // Data dari platform disegarkan di latar saat halaman dibuka; hasilnya tampil pada pemuatan berikutnya.
+        if (u.pathname === "/api/ringkasan") segar?.();
+        if (u.pathname === "/api/segar") return void kirimJson(200, terakhirSegar());
         if (u.pathname === "/") { res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "X-Frame-Options": "DENY", "Content-Security-Policy": "default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; frame-ancestors 'none'" }).end(fs.readFileSync(UI, "utf8").replace("__TOKEN__", token)); return; }
         if (u.pathname === "/api/ringkasan") return void kirimJson(200, ringkasan());
         if (u.pathname === "/api/sistem") return void kirimJson(200, sistem());
@@ -196,5 +200,5 @@ export function buatServer({ keluar = keluarSetelahBalas } = {}) {
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const k = process.argv.indexOf("--port"); const port = k > 0 ? Number(process.argv[k + 1]) : Number(process.env.PORT) || PORT;
-  buatServer().listen(port, "127.0.0.1", () => console.log(`Dashboard rilis: http://127.0.0.1:${port}  (Ctrl+C untuk berhenti)`));
+  buatServer({ segar: segarBila }).listen(port, "127.0.0.1", () => console.log(`Dashboard rilis: http://127.0.0.1:${port}  (Ctrl+C untuk berhenti)`));
 }

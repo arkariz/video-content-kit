@@ -21,4 +21,5 @@ __pycache__/
 .rilis.lock
 .rilis-sesi.json
 .rilis-penjadwal.json
+.rilis-segar.json
 hasil/tracks/*/siklus/9[0-9][0-9]-uji-alat/
