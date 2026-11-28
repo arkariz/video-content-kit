@@ -4,10 +4,10 @@ kapasitas_jam_per_minggu: 12     # kreator menerima di atas 10 jam/minggu (2026-
 batas_track_aktif: 2             # maksimal track di tahap "aktif" sekaligus
 batas_track_validasi: 2          # maksimal track di tahap "validasi" sekaligus
 track_fokus: T01                # track yang dikerjakan bila kreator hanya bilang "mulai", contoh T01
-langkah_berikutnya: "T01: pin dan video terkait 002 setelah tayang 28 Nov, setujui 005 (29 Nov); T02: cek jadwal 003 (28 Nov), putuskan 004; analitik 001 T02 11-28, T01 12-02"
+langkah_berikutnya: "T02: 003 tayang 28-29 Nov, perbaiki s25/s30 004 sebelum tayang, analitik lengkap 001 12-03; T01: 005 tayang 29 Nov-1 Des, analitik 001 12-02"
 menunggu_keputusan: null
 review_portfolio_berikutnya: null   # tanggal ISO
-terakhir_diperbarui: 2026-11-27
+terakhir_diperbarui: 2026-11-28
 ---
 
 # STATE portfolio

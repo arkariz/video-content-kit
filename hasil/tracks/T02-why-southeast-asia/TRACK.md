@@ -8,7 +8,7 @@ channel: "Equator Logic (channel Asia Tenggara; TikTok @equator.logic)"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 6
 siklus_aktif: "002-gta6-download-9-hours"
-langkah_berikutnya: "003: terjadwal YouTube 28 Nov 01.00 WIB; 002 tayang 27 Nov, pin komentar dan video terkait; 004: review dan jadwalkan atau tahan; analitik 001 2026-11-28 dan 12-03"
+langkah_berikutnya: "003: Short terjadwal YouTube 28 Nov 12.00 dan 16.00, master 29 Nov 10.00; 004: perbaikan s25/s30 sebelum tayang (B2 29 Nov, master 2 Des); analitik lengkap 001 2026-12-03"
 pengecualian_qa: ["bukti-kreator"]   # keputusan kreator 2026-11-25: klip CC BY (credits.md) menggantikan rekaman sendiri; QA tetap mencatat sebagai temuan sedang. Risiko kebijakan konten AI/inauthentic ditanggung kreator
 profil_publish: "default"     # nama API profil Upload-Post yang tampil sebagai "equatorlogic" (channel Asia Tenggara)
 menunggu_keputusan: "004: perbaiki s25 dan s30 (05-cek-fakta.md) lalu render ulang, atau tahan; jadwal belum ditentukan"
@@ -71,8 +71,8 @@ Catatan: 002 tayang sebelum jendela V2 (2026-12-07) dan menggantikan judul Jawa;
 | --- | --- | --- | --- | --- |
 | 001-jakarta-refused-tokyo-trains | Jakarta Just Refused Tokyo's Old Trains. Here's Why | tayang | 2026-11-26 | uji-V2, variasi A; tayang di semua platform (YouTube, Facebook, TikTok: master + 2 Shorts; Instagram: 2 Shorts), unggah manual; tanpa QA anti-slop manual |
 | 002-gta6-download-9-hours | GTA 6: Singapore Is Already Playing. Indonesia Has 8 Hours Left. | tayang | 2026-11-27 | uji-V2, variasi B; master 8:47 + 2 Shorts + thumbnail dirender 2026-11-26; QA otomatis lulus, QA manual belum; master dan 2 Shorts tayang di YouTube (01.00, 03.00, 06.30 WIB), dicatat dari platform; platform lain belum tercatat; 05-qa.md tidak ada |
-| 003-why-half-lives-on-one-island | Why Half of Indonesia Lives on One Island | siap-publish | 2026-11-28 | uji-V2, variasi B; master 8:12 + 2 Shorts + thumbnail dirender 2026-11-26; QA manual belum; master dan 2 Shorts terjadwal di YouTube 28 Nov 01.00, 03.00, 06.30 WIB (dicatat dari platform); 05-qa.md tidak ada |
-| 004-karhutla-who-lit-the-match | Indonesia Is Burning. Who Lit the Match? | siap-publish | 2026-11-29 | di luar V2; permintaan kreator; topik sensitif, wajib cek fakta sebelum publish; 05-qa.md LULUS atas keputusan kreator 2026-11-27 tanpa pemeriksaan |
+| 003-why-half-lives-on-one-island | Why Half of Indonesia Lives on One Island | siap-publish | 2026-11-29 | uji-V2, variasi B; master 8:12 + 2 Shorts + thumbnail dirender 2026-11-26; QA manual belum; master dan 2 Shorts terjadwal di YouTube 28 Nov 01.00, 03.00, 06.30 WIB (dicatat dari platform); 05-qa.md tidak ada |
+| 004-karhutla-who-lit-the-match | Indonesia Is Burning. Who Lit the Match? | siap-publish | 2026-12-02 | di luar V2; permintaan kreator; topik sensitif, wajib cek fakta sebelum publish; 05-qa.md LULUS atas keputusan kreator 2026-11-27 tanpa pemeriksaan |
 
 Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, `dianalisis`.
 
@@ -149,3 +149,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Opsi judul dan thumbnail baru 004 dibuat atas permintaan kreator (thumbnail-v2/opsi.md). Belum dipilih; platform tidak diubah. Video terjadwal 29 Nov masih memuat s25 dan s30 yang ditandai cek fakta.
 - 2026-11-27: Foto profil dan banner v2 gaya R3 dibuat atas permintaan kreator (channel/v2: 3 profil, 2 banner; maskot Komo, garis khatulistiwa). Belum dipilih; belum diunggah ke platform.
 - 2026-11-27: Kreator menolak Komo untuk identitas channel dan memilih konsep jalur khatulistiwa. Aset v3 dibuat (channel/v3: 3 profil, 2 banner). Belum dipilih; belum diunggah.
+- 2026-11-28: Cek awal analitik (analitik/youtube-2026-11-28.md). 001 long-form CTR 5,2% (1.220 impresi), retensi 8,2% (12 view); Shorts A1 43,5% dan A2 61,5% rata-rata ditonton; penonton Shorts di daftar negara hanya ID. Jadwal dari 06-rilis.json: 003 master 29 Nov (Shorts 28 Nov), 004 master 2 Des (B2 29 Nov).

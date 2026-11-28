@@ -8,10 +8,10 @@ channel: "Money Plumbing"
 bahasa_konten: "master-en + audio-id"
 jam_per_minggu: 5.5
 siklus_aktif: 001-approved-not-paid
-langkah_berikutnya: "005: kreator menonton penuh master + 2 Short, ketik SETUJU di alat rilis, lalu unggah terjadwal (06-rilis.json); 002: terjadwal 28 Nov, pin komentar dan video terkait setelah tayang; analitik 001 mulai 2026-12-02, 004 menyusul"
+langkah_berikutnya: "005: tayang terjadwal 29 Nov - 1 Des; 002: terjadwal 2-4 Des, pin komentar dan video terkait setelah tayang; analitik lengkap 001 2026-12-02, 004 2026-12-04"
 profil_publish: "moneyplumbing"     # profil Upload-Post channel uang
 pengecualian_qa: []                 # syarat bukti kreator di layar dihapus untuk semua konten (2026-11-27)
-menunggu_keputusan: "005: SETUJU di alat rilis untuk unggah YouTube terjadwal 29 Nov"
+menunggu_keputusan: null
 dibuat: 2026-11-24
 asal: "analisa-niche"         # usulan U2-A di 00-riset-niche/analisa-niche-nontech.md
 ---
@@ -53,7 +53,7 @@ Skor niche 81, tertinggi di riset non-tech. Video mekanisme pembayaran mendapat 
 | Siklus | Topik | Status | Tanggal tayang | Catatan |
 | --- | --- | --- | --- | --- |
 | 001-approved-not-paid | Variasi A: Your Card Said "Approved." The Shop Hasn't Been Paid. (LF + 2 Shorts) | tayang | 2026-11-25 | uji-V2; QA 2026-11-24 GAGAL, lihat 05-qa.md; naskah 58 scene disetujui ulang; audio EN uji (free) ada, footage b-roll terunduh (s25, s26, s33); 2026-11-26 master dan 2 Shorts tayang di semua platform |
-| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | siap-publish | 2026-11-28 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum; master dan 2 Shorts terjadwal di YouTube dan Facebook (unggah manual): 28 Nov 10.00, 12.00, 15.00 WIB di YouTube |
+| 002-fee-split | Variasi B: You Pay $100. Here's Who Takes a Cut. (LF + 2 Shorts) | siap-publish | 2026-12-02 | uji-V2; naskah R3 disetujui 2026-11-26; master 8:07 + 2 Shorts + thumbnail dirender; klip tangan diganti ilustrasi; QA manual belum; master dan 2 Shorts terjadwal di YouTube dan Facebook (unggah manual): 28 Nov 10.00, 12.00, 15.00 WIB di YouTube |
 | 003-origin-myths | Variasi C: Diners Club PR myth + ATM radioactive cheques (2 Shorts) | riset | 2026-12-21 | uji-V2; pakai riset 001; brief dan folder siklus belum dibuat |
 | 004-gta6-who-got-paid | Di luar V2: Fans Spent $3.79 Billion on GTA 6. Here's Who Actually Got It. (LF + 2 Shorts) | tayang | 2026-11-27 | di-luar-V2 (tidak dinilai 2027-01-03); hype rilis GTA VI 19 Nov; master dan 2 Shorts tayang di YouTube (01.00, 03.00, 06.30 WIB) dan Facebook, dicatat dari platform; 05-qa.md LULUS atas keputusan kreator tanpa pemeriksaan, QA otomatis GAGAL |
 | 005-qris-one-sticker | Di luar V2: One Sticker, 72 Million People: How Indonesia Built a Payment Network Visa Doesn't Run (LF + 2 Shorts) | siap-publish | 2026-11-29 | di-luar-V2 (permintaan kreator 2026-11-27); naskah R3 48 scene + 03-visual.json v2 disetujui 2026-11-27 |
@@ -152,3 +152,4 @@ Status: `riset`, `brief`, `naskah`, `produksi`, `qa`, `siap-publish`, `tayang`, 
 - 2026-11-27: Atas permintaan kreator, dibuat opsi thumbnail dan judul baru 004 bergaya ilustrasi 005 dengan GTA VI ditonjolkan (4 master, 3 per Short; siklus/004-gta6-who-got-paid/thumbnail-v2/opsi.md). Belum dipilih; di platform belum diubah.
 - 2026-11-27: Kreator memilih judul dan thumbnail baru 004: master opsi 1 ("GTA 6: Where Your $80 Actually Goes"), Short S1 A, Short S2 A. Penggantian di platform oleh kreator, belum dilakukan.
 - 2026-11-27: Kreator memilih konsep identitas "bawah tanah" untuk channel. Foto profil dan banner dibuat (channel/: 3 profil, 2 banner). Belum dipilih; belum diunggah.
+- 2026-11-28: Cek analitik (analitik/youtube-2026-11-28.md). 001 long-form CTR 4,2% (95 impresi), retensi 50,9% dari 6 view; Shorts belum punya data retensi. Jadwal dari 06-rilis.json: 002 2-4 Des, 005 29 Nov-1 Des.
