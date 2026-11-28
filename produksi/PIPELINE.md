@@ -283,6 +283,7 @@ Contoh pemakaian lengkap: `produksi/contoh-r3/P01b-s01-benchmark/04-shots.tsx`. 
 Engine tetap fokus pada waktu, kamera, dan render; ia tidak menjadi editor ilustrasi.
 
 ### 10. Alur still-dulu dan gate kualitas visual
+0. **Prasyarat baku** (`AGENTS.md`, "Aturan baku sebelum still dan video"): contoh P01b dan file yang ditunjuk sudah dibaca di sesi ini, tabel Riset fakta ada, `03-visual.json` versi 2 ada. Naskah lama tanpa versi 2 dilengkapi dulu, termasuk saat produksi ulang.
 1. **Spesifikasi lengkap.** Scene lulus gate kesiapan (`gaya-visual.md` bagian 7, termasuk bidang versi 2). Validator: QA G7 (`validateVisualSpec`, aturan V-1 sampai V-14 di CONTRACT.md).
 2. **Still dulu.**
    - Gambar komposisi utama sebagai satu frame diam, lalu render dengan `--still <scene> --at <detik>`.

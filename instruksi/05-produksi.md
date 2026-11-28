@@ -4,6 +4,8 @@ Tujuan: dari `03-script.json` menghasilkan suara, caption, visual, dan render se
 
 **Gaya wajib:** ilustrasi gerak penjelas R3 (`instruksi/referensi/gaya-visual.md`), dijalankan lewat `scripts/pipeline/run.mjs`. Scene `shots` dirender mesin R3 (`produksi/PIPELINE.md`, bagian "Mesin R3").
 
+**Wajib sebelum still dan video:** `AGENTS.md` bagian "Aturan baku sebelum still dan video" (contoh P01b, tabel Riset fakta, `03-visual.json` versi 2). Berlaku juga untuk produksi ulang siklus lama.
+
 ## Prasyarat
 
 - `.env` berisi `ELEVENLABS_API_KEY` dan `ELEVENLABS_VOICE_ID` (paket berbayar, karena paket gratis tidak boleh dipakai komersial). Opsional: `PEXELS_API_KEY`, `PIXABAY_API_KEY`.

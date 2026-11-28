@@ -64,6 +64,16 @@ Berlaku untuk **semua track dan semua siklus**, untuk agent chat maupun agent di
 
 Naskah siklus baru tanpa `shots` per kalimat tidak boleh lanjut ke produksi; QA otomatis menandainya kritis. T01 siklus 001 (mesin lama) dan T02 siklus 001 (R3 3D, masih terlihat kaku) tidak dijadikan acuan. Lapisan 3D (`@remotion/three`) disetujui kreator dan sudah dibangun di `produksi/remotion/src/r3/three` (opsional per siklus). Scene dengan `shots` dirender mesin R3 (`produksi/remotion/src/r3`); gambar tiap shot ditulis agent repo sebagai komponen di `04-shots.tsx` folder siklus (cara di `produksi/PIPELINE.md`, bagian "Mesin R3").
 
+### Aturan baku sebelum still dan video (keputusan kreator 2026-11-28)
+
+Berlaku untuk **setiap sesi agent produksi** yang menulis atau mengubah kode adegan, merender still, menilai still, atau merender video, termasuk **produksi ulang dan revisi siklus lama**. Mode `otomatis` tidak menghapusnya.
+
+1. **Baca dulu, di sesi itu:** semua baris "Urutan baca" di `produksi/contoh-r3/P01b-s01-benchmark/EVALUASI.md` **beserta file yang ditunjuk** (riset dan brief di `produksi/contoh-r3/P01-tetes-air/`, `03-script.json`, `03-visual.json`, `04-shots.tsx`, riwayat di `04-still.json` dan gambarnya, `04-proses.jsonl`). Membaca `EVALUASI.md` saja tidak cukup. Laporan pertama menyebut file yang benar-benar dibaca.
+2. **Riset fakta:** `01-riset-viral.md` siklus punya bagian "Riset fakta": tabel klaim `C01…` dengan sumber, kutipan, status (`terverifikasi`, `disederhanakan`, `belum`), subjek yang digambar, dan miskonsepsi. Sumber yang tidak bisa dibuka ditulis apa adanya.
+3. **Kunci visual:** `03-visual.json` versi 2, dirujuk `visual_spec` di `03-script.json`; tiap subjek memakai `treatment` dan `claims`, metafora ditandai. Gambar tidak boleh menambah fakta yang tidak ada di spesifikasi.
+4. **Baru kemudian kode dan still**, lewat `scripts/pipeline/still.mjs` berputar (skor dan kritik ditulis sebelum kode diubah, satu putaran satu commit), lalu persetujuan kreator.
+5. **Video dirender hanya setelah** 1 sampai 4 terpenuhi dan QA `LULUS`. Bila salah satu belum ada (misalnya naskah lama tanpa `visual_spec`), **berhenti dan lengkapi, atau minta keputusan kreator**; jangan melewatinya dengan memanggil `render.mjs` langsung.
+
 ## Mode gate
 
 Nilai `mode_gate` di STATE berlaku untuk semua track:

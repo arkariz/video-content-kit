@@ -26,6 +26,8 @@ Orkestrator untuk satu siklus konten di **satu track**: satu video master, poton
 | 5 | Publish | `instruksi/07-publish.md` | `06-publish.md` | Selalu minta persetujuan |
 | 6 | Analitik | `instruksi/08-analitik-dan-loop.md` | `hasil/tracks/<ID>/analitik/*.md`, `learnings.md`, `backlog.md` | Keputusan besar lewat review portfolio |
 
+Sebelum still dan video, ikuti `AGENTS.md` bagian "Aturan baku sebelum still dan video" (juga untuk produksi ulang).
+
 Contoh kerja lengkap yang wajib dibaca sebelum naskah, arah visual, kode adegan, dan penilaian still: `produksi/contoh-r3/P01b-s01-benchmark/EVALUASI.md` (bagian "Urutan baca").
 
 Semua output siklus ada di `hasil/tracks/<ID>/siklus/NNN-slug/`. Kalau file instruksi rinci tidak tersedia (skill dipakai di luar kit), ikuti ringkasan di bawah.

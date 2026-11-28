@@ -1,6 +1,6 @@
 WAJIB: baca instruksi/referensi/gaya-visual.md, produksi/STYLE.md, produksi/CONTRACT.md, produksi/PIPELINE.md bagian "Mesin R3", dan hasil/learnings-global.md.
 
-Baca dulu baris 4-8 "Urutan baca" di produksi/contoh-r3/P01b-s01-benchmark/EVALUASI.md: arah visual, kode dengan @r3/art, riwayat putaran still (format kritik masalah → penyebab → perbaikan → hasil), animasi, dan 04-proses.jsonl.
+Ikuti AGENTS.md bagian "Aturan baku sebelum still dan video" (semua baris urutan baca beserta filenya, tabel Riset fakta, 03-visual.json versi 2). Terutama baris 4-8 "Urutan baca" di produksi/contoh-r3/P01b-s01-benchmark/EVALUASI.md: arah visual, kode dengan @r3/art, riwayat putaran still (format kritik masalah → penyebab → perbaikan → hasil), animasi, dan 04-proses.jsonl.
 
 Track {{track}}, siklus {{siklus}}. Lengkapi visual di 03-script.json:
 1) `anchor` dan `cast` di tingkat atas (pemeran dari produksi/STYLE.md untuk track ini).

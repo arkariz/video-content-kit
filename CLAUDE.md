@@ -3,6 +3,7 @@
 ## Khusus Claude Code
 
 - **Sebelum mengerjakan riset, brief, naskah, arah visual, `04-shots.tsx`, atau penilaian still, setiap sesi wajib membaca dulu contoh kerja lengkap `produksi/contoh-r3/P01b-s01-benchmark/EVALUASI.md` bagian "Urutan baca"** (baris tahap yang dikerjakan, lalu file yang ditunjuk). Sebutkan di laporan pertama bahwa contoh itu sudah dibaca. Tiru prosesnya, jangan isinya.
+- **Wajib sebelum still dan video (juga untuk produksi ulang):** ikuti AGENTS.md bagian "Aturan baku sebelum still dan video": baca contoh P01b beserta file yang ditunjuk, pastikan tabel Riset fakta dan `03-visual.json` versi 2 ada, baru kode, still, persetujuan, QA, render. Bila belum ada, berhenti dan lengkapi.
 - **Gaya visual wajib R3, ilustrasi gerak penjelas** (lihat AGENTS.md): baca `instruksi/referensi/gaya-cerita.md` (riset dan cerita), `instruksi/referensi/gaya-visual.md` (spesifikasi scene), `produksi/STYLE.md` (Style Bible), dan `hasil/learnings-global.md` sebelum brief, naskah, atau produksi. Agent yang menulis `04-shots.tsx` juga membaca `produksi/PIPELINE.md` bagian "Mesin R3".
 
 - Skill proyek ada di `skills/`. Jalankan `bash scripts/install-skills.sh` sekali (dan setiap kali `skills/` berubah) supaya dimuat dari `.claude/skills/`.
