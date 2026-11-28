@@ -2,17 +2,16 @@
 
 Versi produksi ulang (2026-11-28). Jadwal mengikuti `06-rilis.json`: master **2 Desember 10.00**, Short 1 **3 Desember 12.00**, Short 2 **4 Desember 15.00** WIB.
 
-## Ganti unggahan lama dulu
-Video versi 26 November masih terjadwal di YouTube dan Facebook. Berkas video tidak bisa ditukar, jadi:
-1. Tonton ketiga video baru dengan suara.
-2. Di YouTube Studio dan Meta Business Suite, **hapus** enam unggahan terjadwal lama (atau batalkan jadwalnya):
+## Publish lewat dashboard rilis (keputusan kreator 2026-11-28)
+Teks YouTube dan Facebook sudah ada di `06-rilis.json`. Urutan:
+1. Hapus enam unggahan lama di YouTube Studio **dan** Meta Business Suite:
    - Master: https://www.youtube.com/watch?v=0Mg_mmMzF5g · https://www.facebook.com/reel/2371631973657530/
    - Short 1: https://www.youtube.com/watch?v=OQJxkEL8K58 · https://www.facebook.com/reel/1705005934367306/
    - Short 2: https://www.youtube.com/watch?v=FfuEICU-y2o · https://www.facebook.com/reel/4575236526069035/
-3. Unggah versi baru manual memakai teks di bawah, dengan jadwal yang sama.
-4. Kirim keenam URL baru ke agent untuk dicatat. Catatan unggah lama di alat rilis diperbarui setelah itu.
-
-Jangan menekan Kirim di alat rilis sebelum catatan lama dibereskan.
+2. Beri tahu agent; catatan lama dibersihkan setelah platform memastikan video hilang.
+3. Di dashboard (klik dua kali `Rilis.command`, siklus T01 002): **Buka kunci** (ketik BUKA), nyalakan **Kirim siklus ini ke Facebook lewat alat**.
+4. Periksa isi, lalu **Setujui** (ketik SETUJU), **Kirim ke YouTube** dan **Kirim ke Facebook**.
+5. Setelah terkirim, di Studio: nyalakan label konten AI, pasang end screen dan video terkait; pin komentar setelah tayang. Instagram dan TikTok tetap manual.
 
 **Jangan jalankan `approve.mjs` / `publish.mjs send` untuk siklus ini**, supaya tidak terunggah dua kali.
 

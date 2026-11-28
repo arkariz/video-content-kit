@@ -50,7 +50,11 @@
         "money explained",
         "fintech"
       ],
-      "komentar": "Four companies, one tap. Did any part of the $2.75 surprise you?\n\nWhy \"approved\" doesn't mean the shop is paid: https://www.youtube.com/watch?v=z3M5k4pXXhw"
+      "komentar": "Four companies, one tap. Did any part of the $2.75 surprise you?\n\nWhy \"approved\" doesn't mean the shop is paid: https://www.youtube.com/watch?v=z3M5k4pXXhw",
+      "facebook": {
+        "deskripsi": "You tap a card for a $100 pair of shoes. The shop keeps $97.25. Here's who takes the other $2.75 in one US example, and who ends up paying.\n\n#CreditCards #Payments #MoneyExplained",
+        "komentar": ""
+      }
     },
     {
       "nama": "B1-100-dollar-split",
@@ -81,7 +85,11 @@
         "small business",
         "shorts"
       ],
-      "komentar": "Did you think the shop got the full price? Full story in the long video on this channel."
+      "komentar": "Did you think the shop got the full price? Full story in the long video on this channel.",
+      "facebook": {
+        "deskripsi": "You pay $100. The shop gets $97.25.\n\nIn one worked US example of a $100 card payment, $2.20 goes to your bank, 16 cents to Visa, and 39 cents to the card machine company and the shop's bank.\n\n#CreditCards #Payments #MoneyExplained",
+        "komentar": "Full video: {master}"
+      }
     },
     {
       "nama": "B2-cash-pays-too",
@@ -112,7 +120,11 @@
         "credit card points",
         "shorts"
       ],
-      "komentar": "Do shops near you give a discount for cash? Full story in the long video on this channel."
+      "komentar": "Do shops near you give a discount for cash? Full story in the long video on this channel.",
+      "facebook": {
+        "deskripsi": "The man paying cash behind you helps pay the card toll.\n\nShops often don't charge less for cash, so the card fee gets built into the price on the tag. Cash payers cover part of it and get no points back.\n\n#Cash #CreditCards #MoneyExplained",
+        "komentar": "Full video: {master}"
+      }
     }
   ],
   "persetujuan": {
